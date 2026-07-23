@@ -1,373 +1,332 @@
-# Faith-through-physics-atoms
-# FAITH THROUGH PHYSICS — ATOM NODE TYPES
-## What each stage produces and how they connect
-## Claude Opus + GPT Codex corrections | July 23, 2026
+# Faith Through Physics — Atom System
+## The canonical node specification for the Theophysics framework
+## David Lowe | POF 2828 | July 23, 2026
+## Built by: Claude Opus, GPT Codex, Kimi | Adversarially reviewed
 
 ---
 
-## CRITICAL DISTINCTION (from GPT Codex)
+## GOVERNING RULES
 
-**Paper, evidence, translation, article, and result nodes are NOT claims.
-They are nodes AROUND claims. Only 01_canonical produces actual claims.
-Everything else orbits, supports, attacks, translates, or confirms claims.**
+**Artifacts enter where they belong.
+Claims rise only as far as their burden requires.
+Truth descends as far as people require.**
 
-This keeps the graph clean. The claim is the sun. Everything else orbits.
+---
+
+## CRITICAL DISTINCTIONS
+
+### 1. Claim identity is independent of canonical status
+A claim is a claim whether it is draft, proposed, challenged, 
+supported, falsified, or deprecated. Canonical means the framework 
+currently accepts it — it does not confer claimhood.
+
+### 2. Only claims are claims. Everything else orbits.
+Papers, evidence, translations, articles, and results are NOT claims.
+They are nodes AROUND claims. The claim is the sun.
+
+### 3. Every node carries a coherence direction
+Every atom is either building coherence or documenting decoherence.
+This is the fundamental binary that sits between God and the 
+Master Equation. χ measures the ratio between them.
 
 ---
 
 ## THE CORE DNA (every node has this)
-
-Every atom, regardless of type, carries:
 
 ```jsonld
 {
   "@id": "unique permanent URL",
   "nodeID": "tp:DOMAIN/STAGE/ID",
   "name": "human-readable title",
-  "nodeType": "one of the types below",
+  "nodeType": "CLAIM | EVIDENCE | BRIDGE | KILL | PAPER | 
+               OBJECTION | TRANSLATION | APPLICATION | 
+               ARTICLE | REACH | RESULT | RAW",
+  "coherenceDirection": "coherence | decoherence | neutral | mixed",
   "domainType": "physics | theology | education | etc",
-  "stage": "01_canonical | 06_falsification | etc",
-  "status": "draft | active | verified | falsified | deprecated",
-  "author": "David Lowe + AI collaborator",
+  "workbenchStage": "00_inbox_working | 01_canonical | etc",
+  "epistemicStatus": "draft | proposed | challenged | supported |
+                      verified | weakened | falsified | deprecated | 
+                      superseded",
+  "status": "active | archived",
+  "author": [],
   "dateCreated": "ISO date",
   "dateModified": "ISO date",
   "edges": [
     {
-      "type": "dependsOn | feedsInto | bridgesTo | challenges | expands | forksFrom",
+      "type": "dependsOn | feedsInto | bridgesTo | challenges | 
+              expands | forksFrom | descendsTo",
       "target": "@id of target node",
-      "grade": "structural_identity | structural_isomorphism | structural_analogy | metaphorical",
-      "propagates": true | false
+      "grade": "structural_identity | structural_isomorphism | 
+               structural_analogy | metaphorical",
+      "propagates": true | false,
+      "failureScope": "global | bridge_peers | dependents | local",
+      "descentInvariant": {
+        "claimMeaningPreserved": true | false | "unreviewed",
+        "confidencePreserved": true | false | "unreviewed",
+        "boundariesPreserved": true | false | "unreviewed",
+        "killConditionPreserved": true | false | "not_applicable",
+        "addedPremises": [],
+        "applicationLeap": "none | disclosed | unsupported",
+        "reviewStatus": "unreviewed | machine_checked | human_reviewed"
+      }
     }
   ]
 }
 ```
 
-### Key changes from v1 (per GPT Codex review):
-1. Every node gets **nodeID**. Only actual claim nodes (01_canonical) get **claimID**.
-2. Edges are **typed objects** with grade and propagation flag — not just flat arrays.
-3. Bridge-grade propagation belongs ON THE EDGE, not on the node.
-4. **statementTechnical** and **statementPlain** only required on nodes that make statements (claims, paradigms, translations, articles). Evidence and result nodes don't need them.
-5. Evidence nodes get **citationStatus** (verified | unverified | retracted).
+---
 
-The shared DNA means ANY node can connect to ANY other node
-across stages and across domains. The connection types are
-what change.
+## CLAIM NODES (the primary atoms)
+
+Claims are the ONLY nodes that carry claimID. A claim is a claim 
+at every stage of its life — draft through falsified.
+
+```jsonld
+{
+  "nodeType": "CLAIM",
+  "claimID": "tp:EDU/C0042",
+  "claimKind": "axiom | definition | theorem | empirical | 
+                prediction | interpretation | application",
+  "canonicalStatus": "noncanonical | candidate | canonical | rejected",
+  "statementTechnical": "formal version",
+  "statementPlain": "everyday version",
+  "axiomRoot": "@id of root claim",
+  "mathematicalForm": "equation if applicable",
+  "falsificationCondition": "what would break this",
+  "verificationStatus": "informal | machine-verified | falsified",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged | challenged-open | 
+                      challenged-survived | falsified",
+  "claimBurden": {
+    "class": "pastoral | textual | theological | historical | 
+              empirical | statistical | mathematical | 
+              isomorphism | causal | application",
+    "requiredSupport": ["list of what this claim class demands"],
+    "supportStatus": "complete | incomplete | blocked"
+  }
+}
+```
+
+### Key properties:
+- **claimID** stays with the claim forever, regardless of status
+- **canonicalStatus** tracks framework acceptance separately
+- **workbenchStage** tracks where humans are working on it
+- **claimKind** includes prediction and application as subtypes
+  (because predictions and applications can be independently 
+  true or false)
+- **claimBurden** auto-generates from claimKind — each kind 
+  has a minimum support contract
+
+### Claim-burden table:
+
+| Claim Kind | Minimum Support Required |
+|-----------|------------------------|
+| Pastoral exhortation | Scripture/theological grounding |
+| Textual biblical | Exact passage, translation note |
+| Theological interpretation | Scripture refs, interpretive premises |
+| Historical | Primary/secondary sources, date qualification |
+| Empirical | Observation, source data, method, uncertainty |
+| Statistical | Dataset, inclusion rule, denominator, calculation |
+| Mathematical | Definitions, derivation/proof, boundary conditions |
+| Isomorphism | Mapping, invariants, bidirectional test, boundaries |
+| Causal | Competing explanations, distinguishing evidence |
+| Application | Source claims, added premises, boundary, kill condition |
 
 ---
 
-## THE NODE TYPES BY STAGE
+## SUPPORTING NODES (orbit claims)
 
-### 00_inbox_working → RAW NODE
-The rawest form. Barely structured.
+These nodes do NOT get claimID. They reference claims via edges.
 
+### EVIDENCE NODE
 ```
-Fields: source, date, rough_domain, raw_text
-Connects: nowhere yet — orphan until classified
-Purpose: capture before it's lost
-```
-
-NOT a real atom yet. It becomes one when it gets classified
-and moves to a stage.
-
----
-
-### 01_canonical → CLAIM NODE ⭐ (the primary atom)
-
-This is the core unit. THE ONLY NODE TYPE THAT IS A CLAIM.
-Everything else orbits claims. Only claim nodes get claimID.
-
-```
-Fields: claimID (tp:DOMAIN/L#/C#), 
-        statementTechnical, statementPlain, axiomRoot,
-        claimClass (floor-axiom | definition | theorem |
-        bridge | empirical-anchor | prediction | boundary),
-        derivationChain, mathematicalForm,
-        falsificationCondition, verificationStatus,
-        kernelChecked (Lean 4), challengeStatus
-Connects TO: other claims via edges (type: dependsOn)
-Connects FROM: everything else points back here
+sourceType, sourceRef, dataPoints, relevantClaim,
+citationStatus (verified | unverified | retracted)
+Does NOT require statementTechnical/statementPlain.
 ```
 
-Example: "Time-translation symmetry in the moral domain
-implies a conserved current via Noether's theorem."
-
----
-
-### 02_paradigm → PARADIGM NODE
-
-What this claim breaks about old thinking.
-
+### BRIDGE NODE  
 ```
-Fields: oldParadigm, breakStatement, newParadigm,
-        historicalPrecedent, claimRef (points to 01)
-Connects TO: the claim it reframes (01_canonical)
-Connects FROM: articles, everyday (they USE the reframe)
+sourceDomain, targetDomain, bridgeGrade, mappingProof,
+bidirectionalTest, boundaryConditions, masterEquationLink
+Connects claims in TWO different domains.
 ```
 
-Example: "Education is not a policy problem. It's a
-physics problem — Shannon channel with noise > signal."
-
----
-
-### 03_synthesis → BRIDGE NODE
-
-Cross-domain connection. The isomorphisms.
-
+### KILL NODE
 ```
-Fields: sourceDomain, targetDomain, bridgeGrade
-        (structural_identity | structural_isomorphism |
-        structural_analogy | metaphorical),
-        mappingProof, bidirectionalTest,
-        boundaryConditions, masterEquationLink,
-        claimRef (points to 01 in BOTH domains)
-Connects TO: claims in TWO different domains
-Connects FROM: papers, articles that USE the bridge
-Edge rule: identity/isomorphism PROPAGATE falsification
-           analogy/metaphorical DO NOT propagate
+killCondition, attemptDescription, outcome, targetClaim,
+counterArgument, boundaryDiscovered
+failureType: root_claim | mapping | boundary | measurement |
+             empirical_instance | interpretation | application
 ```
 
-Example: "Shannon channel capacity ↔ education
-transmission fidelity — structural identity, same equation."
-
----
-
-### 04_hypothesis → PREDICTION NODE
-
-Testable prediction derived from a claim.
-
+### PAPER NODE
 ```
-Fields: prediction, predictedMagnitude, testMethod,
-        confidenceLevel, derivedFrom (points to 01),
-        timeframe (testable_now | future | mathematical)
-Connects TO: the claim it predicts FROM (01_canonical)
-Connects FROM: fulfilled nodes (13) that report results
+abstract, coreClaimRef, scope, argumentChain, everydayBridge
+Composite node — assembles truth held in claim nodes.
+NOT source of truth. NOT endpoint.
 ```
 
-Example: "Systems retaining a Logos should show measurably
-higher transmission fidelity — testable via Amish vs public."
-
----
-
-### 05_evidence → EVIDENCE NODE
-
-External data supporting or challenging a claim.
-NOT a claim itself — a node AROUND a claim.
-
+### OBJECTION NODE
 ```
-Fields: sourceType (academic | LLM | wiki | dataset |
-        competing_framework), sourceRef, dataPoints,
-        relevantClaim (points to 01 or 04),
-        conclusionSeparate (boolean — source notes vs conclusions),
-        citationStatus (verified | unverified | retracted)
-Connects TO: claims or predictions it supports/challenges
-Connects FROM: papers, articles that cite it
-Note: does NOT require statementTechnical/statementPlain
+objection, strength, response, status, targetClaim
+Steelmanned — strongest form, not strawmen.
 ```
 
-Example: "NAEP 8th grade math: 35% → 28% proficiency.
-Source: National Assessment of Educational Progress."
-
----
-
-### 06_falsification → KILL NODE
-
-What would destroy a claim, and whether we tried.
-
+### TRANSLATION NODE
 ```
-Fields: killCondition, attemptDescription, outcome
-        (survived | weakened | boundary_found | falsified),
-        targetClaim (points to 01), counterArgument,
-        boundaryDiscovered
-Connects TO: the claim it attacks (01_canonical)
-Connects FROM: objections (08), fulfilled (13)
-Edge rule: if outcome=falsified, propagates
-           upstream-falsified to all dependents
+plainStatement, analogy, soWhat, sourceClaim, readingLevel
+Meaning-preserving restatement ONLY.
+Does NOT include practical application (that's APPLICATION).
 ```
 
-Example: "Kill attempt: 'Amish succeed from isolation,
-not Logos.' Outcome: survived — secular communes show
-high attrition despite isolation."
-
----
-
-### 07_paper → PAPER NODE
-
-Formal treatment combining multiple nodes.
-
+### APPLICATION NODE
 ```
-Fields: abstract, coreClaimRef (points to 01), scope,
-        definitions, priorWork, argumentChain,
-        evidenceRefs (points to 05), falsificationRefs
-        (points to 06), objectionRefs (points to 08),
-        everydayBridge (points to 09),
-        template (doctoral template sections 1-13)
-Connects TO: claims, evidence, falsification, objections
-             it synthesizes
-Connects FROM: articles, audience that descend from it
+derivedFrom (source claim + theological/domain premises),
+applicationDomain, inferenceStatement, boundaryConditions,
+falsificationCondition, addedPremises, status
+NEW inferential leap — can be WRONG even when source claim is RIGHT.
+Must disclose added premises.
 ```
 
-The paper is a COMPOSITE node — it doesn't hold original
-truth. It assembles and argues truth held in claim nodes.
-
----
-
-### 08_objections → OBJECTION NODE
-
-Steelmanned pushback.
-
+### ARTICLE NODE
 ```
-Fields: objection, objectionSource, strength
-        (serious | moderate | common_misunderstanding),
-        response, status (answered | unresolved | partial),
-        targetClaim (points to 01 or 07)
-Connects TO: the claim or paper it pushes against
-Connects FROM: fulfilled (13) if the objection was tested
+seriesID, narrativeArc, humanAnchor, claimRefs, bridgeRefs,
+readingLevel, crossRefs
+```
+
+### REACH NODE
+```
+format, sourceArticle, impactStatement, actionItems,
+legalWarning
+```
+
+### RESULT NODE
+```
+predictionRef, outcome, data, accuracy, revisionTrigger
+Confirmed → strengthens upstream. Failed → triggers revision.
 ```
 
 ---
 
-### 09_everyday → TRANSLATION NODE
+## THE COHERENCE COORDINATE
 
-Plain language version.
+Every atom carries `coherenceDirection`:
+
+- **coherence** — this node builds, preserves, or documents 
+  order, signal, alignment, grace, truth, love, faith, logos
+- **decoherence** — this node documents, analyzes, or describes 
+  disorder, noise, drift, entropy, deception, captivity, doubt
+- **neutral** — system/infrastructure node (template, index)
+- **mixed** — contains both (e.g., a paper comparing coherent 
+  and decoherent states)
+
+This is NOT a moral judgment on the node. A KILL node documenting 
+a failed attack is tagged "coherence" (the claim survived). An 
+EVIDENCE node documenting civilizational decay is tagged 
+"decoherence" (it describes entropy). The tag describes what 
+the content is ABOUT, not whether the content is good or bad.
+
+The Master Equation measures χ — the ratio of coherence to 
+decoherence. This tag lets the graph compute coherence density 
+across any domain, stage, or slice of the framework.
+
+---
+
+## FOUR ROUTE PROFILES
+
+### Route A: Pastoral / Everyday
+```
+theological grounding → everyday → article → audience
+```
+No paper required. Claims within still carry their burden.
+
+### Route B: Explanatory Article
+```
+canonical refs → evidence → everyday → article → audience
+```
+Article is primary. Claims get linked support nodes.
+
+### Route C: Framework Argument
+```
+canonical → paradigm → synthesis → hypothesis → evidence →
+falsification → objections → everyday → article → audience → 
+fulfilled
+```
+Paper added when scope warrants.
+
+### Route D: Formal Paper
+```
+canonical → proof/method → evidence → falsification → paper →
+objections → translation → application → article → audience → 
+fulfilled
+```
+Paper is composite rendering, not source of truth.
+
+---
+
+## FIVE COORDINATES (per atom)
+
+1. **What is it?** → nodeType
+2. **Epistemic state?** → epistemicStatus + canonicalStatus
+3. **Where does it apply?** → domainType + boundaries
+4. **For whom?** → audienceLevel
+5. **How derived?** → edges + provenance + descentInvariants
+
+Four views generated:
+- **Canon view** → claims, proofs, provenance
+- **Workbench view** → 14 folders for human production
+- **Graph view** → dependencies, bridges, propagation
+- **Public view** → descent renderings, reader modes
+
+---
+
+## DESCENT RULE
+
+Pushing up is optional. Pushing down is never optional.
+
+Descent is complete ONLY when:
+1. At least one path reaches an ordinary-person artifact
+2. Every edge on that path has a reviewed Descent Invariant
+3. Any application is a separate node with disclosed premises
+4. The reader can trace back to the exact source claim
+
+---
+
+## FALSIFICATION PROPAGATION (scoped)
+
+| Failure Type | Scope |
+|-------------|-------|
+| Root claim false | Global |
+| Mapping invalid | Bridge peers flagged |
+| Boundary exceeded | Dependents flagged |
+| Measurement invalid | Local |
+| Empirical failure | Dependents flagged |
+| Interpretation overreach | Local |
+| Application failure | Application node only |
+
+---
+
+## THE HIERARCHY
 
 ```
-Fields: plainStatement, practicalApplication,
-        analogy, soWhat, sourceClaim (points to 01),
-        readingLevel (grade_8 | grade_10 | grade_12)
-Connects TO: the claim it translates (01_canonical)
-Connects FROM: worldcheck (10), articles (11)
+GOD
+  ↓
+COHERENCE ←→ DECOHERENCE  (the fundamental binary)
+  ↓
+MASTER EQUATION  (χ measures the ratio)
+  ↓
+TEN LAWS  (ten expressions of the binary)
+  ↓
+DOMAINS  (infinite projections)
+  ↓
+14-STAGE ARC  (the ripening process)
+  ↓
+ATOMS  (self-describing, self-connecting nodes)
 ```
 
 ---
 
-### 10_worldcheck → CHECK NODE
-
-Pressure test of the everyday version.
-
-```
-Fields: reactionsSummary, mainstreamFraming,
-        simplificationAudit, factCheckResult,
-        sourceTranslation (points to 09)
-Connects TO: the everyday node it tested (09)
-Connects FROM: articles (11) that incorporate feedback
-```
-
----
-
-### 11_articles → ARTICLE NODE
-
-Narrative treatment.
-
-```
-Fields: seriesID (GTQ | CNS | CDT | DRV | LP | standalone),
-        seriesNumber, narrativeArc, humanAnchor,
-        crossRefs (points to articles in other domains),
-        readingLevel, claimRefs (points to 01 nodes used),
-        bridgeRefs (points to 03 nodes used)
-Connects TO: claims and bridges it narrates
-Connects FROM: audience (12) versions derived from it
-```
-
----
-
-### 12_audience → REACH NODE
-
-SEO, social, toolkit, action guide.
-
-```
-Fields: format (social_post | video_script | infographic |
-        one_pager | toolkit | podcast_outline | SEO_page),
-        sourceArticle (points to 11 or 09),
-        impactStatement, actionItems,
-        legalWarning (boolean for toolkit nodes)
-Connects TO: the article or everyday version it derives from
-Connects FROM: fulfilled (13) tracking real-world impact
-```
-
----
-
-### 13_fulfilled → RESULT NODE
-
-What happened.
-
-```
-Fields: predictionRef (points to 04), outcome
-        (confirmed | partial | failed | pending),
-        data, accuracy, revisionTrigger,
-        realWorldOutcome
-Connects TO: the prediction it resolves (04)
-Connects BACK TO: canonical (01) to strengthen or revise
-Edge rule: confirmed → strengthens upstream claim
-           failed → triggers new 00_inbox_working entry
-```
-
----
-
-## THE CONNECTION MAP
-
-```
-                    RAW (00)
-                      ↓ classifies into
-                  CLAIM (01) ←←←←←←←←←←← RESULT (13)
-                  ↙  ↓  ↘                    ↑
-          PARADIGM  BRIDGE  PREDICTION ———→ RESULT
-            (02)    (03)      (04)           (13)
-                      ↓        ↓
-                   EVIDENCE  EVIDENCE
-                     (05)     (05)
-                      ↓
-                   KILL (06)
-                      ↓
-                   PAPER (07)
-                      ↓
-                   OBJECTION (08)
-                      ↓
-                   TRANSLATION (09)
-                      ↓
-                   CHECK (10)
-                      ↓
-                   ARTICLE (11)
-                      ↓
-                   REACH (12)
-                      ↓
-                   RESULT (13) ———→ back to CLAIM (01)
-```
-
-Everything flows down. Results flow back up. The cycle.
-
----
-
-## HOW THE GRAPH GROWS ORGANICALLY
-
-1. You write a CLAIM atom in education/01_canonical/
-2. The claim declares its axiomRoot and domainType
-3. An AI scans all atoms, finds economics has a claim
-   with the SAME axiomRoot
-4. A BRIDGE atom gets proposed: "these two claims share
-   a structural root — investigate"
-5. You verify: is it identity, isomorphism, or just analogy?
-6. If identity/isomorphism: the bridge PROPAGATES — 
-   kill one side, the other side feels it
-7. The graph just grew a connection nobody planned
-
-That's the organic growth. The atoms find each other
-through shared roots. The AI is the matchmaker.
-The human verifies the grade.
-
----
-
-## WHAT GOES IN THE REPO
-
-Each atom is TWO files in its stage folder:
-
-```
-education/01_canonical/
-  ├── A042-L9-C1.jsonld    ← the machine-readable atom
-  └── A042-L9-C1.html      ← the rendered pill (generated)
-```
-
-The .jsonld is source of truth. The .html is generated FROM it.
-Never edit the HTML directly — edit the atom, regenerate.
-
-The builder script takes your input → writes .jsonld → 
-generates .html pill. One command, both files.
+_Faith Through Physics | POF 2828_
+_"The Word became flesh and dwelt among us." — John 1:14_
+_Truth always flows down._
