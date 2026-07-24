@@ -1,0 +1,13 @@
+{
+  "@context": ["https://schema.org", "https://faiththruphysics.com/vocab/context.jsonld"],
+  "@id": "https://faiththruphysics.com/protocol/claim-beacon/v0.1/conflict-matrix",
+  "name": "Claim Beacon Conflict Matrix v0.1",
+  "protocol": "ClaimBeacon",
+  "protocolVersion": "0.1.0",
+  "rules": [
+    {"conflict": "formal proof vs analogy", "priority": "formal proof", "result": "analogy must be weakened or rejected"},
+    {"conflict": "primary evidence vs interpretation", "priority": "primary evidence", "result": "interpretation remains provisional"},
+    {"conflict": "domain boundary exceeded", "priority": "boundary condition", "result": "bridge is flagged for review"},
+    {"conflict": "unresolved equal-grade evidence", "priority": "none", "result": "status remains proposed or weakened"}
+  ]
+}

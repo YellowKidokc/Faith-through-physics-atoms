@@ -138,12 +138,34 @@ def write_manifest() -> None:
             "claimType": beacon.get("claimType"),
             "tags": beacon.get("tags", []),
         })
+    bridge_records = []
+    for path in REPO.rglob("*.jsonld"):
+        if "_vocab" in path.parts:
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if data.get("nodeType") == "bridge":
+            bridge_records.append({
+                "nodeID": data.get("nodeID"),
+                "canonicalURL": data.get("@id"),
+                "record": f"/{rel(path)}",
+                "sourceDomain": data.get("sourceDomain"),
+                "targetDomain": data.get("targetDomain"),
+                "grade": data.get("grade"),
+                "status": data.get("status"),
+            })
     manifest = {
         "@context": [CONTEXT],
         "protocol": "ClaimBeacon",
         "protocolVersion": "0.1.0",
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "records": sorted(records, key=lambda r: r["permanentID"]),
+        "bridgeRecords": sorted(bridge_records, key=lambda r: r["nodeID"] or ""),
+        "protocolRecords": [
+            "/_protocol/claim-beacon/v0.1/pivot-ontology.jsonld",
+            "/_protocol/claim-beacon/v0.1/conflict-matrix.jsonld",
+            "/_protocol/claim-beacon/v0.1/bridge-record.schema.json",
+            "/_protocol/claim-beacon/v0.1/invariant-monitor.schema.json"
+        ],
     }
     WELL_KNOWN.parent.mkdir(exist_ok=True)
     WELL_KNOWN.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

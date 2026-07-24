@@ -234,6 +234,94 @@
     },
     "validationReceipt": {
       "@id": "tp:validationReceipt"
+    },
+    "sourceDomain": {
+      "@id": "tp:sourceDomain"
+    },
+    "targetDomain": {
+      "@id": "tp:targetDomain"
+    },
+    "hubOntology": {
+      "@id": "tp:hubOntology"
+    },
+    "mappingTable": {
+      "@id": "tp:mappingTable"
+    },
+    "preservedRelations": {
+      "@id": "tp:preservedRelations"
+    },
+    "reverseMapping": {
+      "@id": "tp:reverseMapping"
+    },
+    "boundaryConditions": {
+      "@id": "tp:boundaryConditions"
+    },
+    "propagatesFalsification": {
+      "@id": "tp:propagatesFalsification"
+    },
+    "commutativityTests": {
+      "@id": "tp:commutativityTests"
+    },
+    "conflictMatrix": {
+      "@id": "tp:conflictMatrix"
+    },
+    "invariantMonitors": {
+      "@id": "tp:invariantMonitors"
+    },
+    "linkedProofs": {
+      "@id": "tp:linkedProofs"
+    },
+    "role": {
+      "@id": "tp:role"
+    },
+    "terms": {
+      "@id": "tp:terms"
+    },
+    "definition": {
+      "@id": "tp:definition"
+    },
+    "rules": {
+      "@id": "tp:rules"
+    },
+    "conflict": {
+      "@id": "tp:conflict"
+    },
+    "priority": {
+      "@id": "tp:priority"
+    },
+    "result": {
+      "@id": "tp:result"
+    },
+    "monitorID": {
+      "@id": "tp:monitorID"
+    },
+    "subject": {
+      "@id": "tp:subject"
+    },
+    "invariant": {
+      "@id": "tp:invariant"
+    },
+    "reviewTrigger": {
+      "@id": "tp:reviewTrigger"
+    },
+    "lastChecked": {
+      "@id": "tp:lastChecked"
+    },
+    "bridgeRefs": {
+      "@id": "tp:bridgeRefs",
+      "@container": "@set"
+    },
+    "ontologyRefs": {
+      "@id": "tp:ontologyRefs",
+      "@container": "@set"
+    },
+    "policyRefs": {
+      "@id": "tp:policyRefs",
+      "@container": "@set"
+    },
+    "protocolRecords": {
+      "@id": "tp:protocolRecords",
+      "@container": "@set"
     }
   }
 }

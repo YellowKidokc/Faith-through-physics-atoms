@@ -1,8 +1,19 @@
 # Claim Beacon Protocol v0.1
 
-Claim Beacon Protocol lets claim atoms publish a portable, machine-readable discovery block without replacing the existing station architecture. A beacon lives inside the JSON-LD claim atom under `claimBeacon`; generated manifests, proposals, and HTML are derived artifacts.
+Claim Beacon Protocol lets claim atoms publish portable discovery metadata without replacing the station architecture or bloating each atom with every bridge proof. A beacon lives inside the JSON-LD claim atom under `claimBeacon`; bridge records, shared protocol records, proof records, manifests, proposals, and HTML are linked artifacts.
 
-## Beacon block
+## Separation rule
+
+```text
+Claim atom = one precise assertion and its own test contract
+Bridge atom = how two or more domains connect
+Shared protocol records = rules every bridge must obey
+Evidence / proof / test records = receipts for specific claims or bridges
+```
+
+Claim atoms carry their identity, statement, evidence needs, kill conditions, dependencies, and pointers to bridge/proof/policy records. They do not embed full bridge mappings, pivot ontologies, conflict matrices, commutativity tests, or benchmark reports.
+
+## Beacon block in claim atoms
 
 Every public claim atom SHOULD expose:
 
@@ -10,16 +21,27 @@ Every public claim atom SHOULD expose:
 - `canonicalURL`: public URL for the atom or claim page.
 - `version` and `provenance`: version, repository path, Git commit, modified date, authors, and source references when known.
 - `priorVersions`: superseded versions or migration notes.
-- `have`: support, derivations, data, mappings, keywords, or tags the atom offers.
-- `need`: evidence, definitions, dependencies, mappings, or source records it requires.
+- `have`: support, derivations, data, or concise capabilities the claim itself offers.
+- `need`: evidence, definitions, dependencies, or source records the claim requires.
 - `breakIf`: explicit falsification or failure conditions.
-- `claimType`, `domain`, `masterEquationVariables`, `tags`, and `bridgeGrade`.
-- `acceptedLinks`: human-accepted edges copied from the atom graph.
+- `claimType`, `domain`, `masterEquationVariables`, `tags`, and local `bridgeGrade` summary.
+- `bridgeRefs`, `ontologyRefs`, and `policyRefs`: links to bridge atoms and shared protocol records.
 - `proposalFeed`: public or local proposal stream for candidate relationships.
+
+## Bridge record format
+
+Bridge atoms use the existing `nodeType: bridge` schema and carry source domain, target domain, mapping table, grade, preserved relations, reverse mapping, boundary conditions, commutativity tests, conflict matrix reference, invariant monitors, proof links, and validation receipt. The reusable schema is `_protocol/claim-beacon/v0.1/bridge-record.schema.json`.
+
+## Shared protocol records
+
+- Pivot ontology: `_protocol/claim-beacon/v0.1/pivot-ontology.jsonld`.
+- Conflict matrix: `_protocol/claim-beacon/v0.1/conflict-matrix.jsonld`.
+- Bridge schema: `_protocol/claim-beacon/v0.1/bridge-record.schema.json`.
+- Invariant monitor schema: `_protocol/claim-beacon/v0.1/invariant-monitor.schema.json`.
 
 ## Discovery manifest
 
-`/.well-known/claim-beacons.json` lists public atom records and their locations. Other repositories can fetch the manifest, then read each JSON-LD atom's `claimBeacon` block.
+`/.well-known/claim-beacons.json` lists public claim atom records, bridge records, and shared protocol records. Other repositories can fetch the manifest, then read JSON-LD claim beacons and linked bridge/protocol artifacts independently.
 
 ## Candidate relationship proposal
 

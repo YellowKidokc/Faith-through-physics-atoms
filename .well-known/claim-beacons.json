@@ -4,7 +4,7 @@
   ],
   "protocol": "ClaimBeacon",
   "protocolVersion": "0.1.0",
-  "generatedAt": "2026-07-24T15:31:27.073745+00:00",
+  "generatedAt": "2026-07-24T15:42:54.210613+00:00",
   "records": [
     {
       "permanentID": "tp:ME/L5/C1",
@@ -24,5 +24,22 @@
         "moral-conservation"
       ]
     }
+  ],
+  "bridgeRecords": [
+    {
+      "nodeID": "tp:bridges/master-equation/economics/trilemma-cost-bearing",
+      "canonicalURL": "https://faiththruphysics.com/bridges/master-equation/economics/trilemma-cost-bearing",
+      "record": "/master-equation/03_synthesis/ME-BRIDGE-001-economics-trilemma.jsonld",
+      "sourceDomain": "master-equation",
+      "targetDomain": "economics",
+      "grade": "structural_identity",
+      "status": "active"
+    }
+  ],
+  "protocolRecords": [
+    "/_protocol/claim-beacon/v0.1/pivot-ontology.jsonld",
+    "/_protocol/claim-beacon/v0.1/conflict-matrix.jsonld",
+    "/_protocol/claim-beacon/v0.1/bridge-record.schema.json",
+    "/_protocol/claim-beacon/v0.1/invariant-monitor.schema.json"
   ]
 }
