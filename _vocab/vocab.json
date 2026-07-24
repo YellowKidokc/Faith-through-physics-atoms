@@ -1,0 +1,69 @@
+{
+  "_comment": "Machine-readable enums. Classifiers and the NLP stack read THIS file. Every allowed value in the framework, with its glyph. If a value is not here, it is not legal.",
+  "version": "1.0.0",
+  "updated": "2026-07-23",
+
+  "nodeType": {
+    "raw": "◌", "claim": "◆", "paradigm": "⊘", "bridge": "≅",
+    "prediction": "⧖", "evidence": "E", "kill": "⛔", "paper": "▤",
+    "objection": "⚔", "translation": "☖", "check": "⊙", "article": "✍",
+    "reach": "⌘", "result": "⟡", "application": "↦"
+  },
+
+  "status": {
+    "captured": "◌", "classified": "◇", "proposed": "❖", "active": "◈",
+    "verified": "◆", "kernel_verified": "⊢", "weakened": "⊝",
+    "falsified": "⊗", "deprecated": "⊠", "superseded": "⇄"
+  },
+
+  "audienceLevel": {
+    "specialist": "⊢", "doctoral": "▤", "informed_adult": "◈",
+    "pastor": "✚", "parent": "⌂", "policymaker": "⚑",
+    "everyday": "☖", "child": "✎"
+  },
+
+  "evidenceType": {
+    "formal_derivation": "⟐", "machine_verified": "⊢",
+    "mathematical_model": "∫", "statistical": "⌖", "empirical": "E",
+    "historical": "⧗", "textual": "✝", "interpretive": "Θ",
+    "analogical": "≈", "personal": "◊p"
+  },
+
+  "verifiedBy": {
+    "lean4": "⊢", "python": "π", "wolfram": "ω", "seven_question": "⑦",
+    "ai_review": "AI", "human_review": "⌥", "nlp_pass": "NLP", "facts_card": "F"
+  },
+
+  "paradigmRelation": {
+    "breaks": "⊘", "extends": "⇧", "reframes": "⟲",
+    "confirms": "✓", "orthogonal": "⊙"
+  },
+
+  "edgeType": {
+    "dependsOn": "↓", "feedsInto": "→", "bridgesTo": "≅",
+    "challenges": "⚔", "expands": "⇧", "forksFrom": "⑂", "descendsTo": "↦"
+  },
+
+  "bridgeGrade": {
+    "structural_identity":    {"glyph": "≡", "propagates": true},
+    "structural_isomorphism": {"glyph": "≅", "propagates": true},
+    "structural_analogy":     {"glyph": "≈", "propagates": false},
+    "metaphorical":           {"glyph": "~", "propagates": false},
+    "ungraded":               {"glyph": "?", "propagates": false}
+  },
+
+  "propagationScope": {
+    "root_claim": "global", "mapping_invalid": "bridge_peers",
+    "boundary_exceeded": "dependents", "measurement_invalid": "local",
+    "empirical_failure": "dependents", "interpretation": "local",
+    "application_failure": "application_node_only"
+  },
+
+  "claimClass": [
+    "pastoral_exhortation", "textual_biblical", "theological_interpretation",
+    "historical", "empirical", "statistical", "mathematical",
+    "isomorphism", "causal", "practical_application",
+    "floor_axiom", "definition", "theorem", "bridge",
+    "empirical_anchor", "prediction", "boundary"
+  ]
+}

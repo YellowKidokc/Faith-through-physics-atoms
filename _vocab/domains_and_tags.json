@@ -1,0 +1,40 @@
+{
+  "_comment": "Domain and tag vocabularies. Split from vocab.json because these two grow constantly. Add a row HERE before creating a domain folder or emitting a tag.",
+  "version": "1.0.0",
+
+  "root_layer": {
+    "god": "☉", "trinity": "⟁", "master-equation": "Μ", "axioms": "Α",
+    "ten-laws": "ℒ", "scripture": "✝", "theology": "Θ"
+  },
+
+  "domainType": {
+    "physics": "Φ", "consciousness": "ψ", "information-theory": "ℹ",
+    "biology": "β", "ethics": "⚖", "cosmology": "⊛",
+    "pharmacology": "⚕", "addiction-science": "⚗", "chemistry": "⌬",
+    "epidemiology": "☣", "ecology": "✿", "fluid-dynamics": "♒",
+    "control-theory": "⚙", "mathematics": "⟐", "network-science": "⇉",
+    "music-theory": "♫", "cryptography": "⚿", "education": "✎",
+    "history": "⌛", "economics": "☗", "psychology": "☯",
+    "christian-life": "✚", "ai-alignment": "⟦AI⟧", "politics": "⚑",
+    "law": "⚓", "sociology": "⌂", "quantum": "⚛", "linguistics": "⊞",
+    "agriculture": "⚘", "engineering": "⚒", "medicine": "☤",
+    "technology": "✇", "military-history": "⚔", "philosophy": "☰",
+    "art": "⚜", "statistics": "⌖"
+  },
+
+  "tags": {
+    "grace": "✦", "sin": "⬒", "truth": "☉", "deception": "◒",
+    "justice": "⚖", "mercy": "♡", "cross": "✝", "resurrection": "⟡",
+    "faith": "⟠", "doubt": "◌", "logos": "λ", "coherence": "✺",
+    "decoherence": "✣", "source-term": "⇥", "kill-condition": "⛔",
+    "covenant": "∩", "atonement": "⊕", "repentance": "↺",
+    "sanctification": "⇧", "witness": "⊙", "entropy": "∴",
+    "boundary": "□", "glory": "✺", "invariant": "⟲",
+    "broken-symmetry": "⊘", "definition": "≔", "variable": "χ",
+    "equation": "∫", "proof": "⟐", "isomorphism": "≅",
+    "free-will": "⑂", "moral-conservation": "⚖", "observer": "⊙",
+    "information": "ℹ", "symmetry": "⟲", "conservation": "⟲",
+    "phase-transition": "⇄", "signal-noise": "ℹ", "channel-capacity": "ℹ",
+    "curvature": "⬒", "field": "✺", "regress": "↺", "trinity": "⟁"
+  }
+}

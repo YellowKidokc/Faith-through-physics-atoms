@@ -57,7 +57,17 @@
     }
   ],
 
-  "evidenceType": "formal-derivation",
+  "evidenceType": "formal_derivation",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "breaks",
+  "nodeType": "claim",
+
+  "glyphs": ["◆", "⟐", "Μ", "≡", "⚖"],
+  "tags": ["justice", "mercy", "free-will", "atonement", "cross", "moral-conservation"],
+  "keywords": ["trilemma", "budget balance", "Myerson-Satterthwaite",
+               "cost-bearer", "closed system", "external transfer"],
+  "mathFormNormal": "a = x/d ; b = 1 - y/d ; x = y => a = 1 - b ; solve(a=1,b=1) requires z_ext = d, w_ext = 1",
+
   "verificationStatus": "informal",
   "kernelChecked": false,
   "challengeStatus": "unchallenged",
