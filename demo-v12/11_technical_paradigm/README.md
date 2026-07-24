@@ -22,7 +22,7 @@
 - `dependsOn <- 10_technical_canon`
 
 ## Allowed outgoing edges
-- `feedsInto -> 17_doctoral_paper`
+- `feedsInto -> papers/`
 - `descendsTo -> 21_everyday_paradigm`
 
 ## Completion condition

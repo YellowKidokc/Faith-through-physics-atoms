@@ -11,7 +11,7 @@ VOCAB = os.path.join(REPO, "_vocab")
 C = {}
 for fn in ("stage_contracts.json", "stage_contracts_technical.json",
            "stage_contracts_public.json"):
-    with open(os.path.join(VOCAB, fn), encoding="utf-8") as f:
+    with open(os.path.join(VOCAB, fn), encoding="utf-8-sig") as f:
         C.update(json.load(f)["stages"])
 
 TPL = """# {stage}

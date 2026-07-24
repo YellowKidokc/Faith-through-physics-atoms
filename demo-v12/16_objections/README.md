@@ -22,7 +22,7 @@
 - `challenges -> claim or paper`
 
 ## Allowed outgoing edges
-- `feedsInto -> 17_doctoral_paper`
+- `feedsInto -> papers/`
 
 ## Completion condition
 At least one serious-strength objection, steelmanned and attributed.

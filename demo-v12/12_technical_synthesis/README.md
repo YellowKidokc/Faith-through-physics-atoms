@@ -25,7 +25,7 @@
 
 ## Allowed outgoing edges
 - `bridgesTo -> other domains`
-- `feedsInto -> 17_doctoral_paper`
+- `feedsInto -> papers/`
 
 ## Completion condition
 Mapping stated, bidirectional test run, grade assigned by a human.

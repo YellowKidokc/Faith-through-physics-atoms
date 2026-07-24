@@ -20,7 +20,7 @@
       "nodeTypes": ["paradigm"],
       "required": ["priorFramework", "breakOrExtension", "newModel", "rivalExplanations", "disciplinaryContext", "paradigmRelation"],
       "edgesIn": ["dependsOn <- 10_technical_canon"],
-      "edgesOut": ["feedsInto -> 17_doctoral_paper", "descendsTo -> 21_everyday_paradigm"],
+      "edgesOut": ["feedsInto -> papers/", "descendsTo -> 21_everyday_paradigm"],
       "completion": "Prior framework named, break located precisely, rivals listed.",
       "propagation": "Paradigm failure does NOT falsify the underlying claim. Local only.",
       "nlp": "Detect dramatic language unsupported by the claim's grade. Flag overclaim.",
@@ -33,7 +33,7 @@
       "nodeTypes": ["bridge"],
       "required": ["sourceDomain", "targetDomain", "bridgeGrade", "mathFormNormal", "substitutionMap", "preservedOperations", "inverseMapping", "boundaryConditions"],
       "edgesIn": ["dependsOn <- 10_technical_canon"],
-      "edgesOut": ["bridgesTo -> other domains", "feedsInto -> 17_doctoral_paper"],
+      "edgesOut": ["bridgesTo -> other domains", "feedsInto -> papers/"],
       "completion": "Mapping stated, bidirectional test run, grade assigned by a human.",
       "propagation": "identity/isomorphism PROPAGATE. analogy/metaphorical DO NOT. ungraded never propagates.",
       "nlp": "Match mathFormNormal across the corpus. Propose candidates as ungraded. GRADING IS HUMAN-ONLY.",
@@ -59,7 +59,7 @@
       "nodeTypes": ["evidence"],
       "required": ["sourceType", "sourceRef", "citationStatus", "relevantClaim", "conclusionSeparate"],
       "edgesIn": ["supports/challenges -> 10_technical_canon or 13_hypothesis"],
-      "edgesOut": ["feedsInto -> 17_doctoral_paper"],
+      "edgesOut": ["feedsInto -> papers/"],
       "completion": "Negative evidence, null results and replication status recorded alongside favorable evidence.",
       "propagation": "Empirical failure flags dependents for review. Local unless the claim is empirical at root.",
       "nlp": "Verify citations resolve. Separate source content from source conclusions.",
@@ -85,19 +85,20 @@
       "nodeTypes": ["objection"],
       "required": ["objection", "objectionSource", "strength", "response", "status", "targetClaim"],
       "edgesIn": ["challenges -> claim or paper"],
-      "edgesOut": ["feedsInto -> 17_doctoral_paper"],
+      "edgesOut": ["feedsInto -> papers/"],
       "completion": "At least one serious-strength objection, steelmanned and attributed.",
       "propagation": "Unresolved objections do not falsify but must remain visible.",
       "nlp": "Score objection strength. Flag strawmen. A weak objection filed here is a defect.",
       "validation": "Objections develop throughout the branch, not after the paper is written. Unresolved points stay adjacent to responses.",
       "rendering": "War-room section with unresolved items marked."
     },
-    "17_doctoral_paper": {
+    "_17_doctoral_paper_MOVED": {
+      "note": "Papers are composites that span domains. They no longer live inside a domain. See papers/README.md and papers/CONTRACT.md. The leading underscore keeps this key out of the stage generator.",
       "question": "The final formal composite",
-      "branch": "technical", "glyph": "proof",
+      "branch": "papers", "glyph": "proof",
       "nodeTypes": ["paper"],
       "required": ["promise", "receipt", "caveat", "declaredFrame", "coreClaimRef", "evidenceRefs", "falsificationRefs", "objectionRefs", "everydayBridge", "provenance"],
-      "edgesIn": ["hasPart <- claims, evidence, kill, objection nodes"],
+      "edgesIn": ["hasPart <- claims, evidence, kill, objection nodes across domains"],
       "edgesOut": ["descendsTo -> 26_audience"],
       "completion": "All ten conditions of REIMAGINED_DOCTORAL_PAPER.md satisfied. Nine of ten is not compliant.",
       "propagation": "Composite only. Falsify a part and the paper is affected automatically.",
@@ -107,3 +108,4 @@
     }
   }
 }
+

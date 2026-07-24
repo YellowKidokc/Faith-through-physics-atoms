@@ -21,7 +21,7 @@
 - `supports/challenges -> 10_technical_canon or 13_hypothesis`
 
 ## Allowed outgoing edges
-- `feedsInto -> 17_doctoral_paper`
+- `feedsInto -> papers/`
 
 ## Completion condition
 Negative evidence, null results and replication status recorded alongside favorable evidence.
