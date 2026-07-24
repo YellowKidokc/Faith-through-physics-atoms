@@ -1,13 +1,15 @@
 {
   "_comment": "Machine-readable enums. Classifiers and the NLP stack read THIS file. Every allowed value in the framework, with its glyph. If a value is not here, it is not legal.",
-  "version": "1.0.0",
-  "updated": "2026-07-23",
+  "version": "2.1.0",
+  "updated": "2026-07-24",
+  "_changelog": "v2.1: Collapsed 7 media-specific types back into reach.format. Added question + series + audienceProfile. GPT correction: atomize the descent process, not the delivery formats.",
 
   "nodeType": {
     "raw": "◌", "claim": "◆", "paradigm": "⊘", "bridge": "≅",
     "prediction": "⧖", "evidence": "E", "kill": "⛔", "paper": "▤",
     "objection": "⚔", "translation": "☖", "check": "⊙", "article": "✍",
-    "reach": "⌘", "result": "⟡", "application": "↦"
+    "reach": "⌘", "result": "⟡", "application": "↦",
+    "question": "？", "series": "⟰"
   },
 
   "status": {
@@ -20,6 +22,12 @@
     "specialist": "⊢", "doctoral": "▤", "informed_adult": "◈",
     "pastor": "✚", "parent": "⌂", "policymaker": "⚑",
     "everyday": "☖", "child": "✎"
+  },
+
+  "audienceProfile": {
+    "_comment": "Reusable audience configurations. Referenced by ID, not rewritten per atom.",
+    "fields": ["audienceID", "priorKnowledge", "primaryQuestion", "stakes",
+               "trustedEvidence", "likelyMisconceptions", "vocabularyKnown", "timeBudget"]
   },
 
   "evidenceType": {
@@ -41,7 +49,8 @@
 
   "edgeType": {
     "dependsOn": "↓", "feedsInto": "→", "bridgesTo": "≅",
-    "challenges": "⚔", "expands": "⇧", "forksFrom": "⑂", "descendsTo": "↦"
+    "challenges": "⚔", "expands": "⇧", "forksFrom": "⑂", "descendsTo": "↦",
+    "answers": "？", "translatesFor": "☖"
   },
 
   "bridgeGrade": {
@@ -65,5 +74,31 @@
     "isomorphism", "causal", "practical_application",
     "floor_axiom", "definition", "theorem", "bridge",
     "empirical_anchor", "prediction", "boundary"
+  ],
+
+  "reachFormat": [
+    "seo_page", "faq", "glossary_entry", "tiktok_script", "twitter_thread",
+    "instagram_caption", "linkedin_post", "youtube_script", "podcast_outline",
+    "substack_post", "infographic", "one_pager", "toolkit", "debate_card",
+    "visual", "carousel", "reel", "story"
+  ],
+
+  "searchIntent": [
+    "informational", "navigational", "transactional", "comparison"
+  ],
+
+  "visualType": [
+    "diagram", "chart", "infographic", "3d_render", "timeline",
+    "comparison", "process_flow", "equation_visual", "glyph"
+  ],
+
+  "questionContext": [
+    "public_debate", "personal_crisis", "academic_inquiry", "pastoral_care",
+    "family_conversation", "online_comment", "classroom", "self_study"
+  ],
+
+  "resultOutcome": [
+    "applied", "debated", "shared", "taught", "life_changed",
+    "rejected", "partial", "misunderstood", "harmed"
   ]
 }
