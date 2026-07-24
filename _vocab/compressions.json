@@ -1,0 +1,99 @@
+{
+  "_comment": "COMPRESSION CLASSES. A glyph shared by several terms is not a collision - it is a claim that those terms name the same underlying structure. Each class carries a grade and a kill condition like any bridge. Ungraded classes do not propagate.",
+  "vocabularyVersion": "1.1.0",
+  "updated": "2026-07-23",
+
+  "_ladder": [
+    "terms -> compressionClass -> Law -> binary -> [constraint ceiling]",
+    "Every Law is the same binary expressed in one domain's vocabulary.",
+    "chi measures the ratio between the two members of the binary.",
+    "The ladder STOPS at the constraint ceiling. Above it is selection, not compression - see layers.json. Compressing further conflates behavior with instantiation.",
+    "Two failure directions, one generative band: rigid degradation AND chaotic dissolution both classify as decoherent. Three regimes collapse to two valences."
+  ],
+
+  "theBinary": {
+    "id": "tpc:binary",
+    "layer": "tpl:meta-laws",
+    "layerType": "constraint",
+    "_layerNote": "CONSTRAINT LAYER, not generative. Describes how systems behave once they exist; does NOT select which world exists. Selection lives at tpl:logos. See layers.json.",
+    "grade": "structural_identity",
+    "poles": {
+      "coherence": {
+        "id": "tpc:pole/coherence", "glyph": "✺",
+        "definition": "order received from the Source; source-coupled",
+        "laws": "the constructive regime of every Law 1-8; Law 10 itself"
+      },
+      "decoherence": {
+        "id": "tpc:pole/decoherence", "glyph": "✣",
+        "definition": "order attempted from the self; self-referential",
+        "laws": "the destructive regime of every Law 1-8; derivative of Law 10"
+      }
+    },
+    "note": "Law 9 is asymmetric - it does not present two regimes but a direction. Law 10 is asymmetric - coherence is sovereign, decoherence derivative. Laws 1-8 carry the binary symmetrically, regime selected by free will W.",
+    "killCondition": "Exhibit a Law whose two regimes cannot be expressed as source-coupled vs self-referential without redefining either term."
+  },
+
+  "classes": {
+    "noether": {
+      "id": "tpc:class/noether", "glyph": "⟲",
+      "members": ["invariant", "symmetry", "conservation"],
+      "grade": "structural_identity",
+      "propagates": true,
+      "basis": "Noether's theorem: a continuous symmetry and a conserved current are the same fact stated twice. An invariant is what the conservation preserves.",
+      "law": 9,
+      "killCondition": "Exhibit a continuous symmetry with no corresponding conserved quantity in the same system."
+    },
+    "shannon": {
+      "id": "tpc:class/shannon", "glyph": "ℹ",
+      "members": ["information", "signal-noise", "channel-capacity"],
+      "grade": "structural_identity",
+      "propagates": true,
+      "basis": "All three are terms of C = A log2(1 + T/D). Signal-to-noise is the ratio inside; capacity is the value; information is what traverses.",
+      "law": 6,
+      "killCondition": "Show a channel where capacity is independent of the signal-to-noise ratio."
+    },
+    "observer": {
+      "id": "tpc:class/observer", "glyph": "⊙",
+      "members": ["witness", "observer"],
+      "grade": "structural_identity",
+      "propagates": true,
+      "basis": "Resolved in framework: observation and testimony are one act - a state is registered by something outside it. Termination of the observation regress is the Trinity argument.",
+      "law": 7,
+      "killCondition": "Exhibit observation that registers no testimony, or testimony that registers no observation."
+    },
+    "moral-ledger": {
+      "id": "tpc:class/moral-ledger", "glyph": "⚖",
+      "members": ["justice", "moral-conservation"],
+      "grade": "structural_identity",
+      "propagates": true,
+      "basis": "Justice IS the conserved ledger. Law 9: cost cannot disappear, only transfer. Justice is that conservation named morally.",
+      "law": 9,
+      "killCondition": "Exhibit a moral event where the ledger closes with no remainder and no transfer."
+    },
+    "curvature": {
+      "id": "tpc:class/curvature", "glyph": "⬒",
+      "members": ["sin", "curvature"],
+      "grade": "structural_identity",
+      "propagates": true,
+      "basis": "Law 1, Gravitation. Sin IS inward curvature - a mass bending the field toward itself is the same structure as a will bending order toward itself. The glyph carried this definition before the class was declared.",
+      "law": 1,
+      "killCondition": "Exhibit sin with no self-directed curvature of relation, or curvature in the moral domain that is not self-directed."
+    },
+    "radiance": {
+      "id": "tpc:class/radiance", "glyph": "✺",
+      "members": ["coherence", "glory", "field"],
+      "grade": "ungraded",
+      "propagates": false,
+      "basis": "PROPOSED, NOT RESOLVED. Candidate claim: glory is coherence made visible, and field is coherence extended in space. Plausible but underived.",
+      "law": 10,
+      "killCondition": "Show glory attributable to a decohering system, or coherence with no field extension.",
+      "todo": "Grade this. It sits on the binary's own pole glyph, so it must not stay ungraded."
+    }
+  },
+
+  "aliases": {
+    "_comment": "Deprecated or superseded terms resolve here so old atoms stay readable.",
+    "coherence-field": "field",
+    "negentropy": "coherence"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "_comment": "STAGE CONTRACTS. One spec per v12 stage. READMEs are GENERATED from this file - never hand-edited. Change the contract here, regenerate, and every domain updates.",
+  "version": "1.0.0",
+  "architecture": "v12-bidirectional",
+
+  "stages": {
+    "00_inbox_working": {
+      "question": "I am thinking about this",
+      "branch": "capture",
+      "glyph": "draft",
+      "nodeTypes": ["raw"],
+      "required": [],
+      "edgesIn": [],
+      "edgesOut": ["feedsInto -> 01_middle_seed"],
+      "completion": "Material can be expressed as an initial story or candidate claim.",
+      "propagation": "none - raw nodes are orphans until classified",
+      "nlp": "Language ID, dedupe by hash, rough domain guess against _DOMAIN.md cards. Never assert a domain from here.",
+      "validation": "Originals preserved. Nothing here is canonical. No claimID may be issued.",
+      "rendering": "Never published."
+    },
+    "01_middle_seed": {
+      "question": "Here is what we found and why it might matter",
+      "branch": "capture",
+      "glyph": "binder",
+      "nodeTypes": ["seed"],
+      "required": ["title", "whatWeNoticed", "candidateClaim", "whyItMatters", "whatSupportsIt", "whatIsUncertain", "nextDirection"],
+      "edgesIn": ["feedsInto <- 00_inbox_working"],
+      "edgesOut": ["feedsInto -> 02_claim_atoms"],
+      "completion": "At least one material claim has been extracted into 02_claim_atoms.",
+      "propagation": "none - a seed carries no falsification weight",
+      "nlp": "Extract candidate claims. Propose domain + tags + glyph signature. Flag sentences that assert without support.",
+      "validation": "Written for an informed adult. Must state what is uncertain. May not present the formal case as complete.",
+      "rendering": "Optional preview. Mark clearly as unreviewed."
+    },
+    "02_claim_atoms": {
+      "question": "What exactly is being claimed?",
+      "branch": "capture",
+      "glyph": "claim",
+      "nodeTypes": ["claim", "bridge", "application"],
+      "required": ["claimID", "nodeType", "statementTechnical", "statementPlain", "claimClass", "domainType", "status", "evidenceType", "falsificationCondition", "glyphs", "tags", "axiomRoot"],
+      "edgesIn": ["feedsInto <- 01_middle_seed"],
+      "edgesOut": ["dependsOn", "bridgesTo", "descendsTo", "challenges", "expands"],
+      "completion": "Atom validates clean and carries both canonical expressions.",
+      "propagation": "SOURCE OF TRUTH. Falsification originates and propagates from here per bridgeGrade.",
+      "nlp": "Emit mathFormNormal. Propose candidate bridges (ungraded, propagates=false). Never assign a grade.",
+      "validation": "python _scripts/validate_atoms.py must return 0 errors. Only claim nodes carry claimID.",
+      "rendering": "The atom renders BOTH canon folders. Neither is hand-authored."
+    }
+  }
+}

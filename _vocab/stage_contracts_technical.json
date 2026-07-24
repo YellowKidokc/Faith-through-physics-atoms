@@ -1,0 +1,109 @@
+{
+  "_comment": "Technical branch contracts (10-17). Merged with stage_contracts.json at generation time.",
+  "stages": {
+    "10_technical_canon": {
+      "question": "What is the most precise defensible statement?",
+      "branch": "technical", "glyph": "canonical",
+      "nodeTypes": ["rendered-view"],
+      "required": ["definitions", "variables", "units", "assumptions", "scope", "uncertainty", "dependencies", "revisionCondition"],
+      "edgesIn": ["renders <- 02_claim_atoms.statementTechnical"],
+      "edgesOut": ["feedsInto -> 11, 12, 13, 17"],
+      "completion": "Statement locked and versioned in the ledger.",
+      "propagation": "Inherits from the atom. Never originates falsification.",
+      "nlp": "Check every variable is defined and every assumption is stated. Flag undefined symbols.",
+      "validation": "GENERATED, NOT HAND-AUTHORED. Regenerating must produce an identical file. Canonical means current-approved, not unquestionable.",
+      "rendering": "Technical layer of the public page."
+    },
+    "11_technical_paradigm": {
+      "question": "Which existing model changes if the claim holds?",
+      "branch": "technical", "glyph": "broken-symmetry",
+      "nodeTypes": ["paradigm"],
+      "required": ["priorFramework", "breakOrExtension", "newModel", "rivalExplanations", "disciplinaryContext", "paradigmRelation"],
+      "edgesIn": ["dependsOn <- 10_technical_canon"],
+      "edgesOut": ["feedsInto -> 17_doctoral_paper", "descendsTo -> 21_everyday_paradigm"],
+      "completion": "Prior framework named, break located precisely, rivals listed.",
+      "propagation": "Paradigm failure does NOT falsify the underlying claim. Local only.",
+      "nlp": "Detect dramatic language unsupported by the claim's grade. Flag overclaim.",
+      "validation": "The paradigm claim is separate from the claim. A valid result may not justify the paradigm language attached to it.",
+      "rendering": "Context section."
+    },
+    "12_technical_synthesis": {
+      "question": "What formal structures connect across domains?",
+      "branch": "technical", "glyph": "isomorphism",
+      "nodeTypes": ["bridge"],
+      "required": ["sourceDomain", "targetDomain", "bridgeGrade", "mathFormNormal", "substitutionMap", "preservedOperations", "inverseMapping", "boundaryConditions"],
+      "edgesIn": ["dependsOn <- 10_technical_canon"],
+      "edgesOut": ["bridgesTo -> other domains", "feedsInto -> 17_doctoral_paper"],
+      "completion": "Mapping stated, bidirectional test run, grade assigned by a human.",
+      "propagation": "identity/isomorphism PROPAGATE. analogy/metaphorical DO NOT. ungraded never propagates.",
+      "nlp": "Match mathFormNormal across the corpus. Propose candidates as ungraded. GRADING IS HUMAN-ONLY.",
+      "validation": "Analogy, correspondence, isomorphism and identity remain distinct. No grade above analogy without equations, variable correspondence, boundaries and a novel prediction.",
+      "rendering": "Cross-domain section with the grade shown."
+    },
+    "13_hypothesis": {
+      "question": "What should happen if the technical claim is true?",
+      "branch": "technical", "glyph": "prediction",
+      "nodeTypes": ["prediction"],
+      "required": ["prediction", "predictedMagnitude", "decisionThreshold", "method", "baseline", "alternatives", "confidenceBeforeTesting", "resultStatus"],
+      "edgesIn": ["dependsOn <- 10_technical_canon"],
+      "edgesOut": ["feedsInto -> 30_real_world_verdict"],
+      "completion": "Prospective prediction registered BEFORE the result is known.",
+      "propagation": "Failed prediction flags dependents for review; does not auto-falsify the root claim.",
+      "nlp": "Detect retrospective predictions. Flag anything registered after the outcome was available.",
+      "validation": "Technical branch only. The public branch links to these nodes rather than duplicating them.",
+      "rendering": "Prediction card with status."
+    },
+    "14_evidence": {
+      "question": "What bears directly on the claim?",
+      "branch": "technical", "glyph": "evidence",
+      "nodeTypes": ["evidence"],
+      "required": ["sourceType", "sourceRef", "citationStatus", "relevantClaim", "conclusionSeparate"],
+      "edgesIn": ["supports/challenges -> 10_technical_canon or 13_hypothesis"],
+      "edgesOut": ["feedsInto -> 17_doctoral_paper"],
+      "completion": "Negative evidence, null results and replication status recorded alongside favorable evidence.",
+      "propagation": "Empirical failure flags dependents for review. Local unless the claim is empirical at root.",
+      "nlp": "Verify citations resolve. Separate source content from source conclusions.",
+      "validation": "LLM and wiki summaries are NOT decisive evidence. They are baseline maps and belong in 22_lived_synthesis unless they point to inspectable sources.",
+      "rendering": "Evidence ledger, including what cuts against."
+    },
+    "15_falsification": {
+      "question": "How can this claim lose?",
+      "branch": "technical", "glyph": "kill-condition",
+      "nodeTypes": ["kill"],
+      "required": ["killCondition", "attemptDescription", "outcome", "targetClaim", "failureType", "propagationScope"],
+      "edgesIn": ["challenges -> 10_technical_canon"],
+      "edgesOut": ["feedsInto -> 30_real_world_verdict"],
+      "completion": "Kill condition typed to the claim class and at least one attempt recorded.",
+      "propagation": "Per failureType: root_claim=global, mapping_invalid=bridge peers, boundary_exceeded=dependents, measurement/interpretation=local, application_failure=application node only.",
+      "nlp": "Check the kill condition is typed correctly for the claimClass and is actually reachable.",
+      "validation": "FAILED TESTS REMAIN PERMANENTLY VISIBLE. Deleting a failed attempt is a governance breach.",
+      "rendering": "Kill conditions shown with the claim, not hidden."
+    },
+    "16_objections": {
+      "question": "What is the strongest opposing case?",
+      "branch": "technical", "glyph": "doubt",
+      "nodeTypes": ["objection"],
+      "required": ["objection", "objectionSource", "strength", "response", "status", "targetClaim"],
+      "edgesIn": ["challenges -> claim or paper"],
+      "edgesOut": ["feedsInto -> 17_doctoral_paper"],
+      "completion": "At least one serious-strength objection, steelmanned and attributed.",
+      "propagation": "Unresolved objections do not falsify but must remain visible.",
+      "nlp": "Score objection strength. Flag strawmen. A weak objection filed here is a defect.",
+      "validation": "Objections develop throughout the branch, not after the paper is written. Unresolved points stay adjacent to responses.",
+      "rendering": "War-room section with unresolved items marked."
+    },
+    "17_doctoral_paper": {
+      "question": "The final formal composite",
+      "branch": "technical", "glyph": "proof",
+      "nodeTypes": ["paper"],
+      "required": ["promise", "receipt", "caveat", "declaredFrame", "coreClaimRef", "evidenceRefs", "falsificationRefs", "objectionRefs", "everydayBridge", "provenance"],
+      "edgesIn": ["hasPart <- claims, evidence, kill, objection nodes"],
+      "edgesOut": ["descendsTo -> 26_audience"],
+      "completion": "All ten conditions of REIMAGINED_DOCTORAL_PAPER.md satisfied. Nine of ten is not compliant.",
+      "propagation": "Composite only. Falsify a part and the paper is affected automatically.",
+      "nlp": "Run the ten-condition compliance check. Report which condition fails.",
+      "validation": "LAST product of the branch, not its midpoint. The paper renders rigor already carried by the claims; it does not create rigor by sounding academic. Not every seed deserves a paper.",
+      "rendering": "Full paper with runnable witnesses."
+    }
+  }
+}
