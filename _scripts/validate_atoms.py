@@ -74,7 +74,7 @@ WARN = ["tags", "keywords", "glyphs", "mathFormNormal", "audienceLevel"]
 if __name__ == "__main__":
     errs, warns, n = [], [], 0
     for path in glob.glob(os.path.join(REPO, "**", "*.jsonld"), recursive=True):
-        if "_vocab" in path: continue
+        if "_vocab" in path or "_protocol" in path: continue
         n += 1
         try:
             atom = json.load(open(path, encoding="utf-8"))

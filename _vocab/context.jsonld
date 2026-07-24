@@ -4,50 +4,324 @@
     "tp": "https://faiththruphysics.com/vocab/",
     "schema": "https://schema.org/",
     "skos": "http://www.w3.org/2004/02/skos/core#",
-
-    "nodeID":            {"@id": "tp:nodeID"},
-    "claimID":           {"@id": "tp:claimID"},
-    "nodeType":          {"@id": "tp:nodeType",   "@type": "@vocab"},
-    "status":            {"@id": "tp:status",     "@type": "@vocab"},
-    "domainType":        {"@id": "tp:domainType", "@type": "@vocab"},
-    "audienceLevel":     {"@id": "tp:audienceLevel", "@type": "@vocab"},
-    "claimClass":        {"@id": "tp:claimClass", "@type": "@vocab"},
-    "evidenceType":      {"@id": "tp:evidenceType", "@type": "@vocab"},
-    "verifiedBy":        {"@id": "tp:verifiedBy", "@type": "@vocab", "@container": "@set"},
-    "paradigmRelation":  {"@id": "tp:paradigmRelation", "@type": "@vocab"},
-
-    "statementTechnical": {"@id": "tp:statementTechnical"},
-    "statementPlain":     {"@id": "tp:statementPlain"},
-    "mathematicalForm":   {"@id": "tp:mathematicalForm"},
-    "mathFormNormal":     {"@id": "tp:mathFormNormal"},
-    "axiomRoot":          {"@id": "tp:axiomRoot", "@type": "@id"},
-
-    "glyphs":   {"@id": "tp:glyphs",   "@container": "@list"},
-    "tags":     {"@id": "tp:tags",     "@type": "@vocab", "@container": "@set"},
-    "keywords": {"@id": "tp:keywords", "@container": "@set"},
-
-    "edges":       {"@id": "tp:edges", "@container": "@set"},
-    "type":        {"@id": "tp:edgeType", "@type": "@vocab"},
-    "target":      {"@id": "tp:target",   "@type": "@id"},
-    "grade":       {"@id": "tp:bridgeGrade", "@type": "@vocab"},
-    "propagates":  {"@id": "tp:propagates", "@type": "schema:Boolean"},
-    "failureType": {"@id": "tp:failureType", "@type": "@vocab"},
-    "propagationScope": {"@id": "tp:propagationScope", "@type": "@vocab"},
-
-    "descentInvariant":       {"@id": "tp:descentInvariant"},
-    "claimMeaningPreserved":  {"@id": "tp:claimMeaningPreserved"},
-    "confidencePreserved":    {"@id": "tp:confidencePreserved"},
-    "boundariesPreserved":    {"@id": "tp:boundariesPreserved"},
-    "killConditionPreserved": {"@id": "tp:killConditionPreserved"},
-    "addedPremises":          {"@id": "tp:addedPremises", "@container": "@set"},
-    "omittedMaterial":        {"@id": "tp:omittedMaterial", "@container": "@set"},
-    "applicationLeap":        {"@id": "tp:applicationLeap", "@type": "@vocab"},
-    "reviewStatus":           {"@id": "tp:reviewStatus", "@type": "@vocab"},
-
-    "falsificationCondition": {"@id": "tp:falsificationCondition"},
-    "kernelChecked":          {"@id": "tp:kernelChecked", "@type": "schema:Boolean"},
-    "challengeStatus":        {"@id": "tp:challengeStatus", "@type": "@vocab"},
-    "aiContributionDeclared": {"@id": "tp:aiContributionDeclared", "@type": "schema:Boolean"},
-    "sourceReference":        {"@id": "tp:sourceReference"}
+    "nodeID": {
+      "@id": "tp:nodeID"
+    },
+    "claimID": {
+      "@id": "tp:claimID"
+    },
+    "nodeType": {
+      "@id": "tp:nodeType",
+      "@type": "@vocab"
+    },
+    "status": {
+      "@id": "tp:status",
+      "@type": "@vocab"
+    },
+    "domainType": {
+      "@id": "tp:domainType",
+      "@type": "@vocab"
+    },
+    "audienceLevel": {
+      "@id": "tp:audienceLevel",
+      "@type": "@vocab"
+    },
+    "claimClass": {
+      "@id": "tp:claimClass",
+      "@type": "@vocab"
+    },
+    "evidenceType": {
+      "@id": "tp:evidenceType",
+      "@type": "@vocab"
+    },
+    "verifiedBy": {
+      "@id": "tp:verifiedBy",
+      "@type": "@vocab",
+      "@container": "@set"
+    },
+    "paradigmRelation": {
+      "@id": "tp:paradigmRelation",
+      "@type": "@vocab"
+    },
+    "statementTechnical": {
+      "@id": "tp:statementTechnical"
+    },
+    "statementPlain": {
+      "@id": "tp:statementPlain"
+    },
+    "mathematicalForm": {
+      "@id": "tp:mathematicalForm"
+    },
+    "mathFormNormal": {
+      "@id": "tp:mathFormNormal"
+    },
+    "axiomRoot": {
+      "@id": "tp:axiomRoot",
+      "@type": "@id"
+    },
+    "glyphs": {
+      "@id": "tp:glyphs",
+      "@container": "@list"
+    },
+    "tags": {
+      "@id": "tp:tags",
+      "@type": "@vocab",
+      "@container": "@set"
+    },
+    "keywords": {
+      "@id": "tp:keywords",
+      "@container": "@set"
+    },
+    "edges": {
+      "@id": "tp:edges",
+      "@container": "@set"
+    },
+    "type": {
+      "@id": "tp:edgeType",
+      "@type": "@vocab"
+    },
+    "target": {
+      "@id": "tp:target",
+      "@type": "@id"
+    },
+    "grade": {
+      "@id": "tp:bridgeGrade",
+      "@type": "@vocab"
+    },
+    "propagates": {
+      "@id": "tp:propagates",
+      "@type": "schema:Boolean"
+    },
+    "failureType": {
+      "@id": "tp:failureType",
+      "@type": "@vocab"
+    },
+    "propagationScope": {
+      "@id": "tp:propagationScope",
+      "@type": "@vocab"
+    },
+    "descentInvariant": {
+      "@id": "tp:descentInvariant"
+    },
+    "claimMeaningPreserved": {
+      "@id": "tp:claimMeaningPreserved"
+    },
+    "confidencePreserved": {
+      "@id": "tp:confidencePreserved"
+    },
+    "boundariesPreserved": {
+      "@id": "tp:boundariesPreserved"
+    },
+    "killConditionPreserved": {
+      "@id": "tp:killConditionPreserved"
+    },
+    "addedPremises": {
+      "@id": "tp:addedPremises",
+      "@container": "@set"
+    },
+    "omittedMaterial": {
+      "@id": "tp:omittedMaterial",
+      "@container": "@set"
+    },
+    "applicationLeap": {
+      "@id": "tp:applicationLeap",
+      "@type": "@vocab"
+    },
+    "reviewStatus": {
+      "@id": "tp:reviewStatus",
+      "@type": "@vocab"
+    },
+    "falsificationCondition": {
+      "@id": "tp:falsificationCondition"
+    },
+    "kernelChecked": {
+      "@id": "tp:kernelChecked",
+      "@type": "schema:Boolean"
+    },
+    "challengeStatus": {
+      "@id": "tp:challengeStatus",
+      "@type": "@vocab"
+    },
+    "aiContributionDeclared": {
+      "@id": "tp:aiContributionDeclared",
+      "@type": "schema:Boolean"
+    },
+    "sourceReference": {
+      "@id": "tp:sourceReference"
+    },
+    "claimBeacon": {
+      "@id": "tp:claimBeacon"
+    },
+    "protocol": {
+      "@id": "tp:protocol"
+    },
+    "protocolVersion": {
+      "@id": "tp:protocolVersion"
+    },
+    "permanentID": {
+      "@id": "tp:permanentID"
+    },
+    "canonicalURL": {
+      "@id": "tp:canonicalURL",
+      "@type": "@id"
+    },
+    "provenance": {
+      "@id": "tp:provenance"
+    },
+    "priorVersions": {
+      "@id": "tp:priorVersions",
+      "@container": "@set"
+    },
+    "have": {
+      "@id": "tp:have",
+      "@container": "@set"
+    },
+    "need": {
+      "@id": "tp:need",
+      "@container": "@set"
+    },
+    "breakIf": {
+      "@id": "tp:breakIf",
+      "@container": "@set"
+    },
+    "claimType": {
+      "@id": "tp:claimType",
+      "@type": "@vocab"
+    },
+    "domain": {
+      "@id": "tp:domain",
+      "@type": "@vocab"
+    },
+    "masterEquationVariables": {
+      "@id": "tp:masterEquationVariables",
+      "@container": "@set"
+    },
+    "bridgeGrade": {
+      "@id": "tp:bridgeGrade",
+      "@type": "@vocab"
+    },
+    "acceptedLinks": {
+      "@id": "tp:acceptedLinks",
+      "@container": "@set"
+    },
+    "proposalFeed": {
+      "@id": "tp:proposalFeed",
+      "@type": "@id"
+    },
+    "ClaimBeacon": {
+      "@id": "tp:ClaimBeacon"
+    },
+    "ClaimBeaconProposal": {
+      "@id": "tp:ClaimBeaconProposal"
+    },
+    "sourceAtom": {
+      "@id": "tp:sourceAtom",
+      "@type": "@id"
+    },
+    "targetAtom": {
+      "@id": "tp:targetAtom",
+      "@type": "@id"
+    },
+    "proposedEdgeType": {
+      "@id": "tp:proposedEdgeType",
+      "@type": "@vocab"
+    },
+    "matchReason": {
+      "@id": "tp:matchReason"
+    },
+    "confidence": {
+      "@id": "tp:confidence"
+    },
+    "validationReceipt": {
+      "@id": "tp:validationReceipt"
+    },
+    "sourceDomain": {
+      "@id": "tp:sourceDomain"
+    },
+    "targetDomain": {
+      "@id": "tp:targetDomain"
+    },
+    "hubOntology": {
+      "@id": "tp:hubOntology"
+    },
+    "mappingTable": {
+      "@id": "tp:mappingTable"
+    },
+    "preservedRelations": {
+      "@id": "tp:preservedRelations"
+    },
+    "reverseMapping": {
+      "@id": "tp:reverseMapping"
+    },
+    "boundaryConditions": {
+      "@id": "tp:boundaryConditions"
+    },
+    "propagatesFalsification": {
+      "@id": "tp:propagatesFalsification"
+    },
+    "commutativityTests": {
+      "@id": "tp:commutativityTests"
+    },
+    "conflictMatrix": {
+      "@id": "tp:conflictMatrix"
+    },
+    "invariantMonitors": {
+      "@id": "tp:invariantMonitors"
+    },
+    "linkedProofs": {
+      "@id": "tp:linkedProofs"
+    },
+    "role": {
+      "@id": "tp:role"
+    },
+    "terms": {
+      "@id": "tp:terms"
+    },
+    "definition": {
+      "@id": "tp:definition"
+    },
+    "rules": {
+      "@id": "tp:rules"
+    },
+    "conflict": {
+      "@id": "tp:conflict"
+    },
+    "priority": {
+      "@id": "tp:priority"
+    },
+    "result": {
+      "@id": "tp:result"
+    },
+    "monitorID": {
+      "@id": "tp:monitorID"
+    },
+    "subject": {
+      "@id": "tp:subject"
+    },
+    "invariant": {
+      "@id": "tp:invariant"
+    },
+    "reviewTrigger": {
+      "@id": "tp:reviewTrigger"
+    },
+    "lastChecked": {
+      "@id": "tp:lastChecked"
+    },
+    "bridgeRefs": {
+      "@id": "tp:bridgeRefs",
+      "@container": "@set"
+    },
+    "ontologyRefs": {
+      "@id": "tp:ontologyRefs",
+      "@container": "@set"
+    },
+    "policyRefs": {
+      "@id": "tp:policyRefs",
+      "@container": "@set"
+    },
+    "protocolRecords": {
+      "@id": "tp:protocolRecords",
+      "@container": "@set"
+    }
   }
 }

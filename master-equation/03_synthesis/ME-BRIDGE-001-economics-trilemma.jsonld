@@ -1,0 +1,115 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "CreativeWork",
+  "@id": "https://faiththruphysics.com/bridges/master-equation/economics/trilemma-cost-bearing",
+  "nodeID": "tp:bridges/master-equation/economics/trilemma-cost-bearing",
+  "name": "Master Equation ↔ Economics Cost-Bearing Bridge",
+  "nodeType": "bridge",
+  "status": "active",
+  "version": "0.1.0",
+  "dateCreated": "2026-07-24",
+  "dateModified": "2026-07-24",
+  "sourceDomain": "master-equation",
+  "targetDomain": "economics",
+  "hubOntology": "https://faiththruphysics.com/protocol/claim-beacon/v0.1/pivot-ontology",
+  "sourceAtom": "tp:ME/L5/C1",
+  "targetAtom": "tp:economics/01/001",
+  "grade": "structural_identity",
+  "propagatesFalsification": true,
+  "mappingTable": [
+    {
+      "source": "damage D > 0",
+      "pivot": "cost or loss requiring allocation",
+      "target": "economic loss L > 0"
+    },
+    {
+      "source": "transfer T_A",
+      "pivot": "cost assigned to responsible party",
+      "target": "payer-side transfer"
+    },
+    {
+      "source": "transfer T_B",
+      "pivot": "cost received or forgiven by harmed party",
+      "target": "recipient-side settlement"
+    },
+    {
+      "source": "external transfer T_ext",
+      "pivot": "outside cost-bearer",
+      "target": "third-party subsidy or guarantor"
+    }
+  ],
+  "preservedRelations": [
+    "strong budget balance preserves cost conservation",
+    "external voluntary transfer breaks the closed-system impossibility without erasing cost"
+  ],
+  "reverseMapping": [
+    {
+      "target": "balanced internal transfer",
+      "pivot": "closed-system allocation",
+      "source": "T_A = T_B"
+    },
+    {
+      "target": "third-party subsidy",
+      "pivot": "external cost absorption",
+      "source": "T_ext = D"
+    }
+  ],
+  "boundaryConditions": [
+    "The bridge concerns allocation algebra, not every moral or theological interpretation.",
+    "Economic analogues must retain nonzero loss and explicit payer/recipient roles."
+  ],
+  "commutativityTests": [
+    {
+      "testID": "CB-COMM-ME-ECON-001",
+      "path": "master-equation → pivot → economics → pivot → master-equation",
+      "expectedInvariant": "nonzero cost remains conserved unless an external transfer is introduced",
+      "status": "specified"
+    }
+  ],
+  "conflictMatrix": "https://faiththruphysics.com/protocol/claim-beacon/v0.1/conflict-matrix",
+  "invariantMonitors": [
+    {
+      "monitorID": "CB-MON-ME-ECON-001",
+      "subject": "mappingTable",
+      "invariant": "cost conservation and role separation remain explicit",
+      "reviewTrigger": "source atom mathFormNormal, economics target, or pivot ontology changes",
+      "status": "active"
+    }
+  ],
+  "linkedProofs": [
+    "C:\\theophysics\\CANONICAL\\_docs\\GMF3_Trilemma_Scoring_Engine.xlsx (Impossibility Proof sheet)"
+  ],
+  "validationReceipt": {
+    "validator": "Claim Beacon Protocol v0.1 bootstrap",
+    "method": "carried forward from accepted structural_identity bridge edge",
+    "acceptedBy": "canonical atom graph prior to beacon split",
+    "acceptedAt": "2026-07-24",
+    "bridgeGrade": "structural_identity",
+    "propagatesFalsification": true
+  },
+  "tags": [
+    "justice",
+    "mercy",
+    "moral-conservation",
+    "equation",
+    "isomorphism"
+  ],
+  "keywords": [
+    "cost conservation",
+    "budget balance",
+    "bridge record",
+    "commutativity test",
+    "external transfer"
+  ],
+  "glyphs": [
+    "≅",
+    "≡",
+    "Μ",
+    "⚖"
+  ],
+  "mathFormNormal": "closed-system cost allocation maps to balanced transfer; external cost-bearer maps to third-party transfer",
+  "audienceLevel": "specialist"
+}

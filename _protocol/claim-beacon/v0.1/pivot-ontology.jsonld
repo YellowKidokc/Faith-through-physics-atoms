@@ -1,0 +1,17 @@
+{
+  "@context": ["https://schema.org", "https://faiththruphysics.com/vocab/context.jsonld"],
+  "@id": "https://faiththruphysics.com/protocol/claim-beacon/v0.1/pivot-ontology",
+  "name": "Claim Beacon Pivot Ontology v0.1",
+  "protocol": "ClaimBeacon",
+  "protocolVersion": "0.1.0",
+  "role": "shared hub ontology",
+  "terms": [
+    {"term": "claim", "definition": "one precise assertion with its own test contract"},
+    {"term": "bridge", "definition": "a tested mapping between domains or claims"},
+    {"term": "have", "definition": "support, derivation, data, or mapping the atom offers"},
+    {"term": "need", "definition": "evidence, definitions, dependencies, or mappings required"},
+    {"term": "breakIf", "definition": "explicit condition that weakens or falsifies the claim or bridge"},
+    {"term": "propagation", "definition": "falsification transfer across accepted structural identity or isomorphism edges only"}
+  ],
+  "bridgeGrades": ["structural_identity", "structural_isomorphism", "structural_analogy", "metaphorical", "ungraded"]
+}
