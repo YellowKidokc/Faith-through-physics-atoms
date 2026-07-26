@@ -11,6 +11,12 @@
 Claims rise only as far as their burden requires.
 Truth descends as far as people require.**
 
+Proposed node connections can now be pressure-tested through the provider-neutral
+[Adversarial Review Gate](_docs/ADVERSARIAL_REVIEW_GATE.md). Its GUI and CLI
+block opposed wires while reserving every acceptance decision for a human. The
+same workspace can generate reviewable equation, word-equation, explanation,
+and analogy layers as proposed translation nodes.
+
 ---
 
 ## CRITICAL DISTINCTIONS
