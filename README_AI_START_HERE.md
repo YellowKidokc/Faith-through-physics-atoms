@@ -156,6 +156,7 @@ For complete details, read these canonical documents:
 - Node types: _docs\CLAIM_ATOM_NODE_TYPES.md
 - Decision log: _docs\ARCHITECTURE_DECISION_LOG.md
 - Codex build pack: _docs\ATOM_BUILD_PACK.md
+- Folder beacon scan and batch editing: _docs\FOLDER_BEACON_SYSTEM.md
 
 ---
 
