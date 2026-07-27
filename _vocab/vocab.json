@@ -62,10 +62,27 @@
   },
 
   "propagationScope": {
+    "_comment": "FAILURE travelling outward. Every entry here is a failure type. Status ceilings are a different direction and live in statusCeiling below.",
     "root_claim": "global", "mapping_invalid": "bridge_peers",
     "boundary_exceeded": "dependents", "measurement_invalid": "local",
     "empirical_failure": "dependents", "interpretation": "local",
     "application_failure": "application_node_only"
+  },
+
+  "statusRank": {
+    "_comment": "Ordering of the confidence ladder. weakened sits at 1 because it was knocked down from higher. Dead states are not ranked - they are absolute ceilings.",
+    "captured": 0, "classified": 1, "weakened": 1, "proposed": 2,
+    "active": 3, "verified": 4, "kernel_verified": 5
+  },
+
+  "statusCeiling": {
+    "_comment": "STATUS travelling up from dependencies. The third direction, added 2026-07-26. propagationScope covers failure going out; descentInvariant.confidencePreserved covers confidence going down to a public audience; this covers status going up. Enforced by _scripts/validate_atoms.py::check_status_monotonicity.",
+    "rule": "status <= min(status of every dependsOn target, and of every bridgesTo target whose grade propagates)",
+    "deadStates": ["falsified", "deprecated", "superseded"],
+    "deadRule": "any dependsOn target in a dead state is an absolute ceiling - the dependent cannot hold any live status",
+    "exception": "rederivation.artifact",
+    "exceptionRule": "status may exceed the ceiling ONLY when the atom carries rederivation.artifact naming an independent re-derivation. Citation, restatement, summary and compression are NOT re-derivation.",
+    "basis": "data processing inequality - truth -> source -> restatement is a Markov chain and post-processing cannot increase information about the source. Re-derivation breaks the chain, which is why it is the only exception."
   },
 
   "claimClass": [

@@ -130,10 +130,113 @@ def check(atom, path, errs):
     if atom.get("claimID") and atom.get("nodeType") not in (None, "claim"):
         errs.append(f"{os.path.basename(path)}: non-claim node has claimID")
 
+    # --- SELF-CONSISTENCY (added 2026-07-26) -------------------------------
+    # A status claim must agree with the atom's own verification fields.
+    # This needs no graph resolution - it is visible inside the single file,
+    # which makes it the cheapest check in the system and the one that fires
+    # even when an atom's dependencies have not been written yet.
+    st = atom.get("status")
+    if st == "kernel_verified" and atom.get("kernelChecked") is not True:
+        errs.append(f"{os.path.basename(path)}: status='kernel_verified' but "
+                    f"kernelChecked={atom.get('kernelChecked')} - the kernel "
+                    f"either checked it or it did not")
+    if st == "verified" and atom.get("verificationStatus") in (None, "", "informal", "none", "unverified"):
+        errs.append(f"{os.path.basename(path)}: status='verified' but "
+                    f"verificationStatus='{atom.get('verificationStatus')}' - "
+                    f"name the verification or lower the status")
+
+# ---------------------------------------------------------------------------
+# STATUS MONOTONICITY  (added 2026-07-26)
+#
+# A claim's status may never exceed the weakest status it depends on.
+# Restating, citing, or summarising NEVER strengthens a claim. Status rises
+# only through a re-derivation event that names its own artifact.
+#
+# Basis: the data processing inequality. truth -> source -> restatement is a
+# Markov chain, and post-processing cannot increase information about the
+# source. Re-derivation is the one case that breaks the chain -- the agent
+# went and looked at the thing itself -- which is why it is the only legal
+# exception.
+#
+# The existing propagationScope table covers FAILURE travelling outward and
+# descentInvariant covers CONFIDENCE travelling down to a public audience.
+# This covers the third direction: STATUS travelling up from dependencies.
+# ---------------------------------------------------------------------------
+
+STATUS_RANK = {
+    "captured": 0, "classified": 1, "weakened": 1, "proposed": 2,
+    "active": 3, "verified": 4, "kernel_verified": 5,
+}
+DEAD_STATUS = {"falsified", "deprecated", "superseded"}
+CEILING_EDGE = "dependsOn"
+
+
+def atom_keys(atom):
+    """Every identifier an edge target may legally use to reach this atom."""
+    return [k for k in (atom.get("nodeID"), atom.get("@id"),
+                        atom.get("claimID")) if k]
+
+
+def check_status_monotonicity(atoms):
+    """Second pass. atoms: list of (path, atom). Needs the whole graph."""
+    errs, warns = [], []
+    index = {}
+    for path, atom in atoms:
+        for k in atom_keys(atom):
+            index[k] = (path, atom)
+
+    for path, atom in atoms:
+        name = os.path.basename(path)
+        st = atom.get("status")
+        if st is None or st in DEAD_STATUS:
+            continue                    # dead nodes impose a ceiling, don't inherit
+        my_rank = STATUS_RANK.get(st)
+        if my_rank is None:
+            continue                    # unknown status already reported by check()
+
+        rd = atom.get("rederivation") or {}
+        rederived = rd.get("artifact") if isinstance(rd, dict) else None
+
+        for e in atom.get("edges", []):
+            et, tgt = e.get("type"), e.get("target")
+            if not tgt:
+                continue
+            # bridges transmit status only if the grade is allowed to propagate
+            if et == "bridgesTo":
+                gr = e.get("grade")
+                if not (gr and V["bridgeGrade"].get(gr, {}).get("propagates")):
+                    continue
+            elif et != CEILING_EDGE:
+                continue
+
+            if tgt not in index:
+                warns.append(f"{name}: edge target '{tgt}' not found - "
+                             f"status ceiling unverifiable")
+                continue
+
+            dep = index[tgt][1]
+            dep_st = dep.get("status")
+
+            if dep_st in DEAD_STATUS:
+                errs.append(f"{name}: status='{st}' but depends on '{tgt}' "
+                            f"which is '{dep_st}' - dead dependency")
+                continue
+
+            dep_rank = STATUS_RANK.get(dep_st)
+            if dep_rank is None:
+                continue
+            if my_rank > dep_rank and not rederived:
+                errs.append(f"{name}: status='{st}' exceeds dependency '{tgt}' "
+                            f"at '{dep_st}' - status cannot rise by citation. "
+                            f"Attach rederivation.artifact or lower to '{dep_st}'")
+    return errs, warns
+
+
 WARN = ["tags", "keywords", "glyphs", "mathFormNormal", "audienceLevel"]
 
 if __name__ == "__main__":
     errs, warns, n = check_glyph_collisions() + check_enum_uniqueness(), [], 0
+    loaded = []
     for cid, c in CP["classes"].items():
         if c.get("grade") == "ungraded":
             warns.append(f"VOCAB: compression class '{cid}' is ungraded "
@@ -146,9 +249,14 @@ if __name__ == "__main__":
         except Exception as ex:
             errs.append(f"{os.path.basename(path)}: unreadable ({ex})"); continue
         check(atom, path, errs)
+        loaded.append((path, atom))
         missing = [f for f in WARN if not atom.get(f)]
         if missing:
             warns.append(f"{os.path.basename(path)}: missing {', '.join(missing)}")
+
+    mono_errs, mono_warns = check_status_monotonicity(loaded)
+    errs += mono_errs
+    warns += mono_warns
 
     print(f"validated {n} atoms")
     for e in errs:  print("  ERROR  ", e)
