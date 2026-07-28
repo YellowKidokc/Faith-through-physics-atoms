@@ -1,0 +1,62 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-023",
+  "atom_uid": "sha256:f91ffb25489686aeb68a8d74d1b259913332ede22417d7b4bc60f01d446d16f9",
+  "title": "ISO-023 - Consilience (Biblical/Scientific)",
+  "claim": "ISO-023: Consilience (Biblical/Scientific) maps Philosophy of Science (Whewell) to Biblical Cosmological Language. Workbook verdict: Level 1. Honest verdict: Self-classified L1. Retrospective not predictive.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C0_ANALOGY",
+  "assumptions": [
+    "Philosophy of Science (Whewell)",
+    "Biblical Cosmological Language",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "Logos/John 1 genuine at surface",
+    "Self-classified L1. Retrospective not predictive."
+  ],
+  "equations": [],
+  "bridges": [
+    "Philosophy of Science (Whewell) -> Biblical Cosmological Language"
+  ],
+  "dependencies": [
+    "ISO-023"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Self-classifies L1. ANE language. Retrospective."
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Test B: Non-Arbitrariness fails in source evaluation.",
+    "Test C: Constraint fails in source evaluation.",
+    "Test D: Bidirectional fails in source evaluation.",
+    "Weakest link remains unresolved: Self-classifies L1. ANE language. Retrospective."
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-023 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:b2e925f50a5f2e3644ce8d05098198a60a387b12de9df3d3cfcd23655ae01140"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-023"
+}

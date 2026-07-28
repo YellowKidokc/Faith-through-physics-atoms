@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-030",
+  "atom_uid": "sha256:c079564321fa05f1cbb616ed3e7896213852686e1819a083072c285d39ae80fe",
+  "title": "ISO-030 - Genetics ↔ Scriptural Transmission",
+  "claim": "ISO-030: Genetics ↔ Scriptural Transmission maps Molecular Biology to Bibliology (Scripture). Workbook verdict: Level 3. Honest verdict: Full doc confirms. Information topology identical.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "assumptions": [
+    "Molecular Biology",
+    "Bibliology (Scripture)",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "Swap PASSED at topology. Central Dogma preserved.",
+    "Full doc confirms. Information topology identical."
+  ],
+  "equations": [],
+  "bridges": [
+    "Molecular Biology -> Bibliology (Scripture)"
+  ],
+  "dependencies": [
+    "ISO-030"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Metric swap fails; epigenetics less rigorous"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: Metric swap fails; epigenetics less rigorous"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-030 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:24ad3b25208fa347a207fba743f7701a702d4dd854a19ce642942b8ae8752659"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-030"
+}

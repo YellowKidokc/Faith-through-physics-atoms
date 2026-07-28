@@ -1,0 +1,62 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-trinity-001",
+  "atom_uid": "sha256:3694bdc8efbfcda4f659bcbea72cee27d4b8560cd4ed4af2b47d33362458a89c",
+  "title": "TRINITY-001 - Potential → Pattern → Actualization",
+  "claim": "TRINITY-001: Potential → Pattern → Actualization maps Multi-domain (8 domains) to Trinity (Father/Son/Spirit). Workbook verdict: Level 3. Honest verdict: Strongest meta-structural claim.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C4_REVIEW_IDENTITY_CANDIDATE",
+  "assumptions": [
+    "Multi-domain (8 domains)",
+    "Trinity (Father/Son/Spirit)",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "8 domains; non-interchangeable roles; collapse on removal",
+    "Strongest meta-structural claim."
+  ],
+  "equations": [],
+  "bridges": [
+    "Multi-domain (8 domains) -> Trinity (Father/Son/Spirit)"
+  ],
+  "dependencies": [
+    "TRINITY-001"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Source/form/output common; need minimality proof",
+    "Promotion blocker: Need to prove triad is MINIMAL generative structure (no simpler substrate produces all 8 outputs)",
+    "Promotion blocker: Must show derivation FROM generator, not just mapping TO each other",
+    "Promotion blocker: Requires operational definitions for at least one domain entity"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: Source/form/output common; need minimality proof"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported TRINITY-001 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:ddf87b7c890cf0a3c9879543931edb9dd9265aeb8239d43e256b6777b79376b5"
+    }
+  ],
+  "source_claim_id": "ISO:TRINITY-001"
+}
