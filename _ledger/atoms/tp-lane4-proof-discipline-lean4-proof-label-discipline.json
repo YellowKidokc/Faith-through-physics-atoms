@@ -1,0 +1,39 @@
+{
+  "atom_id": "tp:lane4/proof-discipline/lean4-proof-label-discipline",
+  "atom_uid": "sha256:b5353343e05b5f59c4184a0fff8b2986454c4fc861e515f3af95cf6d39d9cec0",
+  "title": "Lean4 Proof Label Discipline",
+  "claim": "Lean labels state whether compilation proves a theorem, a conditional, or only a guardrail.",
+  "domain": "proof-discipline",
+  "lane": "Lean4",
+  "claim_class": "framework_guardrail",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Lane labels are interpreted according to their declared evidentiary scope."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "LANE4_ATOM_LEDGER_BUILD_REPORT.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_seeded",
+      "result": "recorded",
+      "artifact_path": "LANE4_ATOM_LEDGER_BUILD_REPORT.md",
+      "meaning": "Initial Lane 4 fixture created.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Codex",
+      "lane": "Lean4",
+      "event_id": "sha256:1f1d3fdb475fcb07ef65abdf13ba5cdab41bcbffdbd4677905a72fb751f0b9f5"
+    }
+  ],
+  "source_claim_id": "LEAN4_PROOF_LABEL_DISCIPLINE"
+}
