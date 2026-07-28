@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/protocol/claim-beacon/v0.1/bridge-record.schema.json",
+  "title": "Claim Beacon Bridge Record v0.1",
+  "type": "object",
+  "required": ["@context", "nodeID", "nodeType", "status", "sourceDomain", "targetDomain", "hubOntology", "mappingTable", "grade", "propagatesFalsification", "validationReceipt"],
+  "properties": {
+    "nodeID": {"type": "string"},
+    "nodeType": {"const": "bridge"},
+    "status": {"enum": ["proposed", "active", "verified", "weakened", "falsified", "deprecated", "superseded"]},
+    "sourceDomain": {"type": "string"},
+    "targetDomain": {"type": "string"},
+    "hubOntology": {"type": "string"},
+    "mappingTable": {"type": "array", "items": {"type": "object"}},
+    "preservedRelations": {"type": "array", "items": {"type": "string"}},
+    "reverseMapping": {"type": "array", "items": {"type": "object"}},
+    "boundaryConditions": {"type": "array", "items": {"type": "string"}},
+    "grade": {"enum": ["structural_identity", "structural_isomorphism", "structural_analogy", "metaphorical", "ungraded"]},
+    "propagatesFalsification": {"type": "boolean"},
+    "commutativityTests": {"type": "array", "items": {"type": "object"}},
+    "conflictMatrix": {"type": "array", "items": {"type": "object"}},
+    "invariantMonitors": {"type": "array", "items": {"type": "object"}},
+    "linkedProofs": {"type": "array", "items": {"type": "string"}},
+    "validationReceipt": {"type": "object"}
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/protocol/claim-beacon/v0.1/invariant-monitor.schema.json",
+  "title": "Claim Beacon Invariant Monitor v0.1",
+  "type": "object",
+  "required": ["monitorID", "subject", "invariant", "reviewTrigger", "status"],
+  "properties": {
+    "monitorID": {"type": "string"},
+    "subject": {"type": "string"},
+    "invariant": {"type": "string"},
+    "reviewTrigger": {"type": "string"},
+    "lastChecked": {"type": "string"},
+    "status": {"enum": ["active", "review_needed", "retired"]}
+  }
+}

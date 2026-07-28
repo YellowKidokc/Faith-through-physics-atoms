@@ -242,7 +242,7 @@ if __name__ == "__main__":
             warns.append(f"VOCAB: compression class '{cid}' is ungraded "
                          f"({', '.join(c['members'])}) - grade it or it cannot propagate")
     for path in glob.glob(os.path.join(REPO, "**", "*.jsonld"), recursive=True):
-        if "_vocab" in path: continue
+        if "_vocab" in path or "_protocol" in path: continue
         n += 1
         try:
             atom = json.load(open(path, encoding="utf-8"))

@@ -1,0 +1,41 @@
+{
+  "atom_id": "tp:lane4/master-equation/master-equation-v3-canonical-form",
+  "atom_uid": "sha256:60d8cc8158be365517f1a121d36b2c39999b15bbd6bc6f2b3506e4030e1d3757",
+  "title": "Master Equation v3 Canonical Form",
+  "claim": "Master Equation v3 uses nine factors with C_W as a wrapper/operator.",
+  "domain": "master-equation",
+  "lane": "Mathematics",
+  "claim_class": "formal_system",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Lane labels are interpreted according to their declared evidentiary scope."
+  ],
+  "definitions": [],
+  "equations": [
+    "X=(G,M,E,S,T,K,Q,R,F); chi(X)=C_W[prod_i X_i]; dX/dt = W(X,t) grad chi(X)+eta(X,t)"
+  ],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "LANE4_ATOM_LEDGER_BUILD_REPORT.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_seeded",
+      "result": "recorded",
+      "artifact_path": "LANE4_ATOM_LEDGER_BUILD_REPORT.md",
+      "meaning": "Initial Lane 4 fixture created.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Codex",
+      "lane": "Mathematics",
+      "event_id": "sha256:53b4636221d283497570a14bf84ba1e64983c8972b3f3946c221bbc084259605"
+    }
+  ],
+  "source_claim_id": "MASTER_EQUATION_V3_CANONICAL_FORM"
+}
