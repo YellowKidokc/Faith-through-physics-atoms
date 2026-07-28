@@ -1,0 +1,48 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-ax-core-bc4",
+  "atom_uid": "sha256:a623dc9df08369de59677280a240e61a6d19b8b7e2fcae447934858b49527353",
+  "title": "BC4 — Three Observers Required",
+  "claim": "BC4 — Three Observers Required is classified in Part 1 as AX_CORE with decision KEEP and anchor BC4 (Three Observers Required).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "AX_CORE",
+  "assumptions": [
+    "BC4 (Three Observers Required)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "BC4 (Three Observers Required)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row BC4 as AX_CORE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:c81bc682c9a9f02bc66a054130afe0055e9774d46416de92beba34d72585ceb2"
+    }
+  ],
+  "source_claim_id": "AX_PART1:AX_CORE:BC4"
+}

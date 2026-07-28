@@ -1,0 +1,49 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-drop-duplicate-a1-1",
+  "atom_uid": "sha256:3527d2eee9ab191c3cdc8146631947f6046198adcd4d2bb8723152f9cd333943",
+  "title": "A1.1 — Existence",
+  "claim": "A1.1 — Existence is classified in Part 1 as DROP_DUPLICATE with decision KICK and anchor A1.1 (Existence).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "DROP_DUPLICATE",
+  "assumptions": [
+    "A1.1 (Existence)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "A1.1 (Existence)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status.",
+    "Duplicate row should not survive canonical normalization."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "QUARANTINE",
+  "current_status": "quarantined_duplicate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row A1.1 as DROP_DUPLICATE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:ce7aa24256498420e8e35bd0bbdbca02368d43563fd2eeff2fba2ebeac99b96b"
+    }
+  ],
+  "source_claim_id": "AX_PART1:DROP_DUPLICATE:A1.1"
+}

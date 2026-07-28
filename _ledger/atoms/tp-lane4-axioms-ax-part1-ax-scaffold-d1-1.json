@@ -1,0 +1,50 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-ax-scaffold-d1-1",
+  "atom_uid": "sha256:4e8e79d4997b2bb9c3e99b0d8b8df946a9dc3e4bc0e2a00fc8851c42eef1dc71",
+  "title": "D1.1 — Information Definition",
+  "claim": "D1.1 — Information Definition is classified in Part 1 as AX_SCAFFOLD with decision KEEP and anchor A1.1 (Existence), A1.2 (Distinction).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "AX_SCAFFOLD",
+  "assumptions": [
+    "A1.1 (Existence)",
+    "A1.2 (Distinction)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "A1.1 (Existence)",
+    "A1.2 (Distinction)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row D1.1 as AX_SCAFFOLD.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:7a43aadbafad89d21a9c691aa8cd55a122f5a3111c5e730356bfc1e0a2460163"
+    }
+  ],
+  "source_claim_id": "AX_PART1:AX_SCAFFOLD:D1.1"
+}
