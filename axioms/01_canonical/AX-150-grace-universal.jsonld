@@ -1,0 +1,101 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-150",
+  "nodeID": "tp:axioms/01/AX-150",
+  "claimID": "tp:AXIOMS/U3",
+  "name": "Grace Universal",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "mathematical",
+  "statementTechnical": "Grace is the universal external operator reversing sign-state decoherence.",
+  "statementPlain": "Grace is the universal external operator reversing sign-state decoherence.",
+  "mathematicalForm": "Grace = unique solution to [σ̂,Û]=0 constraint",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-074",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-149",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "grace",
+    "sin",
+    "coherence",
+    "decoherence",
+    "variable"
+  ],
+  "keywords": [
+    "U3",
+    "Q10",
+    "Divine",
+    "Operator"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show coherence restoration without external input. Demonstrate self-generated sign flip. Disprove Self-Flip Impossibility.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 152
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-150",
+    "oldID": "U3",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-Z (Universal — grace)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "Operator",
+    "logicalForce": "formal proposal",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure",
+    "riskLevel": "medium",
+    "kernelRole": "definitionRole",
+    "moduleID": "M20",
+    "moduleTitle": "Universal Coherence / Fruits",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "BC2",
+    "fourModeRelevance": "M4",
+    "worldviewsEliminated": "Buddhism, Hard Determinism, Pelagianism",
+    "propagationTest": "YES — Grace universal propagates through all soteriology and cosmology.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

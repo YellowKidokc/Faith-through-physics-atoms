@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-134",
+  "nodeID": "tp:axioms/01/AX-134",
+  "claimID": "tp:AXIOMS/FALS18.3",
+  "name": "BC Falsification",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "empirical_anchor",
+  "statementTechnical": "If another religion satisfies all 8 BCs, uniqueness fails.",
+  "statementPlain": "If another religion satisfies all 8 BCs, uniqueness fails.",
+  "mathematicalForm": "If ∃ religion R ≠ Christianity: R satisfies BC1-BC8 → uniqueness fails",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-114",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "kill-condition"
+  ],
+  "keywords": [
+    "FALS18.3",
+    "Q12",
+    "Falsification",
+    "FalsificationCriterion"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "This IS the defeat condition. Find another religion satisfying all 8 BCs.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 136
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-134",
+    "oldID": "FALS18.3",
+    "treeLevel": "Q12",
+    "treeBranch": "Q12-K (Falsification criterion)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Falsification",
+    "tier": "1",
+    "newType": "FalsificationCriterion",
+    "logicalForce": "falsification condition",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / test predicate",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M18",
+    "moduleTitle": "Protocol / Test Suite",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "BC1-BC8",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "Falsification criterion — permanent.",
+    "intendedStatus": "classified",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

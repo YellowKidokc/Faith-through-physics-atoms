@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-125",
+  "nodeID": "tp:axioms/01/AX-125",
+  "claimID": "tp:AXIOMS/PROT18.1",
+  "name": "Trinity Observer Effect",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "empirical",
+  "statementTechnical": "Protocol: Measure gamma variance with observer Phi level.",
+  "statementPlain": "Protocol: Measure gamma variance with observer Phi level.",
+  "mathematicalForm": "Protocol: γ(Φ) measurement",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-051",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-052",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "observer",
+    "trinity"
+  ],
+  "keywords": [
+    "PROT18.1",
+    "Q12",
+    "Material",
+    "Protocol"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Run the experiment and get null result.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 127
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-125",
+    "oldID": "PROT18.1",
+    "treeLevel": "Q12",
+    "treeBranch": "Q12-B (Experimental protocol)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Material",
+    "tier": "3",
+    "newType": "Protocol",
+    "logicalForce": "experimental protocol",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / outside proof kernel",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M18",
+    "moduleTitle": "Protocol / Test Suite",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "Experimental protocol — pending execution.",
+    "intendedStatus": "captured",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

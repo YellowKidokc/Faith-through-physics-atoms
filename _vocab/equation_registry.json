@@ -1,0 +1,198 @@
+{
+  "generatedAt": "2026-07-28",
+  "totalEquations": 10,
+  "items": [
+    {
+      "equationID": "ME-EQ-001",
+      "name": "Full Master Equation",
+      "symbolic": "χ_total = ∫_{t0}^{t1} ∫_Ω G·M·E·S_eff·T·K·R·Q·F·C d^3x dt",
+      "normal": "chi_total = integrate(product([G,M,E,S_eff,T,K,R,Q,F,C]), space, time)",
+      "variables": [
+        "G",
+        "M",
+        "E",
+        "S_eff",
+        "T",
+        "K",
+        "R",
+        "Q",
+        "F",
+        "C",
+        "χ_total"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-001-full-master-equation.jsonld",
+      "dependsOn": [
+        "tp:master-equation/01/ME-01-060",
+        "tp:axioms/01/AX-146"
+      ]
+    },
+    {
+      "equationID": "ME-EQ-002",
+      "name": "Local Product Form",
+      "symbolic": "χ_local(x,t) = G(x,t)·M(x,t)·E(x,t)·S_eff(x,t)·T(x,t)·K(x,t)·R(x,t)·Q(x,t)·F(x,t)·C(x,t)",
+      "normal": "chi_local = G*M*E*S_eff*T*K*R*Q*F*C",
+      "variables": [
+        "G",
+        "M",
+        "E",
+        "S_eff",
+        "T",
+        "K",
+        "R",
+        "Q",
+        "F",
+        "C",
+        "χ_local"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-002-local-product-form.jsonld",
+      "dependsOn": [
+        "tp:master-equation/01/ME-01-010",
+        "tp:master-equation/01/ME-01-060"
+      ]
+    },
+    {
+      "equationID": "ME-EQ-003",
+      "name": "Entropy Sign Repair",
+      "symbolic": "S_eff(x,t) = exp(-η·S_prod(x,t))",
+      "normal": "S_eff = exp(-eta*S_prod); alternative S_eff = 1/(1+S_prod)",
+      "variables": [
+        "S_eff",
+        "S_prod",
+        "η"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-003-entropy-sign-repair.jsonld",
+      "dependsOn": [
+        "tp:master-equation/01/ME-01-023",
+        "tp:axioms/01/AX-092"
+      ]
+    },
+    {
+      "equationID": "ME-EQ-004",
+      "name": "Grace Dynamics",
+      "symbolic": "dG/dt = G_ext - γG + β·F·C",
+      "normal": "dG_dt = G_ext - gamma*G + beta*F*C",
+      "variables": [
+        "G",
+        "G_ext",
+        "γ",
+        "β",
+        "F",
+        "C"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-004-grace-dynamics.jsonld",
+      "dependsOn": [
+        "tp:master-equation/01/ME-01-043",
+        "tp:axioms/01/AX-139"
+      ]
+    },
+    {
+      "equationID": "ME-EQ-005",
+      "name": "Lowe Coherence Lagrangian",
+      "symbolic": "L = χ(q,t)(1/2·qdot^T·K·qdot) - S·χ(q,t)",
+      "normal": "L = chi(q,t)*(0.5*qdot^T*K*qdot) - S*chi(q,t)",
+      "variables": [
+        "L",
+        "χ",
+        "q",
+        "qdot",
+        "K",
+        "S"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-005-lowe-coherence-lagrangian.jsonld",
+      "dependsOn": [
+        "tp:master-equation/01/ME-01-040",
+        "tp:axioms/01/AX-136"
+      ]
+    },
+    {
+      "equationID": "ME-EQ-006",
+      "name": "Zero-Collapse Theorem",
+      "symbolic": "χ = 0 ⇔ ∃ required factor f_i = 0",
+      "normal": "listProd(xs)=zero iff zero in xs",
+      "variables": [
+        "χ",
+        "f_i",
+        "zero",
+        "listProd"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-006-zero-collapse-theorem.jsonld",
+      "dependsOn": [
+        "tp:master-equation/01/ME-01-061",
+        "tp:axioms/01/AX-132"
+      ]
+    },
+    {
+      "equationID": "ME-EQ-007",
+      "name": "Grace Non-Unitarity",
+      "symbolic": "Ĝ†Ĝ ≠ I",
+      "normal": "G_hat_dagger*G_hat != I",
+      "variables": [
+        "Ĝ",
+        "I"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-007-grace-non-unitarity.jsonld",
+      "dependsOn": [
+        "tp:master-equation/01/ME-01-048",
+        "tp:axioms/01/AX-074"
+      ]
+    },
+    {
+      "equationID": "ME-EQ-008",
+      "name": "Sign Conservation",
+      "symbolic": "[σ̂, Û] = 0",
+      "normal": "commutator(sigma_hat,U_hat)=0",
+      "variables": [
+        "σ̂",
+        "Û"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-008-sign-conservation.jsonld",
+      "dependsOn": [
+        "tp:master-equation/01/ME-01-047",
+        "tp:axioms/01/AX-068"
+      ]
+    },
+    {
+      "equationID": "ME-EQ-009",
+      "name": "Fruits Phase Transition",
+      "symbolic": "Φ_i(χ) = tanh(β_i(χ - χ_c))",
+      "normal": "Phi_i = tanh(beta_i*(chi-chi_c))",
+      "variables": [
+        "Φ_i",
+        "χ",
+        "β_i",
+        "χ_c"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-009-fruits-phase-transition.jsonld",
+      "dependsOn": [
+        "tp:axioms/01/AX-151"
+      ]
+    },
+    {
+      "equationID": "ME-EQ-010",
+      "name": "Fruit Vector",
+      "symbolic": "Φ⃗ = {Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control}",
+      "normal": "Phi_vector = [Love,Joy,Peace,Patience,Kindness,Goodness,Faithfulness,Gentleness,SelfControl]",
+      "variables": [
+        "Φ⃗"
+      ],
+      "atomPath": "master-equation/01_canonical/ME-EQ-010-fruit-vector.jsonld",
+      "dependsOn": [
+        "tp:axioms/01/AX-151",
+        "tp:axioms/01/AX-152",
+        "tp:axioms/01/AX-153",
+        "tp:axioms/01/AX-154",
+        "tp:axioms/01/AX-155",
+        "tp:axioms/01/AX-156",
+        "tp:axioms/01/AX-157",
+        "tp:axioms/01/AX-158",
+        "tp:axioms/01/AX-159",
+        "tp:axioms/01/AX-160"
+      ]
+    }
+  ],
+  "queryContract": {
+    "byID": "_vocab/equation_registry.json.items[].equationID",
+    "byVariable": "_vocab/equation_registry.json.items[].variables",
+    "atomNodeID": "tp:master-equation/01/{equationID}"
+  }
+}

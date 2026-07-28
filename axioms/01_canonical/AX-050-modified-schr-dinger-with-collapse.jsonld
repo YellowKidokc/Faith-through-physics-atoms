@@ -1,0 +1,104 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-050",
+  "nodeID": "tp:axioms/01/AX-050",
+  "claimID": "tp:AXIOMS/E6.1",
+  "name": "Modified Schrödinger With Collapse",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "mathematical",
+  "statementTechnical": "d|Ψ⟩/dt = -(i/ℏ)Ĥ|Ψ⟩ - γ(χ)P̂|Ψ⟩ — Modified Schrödinger equation with χ-dependent collapse term.",
+  "statementPlain": "d|Ψ⟩/dt = -(i/ℏ)Ĥ|Ψ⟩ - γ(χ)P̂|Ψ⟩ — Modified Schrödinger equation with χ-dependent collapse term.",
+  "mathematicalForm": "d|Ψ⟩/dt = -(i/ℏ)Ĥ|Ψ⟩ - γ(χ)P̂|Ψ⟩",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-048",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-049",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-010",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "equation",
+    "observer"
+  ],
+  "keywords": [
+    "E6.1",
+    "Q6",
+    "Ontological",
+    "Equation"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the γ(χ) term violates energy conservation. Demonstrate the modified equation gives wrong predictions for known experiments. Show non-Hermitian collapse term is inconsistent.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 51
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-050",
+    "oldID": "E6.1",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-P (Master measurement equation)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Equation",
+    "logicalForce": "formal proposal",
+    "formalizableInLean": "yes",
+    "leanKind": "def / proposition with typed variables",
+    "riskLevel": "medium",
+    "kernelRole": "definitionRole",
+    "moduleID": "M06",
+    "moduleTitle": "Collapse / Measurement",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Modified Schrödinger propagates as the fundamental equation connecting χ-field to quantum measurement.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

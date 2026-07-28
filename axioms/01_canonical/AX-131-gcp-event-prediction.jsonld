@@ -1,0 +1,88 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-131",
+  "nodeID": "tp:axioms/01/AX-131",
+  "claimID": "tp:AXIOMS/PRED18.2",
+  "name": "GCP Event Prediction",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "prediction",
+  "statementTechnical": "GCP data will show significant deviations during collective spiritual focus events.",
+  "statementPlain": "GCP data will show significant deviations during collective spiritual focus events.",
+  "mathematicalForm": "GCP deviations during spiritual events",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-111",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "keywords": [
+    "PRED18.2",
+    "Q12",
+    "Material",
+    "Hypothesis"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Pre-registered events show no deviation. Null result with sufficient statistical power.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 133
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-131",
+    "oldID": "PRED18.2",
+    "treeLevel": "Q12",
+    "treeBranch": "Q12-H (Consciousness prediction)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Material",
+    "tier": "3",
+    "newType": "Hypothesis",
+    "logicalForce": "empirical hypothesis",
+    "formalizableInLean": "yes",
+    "leanKind": "metadata / proposition, not premise",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M18",
+    "moduleTitle": "Protocol / Test Suite",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M4",
+    "worldviewsEliminated": "—",
+    "propagationTest": "Time-bound prediction — testable with pre-registration.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

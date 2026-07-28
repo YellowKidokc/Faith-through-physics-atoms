@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-109",
+  "nodeID": "tp:axioms/01/AX-109",
+  "claimID": "tp:AXIOMS/PRED14.1",
+  "name": "H0 Tension Resolution",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "prediction",
+  "statementTechnical": "H₀ tension resolves toward H₀ = 73.0 ± 1.0 km/s/Mpc via grace-modified Friedmann.",
+  "statementPlain": "H₀ tension resolves toward H₀ = 73.0 ± 1.0 km/s/Mpc via grace-modified Friedmann.",
+  "mathematicalForm": "H₀ = 73.0 ± 1.0 km/s/Mpc (predicted)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-108",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "grace",
+    "equation"
+  ],
+  "keywords": [
+    "PRED14.1",
+    "Q8",
+    "Material",
+    "Prediction"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Measure H₀ definitively and show it disagrees with prediction. Show tension resolves via systematic error rather than new physics.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 111
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-109",
+    "oldID": "PRED14.1",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-L (Cosmological prediction)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Material",
+    "tier": "3",
+    "newType": "Prediction",
+    "logicalForce": "testable prediction",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / outside proof kernel",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M14",
+    "moduleTitle": "Dynamic Dark Energy",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "Prediction — pending observational confirmation or falsification.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

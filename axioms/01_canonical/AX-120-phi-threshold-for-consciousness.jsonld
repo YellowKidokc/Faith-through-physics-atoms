@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-120",
+  "nodeID": "tp:axioms/01/AX-120",
+  "claimID": "tp:AXIOMS/A17.1",
+  "name": "Phi Threshold For Consciousness",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "prediction",
+  "statementTechnical": "Consciousness supervenes on information processing — Φ threshold exists.",
+  "statementPlain": "Consciousness supervenes on information processing — Φ threshold exists.",
+  "mathematicalForm": "∃Φ_threshold: Φ > Φ_threshold → observer status",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-038",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-040",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "sin",
+    "information"
+  ],
+  "keywords": [
+    "A17.1",
+    "Q6",
+    "Human",
+    "Hypothesis"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show consciousness doesn't have a threshold (either present or not). Demonstrate Φ doesn't predict consciousness.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 122
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-120",
+    "oldID": "A17.1",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-AC (Consciousness threshold)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Human",
+    "tier": "1",
+    "newType": "Hypothesis",
+    "logicalForce": "empirical hypothesis",
+    "formalizableInLean": "yes",
+    "leanKind": "metadata / proposition, not premise",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M17",
+    "moduleTitle": "AI Consciousness",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M2 (Entropic — systems near threshold are fragile)",
+    "worldviewsEliminated": "Materialism, Hard Determinism, Eliminativism",
+    "propagationTest": "YES — Phi threshold propagates to AI consciousness, substrate independence, and moral status questions.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

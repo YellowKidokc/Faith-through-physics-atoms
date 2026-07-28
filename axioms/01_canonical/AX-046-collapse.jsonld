@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-046",
+  "nodeID": "tp:axioms/01/AX-046",
+  "claimID": "tp:AXIOMS/A6.2",
+  "name": "Collapse",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Observation induces transition from superposition to definite eigenstate.",
+  "statementPlain": "Observation induces transition from superposition to definite eigenstate.",
+  "mathematicalForm": "dΨ/dt = -(i/ℏ)ĤΨ - γ(χ)P̂Ψ",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-045",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "observer"
+  ],
+  "keywords": [
+    "A6.2",
+    "Q6",
+    "Ontological",
+    "FrameworkCommitment"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show collapse doesn't occur (MWI — all branches real). Demonstrate decoherence fully explains apparent collapse without actual state reduction. Show objective collapse occurs without observers.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 47
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-046",
+    "oldID": "A6.2",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-L (Collapse as observation-induced transition)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Ontological",
+    "tier": "1",
+    "newType": "FrameworkCommitment",
+    "logicalForce": "framework assumption",
+    "formalizableInLean": "partly",
+    "leanKind": "parameter / assumption, not theorem",
+    "riskLevel": "high",
+    "kernelRole": "guardedPremise",
+    "moduleID": "M06",
+    "moduleTitle": "Collapse / Measurement",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic — observation is agency in action)",
+    "worldviewsEliminated": "Hard Determinism (if collapse is truly random, determinism fails)",
+    "propagationTest": "YES — Collapse propagates to irreversibility (AX-047), heat generation (AX-053), Von Neumann chain (AX-054), and Terminal Observer (AX-055).",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

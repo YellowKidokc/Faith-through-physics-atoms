@@ -1,0 +1,94 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-002",
+  "nodeID": "tp:master-equation/01/ME-EQ-002",
+  "claimID": "tp:ME/ME-EQ-002",
+  "nodeType": "claim",
+  "name": "Local Product Form",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "mathematical",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "statementTechnical": "χ_local(x,t) = G(x,t)·M(x,t)·E(x,t)·S_eff(x,t)·T(x,t)·K(x,t)·R(x,t)·Q(x,t)·F(x,t)·C(x,t)",
+  "statementPlain": "At a local slice, coherence is multiplicative rather than additive.",
+  "mathematicalForm": "χ_local(x,t) = G(x,t)·M(x,t)·E(x,t)·S_eff(x,t)·T(x,t)·K(x,t)·R(x,t)·Q(x,t)·F(x,t)·C(x,t)",
+  "mathFormNormal": "chi_local = G*M*E*S_eff*T*K*R*Q*F*C",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-010",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-060",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    }
+  ],
+  "tags": [
+    "equation",
+    "coherence"
+  ],
+  "keywords": [
+    "equation",
+    "G",
+    "M",
+    "E",
+    "S_eff",
+    "T",
+    "K",
+    "R",
+    "Q",
+    "F",
+    "C",
+    "χ_local"
+  ],
+  "verificationStatus": "equation-registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer.",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+  "equationRegistry": {
+    "equationID": "ME-EQ-002",
+    "variables": [
+      "G",
+      "M",
+      "E",
+      "S_eff",
+      "T",
+      "K",
+      "R",
+      "Q",
+      "F",
+      "C",
+      "χ_local"
+    ],
+    "normalForm": "chi_local = G*M*E*S_eff*T*K*R*Q*F*C",
+    "source": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md"
+  }
+}

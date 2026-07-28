@@ -1,0 +1,83 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-029",
+  "nodeID": "tp:master-equation/01/ME-01-029",
+  "claimID": "tp:ME/ME-01-029",
+  "nodeType": "claim",
+  "name": "C - Total Integration Measure",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "definition",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "statementTechnical": "Total integration or local global-coherence measure inside the product.",
+  "statementPlain": "C is the local integrator inside the product; chi is the output after integration.",
+  "mathematicalForm": "C in [0, 1]",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-010",
+      "propagates": true,
+      "note": "Factor slot belongs to the Master Equation integration atom."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-017",
+      "propagates": true,
+      "note": "Factor is grounded by AX-017 in the axiom spine."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "logos"
+  ],
+  "keywords": [
+    "master-equation-factor",
+    "C",
+    "[0, 1]"
+  ],
+  "verificationStatus": "formal-layer-import",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+  "masterEquationFactor": {
+    "id": "ME-01-029",
+    "symbol": "C",
+    "name": "Total Integration Measure",
+    "domain": "[0, 1]",
+    "definition": "Total integration or local global-coherence measure inside the product.",
+    "plain": "C is the local integrator inside the product; chi is the output after integration.",
+    "axiom": "AX-017",
+    "tags": [
+      "coherence",
+      "logos"
+    ]
+  }
+}

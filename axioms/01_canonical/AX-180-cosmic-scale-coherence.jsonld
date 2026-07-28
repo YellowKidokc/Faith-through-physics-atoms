@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-180",
+  "nodeID": "tp:axioms/01/AX-180",
+  "claimID": "tp:AXIOMS/SC-COSMIC",
+  "name": "Cosmic Scale Coherence",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theorem",
+  "statementTechnical": "At cosmic scale, coherence = fine-tuning, large-scale structure, eschatological convergence.",
+  "statementPlain": "At cosmic scale, coherence = fine-tuning, large-scale structure, eschatological convergence.",
+  "mathematicalForm": "χ(cosmic) = fine_tuning + large_scale_structure",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-179",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-105",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence"
+  ],
+  "keywords": [
+    "SC-COSMIC",
+    "Q11",
+    "Eschatology",
+    "CapstoneTerminalClaim"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show cosmic structure without fine-tuning. Demonstrate large-scale order from pure chance.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 182
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-180",
+    "oldID": "SC-COSMIC",
+    "treeLevel": "Q11",
+    "treeBranch": "Q11-H (Scale — cosmic)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Eschatology",
+    "tier": "2",
+    "newType": "CapstoneTerminalClaim",
+    "logicalForce": "closure claim",
+    "formalizableInLean": "partly",
+    "leanKind": "terminal theorem/claim target",
+    "riskLevel": "high",
+    "kernelRole": "auditRole",
+    "moduleID": "M23",
+    "moduleTitle": "Scale Coherence",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M4",
+    "worldviewsEliminated": "Nihilism",
+    "propagationTest": "YES — Cosmic scale propagates to eschatological completion and Omega.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

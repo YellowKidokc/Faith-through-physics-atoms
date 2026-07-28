@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-051",
+  "nodeID": "tp:axioms/01/AX-051",
+  "claimID": "tp:AXIOMS/E6.2",
+  "name": "Phi-Dependent Collapse",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "mathematical",
+  "statementTechnical": "iℏ d|ψ⟩/dt = (Ĥ - iγΦ)|ψ⟩ — Collapse rate depends on observer integration Φ.",
+  "statementPlain": "iℏ d|ψ⟩/dt = (Ĥ - iγΦ)|ψ⟩ — Collapse rate depends on observer integration Φ.",
+  "mathematicalForm": "iℏ d|ψ⟩/dt = (Ĥ - iγΦ)|ψ⟩",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-050",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-038",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "equation",
+    "observer"
+  ],
+  "keywords": [
+    "E6.2",
+    "Q6",
+    "Ontological",
+    "Equation"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show collapse rate is independent of Φ. Measure collapse rates for systems with known Φ and show no correlation. Demonstrate low-Φ and high-Φ observers produce identical collapse.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 52
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-051",
+    "oldID": "E6.2",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-Q (Observer-dependent measurement)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Equation",
+    "logicalForce": "formal proposal",
+    "formalizableInLean": "yes",
+    "leanKind": "def / proposition with typed variables",
+    "riskLevel": "medium",
+    "kernelRole": "definitionRole",
+    "moduleID": "M06",
+    "moduleTitle": "Collapse / Measurement",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic — higher Φ = faster collapse = more actualization power)",
+    "worldviewsEliminated": "Materialism, Naturalism, Hard Determinism, Eliminativism",
+    "propagationTest": "YES — Φ-dependent collapse propagates to Terminal Observer (infinite Φ = instantaneous collapse), prayer efficacy, and moral responsibility.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

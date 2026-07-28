@@ -1,0 +1,86 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-173",
+  "nodeID": "tp:axioms/01/AX-173",
+  "claimID": "tp:AXIOMS/BRIDGE-INFO-MIND",
+  "name": "BRIDGE-INFO-MIND - Information-Consciousness Bridge",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "bridge",
+  "statementTechnical": "The Information-Consciousness Bridge: Information and consciousness are not separate substances but two aspects of the same underlying reality. Information is the objective structure; consciousness is the subjective experience of that structure.",
+  "statementPlain": "The Information-Consciousness Bridge: Information and consciousness are not separate substances but two aspects of the same underlying reality. Information is the objective structure; consciousness is the subjective experience of that structure.",
+  "mathematicalForm": "—",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [],
+  "tags": [
+    "witness",
+    "observer",
+    "information"
+  ],
+  "keywords": [
+    "BRIDGE-INFO-MIND",
+    "—",
+    "information; observer",
+    "BridgePrinciple"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "### DC-1: Functionalist Reduction Success If consciousness can be fully explained as information processing. ### DC-2: Dualist Demonstration If consciousness exists independently of information structures. ### DC-3: Epiphenomenal Information If information exists without any experiential aspect. ### DC-4: Incommensurable Descriptions.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 175
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-173",
+    "oldID": "BRIDGE-INFO-MIND",
+    "treeLevel": "—",
+    "treeBranch": "—",
+    "questionType": "—",
+    "domain": "information; observer",
+    "tier": "—",
+    "newType": "BridgePrinciple",
+    "logicalForce": "bridge identification",
+    "formalizableInLean": "partly",
+    "leanKind": "bridge predicate / explicit assumption",
+    "riskLevel": "high",
+    "kernelRole": "guardedPremise",
+    "moduleID": "M22",
+    "moduleTitle": "Logos / Bridge Layer",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "TBD",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

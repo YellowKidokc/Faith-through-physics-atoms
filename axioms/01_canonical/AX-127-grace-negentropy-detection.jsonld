@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-127",
+  "nodeID": "tp:axioms/01/AX-127",
+  "claimID": "tp:AXIOMS/PROT18.3",
+  "name": "Grace Negentropy Detection",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "empirical",
+  "statementTechnical": "Protocol: Measure coherence distribution shape (bimodal vs. Gaussian).",
+  "statementPlain": "Protocol: Measure coherence distribution shape (bimodal vs. Gaussian).",
+  "mathematicalForm": "Protocol: bimodal distribution detection",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-025",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-074",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "grace",
+    "coherence",
+    "entropy"
+  ],
+  "keywords": [
+    "PROT18.3",
+    "Q12",
+    "Material",
+    "Protocol"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Measure coherence distribution and show it's unimodal/Gaussian. Show no bimodal signature.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 129
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-127",
+    "oldID": "PROT18.3",
+    "treeLevel": "Q12",
+    "treeBranch": "Q12-D (Experimental protocol)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Material",
+    "tier": "3",
+    "newType": "Protocol",
+    "logicalForce": "experimental protocol",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / outside proof kernel",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M18",
+    "moduleTitle": "Protocol / Test Suite",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M4 (Grace Attenuation)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "Experimental protocol — pending execution.",
+    "intendedStatus": "captured",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

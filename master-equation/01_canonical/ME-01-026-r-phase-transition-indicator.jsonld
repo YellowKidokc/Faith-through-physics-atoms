@@ -1,0 +1,81 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-026",
+  "nodeID": "tp:master-equation/01/ME-01-026",
+  "claimID": "tp:ME/ME-01-026",
+  "nodeType": "claim",
+  "name": "R - Phase Transition Indicator",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "definition",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "statementTechnical": "Phase transition indicator for irreversible state change.",
+  "statementPlain": "Some thresholds do not merely change degree; they change state.",
+  "mathematicalForm": "R in {0, 1}",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-010",
+      "propagates": true,
+      "note": "Factor slot belongs to the Master Equation integration atom."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-062",
+      "propagates": true,
+      "note": "Factor is grounded by AX-062 in the axiom spine."
+    }
+  ],
+  "tags": [
+    "phase-transition"
+  ],
+  "keywords": [
+    "master-equation-factor",
+    "R",
+    "{0, 1}"
+  ],
+  "verificationStatus": "formal-layer-import",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+  "masterEquationFactor": {
+    "id": "ME-01-026",
+    "symbol": "R",
+    "name": "Phase Transition Indicator",
+    "domain": "{0, 1}",
+    "definition": "Phase transition indicator for irreversible state change.",
+    "plain": "Some thresholds do not merely change degree; they change state.",
+    "axiom": "AX-062",
+    "tags": [
+      "phase-transition"
+    ]
+  }
+}

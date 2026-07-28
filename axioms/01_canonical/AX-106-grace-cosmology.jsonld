@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-106",
+  "nodeID": "tp:axioms/01/AX-106",
+  "claimID": "tp:AXIOMS/A14.2",
+  "name": "Grace Cosmology",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "prediction",
+  "statementTechnical": "Cosmological constant is function of collective consciousness.",
+  "statementPlain": "Cosmological constant is function of collective consciousness.",
+  "mathematicalForm": "Λ = Λ(Ψ_collective); G(t,Ψ) replacing static Λ",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-081",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-105",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "grace"
+  ],
+  "keywords": [
+    "A14.2",
+    "Q8",
+    "Divine",
+    "Hypothesis"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show no correlation between collective consciousness states and cosmological parameters. Demonstrate Λ is constant regardless of consciousness. Null result from GCP.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 108
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-106",
+    "oldID": "A14.2",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-I (Cosmological grace)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "Hypothesis",
+    "logicalForce": "empirical hypothesis",
+    "formalizableInLean": "yes",
+    "leanKind": "metadata / proposition, not premise",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M14",
+    "moduleTitle": "Dynamic Dark Energy",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "BC2, BC6",
+    "fourModeRelevance": "M4 (Grace Attenuation — collective consciousness level affects cosmic evolution)",
+    "worldviewsEliminated": "Materialism, Naturalism, Hard Determinism, Eliminativism, Nihilism",
+    "propagationTest": "YES — Grace cosmology propagates to modified Friedmann, H₀ prediction, and the cosmic role of consciousness.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

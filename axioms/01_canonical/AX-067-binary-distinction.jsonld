@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-067",
+  "nodeID": "tp:axioms/01/AX-067",
+  "claimID": "tp:AXIOMS/A8.1",
+  "name": "Binary Distinction",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Orientation admits only two values: σ ∈ {+1, -1}. Macroscopic moral ambiguity maps to quantum superposition of fundamental binary micro-states. [DEFENSE REQUIRED: The binary claim depends on an underlying symmetry group (SU(2)) that grounds two-state behavior. This is a modeling choice, not a deduction. If continuous moral state space with different topology exists, the binary reduction might not hold. Full defense required in Appendix C: Moral Symmetry Argument.]",
+  "statementPlain": "Orientation admits only two values: σ ∈ {+1, -1}. Macroscopic moral ambiguity maps to quantum superposition of fundamental binary micro-states. [DEFENSE REQUIRED: The binary claim depends on an underlying symmetry group (SU(2)) that grounds two-state behavior. This is a modeling choice, not a deduction. If continuous moral state space with different topology exists, the binary reduction might not hold. Full defense required in Appendix C: Moral Symmetry Argument.]",
+  "mathematicalForm": "σ̂ = diag(1,-1); σ ∈ {+1,-1}; no σ = 0",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-066",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "moral-conservation",
+    "symmetry"
+  ],
+  "keywords": [
+    "A8.1",
+    "Q10",
+    "Relational",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show moral orientation admits a third value (neutral). Demonstrate continuous moral spectrum. Show binary is a false dichotomy imposed on continuous reality.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 69
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-067",
+    "oldID": "A8.1",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-A (Sign structure — binary moral orientation)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Relational",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M08",
+    "moduleTitle": "Sign Algebra",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic — the choice of σ = +1 or -1 IS agency)",
+    "worldviewsEliminated": "Nihilism (no moral values), Buddhism (middle way — neither +1 nor -1), Existentialism (values are self-created, not binary)",
+    "propagationTest": "YES — Binary sign propagates to sign conservation (AX-068), self-flip impossibility (AX-071), and the entire grace framework.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

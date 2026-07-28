@@ -1,0 +1,95 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-011",
+  "nodeID": "tp:axioms/01/AX-011",
+  "claimID": "tp:AXIOMS/D2.2",
+  "name": "Chi Field Properties",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "definition",
+  "statementTechnical": "Chi is a real scalar field with informational content, carrying semantic potential and instantiating reality through its configuration space. (Note: Uses pre-geometric configuration space, not spacetime coordinates.)",
+  "statementPlain": "Chi is a real scalar field with informational content, carrying semantic potential and instantiating reality through its configuration space. (Note: Uses pre-geometric configuration space, not spacetime coordinates.)",
+  "mathematicalForm": "χ ∈ ℝ; (□ + m²)χ = J(sources); χ(x,t) ≠ 0 ∀(x,t)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-010",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "logos",
+    "definition",
+    "information",
+    "curvature",
+    "field"
+  ],
+  "keywords": [
+    "D2.2",
+    "Q5",
+    "Ontological",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show χ must be non-scalar (vector, tensor, spinor). Show that a real field cannot carry semantic content. Detect a region of spacetime with zero χ-field value.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 12
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-011",
+    "oldID": "D2.2",
+    "treeLevel": "Q5",
+    "treeBranch": "Q5-B (Properties of the ground — physical character)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M02",
+    "moduleTitle": "Chi Field Substrate",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Scalar field properties propagate through all equations (Master Equation, Coherence Functional, GR-QM Bridge).",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "generatedAt": "2026-07-28T09:19:34.991462+00:00",
+  "runtime": "theophysics-research-runtime",
+  "apis": [
+    {
+      "name": "Claim.register",
+      "status": "implemented",
+      "target": "_scripts/claim_runtime.py intake"
+    },
+    {
+      "name": "Claim.status",
+      "status": "implemented",
+      "target": "_scripts/claim_runtime.py intake"
+    },
+    {
+      "name": "Claim.dependencies",
+      "status": "implemented",
+      "target": "_scripts/claim_runtime.py graph"
+    },
+    {
+      "name": "Claim.kill_condition",
+      "status": "implemented",
+      "target": "atom falsificationCondition fields"
+    },
+    {
+      "name": "Claim.render",
+      "status": "implemented",
+      "target": "_scripts/build_topbar_packet.py"
+    },
+    {
+      "name": "Corpus.semantic_address",
+      "status": "registered",
+      "target": "pending semantic-address adapter"
+    },
+    {
+      "name": "Ledger.cost_and_consent",
+      "status": "registered",
+      "target": "pending Crown ledger adapter"
+    },
+    {
+      "name": "HIDDEN_SOURCE",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "HIDDEN_PAYER",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "HIDDEN_OBSERVER",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "HIDDEN_STANDARD",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "HIDDEN_BOUNDARY",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "HIDDEN_SCALE",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "HIDDEN_TIME",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "TYPECHECK",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "FAILURE_PROPAGATION",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py failure"
+    },
+    {
+      "name": "SURVIVAL_VECTOR",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "BIDIRECTIONALITY",
+      "status": "registered",
+      "target": "requires mapping corpus"
+    },
+    {
+      "name": "BASIS_CHALLENGE",
+      "status": "registered",
+      "target": "requires benchmark corpus and rival bases"
+    },
+    {
+      "name": "DOMAIN_HOLDOUT",
+      "status": "registered",
+      "target": "requires preregistered holdout workflow"
+    },
+    {
+      "name": "BLIND_MATCH",
+      "status": "registered",
+      "target": "requires evaluator set or model panel"
+    },
+    {
+      "name": "ASSUMPTION_SWAP",
+      "status": "registered",
+      "target": "requires model-specific parameters"
+    },
+    {
+      "name": "SEMANTIC_CHECKSUM",
+      "status": "registered",
+      "target": "requires multi-layer source surfaces"
+    },
+    {
+      "name": "WITNESS_PANEL",
+      "status": "registered",
+      "target": "requires independent model calls"
+    },
+    {
+      "name": "PREDICTION_ESCROW",
+      "status": "registered",
+      "target": "requires timestamp/commit policy"
+    },
+    {
+      "name": "SCALE_SCAN",
+      "status": "registered",
+      "target": "requires claim-specific scales"
+    },
+    {
+      "name": "COUNTERMODEL",
+      "status": "registered",
+      "target": "requires rival model generator"
+    },
+    {
+      "name": "MISUSE_AUDIT",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py manifest"
+    }
+  ]
+}

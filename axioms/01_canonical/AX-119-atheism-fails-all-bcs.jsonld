@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-119",
+  "nodeID": "tp:axioms/01/AX-119",
+  "claimID": "tp:AXIOMS/T16.6",
+  "name": "Atheism Fails All BCs",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theorem",
+  "statementTechnical": "Atheism fails BC1-BC8 — most comprehensive BC failure.",
+  "statementPlain": "Atheism fails BC1-BC8 — most comprehensive BC failure.",
+  "mathematicalForm": "Atheism: 0/8 BCs satisfied",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-114",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "proof"
+  ],
+  "keywords": [
+    "T16.6",
+    "Q9",
+    "Divine",
+    "Theorem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show atheism satisfies any BC. Demonstrate naturalistic explanations for BC requirements. Show BCs are unnecessary.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 121
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-119",
+    "oldID": "T16.6",
+    "treeLevel": "Q9",
+    "treeBranch": "Q9-G (Atheism elimination)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Divine",
+    "tier": "2",
+    "newType": "Theorem",
+    "logicalForce": "derivable theorem",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M16",
+    "moduleTitle": "Worldview Boundary-Fit",
+    "spineRole": "interpretive_identification",
+    "boundaryCondition": "BC1-BC8 (all fail)",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "Atheism",
+    "propagationTest": "Elimination theorem — removes atheism from solution space.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

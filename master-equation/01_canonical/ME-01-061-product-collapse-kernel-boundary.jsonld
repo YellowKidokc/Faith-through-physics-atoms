@@ -1,0 +1,72 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-061",
+  "nodeID": "tp:master-equation/01/ME-01-061",
+  "claimID": "tp:ME/ME-01-061",
+  "nodeType": "claim",
+  "name": "Product-Collapse Kernel Boundary",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "theorem",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "kernelChecked": true,
+  "challengeStatus": "unchallenged",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "statementTechnical": "The verified Lean kernel proves the general product-collapse architecture: under the declared algebraic interface, product collapse is equivalent to at least one zero factor, and chi inherits zero collapse through the MasterState packaging.",
+  "statementPlain": "The machine proof verifies the skeleton: in this architecture, one dead required channel kills the product, and a live product requires all required channels to stay nonzero.",
+  "mathematicalForm": "listProd xs = zero iff zero in xs; chi_zero_if_any_factor_zero",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-060",
+      "propagates": true,
+      "note": "Kernel verifies the product-collapse architecture used by the full equation."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-132",
+      "propagates": true,
+      "note": "Falsification criterion for chi-field architecture."
+    }
+  ],
+  "tags": [
+    "proof",
+    "kill-condition",
+    "coherence"
+  ],
+  "keywords": [
+    "Lean",
+    "zero-collapse",
+    "product architecture",
+    "no-zero-divisors"
+  ],
+  "verificationStatus": "lean4-section-report",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\VERIFIED_SECTION_BY_SECTION_REPORT.md"
+}

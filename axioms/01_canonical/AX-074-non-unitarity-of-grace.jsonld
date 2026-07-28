@@ -1,0 +1,93 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-074",
+  "nodeID": "tp:axioms/01/AX-074",
+  "claimID": "tp:AXIOMS/A9.2",
+  "name": "Non-Unitarity Of Grace",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Grace operator Ĝ is non-unitary — information added, not just transformed.",
+  "statementPlain": "Grace operator Ĝ is non-unitary — information added, not just transformed.",
+  "mathematicalForm": "Ĝ†Ĝ ≠ I; Ĝ non-unitary",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-073",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "grace",
+    "variable",
+    "information"
+  ],
+  "keywords": [
+    "A9.2",
+    "Q10",
+    "Divine",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show grace is unitary (just rearranges existing information). Demonstrate sign-flip without adding new information. Show Ĝ†Ĝ = I is consistent with sign-flip.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 76
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-074",
+    "oldID": "A9.2",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-H (Grace as non-unitary operation)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M09",
+    "moduleTitle": "Grace Operator",
+    "spineRole": "core_spine",
+    "boundaryCondition": "BC2",
+    "fourModeRelevance": "M4 (Grace Attenuation — non-unitary operation requires willing reception)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Non-unitarity propagates to grace idempotence, voluntary coupling requirement, and information preservation under grace.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

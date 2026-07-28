@@ -1,0 +1,100 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-115",
+  "nodeID": "tp:axioms/01/AX-115",
+  "claimID": "tp:AXIOMS/T16.2",
+  "name": "Islam Fails BC4",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theorem",
+  "statementTechnical": "Islam fails BC4 (Three Observers Required) — Tawhid precludes trinity.",
+  "statementPlain": "Islam fails BC4 (Three Observers Required) — Tawhid precludes trinity.",
+  "mathematicalForm": "Islam fails BC4 (N=1 ≠ N=3)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-114",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-061",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "proof",
+    "observer",
+    "trinity"
+  ],
+  "keywords": [
+    "T16.2",
+    "Q9",
+    "Divine",
+    "Theorem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show Islam satisfies BC4 through an alternative reading. Demonstrate Tawhid is compatible with internal observer plurality. Show BC4 doesn't require literal three.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 117
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-115",
+    "oldID": "T16.2",
+    "treeLevel": "Q9",
+    "treeBranch": "Q9-C (Islam elimination)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Divine",
+    "tier": "2",
+    "newType": "Theorem",
+    "logicalForce": "derivable theorem",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M16",
+    "moduleTitle": "Worldview Boundary-Fit",
+    "spineRole": "interpretive_identification",
+    "boundaryCondition": "BC4",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "Elimination theorem — removes Islam from solution space.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}
