@@ -1,13 +1,13 @@
 # Lane 4 Latest Status
 
-Generated: 2026-07-28T19:49:39+00:00
+Generated: 2026-07-28T20:43:47+00:00
 
-Atoms: **252**
+Atoms: **253**
 
 ## Proof labels
 
 - `ABDUCTIVELY_FAVORED`: 1
-- `BRIDGE_DECLARED`: 3
+- `BRIDGE_DECLARED`: 4
 - `ISOMORPHIC_EVENT_CANDIDATE`: 50
 - `LEAN_GUARDRAIL_SUPPORTED`: 2
 - `NARRATIVE_ANCHOR`: 1
@@ -216,6 +216,7 @@ Atoms: **252**
 | `tp:lane4/christianity/christianity-historical-abductive-lane` | active_candidate | ABDUCTIVELY_FAVORED | not_applicable |
 | `tp:lane4/coherence-atlas/coherence-atlas-isomorphic-event-lane` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
 | `tp:lane4/consilience/consilience-good-bad-coherence-001` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
+| `tp:lane4/crown-canon/crown-truth-series-001` | active_candidate | BRIDGE_DECLARED | not_applicable |
 | `tp:lane4/isomorphic-events/iso-deployed-math-light-judgment-001` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
 | `tp:lane4/isomorphic-events/iso-iso-000` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
 | `tp:lane4/isomorphic-events/iso-iso-001` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
