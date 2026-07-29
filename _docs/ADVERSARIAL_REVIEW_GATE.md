@@ -56,3 +56,9 @@ make decisions without pretending to encode all philosophy:
 Operational rule: only a separate, authenticated human workflow may turn a
 proposal into an accepted edge. It must refuse any proposal whose latest
 receipt has `gateStatus: blocked`.
+
+Definition-link proposals in `_proposals/definition-links.jsonl` pass through
+this same reviewer. A resolver confidence score—even 0.99 for an explicit
+marker—is discovery evidence, not acceptance. The reviewer can block a link;
+otherwise it remains `awaiting_human`. Neither the resolver nor this gate may
+edit an accepted edge or promote a candidate definition to canonical.

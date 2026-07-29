@@ -1,0 +1,14 @@
+{
+  "@context": ["https://schema.org", "https://faiththruphysics.com/vocab/context.jsonld"],
+  "@id": "https://faiththruphysics.com/definitions/terminus-sui",
+  "nodeID": "tp:def:terminus-sui", "claimID": "tp:def:terminus-sui", "nodeType": "claim", "claimKind": "definition",
+  "permanentDefinitionID": "tp:def:terminus-sui", "preferredTerm": "Terminus Sui", "aliases": ["end in itself", "its own end"], "associatedSymbols": [],
+  "plainDefinition": "An end pursued for its own sake rather than merely as a means to something else.",
+  "technicalDefinition": "A final end whose reason for choice is intrinsic to that end, not exhausted by an instrumental relation to a further end.",
+  "scopeAndExclusions": {"scope": ["teleology", "philosophy of action"], "exclusions": ["A merely intermediate goal", "A claim that an entity caused itself"]},
+  "source": {"sourceName": "Aristotle, Nicomachean Ethics, Book I", "exactShortQuotation": "we call final without qualification that which is always desirable in itself", "authoritativeSourceURL": "https://classics.mit.edu/Aristotle/nicomachaen.1.i.html", "sourceStatus": "primary", "sourceStatement": "Aristotle distinguishes ends desirable in themselves from ends chosen for the sake of something else.", "frameworkInference": "David Lowe/Theophysics uses Terminus Sui as the registry label for this final-end distinction.", "evidenceRef": "tp:evidence:def:terminus-sui/aristotle"},
+  "frameworkClassification": {"classification": "canonical framework definition", "classificationAuthor": "David Lowe/Theophysics", "classificationMethodOrTestReceipt": "Human acceptance carried forward from PR #8; generalized registry migration reviewed without changing meaning."},
+  "canonicalStatus": "canonical", "version": "1.0.0", "priorVersions": [],
+  "citationPolicy": {"required": true, "mode": "quote_or_link", "inheritToDependents": true},
+  "edges": [{"type": "dependsOn", "target": "tp:evidence:def:terminus-sui/aristotle", "status": "accepted"}]
+}

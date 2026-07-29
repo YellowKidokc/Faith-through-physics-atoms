@@ -19,9 +19,11 @@ class ReviewTests(unittest.TestCase):
     def test_run_writes_blocking_receipt_without_accepting(self):
         proposal = {"proposalID": "p1", "sourceAtom": "s", "targetAtom": "t", "status": "proposed"}
         with tempfile.TemporaryDirectory() as directory:
-            proposals, reviews = Path(directory) / "p.jsonl", Path(directory) / "r.jsonl"
+            proposals, definitions, reviews = Path(directory) / "p.jsonl", Path(directory) / "d.jsonl", Path(directory) / "r.jsonl"
             proposals.write_text(json.dumps(proposal) + "\n")
+            definitions.write_text("")
             with patch.object(ar, "PROPOSALS", proposals), patch.object(ar, "REVIEWS", reviews), \
+                 patch.object(ar, "DEFINITION_PROPOSALS", definitions), \
                  patch.object(ar, "atoms_by_id", return_value={"s": {"status": "falsified"}, "t": {}}):
                 receipt = ar.run_reviews()[0]
             self.assertEqual("blocked", receipt["gateStatus"])

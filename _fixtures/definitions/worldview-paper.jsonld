@@ -1,0 +1,14 @@
+{
+  "@context": ["https://schema.org", "https://faiththruphysics.com/vocab/context.jsonld"],
+  "@id": "https://faiththruphysics.com/fixtures/worldview-paper",
+  "nodeID": "tp:fixture:worldview-paper", "nodeType": "paper", "name": "Worldview definition fixture",
+  "body": "A worldview may reference [[def:goedel-incompleteness]], subject to its stated exclusions.",
+  "worldviewSupport": {
+    "worldviewDefinitionAtom": "tp:def:fixture-worldview",
+    "sources": ["Stanford or primary source records belong in independent evidence atoms"],
+    "governingTruthPriority": "declared by the worldview atom",
+    "foundationalPropositions": [], "axiomAtoms": [], "axiomTestReceipts": [],
+    "objections": [], "alternatives": [], "consequences": [],
+    "provenanceRule": "Outside-source statements and Theophysics classifications must remain separate. The proposition was sourced from the Stanford Encyclopedia of Philosophy and classified as an axiom by Theophysics after applying its axiom test."
+  }
+}

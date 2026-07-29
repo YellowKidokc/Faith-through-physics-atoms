@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/definition-atom.json",
+  "title": "Canonical Definition Atom",
+  "type": "object",
+  "required": ["@id", "nodeID", "claimID", "nodeType", "claimKind", "permanentDefinitionID", "preferredTerm", "aliases", "associatedSymbols", "plainDefinition", "technicalDefinition", "scopeAndExclusions", "source", "frameworkClassification", "canonicalStatus", "version", "priorVersions", "citationPolicy", "edges"],
+  "properties": {
+    "@id": {"type": "string", "format": "uri"},
+    "nodeID": {"type": "string"},
+    "claimID": {"type": "string"},
+    "nodeType": {"const": "claim"},
+    "claimKind": {"const": "definition"},
+    "permanentDefinitionID": {"type": "string", "pattern": "^tp:def:[a-z0-9][a-z0-9/-]*$"},
+    "preferredTerm": {"type": "string", "minLength": 1},
+    "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "associatedSymbols": {"type": "array", "items": {"type": "object", "required": ["symbol", "namespace"], "properties": {"symbol": {"type": "string"}, "namespace": {"type": "string"}, "equationPosition": {"type": "string"}, "documentDomain": {"type": "string"}}, "additionalProperties": false}},
+    "plainDefinition": {"type": "string", "minLength": 1},
+    "technicalDefinition": {"type": "string", "minLength": 1},
+    "scopeAndExclusions": {"type": "object", "required": ["scope", "exclusions"], "properties": {"scope": {"type": "array", "items": {"type": "string"}}, "exclusions": {"type": "array", "items": {"type": "string"}}}},
+    "source": {"type": "object", "required": ["sourceName", "exactShortQuotation", "authoritativeSourceURL", "sourceStatus", "sourceStatement", "frameworkInference"], "properties": {"sourceName": {"type": "string"}, "exactShortQuotation": {"type": "string", "minLength": 1}, "authoritativeSourceURL": {"type": "string", "format": "uri"}, "sourceStatus": {"enum": ["primary", "authoritative-secondary", "framework-internal", "unverified", "retracted"]}, "sourceStatement": {"type": "string"}, "frameworkInference": {"type": "string"}, "evidenceRef": {"type": "string"}}},
+    "frameworkClassification": {"type": "object", "required": ["classification", "classificationAuthor", "classificationMethodOrTestReceipt"], "properties": {"classification": {"type": "string"}, "classificationAuthor": {"type": "string"}, "classificationMethodOrTestReceipt": {"type": "string"}}},
+    "canonicalStatus": {"enum": ["noncanonical", "candidate", "canonical", "rejected"]},
+    "version": {"type": "string"},
+    "priorVersions": {"type": "array", "items": {"type": "string"}},
+    "citationPolicy": {"type": "object", "required": ["required", "mode", "inheritToDependents"], "properties": {"required": {"type": "boolean"}, "mode": {"const": "quote_or_link"}, "inheritToDependents": {"type": "boolean"}, "additionalProperties": false},
+    "edges": {"type": "array", "items": {"type": "object", "required": ["type", "target", "status"], "properties": {"type": {"enum": ["dependsOn", "feedsInto", "bridgesTo", "challenges", "expands", "forksFrom", "descendsTo"]}, "target": {"type": "string"}, "status": {"enum": ["proposed", "accepted", "rejected"]}}, "additionalProperties": true}}
+  },
+  "additionalProperties": true
+}
