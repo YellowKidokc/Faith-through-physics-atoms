@@ -54,6 +54,11 @@ Run `python _scripts/set_folder_icons.py` after changing content.
 """
 
 def make_domain(domain, demo=False):
+    domain = domain.lower().strip()
+    reserved_names = {"_template_domain", "_template", "template_domain"}
+    if domain in reserved_names or domain.startswith("_"):
+        raise ValueError(f"Refusing reserved/system domain name: {domain}")
+
     root = os.path.join(REPO, domain)
     os.makedirs(root, exist_ok=True)
     for stage, question in STAGES:
@@ -85,4 +90,8 @@ def make_domain(domain, demo=False):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print(__doc__); sys.exit(1)
-    make_domain(sys.argv[1], "--demo" in sys.argv)
+    try:
+        make_domain(sys.argv[1], "--demo" in sys.argv)
+    except ValueError as exc:
+        print(f"ERROR: {exc}")
+        sys.exit(1)

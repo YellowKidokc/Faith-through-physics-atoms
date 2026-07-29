@@ -18,6 +18,11 @@ if len(sys.argv) < 2:
     sys.exit(1)
 
 domain = sys.argv[1].lower().strip()
+reserved_names = {'_template_domain', '_template', 'template_domain'}
+if domain in reserved_names or domain.startswith('_'):
+    print(f'ERROR: Refusing reserved/system domain name: {domain}')
+    sys.exit(1)
+
 target = os.path.join(canonical, domain)
 
 if os.path.exists(target):
