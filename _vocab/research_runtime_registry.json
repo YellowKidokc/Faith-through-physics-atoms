@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T09:19:34.991462+00:00",
+  "generatedAt": "2026-07-28T21:38:35.090607+00:00",
   "runtime": "theophysics-research-runtime",
   "apis": [
     {
@@ -141,6 +141,21 @@
       "name": "MISUSE_AUDIT",
       "status": "implemented",
       "target": "_scripts/research_runtime.py manifest"
+    },
+    {
+      "name": "Text.anchor_lines",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py anchor"
+    },
+    {
+      "name": "Text.anchor_folder",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py anchor-folder"
+    },
+    {
+      "name": "Text.anchor_prompt",
+      "status": "implemented",
+      "target": "_scripts/research_runtime.py anchor --include-prompt"
     }
   ]
 }

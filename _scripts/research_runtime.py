@@ -24,6 +24,7 @@ import claim_runtime
 REPO = Path(__file__).resolve().parents[1]
 RUNTIME = REPO / "_runtime"
 REGISTRY_PATH = REPO / "_vocab" / "research_runtime_registry.json"
+ANCHOR_DIR = RUNTIME / "anchor_lines"
 
 HIDDEN_CHECKS = {
     "source": ("energy", "order", "information", "authority", "source", "input", "grace", "external"),
@@ -106,7 +107,23 @@ REGISTERED_APIS = [
     ("SCALE_SCAN", "registered", "requires claim-specific scales"),
     ("COUNTERMODEL", "registered", "requires rival model generator"),
     ("MISUSE_AUDIT", "implemented", "_scripts/research_runtime.py manifest"),
+    ("Text.anchor_lines", "implemented", "_scripts/research_runtime.py anchor"),
+    ("Text.anchor_folder", "implemented", "_scripts/research_runtime.py anchor-folder"),
+    ("Text.anchor_prompt", "implemented", "_scripts/research_runtime.py anchor --include-prompt"),
 ]
+
+ANCHOR_MARKERS = {
+    "mechanism": (
+        "because", "therefore", "requires", "depends", "costs", "pays", "absorbs",
+        "transfers", "closes", "opens", "holds", "carries", "repairs", "decays",
+        "source", "signal", "ledger", "floor", "inside", "outside", "channel",
+        "coherence", "entropy", "grace", "choice", "damage", "receiver",
+    ),
+    "punch": (
+        "not", "never", "cannot", "can't", "isn't", "doesn't", "only", "whole",
+        "everything", "nothing", "always", "forever", "inside", "outside",
+    ),
+}
 
 
 def now() -> str:
@@ -125,6 +142,268 @@ def contains_any(text: str, markers: tuple[str, ...]) -> list[str]:
 def source_text(path: Path) -> str:
     text, _packet = claim_runtime.load_source(path)
     return normalize(claim_runtime.strip_html(text))
+
+
+def anchor_source_text(path: Path) -> str:
+    text, _packet = claim_runtime.load_source(path)
+    text = re.split(r"\n\s*## \[DRAWER REGISTER\b|\n\s*## WORLDVIEW SESSION\b", text, maxsplit=1)[0]
+    kept = []
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith(">"):
+            continue
+        if stripped.startswith("*Failures this chapter:"):
+            continue
+        kept.append(line)
+    return normalize(claim_runtime.strip_html("\n".join(kept)))
+
+
+def sentences(text: str) -> list[str]:
+    cleaned = normalize(claim_runtime.strip_html(text))
+    pieces = re.split(r"(?<=[.!?])\s+", cleaned)
+    result = []
+    for piece in pieces:
+        sentence = normalize(piece.strip(" -\t\r\n"))
+        if not 20 <= len(sentence) <= 320:
+            continue
+        if sentence.startswith(">") or sentence.startswith("**"):
+            continue
+        if re.match(r"^(Simulation|Physics|Math|Story function|Theophysics bridge|Theology|Claim strength|Kill condition|Reader takeaway):", sentence):
+            continue
+        result.append(sentence)
+    return result
+
+
+def section_blocks(text: str) -> list[dict[str, str]]:
+    lines = claim_runtime.strip_html(text).splitlines()
+    blocks: list[dict[str, str]] = []
+    title = "Document"
+    buffer: list[str] = []
+    for line in lines:
+        heading = re.match(r"^(#{1,3})\s+(.+?)\s*$", line)
+        if heading:
+            if normalize("\n".join(buffer)):
+                blocks.append({"title": title, "text": "\n".join(buffer)})
+            title = heading.group(2).strip()
+            buffer = []
+        else:
+            buffer.append(line)
+    if normalize("\n".join(buffer)):
+        blocks.append({"title": title, "text": "\n".join(buffer)})
+    if not blocks:
+        blocks.append({"title": "Document", "text": text})
+    return blocks
+
+
+def sentence_score(sentence: str) -> float:
+    low = sentence.lower()
+    score = 0.0
+    length = len(sentence)
+    if 55 <= length <= 180:
+        score += 2.0
+    elif 35 <= length <= 230:
+        score += 1.0
+    score += 0.45 * len(contains_any(low, ANCHOR_MARKERS["mechanism"]))
+    score += 0.35 * len(contains_any(low, ANCHOR_MARKERS["punch"]))
+    if re.search(r"\bnot\b.+\bbut\b|\bnot\b.+\bbecause\b|\bcannot\b.+\bwithout\b", low):
+        score += 2.0
+    if re.search(r"\b(the|a) (ledger|signal|floor|chain|source|crowd|equation|receiver|template)\b", low):
+        score += 1.2
+    if re.search(r"^the (first|second|third) said that\b", low):
+        score -= 1.5
+    if re.search(r"\" \"", sentence):
+        score -= 1.0
+    if sentence.endswith("?"):
+        score -= 0.6
+    if "," in sentence and length > 210:
+        score -= 0.8
+    return score
+
+
+def strongest_sentence(text: str) -> str:
+    candidates = sentences(text)
+    if not candidates:
+        return ""
+    return max(candidates, key=sentence_score)
+
+
+def mechanism_plain(text: str) -> str:
+    candidate_sentences = sentences(text)
+    if not candidate_sentences:
+        return ""
+    scored = sorted(candidate_sentences, key=sentence_score, reverse=True)[:5]
+    mechanism = scored[0]
+    if len(mechanism) > 220:
+        mechanism = mechanism[:217].rstrip(",;: ") + "..."
+    return mechanism
+
+
+def clean_anchor(sentence: str) -> str:
+    anchor = normalize(sentence)
+    anchor = re.sub(r"^(And|But|So|Then|Because)\s+", "", anchor, flags=re.I)
+    anchor = re.sub(r"^The (first|second|third) said that\s+", "", anchor, flags=re.I)
+    anchor = re.sub(r"^VESSEL:\s*", "", anchor, flags=re.I)
+    anchor = re.sub(r"\s*[-–—]\s*", " - ", anchor)
+    if len(anchor) > 185:
+        parts = re.split(r";|, and |, but | because ", anchor, maxsplit=1, flags=re.I)
+        if parts and 35 <= len(parts[0]) <= 185:
+            anchor = parts[0]
+    return anchor.rstrip(".") + "."
+
+
+def anchor_alternates(anchor: str) -> dict[str, str]:
+    base = clean_anchor(anchor)
+    low = base.lower()
+    plain = base
+    poetic = base
+    brutal = base
+    if "inside" in low and "outside" in low:
+        poetic = "What cannot close from inside must be crossed from outside."
+        brutal = "Inside cannot pay an outside-sized bill."
+    elif "ledger" in low or "debt" in low or "paid" in low or "bill" in low:
+        poetic = "Mercy does not erase the ledger; it finds the payer."
+        brutal = "Unpaid forgiveness is just hidden debt."
+    elif "signal" in low or "receiver" in low or "channel" in low or "pipe" in low:
+        poetic = "The signal can be perfect and still arrive bent."
+        brutal = "A clean signal cannot save a closed receiver."
+    elif "floor" in low or "substrate" in low or "source" in low:
+        poetic = "The floor holds because the source keeps arriving."
+        brutal = "The floor is not self-sustaining."
+    elif "choice" in low or "choose" in low:
+        poetic = "A free choice becomes real by leaving a mark."
+        brutal = "You cannot un-choose."
+    elif "breaking" in low or "building" in low or "decay" in low:
+        poetic = "Building has to pay every cycle; decay only has to wait."
+        brutal = "Breaking is cheaper than building."
+    return {"plain": plain, "poetic": poetic, "brutal": brutal}
+
+
+def anchor_prompt(section_title: str, text: str) -> str:
+    excerpt = normalize(claim_runtime.strip_html(text))
+    if len(excerpt) > 4500:
+        excerpt = excerpt[:4500].rstrip() + "..."
+    return f"""You are doing a literary compression pass for a Theophysics chapter or section.
+
+Input section title: {section_title}
+
+Task:
+1. Identify the load-bearing mechanism in plain English.
+2. Find the strongest sentence already present.
+3. Write one better anchor sentence only if the existing sentence is not already stronger.
+4. Provide three alternates: plain, poetic, brutal.
+5. Recommend keep existing / replace with new / add near ending.
+
+Rules:
+- Do not summarize blandly.
+- Preserve the mechanism.
+- Keep the sentence quotable from memory.
+- Do not make it generic inspirational language.
+- Do not overclaim beyond the section.
+- The result should feel like the sentence the section was trying to earn.
+
+Section:
+{excerpt}
+"""
+
+
+def compress_section(title: str, text: str, include_prompt: bool = False) -> dict[str, Any]:
+    strongest = strongest_sentence(text)
+    mechanism = mechanism_plain(text)
+    anchor = clean_anchor(strongest or mechanism)
+    alternates = anchor_alternates(anchor)
+    recommendation = "keep existing"
+    if strongest and alternates["brutal"] != anchor and sentence_score(alternates["brutal"]) >= sentence_score(strongest):
+        recommendation = "add near ending"
+    result: dict[str, Any] = {
+        "sectionTitle": title,
+        "loadBearingMechanism": mechanism,
+        "strongestSentenceAlreadyPresent": strongest,
+        "recommendedAnchorSentence": anchor,
+        "alternates": alternates,
+        "recommendation": recommendation,
+    }
+    if include_prompt:
+        result["modelPrompt"] = anchor_prompt(title, text)
+    return result
+
+
+def anchor_report(path: Path, include_prompt: bool = False, max_sections: int = 80) -> dict[str, Any]:
+    text = anchor_source_text(path)
+    blocks = section_blocks(text)[:max_sections]
+    sections = [compress_section(block["title"], block["text"], include_prompt=include_prompt) for block in blocks]
+    doc_anchor = compress_section(path.stem, text, include_prompt=False)
+    output = {
+        "runtime": "theophysics-research-runtime",
+        "api": "Text.anchor_lines",
+        "version": "0.1.0",
+        "generatedAt": now(),
+        "source": str(path),
+        "documentAnchor": doc_anchor,
+        "sections": sections,
+    }
+    slug = re.sub(r"[^a-zA-Z0-9]+", "-", path.stem).strip("-").lower() or "source"
+    out_json = ANCHOR_DIR / f"{slug}.anchors.json"
+    out_md = ANCHOR_DIR / f"{slug}.anchors.md"
+    claim_runtime.write_text(out_json, json.dumps(output, ensure_ascii=False, indent=2) + "\n")
+    claim_runtime.write_text(out_md, anchor_markdown(output))
+    output["_jsonPath"] = str(out_json)
+    output["_markdownPath"] = str(out_md)
+    return output
+
+
+def anchor_markdown(output: dict[str, Any]) -> str:
+    lines = [
+        f"# Anchor Lines - {Path(output['source']).name}",
+        "",
+        f"Generated: {output['generatedAt']}",
+        "",
+        "## Document Anchor",
+        "",
+        output["documentAnchor"]["recommendedAnchorSentence"],
+        "",
+        "## Sections",
+        "",
+    ]
+    for section in output["sections"]:
+        lines += [
+            f"### {section['sectionTitle']}",
+            "",
+            f"- Mechanism: {section['loadBearingMechanism']}",
+            f"- Existing: {section['strongestSentenceAlreadyPresent']}",
+            f"- Anchor: {section['recommendedAnchorSentence']}",
+            f"- Plain: {section['alternates']['plain']}",
+            f"- Poetic: {section['alternates']['poetic']}",
+            f"- Brutal: {section['alternates']['brutal']}",
+            f"- Recommendation: {section['recommendation']}",
+            "",
+        ]
+    return "\n".join(lines)
+
+
+def anchor_folder(folder: Path, pattern: str = "*.md", include_prompt: bool = False, limit: int = 200) -> dict[str, Any]:
+    files = sorted(path for path in folder.glob(pattern) if path.is_file())[:limit]
+    reports = [anchor_report(path, include_prompt=include_prompt) for path in files]
+    index = {
+        "runtime": "theophysics-research-runtime",
+        "api": "Text.anchor_folder",
+        "generatedAt": now(),
+        "folder": str(folder),
+        "pattern": pattern,
+        "count": len(reports),
+        "reports": [
+            {
+                "source": report["source"],
+                "json": report["_jsonPath"],
+                "markdown": report["_markdownPath"],
+                "documentAnchor": report["documentAnchor"]["recommendedAnchorSentence"],
+            }
+            for report in reports
+        ],
+    }
+    out = ANCHOR_DIR / "anchor_index.json"
+    claim_runtime.write_text(out, json.dumps(index, ensure_ascii=False, indent=2) + "\n")
+    index["_path"] = str(out)
+    return index
 
 
 def nothing_hidden(text: str) -> dict[str, Any]:
@@ -310,6 +589,17 @@ def main() -> int:
     p_manifest.add_argument("source", type=Path)
     p_manifest.add_argument("--limit", type=int, default=80)
 
+    p_anchor = sub.add_parser("anchor", help="Build anchor-line compression report for a source file.")
+    p_anchor.add_argument("source", type=Path)
+    p_anchor.add_argument("--include-prompt", action="store_true", help="Include model-call prompt payloads in JSON output.")
+    p_anchor.add_argument("--max-sections", type=int, default=80)
+
+    p_anchor_folder = sub.add_parser("anchor-folder", help="Build anchor-line reports for every matching file in a folder.")
+    p_anchor_folder.add_argument("folder", type=Path)
+    p_anchor_folder.add_argument("--pattern", default="*.md")
+    p_anchor_folder.add_argument("--include-prompt", action="store_true", help="Include model-call prompt payloads in JSON output.")
+    p_anchor_folder.add_argument("--limit", type=int, default=200)
+
     p_failure = sub.add_parser("failure", help="Show blast radius for a claim/node id.")
     p_failure.add_argument("claim_id")
 
@@ -320,6 +610,17 @@ def main() -> int:
         result = manifest(args.source, limit=args.limit)
         print(f"[ok] manifest={result['_path']}")
         print(f"[ok] claims={len(result['claimIDs'])} lowest={result['survivalVector']['lowestCoordinate']}")
+        return 0
+    if args.command == "anchor":
+        result = anchor_report(args.source, include_prompt=args.include_prompt, max_sections=args.max_sections)
+        print(f"[ok] json={result['_jsonPath']}")
+        print(f"[ok] markdown={result['_markdownPath']}")
+        print(f"[ok] sections={len(result['sections'])}")
+        return 0
+    if args.command == "anchor-folder":
+        result = anchor_folder(args.folder, pattern=args.pattern, include_prompt=args.include_prompt, limit=args.limit)
+        print(f"[ok] index={result['_path']}")
+        print(f"[ok] reports={result['count']}")
         return 0
     if args.command == "failure":
         print(json.dumps(failure_propagation(args.claim_id), ensure_ascii=False, indent=2))
