@@ -1,0 +1,13 @@
+{
+  "@context": ["https://schema.org", "https://faiththruphysics.com/vocab/context.jsonld"],
+  "@id": "https://faiththruphysics.com/definitions/registry",
+  "nodeID": "tp:definitions/registry",
+  "nodeType": "raw",
+  "name": "Canonical Definition Registry",
+  "version": "1.0.0",
+  "definitions": [
+    {"permanentDefinitionID": "tp:def:terminus-sui", "preferredTerm": "Terminus Sui", "atom": "atoms/terminus-sui.jsonld", "canonicalStatus": "canonical", "version": "1.0.0"},
+    {"permanentDefinitionID": "tp:def:goedel-incompleteness", "preferredTerm": "Gödel incompleteness theorems", "atom": "atoms/goedel-incompleteness.jsonld", "canonicalStatus": "candidate", "version": "0.1.0"},
+    {"permanentDefinitionID": "tp:def:master-equation/grace", "preferredTerm": "Grace (Master Equation)", "atom": "atoms/master-equation-grace.jsonld", "canonicalStatus": "candidate", "version": "0.1.0"}
+  ]
+}

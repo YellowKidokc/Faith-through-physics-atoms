@@ -15,6 +15,11 @@ Proposed node connections can now be pressure-tested through the provider-neutra
 [Adversarial Review Gate](_docs/ADVERSARIAL_REVIEW_GATE.md). Its GUI and CLI
 block opposed wires while reserving every acceptance decision for a human.
 
+Canonical terminology is indexed by the
+[Canonical Definition Registry](_docs/CANONICAL_DEFINITION_REGISTRY.md). Each
+definition and its evidence remain independent atoms; resolver matches are only
+proposals and inherit required source citations when rendered.
+
 ---
 
 ## CRITICAL DISTINCTIONS

@@ -19,6 +19,7 @@ from typing import Any
 
 REPO = Path(__file__).resolve().parents[1]
 PROPOSALS = REPO / "_proposals" / "claim-relationships.jsonl"
+DEFINITION_PROPOSALS = REPO / "_proposals" / "definition-links.jsonl"
 REVIEWS = REPO / "_proposals" / "adversarial-reviews.jsonl"
 ALLOWED_VERDICTS = {"pass", "oppose", "uncertain"}
 
@@ -112,7 +113,8 @@ def normalize(result: dict[str, Any]) -> dict[str, Any]:
 def run_reviews(provider: str = "local", proposal_id: str | None = None,
                 endpoint: str = "", model: str = "", api_key: str = "") -> list[dict[str, Any]]:
     atoms = atoms_by_id()
-    proposals = [p for p in load_jsonl(PROPOSALS) if not proposal_id or p.get("proposalID") == proposal_id]
+    proposal_rows = load_jsonl(PROPOSALS) + load_jsonl(DEFINITION_PROPOSALS)
+    proposals = [p for p in proposal_rows if not proposal_id or p.get("proposalID") == proposal_id]
     output = []
     client = CompatibleClient(endpoint, model, api_key) if provider == "compatible" else None
     for proposal in proposals:
