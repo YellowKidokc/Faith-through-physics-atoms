@@ -1,0 +1,15 @@
+{
+  "id": "tp:eq/master-equation/v3",
+  "status": "current",
+  "canonicalForm": "chi(X) = C_W[ product_i X_i ]",
+  "dynamicForm": "dX/dt = W grad chi(X) + eta(X,t)",
+  "variables": ["G", "M", "E", "S", "T", "K", "Q", "R", "F"],
+  "wrapper": "C_W",
+  "domain": "[0,1]^9",
+  "rules": [
+    "C_W is identity for now",
+    "C_W is zero-preserving",
+    "if any X_i = 0, chi = 0",
+    "E means Electromagnetism/Truth; E = Energy is retired"
+  ]
+}
