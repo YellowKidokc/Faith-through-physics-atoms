@@ -1,17 +1,17 @@
 # Lane 4 Latest Status
 
-Generated: 2026-07-28T20:43:47+00:00
+Generated: 2026-08-01T04:17:55+00:00
 
-Atoms: **253**
+Atoms: **268**
 
 ## Proof labels
 
 - `ABDUCTIVELY_FAVORED`: 1
-- `BRIDGE_DECLARED`: 4
+- `BRIDGE_DECLARED`: 10
 - `ISOMORPHIC_EVENT_CANDIDATE`: 50
 - `LEAN_GUARDRAIL_SUPPORTED`: 2
 - `NARRATIVE_ANCHOR`: 1
-- `NOT_ESTABLISHED`: 189
+- `NOT_ESTABLISHED`: 198
 - `PYTHON_RUNTIME_SUPPORTED`: 1
 - `QUARANTINE`: 2
 - `RERUN_OWED`: 3
@@ -217,6 +217,17 @@ Atoms: **253**
 | `tp:lane4/coherence-atlas/coherence-atlas-isomorphic-event-lane` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
 | `tp:lane4/consilience/consilience-good-bad-coherence-001` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
 | `tp:lane4/crown-canon/crown-truth-series-001` | active_candidate | BRIDGE_DECLARED | not_applicable |
+| `tp:lane4/derivation-grammar/dg-core-v0-2` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/derivation-grammar/dg-t4-independent-convergence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/derivation-grammar/dg1-dependency` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/derivation-grammar/dg2-minimal-capability` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/derivation-grammar/dg3-preservation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/derivation-grammar/dg4-collapse` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/derivation-grammar/dg5-translation` | active_candidate | BRIDGE_DECLARED | not_applicable |
+| `tp:lane4/derivation-grammar/dg6-dynamics` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/derivation-grammar/dg7-admissibility` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/derivation-grammar/dg8-closure` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/derivation-grammar/method-00-bridge-discipline` | active_candidate | BRIDGE_DECLARED | not_applicable |
 | `tp:lane4/isomorphic-events/iso-deployed-math-light-judgment-001` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
 | `tp:lane4/isomorphic-events/iso-iso-000` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
 | `tp:lane4/isomorphic-events/iso-iso-001` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
@@ -270,6 +281,10 @@ Atoms: **253**
 | `tp:lane4/logos/logos-math-logic-no-drift-001` | active_candidate | BRIDGE_DECLARED | not_applicable |
 | `tp:lane4/master-equation/cw-wrapper-not-tenth-factor` | active_candidate | LEAN_GUARDRAIL_SUPPORTED | not_applicable |
 | `tp:lane4/master-equation/master-equation-v3-canonical-form` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/physics/sci-00-the-science-argument-for-triadic-structure` | active_candidate | BRIDGE_DECLARED | not_applicable |
 | `tp:lane4/proof-discipline/lean4-proof-label-discipline` | active_candidate | LEAN_GUARDRAIL_SUPPORTED | not_applicable |
 | `tp:lane4/review/ai-reviewer-statement-shelf` | active_candidate | QUARANTINE | not_applicable |
 | `tp:lane4/runtime/python-colab-runtime-lane` | active_candidate | PYTHON_RUNTIME_SUPPORTED | not_applicable |
+| `tp:lane4/theology/t-03-the-shadow-before-creation` | active_candidate | BRIDGE_DECLARED | not_applicable |
+| `tp:lane4/theophysics-method/tp-00-theophysics-blue-sheet` | active_candidate | BRIDGE_DECLARED | not_applicable |
+| `tp:lane4/trinity/t-02-the-trinity-unified` | active_candidate | BRIDGE_DECLARED | not_applicable |

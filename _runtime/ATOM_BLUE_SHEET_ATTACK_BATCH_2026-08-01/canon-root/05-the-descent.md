@@ -1,0 +1,173 @@
+The Descent - One Unbroken Line
+
+De Revolutionibus Veritatis - Canonization Page
+
+# The Descent
+
+From the first act of creation to the point where all things converge - one unbroken line.
+Begin with being. Everything else follows.
+
+[Home](index.html) - [BLUE Series](00-index.html) - [The Math](the-math.html) - [The Bridge](the-bridge.html)
+
+**What this page is:** the axiom chain told in story form. The surface line is the descent. Open any step to see the causal logic underneath: the axiom pressure, the derived bridge, and any place where the canon still needs a named node.
+
+◆ 1
+
+God creates.
+
+This is the theological opening of the same floor the workbook names as existence: something exists rather than nothing. The poem says it personally because Christian canon does not begin with brute being. It begins with Creator and creation.
+
+P0 / A1.1theological reading 2
+
+Creation stands.
+
+Created being is not a passing hallucination inside nothing. It has enough stability to be named, known, received, and answered. This is where existence becomes a world rather than a bare assertion.
+
+existence to worldcreation order 3
+
+What stands is distinguishable.
+
+If nothing can be distinguished, nothing can be described. Standing creation gives contrast: this and not-that, light and dark, one thing and another. Distinction is the first edge of intelligibility.
+
+A1.2distinction 4
+
+Distinction makes being intelligible.
+
+Distinction does not merely divide. It makes knowledge possible. A reality with no differences cannot say anything. A reality with differences can be read.
+
+distinction to intelligibility 5
+
+What is intelligible carries information.
+
+Once a state can be distinguished, uncertainty is reduced. That reduction is information. The workbook's information layer is doing the heavy lifting here: being becomes readable because distinguishability is already informational.
+
+A1.3D1.1D1.2 6
+
+What carries information can stand in relation.
+
+Information is not isolated dust. It can be transmitted, received, compared, aligned, resisted, remembered, and answered. This is the first turn from mere content toward communion.
+
+D2.1P2.2Logos field 7
+
+What can stand in relation can be kept or broken, ordered or disordered, honored or violated.
+
+Relation introduces fragility. A relation can be faithful or false, coherent or fractured. This is where the chain first sees that order is not decoration; order is the condition under which relation remains truthful.
+
+A3.1A3.2D3.1 8
+
+Therefore relation reveals value.
+
+This is the golden hinge. If something can be honored or violated, then it is not value-neutral. Relation discloses that some orientations preserve fullness while others damage it.
+
+**Canon node recommended**REL-VAL: Relation Discloses Value. This step is already implied by coherence and morality, but it deserves its own named bridge.
+
+relation to valuemissing named node 9
+
+What has value can be regarded rightly or wrongly.
+
+Value creates the possibility of right regard. A thing can be loved according to what it is, or used against what it is. This is not yet full moral law, but moral valence is now awake.
+
+value to moral orientation 10
+
+Thus value opens moral valence.
+
+The chain has crossed from description into obligation. Once value is real, orientation matters. Some movements align with the good; others refuse, distort, or invert it.
+
+A11.1A11.2reference fullness 11
+
+Moral valence makes right and wrong meaningful.
+
+Right and wrong are not tribal labels here. They are directions relative to the good. Good is reference fullness; evil is privation, rupture, or parasitic refusal of that fullness.
+
+moral realismprivation structure 12
+
+Right and wrong require agents who can choose.
+
+A stone can be ordered or disordered, but it cannot be righteous or guilty. Moral valence becomes moral drama only where agency enters: a capable subject can receive, answer, refuse, repent, or resist.
+
+A5.1A5.2BC8 13
+
+Choice requires a world of rules, limits, time, and consequences.
+
+Choice cannot be weightless and still be choice. A real decision must happen inside an ordered world where acts persist, effects unfold, and consequences cannot simply be erased by wishing.
+
+stages 4-7law / time / boundary 14
+
+Such a world permits decay, vulnerability, and loss.
+
+Finitude is not evil by itself, but finite created order can be damaged. A world with time and consequence can run down, be wounded, forget, fragment, and lose coherence.
+
+P3.2T3.1A6.3 15
+
+Decay and vulnerability open the possibility of adversarial refusal of coherence.
+
+The possibility of damage becomes morally charged when an agent chooses against coherence. The refusal does not create a rival good. It exploits the vulnerability of created relation.
+
+**Canon node recommended**ADV-REF: Adversarial Refusal. This should be named as parasitic agency against coherence, not as a coequal metaphysical power.
+
+privationenemy as refusal 16
+
+The Enemy is that agency of refusal, exploiting disorder against the good.
+
+The Enemy does not generate being, truth, or goodness. He receives and inverts, exploits and accuses, corrupts and fragments. That is why evil is asymmetric: it is downstream of the good it refuses.
+
+privation of goodasymmetric moral order 17
+
+Adversarial action creates real debt, damage, and disorder.
+
+Damage is not pretend. Sin is not merely a mood, and disorder is not erased because the offender later prefers a cleaner story. A truthful system keeps the ledger.
+
+D8.1T8.1T11.2 18
+
+Perfect Justice requires that this be truthfully answered and paid.
+
+Justice is reality refusing to lie about what happened. If damage is real, the answer must be real. Forgiveness cannot mean pretending the ledger was blank.
+
+moral conservationledger integrity 19
+
+Perfect Mercy wills restoration rather than abandonment.
+
+Mercy does not deny justice. Mercy refuses to let justice be the final word of destruction. It wills repair without falsifying the wound.
+
+mercyrestoration 20
+
+Justice and Mercy together require a cost-bearing source beyond the damaged order itself.
+
+This is the closed-system break. A damaged system cannot both pay its own debt and restore itself to fullness by internal rearrangement. The answer must come from beyond the damage while still entering the place where damage is real.
+
+C8.1C8.2A9.1 21
+
+That source must preserve truth while making restoration possible.
+
+If truth is lost, justice fails. If restoration is impossible, mercy fails. The source must do both: keep the true account of the wound and open a real path back to life.
+
+identity preservedorientation transformed 22
+
+That source is Grace.
+
+Grace is the external, non-closed-system rescue. It is not self-improvement wearing spiritual clothes. It is input from beyond the damaged order that preserves the person while transforming the sign-state.
+
+BC2A9.2D9.1P9.1-P9.5 23
+
+Grace restores creation toward God.
+
+Grace does not merely cancel a penalty. It reopens the system toward its source. The direction of restoration is not generic wellness; it is return to the One from whom coherence came.
+
+external restorationreturn to source 24
+
+Christ is the convergence point where justice, mercy, truth, and restoration meet.
+
+The Cross is where the line arrives because it is the one event in which the ledger is not denied, mercy is not abandoned, truth is not softened, and restoration is not imaginary. In Christ, the source beyond the damaged order enters the damaged order and bears its cost without ceasing to be the source.
+
+Logos-ChristLAMBDAFINAL-1OMEGA
+
+The spreadsheet proves the chain. The Descent sings it.
+
+No premise smuggled. No step skipped.
+Being, followed all the way down, arrives at the Cross.
+
+**Canon note:** two nodes deserve explicit names in the axiom workbook: *Relation Discloses Value* and *Adversarial Refusal*. They are already structurally present, but naming them would make the descent walk cleanly from information to morality and from vulnerability to enemy-action.
+
+[Home](index.html) - [BLUE Series](00-index.html) - [The Math](the-math.html) - [The Bridge](the-bridge.html)
+
+De Revolutionibus Veritatis - David Lowe - Logos Papers Index - The Death Test - POF 2828 - chi = C

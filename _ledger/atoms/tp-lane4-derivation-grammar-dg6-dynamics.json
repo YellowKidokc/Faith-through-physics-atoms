@@ -1,0 +1,52 @@
+{
+  "atom_id": "tp:lane4/derivation-grammar/dg6-dynamics",
+  "atom_uid": "sha256:a94e72c35db74fb04f3670ee61e4541bf1ed9faf531589080ba0fae63fcea79b",
+  "title": "DG6 - Dynamics",
+  "claim": "A derivation layer can occupy coherent, defective, or ruptured states, allowing the grammar to describe successful derivation and failure modes.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "definition",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "A framework must be able to classify not only valid structure but also damaged or failed structure."
+  ],
+  "definitions": [
+    "Coherent: dependencies are preserved and the layer operates lawfully.",
+    "Defective: the layer exists but fails to preserve or express dependencies fully.",
+    "Ruptured: the layer collapses or loses required dependency structure."
+  ],
+  "equations": [
+    "State in {Coherent, Defective, Ruptured}"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2"
+  ],
+  "negative_guards": [
+    "Do not treat every imperfect claim as fully collapsed.",
+    "Do not treat defective as verified."
+  ],
+  "kill_conditions": [
+    "The state classes cannot classify real framework failures without ambiguity.",
+    "The coherent/defective/ruptured categories collapse into mere rhetoric."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\DG_V02_ATOM_SEED_BATCH_2026-08-01\\DG6-Dynamics.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-08-01T04:17:53+00:00",
+      "lane": "Framework",
+      "event_id": "sha256:92a5a5b6f48810ab88c8182ffc9726c01472fb0f459bf936e9952979d601952b"
+    }
+  ],
+  "source_claim_id": "DG6-Dynamics"
+}

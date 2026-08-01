@@ -1,0 +1,38 @@
+{
+  "source_claim_id": "DG4-Collapse",
+  "title": "DG4 - Collapse",
+  "claim": "If a required lower layer collapses, any higher layer depending on it collapses unless an explicit repair or alternate dependency is supplied.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "Dependency creates vulnerability unless repaired or rerouted."
+  ],
+  "definitions": [
+    "Collapse: loss of required dependency structure."
+  ],
+  "equations": [
+    "not L(n) -> not L(n+1)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency"
+  ],
+  "negative_guards": [
+    "Do not let dependent claims keep higher status than their failed dependencies.",
+    "Do not hide repair mechanisms."
+  ],
+  "kill_conditions": [
+    "A dependent layer remains valid after its required lower layer collapses with no repair or alternate dependency.",
+    "Collapse propagation cannot be distinguished from ordinary revision."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ]
+}
+

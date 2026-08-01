@@ -81,6 +81,37 @@ requires = [
   { label = "Landauer reset-cost quote", pattern = "kT\\\\ln 2|kT ln 2" },
 ]
 
+# Canon classification rules are intentionally editable. They let the guard
+# enforce David's current ruling that not every historical "axiom" file is a
+# strict axiom. Some files are definitions, equations, boundary conditions, or
+# derived theorems.
+
+[[canon_class_overrides]]
+scope = ["**/003_A1.3_Information-Primacy.md"]
+canon_class = "theorem"
+reason = "Lean 4 dashboard classifies A1.3 as a derived theorem, not a primitive axiom."
+
+[[canon_classification]]
+id = "A1_3_MUST_BE_DERIVED_THEOREM"
+scope = ["**/003_A1.3_Information-Primacy.md"]
+expected = "theorem"
+message = "A1.3 Information Primacy must be treated as a derived theorem in strict canon mode."
+severity = "error"
+
+[[canon_classification]]
+id = "A2_1_MUST_BE_AXIOM"
+scope = ["**/008_A2.1_Substrate-Requirement.md"]
+expected = "axiom"
+message = "A2.1 Substrate Requirement is currently ruled as a strict/floor axiom."
+severity = "error"
+
+[[canon_classification]]
+id = "DEFINITIONS_NOT_AXIOMS"
+scope = ["**/*_D*.md", "**/*Definition*.md"]
+forbid = ["axiom", "theorem"]
+message = "Definition files should remain definitions, not promoted to axioms/theorems without a manifest ruling."
+severity = "warning"
+
 [[equation_aliases]]
 id = "MASTER_EQUATION_DRIFT"
 detect = 'χ\s*=|\\chi\s*='

@@ -55,6 +55,38 @@ requires adjudication. `--review-packet` exports the bounded evidence needed by
 a human or an optional model, but its answer is advisory until accepted into
 the manifest. This separation is the guard against semantic hallucination.
 
+## Changeable canon classification layer
+
+The guard can also enforce the current canon ruling for what a document *is*:
+axiom, derived theorem, definition, equation, boundary condition, and so on.
+This is intentionally controlled from `canon-manifest.toml`, not hardcoded.
+
+Use `[[canon_class_overrides]]` when David has ruled that a historical label is
+wrong. Example: A1.3 may still say "Primitive" in older frontmatter, while the
+Lean dashboard says it is a derived theorem.
+
+```toml
+[[canon_class_overrides]]
+scope = ["**/003_A1.3_Information-Primacy.md"]
+canon_class = "theorem"
+reason = "Lean 4 dashboard classifies A1.3 as a derived theorem."
+```
+
+Use `[[canon_classification]]` to require or forbid labels:
+
+```toml
+[[canon_classification]]
+id = "DEFINITIONS_NOT_AXIOMS"
+scope = ["**/*_D*.md", "**/*Definition*.md"]
+forbid = ["axiom", "theorem"]
+message = "Definition files should remain definitions."
+severity = "warning"
+```
+
+The detector reads simple frontmatter (`canon_class`, `entity_type`, `type`,
+`classification`, or `status`), then filename/title/body hints, then manifest
+overrides. The manifest ruling wins.
+
 ## Current source conflict that must be ruled
 
 The supplied April README declares only two no-drift files canonical and

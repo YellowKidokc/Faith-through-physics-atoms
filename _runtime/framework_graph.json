@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T09:20:15.570019+00:00",
+  "generatedAt": "2026-08-01T09:16:47.998987+00:00",
   "nodes": [
     {
       "id": "tp:axioms/01/AX-001",
@@ -3843,7 +3843,7 @@
     },
     {
       "source": "tp:master-equation/01/001",
-      "target": "tp:economics/01/001",
+      "target": "tp:bridges/master-equation/economics/trilemma-cost-bearing",
       "type": "bridgesTo",
       "propagates": true
     },
@@ -3851,7 +3851,7 @@
       "source": "tp:master-equation/01/001",
       "target": "tp:theology/01/001",
       "type": "bridgesTo",
-      "propagates": true
+      "propagates": false
     },
     {
       "source": "tp:master-equation/01/002",

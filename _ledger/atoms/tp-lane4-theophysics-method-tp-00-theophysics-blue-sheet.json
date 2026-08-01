@@ -1,0 +1,262 @@
+{
+  "atom_id": "tp:lane4/theophysics-method/tp-00-theophysics-blue-sheet",
+  "atom_uid": "sha256:aab23202b99ba5b0b6c18d247028fa3981e618468744651031cf2aa0deea306a",
+  "title": "TP-00 - Theophysics Blue Sheet",
+  "claim": "Theophysics should be introduced as a fair comparison between competing explanatory frameworks using the same observations and standards, asking which explains more with fewer independent assumptions while remaining coherent.",
+  "domain": "theophysics-method",
+  "lane": "Lane4",
+  "claim_class": "framework_guardrail",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Competing frameworks can be compared by coherence, explanatory power, assumption cost, register honesty, reach, failure visibility, and human fit.",
+    "Theophysics must not be granted theological shortcuts when making physics-side claims.",
+    "Closed naturalism must count its own primitives and hidden subsidies."
+  ],
+  "definitions": [
+    "Hidden upgrade: promoting a claim into a stronger register than evidence supports.",
+    "Hidden subsidy: relying on a primitive such as truth, lawfulness, or intelligibility without counting it as a cost."
+  ],
+  "equations": [],
+  "bridges": [
+    {
+      "from": "methodological comparison",
+      "to": "Theophysics public doorway",
+      "status": "framework guardrail"
+    }
+  ],
+  "dependencies": [
+    "P-00-opening-postulates",
+    "SCI-00-the-science-argument-for-triadic-structure",
+    "T-00-truth-compendium"
+  ],
+  "negative_guards": [
+    "Do not say physics proves God.",
+    "Do not let theology rescue weak physics.",
+    "Do not let naturalism use truth, lawfulness, or moral obligation without counting assumption cost."
+  ],
+  "kill_conditions": [
+    "If the comparison applies stricter standards to one framework than the other, the blue-sheet rule fails.",
+    "If Theophysics hides bridge-status limits, the document must be revised.",
+    "If naturalism's assumptions are criticized unfairly or inaccurately, the comparison must be corrected."
+  ],
+  "proof_label": "BRIDGE_DECLARED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\TP-00-theophysics-blue-sheet.md",
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\markdown\\TP-00-theophysics-blue-sheet.md",
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\_HANDOFF_INBOX\\TP-00-theophysics-blue-sheet.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\TP-00-theophysics-blue-sheet.atom.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-07-31T23:08:22+00:00",
+      "lane": "Lane4",
+      "event_id": "sha256:8f77159418e5c63346f688eedcb5ab1d2005a07a1792952a9e414fc8f4784abc"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "PublicDoorway",
+      "result": "created",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\FAMILY-00-start-here.html",
+      "meaning": "Created family-facing doorway page with audio, audit snapshot, and links into the Theophysics canon sequence.",
+      "limits": "Pastoral/public explanation only; not a proof artifact; audit snapshot is summarized and full audit remains linked for context.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-31T23:40:30+00:00",
+      "event_id": "sha256:648a280e729daf60adfa2929525778a52ddf591e9ee6cece40387a9599850feb"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "PublicDoorwayAudio",
+      "result": "created",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\audio\\FAMILY-00-start-here.mp3",
+      "meaning": "Generated Edge TTS audio for the family-facing doorway page at slightly faster narration speed.",
+      "limits": "Audio is generated narration of the doorway script; it does not add evidential content.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-31T23:40:30+00:00",
+      "event_id": "sha256:93401b7532246552cab80efdba071913f3775180c99c27b9580cdadb2349ba81"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "PublicDoorwayRevision",
+      "result": "patched",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\family\\AUDIT-01-truth-fracture-grace-route.md",
+      "meaning": "Added route audit and updated family doorway to explain the order-of-explanation correction: truth, fracture, repair, grace, Crown.",
+      "limits": "Audit is preserved as external/read-through assessment; family page summarizes it for orientation, not proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-31T23:52:42+00:00",
+      "event_id": "sha256:2a37c348d097b910f909680e76658be9200417bd5ed1e95ce4a6040bb3df301b"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "PublicDoorwayRevision",
+      "result": "patched",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\family\\AUDIT-02-crown-ruling.md",
+      "meaning": "Added Crown ruling audit and updated family doorway to explain The Crown as a separable claim chain, not one magic proof.",
+      "limits": "Crown section is public orientation; individual claims remain separately graded and not all are canon-ready.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-31T23:56:19+00:00",
+      "event_id": "sha256:652d991754f904e4957f50b2b85b8081507a2f7100865568b079dbe910694a1f"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "PublicDoorwayBuild",
+      "result": "rebuilt",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\family\\FAMILY-00-start-here.md",
+      "meaning": "Rebuilt family doorway artifacts from one canonical Markdown source.",
+      "limits": "Markdown source is pastoral/public orientation, not a proof artifact.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-01T00:00:07+00:00",
+      "event_id": "sha256:51e519301b7c72f9e6e56f3f146813d139714b227c412dca38ded773f0994d2a"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "PublicDoorwayBuild",
+      "result": "created",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\family\\build_family_start_here.py",
+      "meaning": "Added repeatable builder: one Markdown source generates family HTML, top-level HTML, TTS script, and MP3 audio.",
+      "limits": "Builder is for public doorway artifacts only; it does not validate claims or proof strength.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-01T00:01:00+00:00",
+      "event_id": "sha256:e122e4f122e5cae750edec1b8cade9b0a72615be03284f934fd5df46acbd70b4"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "ProtocolCanon",
+      "result": "created",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\P-01-playground-protocol.md",
+      "meaning": "Recovered and saved cleaned canonical Playground Protocol as lived-truth filter for public claims, bridge language, and moral direction tests.",
+      "limits": "Protocol is a governance/filter document, not a proof artifact; original handoff preamble was cooled due to known correction need.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-01T00:14:53+00:00",
+      "event_id": "sha256:e1f2a23fc46227cf65187533e06825ad9f17859c1814e90f611471493f84019d"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "CanonHTML",
+      "result": "received",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\COST-03-the-cost.html",
+      "meaning": "Added Sheet 3 The Cost to canon shelf as COST-03: structural cost vs moral evil, indexed without renumbering existing 03 documents.",
+      "limits": "HTML sheet is a working draft; cost/fall/grace claims remain bridge/theology claims and should not be upgraded to physics proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-01T00:49:34+00:00",
+      "event_id": "sha256:d46b0dbd886c84c981affa5cebfc18e256aabf0f634d8d6a0c73db575bbf5d0d"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "CloudflareTTS",
+      "result": "created",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\theophysics-cloudflare-tts-test.zip",
+      "meaning": "Created static Cloudflare-ready TTS test package with index, page-level audio players, local MP3 files, and included cost sheet index entry.",
+      "limits": "Static package only; not deployed. Audio generated locally with Edge TTS; package uses plain HTML audio tags, no Cloudflare Worker required.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-01T00:49:41+00:00",
+      "event_id": "sha256:070703b5feb350e95df094724ee5ecd31545ee69b84dc553bfcebf762a4e48b0"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "CloudflareTTS",
+      "result": "created",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\theophysics-cloudflare-tts-test-under-25mb.zip",
+      "meaning": "Created smaller Cloudflare-ready TTS test package under 25 MB by including audio for audit, family doorway, and blue sheet while indexing science/cost pages without audio.",
+      "limits": "Static package only; not deployed. Existing older audio-dock/R2 pipeline was found but not reused in this zip test.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-01T00:56:32+00:00",
+      "event_id": "sha256:22cd64438038d0f5ab6dde7897a6d6d3a453c142206f427411eb033e11c73a65"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "KimiHandoff",
+      "result": "created",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\_KIMI_SYSTEM\\consciousness_stack\\README.md",
+      "meaning": "Prepared Kimi consciousness stack handoff and repeatable system folder with source copies, claim matrix, stack index, and autonomy instruction.",
+      "limits": "Handoff artifact only. Consciousness stack remains open: scalar-field equilibrium reduced to analogy; internal-regress argument remains live but not closed.",
+      "timestamp": "2026-08-01T01:06:29+00:00",
+      "event_id": "sha256:7f0a6762ec55af1378c14b7172c4704440f3d9bd766539043755d2da5153626c"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "AxiomMap",
+      "result": "passed_with_caveats",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\notes\\LANE4-ontological-layer-axiom-map.md",
+      "meaning": "Ran David ontological-layer table through the four opening axioms as a Lane 4 bridge audit. Core axiom mapping holds; space/time/matter/motion/forces require bridge-status wording and physics-register guardrails.",
+      "limits": "Not a physics derivation, not a Master Equation proof, and not a derivation of the four forces. Relation-priority, K-as-matter, G.K-as-motion, and forces-as-projections remain bridge/model claims pending formal support.",
+      "timestamp": "2026-08-01T01:19:47+00:00",
+      "event_id": "sha256:262acd85503985dfd298f576230d9c665a76a1d5e996746c604c7e73cbf8246c"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "CanonCaveatIntegration",
+      "result": "implemented",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\00A-the-four-axioms.html",
+      "meaning": "Integrated Lane 4 caveats into 00A: relation-as-primitive marked as philosophical bridge, minimal ontology introduced, and Master Equation symbols bounded as grammar needing physics-register instantiation.",
+      "limits": "Only 00A HTML patched in this run artifact; companion 001 HTML also patched separately but this registry entry points to 00A as representative artifact.",
+      "timestamp": "2026-08-01T01:23:17+00:00",
+      "event_id": "sha256:f59efbdcccc255718c7cada11e3750d594ad35f8fd99fe0acec38c1c06f1d7dc"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "CanonCaveatIntegration",
+      "result": "implemented",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\001-the-single-expression.html",
+      "meaning": "Integrated Lane 4 caveats into 001: relational ontology marked as bridge, matter/K and motion/G.K bounded, GR/Leibniz wording cooled, and forces marked as structural correspondence rather than derivation.",
+      "limits": "This is an HTML wording/canon-safety pass, not a new derivation of spacetime, matter, motion, or the four forces.",
+      "timestamp": "2026-08-01T01:23:23+00:00",
+      "event_id": "sha256:c80033442caf675a54f3ef4080af81d7f19268de4b17238eeb45314c073aefd5"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "ABCCompilation",
+      "result": "implemented",
+      "artifact_path": "D:\\DONT TOUCH HTML\\Theophysics Canon - Kimi Compilation\\index.html",
+      "meaning": "Implemented first-pass A/B/C compilation backgrid from Kimi design spec: index.html, abc-map.json, shared assets, and ten topic pages with A theology, B science, and C Theophysics bridge sections plus source traces.",
+      "limits": "Phase 1 aggregation only. Not the full rewrite, not exhaustive source extraction, and not all spiritual terms are auto-linked beyond the first-pass curated links.",
+      "timestamp": "2026-08-01T01:56:38+00:00",
+      "event_id": "sha256:75b70b8b4fe05e452e17e1cea1590611d13f82ccfec408f5047a73bcf4e0c10e"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "OPUSSourceShelf",
+      "result": "integrated_with_caveats",
+      "artifact_path": "D:\\DONT TOUCH HTML\\Theophysics Canon - Kimi Compilation\\07 - OPUS Source Shelf\\README.md",
+      "meaning": "Copied OPUS method, playground, and consciousness materials into the A/B/C compilation as a source shelf and linked OPUS consciousness into the consciousness topic with a hotness warning.",
+      "limits": "OPUS consciousness is not promoted as locked canon. Language claiming consciousness is derived or the hard problem is dissolved must be cooled to bridge/model wording pending formal proof or discriminating tests.",
+      "timestamp": "2026-08-01T02:01:27+00:00",
+      "event_id": "sha256:3d5194c5f2d7cc8b020ff0444ba4b33fef7eb3b4bbf0f4c0ea4ffc305080dd43"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "ABCCompilation",
+      "result": "expanded",
+      "artifact_path": "D:\\DONT TOUCH HTML\\Theophysics Canon - Kimi Compilation\\index.html",
+      "meaning": "Expanded A/B/C compilation from 10 to 15 topics by adding Lean verification, 7Q classifier, spiritual terms dictionary, cost/shadow doorway, and hard questions/objections. JSON map, index rows, and topic pages match.",
+      "limits": "Still Phase 1 aggregation. New topics are reference/audit entries, not unified Phase 2 prose or final canon promotion.",
+      "timestamp": "2026-08-01T02:03:50+00:00",
+      "event_id": "sha256:c76794b0abfc375f0cd04bcca84784f111f12b624916adb4daa7f729744e1120"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "LeanTargets",
+      "result": "created",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\lean\\CONSCIOUSNESS_LEAN_TARGETS.md",
+      "meaning": "Created Consciousness Lean Targets plan: Lean should prove the formal dependency graph for representation, self-reference, orientation, and source recognition, not prove empirical consciousness, God-as-mirror, or the Trinity-as-substrate.",
+      "limits": "Proof plan only; no Lean file compiled yet. The result would be conditional on definitions and would not establish that humans are conscious or that the hard problem is empirically solved.",
+      "timestamp": "2026-08-01T02:14:17+00:00",
+      "event_id": "sha256:d8718a5eea9ea9dcefa489526092ef26a7813dd1d54160ff8f789219dfa5bb21"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "LeanTargets",
+      "result": "method_generalized",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\lean\\LAYERED_NECESSITY_DERIVATION_GRAMMAR.md",
+      "meaning": "Generalized the consciousness Lean target into Layered Necessity: a reusable derivation grammar for proving dependency, inheritance, no-skip, irreducibility, and collapse conditions across truth, ontology, information, consciousness, morality, grace, and Trinity bridge domains.",
+      "limits": "Method target only; not implemented in Lean yet. Does not prove theological identifications or empirical completeness of any staircase definitions.",
+      "timestamp": "2026-08-01T02:21:18+00:00",
+      "event_id": "sha256:4857a13d49f9f664302f4502f407ac3f139b94a214c6d6957b373d5c1a0f029c"
+    }
+  ]
+}

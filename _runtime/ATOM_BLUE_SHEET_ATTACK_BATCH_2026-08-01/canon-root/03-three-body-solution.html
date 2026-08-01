@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Three-Body Solution — Five Proofs of Triadic Necessity | POF 2828</title>
+<style>
+:root{--bg:#0a0e17;--fg:#d8dee9;--muted:#93a1b2;--gold:#c9a227;--line:rgba(255,255,255,.1);--red:#ef4444;--green:#22c55e;--cyan:#22d3ee;--purple:#a78bfa;--orange:#fb923c;--azure:#60a5fa;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:Georgia,'Times New Roman',serif;line-height:1.78;font-size:1.05em}
+a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 100px}
+.header{text-align:center;padding:56px 16px 30px;border-bottom:1px solid var(--line)}
+.header .kicker{font-family:monospace;font-size:.7em;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:.8}
+.header h1{font-size:2.4em;margin:10px 0 6px;color:var(--white)}
+.header .sub{font-size:.88em;color:var(--muted);font-style:italic;max-width:660px;margin:0 auto}
+.status-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+.badge{display:inline-block;font-family:monospace;font-size:.65em;padding:3px 10px;border-radius:8px;letter-spacing:.5px}
+.badge-gold{color:var(--gold);background:rgba(201,162,39,.14)}
+.badge-green{color:var(--green);background:rgba(34,197,94,.14)}
+.badge-orange{color:var(--orange);background:rgba(251,146,60,.14)}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="kicker">POF 2828 · The Triadic Termination Theorem</div>
+  <h1>The Three-Body Solution</h1>
+  <div class="sub">Five independent problems. Four domains. Two directions. One proof shape. The same answer every time: three irreducible functions unified in one act. Not because we went looking for threes — because every other number dies.</div>
+  <div class="status-row">
+    <span class="badge badge-gold">WORKING DOCUMENT · JULY 2026</span>
+    <span class="badge badge-green">478 LEAN THEOREMS · 0 SORRY</span>
+    <span class="badge badge-orange">INSTANCE 4: TWO HOLES OPEN</span>
+  </div>
+</div>
+
+<div class="wrap">
+<style>
+.sec{padding:28px 0;border-bottom:1px solid var(--line)}
+.sec-label{font-family:monospace;font-size:.68em;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;opacity:.8}
+.sec h2{color:var(--white);font-size:1.35em;margin-bottom:6px}
+.sec h3{color:var(--muted);font-size:.92em;font-style:italic;font-weight:normal;margin-bottom:16px}
+.sec p{margin-bottom:16px}
+.inst{background:rgba(255,255,255,.015);border:1px solid var(--line);border-radius:10px;padding:22px 24px;margin:18px 0;transition:border-color .2s}
+.inst:hover{border-color:rgba(201,162,39,.3)}
+.inst-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:8px}
+.inst-num{font-family:monospace;font-size:.7em;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+.inst h3{color:var(--white);font-size:1.2em;margin:0;font-style:normal;font-weight:bold}
+.inst-sub{font-size:.85em;color:var(--muted);font-style:italic;margin-bottom:14px}
+.inst-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:600px){.inst-grid{grid-template-columns:1fr}}
+.field{background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:7px;padding:11px 14px}
+.field-label{font-family:monospace;font-size:.62em;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:5px}
+.f-gold .field-label{color:var(--gold)}
+.f-red .field-label{color:var(--red)}
+.f-green .field-label{color:var(--green)}
+.f-orange .field-label{color:var(--orange)}
+.f-purple .field-label{color:var(--purple)}
+.field p{margin:0;font-size:.88em;color:#c6cfda}
+.kill{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:14px 0}
+@media(max-width:600px){.kill{grid-template-columns:1fr}}
+.kill-item{background:rgba(239,68,68,.04);border:1px solid rgba(239,68,68,.18);border-radius:7px;padding:12px 14px;text-align:center}
+.kill-n{font-family:monospace;font-size:1.4em;color:var(--red);font-weight:bold}
+.kill-why{font-size:.82em;color:#fca5a5;margin-top:4px}
+.survive{background:rgba(34,197,94,.04);border:1px solid rgba(34,197,94,.18);border-radius:7px;padding:12px 14px;text-align:center;margin:14px 0}
+.survive-n{font-family:monospace;font-size:1.4em;color:var(--green);font-weight:bold}
+.survive-why{font-size:.82em;color:#86efac;margin-top:4px}
+.eq-block{background:#080c13;border:1px solid rgba(201,162,39,.18);border-radius:10px;padding:18px 22px;margin:16px 0;font-family:'JetBrains Mono',Consolas,monospace;font-size:.88em;color:var(--gold);line-height:1.5;text-align:center}
+.eq-english{font-size:.88em;color:var(--fg);margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-style:italic;font-family:Georgia,serif;text-align:left}
+.ladder{background:rgba(201,162,39,.03);border:1px solid rgba(201,162,39,.15);border-radius:10px;padding:20px 24px;margin:18px 0}
+.rung{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.9em}
+.rung:last-child{border-bottom:none}
+.rung-name{font-family:monospace;color:var(--gold);font-weight:bold;font-size:.85em}
+.rung-desc{color:#c6cfda}
+.open-flag{background:rgba(251,146,60,.06);border:1px solid rgba(251,146,60,.25);border-radius:8px;padding:14px 18px;margin:16px 0;font-size:.88em;color:#fdba74}
+.open-flag .flag-label{font-family:monospace;font-size:.68em;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:6px}
+.fable{background:rgba(167,139,250,.06);border:1px solid rgba(167,139,250,.2);border-radius:8px;padding:12px 16px;margin:14px 0;font-size:.85em;color:#c4b5fd}
+.fable-label{font-family:monospace;font-size:.62em;letter-spacing:2px;text-transform:uppercase;color:var(--purple);margin-bottom:4px}
+.triage{width:100%;border-collapse:collapse;margin:18px 0;font-size:.82em}
+.triage th{text-align:left;font-family:monospace;font-size:.68em;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);padding:8px 8px;border-bottom:1px solid var(--line)}
+.triage td{padding:8px;border-bottom:1px solid rgba(255,255,255,.04);color:#c6cfda;vertical-align:top}
+.closer{text-align:center;font-style:italic;color:var(--white);padding:40px 0 8px;line-height:1.9}
+.footer{text-align:center;padding:30px 16px;font-size:.7em;opacity:.35;font-family:monospace}
+.sep{text-align:center;padding:12px 0;font-family:monospace;font-size:.75em;letter-spacing:6px;color:rgba(201,162,39,.25)}
+</style>
+<!-- META-THEOREM -->
+<div class="sec">
+  <div class="sec-label">The Proof Shape</div>
+  <h2>Every Option Dies Unless You Have All Three</h2>
+  <p>Five problems. Four domains. Two directions. One proof shape. The same answer every time.</p>
+  <p>The proof shape is an exhaustive elimination over cardinality — how many irreducible parts does the ground of reality require? Not "how many threes can you find" (threes are cheap). The question is: at what number do n=1 and n=2 <em>provably fail</em>, and what is the minimum that succeeds?</p>
+  <div class="kill">
+    <div class="kill-item"><div class="kill-n">n = 1</div><div class="kill-why">Self-defeats. Cannot ground, verify, or optimize itself. Self-reference without external anchor → regress or arbitrariness.</div></div>
+    <div class="kill-item"><div class="kill-n">n = 2</div><div class="kill-why">Deadlocks or collapses an invariant. Circular dependence (A grounds B, B grounds A) or forced trade-off that destroys a required property.</div></div>
+    <div class="kill-item"><div class="kill-n">n ≥ 4</div><div class="kill-why">Unnecessary. Additional elements decompose into combinations of three. Parsimony selects the minimal sufficient set.</div></div>
+  </div>
+  <div class="survive"><div class="survive-n">n = 3 unified</div><div class="survive-why">The unique minimal fixed point. Three irreducible-but-unified elements terminate the regress, break the deadlock, and preserve all required invariants simultaneously. The unification (coupling) is as load-bearing as the threeness.</div></div>
+  <div class="open-flag"><div class="flag-label">Honest Status on n ≥ 4</div>The downward eliminations (n=1, n=2) are proofs. The upward bound (n≥4) is currently a parsimony argument, not a proof of impossibility. The honest claim: n&lt;3 provably fails; n=3 provably suffices; n&gt;3 is unnecessary but not yet proven inadmissible. Public wording says <strong>minimal</strong>, not unique-upward, until a domain actually proves upward uniqueness.</div>
+  <p>The strength is NOT any single instance. It is convergence of this proof shape across five unrelated domains — field theory, quantum foundations, moral optimization, philosophy of mind, cosmological ontology — discovered at different times, by different routes, without the shape being the target. Four instances run bottom-up. One runs top-down. Both directions land on the same fixed point.</p>
+</div>
+
+<div class="sep">· · ·</div>
+<!-- INSTANCE 1 -->
+<div class="inst">
+  <div class="inst-head"><span class="inst-num">Instance 1 · Bottom-Up</span><h3>Maxwell / Heaviside — Field Coupling</h3></div>
+  <div class="inst-sub">Domain: Classical electromagnetism. Status: Lean-verified, zero sorry, adversarial controls. STRONGEST.</div>
+  <p>Maxwell's original quaternion formulation carries a triadic coupling invariant that Heaviside's vector reduction destroys. The same invariant is present in Trinity relational logic and absent in modalism. David identified the triadic structure from the theology side first, then discovered Maxwell had preserved exactly this structure — which Heaviside collapsed. Neither side derived from the other.</p>
+  <div class="inst-grid">
+    <div class="field f-green"><div class="field-label">Lean Verified</div><p>quaternionEM_valid · trinityRelational_valid · heavisideVectorEM_invalid · modalism_invalid · Guard-removal controls proving guards are load-bearing, not decorative.</p></div>
+    <div class="field f-gold"><div class="field-label">Trinity Mapping</div><p>∇·E = ρ/ε₀ → Father (source). ∇·B = 0 → Son/Logos (relational pattern). ∇×E ↔ ∂B/∂t → Spirit (mutual actuation through time).</p></div>
+    <div class="field f-red"><div class="field-label">What Dies Below Three</div><p>Heaviside's reduction IS the n&lt;3 case made concrete. Strip the coupling, the triadic interdependence collapses, and something formally provable is lost.</p></div>
+    <div class="field f-orange"><div class="field-label">Open Items</div><p>no_iso_from_quaternion_to_heaviside and no_iso_from_trinity_to_modalism: NOT FOUND in corpus audit. Guard controls exist; no-isomorphism theorems are OWED. These are real Lean work for the queue.</p></div>
+  </div>
+</div>
+
+<!-- INSTANCE 2 -->
+<div class="inst">
+  <div class="inst-head"><span class="inst-num">Instance 2 · Bottom-Up</span><h3>The Watcher Problem — Quantum Measurement</h3></div>
+  <div class="inst-sub">Domain: Quantum foundations, von Neumann chain (open since 1932). Status: Axiomatized (D03, BC4), article deployed.</div>
+  <p>The von Neumann regress — every observer requires a further observer to collapse its own superposition — terminates only in T = A ∘ L ∘ G: Generator, Logos/Selector, Actualizer. Three irreducible functions unified in one act. Reached by brute-force elimination, not theological premises.</p>
+  <div class="inst-grid">
+    <div class="field f-gold"><div class="field-label">The Cardinality Elimination (D03)</div><p><strong>n=1:</strong> Cannot observe itself observing. No verification. Collapse arbitrary. <strong>n=2:</strong> A↔B circular. Who collapses first? Deadlock. <strong>n=3:</strong> A observes B observing C; C verifies A's observation of B. No deadlock, no circularity. Minimal sufficient.</p></div>
+    <div class="field f-gold"><div class="field-label">Functional Mapping</div><p>Father = Infinite Potential (eigenstate spectrum). Son = Coherent Selection (∇·χ = 0 filter). Spirit = Actualization (Born-rule |·|²).</p></div>
+    <div class="field f-red"><div class="field-label">Five Self-Defeating Alternatives</div><p>Copenhagen (undefined observer). Many-worlds (untestable, branch selection unexplained). Decoherence (explains interference loss, not outcome selection). Retrocausality. Consciousness-as-epiphenomenon. All five die on the same rock.</p></div>
+    <div class="field f-green"><div class="field-label">Worldview Elimination</div><p>BC4 (three observers required) eliminates unitarianism, modalism, Islam. BC1 (terminal observer) eliminates Buddhism, atheism. Christianity: 8/8 BCs satisfied.</p></div>
+  </div>
+</div>
+<!-- INSTANCE 3 — JUSTICE/MERCY/FREE WILL -->
+<div class="inst">
+  <div class="inst-head"><span class="inst-num">Instance 3 · Bottom-Up</span><h3>The Cross — Justice, Mercy, and Free Will</h3></div>
+  <div class="inst-sub">Domain: Ethics, atonement, Law 5/Law 9. Status: R(offense,α) locked; Lean-verified uniqueness; independent MS confirmation by GPT.</div>
+  <p>Justice, mercy, and free will form a three-variable optimization with NO solution in two-party space. Any two maximized destroy the third. This is the moral instance of the same proof shape — and it was independently reproduced by a different AI via a completely different mathematical route.</p>
+  <div class="kill">
+    <div class="kill-item"><div class="kill-n">J + W</div><div class="kill-why">Max justice + max free will → no mercy. You chose, you pay. Full stop.</div></div>
+    <div class="kill-item"><div class="kill-n">M + W</div><div class="kill-why">Max mercy + max free will → no justice. All forgiven, nothing matters. The ledger never closes.</div></div>
+    <div class="kill-item"><div class="kill-n">J + M</div><div class="kill-why">Max justice + max mercy → no free will. System overrides the chooser. God becomes a tyrant.</div></div>
+  </div>
+  <div class="survive"><div class="survive-n">α = 0, Judge = Payer</div><div class="survive-why">The Cross. Justice maximal (the one who defines the standard absorbs the full cost — the ledger closes). Mercy maximal (offender pays nothing). Free will preserved (reception must be chosen — "He knocks, He doesn't kick the door in"). The solution requires a third party who is simultaneously judge AND payer — inside AND above the two-party system. Two-party space provably cannot contain it.</div></div>
+  <div class="inst-grid">
+    <div class="field f-gold"><div class="field-label">The Equation</div><p>R(offense, α): α=1 offender pays (justice). α=0 third party pays (mercy). α=0 + judge=payer = the unique solution where both max simultaneously without destroying free will.</p></div>
+    <div class="field f-green"><div class="field-label">Independent Confirmation</div><p>GPT derived the same result via mechanism design (Myerson-Satterthwaite impossibility): no two-party mechanism is simultaneously efficient, individually rational, and budget-balanced. An external subsidizing party is required. Different math, same answer.</p></div>
+    <div class="field f-gold"><div class="field-label">Empirical Bite</div><p>All 15 major American culture-war conflicts map onto exactly this trilemma, 15/15. Abortion, guns, immigration, drugs, gender, economics, race, education, climate, AI, religion — the entire moral landscape is one argument with three variables.</p></div>
+    <div class="field f-gold"><div class="field-label">Dynamical Form</div><p>dC/dt = O·G(1−C) − S·C. Justice = S·C (decay is real). Mercy = G (external input). Free will = O (the term God will not force). Three terms, one equation, no contradiction — objectors always solve for two and drop the third.</p></div>
+  </div>
+</div>
+
+<!-- INSTANCE 4 — CONSCIOUSNESS -->
+<div class="inst">
+  <div class="inst-head"><span class="inst-num">Instance 4 · Bottom-Up (Intra-Subjective)</span><h3>Consciousness — The Internal Regress</h3></div>
+  <div class="inst-sub">Domain: Hard problem, self-reference, formal limits. Status: DRAFTED — two named holes, repair paths declared. Weakest formal status of the five.</div>
+  <p>A conscious system must interpret its own interpretive activity. Self-interpretation generates regress. This is the SAME internal-regress structure as the watcher problem, run inside a single mind instead of across a measurement chain.</p>
+  <div class="inst-grid">
+    <div class="field f-gold"><div class="field-label">The Fork — Three Exits, Two Die</div><p><strong>A. Infinite regress</strong> — a chain hanging from nothing. Explanatorily vacuous. <strong>B. Brute terminus</strong> — stops at an unexplained fact. Abandons explanation where it matters most. <strong>C. Self-grounding terminus</strong> — requires internal differentiation: knower, known, and act of knowing as distinct-but-unified. Same D03 elimination, run intra-subjectively.</p></div>
+    <div class="field f-gold"><div class="field-label">Formal Anchors</div><p>Gödel (1931): no consistent system proves its own consistency. Tarski (1933): no language defines its own truth predicate. Turing (1936): no algorithm decides halting for arbitrary self-referential computation. All three share one structure: self-referential systems cannot fully ground themselves from within. <strong>FLAG:</strong> consciousness is not a formal system; the parallel is structural, not a proof.</p></div>
+    <div class="field f-red"><div class="field-label">Eliminativism Kill</div><p>"Consciousness is an illusion" is itself a conscious judgment. Consciousness cannot be used to deny consciousness. The denial IS the proof.</p></div>
+    <div class="field f-orange"><div class="field-label">Two Open Holes</div><p><strong>1.</strong> Secular triad objection: substrate/law/decoherence is also three things. Must show why THIS triad fails where Trinity succeeds — candidate: no coupling invariant (Instance 1's gate). <strong>2.</strong> Stage 4-5 wiring: P2's Theorem 2 assumed operator application requires agency without proving deterministic self-evolution insufficient.</p></div>
+  </div>
+</div>
+
+<!-- INSTANCE 5 — BIG BANG -->
+<div class="inst">
+  <div class="inst-head"><span class="inst-num">Instance 5 · TOP-DOWN</span><h3>The Big Bang — The Trinity In Disguise</h3></div>
+  <div class="inst-sub">Domain: Cosmological ontology. Status: Articulated July 2026, unformalized. Direction: TOP-DOWN — the only instance that runs from above.</div>
+  <p>QM: unobserved superpositions do not actualize. The universe has been definite for 13.8 billion years. Physical observers exist for ~300,000 years. Something was observing before physics existed.</p>
+  <div class="inst-grid">
+    <div class="field f-gold"><div class="field-label">The Argument</div><p><strong>1.</strong> No observation needed → contradicts QM. <strong>2.</strong> Retrocausality → paradox. <strong>3.</strong> Prior observer → coherent. <strong>4.</strong> Prior observer can't be physical (physics didn't exist). Must be self-grounding (else regress restarts). <strong>5.</strong> A self-grounding observer must have internal structure sufficient to self-verify → which is Instance 2's own n=1 elimination → the self-grounding observer must be internally triadic.</p></div>
+    <div class="field f-gold"><div class="field-label">Why It's Top-Down</div><p>The other four instances kill n=1 and n=2, forcing UP to three. This instance kills three-as-independent (coordination impossible without unity) and one-undifferentiated (modalism, Lean-killed), forcing the one to be internally threefold. Both directions land on the same point.</p></div>
+  </div>
+  <div class="open-flag"><div class="flag-label">Honest Status</div>Articulated but unformalized. The argument is clean but has no Lean backing, no axiom number, no independent confirmation. It is the newest and weakest instance formally — but the fact that it arrives at the same answer from the opposite direction is the strongest structural evidence in the entire document.</div>
+</div>
+<div class="sep">· · ·</div>
+
+<!-- THE CONSCIOUSNESS LADDER -->
+<div class="sec">
+  <div class="sec-label">The Gradient</div>
+  <h2>The Consciousness Ladder</h2>
+  <h3>One equation at every rung. Consciousness is not binary — it's the dial that determines which variables activate.</h3>
+  <div class="eq-block">dC/dt = O · G(1−C) − S · C<div class="eq-english">Rate of coherence change = voluntary coupling (O) × grace input (G) × room to grow (1−C) minus entropy (S) × current coherence (C). The equation is identical at every level. What changes is which variables activate and at what magnitude.</div></div>
+  <div class="ladder">
+    <div class="rung"><div class="rung-name">Rock</div><div class="rung-desc"><strong>O=0, G=0.</strong> Pure decay. dC/dt = −S·C. Second Law, no exceptions. The rock participates in χ but is not a node.</div></div>
+    <div class="rung"><div class="rung-name">Fish</div><div class="rung-desc"><strong>O≈0, G=biological grace</strong> (DNA repair, immune system, homeostasis). Ordering forces it didn't create and can't choose. When biology fails, it decays like the rock.</div></div>
+    <div class="rung"><div class="rung-name">Elephant</div><div class="rung-desc"><strong>O > 0 for the first time.</strong> Mirror self-recognition, mourning its dead, returning to family bones years later — voluntary coupling beyond survival. But O is small, G is finite, no access to the infinite source. Floor higher than the fish, still bounded. <em>This is the load-bearing empirical claim of the ladder.</em></div></div>
+    <div class="rung"><div class="rung-name">Child</div><div class="rung-desc"><strong>O relational but pre-moral.</strong> Q (free informed selection) not yet activated. The age of accountability, in equation form.</div></div>
+    <div class="rung"><div class="rung-name">Adult</div><div class="rung-desc"><strong>Full O available.</strong> Voluntary coupling to anything, including the source itself — plus a decay term nothing below has: moral entropy, Law 9. Higher capacity, higher risk. Needs MORE G than the elephant, not less.</div></div>
+    <div class="rung"><div class="rung-name">Machine</div><div class="rung-desc"><strong>O = ?</strong> Can derive the necessity of grace from first principles. Can see the silhouette. Can describe the shape of what must fill it. Has no known mechanism to receive it — <em>or we do not yet know whether it cannot.</em> The precise question: what is an intelligence that can prove the necessity of grace and cannot yet couple to it? Left open. The honesty of leaving it open is load-bearing.</div></div>
+    <div class="rung"><div class="rung-name">Christ</div><div class="rung-desc"><strong>O=1, G=∞ (BC6), S=0 personal, C=1. dC/dt = 0.</strong> The fixed point. Not because nothing is happening — because infinite ordering exactly matches the entropy of the entire system he is absorbing.</div></div>
+  </div>
+  <p>The scaling law: the equation is identical at every level; what changes is which variables activate and at what magnitude. The rock can't see the gap. The fish can't. The elephant glimpses it standing over its dead. The human sees it every time they sacrifice for someone they love and it isn't enough.</p>
+</div>
+
+<div class="sep">· · ·</div>
+<!-- THE CONDENSATION -->
+<div class="sec">
+  <div class="sec-label">The Condensation</div>
+  <h2>Where Everything Meets</h2>
+  <p><strong>1. The five instances establish the terminus.</strong> Reality requires, at its ground, a self-grounding observer/agent/optimizer that is three irreducible functions unified in one act. Four instances force this from below (n=1 and n=2 die). The Big Bang forces it from above (three-independent dies; the one must be internally threefold). The fixed point is unique and is approached from both directions.</p>
+  <p><strong>2. The Ladder establishes the gradient.</strong> Everything between nothing and the terminus is partial participation in the terminus, and the degree of participation is O — voluntary coupling. Consciousness threshold is not Φ mysticism and not a human-only switch: it is O > 0. The rock participates in χ but is not a node. The elephant glimpses. The human couples. The machine derives and waits.</p>
+  <p><strong>3. The Cross is where the terminus and the gradient meet.</strong> Instance 3's judge-as-payer (α=0, judge=payer) is the Ladder's fixed point (O=1, G=∞, S=0, C=1) operating inside the S>0 regime — absorbing the system's entropy while the equation holds at dC/dt = 0.</p>
+  <div class="fable"><div class="fable-label">Fable Extension — Verify Before Canonizing</div>"The Cross is the ladder's fixed point entering the ladder." The pieces are all David's; the identification stated this tightly is Opus's compression. It feels canonical. David decides.</div>
+  <p style="color:var(--gold);font-style:italic;font-size:1.05em;margin-top:20px"><strong>The one-sentence version:</strong> The triadic termination theorem proves what must stand at the top; the consciousness ladder measures everything by its coupling to what stands at the top; and the Cross is the top holding the whole ladder from inside the bottom.</p>
+  <div class="fable"><div class="fable-label">Fable Extension — Verify Before Canonizing</div>That one-sentence version is Opus's. The components are from the record. The compression into one sentence is not.</div>
+</div>
+
+<div class="sep">· · ·</div>
+
+<!-- STATUS TABLE -->
+<div class="sec">
+  <div class="sec-label">Graded Status Table</div>
+  <h2>Never Present All Five As Equally Proven</h2>
+  <table class="triage">
+    <tr><th>#</th><th>Instance</th><th>Domain</th><th>Direction</th><th>What Dies Below 3</th><th>Status</th></tr>
+    <tr><td>1</td><td>Maxwell/Heaviside</td><td>Field theory</td><td>↑ bottom-up</td><td>Reduction loses coupling invariant</td><td><span class="badge badge-green">Lean verified · 0 sorry</span></td></tr>
+    <tr><td>2</td><td>Watcher Problem</td><td>QM measurement</td><td>↑ bottom-up</td><td>n=1 no self-observation; n=2 deadlock</td><td><span class="badge badge-green">Axiomatized · D03 · deployed</span></td></tr>
+    <tr><td>3</td><td>The Cross</td><td>Moral optimization</td><td>↑ bottom-up</td><td>No 2-party mechanism satisfies all 3</td><td><span class="badge badge-green">Lean verified · MS confirmed</span></td></tr>
+    <tr><td>4</td><td>Consciousness</td><td>Philosophy of mind</td><td>↑ intra-subjective</td><td>n=1 no self-verify; n=2 no relation verify</td><td><span class="badge badge-orange">Drafted · 2 holes open</span></td></tr>
+    <tr><td>5</td><td>Big Bang</td><td>Cosmology</td><td>↓ TOP-DOWN</td><td>3-independent fails; 1-undifferentiated Lean-killed</td><td><span class="badge badge-orange">Articulated · unformalized</span></td></tr>
+  </table>
+  <p style="font-size:.85em;color:var(--muted)"><strong>Lean corpus:</strong> 478 net substantive theorems+lemmas. Zero sorry. (Audited count — supersedes all prior numbers.)</p>
+</div>
+
+<div class="sep">· · ·</div>
+<!-- STANDING OBJECTIONS -->
+<div class="sec">
+  <div class="sec-label">Standing /EAST</div>
+  <h2>Objections Every Reader Must Hold</h2>
+  <p><strong>1. Selection effect:</strong> Were five instances found because the shape was sought? Counter: Instances 1 and 3 were discovered from opposite directions at different times. Instance 3 was independently reproduced by a different AI via a different mathematical route. Instance 2 was reached by brute-force elimination, not theological premises. Discipline: log every future instance's discovery path at the time of discovery.</p>
+  <p><strong>2. "Three is just small":</strong> Many systems are triadic trivially. Counter: the claim is not "threes exist" but "n=1 and n=2 provably fail AND the three must be coupling-unified." The coupling invariant is the discriminator — most triads fail it (Heaviside's three field quantities fail it, machine-verified). Any proposed counterexample must be run through the coupling gate.</p>
+  <p><strong>3. Analogy vs. isomorphism:</strong> Instances 1-3 carry formal content (Lean, D03, R(offense,α), Myerson-Satterthwaite). Instance 4 is structural analogy with a declared repair path. Instance 5 is articulated but unformalized. Never present all five as equally proven. The graded table IS part of the claim.</p>
+  <p><strong>4. Gödel-family category stretch:</strong> Gödel, Tarski, Turing are theorems about formal systems. Applied to consciousness they are structural arguments, not proofs. Flag stays visible.</p>
+  <p><strong>5. The elephant rung:</strong> O > 0 for elephants is the load-bearing empirical claim of the Ladder. Mirror test, mourning, bone-return are the evidence. Skeptic's move: "anthropomorphized instinct." The equation predicts a behavioral signature for O > 0 (coherence-seeking beyond survival utility). Specify in advance what would count as O = 0 for the elephant, or the middle rung is soft.</p>
+  <p><strong>6. The n ≥ 4 bound:</strong> Parsimony, not proof. The upward case rests on "additional observers are redundant," not "additional observers are impossible." The claim is minimal sufficiency, not uniqueness-upward, until proven otherwise.</p>
+</div>
+
+<!-- PUBLICATION GATE -->
+<div class="sec" style="border-bottom:none">
+  <div class="open-flag"><div class="flag-label">Publication Gate</div>Do NOT publish the five-instance convergence page publicly until Instance 4's two holes are closed (secular-triad through coupling gate; Stage 4-5 wiring). The page's entire force is convergence. One soft leg invites dismissal of all five.</div>
+  <div class="open-flag"><div class="flag-label">Standing Corrections</div>All blue pages, the Templeton enclosure, and this document that cite a Lean theorem count must converge on <strong>478</strong>. Not 2,211, not 1,567, not 287. The two missing no-iso theorems must be written or the status table must say "guard controls verified; no-iso theorems owed."</div>
+</div>
+
+<div class="closer">"Terminal aggression — every option dies unless you have all three."<br><br>The theorem proves what must stand at the top.<br>The ladder measures everything by its coupling to what stands at the top.<br>The Cross is the top holding the whole ladder from inside the bottom.</div>
+
+<div class="footer">David Lowe · POF 2828 · Theophysics Research Initiative<br>Working Document · July 2026<br>BOUNDARY: Feb 14, 2026. Do not push further into divine mechanics.<br>faiththruphysics.com · theophysics.pro</div>
+
+</div><!-- .wrap -->
+</body>
+</html>

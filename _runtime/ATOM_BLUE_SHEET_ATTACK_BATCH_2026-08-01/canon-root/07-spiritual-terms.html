@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spiritual Terms Dictionary - Theophysics</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0e17;--fg:#c9d1d9;--fg2:#8b949e;--fg3:#484f58;--gold:#c9a227;--gold-glow:rgba(201,162,39,.12);--border:rgba(255,255,255,.1);--panel:#111827}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif;line-height:1.6;padding-bottom:80px}
+a{color:#60a5fa}
+.hero{text-align:center;padding:52px 24px 30px;position:relative}
+.hero::after{content:'';position:absolute;bottom:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hero .label{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);opacity:.7;margin-bottom:10px}
+.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.5em;font-weight:700;color:#fff}
+.hero .sub{font-size:.8em;color:var(--fg2);margin-top:8px}
+.wrap{max-width:900px;margin:0 auto;padding:22px 18px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.nav a{border:1px solid var(--border);border-radius:999px;padding:7px 10px;text-decoration:none;color:var(--fg);font:700 .75rem ui-monospace,Consolas,monospace}
+button{background:var(--panel);color:var(--fg2);border:1px solid #222a3a;border-radius:7px;padding:7px 13px;font-size:.76em;cursor:pointer;font-family:inherit;transition:.15s}
+button:hover{color:#fff;border-color:var(--gold);background:var(--gold-glow)}
+.count{margin-left:auto;font-size:.72em;color:var(--fg3)}
+
+/* Collapsible term nodes */
+details.t{border:1px solid var(--border);border-radius:8px;background:var(--panel);margin:6px 0;scroll-margin-top:20px}
+details.t>summary{display:flex;align-items:center;gap:10px;padding:14px 16px;cursor:pointer;border-radius:8px;list-style:none;transition:background .15s;font-weight:600}
+details.t>summary::-webkit-details-marker{display:none}
+details.t>summary:hover{background:rgba(255,255,255,.04)}
+details.t[open]>summary{background:rgba(255,255,255,.02);border-bottom:1px solid var(--border);border-radius:8px 8px 0 0}
+.dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;box-shadow:0 0 8px var(--c)}
+details.t .dot{background:var(--c)}
+.tname{color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.15em}
+.teq{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.72em;color:var(--fg2);opacity:.85;margin-left:auto;white-space:nowrap}
+.badge{font-size:.6em;letter-spacing:1.4px;padding:2px 8px;border-radius:20px;color:var(--c);border:1px solid var(--c);opacity:.85;white-space:nowrap;flex-shrink:0;text-transform:uppercase}
+.tbody{padding:16px 18px;font-size:.9em;line-height:1.7}
+.tbody p{margin:0 0 10px;color:var(--fg)}
+.role{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.role>div{border-top:1px solid var(--border);padding-top:10px;color:var(--fg2);font-size:.85em}
+@media(max-width:720px){.role{grid-template-columns:1fr}.teq{display:none}}
+
+/* Sequence section */
+details.seq{border:2px solid var(--gold);border-radius:10px;background:rgba(201,162,39,.04);margin:20px 0}
+details.seq>summary{display:flex;align-items:center;gap:10px;padding:16px 18px;cursor:pointer;list-style:none;font-weight:700;color:#fff;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.25em}
+details.seq>summary::-webkit-details-marker{display:none}
+details.seq>summary:hover{background:rgba(201,162,39,.06)}
+details.seq[open]>summary{border-bottom:1px solid rgba(201,162,39,.2)}
+.seqbody{padding:18px}
+.arrow-chain{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.82em;color:var(--gold);padding:10px 14px;background:rgba(0,0,0,.3);border-radius:6px;margin:10px 0 16px;line-height:2;word-break:break-word}
+.step{display:grid;grid-template-columns:36px 1fr;gap:10px;margin:10px 0;align-items:start}
+.snum{font-family:'JetBrains Mono',monospace;font-size:.75em;color:var(--gold);text-align:right;padding-top:3px;font-weight:700}
+.sdesc{font-size:.88em}
+.sdesc strong{color:#fff}
+.sdesc .eq{font-family:'JetBrains Mono',monospace;font-size:.85em;color:var(--fg2)}
+.canon-note{border:1px solid rgba(201,162,39,.28);background:rgba(201,162,39,.055);border-radius:8px;padding:14px 16px;margin:0 0 18px;font-size:.88em;color:var(--fg2)}
+.canon-note strong{color:#fff}
+.map-table{width:100%;border-collapse:collapse;margin:12px 0 6px;font-size:.84em}
+.map-table th,.map-table td{border-top:1px solid var(--border);padding:8px 6px;text-align:left;vertical-align:top}
+.map-table th{color:#fff;font-size:.78em;text-transform:uppercase;letter-spacing:1px}
+.layer-grid{display:grid;grid-template-columns:1fr;gap:8px;margin-top:8px}
+.layer{display:grid;grid-template-columns:145px 1fr;gap:12px;border-top:1px solid var(--border);padding:9px 0;font-size:.86em}
+.layer strong{color:#fff}
+.layer .tag{font-family:'JetBrains Mono',monospace;color:var(--gold);font-size:.8em}
+@media(max-width:720px){.layer{grid-template-columns:1fr;gap:2px}.map-table{font-size:.78em}}
+
+/* Section headers */
+.section-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:.6;margin:28px 0 8px;padding-left:4px}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div class="label">POF 2828 / Definition Layer</div>
+<h1>Spiritual Terms Dictionary</h1>
+<div class="sub">Each term gives the plain meaning, the formal role, and the support path. Click any term to expand.</div>
+</div>
+
+<div class="wrap">
+<div class="nav">
+  <a href="the-story-with-receipts.html">Story with receipts</a>
+  <a href="the-math.html">Math page</a>
+  <a href="the-ledger.html">Ledger</a>
+  <a href="../01_MASTER_EQUATION_CORE/_supporting_pages/COMPLETE_CANONICAL_TERM_AND_MATH_REFERENCE.md">Canonical term reference</a>
+</div>
+<div class="bar">
+  <button id="ex">Expand all</button>
+  <button id="co">Collapse all</button>
+  <span class="count" id="cnt"></span>
+</div>
+
+<div class="canon-note">
+<strong>v3 symbol note:</strong> this page uses three related registers. <strong>Φχ(x,t)</strong> names the spacetime Logos/χ field where physical-field language is needed. <strong>χ(X)</strong> names the dimensionless coherence functional over the nine normalized law factors. <strong>C_W</strong> names the wrapper/integrator register, the Christ/coherence completion layer. These are related by reduction maps; they are not silently identical.
+</div>
+
+<table class="map-table">
+<thead><tr><th>v3 factor</th><th>Physical register</th><th>Spiritual term</th><th>Status / note</th></tr></thead>
+<tbody>
+<tr><td>G</td><td>Gravitation</td><td><a href="#grace">Grace</a></td><td>Ruled dictionary; eta/grace identification remains bridge language.</td></tr>
+<tr><td>M</td><td>Mass-Energy</td><td><a href="#meaning">Meaning</a></td><td>Derived; witness requirement keeps it from being mere mass.</td></tr>
+<tr><td>E</td><td>Electromagnetism</td><td><a href="#truth">Truth</a> / <a href="#deception">Deception</a></td><td>Corrected from stale Energy reading; Maxwell/Truth proposed eponym.</td></tr>
+<tr><td>S</td><td>Strong</td><td><a href="#love">Love</a></td><td>Locked as Yukawa-Agape; not entropy/sin.</td></tr>
+<tr><td>T</td><td>Thermodynamics</td><td><a href="#judgment">Judgment</a></td><td>Locked; cost, entropy, free-energy, accounting layer.</td></tr>
+<tr><td>K</td><td>Information / Shannon</td><td><a href="#logos">Logos</a> / <a href="#knowledge">Knowledge</a></td><td>Information layer; Logos is meaningful order, not raw data only.</td></tr>
+<tr><td>Q</td><td>Quantum</td><td><a href="#faith">Faith</a></td><td>Partial; quantum-to-faith reduction still needs witness work.</td></tr>
+<tr><td>R</td><td>Relativity</td><td><a href="#grace-frame">Grace-Frame</a> / <a href="#covenant">Covenant</a></td><td>Ruled as Grace-Frame; Covenant family is locked as the relational derivative family.</td></tr>
+<tr><td>F</td><td>Weak</td><td><a href="#moral-conservation">Moral-Conservation</a></td><td>Locked keystone; Law 9 Gamma_sin reproduction is still a v3 dynamics gate.</td></tr>
+<tr><td>C_W</td><td>Coherence wrapper</td><td><a href="#christ">Christ / Completion</a></td><td>Wrapper/integrator, not a tenth product factor.</td></tr>
+</tbody>
+</table>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SALVATION SEQUENCE — NEW -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<details class="seq" open>
+<summary><span class="dot" style="--c:#c9a227;background:var(--c)"></span>The salvation sequence (corrected canonical architecture)</summary>
+<div class="seqbody">
+<div class="arrow-chain">Grace → voluntary coupling O(t) → salvation q: −1→+1 → justification → sanctification c(t) → glorification c→1</div>
+
+<div class="step"><span class="snum">1</span><div class="sdesc"><strong>Grace channel 𝒢</strong> — idempotent, one-way, trace-preserving, fixes the positive state. Five impossibility theorems (Gödel, Tarski, Turing, Clausius, Landauer) force its five properties. Nine candidate classes eliminated; one survivor. <span class="eq">G(t) = G₀·e^(∫r dt')·(1−R(t))</span></div></div>
+
+<div class="step"><span class="snum">2</span><div class="sdesc"><strong>Voluntary coupling O(t)</strong> — gates the channel. The source is unconditional (G₀ &gt; 0 always); reception is gated by consent. Grace is not limited by supply — it is limited by reception.</div></div>
+
+<div class="step"><span class="snum">3</span><div class="sdesc"><strong>Salvation q: −1→+1</strong> — binary, non-reverting. The conversion jump <span class="eq">L = |+⟩⟨−|</span> is anticommuting and nilpotent (not idempotent — doesn't need to be). No reverse jump |−⟩⟨+| exists in the canonical operator set. Phase transition, ΔG &lt; 0.</div></div>
+
+<div class="step"><span class="snum">4</span><div class="sdesc"><strong>Justification</strong> — punctiliar status declaration: q = +1 locked. Not computed from internal state; declared by external authority. The absorbing positive sector formalizes non-reversion. <span class="eq">Status(agent) := "righteous"</span></div></div>
+
+<div class="step"><span class="snum">5</span><div class="sdesc"><strong>Sanctification c(t)</strong> — continuous coherence dynamics. Can rise and fall. Channel healing: D↓, A↑. The Master Equation governs this phase. <span class="eq">ċ = −σc + β·O·Γ_ext·(1−c)</span></div></div>
+
+<div class="step"><span class="snum">6</span><div class="sdesc"><strong>Glorification c→1</strong> — Lindblad attractor. V(ρ) → 0 monotonically. The channel no longer throttles the source. Sanctification completed.</div></div>
+
+<p style="color:var(--fg2);font-size:.82em;margin-top:14px;border-top:1px solid var(--border);padding-top:12px"><strong style="color:#fff">Key correction (July 2026):</strong> A nonzero two-sector operator cannot be both strictly anticommuting with σ̂ and idempotent. The old single-operator formalism carried incompatible properties. The canonical repair distinguishes the conversion jump L (anticommuting, nilpotent) from the grace channel 𝒢 (idempotent, absorbing). Salvation (q) is binary and non-reverting. Sanctification (c) is continuous and can fluctuate. Two variables, two operators, no contradiction.</p>
+
+<p style="color:var(--fg2);font-size:.82em;margin-top:12px"><strong style="color:#fff">Hybrid dynamics:</strong> salvation and justification are fast, discrete events on the sign/status layer. Sanctification and glorification are slow, continuous coherence dynamics. In v3 notation: <span class="eq">dX = Π_S(W∇χ dt + η_c dt + J dN_t)</span>.</p>
+
+<table class="map-table">
+<thead><tr><th>Salvation term</th><th>v3 symbol</th><th>Role</th></tr></thead>
+<tbody>
+<tr><td>Grace channel 𝒢</td><td>η_c / J</td><td>External repair: continuous source plus jump repair.</td></tr>
+<tr><td>Voluntary coupling O(t)</td><td>W</td><td>Agency/mobility gate.</td></tr>
+<tr><td>Salvation q: −1→+1</td><td>J dN_t</td><td>Discrete sign/status transition.</td></tr>
+<tr><td>Sanctification c(t)</td><td>X(t)</td><td>Continuous state evolution over the coherence landscape.</td></tr>
+<tr><td>Glorification c→1</td><td>χ(X)→1</td><td>Coherence attractor / completed state.</td></tr>
+</tbody>
+</table>
+</div>
+</details>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- EIGHT-FAMILY ARCHITECTURE -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<details class="seq" open>
+<summary><span class="dot" style="--c:#c9a227;background:var(--c)"></span>Eight-family process architecture (v3 typed scaffold)</summary>
+<div class="seqbody">
+<div class="arrow-chain">identity → constraint → repair → receptivity → formation → distributed function + defense → audit</div>
+
+<p style="color:var(--fg2);font-size:.88em;margin-bottom:12px">These families are not all flat one-to-one law isomorphisms. In the v3 reading they are typed layers of an open, constrained, self-correcting system. The Fruits remain the strongest 9-to-9 isomorphism candidate; the other families are tested by their own mathematical roles.</p>
+
+<div class="layer-grid">
+  <div class="layer"><div><span class="tag">source</span><br><strong>I AM statements</strong></div><div>Identity and reference-frame layer: establishes who grounds the system before dynamics begin.</div></div>
+  <div class="layer"><div><span class="tag">constraints</span><br><strong>Ten Commandments</strong></div><div>Anti-entropy boundary layer: defines forbidden transitions and the lawful moral region.</div></div>
+  <div class="layer"><div><span class="tag">source / jump</span><br><strong>Grace</strong></div><div>External repair layer: continuous source η<sub>c</sub> plus discontinuous jump repair J where conversion or regeneration is modeled.</div></div>
+  <div class="layer"><div><span class="tag">boundary</span><br><strong>Beatitudes</strong></div><div>Receptivity layer: posture/admissibility gate ρ<sub>B</sub> that conditions coupling to the source.</div></div>
+  <div class="layer"><div><span class="tag">outputs</span><br><strong>Fruits</strong></div><div>Stable order-parameter layer: the primary 9-to-9 candidate against the normalized law factors.</div></div>
+  <div class="layer"><div><span class="tag">operators</span><br><strong>Gifts</strong></div><div>Distributed function layer: network actions across a body, not merely individual character outputs.</div></div>
+  <div class="layer"><div><span class="tag">robustness</span><br><strong>Armor</strong></div><div>Adversarial-resilience layer: shielding, error correction, and recovery under hostile perturbation.</div></div>
+  <div class="layer"><div><span class="tag">audit</span><br><strong>Seven Churches</strong></div><div>Diagnostic layer: classifies drift, fidelity, correction response, and community-level coherence.</div></div>
+</div>
+
+<p style="color:var(--fg2);font-size:.82em;margin-top:14px;border-top:1px solid var(--border);padding-top:12px"><strong style="color:#fff">Status discipline:</strong> the eight-family pipeline is a structural correspondence / homomorphic process candidate. Only the Fruits currently qualify as a strict isomorphism candidate, and even that must survive blind bidirectional tests and shuffled controls.</p>
+</div>
+</details>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- CORE TERMS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<div class="section-label">Core terms</div>
+
+<details class="t" style="--c:#c9a227" id="coherence">
+<summary><span class="dot"></span><span class="tname">Coherence / χ(X)</span><span class="teq">C_W wrapper · integrator</span><span class="badge">CENTRAL</span></summary>
+<div class="tbody">
+<p>The ordered integration the framework tracks. Coherence is not merely information; it is information held together in a meaningful, stable, non-fragmented way.</p>
+<div class="role"><div>Math role: χ(X) is the coherence functional. C_W wraps the nine normalized factors; it is not a tenth product factor.</div><div>Support: the-math.html, the-ledger.html, canonical term reference.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="grace">
+<summary><span class="dot"></span><span class="tname">Grace</span><span class="teq">Law 1 · η source + jump repair</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Repair that cannot be generated by the broken system from inside itself. In the story layer, grace is God fixing what self-effort cannot fix.</p>
+<p>Five impossibility theorems force five properties on the repair operator: external (Gödel: a system cannot certify itself from inside itself), meta-level (Tarski: truth repair requires a metalanguage), non-computable from within (Turing/Church: no internal algorithm solves every failure case), anti-entropic (Clausius: closed systems do not reverse entropy for free), record-preserving (Landauer: erasure has cost, so repair cannot simply pretend the record vanished). Nine candidate classes tested. Nine eliminated. One survivor.</p>
+<p>The corrected operator architecture distinguishes the grace channel 𝒢 (idempotent, trace-preserving, one-way) from the conversion jump L = |+⟩⟨−| (anticommuting, nilpotent). The combined architecture: internal persistence → voluntarily coupled sign conversion → absorbing positive orientation → continuing coherence dynamics.</p>
+<div class="role"><div>Math role: G(t) = G₀·e^(∫r dt')·(1−R(t)). Salvation dynamics: ċ = −σc + β·O·Γ_ext·(1−c). Grace channel 𝒢 is idempotent and absorbing; conversion jump L is anticommuting and nilpotent.</div><div>Support: GRACE_EXPLICIT_DERIVATION.md, the-bridge.html, the-math.html, Law 1 and Law 8 materials.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#f87171" id="sin">
+<summary><span class="dot"></span><span class="tname">Sin</span><span class="teq">Γ_sin · moral entropy (not v3 S)</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Refusal of the source that closes the receiver against repair and drives disorder downstream. It is treated as directional and not self-reversing.</p>
+<div class="role"><div>Math role: decoherence or moral-entropy term, usually written Γ_sin or D_entropy in v3-safe notation. Do not confuse this with v3 S = Law 4 Strong/Love.</div><div>Support: the-descent.html, the-math.html, ledger limitations.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#60a5fa" id="agency">
+<summary><span class="dot"></span><span class="tname">Agency</span><span class="teq">Free will · voluntary coupling</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>The receiver's ability to consent, resist, collapse, refuse, or couple. This is the repeated spiritual gap the story notices across the physical mirrors.</p>
+<div class="role"><div>Math role: W-term, resistance, acceptance, consent, or measurement-choice layer depending on law.</div><div>Support: You-Are-God-Story-Told-Through-Physics.html, axiom-gap-fill-provisional.html.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#60a5fa" id="freedom">
+<summary><span class="dot"></span><span class="tname">Freedom</span><span class="teq">Witness condition · refusal possible</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>The real possibility of refusal. A witness that cannot say no is not a witness in the full moral sense; it is only an extension of the source.</p>
+<div class="role"><div>Math role: the condition that makes W meaningful rather than decorative.</div><div>Support: You-Are-God-Story-Told-Through-Physics.html, the-bridge.html.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#a78bfa" id="faith">
+<summary><span class="dot"></span><span class="tname">Faith</span><span class="teq">Law 7 Q · participation without coercive sight</span><span class="badge">PARTIAL</span></summary>
+<div class="tbody">
+<p>Participatory trust: not ignorance, but commitment without demanding total control or direct coercive proof.</p>
+<div class="role"><div>Math role: belief coherence network and observer posture in the quantum/decision layer.</div><div>Support: the-math.html; PARTIAL because the quantum-to-faith reduction map is conjectured, not derived. Pending Law 7 Q witness.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="truth">
+<summary><span class="dot"></span><span class="tname">Truth</span><span class="teq">Law 3 · electromagnetic mirror</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Signal aligned with reality. Truth reveals; deception occludes, interferes, or distorts the signal.</p>
+<div class="role"><div>Math role: Law 3 constructive pole, treated through electromagnetic/light and signal language.</div><div>Support: the-math.html, canonical term reference, ledger cautions.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#f87171" id="deception">
+<summary><span class="dot"></span><span class="tname">Deception</span><span class="teq">Law 3 anti-pole · destructive interference</span><span class="badge">PARTIAL</span></summary>
+<div class="tbody">
+<p>Signal distortion that makes the receiver less able to read reality. Deception is not a second truth-field; it is truth's signal cancelled, phase-shifted, occluded, or buried in noise.</p>
+<div class="role"><div>Math role: destructive interference / high-signal-low-freedom failure mode. In information terms it pushes the received signal toward useless noise: H(X|Y) approaches H(X).</div><div>Support: The-Ten-Laws portrait, consciousness-chain.html, derivation chain Logos anti-family. PARTIAL because the Maxwell-gate discriminability work is still queued.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="logos">
+<summary><span class="dot"></span><span class="tname">Logos</span><span class="teq">Information · Word · intelligibility</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>The intelligible order layer: signal, structure, meaning, and rational form held together. Logos is not just data; it is meaningful order that can be spoken, received, and understood.</p>
+<div class="role"><div>Math role: Information/Shannon law, active speaker repair where pure Shannon semantics is insufficient.</div><div>Support: the-math.html, Master-Equation-Complete-Derivation-Chain_v2.html.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#60a5fa" id="knowledge">
+<summary><span class="dot"></span><span class="tname">Knowledge</span><span class="teq">Law 6 K · information density</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Information that can be encoded, transmitted, decoded, and understood. It is the intelligibility layer beneath Logos language.</p>
+<div class="role"><div>Math role: Shannon/channel base layer; signal over noise.</div><div>Support: canonical term reference and Logos/Information law materials.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#c9a227" id="love">
+<summary><span class="dot"></span><span class="tname">Love</span><span class="teq">Law 4 S · Strong/Love binding</span><span class="badge">CANONICAL</span></summary>
+<div class="tbody">
+<p>The binding field the constructive regime runs in. In the v3 law dictionary, S is Strong/Love, not entropy/sin.</p>
+<div class="role"><div>Math role: Law 4 factor and Fruit-to-Laws hub candidate. At the broader process level, love is the background structure that makes coherence meaningful; removing it collapses the framework, not just one coordinate.</div><div>Support: The-Ten-Laws-Story-Derivation-Portrait.html, trinity-chain.html.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#c9a227" id="meaning">
+<summary><span class="dot"></span><span class="tname">Meaning</span><span class="teq">Law 2 M · Mass-Energy / witness</span><span class="badge">DERIVED</span></summary>
+<div class="tbody">
+<p>The reason created structure is not merely potential. Meaning requires a witness: a real receiver who can recognize, value, and respond rather than merely mirror the source mechanically.</p>
+<div class="role"><div>Math role: Law 2 factor in the v3 dictionary, Mass-Energy / Meaning. In the story layer, mass-energy gives weight and persistence; spiritually, meaning is what makes created order significant to a witness.</div><div>Support: Fabel v3 ruling, DICTIONARY_RULING_OP12.md, The-Ten-Laws portrait, God Story narrative map. Status is DERIVED, not yet the strongest locked chain.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="judgment">
+<summary><span class="dot"></span><span class="tname">Judgment</span><span class="teq">Law 5 T · Thermodynamics / accounting</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Truthful disclosure of what has been actualized. Judgment is not God learning what happened; it is the system's cost, debt, entropy, and consequence becoming impossible to hide.</p>
+<div class="role"><div>Math role: Law 5 factor, Thermodynamics / Judgment. Free-energy, entropy, cost accounting, and irreversible record language sit here. It underwrites justice/mercy and the Beatitudes phase-transition layer.</div><div>Support: Fabel v3 ruling, the-math.html, derivation chain Law 5, justice/mercy ledger.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#60a5fa" id="grace-frame">
+<summary><span class="dot"></span><span class="tname">Grace-Frame</span><span class="teq">Law 8 R · Relativity / frame</span><span class="badge">DERIVED</span></summary>
+<div class="tbody">
+<p>The frame in which grace can be received without erasing agency. The v3 ruling keeps R as Relativity / Grace-Frame: not generic relationship and not resistance.</p>
+<div class="role"><div>Math role: relativistic frame/register term. Frame choice controls how the calculation is read; in salvation language, justification fixes the standing/frame, while sanctification evolves continuously inside it.</div><div>Support: Fabel v3 ruling, DICTIONARY_RULING_OP12.md, Law 8 Grace-Frame correction note. DERIVED; eponym Einstein-Frame is ruled, while broader convention conflicts remain open.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="moral-conservation">
+<summary><span class="dot"></span><span class="tname">Moral-Conservation</span><span class="teq">Law 9 F · Weak / conservation</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>The conservation layer that prevents moral accounting from becoming arbitrary. Damage, debt, repair, and transformation have to be carried somewhere; they are not waved away by naming them differently.</p>
+<div class="role"><div>Math role: Law 9 factor, Weak / Moral-Conservation. It pairs with Law 2 in the symmetry-pair reading and supports the Fermi-Conservation eponym. Law 9 Gamma_sin reproduction remains a v3 lock gate for the new dynamics.</div><div>Support: Fabel v3 ruling, DICTIONARY_RULING_OP12.md, justice/mercy and atonement ledger.</div></div>
+</div>
+</details>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- REPAIR / LEDGER TERMS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<div class="section-label">Repair and ledger</div>
+
+<details class="t" style="--c:#22c55e" id="mercy">
+<summary><span class="dot"></span><span class="tname">Mercy</span><span class="teq">R(offense, α=0) · third-party payment</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Compassion that does not deny cost. Mercy is the branch where the debt is answered truthfully by another rather than ignored.</p>
+<div class="role"><div>Math role: R(offense, alpha=0) branch; third-party payment operator.</div><div>Support: the-math.html#justicemercy, the-ledger.html.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="justice">
+<summary><span class="dot"></span><span class="tname">Justice</span><span class="teq">Ledger integrity · truthful accounting</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>The demand that damage, debt, and disorder be answered truthfully. Justice refuses to pretend that cost disappeared.</p>
+<div class="role"><div>Math role: paired with mercy in the repair function; overcorrection becomes vengeance, denial becomes enabling.</div><div>Support: the-math.html#justicemercy, the-ledger.html.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="atonement">
+<summary><span class="dot"></span><span class="tname">Atonement</span><span class="teq">α=0 ∧ judge=payer · Cross</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>The debt is paid without destroying the debtor. The books are not falsified; the cost is borne by one with authority to forgive. The unique configuration where both justice (cost conserved) and mercy (debtor freed) are maximal with no contradiction.</p>
+<div class="role"><div>Math role: cross/operator layer where justice and mercy converge. α=0 (third party pays) AND judge = payer.</div><div>Support: the-descent.html, the-math.html, the-ledger.html.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="repentance">
+<summary><span class="dot"></span><span class="tname">Repentance</span><span class="teq">response turn · force-induced reorientation</span><span class="badge">OPEN</span></summary>
+<div class="tbody">
+<p>Turning in response to an external correction. Repentance is not self-generated salvation; it is the receiver opening and reorienting when acted on by truth and grace.</p>
+<div class="role"><div>Math role: response/reorientation variable in the agency slot. Earlier notes treat it as applied-force redirection and as a resistance/acceptance control in grace reception.</div><div>Support: the-math.html Law 2 notes, production derivation tree, saved notes on G(Rp). OPEN because the v3 reduced-gradient role is not yet fully typed.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="salvation">
+<summary><span class="dot"></span><span class="tname">Salvation</span><span class="teq">q: −1→+1 · phase transition</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Binary, non-reverting change of state. The conversion jump L = |+⟩⟨−| fires once; no reverse operator exists in the canonical set. This is a phase transition (ΔG &lt; 0), not a gradual process. You cannot half-be-saved.</p>
+<p>Separated from continuous coherence c(t): salvation is the binary variable q, sanctification is the continuous variable c. Two dynamics, two operators, no contradiction.</p>
+<div class="role"><div>Math role: binary salvation variable q separated from continuous coherence c. Conversion jump L anticommutes with sign operator, is nilpotent. Absorbing positive sector: no |−⟩⟨+| exists.</div><div>Support: salvation sequence (above), GRACE_EXPLICIT_DERIVATION.md, the-math.html.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="justification">
+<summary><span class="dot"></span><span class="tname">Justification</span><span class="teq">Status := "righteous" · declared, not computed</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Punctiliar status declaration. Does not change what the agent has done (record preserved, per Landauer). Changes the agent's standing relative to the standard. Instant, not gradual — declarations happen at a point, not over a duration.</p>
+<div class="role"><div>Math role: gauge fixing — choosing a frame in which the calculation proceeds. The q=+1 state locked by the absorbing sector.</div><div>Support: salvation sequence (above), v3 derivation chain G5.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#22c55e" id="adoption">
+<summary><span class="dot"></span><span class="tname">Adoption</span><span class="teq">relational reclassification · inheritance</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Alienation becomes family. Adoption is not only release from guilt; it is a new relational identity, access right, and inheritance inside a covenant household.</p>
+<div class="role"><div>Math role: relational reclassification: Identity(agent) moves into Identity(family). It belongs with the covenant/Grace-Frame register rather than with mere legal acquittal.</div><div>Support: grace-modes.html / MASTER_DERIVATION_ATLAS grace modes, covenant family notes.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#86efac" id="sanctification">
+<summary><span class="dot"></span><span class="tname">Sanctification</span><span class="teq">c(t) · channel healing · D↓ A↑</span><span class="badge">TESTED</span></summary>
+<div class="tbody">
+<p>Continuous coherence dynamics after salvation. The channel heals: drift D decreases, bandwidth A increases, received capacity grows. This is gradual, lifelong, and the coherence variable c can rise and fall — unlike the binary salvation variable q which cannot revert.</p>
+<p>Sanctification is not God running out of grace. It is the progressive healing of the receiver.</p>
+<div class="role"><div>Math role: ċ = −σc + β·O·Γ_ext·(1−c). The −σc term means coherence can be lost without losing salvation. Romans 7 in an equation.</div><div>Support: salvation sequence (above), v3 derivation chain G4, L5-4 (Lean proven).</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#86efac" id="glorification">
+<summary><span class="dot"></span><span class="tname">Glorification</span><span class="teq">c → 1 · Lindblad attractor</span><span class="badge">TESTED</span></summary>
+<div class="tbody">
+<p>The completed state where the channel no longer throttles the source. V(ρ) → 0 monotonically. Sanctification finished. The asymptotic approach means it never quite finishes in finite time — which is why glorification is eschatological.</p>
+<div class="role"><div>Math role: Lindblad convergence to fixed point c=1. Lean-proven monotone convergence.</div><div>Support: salvation sequence (above), v3 derivation chain.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#86efac" id="glory">
+<summary><span class="dot"></span><span class="tname">Glory</span><span class="teq">revealed coherence · completion signal</span><span class="badge">PARTIAL</span></summary>
+<div class="tbody">
+<p>Coherence made visible. Glory is not decoration added after truth; it is the radiance or disclosure of a system whose inner order is no longer hidden.</p>
+<div class="role"><div>Math role: output/display register for completed coherence, adjacent to Truth and Glorification. It should not be confused with χ itself; it is χ revealed or manifested.</div><div>Support: canonical vocabulary collision note, Law 3 truth/witness/glory rows, glorification sequence. PARTIAL because the exact glyph/term split with Coherence still needs cleanup.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#a78bfa" id="resurrection">
+<summary><span class="dot"></span><span class="tname">Resurrection</span><span class="teq">bridge term · identity-preserving restoration</span><span class="badge">OPEN</span></summary>
+<div class="tbody">
+<p>Identity-preserving restoration after substrate destruction. The story reads resurrection as the demonstration that the pattern is not erased when the container is destroyed.</p>
+<div class="role"><div>Math role: life-restoration field; non-perturbative and still open at full physics level.</div><div>Support: canonical term reference, story page, ledger.</div></div>
+</div>
+</details>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- COVENANT / WITNESS TERMS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<div class="section-label">Covenant and witness</div>
+
+<details class="t" style="--c:#60a5fa" id="covenant">
+<summary><span class="dot"></span><span class="tname">Covenant</span><span class="teq">shared proper time · dτ₁ = dτ₂</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Frame-aligned relational commitment. Covenant is more than contract: it means two persons agree to share reality, consequence, and time rather than merely exchange benefits.</p>
+<div class="role"><div>Math role: Lorentz/relativity family at relational equilibrium: dτ₁ = dτ₂, v → 0, γ → 1. The asymmetry is consent; physics transforms frames automatically, covenant requires chosen mutuality.</div><div>Support: Master derivation chain Covenant family, MASTER_DERIVATION_ATLAS, Law 8/Grace-Frame ruling.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#60a5fa" id="presence">
+<summary><span class="dot"></span><span class="tname">Presence</span><span class="teq">light-cone overlap · reachable relation</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Being within reachable relational range. Presence is not merely location; it is access, availability, and shared horizon.</p>
+<div class="role"><div>Math role: covenant-family term: |Δx| &lt; c|Δt|, light-cone overlap. Absence is outside the reachable cone.</div><div>Support: Covenant family in Master derivation chain; Grace modes / atlas row.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#60a5fa" id="empathy">
+<summary><span class="dot"></span><span class="tname">Empathy</span><span class="teq">Lorentz boost · other's frame</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>The willingness to boost into another's frame rather than declaring one's own frame absolute. Empathy does not erase truth; it changes perspective so the other's experienced coordinates can be read.</p>
+<div class="role"><div>Math role: covenant-family Lorentz transform into the other's frame. Anti-term: estrangement or refusal to transform.</div><div>Support: Master derivation chain Covenant family.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#60a5fa" id="constancy">
+<summary><span class="dot"></span><span class="tname">Constancy</span><span class="teq">Killing vector · no drift</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>Trustworthy non-drift over time. Constancy means the relational metric is not quietly changing under the other person.</p>
+<div class="role"><div>Math role: covenant-family time-translation / Killing-vector condition, ∂g/∂t = 0. Anti-term: desynchronization or metric drift.</div><div>Support: Covenant family derivation, trinity-chain time-translation language.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#60a5fa" id="mutual-submission">
+<summary><span class="dot"></span><span class="tname">Mutual Submission</span><span class="teq">equivalence principle · no privileged frame</span><span class="badge">LOCKED</span></summary>
+<div class="tbody">
+<p>No party declares itself the absolute inertial frame of the relationship. Mutual submission is ordered reciprocity, not domination and not collapse of distinction.</p>
+<div class="role"><div>Math role: covenant-family equivalence-principle term: no privileged frame. Anti-term: domination, where one frame is treated as absolute.</div><div>Support: Master derivation chain Covenant family.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#60a5fa" id="witness">
+<summary><span class="dot"></span><span class="tname">Witness</span><span class="teq">Φ operator · potential to actual</span><span class="badge">CANONICAL</span></summary>
+<div class="tbody">
+<p>The receiver whose real response lets meaning become more than unused potential. A programmed mirror is not enough; witness requires freedom, recognition, and actualization.</p>
+<div class="role"><div>Math role: witness-field / observer layer: Φ maps potential to actualized record in the active observer framework. It is why Meaning and Freedom stay linked.</div><div>Support: God Story, the-bridge.html, typed-canon Witness Field Operator rows.</div></div>
+</div>
+</details>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- FAMILY SCAFFOLDS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<div class="section-label">Family scaffolds</div>
+
+<details class="t" style="--c:#c9a227" id="beatitudes">
+<summary><span class="dot"></span><span class="tname">Beatitudes</span><span class="teq">receptivity layer · ΔG &lt; 0 crossings</span><span class="badge">CANDIDATE</span></summary>
+<div class="tbody">
+<p>Postures of receptivity that make the receiver admissible to repair. They are not rewards for already possessing coherence; they describe boundary conditions under which grace can be received.</p>
+<div class="role"><div>Math role: Gibbs/free-energy crossing or receptivity-gate layer ρ_B. Candidate bridge to Law 5 / Judgment and the repair sequence.</div><div>Support: Eight-family architecture, The-Ten-Laws portrait, justice/mercy/Beatitudes notes. CANDIDATE pending stricter tests.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#c9a227" id="fruits">
+<summary><span class="dot"></span><span class="tname">Fruits of the Spirit</span><span class="teq">order parameters · 9-to-9 candidate</span><span class="badge">STRONG</span></summary>
+<div class="tbody">
+<p>Stable character outputs of the constructive regime. The Fruits are treated as what love looks like when projected into creaturely life, not as decorative virtues pasted onto the math.</p>
+<div class="role"><div>Math role: strongest 9-to-9 isomorphism candidate against the normalized law factors; stable order parameters from the Law 4 Strong/Love family.</div><div>Support: Eight-family architecture, trinity-chain, the-ledger. STRONG but still subject to blind bidirectional and shuffled-control tests.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#a78bfa" id="gifts">
+<summary><span class="dot"></span><span class="tname">Gifts of the Spirit</span><span class="teq">distributed operations · body function</span><span class="badge">OPEN</span></summary>
+<div class="tbody">
+<p>Operations distributed across a body rather than traits possessed by an isolated individual. Gifts are things that operate through the network.</p>
+<div class="role"><div>Math role: generator/operator layer candidate: wisdom, knowledge, faith, healing, miracles, prophecy, discernment, tongues, interpretation. Earlier notes mark this family important but not yet clean enough to lock.</div><div>Support: MASTER_DERIVATION_ATLAS / grace-modes Gifts rows, eight-family architecture. OPEN.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#a78bfa" id="armor">
+<summary><span class="dot"></span><span class="tname">Armor of God</span><span class="teq">robustness · decoherence resistance</span><span class="badge">PARTIAL</span></summary>
+<div class="tbody">
+<p>Defensive mechanisms that preserve coherence under hostile perturbation: truth, righteousness, peace, faith, salvation, and Spirit/Word as active resistance to collapse.</p>
+<div class="role"><div>Math role: robustness/error-correction layer. Current table names belt of truth, breastplate of righteousness, shoes of peace, shield of faith, helmet of salvation, sword of the Spirit; the full anti-family still needs source recovery.</div><div>Support: MASTER_DERIVATION_ATLAS / grace-modes Armor rows, eight-family architecture. PARTIAL.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#a78bfa" id="seven-churches">
+<summary><span class="dot"></span><span class="tname">Seven Churches</span><span class="teq">audit states · community diagnosis</span><span class="badge">CANDIDATE</span></summary>
+<div class="tbody">
+<p>Community-level diagnostic states: stable, mixed, decaying, compromised, corrective, faithful, or lukewarm patterns of response.</p>
+<div class="role"><div>Math role: audit/classifier layer for drift, fidelity, correction response, and communal coherence. Candidate relation to Law 5 Judgment and the C_W wrapper.</div><div>Support: MASTER_DERIVATION_ATLAS / grace-modes Seven Churches rows, eight-family architecture. CANDIDATE.</div></div>
+</div>
+</details>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- INTEGRATORS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<div class="section-label">Integrators</div>
+
+<details class="t" style="--c:#c9a227" id="christ">
+<summary><span class="dot"></span><span class="tname">Christ / Completion</span><span class="teq">C_W = χ wrapper · not factor ten</span><span class="badge">CANONICAL</span></summary>
+<div class="tbody">
+<p>The integrator in which the constructive regimes cohere. Decoherence is treated as derivative: darkness has no equal equation of its own. C_W wraps the nine factors — it is not a tenth factor inside the product.</p>
+<div class="role"><div>Math role: sovereign wrapper/integrator in the corrected reading. Asymmetric with decoherence.</div><div>Support: the-math.html, The-Ten-Laws-Story-Derivation-Portrait.html.</div></div>
+</div>
+</details>
+
+<details class="t" style="--c:#c9a227" id="ledger">
+<summary><span class="dot"></span><span class="tname">Ledger / Kill Condition</span><span class="teq">Trust layer · falsification record</span><span class="badge">CANONICAL</span></summary>
+<div class="tbody">
+<p>The ledger records what survived, what was reduced, what died, and what would break a claim. It is part of the argument, not an apology after the argument.</p>
+<div class="role"><div>Math role: status discipline for every strong claim: locked, partial, open, reduced, or derivation owed.</div><div>Support: the-ledger.html, templeton-claims-verification.html.</div></div>
+</div>
+</details>
+
+</div>
+
+<script>
+const W=document.querySelector('.wrap');
+const all=()=>W.querySelectorAll('details.t,details.seq');
+document.getElementById('ex').onclick=()=>all().forEach(d=>d.open=true);
+document.getElementById('co').onclick=()=>all().forEach(d=>d.open=false);
+document.getElementById('cnt').textContent=W.querySelectorAll('details.t').length+' terms + '+W.querySelectorAll('details.seq').length+' sequences';
+</script>
+</body>
+</html>

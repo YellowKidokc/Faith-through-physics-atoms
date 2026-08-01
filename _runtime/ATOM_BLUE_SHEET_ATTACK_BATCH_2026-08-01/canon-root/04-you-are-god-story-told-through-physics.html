@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You Are God — Twenty Questions Told Through Physics</title>
+<style>
+:root{
+  --bg:#0a0e17;--bg2:#111827;--fg:#c9d1d9;--fg2:#8b949e;
+  --gold:#c9a227;--green:#22c55e;--yellow:#eab308;--red:#ef4444;--purple:#a78bfa;
+  --border:rgba(255,255,255,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:Georgia,'Times New Roman',serif;line-height:1.85;font-size:1.05em}
+.wrap{max-width:740px;margin:0 auto;padding:0 20px 120px}
+.header{text-align:center;padding:48px 16px 32px;border-bottom:1px solid var(--border)}
+.header .kicker{font-family:monospace;font-size:.7em;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:.7}
+.header h1{font-size:1.9em;margin:10px 0 6px;color:#fff}
+.header .sub{font-size:.85em;color:var(--fg2);font-style:italic}
+.legend{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:20px 16px;font-family:monospace;font-size:.68em}
+.legend span{display:flex;align-items:center;gap:5px}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.step{padding:26px 0;border-bottom:1px dashed var(--border)}
+.step:last-of-type{border-bottom:none}
+.step p{margin-bottom:14px}
+.step .keyline{font-style:italic;color:#fff;border-left:3px solid var(--gold);padding-left:14px;margin:16px 0}
+.part-tag{font-family:monospace;font-size:.65em;letter-spacing:2px;text-transform:uppercase;color:var(--gold);opacity:.6;margin-bottom:10px;display:block}
+.term{color:var(--gold);cursor:pointer;border-bottom:1.5px dotted var(--gold);font-weight:600;padding:0 1px}
+.term:hover{background:rgba(201,162,39,.12)}
+.term.st-derived{color:var(--green);border-color:var(--green)}
+.term.st-open{color:var(--red);border-color:var(--red)}
+.term.st-bridge{color:var(--purple);border-color:var(--purple)}
+.groupbox{background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin:16px 0;font-family:monospace;font-size:.8em}
+.groupbox .glabel{color:var(--gold);opacity:.7;letter-spacing:1px;text-transform:uppercase;font-size:.85em;margin-bottom:8px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:rgba(201,162,39,.08);border:1px solid rgba(201,162,39,.25);border-radius:14px;padding:4px 12px;cursor:pointer;font-size:.95em;color:var(--gold)}
+.chip:hover{background:rgba(201,162,39,.18)}
+#overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:flex-end;justify-content:center;z-index:50;font-family:'Segoe UI',Arial,sans-serif}
+#overlay.show{display:flex}
+@media(min-width:700px){#overlay{align-items:center}}
+#card{background:var(--bg2);border:1px solid var(--border);border-radius:14px 14px 0 0;max-width:560px;width:100%;max-height:82vh;overflow-y:auto;padding:22px 24px 28px;box-shadow:0 -8px 40px rgba(0,0,0,.5);position:relative}
+@media(min-width:700px){#card{border-radius:14px;max-height:78vh}}
+#card .ctitle{font-size:1.3em;font-weight:700;color:#fff;margin-bottom:4px}
+#card .cstatus{display:inline-block;font-family:monospace;font-size:.68em;padding:2px 9px;border-radius:10px;margin-bottom:16px;letter-spacing:.5px}
+#card .clayer{margin-bottom:16px;padding-left:12px;border-left:3px solid var(--border)}
+#card .clabel{font-family:monospace;font-size:.7em;letter-spacing:1px;text-transform:uppercase;color:var(--fg2);margin-bottom:5px}
+#card .plain{border-left-color:var(--fg2)}
+#card .tech{border-left-color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:.92em}
+#card .tech .clabel{color:var(--gold)}
+#card .theo{border-left-color:var(--purple)}
+#card .theo .clabel{color:var(--purple)}
+#closeBtn{position:absolute;top:14px;right:16px;background:none;border:none;color:var(--fg2);font-size:1.4em;cursor:pointer;line-height:1}
+.footer{text-align:center;padding:30px 16px;font-size:.7em;opacity:.35;font-family:monospace}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="kicker">POF 2828 — Theophysics</div>
+  <h1>You Are God</h1>
+  <div class="sub">A thought experiment, not a claim about the reader. Twenty questions told through physics — every force click-to-verify. Not written for academia. Written for you.</div>
+</div>
+
+<div class="legend">
+  <span><span class="dot" style="background:#22c55e"></span>a real, measured law of physics</span>
+  <span><span class="dot" style="background:#a78bfa"></span>the honest limit — check it yourself</span>
+</div>
+
+<div class="wrap">
+
+<div class="step">
+<span class="part-tag">Question 1 — Why make anything at all?</span>
+<p>You wake up one day. You are God. Supreme being. You can speak anything into existence. No law stands above you telling you to be good; goodness is not outside you as a rule. It is what you are. You understand the cost of selfishness better than anyone alive ever will, so what comes from you is generous before anyone is watching.</p>
+<p>You create the solar system, the earth, everything — out of nothing. No light, no dark, no nothing. And you look at it, and it's beautiful.</p>
+<p>But something is missing. A painting in a room nobody ever enters isn't art yet. It's just potential. Meaning needs a witness.</p>
+<p>Here's the harder part: you can't build a witness that's <em>programmed</em> to appreciate it. A mirror doesn't count. You need something that can look at what you made and genuinely choose to call it beautiful — or walk away. Appreciation that can't refuse isn't appreciation. It's an echo.</p>
+<p class="keyline">Love does not create because God lacks company. Love creates because abundance overflows into real others who can answer freely.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 2 — Why must that witness be free?</span>
+<p>You give them free will. And the same thing happens that happens every time a truly free being gets asked: "what if <em>I</em> could be the source instead of the receiver?" The first sin isn't murder or theft. It's a category error — mistaking receiving for weakness, thinking the upgrade is moving from participant to origin.</p>
+<p>The moment a person decides they're the origin point, they've cut themselves off from the actual origin — not because you slam a door, but because they've redefined themselves as something that doesn't need one. And the instant that system closes itself off, it starts running down. Not as punishment. As <span class="term st-derived" data-id="thermodynamics">physics</span>.</p>
+<p>Was it a mistake to give free will anyway? No — because love was never reduced to programming. The alternative is a universe of puppets, with no genuine communion, no true answer, no creaturely love that can be freely returned. Before the first word was spoken, the rescue was already the plan. Grace was never plan B.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 3 — Why a tree?</span>
+<p>The tree in the garden isn't a trap. It's free will made <em>visible</em>. Freedom without a real choice is just a word — like saying someone's free to leave a room that has no door.</p>
+<p>The adversary doesn't tell anyone to rebel outright. He just asks: "did God really say...?" A tiny gap, a seed of doubt, and independence starts sounding like an upgrade instead of what it actually is. And here's the twist he never saw coming: he uses the tree to introduce death, and death becomes the exact delivery mechanism for the cure. He thought he was outsmarting the plan. He was running it.</p>
+<p>Why destroy something beautiful at all? Not hatred — envy. He was close to God once, closer than almost anything, and somewhere in being the most magnificent reflector ever made, he looked at the light passing through him and thought it was his own. He's not building a rival kingdom. He has nothing to build with. He just can't stand watching anyone else keep what he threw away.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 4 — Why does the adversary hate what he cannot have?</span>
+<p>He can corrupt what he did not create, accuse what he cannot redeem, and mimic what he cannot originate. That is why his strategy is parasitic. He does not build a rival source; he bends receivers away from the real one.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 5 — Why not make God impossible to miss?</span>
+<p>The adversary was <em>in</em> heaven. He could see God directly, and he still rebelled. Proximity never guaranteed loyalty. Seeing isn't the same as choosing. Real love needs something sight can't provide: faith.</p>
+<p>So this world is built so you can't see God directly — not because he is weak, absent, or afraid to be found, but because he is not interested in mere compliance. What you do when authority stands right in front of you is obedience. What you do when it is not coercing your sight is <em>identity</em>. He stepped back but left his signature on every wall: the moral law inside you, truth itself, and mathematics — discoverable by absolutely anyone who actually looks.</p>
+<p class="keyline">"Faith is the only proof of love that can't be faked by proximity."</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 6 — What signature did he leave?</span>
+<p>Here's where it gets checkable. Ten physical structures, each real enough to be taught and tested, compose a single, oddly specific portrait when their measured properties are read together. Click each one — these are real properties, not a mystery gap where science failed.</p>
+<div class="groupbox"><span class="glabel">Ten laws — click any:</span>
+<div class="chips">
+<span class="chip" data-id="gravity">Gravity → Grace</span>
+<span class="chip" data-id="strong">Strong Force → Love</span>
+<span class="chip" data-id="em">Electromagnetism → Truth</span>
+<span class="chip" data-id="massenergy">Mass-Energy → Significance</span>
+<span class="chip" data-id="thermodynamics">Thermodynamics → Necessity</span>
+<span class="chip" data-id="information">Information → the Word</span>
+<span class="chip" data-id="relativity">Relativity → Constancy</span>
+<span class="chip" data-id="quantum">Quantum → Faith</span>
+<span class="chip" data-id="weak">Weak Force → the Bond</span>
+<span class="chip" data-id="coherence">Coherence → Christ</span>
+</div></div>
+<p>Now here's the part that should make you suspicious of the whole argument, in a good way: <span class="term st-derived" data-id="freewill">every one of these ten has the exact same missing piece</span>, in the exact same structural spot, and it's always the same thing. Not "God did it, mystery solved." One specific, nameable, checkable variable, ten times in a row.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 7 — What is the same missing piece every time?</span>
+<p>The physics does not need the variable. The spiritual reading does. Gravity has no resistance switch, but grace does. Light cannot be morally refused, but truth can. A neutron does not choose decay, but a person can choose isolation. The repeated gap is agency.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 8 — Why does everyone keep converging on the same kind of God?</span>
+<p>Try this yourself: ask anyone — an atheist, a Buddhist, a teenager, a philosophy professor — to design a god from scratch. The answer converges every single time. Truthful. Just. Loving. Not deceptive. Patient. Good. Nobody, anywhere, designs a god who lies for fun.</p>
+<p>Three things are like this: everyone evaluates right and wrong, even against their own survival interest. Some things are true whether anyone believes them or not. Mathematical structure is necessary, not invented. All three are non-deceptive, unchanging, and installed before culture ever touches you. It is the same signal, hitting from three different directions.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 9 — Why grace instead of willpower?</span>
+<p>Here's the actual secret, and it's almost insulting in its simplicity: it was never about you fixing your life for God. Once things broke, it became about God fixing your life <em>for</em> you. You just keep your attention on him — and the things that needed to change start falling away, not on your schedule, on his. And his want is bigger than your willpower.</p>
+<p>The most successful trick the adversary ever ran was building an entire culture around the one thing that structurally cannot work: self-improvement by self-effort. Every "fix yourself" framework keeps you staring at the broken machine, trying to repair the broken machine, using the broken machine. While you're doing that, you're not looking anywhere else.</p>
+<p class="keyline">"Stop trying. Look at me." That's the whole gospel in five words — you can't fix your own trajectory, and you don't have to.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 10 — Why did God teach so slowly?</span>
+<p>God doesn't just start with "love your neighbor" — because those words don't mean anything yet to a people who just left slavery surrounded by gods who demand child sacrifice. Love is the <em>last</em> thing you can teach, not the first. It needs you to already know good from evil, know what a neighbor even is, know who you are, know which God you're even talking about.</p>
+<p>So there's a curriculum: a rescue from Egypt, so you know what love <em>does</em>. Boundaries, so you know what love <em>protects</em>. Sacrifices, so you know what love <em>costs</em>. Centuries of prophets who keep coming back after betrayal, so you know what love <em>endures</em>. And when Jesus finally says "love God, love your neighbor" — that's not a new idea. That's graduation.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 11 — Why enter creation from within?</span>
+<p>Why not just fix it from outside? Because the fall already answered that question: proximity doesn't produce love, and power doesn't produce loyalty. Cracking the sky open would make every choice after that a choice made under duress. So instead, God enters from within — same hunger, same exhaustion, same real temptation. He lets himself be tired so the garden of Gethsemane is real. He lets himself bleed so "Father, forgive them" actually costs something.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 12 — Why does the old temptation fail in Christ?</span>
+<p>The adversary watches a carpenter's son and sees an opening. Tries to corrupt him with the exact same pitch that worked in Eden: "be your own source." It doesn't land. Not magic — a declaration: <em>I am not a closed system. I am coupled to the source. Your pitch doesn't work, because I never forgot who I am.</em></p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 13 — What happens at the cross?</span>
+<p>On the cross, the perfect, uncorrupted pattern voluntarily releases itself into the broken system. "It is finished" isn't defeat — it's successful deployment. The temple veil tears top to bottom — not opened from below by human hands, opened from the top, by God. The barrier that closed off Eden is gone. Not for one nation through one mediator. For everyone. Directly.</p>
+<p>The adversary orchestrated the whole thing, certain he was landing the killing blow — and triggered the exact mechanism that ends him instead. He killed the cure, and the cure needed exactly that to be released. His biggest win is the trigger for his own permanent defeat.</p>
+<p class="keyline">"The stronger the attack, the more complete the backfire."</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 14 — What does the empty tomb prove?</span>
+<p>Two things, and both of them are physics claims, not just miracle claims. First: information survives the destruction of its container. The pattern isn't erased when the substrate is — it's the same identity, on an upgraded substrate, moving forward, not backward. Second: entropy — the rule that everything, always, left alone, falls apart — gets locally reversed, by connecting the system to a source outside itself instead of asking it to fix itself. Death was never the final word. It was a delivery mechanism, and the delivery is complete.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 15 — Why does the father version matter?</span>
+<p>You can debate free will. Fair fight, been argued for centuries. You can debate whether justice and mercy can really coexist. Theologians have wrestled with it forever. But nobody can argue with a father who watched his son die for the very people who were killing him, and let it happen anyway, because he loved them enough to.</p>
+<p>The seminary version says something like: "the propitiation is ontologically sufficient for the remission of all actual and original sin across the totality of fallen humanity." True. And it fits in your head, not your chest. The father's version is: <em>he watched his boy die so you wouldn't have to.</em> Same truth. That one breaks your heart instead. A three-year-old holding out a cupcake to share already understands the second version. She doesn't need the first one at all.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 16 — How big is the gap between human love and divine love?</span>
+<p>A mother's love for her child — the most powerful love most humans will ever feel — is a fraction of a fraction of a fraction of what this framework claims God feels for every person alive at once, including the ones who hate him. Not a bigger version of the same thing. A different category entirely — closer to explaining the concept of "wet" to someone who's never touched water.</p>
+<p>That's <em>why</em> there's a cross at all. Words were given first: law, prophecy, ritual, story. They were true, but they were not the final disclosure. So instead of one more sentence, God showed up in person and let love be demonstrated on wood, with nails. And even that is described here as a compression — a glimpse, not the whole thing.</p>
+<p class="keyline">"The cross is as much of the sun as creatures in the cave can bear without being destroyed by the light."</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 17 — Does this limit God?</span>
+<p>No. The page is not saying God was forced to create, forced to hide, forced to use a cross, or unable to act another way. It is making a weaker and cleaner claim: if God chooses to create genuinely free creatures for love, then certain structures follow from that choice. The limits are inside the created order and inside the analogy, not inside God.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 18 — Does this say God made a mistake?</span>
+<p>No. The fall is treated as foreknown and answered from before creation, not as a surprise repair job. Grace is not plan B. The cross is not divine damage control. It is the deepest disclosure of what love was always willing to bear for real communion.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 19 — Does it make ontological sense from first principles?</span>
+<p>The sequence holds if the first principles are stated in the right order: God is self-sufficient goodness; love freely creates real others; real others require genuine agency; agency allows refusal; refusal closes the receiver against the source; a closed system decays; restoration must come from outside without destroying freedom; incarnation enters the system without coercing it; cross and resurrection restore from within while preserving identity.</p>
+</div>
+
+<div class="step">
+<span class="part-tag">Question 20 — What is the honest limit?</span>
+<p>This whole page could be wrong, and it says so on purpose. The match between ten physical structures and ten spiritual patterns could be coincidence — a shape a pattern-seeking mind imposed on data that doesn't actually connect. <span class="term st-open" data-id="honestgap">Gravity also crushes stars into black holes. The strong force powers nuclear weapons.</span> A determined skeptic could write the exact opposite essay — "Ten Properties of an Indifferent Universe" — from the same raw physics.</p>
+<p>So here's what makes this different from every "God of the gaps" argument before it: it doesn't need science to fail anywhere. It needs science to keep succeeding, and the pattern to keep holding as new things get discovered — or to break, the moment a force shows up with no matching structure. It names its own kill conditions in advance, out loud, so anyone can check whether it survives. <span class="term st-open" data-id="killconditions">If certain upcoming measurements come back a certain way, this specific claim dies</span> — cleanly, on the record, no retreat available.</p>
+<p>That's the whole ask: not "believe this because it's beautiful." Check the math. If it survives, that's data. If it doesn't, that's data too.</p>
+</div>
+
+</div>
+
+<div class="footer">Feb 14, 2026 Boundary is THE FLOOR — do not push further into divine mechanics · POF 2828</div>
+
+<div id="overlay"><div id="card">
+  <button id="closeBtn" onclick="closeCard()">&times;</button>
+  <div class="ctitle" id="cTitle"></div>
+  <div class="cstatus" id="cStatus"></div>
+  <div class="clayer plain"><div class="clabel">Plain</div><p id="cPlain"></p></div>
+  <div class="clayer tech"><div class="clabel">Technical (the actual measured properties)</div><p id="cTech"></p></div>
+  <div class="clayer theo"><div class="clabel">The Spiritual Reading</div><p id="cTheo"></p></div>
+</div></div>
+
+<script>
+const STATUS = {
+  derived:{label:"MEASURED PHYSICS — CHECK IT",color:"#22c55e",bg:"rgba(34,197,94,.15)"},
+  bridge:{label:"THE HONEST LIMIT",color:"#a78bfa",bg:"rgba(167,139,250,.15)"},
+  open:{label:"KILL CONDITION — CHECKABLE",color:"#ef4444",bg:"rgba(239,68,68,.15)"}
+};
+const DATA = {
+  gravity:{t:"Gravity → Grace",s:"derived",plain:"The weakest force there is, and it shaped literally everything. It can't be blocked by anything. It only ever pulls things closer, never pushes away. It reaches forever. And it never rushes — it just patiently, endlessly draws things in.",tech:"10³⁶ times weaker than electromagnetism, yet it shapes all large-scale structure in the universe. Cannot be shielded by any known material. Always attractive, never repulsive. Infinite range. Acts by curving the path, not by force — an object in free-fall feels no force at all.",theo:"Grace: the gentlest thing there is, and it's what everything else was built on. You can't build a wall against it. It never stops reaching. It changes your path without ever forcing your steps."},
+  strong:{t:"Strong Force → Love",s:"derived",plain:"The strongest force in existence — and the harder you try to pull away from it, the harder it pulls back. Up close, though, it gives you room to move freely. It would rather create brand new matter out of nothing than ever let something separate.",tech:"137× stronger than electromagnetism. Confinement: gets stronger as you pull apart, not weaker. Slack at short range — freedom inside the bond. Holds every atomic nucleus in your body together, right now. A blind computer model measuring coupling strength between ten equations scored this variable as the single most connected node in the entire system — more connected than gravity, more than entropy.",theo:"Love: the strongest thing there is, holding tighter the further you try to run, giving total freedom up close, holding your body together at this exact moment without you noticing."},
+  em:{t:"Electromagnetism → Truth",s:"derived",plain:"Light keeps itself going with nothing else needed. It never wears down no matter how far it travels — light from 13 billion years ago still arrives intact. It moves at the fastest possible speed anything can move. And once it reaches your eye, you can't refuse to have seen it.",tech:"Self-sustaining — a changing electric field creates a magnetic field and vice versa, with no external input needed. Never degrades in transit. Travels at the universal speed limit. A photon reaching your retina cannot be declined.",theo:"Truth: self-sustaining, never degrading no matter how far it travels, moving at the maximum speed reality allows, impossible to refuse once it reaches you."},
+  massenergy:{t:"Mass-Energy → Significance",s:"derived",plain:"A tiny amount of ordinary matter contains a genuinely enormous amount of hidden energy — a paperclip has enough energy locked inside it to flatten a city, if you could release it all.",tech:"E = mc². c² ≈ 9×10¹⁶ — the conversion factor between mass and energy is staggering. Works in both directions. Nothing is inert; every object contains hidden magnitude far beyond its appearance.",theo:"Significance: nothing is insignificant. The smallest thing — a small kindness, a moment of patience — contains a hidden weight disguised as something ordinary."},
+  thermodynamics:{t:"Thermodynamics → Necessity",s:"derived",plain:"Left alone, everything falls apart, always, with zero exceptions — this is the most solid, unbroken rule in all of physics. The only way to reverse that, ever, is help coming in from outside the system. You cannot rescue yourself from the inside.",tech:"The Second Law: entropy in a closed system always increases, with no known exception. Self-organization never occurs spontaneously without external energy input. The only mechanism physics permits for local entropy reversal is opening the system to an outside source.",theo:"Necessity: you cannot save yourself — not because you're weak, but because the law itself forbids a closed system from decreasing its own disorder. Help has to come from outside, structurally, not by choice."},
+  information:{t:"Information → the Word",s:"derived",plain:"There's a shortest possible description that could generate everything you see — and reality runs on exactly that shortest version, with no wasted extra content.",tech:"Kolmogorov complexity: the length of the shortest program that produces a given output. The Standard Model of particle physics fits on a t-shirt and generates the behavior of every atom in the observable universe — an extraordinary compression ratio that doesn't happen in random, undesigned systems.",theo:"The Word: 'In the beginning was the Word' read as the minimal-description source code, with everything else as the output derived from it — nothing in creation exists independently of it."},
+  relativity:{t:"Relativity → Constancy",s:"derived",plain:"Different people, looking from different positions, measure different things — but the actual underlying reality never changes depending on who's looking. It's the same reality, yesterday, today, and always, no matter your point of view.",tech:"Special and general relativity: observers in different reference frames measure different values for time, length, and simultaneity, but the invariant spacetime interval and underlying physical laws remain the same for all observers.",theo:"Constancy: the same yesterday, today, and forever, regardless of where you're standing when you look."},
+  quantum:{t:"Quantum Mechanics → Faith",s:"derived",plain:"Before anyone looks, every possibility is genuinely still open, all at once. The moment someone actually commits to looking, one single real outcome appears out of that whole cloud of possibilities.",tech:"Quantum superposition: a system exists in a combination of all possible states until measurement. The act of observation collapses the wave function into one definite, actual outcome.",theo:"Faith: holding every possibility open until the moment someone actually commits to looking — and that act of looking is what brings one reality into being out of everything that could have been."},
+  weak:{t:"Weak Force → the Bond",s:"derived",plain:"The exact same particle can be stable forever while it's inside its bond, and fall apart in minutes the moment it's outside it. Not punishment — just how the physics works. And the door back into the bond is never locked shut.",tech:"A free neutron decays with a half-life of about 15 minutes; a neutron bound inside a stable nucleus can remain stable indefinitely. The weak force operates at extremely short range (about 10⁻¹⁸ meters) — it has to be close to act at all.",theo:"The bond: stable inside relationship, decaying outside it — not a punishment, just what happens outside the bond by nature — and the way back in is always available."},
+  coherence:{t:"Coherence → Christ",s:"derived",plain:"When absolutely everything lines up — every wave in step with every other wave, nothing working against anything else — what's left has no leftover imbalance at all. No asymmetry. Nothing still needing to be resolved.",tech:"Constructive interference at full coherence: when all wave components are in phase, the result is maximal amplitude with zero destructive cancellation — no residual asymmetry term remains in the combined system.",theo:"Christ, read as Law 10: the one point with no internal duality left to resolve — not because freedom was removed, but because freedom finished its work."},
+  freewill:{t:"The one missing variable, every time",s:"derived",plain:"Gravity has no 'resistance' switch — but grace does. The strong force allows no betrayal — but love does. Light can't be turned away — but truth can. A neutron doesn't choose to decay — but a person chooses sin. Ten laws, same one gap, every single time, and it's always choice.",tech:"Across all ten physical structures, the physics is fully explained with zero remaining gaps — but the spiritual reading of each requires exactly one additional degree of freedom the physics itself doesn't need: a resistance or choice variable, always in the same structural position.",theo:"Free will: the single consistent difference between the physical law and its spiritual reading, in every one of the ten cases, without exception so far."},
+  honestgap:{t:"The obvious counter-argument",s:"open",plain:"Gravity also crushes stars into black holes. The strong force is what makes nuclear weapons possible. A skeptic could take these same ten structures and write the exact opposite essay about an indifferent, even hostile universe — using identical facts.",tech:"Selection bias is a live, named risk here: choosing 24 flattering properties out of many possible ones, from structures that also have destructive properties, is a real methodological vulnerability this argument has to own rather than hide.",theo:"Named on purpose, not swept under the rug — because an argument that hides its own best objection isn't an honest one."},
+  killconditions:{t:"The stated kill conditions",s:"open",plain:"This isn't an argument designed to survive no matter what happens. Specific future measurements are named in advance that would kill specific parts of this claim outright, with no wiggle room to retreat into.",tech:"Named examples: a particular cosmological measurement (from the Euclid mission) coming back at a specific value would kill the cosmological piece of the claim outright; a closed-system physical model matching the same predictive power would kill the open-system claim.",theo:"This is what makes it different from every previous 'God of the gaps' argument: those were built to be unfalsifiable. This one hands you the exact knife to cut it with, in writing, ahead of time."}
+};
+document.querySelectorAll('.term, .chip').forEach(el=>{
+  el.addEventListener('click', ()=>{
+    const id = el.getAttribute('data-id');
+    const d = DATA[id];
+    if(!d) return;
+    document.getElementById('cTitle').textContent = d.t;
+    const st = STATUS[d.s];
+    const badge = document.getElementById('cStatus');
+    badge.textContent = st.label; badge.style.color = st.color; badge.style.background = st.bg;
+    document.getElementById('cPlain').textContent = d.plain;
+    document.getElementById('cTech').textContent = d.tech;
+    document.getElementById('cTheo').textContent = d.theo;
+    document.getElementById('overlay').classList.add('show');
+  });
+});
+function closeCard(){document.getElementById('overlay').classList.remove('show')}
+document.getElementById('overlay').addEventListener('click', e=>{ if(e.target.id==='overlay') closeCard(); });
+</script>
+</body>
+</html>

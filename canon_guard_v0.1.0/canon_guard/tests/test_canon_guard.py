@@ -43,6 +43,42 @@ class CanonGuardTests(unittest.TestCase):
             }]}
             self.assertEqual(canon_guard.apply_claim_rules(doc, manifest), [])
 
+    def test_frontmatter_classification_is_read(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = root / "003_A1.3_Information-Primacy.md"
+            path.write_text("---\nclassification: Primitive\n---\n# A1.3\n", encoding="utf-8")
+            doc = canon_guard.parse_document(path, root)
+            old_manifest = canon_guard.CURRENT_MANIFEST
+            try:
+                canon_guard.CURRENT_MANIFEST = {
+                    "canon_class_overrides": [{
+                        "scope": ["**/003_A1.3_Information-Primacy.md"],
+                        "canon_class": "theorem",
+                    }]
+                }
+                classes = canon_guard.detect_canon_class(doc)
+            finally:
+                canon_guard.CURRENT_MANIFEST = old_manifest
+            self.assertEqual(classes["declared"], "axiom")
+            self.assertEqual(classes["final"], "theorem")
+
+    def test_classification_rule_flags_wrong_class(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = root / "004_D1.1_Information-Definition.md"
+            path.write_text("---\ncanon_class: axiom\n---\n# Information Definition\n", encoding="utf-8")
+            doc = canon_guard.parse_document(path, root)
+            manifest = {"canon_classification": [{
+                "id": "DEFINITIONS_NOT_AXIOMS",
+                "scope": ["**/*_D*.md"],
+                "forbid": ["axiom", "theorem"],
+                "message": "Definition file promoted incorrectly.",
+                "severity": "warning",
+            }]}
+            findings = canon_guard.apply_canon_classification(doc, manifest)
+            self.assertEqual(findings[0].code, "DEFINITIONS_NOT_AXIOMS")
+
 
 if __name__ == "__main__":
     unittest.main()

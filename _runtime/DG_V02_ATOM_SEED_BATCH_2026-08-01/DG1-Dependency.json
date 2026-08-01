@@ -1,0 +1,37 @@
+{
+  "source_claim_id": "DG1-Dependency",
+  "title": "DG1 - Dependency",
+  "claim": "Every non-root layer in a valid derivation depends on at least one prior layer or explicitly declared root.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "A derived layer cannot be intelligible without prerequisite structure."
+  ],
+  "definitions": [
+    "DependsOn(L2, L1): L2 requires L1."
+  ],
+  "equations": [
+    "DependsOn(L(n+1), L(n))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2"
+  ],
+  "negative_guards": [
+    "Dependency is a grammar rule, not a theology claim.",
+    "Root layers must be declared rather than hidden."
+  ],
+  "kill_conditions": [
+    "A non-root derivation step is valid while requiring no prior structure and no declared root.",
+    "The dependency relation cannot be represented without circular ambiguity."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ]
+}
+

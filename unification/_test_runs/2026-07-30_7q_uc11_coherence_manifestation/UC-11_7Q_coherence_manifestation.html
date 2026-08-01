@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7Q Report: If coherence is real in the framework's sense, it must have </title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#0a0b0f;--card:#12141c;--border:#1e2233;--border2:#2a3050;
+  --text:#e8e6e1;--text2:#8a8d9b;--text3:#555869;--gold:#d4a853;
+  --ps:#38bdf8;--ed:#a78bfa;--ec:#34d399;--fail:#ef4444;--pass:#2dd4a0;--warn:#f59e0b;
+  --q0:#8a8d9b;--q1:#d4a853;--q2:#7c6340;--q3:#6b8c42;--q4:#38bdf8;
+  --q5:#a0724a;--q6:#34d399;--q7:#ef4444;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{font-family:'DM Sans',sans-serif;color:var(--text);background:var(--bg);min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(56,189,248,0.03),transparent 50%),radial-gradient(ellipse at 80% 100%,rgba(167,139,250,0.03),transparent 50%);pointer-events:none}
+.container{position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:40px 24px 80px}
+
+/* Hero */
+.hero{text-align:center;padding:48px 0 40px;border-bottom:1px solid var(--border);margin-bottom:40px}
+.hero-tag{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,4vw,44px);font-weight:700;line-height:1.15;margin-bottom:16px}
+.hero .sub{font-size:14px;color:var(--text2);max-width:650px;margin:0 auto;line-height:1.7}
+
+/* Badges */
+.badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:20px 0}
+.badge{padding:6px 12px;border:1px solid var(--border);border-radius:999px;font-size:12px;color:var(--text2);background:var(--card)}
+.badge.gold{border-color:rgba(212,168,83,0.4);color:var(--gold)}
+
+/* Big Score */
+.big-score{text-align:center;padding:32px;margin:32px 0;border:1px solid var(--border2);border-radius:18px;background:linear-gradient(180deg,rgba(18,20,28,0.95),rgba(10,11,15,0.96))}
+.big-score .t-val{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:700;line-height:1}
+.big-score .t-label{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--text2);margin-top:8px}
+.big-score .t-class{font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:2px;margin-top:6px}
+
+/* Layout */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0}
+@media(max-width:700px){.grid-2{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px}
+.panel-title{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+
+/* Score Bars */
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.bar-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text2);width:140px;flex-shrink:0}
+.bar-track{flex:1;height:6px;background:rgba(255,255,255,0.05);border-radius:3px;overflow:hidden}
+.bar-fill{height:100%;border-radius:3px;transition:width 0.6s ease}
+.bar-val{font-family:'JetBrains Mono',monospace;font-size:12px;width:40px;text-align:right}
+
+/* Evidence Cards */
+.ev-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:12px;border-left:3px solid var(--ps)}
+.ev-num{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:2px;margin-bottom:6px}
+.ev-name{font-weight:600;margin-bottom:4px}
+.ev-meta{font-size:12px;color:var(--text3);margin-bottom:10px}
+.ev-channels{display:flex;gap:16px;flex-wrap:wrap}
+.ch{display:flex;flex-direction:column;align-items:center;gap:2px}
+.ch-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:1px}
+.ch-val{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:600}
+.ev-why{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--fail);margin-top:8px;padding:4px 8px;background:rgba(239,68,68,0.08);border-radius:4px;display:inline-block}
+.ev-vulns{font-size:11px;color:var(--text3);margin-top:6px}
+
+/* Death Tests */
+.dt-row{display:flex;gap:14px;align-items:start;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.dt-icon{font-size:20px;width:28px;text-align:center;flex-shrink:0}
+.dt-type{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1px;color:var(--text3)}
+.dt-label{font-size:13px;color:var(--text2)}
+.dt-result{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;margin-top:2px}
+.dt-notes{font-size:12px;color:var(--text3);margin-top:2px;font-style:italic}
+
+/* Predictions */
+.pred-row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.pred-num{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--q6);width:24px;flex-shrink:0}
+.pred-desc{font-size:13px;color:var(--text)}
+.pred-meta{font-size:11px;color:var(--text3);margin-top:2px}
+
+/* Dependencies */
+.dep-item{padding:8px 12px;margin-bottom:6px;background:rgba(160,114,74,0.06);border:1px solid rgba(160,114,74,0.15);border-radius:6px;font-size:13px;color:var(--text2)}
+
+/* Tree */
+.tree-center{text-align:center;padding:20px 0}
+
+/* Footer */
+.footer{text-align:center;padding:32px;border-top:1px solid var(--border);margin-top:32px}
+.footer p{font-size:12px;color:var(--text3);line-height:1.7}
+.empty{font-size:13px;color:var(--text3);font-style:italic;padding:8px 0}
+
+/* Section titles */
+.section{margin:40px 0;padding-bottom:32px;border-bottom:1px solid var(--border)}
+.s-tag{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;margin-bottom:8px}
+.s-title{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,32px);font-weight:700;margin-bottom:12px}
+
+/* Info grid */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:20px 0}
+.info-cell{padding:12px;background:var(--card);border:1px solid var(--border);border-radius:8px}
+.info-cell .info-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:1px;color:var(--text3);text-transform:uppercase;margin-bottom:4px}
+.info-cell .info-val{font-size:14px;font-weight:500}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+  <div class="hero-tag">7Q Scored Report &middot; UNIFICATION-PROBE</div>
+  <h1>If coherence is real in the framework's sense, it must have a nonzero external signature.</h1>
+  <div class="sub">UC-11 &middot; UNI &middot; Testable guess &middot; Under evaluation</div>
+  <div class="badges">
+    <span class="badge">UNI</span>
+    <span class="badge">HYPOTHESIS</span>
+    <span class="badge">CANDIDATE</span>
+    <span class="badge">XDM x1.15</span>
+    <span class="badge gold">TENTATIVE</span>
+  </div>
+</div>
+
+<!-- BIG SCORE -->
+<div class="big-score">
+  <div class="t-val" style="color:#f59e0b">0.586</div>
+  <div class="t-label">Truth Score (Enhanced)</div>
+  <div class="t-class" style="color:#f59e0b">TENTATIVE &mdash; Promising</div>
+  <div style="font-size:12px;color:var(--text3);margin-top:8px">T_raw: 0.5095 &times; XDM 1.15 = T_final: 0.5859</div>
+</div>
+
+<!-- TREE + SCORES -->
+<div class="grid-2">
+  <div class="panel">
+    <div class="panel-title">Tree Health</div>
+    <div class="tree-center"><svg viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:280px;height:auto">
+  <!-- Bedrock (Q5) -->
+  <rect x="0" y="260" width="200" height="60" fill="#2a2035" opacity="0.22"/>
+  <text x="100" y="295" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#a0724a" opacity="0.7">Q5 GROUND (0.28)</text>
+  <!-- Roots -->
+  <path d="M100 200 C75 225 35 235 15 260" stroke="#a0724a" stroke-width="2.5" fill="none" opacity="0.28"/>
+  <path d="M100 200 C125 225 165 235 185 260" stroke="#a0724a" stroke-width="2.5" fill="none" opacity="0.28"/>
+  <path d="M100 200 C100 230 100 250 100 270" stroke="#a0724a" stroke-width="1.3" fill="none" opacity="0.19"/>
+  <!-- Soil (Q2) -->
+  <rect x="0" y="185" width="200" height="15" fill="#7c6340" opacity="0.22"/>
+  <text x="100" y="195" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7" fill="#7c6340" opacity="0.8">Q2 (0.28)</text>
+  <!-- Trunk (Q3) -->
+  <rect x="90" y="100" width="20" height="85" rx="3" fill="#5c3d2e" opacity="0.50"/>
+  <line x1="100" y1="180" x2="100" y2="105" stroke="#6b8c42" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.33"/>
+  <!-- Canopy (Q6) -->
+  <ellipse cx="100" cy="65" rx="65" ry="48" fill="#2d5a2a" opacity="0.26"/>
+  <ellipse cx="78" cy="55" rx="40" ry="32" fill="#3a6b35" opacity="0.22"/>
+  <ellipse cx="125" cy="60" rx="35" ry="28" fill="#336630" opacity="0.21"/>
+  <text x="100" y="68" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="8" fill="#34d399" opacity="0.8">Q6 (0.30)</text>
+  <!-- Fruit (predictions) -->
+  <circle cx="60" cy="82" r="6" fill="#d4a853" opacity="0.24"/>
+  <circle cx="145" cy="78" r="6" fill="#d4a853" opacity="0.21"/>
+  <circle cx="100" cy="35" r="5" fill="#d4a853" opacity="0.18"/>
+  <!-- Rain (Q4 evidence) -->
+  <line x1="55" y1="12" x2="62" y2="48" stroke="#38bdf8" stroke-width="1.5" opacity="0.24"/>
+  <line x1="100" y1="8" x2="100" y2="44" stroke="#38bdf8" stroke-width="1.5" opacity="0.20"/>
+  <line x1="148" y1="10" x2="142" y2="46" stroke="#38bdf8" stroke-width="1.5" opacity="0.24"/>
+  <text x="100" y="8" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7" fill="#38bdf8" opacity="0.7">Q4 (0.34)</text>
+  <!-- Axe (Q7) -->
+  <line x1="18" y1="145" x2="85" y2="145" stroke="#ef4444" stroke-width="2.0" opacity="0.35"/>
+  <polygon points="14,138 18,145 14,152 8,145" fill="#ef4444" opacity="0.35"/>
+  <!-- Seed (Q1) -->
+  <ellipse cx="100" cy="190" rx="6" ry="4" fill="#d4a853" opacity="0.28"/>
+  <text x="100" y="210" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="7" fill="#d4a853" opacity="0.7">Q1 (0.40)</text>
+</svg></div>
+  </div>
+  <div class="panel">
+    <div class="panel-title">Q0&ndash;Q7 Scores</div>
+    <div class="bar-row">
+  <span class="bar-label">Q0 Posture</span>
+  <div class="bar-track"><div class="bar-fill" style="width:200px;background:#2dd4a0"></div></div>
+  <span class="bar-val" style="color:#2dd4a0">1.00</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">Q1 Identity</span>
+  <div class="bar-track"><div class="bar-fill" style="width:80px;background:#f59e0b"></div></div>
+  <span class="bar-val" style="color:#f59e0b">0.40</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">Q2 Domain</span>
+  <div class="bar-track"><div class="bar-fill" style="width:55px;background:#f97316"></div></div>
+  <span class="bar-val" style="color:#f97316">0.28</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">Q3 Assertion</span>
+  <div class="bar-track"><div class="bar-fill" style="width:111px;background:#f59e0b"></div></div>
+  <span class="bar-val" style="color:#f59e0b">0.56</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">Q4 Evidence</span>
+  <div class="bar-track"><div class="bar-fill" style="width:67px;background:#f97316"></div></div>
+  <span class="bar-val" style="color:#f97316">0.34</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">Q5 Dependencies</span>
+  <div class="bar-track"><div class="bar-fill" style="width:55px;background:#f97316"></div></div>
+  <span class="bar-val" style="color:#f97316">0.28</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">Q6 Consequences</span>
+  <div class="bar-track"><div class="bar-fill" style="width:60px;background:#f97316"></div></div>
+  <span class="bar-val" style="color:#f97316">0.30</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">Q7 Falsification</span>
+  <div class="bar-track"><div class="bar-fill" style="width:130px;background:#38bdf8"></div></div>
+  <span class="bar-val" style="color:#38bdf8">0.65</span>
+</div>
+    <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border)">
+      <div class="panel-title">Six Pillars</div>
+      <div class="bar-row">
+  <span class="bar-label">S Structural</span>
+  <div class="bar-track"><div class="bar-fill" style="width:98px;background:#f59e0b"></div></div>
+  <span class="bar-val" style="color:#f59e0b">0.49</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">E Evidence</span>
+  <div class="bar-track"><div class="bar-fill" style="width:67px;background:#f97316"></div></div>
+  <span class="bar-val" style="color:#f97316">0.34</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">L Logical</span>
+  <div class="bar-track"><div class="bar-fill" style="width:55px;background:#f97316"></div></div>
+  <span class="bar-val" style="color:#f97316">0.28</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">D Discriminatory</span>
+  <div class="bar-track"><div class="bar-fill" style="width:60px;background:#f97316"></div></div>
+  <span class="bar-val" style="color:#f97316">0.30</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">P Posture</span>
+  <div class="bar-track"><div class="bar-fill" style="width:200px;background:#2dd4a0"></div></div>
+  <span class="bar-val" style="color:#2dd4a0">1.00</span>
+</div>
+<div class="bar-row">
+  <span class="bar-label">C Combat</span>
+  <div class="bar-track"><div class="bar-fill" style="width:130px;background:#38bdf8"></div></div>
+  <span class="bar-val" style="color:#38bdf8">0.65</span>
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- IDENTITY -->
+<div class="section">
+  <div class="s-tag" style="color:var(--q1)">Q1 &mdash; Identity</div>
+  <div class="info-grid">
+    <div class="info-cell"><div class="info-label">Entity Type</div><div class="info-val">HYPOTHESIS &mdash; Testable guess</div></div>
+    <div class="info-cell"><div class="info-label">Axiom Class</div><div class="info-val">EMPIRICAL &mdash; Hypothesis or observation</div></div>
+    <div class="info-cell"><div class="info-label">Status</div><div class="info-val">CANDIDATE &mdash; Under evaluation</div></div>
+    <div class="info-cell"><div class="info-label">Source</div><div class="info-val">ORIGINAL &mdash; First proposal</div></div>
+  </div>
+</div>
+
+<!-- ASSERTION -->
+<div class="section">
+  <div class="s-tag" style="color:var(--q3)">Q3 &mdash; Assertion</div>
+  <div class="info-grid">
+    <div class="info-cell"><div class="info-label">Claim Type</div><div class="info-val">CAUSAL &mdash; X causes Y</div></div>
+    <div class="info-cell"><div class="info-label">Precision</div><div class="info-val">DETAILED &mdash; Testable with specified method</div></div>
+    <div class="info-cell"><div class="info-label">Certainty</div><div class="info-val">CONDITIONAL &mdash; CONDITIONAL</div></div>
+    <div class="info-cell"><div class="info-label">Scope</div><div class="info-val">FRAMEWORK &mdash; FRAMEWORK</div></div>
+  </div>
+</div>
+
+<!-- EVIDENCE -->
+<div class="section">
+  <div class="s-tag" style="color:var(--q4)">Q4 &mdash; Evidence (E = 0.34)</div>
+  <div class="s-title">Three Channels. One Score.</div>
+  <div style="display:flex;gap:24px;margin:16px 0;flex-wrap:wrap">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:13px"><span style="color:var(--ps)">PS avg:</span> 0.57</div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:13px"><span style="color:var(--ed)">CF avg:</span> 0.57</div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:13px"><span style="color:var(--text)">E_final:</span> 0.34</div>
+    
+  </div>
+  <div class="ev-card">
+  <div class="ev-num">E1</div>
+  <div class="ev-body">
+    <div class="ev-name">Public descent / fruit criterion supplies a testable grammar</div>
+    <div class="ev-meta">DOCUMENTARY (DOCUMENTARY) &middot; Tier T2 &middot; MODERATE</div>
+    <div class="ev-channels">
+      <div class="ch"><span class="ch-label" style="color:var(--ps)">PS</span><span class="ch-val">0.68</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--ed)">ED</span><span class="ch-val">0.70</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--ec)">EC</span><span class="ch-val">0.62</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--gold)">CF</span><span class="ch-val">0.69</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--text)">E</span><span class="ch-val">0.47</span></div>
+    </div>
+    
+    <div class="ev-vulns">Vulns: None</div>
+  </div>
+</div>
+<div class="ev-card">
+  <div class="ev-num">E2</div>
+  <div class="ev-body">
+    <div class="ev-name">Behavioral science broadly supports internal-state externalization</div>
+    <div class="ev-meta">OBSERVATIONAL (Measured but not controlled) &middot; Tier T2 &middot; MODERATE</div>
+    <div class="ev-channels">
+      <div class="ch"><span class="ch-label" style="color:var(--ps)">PS</span><span class="ch-val">0.65</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--ed)">ED</span><span class="ch-val">0.58</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--ec)">EC</span><span class="ch-val">0.54</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--gold)">CF</span><span class="ch-val">0.61</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--text)">E</span><span class="ch-val">0.40</span></div>
+    </div>
+    
+    <div class="ev-vulns">Vulns: None</div>
+  </div>
+</div>
+<div class="ev-card">
+  <div class="ev-num">E3</div>
+  <div class="ev-body">
+    <div class="ev-name">No attached operational protocol yet for chi-coherence measurement</div>
+    <div class="ev-meta">OBSERVATIONAL (Measured but not controlled) &middot; Tier T3 &middot; WEAK</div>
+    <div class="ev-channels">
+      <div class="ch"><span class="ch-label" style="color:var(--ps)">PS</span><span class="ch-val">0.38</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--ed)">ED</span><span class="ch-val">0.34</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--ec)">EC</span><span class="ch-val">0.22</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--gold)">CF</span><span class="ch-val">0.41</span></div>
+      <div class="ch"><span class="ch-label" style="color:var(--text)">E</span><span class="ch-val">0.16</span></div>
+    </div>
+    
+    <div class="ev-vulns">Vulns: SOURCE_GAP</div>
+  </div>
+</div>
+</div>
+
+<!-- DEPENDENCIES -->
+<div class="section">
+  <div class="s-tag" style="color:var(--q5)">Q5 &mdash; Dependencies (L = 0.28)</div>
+  <div class="info-grid">
+    <div class="info-cell"><div class="info-label">Terminus</div><div class="info-val">HYPOTHESIS &mdash; HYPOTHESIS</div></div>
+    <div class="info-cell"><div class="info-label">Derivation</div><div class="info-val">ABDUCTIVE &mdash; Best explanation</div></div>
+  </div>
+  <div style="margin-top:12px"><div class="dep-item">The Unification Constitution Article II: bridges must state what is preserved</div>
+<div class="dep-item">The Unification Constitution Article IV: greater claims carry greater burden</div>
+<div class="dep-item">DP-05: boundary condition</div>
+<div class="dep-item">DP-06: bridge grade</div>
+<div class="dep-item">DP-08: warrant labels</div>
+<div class="dep-item">MATH_IS_GOD_GOLD_EXTRACTION: Coherence Must Manifest</div>
+</div>
+  <div style="margin-top:18px"><div class="panel-title">Derivation Chain</div><div class="dep-item"><strong>Formal statement:</strong> For an internal coherence state C_int satisfying the framework's definition of alignment/truth-relation, there exists at least one downstream signature S_ext such that coupling(C_int, S_ext) != 0.</div>
+<div class="dep-item">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:1px">UC-11-DRV-001 &middot; ASSUMPTION &middot; OPEN</div>
+  <div>Coherence is treated as more than a private description; it is claimed to couple to behavior, speech, relation, or measurement.</div>
+  <div style="font-size:11px;color:var(--text3)">Declared assumption <span style="color:var(--text3)">from framework chi-coupling hypothesis</span></div>
+</div>
+<div class="dep-item">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:1px">UC-11-DRV-002 &middot; BRIDGE &middot; CHECKED</div>
+  <div>Theological fruit-language is mapped to observable downstream signature, not to direct proof of the whole framework.</div>
+  <div style="font-size:11px;color:var(--text3)">Cross-domain bridge step <span style="color:var(--text3)">from Matthew 7 fruit criterion / public descent rule</span></div>
+</div>
+<div class="dep-item">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:1px">UC-11-DRV-003 &middot; EVIDENCE &middot; OPEN</div>
+  <div>Human and AI coherence should be detectable through behavior, language, correction posture, relational repair, and consistency under pressure.</div>
+  <div style="font-size:11px;color:var(--text3)">Appeals to evidence <span style="color:var(--text3)">from behavioral and linguistic signature tests</span></div>
+</div>
+<div class="dep-item">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:1px">UC-11-DRV-004 &middot; BOUNDARY &middot; CHECKED</div>
+  <div>Absence of a measured signature does not automatically falsify the theological claim unless the measurement domain was actually adequate to detect the predicted signature.</div>
+  <div style="font-size:11px;color:var(--text3)">Applies a boundary condition <span style="color:var(--text3)">from no hidden-proof rule</span></div>
+</div>
+<div class="dep-item"><strong>Declared assumptions:</strong><br>The claim targets operational coherence, not private faith as a whole.<br>External signature may be behavioral, linguistic, relational, physiological, or statistical.<br>The measurement protocol must be capable of detecting the claimed signature.</div>
+<div class="dep-item"><strong>Boundary conditions:</strong><br>Does not prove God from behavior alone.<br>Does not equate social conformity with coherence.<br>Does not make every claimed spiritual state directly measurable.<br>Requires independent definitions of coherence and signature before testing.</div>
+<div class="dep-item"><strong>Open proof obligations:</strong><br>Define internal coherence without circularly using the external signature.<br>Define allowable signature classes and detection windows.<br>Specify negative controls, including coherent-looking deception.<br>Separate theological confession from empirical measurement.</div>
+</div>
+</div>
+
+<!-- PREDICTIONS -->
+<div class="section">
+  <div class="s-tag" style="color:var(--q6)">Q6 &mdash; Consequences (D = 0.30)</div>
+  <div class="pred-row">
+  <span class="pred-num">P1</span>
+  <div class="pred-body">
+    <div class="pred-desc">A defined coherence state should improve consistency between speech, behavior, correction posture, and relational repair.</div>
+    <div class="pred-meta">STRUCTURAL &middot; This model predicts better &middot; <span style="color:#555869">unconfirmed</span></div>
+  </div>
+</div>
+<div class="pred-row">
+  <span class="pred-num">P2</span>
+  <div class="pred-body">
+    <div class="pred-desc">Coherent-looking deception should eventually produce detectable inconsistency, repair failure, or load-bearing contradiction.</div>
+    <div class="pred-meta">TESTABLE &middot; This model predicts better &middot; <span style="color:#555869">unconfirmed</span></div>
+  </div>
+</div>
+</div>
+
+<!-- KILL CONDITIONS -->
+<div class="section" style="border-bottom:none">
+  <div class="s-tag" style="color:var(--q7)">Q7 &mdash; Falsification (C = 0.65)</div>
+  <div class="s-title">Five Death Types</div>
+  <div class="dt-row">
+  <span class="dt-icon" style="color:#2dd4a0">&#x2713;</span>
+  <div class="dt-body">
+    <div class="dt-type">SELFREF</div>
+    <div class="dt-label">Self-refutation — claim destroys itself</div>
+    <div class="dt-result" style="color:#2dd4a0">SURVIVES</div>
+    
+  </div>
+</div>
+<div class="dt-row">
+  <span class="dt-icon" style="color:#f59e0b">&#x26A0;</span>
+  <div class="dt-body">
+    <div class="dt-type">REGRESS</div>
+    <div class="dt-label">Infinite regress — justification never ends</div>
+    <div class="dt-result" style="color:#f59e0b">WEAKENED</div>
+    <div class="dt-notes">Needs a non-circular definition of internal coherence.</div>
+  </div>
+</div>
+<div class="dt-row">
+  <span class="dt-icon" style="color:#555869">&#x25CB;</span>
+  <div class="dt-body">
+    <div class="dt-type">EMPIRICAL</div>
+    <div class="dt-label">Empirical contradiction — reality says no</div>
+    <div class="dt-result" style="color:#555869">UNTESTED</div>
+    <div class="dt-notes">No formal measurement protocol attached.</div>
+  </div>
+</div>
+<div class="dt-row">
+  <span class="dt-icon" style="color:#2dd4a0">&#x2713;</span>
+  <div class="dt-body">
+    <div class="dt-type">INCOHERENT</div>
+    <div class="dt-label">Logical incoherence — A and ¬A</div>
+    <div class="dt-result" style="color:#2dd4a0">SURVIVES</div>
+    <div class="dt-notes">The claim is bounded to operational signature, not total proof.</div>
+  </div>
+</div>
+<div class="dt-row">
+  <span class="dt-icon" style="color:#f59e0b">&#x26A0;</span>
+  <div class="dt-body">
+    <div class="dt-type">EXPLAIN</div>
+    <div class="dt-label">Explanatory failure — competitor is better</div>
+    <div class="dt-result" style="color:#f59e0b">WEAKENED</div>
+    <div class="dt-notes">Psychology can explain many signatures without accepting chi-field ontology.</div>
+  </div>
+</div>
+  <div class="info-grid" style="margin-top:16px">
+    <div class="info-cell"><div class="info-label">Robustness</div><div class="info-val">ARGUED &mdash; Defended but not tested</div></div>
+    <div class="info-cell"><div class="info-label">Cascade Scope</div><div class="info-val">FRAMEWORK &mdash; Framework-level collapse</div></div>
+  </div>
+</div>
+
+<div class="footer">
+  <p><strong>David Lowe &middot; POF 2828 &middot; Theophysics</strong></p>
+  <p>Scored by 7Q Engine v2 &middot; unification-probe mode &middot; 2026-07-30 18:15</p>
+  <p style="margin-top:8px">CSS: 7q-scored-callouts.css &middot; Method: <a href="7q-explorer.html" style="color:var(--gold)">Explorer</a> &middot; <a href="7q-evidence.html" style="color:var(--ps)">Evidence</a> &middot; <a href="7q-reverse.html" style="color:var(--fail)">Reverse</a></p>
+</div>
+
+</div>
+</body>
+</html>

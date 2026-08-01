@@ -1,0 +1,49 @@
+{
+  "source_claim_id": "METHOD-00-Bridge-Discipline",
+  "title": "METHOD-00 - Bridge Discipline",
+  "claim": "The Theophysics method tests structural correspondence by auditing borrowed foundations, mapping structure rather than vocabulary, modeling only what survives mapping, and verifying before rhetoric.",
+  "domain": "derivation-grammar",
+  "lane": "Method",
+  "claim_class": "method",
+  "mode_classification": "BRIDGE_DISCIPLINE",
+  "assumptions": [
+    "Cross-domain claims need a repeatable bridge discipline.",
+    "The same evidence should be evaluated under symmetric register standards."
+  ],
+  "definitions": [
+    "Audit: identify borrowed foundations.",
+    "Map: preserve roles, order, constraints, failure modes, and boundary conditions.",
+    "Model: define dynamics only after a mapping survives.",
+    "Verify: test with proof, data, adversarial review, kill conditions, and register labels."
+  ],
+  "equations": [
+    "Audit -> Map -> Model -> Verify"
+  ],
+  "bridges": [
+    "Wilsonian RG / effective field theory is a guarded bridge for the article workflow, not a claim that Theophysics is literally QFT."
+  ],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG5-Translation",
+    "DG7-Admissibility"
+  ],
+  "negative_guards": [
+    "Do not let analogy pass as proof.",
+    "Do not cite Lean without a build receipt.",
+    "Do not smuggle theology into physics-register claims.",
+    "Do not smuggle physics into theology-register claims."
+  ],
+  "kill_conditions": [
+    "Bridge claims depend on forced relabeling.",
+    "The method cannot demote favorite claims.",
+    "Physics claims exceed what physics actually says.",
+    "Theology appears inside the formal grammar layer."
+  ],
+  "proof_label": "BRIDGE_DECLARED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\METHOD-00-from-axiom-to-coherence.md"
+  ]
+}
+

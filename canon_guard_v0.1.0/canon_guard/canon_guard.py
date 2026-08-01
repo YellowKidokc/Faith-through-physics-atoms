@@ -33,6 +33,8 @@ DATE_PATTERNS = (
     re.compile(r"\b(20\d{2}-\d{2}-\d{2})\b"),
 )
 CANON_MARKERS = re.compile(r"(?i)(#canon\b|status\s*:\s*canon|canonical reference|source of truth)")
+FRONTMATTER = re.compile(r"\A---\s*\n(.*?)\n---\s*", re.S)
+FRONTMATTER_FIELD = re.compile(r"(?m)^([A-Za-z0-9_-]+)\s*:\s*(.+?)\s*$")
 
 
 def sha256_text(value: str) -> str:
@@ -85,6 +87,7 @@ class Document:
     declared_date: str | None
     canon_marked: bool
     equations: list[Equation]
+    metadata: dict[str, str]
 
 
 @dataclasses.dataclass
@@ -128,8 +131,22 @@ def extract_equations(text: str) -> list[Equation]:
     return sorted(unique.values(), key=lambda e: e.line)
 
 
+def parse_frontmatter(text: str) -> dict[str, str]:
+    match = FRONTMATTER.match(text)
+    if not match:
+        return {}
+    metadata: dict[str, str] = {}
+    for field in FRONTMATTER_FIELD.finditer(match.group(1)):
+        value = field.group(2).strip().strip("\"'")
+        if value.startswith("["):
+            value = value.strip("[]")
+        metadata[field.group(1).strip().casefold()] = value
+    return metadata
+
+
 def parse_document(path: Path, root: Path) -> Document:
     text = path.read_text(encoding="utf-8", errors="replace")
+    metadata = parse_frontmatter(text)
     title_match = re.search(r"(?m)^#\s+(.+?)\s*$", text)
     version = next((m.group(1) for pattern in VERSION_PATTERNS if (m := pattern.search(text))), None)
     date = next((m.group(1) for pattern in DATE_PATTERNS if (m := pattern.search(text))), None)
@@ -144,6 +161,7 @@ def parse_document(path: Path, root: Path) -> Document:
         declared_date=date,
         canon_marked=bool(CANON_MARKERS.search(text[:5000])),
         equations=extract_equations(text),
+        metadata=metadata,
     )
 
 
@@ -274,6 +292,130 @@ def apply_quote_requirements(doc: Document, manifest: dict[str, Any]) -> list[Fi
     return findings
 
 
+def normalize_label(value: str | None) -> str:
+    if not value:
+        return ""
+    value = value.strip().strip("\"'").casefold()
+    value = re.sub(r"[^\w]+", "_", value)
+    value = value.strip("_")
+    synonyms = {
+        "primitive": "axiom",
+        "floor_axiom": "axiom",
+        "strict_axiom": "axiom",
+        "derived_axiom": "theorem",
+        "derived": "theorem",
+        "derived_theorem": "theorem",
+        "math_definition": "definition",
+        "definitional": "definition",
+        "boundary": "boundary_condition",
+        "bc": "boundary_condition",
+    }
+    return synonyms.get(value, value)
+
+
+def detect_canon_class(doc: Document) -> dict[str, str]:
+    """Infer a document's canon role from frontmatter, filename, and local text."""
+    text_head = doc.text[:6000]
+    metadata = doc.metadata
+    raw_declared = (
+        metadata.get("canon_class")
+        or metadata.get("entity_type")
+        or metadata.get("type")
+        or metadata.get("classification")
+        or metadata.get("status")
+        or ""
+    )
+    declared = normalize_label(raw_declared)
+    path = doc.relative_path.casefold()
+    title = (doc.title or "").casefold()
+
+    detected = ""
+    if re.search(r"(^|/)\d+_d\d+\.\d+_|(^|/)d\d+\.\d+_|definition", path):
+        detected = "definition"
+    elif re.search(r"(^|/)\d+_e\d+\.\d+_|(^|/)e\d+\.\d+_|equation|lagrangian", path):
+        detected = "equation"
+    elif re.search(r"(^|/)\d+_bc\d+_|(^|/)bc\d+_|boundary", path):
+        detected = "boundary_condition"
+    elif re.search(r"(^|/)\d+_t\d+\.\d+_|(^|/)t\d+\.\d+_|theorem", path):
+        detected = "theorem"
+    elif re.search(r"(^|/)\d+_a\d+\.\d+_|(^|/)a\d+\.\d+_|axiom", path):
+        detected = "axiom"
+
+    if not detected:
+        if "## formal statement" in text_head.casefold() and "## defeat condition" in text_head.casefold():
+            detected = "axiom"
+        elif "definition" in title:
+            detected = "definition"
+        elif "equation" in title or "lagrangian" in title:
+            detected = "equation"
+
+    lean_override = ""
+    for rule in CURRENT_MANIFEST.get("canon_class_overrides", []):
+        scope = rule.get("scope", ["**"])
+        if path_matches_scope(doc.relative_path, scope):
+            lean_override = normalize_label(str(rule.get("canon_class", "")))
+            break
+
+    final_class = lean_override or detected or declared or "unknown"
+    return {
+        "declared": declared or "unknown",
+        "detected": detected or "unknown",
+        "override": lean_override or "",
+        "final": final_class,
+    }
+
+
+def apply_canon_classification(doc: Document, manifest: dict[str, Any]) -> list[Finding]:
+    findings: list[Finding] = []
+    rules = manifest.get("canon_classification", [])
+    if not rules:
+        return findings
+    classes = detect_canon_class(doc)
+    for rule in rules:
+        scope = rule.get("scope", ["**"])
+        if not path_matches_scope(doc.relative_path, scope):
+            continue
+        expected = normalize_label(str(rule.get("expected", "")))
+        actual = classes["final"]
+        if expected and actual != expected:
+            findings.append(Finding(
+                str(rule.get("id", "CANON_CLASS_MISMATCH")),
+                str(rule.get("severity", "error")),
+                doc.relative_path,
+                str(rule.get("message", "Canon classification mismatch."))
+                + f" Expected {expected}; detected {actual}.",
+                canonical_id=rule.get("canonical_id"),
+            ))
+        forbidden = {normalize_label(str(item)) for item in rule.get("forbid", [])}
+        if actual in forbidden:
+            findings.append(Finding(
+                str(rule.get("id", "CANON_CLASS_FORBIDDEN")),
+                str(rule.get("severity", "error")),
+                doc.relative_path,
+                str(rule.get("message", "Forbidden canon classification."))
+                + f" Detected {actual}.",
+                canonical_id=rule.get("canonical_id"),
+            ))
+        elif classes["declared"] in forbidden:
+            findings.append(Finding(
+                str(rule.get("id", "CANON_CLASS_FORBIDDEN")),
+                str(rule.get("severity", "error")),
+                doc.relative_path,
+                str(rule.get("message", "Forbidden canon classification."))
+                + f" Declared {classes['declared']}; inferred {actual}.",
+                canonical_id=rule.get("canonical_id"),
+            ))
+        if rule.get("require_declared", False) and classes["declared"] == "unknown":
+            findings.append(Finding(
+                str(rule.get("id", "CANON_CLASS_UNDECLARED")),
+                str(rule.get("severity", "warning")),
+                doc.relative_path,
+                "Document has no machine-readable canon_class/entity_type/type field.",
+                canonical_id=rule.get("canonical_id"),
+            ))
+    return findings
+
+
 def compare_equations(doc: Document, manifest: dict[str, Any], canonical: dict[str, Document]) -> list[Finding]:
     findings: list[Finding] = []
     if any(doc.path == item.path for item in canonical.values()):
@@ -354,6 +496,7 @@ def make_review_packet(root: Path, documents: list[Document], findings: list[Fin
         "documents": [{
             "path": d.relative_path, "title": d.title, "version": d.declared_version,
             "date": d.declared_date, "canon_marked": d.canon_marked,
+            "metadata": d.metadata, "canon_class": detect_canon_class(d),
             "equations": [dataclasses.asdict(e) for e in d.equations],
         } for d in documents],
         "findings": [f.as_dict() for f in findings],
@@ -380,6 +523,7 @@ def run(args: argparse.Namespace) -> int:
     for doc in documents:
         findings.extend(check_false_canon(doc, manifest_paths))
         findings.extend(apply_claim_rules(doc, CURRENT_MANIFEST))
+        findings.extend(apply_canon_classification(doc, CURRENT_MANIFEST))
         findings.extend(apply_quote_requirements(doc, CURRENT_MANIFEST))
         findings.extend(compare_equations(doc, CURRENT_MANIFEST, canonical))
     findings.sort(key=lambda f: (f.path, f.line or 0, f.code))
