@@ -74,6 +74,11 @@ That is the missing reflection layer.
 
 This is the abstract operator above the DG8 truth-substrate theorem.
 
+Compiled first-pass kernel:
+
+- `D:\GitHub\Faith-through-physics-atoms-truth-substrate-push\lean\Theophysics\TotalizedNegationKernel.lean`
+- receipt: `D:\GitHub\Faith-through-physics-atoms-truth-substrate-push\_runtime\lean_receipts\TOTALIZED_NEGATION_KERNEL_RECEIPT_2026-08-03.md`
+
 Name:
 
 > Totalized negation is uninhabitable.
