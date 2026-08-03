@@ -80,7 +80,7 @@ Name:
 
 Statement:
 
-> An operation cannot universally negate a condition required for its own sustained execution.
+> Any process that requires an enabling condition, yet irreversibly eliminates that condition without adequate regeneration or substitution, cannot remain indefinitely operational once the elimination reaches its own support.
 
 Minimal vocabulary:
 
@@ -89,42 +89,54 @@ A = an assertion, organization, or process
 g = an enabling good
 Req(A, g) = executing A requires g
 Neg(A, g) = A negates or destroys g
-Total(A) = A's negation applies universally, including internally
-Sustain(A) = A remains operational
+Regen(g) = g is adequately regenerated or substituted
+ReachesSupport(A, g) = A's negation reaches the instance of g that supports A itself
+Sustain(A) = A remains operational indefinitely
 ```
 
 Common theorem shape:
 
 ```text
-(Req(A, g) and Total(A) and Neg(A, g)) -> not Sustain(A)
+(
+  Req(A, g)
+  and Neg(A, g)
+  and ReachesSupport(A, g)
+  and not Regen(g)
+) -> not Sustain(A)
 ```
 
 Three intended registers:
 
-1. Logic: a declaration denying all truth-aptness eliminates what makes its content declarative. No mouth.
-2. Organization: a group universally destroying coordination, identity, communication, and restraint eliminates what makes collective action possible. No army.
-3. Physics: decoherence presupposes an ordered/coherent state upon which loss can operate; when the relevant coherence is exhausted, there is no further coherence to destroy. No remaining target.
+1. Logic: a declaration denying all truth-aptness eliminates what makes its content declarative. Ordinary false statements can continue inside a truth-bearing language; the mouth disappears only when the denial abolishes the semantic machinery needed for assertion.
+2. Organization: a group universally destroying coordination, identity, communication, and restraint eliminates what makes collective action possible. Destructive regimes can persist by selectively preserving internal order; the contradiction appears when the destructive principle reaches the regime's own coordination substrate.
+3. Physics: decoherence presupposes an ordered/coherent state upon which loss can operate, but the physics bridge is the weakest register and needs reconstruction. Local coherence may become inaccessible through environmental entanglement while global unitary evolution preserves structure. Treat this as a dependency/exhaustion analogy until a domain-faithful formal model is written.
 
 Strong sentence:
 
-> Evil can negate the orientation of good, corrupt its application, and consume its products, but it cannot universally abolish the enabling goods its own operation requires.
+> Evil can negate the orientation of good, corrupt its application, and consume its products, but it cannot indefinitely sustain itself after it destroys the enabling goods its own operation requires.
 
 Domain cautions:
 
 1. The organizational instance should require reliable coordination, not moral trust. Fear, surveillance, hostages, incentives, and punishment can replace trust, but not stable identities, intelligible signals, predictable consequences, preserved agents, and enough regularity for commands to produce actions.
 2. Instrumental patience, loyalty, or self-control are not necessarily Fruits of the Spirit. Treat them as counterfeit fruits: borrowed functional structure with inverted orientation.
-3. Do not identify `dL/dt = 0` directly with faithfulness. In physics, no explicit time-dependence in the Lagrangian gives energy conservation through Noether's theorem. The theological `pistis` reading is a correspondence, not the derivative itself.
+3. Do not identify `dL/dt = 0` directly with faithfulness. In physics, no explicit time-dependence in the Lagrangian gives energy conservation through Noether's theorem. The theological `pistis` reading is an analogy/correspondence, not the derivative itself and not proof of theological faithfulness.
+4. The theorem proves a persistence limit, not guaranteed historical victory. A destructive process may destroy its host and then cease. That does not prove the host survives or that good necessarily wins in ordinary historical terms.
+5. Add dynamics before claiming operational inevitability. A destructive process may consume a substrate while that substrate is regenerated. The contradiction requires depletion of the prerequisite faster than adequate replacement, or totalization that includes eventual depletion with no substitute.
 
 Circularity guard:
 
 FORM-C may use this theorem as a reason that coherence functions as wrapper while decoherence remains derivative. FORM-C must not then be cited as independent evidence for this theorem.
+
+Overstatement guard:
+
+Avoid claims like "maps flawlessly," "inevitably and invariably," or "proves coherence as the necessary wrapper for existence" until each domain instantiation proves the premises independently. The conditional schema is easy for Lean; the real work is showing that each register actually satisfies `Req`, `Neg`, `ReachesSupport`, and `not Regen`.
 
 Lineage:
 
 - Jesus publicly deploys the reductio in Mark 3.
 - Augustine develops the robber-band/political form.
 - Privation theory supplies the ontological foundation.
-- This project's candidate contribution is the single formal schema across assertion, organization, and physical loss, together with discrimination tests and machine verification.
+- This project's candidate contribution is not the ancient intuition that evil depends on good. The contribution is the single operational schema across assertion, organization, and physical loss, with explicit premises, failure conditions, counterexamples, and machine-checkable obligations.
 
 ## Proposed Core Vocabulary
 
