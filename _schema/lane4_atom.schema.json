@@ -8,6 +8,7 @@
   "properties": {
     "atom_id": {"type": "string", "pattern": "^tp:lane4/[a-z0-9-]+/[a-z0-9-]+$"},
     "atom_uid": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "atom_uuid": {"type": "string", "format": "uuid"},
     "source_claim_id": {"type": "string"},
     "title": {"type": "string", "minLength": 1},
     "claim": {"type": "string", "minLength": 1},
@@ -34,6 +35,7 @@
       "required": ["event_id", "timestamp", "lane", "event_type"],
       "properties": {
         "event_id": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+        "event_uuid": {"type": "string", "format": "uuid"},
         "timestamp": {"type": "string", "format": "date-time"},
         "lane": {"type": "string"},
         "event_type": {"type": "string"},

@@ -8,13 +8,14 @@ import hashlib
 import json
 import re
 import sys
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "_ledger"
 ATOMS = LEDGER / "atoms"
-FIELDS = ("atom_id atom_uid claim_title claim_class lane event_type result proof_label "
+FIELDS = ("atom_id atom_uid atom_uuid event_uuid claim_title claim_class lane event_type result proof_label "
           "current_status rerun_status artifact_path source_path new_path reviewer "
           "timestamp meaning limits").split()
 LABELS = {
@@ -34,6 +35,11 @@ def canonical(value):
 def digest(value):
     raw = value if isinstance(value, bytes) else canonical(value).encode()
     return "sha256:" + hashlib.sha256(raw).hexdigest()
+
+
+def event_digest(event):
+    stable = {k: v for k, v in event.items() if k not in {"event_uuid", "event_id"}}
+    return digest(stable)
 
 
 def slug(value):
@@ -77,7 +83,8 @@ def append_event(atom, event):
     event = {k: v for k, v in event.items() if v not in (None, "")}
     event.setdefault("timestamp", now())
     event.setdefault("lane", atom["lane"])
-    event["event_id"] = digest(event)
+    event.setdefault("event_uuid", str(uuid.uuid4()))
+    event["event_id"] = event_digest(event)
     if any(e["event_id"] == event["event_id"] for e in atom["ledger"]):
         raise SystemExit("duplicate event refused")
     atom["ledger"].append(event)
@@ -90,7 +97,8 @@ def normalize_atom(data, source=None):
     if not claim:
         raise SystemExit("ingest requires a claim (claim, statementTechnical, or statementPlain)")
     atom = {
-        "atom_id": "", "atom_uid": "", "title": title, "claim": claim,
+        "atom_id": "", "atom_uid": "", "atom_uuid": data.get("atom_uuid") or str(uuid.uuid4()),
+        "title": title, "claim": claim,
         "domain": data.get("domain") or data.get("domainType") or "unclassified",
         "lane": data.get("lane", "Lane4"), "claim_class": data.get("claim_class") or data.get("claimKind", "unclassified"),
         "mode_classification": data.get("mode_classification", "candidate"),
@@ -134,6 +142,7 @@ def rows():
     for atom in load_atoms():
         for event in atom["ledger"]:
             row = {"atom_id": atom["atom_id"], "atom_uid": atom["atom_uid"], "claim_title": atom["title"],
+                   "atom_uuid": atom.get("atom_uuid", ""),
                    "claim_class": atom["claim_class"], "proof_label": atom["proof_label"],
                    "current_status": atom["current_status"], "rerun_status": atom["rerun_status"]}
             row.update(event)

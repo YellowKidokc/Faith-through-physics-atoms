@@ -93,28 +93,28 @@ Legacy fields that need migration review:
 ```json
 {
   "summary": {
-    "files_scanned": 1429,
-    "findings": 1527,
-    "critical": 27,
-    "errors": 419,
-    "warnings": 1081,
+    "files_scanned": 1952,
+    "findings": 1726,
+    "critical": 105,
+    "errors": 554,
+    "warnings": 1067,
     "changed": 0
   },
   "counts_by_code": {
-    "ATOM_STATUS_PARTIAL": 18,
-    "CROWN_C_TENTH_FACTOR_LANGUAGE": 3,
+    "ATOM_STATUS_PARTIAL": 36,
+    "CROWN_C_TENTH_FACTOR_LANGUAGE": 4,
     "CROWN_FACTOR_COUNT_TEN": 2,
-    "CROWN_OLD_MASTER_PRODUCT_WITH_C": 24,
+    "CROWN_OLD_MASTER_PRODUCT_WITH_C": 101,
     "LEGACY_VERIFICATION_FIELDS": 689,
-    "MASTER_EQUATION_DRIFT": 14,
-    "OLD_STAGE_MODEL_V11": 391,
-    "UNREGISTERED_CANON": 385,
+    "MASTER_EQUATION_DRIFT": 134,
+    "OLD_STAGE_MODEL_V11": 377,
+    "UNREGISTERED_CANON": 382,
     "VERSION_MISSING": 1
   },
   "counts_by_severity": {
-    "critical": 27,
-    "error": 419,
-    "warning": 1081
+    "critical": 105,
+    "error": 554,
+    "warning": 1067
   },
   "samples_by_code": {
     "UNREGISTERED_CANON": [
@@ -149,27 +149,6 @@ Legacy fields that need migration review:
       {
         "severity": "error",
         "path": "_INBOX_HARVEST_TRUTH_CARDS/7Q_EVIDENCE_PROTOCOL.md",
-        "line": null,
-        "message": "Document claims canonical authority but is not registered in the authority manifest.",
-        "canonical_id": null
-      },
-      {
-        "severity": "error",
-        "path": "_INBOX_HARVEST_TRUTH_CARDS/7Q_FORWARD_CLASSIFIER.md",
-        "line": null,
-        "message": "Document claims canonical authority but is not registered in the authority manifest.",
-        "canonical_id": null
-      },
-      {
-        "severity": "error",
-        "path": "_INBOX_HARVEST_TRUTH_CARDS/7Q_MECHANISM_MAP_PHYSICS.md",
-        "line": null,
-        "message": "Document claims canonical authority but is not registered in the authority manifest.",
-        "canonical_id": null
-      },
-      {
-        "severity": "error",
-        "path": "_INBOX_HARVEST_TRUTH_CARDS/7Q_NEW_SCIENTIFIC_METHOD.md",
         "line": null,
         "message": "Document claims canonical authority but is not registered in the authority manifest.",
         "canonical_id": null
@@ -210,27 +189,6 @@ Legacy fields that need migration review:
         "line": 141,
         "message": "Legacy verification field detected. Newer atom model should migrate to status + verifiedBy or explicitly document this as legacy view data.",
         "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "warning",
-        "path": "axioms/01_canonical/AX-001-existence.jsonld",
-        "line": 47,
-        "message": "Legacy verification field detected. Newer atom model should migrate to status + verifiedBy or explicitly document this as legacy view data.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "warning",
-        "path": "axioms/01_canonical/AX-001-existence.jsonld",
-        "line": 48,
-        "message": "Legacy verification field detected. Newer atom model should migrate to status + verifiedBy or explicitly document this as legacy view data.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "warning",
-        "path": "axioms/01_canonical/AX-001-existence.jsonld",
-        "line": 49,
-        "message": "Legacy verification field detected. Newer atom model should migrate to status + verifiedBy or explicitly document this as legacy view data.",
-        "canonical_id": "stage-contracts-v12"
       }
     ],
     "OLD_STAGE_MODEL_V11": [
@@ -243,50 +201,29 @@ Legacy fields that need migration review:
       },
       {
         "severity": "warning",
-        "path": "_template/00_inbox_working/README.md",
+        "path": "_archive/phys_network_domain_sprawl_20260729/addiction-science/00_inbox_working/README.md",
         "line": 30,
         "message": "Old v11/14-stage language detected. v12 stage_contracts currently defines 00_inbox_working, 01_middle_seed, and 02_claim_atoms.",
         "canonical_id": "stage-contracts-v12"
       },
       {
         "severity": "warning",
-        "path": "_template/01_canonical/README.md",
+        "path": "_archive/phys_network_domain_sprawl_20260729/addiction-science/01_canonical/README.md",
         "line": 37,
         "message": "Old v11/14-stage language detected. v12 stage_contracts currently defines 00_inbox_working, 01_middle_seed, and 02_claim_atoms.",
         "canonical_id": "stage-contracts-v12"
       },
       {
         "severity": "warning",
-        "path": "_template/02_paradigm/README.md",
+        "path": "_archive/phys_network_domain_sprawl_20260729/addiction-science/02_paradigm/README.md",
         "line": 32,
         "message": "Old v11/14-stage language detected. v12 stage_contracts currently defines 00_inbox_working, 01_middle_seed, and 02_claim_atoms.",
         "canonical_id": "stage-contracts-v12"
       },
       {
         "severity": "warning",
-        "path": "_template/03_synthesis/README.md",
+        "path": "_archive/phys_network_domain_sprawl_20260729/addiction-science/03_synthesis/README.md",
         "line": 35,
-        "message": "Old v11/14-stage language detected. v12 stage_contracts currently defines 00_inbox_working, 01_middle_seed, and 02_claim_atoms.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "warning",
-        "path": "_template/04_hypothesis/README.md",
-        "line": 33,
-        "message": "Old v11/14-stage language detected. v12 stage_contracts currently defines 00_inbox_working, 01_middle_seed, and 02_claim_atoms.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "warning",
-        "path": "_template/05_evidence/README.md",
-        "line": 34,
-        "message": "Old v11/14-stage language detected. v12 stage_contracts currently defines 00_inbox_working, 01_middle_seed, and 02_claim_atoms.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "warning",
-        "path": "_template/06_falsification/README.md",
-        "line": 34,
         "message": "Old v11/14-stage language detected. v12 stage_contracts currently defines 00_inbox_working, 01_middle_seed, and 02_claim_atoms.",
         "canonical_id": "stage-contracts-v12"
       }
@@ -326,27 +263,6 @@ Legacy fields that need migration review:
         "line": 149,
         "message": "Possible old Master Equation product: G*M*E*S*T*K*R*Q*F*C. Current Crown rule expects G*M*E*S*T*K*R*Q*F inside C_W[...], with C not a tenth factor.",
         "canonical_id": "crown-knowledge-atom"
-      },
-      {
-        "severity": "critical",
-        "path": "_INBOX_HARVEST_TRUTH_CARDS/PROOF_WALKTHROUGH.md",
-        "line": 187,
-        "message": "Possible old Master Equation product: G*M*E*S*T*K*R*Q*F*C. Current Crown rule expects G*M*E*S*T*K*R*Q*F inside C_W[...], with C not a tenth factor.",
-        "canonical_id": "crown-knowledge-atom"
-      },
-      {
-        "severity": "critical",
-        "path": "_INBOX_HARVEST_TRUTH_CARDS/PROOF_WALKTHROUGH.md",
-        "line": 196,
-        "message": "Possible old Master Equation product: G*M*E*S*T*K*R*Q*F*C. Current Crown rule expects G*M*E*S*T*K*R*Q*F inside C_W[...], with C not a tenth factor.",
-        "canonical_id": "crown-knowledge-atom"
-      },
-      {
-        "severity": "critical",
-        "path": "_INBOX_HARVEST_TRUTH_CARDS/WALKTHROUGH.md",
-        "line": 39,
-        "message": "Possible old Master Equation product: G*M*E*S*T*K*R*Q*F*C. Current Crown rule expects G*M*E*S*T*K*R*Q*F inside C_W[...], with C not a tenth factor.",
-        "canonical_id": "crown-knowledge-atom"
       }
     ],
     "MASTER_EQUATION_DRIFT": [
@@ -384,30 +300,53 @@ Legacy fields that need migration review:
         "line": 39,
         "message": "Equation involving chi differs from the Crown no-drift equation. Semantic adjudication required; never auto-fixed.",
         "canonical_id": "crown-knowledge-atom"
+      }
+    ],
+    "ATOM_STATUS_PARTIAL": [
+      {
+        "severity": "error",
+        "path": "_runtime/ATOM_BLUE_SHEET_ATTACK_BATCH_2026-08-01/abc-compilation/abc-map.json",
+        "line": 19,
+        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
+        "canonical_id": "stage-contracts-v12"
       },
       {
         "severity": "error",
-        "path": "_INBOX_HARVEST_TRUTH_CARDS/WALKTHROUGH.md",
-        "line": 40,
-        "message": "Equation involving chi differs from the Crown no-drift equation. Semantic adjudication required; never auto-fixed.",
-        "canonical_id": "crown-knowledge-atom"
+        "path": "_runtime/ATOM_BLUE_SHEET_ATTACK_BATCH_2026-08-01/abc-compilation/abc-map.json",
+        "line": 34,
+        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
+        "canonical_id": "stage-contracts-v12"
       },
       {
         "severity": "error",
-        "path": "_INBOX_HARVEST_TRUTH_CARDS/Why_God_Built_Physics.md",
-        "line": 256,
-        "message": "Equation involving chi differs from the Crown no-drift equation. Semantic adjudication required; never auto-fixed.",
-        "canonical_id": "crown-knowledge-atom"
+        "path": "_runtime/ATOM_BLUE_SHEET_ATTACK_BATCH_2026-08-01/abc-compilation/abc-map.json",
+        "line": 51,
+        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
+        "canonical_id": "stage-contracts-v12"
       },
       {
         "severity": "error",
-        "path": "_INBOX_HARVEST_TRUTH_CARDS/Why_God_Built_Physics.md",
-        "line": 290,
-        "message": "Equation involving chi differs from the Crown no-drift equation. Semantic adjudication required; never auto-fixed.",
-        "canonical_id": "crown-knowledge-atom"
+        "path": "_runtime/ATOM_BLUE_SHEET_ATTACK_BATCH_2026-08-01/abc-compilation/abc-map.json",
+        "line": 52,
+        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
+        "canonical_id": "stage-contracts-v12"
+      },
+      {
+        "severity": "error",
+        "path": "_runtime/ATOM_BLUE_SHEET_ATTACK_BATCH_2026-08-01/abc-compilation/abc-map.json",
+        "line": 60,
+        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
+        "canonical_id": "stage-contracts-v12"
       }
     ],
     "CROWN_C_TENTH_FACTOR_LANGUAGE": [
+      {
+        "severity": "critical",
+        "path": "_runtime/canon_guard/mtl_probe/WALKTHROUGH_20260729_025004.mtl.md",
+        "line": 117,
+        "message": "Possible Crown drift: C is being treated as an ordinary tenth factor. Current Crown rule says C_W is the wrapper/operator and C is not a tenth product factor.",
+        "canonical_id": "crown-knowledge-atom"
+      },
       {
         "severity": "critical",
         "path": "_runtime/framework_graph.json",
@@ -452,64 +391,6 @@ Legacy fields that need migration review:
         "path": "_vocab/stage_contracts.json",
         "line": null,
         "message": "Canonical document declares no machine-readable version; manifest says 1.0.0.",
-        "canonical_id": "stage-contracts-v12"
-      }
-    ],
-    "ATOM_STATUS_PARTIAL": [
-      {
-        "severity": "error",
-        "path": "cross-domain/11_articles/TOPBAR_FILL_PACKET.cross-domain.roadmap.json",
-        "line": 782,
-        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "error",
-        "path": "cross-domain/11_articles/TOPBAR_FILL_PACKET.cross-domain.roadmap.json",
-        "line": 796,
-        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "error",
-        "path": "cross-domain/11_articles/TOPBAR_FILL_PACKET.cross-domain.roadmap.json",
-        "line": 852,
-        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "error",
-        "path": "cross-domain/11_articles/TOPBAR_FILL_PACKET.cross-domain.roadmap.json",
-        "line": 894,
-        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "error",
-        "path": "cross-domain/11_articles/TOPBAR_FILL_PACKET.cross-domain.roadmap.json",
-        "line": 950,
-        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "error",
-        "path": "cross-domain/11_articles/TOPBAR_FILL_PACKET.cross-domain.roadmap.json",
-        "line": 964,
-        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "error",
-        "path": "cross-domain/11_articles/TOPBAR_FILL_PACKET.cross-domain.roadmap.json",
-        "line": 978,
-        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
-        "canonical_id": "stage-contracts-v12"
-      },
-      {
-        "severity": "error",
-        "path": "cross-domain/11_articles/TOPBAR_FILL_PACKET.cross-domain.roadmap.json",
-        "line": 1006,
-        "message": "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status.",
         "canonical_id": "stage-contracts-v12"
       }
     ]

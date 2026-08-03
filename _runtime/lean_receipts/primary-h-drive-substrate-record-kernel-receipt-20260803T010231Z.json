@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-08-03T01:02:31+00:00",
+  "title": "Primary H Drive Substrate Record Kernel Receipt",
+  "status": "fail",
+  "project": "\\\\192.168.2.50\\h_hp\\Desktop\\LEAN4_RECOVERY_PACKET_2026-08-01\\PRIMARY_SOURCE_theophysics-lean-main",
+  "leanFile": "\\\\192.168.2.50\\h_hp\\Desktop\\LEAN4_RECOVERY_PACKET_2026-08-01\\PRIMARY_SOURCE_theophysics-lean-main\\Theophysics_SubstrateRecordKernel.lean",
+  "atom": "tp:lane4/axioms/ax-part1-ax-core-a2-1",
+  "build": {
+    "started": "2026-08-03T01:02:27+00:00",
+    "command": [
+      "lake",
+      "build"
+    ],
+    "returncode": 1,
+    "ok": false,
+    "stdout": "",
+    "stderr": "info: mathlib: checking out revision '88d006abbcd1f157f567bd21c7a33c271df9b83b'\ninfo: stderr:\nfatal: Unable to create '//192.168.2.50/h_hp/Desktop/LEAN4_RECOVERY_PACKET_2026-08-01/PRIMARY_SOURCE_theophysics-lean-main/.lake/packages/mathlib/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, or the lock file may be stale\nerror: external command 'git' exited with code 128"
+  },
+  "scan": {
+    "path": "\\\\192.168.2.50\\h_hp\\Desktop\\LEAN4_RECOVERY_PACKET_2026-08-01\\PRIMARY_SOURCE_theophysics-lean-main\\Theophysics_SubstrateRecordKernel.lean",
+    "exists": true,
+    "forbiddenMatches": {},
+    "ok": true
+  },
+  "meaning": "Substrate-record preservation kernel was imported into the primary H-drive Lean source and direct Lean compilation passes; full Lake project build remains blocked by the mathlib git index lock in .lake.",
+  "limits": "Formal conditional model only: proves preservation consequences inside the model, not substrate existence, self-grounding, Logos identity, or Christological truth."
+}

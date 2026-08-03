@@ -1,204 +1,235 @@
-# Crown Canon Semantic Review — Deterministic Guard Report
+# Crown Canon Semantic Review — Triage Report
 
 ## 1. Executive Verdict
 
-**Verdict: True drift present — multiple high-severity findings require David ratification before any automated fix.**
+**Verdict: TRUE DRIFT CONFIRMED — HIGH PRIORITY ACTION REQUIRED**
 
-The guard correctly identified three categories of genuine Crown drift:
-- **C-as-tenth-factor** (critical, 3 files)
-- **Old Master Equation product with C** (critical, 8 instances across inbox files)
-- **Factor count still ten** (error, 2 instances in registry)
+The guard has identified **105 critical findings** that represent genuine Crown canon drift, not view-layer noise. The most serious cluster is the **C-as-tenth-factor pattern** (101 critical findings in `CROWN_OLD_MASTER_PRODUCT_WITH_C`), which directly violates the no-drift rule that `C` is the coherence operator wrapper, not a tenth product factor.
 
-These are not false positives. The inbox harvest cards and runtime registry are actively using the old `G*M*E*S*T*K*R*Q*F*C` form, which directly contradicts the current Crown rule:
+The current Crown rule is unambiguous:
 
 ```
 chi(W) = C_W[ triple_integral (G*M*E*S*T*K*R*Q*F) dx dy dt ]
 ```
 
-The remaining findings (LEGACY_VERIFICATION_FIELDS, OLD_STAGE_MODEL_V11, UNREGISTERED_CANON, ATOM_STATUS_PARTIAL, VERSION_MISSING) are migration warnings and view-layer issues — important but not Crown-breaking.
+Nine factors inside the integral, `C_W` as the wrapper. Any file treating `C` as a tenth factor in the product is **true drift**, not acceptable variation.
+
+**Priority: CRITICAL — Do not auto-fix. Requires David ratification and manual correction.**
 
 ---
 
 ## 2. Top True-Drift Findings (Ordered by Priority)
 
-### Priority 1: C-as-Tenth-Factor (Critical — Crown-breaking)
+### Priority 1: C-as-Tenth-Factor (CRITICAL — 101 findings)
 
-| File | Line | Issue |
-|------|------|-------|
-| `_runtime/framework_graph.json` | 1630 | C treated as ordinary tenth factor |
-| `_vocab/master_equation_registry.json` | 75 | C treated as ordinary tenth factor |
-| `master-equation/01_canonical/ME-01-029-c-total-integration-measure.jsonld` | 11 | C treated as ordinary tenth factor |
+**Files requiring immediate attention:**
 
-**Impact:** These are runtime and canonical atom files. If C is treated as a product factor, the coherence operator is structurally wrong. This is not a view-layer difference — it's a mathematical structure error.
+| File | Lines | Issue |
+|------|-------|-------|
+| `_INBOX_HARVEST_TRUTH_CARDS/03_Master-Equation-Sheets.md` | 189 | `G*M*E*S*T*K*R*Q*F*C` — C as tenth factor |
+| `_INBOX_HARVEST_TRUTH_CARDS/FORMAL_SPEC.md` | 31, 87, 98 | Multiple instances of C in product |
+| `_INBOX_HARVEST_TRUTH_CARDS/PROOF_PACKET.md` | 149 | C in product |
+| `_runtime/canon_guard/mtl_probe/WALKTHROUGH_20260729_025004.mtl.md` | 117 | C treated as ordinary factor |
+| `_runtime/framework_graph.json` | 1630 | C in factor list |
+| `_vocab/master_equation_registry.json` | 75 | C as factor |
+| `master-equation/01_canonical/ME-01-029-c-total-integration-measure.jsonld` | 11 | C as factor |
 
-### Priority 2: Old Master Equation Product with C (Critical — inbox harvest cards)
+**Why this is true drift:** The Crown rule explicitly states `C is not a tenth factor. C is chi / coherence operator output.` These files violate this directly.
 
-| File | Lines |
-|------|-------|
-| `_INBOX_HARVEST_TRUTH_CARDS/03_Master-Equation-Sheets.md` | 189 |
-| `_INBOX_HARVEST_TRUTH_CARDS/FORMAL_SPEC.md` | 31, 87, 98 |
-| `_INBOX_HARVEST_TRUTH_CARDS/PROOF_PACKET.md` | 149 |
-| `_INBOX_HARVEST_TRUTH_CARDS/PROOF_WALKTHROUGH.md` | 187, 196 |
-| `_INBOX_HARVEST_TRUTH_CARDS/WALKTHROUGH.md` | 39 |
+### Priority 2: Factor Count Still Ten (ERROR — 2 findings)
 
-**Impact:** These are inbox documents, so they are pre-canonical working drafts. However, they are being used as reference material and contain the old `G*M*E*S*T*K*R*Q*F*C` form. If these are promoted to canonical without correction, drift becomes permanent.
+**File:** `_vocab/master_equation_registry.json` (lines 10, 159)
 
-### Priority 3: Factor Count Still Ten (Error — registry)
+The registry declares factor count as ten with C as a factor. This contradicts the nine-factor-plus-C_W-wrapper rule. **This is a canonical registry file** — it defines the vocabulary for the entire system. If this is wrong, downstream files inherit the error.
 
-| File | Lines |
-|------|-------|
-| `_vocab/master_equation_registry.json` | 10, 159 |
+### Priority 3: Master Equation Drift (ERROR — 134 findings)
 
-**Impact:** The registry explicitly lists ten factors including C. This is the authoritative vocabulary file. If the registry says ten factors, downstream atoms will inherit the error.
+**Files include:**
+- `_INBOX_HARVEST_TRUTH_CARDS/03_Master-Equation-Sheets.md` (lines 189, 192, 233)
+- `_INBOX_HARVEST_TRUTH_CARDS/PROOF_PACKET.md` (line 149)
+- `_INBOX_HARVEST_TRUTH_CARDS/WALKTHROUGH.md` (line 39)
 
-### Priority 4: Master Equation Drift (Error — semantic adjudication required)
+These are equations involving `chi` that differ from the Crown no-drift equation. **Semantic adjudication required** — never auto-fix. The guard is correct to flag these as errors requiring human review.
 
-| File | Lines |
-|------|-------|
-| `_INBOX_HARVEST_TRUTH_CARDS/03_Master-Equation-Sheets.md` | 189, 192, 233 |
-| `_INBOX_HARVEST_TRUTH_CARDS/PROOF_PACKET.md` | 149 |
-| `_INBOX_HARVEST_TRUTH_CARDS/WALKTHROUGH.md` | 39, 40 |
-| `_INBOX_HARVEST_TRUTH_CARDS/Why_God_Built_Physics.md` | 256, 290 |
+### Priority 4: Unregistered Canon (ERROR — 382 findings)
 
-**Impact:** These equations differ from the Crown no-drift equation. The guard correctly flagged them as requiring semantic adjudication — never auto-fix.
+**Files include:**
+- `LANE4_ATOM_LEDGER_BUILD_REPORT.md`
+- `_INBOX_HARVEST_TRUTH_CARDS/00_READ_ME_FIRST.md`
+- `_INBOX_HARVEST_TRUTH_CARDS/01_FORMAL_LAYER_Definition10.md`
+- `_INBOX_HARVEST_TRUTH_CARDS/7Q_DOMAIN_VOCABULARY.md`
+- `_INBOX_HARVEST_TRUTH_CARDS/7Q_EVIDENCE_PROTOCOL.md`
+
+These documents claim canonical authority but are not registered in the authority manifest. **This is a governance gap** — either register them or demote their authority claims.
 
 ---
 
 ## 3. Likely False Positives or View-Layer Exceptions
 
-### LEGACY_VERIFICATION_FIELDS (689 warnings) — Acceptable View-Layer Difference
+### 3.1 `ATOM_STATUS_PARTIAL` (36 findings)
 
-These are migration warnings, not drift. The guard correctly identifies `verificationStatus`, `kernelChecked`, and `challengeStatus` as legacy fields. However:
+**Verdict: LIKELY VIEW-LAYER EXCEPTION — NOT TRUE DRIFT**
 
-- **README.md** (lines 100-102): These are documentation files documenting the old model. This is acceptable view-layer content.
-- **`_vocab/context.jsonld`** (lines 137, 141): This is a vocabulary context file that may need to reference legacy fields for backward compatibility.
-- **`axioms/01_canonical/AX-001-existence.jsonld`** (lines 47-49): These are canonical atoms that should be migrated, but the guard correctly flags them as warnings, not errors.
+The files flagged are in `_runtime/ATOM_BLUE_SHEET_ATTACK_BATCH_2026-08-01/abc-compilation/abc-map.json`. This is a **runtime compilation artifact**, not an atom-canon file. The `partial` status here likely reflects a **view-layer or processing state**, not atom status.
 
-**Verdict:** False positive for drift. These are migration warnings. The guard is correct to flag them, but they are not Crown-breaking.
+**Recommendation:** Document this as view-layer status in the file header or move to a separate view-status field. Do not change atom status vocabulary for this file.
 
-### OLD_STAGE_MODEL_V11 (391 warnings) — Acceptable View-Layer Difference
+### 3.2 `LEGACY_VERIFICATION_FIELDS` (689 findings)
 
-These are template README files and documentation that reference the old 14-stage model. The guard correctly identifies them as v11 language. However:
+**Verdict: MIGRATION WARNINGS — NOT TRUE DRIFT (unless contradiction)**
 
-- Template files (`_template/00_inbox_working/README.md`, etc.) are documentation, not canonical atoms.
-- `README_AI_START_HERE.md` is a guide for new contributors.
+These are warnings, not errors. The guard correctly identifies legacy fields (`verificationStatus`, `kernelChecked`, `challengeStatus`) that should migrate to `status + verifiedBy`. However:
 
-**Verdict:** False positive for drift. These are documentation files that may legitimately reference the old model for historical context. The guard is correct to flag them, but they are not Crown-breaking.
+- **README.md** (lines 100-102): Likely documenting legacy history — acceptable as-is
+- **_vocab/context.jsonld** (lines 137, 141): This is a vocabulary definition file — may be defining the legacy fields for backward compatibility
 
-### UNREGISTERED_CANON (385 errors) — Likely False Positive
+**Recommendation:** Treat as migration backlog, not drift. Only escalate if a file uses legacy fields in a way that contradicts the current `status + verifiedBy` model.
 
-These are all in `_INBOX_HARVEST_TRUTH_CARDS/` — a directory that is explicitly an inbox/working area. The guard flags them as "claiming canonical authority but not registered." However:
+### 3.3 `OLD_STAGE_MODEL_V11` (377 findings)
 
-- Inbox documents are pre-canonical by definition.
-- The guard may be over-reading "canonical" language in these files.
+**Verdict: MIXED — MOSTLY LEGACY DOCUMENTATION**
 
-**Verdict:** Likely false positive for drift. These are inbox working documents. However, if any of these files are promoted to canonical, they must be registered. The guard is correct to flag them, but they are not Crown-breaking.
+The samples show:
+- `README_AI_START_HERE.md` (line 38): **Potential true drift** — this is a current entry-point document
+- `_archive/phys_network_domain_sprawl_20260729/...` files: **Clearly legacy** — these are in the archive directory
 
-### ATOM_STATUS_PARTIAL (18 errors) — Acceptable View-Layer Difference
+**Recommendation:** Archive files are acceptable. `README_AI_START_HERE.md` needs review — if it's a current entry point, it should reference v12 stage contracts.
 
-All instances are in `TOPBAR_FILL_PACKET.cross-domain.roadmap.json`. This is a view-layer roadmap file, not an atom status file. The guard correctly identifies that `partial` is not in the atom status vocabulary, but this is a view-layer status.
+### 3.4 `VERSION_MISSING` (1 finding)
 
-**Verdict:** False positive for drift. This is a view-layer status, not an atom status. The guard is correct to flag it, but it should be documented as view-layer status.
+**File:** `_vocab/stage_contracts.json`
 
-### VERSION_MISSING (1 warning) — Acceptable View-Layer Difference
+**Verdict: MINOR — ADD VERSION FIELD**
 
-`_vocab/stage_contracts.json` has no machine-readable version. The manifest says 1.0.0. This is a minor metadata issue.
-
-**Verdict:** False positive for drift. This is a metadata gap, not Crown drift.
+The manifest says version 1.0.0 but the file declares no machine-readable version. This is a simple metadata fix, not drift.
 
 ---
 
 ## 4. Exact Files/Rules David Should Ratify Before Fixes
 
-### Must Ratify (Crown-breaking — cannot fix without David)
+### 4.1 Critical Ratification Required
 
-| File | Rule | Why |
-|------|------|-----|
-| `_runtime/framework_graph.json` line 1630 | C-as-tenth-factor | Runtime framework — changing C structure affects all downstream operations |
-| `_vocab/master_equation_registry.json` lines 10, 75, 159 | Factor count ten + C-as-tenth-factor | Registry is the authoritative vocabulary — must confirm new nine-factor-plus-C_W rule |
-| `master-equation/01_canonical/ME-01-029-c-total-integration-measure.jsonld` line 11 | C-as-tenth-factor | Canonical atom — changing structure requires David's semantic approval |
+| File | Rule/Decision Needed |
+|------|---------------------|
+| `_vocab/master_equation_registry.json` | **Ratify the nine-factor + C_W wrapper rule.** Confirm factor count should be 9, not 10. This is the vocabulary source — fixing this cascades to all downstream files. |
+| `master-equation/01_canonical/ME-01-029-c-total-integration-measure.jsonld` | **Ratify whether this canonical atom should be rewritten** to use `C_W[...]` wrapper form, or deprecated if it's a legacy artifact. |
+| `_INBOX_HARVEST_TRUTH_CARDS/03_Master-Equation-Sheets.md` | **Ratify the corrected equation form** — should be `C_W[triple_integral(G*M*E*S*T*K*R*Q*F) dx dy dt]` |
+| `_INBOX_HARVEST_TRUTH_CARDS/FORMAL_SPEC.md` | **Ratify all three instances** (lines 31, 87, 98) — confirm each should use wrapper form |
+| `_INBOX_HARVEST_TRUTH_CARDS/PROOF_PACKET.md` | **Ratify line 149** — confirm wrapper form |
+| `_runtime/framework_graph.json` | **Ratify line 1630** — confirm C is operator, not factor |
+| `_runtime/canon_guard/mtl_probe/WALKTHROUGH_20260729_025004.mtl.md` | **Ratify line 117** — confirm wrapper form |
 
-### Should Ratify (Semantic adjudication required)
+### 4.2 Governance Ratification
 
-| File | Lines | Why |
-|------|-------|-----|
-| `_INBOX_HARVEST_TRUTH_CARDS/03_Master-Equation-Sheets.md` | 189, 192, 233 | Old equation form — David must confirm whether these are historical notes or intended to be updated |
-| `_INBOX_HARVEST_TRUTH_CARDS/FORMAL_SPEC.md` | 31, 87, 98 | Old equation form — same question |
-| `_INBOX_HARVEST_TRUTH_CARDS/PROOF_PACKET.md` | 149 | Old equation form |
-| `_INBOX_HARVEST_TRUTH_CARDS/PROOF_WALKTHROUGH.md` | 187, 196 | Old equation form |
-| `_INBOX_HARVEST_TRUTH_CARDS/WALKTHROUGH.md` | 39 | Old equation form |
-| `_INBOX_HARVEST_TRUTH_CARDS/Why_God_Built_Physics.md` | 256, 290 | Old equation form |
+| File | Rule/Decision Needed |
+|------|---------------------|
+| `LANE4_ATOM_LEDGER_BUILD_REPORT.md` | **Ratify whether this is canonical** — if yes, register it; if no, remove authority claims |
+| `_INBOX_HARVEST_TRUTH_CARDS/00_READ_ME_FIRST.md` | **Ratify whether inbox files can claim canonical authority** — likely should be demoted to "proposed" status |
+| `_INBOX_HARVEST_TRUTH_CARDS/7Q_DOMAIN_VOCABULARY.md` | **Ratify whether this is canonical vocabulary** — if yes, register it |
+| `_INBOX_HARVEST_TRUTH_CARDS/7Q_EVIDENCE_PROTOCOL.md` | **Ratify whether this is canonical protocol** — if yes, register it |
+
+### 4.3 Status Vocabulary Ratification
+
+| File | Rule/Decision Needed |
+|------|---------------------|
+| `_runtime/ATOM_BLUE_SHEET_ATTACK_BATCH_2026-08-01/abc-compilation/abc-map.json` | **Ratify that `partial` is view-layer status**, not atom status. Document this in the file header. |
 
 ---
 
 ## 5. Safe Deterministic Fixes That Could Be Added Later
 
-These are safe to automate after David ratifies the Crown-breaking fixes above:
+These are fixes that do not require semantic adjudication and can be automated after David ratifies the rules:
 
-1. **ATOM_STATUS_PARTIAL → documented as view-layer status**
-   - In `TOPBAR_FILL_PACKET.cross-domain.roadmap.json`, add a comment or field noting that `partial` is a view-layer status, not an atom status.
+### 5.1 Version Field Addition (1 finding)
+```json
+// _vocab/stage_contracts.json
+// Add:
+"version": "1.0.0"
+```
+**Safe because:** The manifest already declares 1.0.0. This is metadata completion, not semantic change.
 
-2. **VERSION_MISSING → add version field**
-   - In `_vocab/stage_contracts.json`, add `"version": "1.0.0"` to match the manifest.
+### 5.2 Archive Directory Exemption (377 findings)
+```json
+// Canon Guard configuration
+// Add rule: Files under _archive/ are exempt from OLD_STAGE_MODEL_V11 checks
+```
+**Safe because:** Archive files document history by definition. They should not be flagged for using old stage models.
 
-3. **LEGACY_VERIFICATION_FIELDS → migration plan**
-   - Create a migration script that converts `verificationStatus` → `status`, `kernelChecked` → `verifiedBy`, `challengeStatus` → `status` with appropriate mapping.
-   - This is safe because the guard says "migrate to status + verifiedBy or explicitly document this as legacy view data."
+### 5.3 Runtime Directory View-Status Exemption (36 findings)
+```json
+// Canon Guard configuration
+// Add rule: Files under _runtime/ with "compilation" or "map" in path
+// may use view-layer statuses like "partial"
+```
+**Safe because:** Runtime artifacts are processing states, not atom-canon statuses.
 
-4. **OLD_STAGE_MODEL_V11 → documentation update**
-   - Update template README files to reference v12 stage contracts (00_inbox_working, 01_middle_seed, 02_claim_atoms).
-   - This is safe because the guard provides the correct v12 stage names.
-
-5. **UNREGISTERED_CANON → register or document as inbox**
-   - For `_INBOX_HARVEST_TRUTH_CARDS/` files, add a header noting they are inbox working documents, not canonical.
-   - For `LANE4_ATOM_LEDGER_BUILD_REPORT.md`, determine if it should be registered or documented as non-canonical.
+### 5.4 Legacy Field Documentation (689 findings)
+```json
+// Canon Guard configuration
+// Add rule: Files that document legacy fields in README or vocabulary
+// contexts are exempt from LEGACY_VERIFICATION_FIELDS warnings
+```
+**Safe because:** Documenting legacy history is not drift.
 
 ---
 
-## 6. Things Not to Auto-Fix
+## 6. Things NOT to Auto-Fix
 
-| Finding | Reason |
-|---------|--------|
-| **C-as-tenth-factor** (3 critical) | Requires David to confirm the new nine-factor-plus-C_W rule is correct and intended |
-| **Old Master Equation product with C** (24 critical) | Requires David to confirm whether inbox documents should be updated or kept as historical reference |
-| **Factor count ten** (2 errors) | Requires David to confirm the registry should be updated to nine factors |
-| **Master Equation drift** (14 errors) | Guard explicitly says "never auto-fixed" — semantic adjudication required |
-| **Any equation in inbox harvest cards** | These are working documents — David must decide if they are historical notes or intended to be updated |
+### 6.1 NEVER Auto-Fix Master Equation Drift (134 findings)
+The guard explicitly states: "Semantic adjudication required; never auto-fixed." **This is correct.** Each equation must be reviewed by David to confirm the intended form.
+
+### 6.2 NEVER Auto-Fix C-as-Tenth-Factor (101 findings)
+While the rule is clear, each file may have context that matters:
+- Some may be **documenting the old equation** for historical purposes
+- Some may be **explaining the drift** in a teaching context
+- Some may be **genuinely wrong** and need rewriting
+
+**Requires manual review of each file's context.**
+
+### 6.3 NEVER Auto-Fix Unregistered Canon (382 findings)
+Registering a document as canonical is a **governance decision**, not a mechanical fix. David must decide:
+- Which files are truly canonical
+- Which should be demoted to "proposed" or "working"
+- Which should be moved to archive
+
+### 6.4 NEVER Auto-Fix Factor Count in Registry (2 findings)
+The `_vocab/master_equation_registry.json` is the **source of truth** for the vocabulary. Changing factor count from 10 to 9 requires:
+1. David ratifies the nine-factor rule
+2. Registry is updated
+3. All downstream files are checked for consistency
+
+This is a **cascading change**, not a single-file fix.
 
 ---
 
 ## 7. Recommended Next Command or Next Review Packet
 
-### Next Command
+### Recommended Next Command
 
-```
-crown canon review --focus crown-drift --ratify-david
-```
-
-This will:
-- Present the 3 C-as-tenth-factor files to David for ratification
-- Present the 24 old Master Equation product instances for semantic adjudication
-- Present the 2 factor-count-ten instances for confirmation
-
-### Next Review Packet
-
-After David ratifies, request:
-
-```
-crown canon review --focus migration-warnings --safe-fix
+```bash
+# Generate a focused review packet for the C-as-tenth-factor cluster
+canon-guard review \
+  --code CROWN_OLD_MASTER_PRODUCT_WITH_C \
+  --severity critical \
+  --output _runtime/canon_guard/review_packets/C_TENTH_FACTOR_REVIEW_20260801.md \
+  --include-context 5 \
+  --format markdown
 ```
 
-This will:
-- Apply the safe deterministic fixes (ATOM_STATUS_PARTIAL, VERSION_MISSING, LEGACY_VERIFICATION_FIELDS, OLD_STAGE_MODEL_V11, UNREGISTERED_CANON)
-- Generate a migration plan for legacy verification fields
-- Update template documentation to v12 stage contracts
+### Recommended Next Review Packet
 
-### Additional Recommendation
+**Packet: `C_TENTH_FACTOR_REVIEW_20260801.md`**
 
-Request a separate review of the inbox harvest cards:
+This packet should include:
+1. All 101 files with `CROWN_OLD_MASTER_PRODUCT_WITH_C` findings
+2. For each file: the exact line, the equation text, and 5 lines of surrounding context
+3. A decision template for David:
+   - [ ] Rewrite to wrapper form
+   - [ ] Document as legacy history
+   - [ ] Deprecate file
+   - [ ] Other: ______
 
-```
-crown canon review --path _INBOX_HARVEST_TRUTH_CARDS --focus crown-drift --semantic-adjudication
-```
+### Secondary Recommendation
 
-This will allow David to review each equation instance and decide whether to update or document as historical reference.
+```bash
+# After David ratifies the nine-factor rule
