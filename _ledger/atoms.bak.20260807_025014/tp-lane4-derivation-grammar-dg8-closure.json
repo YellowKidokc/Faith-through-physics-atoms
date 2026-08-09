@@ -1,0 +1,51 @@
+{
+  "atom_id": "tp:lane4/derivation-grammar/dg8-closure",
+  "atom_uid": "sha256:ab19abafed82d8db55b5dccca4ee34abbd87627923c073f2c2a8d04201c9970c",
+  "title": "DG8 - Closure",
+  "claim": "A derivation cannot deny a capability whose use is required to formulate the denial.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "Self-defeating derivations are not admissible."
+  ],
+  "definitions": [
+    "Closure: the modal condition blocking claims that deny their own required capabilities."
+  ],
+  "equations": [
+    "not (Denies(x, C) and RequiresToFormulate(x, C))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG7-Admissibility"
+  ],
+  "negative_guards": [
+    "Do not call closure a proof of theology.",
+    "Do not confuse closure with self-reference paradox."
+  ],
+  "kill_conditions": [
+    "A self-defeating denial is admitted as valid inside the grammar.",
+    "RequiresToFormulate cannot be stated without making closure circular."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\DG_V02_ATOM_SEED_BATCH_2026-08-01\\DG8-Closure.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-08-01T04:17:54+00:00",
+      "lane": "Framework",
+      "event_id": "sha256:f8a830e7058edff18898e86716d4cf4a4328bde386eccc1e7221671dd7f76cf3"
+    }
+  ],
+  "source_claim_id": "DG8-Closure"
+}

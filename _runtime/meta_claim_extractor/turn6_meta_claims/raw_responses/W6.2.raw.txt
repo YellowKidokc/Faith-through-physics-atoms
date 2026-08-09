@@ -1,0 +1,240 @@
+{
+  "work_id": "W6.2",
+  "title": "The Is-Ought Dissolution",
+  "turn": "TURN 6 - THE MORAL TURN",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\12_TRUTH_LOGOS_MATH_INFORMATION\\12-the-is-ought-dissolution.html",
+  "overall_status": "reviewed",
+  "summary": "The work argues that the is-ought gap dissolves because 'ought' is a temporal perspective on existing misalignment with invariant structure. It presents two declared premises and five kill criteria. The argument relies on a strong parallel between mathematical deployment and moral judgment, and an identity claim between mathematical and moral truth. The review flags overclaims in the deployment argument, the structural parallel, and the identity claim, and notes that the kill criteria are not fully operationalized.",
+  "claims": [
+    {
+      "claim_id": "W6.2-C001",
+      "claim_text": "The is-ought gap is not a real gap but a grammatical illusion; 'ought' is a tense of 'is'.",
+      "defense_class": "ROOT",
+      "claim_level": "theological",
+      "support": "The wall was never a wall — it was a window seen at the wrong time of day.",
+      "dependencies": ["none"],
+      "risks": ["Overclaim: 'no gap' is a strong claim; may be seen as rhetorical."],
+      "required_concession": "This is a root claim; it must be defended on its own.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W6.2-C002",
+      "claim_text": "A moral 'ought' is the recognition of existing misalignment with invariant structure φ, from the temporal position of an agent who has not yet experienced the consequence.",
+      "defense_class": "AXIOM",
+      "claim_level": "formal",
+      "support": "ought(a, φ, t) ≡ misaligned(state(a, t), φ) ∧ consequences not yet arrived",
+      "dependencies": ["M1", "χ functional"],
+      "risks": ["The definition is formal but relies on unproven existence of φ and measurability."],
+      "required_concession": "This is an axiom; it is not derived.",
+      "recommended_action": "keep",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.2-C003",
+      "claim_text": "Mathematics does not merely describe; it judges when deployed, because deployment reveals misalignment.",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "support": "The truck flips because the load calculation was wrong — 'wrong' is a structural fact.",
+      "dependencies": ["W6.2-C002", "M4"],
+      "risks": ["Overclaim: 'judgment' is metaphorical; may conflate descriptive and normative."],
+      "required_concession": "This is an analogy; it does not prove that math is moral.",
+      "recommended_action": "demote",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W6.2-C004",
+      "claim_text": "Moral misalignment is structural and accumulates cost, similar to physical law.",
+      "defense_class": "DERIVATION",
+      "claim_level": "moral",
+      "support": "A lie increases complexity; deceptive systems rise in entropy.",
+      "dependencies": ["W6.2-C002", "χ functional"],
+      "risks": ["Empirical claim not substantiated; 'cost' is vague."],
+      "required_concession": "This is an empirical claim that needs evidence.",
+      "recommended_action": "fix",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "W6.2-C005",
+      "claim_text": "Societies built on systematic lying, betrayal, or fraud collapse rather than flourish.",
+      "defense_class": "DERIVATION",
+      "claim_level": "moral",
+      "support": "Build a society on systematic lying — the result is collapse.",
+      "dependencies": ["W6.2-C004"],
+      "risks": ["Overgeneralization; counterexamples may exist."],
+      "required_concession": "This is a broad empirical claim; it may have exceptions.",
+      "recommended_action": "demote",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "W6.2-C006",
+      "claim_text": "The 'ought' is what misalignment looks like from the temporal perspective of an agent who has not yet experienced the consequence.",
+      "defense_class": "AXIOM",
+      "claim_level": "formal",
+      "support": "The core move — PMM Paper 0, §4",
+      "dependencies": ["W6.2-C002"],
+      "risks": ["May not cover all moral oughts; deliberative ought is excluded."],
+      "required_concession": "This is a definition; it may not capture all uses of 'ought'.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W6.2-C007",
+      "claim_text": "Mathematical truth and moral truth share all ontological properties, making them identical.",
+      "defense_class": "CLOSURE",
+      "claim_level": "theological",
+      "support": "At some point, 'analogy' becomes an intellectually dishonest label for what is clearly identity.",
+      "dependencies": ["W6.2-C002", "Twenty-Four Properties"],
+      "risks": ["Overclaim: identity is asserted, not proven; properties are not rigorously defined."],
+      "required_concession": "This is a strong claim; it requires rigorous definition of properties.",
+      "recommended_action": "quarantine",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "W6.2-C008",
+      "claim_text": "Every moral misalignment carries structural cost, even when undetected.",
+      "defense_class": "AXIOM",
+      "claim_level": "moral",
+      "support": "Premise 1 — Universal cost (the Gyges condition)",
+      "dependencies": ["none"],
+      "risks": ["Falsifiable but not proven; may be empirically false."],
+      "required_concession": "This is a declared premise; it is not derived.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W6.2-C009",
+      "claim_text": "Deliberative ought (e.g., 'ought I marry?') is not moral ought and is excluded from the dissolution.",
+      "defense_class": "ADMISSION",
+      "claim_level": "moral",
+      "support": "Premise 2 — Moral ought, not deliberative ought",
+      "dependencies": ["W6.2-C002"],
+      "risks": ["Limits the scope of the argument."],
+      "required_concession": "This is a concession; the argument only covers moral ought.",
+      "recommended_action": "keep",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.2-C010",
+      "claim_text": "If a correct mathematical deployment fails to expose existing structural misalignment, the deployment argument fails.",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "support": "Kill criterion F1",
+      "dependencies": ["W6.2-C003"],
+      "risks": ["Kill criterion is not operationalized; what counts as 'correct deployment'?"],
+      "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W6.2-C011",
+      "claim_text": "If a society can flourish while systematically violating core moral invariants, the structural parallel fails.",
+      "defense_class": "ADMISSION",
+      "claim_level": "moral",
+      "support": "Kill criterion F2",
+      "dependencies": ["W6.2-C005"],
+      "risks": ["Empirical test is difficult; 'flourishing' is vague."],
+      "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W6.2-C012",
+      "claim_text": "If an ontological property differs between mathematical and moral truth, the identity claim fails.",
+      "defense_class": "ADMISSION",
+      "claim_level": "theological",
+      "support": "Kill criterion F3",
+      "dependencies": ["W6.2-C007"],
+      "risks": ["Properties are not rigorously defined; test may be impossible."],
+      "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W6.2-C013",
+      "claim_text": "If a genuine moral 'ought' cannot be reframed as recognition of existing misalignment, the temporal dissolution fails.",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "support": "Kill criterion F4",
+      "dependencies": ["W6.2-C006"],
+      "risks": ["May be hard to find a counterexample; but the claim is testable."],
+      "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W6.2-C014",
+      "claim_text": "If controlled experiments show no asymmetric decoherence, the formal backbone fails.",
+      "defense_class": "ADMISSION",
+      "claim_level": "physics",
+      "support": "Kill criterion F5",
+      "dependencies": ["W6.2-C002", "χ functional"],
+      "risks": ["Experimental details are not specified; may be untestable."],
+      "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+      "recommended_action": "keep",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "W6.2-C015",
+      "claim_text": "The is-ought gap is the load-bearing wall between facts and values; if dissolved, the framework's moral content inherits lawfully.",
+      "defense_class": "RHETORIC",
+      "claim_level": "story",
+      "support": "The is-ought gap is not one objection among many. It is the objection.",
+      "dependencies": ["W6.2-C001"],
+      "risks": ["Rhetorical; not a proof."],
+      "required_concession": "This is a motivational claim, not a logical one.",
+      "recommended_action": "demote",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "W6.2-C016",
+      "claim_text": "The gap was a clock all along; 'ought' and 'is' are the same sentence at different distances from collapse.",
+      "defense_class": "RHETORIC",
+      "claim_level": "story",
+      "support": "The gap was a clock all along.",
+      "dependencies": ["W6.2-C001"],
+      "risks": ["Poetic; not a formal claim."],
+      "required_concession": "This is a rhetorical flourish.",
+      "recommended_action": "cut",
+      "confidence": 0.2
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "W6.2-C003",
+      "problem": "The deployment argument overclaims that math 'judges' without defining judgment.",
+      "repair": "Clarify that 'judgment' is metaphorical; state that math reveals misalignment, not moral judgment."
+    },
+    {
+      "severity": "P1",
+      "target": "W6.2-C004",
+      "problem": "The claim that moral misalignment accumulates cost is vague and unsubstantiated.",
+      "repair": "Provide empirical evidence or define 'cost' precisely."
+    },
+    {
+      "severity": "P1",
+      "target": "W6.2-C007",
+      "problem": "The identity claim is asserted without rigorous definition of properties.",
+      "repair": "Define each of the 24 properties and prove they are identical for math and morality."
+    },
+    {
+      "severity": "P2",
+      "target": "W6.2-C005",
+      "problem": "The claim about societal collapse is overgeneralized.",
+      "repair": "Add qualifiers and acknowledge possible counterexamples."
+    },
+    {
+      "severity": "P2",
+      "target": "Kill criteria F1-F5",
+      "problem": "Kill criteria are not operationalized; they are vague.",
+      "repair": "Specify measurable conditions for each kill criterion."
+    }
+  ],
+  "log_notes": [
+    "The work is a canon argument with declared premises and kill criteria.",
+    "The main risk is overclaiming identity between math and morality.",
+    "The kill criteria are a strength but need operationalization.",
+    "The work references other sheets (Moral-First Chain, PMM) for formal anchors."
+  ]
+}

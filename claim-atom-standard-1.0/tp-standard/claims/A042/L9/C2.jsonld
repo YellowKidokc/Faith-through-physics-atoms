@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/A042/L9/C2",
+  "claimID": "tp:A042/L9/C2",
+  "name": "Law 9 Moral Conservation — Claim 2",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-02-14",
+  "dateModified": "2026-07-22",
+  "version": "1.2.0",
+  "axiomRoot": "https://faiththruphysics.com/claims/A042",
+  "claimClass": "theorem",
+  "domainType": "physics",
+  "statementTechnical": "The Weak Force analogue breaks parity (sin is directional, CP-violating) while preserving time-translation; therefore moral debt is simultaneously irreversible and conserved: ψ_whole → ψ_broken + δ + ν_loss.",
+  "statementPlain": "Wrongdoing has a direction — it can't be run backward — and yet its cost doesn't vanish. Both are true at once. You can't undo it, and it doesn't disappear.",
+  "dependsOn": [
+    "https://faiththruphysics.com/claims/A042/L9/C1"
+  ],
+  "evidenceType": "formal-derivation",
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "challenged-survived",
+  "falsificationCondition": "Find one moral event whose ledger closes with no remainder — full behavioral restoration with no external source term and no ν_loss.",
+  "isPartOf": "https://faiththruphysics.com/papers/POF2828-2026-0001"
+}

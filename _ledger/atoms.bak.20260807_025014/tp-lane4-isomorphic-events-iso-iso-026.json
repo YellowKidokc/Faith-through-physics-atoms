@@ -1,0 +1,62 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-026",
+  "atom_uid": "sha256:af057fc5b2dba765977cbd572d6d30e6f3380e6963a18e51263500c9eb3cd103",
+  "title": "ISO-026 - Addiction ↔ Sin Bondage",
+  "claim": "ISO-026: Addiction ↔ Sin Bondage maps Neuroscience (Addiction) to Hamartiology (Sin Bondage). Workbook verdict: Level 3. Honest verdict: Strong NEW ISO. AA confirms Terminus Sui structure.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "assumptions": [
+    "Neuroscience (Addiction)",
+    "Hamartiology (Sin Bondage)",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "Swap PASSED. AA independently discovered same structure.",
+    "Strong NEW ISO. AA confirms Terminus Sui structure."
+  ],
+  "equations": [],
+  "bridges": [
+    "Neuroscience (Addiction) -> Hamartiology (Sin Bondage)"
+  ],
+  "dependencies": [
+    "ISO-026"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Quantitative matching not demonstrated",
+    "Promotion blocker: Quantify tolerance ↔ escalation rates",
+    "Promotion blocker: Measure individual-level mappings",
+    "Promotion blocker: Independent replication of AA-structure confirmation"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: Quantitative matching not demonstrated"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-026 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:4fa4abf1be026f83ee8f08672ffbd27820341efa6187effa5397380442c3353d"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-026"
+}

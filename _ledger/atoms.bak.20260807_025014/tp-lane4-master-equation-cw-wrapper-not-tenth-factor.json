@@ -1,0 +1,51 @@
+{
+  "atom_id": "tp:lane4/master-equation/cw-wrapper-not-tenth-factor",
+  "atom_uid": "sha256:6e5ab9bd8225ae69b342e2dee5ee07960d951ce39362d4bb29fe8a2103bfad74",
+  "title": "C_W Wrapper Not Tenth Factor",
+  "claim": "C_W is a wrapper/operator, not a tenth product factor.",
+  "domain": "master-equation",
+  "lane": "Lean4",
+  "claim_class": "framework_guardrail",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Lane labels are interpreted according to their declared evidentiary scope."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "LANE4_ATOM_LEDGER_BUILD_REPORT.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_seeded",
+      "result": "recorded",
+      "artifact_path": "LANE4_ATOM_LEDGER_BUILD_REPORT.md",
+      "meaning": "Initial Lane 4 fixture created.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Codex",
+      "lane": "Lean4",
+      "event_id": "sha256:1f1d3fdb475fcb07ef65abdf13ba5cdab41bcbffdbd4677905a72fb751f0b9f5"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "Lean4",
+      "result": "pass",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\lean_receipts\\primary-h-drive-direct-master-equation-v4-receipt-20260803T010308Z.md",
+      "meaning": "Master Equation v4 structural Lean spine was imported into the primary H-drive source and direct Lean compilation passes: nine-factor product, C_W wrapper as wrapper not factor, zero-collapse propagation, positive product guard, latch/walk separation, boundary transfer, and three-party debt ledger structure.",
+      "limits": "Formal structural guardrail only: does not prove the Master Equation as physics, does not prove theological identity, and this is direct-file verification rather than a full Lake project build because the mathlib git index lock blocks Lake.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-03T01:03:09+00:00",
+      "event_uuid": "62767055-ed50-4110-b9da-747776d1cca8",
+      "event_id": "sha256:8ea9ebae3a8bda4f031d0484b03dc621d4e069b87c6d5621b8fb91aa72c8f9ad"
+    }
+  ],
+  "source_claim_id": "CW_WRAPPER_NOT_TENTH_FACTOR"
+}

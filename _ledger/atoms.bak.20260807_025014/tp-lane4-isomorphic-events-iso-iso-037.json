@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-037",
+  "atom_uid": "sha256:27379f2996bdf6489cb26220632b646ad819e92206d6f676eb3c6dba24d6089d",
+  "title": "ISO-037 - Beer-Lambert ↔ Fee Extraction",
+  "claim": "ISO-037: Beer-Lambert ↔ Fee Extraction maps Optics (Beer-Lambert Law) to Economics / Transaction Ethics. Workbook verdict: Level 2.5. Honest verdict: Full doc UPGRADES. Mathematical identity genuine.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C2_PARTIAL_CORRESPONDENCE",
+  "assumptions": [
+    "Optics (Beer-Lambert Law)",
+    "Economics / Transaction Ethics",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "↑ UPGRADED. I=I₀e^(-αx) ≡ P=P₀(1-f)^n. Mathematical form identical. Swap PASSED.",
+    "Full doc UPGRADES. Mathematical identity genuine."
+  ],
+  "equations": [],
+  "bridges": [
+    "Optics (Beer-Lambert Law) -> Economics / Transaction Ethics"
+  ],
+  "dependencies": [
+    "ISO-037"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Exegetical grounding still thin"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: Exegetical grounding still thin"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-037 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:6ec4d9f5b7d46afe67cedeb06cd28315205b6e3e0775b5dbf3f10f44440398e5"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-037"
+}

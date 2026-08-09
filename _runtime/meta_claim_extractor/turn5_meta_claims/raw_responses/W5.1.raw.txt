@@ -1,0 +1,233 @@
+{
+  "work_id": "W5.1",
+  "title": "Consciousness - The Mirror (derivation version)",
+  "turn": "TURN 5 - CONSCIOUSNESS",
+  "source_path": "D:\\DONT TOUCH HTML\\HTML\\Sheet g derivation.html",
+  "overall_status": "reviewed",
+  "summary": "The work derives consciousness from existing framework operators (Ten Laws, four axioms) via a four-layer staircase (L1-L4). It claims consciousness is self-referential relation (L3) and maps eight phenomena to operators. It includes kill conditions and honest grading. Main risks: potential conflation with IIT's Φ, weak imagination mapping, and theological claims not formally proven.",
+  "claims": [
+    {
+      "claim_id": "W5.1-C001",
+      "claim_text": "Consciousness is not added to the framework; it is the framework looking at itself.",
+      "defense_class": "ROOT",
+      "claim_level": "formal",
+      "support": "Consciousness is not added to the framework. It is the framework looking at itself.",
+      "dependencies": ["A1", "A2", "A3", "A4", "Ten Laws"],
+      "risks": ["May be seen as question-begging if not formally derived."],
+      "required_concession": "This is a root claim; its validity depends on the framework's axioms.",
+      "recommended_action": "keep",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W5.1-C002",
+      "claim_text": "Every consciousness theory in the literature adds an axiom increase (new field, force, constant, substance).",
+      "defense_class": "RHETORIC",
+      "claim_level": "editorial",
+      "support": "Every consciousness theory in the literature adds something... Each is an axiom increase.",
+      "dependencies": [],
+      "risks": ["Overgeneralization; may not cover all theories."],
+      "required_concession": "This is a rhetorical setup, not a formal claim.",
+      "recommended_action": "demote",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W5.1-C003",
+      "claim_text": "The hard problem of consciousness is the framework's prediction: a system built on Trinitarian relational logic, when turned inward, will necessarily experience itself.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "The hard problem of consciousness is not a gap... It is the framework's prediction.",
+      "dependencies": ["A1-A4", "Trinitarian relational logic"],
+      "risks": ["Depends on theological axioms; not empirically testable."],
+      "required_concession": "This claim relies on the Trinitarian ground as an axiom.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W5.1-C004",
+      "claim_text": "Relation is constitutive: in the Trinity, the persons are their relations.",
+      "defense_class": "AXIOM",
+      "claim_level": "theological",
+      "support": "Relation is constitutive — in the Trinity, the persons are their relations.",
+      "dependencies": ["Sheet 0"],
+      "risks": ["Theological axiom; not derivable from physics."],
+      "required_concession": "This is a declared axiom from Sheet 0.",
+      "recommended_action": "keep",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "W5.1-C005",
+      "claim_text": "Layer 1 (relation between things) requires existence and distinction (Axioms A1, A2).",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "Requires: existence + distinction (Axioms A1, A2).",
+      "dependencies": ["A1", "A2"],
+      "risks": [],
+      "required_concession": "",
+      "recommended_action": "keep",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "W5.1-C006",
+      "claim_text": "Layer 2 (relation between signals) requires L1 and relation (Axiom A3).",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "Requires: L1 + relation (Axiom A3).",
+      "dependencies": ["L1", "A3"],
+      "risks": [],
+      "required_concession": "",
+      "recommended_action": "keep",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "W5.1-C007",
+      "claim_text": "Layer 3 (self-referential relation) requires L2, orientation (Axiom A4), and recursion.",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "Requires: L2 + orientation (Axiom A4) + recursion.",
+      "dependencies": ["L2", "A4"],
+      "risks": ["Recursion is not explicitly an axiom; may need formal definition."],
+      "required_concession": "Recursion is assumed as a formal operation.",
+      "recommended_action": "fix",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W5.1-C008",
+      "claim_text": "Self-referential loop cannot be value-neutral because Axiom A4 (orientation) is load-bearing.",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "Because Axiom A4 (orientation) is load-bearing... the moment a system refers to itself, it refers to itself within a gradient.",
+      "dependencies": ["A4"],
+      "risks": ["May conflate logical necessity with moral necessity."],
+      "required_concession": "This assumes A4 applies to self-reference.",
+      "recommended_action": "keep",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "W5.1-C009",
+      "claim_text": "Layer 4 (faith/worship) requires L3 and recognition of source.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "Requires: L3 + recognition of source.",
+      "dependencies": ["L3"],
+      "risks": ["Theological step; not formally derived."],
+      "required_concession": "This is a theological extension.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W5.1-C010",
+      "claim_text": "God is the mirror: self-reference passes through the Trinitarian ground.",
+      "defense_class": "CLOSURE",
+      "claim_level": "theological",
+      "support": "The mirror is God... because the relational substrate that makes self-reference possible is Trinitarian.",
+      "dependencies": ["Trinitarian ground", "L3"],
+      "risks": ["May be seen as question-begging; not empirically testable."],
+      "required_concession": "This is a theological claim based on the Trinitarian axiom.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W5.1-C011",
+      "claim_text": "The eight phenomena of consciousness map to existing framework operators without introducing new ones.",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "Every phenomenon of conscious experience is an existing framework operator experienced from the inside at L3.",
+      "dependencies": ["Ten Laws", "A4"],
+      "risks": ["Mapping may be analogical, not derivational; especially imagination=Ω."],
+      "required_concession": "The mappings are graded [B] or [C]; not all are formally verified.",
+      "recommended_action": "keep",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "W5.1-C012",
+      "claim_text": "Awareness is coherence (C) experienced from inside.",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "Awareness: C — Coherence. A system is aware to the degree its states cohere.",
+      "dependencies": ["C operator"],
+      "risks": ["Needs sharper distinction from IIT's Φ."],
+      "required_concession": "This identification is graded [B] but not formally proven.",
+      "recommended_action": "fix",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W5.1-C013",
+      "claim_text": "Attention and agency are both free will (W) at different amplitudes.",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "Attention: W — Free Will. Agency: W — Free Will. Same operator, higher amplitude.",
+      "dependencies": ["W operator"],
+      "risks": ["May conflate different cognitive functions."],
+      "required_concession": "This is a structural claim; needs empirical support.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W5.1-C014",
+      "claim_text": "Morality is constitutive of consciousness; you cannot have awareness without the gradient.",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "You cannot have awareness without the gradient.",
+      "dependencies": ["A4", "L3"],
+      "risks": ["May be challenged by empirical cases of psychopathy."],
+      "required_concession": "This is a strong claim; needs empirical testing.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W5.1-C015",
+      "claim_text": "Current AI operates at L2 and is not conscious.",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "support": "Current AI operates at L2 — extraordinary signal processing, zero self-reference.",
+      "dependencies": ["L2", "L3"],
+      "risks": ["May be falsified by future AI developments."],
+      "required_concession": "This is a prediction based on the framework.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W5.1-C016",
+      "claim_text": "The framework predicts a gradient of consciousness in animals, not a binary.",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "support": "The framework predicts a gradient, not a binary.",
+      "dependencies": ["L2", "L3", "A4"],
+      "risks": ["Boundary may be unclear."],
+      "required_concession": "The exact boundary is unknown.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "W5.1-C012",
+      "problem": "Awareness=C may be conflated with IIT's Φ; needs sharper distinction.",
+      "repair": "Add explicit comparison and contrast with IIT's Φ, highlighting mechanistic differences."
+    },
+    {
+      "severity": "P1",
+      "target": "W5.1-C011",
+      "problem": "Imagination=Ω mapping is weak and may be analogical.",
+      "repair": "Either strengthen the derivation or demote to [C] with explicit caveat."
+    },
+    {
+      "severity": "P2",
+      "target": "W5.1-C007",
+      "problem": "Recursion is not explicitly an axiom; may need formal definition.",
+      "repair": "Define recursion formally within the framework or cite an existing axiom."
+    },
+    {
+      "severity": "P2",
+      "target": "W5.1-C014",
+      "problem": "Morality as constitutive may be challenged by empirical cases.",
+      "repair": "Add discussion of psychopathy or moral disagreement to address potential counterexamples."
+    }
+  ],
+  "log_notes": [
+    "The work includes kill conditions and honest grading; overall status is reviewed.",
+    "Theological claims are load-bearing but depend on declared axioms.",
+    "Next pass should check connection to Feb 14 boundary proof and formalize sin-exposure resolution."
+  ]
+}

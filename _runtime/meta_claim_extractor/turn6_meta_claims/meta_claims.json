@@ -1,0 +1,1120 @@
+[
+  {
+    "work_id": "W6.1",
+    "title": "The Moral-First Chain",
+    "turn": "TURN 6 - THE MORAL TURN",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\12_TRUTH_LOGOS_MATH_INFORMATION\\11-the-moral-first-chain.html",
+    "overall_status": "reviewed",
+    "summary": "The work proposes a moral-first orientation for the framework, postulating the Good at the top and deriving everything else downward. It claims to dissolve old problems like Hume's is-ought gap and to strengthen the standing of Lean theorems. The work is honest about costs and open problems, but contains several overclaims and rhetorical flourishes that need careful classification.",
+    "claims": [
+      {
+        "claim_id": "W6.1-C001",
+        "claim_text": "The Good exists, underived, postulated as a primitive.",
+        "defense_class": "ROOT",
+        "claim_level": "theological",
+        "support": "M0 — The Good: 'The Good exists, underived — postulated exactly as Euclid postulated the parallel line.'",
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "Postulate, not proof; may be challenged as arbitrary."
+        ],
+        "required_concession": "This is a postulate, not a derived result.",
+        "recommended_action": "keep",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W6.1-C002",
+        "claim_text": "Coherence is the structural form of the Good.",
+        "defense_class": "AXIOM",
+        "claim_level": "formal",
+        "support": "M1: 'Coherence is the structural form of the Good' and 'the four kernel assumptions are the axioms of the system.'",
+        "dependencies": [
+          "M0"
+        ],
+        "risks": [
+          "Identification of coherence with Good is asserted, not derived."
+        ],
+        "required_concession": "This is a postulate, not a theorem.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.1-C003",
+        "claim_text": "The physical is a projection of the moral structure.",
+        "defense_class": "AXIOM",
+        "claim_level": "physics",
+        "support": "M2: 'Physics is the shadow the moral structure casts.'",
+        "dependencies": [
+          "M1"
+        ],
+        "risks": [
+          "Physics-overreach; projection metaphor not formalized."
+        ],
+        "required_concession": "This is a postulate, not a physical theory.",
+        "recommended_action": "keep",
+        "confidence": 0.85
+      },
+      {
+        "claim_id": "W6.1-C004",
+        "claim_text": "The sciences study the projection, each in one vocabulary.",
+        "defense_class": "AXIOM",
+        "claim_level": "physics",
+        "support": "M3: 'Each science is the projection read in one vocabulary.'",
+        "dependencies": [
+          "M2"
+        ],
+        "risks": [
+          "Overclaim of unity; burden on critic to find failure."
+        ],
+        "required_concession": "This is a postulate, not an empirical claim.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.1-C005",
+        "claim_text": "Measurement registers coherence-condition.",
+        "defense_class": "AXIOM",
+        "claim_level": "physics",
+        "support": "M4: 'Measurement is the projection meeting a witness; what is registered is always the coherence-condition.'",
+        "dependencies": [
+          "M2",
+          "M3"
+        ],
+        "risks": [
+          "May conflict with standard measurement theory."
+        ],
+        "required_concession": "This is a postulate, not a result.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.1-C006",
+        "claim_text": "The source of the Good is personal.",
+        "defense_class": "AXIOM",
+        "claim_level": "theological",
+        "support": "M5: 'The Good at M0 cannot be an it: relation cannot be impersonal.'",
+        "dependencies": [
+          "M0"
+        ],
+        "risks": [
+          "Personhood argument is philosophical, not formal."
+        ],
+        "required_concession": "This is a postulate, not a proof.",
+        "recommended_action": "keep",
+        "confidence": 0.75
+      },
+      {
+        "claim_id": "W6.1-C007",
+        "claim_text": "The is-ought gap is dissolved because 'ought' is a temporal illusion.",
+        "defense_class": "DERIVATION",
+        "claim_level": "moral",
+        "support": "PMM Paper 0, §4: 'the ought is a temporal illusion' and 'You ought to reinforce the beam' and 'the beam is under-engineered' are the same fact, time-indexed.",
+        "dependencies": [
+          "M1",
+          "PMM Paper 0"
+        ],
+        "risks": [
+          "Depends on universal-cost premise; deliberative ought not addressed."
+        ],
+        "required_concession": "This dissolution relies on two premises stated in PMM §9.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W6.1-C008",
+        "claim_text": "The χ-gradient ↔ moral-direction bridge is dissolved because the gradient is defined by the projection at M2.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "Under the flip: 'the gradient is not identified with moral direction by a bridge; it is defined by the projection at M2.'",
+        "dependencies": [
+          "M2"
+        ],
+        "risks": [
+          "Definitional move may be seen as stipulative."
+        ],
+        "required_concession": "This is a definitional consequence of M2.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.1-C009",
+        "claim_text": "The '188 axioms' confusion is dissolved because the top of the system is five postulates.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "Under the flip: 'The top of the system is five postulates. The registry is downstream scaffolding.'",
+        "dependencies": [
+          "M0-M5"
+        ],
+        "risks": [
+          "May undercount axioms needed for full derivation."
+        ],
+        "required_concession": "This claim depends on the completeness of the five-postulate set.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W6.1-C010",
+        "claim_text": "The Watcher's actualization problem is eased because beholding vs. correlating is whether the projection is witnessed into the ledger.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "Under the flip: 'Beholding vs. correlating is no longer a mysterious extra: it is whether the projection is witnessed into the ledger or not.'",
+        "dependencies": [
+          "M4"
+        ],
+        "risks": [
+          "Easing is not solving; may be incomplete."
+        ],
+        "required_concession": "This is an easing, not a full resolution.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W6.1-C011",
+        "claim_text": "Book of Life retention conditions are regrounded as postulated properties of M0.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "Under the flip: 'Grace and coherence as retention conditions are postulated properties of M0, inherited downward.'",
+        "dependencies": [
+          "M0",
+          "M1"
+        ],
+        "risks": [
+          "Theology is postulated, not derived."
+        ],
+        "required_concession": "This is a postulate, not a proof.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W6.1-C012",
+        "claim_text": "The Coherence Atlas is reframed as one grammar in seventy vocabularies, not seventy analogies.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "Under the flip: 'Not seventy analogies to be defended but one grammar in seventy vocabularies.'",
+        "dependencies": [
+          "M2",
+          "M3"
+        ],
+        "risks": [
+          "Seventy vocabularies may not be exhaustive; counterexamples preserved."
+        ],
+        "required_concession": "This is a reframing, not a proof.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W6.1-C013",
+        "claim_text": "The Good is the source's nature, identity not priority, answering Euthyphro.",
+        "defense_class": "AXIOM",
+        "claim_level": "theological",
+        "support": "Cost one: 'the Good is the source's nature — identity, not priority.'",
+        "dependencies": [
+          "M0"
+        ],
+        "risks": [
+          "Identity claim is asserted, not argued."
+        ],
+        "required_concession": "This is a postulate about M0.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.1-C014",
+        "claim_text": "Every moral misalignment carries structural cost, even when undetected.",
+        "defense_class": "ADMISSION",
+        "claim_level": "moral",
+        "support": "Audit note: 'the universal-cost premise: every moral misalignment carries structural cost, even when undetected.'",
+        "dependencies": [
+          "M1"
+        ],
+        "risks": [
+          "Unproven universal premise; Gyges-ring case."
+        ],
+        "required_concession": "This is a premise, not a proven fact.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W6.1-C015",
+        "claim_text": "Deliberative ought is not moral ought.",
+        "defense_class": "ADMISSION",
+        "claim_level": "moral",
+        "support": "Audit note: 'deliberative ought is not moral ought.'",
+        "dependencies": [
+          "M1"
+        ],
+        "risks": [
+          "May be challenged; not fully integrated."
+        ],
+        "required_concession": "This is a distinction, not a proof.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W6.1-C016",
+        "claim_text": "The postulates' minimality is abductive and open to a smaller set.",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "support": "Also kept honest: 'five is the smallest set from which the observed structure derives, and that claim stays open to a smaller set.'",
+        "dependencies": [
+          "M0-M5"
+        ],
+        "risks": [
+          "Minimality not proven."
+        ],
+        "required_concession": "This is an abductive claim, not a proof.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "C007",
+        "problem": "The dissolution of is-ought gap depends on two premises that are not fully proven.",
+        "repair": "Explicitly mark the dissolution as conditional on those premises."
+      },
+      {
+        "severity": "P2",
+        "target": "C003",
+        "problem": "The projection claim is metaphorical and could be seen as physics-overreach.",
+        "repair": "Clarify that this is a postulate, not a physical theory."
+      },
+      {
+        "severity": "P2",
+        "target": "C009",
+        "problem": "The claim that the top is five postulates may undercount axioms needed.",
+        "repair": "Add a note that the five postulates are the top-level, but additional axioms may be needed for full derivation."
+      }
+    ],
+    "log_notes": [
+      "The work is a working sheet, not a final result; many claims are postulates.",
+      "The work explicitly states costs and open problems, which is good.",
+      "The 'dissolved' claims are strong and need careful handling.",
+      "The work references PMM Paper 0 and other sheets; dependencies should be tracked."
+    ]
+  },
+  {
+    "work_id": "W6.2",
+    "title": "The Is-Ought Dissolution",
+    "turn": "TURN 6 - THE MORAL TURN",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\12_TRUTH_LOGOS_MATH_INFORMATION\\12-the-is-ought-dissolution.html",
+    "overall_status": "reviewed",
+    "summary": "The work argues that the is-ought gap dissolves because 'ought' is a temporal perspective on existing misalignment with invariant structure. It presents two declared premises and five kill criteria. The argument relies on a strong parallel between mathematical deployment and moral judgment, and an identity claim between mathematical and moral truth. The review flags overclaims in the deployment argument, the structural parallel, and the identity claim, and notes that the kill criteria are not fully operationalized.",
+    "claims": [
+      {
+        "claim_id": "W6.2-C001",
+        "claim_text": "The is-ought gap is not a real gap but a grammatical illusion; 'ought' is a tense of 'is'.",
+        "defense_class": "ROOT",
+        "claim_level": "theological",
+        "support": "The wall was never a wall — it was a window seen at the wrong time of day.",
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "Overclaim: 'no gap' is a strong claim; may be seen as rhetorical."
+        ],
+        "required_concession": "This is a root claim; it must be defended on its own.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.2-C002",
+        "claim_text": "A moral 'ought' is the recognition of existing misalignment with invariant structure φ, from the temporal position of an agent who has not yet experienced the consequence.",
+        "defense_class": "AXIOM",
+        "claim_level": "formal",
+        "support": "ought(a, φ, t) ≡ misaligned(state(a, t), φ) ∧ consequences not yet arrived",
+        "dependencies": [
+          "M1",
+          "χ functional"
+        ],
+        "risks": [
+          "The definition is formal but relies on unproven existence of φ and measurability."
+        ],
+        "required_concession": "This is an axiom; it is not derived.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.2-C003",
+        "claim_text": "Mathematics does not merely describe; it judges when deployed, because deployment reveals misalignment.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": "The truck flips because the load calculation was wrong — 'wrong' is a structural fact.",
+        "dependencies": [
+          "W6.2-C002",
+          "M4"
+        ],
+        "risks": [
+          "Overclaim: 'judgment' is metaphorical; may conflate descriptive and normative."
+        ],
+        "required_concession": "This is an analogy; it does not prove that math is moral.",
+        "recommended_action": "demote",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W6.2-C004",
+        "claim_text": "Moral misalignment is structural and accumulates cost, similar to physical law.",
+        "defense_class": "DERIVATION",
+        "claim_level": "moral",
+        "support": "A lie increases complexity; deceptive systems rise in entropy.",
+        "dependencies": [
+          "W6.2-C002",
+          "χ functional"
+        ],
+        "risks": [
+          "Empirical claim not substantiated; 'cost' is vague."
+        ],
+        "required_concession": "This is an empirical claim that needs evidence.",
+        "recommended_action": "fix",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W6.2-C005",
+        "claim_text": "Societies built on systematic lying, betrayal, or fraud collapse rather than flourish.",
+        "defense_class": "DERIVATION",
+        "claim_level": "moral",
+        "support": "Build a society on systematic lying — the result is collapse.",
+        "dependencies": [
+          "W6.2-C004"
+        ],
+        "risks": [
+          "Overgeneralization; counterexamples may exist."
+        ],
+        "required_concession": "This is a broad empirical claim; it may have exceptions.",
+        "recommended_action": "demote",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W6.2-C006",
+        "claim_text": "The 'ought' is what misalignment looks like from the temporal perspective of an agent who has not yet experienced the consequence.",
+        "defense_class": "AXIOM",
+        "claim_level": "formal",
+        "support": "The core move — PMM Paper 0, §4",
+        "dependencies": [
+          "W6.2-C002"
+        ],
+        "risks": [
+          "May not cover all moral oughts; deliberative ought is excluded."
+        ],
+        "required_concession": "This is a definition; it may not capture all uses of 'ought'.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.2-C007",
+        "claim_text": "Mathematical truth and moral truth share all ontological properties, making them identical.",
+        "defense_class": "CLOSURE",
+        "claim_level": "theological",
+        "support": "At some point, 'analogy' becomes an intellectually dishonest label for what is clearly identity.",
+        "dependencies": [
+          "W6.2-C002",
+          "Twenty-Four Properties"
+        ],
+        "risks": [
+          "Overclaim: identity is asserted, not proven; properties are not rigorously defined."
+        ],
+        "required_concession": "This is a strong claim; it requires rigorous definition of properties.",
+        "recommended_action": "quarantine",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W6.2-C008",
+        "claim_text": "Every moral misalignment carries structural cost, even when undetected.",
+        "defense_class": "AXIOM",
+        "claim_level": "moral",
+        "support": "Premise 1 — Universal cost (the Gyges condition)",
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "Falsifiable but not proven; may be empirically false."
+        ],
+        "required_concession": "This is a declared premise; it is not derived.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W6.2-C009",
+        "claim_text": "Deliberative ought (e.g., 'ought I marry?') is not moral ought and is excluded from the dissolution.",
+        "defense_class": "ADMISSION",
+        "claim_level": "moral",
+        "support": "Premise 2 — Moral ought, not deliberative ought",
+        "dependencies": [
+          "W6.2-C002"
+        ],
+        "risks": [
+          "Limits the scope of the argument."
+        ],
+        "required_concession": "This is a concession; the argument only covers moral ought.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.2-C010",
+        "claim_text": "If a correct mathematical deployment fails to expose existing structural misalignment, the deployment argument fails.",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "support": "Kill criterion F1",
+        "dependencies": [
+          "W6.2-C003"
+        ],
+        "risks": [
+          "Kill criterion is not operationalized; what counts as 'correct deployment'?"
+        ],
+        "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.2-C011",
+        "claim_text": "If a society can flourish while systematically violating core moral invariants, the structural parallel fails.",
+        "defense_class": "ADMISSION",
+        "claim_level": "moral",
+        "support": "Kill criterion F2",
+        "dependencies": [
+          "W6.2-C005"
+        ],
+        "risks": [
+          "Empirical test is difficult; 'flourishing' is vague."
+        ],
+        "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W6.2-C012",
+        "claim_text": "If an ontological property differs between mathematical and moral truth, the identity claim fails.",
+        "defense_class": "ADMISSION",
+        "claim_level": "theological",
+        "support": "Kill criterion F3",
+        "dependencies": [
+          "W6.2-C007"
+        ],
+        "risks": [
+          "Properties are not rigorously defined; test may be impossible."
+        ],
+        "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W6.2-C013",
+        "claim_text": "If a genuine moral 'ought' cannot be reframed as recognition of existing misalignment, the temporal dissolution fails.",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "support": "Kill criterion F4",
+        "dependencies": [
+          "W6.2-C006"
+        ],
+        "risks": [
+          "May be hard to find a counterexample; but the claim is testable."
+        ],
+        "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.2-C014",
+        "claim_text": "If controlled experiments show no asymmetric decoherence, the formal backbone fails.",
+        "defense_class": "ADMISSION",
+        "claim_level": "physics",
+        "support": "Kill criterion F5",
+        "dependencies": [
+          "W6.2-C002",
+          "χ functional"
+        ],
+        "risks": [
+          "Experimental details are not specified; may be untestable."
+        ],
+        "required_concession": "This is a kill criterion; it is a concession of failure conditions.",
+        "recommended_action": "keep",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W6.2-C015",
+        "claim_text": "The is-ought gap is the load-bearing wall between facts and values; if dissolved, the framework's moral content inherits lawfully.",
+        "defense_class": "RHETORIC",
+        "claim_level": "story",
+        "support": "The is-ought gap is not one objection among many. It is the objection.",
+        "dependencies": [
+          "W6.2-C001"
+        ],
+        "risks": [
+          "Rhetorical; not a proof."
+        ],
+        "required_concession": "This is a motivational claim, not a logical one.",
+        "recommended_action": "demote",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W6.2-C016",
+        "claim_text": "The gap was a clock all along; 'ought' and 'is' are the same sentence at different distances from collapse.",
+        "defense_class": "RHETORIC",
+        "claim_level": "story",
+        "support": "The gap was a clock all along.",
+        "dependencies": [
+          "W6.2-C001"
+        ],
+        "risks": [
+          "Poetic; not a formal claim."
+        ],
+        "required_concession": "This is a rhetorical flourish.",
+        "recommended_action": "cut",
+        "confidence": 0.2
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "W6.2-C003",
+        "problem": "The deployment argument overclaims that math 'judges' without defining judgment.",
+        "repair": "Clarify that 'judgment' is metaphorical; state that math reveals misalignment, not moral judgment."
+      },
+      {
+        "severity": "P1",
+        "target": "W6.2-C004",
+        "problem": "The claim that moral misalignment accumulates cost is vague and unsubstantiated.",
+        "repair": "Provide empirical evidence or define 'cost' precisely."
+      },
+      {
+        "severity": "P1",
+        "target": "W6.2-C007",
+        "problem": "The identity claim is asserted without rigorous definition of properties.",
+        "repair": "Define each of the 24 properties and prove they are identical for math and morality."
+      },
+      {
+        "severity": "P2",
+        "target": "W6.2-C005",
+        "problem": "The claim about societal collapse is overgeneralized.",
+        "repair": "Add qualifiers and acknowledge possible counterexamples."
+      },
+      {
+        "severity": "P2",
+        "target": "Kill criteria F1-F5",
+        "problem": "Kill criteria are not operationalized; they are vague.",
+        "repair": "Specify measurable conditions for each kill criterion."
+      }
+    ],
+    "log_notes": [
+      "The work is a canon argument with declared premises and kill criteria.",
+      "The main risk is overclaiming identity between math and morality.",
+      "The kill criteria are a strength but need operationalization.",
+      "The work references other sheets (Moral-First Chain, PMM) for formal anchors."
+    ]
+  },
+  {
+    "work_id": "W6.3",
+    "title": "Be Fruitful and Multiply",
+    "turn": "TURN 6 - THE MORAL TURN",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\09_FAMILY_PUBLIC_BRIDGE\\13-be-fruitful-and-multiply.html",
+    "overall_status": "reviewed",
+    "summary": "This sheet presents a public-facing argument that mathematics, morality, and science share preconditions that cannot be grounded by themselves, leading to a non-deceptive ground identified as Logos. It includes several strong moves, a keystone argument, a convergence of two chains, and explicit defeat conditions. The review notes that while many claims are labeled 'strong', they rely on unproven premises and analogies, and the identification with the Christian God is explicitly conditional.",
+    "claims": [
+      {
+        "claim_id": "W6.3-C001",
+        "claim_text": "Science, morality, and mathematics share preconditions none of them can ground; the ground of those preconditions must possess the properties those preconditions display — including non-deceptiveness, which is a moral property.",
+        "defense_class": "ROOT",
+        "claim_level": "theological",
+        "support": [
+          "Opening sentence: 'Science, morality, and mathematics share preconditions none of them can ground...'"
+        ],
+        "dependencies": [
+          "A8-A11",
+          "Move 5"
+        ],
+        "risks": [
+          "Overreach: 'must possess' is a strong modal claim; the argument depends on the premise that the ground must mirror properties of the grounded."
+        ],
+        "required_concession": "This is the central thesis; it is not proven but argued via convergence and analogy.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.3-C002",
+        "claim_text": "Removing stable mathematics would undermine accountability and make moral life unintelligible.",
+        "defense_class": "DERIVATION",
+        "claim_level": "moral",
+        "support": [
+          "Move 1: 'remove stable mathematics → remove reliable comparison → ... → moral life becomes unintelligible'"
+        ],
+        "dependencies": [
+          "Counterfactual reasoning"
+        ],
+        "risks": [
+          "Counterfactual is hypothetical; the chain is plausible but not formally proven."
+        ],
+        "required_concession": "This is a thought experiment, not an empirical claim.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W6.3-C003",
+        "claim_text": "Removing stable laws would make fruitfulness impossible, undermining the mandate to 'be fruitful and multiply'.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Move 1B: 'remove stable laws → ... → remove the possibility of a farm, a family, a civilization'"
+        ],
+        "dependencies": [
+          "Counterfactual reasoning"
+        ],
+        "risks": [
+          "Depends on the interpretation of 'fruitful' as physical multiplication; could be seen as over-literal."
+        ],
+        "required_concession": "The mandate is interpreted as requiring a stable physical world.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W6.3-C004",
+        "claim_text": "The coherence of the laws of physics is a datum that points to a designer; the product-collapse behavior is machine-checked.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": [
+          "'The fit is the most astonishing part.'",
+          "Lean-verified spine: 'product-collapse behavior is machine-checked'"
+        ],
+        "dependencies": [
+          "χ formula",
+          "Lean verification"
+        ],
+        "risks": [
+          "The χ formula is not defined rigorously; the Lean verification is only for the collapse behavior, not the design inference."
+        ],
+        "required_concession": "The design inference is not formally derived; it is an abductive argument.",
+        "recommended_action": "fix",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W6.3-C005",
+        "claim_text": "Science cannot ground its own tools; proving them experimentally would be circular.",
+        "defense_class": "DERIVATION",
+        "claim_level": "epistemology",
+        "support": [
+          "Move 2: 'Every experiment already presupposes identity, noncontradiction, valid inference...'"
+        ],
+        "dependencies": [
+          "Chaitin's incompleteness"
+        ],
+        "risks": [
+          "This is a standard argument but not a formal proof; it relies on the interpretation of 'ground'."
+        ],
+        "required_concession": "This is a philosophical argument, not a mathematical theorem.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.3-C006",
+        "claim_text": "Humans cannot be the ground of mathematical truth because human systems drift and math predates every mind.",
+        "defense_class": "DERIVATION",
+        "claim_level": "epistemology",
+        "support": [
+          "Move 3: 'Human systems drift...'",
+          "'math predates every mind by 13.8 billion years'"
+        ],
+        "dependencies": [
+          "Premise that math is mind-independent"
+        ],
+        "risks": [
+          "The claim that math predates minds is controversial; it assumes mathematical Platonism."
+        ],
+        "required_concession": "This assumes a Platonist view of mathematics.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W6.3-C007",
+        "claim_text": "The 24-property matrix shows that God possesses the properties essentially, math/morality express them structurally, and humans participate partially.",
+        "defense_class": "UNCLASSIFIED",
+        "claim_level": "theological",
+        "support": [
+          "Move 4: 'God — essential possession. Math/morality — structural expression. Humans — partial participation.'"
+        ],
+        "dependencies": [
+          "24-property matrix"
+        ],
+        "risks": [
+          "The matrix is unaudited; the classification of properties is subjective."
+        ],
+        "required_concession": "The matrix is a candidate, not a proof; audit is owed.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W6.3-C008",
+        "claim_text": "The ground cannot be deceptive because mathematical truth is non-deceptive, and a deceptive source cannot produce non-deceptive output.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Move 5: 'Deception is divergence between appearance and reality. Mathematical truth has none...'"
+        ],
+        "dependencies": [
+          "A11",
+          "Premise that non-deceptiveness is a moral property"
+        ],
+        "risks": [
+          "The inference from output to source is not logically valid; a deceptive source could produce non-deceptive output by chance."
+        ],
+        "required_concession": "This is an abductive argument, not a deductive proof.",
+        "recommended_action": "fix",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W6.3-C009",
+        "claim_text": "Non-deceptiveness is a moral property, derived from information theory, not imported from theology.",
+        "defense_class": "DERIVATION",
+        "claim_level": "moral",
+        "support": [
+          "Move 5: 'Non-deceptiveness is a moral property. Truthfulness is a virtue in every moral system...'"
+        ],
+        "dependencies": [
+          "Definition of moral property"
+        ],
+        "risks": [
+          "The derivation from information theory is not shown; it is asserted."
+        ],
+        "required_concession": "The link between information theory and morality is not formalized.",
+        "recommended_action": "fix",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W6.3-C010",
+        "claim_text": "The is-ought gap dissolves because moral oughts are equivalent to misalignment with a standard, which is a mathematical-like fact.",
+        "defense_class": "DERIVATION",
+        "claim_level": "moral",
+        "support": [
+          "Linked flank: 'ought(a, φ, t) ≡ misaligned(state(a, t), φ) ∧ consequences not yet arrived'"
+        ],
+        "dependencies": [
+          "Definition of ought",
+          "CL-P08"
+        ],
+        "risks": [
+          "The definition is stipulative; it may not capture all senses of 'ought'."
+        ],
+        "required_concession": "This is a proposed definition, not a proof that all moral oughts reduce to misalignment.",
+        "recommended_action": "fix",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W6.3-C011",
+        "claim_text": "The entropy chain and the Chaitin chain independently converge on the same terminus profile, supporting the existence of a transcendent, morally good ground.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Move 6: 'Two independent derivations. Neither references the other; neither references theology.'"
+        ],
+        "dependencies": [
+          "Entropy law",
+          "Chaitin's theorem"
+        ],
+        "risks": [
+          "The convergence is based on analogical properties, not formal identity; the independence is questionable."
+        ],
+        "required_concession": "Convergence supports a profile, not a specific identification.",
+        "recommended_action": "keep",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W6.3-C012",
+        "claim_text": "The terminus profile is identified with the Logos, and the Christian God is claimed to be that Logos, conditional on John 1:1-14 and the incarnational requirement.",
+        "defense_class": "CLOSURE",
+        "claim_level": "theological",
+        "support": [
+          "Move 7: 'The terminus profile has a name that predates Christianity: Logos...'",
+          "Status: conditional"
+        ],
+        "dependencies": [
+          "Moves 1-6",
+          "John 1:1-14"
+        ],
+        "risks": [
+          "The identification is conditional and depends on theological premises; it is not a logical conclusion."
+        ],
+        "required_concession": "This is a conditional claim; it is not asserted as proven.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W6.3-C013",
+        "claim_text": "The ground is not subject to logic as an external law; logic is the expression of its own consistent nature.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Move 7: 'logic is the expression of its own consistent nature'"
+        ],
+        "dependencies": [
+          "Euthyphro answer"
+        ],
+        "risks": [
+          "This is a theological assertion, not derived from the previous moves."
+        ],
+        "required_concession": "This is a metaphysical claim about the nature of God and logic.",
+        "recommended_action": "keep",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W6.3-C014",
+        "claim_text": "The thermometer objection is conceded and absorbed; the claim is not that math is a moral agent but that it is a truth-disclosure mechanism.",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "support": [
+          "C2: 'Conceded and absorbed. The claim was never \"math is a moral agent.\"'"
+        ],
+        "dependencies": [
+          "None"
+        ],
+        "risks": [
+          "The concession may weaken the argument if the objection is not fully addressed."
+        ],
+        "required_concession": "The objection is valid against the sloppy version, but not this one.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W6.3-C015",
+        "claim_text": "The defeat conditions are published; if any occur, the argument fails.",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "support": [
+          "Defeat Conditions list"
+        ],
+        "dependencies": [
+          "None"
+        ],
+        "risks": [
+          "The conditions are not all falsifiable; some are vague."
+        ],
+        "required_concession": "These are the conditions under which the argument would be abandoned.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.3-C016",
+        "claim_text": "The purpose layer ('given for fruitfulness') is theological-conditional and not load-bearing.",
+        "defense_class": "ADMISSION",
+        "claim_level": "theological",
+        "support": [
+          "Standing disclosures: 'The purpose layer is theological-conditional.'"
+        ],
+        "dependencies": [
+          "None"
+        ],
+        "risks": [
+          "None"
+        ],
+        "required_concession": "This is a conditional claim, not a derived one.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "W6.3-C004",
+        "problem": "The χ formula is not rigorously defined; the claim that the product-collapse is machine-checked may overstate the formalization.",
+        "repair": "Define χ precisely and clarify what the Lean verification actually proves."
+      },
+      {
+        "severity": "P1",
+        "target": "W6.3-C008",
+        "problem": "The inference from non-deceptive output to non-deceptive source is not logically valid; a deceptive source could produce non-deceptive output.",
+        "repair": "Add a premise that the source is the only possible cause, or weaken the claim to 'likely'."
+      },
+      {
+        "severity": "P2",
+        "target": "W6.3-C009",
+        "problem": "The derivation of non-deceptiveness as a moral property from information theory is not shown.",
+        "repair": "Provide a formal derivation or explicitly label it as an assumption."
+      },
+      {
+        "severity": "P2",
+        "target": "W6.3-C010",
+        "problem": "The definition of 'ought' as misalignment is stipulative and may not capture all moral oughts.",
+        "repair": "Acknowledge the stipulative nature and discuss alternative senses."
+      },
+      {
+        "severity": "P3",
+        "target": "W6.3-C007",
+        "problem": "The 24-property matrix is unaudited; the classification is subjective.",
+        "repair": "Perform the audit and update the claim accordingly."
+      }
+    ],
+    "log_notes": [
+      "The work is a public-facing playbook; many claims are labeled 'strong' but rely on analogical reasoning.",
+      "The identification with the Christian God is explicitly conditional.",
+      "The defeat conditions are a strong point; they should be highlighted.",
+      "The Lean verification claim needs scrutiny; it may be overclaimed.",
+      "The is-ought dissolution is a separate flank; its status is not fully assessed here."
+    ]
+  },
+  {
+    "work_id": "W6.4",
+    "title": "Series Opener (placeholder)",
+    "turn": "TURN 6 - THE MORAL TURN",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\00_START_HERE_DOORWAY_METHOD\\CODEX_BLUE_WORKING_LANE\\sources\\parallel-start\\series-opener-template.html",
+    "overall_status": "needs_review",
+    "summary": "Placeholder series opener listing 17 collapse mechanisms and chapter titles. Contains strong claims about societal phase transitions and cascading collapse, but no supporting evidence or definitions. Mostly rhetorical and unclassified.",
+    "claims": [
+      {
+        "claim_id": "W6.4-C001",
+        "claim_text": "Societies don't collapse linearly — they absorb stress until they hit a threshold and phase-transition into a new state.",
+        "defense_class": "RHETORIC",
+        "claim_level": "physics",
+        "support": "Societies don't collapse linearly — they absorb stress until they hit a threshold and phase-transition into a new state.",
+        "dependencies": [
+          "none named"
+        ],
+        "risks": [
+          "Physics metaphor overreach; no evidence for threshold behavior in societies."
+        ],
+        "required_concession": "This is an analogy, not a proven physical law.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.4-C002",
+        "claim_text": "When one domain fails, it doesn't stay contained. The failure propagates.",
+        "defense_class": "RHETORIC",
+        "claim_level": "physics",
+        "support": "When one domain fails, it doesn't stay contained. The failure propagates.",
+        "dependencies": [
+          "none named"
+        ],
+        "risks": [
+          "Unsupported generalization; no mechanism given."
+        ],
+        "required_concession": "This is a claim about cascading failures, not yet demonstrated.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.4-C003",
+        "claim_text": "The full sequence of collapse is: language → cognition → spirit → institution → economy → identity.",
+        "defense_class": "RHETORIC",
+        "claim_level": "physics",
+        "support": "The full sequence: language → cognition → spirit → institution → economy → identity.",
+        "dependencies": [
+          "none named"
+        ],
+        "risks": [
+          "Arbitrary ordering; no evidence for this specific sequence."
+        ],
+        "required_concession": "This sequence is a proposed model, not an established fact.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.4-C004",
+        "claim_text": "When words stop meaning stable things, the society loses the ability to carry complex truth.",
+        "defense_class": "RHETORIC",
+        "claim_level": "physics",
+        "support": "When words stop meaning stable things, the society loses the ability to carry complex truth.",
+        "dependencies": [
+          "none named"
+        ],
+        "risks": [
+          "Unsupported; 'complex truth' undefined."
+        ],
+        "required_concession": "This is a hypothesis about language and truth, not proven.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.4-C005",
+        "claim_text": "The public mind fragments. Attention collapses. The capacity for sustained reasoning erodes.",
+        "defense_class": "RHETORIC",
+        "claim_level": "physics",
+        "support": "The public mind fragments. Attention collapses. The capacity for sustained reasoning erodes.",
+        "dependencies": [
+          "none named"
+        ],
+        "risks": [
+          "Vague and unmeasurable; no evidence."
+        ],
+        "required_concession": "This is a rhetorical description, not a measured phenomenon.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.4-C006",
+        "claim_text": "The soul fragments. Not metaphorically — the integrating center that holds a person together loses coherence.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The soul fragments. Not metaphorically — the integrating center that holds a person together loses coherence.",
+        "dependencies": [
+          "none named"
+        ],
+        "risks": [
+          "Theological claim presented as literal; no definition of 'soul'."
+        ],
+        "required_concession": "This is a theological assertion, not a scientific one.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.4-C007",
+        "claim_text": "Institutions stopped transmitting signal. The channel capacity dropped to noise.",
+        "defense_class": "RHETORIC",
+        "claim_level": "physics",
+        "support": "Institutions stopped transmitting signal. The channel capacity dropped to noise.",
+        "dependencies": [
+          "none named"
+        ],
+        "risks": [
+          "Information theory metaphor; no data on institutional signal capacity."
+        ],
+        "required_concession": "This is an analogy, not a measured fact.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.4-C008",
+        "claim_text": "Money detached from reality. Debt became a lifestyle. The economic signal decoupled from the physical substrate.",
+        "defense_class": "RHETORIC",
+        "claim_level": "physics",
+        "support": "Money detached from reality. Debt became a lifestyle. The economic signal decoupled from the physical substrate.",
+        "dependencies": [
+          "none named"
+        ],
+        "risks": [
+          "Economic metaphor; no evidence for 'detachment'."
+        ],
+        "required_concession": "This is a rhetorical claim about economics, not a proven fact.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W6.4-C009",
+        "claim_text": "The individual — the last measurement instrument — lost the ability to observe coherently.",
+        "defense_class": "RHETORIC",
+        "claim_level": "physics",
+        "support": "The individual — the last measurement instrument — lost the ability to observe coherently.",
+        "dependencies": [
+          "none named"
+        ],
+        "risks": [
+          "Quantum measurement metaphor; no evidence for 'coherent observation'."
+        ],
+        "required_concession": "This is a metaphor, not a literal statement about measurement.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "Entire document",
+        "problem": "Claims are presented as fact but are unsupported and metaphorical.",
+        "repair": "Add disclaimers that these are hypotheses or analogies, and provide evidence or references."
+      }
+    ],
+    "log_notes": [
+      "Placeholder document with no punch list; likely early draft.",
+      "All claims are rhetorical and lack support; recommend demoting to RHETORIC until evidence is provided.",
+      "Next pass should check if later works provide evidence for these claims."
+    ]
+  }
+]

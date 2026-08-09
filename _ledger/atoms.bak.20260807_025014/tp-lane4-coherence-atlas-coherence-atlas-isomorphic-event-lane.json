@@ -1,0 +1,51 @@
+{
+  "atom_id": "tp:lane4/coherence-atlas/coherence-atlas-isomorphic-event-lane",
+  "atom_uid": "sha256:79387a5500e3e4a51a8ab114e43938db8df1fd0b1d1f7d2980fb29ee382915dd",
+  "title": "Coherence Atlas Isomorphic Event Lane",
+  "claim": "Coherence-atlas matches remain event candidates below C5.",
+  "domain": "coherence-atlas",
+  "lane": "Lane4",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Lane labels are interpreted according to their declared evidentiary scope."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "LANE4_ATOM_LEDGER_BUILD_REPORT.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_seeded",
+      "result": "recorded",
+      "artifact_path": "LANE4_ATOM_LEDGER_BUILD_REPORT.md",
+      "meaning": "Initial Lane 4 fixture created.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Codex",
+      "lane": "Lane4",
+      "event_id": "sha256:aa201c5a2bebe4bdfa3426aca6f37702447972fd01721cce9d20f721cc94422f"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "Lean4",
+      "result": "pass",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\lean_receipts\\nine-mapping-structural-harness-direct-lean-receipt-20260803T025528Z.md",
+      "meaning": "The nine named bridge mappings were rerun through a single compressed structural harness. Direct Lean compilation passes and proves all nine encoded mappings pass the checklist and reject five negative-control slots each.",
+      "limits": "Encoded structural harness only: this does not prove domain faithfulness, independent physics adequacy, independent theology adequacy, or empirical truth. It should be cited as nine-of-nine within the declared harness, not as unrestricted proof of all bridge claims.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-03T02:55:28+00:00",
+      "event_uuid": "24ee72e2-8319-4490-9779-4ba6c6b2ce6e",
+      "event_id": "sha256:0bcc9308b613087d7dc18b78fedb79a05e49c0fedac3c7c9be43ba89ffbffa2a"
+    }
+  ],
+  "source_claim_id": "COHERENCE_ATLAS_ISOMORPHIC_EVENT_LANE"
+}

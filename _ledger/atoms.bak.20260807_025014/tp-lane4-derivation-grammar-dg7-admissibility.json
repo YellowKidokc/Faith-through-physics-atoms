@@ -1,0 +1,53 @@
+{
+  "atom_id": "tp:lane4/derivation-grammar/dg7-admissibility",
+  "atom_uid": "sha256:9f0e7201887509e97a68aa4c8243d60708966f4892fe82dbc5110090da90f793",
+  "title": "DG7 - Admissibility",
+  "claim": "A derivation step is valid only if its dependencies exist, its new capability is genuinely new, and its prior layer is preserved.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "Validity requires dependency, novelty, and preservation together."
+  ],
+  "definitions": [
+    "ValidStep(L(n), L(n+1)): the proposed step passes dependency, capability, and preservation checks."
+  ],
+  "equations": [
+    "ValidStep(L(n), L(n+1)) iff DependsOn(L(n+1), L(n)) and NewCapability(C(n+1)) and Preserves(L(n+1), L(n))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency",
+    "DG2-Minimal-Capability",
+    "DG3-Preservation"
+  ],
+  "negative_guards": [
+    "Do not admit claims that add novelty by destroying the floor.",
+    "Do not admit claims that preserve the floor but add no capability."
+  ],
+  "kill_conditions": [
+    "A derivation step passes despite failing dependency, novelty, or preservation.",
+    "The admissibility predicate cannot be implemented in a repeatable review process."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\DG_V02_ATOM_SEED_BATCH_2026-08-01\\DG7-Admissibility.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-08-01T04:17:54+00:00",
+      "lane": "Framework",
+      "event_id": "sha256:ab95bbc81987d5a0c2f41fb67b824526234a4730a86aea27bf6324201b836071"
+    }
+  ],
+  "source_claim_id": "DG7-Admissibility"
+}

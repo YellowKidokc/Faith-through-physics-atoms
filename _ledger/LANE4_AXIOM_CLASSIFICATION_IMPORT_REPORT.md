@@ -1,10 +1,11 @@
 # Lane 4 Axiom Classification Import Report
 
-Source: `O:\_Theophysics_v5\00_AXIOMS\_LOSSLESS_SUMMARY\AXIOMS_PART1_MODE_CLASSIFICATION.md`
+Source: `D:\GitHub\Faith-through-physics-atoms\_docs\AXIOMS_PART1_MODE_CLASSIFICATION.md`
 
 Rows parsed: **192**
-Atoms created: **192**
-Atoms skipped because already present: **0**
+Atoms created: **0**
+Existing atoms enriched with glyphs: **0**
+Atoms skipped because already current: **192**
 Unanchored entries: **75**
 
 ## Mode Counts

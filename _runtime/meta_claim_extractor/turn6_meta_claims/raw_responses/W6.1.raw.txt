@@ -1,0 +1,228 @@
+{
+  "work_id": "W6.1",
+  "title": "The Moral-First Chain",
+  "turn": "TURN 6 - THE MORAL TURN",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\12_TRUTH_LOGOS_MATH_INFORMATION\\11-the-moral-first-chain.html",
+  "overall_status": "reviewed",
+  "summary": "The work proposes a moral-first orientation for the framework, postulating the Good at the top and deriving everything else downward. It claims to dissolve old problems like Hume's is-ought gap and to strengthen the standing of Lean theorems. The work is honest about costs and open problems, but contains several overclaims and rhetorical flourishes that need careful classification.",
+  "claims": [
+    {
+      "claim_id": "W6.1-C001",
+      "claim_text": "The Good exists, underived, postulated as a primitive.",
+      "defense_class": "ROOT",
+      "claim_level": "theological",
+      "support": "M0 — The Good: 'The Good exists, underived — postulated exactly as Euclid postulated the parallel line.'",
+      "dependencies": ["none"],
+      "risks": ["Postulate, not proof; may be challenged as arbitrary."],
+      "required_concession": "This is a postulate, not a derived result.",
+      "recommended_action": "keep",
+      "confidence": 0.95
+    },
+    {
+      "claim_id": "W6.1-C002",
+      "claim_text": "Coherence is the structural form of the Good.",
+      "defense_class": "AXIOM",
+      "claim_level": "formal",
+      "support": "M1: 'Coherence is the structural form of the Good' and 'the four kernel assumptions are the axioms of the system.'",
+      "dependencies": ["M0"],
+      "risks": ["Identification of coherence with Good is asserted, not derived."],
+      "required_concession": "This is a postulate, not a theorem.",
+      "recommended_action": "keep",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.1-C003",
+      "claim_text": "The physical is a projection of the moral structure.",
+      "defense_class": "AXIOM",
+      "claim_level": "physics",
+      "support": "M2: 'Physics is the shadow the moral structure casts.'",
+      "dependencies": ["M1"],
+      "risks": ["Physics-overreach; projection metaphor not formalized."],
+      "required_concession": "This is a postulate, not a physical theory.",
+      "recommended_action": "keep",
+      "confidence": 0.85
+    },
+    {
+      "claim_id": "W6.1-C004",
+      "claim_text": "The sciences study the projection, each in one vocabulary.",
+      "defense_class": "AXIOM",
+      "claim_level": "physics",
+      "support": "M3: 'Each science is the projection read in one vocabulary.'",
+      "dependencies": ["M2"],
+      "risks": ["Overclaim of unity; burden on critic to find failure."],
+      "required_concession": "This is a postulate, not an empirical claim.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W6.1-C005",
+      "claim_text": "Measurement registers coherence-condition.",
+      "defense_class": "AXIOM",
+      "claim_level": "physics",
+      "support": "M4: 'Measurement is the projection meeting a witness; what is registered is always the coherence-condition.'",
+      "dependencies": ["M2", "M3"],
+      "risks": ["May conflict with standard measurement theory."],
+      "required_concession": "This is a postulate, not a result.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W6.1-C006",
+      "claim_text": "The source of the Good is personal.",
+      "defense_class": "AXIOM",
+      "claim_level": "theological",
+      "support": "M5: 'The Good at M0 cannot be an it: relation cannot be impersonal.'",
+      "dependencies": ["M0"],
+      "risks": ["Personhood argument is philosophical, not formal."],
+      "required_concession": "This is a postulate, not a proof.",
+      "recommended_action": "keep",
+      "confidence": 0.75
+    },
+    {
+      "claim_id": "W6.1-C007",
+      "claim_text": "The is-ought gap is dissolved because 'ought' is a temporal illusion.",
+      "defense_class": "DERIVATION",
+      "claim_level": "moral",
+      "support": "PMM Paper 0, §4: 'the ought is a temporal illusion' and 'You ought to reinforce the beam' and 'the beam is under-engineered' are the same fact, time-indexed.",
+      "dependencies": ["M1", "PMM Paper 0"],
+      "risks": ["Depends on universal-cost premise; deliberative ought not addressed."],
+      "required_concession": "This dissolution relies on two premises stated in PMM §9.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W6.1-C008",
+      "claim_text": "The χ-gradient ↔ moral-direction bridge is dissolved because the gradient is defined by the projection at M2.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "Under the flip: 'the gradient is not identified with moral direction by a bridge; it is defined by the projection at M2.'",
+      "dependencies": ["M2"],
+      "risks": ["Definitional move may be seen as stipulative."],
+      "required_concession": "This is a definitional consequence of M2.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W6.1-C009",
+      "claim_text": "The '188 axioms' confusion is dissolved because the top of the system is five postulates.",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "Under the flip: 'The top of the system is five postulates. The registry is downstream scaffolding.'",
+      "dependencies": ["M0-M5"],
+      "risks": ["May undercount axioms needed for full derivation."],
+      "required_concession": "This claim depends on the completeness of the five-postulate set.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W6.1-C010",
+      "claim_text": "The Watcher's actualization problem is eased because beholding vs. correlating is whether the projection is witnessed into the ledger.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "Under the flip: 'Beholding vs. correlating is no longer a mysterious extra: it is whether the projection is witnessed into the ledger or not.'",
+      "dependencies": ["M4"],
+      "risks": ["Easing is not solving; may be incomplete."],
+      "required_concession": "This is an easing, not a full resolution.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W6.1-C011",
+      "claim_text": "Book of Life retention conditions are regrounded as postulated properties of M0.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "Under the flip: 'Grace and coherence as retention conditions are postulated properties of M0, inherited downward.'",
+      "dependencies": ["M0", "M1"],
+      "risks": ["Theology is postulated, not derived."],
+      "required_concession": "This is a postulate, not a proof.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W6.1-C012",
+      "claim_text": "The Coherence Atlas is reframed as one grammar in seventy vocabularies, not seventy analogies.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "Under the flip: 'Not seventy analogies to be defended but one grammar in seventy vocabularies.'",
+      "dependencies": ["M2", "M3"],
+      "risks": ["Seventy vocabularies may not be exhaustive; counterexamples preserved."],
+      "required_concession": "This is a reframing, not a proof.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W6.1-C013",
+      "claim_text": "The Good is the source's nature, identity not priority, answering Euthyphro.",
+      "defense_class": "AXIOM",
+      "claim_level": "theological",
+      "support": "Cost one: 'the Good is the source's nature — identity, not priority.'",
+      "dependencies": ["M0"],
+      "risks": ["Identity claim is asserted, not argued."],
+      "required_concession": "This is a postulate about M0.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W6.1-C014",
+      "claim_text": "Every moral misalignment carries structural cost, even when undetected.",
+      "defense_class": "ADMISSION",
+      "claim_level": "moral",
+      "support": "Audit note: 'the universal-cost premise: every moral misalignment carries structural cost, even when undetected.'",
+      "dependencies": ["M1"],
+      "risks": ["Unproven universal premise; Gyges-ring case."],
+      "required_concession": "This is a premise, not a proven fact.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W6.1-C015",
+      "claim_text": "Deliberative ought is not moral ought.",
+      "defense_class": "ADMISSION",
+      "claim_level": "moral",
+      "support": "Audit note: 'deliberative ought is not moral ought.'",
+      "dependencies": ["M1"],
+      "risks": ["May be challenged; not fully integrated."],
+      "required_concession": "This is a distinction, not a proof.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W6.1-C016",
+      "claim_text": "The postulates' minimality is abductive and open to a smaller set.",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "support": "Also kept honest: 'five is the smallest set from which the observed structure derives, and that claim stays open to a smaller set.'",
+      "dependencies": ["M0-M5"],
+      "risks": ["Minimality not proven."],
+      "required_concession": "This is an abductive claim, not a proof.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "C007",
+      "problem": "The dissolution of is-ought gap depends on two premises that are not fully proven.",
+      "repair": "Explicitly mark the dissolution as conditional on those premises."
+    },
+    {
+      "severity": "P2",
+      "target": "C003",
+      "problem": "The projection claim is metaphorical and could be seen as physics-overreach.",
+      "repair": "Clarify that this is a postulate, not a physical theory."
+    },
+    {
+      "severity": "P2",
+      "target": "C009",
+      "problem": "The claim that the top is five postulates may undercount axioms needed.",
+      "repair": "Add a note that the five postulates are the top-level, but additional axioms may be needed for full derivation."
+    }
+  ],
+  "log_notes": [
+    "The work is a working sheet, not a final result; many claims are postulates.",
+    "The work explicitly states costs and open problems, which is good.",
+    "The 'dissolved' claims are strong and need careful handling.",
+    "The work references PMM Paper 0 and other sheets; dependencies should be tracked."
+  ]
+}

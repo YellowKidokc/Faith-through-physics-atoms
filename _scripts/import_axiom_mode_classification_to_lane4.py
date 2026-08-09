@@ -10,7 +10,12 @@ from pathlib import Path
 import lane4_ledger as ledger
 
 
-SOURCE = Path(r"O:\_Theophysics_v5\00_AXIOMS\_LOSSLESS_SUMMARY\AXIOMS_PART1_MODE_CLASSIFICATION.md")
+REPO = Path(__file__).resolve().parents[1]
+SOURCE_CANDIDATES = [
+    REPO / "_docs" / "AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    Path(r"O:\_Theophysics_v5\00_AXIOMS\_LOSSLESS_SUMMARY\AXIOMS_PART1_MODE_CLASSIFICATION.md"),
+]
+SOURCE = next((path for path in SOURCE_CANDIDATES if path.is_file()), SOURCE_CANDIDATES[0])
 REPORT = ledger.LEDGER / "LANE4_AXIOM_CLASSIFICATION_IMPORT_REPORT.md"
 
 MODE_PROOF_LABEL = {
@@ -20,6 +25,15 @@ MODE_PROOF_LABEL = {
     "FW_EXTENDED": "NOT_ESTABLISHED",
     "HY_EVIDENCE": "NOT_ESTABLISHED",
     "DROP_DUPLICATE": "QUARANTINE",
+}
+
+MODE_GLYPHS = {
+    "AX_CORE": ["axiom", "truth"],
+    "AX_DERIVED": ["proof", "axiom"],
+    "AX_SCAFFOLD": ["definition", "axiom"],
+    "FW_EXTENDED": ["mesh", "domain-tag"],
+    "HY_EVIDENCE": ["evidence", "prediction"],
+    "DROP_DUPLICATE": ["boundary", "kill-condition"],
 }
 
 
@@ -117,6 +131,8 @@ def atom_data(entry: dict[str, str]) -> dict:
             "A clean dependency audit changes the anchor status.",
         ],
         "proof_label": MODE_PROOF_LABEL[entry["mode"]],
+        "glyphs": MODE_GLYPHS[entry["mode"]],
+        "glyph_paths": [f"theophysics_glyphs/svg/{glyph_id}.svg" for glyph_id in MODE_GLYPHS[entry["mode"]]],
         "current_status": status_for(entry),
         "rerun_status": "not_applicable",
         "source_artifacts": [str(SOURCE)],
@@ -135,6 +151,7 @@ def main() -> int:
     entries = parse_entries(text)
     created = 0
     skipped = 0
+    updated = 0
     by_mode: dict[str, int] = {}
     unanchored = 0
 
@@ -145,7 +162,29 @@ def main() -> int:
         atom = ledger.normalize_atom(atom_data(entry), SOURCE)
         path = ledger.atom_path(atom["atom_id"])
         if path.exists():
-            skipped += 1
+            existing = json.loads(path.read_text(encoding="utf-8"))
+            changed = False
+            for key in ("glyphs", "glyph_paths"):
+                if existing.get(key) != atom.get(key):
+                    existing[key] = atom.get(key, [])
+                    changed = True
+            artifacts = existing.setdefault("source_artifacts", [])
+            if str(SOURCE) not in artifacts:
+                artifacts.append(str(SOURCE))
+                changed = True
+            if changed:
+                ledger.append_event(existing, {
+                    "event_type": "classification_glyphs_attached",
+                    "lane": "Classification",
+                    "result": "recorded",
+                    "artifact_path": str(SOURCE),
+                    "meaning": f"Attached Part 1 classification glyphs for {entry['raw_id']} as {entry['mode']}.",
+                    "limits": "Glyphs classify and render the atom; they do not prove it.",
+                    "reviewer": "Codex",
+                })
+                updated += 1
+            else:
+                skipped += 1
             continue
         ledger.append_event(atom, {
             "event_type": "classification_imported",
@@ -168,7 +207,8 @@ def main() -> int:
         "",
         f"Rows parsed: **{len(entries)}**",
         f"Atoms created: **{created}**",
-        f"Atoms skipped because already present: **{skipped}**",
+        f"Existing atoms enriched with glyphs: **{updated}**",
+        f"Atoms skipped because already current: **{skipped}**",
         f"Unanchored entries: **{unanchored}**",
         "",
         "## Mode Counts",

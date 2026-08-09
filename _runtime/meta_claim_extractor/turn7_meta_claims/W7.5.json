@@ -1,0 +1,971 @@
+{
+  "work_id": "W7.5",
+  "title": "The Ledger",
+  "turn": "TURN 7 - THE GAUNTLET",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\08_LEDGER_OBJECTIONS_PROOFS\\09-the-ledger.md",
+  "overall_status": "reviewed",
+  "summary": "The Ledger is a meta-page that records corrections and verdicts from two hostile audits. It kills several overclaims, reduces others, and preserves a core of results that survived. The page itself is honest about its own status, but some claims still carry risks of overstatement or unproven derivations.",
+  "claims": [
+    {
+      "claim_id": "W7.5-C001",
+      "claim_text": "The veto architecture is repaired by restating the product over normalized global sector scores, χ = ∏ηᵢ with 0 ≤ ηᵢ ≤ 1, where one zeroed sector collapses the whole.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Formal proof that the normalized product collapses when any ηᵢ = 0."
+      ],
+      "evidence_present": [
+        "Statement of the repaired form and its property."
+      ],
+      "evidence_gap": [
+        "No formal derivation or Lean proof provided in this work."
+      ],
+      "support": [
+        "'it is repaired by restating the product over normalized global sector scores, χ = ∏ηᵢ with 0 ≤ ηᵢ ≤ 1, where one zeroed sector genuinely collapses the whole.'"
+      ],
+      "dependencies": [
+        "None named"
+      ],
+      "risks": [
+        "The claim is stated as a repair but not formally proven here."
+      ],
+      "kill_condition": "If a counterexample shows a zeroed ηᵢ does not collapse the product under the defined normalization.",
+      "required_concession": "This is a proposed repair, not yet formally verified.",
+      "recommended_action": "strengthen",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "proof",
+        "lean4",
+        "coherence",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/coherence.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "strengthen",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "proof",
+          "lean4",
+          "coherence",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C002",
+      "claim_text": "The four forms (product, ratio, dynamic, field) are formal model forms, not yet operationally validated physics.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "physics_model",
+      "defense_class": "ADMISSION",
+      "claim_level": "physics",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [],
+      "evidence_present": [
+        "Explicit scope label in the work."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "'these are formal model forms, not yet operationally validated physics.'"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "doubt",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "physics_model",
+        "defense_class": "ADMISSION",
+        "claim_level": "physics",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "doubt",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C003",
+      "claim_text": "A bound state at the minimum of one potential exhibits seven of nine fruits as properties of one system expanded around one equilibrium.",
+      "framework_lane": "ten_laws",
+      "physics_claim_type": "physics_model",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Hessian/perturbation-spectrum derivation showing each fruit as a property of the bound state."
+      ],
+      "evidence_present": [
+        "List of seven fruits mapped to physical properties (minimum energy, oscillation frequency, etc.)."
+      ],
+      "evidence_gap": [
+        "The derivation is owed, not yet provided."
+      ],
+      "support": [
+        "'a bound state at the minimum of one potential genuinely exhibits, from that single equilibrium: minimum energy (love), oscillation frequency from curvature (joy), force balance (peace), thermal response (patience), activation energy (kindness), extractable work (goodness), and Noether conservation from time symmetry (faithfulness)'"
+      ],
+      "dependencies": [
+        "None named"
+      ],
+      "risks": [
+        "The mapping is asserted but not derived; gentleness and self-control are not yet included."
+      ],
+      "kill_condition": "If the Hessian derivation fails to produce the claimed properties.",
+      "required_concession": "The derivation is owed; currently this is a plausible mapping, not a proven derivation.",
+      "recommended_action": "strengthen",
+      "glyphs": [
+        "law",
+        "equation",
+        "proof",
+        "coherence",
+        "kill-condition"
+      ],
+      "confidence": 0.6,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/law.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/coherence.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "ten_laws",
+        "physics_claim_type": "physics_model",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "strengthen",
+        "glyphs": [
+          "law",
+          "equation",
+          "proof",
+          "coherence",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C004",
+      "claim_text": "The Maxwell coupling invariant is the strongest formal result: quaternion EM and Trinity relational structure pass the same gates; Heaviside vector reduction and modalism fail the same gates; adversarial controls prove the gates are load-bearing; a scalar-vector coupling theorem shows vector-only data cannot reconstruct the full product.",
+      "framework_lane": "trinity",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Lean 4 proof with zero sorry; definition-ablation matrix to address reverse-engineering objection."
+      ],
+      "evidence_present": [
+        "Machine-verified in Lean 4, zero sorry; guard-removal controls."
+      ],
+      "evidence_gap": [
+        "Definition-ablation matrix is missing."
+      ],
+      "support": [
+        "'Machine-verified in Lean 4, zero sorry.'",
+        "'adversarial controls prove the gates are load-bearing (remove a guard and the broken form passes)'"
+      ],
+      "dependencies": [
+        "Lean 4 proof"
+      ],
+      "risks": [
+        "Reverse-engineering objection only partially answered."
+      ],
+      "kill_condition": "If definition-ablation matrix shows the gates were reverse-engineered.",
+      "required_concession": "The claim wears a caveat: Lean-verified inside declared axioms; definition-ablation matrix is pending.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "theology",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/theology.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "trinity",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "theology",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C005",
+      "claim_text": "Consciousness derived from χ-field equilibrium properties is overstated; the properties do not discriminate conscious from non-conscious systems.",
+      "framework_lane": "consciousness",
+      "physics_claim_type": "bridge_mapping",
+      "defense_class": "ADMISSION",
+      "claim_level": "bridge",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A property that distinguishes conscious from non-conscious systems."
+      ],
+      "evidence_present": [
+        "Kill test: a non-conscious scalar field satisfies all stated equilibrium conditions."
+      ],
+      "evidence_gap": [
+        "No distinguishing property proposed."
+      ],
+      "support": [
+        "'a completely non-conscious scalar field satisfies every stated equilibrium condition'"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "The claim is reduced to a substrate model with structural analogues.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "consciousness",
+        "isomorphism",
+        "doubt",
+        "logos",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/consciousness.svg",
+        "theophysics_glyphs/svg/isomorphism.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "consciousness",
+        "physics_claim_type": "bridge_mapping",
+        "defense_class": "ADMISSION",
+        "claim_level": "bridge",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "consciousness",
+          "isomorphism",
+          "doubt",
+          "logos",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C006",
+      "claim_text": "The internal-regress argument stands: self-interpretation cannot ground itself; the regress has three exits; infinite regress and brute terminus fail; a self-grounding terminus requires internal differentiation.",
+      "framework_lane": "consciousness",
+      "physics_claim_type": "not_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "philosophical",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "Support for the agency premise and the secular-triad test."
+      ],
+      "evidence_present": [
+        "Structural analogy to Gödel, Tarski, Turing; three exits listed."
+      ],
+      "evidence_gap": [
+        "Agency premise not fully wired; secular-triad test pending."
+      ],
+      "support": [
+        "'self-interpretation cannot ground itself (the structural lesson of Gödel, Tarski, Turing – applied as structural analogy, flagged as such)'"
+      ],
+      "dependencies": [
+        "Gödel, Tarski, Turing as structural analogy"
+      ],
+      "risks": [
+        "Agency premise is a hole."
+      ],
+      "kill_condition": "If the agency premise is shown to be unjustified.",
+      "required_concession": "Two named holes are open: agency premise and secular-triad test.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "consciousness",
+        "claim",
+        "proof",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/consciousness.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "consciousness",
+        "physics_claim_type": "not_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "philosophical",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "consciousness",
+          "claim",
+          "proof",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C007",
+      "claim_text": "The 7Q Eliminator is reduced to a Christian metaphysical constraint framework for comparing worldviews, not a universal eliminator of 59 worldviews.",
+      "framework_lane": "ten_laws",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "Rival-authored boundary conditions to test motivated selection."
+      ],
+      "evidence_present": [
+        "Concession box already conceded most of this."
+      ],
+      "evidence_gap": [
+        "Rival-authored boundary conditions not yet tested."
+      ],
+      "support": [
+        "'Reduced to what it demonstrably is: a Christian metaphysical constraint framework for comparing worldviews'"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "The final 8/8 verdict is exposed to motivated-selection objection until rival boundary conditions are tested.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "law",
+        "claim",
+        "doubt",
+        "logos",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/law.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "ten_laws",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "law",
+          "claim",
+          "doubt",
+          "logos",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C008",
+      "claim_text": "The Ten Laws Portrait is corrected to ten physical structures, not ten forces; the page is devotional architecture, not a lab result.",
+      "framework_lane": "ten_laws",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "editorial",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [],
+      "evidence_present": [
+        "Specific fixes logged."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "'Corrected to: ten physical structures.'",
+        "'The portrait is devotional architecture, and it is better devotional architecture when it stops claiming to be a lab result.'"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "law",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/law.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "ten_laws",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "editorial",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "law",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C009",
+      "claim_text": "Noether's theorem is domain-general mathematics: any Lagrangian system with a continuous symmetry has a conserved quantity; the real chain requires the modeling premise that moral dynamics admit a time-translation-invariant Lagrangian description.",
+      "framework_lane": "morality",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Formal proof of Noether's theorem; explicit statement of the modeling premise as an axiom."
+      ],
+      "evidence_present": [
+        "Noether's theorem stated; premise now explicit."
+      ],
+      "evidence_gap": [
+        "The moral Lagrangian is not constructed; Γ_sin factors lack operationalization."
+      ],
+      "support": [
+        "'Noether is domain-general mathematics: any Lagrangian system with a continuous symmetry has a conserved quantity'",
+        "'The premise is now stated as an explicit axiom, on the page, where a physicist can attack it'"
+      ],
+      "dependencies": [
+        "Noether's theorem",
+        "Modeling premise"
+      ],
+      "risks": [
+        "The moral Lagrangian is not given; the premise is an axiom, not derived."
+      ],
+      "kill_condition": "If the modeling premise is shown to be false or incoherent.",
+      "required_concession": "The premise is an axiom; the Γ_sin expression remains model-form analogy until operationalized.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "ethics",
+        "equation",
+        "proof",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/ethics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "morality",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "ethics",
+          "equation",
+          "proof",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C010",
+      "claim_text": "The AXIOM Gap-Fill document is not canon-safe as written; it has mapping inconsistencies and a table with 19 rows for 18 variables.",
+      "framework_lane": "axioms",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "editorial",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [],
+      "evidence_present": [
+        "Specific inconsistencies listed."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "'Its \"18 dependent variables\" table has 19 rows and includes God as not-derived plus Faith as a generator.'"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "axiom",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "axioms",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "editorial",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "axiom",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C011",
+      "claim_text": "R(offense, α) and the Cross as unique solution: three variables (justice, mercy, free will) cannot be jointly maximized in two-party space; the unique solution requires a third party simultaneously judge and payer.",
+      "framework_lane": "morality",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Lean proof of uniqueness; independent derivation via mechanism design."
+      ],
+      "evidence_present": [
+        "Machine-verified uniqueness in Lean; independent derivation via Myerson–Satterthwaite."
+      ],
+      "evidence_gap": [
+        "Open questions: why every offense is representable as conserved payable cost; why non-penal alternatives cannot satisfy constraints."
+      ],
+      "support": [
+        "'Machine-verified uniqueness in Lean; independently re-derived by a different AI through mechanism design (Myerson–Satterthwaite: no two-party mechanism is efficient, individually rational, and budget-balanced – an external subsidizing party is required).'"
+      ],
+      "dependencies": [
+        "Lean proof",
+        "Myerson–Satterthwaite theorem"
+      ],
+      "risks": [
+        "Open questions remain."
+      ],
+      "kill_condition": "If a non-penal alternative is found that satisfies the three constraints.",
+      "required_concession": "Open questions are listed publicly.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "ethics",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/ethics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "morality",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "ethics",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C012",
+      "claim_text": "The claim 'No premise smuggled. No step skipped.' is wrong; several steps carry substantive philosophical premises.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "editorial",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [],
+      "evidence_present": [
+        "List of premises: relation reveals value, justice requires payment, source is personal."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "'Several steps carry substantive philosophical premises – relation reveals value, justice requires payment, the source is personal.'"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "editorial",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C013",
+      "claim_text": "The triadic termination structure is right: n=1 self-defeats, n=2 deadlocks or collapses a required invariant, n=3 unified passes, demonstrated across multiple domains.",
+      "framework_lane": "trinity",
+      "physics_claim_type": "not_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "meta",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "Formal proofs for each domain."
+      ],
+      "evidence_present": [
+        "Demonstrated across field coupling, measurement chain, moral optimization, internal regress, cosmological coordination."
+      ],
+      "evidence_gap": [
+        "Upward bound (why not four?) is only a parsimony argument."
+      ],
+      "support": [
+        "'n = 1 self-defeats, n = 2 deadlocks or collapses a required invariant, n = 3 unified passes, demonstrated across field coupling, the measurement chain, moral optimization, internal regress, and (top-down) cosmological coordination'"
+      ],
+      "dependencies": [
+        "Domain-specific arguments"
+      ],
+      "risks": [
+        "Upward bound is not proven."
+      ],
+      "kill_condition": "If a domain shows n=2 can satisfy all invariants.",
+      "required_concession": "Upward bound is a parsimony argument, not a proof.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "theology",
+        "claim",
+        "proof",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/theology.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "trinity",
+        "physics_claim_type": "not_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "meta",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "theology",
+          "claim",
+          "proof",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C014",
+      "claim_text": "The coupling gate battery is right: seven named failure modes, each with a Lean anchor.",
+      "framework_lane": "trinity",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Lean proofs for each failure mode."
+      ],
+      "evidence_present": [
+        "Seven named failure modes with Lean anchors."
+      ],
+      "evidence_gap": [
+        "No details of the Lean proofs in this work."
+      ],
+      "support": [
+        "'Seven named failure modes, each with a Lean anchor: no coupling invariant, no distinctness, no dynamics, wrong role profile, relabeling without profile preservation, coupling without entanglement, closed self-source.'"
+      ],
+      "dependencies": [
+        "Lean proofs"
+      ],
+      "risks": [
+        "No details provided."
+      ],
+      "kill_condition": "If any failure mode is shown to pass the gates.",
+      "required_concession": "The gates are designed to reject malformed triads; counterexamples must go through the gates.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "theology",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/theology.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "trinity",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "theology",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C015",
+      "claim_text": "The method of stating the strongest objection, distinguishing contradiction from missing bridge, searching for independent repair, and attacking again is the deepest result.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ROOT",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [],
+      "evidence_present": [
+        "Both audits ran on this machinery."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "'State the strongest objection. Distinguish contradiction from missing bridge. Search for an independently derived repair. Attack the repaired claim again. Keep only what survives.'"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ROOT",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.5-C016",
+      "claim_text": "The standing corrections queue includes definition-ablation matrix, Hessian derivation, secular triad through gates, agency premise wiring, Γ_sin operationalization, rival boundary conditions, Lean theorem count, and migration of normalized Master Equation form.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "editorial",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [],
+      "evidence_present": [
+        "Listed in the work."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "'Standing corrections queue: Definition-ablation matrix for the Maxwell gates · Hessian derivation for the Fruits (and the gentleness/self-control question) · secular triad through the coupling gates · Stage 4–5 wiring for the regress argument's agency premise · operationalization of Γ_sin factors · rival-authored boundary conditions for 7Q · canonical Lean theorem count via the owner-map ledger (raw declaration counts are never cited publicly) · migration of the normalized-sector Master Equation form to every page that shows the old sentence.'"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "editorial",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical"
+        ]
+      }
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "W7.5-C001",
+      "problem": "The repaired Master Equation form is stated but not formally proven.",
+      "repair": "Provide a formal proof or Lean verification that the normalized product collapses when any ηᵢ = 0."
+    },
+    {
+      "severity": "P1",
+      "target": "W7.5-C003",
+      "problem": "The Fruits derivation is owed but not provided.",
+      "repair": "Complete the Hessian/perturbation-spectrum derivation and decide on gentleness/self-control."
+    },
+    {
+      "severity": "P2",
+      "target": "W7.5-C004",
+      "problem": "Definition-ablation matrix missing for Maxwell gates.",
+      "repair": "Create and publish the definition-ablation matrix to address reverse-engineering objection."
+    },
+    {
+      "severity": "P2",
+      "target": "W7.5-C009",
+      "problem": "Moral Lagrangian not constructed; Γ_sin factors not operationalized.",
+      "repair": "Construct a concrete moral Lagrangian or state why it cannot be done; operationalize each Γ_sin factor."
+    },
+    {
+      "severity": "P2",
+      "target": "W7.5-C011",
+      "problem": "Open questions on offense representability and non-penal alternatives.",
+      "repair": "Address these open questions or explicitly mark them as unresolved."
+    }
+  ],
+  "log_notes": [
+    "The Ledger is a meta-page that records corrections; many claims are admissions or reductions.",
+    "Several claims reference Lean proofs but details are not in this work; need to check linked pages.",
+    "The work itself is honest about its status, but some claims still carry risks of overstatement."
+  ]
+}

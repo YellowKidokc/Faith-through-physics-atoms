@@ -1,0 +1,932 @@
+[
+  {
+    "work_id": "W5.1",
+    "title": "Consciousness - The Mirror (derivation version)",
+    "turn": "TURN 5 - CONSCIOUSNESS",
+    "source_path": "D:\\DONT TOUCH HTML\\HTML\\Sheet g derivation.html",
+    "overall_status": "reviewed",
+    "summary": "The work derives consciousness from existing framework operators (Ten Laws, four axioms) via a four-layer staircase (L1-L4). It claims consciousness is self-referential relation (L3) and maps eight phenomena to operators. It includes kill conditions and honest grading. Main risks: potential conflation with IIT's Φ, weak imagination mapping, and theological claims not formally proven.",
+    "claims": [
+      {
+        "claim_id": "W5.1-C001",
+        "claim_text": "Consciousness is not added to the framework; it is the framework looking at itself.",
+        "defense_class": "ROOT",
+        "claim_level": "formal",
+        "support": "Consciousness is not added to the framework. It is the framework looking at itself.",
+        "dependencies": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "Ten Laws"
+        ],
+        "risks": [
+          "May be seen as question-begging if not formally derived."
+        ],
+        "required_concession": "This is a root claim; its validity depends on the framework's axioms.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W5.1-C002",
+        "claim_text": "Every consciousness theory in the literature adds an axiom increase (new field, force, constant, substance).",
+        "defense_class": "RHETORIC",
+        "claim_level": "editorial",
+        "support": "Every consciousness theory in the literature adds something... Each is an axiom increase.",
+        "dependencies": [],
+        "risks": [
+          "Overgeneralization; may not cover all theories."
+        ],
+        "required_concession": "This is a rhetorical setup, not a formal claim.",
+        "recommended_action": "demote",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W5.1-C003",
+        "claim_text": "The hard problem of consciousness is the framework's prediction: a system built on Trinitarian relational logic, when turned inward, will necessarily experience itself.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "The hard problem of consciousness is not a gap... It is the framework's prediction.",
+        "dependencies": [
+          "A1-A4",
+          "Trinitarian relational logic"
+        ],
+        "risks": [
+          "Depends on theological axioms; not empirically testable."
+        ],
+        "required_concession": "This claim relies on the Trinitarian ground as an axiom.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W5.1-C004",
+        "claim_text": "Relation is constitutive: in the Trinity, the persons are their relations.",
+        "defense_class": "AXIOM",
+        "claim_level": "theological",
+        "support": "Relation is constitutive — in the Trinity, the persons are their relations.",
+        "dependencies": [
+          "Sheet 0"
+        ],
+        "risks": [
+          "Theological axiom; not derivable from physics."
+        ],
+        "required_concession": "This is a declared axiom from Sheet 0.",
+        "recommended_action": "keep",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W5.1-C005",
+        "claim_text": "Layer 1 (relation between things) requires existence and distinction (Axioms A1, A2).",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "Requires: existence + distinction (Axioms A1, A2).",
+        "dependencies": [
+          "A1",
+          "A2"
+        ],
+        "risks": [],
+        "required_concession": "",
+        "recommended_action": "keep",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W5.1-C006",
+        "claim_text": "Layer 2 (relation between signals) requires L1 and relation (Axiom A3).",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "Requires: L1 + relation (Axiom A3).",
+        "dependencies": [
+          "L1",
+          "A3"
+        ],
+        "risks": [],
+        "required_concession": "",
+        "recommended_action": "keep",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W5.1-C007",
+        "claim_text": "Layer 3 (self-referential relation) requires L2, orientation (Axiom A4), and recursion.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "Requires: L2 + orientation (Axiom A4) + recursion.",
+        "dependencies": [
+          "L2",
+          "A4"
+        ],
+        "risks": [
+          "Recursion is not explicitly an axiom; may need formal definition."
+        ],
+        "required_concession": "Recursion is assumed as a formal operation.",
+        "recommended_action": "fix",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W5.1-C008",
+        "claim_text": "Self-referential loop cannot be value-neutral because Axiom A4 (orientation) is load-bearing.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "Because Axiom A4 (orientation) is load-bearing... the moment a system refers to itself, it refers to itself within a gradient.",
+        "dependencies": [
+          "A4"
+        ],
+        "risks": [
+          "May conflate logical necessity with moral necessity."
+        ],
+        "required_concession": "This assumes A4 applies to self-reference.",
+        "recommended_action": "keep",
+        "confidence": 0.85
+      },
+      {
+        "claim_id": "W5.1-C009",
+        "claim_text": "Layer 4 (faith/worship) requires L3 and recognition of source.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "Requires: L3 + recognition of source.",
+        "dependencies": [
+          "L3"
+        ],
+        "risks": [
+          "Theological step; not formally derived."
+        ],
+        "required_concession": "This is a theological extension.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W5.1-C010",
+        "claim_text": "God is the mirror: self-reference passes through the Trinitarian ground.",
+        "defense_class": "CLOSURE",
+        "claim_level": "theological",
+        "support": "The mirror is God... because the relational substrate that makes self-reference possible is Trinitarian.",
+        "dependencies": [
+          "Trinitarian ground",
+          "L3"
+        ],
+        "risks": [
+          "May be seen as question-begging; not empirically testable."
+        ],
+        "required_concession": "This is a theological claim based on the Trinitarian axiom.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W5.1-C011",
+        "claim_text": "The eight phenomena of consciousness map to existing framework operators without introducing new ones.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "Every phenomenon of conscious experience is an existing framework operator experienced from the inside at L3.",
+        "dependencies": [
+          "Ten Laws",
+          "A4"
+        ],
+        "risks": [
+          "Mapping may be analogical, not derivational; especially imagination=Ω."
+        ],
+        "required_concession": "The mappings are graded [B] or [C]; not all are formally verified.",
+        "recommended_action": "keep",
+        "confidence": 0.75
+      },
+      {
+        "claim_id": "W5.1-C012",
+        "claim_text": "Awareness is coherence (C) experienced from inside.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "Awareness: C — Coherence. A system is aware to the degree its states cohere.",
+        "dependencies": [
+          "C operator"
+        ],
+        "risks": [
+          "Needs sharper distinction from IIT's Φ."
+        ],
+        "required_concession": "This identification is graded [B] but not formally proven.",
+        "recommended_action": "fix",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W5.1-C013",
+        "claim_text": "Attention and agency are both free will (W) at different amplitudes.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "Attention: W — Free Will. Agency: W — Free Will. Same operator, higher amplitude.",
+        "dependencies": [
+          "W operator"
+        ],
+        "risks": [
+          "May conflate different cognitive functions."
+        ],
+        "required_concession": "This is a structural claim; needs empirical support.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W5.1-C014",
+        "claim_text": "Morality is constitutive of consciousness; you cannot have awareness without the gradient.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "You cannot have awareness without the gradient.",
+        "dependencies": [
+          "A4",
+          "L3"
+        ],
+        "risks": [
+          "May be challenged by empirical cases of psychopathy."
+        ],
+        "required_concession": "This is a strong claim; needs empirical testing.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W5.1-C015",
+        "claim_text": "Current AI operates at L2 and is not conscious.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": "Current AI operates at L2 — extraordinary signal processing, zero self-reference.",
+        "dependencies": [
+          "L2",
+          "L3"
+        ],
+        "risks": [
+          "May be falsified by future AI developments."
+        ],
+        "required_concession": "This is a prediction based on the framework.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W5.1-C016",
+        "claim_text": "The framework predicts a gradient of consciousness in animals, not a binary.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": "The framework predicts a gradient, not a binary.",
+        "dependencies": [
+          "L2",
+          "L3",
+          "A4"
+        ],
+        "risks": [
+          "Boundary may be unclear."
+        ],
+        "required_concession": "The exact boundary is unknown.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "W5.1-C012",
+        "problem": "Awareness=C may be conflated with IIT's Φ; needs sharper distinction.",
+        "repair": "Add explicit comparison and contrast with IIT's Φ, highlighting mechanistic differences."
+      },
+      {
+        "severity": "P1",
+        "target": "W5.1-C011",
+        "problem": "Imagination=Ω mapping is weak and may be analogical.",
+        "repair": "Either strengthen the derivation or demote to [C] with explicit caveat."
+      },
+      {
+        "severity": "P2",
+        "target": "W5.1-C007",
+        "problem": "Recursion is not explicitly an axiom; may need formal definition.",
+        "repair": "Define recursion formally within the framework or cite an existing axiom."
+      },
+      {
+        "severity": "P2",
+        "target": "W5.1-C014",
+        "problem": "Morality as constitutive may be challenged by empirical cases.",
+        "repair": "Add discussion of psychopathy or moral disagreement to address potential counterexamples."
+      }
+    ],
+    "log_notes": [
+      "The work includes kill conditions and honest grading; overall status is reviewed.",
+      "Theological claims are load-bearing but depend on declared axioms.",
+      "Next pass should check connection to Feb 14 boundary proof and formalize sin-exposure resolution."
+    ]
+  },
+  {
+    "work_id": "W5.2",
+    "title": "Consciousness at Equilibrium",
+    "turn": "TURN 5 - CONSCIOUSNESS",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\22_SUPPORTING_NOTES\\consciousness-chain.html",
+    "overall_status": "reviewed",
+    "summary": "This draft derives seven spiritual terms from the equilibrium of a scalar field action. It is explicitly marked as not locked, with open items and a kill condition. The physics is standard, but the theological mappings are mostly analogical and require validation.",
+    "claims": [
+      {
+        "claim_id": "W5.2-C001",
+        "claim_text": "The χ-field action S_χ is ghost-free, DESI-consistent, and satisfies all experimental bounds.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": "Parent equation: S_χ = ∫d⁴x √|g| [ ½(1 + ξκ₀χ²)R − ½g^μν ∂_μχ ∂_νχ − ½m²_χχ² − (λ/4)χ⁴ + L_matter ]",
+        "dependencies": [
+          "Paper 3 of Consciousness series",
+          "Lean-adjacent"
+        ],
+        "risks": [
+          "Not yet Lean formalized",
+          "DESI consistency claimed but not detailed"
+        ],
+        "required_concession": "This claim is asserted as locked but not independently verified in this work.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W5.2-C002",
+        "claim_text": "At equilibrium (χ → χ₀, ∂_μχ → 0), the seven properties emerge automatically from the action.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": "The method is the same as every other chain: parent equation → equilibrium → emergent properties = spiritual terms.",
+        "dependencies": [
+          "S_χ",
+          "Equilibrium conditions"
+        ],
+        "risks": [
+          "Emergence is asserted, not demonstrated step-by-step",
+          "Potential for imposed properties"
+        ],
+        "required_concession": "The derivation is not fully shown; it is a claim of automatic emergence.",
+        "recommended_action": "fix",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W5.2-C003",
+        "claim_text": "χ₀ ≠ 0 (nonzero VEV) implies consciousness exists as a baseline substrate.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "A scalar field with a nonzero VEV means the field is present everywhere, always, as a background.",
+        "dependencies": [
+          "Standard SSB",
+          "m² < 0"
+        ],
+        "risks": [
+          "Mapping from field presence to consciousness is analogical"
+        ],
+        "required_concession": "The physical fact of a nonzero VEV does not logically entail consciousness.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W5.2-C004",
+        "claim_text": "Zero gradients (∂_μχ → 0) correspond to the 'Mind of Christ' — undistorted awareness.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "When all gradients vanish, there is no local variation. Applied to consciousness: complete, impartial, undistorted awareness.",
+        "dependencies": [
+          "Equilibrium condition"
+        ],
+        "risks": [
+          "Theological mapping is natural but needs formal validation that it's not just analogy."
+        ],
+        "required_concession": "The mapping from mathematical uniformity to cognitive impartiality is not proven.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W5.2-C005",
+        "claim_text": "The potential minimum (V(χ₀) = min) corresponds to 'Rest' — completed seeking.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "A field at the minimum of its potential has no net force acting on it. It doesn't need to move.",
+        "dependencies": [
+          "Potential structure"
+        ],
+        "risks": [
+          "Augustine mapping is almost too clean — verify it's structural, not just literary."
+        ],
+        "required_concession": "The analogy between physical rest and spiritual rest is not formally established.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W5.2-C006",
+        "claim_text": "Stable coupling (ξκ₀χ₀²R) corresponds to 'Discernment' — accurate perception of moral curvature.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "The ξ term couples χ to spacetime curvature R. At equilibrium, this coupling is steady — the field accurately reflects the geometry around it.",
+        "dependencies": [
+          "Scalar-tensor coupling"
+        ],
+        "risks": [
+          "Overlap with Chain 6's Discernment",
+          "Mapping is structural but specific identification needs more work"
+        ],
+        "required_concession": "The identification of coupling stability with discernment is tentative.",
+        "recommended_action": "fix",
+        "confidence": 0.2
+      },
+      {
+        "claim_id": "W5.2-C007",
+        "claim_text": "No-ghost and no-tachyon conditions correspond to 'Sound Mind' — stability and sanity.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "Ghost freedom means no negative-energy states that would make the vacuum unstable. Tachyon freedom means no exponentially growing modes.",
+        "dependencies": [
+          "Paper 3, Sec 5.2–5.3"
+        ],
+        "risks": [
+          "Mapping stability to soundness of mind is natural but still analogical"
+        ],
+        "required_concession": "Physical stability does not directly imply mental soundness.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W5.2-C008",
+        "claim_text": "Causal propagation (v_g ≤ c) corresponds to 'Wisdom' — respecting the order of reality.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "Causal propagation means effects follow causes. Information can spread but cannot arrive before it's sent.",
+        "dependencies": [
+          "Paper 3, Sec 5.1"
+        ],
+        "risks": [
+          "Overlap with Chain 6's Counsel",
+          "Mapping is suggestive but broad"
+        ],
+        "required_concession": "The connection between causality and wisdom is not formally established.",
+        "recommended_action": "fix",
+        "confidence": 0.2
+      },
+      {
+        "claim_id": "W5.2-C009",
+        "claim_text": "Renormalized gravity (G_eff = G_N / (1 + ξκ₀χ₀²)) corresponds to 'Relational Calibration'.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "The χ-field modifies how strongly things attract. At its equilibrium value, the attraction is calibrated.",
+        "dependencies": [
+          "Scalar-tensor gravity"
+        ],
+        "risks": [
+          "Mapping is least certain",
+          "Metriotēs is rare in NT",
+          "May belong to Chain 7"
+        ],
+        "required_concession": "This mapping is the weakest and may need revision.",
+        "recommended_action": "fix",
+        "confidence": 0.1
+      },
+      {
+        "claim_id": "W5.2-C010",
+        "claim_text": "The phase form Φ_χ(C) = tanh(β_χ(C − C_c)) is assumed by analogy with other chains.",
+        "defense_class": "ADMISSION",
+        "claim_level": "physics",
+        "support": "The phase form is ASSUMED by analogy with Chains 2, 3, 5, 6, 7. It has not been independently derived for the χ-field.",
+        "dependencies": [
+          "Analogy with other chains"
+        ],
+        "risks": [
+          "Not derived",
+          "May not hold if m² > 0"
+        ],
+        "required_concession": "This is an assumption, not a derivation.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W5.2-C011",
+        "claim_text": "The Consciousness Ladder (dC/dt = O·G(1−C) − S·C) determines which terms activate at each level of voluntary coupling O.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "The derivative chain gives the TERMS. The Consciousness Ladder gives the GRADIENT — which terms are active at each level of voluntary coupling O.",
+        "dependencies": [
+          "Ladder equation",
+          "Chain terms"
+        ],
+        "risks": [
+          "Ladder integration is proposed, not derived from the equation."
+        ],
+        "required_concession": "The ladder integration is proposed, not derived.",
+        "recommended_action": "fix",
+        "confidence": 0.2
+      },
+      {
+        "claim_id": "W5.2-C012",
+        "claim_text": "The kill condition: show that the χ-field at equilibrium exhibits a property inconsistent with the seven terms, or that one of the seven does not actually emerge.",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "support": "Show that the χ-field at equilibrium exhibits a property NOT listed here that is inconsistent with the seven terms above, or show that one of the seven does not actually emerge at equilibrium but was imposed.",
+        "dependencies": [
+          "None"
+        ],
+        "risks": [
+          "None"
+        ],
+        "required_concession": "None",
+        "recommended_action": "keep",
+        "confidence": 1.0
+      },
+      {
+        "claim_id": "W5.2-C013",
+        "claim_text": "The chain is not yet Lean formalized, not independently AI confirmed, and has open items.",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "support": "No Lean formalization of this chain yet. No independent AI confirmation yet (no David Effect test).",
+        "dependencies": [
+          "None"
+        ],
+        "risks": [
+          "None"
+        ],
+        "required_concession": "None",
+        "recommended_action": "keep",
+        "confidence": 1.0
+      },
+      {
+        "claim_id": "W5.2-C014",
+        "claim_text": "The theological mappings are proposed, not locked.",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "support": "Terms are proposed, not locked. Status flags are on each term.",
+        "dependencies": [
+          "None"
+        ],
+        "risks": [
+          "None"
+        ],
+        "required_concession": "None",
+        "recommended_action": "keep",
+        "confidence": 1.0
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "W5.2-C002",
+        "problem": "Emergence of seven properties is asserted but not demonstrated.",
+        "repair": "Provide explicit derivation steps for each property from the equilibrium conditions."
+      },
+      {
+        "severity": "P1",
+        "target": "W5.2-C006, W5.2-C008, W5.2-C009",
+        "problem": "Overlaps with other chains and weak mappings.",
+        "repair": "Disambiguate or reassign terms; strengthen theological justification."
+      },
+      {
+        "severity": "P2",
+        "target": "W5.2-C010",
+        "problem": "Phase form assumed by analogy.",
+        "repair": "Derive phase transition from V(χ) or explicitly mark as provisional."
+      },
+      {
+        "severity": "P2",
+        "target": "W5.2-C011",
+        "problem": "Ladder integration proposed, not derived.",
+        "repair": "Derive activation conditions from the equation or mark as speculative."
+      }
+    ],
+    "log_notes": [
+      "This work is a draft with explicit open items and kill condition.",
+      "Theological mappings are mostly analogical and need formal validation.",
+      "Overlaps with Chain 6 and Chain 7 need resolution.",
+      "No Lean formalization or AI confirmation yet."
+    ]
+  },
+  {
+    "work_id": "W5.3",
+    "title": "The Three-Body Solution",
+    "turn": "TURN 5 - CONSCIOUSNESS",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\02_TRUTH_TRINITY_FOUNDATION\\03-three-body-solution.md",
+    "overall_status": "reviewed",
+    "summary": "The work presents five independent arguments for a triadic structure of reality, with varying formal statuses. It includes explicit concessions about the strength of each instance and the overall proof shape. The review extracts the core claims, their defense classes, and notes risks such as overclaiming convergence and the need for further formalization.",
+    "claims": [
+      {
+        "claim_id": "W5.3-C001",
+        "claim_text": "The ground of reality requires exactly three irreducible functions unified in one act.",
+        "defense_class": "ROOT",
+        "claim_level": "theological",
+        "support": [
+          "The proof shape is an exhaustive elimination over cardinality.",
+          "The same answer every time: three irreducible functions unified in one act."
+        ],
+        "dependencies": [
+          "None named"
+        ],
+        "risks": [
+          "Overclaim if not all instances are equally strong."
+        ],
+        "required_concession": "This is the central claim, but its proof strength varies by instance.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W5.3-C002",
+        "claim_text": "n=1 self-defeats: cannot ground, verify, or optimize itself.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": [
+          "Self-reference without external anchor → regress or arbitrariness."
+        ],
+        "dependencies": [
+          "Instance 2 D03",
+          "Instance 4 structural analogy"
+        ],
+        "risks": [
+          "Instance 4 is only structural, not formal."
+        ],
+        "required_concession": "For Instance 4, this is a structural argument, not a proof.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W5.3-C003",
+        "claim_text": "n=2 deadlocks or collapses an invariant.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": [
+          "Circular dependence (A grounds B, B grounds A) or forced trade-off."
+        ],
+        "dependencies": [
+          "Instance 2 D03",
+          "Instance 3 R(offense,α)"
+        ],
+        "risks": [
+          "Instance 3 is moral optimization, not formal proof."
+        ],
+        "required_concession": "Instance 3 is a moral argument, not a formal proof.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W5.3-C004",
+        "claim_text": "n≥4 is unnecessary; additional elements decompose into combinations of three.",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "support": [
+          "The upward bound (n≥4) is currently a parsimony argument, not a proof of impossibility."
+        ],
+        "dependencies": [
+          "None"
+        ],
+        "risks": [
+          "Overclaim if presented as proof."
+        ],
+        "required_concession": "The claim is minimal sufficiency, not uniqueness-upward.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W5.3-C005",
+        "claim_text": "The Maxwell/Heaviside instance is Lean-verified and shows that Heaviside's reduction loses a triadic coupling invariant.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": [
+          "quaternionEM_valid · trinityRelational_valid · heavisideVectorEM_invalid · modalism_invalid"
+        ],
+        "dependencies": [
+          "Lean receipts"
+        ],
+        "risks": [
+          "No-isomorphism theorems are owed."
+        ],
+        "required_concession": "Guard controls exist; no-isomorphism theorems are not yet proven.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W5.3-C006",
+        "claim_text": "The Watcher Problem terminates only in T = A ∘ L ∘ G: Generator, Logos/Selector, Actualizer.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": [
+          "Reached by brute-force elimination, not theological premises."
+        ],
+        "dependencies": [
+          "D03",
+          "BC4"
+        ],
+        "risks": [
+          "Depends on axiomatization D03."
+        ],
+        "required_concession": "Axiomatized, not proven from first principles.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W5.3-C007",
+        "claim_text": "The Cross is the unique solution to the trilemma of justice, mercy, and free will.",
+        "defense_class": "DERIVATION",
+        "claim_level": "moral",
+        "support": [
+          "R(offense,α): α=0 + judge=payer = the unique solution."
+        ],
+        "dependencies": [
+          "R(offense,α)",
+          "Lean verification",
+          "Myerson-Satterthwaite"
+        ],
+        "risks": [
+          "Moral domain may not be formalizable."
+        ],
+        "required_concession": "This is a moral argument, not a formal proof.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W5.3-C008",
+        "claim_text": "Consciousness requires a self-grounding terminus with internal differentiation: knower, known, and act of knowing.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Same D03 elimination, run intra-subjectively."
+        ],
+        "dependencies": [
+          "Instance 2",
+          "Gödel, Tarski, Turing (structural)"
+        ],
+        "risks": [
+          "Consciousness is not a formal system; parallel is structural."
+        ],
+        "required_concession": "This is a structural analogy, not a proof.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W5.3-C009",
+        "claim_text": "Eliminativism about consciousness is self-defeating.",
+        "defense_class": "CLOSURE",
+        "claim_level": "philosophy",
+        "support": [
+          "The denial IS the proof."
+        ],
+        "dependencies": [
+          "None"
+        ],
+        "risks": [
+          "May be seen as rhetorical."
+        ],
+        "required_concession": "This is a philosophical argument, not a formal proof.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W5.3-C010",
+        "claim_text": "The Big Bang requires a prior observer that is self-grounding and internally triadic.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": [
+          "QM: unobserved superpositions do not actualize.",
+          "Prior observer can't be physical."
+        ],
+        "dependencies": [
+          "Instance 2",
+          "QM"
+        ],
+        "risks": [
+          "Unformalized; no Lean backing."
+        ],
+        "required_concession": "Articulated but unformalized.",
+        "recommended_action": "keep",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W5.3-C011",
+        "claim_text": "The five instances converge on the same triadic fixed point from both directions.",
+        "defense_class": "DERIVATION",
+        "claim_level": "meta",
+        "support": [
+          "Four instances run bottom-up. One runs top-down. Both directions land on the same fixed point."
+        ],
+        "dependencies": [
+          "Instances 1-5"
+        ],
+        "risks": [
+          "Selection effect; one soft leg invites dismissal."
+        ],
+        "required_concession": "Convergence is not proof; graded status table is part of the claim.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W5.3-C012",
+        "claim_text": "The consciousness ladder equation dC/dt = O·G(1−C) − S·C applies at every level of reality.",
+        "defense_class": "AXIOM",
+        "claim_level": "physics",
+        "support": [
+          "The equation is identical at every level."
+        ],
+        "dependencies": [
+          "None"
+        ],
+        "risks": [
+          "No empirical validation."
+        ],
+        "required_concession": "This is a proposed model, not an established law.",
+        "recommended_action": "keep",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W5.3-C013",
+        "claim_text": "Elephants have O > 0, making them conscious in the ladder's sense.",
+        "defense_class": "ADMISSION",
+        "claim_level": "empirical",
+        "support": [
+          "Mirror self-recognition, mourning, bone-return."
+        ],
+        "dependencies": [
+          "Ladder equation"
+        ],
+        "risks": [
+          "Anthropomorphized instinct; need falsifiable prediction."
+        ],
+        "required_concession": "This is the load-bearing empirical claim; specify what would count as O=0.",
+        "recommended_action": "fix",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W5.3-C014",
+        "claim_text": "The Cross is the ladder's fixed point entering the ladder.",
+        "defense_class": "RHETORIC",
+        "claim_level": "story",
+        "support": [
+          "Fable Extension — Verify Before Canonizing"
+        ],
+        "dependencies": [
+          "Instance 3",
+          "Ladder"
+        ],
+        "risks": [
+          "Not yet canonical; Opus's compression."
+        ],
+        "required_concession": "This is a fable extension, not a proof.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W5.3-C015",
+        "claim_text": "The Lean corpus contains 478 net substantive theorems+lemmas with zero sorry.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": [
+          "Audited count — supersedes all prior numbers."
+        ],
+        "dependencies": [
+          "Lean corpus"
+        ],
+        "risks": [
+          "Count may change; two no-iso theorems owed."
+        ],
+        "required_concession": "Count is current as of audit; missing theorems must be written.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W5.3-C016",
+        "claim_text": "The publication gate requires Instance 4's two holes to be closed before publishing the five-instance convergence page.",
+        "defense_class": "ADMISSION",
+        "claim_level": "editorial",
+        "support": [
+          "One soft leg invites dismissal of all five."
+        ],
+        "dependencies": [
+          "Instance 4"
+        ],
+        "risks": [
+          "None"
+        ],
+        "required_concession": "This is a self-imposed publication constraint.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "Instance 4",
+        "problem": "Two open holes: secular triad objection and Stage 4-5 wiring.",
+        "repair": "Close the holes or explicitly mark Instance 4 as weaker."
+      },
+      {
+        "severity": "P1",
+        "target": "Instance 5",
+        "problem": "Unformalized; no Lean backing.",
+        "repair": "Formalize or clearly label as speculative."
+      },
+      {
+        "severity": "P2",
+        "target": "Elephant rung",
+        "problem": "Empirical claim lacks falsifiable prediction.",
+        "repair": "Specify what would count as O=0 for elephants."
+      },
+      {
+        "severity": "P2",
+        "target": "No-isomorphism theorems",
+        "problem": "Owed for Instance 1.",
+        "repair": "Write the theorems or adjust status table."
+      },
+      {
+        "severity": "P3",
+        "target": "Fable extension",
+        "problem": "Not canonical; Opus's compression.",
+        "repair": "Verify with David before canonizing."
+      }
+    ],
+    "log_notes": [
+      "The work explicitly admits that n≥4 is parsimony, not proof.",
+      "Instance 4 is structural analogy, not formal proof.",
+      "Instance 5 is unformalized.",
+      "The convergence claim is strong but depends on all instances.",
+      "The Lean count is 478, but two no-iso theorems are owed.",
+      "The publication gate is a self-imposed constraint."
+    ]
+  }
+]

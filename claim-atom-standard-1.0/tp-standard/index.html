@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Claim-Atom Standard 1.0 &mdash; Theophysics</title><style>:root{--ink:#1a1d21;--paper:#fbfaf7;--rule:#d8d4cb;--v:#0b6e4f;--i:#8a6d1a;--link:#2b4a6f}
+body{background:var(--paper);color:var(--ink);font-family:Georgia,serif;line-height:1.65;font-size:17px;margin:0}
+.wrap{max-width:820px;margin:0 auto;padding:44px 24px 90px}
+.tag{font-family:ui-monospace,monospace;font-size:12.5px;color:#6b675e;border-bottom:1px solid var(--rule);padding-bottom:10px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+h1{font-size:30px;margin:26px 0 8px}
+h2{font-family:system-ui,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#54504a;margin:40px 0 16px;display:flex;align-items:center;gap:12px}
+h2::after{content:"";flex:1;height:1px;background:var(--rule)}
+.byline{font-family:system-ui,sans-serif;font-size:14px;color:#54504a}
+.card{background:#fff;border:1px solid var(--rule);border-radius:3px;padding:16px 20px;margin:0 0 14px}
+.card a.id{font-family:ui-monospace,monospace;color:var(--link);text-decoration:none;font-weight:bold}
+.badge{font-family:system-ui,sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:2px;border:1px solid;margin-left:8px}
+.b-v{background:#e3f1ea;color:var(--v);border-color:var(--v)}
+.b-i{background:#f6efd9;color:var(--i);border-color:var(--i)}
+.b-n{background:#eee;color:#555;border-color:#999}
+.note{margin-top:50px;padding:18px;border:1px dashed var(--rule);background:#fff;font-family:system-ui,sans-serif;font-size:13.5px;color:#54504a}
+code{font-family:ui-monospace,monospace;background:#f0ede6;padding:1px 5px;border-radius:2px}
+p{margin:0 0 14px}</style></head><body><div class="wrap">
+<div class="tag"><span>CLAIM-ATOM / 1.0</span><span>faiththruphysics.com &middot; live 2026-07-22</span></div>
+<h1>The Claim-Atom Standard</h1>
+<p>The unit of scientific record here is the <strong>claim</strong>, not the paper. Every claim is a permanent, addressable object carrying two author-written layers (plain and technical), a typed classification, a dependency chain, a verification status, and a standing <strong>falsification port</strong> &mdash; the stated condition under which it dies, and the address where challenges register. Papers are narrative tours over claims. Falsify a claim and everything downstream inherits the flag.</p>
+<h2>The pieces</h2>
+<div class="card"><a class="id" href="vocab/context.jsonld">/vocab/context.jsonld</a><p style="margin:10px 0 0">The vocabulary. JSON-LD context extending schema.org's Claim type with dependency, falsification, verification, and the four edge relations. Includes edge rules and propagation semantics.</p></div>
+<div class="card"><a class="id" href="resolver/map.json">/resolver/map.json</a><p style="margin:10px 0 0">The resolver. Logical IDs (<code>tp:A042/L9/C3</code>) map to addresses through this one file &mdash; relocate hosting by editing one line, every citation ever minted keeps resolving.</p></div>
+<div class="card"><a class="id" href="papers/POF2828-2026-0001.html">First paper</a><p style="margin:10px 0 0">Moral Conservation via Time-Translation Symmetry &mdash; three seed claims, one machine-verified in Lean 4, dependency-chained, kill conditions stated.</p></div>
+<h2>Honesty rules</h2>
+<p>Verification badges distinguish kernel-checked proofs from informal derivation &mdash; and this site's own claims wear <em>Informal</em> where that is the truth. <em>Unchallenged</em> is displayed as its own status: an untested claim is not a strong claim, and the graph says so. Both layers of every claim are author-written; if they disagree, that is a reportable defect.</p>
+<div class="note">This page, the records, and the vocabulary are self-hosted, dependency-free static files. The standard is the JSON-LD; every rendered page is a disposable view. Machine readers: fetch any claim address with <code>.jsonld</code> appended for the raw record.</div>
+</div></body></html>

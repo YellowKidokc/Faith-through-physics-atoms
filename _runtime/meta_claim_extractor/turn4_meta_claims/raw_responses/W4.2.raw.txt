@@ -1,0 +1,220 @@
+{
+  "work_id": "W4.2",
+  "title": "The Shadow",
+  "turn": "TURN 4 - GOD DEEPER",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\00_START_HERE_DOORWAY_METHOD\\CODEX_BLUE_WORKING_LANE\\sources\\parallel-start\\02-the-shadow.html",
+  "overall_status": "reviewed",
+  "summary": "Working sheet arguing evil is a privation (shadow) not a rival, with explicit open items. Claims are mostly theological/bridge, with clear admissions.",
+  "claims": [
+    {
+      "claim_id": "W4.2-C001",
+      "claim_text": "Evil is not a thing but a privation: a hole where something should be.",
+      "defense_class": "ROOT",
+      "claim_level": "theological",
+      "support": "Evil is a hole where something should be. A shadow where light is blocked.",
+      "dependencies": ["none"],
+      "risks": ["Ontological status of privation is debated; may be seen as unfalsifiable."],
+      "required_concession": "This is a framework ruling, not a derived theorem.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W4.2-C002",
+      "claim_text": "Evil has no source term; it creates nothing and only corrupts what exists.",
+      "defense_class": "AXIOM",
+      "claim_level": "theological",
+      "support": "Evil has no source term. It creates nothing. It sustains nothing.",
+      "dependencies": ["W4.2-C001"],
+      "risks": ["May be challenged by those who see evil as a positive force."],
+      "required_concession": "This is a framework ruling, not a derived theorem.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W4.2-C003",
+      "claim_text": "The shadow analogy: light creates direction, and shadow is the absence of light, not a second source.",
+      "defense_class": "RHETORIC",
+      "claim_level": "story",
+      "support": "The shadow is real. You can measure it. But it has no source.",
+      "dependencies": ["W4.2-C001"],
+      "risks": ["Analogy may be pressed too far; not a proof."],
+      "required_concession": "This is an illustration, not an argument.",
+      "recommended_action": "keep",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W4.2-C004",
+      "claim_text": "God does not create darkness; He divides light from it, bounding the pre-existing void.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "God does not create darkness. He divides light from it. (Genesis 1:4)",
+      "dependencies": ["Scripture", "W4.2-C001"],
+      "risks": ["Exegesis of Genesis 1:4 may be contested."],
+      "required_concession": "This reading assumes a particular interpretation of Genesis.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W4.2-C005",
+      "claim_text": "The adversary is a parasite: he creates nothing, only corrupts what exists.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "He creates nothing. He only corrupts. (John 8:44)",
+      "dependencies": ["Scripture", "W4.2-C002"],
+      "risks": ["Parasite analogy is pedagogical, not ontological."],
+      "required_concession": "The parasite analogy is pedagogical, not ontological.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W4.2-C006",
+      "claim_text": "Satan's lie is the only thing he can generate, and it is a distortion of language he did not invent.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "The lie is the only thing he can generate, and even that is just a distortion.",
+      "dependencies": ["W4.2-C005"],
+      "risks": ["May overstate the nature of lies."],
+      "required_concession": "This is a theological claim about the nature of evil.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W4.2-C007",
+      "claim_text": "Satan rules the air, the medium, not the ground or substance.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "He is the prince of the power of the air. (Ephesians 2:2)",
+      "dependencies": ["Scripture"],
+      "risks": ["Metaphorical interpretation may be disputed."],
+      "required_concession": "This is a metaphorical reading.",
+      "recommended_action": "keep",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "W4.2-C008",
+      "claim_text": "Satan was created good, then fell through pride.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "Thou wast perfect in thy ways... till iniquity was found in thee. (Ezekiel 28:15)",
+      "dependencies": ["Scripture"],
+      "risks": ["Interpretation of Ezekiel 28 as referring to Satan is debated."],
+      "required_concession": "This reading assumes a literal Satan and a particular exegesis.",
+      "recommended_action": "keep",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "W4.2-C009",
+      "claim_text": "The fall of Satan is off our clock because the presence is not a place in time.",
+      "defense_class": "ADMISSION",
+      "claim_level": "theological",
+      "support": "Not dated — this event is off our clock.",
+      "dependencies": ["W4.2-C008"],
+      "risks": ["May be seen as speculative."],
+      "required_concession": "This is a speculative claim about the nature of time.",
+      "recommended_action": "keep",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "W4.2-C010",
+      "claim_text": "Heaven has no D, no denominator, no drift channel, so Satan is confined to the finite order.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "Heaven has no D — no denominator, no drift channel.",
+      "dependencies": ["Framework terminology"],
+      "risks": ["Uses framework jargon without definition; may be opaque."],
+      "required_concession": "This relies on framework-specific terms not defined in this sheet.",
+      "recommended_action": "fix",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "W4.2-C011",
+      "claim_text": "Satan attacks the signal, not the body or tree, by injecting noise into the command channel.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "He attacks the signal. 'Hath God said' is noise injected.",
+      "dependencies": ["W4.2-C010"],
+      "risks": ["May be anachronistic use of information theory."],
+      "required_concession": "This is a metaphorical extension.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W4.2-C012",
+      "claim_text": "Evil cannot win because it has no source term and depends on God's sustained channels.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "It cannot outlast the light, because it is borrowed light, twisted.",
+      "dependencies": ["W4.2-C002"],
+      "risks": ["May be seen as overconfident about eschatology."],
+      "required_concession": "This is a theological hope, not a logical proof.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W4.2-C013",
+      "claim_text": "God metabolizes evil into good, as proven by the Cross.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "The Cross is the proof. (Acts 2:23)",
+      "dependencies": ["Scripture"],
+      "risks": ["This is correspondence, not derivation; grade C."],
+      "required_concession": "This claim is [C]-grade — correspondence, not derivation.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W4.2-C014",
+      "claim_text": "God does not need evil to create good; He is so sovereign He can use it.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "God does not need evil to create good. That is mastery.",
+      "dependencies": ["W4.2-C013"],
+      "risks": ["May be seen as theodicy overreach."],
+      "required_concession": "This is a theological assertion, not a formal proof.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W4.2-C015",
+      "claim_text": "Contrast is structural; evil is not needed to appreciate good.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "Contrast is structural; evil is not.",
+      "dependencies": ["W4.2-C001"],
+      "risks": ["Needs testing against pastoral experience."],
+      "required_concession": "This reframe needs testing against pastoral experience.",
+      "recommended_action": "keep",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "W4.2-C016",
+      "claim_text": "The shadow is not redeemed; it is outlasted, outspent, and ultimately unnecessary.",
+      "defense_class": "CLOSURE",
+      "claim_level": "theological",
+      "support": "The shadow is not redeemed. It is outlasted, outspent, and ultimately unnecessary.",
+      "dependencies": ["W4.2-C012", "W4.2-C013"],
+      "risks": ["May be seen as speculative about final state."],
+      "required_concession": "This is a theological conclusion, not a formal derivation.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "W4.2-C010",
+      "problem": "Uses framework jargon 'D', 'denominator', 'drift channel' without definition in this sheet.",
+      "repair": "Define these terms or link to the framework sheet."
+    },
+    {
+      "severity": "P2",
+      "target": "W4.2-C013",
+      "problem": "Claim 'metabolizes evil' is marked as correspondence, not derivation.",
+      "repair": "Explicitly label as [C]-grade in the claim text."
+    }
+  ],
+  "log_notes": [
+    "Open items explicitly listed: 'no source term' is framework ruling; parasite analogy pedagogical; Job 1:7 assumes literal Satan; Acts 2:23 is C-grade; sun/rain reframe needs pastoral testing.",
+    "No punch list found."
+  ]
+}

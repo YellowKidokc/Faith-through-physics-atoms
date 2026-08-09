@@ -110,6 +110,12 @@ def normalize_atom(data, source=None):
         "rerun_status": data.get("rerun_status", "not_applicable"),
         "source_artifacts": data.get("source_artifacts", [str(source)] if source else []), "ledger": [],
     }
+    if data.get("glyphs"):
+        atom["glyphs"] = data["glyphs"]
+    if data.get("glyph_paths"):
+        atom["glyph_paths"] = data["glyph_paths"]
+    if data.get("classification_bundle"):
+        atom["classification_bundle"] = data["classification_bundle"]
     if data.get("source_claim_id") or data.get("claimID"):
         atom["source_claim_id"] = data.get("source_claim_id") or data["claimID"]
     old_master = "master equation" in (title + " " + claim).lower() and V3 not in " ".join(atom["equations"])
