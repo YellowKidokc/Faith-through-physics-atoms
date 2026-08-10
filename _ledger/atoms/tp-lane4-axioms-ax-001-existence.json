@@ -1,0 +1,56 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-001-existence",
+  "atom_uid": "sha256:d98841c953fce52a3f999cca7f0f2cfd97e33efbd79a1dd7c7859e6aa2ee245e",
+  "title": "AX-001 — Existence",
+  "claim": "Something exists rather than nothing.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "axiom",
+  "mode_classification": "candidate",
+  "ontology_family": "01-foundations",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "∃x (existential quantifier — irreducible)"
+  ],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show absolute nothingness is coherent and stable",
+    "Show that 'nothing' can be consistently conceived without implicit 'something",
+    "' Note: every attempt to describe nothing presupposes a describer"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-001-existence.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-001-existence.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'axiom'. Ontology: 01-foundations.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A1.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "original_node_id": "tp:axioms/01/AX-001"
+}

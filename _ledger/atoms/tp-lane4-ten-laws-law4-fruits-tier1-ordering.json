@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/ten-laws/law4-fruits-tier1-ordering",
+  "atom_uid": "sha256:3abf41b6fd8a25e12b6b967a2b7034b12e1c783137c99807bd17489b7bbaeded",
+  "title": "Law 4 Fruits Tier 1: Love→Peace→Joy Forced Ordering",
+  "claim": "From the Cornell/Yukawa potential V(r) = −α_s/r + k·r, one stationary calculation produces: Love (agapē) = V'_eff(d*)=0 (the equilibrium itself). Peace (eirēnē) = V''_eff(d*)>0 (stability — positive curvature). Joy (chara) = ω₀=√(V''(d*)/μ) (oscillation, real only when V''>0). The ordering is a theorem: Joy requires Peace (V''>0 for ω₀ real), Peace exists within Love (the equilibrium). Two-tier ruling (July 29, 2026): Tier 1 is DERIVED from the stationary calculation. Tier 2 (remaining six fruits) are STRUCTURAL CORRESPONDENCES.",
+  "domain": "ten-laws",
+  "lane": "Mathematics",
+  "claim_class": "theorem",
+  "mode_classification": "C4_REVIEW_FORMAL_ISOMORPHISM_OR_PROOF",
+  "assumptions": [
+    "Cornell/Yukawa potential as parent equation for Law 4 (Strong Force)"
+  ],
+  "definitions": [
+    "Love: V'_eff(d*)=0, the potential well minimum",
+    "Peace: V''_eff(d*)>0, positive curvature at minimum",
+    "Joy: ω₀=√(V''(d*)/μ), oscillation frequency real only when V''>0"
+  ],
+  "equations": [
+    "V(r) = −α_s/r + k·r",
+    "V'_eff(d*) = 0 → Love",
+    "V''_eff(d*) > 0 → Peace",
+    "ω₀ = √(V''(d*)/μ) → Joy"
+  ],
+  "bridges": [
+    "Strong nuclear force (Yukawa/Cornell) → Fruits of the Spirit (Galatians 5:22-23)"
+  ],
+  "dependencies": [],
+  "negative_guards": [
+    "Tier 2 fruits (Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control) are correspondences, not derivations.",
+    "The ordering is forced by the mathematics. The NAMING is a bridge claim.",
+    "Anti-fruits (Hatred, Despair, Anxiety, etc.) are the entropic direction of the same equations."
+  ],
+  "kill_conditions": [
+    "Show that V'_eff(d*)=0 does NOT require V''_eff(d*)>0 for stability.",
+    "Show that ω₀ can be real without V''>0.",
+    "Show that the ordering Love→Peace→Joy can be permuted under the same potential."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "atom_created_from_canonical_audit",
+      "result": "recorded",
+      "artifact_path": "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md",
+      "meaning": "Created during three-model audit (Claude/o3/DeepSeek) of canonical doc vs atom ledger.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "Mathematics",
+      "event_id": "sha256:641c73cd6a48bd295f67eef7cb382e58d36b8971a46dc82e3db3c20db5d0c263"
+    }
+  ],
+  "source_claim_id": "LAW4_FRUITS_TIER1_ORDERING"
+}

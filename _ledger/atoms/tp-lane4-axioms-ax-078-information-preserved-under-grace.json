@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-078-information-preserved-under-grace",
+  "atom_uid": "sha256:e0402712a8a5f7e948b54cc22d8f9914e496310e380f39c7a5e68cfffd115b9d",
+  "title": "AX-078 — Information Preserved Under Grace",
+  "claim": "Grace preserves information content of soul while transforming moral orientation.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Ĝ: (σ, I_personal) → (-σ→+1, I_personal preserved)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-077",
+    "tp:axioms/01/AX-064"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show grace destroys personal information",
+    "Demonstrate identity discontinuity across grace event",
+    "Find information loss during moral transformation"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-078-information-preserved-under-grace.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-078-information-preserved-under-grace.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P9.3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-078",
+  "original_node_id": "tp:axioms/01/AX-078"
+}

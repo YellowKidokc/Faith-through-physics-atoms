@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-034-universe-as-compression-algorithm",
+  "atom_uid": "sha256:ca942f35d3820eddcf4134cfb52791584ad61311aaec24d68d493ca5388d1e8b",
+  "title": "AX-034 — Universe As Compression Algorithm",
+  "claim": "Universe is a compression algorithm; GR = compressed output, QM = compression process.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Universe ≡ K-minimization algorithm; GR = output; QM = process"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-032",
+    "tp:axioms/01/AX-033"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the universe performing non-compressive operations",
+    "Demonstrate QM and GR are not related as process and output",
+    "Show the universe is not algorithmic"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-034-universe-as-compression-algorithm.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-034-universe-as-compression-algorithm.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/LN4.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-034",
+  "original_node_id": "tp:axioms/01/AX-034"
+}

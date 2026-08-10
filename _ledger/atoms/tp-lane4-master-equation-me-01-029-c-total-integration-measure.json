@@ -1,0 +1,54 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-029-c-total-integration-measure",
+  "atom_uid": "sha256:088662c4a5e625b2f128d3b71785110af6167e60518f9b1f8b6b7760ba58c905",
+  "title": "C - Total Integration Measure",
+  "claim": "C is the local integrator inside the product; chi is the output after integration.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "definition",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "C in [0, 1]"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-010",
+    "tp:axioms/01/AX-017"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-029-c-total-integration-measure.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-029-c-total-integration-measure.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-01-029",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-029",
+  "original_node_id": "tp:master-equation/01/ME-01-029",
+  "tags": [
+    "coherence",
+    "logos"
+  ],
+  "keywords": [
+    "master-equation-factor",
+    "C",
+    "[0, 1]"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-064-information-conservation",
+  "atom_uid": "sha256:a796013e06832a2aadcaa1150591271795106762b012081baafb554ee94b73e3",
+  "title": "AX-064 — Information Conservation",
+  "claim": "Information preserved through all transformations — no information permanently lost.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "dN_total/dt = 0 (total information conserved)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-003",
+    "tp:axioms/01/AX-063"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show information is permanently destroyed in some process",
+    "Demonstrate black hole information paradox resolves with information loss",
+    "Find a unitarity violation in nature"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-064-information-conservation.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-064-information-conservation.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'boundary' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/BC7",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-064",
+  "original_node_id": "tp:axioms/01/AX-064"
+}

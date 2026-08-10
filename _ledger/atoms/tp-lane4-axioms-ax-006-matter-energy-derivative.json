@@ -1,0 +1,60 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-006-matter-energy-derivative",
+  "atom_uid": "sha256:bb90c0f0389e0eafaaad80bf5fa00b29cc5417f72d6698150ee9e50fe283b8d7",
+  "title": "AX-006 — Matter-Energy Derivative",
+  "claim": "If information is primitive, matter/energy are derivative.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Matter/Energy ⊂ Information (set-theoretic containment)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-003",
+    "tp:axioms/01/AX-004",
+    "tp:axioms/01/AX-005"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show matter/energy existing without any informational properties",
+    "Demonstrate a physical system with zero information content",
+    "Derive information FROM matter rather than vice versa"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-006-matter-energy-derivative.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-006-matter-energy-derivative.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/LN1.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-006",
+  "original_node_id": "tp:axioms/01/AX-006"
+}

@@ -1,0 +1,68 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-002-selection-argument",
+  "atom_uid": "sha256:fc00ff5f185d3de13fc2da295e788eb99fed2284bb4e1619ed1c16ee4b88710e",
+  "title": "The Selection Argument — constraints cannot select; selection requires an agent term",
+  "claim": "Rules say what is allowed. They never pick. Building code has never built a house — it only says what a legal house must satisfy. If two outcomes are both allowed, the rules have said everything they can say and both are still standing. Something has to pick one. That picking is not a rule, and adding more rules will never produce it. The same picking shows up three times: one universe out of the many the laws permit, one measurement outcome out of many, one choice out of two open to a person. Each time: many possible, one actual, no going back without paying. The framework already calls that W.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "theorem",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "C: possibility space → P (permitted set). |P| > 1 ⟹ C exhausted. select: P → p_i requires term S ∉ C. cost(select) > 0. reverse(select) > cost(select)."
+  ],
+  "bridges": [
+    "tp:physics/01/measurement-problem",
+    "tp:master-equation/01/001"
+  ],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:ten-laws/01/law-07-quantum",
+    "tp:ten-laws/01/law-09-weak-force"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "PRIMARY: exhibit selection of one actual from many permitted with no agent and no irreversible cost",
+    "SECONDARY: (1) a constraint that collapses a multi-member permitted set without an additional term; (2) a fourth candidate selector that is neither law, chance, nor agent; (3) demonstration that the three scales do not share the four invariants; (4) STRONGEST — demonstration that the permitted set is always single-membered, i",
+    "e",
+    "full determinism, in which case nothing is ever selected and the argument is vacuous"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-002-selection-argument.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-002-selection-argument.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics"
+    }
+  ],
+  "source_claim_id": "tp:ME/L7/C2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/002",
+  "original_node_id": "tp:master-equation/01/002",
+  "tags": [
+    "free-will",
+    "logos",
+    "boundary",
+    "invariant"
+  ],
+  "keywords": [
+    "selection",
+    "constraint",
+    "actualization",
+    "measurement problem",
+    "contingency",
+    "agent causation",
+    "type error"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-039-witness-field-operator",
+  "atom_uid": "sha256:986c0347848ea801b24e9f77281d3e18c331da8286e13ae6a8308c5e35015233",
+  "title": "AX-039 — Witness Field Operator",
+  "claim": "Witness Field Φ̂ ≡ operator mapping potential → actual: H → H_actualized.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Ŵ(Φ) = √Γ(Φ)·P̂; Ŵ: H_potential → H_actual"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-038"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the witness field operator is mathematically ill-defined",
+    "Demonstrate it contradicts established QM operator algebra",
+    "Show collapse doesn't require a field"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-039-witness-field-operator.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-039-witness-field-operator.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D5.3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-039",
+  "original_node_id": "tp:axioms/01/AX-039"
+}

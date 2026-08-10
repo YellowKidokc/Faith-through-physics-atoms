@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-020-interaction-lagrangian",
+  "atom_uid": "sha256:350efde0389e4e3e4a3ea6c43d2ae588f26b766cc48349a81ba81af1b958eef7",
+  "title": "AX-020 — Interaction Lagrangian",
+  "claim": "L_int(χ,ψ) ≡ interaction Lagrangian coupling χ to matter fields ψ.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "L_int(χ,ψ)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-019",
+    "tp:axioms/01/AX-010"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show χ-matter coupling violates known physics",
+    "Demonstrate L_int leads to non-renormalizable divergences",
+    "Find experimental evidence against χ-matter interaction"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-020-interaction-lagrangian.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-020-interaction-lagrangian.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D3.3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-020",
+  "original_node_id": "tp:axioms/01/AX-020"
+}

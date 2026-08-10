@@ -1,0 +1,50 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-a4-orientation",
+  "atom_uid": "sha256:0e085ebc1a874e5ccbf3dbba119abd2f92ef8a708ff6bad4a80bb19913efeded",
+  "title": "Axiom A4: Orientation — Self-Enforcing Gradient",
+  "claim": "A4: Some states rank above others on at least one real gradient (orientation). Denying A4 costs the denial itself: 'this axiom is false' claims truth beats error, which is the gradient in use. A4 may be held as objective value or as the minimal ranking any inquiry presupposes; the framework runs on either reading.",
+  "domain": "axioms",
+  "lane": "Mathematics",
+  "claim_class": "axiom",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "A1 (Existence), A2 (Distinction), A3 (Relation) are prior — A4 requires all three"
+  ],
+  "definitions": [
+    "Orientation: some states rank above others on at least one real gradient"
+  ],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "tp:lane4/axioms/ax-part1-ax-core-a1-1",
+    "tp:lane4/axioms/ax-part1-ax-core-a2-1"
+  ],
+  "negative_guards": [
+    "A4 is the minimal ranking any inquiry presupposes, not necessarily a metaphysical commitment.",
+    "The framework runs on either reading (objective value OR minimal presupposition)."
+  ],
+  "kill_conditions": [
+    "Produce a coherent inquiry that presupposes no gradient whatsoever.",
+    "Show that truth/error ranking is not required for systematic investigation."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "atom_created_from_canonical_audit",
+      "result": "recorded",
+      "artifact_path": "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md",
+      "meaning": "Created during three-model audit (Claude/o3/DeepSeek) of canonical doc vs atom ledger.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "Mathematics",
+      "event_id": "sha256:6cdea079dd3fdc0d9e613293620c536d41b5f32440547a254666f6d9dfae976e"
+    }
+  ],
+  "source_claim_id": "AXIOM_A4_ORIENTATION"
+}

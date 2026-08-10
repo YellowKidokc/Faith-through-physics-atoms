@@ -1,0 +1,57 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-137-law-ii-ten-variables",
+  "atom_uid": "sha256:100c9db9fe5f7cb3fbab13096023f39a1d7800dfc6a68212bb8f4dc7a3879f9e",
+  "title": "AX-137 — Law II: Ten Variables",
+  "claim": "Law II: The Ten Variables.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "{G, M, E, S, T, K, R, Q, F, C} = complete variable set"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-135"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show fewer or more variables are needed",
+    "Demonstrate one variable is redundant or one is missing"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-137-law-ii-ten-variables.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-137-law-ii-ten-variables.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D19.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-137",
+  "original_node_id": "tp:axioms/01/AX-137"
+}

@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-060-full-master-equation",
+  "atom_uid": "sha256:5b2e10cdd7ad9a5da9ab29a3035638ff86a1faf5b757e7612fc42433c26cb509",
+  "title": "Full Master Equation",
+  "claim": "The full equation says coherence is not a sum of nice things. It is a product, so any required channel collapsing matters to the whole.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "mathematical",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "chi_total = integral_{t0}^{t1} integral_Omega G*M*E*S_eff*T*K*R*Q*F*C d^3x dt"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-010",
+    "tp:master-equation/01/ME-01-020",
+    "tp:master-equation/01/ME-01-021",
+    "tp:master-equation/01/ME-01-022",
+    "tp:master-equation/01/ME-01-023",
+    "tp:master-equation/01/ME-01-024",
+    "tp:master-equation/01/ME-01-025",
+    "tp:master-equation/01/ME-01-026",
+    "tp:master-equation/01/ME-01-027",
+    "tp:master-equation/01/ME-01-028",
+    "tp:master-equation/01/ME-01-029",
+    "tp:axioms/01/AX-146"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-060-full-master-equation.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-060-full-master-equation.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-01-060",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-060",
+  "original_node_id": "tp:master-equation/01/ME-01-060",
+  "tags": [
+    "logos",
+    "coherence",
+    "equation",
+    "proof"
+  ],
+  "keywords": [
+    "AX-146",
+    "E19.1",
+    "Equation"
+  ]
+}

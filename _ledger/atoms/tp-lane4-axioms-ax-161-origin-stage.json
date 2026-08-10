@@ -1,0 +1,56 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-161-origin-stage",
+  "atom_uid": "sha256:63a7e4258d55247a6775f8d1cdee90957238994b89739c3ed0b9a42fb5491634",
+  "title": "AX-161 — Origin Stage",
+  "claim": "There is Something rather than Nothing — existence is the first bit.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "1 ≠ 0; existence = first distinction"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-001"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Same as AX-001 — show absolute nothingness is coherent"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-161-origin-stage.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-161-origin-stage.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P0",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-161",
+  "original_node_id": "tp:axioms/01/AX-161"
+}

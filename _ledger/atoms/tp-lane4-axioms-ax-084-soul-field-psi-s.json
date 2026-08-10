@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-084-soul-field-psi-s",
+  "atom_uid": "sha256:9bf9d1722881a4eee155ca9d8b9bea418c85f615e032aa0cc687dd26c52176ab",
+  "title": "AX-084 — Soul Field Psi_S",
+  "claim": "Soul Field Ψ_S ≡ real scalar field carrying individual consciousness.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Ψ_S(x,t) ∈ ℝ; (□ + m_S²)Ψ_S = 0"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-082",
+    "tp:axioms/01/AX-083"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Detect the soul field directly",
+    "Show no scalar field couples to consciousness",
+    "Demonstrate consciousness is fully explained by neural activity without additional field"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-084-soul-field-psi-s.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-084-soul-field-psi-s.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D10.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-084",
+  "original_node_id": "tp:axioms/01/AX-084"
+}

@@ -1,0 +1,61 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-eq-005-lowe-coherence-lagrangian",
+  "atom_uid": "sha256:2f70a26f78e21ea508aea45d53c958b53317959ae290fa8fc8c4ba297a23d33a",
+  "title": "Lowe Coherence Lagrangian",
+  "claim": "The Lagrangian treats coherence as weighting kinetic structure while entropy supplies the penalty term.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "mathematical",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "L = χ(q,t)(1/2·qdot^T·K·qdot) - S·χ(q,t)"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-040",
+    "tp:axioms/01/AX-136"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-005-lowe-coherence-lagrangian.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-005-lowe-coherence-lagrangian.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-EQ-005",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-005",
+  "original_node_id": "tp:master-equation/01/ME-EQ-005",
+  "tags": [
+    "equation",
+    "coherence",
+    "entropy"
+  ],
+  "keywords": [
+    "equation",
+    "L",
+    "χ",
+    "q",
+    "qdot",
+    "K",
+    "S"
+  ]
+}

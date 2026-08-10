@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-009-self-grounding",
+  "atom_uid": "sha256:29b5790cded2bc66a2a1fc09169e70c0f6749eb35de1f52b006d15ddd28be10e",
+  "title": "AX-009 — Self-Grounding",
+  "claim": "The fundamental substrate must be self-instantiating (no infinite regress). NOTE: This is a FRAMEWORK COMMITMENT, not a logical necessity. We chose self-grounding over infinite regress and brute fact because it's the most coherent option, but we acknowledge a critic can still choose brute fact if willing to pay the cost.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "11-relativity",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "¬∃(infinite_regress); ∃!S: Grounds(S, S) — unique self-grounding substrate"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-008"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show a viable infinite regress that doesn't collapse",
+    "Show a system that coherently grounds itself without circularity",
+    "Demonstrate self-grounding as logically impossible rather than necessary"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-009-self-grounding.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-009-self-grounding.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 11-relativity.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A2.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-009",
+  "original_node_id": "tp:axioms/01/AX-009"
+}

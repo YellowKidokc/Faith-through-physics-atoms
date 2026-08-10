@@ -1,0 +1,60 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-023-coherence-non-negativity",
+  "atom_uid": "sha256:53d6ff30324cb8ebbeac61c2bc85a050ac2fca48ea2d092c013944c4affc8964",
+  "title": "AX-023 — Coherence Non-Negativity",
+  "claim": "C[χ] ≥ 0 (coherence is non-negative).",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "C[χ] ≥ 0"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-018",
+    "tp:axioms/01/AX-021",
+    "tp:axioms/01/AX-022"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Find a physical system where C[χ] < 0",
+    "Show S can exceed S_max (would violate 2nd Law)",
+    "Demonstrate negative coherence is meaningful"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-023-coherence-non-negativity.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-023-coherence-non-negativity.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P3.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-023",
+  "original_node_id": "tp:axioms/01/AX-023"
+}

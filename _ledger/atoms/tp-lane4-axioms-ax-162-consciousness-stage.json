@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-162-consciousness-stage",
+  "atom_uid": "sha256:b1fad8088d372c1293ecaa8b802fbec8430544d9a600da8e7aa711398aad1a6f",
+  "title": "AX-162 — Consciousness Stage",
+  "claim": "Distinction requires a Distinguisher — consciousness co-arises with existence.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-spiritual",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "∃distinction → ∃distinguisher (consciousness co-primordial)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-161",
+    "tp:axioms/01/AX-002"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show distinction without distinguisher",
+    "Demonstrate existence without observer"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-162-consciousness-stage.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-162-consciousness-stage.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: bridge-spiritual.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-162",
+  "original_node_id": "tp:axioms/01/AX-162"
+}

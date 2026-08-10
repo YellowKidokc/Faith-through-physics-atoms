@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-041-observer-effect-proportional-to-phi",
+  "atom_uid": "sha256:67bc16706b4a14ba4b55b776d098a56ccff927dc8fa25228b6d2b8c528b0cf10",
+  "title": "AX-041 — Observer Effect Proportional To Phi",
+  "claim": "Observer effect magnitude ∝ Φ.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Γ = Γ₀·g(Φ); ∂Γ/∂Φ > 0"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-040"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show observer effect is independent of Φ",
+    "Demonstrate a low-Φ system with large observer effect",
+    "Show a high-Φ system with zero observer effect"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-041-observer-effect-proportional-to-phi.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-041-observer-effect-proportional-to-phi.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P5.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-041",
+  "original_node_id": "tp:axioms/01/AX-041"
+}

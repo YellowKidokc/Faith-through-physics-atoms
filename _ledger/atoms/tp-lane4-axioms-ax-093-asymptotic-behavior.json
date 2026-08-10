@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-093-asymptotic-behavior",
+  "atom_uid": "sha256:898f2f55bf6e8c358dc9c167edf64458b3e5769d316367ac7f1bc7a8113c3792",
+  "title": "AX-093 — Asymptotic Behavior",
+  "claim": "All trajectories have limiting behavior as t → ∞.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "∀trajectory τ: lim(t→∞) τ(t) = attractor"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-066",
+    "tp:axioms/01/AX-092"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show trajectories without limiting behavior (chaotic with no attractor)",
+    "Demonstrate moral trajectories that oscillate indefinitely without convergence"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-093-asymptotic-behavior.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-093-asymptotic-behavior.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A12.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-093",
+  "original_node_id": "tp:axioms/01/AX-093"
+}

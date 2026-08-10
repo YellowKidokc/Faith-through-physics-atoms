@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-099-hell-as-low-phi-attractor",
+  "atom_uid": "sha256:edddadf07a28efdefcb898bc285acafcc3bd9332f6942e69f8008e12eea963ca",
+  "title": "AX-099 — Hell As Low-Phi Attractor",
+  "claim": "-1 states asymptote to minimal coherence (hell).",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "σ=-1 → lim(t→∞) Φ(t) = 0"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-097",
+    "tp:axioms/01/AX-096"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show σ=-1 trajectory stabilizes at non-zero Φ",
+    "Demonstrate decoherence has a floor (can't reach zero)",
+    "Show annihilationism is correct (soul ceases to exist rather than persisting in decoherence)"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-099-hell-as-low-phi-attractor.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-099-hell-as-low-phi-attractor.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/T12.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-099",
+  "original_node_id": "tp:axioms/01/AX-099"
+}

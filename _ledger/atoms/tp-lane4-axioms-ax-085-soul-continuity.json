@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-085-soul-continuity",
+  "atom_uid": "sha256:c6953f3a52dc5b0c88ff795d29082cf0422b20b8edceb7d9f623257754e27bde",
+  "title": "AX-085 — Soul Continuity",
+  "claim": "Soul coupling g ~ 10⁻¹⁸ to 10⁻¹⁵ — weak but non-zero.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "g_soul ~ 10⁻¹⁸ to 10⁻¹⁵"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-084"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Measure soul coupling and show g = 0",
+    "Demonstrate consciousness has no field coupling at any strength",
+    "Show PEAR effects are not due to soul-field coupling"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-085-soul-continuity.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-085-soul-continuity.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P10.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-085",
+  "original_node_id": "tp:axioms/01/AX-085"
+}

@@ -1,0 +1,53 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-049-law-x-trinity-closure",
+  "atom_uid": "sha256:6a903f51cb3b4e6cfb2e55cc78b1a9a269f8228a15e6407e67b424a6430549df",
+  "title": "Law X: Trinity Closure",
+  "claim": "Law X: Trinity Closure names one law rail inside the Master Equation.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "definition",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-010",
+    "tp:axioms/01/AX-145"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-049-law-x-trinity-closure.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-049-law-x-trinity-closure.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-01-049",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-049",
+  "original_node_id": "tp:master-equation/01/ME-01-049",
+  "tags": [
+    "logos",
+    "coherence",
+    "equation"
+  ],
+  "keywords": [
+    "AX-145",
+    "D19.10",
+    "Definition"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-177-neural-scale-coherence",
+  "atom_uid": "sha256:bfbd136c8b340ab91b1d120a48c6c4ce4bc22923e9f4538157e45303c489593e",
+  "title": "AX-177 — Neural Scale Coherence",
+  "claim": "At neural scale (10⁻⁶ to 10⁻¹ m), coherence = synchronized neural activity, binding.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "χ(neural) = neural_integration = Φ"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-176",
+    "tp:axioms/01/AX-038"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show binding problem has non-coherence solution",
+    "Demonstrate neural synchrony without integrated information"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-177-neural-scale-coherence.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-177-neural-scale-coherence.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/SC-NEURAL",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-177",
+  "original_node_id": "tp:axioms/01/AX-177"
+}

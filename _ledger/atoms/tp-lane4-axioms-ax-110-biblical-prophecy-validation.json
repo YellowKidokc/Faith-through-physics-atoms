@@ -1,0 +1,57 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-110-biblical-prophecy-validation",
+  "atom_uid": "sha256:a0fa45c96317c314f8347fa7ec0bd46220c05070cd0571a2c53e74ea54c4d0b5",
+  "title": "AX-110 — Biblical Prophecy Validation",
+  "claim": "Biblical 'stretched heavens' passages describe cosmic expansion ~2,700 years before Hubble.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-theology",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Cross-domain validation evidence"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-105"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show 'stretched heavens' language refers to tent-making, not cosmic expansion",
+    "Demonstrate the passages have no cosmological content"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-110-biblical-prophecy-validation.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-110-biblical-prophecy-validation.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: bridge-theology.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/EV15.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-110",
+  "original_node_id": "tp:axioms/01/AX-110"
+}

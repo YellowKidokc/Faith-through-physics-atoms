@@ -1,0 +1,60 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-135-master-equation-integration",
+  "atom_uid": "sha256:a8f5760270b80f0b49cd39368eb63969d774d0a3abce5a3f08ae8d059bd0d683",
+  "title": "AX-135 — Master Equation Integration",
+  "claim": "All fundamental dynamics integrate into a single unified framework.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "11-relativity",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "L_total = Σ(Law_i); all laws derive from χ"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-021",
+    "tp:axioms/01/AX-050",
+    "tp:axioms/01/AX-081",
+    "tp:axioms/01/AX-103"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the ten laws are inconsistent with each other",
+    "Demonstrate the master equation is overconstrained or internally contradictory"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-135-master-equation-integration.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-135-master-equation-integration.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'derived'. Ontology: 11-relativity.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A19.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "original_node_id": "tp:axioms/01/AX-135"
+}

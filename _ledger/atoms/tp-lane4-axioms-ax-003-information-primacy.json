@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-003-information-primacy",
+  "atom_uid": "sha256:7db5b34ac1b732a0328fdfaa0a59b465ce5af5f9dbe9ca522a277922dcbea318",
+  "title": "AX-003 — Information Primacy",
+  "claim": "Distinguishability IS information; information is ontologically primitive.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "I ≡ Distinguishability (definitional identity); H(X) = -Σp·log p"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-001",
+    "tp:axioms/01/AX-002"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show a physical property NOT derivable from yes/no questions",
+    "Show matter without informational properties",
+    "Demonstrate information as emergent rather than primitive"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-003-information-primacy.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-003-information-primacy.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A1.3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-003",
+  "original_node_id": "tp:axioms/01/AX-003"
+}

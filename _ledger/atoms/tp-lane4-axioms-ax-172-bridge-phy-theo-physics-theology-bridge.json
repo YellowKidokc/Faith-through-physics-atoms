@@ -1,0 +1,57 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-172-bridge-phy-theo-physics-theology-bridge",
+  "atom_uid": "sha256:2f41d42180e436a9fd9a5a0f0993c7e078f93a70f1931d4b559bee83abf45ab6",
+  "title": "AX-172 — BRIDGE-PHY-THEO - Physics-Theology Bridge",
+  "claim": "The Physics-Theology Bridge: Physics and theology are not separate magisteria but complementary descriptions of a unified reality. The chi-field provides the ontological substrate where physical law and divine action are both expressions of the same underlying coherence dynamics.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "bridge",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "—"
+  ],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [
+    "### DC-1: Demonstrable Incommensurability If physics and theology can be shown to make contradictory predictions about the same observable",
+    "### DC-2: Causal Closure Success If physics achieves complete causal closure",
+    "### DC-3: Eliminative Naturalism If theological concepts can be fully eliminated",
+    "### DC-4: Bridge Inconsistency If the bridge itself introduces inconsistencies"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-172-bridge-phy-theo-physics-theology-bridge.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-172-bridge-phy-theo-physics-theology-bridge.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'bridge' -> 'bridge'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/BRIDGE-PHY-THEO",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-172",
+  "original_node_id": "tp:axioms/01/AX-172"
+}

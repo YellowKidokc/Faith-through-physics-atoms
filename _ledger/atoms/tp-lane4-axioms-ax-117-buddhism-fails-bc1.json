@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-117-buddhism-fails-bc1",
+  "atom_uid": "sha256:a9b626c8c5ee354da9100002499ebfde9b790b1b61f58e625d81ec625827eb70",
+  "title": "AX-117 — Buddhism Fails BC1",
+  "claim": "Buddhism fails BC1 (Terminal Observer) — anātman/śūnyatā precludes Φ=∞.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-theology",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Buddhism fails BC1 (Φ_terminal undefined under anātman)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-114",
+    "tp:axioms/01/AX-058"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show Buddhist metaphysics is compatible with Terminal Observer",
+    "Demonstrate anātman allows for functional observer without permanent self"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-117-buddhism-fails-bc1.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-117-buddhism-fails-bc1.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: bridge-theology.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/T16.4",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-117",
+  "original_node_id": "tp:axioms/01/AX-117"
+}

@@ -1,0 +1,57 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-eq-007-grace-non-unitarity",
+  "atom_uid": "sha256:a21e1c658066ea7b47b542b2394282fb326b949a05cbe0529a9721adacfd8ca4",
+  "title": "Grace Non-Unitarity",
+  "claim": "Grace is modeled as information-adding transformation, not merely rearrangement of a closed state.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "mathematical",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Ĝ†Ĝ ≠ I"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-048",
+    "tp:axioms/01/AX-074"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-007-grace-non-unitarity.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-007-grace-non-unitarity.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-EQ-007",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-007",
+  "original_node_id": "tp:master-equation/01/ME-EQ-007",
+  "tags": [
+    "equation",
+    "grace",
+    "information"
+  ],
+  "keywords": [
+    "equation",
+    "Ĝ",
+    "I"
+  ]
+}

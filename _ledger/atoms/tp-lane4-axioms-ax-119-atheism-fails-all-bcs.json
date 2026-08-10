@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-119-atheism-fails-all-bcs",
+  "atom_uid": "sha256:9f4667fea3b4babbae626efa6a386fbcec8847d58d19d4cd13882e78bf6c0d2f",
+  "title": "AX-119 — Atheism Fails All BCs",
+  "claim": "Atheism fails BC1-BC8 — most comprehensive BC failure.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-theology",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Atheism: 0/8 BCs satisfied"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-114"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show atheism satisfies any BC",
+    "Demonstrate naturalistic explanations for BC requirements",
+    "Show BCs are unnecessary"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-119-atheism-fails-all-bcs.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-119-atheism-fails-all-bcs.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: bridge-theology.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/T16.6",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-119",
+  "original_node_id": "tp:axioms/01/AX-119"
+}

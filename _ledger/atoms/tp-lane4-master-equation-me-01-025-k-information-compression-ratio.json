@@ -1,0 +1,55 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-025-k-information-compression-ratio",
+  "atom_uid": "sha256:c700f3ed2f585bcb12be6bee48df8bebae08faf3539c7c0d6a4f8318609b7ffb",
+  "title": "K - Information Compression Ratio",
+  "claim": "Ordered meaning compresses; random noise does not.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "definition",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "K in R>=0"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-010",
+    "tp:axioms/01/AX-029"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-025-k-information-compression-ratio.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-025-k-information-compression-ratio.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-01-025",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-025",
+  "original_node_id": "tp:master-equation/01/ME-01-025",
+  "tags": [
+    "information",
+    "logos",
+    "coherence"
+  ],
+  "keywords": [
+    "master-equation-factor",
+    "K",
+    "R>=0"
+  ]
+}

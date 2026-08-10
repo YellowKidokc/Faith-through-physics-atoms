@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-074-non-unitarity-of-grace",
+  "atom_uid": "sha256:ec1a4cc859c507fb4bb73d49c467cde691b5ee26178c2d4eac879f84883cc7d3",
+  "title": "AX-074 — Non-Unitarity Of Grace",
+  "claim": "Grace operator Ĝ is non-unitary — information added, not just transformed.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [],
+  "definitions": [],
+  "equations": [
+    "Ĝ†Ĝ ≠ I; Ĝ non-unitary"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-073"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show grace is unitary (just rearranges existing information)",
+    "Demonstrate sign-flip without adding new information",
+    "Show Ĝ†Ĝ = I is consistent with sign-flip"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-074-non-unitarity-of-grace.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-074-non-unitarity-of-grace.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A9.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-074",
+  "original_node_id": "tp:axioms/01/AX-074"
+}
