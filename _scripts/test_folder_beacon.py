@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from fis_folder_beacon_patch import patch_beacons
+from fis_folder_beacon_patch import load_patches, patch_beacons
 from fis_folder_beacon_scan import scan
 from folder_beacon import BeaconError, dump_front_matter, parse_front_matter
 
@@ -78,6 +78,24 @@ class FolderBeaconTests(unittest.TestCase):
             report = patch_beacons([Path(directory)], [{"op": "append_tag", "selector": {}, "value": "new"}], True)
             self.assertEqual(1, len(report["changed"]))
             self.assertEqual(BEACON, path.read_text(encoding="utf-8"))
+
+    def test_patch_file_requires_explicit_selector(self):
+        with tempfile.TemporaryDirectory() as directory:
+            patch_file = Path(directory) / "patches.jsonl"
+            patch_file.write_text(json.dumps({"op": "append_tag", "value": "new"}) + "\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "requires an explicit selector"):
+                load_patches(patch_file)
+
+    def test_explicit_empty_selector_is_allowed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            patch_file = Path(directory) / "patches.jsonl"
+            patch = {"op": "append_tag", "selector": {}, "value": "new"}
+            patch_file.write_text(json.dumps(patch) + "\n", encoding="utf-8")
+            self.assertEqual([patch], load_patches(patch_file))
+
+    def test_programmatic_patch_requires_explicit_selector(self):
+        with self.assertRaisesRegex(ValueError, "requires an explicit selector"):
+            patch_beacons([], [{"op": "append_tag", "value": "new"}])
 
 
 if __name__ == "__main__":

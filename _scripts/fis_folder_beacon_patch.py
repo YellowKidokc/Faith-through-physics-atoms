@@ -70,13 +70,21 @@ def load_patches(path: Path) -> list[dict[str, Any]]:
             patch = json.loads(line)
         except json.JSONDecodeError as exc:
             raise ValueError(f"invalid JSON on patch line {number}: {exc}") from exc
-        if not isinstance(patch.get("selector", {}), dict):
+        if "selector" not in patch:
+            raise ValueError(f"patch line {number} requires an explicit selector")
+        if not isinstance(patch["selector"], dict):
             raise ValueError(f"selector on patch line {number} must be an object")
         patches.append(patch)
     return patches
 
 
 def patch_beacons(roots: list[Path], patches: list[dict[str, Any]], dry_run: bool = False) -> dict:
+    for index, patch in enumerate(patches, 1):
+        if "selector" not in patch:
+            raise ValueError(f"patch {index} requires an explicit selector")
+        if not isinstance(patch["selector"], dict):
+            raise ValueError(f"selector for patch {index} must be an object")
+
     report: dict[str, Any] = {"changed": [], "skipped": [], "errors": []}
     for path in sorted({path for root in roots for path in discover(root)}):
         try:
@@ -87,7 +95,7 @@ def patch_beacons(roots: list[Path], patches: list[dict[str, Any]], dry_run: boo
                 raise ValueError("; ".join(problems))
             applied = []
             for index, patch in enumerate(patches, 1):
-                if matches(data, patch.get("selector", {})) and apply_operation(data, patch):
+                if matches(data, patch["selector"]) and apply_operation(data, patch):
                     applied.append(index)
             problems = validate_beacon(data)
             if problems:
