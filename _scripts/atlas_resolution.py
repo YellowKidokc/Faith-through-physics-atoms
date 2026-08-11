@@ -47,6 +47,10 @@ STATE_BY_RELATION = {
     "partially_supports": "partially_supported",
 }
 
+WARRANT_ORDER = {"none": 0, "weak": 1, "moderate": 2, "strong": 3, "formal": 4}
+SUPPORTING_RELATIONS = {"establishes", "supports", "partially_supports", "resolves"}
+DEFEATING_RELATIONS = {"contradicts", "partially_contradicts", "falsifies"}
+
 
 @dataclass
 class Atlas:
@@ -201,11 +205,24 @@ def current_status(atom_id: str, atom: dict[str, Any], atlas: Atlas) -> str:
         if any(i.get("status") in {"contested", "blocked"} for i in items):
             return "contested"
         return "open"
-    for relation in atlas.backward.get(atom_id, []):
+    backward = atlas.backward.get(atom_id, [])
+    if has_equal_strength_conflict(backward):
+        return "disputed"
+    for relation in backward:
         state = STATE_BY_RELATION.get(str(relation.get("relation")))
         if state:
             return state
     return str(atom.get("currentAtlasStatus") or atom.get("status") or atom.get("canonicalStatus") or "unknown")
+
+
+def relation_warrant(relation: dict[str, Any]) -> int:
+    return WARRANT_ORDER.get(str(relation.get("warrant_strength", "moderate")), 2)
+
+
+def has_equal_strength_conflict(relations: list[dict[str, Any]]) -> bool:
+    strongest_support = max((relation_warrant(r) for r in relations if r.get("relation") in SUPPORTING_RELATIONS), default=-1)
+    strongest_defeat = max((relation_warrant(r) for r in relations if r.get("relation") in DEFEATING_RELATIONS), default=-2)
+    return strongest_support >= 0 and strongest_support == strongest_defeat
 
 
 def original_status(atom: dict[str, Any]) -> str:
@@ -377,12 +394,17 @@ def render_projection(projection: dict[str, Any]) -> str:
 """
     if mode == "meeting":
         notes = projection.get("notes", [])
+        meeting_state = projection.get("meeting_state") or ("CONTRADICTED" if "contradict" in str(projection.get("result", "")).lower() else None)
+        state_html = f"<p><strong>Meeting State:</strong> {html.escape(str(meeting_state))}</p>" if meeting_state else ""
+        suspension = "<p><strong>Suspension Review:</strong> required for affected bridge or claim.</p>" if meeting_state == "CONTRADICTED" else ""
         return f"""
         <article class="atlas-projection meeting">
           <h4>Meeting - {title}</h4>
           <p><strong>Local Meeting Cell:</strong> {html.escape(str(projection.get('local_cell', 'not declared')))}</p>
           <p><strong>Ascent:</strong> {html.escape(str(projection.get('ascent', 'unknown')))}</p>
           <p><strong>Descent:</strong> {html.escape(str(projection.get('descent', 'unknown')))}</p>
+          {state_html}
+          {suspension}
           <p><strong>Meeting Result:</strong> {result}</p>
           <ul>{_items(notes)}</ul>
         </article>

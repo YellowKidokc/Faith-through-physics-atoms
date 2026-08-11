@@ -130,27 +130,36 @@ def living_stats() -> dict[str, Any]:
 
 def build_record(source: Path, version_id: str) -> dict[str, Any]:
     now = datetime.now(timezone.utc).isoformat()
+    stats = publication_stats(source)
     return {
-        "publicationID": version_id,
-        "sourcePath": rel(source),
-        "sourceKind": source.suffix.lower().lstrip(".") or "unknown",
-        "canonicalDate": now,
-        "versionID": version_id,
         "principle": "Markdown source != canonical publication != living epistemic state",
-        "frozenPublicationStats": publication_stats(source),
-        "livingAtlasStats": living_stats(),
-        "canonGate": {
-            "status": "sidecar",
-            "reviewPrompt": "PROMOTE TO CANONICAL PUBLICATION?",
-            "allowedActions": ["review_again", "save_as_sidecar", "promote_to_canon"],
-            "warning": "Promotion freezes canonical HTML/JSON snapshots. Later Atlas updates may change current standing but must not rewrite this historical version.",
+        "publication_snapshot": {
+            "publicationID": version_id,
+            "sourcePath": rel(source),
+            "sourceKind": source.suffix.lower().lstrip(".") or "unknown",
+            "canonicalDate": now,
+            "versionID": version_id,
+            "sourceHash": stats["sourceHash"],
+            "frozenPublicationStats": {k: v for k, v in stats.items() if k != "sourceHash"},
+            "canonGate": {
+                "status": "sidecar",
+                "reviewPrompt": "PROMOTE TO CANONICAL PUBLICATION?",
+                "allowedActions": ["review_again", "save_as_sidecar", "promote_to_canon"],
+                "warning": "Promotion freezes canonical HTML/JSON snapshots. Later Atlas updates may change current standing but must not rewrite this historical version.",
+            },
+        },
+        "atlas_projection": {
+            "livingAtlasStats": living_stats(),
+            "resolution_edges": [],
+            "method_convergence_receipts": [],
+            "grades": [],
         },
     }
 
 
 def write_sidecar(record: dict[str, Any]) -> Path:
     SIDECARS.mkdir(parents=True, exist_ok=True)
-    path = SIDECARS / f"{record['publicationID']}.json"
+    path = SIDECARS / f"{record['publication_snapshot']['publicationID']}.json"
     path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return path
 
@@ -158,10 +167,11 @@ def write_sidecar(record: dict[str, Any]) -> Path:
 def promote(source: Path, record: dict[str, Any]) -> tuple[Path, Path]:
     CANON.mkdir(parents=True, exist_ok=True)
     record = json.loads(json.dumps(record))
-    record["canonGate"]["status"] = "promoted"
-    record["canonGate"]["acceptedAt"] = datetime.now(timezone.utc).isoformat()
-    json_path = CANON / f"{record['publicationID']}.canonical.json"
-    html_path = CANON / f"{record['publicationID']}.canonical{'.html' if source.suffix.lower() != '.html' else '.html'}"
+    record["publication_snapshot"]["canonGate"]["status"] = "promoted"
+    record["publication_snapshot"]["canonGate"]["acceptedAt"] = datetime.now(timezone.utc).isoformat()
+    publication_id = record["publication_snapshot"]["publicationID"]
+    json_path = CANON / f"{publication_id}.canonical.json"
+    html_path = CANON / f"{publication_id}.canonical{'.html' if source.suffix.lower() != '.html' else '.html'}"
     json_path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     if source.suffix.lower() == ".html":
         shutil.copyfile(source, html_path)
@@ -169,7 +179,7 @@ def promote(source: Path, record: dict[str, Any]) -> tuple[Path, Path]:
         body = source.read_text(encoding="utf-8", errors="replace")
         html_path.write_text(
             "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">"
-            f"<title>{record['publicationID']}</title></head><body><pre>"
+            f"<title>{publication_id}</title></head><body><pre>"
             + body.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
             + "</pre></body></html>\n",
             encoding="utf-8",

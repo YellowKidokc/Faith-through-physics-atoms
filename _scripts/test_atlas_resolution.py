@@ -107,6 +107,13 @@ class AtlasResolutionTests(unittest.TestCase):
             self.assertIn("Meeting - M", html)
             self.assertIn("Source -> Atomization", html)
 
+    def test_equal_strength_conflict_marks_current_status_disputed(self):
+        atlas = ar.Atlas(backward={"C1": [
+            {"sourceAtom": "A", "targetAtom": "C1", "relation": "supports", "warrant_strength": "strong"},
+            {"sourceAtom": "B", "targetAtom": "C1", "relation": "contradicts", "warrant_strength": "strong"},
+        ]})
+        self.assertEqual("disputed", ar.current_status("C1", {"status": "active"}, atlas))
+
 
 if __name__ == "__main__":
     unittest.main()

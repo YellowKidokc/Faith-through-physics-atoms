@@ -3,36 +3,53 @@
   "$id": "https://faiththruphysics.com/schema/canonical_publication.schema.json",
   "title": "Canonical Publication Record",
   "type": "object",
-  "required": ["publicationID", "sourcePath", "canonicalDate", "versionID", "frozenPublicationStats", "livingAtlasStats", "canonGate"],
+  "required": ["publication_snapshot", "atlas_projection"],
   "additionalProperties": true,
   "properties": {
-    "publicationID": {"type": "string"},
-    "sourcePath": {"type": "string"},
-    "sourceKind": {"type": "string"},
-    "canonicalDate": {"type": "string"},
-    "versionID": {"type": "string"},
-    "principle": {"type": "string"},
-    "frozenPublicationStats": {
+    "publication_snapshot": {
       "type": "object",
-      "required": ["sourceHash", "wordCount", "atomCount", "claimCount", "openItemCount", "equationCount"],
-      "additionalProperties": true
-    },
-    "livingAtlasStats": {
-      "type": "object",
-      "required": ["currentStanding", "stillOpenItems", "lastRecalculated"],
-      "additionalProperties": true
-    },
-    "canonGate": {
-      "type": "object",
-      "required": ["status", "allowedActions", "warning"],
+      "required": ["publicationID", "sourcePath", "canonicalDate", "versionID", "sourceHash", "frozenPublicationStats", "canonGate"],
+      "additionalProperties": true,
       "properties": {
-        "status": {"type": "string", "enum": ["sidecar", "promoted", "rejected", "review_again"]},
-        "reviewPrompt": {"type": "string"},
-        "allowedActions": {"type": "array", "items": {"type": "string"}},
-        "warning": {"type": "string"},
-        "acceptedAt": {"type": "string"}
-      },
-      "additionalProperties": true
+        "publicationID": {"type": "string"},
+        "sourcePath": {"type": "string"},
+        "sourceKind": {"type": "string"},
+        "canonicalDate": {"type": "string"},
+        "versionID": {"type": "string"},
+        "sourceHash": {"type": "string"},
+        "frozenPublicationStats": {
+          "type": "object",
+          "required": ["wordCount", "atomCount", "claimCount", "openItemCount", "equationCount"],
+          "additionalProperties": true
+        },
+        "canonGate": {
+          "type": "object",
+          "required": ["status", "allowedActions", "warning"],
+          "properties": {
+            "status": {"type": "string", "enum": ["sidecar", "promoted", "rejected", "review_again"]},
+            "reviewPrompt": {"type": "string"},
+            "allowedActions": {"type": "array", "items": {"type": "string"}},
+            "warning": {"type": "string"},
+            "acceptedAt": {"type": "string"}
+          },
+          "additionalProperties": true
+        }
+      }
+    },
+    "atlas_projection": {
+      "type": "object",
+      "required": ["livingAtlasStats"],
+      "additionalProperties": true,
+      "properties": {
+        "livingAtlasStats": {
+          "type": "object",
+          "required": ["currentStanding", "stillOpenItems", "lastRecalculated"],
+          "additionalProperties": true
+        },
+        "resolution_edges": {"type": "array", "items": {"type": "object"}},
+        "method_convergence_receipts": {"type": "array", "items": {"type": "object"}},
+        "grades": {"type": "array", "items": {"type": "object"}}
+      }
     }
   }
 }

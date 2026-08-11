@@ -40,6 +40,15 @@ Ascendant, Descendant, and Meeting projections are documented in
 [_docs/ASCENDANT_DESCENDANT_MEETING.md](_docs/ASCENDANT_DESCENDANT_MEETING.md).
 They render as additional views over the same atom and Atlas objects.
 
+Whole-page explanation is a separate aggregation call:
+[_docs/PAGE_AGGREGATION_API.md](_docs/PAGE_AGGREGATION_API.md). It consumes
+claim/evidence/receipt outputs and produces repeatable map summaries without
+creating new claims or evidence.
+
+Build hardening rules for Marker 12, conflict states, pre-admission gates, Phi,
+and reproducibility boundaries are recorded in
+[_docs/BUILD_SPEC_HARDENING.md](_docs/BUILD_SPEC_HARDENING.md).
+
 ---
 
 ## CRITICAL DISTINCTIONS

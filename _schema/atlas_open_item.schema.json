@@ -17,7 +17,7 @@
       }
     },
     "question": {"type": "string"},
-    "status": {"type": "string", "enum": ["open", "proposed_resolution", "partially_resolved", "resolved", "contested", "blocked"]},
+    "status": {"type": "string", "enum": ["open", "proposed_resolution", "partially_resolved", "resolved", "contested", "disputed", "blocked"]},
     "affects": {"type": "array", "items": {"type": "string"}},
     "components": {
       "type": "array",

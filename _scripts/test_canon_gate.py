@@ -18,7 +18,9 @@ class CanonGateTests(unittest.TestCase):
                 sidecar = cg.write_sidecar(record)
                 self.assertTrue(sidecar.exists())
                 self.assertFalse((root / "_canon").exists())
-                self.assertEqual("sidecar", json.loads(sidecar.read_text(encoding="utf-8"))["canonGate"]["status"])
+                data = json.loads(sidecar.read_text(encoding="utf-8"))
+                self.assertEqual("sidecar", data["publication_snapshot"]["canonGate"]["status"])
+                self.assertIn("atlas_projection", data)
 
     def test_accept_canon_writes_frozen_html_json_and_registry(self):
         with tempfile.TemporaryDirectory() as directory:

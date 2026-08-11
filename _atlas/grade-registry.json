@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "marker_12": {
+    "name": "Evidence grade",
+    "computed": true,
+    "rule": "derived from native via grade_registry",
+    "never_fabricate": true
+  },
+  "mode_to_atlas": {
+    "C0": {"atlas_grade": "-", "alert_state": "SUPERSEDED", "note": "retired overclaim, not load-bearing"},
+    "C1": {"atlas_grade": "-", "alert_state": "OPEN"},
+    "C2": {"atlas_grade": "C", "alert_state": "WEAK"},
+    "C3": {"atlas_grade": "B", "alert_state": "SUPPORTED"},
+    "C4": {"atlas_grade": "B", "alert_state": "SUPPORTED"},
+    "C5": {"atlas_grade": "A", "alert_state": "STRONG"},
+    "C6": {"atlas_grade": "A", "alert_state": "FORMAL_OR_CANONICAL"}
+  }
+}

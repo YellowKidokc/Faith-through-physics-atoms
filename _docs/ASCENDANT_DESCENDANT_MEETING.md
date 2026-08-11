@@ -27,6 +27,7 @@ claim or invariant object.
 - Descent yes and Ascent yes: converged
 - Descent yes and Ascent no: predicted / not observed
 - Descent no and Ascent yes: pressure / discovery
+- Descent predicts X and Ascent finds not-X with admitted warrant: contradicted
 - Both partial: unresolved or partially converged
 
 Projection records live in `_atlas/projections.jsonl` and render into claim

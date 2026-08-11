@@ -23,6 +23,7 @@
     "kill_conditions": {"type": "array", "items": {"type": "string"}},
     "local_cell": {"type": "string"},
     "ascent": {"type": "string"},
-    "descent": {"type": "string"}
+    "descent": {"type": "string"},
+    "meeting_state": {"type": "string", "enum": ["CONVERGED", "PRESSURE", "PREDICTED_NOT_OBSERVED", "UNRESOLVED", "CONTRADICTED"]}
   }
 }
