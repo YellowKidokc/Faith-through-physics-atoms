@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ name }}</title>
+</head>
+<body>
+  <article class="evidence-node" data-node-id="{{ nodeID }}">
+    <h1>{{ name }}</h1>
+    <section class="source">
+      <h2>Source</h2>
+      <p><a href="{{ sourceRef }}">{{ sourceRef }}</a></p>
+      <blockquote>{{ exactShortQuotation }}</blockquote>
+    </section>
+    <section class="supports">
+      <h2>Supports</h2>
+      {{ acceptedLinks }}
+    </section>
+  </article>
+</body>
+</html>

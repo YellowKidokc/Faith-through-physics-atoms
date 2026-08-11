@@ -23,6 +23,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+import atlas_resolution
+
 REPO = Path(__file__).resolve().parents[1]
 PUBLIC_BASE = "https://faiththruphysics.com"
 CONTEXT = "https://faiththruphysics.com/vocab/context.jsonld"
@@ -222,8 +224,11 @@ def write_proposals() -> None:
 
 
 def render_html() -> None:
+    atlas = atlas_resolution.build_atlas(REPO)
     for path, atom in load_atoms():
         b = beacon_for(path, atom)
+        atom_id = str(b["permanentID"])
+        atlas_html = atlas_resolution.render_resolution_section(atom_id, atom, atlas)
         def items(vals: Any) -> str:
             vals = as_list(vals)
             return "".join(f"<li>{html.escape(str(v))}</li>" for v in vals) or "<li>None declared</li>"
@@ -253,6 +258,7 @@ def render_html() -> None:
     <h3>Accepted links</h3><ul>{accepted_html}</ul>
     <h3>Proposed links</h3><p>Review proposal feed: <code>/_proposals/claim-relationships.jsonl</code>. Proposed links are never accepted automatically.</p>
   </section>
+{atlas_html}
 </article>
 </body>
 </html>

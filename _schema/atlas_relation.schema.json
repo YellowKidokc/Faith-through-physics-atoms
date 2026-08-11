@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/atlas_relation.schema.json",
+  "title": "Living Atlas Relation",
+  "type": "object",
+  "required": ["sourceAtom", "targetAtom", "relation", "status"],
+  "additionalProperties": true,
+  "properties": {
+    "relation_id": {"type": "string"},
+    "sourceAtom": {"type": "string"},
+    "targetAtom": {"type": "string"},
+    "relation": {
+      "type": "string",
+      "enum": ["supports", "contradicts", "qualifies", "supersedes", "resolves", "depends_on", "dependsOn", "extends", "falsifies"]
+    },
+    "status": {"type": "string", "enum": ["proposed", "accepted", "verified", "rejected"]},
+    "scope": {"type": "string"},
+    "acceptedBy": {"type": "string"},
+    "acceptedAt": {"type": "string"}
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/atlas_open_item.schema.json",
+  "title": "Living Atlas Open Item",
+  "type": "object",
+  "required": ["issue_id", "opened_by", "question", "status", "affects"],
+  "additionalProperties": true,
+  "properties": {
+    "issue_id": {"type": "string", "pattern": "^OI-[A-Za-z0-9._-]+$"},
+    "opened_by": {
+      "type": "object",
+      "required": ["atom_id"],
+      "additionalProperties": true,
+      "properties": {
+        "paper_id": {"type": "string"},
+        "atom_id": {"type": "string"}
+      }
+    },
+    "question": {"type": "string"},
+    "status": {"type": "string", "enum": ["open", "proposed_resolution", "partially_resolved", "resolved", "contested", "blocked"]},
+    "affects": {"type": "array", "items": {"type": "string"}},
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["component_id", "question", "status"],
+        "additionalProperties": true,
+        "properties": {
+          "component_id": {"type": "string"},
+          "question": {"type": "string"},
+          "status": {"type": "string", "enum": ["open", "supported", "verified", "resolved", "contested", "falsified"]}
+        }
+      }
+    },
+    "candidate_resolutions": {"type": "array", "items": {"type": "object"}},
+    "resolved_by": {"type": "array", "items": {"type": "object"}},
+    "history": {"type": "array", "items": {"type": "object"}}
+  }
+}

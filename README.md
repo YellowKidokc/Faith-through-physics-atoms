@@ -22,6 +22,11 @@ Canonical terminology is indexed by the
 definition and its evidence remain independent atoms; resolver matches are only
 proposals and inherit required source citations when rendered.
 
+Long-running paper series use the
+[Living Atlas Resolution](_docs/LIVING_ATLAS_RESOLUTION.md) rule:
+later work may change a claim's current standing, but it never rewrites the
+historical state of the paper where the claim first appeared.
+
 ---
 
 ## CRITICAL DISTINCTIONS
