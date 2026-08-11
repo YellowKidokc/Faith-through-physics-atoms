@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "name": "Periodic Table Meta Criteria",
+  "principle": "Meta layers are selectable lenses over the same atom/pill/component graph; they do not create new truth claims by themselves.",
+  "criteria": [
+    {"id":"dependency","label":"Dependency","description":"How strongly this component is required upstream or supports downstream structure.","default_weight":1.0,"scope":["pill","component","edge"]},
+    {"id":"evidence","label":"Evidence","description":"Quality, directness, and coverage of admitted evidence.","default_weight":1.0,"scope":["pill","component","edge"]},
+    {"id":"falsifiability","label":"Falsifiability","description":"Clarity and force of defeat conditions, negative guards, and kill conditions.","default_weight":0.9,"scope":["pill","component"]},
+    {"id":"formal","label":"Formal / Mathematical","description":"Degree of formalization, derivation, proof, equation, or machine-checkable structure.","default_weight":0.8,"scope":["pill","component"]},
+    {"id":"coherence","label":"Internal Coherence","description":"Consistency with declared assumptions, definitions, and neighboring claims.","default_weight":1.0,"scope":["pill","component","edge"]},
+    {"id":"independence","label":"Evidence Independence","description":"How independent the support is across source families and methods.","default_weight":0.8,"scope":["pill","component"]},
+    {"id":"cross_domain","label":"Cross-Domain Bridge","description":"Strength and warrant of mappings across distinct native domains.","default_weight":0.7,"scope":["pill","component","edge"]},
+    {"id":"blast_radius","label":"Blast Radius","description":"How much downstream structure is affected if this component fails.","default_weight":0.9,"scope":["pill","component"]},
+    {"id":"provenance","label":"Provenance","description":"Traceability to source artifact, version, receipt, reviewer, or run.","default_weight":0.9,"scope":["pill","component","edge"]},
+    {"id":"translation","label":"Translation Stability","description":"Whether the claim survives movement between technical, theological, narrative, and everyday registers without changing meaning.","default_weight":0.7,"scope":["pill","component"]},
+    {"id":"explanatory_yield","label":"Explanatory Yield","description":"How much distinct explanatory work the component performs relative to its assumptions and complexity.","default_weight":0.7,"scope":["pill","component"]},
+    {"id":"novelty","label":"Novelty / Non-Redundancy","description":"Whether this component adds information rather than merely restating another component.","default_weight":0.5,"scope":["pill","component"]}
+  ],
+  "meta_layers": [
+    {"id":"structure","label":"Structure","criteria":["dependency","blast_radius","coherence"]},
+    {"id":"warrant","label":"Warrant","criteria":["evidence","independence","provenance","falsifiability"]},
+    {"id":"formalization","label":"Formalization","criteria":["formal","coherence"]},
+    {"id":"bridging","label":"Bridging","criteria":["cross_domain","translation","provenance"]},
+    {"id":"yield","label":"Yield","criteria":["explanatory_yield","novelty","blast_radius"]}
+  ],
+  "profiles": [
+    {"id":"balanced","label":"Balanced","weights":{}},
+    {"id":"formal_math","label":"Formal Math","weights":{"formal":1.0,"coherence":1.0,"dependency":0.9,"evidence":0.5,"cross_domain":0.2,"translation":0.2}},
+    {"id":"religious_text","label":"Religious / Theological Text","weights":{"translation":1.0,"coherence":1.0,"provenance":0.9,"cross_domain":0.8,"formal":0.3}},
+    {"id":"cross_domain","label":"Cross-Domain Stress","weights":{"cross_domain":1.0,"translation":1.0,"provenance":1.0,"coherence":1.0,"independence":0.9}},
+    {"id":"adversarial","label":"Adversarial","weights":{"falsifiability":1.0,"evidence":1.0,"independence":1.0,"provenance":1.0,"coherence":1.0,"novelty":0.8}}
+  ]
+}

@@ -13,12 +13,41 @@ Truth descends as far as people require.**
 
 Proposed node connections can now be pressure-tested through the provider-neutral
 [Adversarial Review Gate](_docs/ADVERSARIAL_REVIEW_GATE.md). Its GUI and CLI
-block opposed wires while reserving every acceptance decision for a human.
+block opposed wires while reserving every acceptance decision for a human. The
+same rail can generate proposed plain-language math translation nodes without
+promoting the source claim.
 
 Canonical terminology is indexed by the
 [Canonical Definition Registry](_docs/CANONICAL_DEFINITION_REGISTRY.md). Each
 definition and its evidence remain independent atoms; resolver matches are only
 proposals and inherit required source citations when rendered.
+
+Long-running paper series use the
+[Living Atlas Resolution](_docs/LIVING_ATLAS_RESOLUTION.md) rule:
+later work may change a claim's current standing, but it never rewrites the
+historical state of the paper where the claim first appeared.
+
+Evidence is component-aware by contract. The
+[Evidence Coverage Method](_docs/EVIDENCE_COVERAGE_METHOD.md) separates
+evidence strength from evidence coverage, so a source can strongly support one
+part of a claim while remaining silent on another.
+
+Publication is human-gated by design:
+[Canonical Publication Gate](_docs/CANONICAL_PUBLICATION_GATE.md) keeps
+authoring source, frozen canonical publication, and living Atlas state separate.
+
+Ascendant, Descendant, and Meeting projections are documented in
+[_docs/ASCENDANT_DESCENDANT_MEETING.md](_docs/ASCENDANT_DESCENDANT_MEETING.md).
+They render as additional views over the same atom and Atlas objects.
+
+Whole-page explanation is a separate aggregation call:
+[_docs/PAGE_AGGREGATION_API.md](_docs/PAGE_AGGREGATION_API.md). It consumes
+claim/evidence/receipt outputs and produces repeatable map summaries without
+creating new claims or evidence.
+
+Build hardening rules for Marker 12, conflict states, pre-admission gates, Phi,
+and reproducibility boundaries are recorded in
+[_docs/BUILD_SPEC_HARDENING.md](_docs/BUILD_SPEC_HARDENING.md).
 
 ---
 

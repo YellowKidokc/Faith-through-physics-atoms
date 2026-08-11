@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ name }}</title>
+</head>
+<body>
+  <article class="translation-node" data-source-claim="{{ sourceClaim }}">
+    <h1>{{ name }}</h1>
+    <section class="source">
+      <h2>Source Claim</h2>
+      <p>{{ sourceClaim }}</p>
+    </section>
+    <section class="translation">
+      <h2>Translation</h2>
+      <div class="equation">{{ equation }}</div>
+      <p>{{ wordEquation }}</p>
+      {{ explanations }}
+    </section>
+    <section class="review-state">
+      <h2>Review State</h2>
+      <p>{{ reviewStatus }}</p>
+    </section>
+  </article>
+</body>
+</html>

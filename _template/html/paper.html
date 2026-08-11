@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ paperTitle }}</title>
+</head>
+<body>
+  <article class="paper-snapshot" data-paper-id="{{ paperID }}">
+    <h1>{{ paperTitle }}</h1>
+    <section class="historical-paper-state">
+      <h2>Original Paper State</h2>
+      {{ originalClaimTable }}
+    </section>
+    <section class="current-atlas-state">
+      <h2>Current Atlas State</h2>
+      {{ currentClaimTable }}
+    </section>
+    <section class="later-developments">
+      <h2>Later Developments</h2>
+      {{ laterDevelopments }}
+    </section>
+  </article>
+</body>
+</html>

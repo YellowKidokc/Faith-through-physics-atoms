@@ -1,0 +1,76 @@
+{
+  "version": "0.1.0",
+  "maps": {
+    "proof_graph": {
+      "question": "What holds this up?",
+      "include_edges": ["direct_support", "derivation", "assumption", "bridge", "counterevidence", "supports", "establishes", "dependsOn"],
+      "layout": "dagre",
+      "node_color": "current_grade",
+      "edge_color": "relation_type",
+      "node_size": "blast_radius"
+    },
+    "meeting_map": {
+      "question": "Does evidence meet prediction?",
+      "include_edges": ["ascendant", "descendant", "meeting"],
+      "layout": "two_column_meeting_cell",
+      "node_color": "meeting_state",
+      "meeting_states": ["CONVERGED", "PRESSURE", "PREDICTED_NOT_OBSERVED", "UNRESOLVED", "CONTRADICTED"]
+    },
+    "coverage_map": {
+      "question": "What exactly is missing?",
+      "include_edges": ["establishes", "supports", "partially_supports", "qualifies", "contradicts", "partially_contradicts", "is_silent"],
+      "layout": "claim_component_grid",
+      "node_color": "component_evidence_status",
+      "hover": ["evidence_id", "relation", "strength", "coverage", "source_artifact"]
+    },
+    "bridge_map": {
+      "question": "Where does this touch other fields?",
+      "include_edges": ["bridgesTo", "bridge", "qualifies", "falsifies"],
+      "layout": "cluster_by_series_domain",
+      "edge_width": "warrant_strength",
+      "edge_style": "bridge_lifecycle_state"
+    },
+    "dispute_map": {
+      "question": "Where is it weakest?",
+      "include_edges": ["contradicts", "partially_contradicts", "challenges", "falsifies", "qualifies"],
+      "layout": "heatmap",
+      "node_color": "dispute_severity",
+      "node_size": "open_item_count"
+    },
+    "evolution_map": {
+      "question": "What happened later?",
+      "include_edges": ["resolves", "qualifies", "contradicts", "supersedes"],
+      "layout": "publication_to_current_timeline",
+      "node_color": "current_atlas_status",
+      "toggle": ["original_state", "current_state"]
+    },
+    "blast_radius_map": {
+      "question": "What breaks if this fails?",
+      "include_edges": ["dependsOn", "feedsInto", "bridgesTo", "supports"],
+      "layout": "dependency_dag",
+      "node_color": "risk",
+      "node_size": "downstream_degree"
+    },
+    "evidence_landscape": {
+      "question": "Is the support independent?",
+      "include_edges": ["supports", "establishes", "contextualizes"],
+      "layout": "provenance_distance_clusters",
+      "node_color": "source_family",
+      "node_size": "independence_weight"
+    },
+    "canon_gate_map": {
+      "question": "Should I trust this standing?",
+      "include_edges": ["gate_transition", "audit_receipt"],
+      "layout": "publication_state_machine",
+      "node_color": "canon_gate_status",
+      "states": ["draft", "sidecar", "under_review", "canon", "superseded"]
+    },
+    "domain_classification_map": {
+      "question": "What kind of claim is this?",
+      "include_edges": ["native_domain", "earned_bridge", "revoked_bridge"],
+      "layout": "passport_stamp",
+      "node_color": "native_domain",
+      "edge_style": "bridge_status"
+    }
+  }
+}

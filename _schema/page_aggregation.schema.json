@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/page_aggregation.schema.json",
+  "title": "Page Aggregation Projection",
+  "type": "object",
+  "required": ["page_id", "source", "summary", "maps", "receipts"],
+  "additionalProperties": true,
+  "properties": {
+    "page_id": {"type": "string"},
+    "source": {"type": "string"},
+    "summary": {"type": "string"},
+    "maps": {"type": "array", "items": {"type": "object"}},
+    "receipts": {"type": "array", "items": {"type": "object"}},
+    "warnings": {"type": "array", "items": {"type": "string"}}
+  }
+}
