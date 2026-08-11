@@ -62,3 +62,17 @@ this same reviewer. A resolver confidence score—even 0.99 for an explicit
 marker—is discovery evidence, not acceptance. The reviewer can block a link;
 otherwise it remains `awaiting_human`. Neither the resolver nor this gate may
 edit an accepted edge or promote a candidate definition to canonical.
+
+## Math translations
+
+Claims with `mathematicalForm` or `mathFormNormal` can be converted into
+reviewable everyday translation nodes:
+
+```bash
+python _scripts/math_translation.py --claim-id tp:test/C1
+python _scripts/math_translation.py --claim-id tp:test/C1 --write
+```
+
+Generated translation nodes are always `status: proposed` with an unreviewed
+generation receipt. They explain structure; they do not solve the equation,
+add theological conclusions, or promote the source claim.

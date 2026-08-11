@@ -113,6 +113,8 @@ def default_beacon(path: Path, atom: dict[str, Any]) -> dict[str, Any]:
         "need": need,
         "breakIf": break_if,
         "acceptedLinks": [e for e in atom.get("edges", []) if e.get("status") == "accepted"],
+        "citationPolicy": atom.get("citationPolicy", {}),
+        "requiredCitations": atom.get("citations", []),
         "proposalFeed": f"{PUBLIC_BASE}/_proposals/claim-relationships.jsonl",
     }
 
@@ -226,6 +228,12 @@ def render_html() -> None:
             vals = as_list(vals)
             return "".join(f"<li>{html.escape(str(v))}</li>" for v in vals) or "<li>None declared</li>"
         accepted = b.get("acceptedLinks", [])
+        citations = b.get("requiredCitations", [])
+        citation_html = "".join(
+            f'<li><a href="{html.escape(str(c.get("sourceURL", "")))}">{html.escape(str(c.get("sourceName", "Source")))}</a>'
+            f'<blockquote>{html.escape(str(c.get("exactQuote", "")))}</blockquote></li>'
+            for c in citations
+        ) or "<li>None declared</li>"
         accepted_html = "".join(f"<li>{html.escape(e.get('type','edge'))}: {html.escape(str(e.get('target','')))} ({html.escape(e.get('grade','ungraded'))})</li>" for e in accepted) or "<li>None accepted</li>"
         doc = f"""<!doctype html>
 <html lang=\"en\">
@@ -241,6 +249,7 @@ def render_html() -> None:
     <h3>Offers</h3><ul>{items(b.get('have'))}</ul>
     <h3>Needs</h3><ul>{items(b.get('need'))}</ul>
     <h3>Breaks if</h3><ul>{items(b.get('breakIf'))}</ul>
+    <h3>Required citations</h3><ul>{citation_html}</ul>
     <h3>Accepted links</h3><ul>{accepted_html}</ul>
     <h3>Proposed links</h3><p>Review proposal feed: <code>/_proposals/claim-relationships.jsonl</code>. Proposed links are never accepted automatically.</p>
   </section>

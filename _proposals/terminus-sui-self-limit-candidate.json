@@ -1,0 +1,169 @@
+{
+  "@context": [
+    "https://faiththruphysics.com/vocab/context.jsonld",
+    {
+      "citationPolicy": "https://faiththruphysics.com/vocab/citationPolicy",
+      "citations": "https://schema.org/citation",
+      "exactQuote": "https://schema.org/text",
+      "sourceURL": "https://schema.org/url"
+    }
+  ],
+  "@id": "https://faiththruphysics.com/proposals/terminus-sui-self-limit-candidate",
+  "nodeID": "tp:proposal/terminus-sui-self-limit",
+  "claimID": "tp:proposal/terminus-sui-self-limit",
+  "name": "Terminus Sui - self-limit synthesis candidate",
+  "nodeType": "claim",
+  "coherenceDirection": "coherence",
+  "domainType": [
+    "logic",
+    "semantics",
+    "computation",
+    "thermodynamics",
+    "information-physics",
+    "theology"
+  ],
+  "workbenchStage": "00_inbox_working",
+  "epistemicStatus": "source-quoted; synthesis-unreviewed",
+  "canonicalStatus": "candidate",
+  "status": "proposed",
+  "author": [
+    "David Lowe",
+    "OpenAI Codex"
+  ],
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "preservationNote": "Recovered from the retired draft branch agent/add-terminus-sui-definition during branch cleanup. It is preserved as a non-canonical candidate because the active canonical definition at _definitions/atoms/terminus-sui.jsonld uses the Aristotelian final-end sense.",
+  "claimKind": "definition",
+  "claimClass": "cross-domain synthesis",
+  "statementTechnical": "Terminus Sui names the recurrent architecture in which sufficiently rich systems encounter domain-specific limits on what they can prove, define, decide, maintain, or irreversibly erase using only operations and resources available within the relevant closure.",
+  "statementPlain": "At some point, every sufficiently rich system reaches something it cannot fully prove, define, predict, maintain, or erase from inside its own closure.",
+  "scopeBoundary": "This atom defines the cross-domain recurrence of domain-specific internal limits. Theological conclusions, ultimate-grounding arguments, and applications belong in separate bridge or application atoms with their added premises disclosed.",
+  "mathematicalForm": "Established domain-specific limits => Terminus Sui as a cross-domain synthesis",
+  "theoremDefinitions": [
+    {
+      "name": "Gödel incompleteness",
+      "definition": "A consistent formal system capable of sufficient elementary arithmetic is incomplete; under the second theorem's conditions, it cannot prove its own consistency."
+    },
+    {
+      "name": "Tarski undefinability",
+      "definition": "A sufficiently expressive consistent formal theory cannot contain an unrestricted truth predicate satisfying the full T-schema for its own language."
+    },
+    {
+      "name": "Turing undecidability",
+      "definition": "No Turing machine decides the halting problem for every arbitrary Turing machine and input."
+    },
+    {
+      "name": "Second Law of Thermodynamics",
+      "definition": "For the relevant isolated or thermally closed systems and stated thermodynamic conditions, spontaneous evolution does not proceed toward lower total entropy."
+    },
+    {
+      "name": "Landauer principle",
+      "definition": "Logically irreversible bit reset has a minimum thermodynamic work/heat cost under the principle's physical assumptions."
+    }
+  ],
+  "citationPolicy": {
+    "required": true,
+    "mode": "quote_or_link",
+    "rule": "Any public rendering, quotation, or reuse of this claim must include at least one authoritative source link and must preserve the scope boundary. When space permits, render the exact quotation with its source.",
+    "minimumSources": 1
+  },
+  "citations": [
+    {
+      "citationID": "src:SEP-GODEL-INCOMPLETENESS",
+      "sourceName": "Stanford Encyclopedia of Philosophy — Gödel's Incompleteness Theorems",
+      "sourceURL": "https://plato.stanford.edu/entries/goedel-incompleteness/",
+      "exactQuote": "Any consistent formal system F within which a certain amount of elementary arithmetic can be carried out is incomplete.",
+      "supports": "Gödel incompleteness scope"
+    },
+    {
+      "citationID": "src:SEP-GODEL-OUTSIDE",
+      "sourceName": "Stanford Encyclopedia of Philosophy — A Philosophical Argument About the Content of Mathematics",
+      "sourceURL": "https://plato.stanford.edu/archives/win2021/entries/goedel/content-mathematics.html",
+      "exactQuote": "Consistency will never be intrinsic to the system; it must always be imported “from the outside,” so to speak.",
+      "supports": "Metatheoretic outside-language interpretation; not a proof of a divine source"
+    },
+    {
+      "citationID": "src:SEP-TARSKI",
+      "sourceName": "Stanford Encyclopedia of Philosophy — Self-Reference and Paradox",
+      "sourceURL": "https://plato.stanford.edu/entries/self-reference/",
+      "exactQuote": "Any theory extending first-order arithmetic and containing schema T is inconsistent.",
+      "supports": "Tarski undefinability scope"
+    },
+    {
+      "citationID": "src:SEP-TURING",
+      "sourceName": "Stanford Encyclopedia of Philosophy — Self-Reference and Paradox",
+      "sourceURL": "https://plato.stanford.edu/archives/sum2011/entries/self-reference/",
+      "exactQuote": "There exists no Turing machine deciding the halting problem.",
+      "supports": "Turing undecidability scope"
+    },
+    {
+      "citationID": "src:SEP-THERMO",
+      "sourceName": "Stanford Encyclopedia of Philosophy — Thermodynamic Asymmetry in Time",
+      "sourceURL": "https://plato.stanford.edu/entries/time-thermo/",
+      "exactQuote": "In the spontaneous evolution of a thermally closed system the entropy can never decrease.",
+      "supports": "Thermodynamic scope"
+    },
+    {
+      "citationID": "src:SEP-LANDAUER",
+      "sourceName": "Stanford Encyclopedia of Philosophy — Information Processing and Thermodynamic Entropy",
+      "sourceURL": "https://plato.stanford.edu/entries/information-entropy/",
+      "exactQuote": "reset a bit to zero converting less than kT ln 2 of work into heat",
+      "supports": "Landauer reset cost"
+    }
+  ],
+  "falsificationCondition": [
+    "A cited theorem is shown not to establish the domain-specific limit attributed to it.",
+    "The cross-domain commonality cannot be stated without erasing the source theorems' native hypotheses.",
+    "Terminus Sui is presented as an individual source theorem rather than a named synthesis."
+  ],
+  "verificationStatus": "source-verified; synthesis not machine-proven",
+  "kernelChecked": false,
+  "challengeStatus": "challenged-survived",
+  "claimBurden": {
+    "class": "interpretation",
+    "requiredSupport": [
+      "Exact theorem scopes",
+      "Authoritative citations",
+      "Explicit synthesis boundary"
+    ],
+    "supportStatus": "complete"
+  },
+  "tags": [
+    "terminus-sui",
+    "self-reference",
+    "incompleteness",
+    "undefinability",
+    "undecidability",
+    "entropy",
+    "landauer",
+    "external-grounding",
+    "cross-domain-synthesis"
+  ],
+  "keywords": [
+    "system limits",
+    "metatheory",
+    "metalanguage",
+    "halting problem",
+    "isolated system",
+    "bit reset",
+    "outside"
+  ],
+  "edges": [],
+  "claimBeacon": {
+    "have": [
+      "definition:terminus-sui",
+      "evidence:authoritative-quotations",
+      "boundary:domain-limits-separated-from-theological-bridge"
+    ],
+    "need": [
+      "application:ultimate-grounding",
+      "bridge:theological-identification"
+    ],
+    "breakIf": [
+      "source theorem scope misstated",
+      "synthesis presented as source theorem"
+    ],
+    "citationRequired": true
+  }
+}

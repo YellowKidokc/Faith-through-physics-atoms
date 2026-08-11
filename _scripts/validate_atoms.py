@@ -33,9 +33,13 @@ def check(atom, path, errs):
         if val and val not in table:
             bad(field, val, table)
 
-    dom = atom.get("domainType")
-    if dom and dom not in DOMAINS:
-        bad("domainType", dom, DOMAINS)
+    domains = atom.get("domainType")
+    if domains:
+        if not isinstance(domains, list):
+            domains = [domains]
+        for dom in domains:
+            if dom not in DOMAINS:
+                bad("domainType", dom, DOMAINS)
 
     cc = atom.get("claimClass")
     if cc and cc not in V["claimClass"]:

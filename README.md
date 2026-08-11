@@ -13,7 +13,9 @@ Truth descends as far as people require.**
 
 Proposed node connections can now be pressure-tested through the provider-neutral
 [Adversarial Review Gate](_docs/ADVERSARIAL_REVIEW_GATE.md). Its GUI and CLI
-block opposed wires while reserving every acceptance decision for a human.
+block opposed wires while reserving every acceptance decision for a human. The
+same rail can generate proposed plain-language math translation nodes without
+promoting the source claim.
 
 Canonical terminology is indexed by the
 [Canonical Definition Registry](_docs/CANONICAL_DEFINITION_REGISTRY.md). Each
