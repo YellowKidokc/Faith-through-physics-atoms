@@ -8,6 +8,12 @@ import adversarial_review as ar
 
 
 class ReviewTests(unittest.TestCase):
+    def test_atoms_index_includes_path_based_source_content(self):
+        fixture = "_fixtures/definitions/sample-paper.md"
+        atoms = ar.atoms_by_id()
+        self.assertIn(fixture, atoms)
+        self.assertIn("silently linked to the grace factor", atoms[fixture]["content"])
+
     def test_local_review_fails_closed_when_no_contradiction(self):
         result = ar.local_review({"matchReason": "shared axiom"}, {"status": "verified"}, {})
         self.assertEqual("uncertain", result["verdict"])
