@@ -86,6 +86,27 @@ class AtlasResolutionTests(unittest.TestCase):
             self.assertIn("UNSUPPORTED COMPONENT - no admitted evidence", html)
             self.assertIn("Evidence strength is not evidence coverage", html)
 
+    def test_projection_renders_ascendant_descendant_and_meeting(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_json(root / "claims" / "claim.jsonld", {"nodeType": "claim", "claimID": "C1", "name": "Claim"})
+            (root / "_atlas").mkdir()
+            (root / "_atlas" / "open-items.jsonl").write_text("", encoding="utf-8")
+            (root / "_atlas" / "relations.jsonl").write_text("", encoding="utf-8")
+            (root / "_atlas" / "evidence-coverage.jsonl").write_text("", encoding="utf-8")
+            rows = [
+                {"projection_id": "A1", "claim_id": "C1", "mode": "ascendant", "title": "A", "result": "supported", "path": [{"id": "E1"}, {"id": "C1"}]},
+                {"projection_id": "D1", "claim_id": "C1", "mode": "descendant", "title": "D", "result": "partial", "reference": "R", "predictions": [{"prediction_id": "P1", "text": "x", "test": "T1", "result": "found"}]},
+                {"projection_id": "M1", "claim_id": "C1", "mode": "meeting", "title": "M", "result": "converged", "local_cell": "I1", "ascent": "yes", "descent": "yes"},
+            ]
+            (root / "_atlas" / "projections.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
+            atlas = ar.build_atlas(root)
+            html = ar.render_projections("C1", atlas)
+            self.assertIn("Ascendant - A", html)
+            self.assertIn("Descendant - D", html)
+            self.assertIn("Meeting - M", html)
+            self.assertIn("Source -> Atomization", html)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -15,6 +15,7 @@ REPO = Path(__file__).resolve().parents[1]
 OPEN_ITEMS = REPO / "_atlas" / "open-items.jsonl"
 RELATIONS = REPO / "_atlas" / "relations.jsonl"
 EVIDENCE_COVERAGE = REPO / "_atlas" / "evidence-coverage.jsonl"
+PROJECTIONS = REPO / "_atlas" / "projections.jsonl"
 
 INVERSES = {
     "establishes": "established by",
@@ -53,6 +54,7 @@ class Atlas:
     backward: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
     open_items_by_atom: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
     evidence_by_claim: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
+    projections_by_claim: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
     atoms: dict[str, dict[str, Any]] = field(default_factory=dict)
 
 
@@ -142,6 +144,7 @@ def build_atlas(root: Path = REPO) -> Atlas:
     atoms = load_claim_atoms(root)
     open_items = load_jsonl(root / "_atlas" / "open-items.jsonl")
     evidence_rows = load_jsonl(root / "_atlas" / "evidence-coverage.jsonl")
+    projection_rows = load_jsonl(root / "_atlas" / "projections.jsonl")
     relation_rows = [normalize_relation(r) for r in load_jsonl(root / "_atlas" / "relations.jsonl")]
     relation_rows.extend(relations_from_atoms(atoms))
     relation_rows.extend(relations_from_open_items(open_items))
@@ -167,6 +170,10 @@ def build_atlas(root: Path = REPO) -> Atlas:
         claim_id = row.get("claim_id") or row.get("claimID")
         if claim_id:
             atlas.evidence_by_claim.setdefault(str(claim_id), []).append(row)
+    for row in projection_rows:
+        claim_id = row.get("claim_id") or row.get("claimID")
+        if claim_id:
+            atlas.projections_by_claim.setdefault(str(claim_id), []).append(row)
     return atlas
 
 
@@ -324,6 +331,76 @@ def render_evidence_coverage(atom_id: str, atom: dict[str, Any], atlas: Atlas) -
 """
 
 
+def _items(values: list[Any]) -> str:
+    return "".join(_li(str(v)) for v in values) or "<li>None declared</li>"
+
+
+def render_projection(projection: dict[str, Any]) -> str:
+    mode = str(projection.get("mode", "projection"))
+    title = html.escape(str(projection.get("title", mode.title())))
+    result = html.escape(str(projection.get("result", "unresolved")))
+    if mode == "ascendant":
+        path = " -> ".join(str(p.get("id", p)) for p in projection.get("path", []))
+        edges = [
+            f"{e.get('from')} -> {e.get('relation_type')} -> {e.get('to')} "
+            f"(strength {e.get('strength')}, coverage {e.get('coverage')}, method {e.get('method')})"
+            for e in projection.get("edges", [])
+        ]
+        return f"""
+        <article class="atlas-projection ascendant">
+          <h4>Ascendant - {title}</h4>
+          <p><strong>Path:</strong> {html.escape(path)}</p>
+          <p><strong>Cold-read rule:</strong> {html.escape(str(projection.get('rule', 'No Descent answer supplied to this path.')))}</p>
+          <h5>Edges</h5><ul>{_items(edges)}</ul>
+          <h5>Open Items</h5><ul>{_items(projection.get('open_items', []))}</ul>
+          <h5>Counterevidence</h5><ul>{_items(projection.get('counterevidence', []))}</ul>
+          <p><strong>Current Ascent Result:</strong> {result}</p>
+        </article>
+"""
+    if mode == "descendant":
+        predictions = [
+            f"{p.get('prediction_id')}: {p.get('text')} -> {p.get('test')} = {p.get('result')}"
+            for p in projection.get("predictions", [])
+        ]
+        return f"""
+        <article class="atlas-projection descendant">
+          <h4>Descendant - {title}</h4>
+          <p><strong>Reference:</strong> {html.escape(str(projection.get('reference', 'not declared')))}</p>
+          <p><strong>Interface:</strong> {html.escape(str(projection.get('interface', 'not declared')))}</p>
+          <h5>Expected Invariants</h5><ul>{_items(projection.get('expected_invariants', []))}</ul>
+          <h5>Predictions</h5><ul>{_items(predictions)}</ul>
+          <h5>Assumptions</h5><ul>{_items(projection.get('assumptions', []))}</ul>
+          <h5>Negative Guards</h5><ul>{_items(projection.get('negative_guards', []))}</ul>
+          <h5>Kill Conditions</h5><ul>{_items(projection.get('kill_conditions', []))}</ul>
+          <p><strong>Current Descent Result:</strong> {result}</p>
+        </article>
+"""
+    if mode == "meeting":
+        notes = projection.get("notes", [])
+        return f"""
+        <article class="atlas-projection meeting">
+          <h4>Meeting - {title}</h4>
+          <p><strong>Local Meeting Cell:</strong> {html.escape(str(projection.get('local_cell', 'not declared')))}</p>
+          <p><strong>Ascent:</strong> {html.escape(str(projection.get('ascent', 'unknown')))}</p>
+          <p><strong>Descent:</strong> {html.escape(str(projection.get('descent', 'unknown')))}</p>
+          <p><strong>Meeting Result:</strong> {result}</p>
+          <ul>{_items(notes)}</ul>
+        </article>
+"""
+    return ""
+
+
+def render_projections(atom_id: str, atlas: Atlas) -> str:
+    projections = atlas.projections_by_claim.get(atom_id, [])
+    if not projections:
+        return ""
+    return f"""
+      <h4>Ascendant / Descendant / Meeting</h4>
+      <p><strong>Sequence:</strong> Source -> Atomization -> Classification -> Ascendant -> Descendant -> Meeting -> Proof/Evidence -> Grading -> Human Canon Gate -> Canonical Publication -> Living Atlas.</p>
+      {''.join(render_projection(p) for p in projections)}
+"""
+
+
 def render_resolution_section(atom_id: str, atom: dict[str, Any], atlas: Atlas) -> str:
     forward = atlas.forward.get(atom_id, [])
     backward = atlas.backward.get(atom_id, [])
@@ -335,6 +412,7 @@ def render_resolution_section(atom_id: str, atom: dict[str, Any], atlas: Atlas) 
     backward_html = "".join(render_relation(r, inverse=True) for r in backward) or "<li>None recorded</li>"
     open_html = "".join(render_open_item(i) for i in open_items) or "<p>No open items recorded for this atom.</p>"
     evidence_html = render_evidence_coverage(atom_id, atom, atlas)
+    projections_html = render_projections(atom_id, atlas)
     return f"""
   <section class="atlas-resolution atlas-mode-current" data-principle="retroactive-resolution-non-retroactive-history">
     <style>
@@ -362,6 +440,7 @@ def render_resolution_section(atom_id: str, atom: dict[str, Any], atlas: Atlas) 
       <h4>Open Items</h4>
       {open_html}
       {evidence_html}
+      {projections_html}
     </section>
   </section>
 """

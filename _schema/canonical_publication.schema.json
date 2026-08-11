@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/canonical_publication.schema.json",
+  "title": "Canonical Publication Record",
+  "type": "object",
+  "required": ["publicationID", "sourcePath", "canonicalDate", "versionID", "frozenPublicationStats", "livingAtlasStats", "canonGate"],
+  "additionalProperties": true,
+  "properties": {
+    "publicationID": {"type": "string"},
+    "sourcePath": {"type": "string"},
+    "sourceKind": {"type": "string"},
+    "canonicalDate": {"type": "string"},
+    "versionID": {"type": "string"},
+    "principle": {"type": "string"},
+    "frozenPublicationStats": {
+      "type": "object",
+      "required": ["sourceHash", "wordCount", "atomCount", "claimCount", "openItemCount", "equationCount"],
+      "additionalProperties": true
+    },
+    "livingAtlasStats": {
+      "type": "object",
+      "required": ["currentStanding", "stillOpenItems", "lastRecalculated"],
+      "additionalProperties": true
+    },
+    "canonGate": {
+      "type": "object",
+      "required": ["status", "allowedActions", "warning"],
+      "properties": {
+        "status": {"type": "string", "enum": ["sidecar", "promoted", "rejected", "review_again"]},
+        "reviewPrompt": {"type": "string"},
+        "allowedActions": {"type": "array", "items": {"type": "string"}},
+        "warning": {"type": "string"},
+        "acceptedAt": {"type": "string"}
+      },
+      "additionalProperties": true
+    }
+  }
+}

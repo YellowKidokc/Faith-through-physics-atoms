@@ -32,6 +32,14 @@ Evidence is component-aware by contract. The
 evidence strength from evidence coverage, so a source can strongly support one
 part of a claim while remaining silent on another.
 
+Publication is human-gated by design:
+[Canonical Publication Gate](_docs/CANONICAL_PUBLICATION_GATE.md) keeps
+authoring source, frozen canonical publication, and living Atlas state separate.
+
+Ascendant, Descendant, and Meeting projections are documented in
+[_docs/ASCENDANT_DESCENDANT_MEETING.md](_docs/ASCENDANT_DESCENDANT_MEETING.md).
+They render as additional views over the same atom and Atlas objects.
+
 ---
 
 ## CRITICAL DISTINCTIONS

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/atlas_projection.schema.json",
+  "title": "Atlas Ascendant Descendant Meeting Projection",
+  "type": "object",
+  "required": ["projection_id", "claim_id", "mode", "title", "result"],
+  "additionalProperties": true,
+  "properties": {
+    "projection_id": {"type": "string"},
+    "claim_id": {"type": "string"},
+    "mode": {"type": "string", "enum": ["ascendant", "descendant", "meeting"]},
+    "title": {"type": "string"},
+    "source": {"type": "string"},
+    "result": {"type": "string"},
+    "path": {"type": "array", "items": {"type": "object"}},
+    "edges": {"type": "array", "items": {"type": "object"}},
+    "reference": {"type": "string"},
+    "interface": {"type": "string"},
+    "expected_invariants": {"type": "array", "items": {"type": "string"}},
+    "predictions": {"type": "array", "items": {"type": "object"}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "negative_guards": {"type": "array", "items": {"type": "string"}},
+    "kill_conditions": {"type": "array", "items": {"type": "string"}},
+    "local_cell": {"type": "string"},
+    "ascent": {"type": "string"},
+    "descent": {"type": "string"}
+  }
+}

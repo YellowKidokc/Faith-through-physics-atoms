@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Canonical Publication Gate</title>
+</head>
+<body>
+  <main class="canon-gate">
+    <h1>Promote To Canonical Publication?</h1>
+    <p>This action freezes version {{ versionID }}, registers atoms and claims, assigns canonical records, records source hash, and creates canonical HTML/JSON snapshots.</p>
+    <section>
+      <h2>At Publication</h2>
+      {{ frozenPublicationStats }}
+    </section>
+    <section>
+      <h2>Current Atlas</h2>
+      {{ livingAtlasStats }}
+    </section>
+    <nav>
+      <button type="button">Review Again</button>
+      <button type="button">Save As Sidecar</button>
+      <button type="button">Promote To Canon</button>
+    </nav>
+  </main>
+</body>
+</html>
