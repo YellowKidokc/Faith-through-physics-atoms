@@ -36,9 +36,19 @@ def atoms_by_id() -> dict[str, dict[str, Any]]:
         if any(part in {"_vocab", "_protocol"} for part in path.parts):
             continue
         atom = json.loads(path.read_text(encoding="utf-8"))
+        # Definition-link proposals identify their source by repository-relative
+        # path, rather than by a JSON-LD identifier.  Index that path as well so
+        # reviewers receive the actual source document.
+        result[path.relative_to(REPO).as_posix()] = atom
         for key in ("claimID", "nodeID", "@id"):
             if atom.get(key):
                 result[str(atom[key])] = atom
+    for suffix in ("*.md", "*.html"):
+        for path in REPO.rglob(suffix):
+            if ".git" in path.parts:
+                continue
+            rel = path.relative_to(REPO).as_posix()
+            result[rel] = {"sourcePath": rel, "content": path.read_text(encoding="utf-8")}
     return result
 
 

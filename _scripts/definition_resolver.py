@@ -175,9 +175,24 @@ def validate(repo: Path = REPO) -> list[str]:
 def render(source: Path, output: Path, repo: Path = REPO) -> None:
     _, atoms = load_registry(repo)
     raw = source.read_text(encoding="utf-8")
-    matches = [m for m in resolve_text(raw, atoms) if m.status == "proposed"]
+    source_id = source.resolve().relative_to(repo.resolve()).as_posix()
+    proposal_path = repo / "_proposals" / "definition-links.jsonl"
+    proposals = [] if not proposal_path.exists() else [
+        json.loads(line) for line in proposal_path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    accepted_definition_ids = {
+        row.get("targetAtom") for row in proposals
+        if row.get("sourceAtom") == source_id
+        and row.get("status") == "accepted"
+        and row.get("validationReceipt", {}).get("acceptedBy")
+        and row.get("validationReceipt", {}).get("acceptedAt")
+        and row.get("validationReceipt", {}).get("adversarialGateStatus") != "blocked"
+    }
     citations = []
-    for did in dict.fromkeys(m.definition_id for m in matches):
+    for did in sorted(accepted_definition_ids):
+        if did not in atoms:
+            continue
         atom = atoms[did]
         if atom["citationPolicy"]["required"] and atom["citationPolicy"]["inheritToDependents"]:
             src = atom["source"]
