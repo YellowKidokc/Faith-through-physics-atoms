@@ -31,16 +31,16 @@ class ResolverTests(unittest.TestCase):
             root = Path(tmp); (root / "_definitions/atoms").mkdir(parents=True)
             atom = json.loads(json.dumps(self.atoms["tp:def:terminus-sui"]))
             atom["source"]["exactShortQuotation"] = ""; atom["source"]["authoritativeSourceURL"] = ""
-            (root / "_definitions/atoms/x.jsonld").write_text(json.dumps(atom))
+            (root / "_definitions/atoms/x.jsonld").write_text(json.dumps(atom), encoding="utf-8")
             registry = {"definitions": [{"permanentDefinitionID": atom["permanentDefinitionID"], "atom": "atoms/x.jsonld", "canonicalStatus": atom["canonicalStatus"]}]}
-            (root / "_definitions/registry.jsonld").write_text(json.dumps(registry))
+            (root / "_definitions/registry.jsonld").write_text(json.dumps(registry), encoding="utf-8")
             self.assertTrue(any("required citation" in e for e in dr.validate(root)))
 
     def test_definition_proposal_stays_awaiting_human(self):
         row = {"proposalID": "d1", "sourceAtom": "paper.md", "targetAtom": "tp:def:terminus-sui", "status": "proposed"}
         with tempfile.TemporaryDirectory() as tmp:
             definitions, claims, reviews = Path(tmp)/"d.jsonl", Path(tmp)/"c.jsonl", Path(tmp)/"r.jsonl"
-            definitions.write_text(json.dumps(row) + "\n"); claims.write_text("")
+            definitions.write_text(json.dumps(row) + "\n", encoding="utf-8"); claims.write_text("", encoding="utf-8")
             with patch.object(ar, "PROPOSALS", claims), patch.object(ar, "DEFINITION_PROPOSALS", definitions), patch.object(ar, "REVIEWS", reviews), patch.object(ar, "atoms_by_id", return_value={}):
                 receipt = ar.run_reviews(proposal_id="d1")[0]
             self.assertEqual("awaiting_human", receipt["gateStatus"])
@@ -56,15 +56,15 @@ class ResolverTests(unittest.TestCase):
             # Reuse the registry tree without changing what render loads.
             with patch.object(dr, "load_registry", return_value=({}, self.atoms)):
                 dr.render(source, root / "unaccepted.html", root)
-                self.assertNotIn("<li", (root / "unaccepted.html").read_text())
+                self.assertNotIn("<li", (root / "unaccepted.html").read_text(encoding="utf-8"))
 
                 row = {"sourceAtom": "paper.md", "targetAtom": "tp:def:master-equation/grace",
                        "status": "accepted", "validationReceipt": {
                            "acceptedBy": "human-reviewer", "acceptedAt": "2026-08-11T00:00:00Z",
                            "adversarialGateStatus": "awaiting_human"}}
-                (root / "_proposals/definition-links.jsonl").write_text(json.dumps(row) + "\n")
+                (root / "_proposals/definition-links.jsonl").write_text(json.dumps(row) + "\n", encoding="utf-8")
                 dr.render(source, root / "accepted.html", root)
-                self.assertIn("Grace (Master Equation)", (root / "accepted.html").read_text())
+                self.assertIn("Grace (Master Equation)", (root / "accepted.html").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__": unittest.main()
