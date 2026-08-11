@@ -1,0 +1,71 @@
+{
+  "source_id": "01_PAPER_I_FOUNDATIONAL",
+  "title": "Paper I  -  Foundational Claim",
+  "canonical_node": {
+    "axiom": "The foundational claim is the single bedrock assumption; if false, the entire paper fails.",
+    "definitions": [
+      "Foundational Axiom: the one-sentence bedrock assumption of the paper.",
+      "F.A.C.T.S. Format: Find, Admit, Claim, Test, Snap.",
+      "Kill Condition: a specified threshold that, if met, falsifies the paper.",
+      "Lowe Battery: LCT (Coherence), LFT (Fruits), LMT (Mastery)."
+    ],
+    "derivation": [
+      "The paper is structured to state an axiom, then find an anomaly, admit bias, claim a thesis, test it, and define kill conditions.",
+      "The thesis is supported by three supporting arguments and makes predictions for true and false cases.",
+      "The test method includes tools, evidence table, primary finding, unexpected, and null results.",
+      "Kill conditions are explicitly invited to falsify the paper."
+    ],
+    "action": "The system should treat this document as a template for a foundational claim paper, requiring the author to fill in each section with specific content, and to run the Lowe Battery tests.",
+    "boundary": [
+      "This document is a template, not a completed paper; it contains no actual claims or evidence.",
+      "It does not assert any specific scientific or theological truth.",
+      "It does not provide a proof or derivation of any kind."
+    ],
+    "test": [
+      "Check that each section (F, A, C, T, S) is filled with substantive content.",
+      "Verify that the foundational axiom is stated in one sentence.",
+      "Verify that kill conditions are defined with thresholds and status.",
+      "Verify that the Lowe Battery tests are answered with Pass/Fail."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "None (template; no external dependencies)"
+    ],
+    "dg2_new_capability": "Provides a structured format for presenting a foundational claim, including explicit bias declaration and kill conditions.",
+    "dg3_preserved_floor": "Preserves the requirement for a single bedrock assumption and explicit falsification criteria.",
+    "dg4_collapse_if_removed": "If the foundational axiom section is removed, the paper loses its basis and cannot be evaluated.",
+    "dg5_translation_registers": [
+      "Template structure",
+      "F.A.C.T.S. methodology",
+      "Lowe Battery"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Template",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Store as template; do not treat as a substantive claim."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Could be mistaken for a completed paper with actual findings.",
+      "The template's structure might imply a proof exists when it does not."
+    ],
+    "kill_conditions": [
+      "If the template is presented as a completed paper without content.",
+      "If the foundational axiom is not stated or is ambiguous."
+    ],
+    "lean_target": "No formalization possible; template only."
+  },
+  "plain_summary": "This is a template for a foundational claim paper, not a completed document. It outlines sections for axiom, find, admit, claim, test, and snap, but contains no actual content. It should be treated as a structural guide, not as a source of claims or evidence.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_PAPER_I_FOUNDATIONAL.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\me-audit\\json\\01_PAPER_I_FOUNDATIONAL.canonical-node.json"
+  }
+}

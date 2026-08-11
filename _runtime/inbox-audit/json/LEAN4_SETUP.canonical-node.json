@@ -1,0 +1,80 @@
+{
+  "source_id": "LEAN4_SETUP",
+  "title": "Lean 4 Setup Guide",
+  "canonical_node": {
+    "axiom": "Lean 4 verification is the authoritative check for formal structural claims in this repository.",
+    "definitions": [
+      "Lean: the Lean 4 theorem prover, versioned via elan.",
+      "elan: the Lean version manager that reads lean-toolchain.",
+      "Lake: the Lean build system and project manager.",
+      "Verified: a Lean file passes when the command exits without errors.",
+      "Mathlib: the Lean mathematical library, fetched via lake exe cache get."
+    ],
+    "derivation": [
+      "Lean is not installed as a single version; elan manages versions.",
+      "The repo's lean-toolchain file specifies the Lean version for elan.",
+      "Running the provided scripts or manual install sets up elan and Lean.",
+      "Verification commands (lean or lake env lean) check files without errors.",
+      "The public verification targets are TheophysicsProductionKernel.lean, CorrectedEntropyKernel.lean, and narrow_product_test/NarrowProductTest/Basic.lean."
+    ],
+    "action": "Install Lean 4 via elan, run the verification commands on the listed files, and treat successful runs as formal verification of the structural claims.",
+    "boundary": [
+      "Does not install Lean globally without elan.",
+      "Does not verify Python behavior; Python only demonstrates examples and counterexamples.",
+      "Does not guarantee Mathlib availability; slow downloads are expected.",
+      "Does not cover all possible Lean files, only the listed targets."
+    ],
+    "test": [
+      "Run 'lean --version' and 'lake --version' to confirm installation.",
+      "Run 'lean TheophysicsProductionKernel.lean' and 'lean CorrectedEntropyKernel.lean' and check for zero errors.",
+      "Run 'lake env lean NarrowProductTest/Basic.lean' and 'lake env lean NarrowProductTest.lean' and check for zero errors.",
+      "In VS Code, open a .lean file and confirm the Infoview shows no red errors."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 toolchain (elan, Lean, Lake)",
+      "Git for Windows (on Windows)",
+      "Mathlib (for narrow_product_test)"
+    ],
+    "dg2_new_capability": "Enables readers to independently verify the Lean proofs, providing a formal check of structural claims beyond Python demonstrations.",
+    "dg3_preserved_floor": "Preserves the existing Python-based demonstrations and the repository's structure; does not alter any mathematical content.",
+    "dg4_collapse_if_removed": "Without this setup, the Lean proofs cannot be checked, and the formal verification claim collapses to unverified.",
+    "dg5_translation_registers": [
+      "lean --version",
+      "lake --version",
+      "lean TheophysicsProductionKernel.lean",
+      "lean CorrectedEntropyKernel.lean",
+      "lake env lean NarrowProductTest/Basic.lean",
+      "lake env lean NarrowProductTest.lean"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as setup documentation"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that Lean verification proves all claims in the repository, when only specific files are targeted.",
+      "Assuming that a successful Lean run implies correctness of the underlying mathematics without inspecting the proof content.",
+      "Equating Python behavior with formal verification."
+    ],
+    "kill_conditions": [
+      "If the listed Lean files do not compile without errors, the verification claim fails.",
+      "If the setup instructions are incomplete or incorrect, users cannot reproduce the verification."
+    ],
+    "lean_target": "TheophysicsProductionKernel.lean, CorrectedEntropyKernel.lean, narrow_product_test/NarrowProductTest/Basic.lean"
+  },
+  "plain_summary": "This document explains how to install Lean 4 and verify specific proof files in the repository. It is a setup guide, not a mathematical proof. The verification commands are clear, but the document does not itself establish any formal claims; it only provides the means to check them.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\LEAN4_SETUP.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\LEAN4_SETUP.canonical-node.json"
+  }
+}

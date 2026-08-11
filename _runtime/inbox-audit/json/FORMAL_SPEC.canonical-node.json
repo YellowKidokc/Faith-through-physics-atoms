@@ -1,0 +1,82 @@
+{
+  "source_id": "FORMAL_SPEC",
+  "title": "Formal Specification for Master Equation",
+  "canonical_node": {
+    "axiom": "The local coherence output is the product of ten named factors, with entropy attenuation and a binary renewal gate, and any zero factor collapses the product.",
+    "definitions": [
+      "chi_local = G * M * E * S_eff(S_prod) * T * K * R * Q * F * C",
+      "S_eff(S_prod) > 0 and non-increasing in S_prod",
+      "R is a binary renewal gate (0 or 1)",
+      "M_eff = (1 + M)/2 with M in [-1,1]",
+      "grace operator: grace(constructive)=constructive, grace(destructive)=constructive",
+      "C_op(0)=0 for zero-preserving coherence operator"
+    ],
+    "derivation": [
+      "Product collapse: product(xs)=0 iff at least one factor is 0.",
+      "R=0 implies chi_local=0.",
+      "Lean proves counterexamples for Version A with negative M.",
+      "Version B uses M_eff to ensure nonnegative factors.",
+      "Lean proves grace(grace(r))=grace(r) and grace is not invertible as total regime map.",
+      "Lean proves C_op(0)=0 cannot rescue an already-zero product."
+    ],
+    "action": "Use Version B (M_eff) as canonical product layer; treat Lagrangian as model specification; require formal proof obligations for any isomorphism claim.",
+    "boundary": [
+      "Does not claim Lean has proven the full physical Lagrangian.",
+      "Does not claim a Noether theorem for commandments.",
+      "Does not claim empirical truth.",
+      "Does not assume physical-spiritual domains are automatically isomorphic."
+    ],
+    "test": [
+      "Check that S_eff is positive and non-increasing in S_prod.",
+      "Check that any zero factor yields chi_local=0.",
+      "Check that M_eff is in [0,1].",
+      "Check that grace operator satisfies idempotence and non-invertibility.",
+      "Check that C_op(0)=0 does not rescue zero product.",
+      "Check that isomorphism claims include toFun, invFun, left_inverse, right_inverse, preserves_value, preserves_collapse."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean formalization of product collapse",
+      "Lean formalization of grace operator",
+      "Lean formalization of coherence operator"
+    ],
+    "dg2_new_capability": "Provides a conservative public contract for the Master Equation, distinguishing formal results from interpretations.",
+    "dg3_preserved_floor": "Preserves the formal product architecture and entropy attenuation behavior.",
+    "dg4_collapse_if_removed": "Without this spec, the formalization lacks a clear public contract and risks overclaiming.",
+    "dg5_translation_registers": [
+      "Lean",
+      "Python numerical mirrors"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal specification",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "adopt as canonical specification"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming Lean has proven the full physical Lagrangian.",
+      "Claiming a Noether theorem for commandments.",
+      "Claiming empirical truth from the formal model.",
+      "Assuming physical-spiritual isomorphism without proof obligations."
+    ],
+    "kill_conditions": [
+      "If Lean proofs are not actually present for the stated claims.",
+      "If the product collapse theorem is not formally verified.",
+      "If the grace operator properties are not formally verified."
+    ],
+    "lean_target": "Formalize the product collapse theorem, grace operator idempotence and non-invertibility, and coherence operator zero-preservation in Lean."
+  },
+  "plain_summary": "This document defines a conservative formal specification for the Master Equation, including a ten-factor product with entropy attenuation and a binary renewal gate. It distinguishes formal results from interpretations, recommends Version B for alignment, and sets proof obligations for any isomorphism claims. It explicitly avoids overclaiming about Lagrangian proofs or empirical truth.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\FORMAL_SPEC.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\FORMAL_SPEC.canonical-node.json"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "source_id": "COLAB_SINGLE_FILE",
+  "title": "COLAB_SINGLE_FILE.ipynb",
+  "canonical_node": {
+    "axiom": "A single self-contained notebook must include all code, definitions, tests, and visualization required to reproduce results without external dependencies.",
+    "definitions": [
+      "Single-file deployment: a notebook that contains all necessary components and requires no external files or imports.",
+      "External dependency: any file, module, or package not included within the notebook itself.",
+      "Reproducibility: the ability to obtain the same results by running all cells in the notebook in a standard Colab environment."
+    ],
+    "derivation": [
+      "The document states that COLAB_SINGLE_FILE.ipynb includes everything: constants, class definitions, test implementations, and visualization.",
+      "It asserts that uploading the notebook to any Google Colab instance and running all cells yields full results without other files.",
+      "It claims zero external dependencies and immunity to version drift between files.",
+      "It positions the notebook as the paper equivalent for computational science, providing accessibility and portability."
+    ],
+    "action": "Deploy the single-file notebook as the canonical distribution artifact for first-contact and sharing, ensuring it runs end-to-end in Google Colab with no external dependencies.",
+    "boundary": [
+      "Does not claim to replace the modular architecture of COLAB_MASTER.ipynb for ongoing development.",
+      "Does not assert that the notebook is optimized for maintainability or ease of modification.",
+      "Does not guarantee that the notebook's results are correct or verified; it only claims self-containment."
+    ],
+    "test": [
+      "Upload the notebook to a fresh Google Colab instance and run all cells without adding any external files.",
+      "Verify that all expected outputs, including test results and visualizations, are produced without errors.",
+      "Check that no import statements reference external modules not included in the notebook."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Google Colab environment (free tier)",
+      "No external files or modules required"
+    ],
+    "dg2_new_capability": "Provides a single-file, zero-dependency distribution method for the Theophysics project, enabling easy sharing and first-contact reproduction.",
+    "dg3_preserved_floor": "Preserves the ability to run all tests and visualizations in a standard Colab environment without requiring repository setup.",
+    "dg4_collapse_if_removed": "If this node is removed, the project loses its single-file distribution artifact, making sharing and first-contact reproduction more cumbersome but not invalidating the underlying science.",
+    "dg5_translation_registers": [
+      "Notebook",
+      "Colab",
+      "Single-file deployment"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Deployment artifact",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a distribution artifact; do not treat as evidence for scientific claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be misinterpreted as providing proof of the underlying physics claims.",
+      "The claim of 'full results' may be overstated if the notebook contains errors or incomplete tests."
+    ],
+    "kill_conditions": [
+      "If the notebook fails to run in a fresh Colab instance without external dependencies.",
+      "If the notebook omits critical components required for reproduction."
+    ],
+    "lean_target": "Formalize the notebook's self-containment as a deployment requirement, not as a scientific proof."
+  },
+  "plain_summary": "This document describes a single-file Colab notebook intended to be fully self-contained for easy sharing and reproduction. It does not provide scientific evidence or proofs; it is a distribution artifact. The node captures the requirement that the notebook must run without external dependencies, but does not validate the underlying claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\COLAB_SINGLE_FILE.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\COLAB_SINGLE_FILE.canonical-node.json"
+  }
+}

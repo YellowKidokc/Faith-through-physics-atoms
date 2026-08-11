@@ -1,0 +1,78 @@
+{
+  "source_id": "LEAN4_THEOREM_COUNT_CANON_2026-07-01",
+  "title": "Lean 4 Theorem Count Canon",
+  "canonical_node": {
+    "axiom": "The canonical theorem count for a Lean package is determined by a frozen counting rule applied to the exact package boundary, and only numbers that survive direct reviewer recount are admissible for public use.",
+    "definitions": [
+      "Canonical theorem count: number of lines matching ^\\s*(theorem|lemma)\\s+<identifier> in root-level .lean files of the compiled package, excluding lakefile.lean, EVIDENCE\\ copies, and subfolder duplicates.",
+      "Root package: D:\\GitHub\\Faith-Thru-Physics-Lean-4- (Std-only toolchain).",
+      "Separate package: D:\\GitHub\\theophysics-lean\\Theophysics_Canonization.lean (Mathlib-based)."
+    ],
+    "derivation": [
+      "The old public number 319 is not reconciled with the frozen counting rule.",
+      "Applying the frozen counting rule to the root package yields 326 theorem declarations.",
+      "The root package builds with exit 0, zero sorry, zero axiom declarations.",
+      "The separate Mathlib-based canonization module compiles clean with 35 theorems, zero sorry, zero axioms.",
+      "Therefore, the canonical public wording is '326 machine-checked theorems in the core package, zero unresolved proofs'."
+    ],
+    "action": "Use 326 as the canonical theorem count for the root package, and if citing the canonization module, state '326 + 35 across two packages'. Retire 319 and 305. Before any public packet, run a final recount and freeze the counting rule.",
+    "boundary": [
+      "Does not merge counts across different toolchain targets.",
+      "Does not claim the count applies to any package other than the specified root package.",
+      "Does not assert that the theorem count implies correctness of the theorems' content.",
+      "Does not establish a canonical count for any future package changes."
+    ],
+    "test": [
+      "Run the frozen counting rule on the root package and verify the total equals 326.",
+      "Verify the package builds with exit 0 and zero sorry/axiom declarations.",
+      "Verify the separate canonization module compiles clean with 35 theorems.",
+      "Check that no public-facing document uses 319 or 305 as canonical."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 compiler and toolchain",
+      "The root package source files at D:\\GitHub\\Faith-Thru-Physics-Lean-4-",
+      "The frozen counting rule definition"
+    ],
+    "dg2_new_capability": "Provides a canonical, audited theorem count for the root package, replacing inconsistent prior numbers, and establishes a counting rule that can be re-run for verification.",
+    "dg3_preserved_floor": "Preserves the fact that the package contains machine-checked theorems with zero sorry and zero axioms, as previously claimed.",
+    "dg4_collapse_if_removed": "Without this node, the theorem count reverts to ambiguous or inconsistent numbers (319, 305), undermining public-facing claims and auditability.",
+    "dg5_translation_registers": [
+      "theorem count",
+      "canonical number",
+      "frozen counting rule",
+      "root package",
+      "separate package"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "empirical_audit",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "adopt_as_canonical_count"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The count 326 is based on a specific counting rule; if the rule is not applied consistently, the number may change.",
+      "The count does not imply the theorems are semantically meaningful or correct beyond machine-checked syntax.",
+      "The separate package count (35) could be mistakenly merged with 326, creating a false single-package total."
+    ],
+    "kill_conditions": [
+      "If a recount under the frozen rule yields a different total, the canonical number must be updated.",
+      "If the package fails to build with zero sorry/axioms, the claim of 'zero unresolved proofs' is invalidated.",
+      "If the counting rule is changed without re-freezing, the canonical status is lost."
+    ],
+    "lean_target": "A Lean function that counts theorem declarations according to the frozen rule and verifies the total."
+  },
+  "plain_summary": "This document establishes that the canonical theorem count for the Lean root package is 326, based on a frozen counting rule, and that a separate Mathlib-based module has 35 theorems. It retires older numbers 319 and 305, and mandates a final recount before public use.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\LEAN4_THEOREM_COUNT_CANON_2026-07-01.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\LEAN4_THEOREM_COUNT_CANON_2026-07-01.canonical-node.json"
+  }
+}

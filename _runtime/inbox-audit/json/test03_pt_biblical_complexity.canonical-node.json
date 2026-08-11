@@ -1,0 +1,76 @@
+{
+  "source_id": "test03_pt_biblical_complexity",
+  "title": "test03_pt_biblical_complexity.ipynb",
+  "canonical_node": {
+    "axiom": "The informational complexity of biblical text increases monotonically across the 2,500 years of biblical history.",
+    "definitions": [
+      "Informational complexity: measured by compression ratio via zlib; shorter compressed representation = lower complexity; larger compressed representation = higher information content.",
+      "Biblical era: one of ten chronologically ordered periods from Pre-Abrahamic to Apostolic and Canonical.",
+      "Monotonic increase: each era's complexity is greater than the previous era's complexity."
+    ],
+    "derivation": [
+      "The Theophysics framework predicts that the Logos (K) component should show measurable growth over time.",
+      "The K variable maps Shannon entropy / information theory to the concept of Logos.",
+      "The test measures whether biblical revelation exhibits the information-growth signature that the K component predicts.",
+      "Ten biblical eras are ranked chronologically and their command complexity is measured.",
+      "Spearman rank correlation is used to test for monotonic increase."
+    ],
+    "action": "The system should measure the informational complexity of biblical text across eras and test for monotonic increase using Spearman rank correlation.",
+    "boundary": [
+      "This test does not prove divine inspiration.",
+      "This test does not measure all aspects of biblical complexity; it uses a specific proxy (compression ratio).",
+      "This test does not establish causality between the K component and the observed pattern."
+    ],
+    "test": [
+      "Compute compression ratios for each era's text.",
+      "Rank eras by complexity and by chronology.",
+      "Compute Spearman rank correlation and p-value.",
+      "Check if  = 1.0 and p < 0.05."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Theophysics framework with K (Logos) component",
+      "Shannon entropy / information theory",
+      "zlib compression algorithm",
+      "Biblical text corpus with era segmentation"
+    ],
+    "dg2_new_capability": "Provides an empirical test of the K component's prediction of monotonic information growth in biblical revelation.",
+    "dg3_preserved_floor": "Preserves the claim that the K component predicts progressive revelation, but does not extend to proof of divine inspiration.",
+    "dg4_collapse_if_removed": "If this test is removed, the empirical support for the K component's information-growth prediction is weakened, but the framework may still stand on other evidence.",
+    "dg5_translation_registers": [
+      "Statistical: Spearman  = 1.0, p = 6.65e-64",
+      "Information-theoretic: compression ratio via zlib",
+      "Theological: Logos (K) component"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "empirical observation",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The result is presented as 'essentially impossible' under null hypothesis, but this is a statistical statement, not a proof of the framework.",
+      "The interpretation says 'the framework made a prediction. The data confirmed it.' This could be overread as confirming the entire Theophysics framework.",
+      "The test uses a proxy (compression ratio) that may not fully capture 'informational complexity' as defined in the framework."
+    ],
+    "kill_conditions": [
+      "If the biblical text segmentation is arbitrary or not reproducible.",
+      "If the compression ratio metric is not a valid measure of the K component.",
+      "If the statistical test is misapplied (e.g., p-value calculation error)."
+    ],
+    "lean_target": "The monotonic increase in compression-based complexity across biblical eras is a reproducible empirical observation."
+  },
+  "plain_summary": "This document reports a statistical test on biblical text complexity across ten eras, finding perfect rank monotonicity (Spearman  = 1.0) with extremely low p-value. It claims this supports the Theophysics K component's prediction of progressive revelation, but explicitly does not prove divine inspiration. The test is reproducible in a Colab notebook.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test03_pt_biblical_complexity.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test03_pt_biblical_complexity.canonical-node.json"
+  }
+}

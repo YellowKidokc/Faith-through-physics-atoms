@@ -1,0 +1,70 @@
+{
+  "source_id": "GraceChain",
+  "title": "GraceChain.lean",
+  "canonical_node": {
+    "axiom": "The redemption sequence is a function composition chain: Grace -> Faith -> Hope -> Salvation, with Grace applied before Faith.",
+    "definitions": [
+      "Faith: a function that maps zero to zero and any non-zero state to one.",
+      "Hope: identity function on the state, representing temporal persistence.",
+      "Salvation: identity function on the state, representing the locked final state.",
+      "Grace: an operator that lifts zero to one, applied before Faith."
+    ],
+    "derivation": [
+      "Define Faith, Hope, Salvation as above.",
+      "Define the chain as Salvation(Hope(Faith(state))).",
+      "Theorem salvation_requires_grace: if state = zero, then Faith(state) = zero, Hope(zero) = zero, Salvation(zero) = zero, so the chain yields zero.",
+      "Theorem salvation_via_grace: if state = zero and graceStep is applied first, then graceStep(state) = one, Faith(one) = one, Hope(one) = one, Salvation(one) = one, so the chain yields one."
+    ],
+    "action": "The system should apply Grace before Faith in any formalization of the redemption sequence, and verify that the chain yields zero without Grace and one with Grace.",
+    "boundary": [
+      "Does not assert that Grace is a physical or causal force; it is a formal operator.",
+      "Does not claim that Faith, Hope, or Salvation are real-world processes; they are abstract functions.",
+      "Does not prove that the sequence is unique or that other sequences are impossible."
+    ],
+    "test": [
+      "Check that the Lean file compiles and the two theorems are proven.",
+      "Verify that the definitions of Faith, Hope, Salvation, and graceStep match the stated behavior.",
+      "Confirm that the chain composition is exactly Salvation(Hope(Faith(state))) and that graceStep is applied before Faith."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 theorem prover",
+      "Formal definitions of Faith, Hope, Salvation, and graceStep"
+    ],
+    "dg2_new_capability": "Provides a formal proof that the redemption sequence has a required order: Grace before Faith, and that without Grace the chain yields zero.",
+    "dg3_preserved_floor": "Preserves the theological claim that Grace precedes Faith and that Faith is a response, not an originating cause.",
+    "dg4_collapse_if_removed": "If removed, the formal justification for the ordering of Grace before Faith in the chain is lost.",
+    "dg5_translation_registers": [
+      "Lean 4 code",
+      "Theological sequence: Grace -> Faith -> Hope -> Salvation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal proof",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as formal proof of the chain ordering"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be interpreted as proving the actual theological necessity of the order, but it only proves a formal property of the defined functions.",
+      "The functions are abstract and may not correspond to real-world processes."
+    ],
+    "kill_conditions": [
+      "If the Lean file does not compile or the theorems are not proven.",
+      "If the definitions of the functions are inconsistent with the stated behavior."
+    ],
+    "lean_target": "Formalize the chain and theorems in Lean 4, ensuring the proofs are valid."
+  },
+  "plain_summary": "GraceChain.lean is a Lean 4 formal proof that the sequence Grace -> Faith -> Hope -> Salvation, when applied to a zero state, yields zero without Grace and one with Grace. It formalizes the theological ordering that Grace precedes Faith.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\GraceChain.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\GraceChain.canonical-node.json"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "source_id": "SESSION_LOG_2026-05-04_CODEX",
+  "title": "Session Log Codex May 4 2026",
+  "canonical_node": {
+    "axiom": "Session logs must preserve facts, decisions, and next actions in a machine-ingestible structure so future agents can operate without reconstructing context from chat history.",
+    "definitions": [
+      "Session manifest: a structured record of created files, decisions, and open threads from a working session.",
+      "Canonical inputs: specific files and paths used as authoritative references during the session.",
+      "Open threads: unresolved items requiring future action or decision.",
+      "Brain pipeline: the system that ingests structured session records into memory and vault archives."
+    ],
+    "derivation": [
+      "The session produced a set of file creations, architecture decisions, and empirical results.",
+      "These facts are captured in a markdown log with explicit layers for manifest, decisions, and open threads.",
+      "The log is intended to be converted into a JSON session object for the brain pipeline.",
+      "Therefore, the canonical action is to structure session logs as JSON with defined fields and to use the markdown as a human-readable startup brief."
+    ],
+    "action": "When a session log is produced, convert it into a structured JSON session object with fields for manifest, decisions, and open threads, and store it as the indexable session record while keeping the markdown as the startup brief.",
+    "boundary": [
+      "Does not prescribe specific content of decisions or results.",
+      "Does not validate the correctness of the session's technical claims.",
+      "Does not define the exact schema for the JSON session object beyond the general structure.",
+      "Does not mandate the storage location or pipeline implementation."
+    ],
+    "test": [
+      "Check that the JSON session object contains all file paths, decisions, and open threads listed in the markdown.",
+      "Verify that the JSON is parseable and can be ingested by the brain pipeline without missing fields.",
+      "Confirm that the markdown and JSON are stored together and referenced consistently."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Canonical framing document",
+      "Ten Laws equations",
+      "Master equation axioms",
+      "Opus session log"
+    ],
+    "dg2_new_capability": "Provides a structured, machine-readable session record that can be ingested by the brain pipeline without manual reconstruction.",
+    "dg3_preserved_floor": "Preserves the human-readable narrative and all factual details from the session log.",
+    "dg4_collapse_if_removed": "Without this node, future agents would lose the structured handoff and would need to parse raw chat logs, risking loss of context and decisions.",
+    "dg5_translation_registers": [
+      "Session log to JSON",
+      "Markdown to structured fields",
+      "File paths to canonical references"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "store"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims the session log is the right handoff shape, but this is an opinion.",
+      "The document asserts the brain pipeline is live but blocked, which may be outdated.",
+      "The document lists empirical results without verification."
+    ],
+    "kill_conditions": [
+      "If the JSON schema is not defined, the action cannot be executed.",
+      "If the brain pipeline does not accept this format, the node is moot.",
+      "If the session log is superseded by a later version, this node becomes stale."
+    ],
+    "lean_target": "A minimal JSON schema for session logs that captures manifest, decisions, and open threads."
+  },
+  "plain_summary": "This document is a session log from Codex on May 4, 2026, capturing file creations, decisions, and open threads. The canonical action is to convert such logs into structured JSON for the brain pipeline. The node is procedural and not a proof of any technical claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SESSION_LOG_2026-05-04_CODEX.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\SESSION_LOG_2026-05-04_CODEX.canonical-node.json"
+  }
+}

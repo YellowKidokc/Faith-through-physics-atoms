@@ -1,0 +1,76 @@
+{
+  "source_id": "FormalVerificationTestLog",
+  "title": "Formal Verification Test Log",
+  "canonical_node": {
+    "axiom": "Formal verification preserves the actual path of testing, including mistakes and boundary discoveries, and does not overclaim what is proven.",
+    "definitions": [
+      "LawIso: a minimal isomorphism structure with zero/one value function, collapsed predicate, bidirectional map, value preservation, and collapse preservation.",
+      "RichLawIso: an enriched isomorphism structure adding regime-role preservation and forward/reverse transition preservation.",
+      "Bridge matrix: an encoding of ten formal factor slots with physical and spiritual readings, canonical rows, and adversarial semantic swaps.",
+      "Proof escape hatch: any use of sorry, admit, axiom, or unsafe in the Lean module path."
+    ],
+    "derivation": [
+      "The minimal LawIso definition admits any binary zero/one collapse system, as shown by the coin false positive.",
+      "Adding regime roles and transition preservation to RichLawIso blocks the natural coin model but still admits a relabeled coin with the same roles.",
+      "The bridge matrix is internally consistent and rejects several semantic swaps when signatures differ, but cannot verify the domain-faithfulness of assigned signatures.",
+      "Therefore, formal verification currently proves preservation of encoded structure, not the truth of domain interpretations."
+    ],
+    "action": "Maintain a formal verification log that records positive results, adversarial tests, mistakes, and boundary discoveries, and clearly distinguishes verified claims from not-yet-supported claims.",
+    "boundary": [
+      "Does not claim that Lean verifies domain interpretations or the correctness of human-assigned semantic roles.",
+      "Does not claim that the encoded signatures are faithful to physics or theology without an external audit layer.",
+      "Does not claim that the absence of proof escape hatches in the active module path guarantees the absence of all logical gaps."
+    ],
+    "test": [
+      "Run lake build and lake env lean IsomorphismTest.lean to check compilation.",
+      "Scan the active Lean module path for sorry, admit, axiom, and unsafe; require zero occurrences.",
+      "Run adversarial tests such as coin models and semantic swaps to probe specification boundaries.",
+      "Check that corrected claims explicitly separate verified formal results from domain-interpretation claims."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean theorem prover and project build environment",
+      "ResurrectionFormal.IsomorphismTest and ResurrectionFormal.BridgeMatrix modules",
+      "Layer 1 and Layer 2 bridge table definitions"
+    ],
+    "dg2_new_capability": "Provides a disciplined method for recording formal verification attempts, adversarial tests, and boundary discoveries, preventing overclaiming of formal results.",
+    "dg3_preserved_floor": "Preserves the distinction between verified formal claims and domain-interpretation claims, and maintains a record of the actual testing path.",
+    "dg4_collapse_if_removed": "Without this log, formal verification results could be overclaimed, and the boundary between encoded structure and domain truth would be lost, leading to misleading claims.",
+    "dg5_translation_registers": [
+      "LawIso",
+      "RichLawIso",
+      "BridgeMatrix",
+      "Proof escape hatch scan"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as a methodological guardrail for formal verification practice"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that Lean verifies the domain truth of the bridge when it only verifies preservation of encoded structure.",
+      "Claiming that the absence of proof escape hatches in the active module path guarantees full soundness.",
+      "Claiming that the bridge matrix is domain-faithful without an external source-grounding layer."
+    ],
+    "kill_conditions": [
+      "If the log is used to claim that Lean has verified the strong-force/love bridge in a domain-rich sense.",
+      "If the log is used to claim that the encoded signatures are the correct scientific or theological interpretations without external audit.",
+      "If the log is used to claim that the absence of sorry/admit/axiom/unsafe in the active module path proves the absence of all logical gaps."
+    ],
+    "lean_target": "Formalize the boundary that Lean verifies preservation of encoded structure, not domain truth, and require an external audit layer for domain-faithfulness."
+  },
+  "plain_summary": "This document is a formal verification test log that records Lean verification runs, adversarial tests, mistakes, and boundary discoveries. It shows that minimal and enriched isomorphism structures can verify preservation of encoded abstractions but cannot verify the correctness of domain interpretations. The log establishes a clear boundary: Lean can verify internal consistency and reject some swaps, but cannot independently certify that human-assigned semantic roles are faithful to physics or theology. The recommended action is to preserve this as a methodological guardrail to prevent overclaiming formal results.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\FormalVerificationTestLog.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\FormalVerificationTestLog.canonical-node.json"
+  }
+}

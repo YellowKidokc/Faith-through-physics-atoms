@@ -1,0 +1,73 @@
+{
+  "source_id": "03_TEACHING_LAYER_LawOrganization",
+  "title": "Layer 3  -  The Teaching Layer: Law Organization",
+  "canonical_node": {
+    "axiom": "The teaching layer is a negotiable human-facing organization of the ten formal factors, which must always reduce cleanly to Layer 1 (formal) and Layer 2 (physical-theological mathematics) without contradiction.",
+    "definitions": [
+      "Formal factor: a typed mathematical object in Definition 10, fixed at ten.",
+      "Teaching law chapter: a human-facing explanatory unit, numbering 9 or 10, negotiable.",
+      "Three-layer reconciliation: a test requiring that any public claim reduces to a Layer 2 pairing, that pairing reduces to a Layer 1 factor, and that factor has a verified property in the Lean kernel."
+    ],
+    "derivation": [
+      "Layer 1 fixes ten formal factors; Layer 2 pairs them with spiritual readings; Layer 3 organizes them into teaching chapters.",
+      "Teaching chapters may consolidate or split factors without changing the formal count, as long as each chapter reduces to Layer 1 and Layer 2.",
+      "The current best sequence consolidates old Law 8 into Law 1, clusters Q/R/T into Law 7, and adds Wolfram's pairings as corollaries.",
+      "Three laws (1, 7, 9) are identified as asymmetric anchors forming a flow structure; six are symmetric carriers; Law 10 integrates.",
+      "The no-drift rule requires that teaching never contradicts Layer 1, always reduces to Layer 2, marks simplifications, and keeps teaching law count at 9 or 10."
+    ],
+    "action": "When producing any public-facing explanation, ensure it reduces to a Layer 2 pairing and a Layer 1 factor, and mark any simplifications explicitly.",
+    "boundary": [
+      "Does not alter Layer 1 or Layer 2; those are non-negotiable.",
+      "Does not fix the number of teaching laws at 10; it may be 9 or 10.",
+      "Does not resolve open items such as slot 8 or the status of HonorFrame Integrity."
+    ],
+    "test": [
+      "For any claim: Does it reduce to a Layer 2 pairing Does that pairing reduce to a Layer 1 factor Does that factor have a verified property in the Lean kernel",
+      "If any answer is no, drift has occurred and must be fixed before publication."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Layer 1 (formal factors, Definition 10)",
+      "Layer 2 (physical-theological pairings)",
+      "Lean kernel (verified properties)"
+    ],
+    "dg2_new_capability": "Provides a human-facing organization that consolidates formal factors into teaching chapters, enabling communication to diverse audiences without altering the formal layer.",
+    "dg3_preserved_floor": "Preserves the ten formal factors and the Layer 2 pairings; teaching organization is negotiable but must reduce cleanly.",
+    "dg4_collapse_if_removed": "Without this layer, the framework remains formally intact but becomes less communicable; the teaching organization is not essential to the formal truth.",
+    "dg5_translation_registers": [
+      "Formal factor -> teaching law chapter",
+      "Layer 2 pairing -> teaching law chapter",
+      "Teaching law chapter -> Layer 1 factor (via reduction)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "organizational proposal",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "record as negotiable teaching organization; do not treat as formal proof"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the teaching sequence is canonical when it is proposed and negotiable.",
+      "Treating the three asymmetric anchors as structurally proven rather than an observation.",
+      "Implying Wolfram's pairings are formally verified when they are only folded in as corollaries."
+    ],
+    "kill_conditions": [
+      "If a teaching chapter implies a factor merge, split, or chi-as-factor, the teaching is wrong.",
+      "If a teaching pairing cannot be derived from the ten-row table, it is invalid.",
+      "If the teaching law count becomes 8 or 11, the organization is invalid."
+    ],
+    "lean_target": "No Lean target; this is a teaching organization, not a formal theorem."
+  },
+  "plain_summary": "This document proposes a negotiable teaching layer that organizes the ten formal factors into 9 or 10 human-facing law chapters, with the requirement that all teaching reduce cleanly to the formal and physical-theological layers. It is not a formal proof and should be treated as a proposal.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\03_TEACHING_LAYER_LawOrganization.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\03_TEACHING_LAYER_LawOrganization.canonical-node.json"
+  }
+}

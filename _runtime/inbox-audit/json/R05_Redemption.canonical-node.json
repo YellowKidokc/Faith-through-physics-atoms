@@ -1,0 +1,79 @@
+{
+  "source_id": "R05_Redemption",
+  "title": "Redemption: Positional and Progressive",
+  "canonical_node": {
+    "axiom": "Redemption is both instant (justification) and progressive (sanctification). Position secured at once; practice grows over time. Both are grace-enabled - justification by grace alone, sanctification by grace-powered effort.",
+    "definitions": [
+      "Justification: Instant and complete legal declaration of righteousness before God, : -1 -> +1.",
+      "Sanctification: Progressive growth in actual holiness, C(t) -> C_max.",
+      "Grace (): Divine enablement necessary for both justification and sanctification.",
+      "Position: The believer's legal status before God, fixed at justification.",
+      "Practice: The believer's actual moral condition, growing through sanctification."
+    ],
+    "derivation": [
+      "Justification is instant and complete (axiom R4.1).",
+      "Sanctification is progressive (axiom R4.2).",
+      "Both are grace-enabled (axiom R4.3).",
+      "Therefore, redemption has two aspects: positional (justification) and progressive (sanctification).",
+      "Position is secure; practice grows; both are grounded in grace."
+    ],
+    "action": "The system should maintain the distinction between justification (instant, positional) and sanctification (progressive, practical), ensuring that neither is conflated. It should affirm that both are grace-enabled, with justification by grace alone and sanctification by grace-powered effort.",
+    "boundary": [
+      "Does not claim that sanctification is instant or that justification is progressive.",
+      "Does not claim that human effort accomplishes either justification or sanctification apart from grace.",
+      "Does not claim that position can be lost or that practice determines position.",
+      "Does not claim that perfectionism is achievable in this life."
+    ],
+    "test": [
+      "Check that justification is described as instantaneous and complete, not gradual.",
+      "Check that sanctification is described as progressive, not instant.",
+      "Check that both are attributed to grace, not human effort alone.",
+      "Check that the distinction between position and practice is maintained.",
+      "Check that the security of the believer is grounded in Christ's work, not in performance."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "R4.1 Justification",
+      "R4.2 Sanctification",
+      "R4.3 Both-Grace"
+    ],
+    "dg2_new_capability": "Provides a coherent two-aspect model of redemption that distinguishes positional and progressive dimensions, enabling clear theological reasoning about assurance and growth.",
+    "dg3_preserved_floor": "Preserves the core Christian doctrines of justification by faith and the necessity of sanctification, while rejecting errors like purgatory, works-progression, and perfectionism.",
+    "dg4_collapse_if_removed": "If this node is removed, the distinction between justification and sanctification collapses, leading to confusion between legal standing and actual growth, and potentially undermining assurance or encouraging complacency.",
+    "dg5_translation_registers": [
+      "theology",
+      "systematic theology",
+      "soteriology"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological_doctrine",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "preserve"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document uses mathematical formalism (, C(t)) which may overstate precision beyond theological certainty.",
+      "The 'Security Theorem' is presented as a logical consequence, but it relies on theological premises not formally proven.",
+      "The connection to physics (phase transition) is analogical and could be misinterpreted as a physical claim."
+    ],
+    "kill_conditions": [
+      "If justification is shown to be progressive or sanctification instant, the model fails.",
+      "If human effort is shown to accomplish either apart from grace, the model fails.",
+      "If position can be lost, the security claim fails."
+    ],
+    "lean_target": "Formalize the distinction between justification and sanctification in a proof system, ensuring that the logical dependencies are explicit and the security theorem is derived from axioms."
+  },
+  "plain_summary": "This document presents a theological model of redemption with two aspects: instant justification (positional) and progressive sanctification (practical), both enabled by grace. It argues against purgatory, works-progression, and perfectionism. The model is coherent but relies on scriptural authority rather than formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\R05_Redemption.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\R05_Redemption.canonical-node.json"
+  }
+}

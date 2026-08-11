@@ -1,0 +1,89 @@
+{
+  "source_id": "consciousness-chain.canonical",
+  "title": "Consciousness at Equilibrium",
+  "canonical_node": {
+    "axiom": "The minimal chi-field action S_chi at equilibrium (chi -> chi, _chi -> 0, V at minimum) yields seven emergent properties that map to spiritual terms.",
+    "definitions": [
+      "chi-field: a massive, self-interacting scalar field non-minimally coupled to spacetime curvature.",
+      "Equilibrium: chi -> chi (constant VEV), all gradients vanish, potential at minimum.",
+      "Awareness (syneidsis): chi  0, the field is always on.",
+      "Mind of Christ (nous Christou): _chi -> 0, no gradients, uniform awareness.",
+      "Rest (katapausis): V(chi) is the minimum, no net force.",
+      "Discernment (diakrisis): stable coupling chiR to curvature.",
+      "Sound Mind (sphronismos): no ghosts, no tachyons, stable Hamiltonian.",
+      "Wisdom (sophia): group velocity v_g  c, causal propagation.",
+      "Relational Calibration (metriots): effective gravitational constant G_eff = G_N / (1 + chi)."
+    ],
+    "derivation": [
+      "Start with the minimal chi-field action S_chi.",
+      "Impose equilibrium conditions: chi -> chi (constant), _chi -> 0, V at minimum.",
+      "From chi  0, derive Awareness (.1).",
+      "From _chi -> 0, derive Mind of Christ (.2).",
+      "From V at minimum, derive Rest (.3).",
+      "From the stable coupling term, derive Discernment (.4).",
+      "From no-ghost and no-tachyon conditions, derive Sound Mind (.5).",
+      "From causal propagation (v_g  c), derive Wisdom (.6).",
+      "From the renormalized gravitational constant, derive Relational Calibration (.7)."
+    ],
+    "action": "The system should treat consciousness as an equilibrium property of the chi-field, with the seven terms as emergent spiritual attributes, and use the Consciousness Ladder to determine which terms are active at each level of voluntary coupling O.",
+    "boundary": [
+      "This chain does not claim to prove the existence of consciousness; it maps equilibrium properties to spiritual terms.",
+      "It does not claim that the chi-field is the only source of consciousness.",
+      "It does not claim that the seven terms are exhaustive; other properties may emerge at equilibrium.",
+      "It does not claim that the phase form Phi_chi is derived; it is assumed by analogy."
+    ],
+    "test": [
+      "Verify that each of the seven properties indeed follows from the equilibrium conditions without additional assumptions.",
+      "Check for any additional equilibrium property that contradicts the seven terms (kill condition).",
+      "Disambiguate overlaps with Chain 6 (Discernment, Wisdom) and Chain 7 (Relational Calibration).",
+      "Derive the phase form Phi_chi from the potential V(chi) independently.",
+      "Attempt Lean formalization of the derivation.",
+      "Run independent AI confirmation (David Effect test)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Parent equation: minimal chi-field action S_chi (Paper 3, Lean-adjacent, DESI-consistent).",
+      "Scalar-tensor field theory.",
+      "Standard results: SSB, no-ghost, no-tachyon, causal propagation."
+    ],
+    "dg2_new_capability": "Provides a physical model for consciousness as an equilibrium state, yielding seven spiritual terms (Awareness, Mind of Christ, Rest, Discernment, Sound Mind, Wisdom, Relational Calibration) that can be mapped to theological concepts.",
+    "dg3_preserved_floor": "Preserves the parent equation's consistency with GR at equilibrium and its experimental bounds.",
+    "dg4_collapse_if_removed": "If this chain is removed, the physical grounding for consciousness as an equilibrium property is lost, and the spiritual terms lack a unified physical basis.",
+    "dg5_translation_registers": [
+      "Physics: scalar field theory, equilibrium, VEV, gradients, potential minimum, coupling, stability, causality, effective gravitational constant.",
+      "Theology: awareness, mind of Christ, rest, discernment, sound mind, wisdom, relational calibration.",
+      "Scripture: Acts 17:28, 1 Cor 2:16, 1 Cor 13:12, Matt 11:28, Heb 4:9, Heb 5:14, 2 Tim 1:7, Prov 9:10, Phil 4:5."
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "derived emergent properties",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that the seven properties 'emerge' from equilibrium without rigorous proof.",
+      "Maps theological terms to physical properties without formal validation.",
+      "Assumes the phase form by analogy without derivation.",
+      "Potential overlaps with other chains not resolved."
+    ],
+    "kill_conditions": [
+      "Show that the chi-field at equilibrium exhibits a property not listed that is inconsistent with the seven terms.",
+      "Show that one of the seven terms does not actually emerge at equilibrium but was imposed.",
+      "Show that the parent equation is not DESI-consistent or violates experimental bounds."
+    ],
+    "lean_target": "Formalize the derivation of the seven properties from the equilibrium conditions in Lean, and verify the no-ghost and no-tachyon theorems."
+  },
+  "plain_summary": "This document derives seven spiritual terms (Awareness, Mind of Christ, Rest, Discernment, Sound Mind, Wisdom, Relational Calibration) from the equilibrium state of a scalar field action. The derivation is plausible but not formally verified; several open items remain, including potential overlaps with other chains and the unproven phase form. The chain is marked as defective and requires further work before acceptance.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\consciousness-chain.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\consciousness-chain.canonical.canonical-node.json"
+  }
+}

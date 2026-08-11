@@ -1,0 +1,93 @@
+{
+  "source_id": "SECTIONED_AUDIT_REPORT",
+  "title": "Theophysics Lean Production Kernel: Sectioned First-Pass Audit Report",
+  "canonical_node": {
+    "axiom": "A finite product collapses to zero if and only if zero appears among its factors; a zero-preserving operator cannot rescue a collapsed product; grace is idempotent and non-invertible; structural isomorphism is a burden of proof.",
+    "definitions": [
+      "CoherenceAlgebra: algebraic structure with zero, one, mul, identity laws, annihilation laws, one_ne_zero, no_zero_divisors.",
+      "listProd: finite product of elements in CoherenceAlgebra.",
+      "CoherenceOperator: zero-preserving operator on the algebra.",
+      "Regime: two-state model with grace as a reset to constructive state.",
+      "LawModel: structure for modeling laws.",
+      "LawIso: isomorphism between LawModels.",
+      "MasterState: state with nine factors plus a C operator.",
+      "rawChi: raw product of factors.",
+      "chi: raw product after applying C operator."
+    ],
+    "derivation": [
+      "The kernel defines CoherenceAlgebra and proves listProd_eq_zero_iff: listProd equals zero iff zero is a member.",
+      "It proves listProd_ne_zero_of_all_ne_zero: if all factors are nonzero, the product is nonzero.",
+      "It defines CoherenceOperator and proves cannot_rescue_zero: if raw product is zero, applying a zero-preserving operator keeps it zero.",
+      "It defines Regime and grace, proving grace_idempotent and grace_not_invertible.",
+      "It defines LawModel and LawIso, proving preservation theorems: value_preserved, collapse_preserved, collapsed_maps_to_collapsed.",
+      "It defines MasterState, rawChi, chi, and proves rawChi_zero_iff, chi_zero_if_any_factor_zero, rawChi_nonzero_if_all_factors_nonzero."
+    ],
+    "action": "The system should treat the standalone Lean kernel as the baseline formal artifact, preserving its exact content and hash, and should not claim broader theological or physical proofs beyond what the kernel formally establishes.",
+    "boundary": [
+      "The kernel does not prove the theological or physical truth of the ten laws.",
+      "It does not prove any specific law pair is structurally isomorphic.",
+      "It does not prove the full master equation in empirical form.",
+      "It does not prove a Lagrangian, Noether theorem, thermodynamic theorem, or experimental prediction.",
+      "It does not validate broader claims from prior conversation rhetoric."
+    ],
+    "test": [
+      "Compile the Lean file with lean.exe and verify exit code 0 and no output.",
+      "Search the file for 'sorry', 'axiom', 'unsafe', 'admit' and confirm no hits in executable content.",
+      "Attempt to derive a broader theological or physical claim from the kernel; the derivation should fail without adding new axioms or models.",
+      "Wrap the kernel in a minimal Lake project and run 'lake build' to verify the same clean pass."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean theorem prover",
+      "CoherenceAlgebra definition",
+      "List product definitions",
+      "CoherenceOperator definition",
+      "Regime and grace definitions",
+      "LawModel and LawIso definitions",
+      "MasterState definitions"
+    ],
+    "dg2_new_capability": "Provides a clean, auditable formal kernel proving product-collapse properties and defining the burden of proof for isomorphism claims, without relying on placeholders or unsafe constructs.",
+    "dg3_preserved_floor": "Preserves the formal result that product collapse is equivalent to zero factor presence, and that zero-preserving operators cannot rescue collapsed products.",
+    "dg4_collapse_if_removed": "If the kernel is removed, the formal foundation for the collapse architecture and the clean audit trail is lost, leaving only the older, less clean transcript with sorry-based builds.",
+    "dg5_translation_registers": [
+      "CoherenceAlgebra -> algebraic structure",
+      "listProd -> finite product",
+      "CoherenceOperator -> zero-preserving operator",
+      "Regime -> two-state model",
+      "grace -> idempotent non-invertible reset",
+      "LawModel -> law modeling structure",
+      "LawIso -> isomorphism burden of proof",
+      "MasterState -> nine-factor plus C operator state"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal_audit_report",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "A",
+    "recommended_atom_action": "preserve_as_baseline"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Risk of interpreting the kernel as proving theological or physical truths beyond its formal scope.",
+      "Risk of conflating the clean standalone kernel with the older, less clean Lake project.",
+      "Risk of assuming the kernel proves isomorphism of specific laws without explicit LawIso instances."
+    ],
+    "kill_conditions": [
+      "If the kernel fails to compile in a minimal Lake project.",
+      "If a broader claim is derived from the kernel without adding new axioms or models.",
+      "If the kernel is found to contain hidden placeholders or unsafe constructs in executable content."
+    ],
+    "lean_target": "Formalize the kernel in Lean and verify the stated theorems; extend with concrete LawModel instances and explicit isomorphism proofs for broader claims."
+  },
+  "plain_summary": "This audit report documents a standalone Lean kernel that cleanly proves product-collapse properties and defines the burden of proof for isomorphism claims. It does not prove the full theological or physical framework. The kernel is a clean formal nucleus, but broader claims require additional work.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SECTIONED_AUDIT_REPORT.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\SECTIONED_AUDIT_REPORT.canonical-node.json"
+  }
+}

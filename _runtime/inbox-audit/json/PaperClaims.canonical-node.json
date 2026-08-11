@@ -1,0 +1,89 @@
+{
+  "source_id": "PaperClaims",
+  "title": "Paper Claim Matrix",
+  "canonical_node": {
+    "axiom": "Claims in the paper are tracked by their formal status; only those marked 'proved' are considered established within the toy model.",
+    "definitions": [
+      "C0 and C1: distinct coupling architectures",
+      "CouplingStep: one-way transition from C0 to C1",
+      "Q: a parameter in the master equation; Q=0 collapses the equation",
+      "Stage sequence: ordered sequence of stages from pre-localization to redistribution",
+      "Law 4: strong-force/love abstraction",
+      "Ten-factor bridge matrix: physical/theological bridge matrix with ten factors",
+      "tau_lock: a parameter with conjectured value 33 years"
+    ],
+    "derivation": [
+      "C0 and C1 are distinct coupling architectures (proved).",
+      "C0 -> C1 is irreversible relative to the current one-way CouplingStep.",
+      "Q=0 collapses the master equation in the toy model over Nat.",
+      "Stage sequence reaches redistribution from pre-localization in the toy model.",
+      "Individual reverse stage steps are absent by construction.",
+      "The named physics operation sequence maps to the named theology sequence in the toy model.",
+      "Law 4 strong-force/love abstraction is isomorphic relative to enriched toy definition.",
+      "Ten-factor bridge matrix is internally consistent relative to encoded signatures.",
+      "Full ten-factor toy product collapses when any slot is zero in the toy model.",
+      "tau_lock = 33 years is a conjecture or open.",
+      "Incarnation maps to localization is conceptual.",
+      "Crucifixion maps to release/cost payment is conceptual.",
+      "Resurrection maps to vacuum confirmation is conceptual.",
+      "Pentecost maps to coupling redistribution is empirical/conceptual."
+    ],
+    "action": "Treat only claims marked 'proved' as established within the toy model; treat all others as conjectural or conceptual and do not use them as evidence for physical or theological conclusions.",
+    "boundary": [
+      "Does not assert any claim beyond the toy model.",
+      "Does not assert that toy-model proofs imply real-world physics or theology.",
+      "Does not assert that 'proved relative to definition' is a full proof.",
+      "Does not assert that 'proved in toy model' is a proof over real-valued fields or integrals.",
+      "Does not assert that 'proved relative to encoded signatures' is semantic grounding."
+    ],
+    "test": [
+      "Check that each claim's status matches the notes in the matrix.",
+      "Check that no claim marked 'not proved', 'conjecture', 'conceptual', or 'empirical/conceptual' is treated as proved.",
+      "Check that toy-model proofs are not cited as full proofs."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean formalization of toy model",
+      "Definitions of C0, C1, CouplingStep, Q, stage sequence, Law 4, bridge matrix, tau_lock"
+    ],
+    "dg2_new_capability": "Provides a status matrix for claims, distinguishing proved, assumed, empirical, and conceptual claims.",
+    "dg3_preserved_floor": "Preserves the distinction between formal proofs and conjectures, preventing overstatement.",
+    "dg4_collapse_if_removed": "Without this matrix, the paper's claims could be conflated, leading to overstatement of unproved claims.",
+    "dg5_translation_registers": [
+      "Lean proofs",
+      "Toy model",
+      "Conceptual mapping",
+      "Empirical claims"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "meta-claim about claim status",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Record as a status matrix; do not treat as a physics or theology proof."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating 'proved relative to definition' as full proof",
+      "Treating 'proved in toy model' as proof over real-valued fields",
+      "Treating 'proved relative to encoded signatures' as semantic grounding",
+      "Treating conceptual mappings as established"
+    ],
+    "kill_conditions": [
+      "If any claim marked 'not proved' is used as a premise for a physical conclusion",
+      "If toy-model proofs are cited as evidence for real-world phenomena"
+    ],
+    "lean_target": "Formalize the toy model and the proofs mentioned; do not attempt to formalize conceptual claims."
+  },
+  "plain_summary": "This document is a claim matrix that tracks the formal status of various claims in a paper. It explicitly marks which claims are proved in a toy model, which are relative to definitions, and which are conceptual or conjectural. The canonical action is to respect these statuses and not overstate the strength of the claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\PaperClaims.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\PaperClaims.canonical-node.json"
+  }
+}

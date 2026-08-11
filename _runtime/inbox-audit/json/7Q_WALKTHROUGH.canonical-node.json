@@ -1,0 +1,88 @@
+{
+  "source_id": "7Q_WALKTHROUGH",
+  "title": "7Q Walkthrough  -  Step by Step Through the Machine",
+  "canonical_node": {
+    "axiom": "Every claim carries its own death warrant; the 7Q process is the irreducible method for evaluating any claim by fixing identity, location, assertion, evidence, dependencies, consequences, and falsification conditions.",
+    "definitions": [
+      "7Q: The seven-question evaluation process: Q0 posture, Q1 identity, Q2 location, Q3 assertion, Q4 evidence, Q5 dependencies, Q6 consequences, Q7 falsification.",
+      "chi-field: A scalar field coupled to spacetime curvature, proposed to explain dark energy and consciousness.",
+      "DESI DR2: Dark Energy Spectroscopic Instrument Data Release 2, providing a 4.2 signal for evolving equation of state.",
+      "Ghost freedom: The property of a field theory having no negative-probability states; single-field ghost freedom is proven, multi-component (10 DOF) is not.",
+      "ISO-PARALLEL: A cross-domain status indicating a parallel structure but not yet confirmed.",
+      "E_final: The final evidence score computed as PS  CF, where CF = (0.5 + 0.5ED)  (0.5 + 0.5EC)."
+    ],
+    "derivation": [
+      "Q0: Posture check scores 0.70, flagging author bias.",
+      "Q1: Identity fixed as a hypothesis with Lagrangian S_chi = dx(-g)[(1+chi)R/2 - g^_chi_chi - m_chichi - (/4)chi + L_matter].",
+      "Q2: Domain fixed as physics and consciousness_physics, multi-scale, ISO-PARALLEL.",
+      "Q3: Claim is precise and negatable; negation: 'No scalar field with parameters m_chi ~ H and ||  10 fits the DESI DR2 data better than standard CDM with a cosmological constant.'",
+      "Q4: Evidence channels: PS=0.75, ED=0.70, EC=0.65; CF=0.701; E_final=0.526.",
+      "Q5: Dependency chain terminates at axioms and established physics, but four hidden assumptions are identified.",
+      "Q6: Predictions include Euclid October 2026 as decisive test.",
+      "Q7: Kill conditions named; two open (ghost analysis, Euclid).",
+      "Final truth score T = mean(0.78, 0.53, 0.60, 0.65, 0.72, 0.80) = 0.680, confidence TENTATIVE."
+    ],
+    "action": "Apply the 7Q process to any claim, producing a fixed identity, domain, assertion, evidence score, dependency chain, prediction map, and kill conditions, then compute a composite truth score.",
+    "boundary": [
+      "Does not prove or disprove the chi-field hypothesis; it only evaluates it.",
+      "Does not replace domain-specific scientific validation.",
+      "Does not claim the 7Q process itself is infallible.",
+      "Does not assert that the chi-field is responsible for dark energy; it only assesses the claim's current status."
+    ],
+    "test": [
+      "For any claim, verify that Q1-Q7 are answered and that the negation test is passed.",
+      "Check that the evidence score E_final is computed as PS  CF with CF = (0.5 + 0.5ED)  (0.5 + 0.5EC).",
+      "Verify that the dependency chain is traced to axioms and that hidden assumptions are listed.",
+      "Verify that kill conditions are named and that the final truth score is computed as the mean of the six component scores."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "General Relativity",
+      "Quantum Field Theory",
+      "Shannon Information Theory",
+      "Axiom A1.1: Existence",
+      "Axiom A1.3: Information Primacy",
+      "Law L10: C = Coherence -> Christ"
+    ],
+    "dg2_new_capability": "Provides a step-by-step walkthrough of the 7Q evaluation process, demonstrating how to apply it to a specific claim and compute a truth score.",
+    "dg3_preserved_floor": "Preserves the 7Q evaluation framework and its scoring methodology as described in the document.",
+    "dg4_collapse_if_removed": "If this walkthrough is removed, the 7Q process remains defined elsewhere, but the concrete example and scoring details would be lost, reducing clarity and reproducibility.",
+    "dg5_translation_registers": [
+      "7Q process",
+      "chi-field hypothesis",
+      "DESI DR2",
+      "Euclid mission",
+      "Ghost freedom"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodology walkthrough",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "B",
+    "recommended_atom_action": "preserve as a canonical example of the 7Q process; do not treat as evidence for the chi-field hypothesis."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document's final verdict 'ALIVE. TENTATIVE' could be misread as endorsing the chi-field hypothesis.",
+      "The truth score 0.680 is a heuristic, not a rigorous proof.",
+      "The walkthrough's clarity might be mistaken for scientific validation."
+    ],
+    "kill_conditions": [
+      "If the 7Q process is shown to be logically inconsistent, the walkthrough loses its instructional value.",
+      "If the chi-field hypothesis is empirically falsified, the example becomes obsolete but the process remains valid.",
+      "If the scoring methodology is arbitrary, the walkthrough's credibility is undermined."
+    ],
+    "lean_target": "The 7Q process as a method for evaluating claims, not the chi-field hypothesis itself."
+  },
+  "plain_summary": "This document walks through the 7Q evaluation process using the chi-field dark energy claim as an example. It scores each question, computes a truth score of 0.680 (TENTATIVE), and identifies hidden assumptions and open kill conditions. It is a methodological walkthrough, not a proof of the claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\7Q_WALKTHROUGH.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\7Q_WALKTHROUGH.canonical-node.json"
+  }
+}

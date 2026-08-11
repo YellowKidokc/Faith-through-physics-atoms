@@ -1,0 +1,75 @@
+{
+  "source_id": "INVENTORY",
+  "title": "Inventory of Lean Surface Files and Theorem Families",
+  "canonical_node": {
+    "axiom": "The inventory file is a reader-facing map of the current Lean surface, listing core files, theorem families, integrity markers, and the strong-law mechanism layer.",
+    "definitions": [
+      "Core files: the listed Lean files that constitute the formal surface.",
+      "Theorem families: the listed groups of theorems and their properties.",
+      "Integrity markers: compact checkpoints that compile if key definitions and theorem dependencies hold.",
+      "Strong-law mechanism layer: the file Theophysics_LawMechanisms.lean that closes GAP-01 for Laws 1, 2, 9, and 10."
+    ],
+    "derivation": [
+      "The document enumerates the core files and their roles.",
+      "It lists major theorem families covered by the formal surface.",
+      "It identifies integrity markers as checkpoints for dependency coherence.",
+      "It describes the strong-law mechanism layer as an addition that closes GAP-01 for specific laws."
+    ],
+    "action": "The system should treat this inventory as a map for navigating the Lean surface, using it to locate files, theorem families, and integrity markers, and to understand the strong-law mechanism layer's role.",
+    "boundary": [
+      "This document does not provide proofs or formal statements; it is a map.",
+      "It does not assert that the listed theorems are true, only that they are part of the surface.",
+      "It does not define the content of the theorems or the mechanism gates in detail."
+    ],
+    "test": [
+      "Check that each listed file exists and compiles.",
+      "Check that the listed marker theorems compile.",
+      "Check that the strong-law mechanism layer file exists and contains the stated gates and theorems."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The listed Lean files and their contents.",
+      "The marker theorems and their dependencies.",
+      "The strong-law mechanism layer and its gates."
+    ],
+    "dg2_new_capability": "Provides a reader-facing map of the Lean surface, enabling navigation and understanding of the formal structure without needing to read every file.",
+    "dg3_preserved_floor": "Preserves the existing Lean surface and its integrity markers as checkpoints.",
+    "dg4_collapse_if_removed": "Without this inventory, readers lose a high-level map of the Lean surface, but the underlying formal files remain intact; the inventory is not a formal dependency.",
+    "dg5_translation_registers": [
+      "File names and roles.",
+      "Theorem family names.",
+      "Marker theorem names.",
+      "Gate names (GGate, MGate, FGate, CGate)."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "inventory/map",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as map"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the inventory as a proof of the theorems' truth.",
+      "Assuming the listed files are complete or exhaustive.",
+      "Interpreting the marker theorems as magic or as guarantees beyond compilation."
+    ],
+    "kill_conditions": [
+      "If any listed file is missing or fails to compile.",
+      "If the marker theorems do not compile.",
+      "If the strong-law mechanism layer does not exist or does not contain the stated gates."
+    ],
+    "lean_target": "The inventory itself is not a Lean target; it is a map. The Lean targets are the listed files and markers."
+  },
+  "plain_summary": "This document is an inventory of the Lean formal surface, listing core files, theorem families, integrity markers, and a strong-law mechanism layer. It is a map, not a proof, and should be used for navigation and understanding.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\INVENTORY.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\INVENTORY.canonical-node.json"
+  }
+}

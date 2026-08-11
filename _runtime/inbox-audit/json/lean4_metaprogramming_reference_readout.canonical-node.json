@@ -1,0 +1,71 @@
+{
+  "source_id": "lean4_metaprogramming_reference_readout",
+  "title": "Lean 4 Metaprogramming Book Reference Readout",
+  "canonical_node": {
+    "axiom": "The Lean 4 metaprogramming book is a reference for building Lean tooling, not canon evidence.",
+    "definitions": [
+      "Lean 4 metaprogramming book: a reference book for Lean 4 metaprogramming, tactics, and DSLs.",
+      "Canon evidence: material that directly supports Theophysics axioms or derivations.",
+      "QUARANTINE: a directory for files not admitted into the canon proof package."
+    ],
+    "derivation": [
+      "The document states it is a reference book for Lean 4 metaprogramming.",
+      "It explicitly says it is not Theophysics canon evidence.",
+      "It recommends using it only for Lean-side tooling.",
+      "It was copied under QUARANTINE, indicating it is not part of the canon."
+    ],
+    "action": "Treat this document as a tooling reference only; do not use its examples as canon proof.",
+    "boundary": [
+      "Does not provide Theophysics axioms or derivations.",
+      "Does not establish any physical or theological claims.",
+      "Does not replace formal verification of Theophysics."
+    ],
+    "test": [
+      "Check that no Lean examples from this document are cited in canon proofs.",
+      "Verify that the document remains in QUARANTINE and is not promoted.",
+      "Confirm that any tooling built from it is clearly marked as auxiliary."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "None; it is a standalone reference readout."
+    ],
+    "dg2_new_capability": "Provides a reference for building Lean tooling (extractors, linters, tactics) but no new Theophysics capability.",
+    "dg3_preserved_floor": "Preserves the canon by explicitly quarantining the reference and preventing contamination.",
+    "dg4_collapse_if_removed": "Removal would not collapse any Theophysics axiom; it only removes a tooling reference.",
+    "dg5_translation_registers": [
+      "Lean 4 metaprogramming",
+      "tactics",
+      "DSL",
+      "proof-audit tooling"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "no",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "reference material",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Using Lean examples as if they were canon proofs.",
+      "Assuming the book's existence validates Theophysics.",
+      "Mixing tooling code into the canon proof package."
+    ],
+    "kill_conditions": [
+      "If any Lean example from this book is cited as canon evidence.",
+      "If the document is promoted from QUARANTINE without review."
+    ],
+    "lean_target": "No Lean target; it is a reference only."
+  },
+  "plain_summary": "This document is a readout of a Lean 4 metaprogramming book, explicitly marked as not canon evidence. It is useful for building Lean tooling but must remain quarantined and not be used in Theophysics proofs.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\lean4_metaprogramming_reference_readout.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\lean4_metaprogramming_reference_readout.canonical-node.json"
+  }
+}

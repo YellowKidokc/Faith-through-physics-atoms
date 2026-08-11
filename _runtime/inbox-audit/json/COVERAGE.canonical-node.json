@@ -1,0 +1,73 @@
+{
+  "source_id": "COVERAGE",
+  "title": "Coverage Against Excel Theorem Inventory",
+  "canonical_node": {
+    "axiom": "Every numbered theorem row in the Excel LEAN_DERIVATION_CHAIN sheet must have an exact-name declaration implemented in the repository.",
+    "definitions": [
+      "implemented-core: declaration present in Theophysics_Core.lean or Final_Lean4_From_Excel.lean and marked PROVED",
+      "implemented-adversarial: declaration present in Theophysics_Adversarial.lean and marked REJECTION or BOUNDARY",
+      "implemented-excel-spine: declaration present in Final_Lean4_From_Excel.lean and marked REJECTION",
+      "exact-name: declaration name matches the Excel declaration name exactly"
+    ],
+    "derivation": [
+      "1. The Excel workbook contains a sheet named LEAN_DERIVATION_CHAIN with numbered theorem rows.",
+      "2. For each numbered row, the declaration name is extracted from the Excel file.",
+      "3. The repository is searched for a declaration with that exact name.",
+      "4. If found, the row is marked as implemented with a status based on the file and proof type.",
+      "5. If not found, the row is marked as not implemented.",
+      "6. The summary counts are computed from the statuses."
+    ],
+    "action": "The system must maintain a coverage table that maps every numbered theorem row in the Excel LEAN_DERIVATION_CHAIN sheet to an exact-name declaration in the repository, and report any missing declarations.",
+    "boundary": [
+      "This document does not verify the correctness of the proofs; it only checks existence of declarations by name.",
+      "It does not cover rows outside the LEAN_DERIVATION_CHAIN sheet.",
+      "It does not assess semantic equivalence or logical validity of the declarations."
+    ],
+    "test": [
+      "For each numbered row in the Excel sheet, assert that a declaration with the exact name exists in the repository.",
+      "The summary counts must match the number of rows in each status category.",
+      "The table must list all 171 rows with statuses."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Excel workbook Theophysics_Lean4_Addendum_Updated (1) (2).xlsx",
+      "Repository Lean files: Final_Lean4_From_Excel.lean, Theophysics_Core.lean, Theophysics_Adversarial.lean"
+    ],
+    "dg2_new_capability": "Provides a verifiable inventory of which Excel theorem declarations are implemented in the repository, enabling gap analysis.",
+    "dg3_preserved_floor": "Preserves the requirement that all 171 numbered theorem rows have exact-name declarations.",
+    "dg4_collapse_if_removed": "Without this coverage document, there is no systematic way to know which Excel theorems are implemented, risking silent gaps.",
+    "dg5_translation_registers": [
+      "Excel row number -> declaration name",
+      "Declaration name -> repository file and status"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "coverage inventory",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "maintain"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims 'implemented' but does not verify that the declarations are correct or complete.",
+      "The statuses 'implemented-core' and 'implemented-adversarial' may imply more than mere existence."
+    ],
+    "kill_conditions": [
+      "If any numbered row is missing from the table.",
+      "If the exact-name matching is not performed consistently.",
+      "If the Excel sheet is updated without updating this coverage document."
+    ],
+    "lean_target": "A Lean function that checks that for each declaration name in a given list, there exists a declaration with that name in the environment."
+  },
+  "plain_summary": "This document is a coverage report that lists all 171 theorem rows from the Excel LEAN_DERIVATION_CHAIN sheet and indicates whether each has a declaration with the exact same name in the repository. It does not verify the proofs themselves, only the presence of declarations. The report is useful for tracking implementation status but should not be taken as evidence of correctness.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\COVERAGE.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\COVERAGE.canonical-node.json"
+  }
+}

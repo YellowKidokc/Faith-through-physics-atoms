@@ -1,0 +1,82 @@
+{
+  "source_id": "PHYSICIST_OBJECTION_CLOSURE_MAP",
+  "title": "Physicist Objection Closure Map",
+  "canonical_node": {
+    "axiom": "The strongest public claim is that Lean proves which structural claims are allowed, and Python/Colab shows how those claims behave under computation, simulation, symbolic derivation, or page-level verification.",
+    "definitions": [
+      "Lean layer: formal proofs of structural gates, invariants, and collapse conditions.",
+      "Python/Colab layer: runtime notebooks and scripts demonstrating dynamics, coupling, and numerical/symbolic checks.",
+      "Evidence ledger: a canonical mapping from each objection to its proof artifact and runtime artifact.",
+      "Coupling invariant: a preserved structural property under transformation, as in quaternion vs vector-only product.",
+      "Malformed triad: a three-part system that fails role profile, coupling, or invariant conditions."
+    ],
+    "derivation": [
+      "The document asserts that Lean proofs alone are insufficient; the stronger claim couples Lean structural proofs with Python/Colab behavioral demonstrations.",
+      "It identifies current artifacts for Lean audit, source index, Colab mirrors, verification packages, and page audits.",
+      "It enumerates coupling break points where malformed triads fail, establishing that not all three-part systems are valid.",
+      "It provides a closure ledger mapping twelve objections to Lean and Python/Colab answers, with statuses and next repairs.",
+      "It recommends topbar/manifest fields to expose objection closure status and publication gates."
+    ],
+    "action": "Create a canonical evidence ledger that routes each objection to its proof artifact and runtime artifact, and wire it into the site's topbar/manifest so every page can show proof, runtime, and open-gate status.",
+    "boundary": [
+      "Does not claim that all objections are fully closed; several are open or gated.",
+      "Does not claim that Lean proofs alone establish physical truth; they establish structural claims.",
+      "Does not claim that n=3 is the only possible architecture unless uniqueness is proven.",
+      "Does not claim that the consciousness leg is fully closed; it is publication gated.",
+      "Does not claim that Heaviside is invalid as engineering; it claims a lost coupling invariant."
+    ],
+    "test": [
+      "Check that each objection in the closure ledger has a corresponding Lean theorem or explicit statement of absence.",
+      "Check that each objection has a Python/Colab artifact or explicit statement of absence.",
+      "Check that the topbar/manifest fields reflect the statuses in the closure ledger.",
+      "Check that the publication rule is followed: do not say 'no escape hatch' until the ledger is wired.",
+      "Check that the immediate build order items are completed before promoting the five-instance convergence page."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 proof files and audit summaries",
+      "Python/Colab notebooks and scripts",
+      "Page quality audit and equation registry",
+      "Coupling break map"
+    ],
+    "dg2_new_capability": "Provides a canonical mapping from objections to proof and runtime artifacts, enabling transparent routing of objections and exposing open gates.",
+    "dg3_preserved_floor": "Preserves the existing Lean proofs and Python/Colab artifacts as the evidence spine, without altering their content.",
+    "dg4_collapse_if_removed": "Without this map, objections cannot be systematically routed to evidence, and the public claim of closure cannot be substantiated.",
+    "dg5_translation_registers": [
+      "Objection to Lean theorem mapping",
+      "Objection to Python/Colab artifact mapping",
+      "Status to topbar/manifest field mapping"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as a coordination map; do not treat as proof of physical claims"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that all objections are closed when several are open or gated.",
+      "Claiming that Lean proofs alone establish physical truth.",
+      "Claiming that n=3 is the only possible architecture without uniqueness proof.",
+      "Claiming that the consciousness leg is fully closed when it is publication gated."
+    ],
+    "kill_conditions": [
+      "If the evidence ledger is not wired into the site, the map loses its purpose.",
+      "If the open items (stability sweep, provenance, consciousness holes) are not addressed, the map overstates closure.",
+      "If the publication rule is violated, the map's integrity is compromised."
+    ],
+    "lean_target": "Formalize the coupling invariant and collapse conditions for malformed triads, and prove minimal sufficiency of n=3 if intended."
+  },
+  "plain_summary": "This document is a coordination map that pairs each physicist objection with Lean proof artifacts and Python/Colab runtime artifacts, aiming to create a transparent evidence ledger. It identifies open items and publication gates, and recommends wiring the ledger into the site's manifest. It does not itself prove any physical claim; it is a methodological guide.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\PHYSICIST_OBJECTION_CLOSURE_MAP.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\PHYSICIST_OBJECTION_CLOSURE_MAP.canonical-node.json"
+  }
+}

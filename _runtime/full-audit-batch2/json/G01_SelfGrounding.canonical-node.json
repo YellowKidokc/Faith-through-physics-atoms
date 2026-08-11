@@ -1,0 +1,83 @@
+{
+  "source_id": "G01_SelfGrounding",
+  "title": "The Self-Grounding Substrate",
+  "canonical_node": {
+    "axiom": "A self-grounding substrate (God) is mathematically necessary; the observer chain must terminate in an infinite observer.",
+    "definitions": [
+      "chi: The Logos Field, the substrate of information.",
+      "Ground(chi): The entity or condition that instantiates or explains chi.",
+      "Self-grounding: An entity that grounds itself, i.e., G = Ground(G).",
+      "Necessary existence: An entity that cannot fail to exist, denoted G.",
+      "Terminal Observer: An observer with infinite integrated information (Phi = ) that terminates the von Neumann chain.",
+      "God: The self-grounding, necessary, infinite observer."
+    ],
+    "derivation": [
+      "chi requires a ground (G0.1).",
+      "The ground must be self-grounding (G0.2).",
+      "Self-grounding implies necessary existence (G0.3).",
+      "This ground is called God (G0.4).",
+      "God is the source of chi (G0.5).",
+      "The von Neumann chain of observers must terminate in a terminal observer with Phi = ."
+    ],
+    "action": "The system should treat the existence of a self-grounding, necessary, infinite observer as a required metaphysical terminus for grounding and observation.",
+    "boundary": [
+      "Does not provide a physical mechanism for the terminal observer.",
+      "Does not prove the existence of a personal God beyond the derived properties.",
+      "Does not address the coherence of infinite integrated information in a physical sense."
+    ],
+    "test": [
+      "Check if the observer chain can be terminated by a finite observer.",
+      "Check if self-grounding is coherent for finite beings.",
+      "Check if brute contingency is an acceptable stopping point."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G0.1 Ground Required",
+      "G0.2 Self-Grounding",
+      "G0.3 Necessary Existence",
+      "G0.4 God Definition",
+      "G0.5 God Source",
+      "BC7.1 Terminal Observer"
+    ],
+    "dg2_new_capability": "Provides a metaphysical terminus for the observer chain and a grounding for existence, addressing the measurement problem and brute contingency.",
+    "dg3_preserved_floor": "Preserves the requirement that every phenomenon has a ground and that the observer chain does not regress infinitely.",
+    "dg4_collapse_if_removed": "Without this axiom, the observer chain remains ungrounded, leading to infinite regress and leaving the measurement problem unresolved.",
+    "dg5_translation_registers": [
+      "Quantum mechanics: von Neumann chain",
+      "Gdel's incompleteness theorems",
+      "Integrated Information Theory (Phi)",
+      "Wheeler's participatory universe"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "metaphysical necessity",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical necessity without formal proof.",
+      "Equates derived properties with classical divine attributes without justification.",
+      "Uses Gdel's theorems to argue for infinite self-grounding, which is a non-standard interpretation.",
+      "Assumes the von Neumann chain must terminate in a non-superposed observer without addressing alternative interpretations."
+    ],
+    "kill_conditions": [
+      "If a finite observer can terminate the chain without contradiction.",
+      "If self-grounding is shown to be incoherent for any entity.",
+      "If brute contingency is shown to be a valid explanatory stopping point."
+    ],
+    "lean_target": "Axiom G0.1 (Ground Required) and G0.2 (Self-Grounding) are the most defensible; the leap to God (G0.4) is the weakest."
+  },
+  "plain_summary": "This document argues that a self-grounding, necessary, infinite observer (God) is mathematically required to ground existence and terminate the observer chain. It uses Gdel's theorems and quantum mechanics to support the claim, but the argument is not formally proven and relies on interpretive leaps.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G01_SelfGrounding.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\G01_SelfGrounding.canonical-node.json"
+  }
+}

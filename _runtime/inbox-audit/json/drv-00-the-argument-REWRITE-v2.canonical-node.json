@@ -1,0 +1,84 @@
+{
+  "source_id": "drv-00-the-argument-REWRITE-v2",
+  "title": "DRV Argument-in-One-Page  -  REWRITE v2",
+  "canonical_node": {
+    "axiom": "The Master Equation is the irreducible formal object: chi_total = integral of the product of ten typed factors over space and time. Coherence (C) is a factor; chi is the integrated output. The product never includes chi.",
+    "definitions": [
+      "G: external negentropy influx rate, domain R>=0",
+      "M: alignment cosine between system state and reference vector, domain [-1,1]",
+      "E: signal propagation fidelity (channel capacity), domain R>=0",
+      "S_prod: entropy production rate, enters as S_eff = exp(-eta*S_prod), domain R>=0",
+      "T: temporal integration parameter, domain R>0",
+      "K: information compression ratio (Kolmogorov), domain R>=0",
+      "R: phase transition indicator, domain {0,1}",
+      "Q: superposition measure, domain [0,1]",
+      "F: non-local correlation strength, domain [0,1]",
+      "C: total integration measure (global coherence), domain [0,1]"
+    ],
+    "derivation": [
+      "The Master Equation is defined as chi_total = integral of product of ten typed factors over d^3x dt.",
+      "Each factor has a fixed mathematical domain as per Definition 10 of the Formal Theory v1.0.",
+      "The entropy sign repair is explicit: S_eff = exp(-eta*S_prod), which is Lean-verified as antitone in S_prod.",
+      "C is a factor in the product; chi is the integrated output. They are distinct.",
+      "The original variable labels were type-incompatible with the canonical domains; the revision uses canonical labels.",
+      "The dV element is corrected from dx dy dt to d^3x dt per the canon."
+    ],
+    "action": "Use the Master Equation as the canonical formal object. Enforce the typed domains for each factor. Maintain the C vs chi distinction. Apply the entropy sign repair. Use the canonical labels from Definition 10.",
+    "boundary": [
+      "The Master Equation is not a physical law; it is a formal theological construct.",
+      "The Master Equation does not claim to be empirically testable.",
+      "The Master Equation does not assert that the ten factors are physically unified; it is a symbolic integration.",
+      "The Master Equation does not include chi as a factor; that would be self-referential."
+    ],
+    "test": [
+      "Check that each factor's domain matches Definition 10.",
+      "Check that S_eff is used instead of bare S in all expressions.",
+      "Check that C is never included in the product.",
+      "Check that the integral is over d^3x dt, not dx dy dt.",
+      "Check that the labels match the canonical table (G, M, E, S_prod, T, K, R, Q, F, C)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "FORMAL_VERIFICATION_PACKET_2026-05-10/ (Layer 1 lock, Definition 10, Axiom 3)",
+      "Lean kernel verification of antitone property of S_eff"
+    ],
+    "dg2_new_capability": "Provides a corrected, typed formal object (Master Equation) that resolves no-drift violations in the original variable labels and dV element.",
+    "dg3_preserved_floor": "Preserves the original intent of the Master Equation as an integrated product of ten factors, while fixing type errors and the entropy sign.",
+    "dg4_collapse_if_removed": "If the Master Equation is removed, the framework loses its central formal object and the no-drift fix is undone, causing the original type errors to persist.",
+    "dg5_translation_registers": [
+      "Formal Theory v1.0 Definition 10",
+      "Layer 2 Ten-Factor Table",
+      "Lean kernel verification"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal definition",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "adopt"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The Master Equation is presented as canonical but is not a physical law; it is a formal theological construct.",
+      "The claim that S_eff is Lean-verified is stated but the verification artifact is not cited in this document.",
+      "The Master Equation's physical readings (e.g., 'Grace') are metaphorical and could be overinterpreted as physical claims."
+    ],
+    "kill_conditions": [
+      "If the Lean kernel does not actually verify the antitone property of S_eff, the entropy repair claim is unsupported.",
+      "If the canonical Definition 10 is revised, the typed domains may change.",
+      "If the Master Equation is used to make empirical predictions, it exceeds its boundary."
+    ],
+    "lean_target": "Formalize the Master Equation in Lean, verifying the typed domains and the antitone property of S_eff."
+  },
+  "plain_summary": "This document revises the Master Equation callout to align with the canonical Formal Theory v1.0, fixing variable labels, domains, the dV element, and the entropy sign. It establishes the Master Equation as the central formal object with ten typed factors, and clarifies that C is a factor while chi is the integrated output. The revision is marked as load-bearing and non-negotiable under the current canon.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\drv-00-the-argument-REWRITE-v2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\drv-00-the-argument-REWRITE-v2.canonical-node.json"
+  }
+}

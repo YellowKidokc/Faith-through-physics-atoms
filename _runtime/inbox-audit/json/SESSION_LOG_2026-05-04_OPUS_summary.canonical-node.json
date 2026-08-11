@@ -1,0 +1,70 @@
+{
+  "source_id": "SESSION_LOG_2026-05-04_OPUS_summary",
+  "title": "Session Log 2026-05-04 Opus Summary",
+  "canonical_node": {
+    "axiom": "A session handoff must be machine-ingestible and human-readable, preserving decisions, results, and open threads without loss.",
+    "definitions": [
+      "Machine layer: structured manifest with tables, counts, and explicit decisions.",
+      "Human layer: readable summary with context and next steps.",
+      "Handoff: a document that allows another AI or human to continue work without raw chat history."
+    ],
+    "derivation": [
+      "The dropped page contained a full session recap.",
+      "It was split into a machine-ingest manifest and a startup summary.",
+      "The manifest captures canonical inputs, decisions, results, and open threads.",
+      "The summary provides a readable narrative for immediate use."
+    ],
+    "action": "When a session handoff is dropped, parse it into a structured manifest and a readable summary, preserving all decisions, results, and open threads.",
+    "boundary": [
+      "Does not guarantee the underlying data is correct or complete.",
+      "Does not validate the scientific claims or statistical results.",
+      "Does not replace the original session log if it contains additional context."
+    ],
+    "test": [
+      "Check that all decisions listed in the source appear in the manifest.",
+      "Check that all open threads are listed.",
+      "Check that the summary is readable by another AI without raw chat history."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Canonical framing document",
+      "Ten Laws equations document",
+      "Source session log"
+    ],
+    "dg2_new_capability": "Provides a structured handoff format that can be ingested by another AI, enabling continuity without raw chat history.",
+    "dg3_preserved_floor": "Preserves the decisions, results, and open threads from the original session.",
+    "dg4_collapse_if_removed": "Without this handoff, the next session would need to re-read the raw chat history or lose context.",
+    "dg5_translation_registers": [
+      "Session log to structured manifest",
+      "Structured manifest to readable summary"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "workflow",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "B",
+    "recommended_atom_action": "preserve as workflow template"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The statistical results are presented as findings but are not independently verified.",
+      "The handoff format is described as correct but may not be robust to freeform inputs."
+    ],
+    "kill_conditions": [
+      "If the source session log is missing or corrupted.",
+      "If the handoff format is not followed by downstream systems."
+    ],
+    "lean_target": "A minimal handoff template that captures decisions, results, and open threads."
+  },
+  "plain_summary": "This document describes a workflow for converting a session log into a structured handoff. It lists decisions, results, and open threads from a specific session, but does not provide formal proof of any scientific claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SESSION_LOG_2026-05-04_OPUS_summary.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\SESSION_LOG_2026-05-04_OPUS_summary.canonical-node.json"
+  }
+}

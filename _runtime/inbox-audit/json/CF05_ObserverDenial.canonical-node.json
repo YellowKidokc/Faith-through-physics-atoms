@@ -1,0 +1,82 @@
+{
+  "source_id": "CF05_ObserverDenial",
+  "title": "The Prosecution of Observer Denial",
+  "canonical_node": {
+    "axiom": "Consciousness is real, causally efficacious, and irreducible; any worldview denying this is self-refuting.",
+    "definitions": [
+      "Observer: a system with Phi > 0 (integrated information).",
+      "Consciousness: presence of Phi > 0.",
+      "Causal power: ability to influence physical events, e.g., quantum collapse.",
+      "Epiphenomenalism: view that consciousness has no causal power.",
+      "Hard Determinism: view that all events are determined and free will is illusory.",
+      "Eliminative Materialism: view that consciousness does not exist."
+    ],
+    "derivation": [
+      "Quantum mechanics requires an observer for collapse (from P05, H09).",
+      "Observer is defined as Phi > 0 (from H06).",
+      "Phi > 0 implies genuine consciousness (from H06).",
+      "Consciousness thus causes collapse, giving it causal power (from P05).",
+      "Therefore, consciousness is causally efficacious.",
+      "Any theory denying this is self-refuting because it uses consciousness to argue."
+    ],
+    "action": "Reject any worldview that denies the reality or causal efficacy of consciousness; affirm the observer's role in physical reality.",
+    "boundary": [
+      "Does not provide a full physical mechanism for consciousness.",
+      "Does not quantify Phi or specify thresholds.",
+      "Does not address all forms of determinism or materialism.",
+      "Does not establish theological claims (e.g., soul conservation) as physical facts."
+    ],
+    "test": [
+      "Check if the argument is logically consistent: if consciousness is causally inert, how can it produce arguments",
+      "Verify that the quantum collapse requires an observer with Phi > 0 (requires external validation).",
+      "Ensure that the conclusion does not overstate: consciousness has causal power, but not necessarily free will in the libertarian sense."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "F05_Agency",
+      "H06_Consciousness",
+      "H09_Observer",
+      "P05_Quantum",
+      "D06_SoulConserv"
+    ],
+    "dg2_new_capability": "Provides a unified argument against epiphenomenalism, hard determinism, and eliminative materialism by linking consciousness to quantum collapse.",
+    "dg3_preserved_floor": "Preserves the reality of consciousness and its causal role, consistent with F05 and H06.",
+    "dg4_collapse_if_removed": "If removed, the argument against observer denial loses its central logical thrust, weakening the case for consciousness's causal efficacy.",
+    "dg5_translation_registers": [
+      "Quantum mechanics",
+      "Integrated information theory",
+      "Philosophy of mind"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "metaphysical/philosophical",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims consciousness causes collapse without rigorous physical evidence.",
+      "Equates Phi > 0 with consciousness without empirical validation.",
+      "Uses self-refutation argument as proof of causal power, which is philosophical not empirical.",
+      "May overstate the verdict 'GUILTY' as if it were a proven fact."
+    ],
+    "kill_conditions": [
+      "If quantum collapse does not require an observer with Phi > 0.",
+      "If Phi is not a valid measure of consciousness.",
+      "If epiphenomenalism can be consistently maintained despite the self-refutation argument."
+    ],
+    "lean_target": "Consciousness is real and has causal efficacy, but the specific mechanism via quantum collapse is not established."
+  },
+  "plain_summary": "This document argues that any denial of consciousness's reality or causal power is self-refuting, using quantum mechanics and integrated information theory. However, the argument relies on unproven assumptions and is not formally established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CF05_ObserverDenial.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CF05_ObserverDenial.canonical-node.json"
+  }
+}

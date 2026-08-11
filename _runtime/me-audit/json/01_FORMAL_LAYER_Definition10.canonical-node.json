@@ -1,0 +1,89 @@
+{
+  "source_id": "01_FORMAL_LAYER_Definition10",
+  "title": "Layer 1  -  The Formal Layer (Definition 10 + 11)",
+  "canonical_node": {
+    "axiom": "The Master Equation is the product of exactly ten factors, each with fixed domain, and the effective entropy factor S_eff is antitone in S_prod.",
+    "definitions": [
+      "G in 0: External negentropy influx rate",
+      "M in [-1,1]: Alignment cosine between system state vector and reference vector",
+      "E in 0: Signal propagation fidelity (channel capacity)",
+      "S_prod in 0: Entropy production rate (raw disorder accumulation)",
+      "T in >0: Temporal integration parameter",
+      "K in 0: Information compression ratio (Kolmogorov complexity)",
+      "R in {0,1}: Phase transition indicator (irreversible state change)",
+      "Q in [0,1]: Superposition measure (unresolved state space)",
+      "F in [0,1]: Non-local correlation strength (entanglement measure)",
+      "C in [0,1]: Total integration measure (global coherence)",
+      "S_eff(x,t) = e^(-*S_prod(x,t)) or 1/(1+S_prod(x,t)), mapping S_prod in 0 to S_eff in (0,1]",
+      "chi_local(x,t) = G*M*E*S_eff*T*K*R*Q*F*C",
+      "chi_total =  chi_local dx dt",
+      "C is a factor inside the product; chi is the integrated output."
+    ],
+    "derivation": [
+      "The document defines ten factors with specified domains.",
+      "It introduces S_eff as a transformation of S_prod to ensure antitone property.",
+      "The Master Equation is defined as the product of these ten factors.",
+      "The integral form is obtained by integrating the local form over space and time.",
+      "Lean kernel proves structural properties: antitone entropy, zero collapse, strict positivity, monotonicity, and C/chi distinction."
+    ],
+    "action": "The system must treat the Master Equation as the product of exactly these ten factors, with S_eff replacing S_prod, and must enforce the no-drift rules: no factor added/removed/renamed/merged, domains fixed, C as factor, chi as output.",
+    "boundary": [
+      "Does not include theological or physical-law interpretations.",
+      "Does not specify the exact analytic form of S_eff beyond the two given options.",
+      "Does not verify pointwise theorems or reconcile with older production kernel.",
+      "Does not claim physical reality; only formal mathematical specification."
+    ],
+    "test": [
+      "Check that any derived expression uses exactly the ten factors in the given order.",
+      "Verify that S_prod never appears directly in the product; only S_eff.",
+      "Verify that C is never used as the output chi.",
+      "Check that domains of all factors match the specification.",
+      "Run Lean kernel to confirm structural properties hold."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 kernel CorrectedEntropyKernel.lean",
+      "Mathlib (for full verification of analytic form, pending)",
+      "NODRIFT_LOSSLESS_v24.yaml"
+    ],
+    "dg2_new_capability": "Provides a typed, formal specification of the Master Equation with entropy sign repair, enabling Lean-verified structural properties.",
+    "dg3_preserved_floor": "Preserves the ten-factor structure and domains from prior definitions, with corrected entropy handling.",
+    "dg4_collapse_if_removed": "If this layer is removed, the formal basis for the Master Equation and its structural properties is lost, leading to ambiguity and potential contradictions.",
+    "dg5_translation_registers": [
+      "Formal mathematical specification",
+      "Lean-verified structural properties",
+      "No-drift rules"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal_definition",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "canonicalize"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims 'Lean-verified' but only structural properties are verified; analytic form not fully verified.",
+      "The document states 'STRUCTURAL CANONICAL  -  typed, verified, locked' which may overstate the scope of verification.",
+      "The two forms of S_eff are claimed 'structurally interchangeable' but not proven equivalent."
+    ],
+    "kill_conditions": [
+      "If any factor is added, removed, renamed, or merged.",
+      "If S_prod is used directly in the product instead of S_eff.",
+      "If C is treated as the output chi.",
+      "If the Lean kernel fails to compile or the properties are disproven."
+    ],
+    "lean_target": "Formalize the full analytic form of S_eff and prove equivalence of the two forms, and prove pointwise theorems."
+  },
+  "plain_summary": "This document defines the formal mathematical layer of the Master Equation, specifying ten factors with fixed domains and an entropy sign repair. It claims Lean verification of structural properties but not the full analytic form. The layer is canonical and must be preserved.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\me-audit\\json\\01_FORMAL_LAYER_Definition10.canonical-node.json"
+  }
+}

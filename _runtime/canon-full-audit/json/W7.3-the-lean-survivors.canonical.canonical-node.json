@@ -1,0 +1,96 @@
+{
+  "source_id": "W7.3-the-lean-survivors.canonical",
+  "title": "The Lean Survivors",
+  "canonical_node": {
+    "axiom": "Structural proofs that do not depend on the Master Equation form change remain valid and need not be rerun.",
+    "definitions": [
+      "Survivor: a Lean proof that is structural enough to remain valid across the v3 form change.",
+      "FORMALLY PROVED CONDITIONAL: Lean proves it given declared assumptions.",
+      "FORMALLY PROVED: Lean proves it outright (bookkeeping-grade facts only).",
+      "COMPILES / METADATA: classification scaffolding; compiles, proves nothing further.",
+      "C_W: an operator that is zero-preserving.",
+      "LawIso: an isomorphism requiring maps, inverse laws, value preservation, and collapse preservation.",
+      "Fruit.all: the nine-fruit list, canonical in-file."
+    ],
+    "derivation": [
+      "The Master Equation changed form on July 26, making old-form verification rerun-owed.",
+      "Some proofs never touched the form; they live below it in algebra of products, isomorphism burden, and gate bookkeeping.",
+      "These structural proofs are listed with honest labels and survive on both sides of the v3 boundary.",
+      "The zero-veto (one dead factor kills the whole product) is the mathematical spine of v3 and was proved before v3 existed.",
+      "C_W as zero-preserving operator cannot rescue zero; this supports v3 direction better than old C-as-factor material.",
+      "Grace reset model proves properties of the encoded model, not theological doctrine.",
+      "LawIso defines the burden of proof for future isomorphism claims; no specific isomorphism is asserted.",
+      "Fruit gate bookkeeping: nine fruits, no duplicates, gate true iff all manifest.",
+      "CorrectedEntropyKernel is mixed: useful patterns but C-as-factor conflicts with v3; port required.",
+      "Package-context-owed files need original context before entering survivor page.",
+      "Do-not-include list excludes old-form claims, threshold claims, and unproved bridges."
+    ],
+    "action": "Maintain the survivor list as the floor for rebuild; do not promote survivors beyond their labels; require v3 port for mixed kernels; restore package context for owed files; keep excluded items off the survivor page.",
+    "boundary": [
+      "Does not prove the full Master Equation, Lagrangian bridge, Christianity, or any empirical claim.",
+      "Does not decide the identity-vs-threshold question for C_W (KIMMY-003).",
+      "Does not prove theological doctrine of grace from nothing.",
+      "Does not assert any specific law-to-law isomorphism.",
+      "Does not cover expanded fruit/anti-fruit evaluator without new typed list.",
+      "Does not transfer old Python/Colab/JAX passes."
+    ],
+    "test": [
+      "Check that each survivor carries one of the three allowed labels and is not promoted past it.",
+      "Verify that no excluded item appears on the survivor page.",
+      "Ensure CorrectedEntropyKernel is marked as port-required, not a clean survivor.",
+      "Ensure package-context-owed files are not labeled false or dead.",
+      "Check that any new isomorphism claim clears the LawIso burden."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean compiler",
+      "TheophysicsProductionKernel.lean",
+      "FruitsGraceKernel.lean",
+      "Theophysics_Typed_Canon_Lane4__TheophysicsModules.lean",
+      "CorrectedEntropyKernel.lean",
+      "Package context for owed files"
+    ],
+    "dg2_new_capability": "Provides a stable floor of structural proofs that survive the v3 form change, enabling rebuild without rerunning unaffected proofs.",
+    "dg3_preserved_floor": "Preserves the zero-veto, zero-preserving operator behavior, grace reset properties, isomorphism burden, and fruit gate bookkeeping.",
+    "dg4_collapse_if_removed": "Without this page, the rebuild loses its structural floor and must rerun all proofs, including those unaffected by the form change.",
+    "dg5_translation_registers": [
+      "Lean proofs",
+      "Master Equation v3 form",
+      "C_W operator",
+      "LawIso",
+      "Fruit gate"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "structural proof inventory",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as structural floor; do not promote beyond labels"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Promoting survivors as proving full Master Equation or Christianity",
+      "Treating CorrectedEntropyKernel as clean survivor without v3 port",
+      "Including excluded items like threshold claims or old-form evidence",
+      "Assuming package-context-owed files are dead"
+    ],
+    "kill_conditions": [
+      "If any survivor is promoted beyond its label",
+      "If excluded items are added to survivor page",
+      "If CorrectedEntropyKernel is used as clean survivor without port",
+      "If LawIso burden is bypassed for new isomorphism claims"
+    ],
+    "lean_target": "Formalize the survivor list and labels in Lean; verify each survivor proof compiles and matches its label."
+  },
+  "plain_summary": "This document lists Lean proofs that survive the Master Equation v3 form change because they are structural, not dependent on the old form. It defines three labels (FORMALLY PROVED CONDITIONAL, FORMALLY PROVED, COMPILES/METADATA) and explicitly excludes overclaims. It covers product-collapse kernel, zero-preserving operator, grace reset model, isomorphism burden, fruit gate bookkeeping, and metadata. It also flags mixed kernels needing port and package-context-owed files. The page is a floor for rebuild, not a proof of the full theory.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W7.3-the-lean-survivors.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W7.3-the-lean-survivors.canonical.canonical-node.json"
+  }
+}

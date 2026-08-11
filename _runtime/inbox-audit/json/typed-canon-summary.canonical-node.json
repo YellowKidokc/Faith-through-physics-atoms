@@ -1,0 +1,78 @@
+{
+  "source_id": "typed-canon-summary",
+  "title": "Theophysics Typed Canon - Lane 4 First Pass",
+  "canonical_node": {
+    "axiom": "Only true primitives become Lean axioms; definitions become definitions; theorems become proof targets; predictions, protocols, and evidence nodes stay outside the proof kernel as metadata or test objects.",
+    "definitions": [
+      "Primitive: irreducible rule/truth/intent",
+      "Definition: fixed term preventing drift",
+      "Derivation: logical steps",
+      "Action: what the system should do",
+      "Boundary: what it does not do",
+      "Test: how fidelity is checked"
+    ],
+    "derivation": [
+      "The document classifies nodes into types (primitive, definition, theorem, etc.) and risk levels.",
+      "It applies manual cleanups to reclassify certain nodes (e.g., EXP5.1/EXP5.2 as EvidenceNode, PERSONHOOD as OpenProblem).",
+      "It states a Lean 4 rule that only primitives become axioms, definitions become definitions, theorems become proof targets, and non-proof items stay outside the kernel.",
+      "Therefore, the canonical action is to enforce this typing discipline in Lean 4 preparation."
+    ],
+    "action": "Enforce the typed canon: treat only primitives as axioms, definitions as definitions, theorems as proof targets, and keep predictions, protocols, and evidence nodes as metadata or test objects outside the proof kernel.",
+    "boundary": [
+      "Does not treat every node as an axiom.",
+      "Does not upgrade bridge claims or theological identifications into formal derivations without explicit assumptions.",
+      "Does not include predictions, protocols, or evidence nodes inside the proof kernel."
+    ],
+    "test": [
+      "Check that each node in the Lean file is classified according to the typed canon (primitive, definition, theorem, etc.).",
+      "Check that no bridge identification or theological identification is silently used as a formal derivation.",
+      "Check that predictions, protocols, and evidence nodes are not placed inside the proof kernel."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "typed-canon-reclassification.csv",
+      "typed-canon-reclassification.json",
+      "TheophysicsCanon.lean",
+      "lean4-lane4-plan.md"
+    ],
+    "dg2_new_capability": "Provides a typed classification of theophysics nodes for Lean 4 preparation, separating primitives, definitions, theorems, and non-proof items.",
+    "dg3_preserved_floor": "Preserves the existing canon structure and manual cleanups (e.g., EXP5.1/EXP5.2 as EvidenceNode, PERSONHOOD as OpenProblem).",
+    "dg4_collapse_if_removed": "Without this typed canon, Lean 4 preparation would lack a clear rule for which nodes become axioms, definitions, or proof targets, risking misclassification.",
+    "dg5_translation_registers": [
+      "Lean 4 axiom",
+      "Lean 4 definition",
+      "Lean 4 theorem",
+      "metadata/test object"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Meta-claim / protocol",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Enforce as a protocol for Lean 4 preparation; do not treat as a formal proof."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be mistaken as a formal proof of theophysics claims.",
+      "May overstate the completeness of the typed canon.",
+      "May imply that the classification is final when it is a first pass."
+    ],
+    "kill_conditions": [
+      "If the typed canon is contradicted by the actual Lean file.",
+      "If bridge claims are silently used as formal derivations.",
+      "If the classification is not reproducible from the source files."
+    ],
+    "lean_target": "TheophysicsCanon.lean"
+  },
+  "plain_summary": "This document is a first-pass typed canon for Lean 4 preparation, classifying nodes into types and risk levels. It establishes a rule that only primitives become axioms, definitions become definitions, theorems become proof targets, and other items stay outside the proof kernel. It is a meta-claim about how to structure the Lean development, not a proof of theophysics itself.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\typed-canon-summary.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\typed-canon-summary.canonical-node.json"
+  }
+}

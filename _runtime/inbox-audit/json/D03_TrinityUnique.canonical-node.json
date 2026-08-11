@@ -1,0 +1,77 @@
+{
+  "source_id": "D03_TrinityUnique",
+  "title": "The Trinity Uniqueness Theorem",
+  "canonical_node": {
+    "axiom": "A self-knowing, self-loving God must be exactly three persons.",
+    "definitions": [
+      "Self-knowledge: The act of a being knowing itself, requiring a distinction between knower and known.",
+      "Self-love: The act of a being loving itself, requiring a distinction between lover and beloved.",
+      "Substantial relation: A relation that is not accidental but has its own reality and personhood in the divine context.",
+      "Divine simplicity: The principle that God has no redundant parts or attributes."
+    ],
+    "derivation": [
+      "Assume God knows Himself perfectly and loves Himself perfectly.",
+      "Perfect self-knowledge requires a distinction between the knower and the known; otherwise, it is not genuine knowledge.",
+      "Perfect self-love requires a distinction between the lover and the beloved; otherwise, it is not genuine love.",
+      "In God, all attributes are substantial, not accidental; therefore, the relation of love between the Father and the Son must be a substantial reality.",
+      "This substantial love is a third person, the Holy Spirit.",
+      "Thus, there are at least three persons: the Knower (Father), the Known (Son), and the Love (Holy Spirit).",
+      "A fourth person would be redundant, as all relational roles are already filled, violating divine simplicity.",
+      "Therefore, exactly three persons are necessary and sufficient."
+    ],
+    "action": "The system should treat the Trinity as a necessary consequence of divine self-knowledge and self-love, and reject any model with n3 as unstable.",
+    "boundary": [
+      "This does not prove the internal mechanism of how three persons share one essence.",
+      "This does not claim that the Trinity is a mathematical object in the physical sense.",
+      "This does not address the historical or scriptural evidence for the Trinity."
+    ],
+    "test": [
+      "Check if the argument for n=1 fails due to lack of distinction in self-knowledge.",
+      "Check if the argument for n=2 fails because the relation between two persons must be substantial.",
+      "Check if the argument for n>3 fails due to redundancy.",
+      "Check if the conclusion n=3 is the only stable solution."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "061_BC4_Three-Observers-Required"
+    ],
+    "dg2_new_capability": "Provides a logical derivation that the number of divine persons must be exactly three, based on self-knowledge and self-love.",
+    "dg3_preserved_floor": "Preserves the necessity of three observers for zero-uncertainty state as per axiom 061.",
+    "dg4_collapse_if_removed": "If removed, the uniqueness of the Trinity is no longer established, leaving open the possibility of n=1 or n=2.",
+    "dg5_translation_registers": [
+      "Theological",
+      "Philosophical",
+      "Mathematical"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological_necessity",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical necessity without formal proof.",
+      "Equates logical argument with mathematical theorem.",
+      "Uses physical analogies (e.g., three dimensions) as evidence, which are not rigorous."
+    ],
+    "kill_conditions": [
+      "If self-knowledge does not require distinction, the argument collapses.",
+      "If divine relations are not substantial, the argument for the third person fails.",
+      "If a stable n=1 or n=2 model is found, the uniqueness claim is false."
+    ],
+    "lean_target": "The argument is a philosophical/theological derivation, not a formal mathematical proof. It should be treated as a hypothesis requiring further formalization."
+  },
+  "plain_summary": "This document argues that God must be exactly three persons because perfect self-knowledge and self-love require internal distinctions, and the relation between two persons must itself be a person. It rejects Unitarianism, Binitarianism, and Polytheism as unstable. However, the proof is not formally rigorous and relies on theological assumptions.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\D03_TrinityUnique.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\D03_TrinityUnique.canonical-node.json"
+  }
+}

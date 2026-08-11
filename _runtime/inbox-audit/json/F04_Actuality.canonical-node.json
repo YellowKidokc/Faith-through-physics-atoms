@@ -1,0 +1,77 @@
+{
+  "source_id": "F04_Actuality",
+  "title": "Potentiality and Actualization",
+  "canonical_node": {
+    "axiom": "Reality exists in states of potentiality that require actualization; not all potentials actualize.",
+    "definitions": [
+      "Potentiality: A state described by a quantum superposition | =  c|phi, where multiple possibilities exist ontologically.",
+      "Actuality: A specific eigenstate |phi that results from measurement or collapse.",
+      "Actualization: The non-unitary transition from superposition to eigenstate, requiring an actualizer.",
+      "Actualizer: An entity or process that causes the collapse of the wavefunction."
+    ],
+    "derivation": [
+      "Quantum mechanics describes systems in superposition, which is not merely epistemic because interference patterns are observed.",
+      "Interference requires that multiple paths exist simultaneously as potentials.",
+      "Measurement selects one outcome with probability |c|, indicating selective actualization.",
+      "Unitary evolution alone never causes collapse, so an additional actualization process is needed.",
+      "Therefore, potentiality is real, actualization requires an actualizer, and actuality is selective."
+    ],
+    "action": "Treat quantum superpositions as real potential states, and model measurement as an actualization event that selects one outcome.",
+    "boundary": [
+      "Does not specify the nature of the actualizer (e.g., observer, consciousness, physical process).",
+      "Does not claim that all potentials actualize (rejects Many-Worlds).",
+      "Does not provide a mechanism for collapse beyond the projection postulate.",
+      "Does not extend to macroscopic objects without further assumptions."
+    ],
+    "test": [
+      "Verify that interference patterns are observed in double-slit experiments with single particles.",
+      "Check that measurement outcomes follow the Born rule P(k) = |c|.",
+      "Confirm that unitary evolution alone does not produce collapse in standard quantum mechanics."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "O3.1",
+      "O3.2",
+      "O3.3"
+    ],
+    "dg2_new_capability": "Provides a framework for interpreting quantum measurement as actualization of potential, linking to agency and observers.",
+    "dg3_preserved_floor": "Preserves the empirical success of quantum mechanics, including interference and Born rule.",
+    "dg4_collapse_if_removed": "Without this axiom, the interpretation of quantum measurement lacks a coherent account of how potential becomes actual, undermining the bridge to agency.",
+    "dg5_translation_registers": [
+      "Quantum mechanics",
+      "Aristotelian metaphysics",
+      "Theology of divine foreknowledge"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Interpretive claim about quantum mechanics and metaphysics",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine as interpretive; require further formalization and empirical grounding."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims Aristotle anticipated quantum mechanics without rigorous mapping.",
+      "Asserts that superposition is ontological without addressing alternative interpretations (e.g., epistemic interpretations).",
+      "Uses Bell's theorem to refute determinism but does not address non-local hidden variables.",
+      "Theological integration is asserted without logical derivation."
+    ],
+    "kill_conditions": [
+      "If a local hidden variable theory that reproduces QM is found, the argument against determinism fails.",
+      "If a consistent interpretation of QM without collapse (e.g., Many-Worlds) is accepted, actualization becomes unnecessary.",
+      "If potentiality is shown to be purely epistemic, the core claim collapses."
+    ],
+    "lean_target": "Formalize the mapping between quantum states and modal logic; specify the actualizer in a testable way."
+  },
+  "plain_summary": "This document argues that quantum mechanics supports Aristotelian potentiality: superpositions are real potentials, measurement actualizes one outcome, and this requires an actualizer. It critiques determinism, fatalism, and actualism. However, the argument is interpretive and not formally proven; it relies on specific interpretations of QM and does not provide a rigorous bridge to theology.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F04_Actuality.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\F04_Actuality.canonical-node.json"
+  }
+}

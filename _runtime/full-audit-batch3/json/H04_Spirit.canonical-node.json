@@ -1,0 +1,78 @@
+{
+  "source_id": "H04_Spirit",
+  "title": "The Human Spirit: Connection Point to God",
+  "canonical_node": {
+    "axiom": "The human spirit is distinct from the soul and serves as the interface with God. It is dormant before regeneration and becomes active through the new birth, enabling communion with the Holy Spirit.",
+    "definitions": [
+      "Spirit: The God-facing aspect of human nature, the capacity for divine relationship, distinct from the soul.",
+      "Soul: The self/world-facing aspect of human nature, encompassing consciousness, personality, and mind.",
+      "Regeneration: The new birth, a spiritual transformation that activates the dormant human spirit.",
+      "Holy Spirit: The third person of the Trinity, the divine Spirit with whom the human spirit communes.",
+      "g_coupling: A symbolic measure of the functional connection between the human spirit and the Holy Spirit; zero before regeneration, positive after."
+    ],
+    "derivation": [
+      "Scripture distinguishes soul and spirit (Hebrews 4:12), implying they are not identical.",
+      "The 'soulish' person cannot receive spiritual things (1 Cor 2:14), indicating the soul alone is insufficient for spiritual reception.",
+      "Humans universally seek transcendence, suggesting a spiritual dimension (argument from universal experience).",
+      "Regeneration is described as being 'born of the Spirit' (John 3:6) and 'made alive' (Eph 2:5), implying a change in spiritual state.",
+      "Communion with God is described as 'spirit with spirit' (Rom 8:16) and 'one spirit with him' (1 Cor 6:17), requiring an active human spirit."
+    ],
+    "action": "The system should treat the human spirit as a distinct, God-interface component of human nature, dormant before regeneration and active after, enabling communion with the Holy Spirit.",
+    "boundary": [
+      "This does not claim to prove the existence of God or the Holy Spirit from physical evidence.",
+      "This does not provide a physical mechanism for spiritual communion.",
+      "This does not address the state of infants' spirits before accountability.",
+      "This does not claim that all spiritual experiences are from the Holy Spirit; counterfeit experiences are possible."
+    ],
+    "test": [
+      "Check that the distinction between soul and spirit is maintained in all statements.",
+      "Verify that the dormancy and activation of the spirit are described consistently with the axioms.",
+      "Ensure that the interface function is not conflated with physical or psychological processes.",
+      "Confirm that the communion with the Holy Spirit is presented as a spiritual, not physical, reality."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Scripture (Hebrews 4:12, 1 Cor 2:14, John 3:6, Rom 8:16, 1 Cor 6:17)",
+      "Theological tradition (trichotomy, e.g., Watchman Nee)",
+      "Universal human experience of transcendence"
+    ],
+    "dg2_new_capability": "Provides a framework for understanding the human spirit as a distinct entity and interface for divine communion, which is not present in secular or dichotomist models.",
+    "dg3_preserved_floor": "Preserves the core Christian doctrine of the necessity of regeneration for spiritual life and communion with God.",
+    "dg4_collapse_if_removed": "If the spirit-soul distinction is removed, the model collapses into dichotomy, losing the explanation for spiritual deadness and the need for regeneration.",
+    "dg5_translation_registers": [
+      "Theological: trichotomy vs. dichotomy",
+      "Phenomenological: spiritual experiences and transcendence-seeking",
+      "Symbolic: g_coupling as a metaphor for spiritual connection"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological_anthropology",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims of universal transcendence-seeking as evidence for spiritual reality are abductive and not empirically verified.",
+      "The use of 'g_coupling' as a mathematical formalism may imply a physical model that is not supported.",
+      "The prosecution's arguments rely on scriptural authority, which is not universally accepted as evidence."
+    ],
+    "kill_conditions": [
+      "If soul and spirit are proven to be identical in biblical usage, the distinction fails.",
+      "If regeneration is shown to have no effect on spiritual perception, the activation claim fails.",
+      "If communion with God is possible without an active human spirit, the necessity of the spirit as interface fails."
+    ],
+    "lean_target": "Theological anthropology: trichotomy as a coherent model for spiritual experience and regeneration."
+  },
+  "plain_summary": "This document argues that humans have a spirit distinct from the soul, which is dormant before regeneration and becomes active after, enabling communion with God. It critiques dichotomism, secular anthropology, and materialism. However, the arguments are primarily theological and scriptural, not empirically proven, so the claims are not established as scientific facts.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\H04_Spirit.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch3\\json\\H04_Spirit.canonical-node.json"
+  }
+}

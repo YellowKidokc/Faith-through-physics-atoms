@@ -1,0 +1,94 @@
+{
+  "source_id": "master_equation",
+  "title": "master_equation.ipynb",
+  "canonical_node": {
+    "axiom": "The MasterEquation class defines the core computational engine for Theophysics, providing exact field evaluation, Lagrangian mechanics, numerical integration, and autodifferentiation via JAX, with modular methods that can be tested independently.",
+    "definitions": [
+      "MasterEquation: the core computational object that all other notebooks import, instantiate, and test.",
+      "chi(q, t): evaluates the coherence field for a given variable state and time.",
+      "chi_with_breakdown(q, t): returns chi plus per-component contributions.",
+      "chi_4term(q, t): 4-term expansion of chi for analytical work.",
+      "lagrangian(q, qdot, t): evaluates the Lowe Coherence Lagrangian.",
+      "equations_of_motion(q, qdot, t): computes accelerations via Euler-Lagrange.",
+      "energy(q, qdot, t): total energy (kinetic + potential).",
+      "mass_matrix(q, t): 10x10 Hessian of kinetic energy (required to be positive definite).",
+      "integrate_rk4(q0, qdot0, t_span, n_steps): 4th-order Runge-Kutta integrator for time evolution.",
+      "gradient_chi(q, t): gradient of chi with respect to all 10 variables.",
+      "hessian_chi(q, t): full 10x10 Hessian of chi.",
+      "sensitivity_sweep(q_base, variable_index, n_points): scans the effect of varying one variable while holding others fixed.",
+      "component_report(q, t): print table of all 10 component contributions.",
+      "disable_component(index): set a component's contribution to zero.",
+      "enable_component(index): restore a component.",
+      "VAR_WEIGHTS: list of weights for the 10 variables.",
+      "SYMMETRY_PAIRS: list of symmetry pairs.",
+      "PAIR_STRENGTH: strength of symmetry pair interactions.",
+      "CONFINE_STRENGTH: strength of confinement term.",
+      "JAX: a library for automatic differentiation and GPU/TPU acceleration."
+    ],
+    "derivation": [
+      "The MasterEquation class is defined as the core computational engine.",
+      "It uses JAX for exact gradients, Hessians, and Jacobians.",
+      "The mass matrix is computed exactly via JAX Hessian, enabling energy conservation verification to 9 decimal places.",
+      "PAIR_STRENGTH = 0.45 is chosen to be subcritical (below 0.64 stability boundary) to ensure the kinetic matrix remains positive definite.",
+      "The class is modular: each method can be tested independently."
+    ],
+    "action": "The system should use the MasterEquation class as the computational foundation for all Theophysics tests, ensuring reproducibility and modular testability.",
+    "boundary": [
+      "This document does not provide a proof of the physical validity of the equations.",
+      "It does not establish that the coherence field corresponds to any physical reality.",
+      "It does not claim that the numerical results are physically meaningful beyond the defined mathematical model.",
+      "It does not guarantee that the code is bug-free or that the chosen parameters are optimal."
+    ],
+    "test": [
+      "Verify that the mass matrix is positive definite for all operating points.",
+      "Verify that energy conservation holds to 9 decimal places in RK4 integration.",
+      "Verify that each method (chi, lagrangian, mass_matrix, etc.) can be called independently without errors.",
+      "Verify that the sensitivity sweep and component control functions behave as expected."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "config.py or config.ipynb for constants and variable metadata",
+      "JAX library for autodifferentiation",
+      "Google Colab environment for execution"
+    ],
+    "dg2_new_capability": "Provides a reusable computational engine for evaluating the coherence field, Lagrangian, energy, and gradients, enabling numerical experiments and tests.",
+    "dg3_preserved_floor": "Preserves the ability to compute chi and related quantities consistently across notebooks, ensuring reproducibility.",
+    "dg4_collapse_if_removed": "Without this class, all downstream notebooks that rely on MasterEquation would fail to run, collapsing the computational framework.",
+    "dg5_translation_registers": [
+      "chi(q,t) -> coherence field value",
+      "lagrangian(q,qdot,t) -> Lowe Coherence Lagrangian",
+      "mass_matrix(q,t) -> 10x10 Hessian of kinetic energy",
+      "integrate_rk4 -> time evolution via Runge-Kutta"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "computational_engine",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as computational tool"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document implies that the computational engine is reliable, but does not prove physical validity.",
+      "The claim that energy conservation is verified to 9 decimal places is a numerical result, not a proof of the underlying physics.",
+      "The choice of PAIR_STRENGTH = 0.45 is presented as deliberate but not derived from first principles."
+    ],
+    "kill_conditions": [
+      "If the code fails to run in a standard Colab environment.",
+      "If the mass matrix is not positive definite for some valid inputs.",
+      "If energy conservation fails beyond numerical tolerance."
+    ],
+    "lean_target": "A Lean formal proof of the mathematical properties of the MasterEquation class, such as positive definiteness of the mass matrix under given parameter constraints."
+  },
+  "plain_summary": "This document describes the MasterEquation class, the core computational engine for Theophysics. It defines methods for computing the coherence field, Lagrangian, energy, and gradients using JAX. The class is modular and designed for reproducibility. However, it is a computational tool, not a proof of physical validity. The document is coherent and admissible as a foundation for further tests.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\master_equation.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\master_equation.canonical-node.json"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "source_id": "chi_field",
+  "title": "chi_field.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field evolves as a scalar field in 1+1D according to the Klein-Gordon equation with phi^4 self-interaction and a grace source term.",
+    "definitions": [
+      "chi(x,t): scalar field value at spatial point x and time t",
+      "d'Alembertian in 1+1D: /t  /x",
+      "m: field mass squared",
+      ": self-coupling strength",
+      "J_grace: grace source term = _G * Phi * tanh(chi) / (S_local + )",
+      "_G: grace coupling strength",
+      "Phi: spatial grace distribution",
+      "S_local: local entropy",
+      ": small positive number preventing division by zero"
+    ],
+    "derivation": [
+      "The equation of motion is chi + mchi + chi = J_grace(x,t).",
+      "Spatial dimension is discretized using second-order finite differences, converting the PDE into a system of ODEs in time.",
+      "Time integration uses RK4 with Neumann boundary conditions.",
+      "Parameter scans over m and  classify stability regimes."
+    ],
+    "action": "Implement and run the ChiFieldSolver class to numerically solve the chi-field PDE in 1+1D, including parameter scans and stability analysis.",
+    "boundary": [
+      "Does not provide analytical proofs of existence or uniqueness.",
+      "Does not extend to higher spatial dimensions.",
+      "Does not include coupling to other fields beyond the grace source.",
+      "Does not claim physical reality; it is a numerical implementation."
+    ],
+    "test": [
+      "Energy drift < 0.5% over 1000 time steps with 128 spatial points and dt=0.01.",
+      "Stability phase diagram reproduces expected bands for canonical parameters.",
+      "Dispersion relation  = k + m holds for linear modes."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "MasterEquation class (Lagrangian mechanics of 10-variable point system)",
+      "Standard numerical libraries (e.g., NumPy, SciPy) for ODE integration"
+    ],
+    "dg2_new_capability": "Provides a numerical PDE solver for the chi-field, enabling spatial and temporal evolution studies beyond point mechanics.",
+    "dg3_preserved_floor": "Preserves the core chi-field dynamics as a field theory, consistent with the point system limit when spatial gradients vanish.",
+    "dg4_collapse_if_removed": "Without this node, the chi-field cannot be simulated as a field; only point approximations remain, losing spatial structure and propagation.",
+    "dg5_translation_registers": [
+      "PDE solver",
+      "Klein-Gordon equation",
+      "phi^4 theory",
+      "grace source term",
+      "stability phase diagram"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "numerical implementation",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "preserve as numerical implementation; do not treat as proof of physical reality"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting numerical stability as physical proof.",
+      "Claiming the grace source term is physically validated.",
+      "Extrapolating 1+1D results to higher dimensions."
+    ],
+    "kill_conditions": [
+      "If the notebook is not reproducible due to missing dependencies or code errors.",
+      "If the numerical method is unstable for canonical parameters.",
+      "If the energy drift exceeds stated bounds in independent runs."
+    ],
+    "lean_target": "Formalize the numerical scheme and stability conditions in Lean, if feasible."
+  },
+  "plain_summary": "This document describes a Google Colab notebook that implements a numerical solver for the chi-field as a 1+1D Klein-Gordon equation with phi^4 self-interaction and a grace source term. It uses method of lines with finite differences and RK4 integration. The notebook includes parameter scans and reports stability and energy conservation. It is a numerical implementation, not a proof of physical reality.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\chi_field.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\chi_field.canonical-node.json"
+  }
+}

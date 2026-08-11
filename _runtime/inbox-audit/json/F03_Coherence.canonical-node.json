@@ -1,0 +1,77 @@
+{
+  "source_id": "F03_Coherence",
+  "title": "The Coherence Imperative",
+  "canonical_node": {
+    "axiom": "Coherence is measurable, necessary, and the basis of all structure; order is a fundamental feature of reality's architecture.",
+    "definitions": [
+      "Coherence C[chi] = 1 - (S_observed / S_maximum), measuring organized information density.",
+      "Order: the degree of organization in information, with Order(I) > 0 for meaning.",
+      "Parsimony: nature prefers minimal description, formalized as dK/dt = -chi(t).",
+      "Decoherence: local decrease in coherence, representing information degradation, not destruction."
+    ],
+    "derivation": [
+      "Information exists and requires a substrate (from F02).",
+      "Not all information is equal; some carries meaning, some is noise.",
+      "The difference is organization (coherence).",
+      "Therefore, coherence is the condition for meaning.",
+      "Coherence is measurable via entropy, and nature prefers minimal description, as evidenced by elegant physical laws."
+    ],
+    "action": "Treat coherence as a fundamental, measurable property; use C[chi] to assess order in systems; recognize that local decoherence is degradation but information is conserved.",
+    "boundary": [
+      "Does not claim to prove the existence of God or specific theological doctrines.",
+      "Does not assert that coherence is conserved in all cases; only in closed systems.",
+      "Does not provide a complete physical theory; it is a conceptual framework."
+    ],
+    "test": [
+      "Verify that C[chi] is non-negative and well-defined for given systems.",
+      "Check that local coherence can increase at the expense of the environment.",
+      "Assess whether physical laws exhibit parsimony (low Kolmogorov complexity)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "F02_Information",
+      "Axiom 008 (O2.1)",
+      "Axiom 009 (O2.2)",
+      "Axiom 010 (O2.3)"
+    ],
+    "dg2_new_capability": "Provides a quantitative measure of order (coherence) and links it to meaning, parsimony, and physical structure.",
+    "dg3_preserved_floor": "Preserves the foundational role of information and its substrate from F02.",
+    "dg4_collapse_if_removed": "Without coherence, information cannot be meaningful, undermining the entire framework of ordered reality.",
+    "dg5_translation_registers": [
+      "Thermodynamics: entropy as inverse coherence",
+      "Information theory: signal-to-noise ratio",
+      "Physics: quantum coherence, crystal formation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "metaphysical",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims coherence is fundamental without rigorous proof.",
+      "Equates theological coherence with physical coherence without justification.",
+      "Uses fine-tuning arguments that are contested.",
+      "Asserts parsimony as a law of nature rather than a heuristic."
+    ],
+    "kill_conditions": [
+      "If meaning can exist without organization.",
+      "If coherence cannot be measured in practice.",
+      "If nature does not prefer parsimony."
+    ],
+    "lean_target": "Formalize coherence as a measurable quantity in information theory, but avoid theological overreach."
+  },
+  "plain_summary": "This document argues that coherence (order) is fundamental and measurable, using entropy-based definitions and parsimony. It critiques chaos, random universe, and entropy-only views. However, it lacks rigorous proof and mixes theology with physics, so it is not established as a formal result.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F03_Coherence.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\F03_Coherence.canonical-node.json"
+  }
+}

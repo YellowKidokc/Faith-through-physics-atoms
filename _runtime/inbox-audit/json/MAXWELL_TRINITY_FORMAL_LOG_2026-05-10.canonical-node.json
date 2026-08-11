@@ -1,0 +1,79 @@
+{
+  "source_id": "MAXWELL_TRINITY_FORMAL_LOG_2026-05-10",
+  "title": "Maxwell / Trinity Lean 4 Formal Log",
+  "canonical_node": {
+    "axiom": "A triadic relational architecture is valid only if it satisfies the ValidTriadic gate: canonical role profiles, scalar-vector coupling invariant, full dynamic-field marker, relational distinctness, and mutual necessity.",
+    "definitions": [
+      "ValidTriadic: a structural gate requiring canonical source/mediator/actualizer role profiles, a scalar-vector coupling invariant derived from full quaternion multiplication, a full dynamic-field marker, relational distinctness, and mutual necessity.",
+      "Scalar-vector coupling invariant: the property that the full quaternion product requires both scalar and vector data; vector-only dot/cross data is insufficient.",
+      "Canonical role profiles: fixed structural roles (source, mediator, actualizer) with specific operation profiles, not arbitrary labels.",
+      "Relational distinctness: the three roles are distinct and not collapsed (e.g., modalism).",
+      "Full dynamic-field marker: the system must represent a full dynamic field, not a static or single-field approximation."
+    ],
+    "derivation": [
+      "Lean 4 formalization defines ValidTriadic as a structure with fields for role profiles, coupling invariant, dynamic marker, distinctness, and mutual necessity.",
+      "Rejection-first tests prove that Heaviside vector EM, modalism, static single-field EM, arbitrary three-part systems, and relabeled role systems fail the gate.",
+      "Positive tests prove that quaternionEM and trinityRelational satisfy the gate and admit a role-preserving isomorphism.",
+      "Wrong-role controls prove that cyclic role swaps fail source and profile preservation.",
+      "Load-bearing constraint audit shows that removing any guard allows the corresponding adversarial case to pass.",
+      "Quaternion algebra sanity check proves that full scalar/vector split reconstructs the product, while vector-only data does not determine the full product."
+    ],
+    "action": "The system should enforce the ValidTriadic gate when evaluating any candidate triadic relational architecture, rejecting systems that lack canonical role profiles, scalar-vector coupling, dynamic-field marker, relational distinctness, or mutual necessity.",
+    "boundary": [
+      "This does not prove that Maxwell's historical quaternion equations instantiate the abstraction.",
+      "This does not prove that the quaternion product is non-decomposable in every sense.",
+      "This does not prove that the theological interpretation is uniquely forced by the formal structure."
+    ],
+    "test": [
+      "Lean build succeeds with the specified theorems.",
+      "Rejection-first controls fail as expected.",
+      "Positive tests pass as expected.",
+      "Load-bearing constraint audit confirms each guard is necessary.",
+      "Quaternion algebra sanity check confirms vector-only data is insufficient."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 theorem prover",
+      "Quaternion algebra definitions",
+      "TriadicSystem structure definitions"
+    ],
+    "dg2_new_capability": "Provides a formal gate (ValidTriadic) that distinguishes quaternion/Trinity candidates from adversarial controls, with explicit load-bearing constraints and a scalar-vector coupling theorem.",
+    "dg3_preserved_floor": "Preserves the earlier Law 4 two-state test by strengthening it with explicit false-positive controls and specific invariant failures.",
+    "dg4_collapse_if_removed": "If the ValidTriadic gate is removed, the system collapses to an arbitrary three-part test that admits any three-part system, losing all discriminative power.",
+    "dg5_translation_registers": [
+      "Lean 4 formal proof",
+      "Quaternion algebra",
+      "Triadic relational architecture"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal structural gate with verified controls",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "archive as a verified structural gate; do not promote to historical or theological proof"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming this proves Maxwell's historical quaternion equations instantiate the abstraction.",
+      "Claiming the quaternion product is non-decomposable in every sense.",
+      "Claiming the theological interpretation is uniquely forced by the formal structure."
+    ],
+    "kill_conditions": [
+      "If the Lean formalization is found to have logical inconsistencies or missing guards.",
+      "If the scalar-vector coupling invariant is shown to be insufficient or incorrectly encoded.",
+      "If the isomorphism between quaternionEM and trinityRelational is shown to be trivial or non-structural."
+    ],
+    "lean_target": "Formalize the historical mapping from Maxwell's quaternion equations to the ValidTriadic gate, and clarify the theological interpretation as a separate non-formal step."
+  },
+  "plain_summary": "This document reports a Lean 4 formalization of a triadic validity gate (ValidTriadic) that tests whether a system with three roles satisfies structural requirements including canonical role profiles, scalar-vector coupling, dynamic-field marker, relational distinctness, and mutual necessity. The formalization includes rejection-first controls that fail as expected, positive tests that pass, and a load-bearing constraint audit showing each guard is necessary. It also includes a quaternion algebra sanity check proving that vector-only data is insufficient for the full product. The document honestly states that this does not prove historical Maxwell equations or theological uniqueness. The node is coherent and admissible, but should not be overinterpreted beyond its formal scope.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\MAXWELL_TRINITY_FORMAL_LOG_2026-05-10.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\MAXWELL_TRINITY_FORMAL_LOG_2026-05-10.canonical-node.json"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "source_id": "BUILD_ATTEMPT_2026-07-17",
+  "title": "Build Attempt 2026-07-17",
+  "canonical_node": {
+    "axiom": "A clean source-only build of the Theophysics Lean repository is a necessary condition for verifying that the project compiles without source-level errors.",
+    "definitions": [
+      "Clean source-only build: a build performed from a fresh checkout without pre-existing build artifacts, using the specified Lean/Lake toolchain.",
+      "Source-level error: a type error, proof error, or syntax error in the Lean source files that prevents compilation.",
+      "Manual stop: an intentional interruption of the build process by the user, not a build failure."
+    ],
+    "derivation": [
+      "The document reports the command 'lake build' executed in the specified working directory.",
+      "The toolchain versions are listed: Lake 5.0.0-src+b4812ae, Lean 4.32.0-rc1.",
+      "The build resolved dependencies and began compiling project modules.",
+      "Several Theophysics modules built successfully before the run was manually stopped.",
+      "Warnings were observed but no source-level error was displayed before the manual stop.",
+      "The later 'Lean exited with code 4294967295' messages were attributed to manually stopping child processes, not to a displayed type/proof error."
+    ],
+    "action": "Run the build from a local SSD checkout or with dependency caches materialized to obtain a clean, complete build log for professional review.",
+    "boundary": [
+      "This document does not claim that the entire project builds successfully; the build was stopped before completion.",
+      "This document does not claim that all modules compile; only a subset of modules were observed to build.",
+      "This document does not provide a full build log or a final exit code from a completed build."
+    ],
+    "test": [
+      "Execute 'lake build' in a clean local SSD checkout and verify that the command completes with exit code 0.",
+      "Check that all Theophysics modules compile without source-level errors.",
+      "Compare the set of successfully built modules against the list reported in this document."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4.32.0-rc1 toolchain",
+      "Lake 5.0.0-src+b4812ae",
+      "Theophysics Lean repository source code",
+      "Network drive or local SSD for storage"
+    ],
+    "dg2_new_capability": "Provides evidence that a subset of Theophysics modules compile under the specified toolchain, and identifies a practical recommendation for obtaining a complete build.",
+    "dg3_preserved_floor": "The claim that no source-level error was observed before manual stop is preserved; the document does not assert a full successful build.",
+    "dg4_collapse_if_removed": "If this document is removed, the record of a partial build attempt and the recommendation for a local SSD build would be lost, but the underlying source code and toolchain remain unchanged.",
+    "dg5_translation_registers": [
+      "Build log",
+      "Toolchain version",
+      "Module compilation status"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "empirical build report",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Record as a build attempt log; do not treat as a proof of full compilation."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting the partial build as evidence that the entire project compiles.",
+      "Treating the absence of displayed errors before manual stop as a guarantee of no errors in unbuilt modules.",
+      "Ignoring the manual stop and the incomplete nature of the build."
+    ],
+    "kill_conditions": [
+      "If a subsequent complete build reveals source-level errors in modules not built here.",
+      "If the toolchain version is not reproducible.",
+      "If the working directory or source code is not available for verification."
+    ],
+    "lean_target": "A complete, clean build log from a local SSD checkout with exit code 0."
+  },
+  "plain_summary": "This document reports a partial build attempt of the Theophysics Lean project. Several modules compiled successfully before the build was manually stopped due to slow network-drive performance. No source-level errors were observed, but the build was not completed, so it does not prove the entire project compiles. The recommendation is to run the build on a local SSD for a full audit.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\BUILD_ATTEMPT_2026-07-17.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\BUILD_ATTEMPT_2026-07-17.canonical-node.json"
+  }
+}

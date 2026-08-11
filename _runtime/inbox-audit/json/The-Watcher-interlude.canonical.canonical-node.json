@@ -1,0 +1,71 @@
+{
+  "source_id": "The-Watcher-interlude.canonical",
+  "title": "The Watcher Problem",
+  "canonical_node": {
+    "axiom": "Observation requires three functions, not two, because every two-part exit fails to terminate the chain of observation.",
+    "definitions": [
+      "Measurement problem: the puzzle of how a quantum object goes from being in many possible states at once to being in just one definite state.",
+      "Triadic structure: a three-part pattern.",
+      "Terminate the chain: to end the loop of cause and effect."
+    ],
+    "derivation": [
+      "The measurement problem is stated as a question: why does observation require three functions instead of two",
+      "It is asserted that every two-part exit fails to terminate the chain.",
+      "Therefore, reality needs three functions."
+    ],
+    "action": "Present the triadic structure as the resolution to the measurement problem, and direct readers to the full canonical treatment for complete argument and proofs.",
+    "boundary": [
+      "Does not provide a formal proof or detailed derivation.",
+      "Does not specify the exact nature of the three functions.",
+      "Does not address alternative interpretations or counterarguments."
+    ],
+    "test": [
+      "Check that the document consistently asserts the necessity of three functions.",
+      "Verify that the document directs readers to the full canonical page for complete argument.",
+      "Assess whether any evidence or proof is provided beyond the assertion."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The measurement problem in quantum mechanics.",
+      "The concept of observation and observer-observed pair."
+    ],
+    "dg2_new_capability": "Claims to resolve the measurement problem by introducing a triadic structure, but does not provide a formal mechanism or proof.",
+    "dg3_preserved_floor": "Preserves the existence of the measurement problem and the need for a resolution.",
+    "dg4_collapse_if_removed": "If the triadic claim is removed, the document loses its central thesis and becomes a mere pointer to other pages.",
+    "dg5_translation_registers": [
+      "Physics: measurement problem, quantum observation.",
+      "Philosophy: triadic structure, necessity.",
+      "Mathematics: three functions (undefined)."
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "no",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "Theological/philosophical assertion about physics",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "D",
+    "recommended_atom_action": "Quarantine or rewrite as a pointer with explicit non-proof status."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Presents an unproven assertion as a solution to a major physics problem.",
+      "Uses vague terms like 'three functions' without definition.",
+      "May mislead readers into thinking the measurement problem is solved."
+    ],
+    "kill_conditions": [
+      "If the full canonical page does not provide a rigorous proof, the claim is unsupported.",
+      "If the three functions are not precisely defined, the claim is vacuous.",
+      "If any two-part exit can be shown to terminate, the central assertion fails."
+    ],
+    "lean_target": "Formalize the triadic structure in a mathematical framework or clearly label as speculative philosophy."
+  },
+  "plain_summary": "This document asserts that the measurement problem requires three functions instead of two, but provides no proof or detailed argument. It is a short interlude pointing to a longer treatment. The claim is not established and should be treated as a philosophical assertion, not a proven result.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\The-Watcher-interlude.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\The-Watcher-interlude.canonical.canonical-node.json"
+  }
+}

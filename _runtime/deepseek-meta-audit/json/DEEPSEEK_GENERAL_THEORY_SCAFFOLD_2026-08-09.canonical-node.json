@@ -1,0 +1,77 @@
+{
+  "source_id": "DEEPSEEK_GENERAL_THEORY_SCAFFOLD_2026-08-09",
+  "title": "DEEPSEEK GENERAL_THEORY_SCAFFOLD AUDIT",
+  "canonical_node": {
+    "axiom": "The 30-atom pack is honestly labeled draft_proposal_not_canon; no atom may be promoted to canonical status without passing the Canon Promotion Rule from 17.",
+    "definitions": [
+      "draft_proposal_not_canon: a status indicating the atom pack is a proposal, not canonical.",
+      "canonical bridge-status categories: 12 categories (Formal-internal candidate, Adversarial control, Definition/scaffold, Formal-internal).",
+      "canonical Level 0/1/2 roles: the standard roles defined in the canonical document.",
+      "orphaned bridge: a bridge with no direct canonical anchor or section.",
+      "misuse guard: a kill condition that prevents misuse rather than falsifying the model."
+    ],
+    "derivation": [
+      "The audit compares each atom against canonical sections and vocabulary.",
+      "Global findings identify vocabulary drift, retired claims, and orphaned bridges.",
+      "Per-atom audit assigns alignment, drift, bridge grade, kill conditions, ontology family, and canonical section.",
+      "Upgrade list provides specific changes for global, physical, spiritual, and bridge atoms."
+    ],
+    "action": "Apply the upgrade list to the atom pack: map bridge grades to canonical 12 categories, replace non-canonical role names, check target IDs, keep draft status, and sharpen kill conditions as specified.",
+    "boundary": [
+      "Does not promote any atom to canonical status.",
+      "Does not derive new physics or theology.",
+      "Does not claim that any bridge is a proof.",
+      "Does not resolve orphaned bridges; marks them as orphaned."
+    ],
+    "test": [
+      "Check that all bridge grades use canonical 12 vocabulary or are explicitly labeled draft-grade.",
+      "Check that no atom uses ruled-drifted variable names or retired claims.",
+      "Check that all kill conditions are model-level kills, not misuse guards.",
+      "Check that orphaned bridges are marked and not used as ME evidence."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Canonical document sections 1-18",
+      "Atom pack with 30 atoms",
+      "Canon Promotion Rule from 17"
+    ],
+    "dg2_new_capability": "Provides an audit and upgrade list for aligning a draft atom pack with canonical vocabulary and discipline.",
+    "dg3_preserved_floor": "Preserves the honest draft status and no-overclaim discipline of the pack.",
+    "dg4_collapse_if_removed": "Without this audit, the atom pack would remain misaligned with canonical vocabulary and risk overclaiming.",
+    "dg5_translation_registers": [
+      "draft_proposal_not_canon  canonical status",
+      "candidate_correspondence / structural_analogy  12 bridge-status categories",
+      "state_variable, boundary_condition, operator, failure_mode, actualization_gate, limit_condition  canonical Level 0/1/2 roles"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "audit report",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "apply_upgrade_list"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The audit itself may be mistaken for a canonical promotion.",
+      "Upgrade suggestions may be treated as mandatory canonical changes.",
+      "Orphaned bridges may be ignored rather than removed."
+    ],
+    "kill_conditions": [
+      "If any atom is promoted without passing Canon Promotion Rule.",
+      "If bridge grades are not mapped to canonical categories.",
+      "If orphaned bridges are used as ME evidence."
+    ],
+    "lean_target": "A lean version would retain only the global findings and the upgrade list, omitting per-atom details."
+  },
+  "plain_summary": "This document is an audit of a 30-atom draft pack, identifying vocabulary drift, orphaned bridges, and weak kill conditions, and providing an upgrade list to align with canonical discipline without promoting any atom.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-zip\\DEEPSEEK_GENERAL_THEORY_SCAFFOLD_2026-08-09.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-meta-audit\\json\\DEEPSEEK_GENERAL_THEORY_SCAFFOLD_2026-08-09.canonical-node.json"
+  }
+}

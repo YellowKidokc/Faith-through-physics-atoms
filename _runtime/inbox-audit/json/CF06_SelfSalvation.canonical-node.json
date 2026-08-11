@@ -1,0 +1,76 @@
+{
+  "source_id": "CF06_SelfSalvation",
+  "title": "The Prosecution of Self-Salvation",
+  "canonical_node": {
+    "axiom": "Self-salvation is impossible; external grace is necessary.",
+    "definitions": [
+      ": moral sign, with  = -1 at birth for all humans.",
+      "Self-salvation: achieving  = +1 through one's own operations.",
+      "External grace: an operator  that flips  from -1 to +1."
+    ],
+    "derivation": [
+      "All humans are born with  = -1.",
+      "Operations from  = -1 have sign -1.",
+      "Self-operation    = +1, but this +1 is measured from -1 ground.",
+      "To truly flip to +1, an external +1 operator is required.",
+      "Cannot access +1 from inside -1.",
+      "Therefore, self-salvation is impossible."
+    ],
+    "action": "Reject all doctrines of self-salvation and works-righteousness; affirm the necessity of external grace.",
+    "boundary": [
+      "Does not define the specific nature of external grace.",
+      "Does not address the mechanism of grace application.",
+      "Does not provide a formal proof; only a sketch."
+    ],
+    "test": [
+      "Check that any proposed salvation method does not rely solely on human effort.",
+      "Verify that the impossibility argument is not misapplied to deny the possibility of divine intervention."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "H05_Flesh",
+      "H08_MoralSign",
+      "R01_Sin",
+      "R02_NoSelfSave",
+      "D01_SelfFlip"
+    ],
+    "dg2_new_capability": "Provides a unified prosecution of self-salvation doctrines using the  framework.",
+    "dg3_preserved_floor": "Preserves the impossibility of self-flip from D01 and the universal  = -1 from H08.",
+    "dg4_collapse_if_removed": "Without this node, the rejection of self-salvation lacks a consolidated case, but the underlying theorems remain.",
+    "dg5_translation_registers": [
+      "theological",
+      "mathematical",
+      "legal"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "theological impossibility claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical impossibility without a rigorous formal proof.",
+      "Conflates theological doctrine with mathematical formalism.",
+      "Uses undefined terms like 'external grace' without precise definition."
+    ],
+    "kill_conditions": [
+      "If a counterexample to self-salvation is found within the framework.",
+      "If the  model is shown to be inconsistent.",
+      "If the proof sketch is invalidated."
+    ],
+    "lean_target": "Formalize the self-flip impossibility in a proof assistant."
+  },
+  "plain_summary": "This document argues that self-salvation is impossible, using a mathematical analogy with a moral sign . It is a theological position paper, not a rigorous proof, and should be treated as a narrative anchor rather than a formal theorem.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CF06_SelfSalvation.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CF06_SelfSalvation.canonical-node.json"
+  }
+}

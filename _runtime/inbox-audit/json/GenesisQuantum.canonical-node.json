@@ -1,0 +1,67 @@
+{
+  "source_id": "GenesisQuantum",
+  "title": "GenesisQuantum.lean",
+  "canonical_node": {
+    "axiom": "Physical and informational distinction are irreducible; monism is formally ruled out and dual-substrate reality follows necessarily.",
+    "definitions": [
+      "Dual-substrate reality: reality consisting of two distinct substrates, physical and informational, that cannot be reduced to one another.",
+      "Monism: the claim that reality consists of a single substrate.",
+      "Irreducibility: the property that physical and informational distinction cannot be derived from or reduced to a single underlying principle."
+    ],
+    "derivation": [
+      "Accept the irreducibility of physical and informational distinction.",
+      "If monism were true, there would be a single substrate from which both physical and informational distinction arise.",
+      "But irreducibility implies that no single substrate can account for both distinctions.",
+      "Therefore, monism is false and dual-substrate reality follows necessarily."
+    ],
+    "action": "Assemble the GenesisQuantum module by importing GenesisQuantum.DualSubstrate and confirming the proof compiles.",
+    "boundary": [
+      "Does not provide a full quantum treatment of the chi-field.",
+      "Does not derive the decoherence curve.",
+      "Does not establish the connection between quantum measurement and the observer requirement beyond pointing to the observation_required axiom."
+    ],
+    "test": [
+      "The Lean file compiles successfully.",
+      "The two theorems in DualSubstrate.lean are accepted by the Lean prover."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "GenesisQuantum.DualSubstrate"
+    ],
+    "dg2_new_capability": "Provides a formal entry point that assembles the dual-substrate proof package, establishing the foundational claim of dual-substrate reality.",
+    "dg3_preserved_floor": "Preserves the existing framework by importing the DualSubstrate module without altering its contents.",
+    "dg4_collapse_if_removed": "If removed, the GenesisQuantum module would lack its top-level assembly, but the underlying DualSubstrate theorems would remain intact.",
+    "dg5_translation_registers": [
+      "LEAN4 formal proof",
+      "Ontological argument"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "formal proof entry point",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as architectural entry point; verify compilation and theorem statements"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims 'monism is formally ruled out' but the proof details are not provided in this document.",
+      "The phrase 'dual-substrate reality follows necessarily' may overstate the logical force if the axioms are not fully specified."
+    ],
+    "kill_conditions": [
+      "If the DualSubstrate module fails to compile.",
+      "If the theorems in DualSubstrate do not actually prove the claimed irreducibility and dual-substrate necessity."
+    ],
+    "lean_target": "GenesisQuantum.DualSubstrate"
+  },
+  "plain_summary": "GenesisQuantum.lean is the top-level import file for the GenesisQuantum module, which aims to formally prove that reality must consist of two irreducible substrates: physical and informational. The document describes the module's role and claims that the proof is complete, but it does not include the actual proof details. The file's significance is architectural, serving as the entry point that assembles the proof package.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\GenesisQuantum.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\GenesisQuantum.canonical-node.json"
+  }
+}

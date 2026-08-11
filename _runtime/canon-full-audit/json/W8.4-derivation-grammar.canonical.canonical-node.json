@@ -1,0 +1,84 @@
+{
+  "source_id": "W8.4-derivation-grammar.canonical",
+  "title": "Derivation Grammar v0.2",
+  "canonical_node": {
+    "axiom": "A higher layer depends on, preserves, and adds to a lower layer; a valid derivation step requires dependency, new capability, and preservation.",
+    "definitions": [
+      "Layer (L): A level in a derivation staircase.",
+      "Capability (C): A new irreducible operation introduced at a layer.",
+      "State (S): Condition of a layer or derivation: Coherent, Defective, or Ruptured.",
+      "DependsOn(L2, L1): Layer L2 requires Layer L1.",
+      "TranslatesTo(C1, C2): Capability C1 is carried into another register as C2 while preserving relevant structure.",
+      "Constraint(L): The admissibility condition governing what Layer L can say, deny, inherit, or translate."
+    ],
+    "derivation": [
+      "DG1: Every non-root layer depends on at least one prior layer.",
+      "DG2: Each new layer must introduce at least one capability not reducible to prior layers.",
+      "DG3: A valid higher layer preserves the valid capabilities of the lower layer.",
+      "DG4: If a required lower layer collapses, any layer depending on it also collapses unless explicit repair or alternate dependency is supplied.",
+      "DG5: Translation preserves relevant structure.",
+      "DG6: Layers and derivations can occupy coherent, defective, or ruptured states.",
+      "DG7: A derivation step is valid iff dependencies exist, new capability is genuinely new, and prior layer is preserved.",
+      "DG8: A derivation cannot deny a capability whose use is required to formulate the denial."
+    ],
+    "action": "Use DG as a formal grammar to test layered derivations: check dependency, new capability, preservation, collapse, translation, closure, and convergence. Instantiations must supply object mapping, relation mapping, constraint mapping, root layer, capability sequence, dependency graph, collapse conditions, translation rules, closure checks, grade labels, and kill conditions.",
+    "boundary": [
+      "DG does not name God, Christ, Trinity, Ehad, physics, consciousness, morality, or any other domain-specific conclusion at the grammar layer.",
+      "DG does not prove God, Christ, Trinity, Ehad, Islam, Christianity, Theophysics, Hebun-Zanabun, the Master Equation, consciousness, or morality.",
+      "DG does not rank worldviews.",
+      "DG does not tell a worldview what to name the ground."
+    ],
+    "test": [
+      "Check that each derivation step satisfies DG7: dependencies exist, new capability is genuinely new, and prior layer is preserved.",
+      "Check that no layer is skipped (T1).",
+      "Check that collapse propagates upward (T2).",
+      "Check that translations preserve structure (T3).",
+      "Check closure: no denial of a capability required to formulate the denial (DG8).",
+      "For convergence claims, require IC-4 or IC-5 grades."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Formal language and logic",
+      "Concept of layers and capabilities",
+      "Definition of dependency and translation"
+    ],
+    "dg2_new_capability": "Provides a unified formal grammar for testing layered derivations across worldviews without naming domain-specific conclusions.",
+    "dg3_preserved_floor": "Preserves the ability to reason about dependency, necessity, inheritance, irreducibility, collapse, translation, closure, and convergence in a structured way.",
+    "dg4_collapse_if_removed": "Without DG, there is no shared formal language to test whether layered derivations are admissible, whether dependencies are preserved, and whether translations are honest across different frameworks.",
+    "dg5_translation_registers": [
+      "Formal grammar",
+      "Theophysics instantiation",
+      "Hebun-Zanabun instantiation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Formal grammar / meta-framework",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Preserve as a formal grammar specification; do not treat as proof of any worldview or convergence claim."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that DG proves convergence between Theophysics and Hebun-Zanabun when it only provides a grammar for comparison.",
+      "Treating IC grades as evidence of actual convergence rather than as a formal criterion.",
+      "Assuming that because DG is theology-free, it is neutral or universally applicable."
+    ],
+    "kill_conditions": [
+      "If DG is used to assert that a specific worldview is true or false based solely on grammar.",
+      "If DG is claimed to be complete or final without formal verification.",
+      "If the Lean roadmap is presented as completed when it is not."
+    ],
+    "lean_target": "Formalize DG kernel in Lean: define Layer, Capability, State, DependsOn, TranslatesTo, Constraint; prove dependency lemmas, no-skip, collapse propagation; encode closure as admissibility condition."
+  },
+  "plain_summary": "This document defines a formal grammar (DG) for testing layered derivations. It specifies axioms for dependency, new capability, preservation, collapse, translation, dynamics, admissibility, and closure. It explicitly states that it does not prove any theological or physical claims, and that the Lean formalization and convergence proofs are not yet complete. The grammar is intended to be a shared tool for comparing worldviews without naming them.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W8.4-derivation-grammar.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W8.4-derivation-grammar.canonical.canonical-node.json"
+  }
+}

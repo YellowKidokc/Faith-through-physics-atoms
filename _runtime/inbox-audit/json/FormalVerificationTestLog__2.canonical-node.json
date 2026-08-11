@@ -1,0 +1,80 @@
+{
+  "source_id": "FormalVerificationTestLog__2",
+  "title": "Formal Verification Test Log",
+  "canonical_node": {
+    "axiom": "Formal verification claims must be scoped to what the encoded abstraction actually proves, not to the domain interpretation of the labels.",
+    "definitions": [
+      "LawIso: a minimal isomorphism structure over two-state systems with value function, collapsed predicate, bidirectional map, value preservation, and collapse preservation.",
+      "RichLawIso: an enriched isomorphism structure adding regime-role preservation and forward/reverse transition preservation.",
+      "BridgeMatrix: a module encoding ten formal factor slots (G M E S T K R Q F C) with formal signatures, physical readings, spiritual readings, canonical rows, and adversarial rows.",
+      "False positive: a candidate that passes the formal test but is not a meaningful domain bridge (e.g., coin model).",
+      "Semantic grounding: the external justification that a human-assigned label or signature is faithful to the source domain."
+    ],
+    "derivation": [
+      "LawIso admits a coin model with the same binary value/collapse pattern, showing the definition is too thin to distinguish meaningful bridges.",
+      "RichLawIso rejects the natural coin model (tails->randomLow, heads->randomHigh) because roles differ.",
+      "RichLawIso accepts a relabeled coin (tails->constraining, heads->liberating) because the encoded roles and transitions match.",
+      "BridgeMatrix canonical rows all validate; semantic swaps with different signatures are rejected.",
+      "BridgeMatrix accepts an arbitrary clone assigned the same signature as G, showing Lean cannot verify the honesty of the assignment."
+    ],
+    "action": "When reporting formal verification results, explicitly state that Lean verifies preservation of encoded structure, not the truth of the domain interpretation. Include adversarial tests and boundary discoveries in the log.",
+    "boundary": [
+      "Lean cannot independently verify that human-assigned labels or signatures are faithful to physics or theology.",
+      "The formal tests do not prove domain-rich structural isomorphism; they only prove isomorphism under the chosen abstraction.",
+      "The bridge matrix verifies internal consistency, not external truth.",
+      "The current signatures are coarse and do not encode detailed equations such as Shannon capacity, Kolmogorov complexity, action integrals, or quantum amplitudes."
+    ],
+    "test": [
+      "Run `lake build` and `lake env lean IsomorphismTest.lean` to confirm compilation.",
+      "Scan active Lean module path for `sorry`, `admit`, `axiom`, `unsafe`; ensure none are present.",
+      "Run adversarial tests: coin false positive, relabeled coin, semantic swaps, arbitrary clones.",
+      "Check that all canonical rows in BridgeMatrix compile and that zero-collapse product behavior holds."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean theorem prover",
+      "ResurrectionFormal.IsomorphismTest module",
+      "ResurrectionFormal.BridgeMatrix module",
+      "Layer 1 and Layer 2 source context"
+    ],
+    "dg2_new_capability": "Provides a disciplined method for testing formal bridges with adversarial cases and boundary discovery, preventing overclaiming of formal results.",
+    "dg3_preserved_floor": "Preserves the ability to run Lean verification and to document the exact scope of what is proven.",
+    "dg4_collapse_if_removed": "Without this log, formal verification claims would be ambiguous and prone to overstatement, undermining trust in the project's formal results.",
+    "dg5_translation_registers": [
+      "LawIso",
+      "RichLawIso",
+      "BridgeMatrix",
+      "semantic grounding",
+      "false positive"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as a methodological guardrail for formal verification claims"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that Lean verified a domain-rich structural isomorphism when it only verified an encoded abstraction.",
+      "Claiming that the bridge matrix proves the correctness of the physical/spiritual readings.",
+      "Ignoring the relabeled coin and arbitrary clone boundaries."
+    ],
+    "kill_conditions": [
+      "If the log is used to claim that Lean has proven the strong-force/love bridge in a domain-rich sense.",
+      "If the log is used to claim that the signature table is domain-faithful without external grounding."
+    ],
+    "lean_target": "Formal verification claims must be scoped to the encoded abstraction; external audit layer required for domain faithfulness."
+  },
+  "plain_summary": "This document is a formal verification test log that records Lean runs, adversarial tests, and boundary discoveries. It shows that Lean can verify preservation of encoded structure but cannot verify the truth of domain interpretations. The log includes minimal and enriched isomorphism tests, a bridge matrix, and explicit warnings about false positives and semantic grounding. The recommended action is to preserve this as a methodological guardrail.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\FormalVerificationTestLog__2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\FormalVerificationTestLog__2.canonical-node.json"
+  }
+}

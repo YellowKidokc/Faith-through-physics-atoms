@@ -1,0 +1,69 @@
+{
+  "source_id": "CoherenceAlgebra",
+  "title": "CoherenceAlgebra.lean",
+  "canonical_node": {
+    "axiom": "A CoherenceAlgebra is a commutative monoid with zero, no zero divisors, and zero  one, with an asymmetric zero multiplication (zero * a = a) to encode Grace.",
+    "definitions": [
+      "CoherenceAlgebra : a typeclass with operations mul, zero, one, satisfying commutativity, associativity, identity, zero_ne_one, no_zero_divisors, and zero_mul (zero * a = a).",
+      "DualLaw: a structure with a physical projection and a spiritual projection; system product computed across both.",
+      "listProd: the product of a list of elements in the algebra."
+    ],
+    "derivation": [
+      "list_prod_zero_iff: listProd xs = zero   x in xs, x = zero, proved by structural induction using no_zero_divisors and mul_zero.",
+      "spiritual_restoration_is_external: if an internal operator maps zero to zero, it cannot map zero to one; restoration must be external.",
+      "observation_required: an actualized state requires an observer; stated as an axiom."
+    ],
+    "action": "Provide the foundational algebraic structure and theorems that all other Lean files import, ensuring zero-collapse and restoration semantics.",
+    "boundary": [
+      "Does not define specific physical or spiritual laws beyond the algebraic structure.",
+      "Does not prove the existence of an external restorer; only states that if restoration occurs, it must be external.",
+      "Does not interpret the algebra in physical terms; it is purely formal."
+    ],
+    "test": [
+      "Lean compiles CoherenceAlgebra.lean with no 'sorry' or admitted axioms.",
+      "list_prod_zero_iff is proven and can be used in downstream files.",
+      "The zero_mul axiom is asymmetric: zero * a = a, but a * zero = zero."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean4 standard library",
+      "Mathlib (if used)"
+    ],
+    "dg2_new_capability": "Provides a formal algebraic foundation with zero-collapse and external restoration theorems, enabling downstream formal proofs.",
+    "dg3_preserved_floor": "Preserves the logical consistency of the formal system by ensuring no zero divisors and zero  one.",
+    "dg4_collapse_if_removed": "If removed, all downstream Lean files lose their foundational axioms and theorems, causing the formal proof system to collapse.",
+    "dg5_translation_registers": [
+      "LEAN4",
+      "FORMAL_PROOF",
+      "ALGEBRA"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal proof",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "A",
+    "recommended_atom_action": "import and use as foundation"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The zero_mul axiom (zero * a = a) is nonstandard and may be misinterpreted as a physical claim.",
+      "The theorem spiritual_restoration_is_external is a logical consequence of the axioms, but the axiom observation_required is a framework commitment, not a deduction."
+    ],
+    "kill_conditions": [
+      "If Lean compilation fails or contains 'sorry'.",
+      "If the axioms are inconsistent (e.g., zero = one derivable)."
+    ],
+    "lean_target": "CoherenceAlgebra.lean"
+  },
+  "plain_summary": "CoherenceAlgebra.lean is a Lean4 formal proof file that defines an algebraic structure with zero-collapse and external restoration properties. It is the foundation for all other formal proofs in the Theophysics framework.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CoherenceAlgebra.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CoherenceAlgebra.canonical-node.json"
+  }
+}

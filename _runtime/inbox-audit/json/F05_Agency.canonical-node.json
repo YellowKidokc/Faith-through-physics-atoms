@@ -1,0 +1,79 @@
+{
+  "source_id": "F05_Agency",
+  "title": "Agency is Real",
+  "canonical_node": {
+    "axiom": "Some entities possess intrinsic causal power, agency requires selection among alternatives, and some agents can affect coherence through choice.",
+    "definitions": [
+      "Agency: capacity for selection among alternatives, reason-responsive and self-determined.",
+      "Causal power: intrinsic ability to produce effects, irreducible to constant conjunction.",
+      "Will: selection among alternatives, requiring multiple possibilities, reason-responsiveness, and self-determination.",
+      "Moral capacity: ability to affect coherence (C) through choice, where positive C is moral and negative C is immoral.",
+      "Agent: an observer with causal power; moral agent: agent with moral alternatives; redeemable being: moral agent responsive to grace."
+    ],
+    "derivation": [
+      "Epiphenomenalism self-refutes: belief in epiphenomenalism is a conscious state that affects behavior, so consciousness has causal power.",
+      "Hard determinism undermines rationality: if all conclusions are determined, they are not responsive to evidence, so no rational grounds for determinism.",
+      "Eliminativism self-refutes: denying mental states requires propositional attitudes, which are mental states.",
+      "Causal power is real: physics uses causal language; eliminating causation eliminates physics.",
+      "Will is real: deliberation assumes alternatives; quantum indeterminism provides physical indeterminism; freedom = indeterminism + reason-responsive selection.",
+      "Moral capacity is real: we hold people responsible; moral discourse is irreducible."
+    ],
+    "action": "Treat agents as genuine causes; recognize that choices affect coherence; uphold moral responsibility; integrate agency with observation and divine partnership.",
+    "boundary": [
+      "Does not claim to prove free will in a deterministic sense; only that agency is real and irreducible.",
+      "Does not specify the exact mechanism of quantum collapse or how agent selection works.",
+      "Does not claim all entities are agents; only some possess causal power and moral capacity.",
+      "Does not resolve the compatibility of divine sovereignty and human agency; only asserts they cooperate."
+    ],
+    "test": [
+      "Check that the self-refutation arguments are logically valid.",
+      "Verify that the equations (e.g., C = f(choice)) are consistent with definitions.",
+      "Assess whether the defense grid responses adequately address common objections.",
+      "Confirm that the document does not overstate empirical evidence (e.g., Libet experiments)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "F04: Observers actualize potentials (A5.1)",
+      "Axioms 014, 015, 016 (O4.1, O4.2, O4.3)"
+    ],
+    "dg2_new_capability": "Provides a framework for treating agents as causal entities with moral capacity, linking consciousness to causation and enabling theological integration.",
+    "dg3_preserved_floor": "Preserves the prior axiom that actualization requires an actualizer by identifying agents as the actualizers.",
+    "dg4_collapse_if_removed": "If agency is removed, the chain of actualization lacks a causal source, and moral responsibility becomes meaningless, undermining the entire framework.",
+    "dg5_translation_registers": [
+      "Physics: causal power, quantum indeterminism, observer effect",
+      "Theology: imago Dei, divine command to choose, divine-human cooperation",
+      "Ethics: moral responsibility, praise/blame"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "philosophical/theological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims self-refutation of epiphenomenalism, determinism, and eliminativism without rigorous formal proof.",
+      "Uses quantum indeterminism as a necessary condition for freedom without establishing a causal link.",
+      "Asserts that evolution doesn't select for useless side effects, which is an oversimplification.",
+      "Treats universal moral practices as evidence for moral realism, which is a weak inference."
+    ],
+    "kill_conditions": [
+      "If causal power is shown to be eliminable from physics without loss of explanatory power.",
+      "If a deterministic account of reason-responsiveness is provided that undermines the need for indeterminism.",
+      "If moral responsibility is convincingly shown to be a social construct with no objective basis."
+    ],
+    "lean_target": "Axiom 014: Causal power is real; Axiom 015: Will is real; Axiom 016: Moral capacity is real."
+  },
+  "plain_summary": "This document argues that agency is real, against epiphenomenalism, hard determinism, and eliminativism, using self-refutation arguments and philosophical reasoning. It defines agency as causal power with selection among alternatives and moral capacity. The document is philosophically coherent but lacks formal proof; it is best treated as a narrative anchor rather than a proven axiom.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F05_Agency.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\F05_Agency.canonical-node.json"
+  }
+}

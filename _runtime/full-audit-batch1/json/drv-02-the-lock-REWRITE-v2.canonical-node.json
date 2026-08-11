@@ -1,0 +1,89 @@
+{
+  "source_id": "drv-02-the-lock-REWRITE-v2",
+  "title": "DRV Book I  -  The Lock  -  REWRITE v2 (Phase 4.1 III)",
+  "canonical_node": {
+    "axiom": "The argument from properties of truth to the Logos is structured in six layers plus a central claim, with each layer having a distinct epistemic status. The framework's primitive axioms are exactly three: God-as-Axiom (Axiom 1), Trinity Isomorphism (Axiom 2), and Free Will (Axiom 3). All other items are theorems, derivations, definitions, or below-floor presuppositions.",
+    "definitions": [
+      "Layer 0: Properties of Truth (P0.1 - P0.7)  -  below-floor presuppositions, not axioms.",
+      "Layer 1: Gdel-Chaitin Theorem  -  external inherited result.",
+      "Layer 2: Inferences 2.1 - 2.3  -  derivations from Theorem 1.",
+      "Layer 3: Source-Property Transmission Lemma  -  single lemma replacing four prior axioms.",
+      "Layer 4: Definitions 4.1 - 4.2  -  theological postulates.",
+      "Layer 5: Central Claim  -  math-moral unity, the thesis defended.",
+      "Layer 6: Definition 6.1 (Logos naming) and Axiom 1 (God-as-Axiom)."
+    ],
+    "derivation": [
+      "Layer 0: Seven properties of mathematical truth are observed as below-floor presuppositions.",
+      "Layer 1: Gdel-Chaitin theorem establishes the ground of mathematical truth is external to mathematics.",
+      "Layer 2: From Layer 1, the ground cannot be nothing, chaos, or deceptive.",
+      "Layer 3: Source-Property Transmission Lemma transfers Layer 0 properties plus veracity to the ground.",
+      "Layer 4: Definitions and postulates: truth is valuable, deception is wrong.",
+      "Layer 5: Central Claim: mathematical and moral truth share a single ground.",
+      "Layer 6: The ground is named Logos and identified as Axiom 1 (God-as-Axiom)."
+    ],
+    "action": "The framework should present the argument in the layered structure, with each layer's epistemic status explicit, and terminate at the Feb 14 floor without descending into divine mechanics.",
+    "boundary": [
+      "Does not assert the seven properties as axioms; they are below-floor presuppositions.",
+      "Does not treat the Gdel-Chaitin theorem as an axiom of the framework.",
+      "Does not treat the Central Claim as an axiom; it is the thesis defended.",
+      "Does not exercise Axiom 2 (Trinity Isomorphism) in this series.",
+      "Does not push past the Feb 14 floor into divine mechanics."
+    ],
+    "test": [
+      "Check that each layer's epistemic status is correctly labeled (below-floor, theorem, inference, lemma, definition, central claim, axiom).",
+      "Verify that the three primitive axioms are exactly as listed.",
+      "Verify that the argument terminates at the Feb 14 floor without further descent.",
+      "Verify that the Central Claim is presented as the thesis, not as an input."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Formal Theory v1.0 (May 10, 2026 canon)",
+      "Gdel's Second Incompleteness Theorem",
+      "Chaitin's complexity bound",
+      "Feb 14 floor (Axiom 1, 2, 3)"
+    ],
+    "dg2_new_capability": "Provides a reclassified, layered argument structure that distinguishes epistemic statuses, promoting the Central Claim and Axiom 1 while demoting seven properties to below-floor presuppositions.",
+    "dg3_preserved_floor": "Preserves the content of the original twenty axioms, but reclassifies them into layers with explicit epistemic statuses, maintaining the argument's conclusion at the Feb 14 floor.",
+    "dg4_collapse_if_removed": "If the reclassification is removed, the framework reverts to a flat-axiom structure that misrepresents the May 10 canon, causing epistemic confusion and undermining the formal taxonomy.",
+    "dg5_translation_registers": [
+      "A1 - A7 -> P0.1 - P0.7 (below-floor properties)",
+      "A8 -> Theorem 1 (Gdel-Chaitin)",
+      "A9 - A11 -> Inferences 2.1 - 2.3",
+      "A12 - A15 -> Lemma 3 (Source-Property Transmission)",
+      "A16 - A17 -> Definitions 4.1 - 4.2",
+      "A18 -> Central Claim",
+      "A19 -> Definition 6.1",
+      "A20 -> Axiom 1 (God-as-Axiom)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological_epistemic_reclassification",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that the reclassification is 'load-bearing' without formal proof.",
+      "Asserts that the Gdel-Chaitin theorem 'forces everything downstream' without detailed derivation.",
+      "Treats the Central Claim as defended without presenting the full argument in this document."
+    ],
+    "kill_conditions": [
+      "If the May 10 canon is not accepted as authoritative, the reclassification loses its basis.",
+      "If the Gdel-Chaitin theorem is misapplied, the argument collapses.",
+      "If the Central Claim is shown to be unsupported by Layers 0 - 4, the framework's thesis fails."
+    ],
+    "lean_target": "Formal verification of the reclassification against the Formal Theory v1.0 canon, and a rigorous derivation of the Gdel-Chaitin implications."
+  },
+  "plain_summary": "This document is a rewrite of Section III of 'The Lock', reclassifying the original twenty axioms into a six-layer argument structure with distinct epistemic statuses. It promotes the math-moral unity to a Central Claim and the Logos identification to Axiom 1, while demoting seven properties to below-floor presuppositions. The rewrite is internally coherent but relies on the Formal Theory v1.0 canon and does not provide formal proof of the argument's validity.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\drv-02-the-lock-REWRITE-v2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\drv-02-the-lock-REWRITE-v2.canonical-node.json"
+  }
+}

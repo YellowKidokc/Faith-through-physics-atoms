@@ -1,0 +1,80 @@
+{
+  "source_id": "COUPLING_BREAK_MAP",
+  "title": "Coupling Break Map",
+  "canonical_node": {
+    "axiom": "Coupling breaks when a system has parts, motion, labels, or surface similarity but lacks the load-bearing relation that makes the parts mutually implicating.",
+    "definitions": [
+      "Coupling invariant: the relation that binds parts such that they are mutually implicating.",
+      "Distinctness: parts must not collapse into one role.",
+      "Dynamics: the system must preserve dynamic relation, not static flattening.",
+      "Role profile: the correct three functions must be present, not just three parts.",
+      "Source/profile preservation: labels must correspond to preserved structure and source backing.",
+      "Entanglement: binding structure beyond mere contact or activation.",
+      "Closed-system self-source: a system attempting to power or ground itself from inside itself."
+    ],
+    "derivation": [
+      "A system with parts, motion, labels, or surface similarity may still lack the load-bearing relation that makes parts mutually implicating.",
+      "The break points are named: no coupling invariant, no distinctness, no dynamics, wrong role profile, relabeling without source/profile preservation, coupling without entanglement, closed-system self-source.",
+      "The claim is not 'three things good' but 'three irreducible, correctly profiled, mutually coupled roles pass; malformed three-part systems fail.'",
+      "The Maxwell/Trinity gate discriminates: quaternion/full triadic relation passes; vector-only/Heaviside fails coupling invariant; modalism fails distinctness; static single-field fails dynamics; arbitrary three-part system fails role profile; relabeled roles fail source/profile preservation.",
+      "The secular triad (quantum substrate + physical laws + decoherence) must be run through the same coupling gate; likely failure is lack of unified mutually implicating act and failure of source/profile/voluntary-coupling gates."
+    ],
+    "action": "Run any candidate triadic system through the coupling gate: check coupling invariant, distinctness, dynamics, role profile, source/profile preservation, and entanglement. Reject malformed triads.",
+    "boundary": [
+      "Does not claim that all three-part systems are valid.",
+      "Does not assert that coupling alone is sufficient for the Fall pattern.",
+      "Does not claim that secular triads are automatically invalid; they must be tested.",
+      "Does not provide a formal proof in this document; it maps break points and gates."
+    ],
+    "test": [
+      "Check if the candidate preserves the coupling invariant (e.g., quaternion product vs vector-only).",
+      "Check if distinct roles are preserved (e.g., modalism fails).",
+      "Check if dynamic relation is preserved (e.g., static single-field fails).",
+      "Check if role profile is correct (e.g., arbitrary three-part system fails).",
+      "Check if source/profile preservation holds (e.g., relabeled roles fail).",
+      "Check if entanglement is present beyond coupling (e.g., coupling without entanglement is not Fall)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean record with named break points (C0_ne_C1, C1_ne_C0, coupling_modification_irreversible, vector_only_product_lacks_coupling_invariant, heavisideVectorEM_invalid, quaternion_preserves_coupling_invariant, only_quaternion_preserves_coupling_invariant, full_quaternion_product_has_coupling_invariant, modalism_invalid, staticSingleFieldEM_invalid, arbitraryThreePartSystem_invalid, relabeledRoleSystem_invalid, richRelabeledCoinIso, coupling_without_entanglement_is_not_fall, no_coupling_without_entanglement_as_fall, fall_spine_requires_entanglement_after_coupling, law3_command_bypass_zeroes_source_backed_fidelity, bound_state_requires_excitation_and_coupling, law1_self_source_forces_G_zero, law1_self_source_collapses_chi)"
+    ],
+    "dg2_new_capability": "Provides a systematic break map for evaluating triadic systems, enabling rejection of malformed triads and guiding the test of secular candidates.",
+    "dg3_preserved_floor": "Preserves the claim that three irreducible, correctly profiled, mutually coupled roles pass, while malformed three-part systems fail.",
+    "dg4_collapse_if_removed": "Without this map, the distinction between valid and invalid triads is lost, leading to numerology or pattern matching.",
+    "dg5_translation_registers": [
+      "Lean theorems and anchors",
+      "Python/Colab runtime evidence",
+      "Page manifest status"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological mapping",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as a mapping document; do not treat as proof"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be read as claiming formal proof when it only maps break points.",
+      "May be read as asserting that the secular triad fails without testing.",
+      "May be read as claiming that quaternion structure is the only valid coupling invariant without full formal proof."
+    ],
+    "kill_conditions": [
+      "If the Lean anchors are not actually present or do not support the stated break points.",
+      "If the coupling gate is not formally defined or testable.",
+      "If the document is used to claim proof of theological claims without additional evidence."
+    ],
+    "lean_target": "Formalize the coupling gate as a Lean theorem: for any triadic system, if it passes coupling invariant, distinctness, dynamics, role profile, source/profile preservation, and entanglement, then it is valid; otherwise invalid."
+  },
+  "plain_summary": "This document maps the specific ways in which a triadic system can fail to be a valid coupling: missing invariant, collapsed roles, static structure, wrong role profile, relabeling, coupling without entanglement, and closed self-source. It provides a gate for testing candidates, including secular ones, but does not itself provide formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\COUPLING_BREAK_MAP.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\COUPLING_BREAK_MAP.canonical-node.json"
+  }
+}

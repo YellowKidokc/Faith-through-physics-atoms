@@ -1,0 +1,76 @@
+{
+  "source_id": "REPORT",
+  "title": "Evolution Simulation Replication Report",
+  "canonical_node": {
+    "axiom": "The reported inverse-solver table is not internally single-target consistent.",
+    "definitions": [
+      "Ne_required: effective population size required to produce a given number of innovation events.",
+      "mu_required: mutation rate required to produce a given number of innovation events.",
+      "s_required: selection coefficient required to produce a given number of innovation events.",
+      "Haldane generations: generations needed under Haldane's cost constraint.",
+      "Coherence multiplier: combined multiplier used in the original report."
+    ],
+    "derivation": [
+      "From reported Ne and Haldane 705-innovation row, the implied event count is 705.",
+      "From reported mutation rate and selection coefficient, the implied event count is 7050.",
+      "Since 705 and 7050 are not equal, the table is internally inconsistent.",
+      "Recomputed baseline values for 705 and 7050 events are provided.",
+      "Coherence multiplier check yields 0.681818 and 0.0202273, which are not equal.",
+      "Human-chimp Haldane budget ratio is 1500, requiring an adaptive fraction threshold of 0.0667%.",
+      "Monte Carlo capacity sweep shows success rates 0.5135 for 705 events and 0.2721 for 7050 events."
+    ],
+    "action": "Flag the original report's inverse-solver table as internally inconsistent and use the recomputed values for any further analysis.",
+    "boundary": [
+      "Does not assert which event count is correct.",
+      "Does not validate the simulation methodology beyond the reported numbers.",
+      "Does not provide a corrected inverse-solver table."
+    ],
+    "test": [
+      "Check that the implied event counts from Ne, mu, and s are consistent.",
+      "Verify that the coherence multiplier check yields equal values.",
+      "Confirm that the Monte Carlo success rates match the reported values."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Original report's inverse-solver table",
+      "Haldane's constraint formula",
+      "Monte Carlo simulation results"
+    ],
+    "dg2_new_capability": "Provides a self-consistency audit and recomputed baseline values for two event count scenarios.",
+    "dg3_preserved_floor": "Preserves the original report's data and findings, but corrects the internal inconsistency.",
+    "dg4_collapse_if_removed": "Without this audit, the original report's inverse-solver table would remain internally inconsistent and potentially misleading.",
+    "dg5_translation_registers": [
+      "inverse-solver table",
+      "Haldane budget",
+      "Monte Carlo sweep"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "audit",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as audit finding"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be interpreted as proving the original report is wrong, but it only shows internal inconsistency.",
+      "May be used to claim a specific event count is correct, which is not established."
+    ],
+    "kill_conditions": [
+      "If the original report's table is found to be consistent under a different interpretation.",
+      "If the recomputed values are shown to be incorrect."
+    ],
+    "lean_target": "Formalize the consistency check as a Lean theorem: given the reported values, the implied event counts are not equal."
+  },
+  "plain_summary": "This report audits the internal consistency of an evolution simulation's inverse-solver table, finding that different parameters imply different numbers of innovation events (705 vs 7050). It provides recomputed baseline values for both scenarios and notes that the coherence multiplier check fails. The report does not resolve which event count is correct but flags the inconsistency.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\REPORT.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\REPORT.canonical-node.json"
+  }
+}

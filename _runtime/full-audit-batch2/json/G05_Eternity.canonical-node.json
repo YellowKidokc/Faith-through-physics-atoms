@@ -1,0 +1,80 @@
+{
+  "source_id": "G05_Eternity",
+  "title": "Divine Eternity",
+  "canonical_node": {
+    "axiom": "God exists outside time because time emerges from chi, and God is causally prior to chi.",
+    "definitions": [
+      "Time: emergent structure from chi (Logos Field), not fundamental.",
+      "chi: Logos Field, information dynamics from which time emerges.",
+      "Eternity: timelessness, existing outside the temporal sequence altogether.",
+      "Everlastingness: existing through infinite time, having infinite past and future.",
+      "Causal priority: X grounds Y, not temporal priority.",
+      "Eternal now: all moments present to God simultaneously."
+    ],
+    "derivation": [
+      "Time emerges from chi (t = f(chi)).",
+      "God is causally prior to chi (God -> chi).",
+      "Therefore, God is causally prior to time.",
+      "If God is causally prior to time, God cannot be inside time.",
+      "Therefore, God is timeless (eternal)."
+    ],
+    "action": "The system should treat God as timeless, not everlasting, and interpret all temporal references to God as analogical or from the perspective of creation.",
+    "boundary": [
+      "Does not claim to explain how God acts in time.",
+      "Does not claim to resolve all philosophical objections to timelessness.",
+      "Does not claim to prove the existence of God or the truth of theism.",
+      "Does not claim to provide a physical theory of time emergence."
+    ],
+    "test": [
+      "Check that the document does not assert that God experiences succession.",
+      "Check that the document does not equate eternity with infinite duration.",
+      "Check that the document does not claim that time is fundamental.",
+      "Check that the document does not claim that God is part of creation."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G02 (Omniscience)",
+      "G04 (Logos Field)",
+      "G06 (Creation)"
+    ],
+    "dg2_new_capability": "Provides a coherent model of divine eternity that resolves foreknowledge issues and grounds the temporal order in the divine nature.",
+    "dg3_preserved_floor": "Preserves the core theistic commitment that God is the creator and sustainer of all things, including time.",
+    "dg4_collapse_if_removed": "Without this axiom, the coherence of divine omniscience and providence is threatened, and the distinction between creator and creation blurs.",
+    "dg5_translation_registers": [
+      "Theology",
+      "Philosophy of religion",
+      "Physics (emergent time)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that physics increasingly shows time as emergent, which is an overstatement.",
+      "Claims that all defeat conditions fail, which is too strong.",
+      "Uses scripture as proof, which is not a formal proof.",
+      "Assumes the existence of chi and its properties without independent evidence."
+    ],
+    "kill_conditions": [
+      "If time is fundamental, the axiom fails.",
+      "If God can be in time without being limited, the axiom fails.",
+      "If eternity is incoherent, the axiom fails."
+    ],
+    "lean_target": "Formalize the logical structure of the argument in Lean, but do not claim proof of the theological premises."
+  },
+  "plain_summary": "This document argues that God is timeless, not everlasting, because time emerges from the Logos Field (chi) and God is causally prior to chi. It critiques temporalism, process theology, and divine everlastingness. The argument is philosophically coherent but relies on theological premises and does not provide formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G05_Eternity.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\G05_Eternity.canonical-node.json"
+  }
+}

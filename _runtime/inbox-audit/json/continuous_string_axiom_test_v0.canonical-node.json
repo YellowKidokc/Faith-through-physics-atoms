@@ -1,0 +1,75 @@
+{
+  "source_id": "continuous_string_axiom_test_v0",
+  "title": "Continuous String Axiom Test v0",
+  "canonical_node": {
+    "axiom": "If an action is aligned with destruction and is not restored, then it is not morally good and not aligned with good.",
+    "definitions": [
+      "alignedWithDestruction: an action is aligned with destruction if it is associated with destructive intent or effect.",
+      "restored: an action is restored if the state it degraded is brought back to a prior or better condition.",
+      "moralGood: an action is morally good if it is aligned with good.",
+      "alignedWithGood: an action is aligned with good if it preserves or restores states."
+    ],
+    "derivation": [
+      "Assume an action is aligned with destruction and not restored.",
+      "By axiom destructive_degrades, the action degrades the state.",
+      "By axiom good_preserves, if the action were aligned with good, it would preserve the state.",
+      "Since the action degrades and is not restored, it cannot be aligned with good (otherwise it would preserve).",
+      "By axiom good_alignment_is_moral, if it were morally good, it would be aligned with good.",
+      "Therefore, it is not morally good and not aligned with good."
+    ],
+    "action": "The system should treat any action that is aligned with destruction and not restored as excluded from moral goodness and alignment with good.",
+    "boundary": [
+      "This does not assert that all destructive actions are non-good if restored.",
+      "This does not assert that all non-good actions are destructive.",
+      "This does not cover the full Master Equation or any physical identifications."
+    ],
+    "test": [
+      "Lean kernel check passes with no sorry/admit/axiom/unsafe.",
+      "Concrete model ToyAction.bad satisfies the exclusion chain.",
+      "The theorem destructive_unrestored_exclusion_chain is proven in the bundle."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "AxiomBundle with four assumptions: destructive_degrades, good_preserves, good_alignment_is_moral, moral_good_repairs_damage."
+    ],
+    "dg2_new_capability": "Provides a kernel-checked theorem that destructive non-restored actions are excluded from moral goodness and alignment with good, with a concrete model demonstrating satisfiability.",
+    "dg3_preserved_floor": "Preserves the existing AxiomBundle and its four assumptions; no new axioms added.",
+    "dg4_collapse_if_removed": "If this theorem is removed, the bundle still compiles but loses the derived exclusion chain and the concrete model test, weakening the demonstration of consistency and applicability.",
+    "dg5_translation_registers": [
+      "destructive_degrades -> degrades",
+      "good_preserves -> preserves",
+      "good_alignment_is_moral -> moralGood",
+      "moral_good_repairs_damage -> restores"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal theorem in a toy model",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "Accept as a verified theorem within the stated toy model; do not extend to physical claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting the toy model as evidence for physical or theological identifications.",
+      "Assuming the four axioms are universally true beyond the model.",
+      "Treating the theorem as proving the full Master Equation."
+    ],
+    "kill_conditions": [
+      "If the Lean package is not reproducible or the no-sorry scan fails.",
+      "If the concrete model is found to be inconsistent with the axioms.",
+      "If the theorem is used to claim physical or theological truths without separate encoding."
+    ],
+    "lean_target": "The theorem destructive_unrestored_exclusion_chain and the concrete model toy_bad_action_excluded_by_chain."
+  },
+  "plain_summary": "This document reports a successful Lean build of a minimal axiom bundle with four assumptions, and proves a derived theorem that destructive non-restored actions are excluded from moral goodness and alignment with good. It includes a concrete toy model to show satisfiability. The proof is kernel-checked with no sorry/admit/axiom/unsafe. However, it explicitly does not prove the full Master Equation or any physical identifications; those remain future targets.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\continuous_string_axiom_test_v0.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\continuous_string_axiom_test_v0.canonical-node.json"
+  }
+}

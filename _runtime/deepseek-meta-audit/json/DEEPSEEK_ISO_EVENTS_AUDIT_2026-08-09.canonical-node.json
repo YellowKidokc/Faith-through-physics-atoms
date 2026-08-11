@@ -1,0 +1,82 @@
+{
+  "source_id": "DEEPSEEK_ISO_EVENTS_AUDIT_2026-08-09",
+  "title": "DeepSeek ISO Events Audit 2026-08-09",
+  "canonical_node": {
+    "axiom": "No isomorphic-event claim may be promoted or labeled as verified unless it satisfies the canonical LawIso burden and survives the Rerun Doctrine after the July 26 form change.",
+    "definitions": [
+      "LawIso burden: state space, value function, collapse predicate, collapse-to-zero proof, maps in both directions, inverse laws, value preservation, collapse preservation.",
+      "Rerun Doctrine: after the July 26 form change, every prior verification must be labeled SURVIVES, RERUN OWED, or RETIRED.",
+      "Canonical grades: MAPPED, DERIVED, SPLIT, PARTIAL, OPEN, LOCKED, DEFINITIONAL, STRUCTURAL CORRESPONDENCE.",
+      "Retired dependency: isomorphism proof by variable substitution is retired; one-directional substitution is analogy, not isomorphism."
+    ],
+    "derivation": [
+      "The audit found 49 atom IDs in the ledger, not the stated 50, indicating a count discrepancy.",
+      "All 49 atoms share the same status: active_candidate, ISOMORPHIC_EVENT_CANDIDATE, rerun_status not_applicable.",
+      "The blanket rerun_status is not credible because the Rerun Doctrine requires SURVIVES, RERUN OWED, or RETIRED for any verification claim.",
+      "The sample ISO-001 has empty equations, a one-directional bridge, self-dependency, and undefined quantities, so it cannot meet the LawIso burden.",
+      "Canonical 14 retires isomorphism proof by variable substitution, which ISO-001 may rely on.",
+      "The canonical support matrix shows that each law has a maximum honest license; any claim beyond that is an overclaim.",
+      "Therefore, no atom in the supplied ledger is eligible for promotion; status corrections are required."
+    ],
+    "action": "Apply the audit's required status corrections: change rerun_status to rerun_owed for all atoms unless proven otherwise; add retired-dependency guards where applicable; downgrade overclaims per the support matrix; reclassify lane atoms as definition/scaffold; require content for iso-process-001.",
+    "boundary": [
+      "Does not audit atom payloads not supplied in the test material.",
+      "Does not promote any atom to formal isomorphism, MAPPED, DERIVED, or canon.",
+      "Does not define operational meanings for 'moral mass' or 'moral distance'.",
+      "Does not provide a crosswalk for workbook 'Level 3' to canonical grades."
+    ],
+    "test": [
+      "Check that every atom's rerun_status is not 'not_applicable' unless it makes no verification claim.",
+      "Check that every isomorphism claim includes all LawIso components.",
+      "Check that no atom uses variable substitution as isomorphism proof.",
+      "Check that no atom claims formal isomorphism where canonical grade is MAPPED or lower.",
+      "Check that no atom uses undefined quantities like 'moral mass' or 'moral distance' as if defined."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Canonical Master Equation (July 26 form change)",
+      "Canonical 7 grade table",
+      "Canonical 10 LawIso burden",
+      "Canonical 14 retired proofs",
+      "Sample ISO-001 atom payload"
+    ],
+    "dg2_new_capability": "Provides a systematic audit method to detect grade inflation, retired dependencies, self-dependencies, and rerun status errors across a ledger of isomorphic-event candidates.",
+    "dg3_preserved_floor": "Preserves the canonical requirement that no isomorphism claim is verified without the LawIso burden and that the Rerun Doctrine applies after form changes.",
+    "dg4_collapse_if_removed": "If this audit is removed, the ledger would retain blanket 'not_applicable' rerun statuses and overclaimed isomorphism labels, undermining canonical integrity.",
+    "dg5_translation_registers": [
+      "Canonical grade scale  audit flags",
+      "Workbook level  canonical grade (not defined)",
+      "LawIso burden  atom payload fields"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "audit report",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "apply_status_corrections"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that all atoms are defective without full payloads",
+      "Claiming that the audit itself is a formal proof",
+      "Assuming the count discrepancy is a fatal error without further context"
+    ],
+    "kill_conditions": [
+      "If the canonical document does not actually require rerun_status changes for workbook imports",
+      "If the sample ISO-001 is not representative of the ledger",
+      "If the audit's interpretation of 14 is incorrect"
+    ],
+    "lean_target": "Formalize the Rerun Doctrine and LawIso burden as Lean theorems to automatically check atom compliance."
+  },
+  "plain_summary": "This audit reviews a ledger of isomorphic-event candidate atoms and finds systemic issues: blanket rerun status, overclaimed isomorphism labels, and a sample atom with empty equations and self-dependency. It provides a support matrix and required status corrections, but cannot audit missing atom payloads. The audit is coherent and actionable, but not a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-zip\\DEEPSEEK_ISO_EVENTS_AUDIT_2026-08-09.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-meta-audit\\json\\DEEPSEEK_ISO_EVENTS_AUDIT_2026-08-09.canonical-node.json"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "source_id": "lean-proof-readiness-packet",
+  "title": "Lean Proof Readiness Packet",
+  "canonical_node": {
+    "axiom": "A static readiness packet must report the current state of Lean proof artifacts without claiming that any proof has been verified.",
+    "definitions": [
+      "Readiness packet: a static snapshot of file counts, declaration counts, run roots, and signal frequencies extracted from a Lean project.",
+      "BLOCKER: an item that requires a direct proof or deliberate explanation before a public proof claim.",
+      "HIGH_CLAIM_RISK: an item that may compile but should not be described as a strong theorem without five-sentence evidence separation.",
+      "Duplicate theorem names: multiple declarations sharing the same name; not automatically wrong but require canonical ownership."
+    ],
+    "derivation": [
+      "The packet reports 47 lean files, 2113 declarations, 5 run roots, and 3 lake roots.",
+      "Signal counts include 308 check_failure and 956 HIGH_CLAIM_RISK, indicating potential issues.",
+      "No files contain sorry or admit, but 7 files have claim risk.",
+      "The packet explicitly states it does not run lake build and does not compile proofs.",
+      "Therefore, the packet provides a static inventory, not a verified proof result."
+    ],
+    "action": "Use the readiness packet as a pre-build inventory to identify blockers and high-risk claims before running lake build; do not cite it as evidence of proof correctness.",
+    "boundary": [
+      "Does not run lake build or compile proofs.",
+      "Does not verify any theorem.",
+      "Does not resolve duplicate theorem names.",
+      "Does not provide five-sentence evidence separation for high-risk claims."
+    ],
+    "test": [
+      "Check that the packet's reported counts match the actual repository state.",
+      "Verify that no file with sorry or admit is present.",
+      "Confirm that the packet does not claim any proof is verified.",
+      "Ensure that any public claim based on the packet includes the caveat that proofs are not yet compiled."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean source files in the extracted repositories",
+      "Static analysis tooling that generated the counts",
+      "Repository paths and run roots"
+    ],
+    "dg2_new_capability": "Provides a static inventory of Lean proof artifacts, including counts, signals, and risk flags, enabling pre-build triage.",
+    "dg3_preserved_floor": "Preserves the ability to identify potential proof issues before running a full build, without altering the underlying Lean code.",
+    "dg4_collapse_if_removed": "If removed, there is no pre-build readiness overview, increasing the risk of running lake build on known problematic code without prior triage.",
+    "dg5_translation_registers": [
+      "lean_files: 47",
+      "declarations: 2113",
+      "run_roots: 5",
+      "lake_roots: 3",
+      "signals: rfl=60, check_failure=308, by_trivial=604, decide=82, simp=267, true_statement=352, set_option=1",
+      "severity: REVIEW=718, HIGH_CLAIM_RISK=956",
+      "duplicate_theorem_names: 408",
+      "files_with_sorry_or_admit: 0",
+      "files_with_claim_risk: 7"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "static inventory",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Use as a pre-build triage checklist; do not cite as proof of correctness."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting the packet as evidence that proofs are verified.",
+      "Ignoring HIGH_CLAIM_RISK flags when making public claims.",
+      "Assuming duplicate theorem names are harmless without canonical ownership."
+    ],
+    "kill_conditions": [
+      "If the packet is used to claim that any theorem is proven.",
+      "If the packet is presented as a substitute for lake build.",
+      "If the packet's counts are found to be inaccurate."
+    ],
+    "lean_target": "A static readiness report that is clearly labeled as non-verifying and used only for triage."
+  },
+  "plain_summary": "This document is a static readiness packet for Lean proof projects. It reports counts and risk signals but explicitly does not compile proofs. It should be used as a pre-build checklist, not as evidence of proof correctness.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\lean-proof-readiness-packet.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\lean-proof-readiness-packet.canonical-node.json"
+  }
+}

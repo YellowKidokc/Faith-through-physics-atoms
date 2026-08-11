@@ -1,0 +1,81 @@
+{
+  "source_id": "D05_MoralReal",
+  "title": "The Moral Realism Theorem",
+  "canonical_node": {
+    "axiom": "Morality is objective because it is grounded in coherence (C[chi]). Good = coherence-promoting; evil = coherence-reducing.",
+    "definitions": [
+      "C[chi]: Coherence of the chi-field.",
+      "C: Change in coherence.",
+      "Good(x): C[chi + x] > 0.",
+      "Evil(x): C[chi + x] < 0.",
+      "Neutral(x): C[chi + x] = 0.",
+      "Moral coherence (chi_M): non-contradiction within agent."
+    ],
+    "derivation": [
+      "C[chi] is mathematically defined.",
+      "C is measurable (in principle).",
+      "Good/Evil defined by C sign.",
+      "Sign of a quantity is objective.",
+      "Therefore, morality is objective."
+    ],
+    "action": "Evaluate actions, intentions, or states by their effect on coherence (C) to determine moral status.",
+    "boundary": [
+      "Does not provide a practical measurement procedure for C.",
+      "Does not resolve moral dilemmas where coherence goods conflict.",
+      "Does not claim to be a complete moral theory; it is a grounding principle."
+    ],
+    "test": [
+      "Check that the definition of Good/Evil is consistent with the coherence functional.",
+      "Verify that the derivation steps are logically valid.",
+      "Assess whether the universal moral core (prohibitions on murder, theft, lying, betrayal) is indeed universal across cultures."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Axiom 088 (A11.1): Moral realism",
+      "Axiom 089 (A11.2): Coherence-morality identity",
+      "Axiom 090 (D11.1): Moral coherence definition",
+      "F02 (Information Fundamental)",
+      "G07 (Moral Nature of God)",
+      "H08 (Moral Sign)"
+    ],
+    "dg2_new_capability": "Provides an objective, coherence-based foundation for moral realism, offering a potential resolution to the Euthyphro dilemma and a basis for moral knowledge and progress.",
+    "dg3_preserved_floor": "Preserves the existence of objective moral facts and the possibility of moral knowledge, consistent with traditional moral realism.",
+    "dg4_collapse_if_removed": "If removed, the grounding of morality in coherence is lost, leaving moral realism without a proposed objective basis and potentially reverting to subjectivism or relativism.",
+    "dg5_translation_registers": [
+      "Moral philosophy",
+      "Information theory",
+      "Theology"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological/philosophical",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that coherence is measurable and objective without providing a concrete measurement framework.",
+      "Asserts a universal moral core without empirical evidence.",
+      "Uses the Euthyphro resolution as if it were definitive, but it relies on theological assumptions.",
+      "Equates moral objectivity with physical objectivity without sufficient justification."
+    ],
+    "kill_conditions": [
+      "If coherence is shown to be subjective or not objectively measurable.",
+      "If a counterexample is found where an action promotes coherence but is intuitively evil.",
+      "If the universal moral core is empirically falsified (e.g., a culture that does not prohibit murder in-group)."
+    ],
+    "lean_target": "Axiom 089 (Coherence-morality identity) is the most critical; if it fails, the theorem collapses."
+  },
+  "plain_summary": "This document argues that morality is objective because it is grounded in coherence: good actions increase coherence, evil actions decrease it. It critiques moral relativism, subjectivism, and nihilism, and proposes a coherence-based definition of good and evil. However, the proof is largely philosophical and lacks empirical or formal verification, so it is not established as a rigorous theorem.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\D05_MoralReal.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\D05_MoralReal.canonical-node.json"
+  }
+}

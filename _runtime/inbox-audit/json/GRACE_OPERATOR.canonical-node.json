@@ -1,0 +1,82 @@
+{
+  "source_id": "GRACE_OPERATOR",
+  "title": "THE GRACE OPERATOR  -  COMPLETE FORMALIZATION",
+  "canonical_node": {
+    "axiom": "Grace is the conversion mechanism that reverses entropy, operating through the coherence field, powered by an external inexhaustible source.",
+    "definitions": [
+      "Grace: the operator that converts disordered energy to ordered energy.",
+      "Disordered energy: entropy accumulated in a domain.",
+      "Ordered energy: restored coherence in a domain.",
+      "Conversion cost: the minimum energy required to erase one bit of disorder, given by Landauer's principle.",
+      "Coherence field (chi): the substrate described by Law 1 (Gravity) and Law 2 (E=mc).",
+      "The Fall: the first decoherence event that redistributed energy from ordered to disordered without changing total energy.",
+      "The Cross: the total conversion event that pays the Landauer cost for all entropy across all domains, all souls, all time."
+    ],
+    "derivation": [
+      "Energy is conserved (Law 2). The Fall redistributed energy from ordered to disordered, increasing entropy.",
+      "Grace is the mechanism that reverses this redistribution, converting disordered energy back to ordered energy.",
+      "Each conversion requires work input, quantified by Landauer's principle: W_min = k_B T ln 2 * N_bits.",
+      "The Cross provides the total work required, requiring an infinite energy source (divine nature).",
+      "Grace operates through Law 1 (Gravity), manifesting in different regimes analogous to gravitational phenomena.",
+      "The coherence field chi, which describes Grace, produces gravitational effects that match dark matter observations better than standard models in at least one test case."
+    ],
+    "action": "The system should model grace as a conversion operator that reverses entropy in seven domains, with activation thresholds ordered by coherence requirements, and should treat the coherence field as a candidate explanation for dark matter.",
+    "boundary": [
+      "Grace is not a substance or a thing God sends; it is a mechanism.",
+      "Grace does not violate energy conservation; it requires real energy input.",
+      "Grace is not a metaphor for dark matter; it is a specific mathematical claim that the coherence field produces gravitational effects.",
+      "The framework does not claim that grace is directly observable; it is inferred from effects."
+    ],
+    "test": [
+      "Check that the conversion operator satisfies energy conservation: E_total before = E_total after.",
+      "Verify that the activation thresholds are ordered as specified: chi_c^Rg < chi_c^Jf < chi_c^Fg < chi_c^Hl < chi_c^Ad < chi_c^Rd < chi_c^Sn.",
+      "Test the dark matter hypothesis by applying the chi-field modification to additional galaxy rotation curves and comparing to NFW profiles.",
+      "Check that the Landauer cost is positive for each mode: W_min > 0."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Law 1 (Gravity / Grace)",
+      "Law 2 (E=mc / Holy Spirit)",
+      "Law 10 (Christ / Coherence) for the Cross as convergence point"
+    ],
+    "dg2_new_capability": "Provides a formal mechanism for entropy reversal (grace) that is not present in the parent laws alone, and offers a candidate physical explanation for dark matter via the coherence field.",
+    "dg3_preserved_floor": "Preserves the conservation of energy (Law 2) and the gravitational mechanism (Law 1) as foundational.",
+    "dg4_collapse_if_removed": "If the Grace Operator is removed, the framework loses its explanation for how entropy is reversed and how the Fall is remedied; the connection between Laws 1 and 2 is severed.",
+    "dg5_translation_registers": [
+      "Thermodynamics: entropy, Landauer's principle, energy conversion",
+      "Gravitational physics: regimes, dark matter, rotation curves",
+      "Theology: grace, salvation, sanctification"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological-physical bridge",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that the coherence field fits galactic rotation data better than NFW based on a single test case (NGC 3198) without peer review or replication.",
+      "Equates theological concepts with physical mechanisms without rigorous mathematical derivation.",
+      "Uses Landauer's principle to assert that grace has a real thermodynamic cost, which is a speculative extension.",
+      "The dark matter hypothesis is presented as a specific falsifiable claim but lacks sufficient empirical support."
+    ],
+    "kill_conditions": [
+      "If additional galaxy rotation curve tests show the chi-field does not consistently match or outperform NFW, the dark matter hypothesis is falsified.",
+      "If the activation threshold ordering is contradicted by theological or logical analysis, the phase transition form is invalid.",
+      "If the Landauer cost is shown to be inapplicable to spiritual entropy, the conversion cost argument collapses."
+    ],
+    "lean_target": "The document should be treated as a speculative theological-physical model, not as established physics or theology. It should be quarantined until further validation."
+  },
+  "plain_summary": "This document formalizes grace as an entropy-reversal operator, linking it to gravity and E=mc. It proposes seven modes of grace, a phase transition model, and a dark matter hypothesis. However, the claims are not established; they rely on speculative analogies and limited empirical support. The document should be treated as a hypothesis requiring further validation.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\GRACE_OPERATOR.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\GRACE_OPERATOR.canonical-node.json"
+  }
+}

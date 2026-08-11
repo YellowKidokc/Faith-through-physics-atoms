@@ -1,0 +1,78 @@
+{
+  "source_id": "python-colab-run-order",
+  "title": "Python / Colab Run Order",
+  "canonical_node": {
+    "axiom": "Runtime artifacts must be classified and gated before public use; unresolved or mixed artifacts must not be cited as verified.",
+    "definitions": [
+      "open_or_conflicted: artifact has unresolved contradiction; treat as objection/repair page.",
+      "mixed_verified_and_open: artifact contains both verified results and unresolved notes; must split before citing.",
+      "not_declared: artifact has no evidence classification; must be manually classified and assigned an evidence rung.",
+      "claims_verified: artifact's claims are verified; still requires rerun and output hash capture.",
+      "Phase 1: fast local checks; Phase 2: runtime/JAX checks; Phase 3: data/network/colab path checks."
+    ],
+    "derivation": [
+      "The document lists artifacts with statuses and required actions before public use.",
+      "Artifacts with status 'open_or_conflicted' must be treated as objection/repair pages until contradiction resolved.",
+      "Artifacts with status 'mixed_verified_and_open' must split verified results from unresolved notes before citing.",
+      "Artifacts with status 'not_declared' must be manually classified and assigned an evidence rung.",
+      "Artifacts with status 'claims_verified' must be rerun later, capture output hash, and link to exact public claim.",
+      "Phase 1 is the first safe batch because it is least likely to fail due to missing data, network assumptions, or runtime configuration."
+    ],
+    "action": "Execute Phase 1 first; for each artifact, apply the required action based on its status before any public use or citation.",
+    "boundary": [
+      "Does not execute any artifact; it only defines run order and gating.",
+      "Does not resolve contradictions or classify artifacts; it mandates that those actions occur.",
+      "Does not claim any artifact is verified; it only records statuses and required actions."
+    ],
+    "test": [
+      "Check that Phase 1 artifacts are run before Phase 2 and Phase 3.",
+      "Check that each artifact with status 'open_or_conflicted' is treated as objection/repair page.",
+      "Check that each artifact with status 'mixed_verified_and_open' has split verified and open notes before citation.",
+      "Check that each artifact with status 'not_declared' has been manually classified and assigned an evidence rung.",
+      "Check that each artifact with status 'claims_verified' has been rerun, output hash captured, and linked to exact public claim."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Artifact statuses as recorded in the document",
+      "Phase definitions (Phase 1, 2, 3)"
+    ],
+    "dg2_new_capability": "Provides a gating protocol for runtime artifacts, ensuring unresolved or mixed artifacts are not cited as verified.",
+    "dg3_preserved_floor": "Preserves the requirement that artifacts must be classified and gated before public use; does not alter any underlying claims.",
+    "dg4_collapse_if_removed": "Without this run order, artifacts could be cited prematurely without proper classification or gating, leading to unverified claims being treated as verified.",
+    "dg5_translation_registers": [
+      "open_or_conflicted -> objection/repair page",
+      "mixed_verified_and_open -> split verified and open notes",
+      "not_declared -> manual classification and evidence rung",
+      "claims_verified -> rerun, output hash, link to public claim"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "adopt as procedural guardrail"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Might be interpreted as evidence that artifacts are verified when they are not.",
+      "Might be interpreted as a claim that Phase 1 artifacts are safe to cite, when they still require gating."
+    ],
+    "kill_conditions": [
+      "If any artifact with status 'open_or_conflicted' is cited as verified without resolution.",
+      "If any artifact with status 'mixed_verified_and_open' is cited without splitting verified and open notes.",
+      "If any artifact with status 'not_declared' is cited without classification and evidence rung."
+    ],
+    "lean_target": "Formalize the gating conditions as preconditions for citation."
+  },
+  "plain_summary": "This document defines a run order for Python/Colab artifacts, assigning each a status and required action before public use. It is a procedural guardrail, not a proof of any physical claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\python-colab-run-order.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\python-colab-run-order.canonical-node.json"
+  }
+}

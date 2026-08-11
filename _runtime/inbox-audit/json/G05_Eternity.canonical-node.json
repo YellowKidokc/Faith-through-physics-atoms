@@ -1,0 +1,80 @@
+{
+  "source_id": "G05_Eternity",
+  "title": "G05: DIVINE ETERNITY",
+  "canonical_node": {
+    "axiom": "God exists outside time because time emerges from chi, and God is prior to chi. God does not experience succession; He holds all moments in an eternal now.",
+    "definitions": [
+      "Eternity: existing outside the temporal sequence altogether, not infinite time.",
+      "chi: the Logos Field, the fundamental information dynamics from which time emerges.",
+      "Time: emergent from chi, represented as t = f(chi).",
+      "Causal priority: X grounds Y, not necessarily temporal priority.",
+      "Everlastingness: existing through infinite time, having infinite past and future, experiencing succession.",
+      "Timelessness: existing outside time, having no past or future, all moments present at once."
+    ],
+    "derivation": [
+      "Time emerges from chi (axiom G4.1).",
+      "God is causally prior to chi (axiom G4.2).",
+      "Therefore, God is causally prior to time.",
+      "If God is causally prior to time, then God cannot be inside time, because being inside time would make God dependent on a structure He grounds.",
+      "Therefore, God is timeless (axiom G4.3)."
+    ],
+    "action": "The system should treat God as timeless, not everlasting, and interpret all temporal language about God as analogical or economic, not literal.",
+    "boundary": [
+      "Does not claim to prove the existence of God or the truth of the axioms.",
+      "Does not claim that physics proves divine eternity; it only notes alignment with emergent time theories.",
+      "Does not address the Incarnation in detail; only states that Christ's human nature is temporal while divine nature is eternal.",
+      "Does not claim that God's timelessness implies determinism; it asserts that God knows timelessly, not that future choices are predetermined."
+    ],
+    "test": [
+      "Check that any statement about God's relation to time uses 'timeless' rather than 'everlasting'.",
+      "Verify that the derivation does not conflate causal priority with temporal priority.",
+      "Ensure that the system does not assert that God experiences succession.",
+      "Check that the system does not claim that physics proves divine eternity; it only notes alignment."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G02: Omniscience",
+      "G4.1: Time emerges from chi",
+      "G4.2: God is prior to chi",
+      "G4.3: God is timeless"
+    ],
+    "dg2_new_capability": "Provides a coherent model of divine eternity that resolves foreknowledge issues by positing timeless knowledge.",
+    "dg3_preserved_floor": "Preserves the omniscience axiom (G02) by avoiding the contradiction of growing knowledge.",
+    "dg4_collapse_if_removed": "If removed, the system loses its account of God's relationship to time, leaving open the problem of divine foreknowledge and the coherence of God's interaction with creation.",
+    "dg5_translation_registers": [
+      "Theophysics",
+      "Philosophical theology",
+      "Physics (emergent time)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that physics increasingly shows time as emergent, which is an overstatement; some theories propose emergence but it is not established.",
+      "Claims that all defeat conditions fail, which is too strong; the document does not provide rigorous proof.",
+      "Uses scripture as evidence for a philosophical claim, which is not a formal proof."
+    ],
+    "kill_conditions": [
+      "If time is not emergent from chi, the argument collapses.",
+      "If God could be in time without being limited, the argument fails.",
+      "If eternity is incoherent, the claim fails."
+    ],
+    "lean_target": "The system should lean on the logical derivation from axioms, not on empirical physics or scripture, to support the claim."
+  },
+  "plain_summary": "This document argues that God is timeless, existing outside time, because time emerges from the Logos Field (chi) and God is causally prior to chi. It critiques temporalism, process theology, and divine everlastingness. The argument is logically coherent given its axioms, but it is not formally proven; it relies on theological assumptions and analogies.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G05_Eternity.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\G05_Eternity.canonical-node.json"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "source_id": "2026-07-02-theophysics-isolator-plan",
+  "title": "Theophysics Isolator Implementation Plan",
+  "canonical_node": {
+    "axiom": "Bounded effective source plus positive decay prevents perfect coherence in a restoration framework.",
+    "definitions": [
+      "RestorationFramework: a structure with State, c (coherence), sigma (source), delta (decay), omega (openness).",
+      "effectiveSource: omega(s) * sigma(s).",
+      "equilibrium: effectiveSource / (effectiveSource + delta).",
+      "BoundedEffectiveSource: effectiveSource bounded by K_eff.",
+      "PositiveDecay: delta(s) > 0 for all s.",
+      "ExogenousSource: sigma has a positive state-independent lower bound.",
+      "EndogenousSource: sigma is a function of state."
+    ],
+    "derivation": [
+      "The dynamics are dc/dt = omega*sigma*(1-c) - delta*c.",
+      "At equilibrium, omega*sigma*(1-c) = delta*c, so c = omega*sigma/(omega*sigma + delta).",
+      "If omega*sigma <= K_eff and delta >= delta_min > 0, then c <= K_eff/(K_eff+delta_min) < 1.",
+      "Adding an exogenous source Lambda makes effective source omega*(sigma+Lambda), which grows unboundedly as Lambda -> infinity, so equilibrium approaches 1.",
+      "Scaling omega by k and sigma by 1/k leaves the product unchanged, so faith is coupling not source."
+    ],
+    "action": "Implement a Lean 4 module DharmaMirror.Isolator with the RestorationFramework, type classes, and theorems; add interpretation placeholders and a protocol document.",
+    "boundary": [
+      "The neutral core contains no theological axioms.",
+      "The unbounded-source theorem is a limit result, not finite-time reachability.",
+      "Interpretation modules may import the neutral core, but not vice versa.",
+      "The protocol does not assume any worldview is true."
+    ],
+    "test": [
+      "lake build succeeds for all files.",
+      "The neutral core compiles independently of interpretation imports.",
+      "Theorems bounded_endogenous_equilibrium_bound, bounded_endogenous_cannot_perfect, unbounded_source_perfect_attractor, and faith_is_coupling_not_source are accepted by Lean."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Mathlib reals and tactics",
+      "Lean 4.31.0",
+      "Existing DharmaMirror library"
+    ],
+    "dg2_new_capability": "Provides a formal framework to adjudicate endogenous vs exogenous restoration claims, with a proof that bounded endogenous sources cannot achieve perfect coherence.",
+    "dg3_preserved_floor": "The existing DharmaMirror library remains intact; new module is additive.",
+    "dg4_collapse_if_removed": "Without this module, there is no formal basis for the isolator protocol; the adjudication rules lack mathematical grounding.",
+    "dg5_translation_registers": [
+      "Lean 4 theorem statements",
+      "Mathematical notation in protocol document"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Implementation plan with formal theorems",
+    "proof_label": "LEAN_CONDITIONAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "Implement and verify in Lean; treat theorems as conditional on successful compilation."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The theorem statements may not compile as written; the plan includes placeholders and incomplete proofs.",
+      "The unbounded-source theorem is a limit result, not finite-time reachability; could be misread as implying actual perfect coherence.",
+      "The protocol's adjudication rules may be seen as overreaching beyond the formal results."
+    ],
+    "kill_conditions": [
+      "If the Lean theorems fail to compile, the formal claims are not established.",
+      "If the neutral core imports interpretation modules, the neutrality constraint is violated.",
+      "If the protocol claims to prove theological truths, it oversteps."
+    ],
+    "lean_target": "Formalize the theorems in Lean 4 and verify they compile; ensure the neutral core remains independent."
+  },
+  "plain_summary": "This document is an implementation plan for a Lean 4 module that formalizes a restoration framework and proves that bounded effective source plus positive decay prevents perfect coherence. It also includes interpretation placeholders and a protocol for adjudicating worldview claims. The plan is coherent but the theorems are not yet verified; they are conditional on successful Lean compilation.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\2026-07-02-theophysics-isolator-plan.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\2026-07-02-theophysics-isolator-plan.canonical-node.json"
+  }
+}

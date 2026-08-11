@@ -1,0 +1,84 @@
+{
+  "source_id": "DEEPSEEK_BIBLE_CLAIM_ATOMS_2026-08-09",
+  "title": "DEEPSEEK BIBLE_CLAIM_ATOMS AUDIT",
+  "canonical_node": {
+    "axiom": "Bible Claim Atoms are scriptural witnesses; Theophysics mappings are proposed bridge claims, never theorems or ratified doctrines.",
+    "definitions": [
+      "Bible Claim Atom: an extracted scriptural statement, not an axiom, not a theorem.",
+      "Theophysics mapping: a proposed bridge between scripture and mathematical structure, carrying no truth or evidence propagation.",
+      "Bridge claim: a non-theorem, non-ratified mapping that requires explicit guardrails.",
+      "Retired claim: a previously rejected or superseded claim that must not be resurrected.",
+      "Law 6 SPLIT: Shannon entropy is vacuous as a theological claim; identity between Logos and Information is retired."
+    ],
+    "derivation": [
+      "The audit document states the rail's prose is mostly right but schema-enforcement is missing.",
+      "The audit identifies gaps: no bridge_status, no propagates_truth/evidence, uncontrolled mapping_status, non-canonical proof_label.",
+      "The audit requires that mappings be marked as bridge_claim with propagates_truth=false and propagates_evidence=false.",
+      "The audit requires controlled vocabulary for mapping_status: proposed, needs_review, rejected; reject proof-like values.",
+      "The audit requires guards against retired claims and Law 6 SPLIT violations.",
+      "The audit requires per-atom kill_conditions and deterministic ID policy.",
+      "The audit concludes the rail is not yet canon-aligned and must be upgraded."
+    ],
+    "action": "Enforce that Bible Claim Atoms are scriptural witnesses, mappings are bridge claims, and no extraction can silently become a theorem, ratified doctrine, or resurrected retired claim.",
+    "boundary": [
+      "Does not assert that any Bible statement is an axiom or theorem.",
+      "Does not allow Theophysics mappings to propagate truth or evidence.",
+      "Does not permit mapping_status values implying proof or ratification.",
+      "Does not allow resurrection of retired claims.",
+      "Does not claim Lane 4 compatibility without ledger schema reconciliation."
+    ],
+    "test": [
+      "Check that every theophysics_mapping includes bridge_claim with propagates_truth=false and propagates_evidence=false.",
+      "Check that mapping_status is one of proposed, needs_review, rejected.",
+      "Check that no mapping uses identity language for Logos and Information.",
+      "Check that proof_label is not a proof-implying value.",
+      "Check that per-atom kill_conditions are present.",
+      "Check that retired-claim compatibility guard is present."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Canonical bridge disciplines 10, 12, 17",
+      "Law 6 SPLIT ruling",
+      "Retired claims list 14",
+      "Lane 4 ledger schema (if available)"
+    ],
+    "dg2_new_capability": "Provides a structured audit and upgrade list to enforce bridge discipline in Bible Claim Atom extraction.",
+    "dg3_preserved_floor": "Preserves the distinction between extraction and ratification, and the prohibition on calling Bible statements axioms.",
+    "dg4_collapse_if_removed": "Without this audit, the rail would remain too permissive, allowing proposed scriptural bridges to silently become pseudo-theorems.",
+    "dg5_translation_registers": [
+      "scripture_exegesis",
+      "bridge_claim",
+      "governance_status"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "audit_and_governance",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "ratify_as_governance_rule"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The audit itself is not a proof of any theological claim.",
+      "The upgrade list is a proposal, not yet implemented.",
+      "Lane 4 compatibility is not certified without ledger schema."
+    ],
+    "kill_conditions": [
+      "If the audit is treated as a formal proof of any mapping.",
+      "If the upgrade list is ignored and the rail remains permissive.",
+      "If retired claims are resurrected."
+    ],
+    "lean_target": "Formalize the bridge_claim block and controlled vocabularies in the schema."
+  },
+  "plain_summary": "This document is an audit of a proposed schema for Bible Claim Atoms. It finds the schema partially aligned with canon but lacking enforcement of bridge discipline. It provides a detailed upgrade list to ensure mappings are marked as bridge claims, not theorems, and to prevent overclaiming. The audit itself is a governance artifact, not a proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-zip\\DEEPSEEK_BIBLE_CLAIM_ATOMS_2026-08-09.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-meta-audit\\json\\DEEPSEEK_BIBLE_CLAIM_ATOMS_2026-08-09.canonical-node.json"
+  }
+}

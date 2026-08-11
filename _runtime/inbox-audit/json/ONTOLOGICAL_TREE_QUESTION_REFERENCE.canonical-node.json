@@ -1,0 +1,93 @@
+{
+  "source_id": "ONTOLOGICAL_TREE_QUESTION_REFERENCE",
+  "title": "ONTOLOGICAL TREE  -  QUESTION REFERENCE (Q0 - Q12)",
+  "canonical_node": {
+    "axiom": "The ontological tree is a structured inquiry from Q0 to Q12, where each question type determines the kind of answer to generate, and death conditions apply to every branch.",
+    "definitions": [
+      "Type 1 question: asks whether a proposition holds; answers are Yes/No/Meaningless/Illusory.",
+      "Type 2 question: asks what something is; answers are ontological categories.",
+      "Type 3 question: asks what grounds something; answers include brute, external, self-grounding, illusory, necessary.",
+      "Type 4 question: asks what something must be; answered by derivation, not branching.",
+      "Death conditions: self-refutation, infinite regress, empirical contradiction, logical incoherence.",
+      "Four modes: M1 Agentic, M2 Entropic, M3 Adversarial, M4 Grace Attenuation."
+    ],
+    "derivation": [
+      "Q0 is the root, forced by nothing, with axiom A1.1.",
+      "Q1 is forced by Q0-B, with axiom A1.2.",
+      "Q2 is forced by Q1-B, with axiom A1.3, and has 6 branches.",
+      "Q3 is forced by Q2-C, with axiom A3.1.",
+      "Q4 is forced by Q3-B, with axiom A2.2, and is the great fork.",
+      "Q5 is forced by Q4-C, and derives 7 properties of the ground.",
+      "Q6 is forced by Q5, with axiom A5.1, and activates four modes.",
+      "Q7 is forced by Q6-B, and derives the terminal observer.",
+      "Q8 is forced by Q7-B, and derives 8 boundary conditions.",
+      "Q9 is forced by Q8, with axiom ID7.1, and is an abductive step.",
+      "Q10 is forced by Q9, and derives the grace requirement.",
+      "Q11 is forced by Q10-B, and derives two attractors.",
+      "Q12 is forced by Q11-B, and uses a scorecard to identify the system satisfying all."
+    ],
+    "action": "For each question in the tree, generate answers according to its type, apply death conditions to prune branches, and track worldviews to identify survivors.",
+    "boundary": [
+      "Does not provide the actual answers to Q0-Q12; it is a reference for how to ask and process them.",
+      "Does not define the content of axioms A1.1, A1.2, A1.3, A3.1, A2.2, A5.1, ID7.1; they are referenced but not specified.",
+      "Does not include the full derivation of Q5, Q7, Q8, Q10, Q11; it only lists the derived properties or equations.",
+      "Does not specify the exact scorecard criteria for Q12 beyond 'Christianity 8/8'."
+    ],
+    "test": [
+      "For each question, verify that the generated answer type matches the question type.",
+      "Verify that death conditions are applied to every branch.",
+      "Verify that Type 4 questions are answered by derivation, not branching.",
+      "Verify that the worldviews tracked include the 18 standard and 6 extended.",
+      "Verify that the four modes are activated at Q6."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "ONTOLOGICAL_TREE_QUESTION_TEMPLATE.md",
+      "ONTOLOGICAL_TREE_QUESTION_REFERENCE.md",
+      "ontological_tree.html",
+      "001_A1.1_Existence.md",
+      "THEOPHYSICS_UNIFIED_MASTER.xlsx",
+      "Q0_EXISTENCE_Ontological_Tree.md",
+      "Q1_DISTINCTION_Ontological_Tree.md"
+    ],
+    "dg2_new_capability": "Provides a structured question reference for the ontological tree, defining question types, death conditions, worldviews to track, and four modes, enabling systematic inquiry from Q0 to Q12.",
+    "dg3_preserved_floor": "Preserves the existence of the ontological tree as a structured inquiry and the list of questions Q0-Q12 with their types and forced-by relationships.",
+    "dg4_collapse_if_removed": "Without this reference, the ontological tree loses its question-by-question structure, making it unclear how to generate answers and apply death conditions, potentially collapsing the inquiry into an unstructured list.",
+    "dg5_translation_registers": [
+      "Question types (Type 1-4) map to answer generation strategies.",
+      "Death conditions map to pruning rules.",
+      "Worldviews list maps to tracking categories.",
+      "Four modes map to activation conditions at Q6."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological reference",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Use as a reference for structuring the ontological tree inquiry; do not treat as a proof of any specific conclusion."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document implies a progression from Q0 to Q12 leading to a specific conclusion (Christianity 8/8), but the derivation steps are not fully specified, so the conclusion is not established.",
+      "The 'forced by' relationships are asserted without proof.",
+      "The death conditions are listed but not formally defined or applied in this document."
+    ],
+    "kill_conditions": [
+      "If the referenced axioms or derivations are found to be inconsistent, the tree collapses.",
+      "If the death conditions are not applied rigorously, branches may survive incorrectly.",
+      "If the scorecard for Q12 is biased or incomplete, the final identification is invalid."
+    ],
+    "lean_target": "Formalize the question types and death conditions as executable rules, and verify the derivations for Q5, Q7, Q8, Q10, Q11."
+  },
+  "plain_summary": "This document is a reference table for the ontological tree, listing questions Q0-Q12 with their types, forced-by relationships, and axioms. It defines four question types, four death conditions, a list of worldviews to track, and four modes that activate at Q6. It is a methodological guide, not a proof of any conclusion. The document is coherent as a reference but does not establish the truth of the tree's conclusions.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\ONTOLOGICAL_TREE_QUESTION_REFERENCE.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\ONTOLOGICAL_TREE_QUESTION_REFERENCE.canonical-node.json"
+  }
+}

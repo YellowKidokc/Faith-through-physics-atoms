@@ -1,0 +1,82 @@
+{
+  "source_id": "W8.2-templeton-dossier.canonical",
+  "title": "Templeton Claims Verification Dossier",
+  "canonical_node": {
+    "axiom": "The framework must be testable through explicit claims, evidence, and failure paths, and the primary request is funded falsification, not certification.",
+    "definitions": [
+      "FORMAL_VERIFIED: Checks inside a formal system under stated assumptions.",
+      "DERIVED_MODEL: Follows from a stated mathematical model or parent equation, pending domain review.",
+      "STRUCTURAL_MAPPED: Consistent operator/signature match, not a proof of external reality by itself.",
+      "EMPIRICAL_TEST: Produces or implies externally testable predictions.",
+      "SUPPORTING_CONVERGENCE: Useful convergence signal, not load-bearing alone.",
+      "OPEN_PROBLEM: Named boundary, not a solved claim."
+    ],
+    "derivation": [
+      "The dossier replaces paper counts with a verification packet of claims, evidence, status, reviewer type, first attack, and kill condition.",
+      "Each core claim is assigned a status from the status ladder and a first attack to guide falsification.",
+      "A six-month verification plan is proposed to audit counts, freeze claims, compile Lean, and run mathematical physics, formal methods, derivative chain, theological, and philosophical reviews.",
+      "The final output is a falsification report identifying what failed, what survived, and next tests."
+    ],
+    "action": "Fund a six-month expert falsification process to test the Theophysics framework, with explicit kill conditions for each core claim.",
+    "boundary": [
+      "Does not claim certification or proof of external theological identification.",
+      "Does not rely on paper counts as evidence.",
+      "Does not assert that Lean verification proves external reality.",
+      "Does not claim that structural mapping is proof of external reality."
+    ],
+    "test": [
+      "For VC-001: Check if product form can be normalized as dimensionless sector efficiencies and if multiplicative composition is justified under independence assumptions.",
+      "For VC-002: Check if normalized variables can be stated consistently across all four canonical forms.",
+      "For VC-005: Check if independent reviewers can reproduce governing equations from the Lagrangian under declared assumptions.",
+      "For VC-006: Check if blind reviewers can reassign terms to different parent laws with equal or better fit, or if fixed biblical lists do not constrain mappings.",
+      "For VC-008: Check if Lean source compiles cleanly, contains no hidden assumptions stronger than reported, and no sorry/admitted proofs.",
+      "For VC-009: Check if another resolution state satisfies the same formal constraints, or if constraints encode the conclusion by definition."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The dossier depends on the existence of the Theophysics corpus and its claims.",
+      "The verification plan depends on the availability of expert reviewers in physics, theology, mathematics, formal methods, and philosophy."
+    ],
+    "dg2_new_capability": "Provides a structured, testable claims dossier with explicit kill conditions and a funded falsification plan, replacing brittle paper counts.",
+    "dg3_preserved_floor": "Preserves the core claims of the Theophysics framework as testable hypotheses, without asserting their truth.",
+    "dg4_collapse_if_removed": "Without the dossier, the framework's claims become untestable and the request for funding loses its falsification-oriented structure.",
+    "dg5_translation_registers": [
+      "The status ladder translates to formal verification levels.",
+      "The first attack and kill conditions translate to testable hypotheses.",
+      "The six-month plan translates to a verification workflow."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Verification dossier and funding request",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Treat as a structured request for falsification; do not treat as proof of the framework's claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The dossier may be interpreted as implying the framework is more established than it is.",
+      "The status ladder may be misread as proof levels rather than verification statuses.",
+      "The request for falsification may be seen as an implicit claim of robustness."
+    ],
+    "kill_conditions": [
+      "If the Lean source does not compile cleanly or contains sorry/admitted proofs, the formal verification claim is invalid.",
+      "If the product form cannot be normalized or multiplicative composition is unjustified, VC-001 is downgraded.",
+      "If normalized variables cannot be stated consistently, VC-002 is downgraded.",
+      "If governing equations cannot be reproduced from the Lagrangian, VC-005 is narrowed.",
+      "If blind reviewers can reassign terms with equal fit, VC-006 is downgraded.",
+      "If another resolution state satisfies the same formal constraints, VC-009 uniqueness is downgraded."
+    ],
+    "lean_target": "Formal verification of internal consistency under stated definitions, not external theological identification."
+  },
+  "plain_summary": "This document is a structured verification dossier for the Theophysics framework, requesting funded falsification rather than certification. It defines a status ladder, lists core claims with first attacks and kill conditions, and outlines a six-month verification plan. The document does not establish the truth of the framework's claims; it provides a testable structure for expert review.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W8.2-templeton-dossier.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W8.2-templeton-dossier.canonical.canonical-node.json"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "source_id": "continuous_string_axiom_test_v0",
+  "title": "Continuous String Axiom Test v0",
+  "canonical_node": {
+    "axiom": "If an action is aligned with destruction and is not restored, then it is not morally good and not aligned with good.",
+    "definitions": [
+      "alignedWithDestruction: an action's alignment with destruction.",
+      "restored: the state is restored after the action.",
+      "moralGood: morally good action.",
+      "alignedWithGood: aligned with good."
+    ],
+    "derivation": [
+      "Assume action a is aligned with destruction.",
+      "Assume action a is not restored.",
+      "From axiom destructive_degrades, a degrades the state.",
+      "From axiom good_preserves, if a were aligned with good, it would preserve the state.",
+      "From axiom good_alignment_is_moral, if a were aligned with good, it would be morally good.",
+      "From axiom moral_good_repairs_damage, if a were morally good and degrades, it would restore.",
+      "Since a is not restored, it cannot be morally good (contrapositive).",
+      "Since it is not morally good, it cannot be aligned with good (contrapositive)."
+    ],
+    "action": "In the Lean formal system, enforce that any action aligned with destruction and not restored is excluded from moral goodness and alignment with good.",
+    "boundary": [
+      "Does not prove the full Master Equation.",
+      "Does not identify gravity=grace, strong force=love, thermodynamics=judgment, coherence=Christ.",
+      "Does not prove all event systems are isomorphic.",
+      "Only applies within the toy model and the AxiomBundle assumptions."
+    ],
+    "test": [
+      "Lean kernel-checked proof of destructive_unrestored_exclusion_chain.",
+      "No sorry, admit, axiom, or unsafe in the codebase.",
+      "Concrete model test toy_bad_action_excluded_by_chain passes."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "AxiomBundle with 4 assumptions: destructive_degrades, good_preserves, good_alignment_is_moral, moral_good_repairs_damage.",
+      "Lean 4 environment with lake build."
+    ],
+    "dg2_new_capability": "Provides a kernel-checked theorem chain showing destructive non-restored actions are excluded from moral good and good alignment, with a concrete satisfiable model.",
+    "dg3_preserved_floor": "Preserves the existing AxiomBundle assumptions and the ability to build without errors.",
+    "dg4_collapse_if_removed": "If the theorem or model are removed, the package still builds but lacks the demonstrated exclusion chain and concrete interpretation.",
+    "dg5_translation_registers": [
+      "destructive_degrades -> degrades",
+      "good_preserves -> preserves",
+      "good_alignment_is_moral -> moralGood",
+      "moral_good_repairs_damage -> restores"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal theorem in a toy model",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as a verified formal theorem within its stated scope"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be interpreted as proving more than the toy model allows.",
+      "The theorem is conditional on the 4 axioms, which are assumptions, not proven truths.",
+      "The concrete model is tiny and may not generalize."
+    ],
+    "kill_conditions": [
+      "If the Lean build is not reproducible.",
+      "If the no-sorry scan is not actually clean.",
+      "If the axioms are later found inconsistent."
+    ],
+    "lean_target": "Formalize the next EventSystem layer and prove structure-preserving mappings."
+  },
+  "plain_summary": "This document reports a successful Lean formal proof of a theorem: in a toy model with four axioms, any action aligned with destruction and not restored is neither morally good nor aligned with good. It includes a concrete model to show satisfiability. The proof is kernel-checked with no sorry/admit/unsafe. It does not claim to prove the full Master Equation or any physical identifications.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\continuous_string_axiom_test_v0.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\continuous_string_axiom_test_v0.canonical-node.json"
+  }
+}

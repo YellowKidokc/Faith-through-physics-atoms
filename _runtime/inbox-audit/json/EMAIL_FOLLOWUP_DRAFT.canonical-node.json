@@ -1,0 +1,74 @@
+{
+  "source_id": "EMAIL_FOLLOWUP_DRAFT",
+  "title": "Lean Review Follow-Up Draft",
+  "canonical_node": {
+    "axiom": "A formalization packet is only as strong as its specification quality, not merely its compilation.",
+    "definitions": [
+      "Lean 4.29.1: the specific Lean version used for local build verification.",
+      "Rejection-first formalization: a strategy where intended candidates pass only after nearby false positives are shown to fail.",
+      "Specification quality: the degree to which definitions are precise, controls are sufficient, and invariants are mathematically meaningful."
+    ],
+    "derivation": [
+      "The repository builds locally with Lean 4.29.1.",
+      "The formalization uses a rejection-first strategy.",
+      "The main review target is ResurrectionFormal/MaxwellTrinity.lean.",
+      "The primary concern is specification quality, not compilation.",
+      "Therefore, the system should seek external review focused on specification quality."
+    ],
+    "action": "The system should prepare and submit the Lean 4 formalization packet for external review, emphasizing specification quality and requesting feedback on definition strength, false-positive controls, and the mathematical meaningfulness of the scalar-vector coupling invariant.",
+    "boundary": [
+      "Does not claim that the formalization is mathematically correct or that the invariant is meaningful.",
+      "Does not assert that external review has been completed or that the packet is accepted.",
+      "Does not claim that the formalization proves any physical theorem."
+    ],
+    "test": [
+      "Check that the repository builds with Lean 4.29.1.",
+      "Verify that the rejection-first strategy is implemented (false positives fail).",
+      "Confirm that the review request explicitly asks about specification quality, definition strength, false-positive controls, and invariant meaningfulness."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4.29.1 build environment",
+      "ResurrectionFormal/MaxwellTrinity.lean",
+      "Rejection-first formalization strategy"
+    ],
+    "dg2_new_capability": "Provides a structured request for external review focused on specification quality, enabling feedback on definition strength and invariant meaningfulness.",
+    "dg3_preserved_floor": "Preserves the claim that the repository builds locally and that the formalization is internally canonical.",
+    "dg4_collapse_if_removed": "Without this document, the follow-up request for external review would be absent, and the distinction between compilation success and specification quality would be lost.",
+    "dg5_translation_registers": [
+      "Lean 4.29.1",
+      "ResurrectionFormal/MaxwellTrinity.lean",
+      "rejection-first formalization",
+      "scalar-vector coupling invariant"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "process_request",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be interpreted as claiming the formalization is correct or that the invariant is meaningful.",
+      "May be interpreted as claiming external review has occurred or will occur."
+    ],
+    "kill_conditions": [
+      "If the repository does not build with Lean 4.29.1.",
+      "If the rejection-first strategy is not actually implemented.",
+      "If the review request is not sent or is not focused on specification quality."
+    ],
+    "lean_target": "ResurrectionFormal/MaxwellTrinity.lean"
+  },
+  "plain_summary": "This is a draft email requesting external review of a Lean 4 formalization packet, emphasizing that specification quality is the main concern. It does not establish any mathematical or formal claims beyond the local build and internal canonical status.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\EMAIL_FOLLOWUP_DRAFT.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\EMAIL_FOLLOWUP_DRAFT.canonical-node.json"
+  }
+}

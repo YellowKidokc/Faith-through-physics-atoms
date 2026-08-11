@@ -1,0 +1,85 @@
+{
+  "source_id": "CLAIM_HYGIENE",
+  "title": "Claim Hygiene for Formal Correspondence",
+  "canonical_node": {
+    "axiom": "Theology does not need to become natural science for structural correspondence with physics to be possible; it needs enough formal clarity that a claimed correspondence can be stated, checked, and killed.",
+    "definitions": [
+      "Formal correspondence theory: a third thing that is neither the conversion of theology into laboratory science nor the conversion of physics into doctrine.",
+      "Valid claim shape: 'We defined formal models and proved that, inside those declared models, the stated gate, collapse, preservation, or isomorphism condition holds.'",
+      "Invalid claim shape: any claim that theology has become natural science, physics and theology are the same discipline, QCD itself is identical to biblical love, Lean has proven Christian doctrine from physics, or a theorem about a declared model automatically proves the adequacy of that model.",
+      "Adequacy: the formal physical model faithfully represents the intended physical structure, and the formal theological model faithfully represents the intended doctrinal or metaphysical structure.",
+      "Non-triviality: rival or relabeled models do not also pass the same test.",
+      "Citation triple: exact statement (quote or link the Lean type), claim class, and non-claim."
+    ],
+    "derivation": [
+      "The bridge between theology and physics is formal correspondence theory, not identity or reduction.",
+      "Valid claims must be limited to what is proved inside declared models.",
+      "Invalid claims overstate the scope of formal results.",
+      "After a Lean theorem compiles, adequacy and non-triviality remain open burdens.",
+      "Exported theorems must be cited with exact statement, claim class, and non-claim.",
+      "Adversarial boundary tests are required for isomorphism theorems to prevent overinterpretation."
+    ],
+    "action": "When exporting or citing formal theorems, restrict public wording to the valid claim shapes, include the required non-claim, and accompany isomorphism theorems with adversarial boundary tests.",
+    "boundary": [
+      "Does not assert that theology has become natural science.",
+      "Does not assert that physics and theology are the same discipline.",
+      "Does not assert that QCD itself is identical to biblical love.",
+      "Does not assert that Lean has proven Christian doctrine from physics.",
+      "Does not assert that a theorem about a declared model automatically proves the adequacy of that model."
+    ],
+    "test": [
+      "Check that every externally cited theorem includes the citation triple: exact statement, claim class, and non-claim.",
+      "Check that public wording for each theorem family matches the valid public wording in the export surface table.",
+      "Check that isomorphism theorems include a companion adversarial boundary test (e.g., weak_law_iso_admits_coin_countermodel).",
+      "Check that adequacy and non-triviality burdens are explicitly acknowledged in any export."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Formal models for each law (e.g., law1_mechanism_gate_marker, law2_mechanism_gate_marker, full_*_zero_collapses, law3_*_collapses_chi, law6_*_collapses_chi, law7_*_collapses_chi, law8_*_collapses_chi, law4Iso, richLaw4Iso)",
+      "Adversarial boundary test: weak_law_iso_admits_coin_countermodel"
+    ],
+    "dg2_new_capability": "Provides a disciplined claim hygiene protocol that prevents overstatement of formal correspondence results and ensures exported theorems are accompanied by exact statements, claim classes, and non-claims.",
+    "dg3_preserved_floor": "Preserves the rigor of formal proofs by requiring that public claims do not exceed what is proved inside declared models.",
+    "dg4_collapse_if_removed": "Without claim hygiene, formal correspondence results would be misrepresented as proving identity or adequacy, undermining the project's rigor and leading to overstatement.",
+    "dg5_translation_registers": [
+      "Formal-model theorem",
+      "Gate theorem",
+      "Collapse theorem",
+      "Isomorphism-witness theorem",
+      "Adversarial boundary theorem",
+      "Adequacy argument"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Methodological protocol",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "B",
+    "recommended_atom_action": "Adopt as a governing protocol for all exported formal claims; enforce citation triple and adversarial boundary tests."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that formal theorems prove theology has become natural science.",
+      "Claiming that physics and theology are the same discipline.",
+      "Claiming that QCD itself is identical to biblical love.",
+      "Claiming that Lean has proven Christian doctrine from physics.",
+      "Claiming that a theorem about a declared model automatically proves the adequacy of that model."
+    ],
+    "kill_conditions": [
+      "If any exported theorem is cited without the citation triple.",
+      "If public wording exceeds the valid claim shapes.",
+      "If isomorphism theorems lack an adversarial boundary test."
+    ],
+    "lean_target": "Formalize the claim hygiene rules as a Lean guardrail that checks exported theorem statements and non-claims."
+  },
+  "plain_summary": "This document establishes rules for how formal correspondence claims between theology and physics may be stated and exported. It requires that claims be limited to what is proved inside declared models, that every exported theorem include an exact statement, claim class, and non-claim, and that isomorphism theorems be accompanied by adversarial boundary tests. It explicitly forbids overstatements such as claiming theology has become science or that QCD is biblical love.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CLAIM_HYGIENE.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CLAIM_HYGIENE.canonical-node.json"
+  }
+}

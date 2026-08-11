@@ -1,0 +1,86 @@
+{
+  "source_id": "W3.4-portrait.canonical",
+  "title": "The Ten Laws",
+  "canonical_node": {
+    "axiom": "The universe's fundamental physical laws, when read together, describe a specific personal character consistent with the God of Christian theism; this is an interpretive mapping, not a proof of God's existence.",
+    "definitions": [
+      "Theophysics: the interpretive mapping of standard physics onto theological concepts.",
+      "Constructive regime: parameter regime where a physical law yields order, binding, or revelation.",
+      "Destructive regime: parameter regime where the same law yields disorder, fragmentation, or judgment.",
+      "Free-will coupling term: a multiplicative factor (1-W) that modulates the effect of a physical law based on a free-will resistance variable W.",
+      "Locked chain: a law whose derivation from a parent equation has been completed and accepted.",
+      "Convergence path: a law whose derivation is in progress, with anti-terms and kill condition pending.",
+      "Grace operator: a scaffolding equation  =  * e^(r(t')dt') * (1R(t)) representing grace as a function of repentance and resistance.",
+      "Coherence (chi): the master integration variable that wraps the product of all other factors; chi = C *  f(X/X)."
+    ],
+    "derivation": [
+      "The document presents ten laws of physics, each mapped to a theological concept (e.g., gravity  grace, strong force  love).",
+      "For each law, it lists physical properties and then asserts a correspondence to a divine attribute.",
+      "For some laws (4, 5, 9), it claims a derivation from a parent equation (e.g., Yukawa potential for strong force, Gibbs free energy for thermodynamics).",
+      "For others (1, 2, 3, 10), it marks the derivation as open or pending, with discriminability scores or named gaps.",
+      "The document concludes that the aggregate of 24 physical properties describes a single person, Jesus Christ.",
+      "It explicitly states that this is not an argument for God's existence but a presentation of properties and a question."
+    ],
+    "action": "The system should treat this document as a theological interpretive framework that maps physical laws to divine attributes, with explicit markers for which mappings are derived vs. correspondences, and which derivations are complete vs. pending.",
+    "boundary": [
+      "This document does not claim to prove God's existence; it explicitly disclaims that.",
+      "It does not claim that physics itself reveals God; it claims an interpretive mapping.",
+      "It does not assert that all ten laws are equally derived; it marks some as locked, some as pending, and some as correspondences.",
+      "It does not claim that the physics is novel; it states the physics is standard.",
+      "It does not claim that the theological conclusions are scientifically testable; it offers some testable shapes but not for all."
+    ],
+    "test": [
+      "Check that each law's mapping is labeled as derived, correspondence, or pending.",
+      "Check that the document does not overstate the strength of the derivations; e.g., Law 3 has a 57% discriminability score, Law 10 has an open derivation.",
+      "Check that the document's conclusion is framed as a question, not a proof.",
+      "Check that the free-will coupling term is consistently applied across laws where mentioned.",
+      "Check that the coherence equation is stated as the canonical form: chi = C *  f(X/X)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Standard physics: gravitation, electromagnetism, strong force, thermodynamics, information theory, relativity, quantum mechanics, weak force, coherence.",
+      "Theological concepts: grace, sin, love, truth, judgment, etc.",
+      "Mathematical tools: equilibrium derivations, parent equations, free-will coupling terms."
+    ],
+    "dg2_new_capability": "Provides a systematic mapping of ten physical laws to divine attributes, with a coherence integration variable, and a set of 24 properties that collectively describe a person.",
+    "dg3_preserved_floor": "Preserves the standard physics as the foundation; the mapping does not alter the physics.",
+    "dg4_collapse_if_removed": "If the interpretive mapping is removed, the document reduces to a list of physical properties with no theological significance; the portrait of God collapses.",
+    "dg5_translation_registers": [
+      "Physics register: force properties, equations, regimes.",
+      "Theology register: divine attributes, sin, grace, love.",
+      "Narrative register: the story of creation, fall, redemption."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "interpretive mapping",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document's conclusion that the properties describe one Person could be read as a proof of God's existence, despite the disclaimer.",
+      "The use of terms like 'derived' for some laws may overstate the rigor; e.g., Law 4's Tier 2 fruits are correspondences, not derivations.",
+      "The 24 properties are selected and interpreted to fit the theological narrative; the selection is not justified.",
+      "The coherence equation is presented as canonical but its derivation is open; this could be seen as overclaiming."
+    ],
+    "kill_conditions": [
+      "If any of the physical properties are misstated or misinterpreted, the mapping fails.",
+      "If the free-will coupling term is not physically motivated, the mapping is ad hoc.",
+      "If the coherence equation is not derived from a parent equation, the master integration claim is unsupported.",
+      "If the document is used to claim scientific proof of God, it violates its own boundary."
+    ],
+    "lean_target": "A lean version would present the mappings as explicit correspondences, clearly labeled as interpretive, with no claim of derivation for any law, and would remove the 24-property portrait as overreach."
+  },
+  "plain_summary": "This document maps ten fundamental physical laws to attributes of the Christian God, claiming that together they describe a specific person. It explicitly states it is not a proof of God's existence, but the presentation risks overstatement. Some laws are marked as derived, others as pending, and the coherence law is the most open. The document is best treated as a theological interpretive framework, not a scientific proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W3.4-portrait.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W3.4-portrait.canonical.canonical-node.json"
+  }
+}

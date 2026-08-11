@@ -1,0 +1,71 @@
+{
+  "source_id": "the-christian-walk_1.canonical",
+  "title": "The Christian Walk",
+  "canonical_node": {
+    "axiom": "God is simultaneously just, merciful, and sovereign, and this unity is revealed in the person and work of Jesus Christ.",
+    "definitions": [
+      "Justice: the requirement that moral debts be paid in full.",
+      "Mercy: the willingness of the judge to pay the debt himself rather than let the guilty perish.",
+      "Sovereignty: the right of God to judge all creation, including commanding life and death.",
+      "The Cross: the event where justice and mercy meet in the same person, satisfying both without contradiction."
+    ],
+    "derivation": [
+      "God is the author of life and therefore has rights over life that no human possesses.",
+      "God's commands in the Old Testament, including the destruction of Amalek, are expressions of His justice.",
+      "The objection that such commands are incompatible with God's love is answered by the cross, where God Himself bears the penalty for sin.",
+      "Therefore, God's justice and mercy are not contradictory but are unified in the person of Christ."
+    ],
+    "action": "The system should present the cross as the central resolution to theodicy, emphasizing that God's justice is satisfied and mercy is extended through Christ's substitutionary death.",
+    "boundary": [
+      "This node does not provide a complete theodicy for every instance of suffering or divine command.",
+      "It does not claim to fully explain the moral status of infants and children in the Amalek command.",
+      "It does not assert that all Old Testament violence is morally equivalent to the cross."
+    ],
+    "test": [
+      "Does the presentation maintain the full weight of the objection without softening it",
+      "Does it avoid claiming a complete resolution where the document admits uncertainty",
+      "Does it consistently point to the cross as the meeting point of justice and mercy"
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The document depends on the biblical narrative of the cross as an atoning sacrifice.",
+      "It depends on the concept of divine sovereignty and the right to judge."
+    ],
+    "dg2_new_capability": "Provides a framework for addressing the problem of divine commands to kill by pointing to the cross as the ultimate demonstration of God's justice and mercy.",
+    "dg3_preserved_floor": "Preserves the core Christian claim that God is both just and merciful, and that the cross is the central act of redemption.",
+    "dg4_collapse_if_removed": "If the cross is removed, the document loses its central resolution and collapses into unresolved tension between God's justice and mercy.",
+    "dg5_translation_registers": [
+      "Theological register: justice, mercy, atonement.",
+      "Philosophical register: theodicy, moral responsibility.",
+      "Pastoral register: trust, humility, honest struggle."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological_interpretation",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "C",
+    "recommended_atom_action": "preserve_as_narrative_anchor"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document may overstate the explanatory power of the cross in resolving the specific moral problem of the Amalek command.",
+      "It may imply that the cross provides a complete answer when the author admits uncertainty."
+    ],
+    "kill_conditions": [
+      "If the cross is not accepted as a valid atonement, the argument loses its force.",
+      "If the moral problem is deemed unresolvable by substitutionary atonement, the node fails."
+    ],
+    "lean_target": "The node should be used as a pastoral and theological anchor, not as a formal proof of God's goodness."
+  },
+  "plain_summary": "This document addresses the objection that God's command to destroy the Amalekites contradicts His love. It argues that the cross resolves the tension by showing God's justice and mercy meeting in Christ, who bears the penalty for sin. The document acknowledges the difficulty and does not claim a complete explanation, but points to the cross as the ultimate revelation of God's character.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\the-christian-walk_1.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\the-christian-walk_1.canonical.canonical-node.json"
+  }
+}

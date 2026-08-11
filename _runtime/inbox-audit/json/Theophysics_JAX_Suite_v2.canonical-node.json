@@ -1,0 +1,73 @@
+{
+  "source_id": "Theophysics_JAX_Suite_v2",
+  "title": "Theophysics_JAX_Suite_v2.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field framework must be tested with mathematical rigor, and errors in tests must be corrected and documented.",
+    "definitions": [
+      "chi-field: a theoretical construct in the Theophysics framework, not defined in this document.",
+      "Heisenberg uncertainty principle: standard quantum mechanics formulation, not redefined here.",
+      "Component coherence correlation: a test asserting monotonic dependence of chi on each enabled component."
+    ],
+    "derivation": [
+      "v1 contained an incorrect Heisenberg uncertainty test due to an invalid approximation.",
+      "v2 corrects the test by re-deriving from the proper Heisenberg formulation.",
+      "The corrected test passes because it is correctly formulated, not because of a flawed derivation.",
+      "v2 adds additional tests for component coherence and cross-suite consistency."
+    ],
+    "action": "Run the JAX Field Theory test suite, including the corrected Heisenberg test and the new coherence and consistency tests, and document any errors found.",
+    "boundary": [
+      "Does not define the chi-field or its physical basis.",
+      "Does not claim the corrected Heisenberg test proves the chi-field modifies uncertainty; it only claims a narrower, provably true statement.",
+      "Does not provide the actual test code or results."
+    ],
+    "test": [
+      "Verify that the corrected Heisenberg test is formulated from the standard Heisenberg principle.",
+      "Verify that the component coherence correlation test checks monotonic dependence.",
+      "Verify that the cross-suite consistency check compares JAX Field Theory and Biblical Empirical results."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "JAX library",
+      "Google Colab environment",
+      "v1 of the JAX Field Theory test suite"
+    ],
+    "dg2_new_capability": "Provides a corrected Heisenberg uncertainty test and additional coherence and consistency tests, improving the reliability of the chi-field framework testing.",
+    "dg3_preserved_floor": "Preserves the ability to run the original test suite with corrected errors, maintaining the integrity of the testing process.",
+    "dg4_collapse_if_removed": "If removed, the corrected Heisenberg test and the additional tests would be lost, reverting to the flawed v1 state and reducing the credibility of the framework.",
+    "dg5_translation_registers": [
+      "JAX Field Theory test suite",
+      "Heisenberg uncertainty principle",
+      "chi-field"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document implies the corrected test is provably true, but no proof is provided.",
+      "The document suggests the chi-field modifies uncertainty at high chi values, but this is not substantiated.",
+      "The document claims scientific integrity, but this is a narrative claim, not a mathematical one."
+    ],
+    "kill_conditions": [
+      "If the corrected Heisenberg test is found to be incorrect.",
+      "If the additional tests do not actually test what they claim.",
+      "If the document is used to claim empirical evidence for the chi-field."
+    ],
+    "lean_target": "The document should be treated as a methodological note, not as evidence for the chi-field framework."
+  },
+  "plain_summary": "This document describes version 2 of a JAX-based test suite for the Theophysics chi-field framework. It corrects an error in the Heisenberg uncertainty test from v1 and adds new tests. The document emphasizes the importance of correcting errors, but it does not provide the actual test code or results, so its claims are not independently verifiable.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Theophysics_JAX_Suite_v2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Theophysics_JAX_Suite_v2.canonical-node.json"
+  }
+}

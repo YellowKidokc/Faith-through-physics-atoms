@@ -1,0 +1,78 @@
+{
+  "source_id": "D01_SelfFlip",
+  "title": "The Self-Flip Impossibility Theorem",
+  "canonical_node": {
+    "axiom": "No being with moral sign  = -1 can flip its own sign to +1; self-salvation is mathematically impossible.",
+    "definitions": [
+      ": moral sign eigenvalue of the moral orientation operator, with  = -1 for fallen state and  = +1 for righteous state.",
+      "U_self: any self-generated operation, assumed unitary.",
+      ": external grace operator, non-unitary, from outside the system.",
+      "Works_effective: _source  Works_intended."
+    ],
+    "derivation": [
+      "Let _S be a soul field with moral sign  = -1.",
+      "Let U_self be any self-generated operation; self-operations are unitary.",
+      "Unitary operations preserve eigenvalues of the system.",
+      " is an eigenvalue of the moral orientation operator.",
+      "Therefore U_self preserves , so U_self|=-1 = e^{iphi}|=-1  |=+1.",
+      "Hence self-flip is impossible; external intervention is required."
+    ],
+    "action": "The system must reject any claim of self-salvation and direct agents to external grace () as the only means of changing .",
+    "boundary": [
+      "Does not claim to prove the existence of God or grace.",
+      "Does not claim to prove that grace actually saves.",
+      "Does not claim to provide a mechanism for grace.",
+      "Does not claim to be a rigorous mathematical proof in the formal sense; it is an analogy."
+    ],
+    "test": [
+      "Check that any proposed self-operation is unitary and preserves .",
+      "Verify that no counterexample of self-flip is provided.",
+      "Ensure that the distinction between behavioral change and  change is maintained."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "070_T8.1_Sign-Invariance-Theorem",
+      "071_C8.1_Self-Flip-Impossible",
+      "072_C8.2_Works-Salvation-Impossible"
+    ],
+    "dg2_new_capability": "Provides a formal-looking argument against self-salvation, grounding sola gratia in an eigenvalue preservation analogy.",
+    "dg3_preserved_floor": "Preserves the theological claim that salvation cannot be achieved by human effort.",
+    "dg4_collapse_if_removed": "If removed, the prosecution of works-salvation loses its central logical argument, weakening the case for sola gratia.",
+    "dg5_translation_registers": [
+      "theology",
+      "quantum analogy",
+      "logic"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological impossibility claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical proof but relies on an analogy to quantum mechanics without formal rigor.",
+      "Assumes  is an eigenvalue without defining the operator rigorously.",
+      "Generalizes to all religions without empirical evidence.",
+      "Uses 'unitary' metaphorically, not mathematically."
+    ],
+    "kill_conditions": [
+      "If a counterexample of self-flip is provided.",
+      "If the quantum analogy is shown to be invalid.",
+      "If the theorem is presented as a formal mathematical proof without proper formalism."
+    ],
+    "lean_target": "The core logical point: self-referential change is impossible without external input."
+  },
+  "plain_summary": "This document argues that self-salvation is impossible because any self-generated operation preserves the moral sign ( = -1), so only external grace can change it. It uses a quantum analogy but is not a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\D01_SelfFlip.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\D01_SelfFlip.canonical-node.json"
+  }
+}

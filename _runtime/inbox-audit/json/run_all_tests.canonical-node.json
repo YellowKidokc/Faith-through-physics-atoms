@@ -1,0 +1,68 @@
+{
+  "source_id": "run_all_tests",
+  "title": "run_all_tests.ipynb",
+  "canonical_node": {
+    "axiom": "A test runner that executes all tests without chart generation is sufficient for verification of pass/fail results.",
+    "definitions": [
+      "Test runner: a notebook that executes the full test suite and outputs pass/fail results.",
+      "Full runner: a notebook that executes tests and generates charts and visualizations.",
+      "Verification: confirmation of pass/fail results without visual output."
+    ],
+    "derivation": [
+      "The document states that run_all_tests.ipynb runs all tests but skips chart generation.",
+      "It states that this is faster and suitable for verification purposes.",
+      "It states that the test runner produces results in under 5 minutes, while the full runner takes 8-12 minutes.",
+      "It states that the test runner is the verification artifact for the website."
+    ],
+    "action": "Execute all tests and output pass/fail results without generating charts, for verification purposes.",
+    "boundary": [
+      "Does not generate charts or visualizations.",
+      "Does not replace the full runner for presentations or website output.",
+      "Does not alter the test suite or its results."
+    ],
+    "test": [
+      "Run the notebook and confirm all tests execute and pass/fail results are produced.",
+      "Confirm no chart files are generated.",
+      "Confirm runtime is under 5 minutes on a CPU instance."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "run_all.ipynb (full runner) as the source of the test suite and expected results."
+    ],
+    "dg2_new_capability": "Provides a faster, leaner verification path that does not require chart generation.",
+    "dg3_preserved_floor": "Preserves the ability to verify pass/fail results of all tests.",
+    "dg4_collapse_if_removed": "Without this runner, verification would require running the full runner, which is slower and includes unnecessary chart generation.",
+    "dg5_translation_registers": [
+      "Test runner -> verification artifact",
+      "Full runner -> presentation/website output"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as procedural artifact"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document implies that the test runner is sufficient for verification, but does not provide evidence that the tests themselves are correct or complete.",
+      "The claim that the test runner is a 'sign of a mature test suite' is subjective and not supported by data."
+    ],
+    "kill_conditions": [
+      "If the test runner does not actually run all tests or produces incorrect results.",
+      "If the test suite itself is invalid or incomplete."
+    ],
+    "lean_target": "The test runner is a procedural tool; its value depends on the underlying test suite."
+  },
+  "plain_summary": "This document describes a lean test runner notebook that executes all tests without chart generation, intended for quick verification. It is a procedural artifact, not a proof of any scientific claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\run_all_tests.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\run_all_tests.canonical-node.json"
+  }
+}

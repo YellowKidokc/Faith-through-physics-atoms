@@ -1,0 +1,72 @@
+{
+  "source_id": "run_biblical_tests",
+  "title": "run_biblical_tests.ipynb",
+  "canonical_node": {
+    "axiom": "The biblical empirical suite (Tests 03-09) must be runnable independently of the JAX field theory suite, producing verifiable PASS/FAIL outputs and result JSONs.",
+    "definitions": [
+      "Biblical Empirical Suite: Tests 03-09 that examine historical patterns in biblical data (complexity, scaling, constraint satisfaction).",
+      "JAX Field Theory Suite: Tests of physical mathematics (PDE stability, cosmology, information theory).",
+      "Standalone runner: A notebook that executes only the biblical suite without running JAX tests."
+    ],
+    "derivation": [
+      "The two suites test fundamentally different domains: physical mathematics vs. historical patterns.",
+      "Separate runners enable independent verification, GPU-free execution, focused debugging, and audience-specific presentation.",
+      "The biblical suite is modular by design, and the runner respects that modularity.",
+      "Running the runner produces PASS/FAIL output, per-test JSON files, and a summary JSON."
+    ],
+    "action": "Execute Tests 03-09 only, output PASS/FAIL per test, write test03_results.json through test09_results.json and test_suite_summary.json, and complete in approximately 2.5 seconds.",
+    "boundary": [
+      "Does not run JAX Field Theory tests.",
+      "Does not interpret the results beyond reporting PASS/FAIL and generating JSON files.",
+      "Does not claim that the biblical tests are physically validated; they are empirical historical pattern tests."
+    ],
+    "test": [
+      "Run the notebook and confirm that only Tests 03-09 execute.",
+      "Verify that each test produces a PASS/FAIL result and corresponding JSON file.",
+      "Verify that test_suite_summary.json is generated.",
+      "Confirm runtime is approximately 2.5 seconds."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Biblical Empirical Suite test definitions (Tests 03-09)",
+      "Input data for biblical tests",
+      "Python environment with required libraries (e.g., numpy, scipy, pandas)"
+    ],
+    "dg2_new_capability": "Enables independent execution and verification of the biblical empirical suite without requiring JAX or GPU resources.",
+    "dg3_preserved_floor": "Preserves the ability to run the biblical tests and obtain their results, as originally designed.",
+    "dg4_collapse_if_removed": "If removed, the biblical tests could only be run as part of the full suite, reducing accessibility and modularity.",
+    "dg5_translation_registers": [
+      "Notebook execution",
+      "PASS/FAIL status",
+      "JSON result files"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "operational",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "preserve as operational artifact"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims 'Spearman  = 1.0' and 'unique satisfaction of six constraints' as surprising results, but these are not proven here; they are outputs of the tests.",
+      "The phrase 'most surprising results' is subjective and not a formal claim."
+    ],
+    "kill_conditions": [
+      "If the notebook fails to run or produces inconsistent outputs.",
+      "If the biblical tests are not actually independent of JAX tests."
+    ],
+    "lean_target": "A standalone executable notebook that runs Tests 03-09 and produces verifiable JSON outputs."
+  },
+  "plain_summary": "This document describes a Colab notebook that runs only the biblical empirical tests (03-09) separately from the JAX field theory tests. It is an operational tool for independent verification and presentation. The document does not provide formal proof of the underlying claims; it only describes the runner's purpose and outputs.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\run_biblical_tests.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\run_biblical_tests.canonical-node.json"
+  }
+}

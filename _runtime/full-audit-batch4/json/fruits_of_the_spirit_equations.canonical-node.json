@@ -1,0 +1,76 @@
+{
+  "source_id": "fruits_of_the_spirit_equations",
+  "title": "THE FRUITS OF THE SPIRIT  -  COMPLETE FORMALIZATION",
+  "canonical_node": {
+    "axiom": "The nine Fruits of the Spirit are formalized as a 9-dimensional vector Phi, and their manifestation is a function of system coherence chi via a hyperbolic tangent phase transition.",
+    "definitions": [
+      "Fruits vector Phi = {Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control}",
+      "Anti-Fruits vector Phi = -Phi = {Hatred, Despair, Anxiety, Impatience, Cruelty, Corruption, Betrayal, Harshness, Addiction}",
+      "Coherence chi: system coherence, output of the Master Equation",
+      "Critical coherence threshold chi_c  0.30",
+      "Sensitivity coefficient _i for each Fruit i"
+    ],
+    "derivation": [
+      "Phi_i(chi) = tanh(_i(chi - chi_c))",
+      "For chi > chi_c, Phi_i > 0 (Fruits manifest); for chi < chi_c, Phi_i < 0 (Anti-Fruits manifest); at chi = chi_c, Phi_i = 0 (neutral)",
+      "The Master Equation derivative: dchi/dt = G*R_p*(1+E+S)*e^{-Q*C}*F*U*S_s - chi + K*D + Omega*T",
+      "The full expression: Phi(t) = tanh(B[chi_0 + (G*R(F)*U - chi + K*D + Omega*T)d - chi_c])",
+      "The -chi term is always negative, implying coherence decays without external input, leading to the Second-Law argument."
+    ],
+    "action": "The system should evaluate text or state against the Fruits vector using the provided SBERT-based scoring, and use the resulting coherence score to classify whether Fruits or Anti-Fruits are manifest.",
+    "boundary": [
+      "The framework does not claim to be a verified physical theory; it is a formalized theological metaphor.",
+      "The SBERT implementation is acknowledged as shallow, pattern-matching on surface semantics.",
+      "The empirical correlation (R=0.73) is reported but not independently verified in this document."
+    ],
+    "test": [
+      "For any input text, compute cosine similarity to Fruit and Anti-Fruit embeddings, derive net_fruit, and normalize to a 0-1 score.",
+      "Check that the score is bounded in [0,1] and that the mapping is monotonic with respect to net_fruit.",
+      "Optionally, validate against the deeper evaluator spec (EvidenceUnit, FruitScore, etc.) if available."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Master Equation (referenced but not fully derived here)",
+      "SBERT model 'all-MiniLM-L6-v2'",
+      "Empirical data from American population 1960-2000 (claimed)"
+    ],
+    "dg2_new_capability": "Provides a formalized mapping from coherence to Fruits/Anti-Fruits, enabling computational scoring of text against a theological construct.",
+    "dg3_preserved_floor": "Preserves the theological assertion that Fruits are emergent from alignment (coherence) and not self-produced.",
+    "dg4_collapse_if_removed": "If the tanh mapping or the coherence threshold is removed, the framework loses its quantitative predictive structure and reduces to a qualitative metaphor.",
+    "dg5_translation_registers": [
+      "Theological: Grace, Repentance, Faith, Sanctification",
+      "Psychological: Therapeutic support, Willingness to change, Hope, Neuroplasticity",
+      "Physical: Energy injection, System optimization, Entropy, Quantum coherence"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Formalized theological metaphor with computational implementation",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a formalized theological model; do not treat as verified physics."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The 'Second-Law Proof' is a metaphorical extension, not a rigorous thermodynamic proof.",
+      "The empirical correlation (5.7) is claimed without methodological detail or independent replication.",
+      "The mathematical structure is asserted to be identical across domains without evidence."
+    ],
+    "kill_conditions": [
+      "If the Master Equation is shown to be inconsistent or non-physical.",
+      "If the empirical correlation is retracted or fails replication.",
+      "If the theological mapping is deemed heretical or misaligned with doctrine."
+    ],
+    "lean_target": "A formalized theological framework for evaluating spiritual fruitfulness, with computational tools for exploratory analysis."
+  },
+  "plain_summary": "This document formalizes the Fruits of the Spirit as a mathematical vector dependent on a coherence parameter, using a tanh phase transition. It includes a computational implementation using SBERT embeddings and claims empirical validation. However, the physics is metaphorical, the proof is not rigorous, and the empirical claims are unverified. It should be treated as a theological model, not established science.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\fruits_of_the_spirit_equations.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\fruits_of_the_spirit_equations.canonical-node.json"
+  }
+}

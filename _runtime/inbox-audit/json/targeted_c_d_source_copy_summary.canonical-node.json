@@ -1,0 +1,74 @@
+{
+  "source_id": "targeted_c_d_source_copy_summary",
+  "title": "Targeted C/D Lean Source Copy Summary",
+  "canonical_node": {
+    "axiom": "A curated copy of Lean-related source files from specified directories is a sufficient basis for auditing and formalizing theophysics axioms.",
+    "definitions": [
+      "Targeted source cluster: the set of files copied from the listed roots into the intake folder.",
+      "Lean source: files with .lean extension or otherwise identified as Lean-related in the copied set.",
+      "Excluded artifacts: .lake, .git, node_modules, package/mathlib internals, virtual environments, build/dist output, and cache-style folders."
+    ],
+    "derivation": [
+      "The document lists 410 files copied from 11 roots.",
+      "The document provides counts by extension, showing 80 .lean files and 174 .md files among others.",
+      "The document states that certain directories and file types were excluded.",
+      "The document references a manifest file for the full list.",
+      "Therefore, the document asserts that the copied set is a targeted and curated collection of Lean-related sources."
+    ],
+    "action": "Use the copied source set as the input corpus for auditing and formalizing theophysics axioms in Lean.",
+    "boundary": [
+      "Does not assert that the copied set is complete or exhaustive of all relevant sources.",
+      "Does not assert that the copied files are correct, verified, or consistent.",
+      "Does not assert that the excluded files are irrelevant to the formalization effort.",
+      "Does not provide any content or proof from the copied files."
+    ],
+    "test": [
+      "Verify that the manifest file lists exactly 410 files and matches the counts by extension.",
+      "Verify that the excluded directories and file types are not present in the copied set.",
+      "Verify that the copied files originate from the listed roots."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The existence of the source directories and files on the local machine.",
+      "The manifest file 'targeted_c_d_source_copy_manifest.csv'."
+    ],
+    "dg2_new_capability": "Provides a curated corpus of Lean-related files for auditing and formalization, enabling a focused review of theophysics axioms.",
+    "dg3_preserved_floor": "Preserves the ability to access and review the original source files as they existed at the time of copying.",
+    "dg4_collapse_if_removed": "If this summary is removed, the audit loses its documented basis for which files were included and excluded, potentially causing confusion about the scope of the corpus.",
+    "dg5_translation_registers": [
+      "File paths and directory names.",
+      "File extensions and counts.",
+      "Exclusion rules."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve_as_metadata"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The summary may be mistaken for a proof or verification of the copied files' correctness.",
+      "The term 'targeted' may imply a completeness that is not asserted.",
+      "The counts may be inaccurate if the copy process was interrupted or modified."
+    ],
+    "kill_conditions": [
+      "If the manifest file does not match the summary's counts.",
+      "If the copied files are found to be corrupted or incomplete.",
+      "If the source directories are no longer accessible for verification."
+    ],
+    "lean_target": "No Lean target; this is a metadata document."
+  },
+  "plain_summary": "This document is a summary of a file copy operation, listing 410 files from various directories related to Lean and theophysics. It provides counts by file type and notes exclusions. It does not contain any mathematical content or proofs; it is purely procedural metadata.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\targeted_c_d_source_copy_summary.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\targeted_c_d_source_copy_summary.canonical-node.json"
+  }
+}

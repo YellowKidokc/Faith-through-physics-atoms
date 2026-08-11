@@ -1,0 +1,74 @@
+{
+  "source_id": "run_module2",
+  "title": "run_module2.py",
+  "canonical_node": {
+    "axiom": "The Theophysics test suite is organized into modules that can be executed independently and reproducibly.",
+    "definitions": [
+      "Module: a logical grouping of related tests that can be run independently or in sequence.",
+      "Module runner: a script that executes a specific module's tests in sequence and logs results.",
+      "Field theory tests: tests covering the chi-field's physical properties, including PDE integration, Hubble gradient, Maxwell mirror, and sensitivity analysis."
+    ],
+    "derivation": [
+      "The document describes run_module2.py as a module runner for Module 2 of the test suite.",
+      "Module 2 covers field theory tests, which are listed as chi-field PDE integration, Hubble gradient computation, Maxwell mirror check, and sensitivity analysis.",
+      "The runner executes each test in sequence, logs results to JSON, and prints a pass/fail summary.",
+      "The document claims that modular runners enable selective execution, debugging, parallel execution, and separation of concerns.",
+      "The document claims that the suite produces reproducible, comparable, machine-readable results."
+    ],
+    "action": "Execute the tests in Module 2 in sequence, log results to a JSON file, and print a pass/fail summary.",
+    "boundary": [
+      "Does not execute biblical tests (those are in other modules).",
+      "Does not define the tests themselves; it only runs them.",
+      "Does not guarantee the correctness of the tests or the underlying physics."
+    ],
+    "test": [
+      "Run run_module2.py and verify that it executes the four listed tests in sequence.",
+      "Check that a JSON file is produced at /content/module2_results.json.",
+      "Check that the console output includes PASS/FAIL for each test.",
+      "Verify that the SHA256 checksum of the output is reproducible."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "chi_field.ipynb",
+      "hubble_gradient.ipynb",
+      "maxwell_mirror_verification.ipynb",
+      "MasterEquation"
+    ],
+    "dg2_new_capability": "Provides a structured, automated, and reproducible execution of Module 2 tests, enabling selective and parallel runs.",
+    "dg3_preserved_floor": "The underlying tests and their results are preserved; the runner does not alter the tests themselves.",
+    "dg4_collapse_if_removed": "Without the runner, Module 2 tests would need to be run manually, reducing reproducibility and comparability.",
+    "dg5_translation_registers": [
+      "Python script",
+      "JAX Field Theory Suite",
+      "Module runner"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "infrastructure",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as infrastructure documentation"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document implies that the suite is a 'research platform' without evidence of external validation.",
+      "The claim that the suite produces reproducible results is not verified by the document alone."
+    ],
+    "kill_conditions": [
+      "If the script does not actually run the listed tests.",
+      "If the output is not reproducible."
+    ],
+    "lean_target": "The script exists and runs the listed tests; no physics claims are made."
+  },
+  "plain_summary": "This document describes a Python script that runs a set of field theory tests in the Theophysics project. It is infrastructure code, not a physics claim. The script executes tests, logs results, and prints summaries. The document does not provide evidence of the tests' correctness or the underlying physics.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\run_module2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\run_module2.canonical-node.json"
+  }
+}

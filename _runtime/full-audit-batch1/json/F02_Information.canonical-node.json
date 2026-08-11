@@ -1,0 +1,77 @@
+{
+  "source_id": "F02_Information",
+  "title": "Information is Fundamental",
+  "canonical_node": {
+    "axiom": "Information is ontologically prior to matter; distinguishability IS information.",
+    "definitions": [
+      "Information: That which distinguishes one state from another.",
+      "Distinguishability: The property of being different from something else.",
+      "Logos Field (chi): The self-grounding substrate that instantiates information.",
+      "Self-grounding: A structure that grounds itself, denoted chi(chi) = chi."
+    ],
+    "derivation": [
+      "1. Existence and distinction are established (prior axioms).",
+      "2. Distinguishability is information (definitional identity).",
+      "3. Information requires a substrate (O1.1).",
+      "4. The substrate must be self-grounding to avoid infinite regress (O1.2).",
+      "5. Information is conserved (O1.3).",
+      "6. Therefore, information is fundamental and matter is derivative."
+    ],
+    "action": "Treat information as the primary ontological category; interpret physical theories in information-theoretic terms.",
+    "boundary": [
+      "Does not claim mind is primary (distinct from idealism).",
+      "Does not claim information is merely epistemic.",
+      "Does not provide a complete physical theory of the Logos Field."
+    ],
+    "test": [
+      "Check that any proposed fundamental entity can be distinguished without presupposing information.",
+      "Verify that information conservation holds in closed systems (e.g., black hole physics).",
+      "Assess whether the self-grounding condition chi(chi)=chi is coherent and non-vicious."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "P0.3",
+      "O1.1",
+      "O1.2",
+      "O1.3"
+    ],
+    "dg2_new_capability": "Provides an information-theoretic foundation for physics, unifying quantum mechanics, thermodynamics, and gravity.",
+    "dg3_preserved_floor": "Preserves the prior axioms of existence and distinction.",
+    "dg4_collapse_if_removed": "Without information primacy, the chain of grounding regresses infinitely and materialism remains unchallenged.",
+    "dg5_translation_registers": [
+      "Shannon entropy",
+      "Landauer's principle",
+      "Holographic principle"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "ontological_primacy",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims 'It from Bit' is literally true without empirical proof.",
+      "Equates information with distinguishability without rigorous formal proof.",
+      "Asserts self-grounding as a solution without addressing potential paradoxes."
+    ],
+    "kill_conditions": [
+      "Demonstration of a physical entity with no distinguishing properties.",
+      "Proof that information is purely epistemic.",
+      "Incoherence in the self-grounding condition."
+    ],
+    "lean_target": "Information is a fundamental aspect of physical reality, but not necessarily ontologically prior to matter."
+  },
+  "plain_summary": "This document argues that information is the fundamental substance of reality, with matter being a derivative pattern. It uses philosophical arguments and references to physics (like Landauer's principle and the holographic principle) to support the claim. However, the argument is largely conceptual and lacks rigorous formal proof, so it is not established as a proven fact.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F02_Information.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\F02_Information.canonical-node.json"
+  }
+}

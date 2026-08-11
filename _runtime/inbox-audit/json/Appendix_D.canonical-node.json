@@ -1,0 +1,88 @@
+{
+  "source_id": "Appendix_D",
+  "title": "The Full Framework: Information-Density Time Coupling and the Consciousness Contribution",
+  "canonical_node": {
+    "axiom": "Spacetime emerges from information; information density affects clock rates; structure formation and consciousness increase coherent information density; sin and grace are information operations.",
+    "definitions": [
+      "Information density rho_info(t) = I_coherent(t) / V_horizon(t), where I_coherent is total coherent (low-entropy, structured) information content and V_horizon is comoving horizon volume.",
+      "Coherent information: structured, low-entropy, meaningful pattern; distinct from entropy.",
+      "Consciousness: an information generator operating at rates vastly exceeding non-conscious processes.",
+      "Sin: introduction of noise into a coherent signal, increasing local entropy.",
+      "Grace: injection of coherent information into a corrupted system from outside, decreasing local entropy."
+    ],
+    "derivation": [
+      "Naive ruler evolution predicts Tolman surface brightness scaling of (1+z)^0, contradicting observed (1+z)^-4.",
+      "Introduce information-density time coupling: dt_obs/dt_emit = (a_obs/a_emit)  (rho_info_obs / rho_info_emit)^(1/3).",
+      "To recover Tolman, require rho_info_obs / rho_info_emit ~ (1+z)^-3.",
+      "Structure formation from thermal plasma to conscious observers increases coherent information density by roughly (1+z)^3, satisfying the requirement.",
+      "Consciousness accelerates information creation, further increasing rho_info.",
+      "Sin and grace are operations on information density, affecting local time flow.",
+      "Prophetic events correlate with thermodynamic phase transitions (11/11, p < 10^-8)."
+    ],
+    "action": "Propose a mechanism linking information density to time flow, and use it to explain the Hubble gradient and Tolman scaling; treat sin and grace as information operations with cosmological effects.",
+    "boundary": [
+      "Does not claim consciousness created the universe.",
+      "Does not claim prayer measurably alters the Hubble constant at human scales.",
+      "Does not claim to replace general relativity.",
+      "Does not claim certainty; provides kill conditions.",
+      "Main paper and Appendix B stand alone without this appendix."
+    ],
+    "test": [
+      "KC-D1: If rho_info does not correlate with any measurable cosmological parameter, the mechanism fails.",
+      "KC-D2: If Tolman test deviates from (1+z)^-4 at high precision, the framework fails.",
+      "KC-D3: If consciousness has no measurable effect on local information density, the consciousness claim collapses.",
+      "KC-D4: If PROP-COSMOS correlations are artifacts of bias, the grace-insertion claim fails.",
+      "KC-D5: If a purely mechanistic model reproduces Tolman without information-density coupling, this appendix is unnecessary."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Main paper (emergent distance framework)",
+      "Appendix B (functional form for H0(z))",
+      "Tolman surface brightness observations",
+      "Holographic principle (Bekenstein, Bousso, Susskind)",
+      "Information integration theory of consciousness (Tononi)"
+    ],
+    "dg2_new_capability": "Provides a mechanism (information-density time coupling) to explain why structure fraction affects measured expansion rate and to recover Tolman scaling.",
+    "dg3_preserved_floor": "Preserves the falsifiable predictions of the main paper and Appendix B; Tolman scaling is recovered.",
+    "dg4_collapse_if_removed": "The main paper and Appendix B remain intact; this appendix is explicitly optional context. The Hubble gradient prediction does not collapse without it.",
+    "dg5_translation_registers": [
+      "Information density -> clock rate",
+      "Structure formation -> information density increase",
+      "Consciousness -> information generation rate",
+      "Sin/grace -> entropy change operations"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "no",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "theological_physics_bridge",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "D",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims sin and grace physically alter time flow without empirical support.",
+      "Prophetic event correlations (11/11, p<10^-8) are asserted without independent verification.",
+      "Consciousness contribution to information density is speculative and not quantified.",
+      "Information-density time coupling is introduced ad hoc to fix Tolman scaling."
+    ],
+    "kill_conditions": [
+      "KC-D1: rho_info cosmologically inert",
+      "KC-D2: Tolman deviates from (1+z)^-4",
+      "KC-D3: consciousness has no measurable effect on rho_info",
+      "KC-D4: PROP-COSMOS correlations shown as artifacts",
+      "KC-D5: mechanistic model reproduces Tolman without information coupling"
+    ],
+    "lean_target": "Main paper and Appendix B only; exclude Appendix D from physics claims."
+  },
+  "plain_summary": "This appendix proposes that information density affects time flow, explaining the Hubble gradient and Tolman scaling, and extends to consciousness, sin, and grace as information operations. It is explicitly optional and not required for the main paper. The claims are speculative and lack empirical support; the document itself provides kill conditions. It should be quarantined from physics claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Appendix_D.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Appendix_D.canonical-node.json"
+  }
+}

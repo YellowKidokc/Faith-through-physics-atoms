@@ -1,0 +1,79 @@
+{
+  "source_id": "CANONICAL_MAP",
+  "title": "Canonical Map",
+  "canonical_node": {
+    "axiom": "The canonical map defines the authoritative mapping from skill-level canonical categories to actual vault paths, enabling many-to-many resolution without restructuring.",
+    "definitions": [
+      "Canonical category: A skill-level category such as Axioms, Definitions, Equations, Evidence, Laws, Proofs, Variables.",
+      "Primary path: The first-choice location for a category in the vault.",
+      "Secondary path: Fallback locations for a category when primary yields no direct match.",
+      "Excluded path: Any path containing /_ARCHIVE/, /ZZZ_FOLDER_REVIEW/, /999 codex delete/, or /__David/; excluded from canonical resolution by default.",
+      "Ring 2 linking: Linking that resolves canonical categories to actual files using this map."
+    ],
+    "derivation": [
+      "The map lists live roots and excluded paths.",
+      "For each canonical category, a translation table maps the category to primary and secondary paths.",
+      "Resolution order is defined: primary, then secondary, then Ungrounded Claim warning.",
+      "Excluded paths are never auto-resolved.",
+      "Path format is normalized to vault-relative forward-slash."
+    ],
+    "action": "When resolving a canonical category, use the translation table to locate files in primary paths first, then secondary paths; if unresolved, emit an Ungrounded Claim warning; never resolve from excluded paths.",
+    "boundary": [
+      "Does not create or modify files.",
+      "Does not define the content of axioms, definitions, etc.; only their location.",
+      "Does not resolve from excluded paths.",
+      "Does not guarantee that a category exists in the vault; it only maps where it should live."
+    ],
+    "test": [
+      "For each category, check that the primary path exists and contains files matching the pattern.",
+      "For each category, check that secondary paths are correctly listed.",
+      "Verify that excluded paths are not used in resolution.",
+      "Verify that resolution order is followed in automated tools."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Vault structure with folders 00_AXIOMS, 00_Canonical, 99_MATH_APPENDIX, 99_TAG_NOTES, MASTER_EQ_CONSOLIDATED/00_TOP_CANONICAL_MASTER_EQ/PASS_20260217_201732"
+    ],
+    "dg2_new_capability": "Provides a deterministic mapping from canonical categories to actual vault paths, enabling automated Ring 2 linking without manual restructuring.",
+    "dg3_preserved_floor": "Preserves the existing vault organization and file locations; does not require moving or renaming files.",
+    "dg4_collapse_if_removed": "If removed, Ring 2 linking would lack a defined resolution path, leading to ad-hoc or inconsistent file discovery.",
+    "dg5_translation_registers": [
+      "Axioms -> 00_AXIOMS (^[0-9]+_A...)",
+      "Definitions -> 00_AXIOMS (^[0-9]+_D...)",
+      "Equations -> 00_AXIOMS (^[0-9]+_E...)",
+      "Evidence -> 00_AXIOMS (EV, EXP, PRED, FALS, PROT)",
+      "Laws -> 00_AXIOMS (D19.1 to D19.10)",
+      "Proofs -> 00_AXIOMS (T, LN, BC, F prefixes)",
+      "Variables -> 00_AXIOMS variable-definition notes"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "infrastructure",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "preserve"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The map may be incomplete or outdated; file counts and patterns may change.",
+      "The map does not validate the content of the files it maps to.",
+      "The map assumes the vault structure is stable; changes could break the mapping."
+    ],
+    "kill_conditions": [
+      "If the vault structure changes significantly, the map becomes obsolete.",
+      "If the translation table is found to be inaccurate (e.g., wrong patterns), the map fails."
+    ],
+    "lean_target": "A minimal mapping table with only primary paths and exclusion rules."
+  },
+  "plain_summary": "This document is a mapping table that tells the system where to find canonical categories (like axioms, definitions, equations) in the vault. It lists primary and secondary folders, excludes certain archive folders, and defines a resolution order. It is infrastructure, not a proof of any physical claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CANONICAL_MAP.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CANONICAL_MAP.canonical-node.json"
+  }
+}

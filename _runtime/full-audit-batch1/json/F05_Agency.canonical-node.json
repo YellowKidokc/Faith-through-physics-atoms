@@ -1,0 +1,77 @@
+{
+  "source_id": "F05_Agency",
+  "title": "Agency is Real",
+  "canonical_node": {
+    "axiom": "Some entities possess intrinsic causal power, the capacity for selection among alternatives, and the ability to affect coherence through choice.",
+    "definitions": [
+      "Agent: an entity with intrinsic causal power, will (capacity for selection among alternatives), and moral capacity (ability to affect coherence through choice).",
+      "Causal power: intrinsic ability to produce effects, irreducible to constant conjunction.",
+      "Will: capacity for selection among alternatives, requiring multiple possibilities, reason-responsiveness, and self-determination.",
+      "Moral capacity: ability to affect coherence (C) through choice, where positive C is moral and negative C is immoral.",
+      "Coherence: degree of integration, order, or consistency in a system."
+    ],
+    "derivation": [
+      "Actualization requires an actualizer (from prior axioms).",
+      "An actualizer must possess causal power to bring about effects.",
+      "Agency requires the capacity to select among alternatives (will).",
+      "Some agents can affect coherence through choice, establishing moral capacity.",
+      "Therefore, agency is real and irreducible to deterministic or epiphenomenal processes."
+    ],
+    "action": "Treat agents as genuine causes: recognize that choices have real effects on coherence, and hold agents morally responsible for those choices.",
+    "boundary": [
+      "Does not claim that all events are caused by agents.",
+      "Does not specify the exact physical mechanism of agency.",
+      "Does not claim that quantum indeterminism alone constitutes free will.",
+      "Does not provide a complete theory of moral responsibility."
+    ],
+    "test": [
+      "If agency is real, then denying it should lead to performative self-contradiction (e.g., epiphenomenalism, determinism, eliminativism).",
+      "If agency is real, then choices should have observable effects on coherence (e.g., promise-keeping increases coherence, lying decreases it).",
+      "If agency is real, then moral responsibility practices (praise, blame, legal distinctions) should be coherent and irreducible."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "F04: Observers actualize potentials (A5.1)",
+      "Axioms 014, 015, 016 (O4.1, O4.2, O4.3)"
+    ],
+    "dg2_new_capability": "Provides a foundation for moral responsibility and the possibility of genuine choice, enabling the system to address ethical and theological claims about human freedom.",
+    "dg3_preserved_floor": "Preserves the causal efficacy of consciousness and the reality of moral distinctions, preventing collapse into epiphenomenalism or hard determinism.",
+    "dg4_collapse_if_removed": "If agency is removed, the system loses the basis for moral responsibility, the meaningfulness of choice, and the coherence of the theological narrative of partnership with God.",
+    "dg5_translation_registers": [
+      "Physics: causal power, quantum indeterminism, observer effect",
+      "Theology: imago Dei, divine command to choose, divine-human cooperation",
+      "Ethics: moral responsibility, praise/blame, legal distinctions"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "metaphysical",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that agency is 'real' without providing a rigorous physical or formal proof.",
+      "Uses self-refutation arguments that may be considered rhetorical rather than logical.",
+      "Equates quantum indeterminism with a necessary condition for free will without empirical support.",
+      "Assumes that moral responsibility practices are universal and irreducible without addressing cultural variation."
+    ],
+    "kill_conditions": [
+      "If causal power is shown to be eliminable from physics without loss of explanatory power.",
+      "If will can be fully reduced to deterministic processes without remainder.",
+      "If moral agency is demonstrated to be an illusion (e.g., through neuroscientific evidence)."
+    ],
+    "lean_target": "Axiom 014 (O4.1): Some entities possess intrinsic power to affect others."
+  },
+  "plain_summary": "This document argues that agency is real, meaning that agents genuinely cause effects, have free will, and possess moral capacity. It critiques epiphenomenalism, hard determinism, and eliminativism as self-refuting. The argument relies on philosophical reasoning and theological references rather than formal proof, so it is not established as a rigorous theorem.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F05_Agency.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\F05_Agency.canonical-node.json"
+  }
+}

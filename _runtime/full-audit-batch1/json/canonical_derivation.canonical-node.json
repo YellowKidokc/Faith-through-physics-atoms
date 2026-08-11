@@ -1,0 +1,79 @@
+{
+  "source_id": "canonical_derivation",
+  "title": "canonical_derivation.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field Lagrangian density, when varied, yields the equations of motion and conserved quantities that define the theoretical framework.",
+    "definitions": [
+      "chi-field: a scalar field with Lagrangian density L = (1/2)(chi)^2 - (1/2)m^2chi^2 - (/4)chi^4 + J_grace chi",
+      "J_grace: a source term for the chi-field, with unresolved dimensional issues",
+      "G_eff: effective gravitational constant, G_eff = G / (1 + chi)",
+      "Gross-Pitaevskii equation: non-relativistic limit of the chi-field equation, describing Bose-Einstein condensates"
+    ],
+    "derivation": [
+      "Section 1: Write chi-field action in flat and curved spacetime.",
+      "Section 2: Apply Euler-Lagrange to obtain chi + mchi + chi = J_grace.",
+      "Section 3: Dimensional analysis shows product form fails, but chi-field Lagrangian passes.",
+      "Section 4: Compute propagator residue, found to be +1, indicating no ghost modes.",
+      "Section 5: Take non-relativistic limit to obtain Gross-Pitaevskii equation.",
+      "Section 6: Use Noether's theorem to derive conserved currents and stress-energy tensor.",
+      "Section 7: Couple to gravity to get modified Einstein equations with G_eff.",
+      "Section 8: Derive grace source term J_grace, noting dimensional issue.",
+      "Section 9: Stability analysis at chi=0 shows stable minimum for m>0, >0.",
+      "Section 10: Provide honest status report of derived vs asserted vs open."
+    ],
+    "action": "Use the chi-field Lagrangian as the foundational theoretical model, deriving predictions such as the Hubble tension via G_eff, and ensure any numerical implementations are consistent with these symbolic derivations.",
+    "boundary": [
+      "Does not provide numerical solutions or experimental validation.",
+      "Does not resolve the dimensional issue in J_grace.",
+      "Does not prove that the chi-field exists in nature; only that the equations are self-consistent."
+    ],
+    "test": [
+      "Verify each symbolic derivation step using SymPy or hand calculation.",
+      "Check that the propagator residue is indeed +1.",
+      "Confirm that the non-relativistic limit yields the Gross-Pitaevskii equation.",
+      "Ensure that the modified Einstein equations reduce to standard GR when chi=0."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "SymPy symbolic mathematics library",
+      "Standard physics derivations (Euler-Lagrange, Noether's theorem, etc.)"
+    ],
+    "dg2_new_capability": "Provides an analytic derivation of the chi-field equations and their consequences, including a prediction for the Hubble tension via G_eff.",
+    "dg3_preserved_floor": "Preserves the consistency of the theoretical framework by deriving equations from a Lagrangian, ensuring no ad-hoc assumptions beyond the stated ones.",
+    "dg4_collapse_if_removed": "Without this derivation, the framework lacks a rigorous foundation; numerical results would have no theoretical backing.",
+    "dg5_translation_registers": [
+      "Symbolic mathematics (SymPy)",
+      "Theoretical physics (field theory, general relativity)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theoretical derivation",
+    "proof_label": "SYMBOLIC_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as theoretical foundation, but flag open issues"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The derivation is symbolic but not independently verified; may contain errors.",
+      "The dimensional issue in J_grace is unresolved, potentially invalidating the source term.",
+      "The claim that the chi-field explains the Hubble tension is not proven; it is a prediction that needs observational confirmation."
+    ],
+    "kill_conditions": [
+      "If the propagator residue is not +1, the theory is unphysical.",
+      "If the dimensional issue in J_grace cannot be resolved, the source term is ill-defined.",
+      "If the stability analysis fails for physically relevant parameters, the vacuum is unstable."
+    ],
+    "lean_target": "A rigorous symbolic derivation with clear assumptions and open problems, but not a proof of physical reality."
+  },
+  "plain_summary": "This document is a symbolic derivation of a chi-field theory using SymPy. It derives the field equations, shows the propagator has no ghosts, and predicts a modified gravitational constant that could explain the Hubble tension. However, it explicitly notes an unresolved dimensional issue in the source term and does not provide experimental validation.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\canonical_derivation.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\canonical_derivation.canonical-node.json"
+  }
+}

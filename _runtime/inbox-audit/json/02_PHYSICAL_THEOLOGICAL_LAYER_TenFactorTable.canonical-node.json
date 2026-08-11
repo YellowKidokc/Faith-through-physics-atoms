@@ -1,0 +1,85 @@
+{
+  "source_id": "02_PHYSICAL_THEOLOGICAL_LAYER_TenFactorTable",
+  "title": "Layer 2  -  The Physical-Theological Mathematics",
+  "canonical_node": {
+    "axiom": "The ten formal factors (G, M, E, S, T, K, R, Q, F, C) each have a physical law-form and a spiritual law-form that share the same algebraic structure, and the total coherence chi_total is the integral over space-time of the product of these factors.",
+    "definitions": [
+      "G: External negentropy influx (physical) / Grace (spiritual), non-negative real.",
+      "M: Alignment cosine between state vector and reference vector, in [-1,1].",
+      "E: Signal propagation fidelity (Shannon capacity) / Truth transmission, non-negative real.",
+      "S: Entropy production (non-negative) with effective S_eff = e^(-*S_prod) in (0,1].",
+      "T: Temporal integration (Action) / Consequence, positive real.",
+      "K: Compression (Kolmogorov) / Logos information density, non-negative real.",
+      "R: Irreversible phase transition indicator, in {0,1}.",
+      "Q: Superposition measure (unresolved possibility), in [0,1].",
+      "F: Non-local correlation (entanglement) / Faith-bond, in [0,1].",
+      "C: Total integration / Coherence / Christ, in [0,1].",
+      "chi_total: Master equation integral of product of factors over space-time."
+    ],
+    "derivation": [
+      "Each factor is defined with a formal type and a physical law-form.",
+      "Each factor is given a spiritual law-form that is structurally isomorphic to the physical law-form.",
+      "The master equation integrates the product of all ten factors over space-time to yield chi_total.",
+      "Two asymmetries are identified: F is directional with three-body conservation, and C is the integrator with no internal partner.",
+      "The document claims this isomorphism is the no-drift claim: same algebra, two interpretations."
+    ],
+    "action": "The system should treat the ten factors as having dual physical and spiritual interpretations with identical algebraic structure, and use the master equation to compute chi_total as the integrated product.",
+    "boundary": [
+      "This layer does not define the formal types of the variables (that is Layer 1).",
+      "This layer does not provide public communication or teaching content (that is Layer 3).",
+      "This layer does not claim proof of the isomorphism; it is a proposed structural assertion.",
+      "The asymmetries in F and C are load-bearing and not to be treated as bugs."
+    ],
+    "test": [
+      "For each factor, verify that the physical and spiritual law-forms share the same algebraic structure.",
+      "Verify that the master equation integrates the product of the ten factors correctly.",
+      "Check that the two asymmetries are preserved and not symmetrized away.",
+      "Assess whether each row holds under hostile review and empirical test."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Layer 1 formal definitions (Definition 10)",
+      "Canonical April 16 doc (NO_DRIFT_CANONICAL_LAWS.md)",
+      "Wolfram and GPT verification (claimed)"
+    ],
+    "dg2_new_capability": "Provides a dual physical-spiritual mapping for each of the ten factors, enabling cross-domain interpretation and a master equation for total coherence.",
+    "dg3_preserved_floor": "Preserves the formal types and definitions from Layer 1, and the no-drift claim of algebraic invariance.",
+    "dg4_collapse_if_removed": "Without this layer, the bridge between physical laws and spiritual laws is lost, and the master equation lacks its factor definitions.",
+    "dg5_translation_registers": [
+      "Physical law-form",
+      "Spiritual law-form",
+      "Formal type"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Isomorphism claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine as proposed canonical; require formal verification of isomorphism before promotion."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims of structural isomorphism may be metaphorical rather than mathematically rigorous.",
+      "The master equation is presented as a product integral without derivation or empirical validation.",
+      "The spiritual law-forms introduce parameters ((s), A, W_grace) that are not defined operationally.",
+      "The document claims GPT verification but does not provide a formal proof artifact."
+    ],
+    "kill_conditions": [
+      "If any factor's physical and spiritual forms are not algebraically identical, the isomorphism claim fails.",
+      "If the master equation is not dimensionally consistent or mathematically well-defined.",
+      "If the asymmetries are shown to be arbitrary rather than necessary."
+    ],
+    "lean_target": "Formalize the isomorphism claim in Lean 4 for at least one factor to test feasibility."
+  },
+  "plain_summary": "This document maps ten formal factors to both physical and spiritual equations, claiming they share the same algebraic structure. It presents a master equation integrating their product. However, the isomorphism is asserted, not proven, and the spiritual parameters are not rigorously defined. The document is a proposed canonical addendum, not a verified proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\02_PHYSICAL_THEOLOGICAL_LAYER_TenFactorTable.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\02_PHYSICAL_THEOLOGICAL_LAYER_TenFactorTable.canonical-node.json"
+  }
+}

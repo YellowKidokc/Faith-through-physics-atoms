@@ -1,0 +1,75 @@
+{
+  "source_id": "Family_Lagrangian_Workbench",
+  "title": "Family_Lagrangian_Workbench.ipynb",
+  "canonical_node": {
+    "axiom": "The Lowe Coherence Lagrangian (LLC) is a legitimate dynamical system that remains stable across randomized parameter configurations.",
+    "definitions": [
+      "Lowe Coherence Lagrangian (LLC): L(q, q) =  chi(q) * q K q  V(q), where chi(q) is the coherence function (product of all 10 variable contributions), K is the 1010 kinetic matrix with symmetry pair couplings, and V(q) = S * chi(q) is the entropic potential.",
+      "Pass rate: fraction of tests passed in a given model evaluation.",
+      "Stress sweep: 60 independent builds with randomized weights, pair strength, confinement, and chi parameters."
+    ],
+    "derivation": [
+      "The LLC is defined with a coherence function chi(q) multiplying the kinetic term and an entropic potential V(q) = S*chi(q).",
+      "Euler-Lagrange equations are derived from L, yielding equations of motion where every variable influences every other through chi.",
+      "The notebook runs the LLC against standard models (harmonic oscillator, coupled oscillator pair) and then performs a 60-run stress sweep with randomized parameters.",
+      "Results: mean pass rate 0.858 across the stress sweep; mass matrix full-rank and positive definite in all tested configurations; energy drift 8.22e-9 for LLC.",
+      "One test failure (zeroing variables suppresses chi) is explicitly noted and explained as a sensitivity spike, not a proof of product-irreducibility."
+    ],
+    "action": "The system should treat the LLC as a stable dynamical system candidate, subject to further validation, and use the stress sweep methodology as a template for testing other proposed Lagrangians.",
+    "boundary": [
+      "This document does not prove the LLC produces physically meaningful predictions beyond stability; it only demonstrates numerical stability across parameter variations.",
+      "The 85.8% pass rate is not a proof of physical correctness; it is a stress test result.",
+      "The document does not claim the LLC is the correct theory of everything; it only claims it is not fragile."
+    ],
+    "test": [
+      "Run the 60-run stress sweep with randomized parameters and verify mean pass rate  0.85.",
+      "Check that the mass matrix is full-rank and positive definite across all tested configurations.",
+      "Verify energy drift is below a numerically negligible threshold (e.g., < 1e-8).",
+      "Confirm that the one known failure (zeroing variables suppresses chi) is reproducible and correctly interpreted."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Standard physics models (harmonic oscillator, coupled oscillator pair) as benchmarks.",
+      "Numerical methods for solving Euler-Lagrange equations and computing energy drift.",
+      "Random parameter generation for stress sweep."
+    ],
+    "dg2_new_capability": "Provides a stress-testing protocol for evaluating the stability of a proposed Lagrangian across randomized parameter configurations, yielding a quantitative pass rate and matrix properties.",
+    "dg3_preserved_floor": "Preserves the mathematical structure of the LLC and the standard benchmark models; does not alter the underlying equations.",
+    "dg4_collapse_if_removed": "If this document is removed, the LLC loses its empirical stability evidence, reducing it to an untested theoretical construct.",
+    "dg5_translation_registers": [
+      "Lagrangian mechanics",
+      "Numerical analysis",
+      "Statistical testing"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "empirical stability claim",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "preserve as evidence of stability; do not upgrade to proof of physical validity"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting the 85.8% pass rate as proof of physical correctness rather than numerical stability.",
+      "Treating the LLC as validated physics without independent theoretical derivation.",
+      "Ignoring the one test failure and its explanation."
+    ],
+    "kill_conditions": [
+      "If the stress sweep is not reproducible with the same pass rate.",
+      "If the mass matrix is found not positive definite in some configuration.",
+      "If the energy drift is not numerically negligible."
+    ],
+    "lean_target": "Formalize the stress sweep as a reusable Lean theorem about the stability of a class of Lagrangians with coherence functions."
+  },
+  "plain_summary": "This document reports a stress test of the Lowe Coherence Lagrangian (LLC) using a 60-run randomized parameter sweep. It shows the LLC is stable across many configurations, with a mean pass rate of 85.8%, a full-rank positive definite mass matrix, and low energy drift. However, this is empirical evidence of stability, not a proof of physical correctness. The document is honest about one test failure and does not overclaim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Family_Lagrangian_Workbench.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Family_Lagrangian_Workbench.canonical-node.json"
+  }
+}

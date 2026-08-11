@@ -1,0 +1,77 @@
+{
+  "source_id": "test04_grace_response_time",
+  "title": "Grace Response Time Test",
+  "canonical_node": {
+    "axiom": "Grace response in biblical communities follows an exponential approach to equilibrium, consistent with a first-order linear system.",
+    "definitions": [
+      "Grace event: identifiable historical divine intervention, covenant renewal, or prophetic call.",
+      "Response curve: measurable behavioral or textual change in surrounding communities over time.",
+      "Time constant : characteristic time for the response to reach ~63.2% of the new equilibrium."
+    ],
+    "derivation": [
+      "The chi-field G component models grace as a forcing term in a first-order ODE.",
+      "For a step input of grace, the solution is an exponential approach to a new equilibrium.",
+      "Thus, the predicted response pattern is exponential, not step or linear.",
+      "Historical data on biblical grace events is fitted to exponential curves to extract  values.",
+      "Consistency of  values across eras supports the model's prediction."
+    ],
+    "action": "The system should test whether historical grace responses exhibit exponential approach behavior and whether fitted  values cluster within a predicted range.",
+    "boundary": [
+      "Does not claim to prove the chi-field is the underlying mechanism.",
+      "Does not assert that grace is fast or slow; only that the response form is exponential.",
+      "Does not address non-biblical or modern grace events."
+    ],
+    "test": [
+      "Identify grace events in biblical history.",
+      "Measure response curves from textual/behavioral changes.",
+      "Fit exponential curves and extract  values.",
+      "Compare  distribution to model prediction.",
+      "Perform statistical test to distinguish exponential from step or linear response."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Chi-field model with G component",
+      "Historical biblical data",
+      "Curve fitting and statistical methods"
+    ],
+    "dg2_new_capability": "Provides a quantitative test for the G component's prediction of exponential grace response, distinguishing it from alternative response models.",
+    "dg3_preserved_floor": "Preserves the qualitative claim that grace events produce measurable community responses.",
+    "dg4_collapse_if_removed": "Without this test, the G component's dynamic prediction remains untested and the model's empirical support is weakened.",
+    "dg5_translation_registers": [
+      "Exponential approach to equilibrium",
+      "First-order linear system",
+      "Time constant ",
+      "Grace injection"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical test result",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a test result; do not elevate to proof of mechanism."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the exponential fit proves the chi-field mechanism.",
+      "Overinterpreting  clustering as universal law.",
+      "Ignoring alternative explanations for exponential patterns."
+    ],
+    "kill_conditions": [
+      "If the statistical test fails to distinguish exponential from other forms.",
+      "If  values are not consistent across eras.",
+      "If data is insufficient or cherry-picked."
+    ],
+    "lean_target": "Formalize the statistical test and ensure reproducibility in a Lean or Python environment."
+  },
+  "plain_summary": "This document reports a test that checks whether biblical communities' responses to grace events follow an exponential curve, as predicted by the chi-field model. The test passed, but it only shows consistency, not proof of the underlying mechanism. The result should be treated as a supporting observation, not a definitive proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test04_grace_response_time.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test04_grace_response_time.canonical-node.json"
+  }
+}

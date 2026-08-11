@@ -1,0 +1,77 @@
+{
+  "source_id": "CF07_Incoherence",
+  "title": "The Prosecution of Incoherence",
+  "canonical_node": {
+    "axiom": "A self-knowing and self-loving God requires a Trinity of persons (BC4).",
+    "definitions": [
+      "BC4: The boundary condition that God must be self-knowing and self-loving, requiring internal distinction.",
+      "Trinity: The doctrine that God exists as three persons in one essence.",
+      "Incoherence: Failure to satisfy BC4 due to lack of internal distinction or self-relation."
+    ],
+    "derivation": [
+      "Self-knowledge requires a distinction between knower and known.",
+      "Self-love requires a distinction between lover and beloved.",
+      "The relation between distinct persons is itself a real person (third).",
+      "Therefore, a self-knowing and self-loving God must have at least three persons (Trinity).",
+      "Non-Trinitarian religions fail to provide such distinction, hence fail BC4."
+    ],
+    "action": "Prosecute non-Trinitarian religions for failing BC4 and declare them incoherent.",
+    "boundary": [
+      "Does not provide a formal proof of Trinity's existence.",
+      "Does not address all possible non-Trinitarian formulations.",
+      "Does not engage with alternative definitions of self-knowledge or self-love.",
+      "Does not establish that BC4 is a necessary condition for true God."
+    ],
+    "test": [
+      "Check if each religion's concept of God includes internal distinction.",
+      "Verify that the derivation from self-knowledge/self-love to Trinity is logically valid.",
+      "Assess whether the BC4 scorecard accurately represents each religion's beliefs."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "T01_TrinityNecessity",
+      "T04_BC4Uniqueness",
+      "D03_TrinityUnique",
+      "D04_ChristUnique"
+    ],
+    "dg2_new_capability": "Provides a systematic prosecution of non-Trinitarian religions based on BC4.",
+    "dg3_preserved_floor": "Preserves the claim that only Trinity satisfies BC4.",
+    "dg4_collapse_if_removed": "Without this document, the prosecution of non-Trinitarian religions lacks a consolidated argument.",
+    "dg5_translation_registers": [
+      "theological",
+      "apologetic",
+      "mathematical"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "no",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "theological prosecution",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "D",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Declares verdict GUILTY without complete cross-examinations.",
+      "Assumes BC4 is universally valid without proof.",
+      "Equates mathematical uniqueness with theological truth.",
+      "Overgeneralizes about complex religions."
+    ],
+    "kill_conditions": [
+      "If BC4 is not a necessary condition for true God.",
+      "If self-knowledge/self-love can be satisfied without internal distinction.",
+      "If the derivation from self-knowledge to Trinity is invalid."
+    ],
+    "lean_target": "Formalize the derivation of Trinity from self-knowledge/self-love in a proof assistant."
+  },
+  "plain_summary": "This document argues that non-Trinitarian religions are incoherent because they fail to satisfy BC4, which requires a self-knowing and self-loving God to be triune. However, the argument is incomplete and relies on unproven assumptions, so it is not established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CF07_Incoherence.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CF07_Incoherence.canonical-node.json"
+  }
+}

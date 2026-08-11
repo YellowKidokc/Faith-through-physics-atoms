@@ -1,0 +1,75 @@
+{
+  "source_id": "run_all",
+  "title": "run_all.ipynb",
+  "canonical_node": {
+    "axiom": "The complete Theophysics test suite must be executable in a single Colab session by any user with a Google account, producing reproducible outputs.",
+    "definitions": [
+      "run_all.ipynb: a Google Colab notebook that executes all project notebooks in a defined sequence.",
+      "Complete test suite: all JAX field theory tests (1A, 1B, 2A, 2B, 3, 4, 5) and all biblical empirical tests (03-09).",
+      "Reproducible: the same inputs and code produce the same outputs, verified by SHA256 checksums."
+    ],
+    "derivation": [
+      "The document states that run_all.ipynb executes all notebooks in a specific order.",
+      "It claims that running all cells produces full console output, JSON result files, PNG charts, a summary JSON, and SHA256 checksums.",
+      "It asserts that this makes the framework reproducible by anyone, not just the author.",
+      "It equates this to a repeatable experiment protocol."
+    ],
+    "action": "Execute all project notebooks in the specified sequence within a single Colab session, producing all outputs and verifying reproducibility via checksums.",
+    "boundary": [
+      "Does not itself contain the scientific content of the tests; it orchestrates their execution.",
+      "Does not guarantee that the tests pass; it only executes them and reports results.",
+      "Does not provide a formal proof of the underlying physics; it is a computational runner."
+    ],
+    "test": [
+      "Run the notebook in a fresh Colab instance and verify that all cells execute without error.",
+      "Check that all expected output files (JSON, PNG, summary) are generated.",
+      "Verify that the SHA256 checksums match the expected values for reproducibility."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "config.ipynb / theophysics_core.py",
+      "master_equation.ipynb",
+      "chi_field.ipynb",
+      "JAX Field Theory suite (Tests 1A, 1B, 2A, 2B, 3, 4, 5)",
+      "Biblical Empirical suite (Tests 03-09)",
+      "generate_all_charts.ipynb",
+      "version_manager.ipynb"
+    ],
+    "dg2_new_capability": "Provides a one-button execution mechanism that allows any user to run the entire test suite without manual setup, enabling independent verification.",
+    "dg3_preserved_floor": "Preserves the ability to run each individual test notebook independently, as the runner simply orchestrates them.",
+    "dg4_collapse_if_removed": "Without run_all.ipynb, the claim of easy reproducibility by anyone is weakened; users would need to manually run each notebook in sequence, increasing friction and potential for error.",
+    "dg5_translation_registers": [
+      "Execution sequence",
+      "Output artifacts",
+      "Reproducibility checks"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "operational",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as operational artifact"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims that running the notebook reproduces the complete proof, but the proof itself is not established; it only reproduces the test suite execution.",
+      "The phrase 'computational equivalent of repeatable experiment protocol' may overstate the scientific validity of the tests."
+    ],
+    "kill_conditions": [
+      "If the notebook fails to execute in a fresh Colab environment due to missing dependencies or code errors.",
+      "If the checksums do not match, indicating non-reproducibility."
+    ],
+    "lean_target": "A script that executes all tests and produces a summary report, without claiming proof of the underlying theory."
+  },
+  "plain_summary": "run_all.ipynb is a master notebook that runs all Theophysics tests in one go, aiming to make the framework easy to reproduce. It is an operational tool, not a proof of the theory itself.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\run_all.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\run_all.canonical-node.json"
+  }
+}

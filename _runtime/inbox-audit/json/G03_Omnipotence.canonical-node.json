@@ -1,0 +1,77 @@
+{
+  "source_id": "G03_Omnipotence",
+  "title": "Divine Omnipotence",
+  "canonical_node": {
+    "axiom": "God can actualize any coherent state of affairs; omnipotence is the capacity to actualize all possibilities, limited only by coherence itself.",
+    "definitions": [
+      "Omnipotence: the capacity to actualize any coherent state of affairs.",
+      "Coherent state: a state of affairs that is logically possible, not containing contradictions.",
+      "Actualization: bringing a potential state into actuality, as by a terminal observer.",
+      "Terminal Observer: the entity that actualizes potentials by observation (from G01)."
+    ],
+    "derivation": [
+      "From G01, God is the Terminal Observer who actualizes potentials.",
+      "Potentials exist as coherent possibilities (quantum superposition).",
+      "Actualization of any potential requires an actualizer; God is that actualizer.",
+      "Therefore, God can actualize any coherent potential (G2.1).",
+      "Contradictions (P  not P) are not coherent states; they are not potentialities.",
+      "Actualizing a non-potential is not an action; thus, God cannot actualize contradictions (G2.2).",
+      "God's power is defined as the ability to actualize potentials (G2.3).",
+      "No external constraints exist because all things depend on God (G01)."
+    ],
+    "action": "The system should treat God as capable of actualizing any coherent state, and should reject any claim that God lacks power due to external constraints or logical impossibilities.",
+    "boundary": [
+      "Does not assert that God can do the logically impossible.",
+      "Does not claim that God's choices are arbitrary; omnipotence is not brute force.",
+      "Does not address the problem of evil beyond noting it is a matter of choice, not power.",
+      "Does not specify which coherent states God actually actualizes."
+    ],
+    "test": [
+      "Check that any proposed limit on God's power is either a logical contradiction or an external constraint that depends on God.",
+      "Verify that the formal statement P (Coherent(P) -> Can(God, Actualize(P))) is used consistently.",
+      "Ensure that paradoxes of omnipotence are resolved by identifying them as incoherent descriptions."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G01_SelfGrounding"
+    ],
+    "dg2_new_capability": "Provides a formal definition of omnipotence as actualization of coherent states, enabling logical analysis of divine power.",
+    "dg3_preserved_floor": "Preserves the grounding of actuality in God as Terminal Observer from G01.",
+    "dg4_collapse_if_removed": "Without this axiom, the concept of divine power becomes undefined or arbitrary, weakening the coherence of the theological framework.",
+    "dg5_translation_registers": [
+      "Theological omnipotence",
+      "Modal logic of possibility",
+      "Quantum actualization"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological axiom",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "retain as axiom with logical consistency checks"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Equating logical coherence with ontological possibility without proof.",
+      "Assuming that God's observation necessarily actualizes a specific outcome without addressing quantum measurement problems.",
+      "Treating the absence of external constraints as proof of omnipotence, which is a negative argument."
+    ],
+    "kill_conditions": [
+      "If a coherent state is found that God cannot actualize, the axiom fails.",
+      "If the concept of 'coherent state' is shown to be ill-defined or inconsistent.",
+      "If G01 is disproven, the derivation collapses."
+    ],
+    "lean_target": "Formalize the definition of coherence and the actualization operator in a proof assistant to test consistency."
+  },
+  "plain_summary": "This document defines divine omnipotence as the ability to actualize any coherent state, excluding logical contradictions. It argues against weak God theologies, deism, and process theology by claiming that any apparent limit is either a choice or an incoherent concept. The axiom relies on G01 (God as Terminal Observer) and is internally consistent, but it is not formally proven.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G03_Omnipotence.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\G03_Omnipotence.canonical-node.json"
+  }
+}

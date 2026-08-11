@@ -1,0 +1,85 @@
+{
+  "source_id": "W3.5-law-1-canonical.canonical",
+  "title": "Law 1 of 10  -  Gravitation: Newton - Grace",
+  "canonical_node": {
+    "axiom": "Gravity is the physical law that most closely models the spiritual dynamics of sin and grace, with sin as accumulated curvature and grace as the orbit that avoids collapse.",
+    "definitions": [
+      "Gravity: the attraction between masses, described by Newton's law F=Gm1m2/r^2 and Einstein's field equations.",
+      "Sin: accumulated curvature of the soul, analogous to gravitational collapse.",
+      "Grace: the orbit, a non-collapsing path in the same field, not a separate force.",
+      "R: the refusal factor, the theological analog of angular momentum that is not self-salvation.",
+      "Free fall: motion along a geodesic, experiencing no proper acceleration.",
+      "Prevenient grace: the given geometry that makes a non-collapsing path possible before self-effort."
+    ],
+    "derivation": [
+      "Gravity is the weakest force but never cancels, accumulates, cannot be shielded, affects all equally, does not settle, and has a threshold beyond which escape is impossible.",
+      "These features map to sin: small wrongs accumulate, cannot be shielded, affect all, and lead to a point of no return.",
+      "Grace is modeled by the orbit: adding angular momentum L creates a stable orbit, while L=0 leads to infall.",
+      "In general relativity, both infall and orbit are free fall; the difference is the curvature of spacetime.",
+      "Angular momentum is conserved; a closed system cannot change its own total L, so escape requires external torque.",
+      "Thus, grace is a conservation constraint: prevenient grace is the given condition that allows a non-collapsing path."
+    ],
+    "action": "The system should treat gravity as a structural metaphor for sin and grace, with the mathematical formalism of general relativity and orbital mechanics as the basis for theological interpretation, while clearly marking the theological claims as bridge statements.",
+    "boundary": [
+      "Does not claim identity-grade isomorphism between gravity and sin/grace; the break is R.",
+      "Does not provide operational definitions for  and d.",
+      "Does not derive the inverse-square exponent from first principles; relies on Bertrand's theorem as suggestive.",
+      "Does not claim that R can be measured or that the theological claims are proven by physics."
+    ],
+    "test": [
+      "Verify that the mathematical statements (Lean targets A, B, C) are formally proven in Lean 4.",
+      "Check that the theological interpretations are clearly marked as bridge, not derived.",
+      "Ensure that the kill conditions are monitored: any evidence of shielding, self-correction, or non-sharp transition would invalidate the analogy.",
+      "Confirm that the conservation law argument is correctly stated and does not overclaim."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Newton's law of gravitation",
+      "Einstein's field equations",
+      "Effective potential and orbital mechanics",
+      "Conservation of angular momentum",
+      "Noether's theorem",
+      "Bertrand's theorem"
+    ],
+    "dg2_new_capability": "Provides a structural bridge between gravity and sin/grace, with a conservation-law argument for prevenient grace, and identifies a specific break (R) that prevents full isomorphism.",
+    "dg3_preserved_floor": "Preserves the physical laws as they are, without altering their mathematical content; the theological interpretation is added as a layer.",
+    "dg4_collapse_if_removed": "If the conservation law argument is removed, the claim that grace is a conservation constraint collapses; the bridge becomes merely analogical without a mechanism.",
+    "dg5_translation_registers": [
+      "Physics: gravity, geodesics, effective potential, angular momentum",
+      "Theology: sin, grace, prevenient grace, free will (R)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "structural bridge",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming isomorphism when R is unresolved",
+      "Treating the conservation law as proof of prevenient grace",
+      "Overinterpreting the physical features as moral counterparts without rigorous mapping",
+      "Suggesting that the Lean proofs establish theological claims"
+    ],
+    "kill_conditions": [
+      "A relational or moral influence whose falloff is inconsistent with inverse-square under any defensible metric.",
+      "A moral system that genuinely shields  -  insulates from accumulated consequence rather than transferring or delaying it.",
+      "Self-correcting moral collapse: a runaway that arrests with no external input.",
+      "R shown to have no critical value  -  the bound/unbound transition smooth rather than sharp.",
+      "A closed system that generates its own net total angular momentum."
+    ],
+    "lean_target": "Formalize and prove the three Lean targets (A, B, C) to establish the physics side; the theological side remains prose."
+  },
+  "plain_summary": "This document proposes a structural analogy between gravity and sin/grace, where sin is like gravitational collapse and grace is like an orbit. It uses physics concepts like effective potential and conservation of angular momentum to argue that grace is a conservation constraint. However, the analogy is not complete due to the unresolved factor R (refusal), and the theological claims are not proven by the physics. The document is coherent but should be treated as a bridge, not a proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W3.5-law-1-canonical.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W3.5-law-1-canonical.canonical.canonical-node.json"
+  }
+}

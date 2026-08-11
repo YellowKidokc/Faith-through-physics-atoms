@@ -1,0 +1,82 @@
+{
+  "source_id": "H03_Soul",
+  "title": "The Soul Field (_S)",
+  "canonical_node": {
+    "axiom": "The soul (_S) is a real, localized, persistent information pattern in the chi-field that constitutes personal identity and survives physical death.",
+    "definitions": [
+      "Soul (_S): A coherent information pattern in the chi-field.",
+      "chi-field: The fundamental information field (Logos field).",
+      "Localized: Having specific identity and boundaries within the chi-field.",
+      "Persistent: Continuing through time without cessation.",
+      "Identity: The continuity of the soul pattern."
+    ],
+    "derivation": [
+      "Information is real and conserved (F02).",
+      "The soul is defined as an information pattern in chi (HS.1).",
+      "Therefore, the soul is real and conserved.",
+      "The soul is localized, as evidenced by the first-person perspective (HS.2).",
+      "The soul persists through time, as evidenced by memory and responsibility (HS.3).",
+      "Personal identity is the continuity of the soul pattern (HS.4).",
+      "Since information is conserved, the soul survives physical death (HS.5)."
+    ],
+    "action": "Treat the soul as a real, localized, persistent information pattern; use this as the basis for personal identity and post-mortem survival.",
+    "boundary": [
+      "Does not claim the soul is a material substance.",
+      "Does not claim the soul is a universal consciousness.",
+      "Does not claim to provide a physical mechanism for the soul's interaction with the body.",
+      "Does not claim empirical detection of the soul."
+    ],
+    "test": [
+      "Check that the soul is defined as an information pattern, not a substance.",
+      "Check that the soul is localized, not universal.",
+      "Check that the soul persists through change.",
+      "Check that identity is tied to soul continuity, not body or memory.",
+      "Check that death does not destroy the soul."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "F02 (Information is conserved)",
+      "chi-field existence"
+    ],
+    "dg2_new_capability": "Provides a non-material, information-based account of personal identity and survival after death.",
+    "dg3_preserved_floor": "Preserves the reality of the self against eliminativism, no-self doctrines, and bundleism.",
+    "dg4_collapse_if_removed": "Without this axiom, personal identity is reduced to physical or psychological continuity, and survival after death is not supported.",
+    "dg5_translation_registers": [
+      "Information theory",
+      "Philosophy of mind",
+      "Theology"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "metaphysical",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims the soul is real without empirical evidence.",
+      "Equates information conservation with soul survival without a mechanism.",
+      "Uses self-reference arguments as proof of a substantial self.",
+      "Relies on theological assertions as support."
+    ],
+    "kill_conditions": [
+      "If information is not conserved in the required sense.",
+      "If the soul pattern is not localized or not persistent.",
+      "If personal identity can be explained without a soul.",
+      "If death destroys the information pattern."
+    ],
+    "lean_target": "A minimal claim: the self is a real, persistent pattern, but not necessarily supernatural."
+  },
+  "plain_summary": "This document argues that the soul is a real, localized, persistent information pattern in a fundamental field, which constitutes personal identity and survives death. It critiques eliminativism, no-self doctrines, and bundleism as self-refuting. However, the arguments are largely philosophical and theological, with no empirical evidence or formal proof, so the claim is not established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\H03_Soul.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch3\\json\\H03_Soul.canonical-node.json"
+  }
+}

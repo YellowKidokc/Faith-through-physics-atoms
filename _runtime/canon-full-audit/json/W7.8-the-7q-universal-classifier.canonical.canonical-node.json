@@ -1,0 +1,97 @@
+{
+  "source_id": "W7.8-the-7q-universal-classifier.canonical",
+  "title": "The 7Q Universal Classifier",
+  "canonical_node": {
+    "axiom": "Existence is the first bit; distinction is the first operation; information is the fundamental substrate; the ground must be self-grounding; the observer chain must terminate; the terminal observer must satisfy eight boundary conditions; the unique tradition satisfying all conditions is Christianity.",
+    "definitions": [
+      "Information: distinguishability itself; a definitional identity.",
+      "Terminal observer: an observer with infinite integrated information (Phi = infinity).",
+      "Grace: negentropy targeting moral entropy specifically.",
+      "Measurement orthogonality: [O_hat, Phi_hat] = 0, basis-restricted knowledge.",
+      "Voluntary coupling: coupling that is not forced, preserving genuine choice."
+    ],
+    "derivation": [
+      "Q0: Something exists (1 != 0). All 14 worldviews survive.",
+      "Q1: Distinction is necessary for knowability. 13 survive (counting inconsistency noted).",
+      "Q2: Matter, mind, brute fact eliminated; information continues; math and relations collapse into information. 7 survive.",
+      "Q3: Information must be organized; coherence is necessary. 7 survive.",
+      "Q4: Brute fact terminus is honest but stops; infinite regress dies; self-grounding continues. 6 survive.",
+      "Q5: Ground properties derived: self-consistent, maximally coherent, generative, non-temporal, non-material. Panpsychism eliminated. 5 survive.",
+      "Q6: Measurement requires participation; atheism eliminated. 4 survive.",
+      "Q7: Observer chain must terminate; terminal observer with Phi=infinity must exist. 4 survive.",
+      "Q8: Eight boundary conditions; Deism eliminated at BC6. 3-4 survive.",
+      "Q9: Derived properties match Christian description of God. 3 survive.",
+      "Q10: Moral sign operator sigma=1; self-flip impossible. 3 survive.",
+      "Q11: Bimodal attractors: integration and fragmentation. 3 survive.",
+      "Q12: Christianity uniquely satisfies all eight boundary conditions. 1 survives."
+    ],
+    "action": "Run the elimination funnel from Q0 to Q12, applying each test to all candidate worldviews, and conclude that Christianity is the unique survivor.",
+    "boundary": [
+      "Does not prove the existence of God or the truth of Christianity; it is an elimination structure, not a proof by construction.",
+      "Does not resolve the syntax-semantics gap (Q5 hostile question).",
+      "Does not prove the N=3 minimality claim (BC4).",
+      "Does not prove the coherence of Phi=infinity (Q7).",
+      "Does not prove the exhaustiveness of the eight boundary conditions (Q12)."
+    ],
+    "test": [
+      "Check that each elimination is justified by the stated test and not by theological bias.",
+      "Check that all hostile questions are left open and not dismissed.",
+      "Check that the counting inconsistency at Q1 is resolved.",
+      "Check that the modeling choices (SU(2) at Q10, N=3 at BC4, Q4-C over Q4-A) are explicitly acknowledged as choices."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Q0: Existence axiom",
+      "Q1: Distinction operation",
+      "Q2: Information as fundamental",
+      "Q3: Coherence requirement",
+      "Q4: Self-grounding choice",
+      "Q5: Ground properties",
+      "Q6: Observer participation",
+      "Q7: Terminal observer existence",
+      "Q8: Eight boundary conditions",
+      "Q9: Identification with Christian God",
+      "Q10: Moral sign structure",
+      "Q11: Destiny attractors",
+      "Q12: Uniqueness test"
+    ],
+    "dg2_new_capability": "Provides a structured elimination funnel that narrows from fourteen worldviews to one, with explicit hostile questions left open.",
+    "dg3_preserved_floor": "Preserves the honesty of the chain by acknowledging modeling choices and unresolved challenges.",
+    "dg4_collapse_if_removed": "If the elimination structure is removed, the document reduces to a list of assertions without a systematic argument.",
+    "dg5_translation_registers": [
+      "Theological: worldviews, God, grace, salvation",
+      "Physical: information, observer, measurement, entropy",
+      "Mathematical: Phi, sigma, SU(2), graph theory"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "Elimination argument for Christian theism",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine as a narrative anchor; do not treat as proof."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims Christianity is uniquely identified without proving exhaustiveness of boundary conditions.",
+      "Treats modeling choices as forced deductions.",
+      "Uses undefined or unproven concepts (Phi=infinity, N=3 minimality)."
+    ],
+    "kill_conditions": [
+      "If a coherent single-attractor model is shown (universalism), Q11 fails.",
+      "If a BC9 is found or a tradition scores 8/8, Q12 fails.",
+      "If the syntax-semantics gap is bridged without theology, Q5's challenge is met."
+    ],
+    "lean_target": "Reduce to a minimal claim: 'The 7Q funnel is a coherent narrative structure, not a proof.'"
+  },
+  "plain_summary": "This document presents a 12-step elimination funnel that claims to narrow from fourteen worldviews to one, Christianity, by applying tests of existence, distinction, substrate, grounding, observer requirements, and boundary conditions. However, it is not a proof: several steps rely on unproven modeling choices, and the document itself acknowledges unresolved hostile questions and counting inconsistencies. It should be treated as a narrative anchor, not an established result.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W7.8-the-7q-universal-classifier.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W7.8-the-7q-universal-classifier.canonical.canonical-node.json"
+  }
+}

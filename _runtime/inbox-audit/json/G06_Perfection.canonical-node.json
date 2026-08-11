@@ -1,0 +1,78 @@
+{
+  "source_id": "G06_Perfection",
+  "title": "Divine Perfection: Maximal Coherence as Perfection",
+  "canonical_node": {
+    "axiom": "God is maximally coherent; perfection is defined as maximal coherence C[chi] = C_max, and this maximum is unique.",
+    "definitions": [
+      "Perfection: state of maximal coherence, complete internal consistency with no contradiction, no defect, no room for improvement.",
+      "Maximal coherence (C_max): the maximum possible coherence value, mathematically represented as C[chi] = 1, with zero contradiction and minimum entropy.",
+      "Coherence (C[chi]): a measurable property of a system chi, indicating internal consistency and integration.",
+      "Creaturely perfection: relative fulfillment of a creature's nature; always less than C_max.",
+      "Divine perfection: absolute, unique, equal to C_max."
+    ],
+    "derivation": [
+      "Perfection is defined as maximal coherence (G5.2).",
+      "God has maximal coherence (G5.1).",
+      "Maximal coherence is unique (G5.3).",
+      "Therefore, God is the unique perfect being.",
+      "Finite beings have finite Phi, so they cannot achieve C_max; they can only approach it asymptotically."
+    ],
+    "action": "The system should treat perfection as an objective, mathematically defined property (maximal coherence) and use it to evaluate claims about God's nature and creaturely perfection.",
+    "boundary": [
+      "Does not claim that coherence is the only attribute of God; it is a definition of perfection.",
+      "Does not provide a method to measure C[chi] for actual entities; it is a theoretical construct.",
+      "Does not assert that finite beings can never increase their coherence; only that they cannot reach C_max.",
+      "Does not address the nature of the ground of coherence (God) beyond the definition."
+    ],
+    "test": [
+      "Check that any claim of perfection is consistent with C[chi] = C_max.",
+      "Verify that no two distinct entities can both have C = C_max.",
+      "Ensure that creaturely perfection is always represented as C < C_max.",
+      "Confirm that the definition of perfection as maximal coherence is used consistently across documents."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "F03 (definition of coherence C[chi])",
+      "BC7.1 (Terminal Observer)",
+      "G5.1, G5.2, G5.3 (axioms covered)"
+    ],
+    "dg2_new_capability": "Provides an objective, mathematical definition of perfection as maximal coherence, enabling formal evaluation of divine attributes and creaturely limits.",
+    "dg3_preserved_floor": "Preserves the concept of God's uniqueness and maximality, consistent with Anselmian perfect being theology.",
+    "dg4_collapse_if_removed": "Without this axiom, perfection becomes subjective or undefined, undermining arguments for God's unique status and the objectivity of moral standards.",
+    "dg5_translation_registers": [
+      "Theological: perfection as divine attribute",
+      "Mathematical: C[chi] = C_max",
+      "Philosophical: objective standard of value"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological_definition",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "formalize_definition"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical uniqueness of C_max without rigorous proof in the document.",
+      "Assumes coherence is objectively measurable without providing a concrete measurement procedure.",
+      "Equates physical concepts (ground state, symmetry) with coherence without formal derivation."
+    ],
+    "kill_conditions": [
+      "If coherence is shown to be subjective or non-measurable, the definition fails.",
+      "If multiple maxima are possible in the formal system, uniqueness fails.",
+      "If perfection is shown to include non-coherence attributes, the equivalence fails."
+    ],
+    "lean_target": "Formalize the definition of coherence and prove uniqueness of maximum in the underlying mathematical framework."
+  },
+  "plain_summary": "This document defines divine perfection as maximal coherence, arguing that God is the unique maximally coherent being. It critiques relativism, imperfect God theories, and finite perfectionism. However, the mathematical formalism is not fully rigorous, and the proof of uniqueness is only sketched. The document is coherent but requires further formalization.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G06_Perfection.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\G06_Perfection.canonical-node.json"
+  }
+}

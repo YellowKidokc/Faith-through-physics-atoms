@@ -1,0 +1,107 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-050",
+  "nodeID": "tp:master-equation/01/ME-01-050",
+  "claimID": "tp:ME/ME-01-050",
+  "nodeType": "claim",
+  "name": "Chi Properties — What Kind of Mathematical Object Is Chi",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-10",
+  "dateModified": "2026-08-10",
+  "version": "0.1.0",
+  "claimClass": "mathematical",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "statementTechnical": "Chi (total coherence) is a bounded, non-negative, continuous scalar functional on [0,1]^9 with the following properties: (1) multiplicative product structure — not additive, (2) veto property — any single zero factor collapses the product to zero (Lean-verified), (3) C_W wrapper — coherence operator wraps the product, is not a tenth factor, currently treated as identity pending ruling, (4) dimensionless — each register enters as a fraction of its own full capacity, (5) Level 1 is a snapshot (measurement instrument), Level 2 postulates first-order open gradient dynamics over that landscape, (6) the product form is a chosen model (structurally motivated, not uniquely forced), (7) Shannon base layer carries units (bits/s) at Level 0 only — Level 1 ratios are dimensionless, (8) gradient ascent — nabla-chi points toward higher coherence under Euclidean metric on [0,1]^9 (declared), (9) the equation is a measurement instrument — it does not sanctify, and chi is not the salvation variable.",
+  "statementPlain": "Chi measures how aligned a system is with what is actually true. It multiplies nine necessary channels — if any one is zero, the whole thing collapses. It is a thermometer, not a thermostat: it records where you stand, it does not move you.",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-010",
+      "propagates": true,
+      "note": "Chi properties depend on the integration claim."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-060",
+      "propagates": true,
+      "note": "Chi properties describe the full master equation object."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-061",
+      "propagates": true,
+      "note": "Veto property derived from product-collapse-kernel-boundary."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-EQ-006",
+      "propagates": true,
+      "note": "Zero collapse theorem is a formal property of chi."
+    }
+  ],
+  "keywords": [
+    "chi", "properties", "product", "veto", "bounded", "non-negative",
+    "dimensionless", "measurement", "wrapper", "C_W", "Level 0", "Level 1",
+    "Level 2", "Shannon", "gradient", "snapshot", "instrument"
+  ],
+  "tags": ["coherence", "properties", "foundations", "measurement"],
+  "verificationStatus": "canon-extracted",
+  "falsificationCondition": "Show that any listed property contradicts the canonical document or the Lean-verified results. Show that the product form is uniquely forced rather than chosen. Show that chi functions as a dynamics rather than a measurement at Level 1.",
+  "sourceReference": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\THE_MASTER_EQUATION_CANONICAL_DOCUMENT.md",
+  "mathematicalForm": "chi_local(x,t) = C_W[G * M * E * S_eff * T * K * R * Q * F * C]; domain: [0,1]^9 -> R+; chi_total = integrate(chi_local, space, time)",
+  "mathFormNormal": "chi = wrapper(product(nine_factors)); each factor in [0,1]; product in [0,1]; wrapper preserves zero",
+  "properties": {
+    "structure": "multiplicative product, not additive sum",
+    "veto": "any factor = 0 implies chi = 0 (Lean-verified: listProd_eq_zero_iff, chi_zero_if_any_factor_zero)",
+    "domain": "[0,1]^9 mapped through product to [0,1]",
+    "boundedness": "non-negative, bounded above by 1 when all factors = 1",
+    "continuity": "continuous on [0,1]^9 (product of continuous functions)",
+    "dimensionless": "each register is fraction of full capacity; Level 0 carries bits/s, Level 1 ratios are unitless",
+    "wrapper": "C_W wraps the product; currently identity pending ruling; not a tenth factor",
+    "levels": {
+      "level_0": "Shannon base layer: Lambda_i = A_i * log2(1 + T_i/D_i), units bits/s",
+      "level_1": "Snapshot: chi = C_W[product(X_i)], measurement instrument, no dynamics",
+      "level_2": "Gradient dynamics: dX/dt = W * nabla_chi + eta, chosen open-system model"
+    },
+    "metric": "Euclidean on [0,1]^9 (declared, not derived)",
+    "gradient_direction": "nabla_chi points toward higher coherence (ascent)",
+    "instrument_not_dynamics": "Level 1 chi is a measurement — records where a system stands, does not move it",
+    "not_salvation": "chi measures the walk; salvation is a latch (irreversible, non-decreasing); chi records both but sets neither",
+    "free_will_location": "will lives in the derivative (Level 2), not in the snapshot (Level 1); a sleeping saint has chi"
+  },
+  "killConditions": [
+    "Show that additive structure produces equivalent or better veto behavior",
+    "Show that the product form is uniquely forced (would upgrade 'chosen' to 'necessary')",
+    "Show that chi at Level 1 has dynamics (would collapse Level 1 into Level 2)",
+    "Show that C_W cannot be identity (would force a specific wrapper form)",
+    "Show that the Euclidean metric is wrong for this domain (would change gradient direction)"
+  ],
+  "openRulings": [
+    "C_W: identity or replacement — OPEN",
+    "R: boundary condition or proper acceleration — OPEN (propagates to Laws 1,2,3,4,7,9)",
+    "Metric on [0,1]^9: Euclidean declared, not derived — OPEN"
+  ]
+}

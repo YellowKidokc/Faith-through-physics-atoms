@@ -1,0 +1,84 @@
+{
+  "source_id": "Part_0.5_The_Three_Roots_Beneath_the_Spine",
+  "title": "The Three Roots Beneath the Spine",
+  "canonical_node": {
+    "axiom": "Every formal system requires exactly three irreducible roots: Being (object), Distinction (object-structure), and Relation (operation). Relation is typed at the operation level, not the object level, and any terminating actualization structure must have this type-signature.",
+    "definitions": [
+      "Being: the object-level content that exists to be operated on.",
+      "Distinction: the object-structure that differentiates what exists.",
+      "Relation: the operation-level element that connects objects; not an object itself.",
+      "Type-grammar: the classification of elements into objects and operations; violations produce malformed questions.",
+      "Actualization: the process by which a definite outcome emerges from superposition.",
+      "Termination: the property that a measurement chain does not regress infinitely."
+    ],
+    "derivation": [
+      "Every formal system contains objects and operations; an operation cannot be an operand (Russell's paradox, type theory).",
+      "For a derivation to occur, three conditions must hold: something exists (Being), it is differentiable (Distinction), and connection is possible (Relation).",
+      "Relation is not a third object; it is the operation that makes counting and derivation possible.",
+      "In the axiom spine, A1.1 (Being) and A1.2 (Distinction) derive A1.3 (Information) via '+' and '=', which are Relation in action.",
+      "The von Neumann regress arises from typing all measurement elements as operators on ; retyping A as an application map (operation level) makes the regress question fail to type-check.",
+      "Exhaustive type-structure analysis: fewer than three roles fails; three roles all at object level fails; exactly one at operation level terminates; more than three adds nothing.",
+      "Therefore, exactly three roles with one at operation level is the unique terminating structure for actualization.",
+      "BC4 (Three Observers Required) derives from the three roots: one observer fails by Being-without-Distinction; two observers fail by Distinction-without-Relation; three typed observers constitute the minimal verification structure."
+    ],
+    "action": "The system must enforce the type-grammar: operations must never be treated as operands. In formalization, A must be typed at the operation level (e.g., evaluation map or superoperator) so that questions like 'what measures A' fail to type-check. The three-root structure must be recognized as the underlying pattern across arithmetic, the axiom spine, and quantum measurement.",
+    "boundary": [
+      "This does not modify quantum mechanics: no new dynamics, no collapse parameter, no derivation of Born probabilities.",
+      "It does not assert that non-terminating pictures (Everett) are internally inconsistent.",
+      "It does not claim to have selected the final formalization of A; candidates are named but not worked.",
+      "It does not provide a full reading of relational QM or QBism against the exhaustion claim."
+    ],
+    "test": [
+      "In Lean 4, a statement like 'A is in superposition' should fail to type-check, demonstrating the operation-level typing.",
+      "The derivation of BC4 from the three roots should be formally verified.",
+      "The exhaustion argument should be checked for completeness over type-structures.",
+      "The formalization of A as evaluation map or superoperator should be implemented and tested for consistency."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Part Zero (Truth as ground)",
+      "Part One (Axiom Spine, specifically A1.1, A1.2, A1.3)",
+      "Paper Zero-B (The Trinity Generates Numbers)",
+      "FP-002 (structural mapping)",
+      "Existing Lean corpus (Theophysics_MaxwellTrinity.lean et al.)"
+    ],
+    "dg2_new_capability": "Provides a type-grammatical foundation that dissolves the von Neumann regress and promotes BC4 from axiom to theorem, strengthening the axiom spine by reducing primitives.",
+    "dg3_preserved_floor": "Preserves the existing axioms A1.1 and A1.2, and the derived A1.3, while making explicit the previously implicit Relation root.",
+    "dg4_collapse_if_removed": "Without this section, the von Neumann regress remains unresolved, BC4 remains an unproven axiom, and the type-grammar underlying the entire framework is unstated, weakening the coherence of the axiom spine.",
+    "dg5_translation_registers": [
+      "Arithmetic: 1 + 1 = 2 (operands and operation)",
+      "Axiom spine: A1.1 + A1.2 -> A1.3 (axioms and derivation)",
+      "Quantum measurement: , L, A (generation, distinction, actualization)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "structural theorem",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Formalize the type-grammar and the termination theorem in Lean 4; verify the derivation of BC4; document the open gaps."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The necessity claim ('unique terminating structure') is argued by type-exhaustion but not formally proven; it may overstate if the exhaustion is incomplete.",
+      "The identification of the triad with theological persons is a mapping, not a proof; it should not be presented as established.",
+      "The claim that the regress is 'dissolved' depends on the chosen typing of A; if the formalization fails, the dissolution may not hold."
+    ],
+    "kill_conditions": [
+      "If a counterexample is found where a terminating actualization structure has a different type-signature (e.g., two operation-level elements).",
+      "If the formalization of A as an evaluation map or superoperator leads to inconsistency.",
+      "If the derivation of BC4 from the three roots is shown to be invalid."
+    ],
+    "lean_target": "Theophysics_WatcherTermination.lean"
+  },
+  "plain_summary": "This document argues that every formal system requires three roots: Being, Distinction, and Relation, with Relation being an operation-level element. It claims this type-grammar dissolves the von Neumann regress and turns the axiom BC4 into a theorem. However, the necessity claim is not formally proven, and the formalization of Relation is incomplete, so the document is a promising but unverified structural proposal.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Part_0.5_The_Three_Roots_Beneath_the_Spine.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Part_0.5_The_Three_Roots_Beneath_the_Spine.canonical-node.json"
+  }
+}

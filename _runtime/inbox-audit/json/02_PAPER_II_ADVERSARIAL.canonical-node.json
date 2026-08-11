@@ -1,0 +1,76 @@
+{
+  "source_id": "02_PAPER_II_ADVERSARIAL",
+  "title": "Paper II  -  Adversarial Response",
+  "canonical_node": {
+    "axiom": "The strongest objection must be steelmanned and tested; the idea survives only if it withstands the best attack.",
+    "definitions": [
+      "Adversarial Response: A structured paper that presents the strongest possible objection to a prior claim and then responds to it.",
+      "Steelman: The most charitable and strongest version of an opposing argument.",
+      "Kill Condition: A specific threshold that, if met, invalidates the claim or objection."
+    ],
+    "derivation": [
+      "1. The strongest objection is identified and articulated as its best advocate would.",
+      "2. Genuine concessions are made where the objection is correct.",
+      "3. The response provides independent arguments showing why the objection fails.",
+      "4. The collision test compares the claim and objection on multiple criteria.",
+      "5. Kill conditions are defined for both sides to determine survival.",
+      "6. The verdict states whether the idea survived and what was learned."
+    ],
+    "action": "When facing a challenge to a thesis claim, construct an adversarial response that steelmans the objection, concedes valid points, and then argues for the claim's survival, including explicit kill conditions and a verdict.",
+    "boundary": [
+      "Does not guarantee the claim is true; only that it survived a particular objection.",
+      "Does not replace formal proof or empirical validation.",
+      "Does not require the objection to be a strawman; it must be the strongest version."
+    ],
+    "test": [
+      "Check that the objection is not a strawman and is articulated as its best advocate would.",
+      "Verify that concessions are genuine and not merely rhetorical.",
+      "Ensure that each response argument is logically coherent and addresses the objection.",
+      "Confirm that kill conditions are specific and falsifiable.",
+      "Check that the verdict follows from the analysis and is not predetermined."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Paper I claim (thesis unit DT-004)",
+      "Lowe FACTS Format v1.0"
+    ],
+    "dg2_new_capability": "Provides a structured method for adversarial testing of a claim, including explicit kill conditions and a survival verdict.",
+    "dg3_preserved_floor": "Preserves the original claim's integrity by requiring honest concessions and rigorous response.",
+    "dg4_collapse_if_removed": "Without adversarial testing, the claim remains untested against the strongest objections, weakening its credibility.",
+    "dg5_translation_registers": [
+      "Theological",
+      "Philosophical",
+      "Scientific"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Use as a template for adversarial testing; do not treat as proof of any specific claim."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Assuming survival in one adversarial test implies general robustness.",
+      "Conflating rhetorical strength with logical proof.",
+      "Treating the template as a substitute for empirical or formal verification."
+    ],
+    "kill_conditions": [
+      "If the objection is not steelmanned, the test is invalid.",
+      "If the response relies on unstated assumptions, the survival verdict is unsupported.",
+      "If kill conditions are not met but the verdict claims survival, the process is flawed."
+    ],
+    "lean_target": "Formalize the adversarial testing procedure into a verifiable protocol."
+  },
+  "plain_summary": "This document provides a template for adversarial testing of a thesis claim. It instructs the user to steelman the strongest objection, concede valid points, and then argue for the claim's survival, including explicit kill conditions and a verdict. It is a methodological tool, not a proof of any specific claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\02_PAPER_II_ADVERSARIAL.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\02_PAPER_II_ADVERSARIAL.canonical-node.json"
+  }
+}

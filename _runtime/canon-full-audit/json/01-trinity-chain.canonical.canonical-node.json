@@ -1,0 +1,91 @@
+{
+  "source_id": "01-trinity-chain.canonical",
+  "title": "Three-Person Coupling at Equilibrium",
+  "canonical_node": {
+    "axiom": "The triadic-coupled system at equilibrium, with the coupling invariant, exhibits seven emergent properties that correspond to divine attributes.",
+    "definitions": [
+      "Triadic-coupled system: a system of three components with a non-commutative coupling invariant, exemplified by quaternion EM.",
+      "Coupling invariant: the scalar-vector coupling in the quaternion product that is lost in Heaviside's vector reduction.",
+      "Equilibrium: the state where the system's properties are stable and self-sustaining.",
+      "Perichoresis: mutual indwelling; the coupling invariant itself.",
+      "Aseity: self-existence; the system requires no external input.",
+      "Simplicity: non-compositeness; the system is irreducible.",
+      "Omniscience: complete mutual knowledge; zero conditional entropy between persons.",
+      "Omnipotence: complete mutual actuation; perpetual mutual generation.",
+      "Immutability: time-translation invariance; the Lagrangian does not change with time.",
+      "Love as Ground State: the coupling between persons is agap; the ground state of the confinement potential."
+    ],
+    "derivation": [
+      "The parent isomorphism between quaternion EM and the Trinity is Lean-verified (MaxwellTrinity.lean, zero sorry).",
+      "At equilibrium, the quaternion scalar-vector coupling is perfect and bidirectional, leading to perichoresis (T.1).",
+      "The mutual generation of E and B fields in vacuum is self-sustaining, leading to aseity (T.2).",
+      "The quaternion product cannot be decomposed into independent scalar and vector operations, leading to simplicity (T.3).",
+      "At perfect coupling, each component carries complete information about others, leading to omniscience (T.4).",
+      "The curl equations describe perpetual mutual actuation, leading to omnipotence (T.5).",
+      "Time-translation symmetry of the Lagrangian yields a conserved charge, leading to immutability (T.6).",
+      "The coupling between persons is identified with the ground state of the confinement potential, leading to love as ground state (T.7)."
+    ],
+    "action": "The system should treat the seven derived terms as proposed emergent properties of the triadic-coupled system at equilibrium, subject to further formalization and testing.",
+    "boundary": [
+      "Does not push into divine mechanics (how the coupling originated, why three).",
+      "Does not claim the derived terms are Lean-verified; only the parent isomorphism is.",
+      "Does not claim the mapping from physics to theology is proven; it is structural analogy."
+    ],
+    "test": [
+      "Kill condition: Show that the triadic-coupled system at equilibrium exhibits a property inconsistent with these seven terms, or that an equivalent set can emerge from non-triadic coupling, or that the coupling invariant is not load-bearing.",
+      "Open item: Formal bridge from coupling invariant to Shannon mutual information for T.4.",
+      "Open item: Formal identification of inter-person coupling with Yukawa coupling for T.7.",
+      "No Lean formalization of derivative terms yet."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Quaternion EM formulation (Maxwell's original)",
+      "Lean 4 verified isomorphism (MaxwellTrinity.lean)",
+      "Chain 2 (Fruits) for T.7",
+      "Chain 6 (Logos) for T.4"
+    ],
+    "dg2_new_capability": "Provides a formal structure for divine attributes as emergent properties of a triadic-coupled system at equilibrium, grounded in quaternion EM.",
+    "dg3_preserved_floor": "Preserves the Lean-verified parent isomorphism and the coupling invariant.",
+    "dg4_collapse_if_removed": "If the coupling invariant is removed, the derived terms lose their grounding; the system reduces to Heaviside's vector EM, which is Lean-proven to lose content.",
+    "dg5_translation_registers": [
+      "Quaternion EM  Trinity",
+      "Scalar-vector coupling  Perichoresis",
+      "Self-sustaining EM wave  Aseity",
+      "Irreducibility of quaternion product  Simplicity",
+      "Zero conditional entropy  Omniscience",
+      "Mutual generation  Omnipotence",
+      "Time-translation symmetry  Immutability",
+      "Confinement potential ground state  Love"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "Theological-physics isomorphism with derived terms",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine derivative terms; keep parent isomorphism as verified."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the derived terms are Lean-verified when they are not.",
+      "Treating structural analogies as formal identities.",
+      "Overstating the strength of the mapping from physics to theology."
+    ],
+    "kill_conditions": [
+      "Show inconsistency of the seven terms with the triadic-coupled system at equilibrium.",
+      "Show that non-triadic coupling can produce equivalent properties.",
+      "Show that the coupling invariant is not load-bearing."
+    ],
+    "lean_target": "Formalize the derivation of the seven terms from the coupling invariant in Lean 4."
+  },
+  "plain_summary": "This document proposes seven divine attributes (perichoresis, aseity, simplicity, omniscience, omnipotence, immutability, love) as emergent properties of a triadic-coupled system at equilibrium, based on the Lean-verified isomorphism between quaternion EM and the Trinity. The parent isomorphism is verified, but the derived terms are not formally proven and require further work.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\01-trinity-chain.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\01-trinity-chain.canonical.canonical-node.json"
+  }
+}

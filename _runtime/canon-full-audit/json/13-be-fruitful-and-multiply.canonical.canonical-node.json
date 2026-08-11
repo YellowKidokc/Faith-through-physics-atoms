@@ -1,0 +1,84 @@
+{
+  "source_id": "13-be-fruitful-and-multiply.canonical",
+  "title": "Be Fruitful and Multiply",
+  "canonical_node": {
+    "axiom": "The stability of mathematics and physical law is a precondition for moral accountability and fruitfulness; the ground of that stability must possess the properties it displays, including non-deceptiveness.",
+    "definitions": [
+      "Stable mathematics: mathematical relations that do not drift.",
+      "Stable laws: physical laws that are reliable and predictable.",
+      "Non-deceptive: no divergence between appearance and reality.",
+      "Moral property: a property that is a virtue in moral systems, e.g., truthfulness.",
+      "Logos-profile: the set of properties derived from the two chains (entropy and Chaitin) that converge on a transcendent, necessary, eternal, universal, immaterial, coherent, morally good source."
+    ],
+    "derivation": [
+      "If stable mathematics drifts, then comparison of claims to facts becomes unreliable, undermining accountability and moral life.",
+      "If physical laws are unreliable, then cause and effect break down, undermining fruitfulness and stewardship.",
+      "Science cannot ground its own tools (circularity); humans cannot be the ground (fallibility).",
+      "The ground of mathematical truth must be non-deceptive because mathematical truth is non-deceptive (A11).",
+      "Non-deceptiveness is a moral property; therefore the ground has a moral property.",
+      "Two independent chains (entropy and Chaitin) converge on the same profile of properties, supporting the existence of a single ground.",
+      "The identification of this ground with the Christian Logos is conditional on theological premises."
+    ],
+    "action": "The system should treat the stability of mathematics and physical law as a given precondition for moral and practical reasoning, and should not assert the full identification of the ground with a specific deity without conditional labeling.",
+    "boundary": [
+      "Does not claim that mathematics proves morality or that numbers equal God.",
+      "Does not assert the full identity claim; it is under construction.",
+      "Does not rely on contested probability figures (10^-200, 10^-600).",
+      "Does not claim that math is a moral agent; it is a truth-disclosure mechanism."
+    ],
+    "test": [
+      "Check that the product-collapse behavior of chi is machine-verified in the kernel.",
+      "Check that the two chains (entropy and Chaitin) do not share hidden premises.",
+      "Check that the 24-property matrix is audited cell-by-cell before citation.",
+      "Check that the identification claim is labeled conditional and not asserted as proven."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CL-P01 postulates (for the kernel spine)",
+      "CL-P08 (Is-Ought Dissolution) as linked flank",
+      "Information theory (for A11 derivation)",
+      "Chaitin's incompleteness theorem (for Ground(Math) not-in Math)"
+    ],
+    "dg2_new_capability": "Provides a public-facing argument that links mathematical stability to moral accountability and fruitfulness, with a conditional identification of the ground.",
+    "dg3_preserved_floor": "Preserves the existing framework's claims about the non-deceptiveness of the ground and the convergence of two chains.",
+    "dg4_collapse_if_removed": "If the stability of mathematics and physical law is removed, the argument for moral accountability and fruitfulness collapses, and the ground's non-deceptiveness loses its basis.",
+    "dg5_translation_registers": [
+      "Mathematics: stability of mathematical relations",
+      "Physics: reliability of physical laws",
+      "Morality: accountability and fruitfulness",
+      "Theology: conditional identification with Logos"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "conditional theological claim with strong structural analogy",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a conditional argument with clear boundaries; do not upgrade to proof."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that the convergence of two chains proves the existence of God.",
+      "Claiming that the 24-property matrix is fully audited when it is not.",
+      "Claiming that the identification with the Christian Logos is more than conditional.",
+      "Using contested probability figures as evidence."
+    ],
+    "kill_conditions": [
+      "A verified instance of mathematical or physical-law drift (defeat condition 3).",
+      "A genuine moral ought with no present structural basis (defeat condition 4).",
+      "A genuine ontological property in only one matrix column (defeat condition 5).",
+      "Product-collapse of chi fails in the kernel, or the two chains share a hidden premise (defeat condition 6)."
+    ],
+    "lean_target": "Formalize the A11 derivation and the product-collapse spine in Lean, and audit the 24-property matrix."
+  },
+  "plain_summary": "This document argues that stable mathematics and physical laws are necessary for moral accountability and fruitfulness, and that the ground of this stability must be non-deceptive, a moral property. It presents two converging chains (entropy and Chaitin) pointing to a transcendent source, but explicitly labels the identification with a specific deity as conditional. The argument is strong as a structural analogy but not a formal proof; several parts are candidates or owe audits.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\13-be-fruitful-and-multiply.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\13-be-fruitful-and-multiply.canonical.canonical-node.json"
+  }
+}

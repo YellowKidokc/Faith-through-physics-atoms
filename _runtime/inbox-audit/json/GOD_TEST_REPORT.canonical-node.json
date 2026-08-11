@@ -1,0 +1,73 @@
+{
+  "source_id": "GOD_TEST_REPORT",
+  "title": "God Test Lean 4 Report",
+  "canonical_node": {
+    "axiom": "Under the declared God-marker gates, only the full Christ-shaped marker passes.",
+    "definitions": [
+      "God-marker: perfect justice + perfect mercy + voluntary entry into death + no moral debt + truth preservation + identity preservation + rightful victory over death + non-borrowed authority + communicable restoration.",
+      "Candidate: a type representing possible death-victory claimants.",
+      "passesGodMarker: a boolean function defined in Lean that checks all ten gates.",
+      "Christ-shaped marker: the candidate that satisfies all ten gates."
+    ],
+    "derivation": [
+      "Lean defines ten gates: sourcehood, voluntaryDeathEntry, noMoralDebt, perfectJustice, perfectMercy, truthPreservation, identityPreservation, rightfulDeathVictory, nonBorrowedAuthority, communicableRestoration.",
+      "Lean proves christ_marker_passes: passesGodMarker Candidate.christMarker = true.",
+      "Lean proves exclusion theorems for each counterfeit candidate (e.g., raw_power_fails, death_avoider_fails, etc.).",
+      "Lean proves uniqueness theorem: if any candidate passes all gates, it equals christMarker."
+    ],
+    "action": "The system should treat the conditional finite-gate structure as formally verified: within the declared definitions, only the full Christ-shaped marker passes all gates.",
+    "boundary": [
+      "Does not prove historical resurrection.",
+      "Does not prove Christianity from neutral premises.",
+      "Does not prove Jesus is sinless from neutral premises.",
+      "Does not prove death is morally jurisdictional from physics alone.",
+      "Does not prove Christianity from nowhere."
+    ],
+    "test": [
+      "Run `lake build` and confirm the God Test module compiles.",
+      "Check that the theorems christ_marker_passes, each exclusion theorem, and only_christ_marker_passes are present and proven in the Lean file."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 environment with Theophysics_GodTest.lean",
+      "Definitions of the ten gates and candidate types"
+    ],
+    "dg2_new_capability": "Provides a formally verified conditional structure: within the specified God-marker gates, only the full Christ-shaped marker passes.",
+    "dg3_preserved_floor": "Preserves the distinction between formal conditional proof and historical/empirical claims.",
+    "dg4_collapse_if_removed": "If removed, the system loses the formal verification that the Christ-shaped marker uniquely satisfies the declared gates.",
+    "dg5_translation_registers": [
+      "Lean theorem statements",
+      "Plain-English summary of the conditional result"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal conditional theorem",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as a conditional formal result with explicit boundaries"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting the conditional proof as evidence for historical resurrection.",
+      "Treating the formal gates as metaphysically grounded.",
+      "Assuming the candidate list is exhaustive beyond the defined set."
+    ],
+    "kill_conditions": [
+      "If the Lean file is not actually present or does not compile.",
+      "If the theorems are not proven as stated.",
+      "If the definitions are altered without re-verification."
+    ],
+    "lean_target": "Theophysics_GodTest.lean"
+  },
+  "plain_summary": "This report describes a Lean 4 formal proof that, under a specific set of ten God-marker gates, only the full Christ-shaped marker passes, while all other candidate types fail. The proof is conditional on the definitions and does not claim historical or empirical truth. The document is coherent and admissible as a formal conditional result.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\GOD_TEST_REPORT.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\GOD_TEST_REPORT.canonical-node.json"
+  }
+}

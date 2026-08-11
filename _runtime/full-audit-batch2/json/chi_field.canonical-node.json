@@ -1,0 +1,82 @@
+{
+  "source_id": "chi_field",
+  "title": "chi_field.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field evolves as a scalar field in 1+1D according to the Klein-Gordon equation with phi^4 self-interaction and a grace source term.",
+    "definitions": [
+      "chi(x,t): scalar field value at spatial coordinate x and time t.",
+      "d'Alembertian in 1+1D: /t  /x.",
+      "m: field mass squared, sets oscillation frequency.",
+      ": self-coupling strength for phi^4 interaction.",
+      "J_grace: external grace source term, defined as _G * Phi * tanh(chi) / (S_local + ).",
+      "_G: grace coupling strength.",
+      "Phi: spatial grace distribution.",
+      "S_local: local entropy.",
+      ": small positive number preventing division by zero."
+    ],
+    "derivation": [
+      "The equation of motion is chi + mchi + chi = J_grace.",
+      "Spatial dimension is discretized using second-order finite differences, converting the PDE into a system of ODEs in time.",
+      "Time integration is performed using RK4.",
+      "Neumann boundary conditions are applied at spatial edges.",
+      "Parameter scans over m and  classify stability regimes."
+    ],
+    "action": "Numerically solve the chi-field PDE using the method of lines with RK4 time integration, and analyze stability and propagation properties.",
+    "boundary": [
+      "Does not provide analytical solutions.",
+      "Does not extend to higher spatial dimensions.",
+      "Does not include quantum effects or stochastic dynamics.",
+      "Does not claim physical reality beyond the numerical model."
+    ],
+    "test": [
+      "Verify energy drift remains below 0.5% over 1000 time steps with 128 spatial points and dt=0.01.",
+      "Check that solutions remain bounded for canonical parameters (m>0, >0).",
+      "Confirm that the dispersion relation  = k + m is approximately satisfied for linear modes.",
+      "Verify that high local entropy suppresses the grace source in spatial profiles."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "MasterEquation class (Lagrangian mechanics of 10-variable point system)",
+      "Standard numerical libraries (e.g., NumPy, SciPy) for ODE integration"
+    ],
+    "dg2_new_capability": "Provides a numerical PDE solver for the chi-field, enabling spatial and temporal evolution studies beyond point mechanics.",
+    "dg3_preserved_floor": "Preserves the core chi-field dynamics as a field theory, consistent with the point system's Lagrangian mechanics.",
+    "dg4_collapse_if_removed": "Without this solver, the chi-field cannot be studied as a spatially extended system, losing the ability to model propagation and spatial gradients.",
+    "dg5_translation_registers": [
+      "chi_field_solver",
+      "PDE",
+      "Klein-Gordon",
+      "phi^4",
+      "grace source"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "numerical implementation",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "preserve as numerical solver implementation"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims of physical significance may overstate the model's connection to actual physics.",
+      "The grace source term is not empirically validated.",
+      "Stability results are numerical and may not generalize beyond tested parameters."
+    ],
+    "kill_conditions": [
+      "If the notebook cannot be rerun due to missing dependencies or code errors.",
+      "If numerical results contradict the stated energy drift or stability claims."
+    ],
+    "lean_target": "Formalize the PDE discretization and RK4 integration in Lean, if feasible."
+  },
+  "plain_summary": "This document describes a Google Colab notebook that numerically solves a 1+1D Klein-Gordon equation with phi^4 self-interaction and a grace source term. It uses the method of lines with finite differences and RK4 integration. The notebook reports stable propagation, energy drift under 0.5%, and a stability phase diagram. The document is a numerical implementation, not a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\chi_field.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\chi_field.canonical-node.json"
+  }
+}
