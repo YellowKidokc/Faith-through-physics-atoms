@@ -47,10 +47,13 @@ All output begins as `proposed` or `unresolved`; the resolver never writes an
 atom. The adversarial gate may oppose a link but cannot accept it. Human review
 is always required, and existing accepted edges are untouched.
 
-When a matched definition's citation policy has `required: true` and
-`inheritToDependents: true`, the renderer emits a linked definition-source list
-containing the exact short quotation and attribution. This satisfies the
-`quote_or_link` policy without treating the paper as the source of truth.
+When a human-accepted definition link's citation policy has `required: true`
+and `inheritToDependents: true`, the renderer emits a linked definition-source
+list containing the exact short quotation and attribution. A resolver match by
+itself never inherits a citation: the proposal must have `status: accepted`, a
+non-empty `acceptedBy` and `acceptedAt` receipt, and a non-blocked adversarial
+gate. This satisfies the `quote_or_link` policy without treating the paper as
+the source of truth.
 
 Validation rejects duplicate permanent IDs, missing registry atoms, ID/status
 mismatches, broken atom edges, required citations lacking a quote or URL,

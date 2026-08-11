@@ -46,5 +46,25 @@ class ResolverTests(unittest.TestCase):
             self.assertEqual("awaiting_human", receipt["gateStatus"])
             self.assertEqual("proposed", row["status"])
 
+    def test_render_inherits_citation_only_from_human_accepted_link(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "_definitions").mkdir()
+            (root / "_proposals").mkdir()
+            source = root / "paper.md"
+            source.write_text("Master Equation grace", encoding="utf-8")
+            # Reuse the registry tree without changing what render loads.
+            with patch.object(dr, "load_registry", return_value=({}, self.atoms)):
+                dr.render(source, root / "unaccepted.html", root)
+                self.assertNotIn("<li", (root / "unaccepted.html").read_text())
+
+                row = {"sourceAtom": "paper.md", "targetAtom": "tp:def:master-equation/grace",
+                       "status": "accepted", "validationReceipt": {
+                           "acceptedBy": "human-reviewer", "acceptedAt": "2026-08-11T00:00:00Z",
+                           "adversarialGateStatus": "awaiting_human"}}
+                (root / "_proposals/definition-links.jsonl").write_text(json.dumps(row) + "\n")
+                dr.render(source, root / "accepted.html", root)
+                self.assertIn("Grace (Master Equation)", (root / "accepted.html").read_text())
+
 
 if __name__ == "__main__": unittest.main()
