@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Periodic Table — Meta Layer</title>
+<style>
+:root{color-scheme:dark;--bg:#080d12;--panel:#101923;--panel2:#152231;--ink:#e9f0f5;--muted:#8fa2b4;--line:#293b4c;--accent:#5bd7ca;--warn:#ffca63;--danger:#ff7279;--good:#81d49b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0,#172a3a,var(--bg) 42%);font:14px/1.45 Inter,ui-sans-serif,system-ui;color:var(--ink)}button,input,select{font:inherit}main{max-width:1500px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:18px}.eyebrow{display:inline-block;padding:4px 9px;border:1px solid var(--line);border-radius:999px;color:var(--accent);font-size:11px;letter-spacing:.08em}h1{font-size:clamp(28px,4vw,48px);line-height:1;margin:.35rem 0}.sub{color:var(--muted);max-width:820px}.toolbar,.panel{background:#101923e8;border:1px solid var(--line);border-radius:16px}.toolbar{padding:14px;display:grid;grid-template-columns:1.1fr 1fr 1fr auto;gap:10px;margin-bottom:14px}.toolbar label,.criterion label{display:grid;gap:5px;color:var(--muted)}select,input[type=text],input[type=number]{width:100%;background:#09121b;color:var(--ink);border:1px solid #385166;border-radius:8px;padding:9px}.btn{border:0;border-radius:9px;padding:10px 13px;background:var(--accent);color:#06201d;font-weight:800;cursor:pointer}.btn.secondary{background:#1d2c39;color:var(--ink);border:1px solid var(--line)}.layout{display:grid;grid-template-columns:280px minmax(0,1fr) 360px;gap:14px}.panel{padding:15px;min-width:0}.panel h2{font-size:15px;margin:0 0 12px}.small{font-size:12px;color:var(--muted)}.layer-list,.criteria-list,.components{display:grid;gap:8px}.layer{border:1px solid var(--line);background:#0b141d;border-radius:10px;padding:10px;cursor:pointer}.layer.active{border-color:var(--accent);box-shadow:0 0 0 1px #5bd7ca33 inset}.layer strong{display:block}.criterion{border-top:1px solid #233545;padding-top:10px}.criterion:first-child{border-top:0;padding-top:0}.criterion-head{display:flex;justify-content:space-between;gap:8px}.criterion input[type=range]{width:100%}.score{font-family:ui-monospace,monospace;color:var(--accent)}.table-head{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:12px}.pills{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:10px}.pill{background:linear-gradient(180deg,#182736,#101b25);border:1px solid var(--line);border-radius:14px;padding:12px;min-height:126px;cursor:pointer;position:relative;transition:.15s}.pill:hover{transform:translateY(-1px);border-color:#45647c}.pill.active{border-color:var(--accent);box-shadow:0 0 0 1px #5bd7ca44 inset}.pill .tag{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.pill h3{font-size:14px;margin:6px 0}.meter{height:6px;border-radius:99px;background:#071017;overflow:hidden;margin:9px 0}.meter i{display:block;height:100%;background:var(--accent)}.pill footer{display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.component{border:1px solid var(--line);background:#0c151e;border-radius:10px;padding:10px}.component-top{display:flex;justify-content:space-between;gap:10px}.badge{display:inline-block;padding:3px 7px;border-radius:99px;background:#1d3040;color:#a8bfd0;font-size:10px}.badge.good{background:#173824;color:#a9e8ba}.badge.warn{background:#433516;color:#ffe19a}.empty{padding:35px 10px;color:var(--muted);text-align:center;border:1px dashed var(--line);border-radius:12px}.legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.legend span{padding:3px 7px;border-radius:999px;background:#182633;color:var(--muted);font-size:10px}.api-box{margin-top:14px;padding:10px;border:1px dashed #3e5669;border-radius:10px;color:var(--muted);font-size:12px}.api-box code{color:#cfe4f2}.status{color:var(--good)}
+@media(max-width:1050px){.layout{grid-template-columns:240px 1fr}.right{grid-column:1/-1}.toolbar{grid-template-columns:1fr 1fr}}@media(max-width:720px){main{padding:14px}.layout,.toolbar{grid-template-columns:1fr}.top{display:block}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <div>
+      <span class="eyebrow">META LAYER / PERIODIC TABLE v0.1</span>
+      <h1>Periodic Table</h1>
+      <div class="sub">A selectable meta-layer over atoms, pills, and claim components. Change the grading lens without changing the underlying source object. Drill from a pill into its internal components, then score or compare only the criteria that matter for the current test.</div>
+    </div>
+    <button class="btn secondary" onclick="resetWeights()">Reset weights</button>
+  </div>
+
+  <section class="toolbar">
+    <label>Test document
+      <select id="docSelect">
+        <option value="master-equation">Master Equation</option>
+        <option value="grace">Why Grace Has an Equation</option>
+        <option value="loser">Be Glad You're a Loser</option>
+        <option value="pure-math">Pure Math Stress Test</option>
+      </select>
+    </label>
+    <label>Evaluation profile
+      <select id="profileSelect" onchange="applyProfile()"></select>
+    </label>
+    <label>Find pill / component
+      <input id="search" type="text" placeholder="claim, equation, theology…" oninput="renderPills()">
+    </label>
+    <button class="btn" onclick="evaluateVisible()">Evaluate visible</button>
+  </section>
+
+  <div class="layout">
+    <aside class="panel">
+      <h2>Meta layers</h2>
+      <div class="small">Each layer is a lens. Selecting one changes which criteria are emphasized; it does not rewrite the atom.</div>
+      <div id="layers" class="layer-list" style="margin-top:12px"></div>
+      <h2 style="margin-top:18px">Criteria weights</h2>
+      <div id="criteria" class="criteria-list"></div>
+      <div class="api-box"><strong>Planned API contract</strong><br><code>GET /api/meta/criteria</code><br><code>POST /api/meta/evaluate</code><br><code>GET /api/atoms/:id/components</code><br><br>Static fallback is active until those endpoints exist.</div>
+    </aside>
+
+    <section class="panel">
+      <div class="table-head">
+        <div><h2 style="margin-bottom:2px">Pills</h2><div id="summary" class="small"></div></div>
+        <div class="legend"><span>atom</span><span>claim</span><span>equation</span><span>bridge</span><span>evidence</span></div>
+      </div>
+      <div id="pills" class="pills"></div>
+    </section>
+
+    <aside class="panel right">
+      <h2>Selected pill</h2>
+      <div id="detail" class="empty">Select a pill to inspect its internal components and score only the parts relevant to the active meta layer.</div>
+    </aside>
+  </div>
+</main>
+<script>
+let config=null, activeLayer='structure', activePill=null;
+const samplePills=[
+{id:'ME-C1',type:'claim',title:'Closed-System Trilemma',domain:'master-equation',grade:'A',components:[['assumption','D > 0','formal'],['equation','budget balance constraint','formal'],['claim','J=1 and M=1 cannot both hold without transfer','formal'],['kill condition','counterexample with no external transfer','falsification']]},
+{id:'ME-B1',type:'bridge',title:'Moral Transfer Bridge',domain:'master-equation',grade:'B',components:[['source domain','closed-system accounting','bridge'],['target domain','justice / mercy transfer','bridge'],['warrant','structural correspondence only','bridge'],['limit','does not establish historical instantiation','provenance']]},
+{id:'GR-01',type:'claim',title:'Grace as External Transfer',domain:'grace',grade:'B',components:[['definition','grace = external contribution','translation'],['equation','deficit repair term','formal'],['theological mapping','undeserved external provision','bridge'],['objection','analogy may exceed physical warrant','falsification']]},
+{id:'GR-02',type:'evidence',title:'Cross-Domain Convergence',domain:'grace',grade:'C',components:[['physics','open-system energy / information input','evidence'],['theology','grace as unearned gift','evidence'],['bridge test','preserved operation vs metaphor','bridge'],['source family','mixed literature families','independence']]},
+{id:'LOS-01',type:'claim',title:'Loss as Information-Bearing Constraint',domain:'loser',grade:'C',components:[['narrative claim','failure reveals hidden constraints','translation'],['psychology','feedback / error correction','evidence'],['theology','humility / dependence','bridge'],['boundary','not every loss is beneficial','falsification']]},
+{id:'MATH-01',type:'equation',title:'Abstract Formal Lemma',domain:'pure-math',grade:'A',components:[['axioms','declared primitives','dependency'],['lemma','symbolic implication','formal'],['proof','derivation steps','formal'],['countermodel','boundary case','falsification']]}
+];
+
+async function loadConfig(){
+  try{config=await fetch('/_atlas/meta-criteria.json').then(r=>{if(!r.ok)throw 0;return r.json()})}
+  catch(e){config={criteria:[
+    {id:'dependency',label:'Dependency',default_weight:1},{id:'evidence',label:'Evidence',default_weight:1},{id:'falsifiability',label:'Falsifiability',default_weight:.9},{id:'formal',label:'Formal / Mathematical',default_weight:.8},{id:'coherence',label:'Internal Coherence',default_weight:1},{id:'independence',label:'Evidence Independence',default_weight:.8},{id:'cross_domain',label:'Cross-Domain Bridge',default_weight:.7},{id:'blast_radius',label:'Blast Radius',default_weight:.9},{id:'provenance',label:'Provenance',default_weight:.9},{id:'translation',label:'Translation Stability',default_weight:.7},{id:'explanatory_yield',label:'Explanatory Yield',default_weight:.7},{id:'novelty',label:'Novelty / Non-Redundancy',default_weight:.5}],
+    meta_layers:[{id:'structure',label:'Structure',criteria:['dependency','blast_radius','coherence']},{id:'warrant',label:'Warrant',criteria:['evidence','independence','provenance','falsifiability']},{id:'formalization',label:'Formalization',criteria:['formal','coherence']},{id:'bridging',label:'Bridging',criteria:['cross_domain','translation','provenance']},{id:'yield',label:'Yield',criteria:['explanatory_yield','novelty','blast_radius']}],profiles:[{id:'balanced',label:'Balanced',weights:{}}]};}
+  config.criteria.forEach(c=>c.weight=c.default_weight);renderAll();
+}
+function renderAll(){renderProfiles();renderLayers();renderCriteria();renderPills();}
+function renderProfiles(){profileSelect.innerHTML=config.profiles.map(p=>`<option value="${p.id}">${p.label}</option>`).join('')}
+function renderLayers(){layers.innerHTML=config.meta_layers.map(l=>`<div class="layer ${l.id===activeLayer?'active':''}" onclick="selectLayer('${l.id}')"><strong>${l.label}</strong><span class="small">${l.criteria.join(' · ')}</span></div>`).join('')}
+function renderCriteria(){const active=new Set((config.meta_layers.find(x=>x.id===activeLayer)||{}).criteria||[]);criteria.innerHTML=config.criteria.map(c=>`<div class="criterion" style="opacity:${active.has(c.id)?1:.45}"><div class="criterion-head"><span>${c.label}</span><span class="score" id="w-${c.id}">${c.weight.toFixed(1)}</span></div><input type="range" min="0" max="1" step="0.1" value="${c.weight}" oninput="setWeight('${c.id}',this.value)"></div>`).join('')}
+function selectLayer(id){activeLayer=id;renderLayers();renderCriteria();renderPills();if(activePill)showDetail(activePill)}
+function setWeight(id,v){const c=config.criteria.find(x=>x.id===id);c.weight=+v;document.getElementById('w-'+id).textContent=(+v).toFixed(1);renderPills();if(activePill)showDetail(activePill)}
+function resetWeights(){config.criteria.forEach(c=>c.weight=c.default_weight);profileSelect.value='balanced';renderCriteria();renderPills();if(activePill)showDetail(activePill)}
+function applyProfile(){const p=config.profiles.find(x=>x.id===profileSelect.value);config.criteria.forEach(c=>c.weight=(p.weights&&p.weights[c.id]!==undefined)?p.weights[c.id]:c.default_weight);renderCriteria();renderPills();if(activePill)showDetail(activePill)}
+function scorePill(p){const active=(config.meta_layers.find(x=>x.id===activeLayer)||{criteria:[]}).criteria;let weighted=0,total=0;for(const id of active){const c=config.criteria.find(x=>x.id===id);if(!c)continue;const signal=p.components.filter(x=>x[2]===id||aliasMatch(x[2],id)).length;const base=Math.min(1,.45+signal*.22);weighted+=base*c.weight;total+=c.weight}return total?Math.round(weighted/total*100):50}
+function aliasMatch(kind,id){const map={bridge:'cross_domain',formal:'formal',evidence:'evidence',falsification:'falsifiability',provenance:'provenance',translation:'translation',dependency:'dependency',independence:'independence'};return map[kind]===id}
+function renderPills(){const q=search.value.toLowerCase().trim();const doc=docSelect.value;let arr=samplePills.filter(p=>!q||[p.id,p.type,p.title,p.domain,...p.components.flat()].join(' ').toLowerCase().includes(q));summary.textContent=`${arr.length} visible · active layer: ${activeLayer} · document filter is staged for ingestion`;pills.innerHTML=arr.map(p=>{const s=scorePill(p);return `<article class="pill ${activePill===p.id?'active':''}" onclick="showDetail('${p.id}')"><div class="tag">${p.type} · ${p.domain}</div><h3>${p.title}</h3><div class="meter"><i style="width:${s}%"></i></div><footer><span>native ${p.grade}</span><strong class="score">${s}</strong></footer></article>`}).join('')}
+function showDetail(id){activePill=id;renderPills();const p=samplePills.find(x=>x.id===id);const s=scorePill(p);detail.innerHTML=`<div class="tag">${p.id} · ${p.domain}</div><h2 style="font-size:21px;margin:5px 0 3px">${p.title}</h2><div class="small">Meta score <span class="score">${s}</span> under <strong>${activeLayer}</strong>. This score is a view, not a replacement for the native grade.</div><div class="components" style="margin-top:14px">${p.components.map((c,i)=>`<div class="component"><div class="component-top"><strong>${c[0]}</strong><span class="badge ${c[2]==='formal'?'good':c[2]==='falsification'?'warn':''}">${c[2]}</span></div><div style="margin-top:6px">${c[1]}</div><div class="small" style="margin-top:5px">component ${i+1} · independently selectable for later API grading</div></div>`).join('')}</div><div class="api-box"><strong>Component-level request</strong><br><code>POST /api/meta/evaluate</code><br>{ pill_id: "${p.id}", layer: "${activeLayer}", component_ids: [...] }</div>`}
+function evaluateVisible(){const n=document.querySelectorAll('.pill').length;alert(`Prototype only: ${n} visible pills would be sent to the meta evaluation API using the current weights. No grade has been changed.`)}
+docSelect.onchange=renderPills;loadConfig();
+</script>
+</body>
+</html>
