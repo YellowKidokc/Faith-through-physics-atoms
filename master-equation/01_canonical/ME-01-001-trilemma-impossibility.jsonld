@@ -35,6 +35,23 @@
   "statementTechnical": "In a closed system with damage D > 0, Justice J = T_A/D and Mercy M = 1 - T_B/D under strong budget balance (T_A = T_B) yield J = 1 - M. Full Justice (J=1) and Full Mercy (M=1) are algebraically contradictory. Adding Free Will W = min(W_A, W_B) with individual rationality constraints, no mechanism exists satisfying J=M=W=1 simultaneously (Myerson-Satterthwaite). Resolution requires an external voluntary cost-bearer: T_A = D (justice satisfied), T_B = 0 (mercy satisfied), T_ext = D (external source absorbs cost), with W_ext = 1 (voluntary). This is the unique solution class.",
   "statementPlain": "When someone gets hurt, somebody has to pay. If the offender pays fully, that is justice but not mercy. If the offender pays nothing, that is mercy but not justice. You cannot have both in a closed system — the math literally forbids it. The only way to get full justice AND full mercy is if someone from outside the system voluntarily steps in and pays the cost themselves. That is not theology. That is algebra. And it has exactly one historical instantiation.",
   "mathematicalForm": "J = T_A/D, M = 1 - T_B/D, T_A = T_B (closed system) => J = 1 - M. QED: J=1 AND M=1 is impossible. Solution: T_ext = D, W_ext = 1 (voluntary external cost-bearer).",
+  "claimComponents": [
+    {
+      "componentID": "tp:ME/L5/C1.algebraic-trilemma",
+      "predicate": "closed-system justice, mercy, and free-will impossibility",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:ME/L5/C1.external-cost-bearer",
+      "predicate": "external voluntary cost-bearer solution class",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:ME/L5/C1.historical-instantiation",
+      "predicate": "the Cross is the historical instantiation of the solution class",
+      "status": "open"
+    }
+  ],
   "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
   "edges": [
     {

@@ -40,6 +40,7 @@ Every rendered claim can show:
 - forward resolution
 - backward resolution
 - open item component coverage
+- evidence coverage by claim component
 
 Component coverage is deliberately conservative. If later work resolves only
 two of three components, the claim renders as `partially_resolved`, not

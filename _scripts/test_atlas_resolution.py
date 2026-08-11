@@ -49,6 +49,43 @@ class AtlasResolutionTests(unittest.TestCase):
         coverage = ar.component_coverage(item)
         self.assertEqual({"resolved": 2, "total": 3, "status": "partially_resolved"}, {k: coverage[k] for k in ("resolved", "total", "status")})
 
+    def test_evidence_coverage_separates_strength_from_silence(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            write_json(root / "claims" / "claim.jsonld", {
+                "nodeType": "claim",
+                "claimID": "C1",
+                "name": "Grace claim",
+                "claimComponents": [
+                    {"componentID": "C1.a", "predicate": "external"},
+                    {"componentID": "C1.b", "predicate": "restoring"},
+                    {"componentID": "C1.c", "predicate": "noncoercive"},
+                ],
+            })
+            (root / "_atlas").mkdir()
+            (root / "_atlas" / "open-items.jsonl").write_text("", encoding="utf-8")
+            (root / "_atlas" / "relations.jsonl").write_text("", encoding="utf-8")
+            (root / "_atlas" / "evidence-coverage.jsonl").write_text(
+                json.dumps({
+                    "evidence_id": "E7",
+                    "claim_id": "C1",
+                    "coverage": 0.67,
+                    "supports": [
+                        {"claim_component": "C1.a", "relation": "supports", "strength": "strong"},
+                        {"claim_component": "C1.b", "relation": "supports", "strength": "moderate"},
+                    ],
+                    "unaddressed": ["C1.c"],
+                }) + "\n",
+                encoding="utf-8",
+            )
+
+            atlas = ar.build_atlas(root)
+            html = ar.render_evidence_coverage("C1", atlas.atoms["C1"], atlas)
+            self.assertIn("E7: supports (strong, coverage 0.67)", html)
+            self.assertIn("E7: supports (moderate, coverage 0.67)", html)
+            self.assertIn("UNSUPPORTED COMPONENT - no admitted evidence", html)
+            self.assertIn("Evidence strength is not evidence coverage", html)
+
 
 if __name__ == "__main__":
     unittest.main()

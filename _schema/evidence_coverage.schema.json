@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/evidence_coverage.schema.json",
+  "title": "Evidence Coverage Record",
+  "type": "object",
+  "required": ["coverage_id", "evidence_id", "claim_id", "coverage", "supports"],
+  "additionalProperties": true,
+  "properties": {
+    "coverage_id": {"type": "string"},
+    "test_cycle_id": {"type": "string"},
+    "evidence_id": {"type": "string"},
+    "source_artifact": {"type": "string"},
+    "claim_id": {"type": "string"},
+    "coverage": {"type": "number", "minimum": 0, "maximum": 1},
+    "supports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_component", "relation", "strength"],
+        "additionalProperties": true,
+        "properties": {
+          "claim_component": {"type": "string"},
+          "relation": {
+            "type": "string",
+            "enum": [
+              "establishes",
+              "supports",
+              "partially_supports",
+              "consistent_with",
+              "contextualizes",
+              "qualifies",
+              "contradicts",
+              "partially_contradicts",
+              "is_silent"
+            ]
+          },
+          "strength": {"type": "string", "enum": ["strong", "moderate", "weak", "none"]},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "unaddressed": {"type": "array", "items": {"type": "string"}},
+    "method_note": {"type": "string"}
+  }
+}

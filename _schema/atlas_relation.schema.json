@@ -11,7 +11,7 @@
     "targetAtom": {"type": "string"},
     "relation": {
       "type": "string",
-      "enum": ["supports", "contradicts", "qualifies", "supersedes", "resolves", "depends_on", "dependsOn", "extends", "falsifies"]
+      "enum": ["establishes", "supports", "partially_supports", "consistent_with", "contextualizes", "qualifies", "contradicts", "partially_contradicts", "is_silent", "supersedes", "resolves", "depends_on", "dependsOn", "extends", "falsifies"]
     },
     "status": {"type": "string", "enum": ["proposed", "accepted", "verified", "rejected"]},
     "scope": {"type": "string"},

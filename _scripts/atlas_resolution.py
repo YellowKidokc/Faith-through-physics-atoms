@@ -14,10 +14,17 @@ from typing import Any
 REPO = Path(__file__).resolve().parents[1]
 OPEN_ITEMS = REPO / "_atlas" / "open-items.jsonl"
 RELATIONS = REPO / "_atlas" / "relations.jsonl"
+EVIDENCE_COVERAGE = REPO / "_atlas" / "evidence-coverage.jsonl"
 
 INVERSES = {
+    "establishes": "established by",
     "supports": "supported by",
+    "partially_supports": "partially supported by",
+    "consistent_with": "has consistency evidence from",
+    "contextualizes": "contextualized by",
     "contradicts": "contradicted by",
+    "partially_contradicts": "partially contradicted by",
+    "is_silent": "not addressed by",
     "qualifies": "qualified by",
     "supersedes": "superseded by",
     "resolves": "resolved by",
@@ -28,12 +35,15 @@ INVERSES = {
 }
 
 STATE_BY_RELATION = {
+    "establishes": "established",
     "resolves": "resolved",
     "qualifies": "qualified",
     "supersedes": "superseded",
     "contradicts": "contested",
+    "partially_contradicts": "partially_contested",
     "falsifies": "falsified",
     "supports": "supported",
+    "partially_supports": "partially_supported",
 }
 
 
@@ -42,6 +52,7 @@ class Atlas:
     forward: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
     backward: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
     open_items_by_atom: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
+    evidence_by_claim: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
     atoms: dict[str, dict[str, Any]] = field(default_factory=dict)
 
 
@@ -130,6 +141,7 @@ def relations_from_open_items(open_items: list[dict[str, Any]]) -> list[dict[str
 def build_atlas(root: Path = REPO) -> Atlas:
     atoms = load_claim_atoms(root)
     open_items = load_jsonl(root / "_atlas" / "open-items.jsonl")
+    evidence_rows = load_jsonl(root / "_atlas" / "evidence-coverage.jsonl")
     relation_rows = [normalize_relation(r) for r in load_jsonl(root / "_atlas" / "relations.jsonl")]
     relation_rows.extend(relations_from_atoms(atoms))
     relation_rows.extend(relations_from_open_items(open_items))
@@ -151,6 +163,10 @@ def build_atlas(root: Path = REPO) -> Atlas:
             affected.add(str(opened_atom))
         for atom_id in sorted(affected):
             atlas.open_items_by_atom.setdefault(atom_id, []).append(item)
+    for row in evidence_rows:
+        claim_id = row.get("claim_id") or row.get("claimID")
+        if claim_id:
+            atlas.evidence_by_claim.setdefault(str(claim_id), []).append(row)
     return atlas
 
 
@@ -228,6 +244,86 @@ def render_open_item(item: dict[str, Any]) -> str:
     return "".join(parts)
 
 
+def claim_components(atom: dict[str, Any]) -> list[dict[str, Any]]:
+    raw = atom.get("claimComponents") or atom.get("components") or []
+    components = []
+    for index, component in enumerate(raw, 1):
+        if isinstance(component, dict):
+            component_id = component.get("componentID") or component.get("component_id") or component.get("id")
+            components.append({
+                "componentID": str(component_id or f"component-{index}"),
+                "predicate": str(component.get("predicate") or component.get("question") or component_id or f"component-{index}"),
+                "status": str(component.get("status", "declared")),
+            })
+        else:
+            components.append({"componentID": f"component-{index}", "predicate": str(component), "status": "declared"})
+    return components
+
+
+def evidence_component_status(atom: dict[str, Any], evidence_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    components = claim_components(atom)
+    by_component = {component["componentID"]: {**component, "evidence": []} for component in components}
+    for row in evidence_rows:
+        for support in row.get("supports", []):
+            component_id = str(support.get("claim_component", ""))
+            if component_id not in by_component:
+                by_component[component_id] = {"componentID": component_id, "predicate": component_id, "status": "undeclared", "evidence": []}
+            by_component[component_id]["evidence"].append({
+                "evidence_id": row.get("evidence_id"),
+                "relation": support.get("relation"),
+                "strength": support.get("strength"),
+                "coverage": row.get("coverage"),
+                "note": support.get("note"),
+            })
+        for component_id in row.get("unaddressed", []):
+            component_id = str(component_id)
+            if component_id not in by_component:
+                by_component[component_id] = {"componentID": component_id, "predicate": component_id, "status": "undeclared", "evidence": []}
+    return list(by_component.values())
+
+
+def render_evidence_coverage(atom_id: str, atom: dict[str, Any], atlas: Atlas) -> str:
+    evidence_rows = atlas.evidence_by_claim.get(atom_id, [])
+    components = evidence_component_status(atom, evidence_rows)
+    if not evidence_rows and not components:
+        return ""
+
+    row_html = []
+    for component in components:
+        evidence = component.get("evidence", [])
+        if evidence:
+            evidence_text = "; ".join(
+                f"{e.get('evidence_id')}: {e.get('relation')} ({e.get('strength')}, coverage {e.get('coverage')})"
+                for e in evidence
+            )
+        else:
+            evidence_text = "UNSUPPORTED COMPONENT - no admitted evidence"
+        row_html.append(
+            "<tr>"
+            f"<td>{html.escape(str(component['componentID']))}</td>"
+            f"<td>{html.escape(str(component['predicate']))}</td>"
+            f"<td>{html.escape(evidence_text)}</td>"
+            "</tr>"
+        )
+
+    evidence_items = []
+    for row in evidence_rows:
+        unaddressed = ", ".join(str(x) for x in row.get("unaddressed", [])) or "none declared"
+        evidence_items.append(_li(
+            f"{row.get('evidence_id')}: coverage {row.get('coverage')} - unaddressed: {unaddressed}. {row.get('method_note', '')}"
+        ))
+
+    return f"""
+      <h4>Evidence Coverage</h4>
+      <p><strong>Rule:</strong> Evidence strength is not evidence coverage. Evidence only propagates over the portion it actually supports.</p>
+      <table class="evidence-coverage">
+        <thead><tr><th>Component</th><th>Predicate</th><th>Admitted evidence</th></tr></thead>
+        <tbody>{''.join(row_html)}</tbody>
+      </table>
+      <ul>{''.join(evidence_items) or '<li>No evidence coverage records admitted.</li>'}</ul>
+"""
+
+
 def render_resolution_section(atom_id: str, atom: dict[str, Any], atlas: Atlas) -> str:
     forward = atlas.forward.get(atom_id, [])
     backward = atlas.backward.get(atom_id, [])
@@ -238,6 +334,7 @@ def render_resolution_section(atom_id: str, atom: dict[str, Any], atlas: Atlas) 
     forward_html = "".join(render_relation(r) for r in forward) or "<li>None recorded</li>"
     backward_html = "".join(render_relation(r, inverse=True) for r in backward) or "<li>None recorded</li>"
     open_html = "".join(render_open_item(i) for i in open_items) or "<p>No open items recorded for this atom.</p>"
+    evidence_html = render_evidence_coverage(atom_id, atom, atlas)
     return f"""
   <section class="atlas-resolution atlas-mode-current" data-principle="retroactive-resolution-non-retroactive-history">
     <style>
@@ -264,6 +361,7 @@ def render_resolution_section(atom_id: str, atom: dict[str, Any], atlas: Atlas) 
       <ul>{backward_html}</ul>
       <h4>Open Items</h4>
       {open_html}
+      {evidence_html}
     </section>
   </section>
 """

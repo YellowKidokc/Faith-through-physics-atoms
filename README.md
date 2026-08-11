@@ -27,6 +27,11 @@ Long-running paper series use the
 later work may change a claim's current standing, but it never rewrites the
 historical state of the paper where the claim first appeared.
 
+Evidence is component-aware by contract. The
+[Evidence Coverage Method](_docs/EVIDENCE_COVERAGE_METHOD.md) separates
+evidence strength from evidence coverage, so a source can strongly support one
+part of a claim while remaining silent on another.
+
 ---
 
 ## CRITICAL DISTINCTIONS
