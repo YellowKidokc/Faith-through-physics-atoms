@@ -1,0 +1,213 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/ten-laws/01/law-09-weak-force",
+  "nodeID": "tp:ten-laws/01/law-09-weak-force",
+  "claimID": "tp:TL/L09/C1",
+  "name": "Law 9 - Fermi-Conservation (Weak Force / Moral Conservation)",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimi (Moonshot AI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-01",
+  "dateModified": "2026-08-12",
+  "version": "1.0.0",
+  "claimKind": "isomorphism",
+  "claimClass": "isomorphism",
+  "domainType": [
+    "ten-laws",
+    "physics"
+  ],
+  "stage": "01_canonical",
+  "workbenchStage": "01_canonical",
+  "canonicalStatus": "candidate",
+  "epistemicStatus": "proposed",
+  "status": "proposed",
+  "coherenceDirection": "coherence",
+  "lawNumber": 9,
+  "lawEponym": "Fermi-Conservation",
+  "lawDomainPair": "Weak Force / Moral Conservation",
+  "lawGrade": "LOCKED",
+  "lawGradeScale": "v4 law grading scale (native canon scale, strongest first): DERIVED, LOCKED, MAPPED, PARTIAL, SPLIT, OPEN, DEFINITIONAL. Mapping to C0-C6 unruled - tracked as OI-0011.",
+  "statementTechnical": "Weak-force three-body decay n -> p + e- + anti-nu_e (Fermi theory). Canonical structural result: whole = broken + visible_damage + invisible_loss, with the total conserved; when visible_damage -> 0 (suppression), invisible_loss becomes maximal - it absorbs the remainder. 'Suppression is not repair.' Canonical grade LOCKED - second strongest law ('nothing was added'): moral damage is conserved; it can be redirected but not destroyed; hiding damage transfers it to the invisible channel. The theological terminus of transfer is the Cross. Open warnings (canonical): psi^5 dimensional repair still open; the 192pi^3 transfer requires genuine three-body phase-space structure; P_will double-count risk remains. Four conservation/limitation results converge: Newton's Third Law, the Second Law, angular momentum conservation, Kolmogorov uncomputability.",
+  "statementPlain": "You cannot delete damage - you can only move it. Hide it and it goes underground, maximal and invisible, but the total never changes. That is the conservation structure of three-body decay, and canon locks it because, like Law 5, nothing was inserted. The structure is formalized in Lean (receipt external to this repo). What remains a bridge claim - named, not proven - is the theological identification: that the only terminus where the transferred cost finally lands is the Cross. Three dimensional-repair warnings stay open in canon and are carried on this atom.",
+  "mathematicalForm": "whole = broken + visible_damage + invisible_loss; total conserved; visible_damage -> 0 => invisible_loss maximal",
+  "mathFormNormal": "whole = broken + visible_damage + invisible_loss; total conserved; visible_damage -> 0 => invisible_loss maximal",
+  "masterEquationVariables": [
+    "F"
+  ],
+  "claimComponents": [
+    {
+      "componentID": "tp:TL/L09/C1.physics-three-body-decay",
+      "predicate": "Fermi three-body decay structure",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L09/C1.conservation-ledger",
+      "predicate": "whole = broken + visible + invisible, total conserved (Lean v4; receipt external)",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L09/C1.suppression-transfer",
+      "predicate": "Suppression transfers to the invisible channel (Lean v4; receipt external)",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L09/C1.mapping-moral-conservation",
+      "predicate": "Moral damage conserved; hiding is transfer, not repair",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L09/C1.cross-terminus",
+      "predicate": "Identification of the Cross as transfer terminus (theological bridge claim)",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L09/C1.psi5-dimensional-repair",
+      "predicate": "psi^5 dimensional repair (canonical open warning)",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L09/C1.phase-space-192pi3",
+      "predicate": "192pi^3 transfer requires genuine three-body phase space",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L09/C1.p-will-double-count",
+      "predicate": "P_will double-count risk",
+      "status": "open"
+    }
+  ],
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+  "edges": [
+    {
+      "type": "feedsInto",
+      "target": "tp:ten-laws/01/law-10-coherence",
+      "status": "proposed",
+      "note": "One of the nine factors wrapped by Law 10 (C_W)."
+    },
+    {
+      "type": "feedsInto",
+      "target": "tp:ME/L5/C1",
+      "status": "proposed",
+      "note": "Reciprocal of ME-C1's carried-forward dependsOn edge ('Law 9: Moral conservation - cost cannot disappear'). This atom supplies the previously ghost target tp:ten-laws/01/law-09-weak-force."
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:ten-laws/01/law-02-mass-energy-momentum",
+      "grade": "structural_analogy",
+      "propagates": false,
+      "status": "proposed",
+      "note": "Canonical v4 symmetry pair P2: Newton-Momentum (2) <-> Fermi-Conservation (9) [Mechanics / Weak Force]."
+    }
+  ],
+  "falsificationCondition": "If the three-body conservation structure requires artificial constraint to produce the suppression-transfer result, the isomorphism claim fails.",
+  "evidenceType": "formal_derivation",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "nodeType": "claim",
+  "glyphs": [
+    "◆",
+    "≅",
+    "ℒ",
+    "⚖",
+    "✝"
+  ],
+  "tags": [
+    "moral-conservation",
+    "conservation",
+    "sin",
+    "cross",
+    "isomorphism"
+  ],
+  "keywords": [
+    "weak force",
+    "beta decay",
+    "Fermi",
+    "moral conservation",
+    "suppression",
+    "three-body ledger"
+  ],
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "leanStatus": "Three-body ledger formalized (v4 module: three_body_ledger_suppression_transfers_to_invisible; visible_zero_does_not_imply_total_zero; invisible_loss_needed_for_same_total_after_visible_suppression - receipts external to this repo).",
+  "bridgeGrade": "structural_isomorphism",
+  "claimBurden": {
+    "class": "isomorphism",
+    "requiredSupport": [
+      "mapping",
+      "invariants",
+      "bidirectional test",
+      "boundaries"
+    ],
+    "supportStatus": "incomplete"
+  },
+  "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+  "publicDescentRendering": "YellowKidokc/FaiththruPhysics: production-vault/ripped-md/one-page-stories/ten-laws-full-treatment.md (public descent rendering; numbering and letter usage differ from canonical v4 — see OI-0012)",
+  "claimBeacon": {
+    "protocol": "ClaimBeacon",
+    "protocolVersion": "0.1.0",
+    "permanentID": "tp:TL/L09/C1",
+    "canonicalURL": "https://faiththruphysics.com/claims/ten-laws/01/law-09-weak-force",
+    "version": "1.0.0",
+    "provenance": {
+      "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+      "dateCreated": "2026-08-01",
+      "dateModified": "2026-08-12"
+    },
+    "priorVersions": [],
+    "claimType": "isomorphism",
+    "domain": "ten-laws",
+    "masterEquationVariables": [
+      "F"
+    ],
+    "tags": [
+      "moral-conservation",
+      "conservation",
+      "sin",
+      "cross",
+      "isomorphism"
+    ],
+    "bridgeGrade": "structural_isomorphism",
+    "have": [
+      "three-body conservation structure",
+      "suppression-is-not-repair theorem family (Lean v4, external receipt)",
+      "LOCKED grade ruling (v4): 'nothing was added'",
+      "four converging conservation/limitation results"
+    ],
+    "need": [
+      "physics-side anchor atom (tp:physics/*) - absent from graph (OI-0010)",
+      "psi^5 dimensional repair",
+      "192pi^3 phase-space justification",
+      "P_will double-count check",
+      "Lean receipts ingested into this repo",
+      "LOCK GATE: dX/dt reproduces Gamma_sin structurally"
+    ],
+    "breakIf": [
+      "three-body conservation requires artificial constraint for suppression-transfer"
+    ],
+    "proposalFeed": "https://faiththruphysics.com/_proposals/claim-relationships.jsonl"
+  }
+}
