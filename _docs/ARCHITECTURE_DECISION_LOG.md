@@ -4,6 +4,42 @@
 
 ---
 
+## 2026-08-12: Drift fixes + Ten Laws ingestion (Kimi, branch kimi/drift-fixes-ten-laws-ingestion)
+
+THREE DRIFT DEFECTS FIXED (each pinned by a regression test in
+_scripts/test_drift_regressions.py):
+1. grade-registry.json mode_to_atlas realigned to the v0.5 freeze
+   bridge: C3 = C/PROVISIONAL (was B/SUPPORTED), C5 = B+/ESTABLISHED
+   (was A/STRONG). Marker 12 computes from this table; drift here
+   mis-grades every atom at birth.
+2. Meeting state "converged_partial" (non-canonical sixth state) folded
+   to CONVERGED within the cell's declared scope; the out-of-scope
+   historical-instantiation hole stays on OI-0001. The five-state enum
+   in view-definitions.json is the single source of truth.
+3. ME-C1 statementPlain no longer asserts the historical instantiation
+   the graph marks open (jsonld + html pill synced). Contract: any
+   claim atom with an open component must carry a boundary marker in
+   statementPlain.
+
+TEN LAWS INGESTED (ten-laws/01_canonical/TL-01-001..010):
+- Source: canonical v4 via AI-CREW CONSOLIDATED_07 packet (2026-08-03,
+  source SHA-256 19e38f57...). Numbering, letters, eponyms, grades,
+  kill conditions per the July 2026 ruling - NOT the public
+  full-treatment (numbering conflict tracked as OI-0012).
+- All atoms enter as candidate/proposed, kernelChecked=false. No canon
+  promotion. Law atoms carry native lawGrade (v4 scale); C0-C6 mapping
+  unruled (OI-0011).
+- Ghost resolution: ME-C1 dependsOn law-05/law-09 now resolve; the
+  economics bridge already existed. Remaining ghost edge:
+  tp:theology/01/001 (OI-0009); non-edge ghost refs (OI-0015).
+- 14 v0.5/batch debts registered as resolution_issue objects
+  (OI-0002..OI-0015) instead of being solved opportunistically.
+
+DECISION: where the canon source and the public rendering disagreed,
+the canon source won and the disagreement was logged, not edited away.
+
+---
+
 ## v1: Filing cabinet by type (articles, proofs, templates)
 REJECTED: Categories fragment the framework. A file about 
 psychology that touches physics has no home.

@@ -1,0 +1,183 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/ten-laws/01/law-08-relativity",
+  "nodeID": "tp:ten-laws/01/law-08-relativity",
+  "claimID": "tp:TL/L08/C1",
+  "name": "Law 8 - Einstein-Frame (Relativity / Grace-Frame)",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimi (Moonshot AI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-01",
+  "dateModified": "2026-08-12",
+  "version": "1.0.0",
+  "claimKind": "isomorphism",
+  "claimClass": "isomorphism",
+  "domainType": [
+    "ten-laws",
+    "physics"
+  ],
+  "stage": "01_canonical",
+  "workbenchStage": "01_canonical",
+  "canonicalStatus": "candidate",
+  "epistemicStatus": "proposed",
+  "status": "proposed",
+  "coherenceDirection": "coherence",
+  "lawNumber": 8,
+  "lawEponym": "Einstein-Frame",
+  "lawDomainPair": "Relativity / Grace-Frame",
+  "lawGrade": "OPEN",
+  "lawGradeScale": "v4 law grading scale (native canon scale, strongest first): DERIVED, LOCKED, MAPPED, PARTIAL, SPLIT, OPEN, DEFINITIONAL. Mapping to C0-C6 unruled - tracked as OI-0011.",
+  "statementTechnical": "General relativity. The proposed mapping: frame transformation <-> moral perspective transformation; the equivalence principle <-> grace has invariant content across moral frames; covariance <-> spiritual law holds in all moral reference frames. Canonical grade OPEN: gap named, no structural result yet. The moral-frame transformation set is unwritten - the monoid finding is a sketch; its axioms must be written down and checked (OI-0004). Disposition AM-1 pending David: restore as Law 9 or rule eight laws plus wrapper (OI-0003). Lean action: define what a moral frame transformation would need to be.",
+  "statementPlain": "Relativity says every observer measures differently and something invariant holds underneath. The proposal: grace looks different from different moral frames but carries invariant content. This is the weakest law in the canon - graded OPEN at the source, with its core object (a moral-frame transformation group) not yet written down and its place in the ten awaiting a ruling. Nothing here is proven; the gap is named, which is what OPEN means.",
+  "mathematicalForm": "No canonical form yet; required: a concrete transformation group for moral frames (unwritten - OI-0004)",
+  "mathFormNormal": "No canonical form yet; required: a concrete transformation group for moral frames (unwritten - OI-0004)",
+  "masterEquationVariables": [
+    "R"
+  ],
+  "claimComponents": [
+    {
+      "componentID": "tp:TL/L08/C1.physics-general-relativity",
+      "predicate": "General relativity and frame structure",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L08/C1.mapping-grace-frame",
+      "predicate": "Identification of frame transformation with moral perspective",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L08/C1.transformation-set",
+      "predicate": "Moral-frame transformation set (monoid finding is a sketch - OI-0004)",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L08/C1.disposition-am1",
+      "predicate": "Law 8 disposition: restore as Law 9 or eight laws plus wrapper (OI-0003)",
+      "status": "open"
+    }
+  ],
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+  "edges": [
+    {
+      "type": "feedsInto",
+      "target": "tp:ten-laws/01/law-10-coherence",
+      "status": "proposed",
+      "note": "One of the nine factors wrapped by Law 10 (C_W), pending AM-1 disposition."
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:ten-laws/01/law-01-gravity",
+      "grade": "structural_analogy",
+      "propagates": false,
+      "status": "proposed",
+      "note": "Canonical v4 symmetry pair P1: Newton-Grace (1) <-> Einstein-Frame (8) [Gravity / Relativity]."
+    }
+  ],
+  "falsificationCondition": "If no concrete transformation group can be defined for moral frames, the mapping is empty.",
+  "evidenceType": "analogical",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "nodeType": "claim",
+  "glyphs": [
+    "◆",
+    "~",
+    "ℒ",
+    "⬒",
+    "□"
+  ],
+  "tags": [
+    "grace",
+    "invariant",
+    "curvature",
+    "isomorphism",
+    "boundary"
+  ],
+  "keywords": [
+    "relativity",
+    "reference frame",
+    "equivalence principle",
+    "covariance",
+    "grace-frame"
+  ],
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "leanStatus": "Nothing yet.",
+  "bridgeGrade": "ungraded",
+  "claimBurden": {
+    "class": "isomorphism",
+    "requiredSupport": [
+      "mapping",
+      "invariants",
+      "bidirectional test",
+      "boundaries"
+    ],
+    "supportStatus": "incomplete"
+  },
+  "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+  "publicDescentRendering": "YellowKidokc/FaiththruPhysics: production-vault/ripped-md/one-page-stories/ten-laws-full-treatment.md (public descent rendering; numbering and letter usage differ from canonical v4 — see OI-0012)",
+  "claimBeacon": {
+    "protocol": "ClaimBeacon",
+    "protocolVersion": "0.1.0",
+    "permanentID": "tp:TL/L08/C1",
+    "canonicalURL": "https://faiththruphysics.com/claims/ten-laws/01/law-08-relativity",
+    "version": "1.0.0",
+    "provenance": {
+      "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+      "dateCreated": "2026-08-01",
+      "dateModified": "2026-08-12"
+    },
+    "priorVersions": [],
+    "claimType": "isomorphism",
+    "domain": "ten-laws",
+    "masterEquationVariables": [
+      "R"
+    ],
+    "tags": [
+      "grace",
+      "invariant",
+      "curvature",
+      "isomorphism",
+      "boundary"
+    ],
+    "bridgeGrade": "ungraded",
+    "have": [
+      "general relativity structure (imported physical model)",
+      "gap named (OPEN grade is an honest gap, not a failure)"
+    ],
+    "need": [
+      "physics-side anchor atom (tp:physics/*) - absent from graph (OI-0010)",
+      "moral-frame transformation set written down and axiom-checked (OI-0004)",
+      "AM-1 disposition ruling (OI-0003)",
+      "any structural result (currently none)"
+    ],
+    "breakIf": [
+      "no concrete transformation group definable for moral frames"
+    ],
+    "proposalFeed": "https://faiththruphysics.com/_proposals/claim-relationships.jsonl"
+  },
+  "numberingNote": "Numbered Law 8 under canonical v4 (R = Relativity/Grace-Frame, July 2026 ruling). The public full-treatment numbers the relativity material Law 7 - law-ordering conflict tracked as OI-0012. AM-1 disposition pending."
+}

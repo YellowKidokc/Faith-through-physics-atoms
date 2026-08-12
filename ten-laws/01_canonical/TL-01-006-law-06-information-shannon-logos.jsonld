@@ -1,0 +1,187 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/ten-laws/01/law-06-information",
+  "nodeID": "tp:ten-laws/01/law-06-information",
+  "claimID": "tp:TL/L06/C1",
+  "name": "Law 6 - Shannon-Logos (Information / Logos)",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimi (Moonshot AI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-01",
+  "dateModified": "2026-08-12",
+  "version": "1.0.0",
+  "claimKind": "isomorphism",
+  "claimClass": "isomorphism",
+  "domainType": [
+    "ten-laws",
+    "physics"
+  ],
+  "stage": "01_canonical",
+  "workbenchStage": "01_canonical",
+  "canonicalStatus": "candidate",
+  "epistemicStatus": "proposed",
+  "status": "proposed",
+  "coherenceDirection": "coherence",
+  "lawNumber": 6,
+  "lawEponym": "Shannon-Logos",
+  "lawDomainPair": "Information / Logos",
+  "lawGrade": "SPLIT",
+  "lawGradeScale": "v4 law grading scale (native canon scale, strongest first): DERIVED, LOCKED, MAPPED, PARTIAL, SPLIT, OPEN, DEFINITIONAL. Mapping to C0-C6 unruled - tracked as OI-0011.",
+  "statementTechnical": "Two halves. Shannon half: channel capacity C = B log2(1 + S/N) - well-defined, quantifiable, Lean-formalizable; capacity maps to the channel through which Logos communicates. Kolmogorov half: irreducible complexity maps to the content of divine speech - meaning is not Shannon information. Logos (John 1:1) is claimed as both channel and message. Canonical grade SPLIT: the Shannon half is strong and formalizable; the Kolmogorov half carries the theological weight and is the weaker leg.",
+  "statementPlain": "Shannon told us how to measure what a channel can carry; Kolmogorov told us some content cannot be compressed. The proposal: the Word is both the channel and the message - and the meaning of the message is precisely the part information rate cannot measure. The Shannon half of this law is strong and formalizable; the Kolmogorov half is where the theology lives, and it remains open - if meaning ever collapses into mere information rate, this law's own kill condition says it fails.",
+  "mathematicalForm": "C = B log2(1 + S/N); K(x) = min{|p| : U(p) = x}; claim: meaning not reducible to Shannon rate",
+  "mathFormNormal": "C = B log2(1 + S/N); K(x) = min{|p| : U(p) = x}; claim: meaning not reducible to Shannon rate",
+  "masterEquationVariables": [
+    "K"
+  ],
+  "claimComponents": [
+    {
+      "componentID": "tp:TL/L06/C1.shannon-half",
+      "predicate": "Channel capacity formalism and its mapping to the Logos channel",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L06/C1.kolmogorov-half",
+      "predicate": "Kolmogorov complexity as irreducible content of divine speech",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L06/C1.channel-and-message",
+      "predicate": "Logos as both channel and message (John 1:1)",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L06/C1.moral-state-space",
+      "predicate": "Moral state space formalization (shared hole with Law 5 - OI-0006)",
+      "status": "open"
+    }
+  ],
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+  "edges": [
+    {
+      "type": "feedsInto",
+      "target": "tp:ten-laws/01/law-10-coherence",
+      "status": "proposed",
+      "note": "One of the nine factors wrapped by Law 10 (C_W)."
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:ten-laws/01/law-05-thermodynamics",
+      "grade": "structural_analogy",
+      "propagates": false,
+      "status": "proposed",
+      "note": "Canonical v4 symmetry pair P4: Clausius-Judgment (5) <-> Shannon-Logos (6) [Thermo / Information]."
+    }
+  ],
+  "falsificationCondition": "If the Shannon/Kolmogorov split cannot be maintained - if meaning collapses into information rate - the law loses its theological force.",
+  "evidenceType": "analogical",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "nodeType": "claim",
+  "glyphs": [
+    "◆",
+    "≈",
+    "ℒ",
+    "λ",
+    "ℹ"
+  ],
+  "tags": [
+    "logos",
+    "information",
+    "channel-capacity",
+    "truth",
+    "isomorphism"
+  ],
+  "keywords": [
+    "Shannon",
+    "Kolmogorov",
+    "channel capacity",
+    "Logos",
+    "Word",
+    "information"
+  ],
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "leanStatus": "Shannon definitions only.",
+  "bridgeGrade": "structural_analogy",
+  "claimBurden": {
+    "class": "isomorphism",
+    "requiredSupport": [
+      "mapping",
+      "invariants",
+      "bidirectional test",
+      "boundaries"
+    ],
+    "supportStatus": "incomplete"
+  },
+  "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+  "publicDescentRendering": "YellowKidokc/FaiththruPhysics: production-vault/ripped-md/one-page-stories/ten-laws-full-treatment.md (public descent rendering; numbering and letter usage differ from canonical v4 — see OI-0012)",
+  "claimBeacon": {
+    "protocol": "ClaimBeacon",
+    "protocolVersion": "0.1.0",
+    "permanentID": "tp:TL/L06/C1",
+    "canonicalURL": "https://faiththruphysics.com/claims/ten-laws/01/law-06-information",
+    "version": "1.0.0",
+    "provenance": {
+      "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+      "dateCreated": "2026-08-01",
+      "dateModified": "2026-08-12"
+    },
+    "priorVersions": [],
+    "claimType": "isomorphism",
+    "domain": "ten-laws",
+    "masterEquationVariables": [
+      "K"
+    ],
+    "tags": [
+      "logos",
+      "information",
+      "channel-capacity",
+      "truth",
+      "isomorphism"
+    ],
+    "bridgeGrade": "structural_analogy",
+    "have": [
+      "Shannon capacity formalism",
+      "SPLIT grade ruling (strong half / weak half named)",
+      "canonical letter dictionary assignment K"
+    ],
+    "need": [
+      "physics-side anchor atom (tp:physics/*) - absent from graph (OI-0010)",
+      "Kolmogorov-half formalization",
+      "moral state space (OI-0006)",
+      "bidirectional mapping test"
+    ],
+    "breakIf": [
+      "meaning collapses into information rate (split cannot be maintained)"
+    ],
+    "proposalFeed": "https://faiththruphysics.com/_proposals/claim-relationships.jsonl"
+  },
+  "scriptureRefs": [
+    "John 1:1"
+  ]
+}

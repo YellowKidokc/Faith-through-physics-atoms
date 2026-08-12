@@ -1,0 +1,178 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/ten-laws/01/law-02-mass-energy-momentum",
+  "nodeID": "tp:ten-laws/01/law-02-mass-energy-momentum",
+  "claimID": "tp:TL/L02/C1",
+  "name": "Law 2 - Newton-Momentum (Mass-Energy / Meaning)",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimi (Moonshot AI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-01",
+  "dateModified": "2026-08-12",
+  "version": "1.0.0",
+  "claimKind": "isomorphism",
+  "claimClass": "isomorphism",
+  "domainType": [
+    "ten-laws",
+    "physics"
+  ],
+  "stage": "01_canonical",
+  "workbenchStage": "01_canonical",
+  "canonicalStatus": "candidate",
+  "epistemicStatus": "proposed",
+  "status": "proposed",
+  "coherenceDirection": "coherence",
+  "lawNumber": 2,
+  "lawEponym": "Newton-Momentum",
+  "lawDomainPair": "Mass-Energy / Meaning",
+  "lawGrade": "MAPPED",
+  "lawGradeScale": "v4 law grading scale (native canon scale, strongest first): DERIVED, LOCKED, MAPPED, PARTIAL, SPLIT, OPEN, DEFINITIONAL. Mapping to C0-C6 unruled - tracked as OI-0011.",
+  "statementTechnical": "Newton's Second Law F = dp/dt and Third Law F_12 = -F_21. Momentum conservation: internal forces sum to zero, so total momentum change requires an external force - redirection of a closed system requires external input. Amended (AM-2) from the retired Einstein-Meaning framing; E = mc^2 retained: mass and energy are the same thing measured differently. The mapping: mass/inertia is what resists change; meaning is what gives weight to existence; a life cannot be redirected from inside a closed system - the external force is read as grace. Action-reaction: every moral action produces counter-pressure.",
+  "statementPlain": "You cannot redirect yourself. That is not a therapy insight - it is momentum conservation. Internal forces sum to zero; only an external force changes the total. The proposed reading: a closed life stays on its trajectory until something from outside acts on it, and the framework names that something grace. The mechanics are established; the meaning mapping is proposed, not proven - it remains open whether the parallel is structural or cosmetic. Its own kill condition says exactly how it would die.",
+  "mathematicalForm": "F = dp/dt; F_12 = -F_21; sum(internal forces) = 0 => external force required for total momentum change; E = mc^2 retained",
+  "mathFormNormal": "F = dp/dt; F_12 = -F_21; sum(internal forces) = 0 => external force required for total momentum change; E = mc^2 retained",
+  "masterEquationVariables": [
+    "M"
+  ],
+  "claimComponents": [
+    {
+      "componentID": "tp:TL/L02/C1.physics-momentum-conservation",
+      "predicate": "Momentum conservation and the external-force requirement",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L02/C1.amendment-am2-restructure",
+      "predicate": "AM-2 restructure from Einstein-Meaning to Newton-Momentum (E=mc^2 retained)",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L02/C1.mapping-meaning-redirection",
+      "predicate": "Identification of external force with grace as redirector of a life",
+      "status": "open"
+    }
+  ],
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+  "edges": [
+    {
+      "type": "feedsInto",
+      "target": "tp:ten-laws/01/law-10-coherence",
+      "status": "proposed",
+      "note": "One of the nine factors wrapped by Law 10 (C_W)."
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:ten-laws/01/law-09-weak-force",
+      "grade": "structural_analogy",
+      "propagates": false,
+      "status": "proposed",
+      "note": "Canonical v4 symmetry pair P2: Newton-Momentum (2) <-> Fermi-Conservation (9) [Mechanics / Weak Force]."
+    }
+  ],
+  "falsificationCondition": "If the momentum framing reduces to trivial mechanics with no structural parallel to meaning/purpose dynamics, the mapping is cosmetic.",
+  "evidenceType": "analogical",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "nodeType": "claim",
+  "glyphs": [
+    "◆",
+    "≈",
+    "ℒ",
+    "⟲",
+    "χ"
+  ],
+  "tags": [
+    "grace",
+    "free-will",
+    "isomorphism",
+    "conservation",
+    "coherence"
+  ],
+  "keywords": [
+    "momentum",
+    "inertia",
+    "meaning",
+    "external force",
+    "action-reaction",
+    "E=mc^2"
+  ],
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "leanStatus": "Strong candidate, not built.",
+  "bridgeGrade": "structural_analogy",
+  "claimBurden": {
+    "class": "isomorphism",
+    "requiredSupport": [
+      "mapping",
+      "invariants",
+      "bidirectional test",
+      "boundaries"
+    ],
+    "supportStatus": "incomplete"
+  },
+  "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+  "publicDescentRendering": "YellowKidokc/FaiththruPhysics: production-vault/ripped-md/one-page-stories/ten-laws-full-treatment.md (public descent rendering; numbering and letter usage differ from canonical v4 — see OI-0012)",
+  "claimBeacon": {
+    "protocol": "ClaimBeacon",
+    "protocolVersion": "0.1.0",
+    "permanentID": "tp:TL/L02/C1",
+    "canonicalURL": "https://faiththruphysics.com/claims/ten-laws/01/law-02-mass-energy-momentum",
+    "version": "1.0.0",
+    "provenance": {
+      "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+      "dateCreated": "2026-08-01",
+      "dateModified": "2026-08-12"
+    },
+    "priorVersions": [],
+    "claimType": "isomorphism",
+    "domain": "ten-laws",
+    "masterEquationVariables": [
+      "M"
+    ],
+    "tags": [
+      "grace",
+      "free-will",
+      "isomorphism",
+      "conservation",
+      "coherence"
+    ],
+    "bridgeGrade": "structural_analogy",
+    "have": [
+      "momentum conservation structure",
+      "AM-2 amendment history recorded",
+      "canonical letter dictionary assignment M"
+    ],
+    "need": [
+      "physics-side anchor atom (tp:physics/*) - absent from graph (OI-0010)",
+      "bidirectional mapping test",
+      "Lean build (strong candidate per canon)"
+    ],
+    "breakIf": [
+      "momentum framing reduces to trivial mechanics with no structural parallel"
+    ],
+    "proposalFeed": "https://faiththruphysics.com/_proposals/claim-relationships.jsonl"
+  }
+}
