@@ -26,14 +26,14 @@
   ],
   "aiContributionDeclared": true,
   "dateCreated": "2026-01-01",
-  "dateModified": "2026-07-23",
+  "dateModified": "2026-08-12",
   "version": "1.0.0",
   "claimClass": "theorem",
   "domainType": "mathematics",
   "stage": "01_canonical",
   "status": "verified",
   "statementTechnical": "In a closed system with damage D > 0, Justice J = T_A/D and Mercy M = 1 - T_B/D under strong budget balance (T_A = T_B) yield J = 1 - M. Full Justice (J=1) and Full Mercy (M=1) are algebraically contradictory. Adding Free Will W = min(W_A, W_B) with individual rationality constraints, no mechanism exists satisfying J=M=W=1 simultaneously (Myerson-Satterthwaite). Resolution requires an external voluntary cost-bearer: T_A = D (justice satisfied), T_B = 0 (mercy satisfied), T_ext = D (external source absorbs cost), with W_ext = 1 (voluntary). This is the unique solution class.",
-  "statementPlain": "When someone gets hurt, somebody has to pay. If the offender pays fully, that is justice but not mercy. If the offender pays nothing, that is mercy but not justice. You cannot have both in a closed system — the math literally forbids it. The only way to get full justice AND full mercy is if someone from outside the system voluntarily steps in and pays the cost themselves. That is not theology. That is algebra. And it has exactly one historical instantiation.",
+  "statementPlain": "When someone gets hurt, somebody has to pay. If the offender pays fully, that is justice but not mercy. If the offender pays nothing, that is mercy but not justice. You cannot have both in a closed system — the math literally forbids it. The only way to get full justice AND full mercy is if someone from outside the system voluntarily steps in and pays the cost themselves. That is not theology. That is algebra. Identifying that solution class with a specific historical event is a separate claim: the algebra defines the solution class, but it does not establish the historical instantiation by itself. That component remains open in the Atlas (open item OI-0001).",
   "mathematicalForm": "J = T_A/D, M = 1 - T_B/D, T_A = T_B (closed system) => J = 1 - M. QED: J=1 AND M=1 is impossible. Solution: T_ext = D, W_ext = 1 (voluntary external cost-bearer).",
   "claimComponents": [
     {
@@ -160,7 +160,7 @@
     "provenance": {
       "sourceReference": "C:\\theophysics\\CANONICAL\\_docs\\GMF3_Trilemma_Scoring_Engine.xlsx (Impossibility Proof sheet)",
       "dateCreated": "2026-01-01",
-      "dateModified": "2026-07-23"
+      "dateModified": "2026-08-12"
     },
     "priorVersions": [],
     "claimType": "theorem",

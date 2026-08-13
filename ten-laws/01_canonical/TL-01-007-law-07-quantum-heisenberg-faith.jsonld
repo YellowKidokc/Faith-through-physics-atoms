@@ -1,0 +1,188 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/ten-laws/01/law-07-quantum",
+  "nodeID": "tp:ten-laws/01/law-07-quantum",
+  "claimID": "tp:TL/L07/C1",
+  "name": "Law 7 - Heisenberg-Faith (Quantum / Faith)",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimi (Moonshot AI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-01",
+  "dateModified": "2026-08-12",
+  "version": "1.0.0",
+  "claimKind": "isomorphism",
+  "claimClass": "isomorphism",
+  "domainType": [
+    "ten-laws",
+    "physics"
+  ],
+  "stage": "01_canonical",
+  "workbenchStage": "01_canonical",
+  "canonicalStatus": "candidate",
+  "epistemicStatus": "proposed",
+  "status": "proposed",
+  "coherenceDirection": "coherence",
+  "lawNumber": 7,
+  "lawEponym": "Heisenberg-Faith",
+  "lawDomainPair": "Quantum / Faith",
+  "lawGrade": "PARTIAL",
+  "lawGradeScale": "v4 law grading scale (native canon scale, strongest first): DERIVED, LOCKED, MAPPED, PARTIAL, SPLIT, OPEN, DEFINITIONAL. Mapping to C0-C6 unruled - tracked as OI-0011.",
+  "statementTechnical": "Heisenberg uncertainty DxDp >= hbar/2; measurement collapses superposition. The mapping: uncertainty <-> the epistemic limit that leaves room for faith; collapse <-> commitment (faith as the engagement that actualizes); complementarity <-> the irreducible tension between divine sovereignty and human freedom. Collapse condition proposed as threshold F*Q >= Theta_c. Canonical status correction: the threshold is a proposed pinning protocol, not a prediction; the F_critical = 0.31-0.35 figure is RETIRED. The F-normalisation defect is open: the earlier P x F formulation broke Born-rule normalization for F > 1; Repair A (basis selection) vs Repair B (renormalisation) awaits David's ruling (OI-0002).",
+  "statementPlain": "Quantum systems hold all possibilities until engagement collapses them into one. The proposal: faith is that kind of engagement - not passive uncertainty but the commitment that actualizes. Canon is blunt about the state of play: the collapse threshold is a proposed protocol, not a prediction; the old threshold numbers are retired; and the math of how faith enters the amplitude broke once already and remains open pending a repair ruling. The physics is established; the faith mapping is partial and not proven.",
+  "mathematicalForm": "DxDp >= hbar/2; proposed collapse condition: F*Q >= Theta_c => |Phi> -> |outcome> (pinning protocol, not prediction)",
+  "mathFormNormal": "DxDp >= hbar/2; proposed collapse condition: F*Q >= Theta_c => |Phi> -> |outcome> (pinning protocol, not prediction)",
+  "masterEquationVariables": [
+    "Q"
+  ],
+  "claimComponents": [
+    {
+      "componentID": "tp:TL/L07/C1.physics-uncertainty",
+      "predicate": "Uncertainty principle and measurement collapse",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L07/C1.mapping-faith-collapse",
+      "predicate": "Identification of collapse with faith commitment",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L07/C1.threshold-protocol",
+      "predicate": "F*Q >= Theta_c pinning protocol (0.31-0.35 RETIRED)",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L07/C1.f-normalisation-repair",
+      "predicate": "F-normalisation defect: Repair A vs Repair B ruling (OI-0002)",
+      "status": "open"
+    }
+  ],
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+  "edges": [
+    {
+      "type": "feedsInto",
+      "target": "tp:ten-laws/01/law-10-coherence",
+      "status": "proposed",
+      "note": "One of the nine factors wrapped by Law 10 (C_W)."
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:ten-laws/01/law-04-strong-force",
+      "grade": "structural_analogy",
+      "propagates": false,
+      "status": "proposed",
+      "note": "Canonical v4 symmetry pair P3: Yukawa-Agape (4) <-> Heisenberg-Faith (7) [Strong / Quantum]."
+    }
+  ],
+  "falsificationCondition": "If the quantum-to-faith reduction map is shown to be purely metaphorical with no structural content beyond 'uncertainty = not knowing,' the mapping fails.",
+  "evidenceType": "analogical",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "nodeType": "claim",
+  "glyphs": [
+    "◆",
+    "≈",
+    "ℒ",
+    "⟠",
+    "⚛"
+  ],
+  "tags": [
+    "faith",
+    "free-will",
+    "observer",
+    "isomorphism",
+    "boundary"
+  ],
+  "keywords": [
+    "Heisenberg",
+    "uncertainty",
+    "collapse",
+    "faith",
+    "threshold",
+    "complementarity"
+  ],
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "leanStatus": "Protocol shape only.",
+  "bridgeGrade": "structural_analogy",
+  "claimBurden": {
+    "class": "isomorphism",
+    "requiredSupport": [
+      "mapping",
+      "invariants",
+      "bidirectional test",
+      "boundaries"
+    ],
+    "supportStatus": "incomplete"
+  },
+  "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+  "publicDescentRendering": "YellowKidokc/FaiththruPhysics: production-vault/ripped-md/one-page-stories/ten-laws-full-treatment.md (public descent rendering; numbering and letter usage differ from canonical v4 — see OI-0012)",
+  "claimBeacon": {
+    "protocol": "ClaimBeacon",
+    "protocolVersion": "0.1.0",
+    "permanentID": "tp:TL/L07/C1",
+    "canonicalURL": "https://faiththruphysics.com/claims/ten-laws/01/law-07-quantum",
+    "version": "1.0.0",
+    "provenance": {
+      "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+      "dateCreated": "2026-08-01",
+      "dateModified": "2026-08-12"
+    },
+    "priorVersions": [],
+    "claimType": "isomorphism",
+    "domain": "ten-laws",
+    "masterEquationVariables": [
+      "Q"
+    ],
+    "tags": [
+      "faith",
+      "free-will",
+      "observer",
+      "isomorphism",
+      "boundary"
+    ],
+    "bridgeGrade": "structural_analogy",
+    "have": [
+      "uncertainty and collapse structure",
+      "threshold-protocol shape",
+      "retirement recorded (F_critical 0.31-0.35)"
+    ],
+    "need": [
+      "physics-side anchor atom (tp:physics/*) - absent from graph (OI-0010)",
+      "F-normalisation repair ruling (OI-0002)",
+      "reduction map with structural content beyond metaphor",
+      "bidirectional mapping test"
+    ],
+    "breakIf": [
+      "quantum-to-faith reduction map shown purely metaphorical"
+    ],
+    "proposalFeed": "https://faiththruphysics.com/_proposals/claim-relationships.jsonl"
+  },
+  "scriptureRefs": [
+    "Hebrews 11:1"
+  ],
+  "numberingNote": "Numbered Law 7 under canonical v4 (Q = Quantum/Faith, July 2026 ruling). The public full-treatment numbers this material Law 8 - law-ordering conflict tracked as OI-0012."
+}

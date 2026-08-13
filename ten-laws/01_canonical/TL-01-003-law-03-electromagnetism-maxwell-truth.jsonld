@@ -1,0 +1,179 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/ten-laws/01/law-03-electromagnetism",
+  "nodeID": "tp:ten-laws/01/law-03-electromagnetism",
+  "claimID": "tp:TL/L03/C1",
+  "name": "Law 3 - Maxwell-Truth (Electromagnetism / Truth)",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimi (Moonshot AI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-01",
+  "dateModified": "2026-08-12",
+  "version": "1.0.0",
+  "claimKind": "isomorphism",
+  "claimClass": "isomorphism",
+  "domainType": [
+    "ten-laws",
+    "physics"
+  ],
+  "stage": "01_canonical",
+  "workbenchStage": "01_canonical",
+  "canonicalStatus": "candidate",
+  "epistemicStatus": "proposed",
+  "status": "proposed",
+  "coherenceDirection": "coherence",
+  "lawNumber": 3,
+  "lawEponym": "Maxwell-Truth",
+  "lawDomainPair": "Electromagnetism / Truth",
+  "lawGrade": "MAPPED",
+  "lawGradeScale": "v4 law grading scale (native canon scale, strongest first): DERIVED, LOCKED, MAPPED, PARTIAL, SPLIT, OPEN, DEFINITIONAL. Mapping to C0-C6 unruled - tracked as OI-0011.",
+  "statementTechnical": "Maxwell's equations govern electromagnetism; radiation propagates at c. The eigenmode program proposes that the self-adjoint electromagnetic operator carries eigenmodes corresponding to truth-structure (real eigenvalues = observable; truth as its own witness), with the seven I AM statements of John proposed as a basis set. Canonical status correction: the eigenmode program is a well-posed conjecture, not a resolved result.",
+  "statementPlain": "Light is the signal that loses nothing in transmission - Maxwell's equations are complete, no loose ends. The proposal: truth propagates the same way, perfect at the source, with the loss always at the receiving end. The bolder piece - that the truth operator has the seven I AM statements as its eigenmodes - is recorded in canon as a well-posed conjecture, not a result. The physics is established; the truth mapping and the eigenmode program remain open and unproven.",
+  "mathematicalForm": "Maxwell's equations; self-adjoint EM operator H; eigenmode program: H phi_n = lambda_n phi_n with proposed basis {I AM statements}",
+  "mathFormNormal": "Maxwell's equations; self-adjoint EM operator H; eigenmode program: H phi_n = lambda_n phi_n with proposed basis {I AM statements}",
+  "masterEquationVariables": [
+    "E"
+  ],
+  "claimComponents": [
+    {
+      "componentID": "tp:TL/L03/C1.physics-maxwell",
+      "predicate": "Maxwell equations and electromagnetic propagation",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L03/C1.eigenmode-program",
+      "predicate": "Self-adjoint operator eigenmode program for truth-structure",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L03/C1.iam-basis-set",
+      "predicate": "Seven I AM statements as proposed basis set",
+      "status": "open"
+    }
+  ],
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+  "edges": [
+    {
+      "type": "feedsInto",
+      "target": "tp:ten-laws/01/law-10-coherence",
+      "status": "proposed",
+      "note": "One of the nine factors wrapped by Law 10 (C_W). Canonical v4 pair structure: Maxwell-Truth is the Herald (unpaired)."
+    }
+  ],
+  "falsificationCondition": "If the self-adjoint operator does not produce meaningful eigenmodes corresponding to truth-structure, the mapping is poetic, not structural.",
+  "evidenceType": "analogical",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "nodeType": "claim",
+  "glyphs": [
+    "◆",
+    "≈",
+    "ℒ",
+    "☉",
+    "⊙"
+  ],
+  "tags": [
+    "truth",
+    "witness",
+    "logos",
+    "isomorphism",
+    "field"
+  ],
+  "keywords": [
+    "Maxwell",
+    "electromagnetism",
+    "truth field",
+    "eigenmodes",
+    "I AM",
+    "self-adjoint"
+  ],
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "leanStatus": "Operator/gate definitions only. Canonical note: do not mark as gold yet.",
+  "bridgeGrade": "structural_analogy",
+  "claimBurden": {
+    "class": "isomorphism",
+    "requiredSupport": [
+      "mapping",
+      "invariants",
+      "bidirectional test",
+      "boundaries"
+    ],
+    "supportStatus": "incomplete"
+  },
+  "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+  "publicDescentRendering": "YellowKidokc/FaiththruPhysics: production-vault/ripped-md/one-page-stories/ten-laws-full-treatment.md (public descent rendering; numbering and letter usage differ from canonical v4 — see OI-0012)",
+  "claimBeacon": {
+    "protocol": "ClaimBeacon",
+    "protocolVersion": "0.1.0",
+    "permanentID": "tp:TL/L03/C1",
+    "canonicalURL": "https://faiththruphysics.com/claims/ten-laws/01/law-03-electromagnetism",
+    "version": "1.0.0",
+    "provenance": {
+      "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+      "dateCreated": "2026-08-01",
+      "dateModified": "2026-08-12"
+    },
+    "priorVersions": [],
+    "claimType": "isomorphism",
+    "domain": "ten-laws",
+    "masterEquationVariables": [
+      "E"
+    ],
+    "tags": [
+      "truth",
+      "witness",
+      "logos",
+      "isomorphism",
+      "field"
+    ],
+    "bridgeGrade": "structural_analogy",
+    "have": [
+      "Maxwell equation structure",
+      "eigenmode program stated as well-posed conjecture",
+      "canonical letter dictionary assignment E (LETTER-CONFLICT-E resolved 2026-07-26: E = Electromagnetism/Truth)"
+    ],
+    "need": [
+      "physics-side anchor atom (tp:physics/*) - absent from graph (OI-0010)",
+      "eigenmode existence and correspondence proof (currently conjecture)",
+      "bidirectional mapping test"
+    ],
+    "breakIf": [
+      "self-adjoint operator produces no meaningful eigenmodes for truth-structure"
+    ],
+    "proposalFeed": "https://faiththruphysics.com/_proposals/claim-relationships.jsonl"
+  },
+  "scriptureRefs": [
+    "John 6:35",
+    "John 8:12",
+    "John 10:7",
+    "John 10:11",
+    "John 11:25",
+    "John 14:6",
+    "John 15:1"
+  ]
+}

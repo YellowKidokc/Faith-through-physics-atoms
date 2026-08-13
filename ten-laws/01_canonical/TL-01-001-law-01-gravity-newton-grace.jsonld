@@ -1,0 +1,179 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/ten-laws/01/law-01-gravity",
+  "nodeID": "tp:ten-laws/01/law-01-gravity",
+  "claimID": "tp:TL/L01/C1",
+  "name": "Law 1 - Newton-Grace (Gravitation -> Grace)",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimi (Moonshot AI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-01",
+  "dateModified": "2026-08-12",
+  "version": "1.0.0",
+  "claimKind": "isomorphism",
+  "claimClass": "isomorphism",
+  "domainType": [
+    "ten-laws",
+    "physics"
+  ],
+  "stage": "01_canonical",
+  "workbenchStage": "01_canonical",
+  "canonicalStatus": "candidate",
+  "epistemicStatus": "proposed",
+  "status": "proposed",
+  "coherenceDirection": "coherence",
+  "lawNumber": 1,
+  "lawEponym": "Newton-Grace",
+  "lawDomainPair": "Gravitation / Grace",
+  "lawGrade": "MAPPED",
+  "lawGradeScale": "v4 law grading scale (native canon scale, strongest first): DERIVED, LOCKED, MAPPED, PARTIAL, SPLIT, OPEN, DEFINITIONAL. Mapping to C0-C6 unruled - tracked as OI-0011.",
+  "statementTechnical": "Newtonian gravitation F = -GMm/r^2 with angular momentum L gives the effective potential V_eff(r) = -GM/r + L^2/(2r^2). For L != 0 a stationary point exists: bounded orbits are possible - the system remains in structured relationship with the source. For L = 0 there is no stationary point: monotone infall, collapse into the source without distinction. The mapping identifies L with relational engagement (response / worship): grace is always attractive, and orbit - closeness with preserved distinction - requires what the creature brings. Angular momentum is conserved: what you bring to the relationship is preserved.",
+  "statementPlain": "Gravity always pulls and never pushes, but whether you orbit or crash depends on what you bring. Bring angular momentum and you hold a stable orbit - close enough to be warmed, far enough to remain yourself. Bring nothing and you fall straight in. The proposed reading: grace always draws, and relationship needs your response to keep it from collapsing into sameness. The physics is established; the grace mapping is proposed, not proven - it remains an open structural analogy, not a demonstrated identity.",
+  "mathematicalForm": "V_eff(r) = -GM/r + L^2/(2r^2); L != 0 => stationary point (bounded orbit); L = 0 => monotone infall",
+  "mathFormNormal": "V_eff(r) = -GM/r + L^2/(2r^2); L != 0 => stationary point (bounded orbit); L = 0 => monotone infall",
+  "masterEquationVariables": [
+    "G"
+  ],
+  "claimComponents": [
+    {
+      "componentID": "tp:TL/L01/C1.physics-orbital-structure",
+      "predicate": "Effective-potential stationary-point structure and the L!=0 / L=0 regime split",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L01/C1.mapping-grace-engagement",
+      "predicate": "Identification of angular momentum L with relational engagement / worship",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L01/C1.conservation-preservation",
+      "predicate": "What is brought to the relationship is preserved (L conserved)",
+      "status": "open"
+    }
+  ],
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+  "edges": [
+    {
+      "type": "feedsInto",
+      "target": "tp:ten-laws/01/law-10-coherence",
+      "status": "proposed",
+      "note": "One of the nine factors wrapped by Law 10 (C_W)."
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:ten-laws/01/law-08-relativity",
+      "grade": "structural_analogy",
+      "propagates": false,
+      "status": "proposed",
+      "note": "Canonical v4 symmetry pair P1: Newton-Grace (1) <-> Einstein-Frame (8) [Gravity / Relativity]."
+    }
+  ],
+  "falsificationCondition": "If L maps to worship/engagement but the orbit structure does not require angular momentum to prevent collapse, the mapping fails.",
+  "evidenceType": "analogical",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "nodeType": "claim",
+  "glyphs": [
+    "◆",
+    "≈",
+    "ℒ",
+    "✦",
+    "⟲"
+  ],
+  "tags": [
+    "grace",
+    "free-will",
+    "isomorphism",
+    "invariant",
+    "field"
+  ],
+  "keywords": [
+    "gravity",
+    "angular momentum",
+    "effective potential",
+    "orbit",
+    "grace",
+    "worship"
+  ],
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "leanStatus": "Targets defined, not built.",
+  "bridgeGrade": "structural_analogy",
+  "claimBurden": {
+    "class": "isomorphism",
+    "requiredSupport": [
+      "mapping",
+      "invariants",
+      "bidirectional test",
+      "boundaries"
+    ],
+    "supportStatus": "incomplete"
+  },
+  "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+  "publicDescentRendering": "YellowKidokc/FaiththruPhysics: production-vault/ripped-md/one-page-stories/ten-laws-full-treatment.md (public descent rendering; numbering and letter usage differ from canonical v4 — see OI-0012)",
+  "claimBeacon": {
+    "protocol": "ClaimBeacon",
+    "protocolVersion": "0.1.0",
+    "permanentID": "tp:TL/L01/C1",
+    "canonicalURL": "https://faiththruphysics.com/claims/ten-laws/01/law-01-gravity",
+    "version": "1.0.0",
+    "provenance": {
+      "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+      "dateCreated": "2026-08-01",
+      "dateModified": "2026-08-12"
+    },
+    "priorVersions": [],
+    "claimType": "isomorphism",
+    "domain": "ten-laws",
+    "masterEquationVariables": [
+      "G"
+    ],
+    "tags": [
+      "grace",
+      "free-will",
+      "isomorphism",
+      "invariant",
+      "field"
+    ],
+    "bridgeGrade": "structural_analogy",
+    "have": [
+      "effective potential stationary-point structure",
+      "L!=0 / L=0 regime split",
+      "canonical letter dictionary assignment G (David ruling, July 2026)"
+    ],
+    "need": [
+      "physics-side anchor atom (tp:physics/*) - absent from graph (OI-0010)",
+      "bidirectional mapping test",
+      "simplified algebraic version before GR/orbital mechanics (canonical guidance)",
+      "Lean targets built (currently defined only)"
+    ],
+    "breakIf": [
+      "orbit structure does not require angular momentum to prevent collapse"
+    ],
+    "proposalFeed": "https://faiththruphysics.com/_proposals/claim-relationships.jsonl"
+  }
+}

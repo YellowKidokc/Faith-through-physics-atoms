@@ -1,0 +1,192 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/ten-laws/01/law-05-thermodynamics",
+  "nodeID": "tp:ten-laws/01/law-05-thermodynamics",
+  "claimID": "tp:TL/L05/C1",
+  "name": "Law 5 - Clausius-Judgment (Thermodynamics / Judgment)",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimi (Moonshot AI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-01",
+  "dateModified": "2026-08-12",
+  "version": "1.0.0",
+  "claimKind": "isomorphism",
+  "claimClass": "isomorphism",
+  "domainType": [
+    "ten-laws",
+    "physics"
+  ],
+  "stage": "01_canonical",
+  "workbenchStage": "01_canonical",
+  "canonicalStatus": "candidate",
+  "epistemicStatus": "proposed",
+  "status": "proposed",
+  "coherenceDirection": "coherence",
+  "lawNumber": 5,
+  "lawEponym": "Clausius-Judgment",
+  "lawDomainPair": "Thermodynamics / Judgment",
+  "lawGrade": "DERIVED",
+  "lawGradeScale": "v4 law grading scale (native canon scale, strongest first): DERIVED, LOCKED, MAPPED, PARTIAL, SPLIT, OPEN, DEFINITIONAL. Mapping to C0-C6 unruled - tracked as OI-0011.",
+  "statementTechnical": "Second Law of Thermodynamics (Clausius): dS_total/dt >= 0; internal entropy production dS_internal/dt >= 0; dS = dS_internal + dS_boundary. A closed system cannot reduce internally produced disorder without boundary transfer. Canonical grade DERIVED - the strongest law: the physics structure already contains the spiritual claim ('nothing was added'). Entropy production maps to judgment/consequence; a closed moral system cannot repair its own damage; the boundary term maps to atonement - grace received from outside the system. Recorded kill test: pure ascent on a product coherence landscape does not automatically generate decay; if decay appears only after arbitrary tuning, Level 2 fails leg 2 of the proof standard (LOCK GATE: dX/dt must reproduce Law 5 decay structurally).",
+  "statementPlain": "Disorder accumulates by default and a closed system cannot clean itself up - repair has to cross the boundary from outside. Canon grades this the strongest law because nothing was inserted: the second law already says what the theology says about judgment and atonement. Even here, honesty is load-bearing: the boundary-transfer structure is formalized (receipt external to this repo), but identifying the boundary term with atonement remains a theological bridge claim, not proven, and one verification gate is still open - the framework's own dynamics must reproduce decay without tuning.",
+  "mathematicalForm": "dS_total/dt >= 0; dS = dS_internal + dS_boundary; closed system: no internal reduction of produced disorder without boundary transfer",
+  "mathFormNormal": "dS_total/dt >= 0; dS = dS_internal + dS_boundary; closed system: no internal reduction of produced disorder without boundary transfer",
+  "masterEquationVariables": [
+    "T"
+  ],
+  "claimComponents": [
+    {
+      "componentID": "tp:TL/L05/C1.physics-second-law",
+      "predicate": "Clausius inequality, internal production, boundary transfer",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L05/C1.boundary-transfer-structure",
+      "predicate": "Boundary-transfer formalization (Lean v4 module; receipt external)",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L05/C1.mapping-judgment-atonement",
+      "predicate": "Identification of entropy production with judgment and boundary term with atonement",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L05/C1.gradient-decay-reproduction",
+      "predicate": "dX/dt reproduces Law 5 decay without arbitrary tuning (LOCK GATE)",
+      "status": "open"
+    }
+  ],
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+  "edges": [
+    {
+      "type": "feedsInto",
+      "target": "tp:ten-laws/01/law-10-coherence",
+      "status": "proposed",
+      "note": "One of the nine factors wrapped by Law 10 (C_W)."
+    },
+    {
+      "type": "feedsInto",
+      "target": "tp:ME/L5/C1",
+      "status": "proposed",
+      "note": "Reciprocal of ME-C1's carried-forward dependsOn edge ('Law 5: Justice/Mercy thermodynamic framework'). This atom supplies the previously ghost target tp:ten-laws/01/law-05-thermodynamics."
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:ten-laws/01/law-06-information",
+      "grade": "structural_analogy",
+      "propagates": false,
+      "status": "proposed",
+      "note": "Canonical v4 symmetry pair P4: Clausius-Judgment (5) <-> Shannon-Logos (6) [Thermo / Information]."
+    }
+  ],
+  "falsificationCondition": "If the boundary-transfer structure requires any addition beyond the standard second-law formalism to generate the mercy/atonement reading, the 'nothing was added' claim fails.",
+  "evidenceType": "formal_derivation",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "nodeType": "claim",
+  "glyphs": [
+    "◆",
+    "≅",
+    "ℒ",
+    "⚖",
+    "∴"
+  ],
+  "tags": [
+    "justice",
+    "mercy",
+    "atonement",
+    "entropy",
+    "isomorphism"
+  ],
+  "keywords": [
+    "second law",
+    "entropy",
+    "judgment",
+    "boundary transfer",
+    "atonement",
+    "Clausius"
+  ],
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "leanStatus": "Boundary-transfer formalized (v4 module, receipt external). High-priority target: generic ordered quantity with nonnegative internal production and boundary transfer.",
+  "bridgeGrade": "structural_isomorphism",
+  "claimBurden": {
+    "class": "isomorphism",
+    "requiredSupport": [
+      "mapping",
+      "invariants",
+      "bidirectional test",
+      "boundaries"
+    ],
+    "supportStatus": "incomplete"
+  },
+  "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+  "publicDescentRendering": "YellowKidokc/FaiththruPhysics: production-vault/ripped-md/one-page-stories/ten-laws-full-treatment.md (public descent rendering; numbering and letter usage differ from canonical v4 — see OI-0012)",
+  "claimBeacon": {
+    "protocol": "ClaimBeacon",
+    "protocolVersion": "0.1.0",
+    "permanentID": "tp:TL/L05/C1",
+    "canonicalURL": "https://faiththruphysics.com/claims/ten-laws/01/law-05-thermodynamics",
+    "version": "1.0.0",
+    "provenance": {
+      "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+      "dateCreated": "2026-08-01",
+      "dateModified": "2026-08-12"
+    },
+    "priorVersions": [],
+    "claimType": "isomorphism",
+    "domain": "ten-laws",
+    "masterEquationVariables": [
+      "T"
+    ],
+    "tags": [
+      "justice",
+      "mercy",
+      "atonement",
+      "entropy",
+      "isomorphism"
+    ],
+    "bridgeGrade": "structural_isomorphism",
+    "have": [
+      "second-law formalism",
+      "boundary-transfer structure formalized in v4 (external receipt)",
+      "strongest-law ruling (v4): 'nothing was added'",
+      "kill test stated in advance (no-tuning condition)"
+    ],
+    "need": [
+      "physics-side anchor atom (tp:physics/*) - absent from graph (OI-0010)",
+      "moral state space formalization (shared hole with Law 6 - OI-0006)",
+      "LOCK GATE: dX/dt reproduces decay structurally",
+      "Lean receipt ingested into this repo"
+    ],
+    "breakIf": [
+      "boundary-transfer structure requires addition beyond standard second-law formalism",
+      "decay appears in dX/dt only after arbitrary tuning"
+    ],
+    "proposalFeed": "https://faiththruphysics.com/_proposals/claim-relationships.jsonl"
+  }
+}

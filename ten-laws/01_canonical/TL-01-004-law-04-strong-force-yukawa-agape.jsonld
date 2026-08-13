@@ -1,0 +1,193 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/ten-laws/01/law-04-strong-force",
+  "nodeID": "tp:ten-laws/01/law-04-strong-force",
+  "claimID": "tp:TL/L04/C1",
+  "name": "Law 4 - Yukawa-Agape (Strong Force / Love)",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Kimi (Moonshot AI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-08-01",
+  "dateModified": "2026-08-12",
+  "version": "1.0.0",
+  "claimKind": "isomorphism",
+  "claimClass": "isomorphism",
+  "domainType": [
+    "ten-laws",
+    "physics"
+  ],
+  "stage": "01_canonical",
+  "workbenchStage": "01_canonical",
+  "canonicalStatus": "candidate",
+  "epistemicStatus": "proposed",
+  "status": "proposed",
+  "coherenceDirection": "coherence",
+  "lawNumber": 4,
+  "lawEponym": "Yukawa-Agape",
+  "lawDomainPair": "Strong Force / Love",
+  "lawGrade": "MAPPED",
+  "lawGradeScale": "v4 law grading scale (native canon scale, strongest first): DERIVED, LOCKED, MAPPED, PARTIAL, SPLIT, OPEN, DEFINITIONAL. Mapping to C0-C6 unruled - tracked as OI-0011.",
+  "statementTechnical": "Yukawa potential V(r) = -g^2 e^(-mr)/r: short-range, enormously strong at close range, with confinement structure. The mapping: strongest force <-> greatest commandment; short range <-> love requires proximity and presence; confinement <-> covenant permanence; asymptotic freedom <-> in deep intimacy love does not crush. Fruits of the Spirit two-tier ruling (v4, AM-3): Tier 1 (Love, Peace, Joy) DERIVED as stationary eigenmodes of the Yukawa potential at equilibrium; Tier 2 (Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-control) are structural correspondences, not derived, and are excluded from the theorem count. Retired: all nine fruits from one unified Hamiltonian.",
+  "statementPlain": "The strongest force in nature binds at close range and, paradoxically, loosens its grip at the closest range - deep intimacy does not crush. The proposed reading: that is the shape of covenant love. On canon rulings, three fruits (love, peace, joy) are derived from the potential's stationary structure; the other six remain correspondences, not derivations - the stronger claim was tried, abandoned, and is formally retired. The physics is established; the love mapping is proposed, not proven beyond the Tier-1 stationary calculation, whose receipt is external to this repo.",
+  "mathematicalForm": "V(r) = -g^2 e^(-mr)/r; Tier 1: stationary eigenmodes of V at equilibrium -> {Love, Peace, Joy}",
+  "mathFormNormal": "V(r) = -g^2 e^(-mr)/r; Tier 1: stationary eigenmodes of V at equilibrium -> {Love, Peace, Joy}",
+  "masterEquationVariables": [
+    "S"
+  ],
+  "claimComponents": [
+    {
+      "componentID": "tp:TL/L04/C1.physics-yukawa",
+      "predicate": "Yukawa potential, short-range strength, confinement, asymptotic freedom",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L04/C1.mapping-agape-covenant",
+      "predicate": "Identification of strong-force binding with love/covenant",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L04/C1.fruits-tier1-derived",
+      "predicate": "Love/Peace/Joy as stationary eigenmodes (two-tier ruling; receipt external)",
+      "status": "supported"
+    },
+    {
+      "componentID": "tp:TL/L04/C1.fruits-tier2-correspondence",
+      "predicate": "Six remaining fruits as structural correspondences, not derivations",
+      "status": "open"
+    },
+    {
+      "componentID": "tp:TL/L04/C1.lean-lawiso-witness",
+      "predicate": "Complete LawIso witness in v4 Lean module (receipt external to this repo)",
+      "status": "supported"
+    }
+  ],
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+  "edges": [
+    {
+      "type": "feedsInto",
+      "target": "tp:ten-laws/01/law-10-coherence",
+      "status": "proposed",
+      "note": "One of the nine factors wrapped by Law 10 (C_W)."
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:ten-laws/01/law-07-quantum",
+      "grade": "structural_analogy",
+      "propagates": false,
+      "status": "proposed",
+      "note": "Canonical v4 symmetry pair P3: Yukawa-Agape (4) <-> Heisenberg-Faith (7) [Strong / Quantum]."
+    }
+  ],
+  "falsificationCondition": "If the Yukawa potential stationary points do not structurally correspond to love/peace/joy without ad hoc parameter tuning, Tier 1 fails.",
+  "evidenceType": "analogical",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "nodeType": "claim",
+  "glyphs": [
+    "◆",
+    "≈",
+    "ℒ",
+    "∩",
+    "♡"
+  ],
+  "tags": [
+    "covenant",
+    "isomorphism",
+    "grace",
+    "proof",
+    "coherence"
+  ],
+  "keywords": [
+    "Yukawa",
+    "strong force",
+    "agape",
+    "covenant",
+    "fruits of the Spirit",
+    "confinement"
+  ],
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "leanStatus": "Complete LawIso witness (v4 module, receipt external to this repo).",
+  "bridgeGrade": "structural_analogy",
+  "claimBurden": {
+    "class": "isomorphism",
+    "requiredSupport": [
+      "mapping",
+      "invariants",
+      "bidirectional test",
+      "boundaries"
+    ],
+    "supportStatus": "incomplete"
+  },
+  "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+  "publicDescentRendering": "YellowKidokc/FaiththruPhysics: production-vault/ripped-md/one-page-stories/ten-laws-full-treatment.md (public descent rendering; numbering and letter usage differ from canonical v4 — see OI-0012)",
+  "claimBeacon": {
+    "protocol": "ClaimBeacon",
+    "protocolVersion": "0.1.0",
+    "permanentID": "tp:TL/L04/C1",
+    "canonicalURL": "https://faiththruphysics.com/claims/ten-laws/01/law-04-strong-force",
+    "version": "1.0.0",
+    "provenance": {
+      "sourceReference": "YellowKidokc/AI-CREW: AI_REVIEW_PACKET_THEOPHYSICS_2026-08-03/02_CLAIM_INTAKE/CANONICAL_CONSOLIDATED_ALL_LOSSLESS_SUMMARY/CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION__lossless_packet.md (first-order snapshot of primary source CONSOLIDATED_07_TEN_LAWS_MASTER_EQUATION.md; source SHA-256 19e38f5795f02fa74be90b5e2d13a0c16c5a85345c559691b14eb075e3c260ca; consolidated 2026-08-03; canonical v4 per MASTER_EQUATION_TEN_LAWS_CANONICAL_v4_PENDING_2026-08-01.md)",
+      "dateCreated": "2026-08-01",
+      "dateModified": "2026-08-12"
+    },
+    "priorVersions": [],
+    "claimType": "isomorphism",
+    "domain": "ten-laws",
+    "masterEquationVariables": [
+      "S"
+    ],
+    "tags": [
+      "covenant",
+      "isomorphism",
+      "grace",
+      "proof",
+      "coherence"
+    ],
+    "bridgeGrade": "structural_analogy",
+    "have": [
+      "Yukawa potential structure",
+      "fruits two-tier ruling (AM-3, David, v4)",
+      "Lean LawIso witness declared in v4 build (external receipt)"
+    ],
+    "need": [
+      "physics-side anchor atom (tp:physics/*) - absent from graph (OI-0010)",
+      "Tier-1 stationary calculation receipt ingested into this repo",
+      "bidirectional mapping test"
+    ],
+    "breakIf": [
+      "stationary points require ad hoc parameter tuning to match love/peace/joy"
+    ],
+    "proposalFeed": "https://faiththruphysics.com/_proposals/claim-relationships.jsonl"
+  },
+  "scriptureRefs": [
+    "Galatians 5:22-23",
+    "1 Corinthians 13",
+    "1 John 4:8"
+  ]
+}

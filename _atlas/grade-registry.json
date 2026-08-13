@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "marker_12": {
     "name": "Evidence grade",
     "computed": true,
@@ -9,10 +9,17 @@
   "mode_to_atlas": {
     "C0": {"atlas_grade": "-", "alert_state": "SUPERSEDED", "note": "retired overclaim, not load-bearing"},
     "C1": {"atlas_grade": "-", "alert_state": "OPEN"},
-    "C2": {"atlas_grade": "C", "alert_state": "WEAK"},
-    "C3": {"atlas_grade": "B", "alert_state": "SUPPORTED"},
+    "C2": {"atlas_grade": "C", "alert_state": "CANDIDATE"},
+    "C3": {"atlas_grade": "C", "alert_state": "PROVISIONAL"},
     "C4": {"atlas_grade": "B", "alert_state": "SUPPORTED"},
-    "C5": {"atlas_grade": "A", "alert_state": "STRONG"},
-    "C6": {"atlas_grade": "A", "alert_state": "FORMAL_OR_CANONICAL"}
-  }
+    "C5": {"atlas_grade": "B+", "alert_state": "ESTABLISHED"},
+    "C6": {"atlas_grade": "A", "alert_state": "CANON"}
+  },
+  "_changelog": [
+    {
+      "date": "2026-08-12",
+      "version": "0.2.0",
+      "change": "Aligned mode_to_atlas to the v0.5 freeze-candidate grade bridge (unified_architecture_weave_v0.5_FREEZE_CANDIDATE.md, 2026-08-11). Drift fixed: C3 was B/SUPPORTED, now C/PROVISIONAL; C5 was A/STRONG, now B+/ESTABLISHED; C2 alert WEAK -> CANDIDATE; C6 alert FORMAL_OR_CANONICAL -> CANON. Marker 12 computes from this table, so the registry must match the freeze bridge exactly. Regression coverage: _scripts/test_drift_regressions.py::test_grade_registry_matches_freeze_bridge."
+    }
+  ]
 }
