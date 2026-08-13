@@ -1,0 +1,53 @@
+{
+  "atom_id": "tp:lane4/lean4/canonical-ledger",
+  "title": "Lean 4 Canonical Ledger",
+  "claim": "Lean 4 ledger workbooks require a single canonical merged ledger with provenance and run receipts.",
+  "domain": "lean4",
+  "lane": "lean4",
+  "claim_class": "registry_control",
+  "mode_classification": "active_registry",
+  "assumptions": [
+    "Excel workbooks are administrative ledgers, not Lean kernel proofs.",
+    "Source workbooks must be preserved until merge review is complete."
+  ],
+  "definitions": [
+    "Canonical Lean ledger merge control atom."
+  ],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [
+    "Do not treat Excel merge status as proof status."
+  ],
+  "kill_conditions": [
+    "A reviewed canonical ledger is established elsewhere and supersedes this control atom."
+  ],
+  "proof_label": "RERUN_OWED",
+  "current_status": "active_candidate",
+  "rerun_status": "required_on_ledger_change",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop 2\\Theophysics_Lean4_Addendum_Updated (1).xlsx",
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Documents\\LEAN 4 Master.xlsx",
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Lean 4 - CANONICAL_LEDGER_MERGED.xlsx",
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Lean 4 - CANONICAL_LEDGER_V2 - Python Colab Audit.xlsx",
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Lean 4 - CANONICAL_LEDGER_V2.backup_before_python_colab_audit.xlsx",
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Lean 4 - CANONICAL_LEDGER_V2.pre_python_colab_replace.xlsx",
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Lean 4 - CANONICAL_LEDGER_V2.xlsx",
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Lean 4.backup_20260710_041459.xlsx"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-13T05:23:46-05:00",
+      "lane": "lean4",
+      "event_type": "lean4_ledger_merge_run",
+      "result": "merged",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Lean 4 - CANONICAL_LEDGER_MERGED.xlsx",
+      "meaning": "Merged Lean 4 ledger workbooks; added 10 addendum sheets.",
+      "limits": "Workbook merge is provenance/registry hygiene; it does not certify Lean theorem truth.",
+      "reviewer": "merge_lean4_ledgers.py",
+      "event_uuid": "dad77701-843b-494a-a345-bd411a6e8f95",
+      "event_id": "sha256:ff4b2aa3b69e72f33ac4751bb36167a1c9508e6f7a278dfc613b483bb47d2de6"
+    }
+  ],
+  "atom_uid": "sha256:6b49c9e2e8d2fdf0dfe1a479206a800edb19100b79cfdcf4c5892aab11778717"
+}
