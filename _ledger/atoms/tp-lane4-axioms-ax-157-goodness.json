@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "bridge-spiritual",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "F_Goodness = Σ(ΔC_produced by agent)"
@@ -39,7 +41,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:8c7a0bd3a7726bcb1cf521908d88d472748c941a021c7bab4fafe088154c7bd6",
+      "event_uuid": "16425547-ddf9-5e87-9d86-da9bc2650347"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -49,10 +53,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: bridge-spiritual.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:0d4b27a361d39204d71f2285aee354b06e2dda9df566c4d4129fa85291f18d02",
+      "event_uuid": "051e6f6b-56d3-5f45-87cd-b02a836d97af"
     }
   ],
   "source_claim_id": "tp:AXIOMS/F6",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-157",
-  "original_node_id": "tp:axioms/01/AX-157"
+  "original_node_id": "tp:axioms/01/AX-157",
+  "atom_uuid": "190ba216-f5a3-574e-8fb9-e149371f7827"
 }

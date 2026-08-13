@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "05-conservation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "σ ∈ {±1}; [σ̂,Û]=0; ∃Ĝ(ext): Ĝ|-1⟩=|+1⟩"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:fb8a15e956050ca2e194f3aedbf9ae4adf3f5e217fa953440d1fa977b96072a4",
+      "event_uuid": "2be440ec-04c9-5ef6-a963-57702626b982"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 05-conservation.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:2d1828a0dea81c7c6fffe89284045ec2946727287c908b4fa2c30d7ac04f5bfc",
+      "event_uuid": "a9981da7-b14f-56cd-a60d-df297861ebfe"
     }
   ],
   "source_claim_id": "tp:AXIOMS/D19.8",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-143",
-  "original_node_id": "tp:axioms/01/AX-143"
+  "original_node_id": "tp:axioms/01/AX-143",
+  "atom_uuid": "3fe08ae3-8859-5f80-9c46-047b86dc95c4"
 }

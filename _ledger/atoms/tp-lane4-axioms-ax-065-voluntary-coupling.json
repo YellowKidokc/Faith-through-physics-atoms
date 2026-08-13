@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "unclassified",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "V(Ψ) ∈ [0,1]; voluntary; not predetermined"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:aa260d5442f8953bac95303fb2c087d9b59723a2115fac693723d304284775d2",
+      "event_uuid": "b73657e3-8bbc-50e2-b6a9-87743d3655f2"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'boundary' -> 'derived'. Ontology: unclassified.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:8b3513bb741849f015eac99908182324bed502dceb05fa8139415a7ed0ba4afa",
+      "event_uuid": "ce5d32ea-dd25-517b-a3b0-ef0577456298"
     }
   ],
   "source_claim_id": "tp:AXIOMS/BC8",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-065",
-  "original_node_id": "tp:axioms/01/AX-065"
+  "original_node_id": "tp:axioms/01/AX-065",
+  "atom_uuid": "08079572-841d-54eb-b6cd-465a7edb9c44"
 }

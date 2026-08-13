@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "bridge-theology",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "If ∃ religion R ≠ Christianity: R satisfies BC1-BC8 → uniqueness fails"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:0f4234d8c30d6ad1d9e194bdd1c983a8bd7cdf5c1add16e069fa533bb03b37f8",
+      "event_uuid": "6404ea7b-0524-5f8e-87b4-9d2e1fbf5342"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: bridge-theology.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:efcd653e10b121ee739d59e998203533d835169b1a9bcb686c67c4d3d47df2b6",
+      "event_uuid": "c6d6b778-28f6-5224-a45c-ece0f8f8f3ef"
     }
   ],
   "source_claim_id": "tp:AXIOMS/FALS18.3",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-134",
-  "original_node_id": "tp:axioms/01/AX-134"
+  "original_node_id": "tp:axioms/01/AX-134",
+  "atom_uuid": "f002434a-c34e-5106-9cf3-e5a59223b728"
 }

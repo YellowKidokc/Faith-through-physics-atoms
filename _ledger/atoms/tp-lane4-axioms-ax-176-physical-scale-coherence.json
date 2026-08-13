@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "06-thermodynamics",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "χ(physical) = structural_order"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:2bad21ea08e3db826c07997bdbcf1e22dfe4051a14261db6bad3362b9d02b070",
+      "event_uuid": "53012623-13d1-5681-9116-732c04fa16fc"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 06-thermodynamics.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:f3be365efb0704ddb5b479e868e7c57aae77fcef5aa158e8b384275a35ffb0c6",
+      "event_uuid": "a1e79d73-1695-5661-9bb5-62e058513f4a"
     }
   ],
   "source_claim_id": "tp:AXIOMS/SC-PHYSICAL",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-176",
-  "original_node_id": "tp:axioms/01/AX-176"
+  "original_node_id": "tp:axioms/01/AX-176",
+  "atom_uuid": "94f3a050-533f-5597-9f5c-542f4787ed0a"
 }

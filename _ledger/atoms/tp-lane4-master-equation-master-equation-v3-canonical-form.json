@@ -29,7 +29,9 @@
     "∃ i : X_i = 0 ⟹ ∏ X_j = 0 ⟹ χ = 0 (veto, Lean-verified)"
   ],
   "bridges": [],
-  "dependencies": ["tp:lane4/master-equation/cw-wrapper-not-tenth-factor"],
+  "dependencies": [
+    "tp:lane4/master-equation/cw-wrapper-not-tenth-factor"
+  ],
   "negative_guards": [
     "DRIFT WARNING: S=entropy, T=decay, K=coupling, R=resistance, Q=charge, F=force are all drifted.",
     "C_W is NOT a tenth factor — writing it as one gives χ on both sides.",
@@ -41,9 +43,9 @@
     "C_W as identity creates logical inconsistency.",
     "Addition better captures the structural requirement than multiplication."
   ],
-  "proof_label": "NOT_ESTABLISHED",
+  "proof_label": "RERUN_OWED",
   "current_status": "active_candidate",
-  "rerun_status": "not_applicable",
+  "rerun_status": "RERUN_OWED",
   "source_artifacts": [
     "LANE4_ATOM_LEDGER_BUILD_REPORT.md",
     "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md"
@@ -58,7 +60,8 @@
       "limits": "Seed status is not additional evidence.",
       "reviewer": "Codex",
       "lane": "Mathematics",
-      "event_id": "sha256:53b4636221d283497570a14bf84ba1e64983c8972b3f3946c221bbc084259605"
+      "event_id": "sha256:53b4636221d283497570a14bf84ba1e64983c8972b3f3946c221bbc084259605",
+      "event_uuid": "e363bf42-3748-5d24-bc9c-901255994e2c"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -68,8 +71,11 @@
       "meaning": "Upgraded: eponym dictionary, definitions, negative guards, kill conditions, ballot crosswalk alignment.",
       "limits": "Still NOT_ESTABLISHED until Lean verification of full product form.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "Mathematics"
+      "lane": "Mathematics",
+      "event_id": "sha256:12de3216a51c0639d7cc19cdb265e8cd3ddc72e665b4a2710b39916cf427e082",
+      "event_uuid": "87e86224-08d9-5ca6-a556-0180c542985b"
     }
   ],
-  "source_claim_id": "MASTER_EQUATION_V3_CANONICAL_FORM"
+  "source_claim_id": "MASTER_EQUATION_V3_CANONICAL_FORM",
+  "atom_uuid": "52b9b2f1-541d-57c6-b49c-330eb931e9f0"
 }

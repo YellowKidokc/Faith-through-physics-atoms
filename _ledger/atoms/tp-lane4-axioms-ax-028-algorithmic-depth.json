@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "01-foundations",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Depth(x) = Time(shortest_program(x))"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:c2312764defb710bced4a935d49e0870c734df22449645d0fc489340bd2922dd",
+      "event_uuid": "8c27beb0-438e-5fe8-8f27-1786b5cdfd2c"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 01-foundations.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:77399155b5601743928da57433a8ab0eb392fe69ee71bfb6089bae43873020a3",
+      "event_uuid": "235a94ec-fba0-57d1-b434-2ee8070f1071"
     }
   ],
   "source_claim_id": "tp:AXIOMS/A4.2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-028",
-  "original_node_id": "tp:axioms/01/AX-028"
+  "original_node_id": "tp:axioms/01/AX-028",
+  "atom_uuid": "75ccf708-cc35-5c7f-9872-aa25c9969c49"
 }

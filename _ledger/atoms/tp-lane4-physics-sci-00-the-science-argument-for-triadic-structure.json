@@ -59,7 +59,8 @@
       "limits": "Ingestion is not proof.",
       "timestamp": "2026-07-31T23:05:20+00:00",
       "lane": "Lane4",
-      "event_id": "sha256:ec4c2f646ce78603018dc2e30c2f9051ebf68a12df88f343611b246bbd538a6d"
+      "event_id": "sha256:ec4c2f646ce78603018dc2e30c2f9051ebf68a12df88f343611b246bbd538a6d",
+      "event_uuid": "4433f0b9-8f1d-5155-8064-218b6e14ac83"
     },
     {
       "event_type": "test_run",
@@ -70,7 +71,8 @@
       "limits": "HTML generation is presentation/provenance only; it does not upgrade the bridge claim to proof.",
       "reviewer": "Codex",
       "timestamp": "2026-07-31T23:16:33+00:00",
-      "event_id": "sha256:7c1c138901afc9a8417b4c68b668e9d1e129f8fa1c2ddd955013d12ed96fb49c"
+      "event_id": "sha256:7c1c138901afc9a8417b4c68b668e9d1e129f8fa1c2ddd955013d12ed96fb49c",
+      "event_uuid": "900b32ba-9436-5b40-a633-02284f802565"
     },
     {
       "event_type": "test_run",
@@ -81,7 +83,8 @@
       "limits": "No new physics claim added; Bayesian inference example deferred; HTML and Markdown still require human final read before canon-lock.",
       "reviewer": "Codex",
       "timestamp": "2026-07-31T23:31:03+00:00",
-      "event_id": "sha256:783898124574523aa10167d505a74b5b35d72a479e164c654e169cc7b8789afe"
+      "event_id": "sha256:783898124574523aa10167d505a74b5b35d72a479e164c654e169cc7b8789afe",
+      "event_uuid": "f37e57bf-caa0-57b1-a225-ca4b93212a90"
     },
     {
       "event_type": "test_run",
@@ -95,5 +98,6 @@
       "event_uuid": "09b7847f-67cb-408f-a489-7dca47ed1301",
       "event_id": "sha256:852e5bf997890d6692241e9f1a0a07db07f40cc5d6197d69cdaffe60017dad0c"
     }
-  ]
+  ],
+  "atom_uuid": "2983b311-0678-5a1a-bf47-eca11b7bbfbc"
 }

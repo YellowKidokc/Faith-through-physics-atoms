@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "03-fields-forces",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "I_soul ∝ Φ"
@@ -39,7 +41,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:a3b61ca4c9f091cb39b0dd42cebaa32a47ae80247bab0d0e221733193ce9f6a5",
+      "event_uuid": "a7db8cc8-3cf4-521f-b082-e8ec40d3f848"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -49,10 +53,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 03-fields-forces.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:6efe27b0c74a6e678c302965267e11e7ec2d709106513d354234dc1b4e196b35",
+      "event_uuid": "94598667-2f97-5008-9fef-888ca3f14590"
     }
   ],
   "source_claim_id": "tp:AXIOMS/P10.2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-086",
-  "original_node_id": "tp:axioms/01/AX-086"
+  "original_node_id": "tp:axioms/01/AX-086",
+  "atom_uuid": "de3340f2-f86d-5aa3-a9be-3a00cbdb83df"
 }

@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "01-foundations",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Personhood ≡ {Agency, Intentionality, Relational_Capacity}; ¬Reducible(Personhood, Structure)"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:10edff7903280a42c411c6bb06fabe09c8509f11e69338208e4020c8e2a9137a",
+      "event_uuid": "b2316e52-cba4-5e5e-949e-d6b329984b0e"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'derived'. Ontology: 01-foundations.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:063e1b887e3e42149d652717df08aec2a04c3d1ae7d8df63a1d4d9dd917fed84",
+      "event_uuid": "238cc94c-a996-5ad1-ae80-ca853c9bf2a7"
     }
   ],
   "source_claim_id": "tp:AXIOMS/PERSONHOOD",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-066a",
-  "original_node_id": "tp:axioms/01/AX-066a"
+  "original_node_id": "tp:axioms/01/AX-066a",
+  "atom_uuid": "135a18be-dd5d-5c20-b4e8-9f41b30c062f"
 }

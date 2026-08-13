@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "unclassified",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Coherence ∈ Primitives"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:63f4a79eff75f722a06eef60e3c56ee8801dee919f1eef453ace723ed0bff74d",
+      "event_uuid": "8d4f5230-d85e-5cca-a179-048e8c313d86"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: unclassified.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:03bbf59e768951603ae5a23ec61ea8a2ce7e8bf43d494264428c3c46cb6375a9",
+      "event_uuid": "e2bf5e3c-a7db-52e7-b7c9-b8b107494e46"
     }
   ],
   "source_claim_id": "tp:AXIOMS/O2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-168",
-  "original_node_id": "tp:axioms/01/AX-168"
+  "original_node_id": "tp:axioms/01/AX-168",
+  "atom_uuid": "dd9c14b6-5342-59a6-9905-9d846069a249"
 }

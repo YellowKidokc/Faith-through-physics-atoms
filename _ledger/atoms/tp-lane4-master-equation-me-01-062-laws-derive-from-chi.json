@@ -8,7 +8,9 @@
   "claim_class": "theorem",
   "mode_classification": "candidate",
   "ontology_family": "master-equation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [],
   "bridges": [],
@@ -45,7 +47,9 @@
       "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
       "limits": "Import does not change proof status.",
       "reviewer": "import_me_to_lane4.py",
-      "lane": "mathematics"
+      "lane": "mathematics",
+      "event_id": "sha256:e4f6b5b2ce7f53feca7d7b3d812c1258a7d0ca4606f17d612ab08e2f04c26542",
+      "event_uuid": "cd725880-eeaf-5098-9418-8db43e37b37b"
     }
   ],
   "source_claim_id": "tp:ME/ME-01-062",
@@ -60,5 +64,6 @@
     "AX-147",
     "T19.1",
     "Theorem"
-  ]
+  ],
+  "atom_uuid": "d7a80834-cd6a-56c6-ab0c-08c27ed5b536"
 }

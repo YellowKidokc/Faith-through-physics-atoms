@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "05-conservation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Fruits = {F_i}: measurable coherence markers for σ=+1"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:e58b2cf6db4911dbdf3f4829d4710a918c53dc1ade164d3d1a58fa251f7805f2",
+      "event_uuid": "ba9f8547-7cc0-5db3-a8ed-e1cad8647501"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 05-conservation.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:152f0f2f20d9d773c0034b3f46c1fe817c5c2b5033de1e3b998a6754db170d34",
+      "event_uuid": "eeb0fad1-00d4-5fd1-bc88-02c3088da97f"
     }
   ],
   "source_claim_id": "tp:AXIOMS/U4",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-151",
-  "original_node_id": "tp:axioms/01/AX-151"
+  "original_node_id": "tp:axioms/01/AX-151",
+  "atom_uuid": "bf9ab364-657f-5bd8-984f-aaa8dde4bc46"
 }

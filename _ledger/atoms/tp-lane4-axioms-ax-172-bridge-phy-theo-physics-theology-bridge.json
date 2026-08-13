@@ -8,7 +8,9 @@
   "claim_class": "bridge",
   "mode_classification": "candidate",
   "ontology_family": "03-fields-forces",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "—"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:cee5da7febbc4eaace44e2aba5171776e0f9a249858d1ef94ff2c1424e18d08f",
+      "event_uuid": "602935f6-d649-5170-bb20-2eac5081a455"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'bridge' -> 'bridge'. Ontology: 03-fields-forces.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:e898e9cf1961f547d50397d7cb1036d9390dce0df0e8c5e3377d364197c2dfb2",
+      "event_uuid": "9df70088-75e4-509a-af75-8258ef582757"
     }
   ],
   "source_claim_id": "tp:AXIOMS/BRIDGE-PHY-THEO",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-172",
-  "original_node_id": "tp:axioms/01/AX-172"
+  "original_node_id": "tp:axioms/01/AX-172",
+  "atom_uuid": "cbfecdd5-db39-56fb-bf97-85f037ddfafa"
 }

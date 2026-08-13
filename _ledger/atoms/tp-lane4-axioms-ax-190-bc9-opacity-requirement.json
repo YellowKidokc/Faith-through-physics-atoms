@@ -8,7 +8,9 @@
   "claim_class": "boundary",
   "mode_classification": "candidate",
   "ontology_family": "10-quantum",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [],
   "bridges": [],
@@ -36,7 +38,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:26787f81a779a8fabd685f3a582d3a578eb8c9ef51186c3dc7dde8b232c41fa5",
+      "event_uuid": "d3312bf5-59c0-5797-b1fb-55644299651e"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -46,10 +50,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'boundary' -> 'boundary'. Ontology: 10-quantum.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:6c4057bddccbac7f64234e267ed6de5943fe4289fbe7ec581d076f35283ba69d",
+      "event_uuid": "df6c6d86-ecb1-5153-b2f7-e296f4459608"
     }
   ],
   "source_claim_id": "tp:AXIOMS/BC9",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-190",
-  "original_node_id": "tp:axioms/01/AX-190"
+  "original_node_id": "tp:axioms/01/AX-190",
+  "atom_uuid": "e177893c-c47c-54d6-a9a9-7255529f2861"
 }

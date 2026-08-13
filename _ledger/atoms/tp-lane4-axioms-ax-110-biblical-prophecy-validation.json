@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "bridge-theology",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Cross-domain validation evidence"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:f551445113b59e9565316d24313da8a4197eeda3547913ac428fafd8706e05d1",
+      "event_uuid": "c96f4951-b6db-527b-8774-234cbb53ca29"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: bridge-theology.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:efcd653e10b121ee739d59e998203533d835169b1a9bcb686c67c4d3d47df2b6",
+      "event_uuid": "c6d6b778-28f6-5224-a45c-ece0f8f8f3ef"
     }
   ],
   "source_claim_id": "tp:AXIOMS/EV15.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-110",
-  "original_node_id": "tp:axioms/01/AX-110"
+  "original_node_id": "tp:axioms/01/AX-110",
+  "atom_uuid": "17a48c2c-205c-5b14-87f9-f617a7ba53ef"
 }

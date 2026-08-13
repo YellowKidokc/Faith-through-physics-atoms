@@ -8,7 +8,9 @@
   "claim_class": "conjecture",
   "mode_classification": "C2_WELL_POSED_CONJECTURE",
   "ontology_family": "04-energy",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "(ȧ/a)² = (8πG/3)ρ - k/a² + G(t)/3"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:77bce56b53c87494a50247ff9fb805a98644755191434024f7662df974ad333d",
+      "event_uuid": "d9dfedfe-8ca8-519e-bd3f-ed969ef327ea"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'conjecture'. Ontology: 04-energy.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:125229d9a24e4901093dec2c1e02c84c540da8c5334907cca409bf928fa8712c",
+      "event_uuid": "7ad7c95d-f22d-5f1e-a0b7-eaf3feef7417"
     }
   ],
   "source_claim_id": "tp:AXIOMS/A14.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-105",
-  "original_node_id": "tp:axioms/01/AX-105"
+  "original_node_id": "tp:axioms/01/AX-105",
+  "atom_uuid": "9acfc02e-b35e-5905-b16d-83eaf1df6f11"
 }

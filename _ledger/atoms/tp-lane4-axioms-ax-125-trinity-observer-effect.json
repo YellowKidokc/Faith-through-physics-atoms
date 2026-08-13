@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "01-foundations",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Protocol: γ(Φ) measurement"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:801f1c6ff2773c84b7f6bc425420a837f5989f187205c3490feed7b432f934f9",
+      "event_uuid": "1d8c3710-36e7-5bc6-8df4-c874bd433bb6"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical' -> 'derived'. Ontology: 01-foundations.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:d624fcd9fa1f90a2d2e61a0066297240f643bf1b3fbab6430d34baf13f65c33f",
+      "event_uuid": "e96e08b2-a539-5610-801e-598ae47e77d1"
     }
   ],
   "source_claim_id": "tp:AXIOMS/PROT18.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-125",
-  "original_node_id": "tp:axioms/01/AX-125"
+  "original_node_id": "tp:axioms/01/AX-125",
+  "atom_uuid": "17d8abcf-692c-574d-bbc0-5963683c6a21"
 }

@@ -8,7 +8,9 @@
   "claim_class": "theorem",
   "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
   "ontology_family": "bridge-spiritual",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Chain: AX-001 → ... → AX-188 (complete, closed)"
@@ -37,7 +39,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:c687901cafd06d71b1e9124b99f44200cf07829f48de7ce1707474117efb1b65",
+      "event_uuid": "2eb6ca96-f741-59cc-b781-db406cb771dd"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -47,10 +51,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'theorem'. Ontology: bridge-spiritual.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:7876cb98f083e75b673d9aa17611c5d35b3ebe98bbb00be62b45e3351cf8a409",
+      "event_uuid": "51ac37d6-e461-5b98-8e8c-f87844220a35"
     }
   ],
   "source_claim_id": "tp:AXIOMS/CLOSURE",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-187",
-  "original_node_id": "tp:axioms/01/AX-187"
+  "original_node_id": "tp:axioms/01/AX-187",
+  "atom_uuid": "59cf0728-13e5-50ac-b16d-26ef71f1d32d"
 }

@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "05-conservation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "GCP deviations during spiritual events"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:27b57798451d121660cde227ae614361a1283d9269e7dfb9073695c6a9e2d6ee",
+      "event_uuid": "a28c1af1-52a1-5a7a-a4cd-7900823158e4"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'derived'. Ontology: 05-conservation.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:7135436da09d61ca00d65b94bf00c36cc1581dde8e142697aab8f4d495049133",
+      "event_uuid": "182b1590-8fdd-56f2-a16f-778fc92341f4"
     }
   ],
   "source_claim_id": "tp:AXIOMS/PRED18.2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-131",
-  "original_node_id": "tp:axioms/01/AX-131"
+  "original_node_id": "tp:axioms/01/AX-131",
+  "atom_uuid": "5762d136-9abe-5307-9f0c-ec5242ecb6df"
 }

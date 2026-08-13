@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "10-quantum",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "iℏ d|ψ⟩/dt = (Ĥ - iγΦ)|ψ⟩"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:4561b742c5fcc893c58d23d7606c608ae5660390de826312cec01a438a09fb61",
+      "event_uuid": "76abd0fe-fbab-5f72-bc4f-8b3ce03335f0"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'mathematical' -> 'derived'. Ontology: 10-quantum.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:2b99b4758e4fbdc77fe0255223fcc545f9b3a1021492a31aa97cfe752e1d82a4",
+      "event_uuid": "0e9e9c10-b199-56df-a2b7-5f6a22da9e8a"
     }
   ],
   "source_claim_id": "tp:AXIOMS/E6.2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-051",
-  "original_node_id": "tp:axioms/01/AX-051"
+  "original_node_id": "tp:axioms/01/AX-051",
+  "atom_uuid": "d99011a8-886b-54bc-a3a6-66c1fd5e8b97"
 }

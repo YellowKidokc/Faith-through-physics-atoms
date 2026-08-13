@@ -8,7 +8,9 @@
   "claim_class": "theorem",
   "mode_classification": "candidate",
   "ontology_family": "master-equation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "C: possibility space → P (permitted set). |P| > 1 ⟹ C exhausted. select: P → p_i requires term S ∉ C. cost(select) > 0. reverse(select) > cost(select)."
@@ -44,7 +46,9 @@
       "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
       "limits": "Import does not change proof status.",
       "reviewer": "import_me_to_lane4.py",
-      "lane": "mathematics"
+      "lane": "mathematics",
+      "event_id": "sha256:d6e8a5f7be15ecaee5a4838637cbd5aa0936ad34d69d0d6342acacc10d38f3fc",
+      "event_uuid": "35606558-7f77-5495-9a07-3b9167707895"
     }
   ],
   "source_claim_id": "tp:ME/L7/C2",
@@ -64,5 +68,6 @@
     "contingency",
     "agent causation",
     "type error"
-  ]
+  ],
+  "atom_uuid": "d08ad31e-8e89-5124-b6df-10ebcaff5c25"
 }

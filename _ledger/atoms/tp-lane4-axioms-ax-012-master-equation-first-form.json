@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "03-fields-forces",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "χ = ∫(G·K)dΩ"
@@ -24,9 +26,9 @@
     "Show G·K integration yields divergences with no renormalization",
     "Demonstrate that geometry and complexity cannot be multiplied in a meaningful way"
   ],
-  "proof_label": "NOT_ESTABLISHED",
+  "proof_label": "RERUN_OWED",
   "current_status": "active_candidate",
-  "rerun_status": "not_applicable",
+  "rerun_status": "RERUN_OWED",
   "source_artifacts": [
     "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-012-master-equation-first-form.jsonld",
     "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:f718cd2859aa72a4195bab53c92a3cb06c31b62df2e4496017040d2eb1475add",
+      "event_uuid": "f9a549da-3e68-573c-ae93-2b05d5b2945b"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'mathematical' -> 'derived'. Ontology: 03-fields-forces.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:90288e3dc00d4eb425f6e2545345af34d327f33ec0c90960020805121571d3fa",
+      "event_uuid": "97038b62-e468-5264-af06-f46d8430671f"
     }
   ],
   "source_claim_id": "tp:AXIOMS/E2.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-012",
-  "original_node_id": "tp:axioms/01/AX-012"
+  "original_node_id": "tp:axioms/01/AX-012",
+  "atom_uuid": "3f97726e-23f8-5e21-878a-c522962932ed"
 }

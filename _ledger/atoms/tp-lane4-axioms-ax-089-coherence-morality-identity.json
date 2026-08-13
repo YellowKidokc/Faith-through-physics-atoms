@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "bridge-spiritual",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Good ≡ ΔC > 0; Evil ≡ ΔC < 0"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:f76515febb39e8d5f148386424634f0b5063fb3fa8c57ba2f91436cf6b31a806",
+      "event_uuid": "ed2def67-be72-5d3c-a044-9f3fab5df62a"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: bridge-spiritual.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:758beb8b536514954d46bc5f03fe8b5ffe6ed2915b9a4e649a7d25d02a4d1ed8",
+      "event_uuid": "950253cc-0b58-54bd-a74b-e5996134b120"
     }
   ],
   "source_claim_id": "tp:AXIOMS/A11.2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-089",
-  "original_node_id": "tp:axioms/01/AX-089"
+  "original_node_id": "tp:axioms/01/AX-089",
+  "atom_uuid": "5accec2e-4733-50e4-8f8c-be87b38fc521"
 }

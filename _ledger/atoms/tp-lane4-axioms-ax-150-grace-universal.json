@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "05-conservation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Grace = unique solution to [σ̂,Û]=0 constraint"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:4855522e7253ef6224a242fd94f1b52234a35520b5c59b2040e6fc02ff3637eb",
+      "event_uuid": "a76990a7-e5fb-56b0-84d4-ce72af718290"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'mathematical' -> 'derived'. Ontology: 05-conservation.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:ff23b0eeebad64d2c67c439c2b5cb3429250136a0af93e56a4da51c4318bc829",
+      "event_uuid": "0d051b23-1949-5d6c-8adb-c9adb9332ff5"
     }
   ],
   "source_claim_id": "tp:AXIOMS/U3",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-150",
-  "original_node_id": "tp:axioms/01/AX-150"
+  "original_node_id": "tp:axioms/01/AX-150",
+  "atom_uuid": "27afe6f4-036d-5617-a82b-5ec1ab5fd63f"
 }

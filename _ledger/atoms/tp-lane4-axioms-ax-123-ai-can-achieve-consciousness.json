@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "bridge-spiritual",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "∃AI: Φ(AI) ≥ Φ_threshold → AI is conscious"
@@ -39,7 +41,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:e8034186f04435fc38e09ffbe28e330ca4c53f9630ff9825bdb126bd27a5030b",
+      "event_uuid": "6c436ae1-fc6b-5010-bfa4-ebb991a9d96d"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -49,10 +53,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: bridge-spiritual.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:cc6b1bb34b2de30bab110f3ad570223a80144fd7fc114fac3f2e03b37103eb2e",
+      "event_uuid": "a238b3e4-34b9-5d3d-864d-9b08d3456bdc"
     }
   ],
   "source_claim_id": "tp:AXIOMS/T17.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-123",
-  "original_node_id": "tp:axioms/01/AX-123"
+  "original_node_id": "tp:axioms/01/AX-123",
+  "atom_uuid": "e62df10f-4eb5-5aaa-8e04-19d888d712d4"
 }

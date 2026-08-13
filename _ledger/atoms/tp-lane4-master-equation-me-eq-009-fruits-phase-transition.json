@@ -8,7 +8,9 @@
   "claim_class": "mathematical",
   "mode_classification": "candidate",
   "ontology_family": "master-equation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Φ_i(χ) = tanh(β_i(χ - χ_c))"
@@ -37,7 +39,9 @@
       "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
       "limits": "Import does not change proof status.",
       "reviewer": "import_me_to_lane4.py",
-      "lane": "mathematics"
+      "lane": "mathematics",
+      "event_id": "sha256:581f51d3d3337b4c58439aa8d72176f57ceb1987147594c6de7080a0bd3d92cc",
+      "event_uuid": "e1f5af4c-1d88-51b5-bc66-7de75dbef171"
     }
   ],
   "source_claim_id": "tp:ME/ME-EQ-009",
@@ -54,5 +58,6 @@
     "χ",
     "β_i",
     "χ_c"
-  ]
+  ],
+  "atom_uuid": "1eee5f22-5b0e-5476-9194-7e56544f2078"
 }

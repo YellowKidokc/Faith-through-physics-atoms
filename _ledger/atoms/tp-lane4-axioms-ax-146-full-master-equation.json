@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "unclassified",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "LLC = χ(t)(d/dt(Σ primitives))² - S·χ(t)"
@@ -24,9 +26,9 @@
     "Demonstrate terms that contradict each other",
     "Show dimensional analysis fails"
   ],
-  "proof_label": "NOT_ESTABLISHED",
+  "proof_label": "RERUN_OWED",
   "current_status": "active_candidate",
-  "rerun_status": "not_applicable",
+  "rerun_status": "RERUN_OWED",
   "source_artifacts": [
     "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-146-full-master-equation.jsonld",
     "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:ba5ced24bf404cc7e29895eb6bb5bdc34c9ceab30903e87f8e0f4914cc2ae2c5",
+      "event_uuid": "bbf3c63a-605e-5275-a612-ed306cc5f334"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'mathematical' -> 'derived'. Ontology: unclassified.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:a2916464c88d15099f9a3a24225c406afacfbedb3df3749d7c41465ca21946fd",
+      "event_uuid": "aba6ef84-f65e-533a-8cc2-2d37f8db45a9"
     }
   ],
   "source_claim_id": "tp:AXIOMS/E19.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-146",
-  "original_node_id": "tp:axioms/01/AX-146"
+  "original_node_id": "tp:axioms/01/AX-146",
+  "atom_uuid": "3bde05c4-caeb-5b03-93c2-c1ae4e7db46c"
 }

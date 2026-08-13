@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "14-information-physics",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Logos(Alpha) → Reality → Logos(Omega); circuit complete"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:5751e784ad694b995695d89b3fda80008d83fda77c73c5785d3e1573b7b816ca",
+      "event_uuid": "6a356060-e33a-5739-b9fc-4ddb93818a90"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 14-information-physics.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:4cf4b4701536ca276aeda9552649251715fe03b9cbc1761852ea4ec5ec7e168a",
+      "event_uuid": "69f4284f-a173-5e76-a24e-31b52cb25929"
     }
   ],
   "source_claim_id": "tp:AXIOMS/OMEGA",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-188",
-  "original_node_id": "tp:axioms/01/AX-188"
+  "original_node_id": "tp:axioms/01/AX-188",
+  "atom_uuid": "3e6ea062-6af7-5ad9-a1f2-ce2f0d42da76"
 }

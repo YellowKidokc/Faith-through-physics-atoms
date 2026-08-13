@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "03-fields-forces",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Ĝ² = Ĝ (idempotent projector)"
@@ -39,7 +41,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:619b08402ec2fce8af5dd4a92aae75fb3362a40846a1f35093756799987f8ecd",
+      "event_uuid": "147bc316-435c-5e94-bd34-9fb4478b56d1"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -49,10 +53,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 03-fields-forces.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:6efe27b0c74a6e678c302965267e11e7ec2d709106513d354234dc1b4e196b35",
+      "event_uuid": "94598667-2f97-5008-9fef-888ca3f14590"
     }
   ],
   "source_claim_id": "tp:AXIOMS/P9.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-076",
-  "original_node_id": "tp:axioms/01/AX-076"
+  "original_node_id": "tp:axioms/01/AX-076",
+  "atom_uuid": "b7126141-4b75-5752-b8c1-55650935ce2c"
 }

@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "04-energy",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "¬∃(Works W): W|-1⟩ = |+1⟩"
@@ -39,7 +41,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:458ce5619a082245b1981155a262244dbdf728f0af312646efd8715f95213e55",
+      "event_uuid": "e0a6145e-46c9-5a26-8b64-3233fd09f064"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -49,10 +53,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 04-energy.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:cfef5f258dda422036311af35b68dc2c7dd2a39ca4aaa08b230c3e50ad6bfe06",
+      "event_uuid": "baf1691c-5601-55a1-b1b3-8aa0d9a25282"
     }
   ],
   "source_claim_id": "tp:AXIOMS/C8.2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-072",
-  "original_node_id": "tp:axioms/01/AX-072"
+  "original_node_id": "tp:axioms/01/AX-072",
+  "atom_uuid": "6d99ce02-b5d3-57fb-bf15-509dc3c10de5"
 }

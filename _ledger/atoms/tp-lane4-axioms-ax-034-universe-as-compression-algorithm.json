@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "14-information-physics",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Universe ≡ K-minimization algorithm; GR = output; QM = process"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:62d6ff42d8614516a6f031f7967a637918e5e9bd2392d4999fe8c6d51a987f7f",
+      "event_uuid": "f033b15e-76ed-5347-9b3c-91e99ff68613"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 14-information-physics.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:4cf4b4701536ca276aeda9552649251715fe03b9cbc1761852ea4ec5ec7e168a",
+      "event_uuid": "69f4284f-a173-5e76-a24e-31b52cb25929"
     }
   ],
   "source_claim_id": "tp:AXIOMS/LN4.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-034",
-  "original_node_id": "tp:axioms/01/AX-034"
+  "original_node_id": "tp:axioms/01/AX-034",
+  "atom_uuid": "014ff7f3-3087-5535-91fd-768cf127ab38"
 }

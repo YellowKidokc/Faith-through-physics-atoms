@@ -1,25 +1,217 @@
 # Lane 4 Latest Status
 
-Generated: 2026-08-07T07:50:18+00:00
+Generated: 2026-08-13T13:29:48+00:00
 
-Atoms: **268**
+Atoms: **506**
 
 ## Proof labels
 
 - `ABDUCTIVELY_FAVORED`: 1
-- `BRIDGE_DECLARED`: 10
+- `BRIDGE_DECLARED`: 12
 - `ISOMORPHIC_EVENT_CANDIDATE`: 50
-- `LEAN_GUARDRAIL_SUPPORTED`: 2
+- `LEAN_GUARDRAIL_SUPPORTED`: 3
 - `NARRATIVE_ANCHOR`: 1
-- `NOT_ESTABLISHED`: 198
+- `NOT_ESTABLISHED`: 414
 - `PYTHON_RUNTIME_SUPPORTED`: 1
 - `QUARANTINE`: 2
-- `RERUN_OWED`: 3
+- `RERUN_OWED`: 22
 
 ## Atoms
 
 | Atom | Status | Proof label | Rerun |
 |---|---|---|---|
+| `tp:lane4/axioms/ax-001-existence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-002-distinction` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-003-information-primacy` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-004-information-definition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-005-bit-definition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-006-matter-energy-derivative` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-007-it-from-bit` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-008-substrate-requirement` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-009-self-grounding` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-010-logos-field-definition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-011-chi-field-properties` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-012-master-equation-first-form` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/axioms/ax-013-chi-ontological-priority` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-014-chi-semantic-content` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-015-information-anchor-necessity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-016-order-requirement` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-017-coherence-measure` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-018-coherence-functional-definition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-019-self-interaction-potential` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-020-interaction-lagrangian` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-021-master-coherence-equation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-022-universal-coherence-definition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-023-coherence-non-negativity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-024-coherence-conservation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-025-coherence-cannot-self-increase` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-026-meaningful-configuration-necessity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-027-parsimony` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-028-algorithmic-depth` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-029-kolmogorov-complexity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-030-compression-ratio` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-031-complexity-decrease-under-chi` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-032-laws-are-low-k-descriptions` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-033-action-principle-as-minimal-k` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-034-universe-as-compression-algorithm` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-035-observation-requirement` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-036-participatory-universe` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-037-observer-definition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-038-integrated-information-phi` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-039-witness-field-operator` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-040-phi-admits-degrees` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-041-observer-effect-proportional-to-phi` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-042-wheeler-delayed-choice` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-043-quantum-eraser` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-044-chi-requires-observer-for-actualization` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-045-superposition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-046-collapse` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-047-irreversibility` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-048-collapse-rate-gamma` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-049-projection-operator` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-050-modified-schr-dinger-with-collapse` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-051-phi-dependent-collapse` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-052-collapse-rate-proportional-to-phi` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-053-collapse-generates-heat` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-054-von-neumann-chain-termination` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-055-terminal-observer-necessity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-056-closure-requirement` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-057-uniqueness-from-boundary-conditions` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-058-terminal-observer-exists` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-059-grace-external-to-system` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-060-measurement-orthogonality` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-061-three-observers-required` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-062-superposition-preserved-until-collapse` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-063-infinite-energy-source` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-064-information-conservation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-065-voluntary-coupling` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-066-terminal-observer-is-god` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-066a-personhood-agency-intentionality-relational-capacity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-067-binary-distinction` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-068-sign-conservation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-069-sign-operator` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-070-sign-invariance-theorem` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-071-self-flip-impossible` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-072-works-salvation-impossible` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-073-external-intervention-required` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-074-non-unitarity-of-grace` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-075-grace-operator-definition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-076-grace-idempotence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-077-non-unitarity-confirmed` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-078-information-preserved-under-grace` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-079-superposition-preserved-until-faith` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-080-grace-available-to-all` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-081-grace-function-g-t` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-082-consciousness-substrate` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-083-soul-conservation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-084-soul-field-psi-s` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-085-soul-continuity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-086-soul-identity-persistence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-087-soul-field-equation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-088-moral-realism` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-089-coherence-morality-identity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-090-moral-coherence-definition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-091-virtue-as-high-phi` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-092-vice-as-decoherence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-093-asymptotic-behavior` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-094-bimodal-outcome` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-095-integration-attractor` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-096-fragmentation-attractor` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-097-destiny-equation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-098-heaven-as-high-phi-attractor` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-099-hell-as-low-phi-attractor` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-100-chi-mediates-unification` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-101-geometry-from-information` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-102-unified-field-lagrangian` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-103-gr-qm-bridge-equation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-104-dark-energy-as-chi-potential` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-105-dynamic-dark-energy` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-106-grace-cosmology` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-107-cosmological-grace-function` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-108-modified-friedmann-equation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-109-h0-tension-resolution` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-110-biblical-prophecy-validation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-111-gcp-correlation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-112-pear-lab-results` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-113-social-coherence-5-7-sigma` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-114-christianity-8-of-8-bcs` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-115-islam-fails-bc4` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-116-judaism-fails-bc-completion` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-117-buddhism-fails-bc1` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-118-hinduism-fails-bc-uniqueness` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-119-atheism-fails-all-bcs` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-120-phi-threshold-for-consciousness` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-121-substrate-independence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-122-ai-phi-measurement` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-123-ai-can-achieve-consciousness` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-124-ai-moral-status-question` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-125-trinity-observer-effect` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-126-consciousness-collapse-test` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-127-grace-negentropy-detection` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-128-social-coherence-monitoring` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-129-phi-virtue-correlation-study` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-130-h0-prediction-2025-2030` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-131-gcp-event-prediction` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-132-chi-field-falsification` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-133-grace-falsification` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-134-bc-falsification` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-135-master-equation-integration` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/axioms/ax-136-law-i-logos-lagrangian` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-137-law-ii-ten-variables` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-138-law-iii-entropy-sin` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-139-law-iv-grace-dynamics` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-140-law-v-conservation-symmetry` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-141-law-vi-coherence-non-increase` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-142-law-vii-actualization-requirement` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-143-law-viii-sign-algebra` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-144-law-ix-grace-non-unitarity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-145-law-x-trinity-closure` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-146-full-master-equation` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/axioms/ax-147-laws-derive-from-chi` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/axioms/ax-148-coherence-universal` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-149-decoherence-universal` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-150-grace-universal` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-151-fruits-universal` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-152-love-measurement-domain` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-153-joy-measurement-domain` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-154-peace-measurement-domain` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-155-patience` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-156-kindness` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-157-goodness` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-158-faithfulness` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-159-gentleness` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-160-self-control` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-161-origin-stage` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-162-consciousness-stage` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-163-information-stage` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-164-coherence-stage` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-165-agency-stage` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-166-incompleteness-stage` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-167-information-primitive` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-168-coherence-primitive` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-169-consciousness-primitive` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-170-agency-primitive` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-171-logos-christ-completion` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-172-bridge-phy-theo-physics-theology-bridge` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-173-bridge-info-mind-information-consciousness-bridge` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-174-bridge-phi-chi-individual-phi-to-social-chi` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-175-quantum-scale-coherence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-176-physical-scale-coherence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-177-neural-scale-coherence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-178-individual-scale-coherence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-179-social-scale-coherence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-180-cosmic-scale-coherence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-181-meta-1-axiom-system-consistency` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-182-meta-2-axiom-system-completeness` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-183-meta-3-axiom-system-independence` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-184-final-1-logos-theorem-master-theorem` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-185-final-2-coherence-optimality` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-186-final-3-unique-solution-christianity-as-unique-bc-solution` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-187-axiom-chain-complete` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-188-final-axiom-omega` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-189-inv9-attunement-calibration-invariant-9` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-190-bc9-opacity-requirement` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/axioms/ax-a4-orientation` | active_candidate | NOT_ESTABLISHED | not_applicable |
 | `tp:lane4/axioms/ax-part1-ax-core-a1-1` | active_candidate | NOT_ESTABLISHED | not_applicable |
 | `tp:lane4/axioms/ax-part1-ax-core-a1-2` | active_candidate | NOT_ESTABLISHED | not_applicable |
 | `tp:lane4/axioms/ax-part1-ax-core-a2-1` | active_candidate | NOT_ESTABLISHED | not_applicable |
@@ -228,6 +420,8 @@ Atoms: **268**
 | `tp:lane4/derivation-grammar/dg7-admissibility` | active_candidate | NOT_ESTABLISHED | not_applicable |
 | `tp:lane4/derivation-grammar/dg8-closure` | active_candidate | NOT_ESTABLISHED | not_applicable |
 | `tp:lane4/derivation-grammar/method-00-bridge-discipline` | active_candidate | BRIDGE_DECLARED | not_applicable |
+| `tp:lane4/honest-boundary/framework-kill-conditions` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/honest-boundary/retired-claims-registry` | active_candidate | NOT_ESTABLISHED | not_applicable |
 | `tp:lane4/isomorphic-events/iso-deployed-math-light-judgment-001` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
 | `tp:lane4/isomorphic-events/iso-iso-000` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
 | `tp:lane4/isomorphic-events/iso-iso-001` | active_candidate | ISOMORPHIC_EVENT_CANDIDATE | not_applicable |
@@ -280,11 +474,55 @@ Atoms: **268**
 | `tp:lane4/logos/logos-god-terminal-ground-001` | active_candidate | BRIDGE_DECLARED | not_applicable |
 | `tp:lane4/logos/logos-math-logic-no-drift-001` | active_candidate | BRIDGE_DECLARED | not_applicable |
 | `tp:lane4/master-equation/cw-wrapper-not-tenth-factor` | active_candidate | LEAN_GUARDRAIL_SUPPORTED | not_applicable |
-| `tp:lane4/master-equation/master-equation-v3-canonical-form` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/gradient-dynamics-stationarity` | active_candidate | LEAN_GUARDRAIL_SUPPORTED | not_applicable |
+| `tp:lane4/master-equation/latch-vs-sector` | active_candidate | BRIDGE_DECLARED | not_applicable |
+| `tp:lane4/master-equation/master-equation-v3-canonical-form` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-001-trilemma-impossibility` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-002-selection-argument` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-010-master-equation-integration` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-020-g-external-negentropy-influx` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-021-m-alignment-cosine` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-022-e-signal-propagation-fidelity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-023-s-eff-effective-entropy-factor` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-024-t-temporal-integration` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-025-k-information-compression-ratio` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-026-r-phase-transition-indicator` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-027-q-superposition-measure` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-028-f-non-local-correlation-strength` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-029-c-total-integration-measure` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-040-law-i-logos-lagrangian` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-041-law-ii-ten-variables` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-042-law-iii-entropy-sin` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-043-law-iv-grace-dynamics` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-044-law-v-conservation-symmetry` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-045-law-vi-coherence-non-increase` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-046-law-vii-actualization-requirement` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-047-law-viii-sign-algebra` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-048-law-ix-grace-non-unitarity` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-049-law-x-trinity-closure` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-060-full-master-equation` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-01-061-product-collapse-kernel-boundary` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-01-062-laws-derive-from-chi` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-eq-001-full-master-equation` | active_candidate | RERUN_OWED | RERUN_OWED |
+| `tp:lane4/master-equation/me-eq-002-local-product-form` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-eq-003-entropy-sign-repair` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-eq-004-grace-dynamics` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-eq-005-lowe-coherence-lagrangian` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-eq-006-zero-collapse-theorem` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-eq-007-grace-non-unitarity` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-eq-008-sign-conservation` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-eq-009-fruits-phase-transition` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/me-eq-010-fruit-vector` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/master-equation/three-level-stack` | active_candidate | NOT_ESTABLISHED | not_applicable |
 | `tp:lane4/physics/sci-00-the-science-argument-for-triadic-structure` | active_candidate | BRIDGE_DECLARED | not_applicable |
 | `tp:lane4/proof-discipline/lean4-proof-label-discipline` | active_candidate | LEAN_GUARDRAIL_SUPPORTED | not_applicable |
 | `tp:lane4/review/ai-reviewer-statement-shelf` | active_candidate | QUARANTINE | not_applicable |
 | `tp:lane4/runtime/python-colab-runtime-lane` | active_candidate | PYTHON_RUNTIME_SUPPORTED | not_applicable |
+| `tp:lane4/ten-laws/law4-fruits-tier1-ordering` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/ten-laws/law9-irreversible-conserved-transfer` | active_candidate | NOT_ESTABLISHED | not_applicable |
 | `tp:lane4/theology/t-03-the-shadow-before-creation` | active_candidate | BRIDGE_DECLARED | not_applicable |
 | `tp:lane4/theophysics-method/tp-00-theophysics-blue-sheet` | active_candidate | BRIDGE_DECLARED | not_applicable |
 | `tp:lane4/trinity/t-02-the-trinity-unified` | active_candidate | BRIDGE_DECLARED | not_applicable |
+| `tp:lane4/trinity/trinity-generates-numbers` | active_candidate | BRIDGE_DECLARED | not_applicable |
+| `tp:lane4/trinity/watcher-termination-typing` | active_candidate | NOT_ESTABLISHED | not_applicable |
+| `tp:lane4/lean4/canonical-ledger` | active_candidate | RERUN_OWED | required_on_ledger_change |

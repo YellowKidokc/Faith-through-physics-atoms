@@ -179,7 +179,7 @@ def validate():
     errors = []
     for a in load_atoms():
         pfx = a.get("atom_id", "unknown")
-        for key in ("assumptions", "source_artifacts", "current_status"):
+        for key in ("atom_uuid", "assumptions", "source_artifacts", "current_status"):
             if not a.get(key): errors.append(f"{pfx}: missing {key}")
         label, cls, lane = a.get("proof_label"), a.get("claim_class", "").lower(), a.get("lane", "").lower()
         if label not in LABELS: errors.append(f"{pfx}: unknown proof_label {label}")
@@ -189,6 +189,9 @@ def validate():
         if "isomorph" in cls and a.get("mode_classification") not in {"C5", "formal_isomorphism"} and label == "LEAN_FORMAL_PROOF": errors.append(f"{pfx}: below-C5 event cannot be formal isomorphism")
         text = (a.get("title", "") + a.get("claim", "")).lower()
         if "master equation" in text and V3 not in " ".join(a.get("equations", [])) and a.get("rerun_status") != "RERUN_OWED": errors.append(f"{pfx}: old Master Equation requires RERUN_OWED")
+        for index, event in enumerate(a.get("ledger", []), 1):
+            if not event.get("event_id"): errors.append(f"{pfx}: ledger event {index} missing event_id")
+            if not event.get("event_uuid"): errors.append(f"{pfx}: ledger event {index} missing event_uuid")
         ids = [e.get("event_id") for e in a.get("ledger", [])]
         if len(ids) != len(set(ids)): errors.append(f"{pfx}: duplicate ledger event")
     for error in errors: print("ERROR", error)

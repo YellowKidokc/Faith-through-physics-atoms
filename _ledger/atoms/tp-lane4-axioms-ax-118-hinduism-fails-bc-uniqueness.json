@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "bridge-theology",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Hinduism: multiple solutions, none unique"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:707af7aebe12b22b3ff525a2a75627194eaedafd8f16aef0d71c2adc2d010c60",
+      "event_uuid": "1a2d8219-4907-5670-a56a-166690ad8a5f"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: bridge-theology.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:f7b707b4af187d1f2c0b9078911dbe83df607616ca1701b5f4fc6be8696fed30",
+      "event_uuid": "fe9f87a6-3398-5200-bea5-6af2d121ba28"
     }
   ],
   "source_claim_id": "tp:AXIOMS/T16.5",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-118",
-  "original_node_id": "tp:axioms/01/AX-118"
+  "original_node_id": "tp:axioms/01/AX-118",
+  "atom_uuid": "c48949a2-0fca-5d7e-85a0-e0df7155f6b1"
 }

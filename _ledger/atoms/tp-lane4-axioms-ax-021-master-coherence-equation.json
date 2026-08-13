@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "04-energy",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "C[χ] = ∫√(-g)[½∂μχ∂μχ - V(χ) + L_int]d⁴x"
@@ -41,7 +43,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:b57b0f2fa8463d6192e2ec27c1d825750467d3a79fa19f4546ba2a6374c6acef",
+      "event_uuid": "61cd1519-4706-51b5-b35b-f67f968b2a1d"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -51,10 +55,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'mathematical' -> 'derived'. Ontology: 04-energy.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:e6e63ed48fc5e4d97b89e062b9d3139b94d47d5b14f7b0e94bdd283258297b4a",
+      "event_uuid": "5e5036a9-e2ac-57f7-9583-3b8490f9388d"
     }
   ],
   "source_claim_id": "tp:AXIOMS/E3.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-021",
-  "original_node_id": "tp:axioms/01/AX-021"
+  "original_node_id": "tp:axioms/01/AX-021",
+  "atom_uuid": "36a48066-14ea-55b0-b59d-f2957aed7b7c"
 }

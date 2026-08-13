@@ -8,7 +8,9 @@
   "claim_class": "bridge",
   "mode_classification": "candidate",
   "ontology_family": "bridge-spiritual",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "—"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:4fdd5575ad88ec14ff20b86c856e3c29db0e453c50a51d736caf120045c85f20",
+      "event_uuid": "f8fd9fc0-aa49-5123-8fc6-1928ad4bfb3f"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'bridge' -> 'bridge'. Ontology: bridge-spiritual.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:b644f824d8c2ad1838dfa3818a74aab34524fe3a936f9489c56c49ffdfca464a",
+      "event_uuid": "1a61c00b-8960-5aa5-a873-f1ab9a042d73"
     }
   ],
   "source_claim_id": "tp:AXIOMS/BRIDGE-PHI-CHI",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-174",
-  "original_node_id": "tp:axioms/01/AX-174"
+  "original_node_id": "tp:axioms/01/AX-174",
+  "atom_uuid": "039c0815-5227-5051-bd5f-635135cea6ad"
 }

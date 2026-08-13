@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "03-fields-forces",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "H₀ = 73.0 ± 1.0 km/s/Mpc (predicted)"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:41ca8f238be8442247ac97b595c0379300bf40a60204b4806f7a7e5a60e06bf2",
+      "event_uuid": "ca85ea98-a951-53b1-9dda-c3d17211ff76"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'derived'. Ontology: 03-fields-forces.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:6b1056f505e559f0d34bd5809b602a7efda5872b88d40a9476d092a2ab177f10",
+      "event_uuid": "2470ee59-6281-550a-9ba2-c598f3069677"
     }
   ],
   "source_claim_id": "tp:AXIOMS/PRED14.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-109",
-  "original_node_id": "tp:axioms/01/AX-109"
+  "original_node_id": "tp:axioms/01/AX-109",
+  "atom_uuid": "8a1a58df-0a8c-5b93-a37c-0a666d891655"
 }

@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "14-information-physics",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "χ ≡ Logos ≡ Christ (identification)"
@@ -41,7 +43,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:8ab90e6f3289d7e1b41dcd30607df2eb133a01725c5939e76780874ca0f5b48d",
+      "event_uuid": "9c5d6591-5635-5cf0-9359-2724d38faa58"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -51,10 +55,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 14-information-physics.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:4cf4b4701536ca276aeda9552649251715fe03b9cbc1761852ea4ec5ec7e168a",
+      "event_uuid": "69f4284f-a173-5e76-a24e-31b52cb25929"
     }
   ],
   "source_claim_id": "tp:AXIOMS/LAMBDA",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-171",
-  "original_node_id": "tp:axioms/01/AX-171"
+  "original_node_id": "tp:axioms/01/AX-171",
+  "atom_uuid": "d3dd8b8b-4507-5fa9-b7d8-e2981f356a5c"
 }

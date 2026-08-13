@@ -8,7 +8,9 @@
   "claim_class": "definition",
   "mode_classification": "candidate",
   "ontology_family": "master-equation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [],
   "bridges": [],
@@ -19,9 +21,9 @@
   ],
   "negative_guards": [],
   "kill_conditions": [],
-  "proof_label": "NOT_ESTABLISHED",
+  "proof_label": "RERUN_OWED",
   "current_status": "active_candidate",
-  "rerun_status": "not_applicable",
+  "rerun_status": "RERUN_OWED",
   "source_artifacts": [
     "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-044-law-v-conservation-symmetry.jsonld"
   ],
@@ -34,7 +36,9 @@
       "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
       "limits": "Import does not change proof status.",
       "reviewer": "import_me_to_lane4.py",
-      "lane": "mathematics"
+      "lane": "mathematics",
+      "event_id": "sha256:f4abc4ec78896278af3a121f5b889586179d43107243cea723635fe67052835d",
+      "event_uuid": "71862131-e74c-55c8-a5e4-6bdfa1b60dae"
     }
   ],
   "source_claim_id": "tp:ME/ME-01-044",
@@ -49,5 +53,6 @@
     "AX-140",
     "D19.5",
     "Definition"
-  ]
+  ],
+  "atom_uuid": "4a172def-5f7d-5b2c-9906-13e3f5a8127e"
 }

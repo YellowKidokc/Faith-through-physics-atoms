@@ -8,7 +8,9 @@
   "claim_class": "conjecture",
   "mode_classification": "C2_WELL_POSED_CONJECTURE",
   "ontology_family": "03-fields-forces",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Λ = Λ(Ψ_collective); G(t,Ψ) replacing static Λ"
@@ -40,7 +42,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:924e0a6cbaf334c6c442b2ab3e71678ed86240e4bbcc31e86f7786ddaace3f0a",
+      "event_uuid": "87e3d617-a6a6-5d9a-8b59-92daebb64cdd"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -50,10 +54,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'conjecture'. Ontology: 03-fields-forces.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:09f66c485f30efb20112a11c271f3ebc6d85bc80c01f95b3c9530483ffe14529",
+      "event_uuid": "05ba4614-804b-55dc-b61b-564091501302"
     }
   ],
   "source_claim_id": "tp:AXIOMS/A14.2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-106",
-  "original_node_id": "tp:axioms/01/AX-106"
+  "original_node_id": "tp:axioms/01/AX-106",
+  "atom_uuid": "3b3a80b2-b596-550d-8bfe-febf479e080a"
 }

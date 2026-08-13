@@ -8,7 +8,9 @@
   "claim_class": "mathematical",
   "mode_classification": "candidate",
   "ontology_family": "master-equation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Φ⃗ = {Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control}"
@@ -46,7 +48,9 @@
       "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
       "limits": "Import does not change proof status.",
       "reviewer": "import_me_to_lane4.py",
-      "lane": "mathematics"
+      "lane": "mathematics",
+      "event_id": "sha256:462a09d1b658193901ef3995c6ecc7d89f7a7ca0c60ec86be920e4edb12fd399",
+      "event_uuid": "399c92de-4b4f-5004-80b8-a384330dd640"
     }
   ],
   "source_claim_id": "tp:ME/ME-EQ-010",
@@ -59,5 +63,6 @@
   "keywords": [
     "equation",
     "Φ⃗"
-  ]
+  ],
+  "atom_uuid": "926def14-151f-5f25-a69f-23c4d282a6c8"
 }

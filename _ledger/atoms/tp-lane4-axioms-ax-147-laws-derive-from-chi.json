@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "03-fields-forces",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "∀Law_i: Law_i = E-L equation of L_master"
@@ -22,9 +24,9 @@
     "Show at least one law cannot be derived from the master equation",
     "Demonstrate the variational principle fails for one of the ten laws"
   ],
-  "proof_label": "NOT_ESTABLISHED",
+  "proof_label": "RERUN_OWED",
   "current_status": "active_candidate",
-  "rerun_status": "not_applicable",
+  "rerun_status": "RERUN_OWED",
   "source_artifacts": [
     "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-147-laws-derive-from-chi.jsonld",
     "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:22560c22cf898092484080bef77af2fa9166658173ded966c683ec386db87a0f",
+      "event_uuid": "f6d73de3-40c4-5bc4-8839-f72b7c2c764f"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 03-fields-forces.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:6efe27b0c74a6e678c302965267e11e7ec2d709106513d354234dc1b4e196b35",
+      "event_uuid": "94598667-2f97-5008-9fef-888ca3f14590"
     }
   ],
   "source_claim_id": "tp:AXIOMS/T19.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-147",
-  "original_node_id": "tp:axioms/01/AX-147"
+  "original_node_id": "tp:axioms/01/AX-147",
+  "atom_uuid": "953971ae-eaa3-5ab5-84b2-33b92a514f86"
 }

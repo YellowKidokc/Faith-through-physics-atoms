@@ -8,7 +8,9 @@
   "claim_class": "axiom",
   "mode_classification": "candidate",
   "ontology_family": "01-foundations",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "∃x (existential quantifier — irreducible)"
@@ -37,7 +39,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:c56af7c2ee5738245af69b54347e69c837fbae919207c4e82908305915daecda",
+      "event_uuid": "d38e8fb5-0b6d-5bd8-8ca1-d3cfc8c21d54"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -47,10 +51,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'axiom'. Ontology: 01-foundations.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:41f93d988ca9910a91f498161b1e02a4b30771160dfcaa00cfeaa7359717edf2",
+      "event_uuid": "e50d57b5-67bd-5046-92bf-4977bc8cbbd4"
     }
   ],
   "source_claim_id": "tp:AXIOMS/A1.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-001",
-  "original_node_id": "tp:axioms/01/AX-001"
+  "original_node_id": "tp:axioms/01/AX-001",
+  "atom_uuid": "638f1785-0d9b-5201-bd59-e0af25830581"
 }

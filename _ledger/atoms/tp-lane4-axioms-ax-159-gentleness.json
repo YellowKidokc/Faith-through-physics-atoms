@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "03-fields-forces",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "F_Gentleness = min(force) s.t. outcome = coherent"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:00b7273927c6b688680bbc7cb42517ba0dbf083a1e479cfc871074f94a162f23",
+      "event_uuid": "bca48643-6d48-5177-8c2f-cd4634181497"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: 03-fields-forces.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:3ba0b76518a5f7531262ce9ebf9f3ffe2ac6372457405aada393752c21e3baa0",
+      "event_uuid": "01df38af-80bd-5bc0-9199-012ca98d025a"
     }
   ],
   "source_claim_id": "tp:AXIOMS/F8",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-159",
-  "original_node_id": "tp:axioms/01/AX-159"
+  "original_node_id": "tp:axioms/01/AX-159",
+  "atom_uuid": "a0376615-22a1-5009-adaa-fdb85766ab3e"
 }

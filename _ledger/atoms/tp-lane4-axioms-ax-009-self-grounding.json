@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "11-relativity",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "¬∃(infinite_regress); ∃!S: Grounds(S, S) — unique self-grounding substrate"
@@ -39,7 +41,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:233779e099972e8c39f052ecc7a70529a68ced0f09e13bbf3ce427d4ff196ceb",
+      "event_uuid": "4617fd61-7d33-5fc5-a575-4e956be883e6"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -49,10 +53,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 11-relativity.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:c3a20d063e24a4c7508765faa4f9d1b50f53bd15b15954a04f178d3ebdd4fa23",
+      "event_uuid": "d604b4bf-94ff-5bde-806b-14e5214498a6"
     }
   ],
   "source_claim_id": "tp:AXIOMS/A2.2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-009",
-  "original_node_id": "tp:axioms/01/AX-009"
+  "original_node_id": "tp:axioms/01/AX-009",
+  "atom_uuid": "54d834a8-d072-50d0-b2b0-34be3d8bee0a"
 }

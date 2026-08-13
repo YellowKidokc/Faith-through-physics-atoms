@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "14-information-physics",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "1 ≠ 0; existence = first distinction"
@@ -37,7 +39,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:28a776460e45e07acb739df24ad8541ab49ed512a071ea13930bc05c90740bf9",
+      "event_uuid": "fb785c13-7541-5053-b112-13fb357e52c5"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -47,10 +51,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 14-information-physics.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:325531521ca0a9149f1893d05c1b248caa5cae4828bf5b16ca864fd3491b20af",
+      "event_uuid": "8738ea6a-7ca2-5727-b20e-970e77550a83"
     }
   ],
   "source_claim_id": "tp:AXIOMS/P0",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-161",
-  "original_node_id": "tp:axioms/01/AX-161"
+  "original_node_id": "tp:axioms/01/AX-161",
+  "atom_uuid": "e6f6b0dc-26e3-520a-8923-f4a21c7cd3cf"
 }

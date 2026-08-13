@@ -1,0 +1,731 @@
+{
+  "schema_version": "atlas-record/v1",
+  "id": {
+    "record_id": "atlas-record:master-equation:trilemma-impossibility",
+    "atom_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility",
+    "source_claim_id": "tp:ME/L5/C1",
+    "stable_uid": "sha256:72cff6f2d03640144be4a152536c796951fbbd531f74ab28bd8d01fad8fdd513",
+    "aliases": [
+      "https://faiththruphysics.com/claims/master-equation/01/001",
+      "tp:master-equation/01/001"
+    ]
+  },
+  "source": {
+    "kind": "lane4_atom_json",
+    "title": "The Trilemma Impossibility — J + M + W = 3 requires an external cost-bearer",
+    "content_hash": "sha256:4a05f3a42eb631c0d3b392b43b9d4fc72eb3a08db3b05e9e3b6ff06f28af7b2b",
+    "paths": [
+      "_ledger/atoms/tp-lane4-master-equation-me-01-001-trilemma-impossibility.json",
+      "master-equation/01_canonical/ME-01-001-trilemma-impossibility.jsonld"
+    ],
+    "source_spans": [
+      {
+        "span_id": "source-span:technical-statement",
+        "path": "master-equation/01_canonical/ME-01-001-trilemma-impossibility.jsonld",
+        "selector": "/statementTechnical",
+        "quote": "In a closed system with damage D > 0, Justice J = T_A/D and Mercy M = 1 - T_B/D under strong budget balance (T_A = T_B) yield J = 1 - M. Full Justice (J=1) and Full Mercy (M=1) are algebraically contradictory. Adding Free Will W = min(W_A, W_B) with individual rationality constraints, no mechanism exists satisfying J=M=W=1 simultaneously (Myerson-Satterthwaite). Resolution requires an external voluntary cost-bearer: T_A = D (justice satisfied), T_B = 0 (mercy satisfied), T_ext = D (external source absorbs cost), with W_ext = 1 (voluntary). This is the unique solution class."
+      },
+      {
+        "span_id": "source-span:primary-jsonld",
+        "path": "master-equation/01_canonical/ME-01-001-trilemma-impossibility.jsonld",
+        "selector": "/statementPlain",
+        "quote": "When someone gets hurt, somebody has to pay. If the offender pays fully, that is justice but not mercy. If the offender pays nothing, that is mercy but not justice. You cannot have both in a closed system — the math literally forbids it. The only way to get full justice AND full mercy is if someone from outside the system voluntarily steps in and pays the cost themselves. That is not theology. That is algebra. And it has exactly one historical instantiation."
+      },
+      {
+        "span_id": "source-span:claim-components",
+        "path": "master-equation/01_canonical/ME-01-001-trilemma-impossibility.jsonld",
+        "selector": "/claimComponents",
+        "quote": "[{\"componentID\": \"tp:ME/L5/C1.algebraic-trilemma\", \"predicate\": \"closed-system justice, mercy, and free-will impossibility\", \"status\": \"supported\"}, {\"componentID\": \"tp:ME/L5/C1.external-cost-bearer\", \"predicate\": \"external voluntary cost-bearer solution class\", \"status\": \"supported\"}, {\"componentID\": \"tp:ME/L5/C1.historical-instantiation\", \"predicate\": \"the Cross is the historical instantiation of the solution class\", \"status\": \"open\"}]"
+      },
+      {
+        "span_id": "source-span:mathematical-form",
+        "path": "master-equation/01_canonical/ME-01-001-trilemma-impossibility.jsonld",
+        "selector": "/mathematicalForm",
+        "quote": "J = T_A/D, M = 1 - T_B/D, T_A = T_B (closed system) => J = 1 - M. QED: J=1 AND M=1 is impossible. Solution: T_ext = D, W_ext = 1 (voluntary external cost-bearer)."
+      }
+    ],
+    "provenance": [
+      {
+        "timestamp": "2026-08-09T00:00:00+00:00",
+        "event_type": "imported_from_jsonld",
+        "result": "imported",
+        "limits": "Import does not change proof status.",
+        "reviewer": "import_me_to_lane4.py"
+      }
+    ]
+  },
+  "nabla": {
+    "classification": "artifact:atom/lane4; domain:master-equation; role:technical-canonical-claim",
+    "semantic_address": "nabla://faith-through-physics/master-equation/01-canonical/ME-01-001-trilemma-impossibility#tp:ME/L5/C1",
+    "routing_hints": [
+      "open lane4 atom first",
+      "open canonical JSON-LD source",
+      "load Atlas evidence coverage for tp:ME/L5/C1",
+      "load Atlas ascent/descent projections for tp:ME/L5/C1"
+    ],
+    "deterministic_status": "candidate",
+    "notes": "Nabla canonical service was not available locally; this is a deterministic address derived from existing repository paths and ids."
+  },
+  "periodic15": {
+    "marker_1_scope": "paper/local",
+    "marker_2_home_domain": "master-equation",
+    "marker_3_native_domains": [
+      "master-equation"
+    ],
+    "marker_4_bridged_domains": [
+      "tp:bridges/master-equation/economics/trilemma-cost-bearing"
+    ],
+    "marker_5_object_type": "Equation / Model",
+    "marker_6_claim_family": "Quantity / Measurement",
+    "marker_7_function_kind": "Derivation",
+    "marker_8_source_kind": "lane4_atom_json",
+    "marker_9_standing": "active_candidate",
+    "marker_10_native_grade": "NOT_ESTABLISHED",
+    "marker_11_modality": "candidate",
+    "marker_12_evidence_grade": "UNKNOWN",
+    "marker_13_dispute": "open:tp:ME/L5/C1.historical-instantiation",
+    "marker_14_publication_state": "source:01_canonical/verified;lane4:active_candidate",
+    "marker_15_component_state": "bridge,claim,claim_component,dependency,equation,kill_condition"
+  },
+  "atom_stack": {
+    "atom": {
+      "atom_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility",
+      "title": "The Trilemma Impossibility — J + M + W = 3 requires an external cost-bearer",
+      "object_type": "Equation / Model",
+      "standing": "active_candidate",
+      "native_grade": "NOT_ESTABLISHED"
+    },
+    "components": [
+      {
+        "component_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.claim.01",
+        "type": "claim",
+        "label": "Claim",
+        "content": "When someone gets hurt, somebody has to pay. If the offender pays fully, that is justice but not mercy. If the offender pays nothing, that is mercy but not justice. You cannot have both in a closed system — the math literally forbids it. The only way to get full justice AND full mercy is if someone from outside the system voluntarily steps in and pays the cost themselves. That is not theology. That is algebra. And it has exactly one historical instantiation.",
+        "meta_criteria_ids": [
+          "dependency",
+          "evidence",
+          "coherence",
+          "provenance",
+          "translation"
+        ],
+        "standing": "active_candidate",
+        "source_span_ids": [
+          "source-span:primary-jsonld"
+        ]
+      },
+      {
+        "component_id": "tp:ME/L5/C1.algebraic-trilemma",
+        "type": "claim_component",
+        "label": "closed-system justice, mercy, and free-will impossibility",
+        "content": "closed-system justice, mercy, and free-will impossibility",
+        "meta_criteria_ids": [
+          "dependency",
+          "evidence",
+          "falsifiability",
+          "provenance"
+        ],
+        "standing": "supported",
+        "source_span_ids": [
+          "source-span:claim-components"
+        ]
+      },
+      {
+        "component_id": "tp:ME/L5/C1.external-cost-bearer",
+        "type": "claim_component",
+        "label": "external voluntary cost-bearer solution class",
+        "content": "external voluntary cost-bearer solution class",
+        "meta_criteria_ids": [
+          "dependency",
+          "evidence",
+          "falsifiability",
+          "provenance"
+        ],
+        "standing": "supported",
+        "source_span_ids": [
+          "source-span:claim-components"
+        ]
+      },
+      {
+        "component_id": "tp:ME/L5/C1.historical-instantiation",
+        "type": "claim_component",
+        "label": "the Cross is the historical instantiation of the solution class",
+        "content": "the Cross is the historical instantiation of the solution class",
+        "meta_criteria_ids": [
+          "dependency",
+          "evidence",
+          "falsifiability",
+          "provenance"
+        ],
+        "standing": "open",
+        "source_span_ids": [
+          "source-span:claim-components"
+        ]
+      },
+      {
+        "component_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.equation.01",
+        "type": "equation",
+        "label": "Equation",
+        "content": "J = T_A/D, M = 1 - T_B/D, T_A = T_B (closed system) => J = 1 - M. QED: J=1 AND M=1 is impossible. Solution: T_ext = D, W_ext = 1 (voluntary external cost-bearer).",
+        "meta_criteria_ids": [
+          "formal",
+          "falsifiability",
+          "dependency",
+          "provenance"
+        ],
+        "standing": "active_candidate",
+        "source_span_ids": [
+          "source-span:primary-jsonld"
+        ]
+      },
+      {
+        "component_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.dependency.01",
+        "type": "dependency",
+        "label": "Dependency",
+        "content": "tp:ten-laws/01/law-05-thermodynamics",
+        "meta_criteria_ids": [
+          "dependency",
+          "blast_radius",
+          "coherence"
+        ],
+        "standing": "active_candidate",
+        "source_span_ids": [
+          "source-span:primary-jsonld"
+        ]
+      },
+      {
+        "component_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.dependency.02",
+        "type": "dependency",
+        "label": "Dependency",
+        "content": "tp:ten-laws/01/law-09-weak-force",
+        "meta_criteria_ids": [
+          "dependency",
+          "blast_radius",
+          "coherence"
+        ],
+        "standing": "active_candidate",
+        "source_span_ids": [
+          "source-span:primary-jsonld"
+        ]
+      },
+      {
+        "component_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.kill-condition.01",
+        "type": "kill_condition",
+        "label": "Kill Condition",
+        "content": "Exhibit a closed-system mechanism that achieves J=1, M=1, W=1 simultaneously without an external transfer",
+        "meta_criteria_ids": [
+          "falsifiability",
+          "blast_radius",
+          "evidence"
+        ],
+        "standing": "active_candidate",
+        "source_span_ids": [
+          "source-span:primary-jsonld"
+        ]
+      },
+      {
+        "component_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.kill-condition.02",
+        "type": "kill_condition",
+        "label": "Kill Condition",
+        "content": "Alternatively, show that Myerson-Satterthwaite does not apply to moral transfers",
+        "meta_criteria_ids": [
+          "falsifiability",
+          "blast_radius",
+          "evidence"
+        ],
+        "standing": "active_candidate",
+        "source_span_ids": [
+          "source-span:primary-jsonld"
+        ]
+      },
+      {
+        "component_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.bridge.01",
+        "type": "bridge",
+        "label": "Bridge",
+        "content": "tp:bridges/master-equation/economics/trilemma-cost-bearing",
+        "meta_criteria_ids": [
+          "cross_domain",
+          "translation",
+          "provenance",
+          "independence"
+        ],
+        "standing": "active_candidate",
+        "source_span_ids": [
+          "source-span:primary-jsonld"
+        ]
+      },
+      {
+        "component_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.bridge.02",
+        "type": "bridge",
+        "label": "Bridge",
+        "content": "tp:theology/01/001",
+        "meta_criteria_ids": [
+          "cross_domain",
+          "translation",
+          "provenance",
+          "independence"
+        ],
+        "standing": "active_candidate",
+        "source_span_ids": [
+          "source-span:primary-jsonld"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "claim_id": "tp:ME/L5/C1",
+        "text": "When someone gets hurt, somebody has to pay. If the offender pays fully, that is justice but not mercy. If the offender pays nothing, that is mercy but not justice. You cannot have both in a closed system — the math literally forbids it. The only way to get full justice AND full mercy is if someone from outside the system voluntarily steps in and pays the cost themselves. That is not theology. That is algebra. And it has exactly one historical instantiation.",
+        "formal_restatement": "In a closed system with damage D > 0, Justice J = T_A/D and Mercy M = 1 - T_B/D under strong budget balance (T_A = T_B) yield J = 1 - M. Full Justice (J=1) and Full Mercy (M=1) are algebraically contradictory. Adding Free Will W = min(W_A, W_B) with individual rationality constraints, no mechanism exists satisfying J=M=W=1 simultaneously (Myerson-Satterthwaite). Resolution requires an external voluntary cost-bearer: T_A = D (justice satisfied), T_B = 0 (mercy satisfied), T_ext = D (external source absorbs cost), with W_ext = 1 (voluntary). This is the unique solution class.",
+        "mode": "FORMAL_DERIVATION",
+        "mode_native": "formal_derivation",
+        "standing": "active_candidate",
+        "native_grade": "NOT_ESTABLISHED",
+        "source_span_ids": [
+          "source-span:primary-jsonld",
+          "source-span:technical-statement"
+        ],
+        "notes": "Native grade preserved; meta score must remain computed separately."
+      }
+    ],
+    "upstream": [
+      "tp:ten-laws/01/law-05-thermodynamics",
+      "tp:ten-laws/01/law-09-weak-force"
+    ],
+    "downstream": [],
+    "dependencies": [
+      "tp:ten-laws/01/law-05-thermodynamics",
+      "tp:ten-laws/01/law-09-weak-force"
+    ],
+    "arguments": [],
+    "warrant": {
+      "evidence_receipt_ids": [
+        "EVIDENCE-ME-CANONICAL-ATOM.01",
+        "EVIDENCE-ME-CANONICAL-ATOM.02",
+        "EVIDENCE-WHY-GRACE-HAS-AN-EQUATION-NARRATIVE",
+        "LANE4-PYTHON-COLAB-RUNTIME-RECEIPTS"
+      ],
+      "proof_test_ids": [
+        "DES-TC-001-ME-C1.kill.01"
+      ],
+      "counterevidence_ids": [],
+      "kill_condition_ids": [
+        "tp:lane4/master-equation/me-01-001-trilemma-impossibility.kill.01",
+        "tp:lane4/master-equation/me-01-001-trilemma-impossibility.kill.02",
+        "DES-TC-001-ME-C1.kill.01"
+      ]
+    },
+    "tests": [
+      {
+        "test_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.kill.01",
+        "claim_id": "tp:ME/L5/C1",
+        "type": "kill_condition",
+        "condition": "Exhibit a closed-system mechanism that achieves J=1, M=1, W=1 simultaneously without an external transfer",
+        "status": "untested",
+        "blast_radius": "component_and_downstream_dependencies"
+      },
+      {
+        "test_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility.kill.02",
+        "claim_id": "tp:ME/L5/C1",
+        "type": "kill_condition",
+        "condition": "Alternatively, show that Myerson-Satterthwaite does not apply to moral transfers",
+        "status": "untested",
+        "blast_radius": "component_and_downstream_dependencies"
+      },
+      {
+        "test_id": "DES-TC-001-ME-C1.kill.01",
+        "claim_id": "tp:ME/L5/C1",
+        "type": "projection_kill_condition",
+        "condition": "A closed-system mechanism achieves J=1, M=1, W=1 without external transfer",
+        "status": "partial",
+        "blast_radius": "projection_path"
+      }
+    ],
+    "dynamics": {
+      "ascent": {
+        "projection_id": "ASC-TC-001-ME-C1",
+        "claim_id": "tp:ME/L5/C1",
+        "mode": "ascendant",
+        "title": "Master Equation technical ascent",
+        "source": "TC-001",
+        "path": [
+          {
+            "kind": "source_span",
+            "id": "master-equation/01_canonical/ME-01-001-trilemma-impossibility.jsonld"
+          },
+          {
+            "kind": "evidence",
+            "id": "EVIDENCE-ME-CANONICAL-ATOM"
+          },
+          {
+            "kind": "claim_component",
+            "id": "tp:ME/L5/C1.algebraic-trilemma"
+          },
+          {
+            "kind": "derivation",
+            "id": "D-ME-C1"
+          },
+          {
+            "kind": "candidate_invariant",
+            "id": "I-ME-CLOSED-SYSTEM-TRILEMMA"
+          }
+        ],
+        "edges": [
+          {
+            "from": "EVIDENCE-ME-CANONICAL-ATOM",
+            "to": "tp:ME/L5/C1.algebraic-trilemma",
+            "relation_type": "establishes",
+            "strength": "strong",
+            "coverage": 0.67,
+            "method": "formal derivation inspection",
+            "origin": "technical canon",
+            "confidence": "high",
+            "assumptions": [
+              "D > 0",
+              "closed-system budget balance"
+            ]
+          }
+        ],
+        "open_items": [
+          "OI-0001"
+        ],
+        "counterevidence": [],
+        "result": "supported",
+        "rule": "cold-read: no Descent answer supplied to this path"
+      },
+      "translation": {
+        "status": "partial",
+        "preserved": [
+          "closed-system trilemma invariant"
+        ],
+        "lost": [
+          "historical instantiation is not established by algebra alone"
+        ],
+        "introduced": [],
+        "forbidden": [
+          "do not turn theological bridge into propagated evidence"
+        ]
+      },
+      "descent": {
+        "projection_id": "DES-TC-001-ME-C1",
+        "claim_id": "tp:ME/L5/C1",
+        "mode": "descendant",
+        "title": "Master Equation declared-reference descent",
+        "source": "TC-001",
+        "reference": "closed-system cost conservation framework",
+        "interface": "formal algebra / moral-transfer model interface",
+        "expected_invariants": [
+          "I-ME-CLOSED-SYSTEM-TRILEMMA"
+        ],
+        "predictions": [
+          {
+            "prediction_id": "P-ME-C1-1",
+            "text": "Under closed-system budget balance, full justice and full mercy cannot both equal 1.",
+            "test": "T-ME-C1-ALGEBRA",
+            "result": "found"
+          },
+          {
+            "prediction_id": "P-ME-C1-2",
+            "text": "Historical instantiation requires separate admitted evidence.",
+            "test": "T-ME-C1-HISTORY",
+            "result": "not_found"
+          }
+        ],
+        "assumptions": [
+          "D > 0",
+          "T_A = T_B for the closed-system case"
+        ],
+        "negative_guards": [
+          "Does not establish the historical instantiation by algebra alone",
+          "Does not turn a theological bridge into propagated evidence"
+        ],
+        "kill_conditions": [
+          "A closed-system mechanism achieves J=1, M=1, W=1 without external transfer"
+        ],
+        "result": "partial"
+      },
+      "meeting_state": "converged_partial"
+    }
+  },
+  "evidence_receipts": [
+    {
+      "evidence_id": "EVIDENCE-ME-CANONICAL-ATOM.01",
+      "claim_id": "tp:ME/L5/C1",
+      "component_id": "tp:ME/L5/C1.algebraic-trilemma",
+      "relation": "establishes",
+      "strength": "strong",
+      "coverage": 0.67,
+      "statement": "Formal derivation bears directly on the closed-system impossibility component.",
+      "source": "master-equation/01_canonical/ME-01-001-trilemma-impossibility.jsonld",
+      "does_not_show": [
+        "tp:ME/L5/C1.historical-instantiation"
+      ]
+    },
+    {
+      "evidence_id": "EVIDENCE-ME-CANONICAL-ATOM.02",
+      "claim_id": "tp:ME/L5/C1",
+      "component_id": "tp:ME/L5/C1.external-cost-bearer",
+      "relation": "supports",
+      "strength": "strong",
+      "coverage": 0.67,
+      "statement": "The algebraic solution class supports the external-cost-bearer component.",
+      "source": "master-equation/01_canonical/ME-01-001-trilemma-impossibility.jsonld",
+      "does_not_show": [
+        "tp:ME/L5/C1.historical-instantiation"
+      ]
+    },
+    {
+      "evidence_id": "EVIDENCE-WHY-GRACE-HAS-AN-EQUATION-NARRATIVE",
+      "claim_id": "tp:ME/L5/C1",
+      "component_id": "tp:ME/L5/C1.external-cost-bearer",
+      "relation": "contextualizes",
+      "strength": "moderate",
+      "coverage": 0.33,
+      "statement": "Narrative exposition can clarify the external-cost-bearer component but does not by itself promote rhetorical bridge claims to evidential standing.",
+      "source": "Why Grace Has an Equation",
+      "does_not_show": [
+        "tp:ME/L5/C1.algebraic-trilemma",
+        "tp:ME/L5/C1.historical-instantiation"
+      ]
+    },
+    {
+      "evidence_id": "LANE4-PYTHON-COLAB-RUNTIME-RECEIPTS",
+      "claim_id": "tp:ME/L5/C1",
+      "component_id": "tp:ME/L5/C1.algebraic-trilemma",
+      "relation": "consistent_with",
+      "strength": "moderate",
+      "coverage": 0.33,
+      "statement": "Lane 4/Python/Colab runtime lane can support reproducibility or execution discipline when receipts are attached; it does not promote metaphysical or historical components.",
+      "source": "_ledger/atoms/tp-lane4-runtime-python-colab-runtime-lane.json",
+      "does_not_show": [
+        "tp:ME/L5/C1.external-cost-bearer",
+        "tp:ME/L5/C1.historical-instantiation"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge:211fc4e0ad8cbaf1",
+      "from": "tp:lane4/master-equation/me-01-001-trilemma-impossibility",
+      "relation": "dependsOn",
+      "to": "tp:ten-laws/01/law-05-thermodynamics",
+      "status": "declared_by_atom",
+      "source": "_ledger/atoms/tp-lane4-master-equation-me-01-001-trilemma-impossibility.json"
+    },
+    {
+      "edge_id": "edge:db3b12b1b1efe3d0",
+      "from": "tp:lane4/master-equation/me-01-001-trilemma-impossibility",
+      "relation": "dependsOn",
+      "to": "tp:ten-laws/01/law-09-weak-force",
+      "status": "declared_by_atom",
+      "source": "_ledger/atoms/tp-lane4-master-equation-me-01-001-trilemma-impossibility.json"
+    },
+    {
+      "edge_id": "edge:0fdbfd3128c65dce",
+      "from": "tp:lane4/master-equation/me-01-001-trilemma-impossibility",
+      "relation": "bridgesTo",
+      "to": "tp:bridges/master-equation/economics/trilemma-cost-bearing",
+      "status": "accepted",
+      "source": "_ledger/atoms/tp-lane4-master-equation-me-01-001-trilemma-impossibility.json"
+    },
+    {
+      "edge_id": "edge:a779830aad2b7923",
+      "from": "tp:lane4/master-equation/me-01-001-trilemma-impossibility",
+      "relation": "bridgesTo",
+      "to": "tp:theology/01/001",
+      "status": "proposed",
+      "source": "_ledger/atoms/tp-lane4-master-equation-me-01-001-trilemma-impossibility.json"
+    },
+    {
+      "edge_id": "edge:d0ca8fef6f2c9482",
+      "from": "EVIDENCE-ME-CANONICAL-ATOM",
+      "relation": "establishes",
+      "to": "tp:ME/L5/C1.algebraic-trilemma",
+      "status": "supported",
+      "source": "ASC-TC-001-ME-C1"
+    }
+  ],
+  "bridges": [
+    {
+      "bridge_id": "bridge:9408b14dd8074e56",
+      "target": "tp:bridges/master-equation/economics/trilemma-cost-bearing",
+      "mapping_type": "structural_identity",
+      "standing": "Admitted",
+      "forbidden": "Bridge declaration must not promote native grade without independent warrant."
+    },
+    {
+      "bridge_id": "bridge:3bbfedbb8c888262",
+      "target": "tp:theology/01/001",
+      "mapping_type": "structural_identity",
+      "standing": "Candidate",
+      "forbidden": "Bridge declaration must not promote native grade without independent warrant."
+    }
+  ],
+  "anchors": [
+    {
+      "anchor_id": "anchor:718e8dfbd8bb9468",
+      "class": "coverage_receipt",
+      "status": "Candidate",
+      "target_id": "tp:ME/L5/C1.algebraic-trilemma",
+      "limitations": "Coverage is not probability. This row says the canonical technical atom bears on two of three declared components and is silent on the historical instantiation component."
+    },
+    {
+      "anchor_id": "anchor:255124efe1cc065c",
+      "class": "coverage_receipt",
+      "status": "Candidate",
+      "target_id": "tp:ME/L5/C1.external-cost-bearer",
+      "limitations": "Coverage is not probability. This row says the canonical technical atom bears on two of three declared components and is silent on the historical instantiation component."
+    },
+    {
+      "anchor_id": "anchor:7fc894d0f427478d",
+      "class": "coverage_receipt",
+      "status": "Candidate",
+      "target_id": "tp:ME/L5/C1.external-cost-bearer",
+      "limitations": "Seeded as Test Cycle 002 placeholder until the full narrative source is ingested and split into evidence-bearing units."
+    },
+    {
+      "anchor_id": "anchor:dc90a57fdca086f9",
+      "class": "coverage_receipt",
+      "status": "Candidate",
+      "target_id": "tp:ME/L5/C1.algebraic-trilemma",
+      "limitations": "Lane 4/Python/Colab are evidence-bearing receipts only. Compilation, runtime execution, or notebook reproduction never silently promotes canon."
+    }
+  ],
+  "reality_mirror": {
+    "class": "F",
+    "status": "Candidate",
+    "rule": "Reality Mirror tests whether the claim reaches a constraint the system did not manufacture; it is not Marker 16.",
+    "anchor_ids": [
+      "anchor:718e8dfbd8bb9468",
+      "anchor:255124efe1cc065c",
+      "anchor:7fc894d0f427478d",
+      "anchor:dc90a57fdca086f9"
+    ]
+  },
+  "meta_argument": {
+    "status": "not_run",
+    "engine": "YellowKidokc/the-meta-argument",
+    "input_profile": "formal_claim_adapter_required",
+    "variables": {},
+    "refusal_states": [
+      "INSUFFICIENTLY_DEFINED"
+    ],
+    "veto": "UNKNOWN",
+    "confidence": "UNKNOWN",
+    "dependencies": []
+  },
+  "computed": {
+    "graph_signature": {
+      "declared_dependency_count": 2,
+      "declared_bridge_count": 2,
+      "evidence_receipt_count": 4,
+      "kill_condition_count": 3
+    },
+    "grade_projection": {
+      "registry": "_atlas/grade-registry.json",
+      "native_grade": "NOT_ESTABLISHED",
+      "normalized_grade": "UNKNOWN",
+      "status": "UNKNOWN"
+    },
+    "load_bearing": true,
+    "blast_radius": [
+      "tp:ten-laws/01/law-05-thermodynamics",
+      "tp:ten-laws/01/law-09-weak-force"
+    ]
+  },
+  "audit": {
+    "candidate_or_admitted": "Admitted",
+    "subsystem_receipts": [
+      {
+        "system": "Nabla",
+        "status": "partially_filled",
+        "owned_fields": [
+          "nabla"
+        ],
+        "notes": "Semantic address derived from repo path/id; external Nabla classifier not run."
+      },
+      {
+        "system": "Argument Compiler",
+        "status": "not_run",
+        "owned_fields": [
+          "claims",
+          "components",
+          "evidence",
+          "tests",
+          "edges"
+        ],
+        "notes": "Remote repo inspected: its draft model covers sources, claims, evidence, citations, and edges, but it does not yet provide a runnable extraction pipeline or complete Atlas adapter."
+      },
+      {
+        "system": "The Meta-Argument",
+        "status": "not_run",
+        "owned_fields": [
+          "computed.meta_scores",
+          "computed.deterministic_audit"
+        ],
+        "notes": "Remote repo inspected: its engine scores atomic historical/action cases. It was not run because this formal claim does not satisfy that case contract without a typed adapter."
+      },
+      {
+        "system": "Atlas",
+        "status": "filled",
+        "owned_fields": [
+          "periodic15",
+          "dynamics",
+          "bridges",
+          "anchors",
+          "computed.graph_signature"
+        ],
+        "notes": "Filled from _atlas registries and Lane 4 atom layer."
+      },
+      {
+        "system": "AXIOM-REACT",
+        "status": "external_missing",
+        "owned_fields": [
+          "rendering"
+        ],
+        "notes": "React app is local but not modified by this builder; consume this JSON as UI input."
+      },
+      {
+        "system": "human audit",
+        "status": "filled",
+        "owned_fields": [
+          "audit.candidate_or_admitted"
+        ],
+        "notes": "Pre-admission gate origin=human_authored; human_audit={\"status\": \"accepted_prior\"}"
+      }
+    ],
+    "warnings": [
+      "Historical instantiation remains open and must not be inferred from algebra.",
+      "Bridge declaration must not promote native grade without independent warrant.",
+      "Marker 4 contains admitted bridge targets only; candidate bridges remain in bridges[].",
+      "Graph admission is Admitted; Lane 4 lifecycle remains active_candidate. These are separate states.",
+      "Meta score is not native grade.",
+      "Reality Mirror is metadata, not Marker 16."
+    ]
+  },
+  "unresolved": [
+    {
+      "field_or_requirement": "Marker 12 normalized evidence grade",
+      "reason": "Native grade 'NOT_ESTABLISHED' is not present in the C0-C6 grade registry.",
+      "next_step": "Assign or import a ratified C0-C6 native grade before projecting an Atlas grade."
+    },
+    {
+      "field_or_requirement": "Nabla v6 vector, pairing hash, and per-dimension confidence",
+      "reason": "No source-owned Nabla packet for this exact Master Equation atom was found; only a deterministic repository address can be derived safely.",
+      "next_step": "Run the Nabla classifier and attach its source packet without replacing the canonical artifact paths or spans."
+    },
+    {
+      "field_or_requirement": "Argument Compiler native extraction",
+      "reason": "The remote draft schema has Source, Citation, Evidence, Claim, ArgumentEdge, and ArgumentGraph, but no implemented source extraction receipt, component model, warrant/objection model, or byte-preserving source-span contract.",
+      "next_step": "Implement a typed export adapter in argument-compiler; replace the current Lane 4 adaptation only after its output preserves exact locators and source hashes."
+    },
+    {
+      "field_or_requirement": "The Meta-Argument deterministic scoring",
+      "reason": "The remote case schema is real but requires actor/action/target/cost-bearer historical-case fields. The Master Equation formal claim cannot be inserted without fabricating those values.",
+      "next_step": "Add a formal-claim adapter or a separate typed case profile, then run the existing engine to fill variables, direction, veto, confidence, dependencies, and refusal states."
+    },
+    {
+      "field_or_requirement": "AXIOM-REACT render integration",
+      "reason": "No React import route has been wired yet.",
+      "next_step": "Add AXIOM-REACT data loader for gold/master-equation/atlas-record-v1.master-equation.trilemma.json."
+    }
+  ]
+}

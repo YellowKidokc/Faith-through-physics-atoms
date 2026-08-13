@@ -8,7 +8,9 @@
   "claim_class": "definition",
   "mode_classification": "candidate",
   "ontology_family": "master-equation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "S_eff in (0, 1]"
@@ -36,7 +38,9 @@
       "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
       "limits": "Import does not change proof status.",
       "reviewer": "import_me_to_lane4.py",
-      "lane": "mathematics"
+      "lane": "mathematics",
+      "event_id": "sha256:a6fffb48aac4cee3960d2b9a90fe4a43531326f583f8905570d71287f7dc5c28",
+      "event_uuid": "db2a7d2f-6220-55b0-a07c-c79f0651fde4"
     }
   ],
   "source_claim_id": "tp:ME/ME-01-023",
@@ -50,5 +54,6 @@
     "master-equation-factor",
     "S_eff",
     "(0, 1]"
-  ]
+  ],
+  "atom_uuid": "49901615-e0a4-51ca-80a4-c201e1e3176a"
 }

@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "10-quantum",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "H(X) = -Σ p(xᵢ) log₂ p(xᵢ)"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:745275bcc106ddfd7147457b9de1f86a2267d42e90e3611a0d20d2b63d16d73f",
+      "event_uuid": "1214411b-3c5b-5310-a071-c6f8cde8ad42"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 10-quantum.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:d25668ff16fcdad746e54542b169b3f504f3b0280274b01dc41417bcd81f069d",
+      "event_uuid": "689c029b-7f60-54ce-973c-14df34489c37"
     }
   ],
   "source_claim_id": "tp:AXIOMS/D1.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-004",
-  "original_node_id": "tp:axioms/01/AX-004"
+  "original_node_id": "tp:axioms/01/AX-004",
+  "atom_uuid": "9d5827f1-3752-53f6-bf17-d749818ed74b"
 }

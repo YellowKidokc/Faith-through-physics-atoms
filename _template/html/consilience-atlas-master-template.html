@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-field="page-title">Consilience Atlas — Periodic Table</title>
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   CONSILIENCE ATLAS — PERIODIC TABLE AT THREE RESOLUTIONS
+   Master Template v1.0 | API-Driven | Fully Labeled
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  --void: #050505;
+  --deep: #0a0a0a;
+  --surface: #111111;
+  --surface2: #1a1a1a;
+  --surface3: #222222;
+  --border: #2a2520;
+  --border-strong: #3d3530;
+  --gold: #d4af37;
+  --golddim: #8a7129;
+  --goldglow: rgba(212,175,55,0.12);
+  --text: #e8e6e1;
+  --textdim: #9a9590;
+  --textfaint: #5a5550;
+  --red: #c94040;
+  --green: #7fc77f;
+  --blue: #5b9bd5;
+  --teal: #3bb39a;
+  --purple: #a78bfa;
+  --amber: #d7a94b;
+  --font-display: 'Cinzel', 'Georgia', serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--void);
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--deep); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
+
+/* ─── UTILITY ─── */
+.mono { font-family: var(--font-mono); }
+.gold { color: var(--gold); }
+.dim { color: var(--textdim); }
+.faint { color: var(--textfaint); }
+.hidden { display: none !important; }
+
+/* ═══════════════════════════════════════════════════════════════
+   1. TOP IDENTITY BAND — Permanent at every resolution
+   ═══════════════════════════════════════════════════════════════ */
+.identity-band {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(5,5,5,0.98) 0%, rgba(10,10,10,0.96) 100%);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.identity-inner {
+  max-width: 1480px;
+  margin: auto;
+  padding: 10px 22px;
+}
+
+/* UUID / Code / Label row */
+.id-row {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.id-uuid {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--textfaint);
+  letter-spacing: 0.05em;
+}
+.id-code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--golddim);
+  background: var(--surface2);
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  letter-spacing: 0.08em;
+}
+.id-label {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+/* Meta row: resolution, state, version, timestamp */
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: var(--textdim);
+}
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.meta-pill .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--textfaint);
+}
+.meta-pill.status-canon .dot { background: var(--green); }
+.meta-pill.status-draft .dot { background: var(--amber); }
+.meta-pill.status-review .dot { background: var(--blue); }
+
+/* ═══════════════════════════════════════════════════════════════
+   2. NABLA BAND — Compact semantic address
+   ═══════════════════════════════════════════════════════════════ */
+.nabla-band {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 6px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.nabla-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--golddim);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.nabla-address {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text);
+  letter-spacing: 0.06em;
+}
+.nabla-vector {
+  display: flex;
+  gap: 3px;
+}
+.nabla-v {
+  width: 20px; height: 20px;
+  display: grid; place-items: center;
+  font-size: 9px;
+  font-family: var(--font-mono);
+  border-radius: 3px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--textdim);
+}
+.nabla-v.active {
+  background: rgba(212,175,55,0.15);
+  border-color: var(--golddim);
+  color: var(--gold);
+  font-weight: 700;
+}
+.nabla-hash {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--textfaint);
+}
+.nabla-decode-btn {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--golddim);
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.nabla-decode-btn:hover {
+  border-color: var(--golddim);
+  color: var(--gold);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   3. PERIODIC-15 TILE — Invariant grammar at every resolution
+   ═══════════════════════════════════════════════════════════════ */
+.p15-band {
+  background: var(--deep);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 22px;
+}
+.p15-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.p15-title {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--golddim);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.p15-grid {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 4px;
+}
+.p15-cell {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.p15-cell:hover {
+  border-color: var(--golddim);
+  background: var(--surface2);
+}
+.p15-cell.computed {
+  border-style: dashed;
+}
+.p15-cell.alert {
+  border-color: var(--red);
+  box-shadow: inset 0 0 0 1px rgba(201,64,64,0.2);
+}
+.p15-num {
+  position: absolute;
+  top: 2px; left: 4px;
+  font-size: 8px;
+  color: var(--textfaint);
+  font-family: var(--font-mono);
+}
+.p15-key {
+  font-size: 9px;
+  color: var(--textdim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+.p15-val {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text);
+  word-break: break-word;
+  line-height: 1.2;
+}
+.p15-val.small { font-size: 9px; }
+.p15-bridge-glyph::after {
+  content: "⇄";
+  color: var(--teal);
+  font-size: 9px;
+}
+.p15-lock-glyph::after {
+  content: "🔒";
+  font-size: 8px;
+}
+.p15-pulse-glyph::after {
+  content: "◉";
+  color: var(--amber);
+  font-size: 9px;
+}
+
+@media (max-width: 1200px) {
+  .p15-grid { grid-template-columns: repeat(5, 1fr); }
+}
+@media (max-width: 640px) {
+  .p15-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   4. RESOLUTION TOGGLE + STATE TOGGLES
+   ═══════════════════════════════════════════════════════════════ */
+.control-bar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+.res-toggle {
+  display: flex;
+  gap: 2px;
+  background: var(--deep);
+  padding: 3px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+.res-btn {
+  padding: 5px 14px;
+  border: none;
+  background: transparent;
+  color: var(--textdim);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+}
+.res-btn:hover { color: var(--text); }
+.res-btn.active {
+  background: var(--surface2);
+  color: var(--gold);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.state-toggle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.state-label {
+  font-size: 10px;
+  color: var(--textfaint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.toggle-pair {
+  display: flex;
+  gap: 1px;
+  background: var(--deep);
+  border-radius: 5px;
+  padding: 2px;
+  border: 1px solid var(--border);
+}
+.toggle-btn {
+  padding: 4px 10px;
+  border: none;
+  background: transparent;
+  color: var(--textdim);
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+}
+.toggle-btn.active {
+  background: var(--surface2);
+  color: var(--text);
+}
+
+.breadcrumb {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--textfaint);
+  font-family: var(--font-mono);
+}
+.breadcrumb a {
+  color: var(--golddim);
+  text-decoration: none;
+}
+.breadcrumb a:hover { color: var(--gold); }
+.breadcrumb .sep { margin: 0 6px; color: var(--textfaint); }
+
+/* ═══════════════════════════════════════════════════════════════
+   5. MAIN LAYOUT — Three columns
+   ═══════════════════════════════════════════════════════════════ */
+.main-wrap {
+  max-width: 1480px;
+  margin: auto;
+  padding: 16px 22px 80px;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr) 280px;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 1200px) {
+  .main-wrap { grid-template-columns: 1fr; }
+  .side-rail { display: none; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   6. SIDE RAILS
+   ═══════════════════════════════════════════════════════════════ */
+.side-rail {
+  position: sticky;
+  top: 120px;
+}
+.rail-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.rail-title {
+  font-size: 9px;
+  color: var(--golddim);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.rail-stat {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(42,37,32,0.5);
+  font-size: 11px;
+}
+.rail-stat:last-child { border-bottom: none; }
+.rail-stat .lbl { color: var(--textdim); }
+.rail-stat .val {
+  font-family: var(--font-mono);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.alert-item {
+  padding: 6px 8px;
+  background: rgba(201,64,64,0.06);
+  border: 1px solid rgba(201,64,64,0.2);
+  border-radius: 4px;
+  font-size: 10px;
+  color: #dc8b8b;
+  margin-bottom: 6px;
+}
+.alert-item.warn {
+  background: rgba(215,169,75,0.06);
+  border-color: rgba(215,169,75,0.2);
+  color: var(--amber);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   7. CENTER PANEL — Dependency Spine (default view)
+   ═══════════════════════════════════════════════════════════════ */
+.center-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Tab nav inside center */
+.tab-nav {
+  display: flex;
+  gap: 1px;
+  background: var(--deep);
+  padding: 4px;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+.tab-btn {
+  padding: 8px 14px;
+  border: none;
+  background: transparent;
+  color: var(--textdim);
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 5px;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  transition: all 0.15s ease;
+}
+.tab-btn:hover { color: var(--text); background: var(--surface2); }
+.tab-btn.active {
+  background: var(--surface2);
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.tab-body {
+  padding: 16px;
+  min-height: 400px;
+}
+.tab-pane { display: none; }
+.tab-pane.active { display: block; animation: fadeIn 0.25s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ─── DEPENDENCY SPINE ─── */
+.spine-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.spine-section {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--deep);
+  overflow: hidden;
+}
+.spine-header {
+  padding: 8px 12px;
+  background: var(--surface2);
+  font-size: 9px;
+  color: var(--golddim);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.spine-count {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--textdim);
+}
+.spine-body {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ─── ATOM TILE (mini) ─── */
+.atom-tile {
+  width: 100px;
+  min-height: 64px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.15s ease;
+  position: relative;
+}
+.atom-tile:hover {
+  transform: translateY(-2px);
+  border-color: var(--golddim);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.atom-tile.center-node {
+  border-color: var(--gold);
+  background: linear-gradient(145deg, rgba(212,175,55,0.08), transparent);
+  box-shadow: 0 0 0 2px rgba(212,175,55,0.15);
+}
+.atom-tile .tile-hiero {
+  font-size: 9px;
+  color: var(--textfaint);
+  font-family: var(--font-mono);
+}
+.atom-tile .tile-sym {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.1;
+}
+.atom-tile .tile-name {
+  font-size: 8px;
+  color: var(--textdim);
+  margin-top: 2px;
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.atom-tile .tile-grade {
+  position: absolute;
+  top: 3px; right: 4px;
+  font-size: 8px;
+  font-weight: 700;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+}
+.grade-a { background: var(--green); color: var(--void); }
+.grade-b { background: var(--blue); color: #fff; }
+.grade-c { background: var(--amber); color: var(--void); }
+.grade-d { background: var(--red); color: #fff; }
+
+/* Spine arrows */
+.spine-arrow {
+  text-align: center;
+  color: var(--textfaint);
+  font-size: 14px;
+  padding: 2px 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   8. PILL SYSTEM — Three depths
+   ═══════════════════════════════════════════════════════════════ */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--textdim);
+  position: relative;
+}
+.pill:hover {
+  border-color: var(--golddim);
+  color: var(--text);
+}
+.pill .pill-glyph {
+  font-size: 9px;
+}
+.pill.candidate {
+  border-style: dashed;
+  opacity: 0.8;
+}
+.pill.admitted {
+  border-style: solid;
+}
+
+/* Depth 2 — Hover preview tooltip */
+.pill-preview {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  background: var(--surface2);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  z-index: 50;
+  display: none;
+  pointer-events: none;
+}
+.pill:hover .pill-preview { display: block; }
+.pill-preview .pp-header {
+  font-size: 9px;
+  color: var(--golddim);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.pill-preview .pp-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 2px 0;
+  color: var(--textdim);
+}
+.pill-preview .pp-row .pp-val {
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+
+/* Depth 3 — Detail drawer (inline) */
+.detail-drawer {
+  background: var(--deep);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  margin-top: 10px;
+  display: none;
+}
+.detail-drawer.open { display: block; animation: fadeIn 0.2s ease; }
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.drawer-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+}
+.drawer-meta {
+  font-size: 10px;
+  color: var(--textdim);
+  font-family: var(--font-mono);
+}
+.drawer-close {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--textdim);
+  width: 24px; height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+}
+.drawer-close:hover {
+  color: var(--text);
+  border-color: var(--golddim);
+}
+
+/* Field grid inside drawer */
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+}
+.field-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(42,37,32,0.4);
+  font-size: 11px;
+}
+.field-row.full { grid-column: 1 / -1; }
+.field-label {
+  color: var(--textfaint);
+  font-size: 10px;
+}
+.field-value {
+  color: var(--text);
+  text-align: right;
+  word-break: break-word;
+}
+.field-value.mono {
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   9. SECTION CARDS (Warrant, Dynamics, etc.)
+   ═══════════════════════════════════════════════════════════════ */
+.section-card {
+  background: var(--deep);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 10px;
+}
+.section-title {
+  font-size: 10px;
+  color: var(--golddim);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Dynamics table */
+.dynamics-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+.dynamics-table th {
+  text-align: left;
+  color: var(--golddim);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+}
+.dynamics-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(42,37,32,0.5);
+  color: var(--textdim);
+  vertical-align: top;
+}
+.dynamics-table tr:last-child td { border-bottom: none; }
+.dyn-q { color: var(--text); font-weight: 600; }
+.dyn-a { color: var(--textdim); }
+.dyn-status {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.status-observed { background: rgba(127,199,127,0.12); color: var(--green); }
+.status-defined { background: rgba(91,155,213,0.12); color: var(--blue); }
+.status-proposed { background: rgba(215,169,75,0.12); color: var(--amber); }
+.status-unresolved { background: rgba(201,64,64,0.12); color: var(--red); }
+
+/* Ascent/Translation/Descent columns */
+.atd-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 900px) { .atd-grid { grid-template-columns: 1fr; } }
+.atd-col {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+}
+.atd-col.middle {
+  border-color: var(--golddim);
+  background: linear-gradient(180deg, rgba(212,175,55,0.04), transparent);
+}
+.atd-label {
+  font-size: 9px;
+  color: var(--golddim);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.atd-item {
+  font-size: 11px;
+  color: var(--textdim);
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(42,37,32,0.3);
+}
+.atd-item:last-child { border-bottom: none; }
+.atd-item.preserved { color: var(--green); }
+.atd-item.lost { color: var(--red); text-decoration: line-through; opacity: 0.6; }
+.atd-item.introduced { color: var(--amber); }
+.atd-item.forbidden { color: var(--textfaint); text-decoration: line-through; }
+
+/* Bridge card */
+.bridge-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+.bridge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.bridge-route {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text);
+}
+.bridge-state {
+  font-size: 9px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+.bridge-state.candidate { background: rgba(215,169,75,0.12); color: var(--amber); border: 1px solid rgba(215,169,75,0.3); }
+.bridge-state.admitted { background: rgba(127,199,127,0.12); color: var(--green); border: 1px solid rgba(127,199,127,0.3); }
+.bridge-state.provisional { background: rgba(91,155,213,0.12); color: var(--blue); border: 1px solid rgba(91,155,213,0.3); }
+
+/* ═══════════════════════════════════════════════════════════════
+   10. RESONANCE VIEW
+   ═══════════════════════════════════════════════════════════════ */
+.resonance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+}
+.res-card {
+  background: var(--deep);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.res-card:hover {
+  border-color: var(--golddim);
+  transform: translateY(-2px);
+}
+.res-sim {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+.res-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.res-reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.res-reason {
+  font-size: 10px;
+  color: var(--textdim);
+  display: flex;
+  justify-content: space-between;
+}
+.res-reason .rr-val {
+  font-family: var(--font-mono);
+  color: var(--text);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   11. FOOTER
+   ═══════════════════════════════════════════════════════════════ */
+.atlas-footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 22px;
+  text-align: center;
+  color: var(--textfaint);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   12. DATA ATTRIBUTE LABELING — Invisible but critical for Python
+   ═══════════════════════════════════════════════════════════════ */
+/* All major elements already use data-* attributes in HTML below */
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     JSON INJECTION POINT
+     Drop API response here: window.ATLAS_DATA = { ... };
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+// EXAMPLE / DEFAULT DATA — Replace with API payload
+window.ATLAS_DATA = {
+  "protocol_version": "ATLAS-DOC-1.0",
+  "resolution": "LOCAL",
+  "identity": {
+    "uuid": "6f0849c8-a1b2-4c3d-8e9f-0123456789ab",
+    "semantic_code": "ATOM.ME.L5.C1",
+    "human_label": "Closed-System Trilemma",
+    "publication_state": "canon",
+    "version": "1.0",
+    "source_hash": "sha256:a1b2...",
+    "last_computed": "2026-08-11T20:31:00Z"
+  },
+  "nabla": {
+    "address": "TECH/MASTER_EQUATION/F/AI_RESEARCH/T/R1",
+    "vector": { "G":3, "M":3, "E":0, "S":0, "T":3, "K":3, "R":3, "Q":0, "F":3, "C":3 },
+    "hash": "[C·Q][G·S][K·E][M·F][T·R]",
+    "confidence": 0.91
+  },
+  "periodic15": {
+    "m01_identity": "ATOM.ME.L5.C1",
+    "m02_home_domain": "MAT",
+    "m03_native_domains": ["MAT","PHY","INF"],
+    "m04_bridged_domains": ["THE"],
+    "m05_object_type": "OBJ.CLAIM",
+    "m06_claim_family": "Closure",
+    "m07_function_kind": "Claim",
+    "m08_source": "Internal / Master Equation derivation",
+    "m09_commitment": "Canon",
+    "m10_standing": "Admitted",
+    "m11_dispute": "None",
+    "m12_evidence_grade": "B+",
+    "m13_usage_runs": 47,
+    "m14_graph_degree": 12,
+    "m15_alert_state": "Open item: C0 grade pending"
+  },
+  "source": {
+    "document_id": "master-equation-v5",
+    "spans": [{"span_id":"SPAN-001","text":"The closed-system trilemma...","lines":"142-158"}]
+  },
+  "dependency_spine": {
+    "upstream": [
+      { "id":"atom-existence", "symbol":"∃", "name":"Existence", "grade":"B", "type":"claim", "hiero":"ℂ" },
+      { "id":"atom-distinction", "symbol":"D", "name":"Distinction", "grade":"B", "type":"claim", "hiero":"ℂ" }
+    ],
+    "center": { "id":"atom-me", "symbol":"∫χ", "name":"Master Equation", "grade":"B", "type":"equation", "hiero":"Σ" },
+    "downstream": [
+      { "id":"atom-negentropy", "symbol":"G", "name":"Negentropy", "grade":"B", "type":"variable", "hiero":"χ" },
+      { "id":"atom-alignment", "symbol":"M", "name":"Alignment", "grade":"B", "type":"variable", "hiero":"χ" }
+    ]
+  },
+  "warrant": {
+    "claim": "No closed system can sustain coherence without external negentropic input.",
+    "evidence": ["EVD-001","EVD-002"],
+    "proof": "PRF-014",
+    "counterevidence": [],
+    "kill_conditions": ["Demonstration of perpetual motion machine sustaining coherence"],
+    "native_grade": "B+",
+    "normalized_grade": "B+",
+    "coverage": 0.84,
+    "strength": 0.88
+  },
+  "dynamics": {
+    "coherence": "System maintains local order against global entropy gradient",
+    "degradation": "Entropy increase without external work input",
+    "measurement": "Negentropy flux across system boundary",
+    "threshold": "χ_c = ħ / (m_e c) — proposed, needs empirical anchor",
+    "asymmetric": "Yes — decay is spontaneous, restoration requires work",
+    "restoration": { "self":"Limited — local reversal possible, global reversal impossible","external":"Required — W_G operator" },
+    "counterexample": "None known"
+  },
+  "ascent_translation_descent": {
+    "meeting_state": "CONVERGED",
+    "ascent": ["Thermodynamic second law","Information theory channel capacity","Gödel incompleteness"],
+    "translation": {
+      "preserved": ["Boundary requirement","Work differential","Non-closure"],
+      "lost": ["Specific heat engine mechanism"],
+      "introduced": ["χ-field operator formalism"],
+      "forbidden": ["Perpetual motion","Closed-system perpetual coherence"]
+    },
+    "descent": ["Law V: Self-Limitation","Law VIII: Negentropic Work","C0 grade label"]
+  },
+  "bridges": [
+    {
+      "id": "BRIDGE-001",
+      "source_domain": "PHY",
+      "target_domain": "THE",
+      "direction": "PHY → THE",
+      "state": "Admitted",
+      "preserved": ["Boundary","Work","Conservation"],
+      "lost": ["Mechanistic detail"],
+      "introduced": ["Grace operator semantics"],
+      "forbidden": ["Magic / violation of conservation"]
+    }
+  ],
+  "reality_mirror": {
+    "class": "N",
+    "status": "anchored",
+    "anchor_object": "Thermodynamic second law",
+    "independence": "High — derived independently across 3 domains",
+    "closed_loop_warning": false
+  },
+  "receipts": {
+    "human": { "status":"COMPLETE", "result":"Admitted","timestamp":"2026-08-05" },
+    "python": { "status":"COMPLETE", "result":"Verified","timestamp":"2026-08-05" },
+    "api": { "status":"COMPLETE", "result":"Admitted","timestamp":"2026-08-05" },
+    "method_convergence": "3/3 EXACT"
+  },
+  "alerts": [
+    { "level":"warn", "text":"C0 grade label pending formal adjudication" },
+    { "level":"info", "text":"Bridge to THE domain under periodic review" }
+  ],
+  "computed": {
+    "blast_radius": 8,
+    "articulation_point": true,
+    "dependency_depth": 3,
+    "reachability_up": 5,
+    "reachability_down": 12
+  }
+};
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     1. IDENTITY BAND
+     ═══════════════════════════════════════════════════════════════ -->
+<header class="identity-band" data-section="identity-band">
+  <div class="identity-inner">
+    <div class="id-row">
+      <span class="id-uuid" data-field="identity.uuid">UUID: 6f0849c8-...</span>
+      <span class="id-code" data-field="identity.semantic_code">ATOM.ME.L5.C1</span>
+      <span class="id-label" data-field="identity.human_label">Closed-System Trilemma</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-pill status-canon" data-field="identity.publication_state">
+        <span class="dot"></span> Canon
+      </span>
+      <span class="meta-pill" data-field="identity.version">v1.0</span>
+      <span class="meta-pill" data-field="identity.source_hash">sha256:a1b2...</span>
+      <span class="meta-pill" data-field="identity.last_computed">2026-08-11 20:31 UTC</span>
+      <span class="meta-pill" data-field="resolution">Resolution: LOCAL</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     2. NABLA BAND
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="nabla-band" data-section="nabla-band">
+  <span class="nabla-label">Nabla</span>
+  <span class="nabla-address" data-field="nabla.address">TECH/MASTER_EQUATION/F/AI_RESEARCH/T/R1</span>
+  <div class="nabla-vector" data-field="nabla.vector">
+    <span class="nabla-v active" data-nabla="G" title="Ground">G3</span>
+    <span class="nabla-v active" data-nabla="M" title="Mechanism">M3</span>
+    <span class="nabla-v" data-nabla="E" title="Disorder">E0</span>
+    <span class="nabla-v" data-nabla="S" title="Identity">S0</span>
+    <span class="nabla-v active" data-nabla="T" title="Time">T3</span>
+    <span class="nabla-v active" data-nabla="K" title="Knowledge">K3</span>
+    <span class="nabla-v active" data-nabla="R" title="Relation">R3</span>
+    <span class="nabla-v" data-nabla="Q" title="Experience">Q0</span>
+    <span class="nabla-v active" data-nabla="F" title="Faith">F3</span>
+    <span class="nabla-v active" data-nabla="C" title="Coherence">C3</span>
+  </div>
+  <span class="nabla-hash" data-field="nabla.hash">[C·Q][G·S][K·E][M·F][T·R]</span>
+  <button class="nabla-decode-btn" onclick="alert('Nabla decode panel would open here')">Decode</button>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     3. PERIODIC-15 TILE
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="p15-band" data-section="periodic-15">
+  <div class="p15-header">
+    <span class="p15-title">Periodic-15 — Invariant Grammar</span>
+    <span style="font-size:10px;color:var(--textfaint);">Marker positions do not move between resolutions</span>
+  </div>
+  <div class="p15-grid" id="p15-grid">
+    <!-- Populated by JS from ATLAS_DATA.periodic15 -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     4. CONTROL BAR — Resolution + State Toggles + Breadcrumb
+     ═══════════════════════════════════════════════════════════════ -->
+<nav class="control-bar" data-section="control-bar">
+  <div class="res-toggle" data-toggle="resolution">
+    <button class="res-btn active" data-res="local" onclick="setResolution('local')">Local</button>
+    <button class="res-btn" data-res="series" onclick="setResolution('series')">Series</button>
+    <button class="res-btn" data-res="global" onclick="setResolution('global')">Global</button>
+    <button class="res-btn" data-res="resonance" onclick="setResolution('resonance')">Resonance</button>
+  </div>
+
+  <div class="state-toggle">
+    <span class="state-label">Graph:</span>
+    <div class="toggle-pair" data-toggle="graph-state">
+      <button class="toggle-btn active" data-state="admitted" onclick="setGraphState('admitted')">Admitted</button>
+      <button class="toggle-btn" data-state="candidate" onclick="setGraphState('candidate')">Candidate</button>
+    </div>
+  </div>
+
+  <div class="state-toggle">
+    <span class="state-label">View:</span>
+    <div class="toggle-pair" data-toggle="snapshot-state">
+      <button class="toggle-btn active" data-state="current" onclick="setSnapshot('current')">Current Atlas</button>
+      <button class="toggle-btn" data-state="publication" onclick="setSnapshot('publication')">Publication</button>
+    </div>
+  </div>
+
+  <div class="breadcrumb" data-field="breadcrumb">
+    <a href="#">GLOBAL</a><span class="sep">›</span>
+    <a href="#">SERIES</a><span class="sep">›</span>
+    <a href="#">PAPER</a><span class="sep">›</span>
+    <span style="color:var(--gold);">ATOM</span>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     5. MAIN LAYOUT
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="main-wrap">
+
+  <!-- LEFT RAIL — Context / Upstream stats -->
+  <aside class="side-rail" data-section="left-rail">
+    <div class="rail-card">
+      <div class="rail-title">Graph Signature</div>
+      <div class="rail-stat"><span class="lbl">Blast Radius</span><span class="val" data-field="computed.blast_radius">8</span></div>
+      <div class="rail-stat"><span class="lbl">Articulation</span><span class="val" data-field="computed.articulation_point">Yes</span></div>
+      <div class="rail-stat"><span class="lbl">Depth</span><span class="val" data-field="computed.dependency_depth">3</span></div>
+      <div class="rail-stat"><span class="lbl">Reach Up</span><span class="val" data-field="computed.reachability_up">5</span></div>
+      <div class="rail-stat"><span class="lbl">Reach Down</span><span class="val" data-field="computed.reachability_down">12</span></div>
+    </div>
+    <div class="rail-card">
+      <div class="rail-title">Receipts</div>
+      <div class="rail-stat"><span class="lbl">Human</span><span class="val" data-field="receipts.human.result">Admitted</span></div>
+      <div class="rail-stat"><span class="lbl">Python</span><span class="val" data-field="receipts.python.result">Verified</span></div>
+      <div class="rail-stat"><span class="lbl">API</span><span class="val" data-field="receipts.api.result">Admitted</span></div>
+      <div class="rail-stat"><span class="lbl">Convergence</span><span class="val" data-field="receipts.method_convergence">3/3 EXACT</span></div>
+    </div>
+  </aside>
+
+  <!-- CENTER PANEL -->
+  <main class="center-panel" data-section="center-panel">
+    <div class="tab-nav" data-section="tab-nav">
+      <button class="tab-btn active" data-tab="dependency" onclick="switchTab('dependency')">Dependency Spine</button>
+      <button class="tab-btn" data-tab="warrant" onclick="switchTab('warrant')">Warrant</button>
+      <button class="tab-btn" data-tab="dynamics" onclick="switchTab('dynamics')">Dynamics</button>
+      <button class="tab-btn" data-tab="atd" onclick="switchTab('atd')">Ascent / Translation / Descent</button>
+      <button class="tab-btn" data-tab="bridges" onclick="switchTab('bridges')">Bridges</button>
+      <button class="tab-btn" data-tab="reality" onclick="switchTab('reality')">Reality Mirror</button>
+    </div>
+
+    <!-- TAB: Dependency Spine -->
+    <div class="tab-pane active" id="tab-dependency" data-tab-pane="dependency">
+      <div class="spine-wrap" data-section="dependency-spine">
+        <div class="spine-section" data-spine="upstream">
+          <div class="spine-header">Upstream <span class="spine-count" data-field="dependency_spine.upstream.length">2 nodes</span></div>
+          <div class="spine-body" id="upstream-container"></div>
+        </div>
+        <div class="spine-arrow">▼</div>
+        <div class="spine-section" data-spine="center">
+          <div class="spine-header">Selected Object</div>
+          <div class="spine-body" id="center-container"></div>
+        </div>
+        <div class="spine-arrow">▼</div>
+        <div class="spine-section" data-spine="downstream">
+          <div class="spine-header">Downstream <span class="spine-count" data-field="dependency_spine.downstream.length">2 nodes</span></div>
+          <div class="spine-body" id="downstream-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: Warrant -->
+    <div class="tab-pane" id="tab-warrant" data-tab-pane="warrant">
+      <div class="section-card">
+        <div class="section-title">Claim</div>
+        <p data-field="warrant.claim" style="font-size:13px;color:var(--text);line-height:1.6;">No closed system can sustain coherence without external negentropic input.</p>
+      </div>
+      <div class="section-card">
+        <div class="section-title">Kill Conditions</div>
+        <div id="kill-container"></div>
+      </div>
+      <div class="section-card">
+        <div class="section-title">Grade Summary</div>
+        <div class="field-grid">
+          <div class="field-row"><span class="field-label">Native Grade</span><span class="field-value mono" data-field="warrant.native_grade">B+</span></div>
+          <div class="field-row"><span class="field-label">Normalized Grade</span><span class="field-value mono" data-field="warrant.normalized_grade">B+</span></div>
+          <div class="field-row"><span class="field-label">Coverage</span><span class="field-value mono" data-field="warrant.coverage">84%</span></div>
+          <div class="field-row"><span class="field-label">Strength</span><span class="field-value mono" data-field="warrant.strength">88%</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: Dynamics -->
+    <div class="tab-pane" id="tab-dynamics" data-tab-pane="dynamics">
+      <table class="dynamics-table">
+        <thead><tr><th>#</th><th>Question</th><th>Answer</th><th>Status</th></tr></thead>
+        <tbody id="dynamics-container"></tbody>
+      </table>
+    </div>
+
+    <!-- TAB: Ascent / Translation / Descent -->
+    <div class="tab-pane" id="tab-atd" data-tab-pane="atd">
+      <div class="section-card" style="margin-bottom:10px;">
+        <div class="section-title">Meeting State: <span data-field="ascent_translation_descent.meeting_state" style="color:var(--green);">CONVERGED</span></div>
+      </div>
+      <div class="atd-grid">
+        <div class="atd-col">
+          <div class="atd-label">Ascent</div>
+          <div id="ascent-container"></div>
+        </div>
+        <div class="atd-col middle">
+          <div class="atd-label">Translation</div>
+          <div style="font-size:10px;color:var(--golddim);margin-bottom:6px;text-align:center;">PRESERVED / LOST / INTRODUCED / FORBIDDEN</div>
+          <div id="translation-container"></div>
+        </div>
+        <div class="atd-col">
+          <div class="atd-label">Descent</div>
+          <div id="descent-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: Bridges -->
+    <div class="tab-pane" id="tab-bridges" data-tab-pane="bridges">
+      <div id="bridges-container"></div>
+    </div>
+
+    <!-- TAB: Reality Mirror -->
+    <div class="tab-pane" id="tab-reality" data-tab-pane="reality">
+      <div class="section-card">
+        <div class="section-title">External Anchor</div>
+        <div class="field-grid">
+          <div class="field-row"><span class="field-label">Class</span><span class="field-value mono" data-field="reality_mirror.class">N — Natural / Physical</span></div>
+          <div class="field-row"><span class="field-label">Status</span><span class="field-value mono" data-field="reality_mirror.status">Anchored</span></div>
+          <div class="field-row full"><span class="field-label">Anchor Object</span><span class="field-value" data-field="reality_mirror.anchor_object">Thermodynamic second law</span></div>
+          <div class="field-row"><span class="field-label">Independence</span><span class="field-value" data-field="reality_mirror.independence">High</span></div>
+          <div class="field-row"><span class="field-label">Closed-Loop Warning</span><span class="field-value" data-field="reality_mirror.closed_loop_warning">No</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- RIGHT RAIL — Alerts / Open Items -->
+  <aside class="side-rail" data-section="right-rail">
+    <div class="rail-card">
+      <div class="rail-title">Alerts / Open Items</div>
+      <div id="alerts-container"></div>
+    </div>
+    <div class="rail-card">
+      <div class="rail-title">Quick Actions</div>
+      <button class="nabla-decode-btn" style="width:100%;margin-bottom:6px;" onclick="alert('Find Resonance')">Find Resonance</button>
+      <button class="nabla-decode-btn" style="width:100%;" onclick="alert('Launch Φ Comparison')">Launch Φ Comparison</button>
+    </div>
+  </aside>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     6. FOOTER
+     ═══════════════════════════════════════════════════════════════ -->
+<footer class="atlas-footer">
+  CONSILIENCE ATLAS — Periodic Table at Three Resolutions — v1.0-freeze-candidate
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     7. RENDER ENGINE — Maps ATLAS_DATA JSON to DOM
+     ═══════════════════════════════════════════════════════════════ -->
+<script>
+(function() {
+  const D = window.ATLAS_DATA || {};
+
+  // Helper: set textContent by data-field attribute
+  function populateFields() {
+    document.querySelectorAll('[data-field]').forEach(el => {
+      const path = el.dataset.field.split('.');
+      let val = D;
+      for (const p of path) { val = val?.[p]; if (val === undefined) break; }
+      if (val !== undefined && val !== null) {
+        if (Array.isArray(val)) el.textContent = val.join(', ');
+        else if (typeof val === 'object') el.textContent = JSON.stringify(val);
+        else el.textContent = val;
+      }
+    });
+  }
+
+  // Render Periodic-15
+  function renderP15() {
+    const p15 = D.periodic15 || {};
+    const grid = document.getElementById('p15-grid');
+    const keys = Object.keys(p15).sort();
+    const labels = {
+      m01_identity:'Identity', m02_home_domain:'Home', m03_native_domains:'Native',
+      m04_bridged_domains:'Bridged', m05_object_type:'Type', m06_claim_family:'Family',
+      m07_function_kind:'Function', m08_source:'Source', m09_commitment:'Commitment',
+      m10_standing:'Standing', m11_dispute:'Dispute', m12_evidence_grade:'Grade',
+      m13_usage_runs:'Runs', m14_graph_degree:'Degree', m15_alert_state:'Alert'
+    };
+    grid.innerHTML = keys.map((k,i) => {
+      const v = p15[k];
+      const isComputed = ['m12','m13','m14','m15'].some(p => k.startsWith(p));
+      const isAlert = k === 'm15_alert_state' && v && v !== 'None' && !v.includes('pending');
+      let display = v;
+      if (Array.isArray(v)) display = v.join(' ');
+      return `<div class="p15-cell ${isComputed?'computed':''} ${isAlert?'alert':''}" data-marker="${k}" data-marker-index="${i+1}">
+        <span class="p15-num">${String(i+1).padStart(2,'0')}</span>
+        <span class="p15-key">${labels[k]||k}</span>
+        <span class="p15-val ${String(display).length>12?'small':''}">${display}</span>
+      </div>`;
+    }).join('');
+  }
+
+  // Render atom tile
+  function tile(atom, isCenter) {
+    if (!atom) return '';
+    return `<div class="atom-tile ${isCenter?'center-node':''}" data-atom-id="${atom.id}" onclick="openAtom('${atom.id}')">
+      <span class="tile-hiero">${atom.hiero||'·'}</span>
+      <span class="tile-sym">${atom.symbol}</span>
+      <span class="tile-name">${atom.name}</span>
+      <span class="tile-grade grade-${(atom.grade||'c').toLowerCase()}">${atom.grade}</span>
+    </div>`;
+  }
+
+  // Render dependency spine
+  function renderSpine() {
+    const spine = D.dependency_spine || {};
+    const up = document.getElementById('upstream-container');
+    const center = document.getElementById('center-container');
+    const down = document.getElementById('downstream-container');
+    if (up) up.innerHTML = (spine.upstream||[]).map(a => tile(a,false)).join('');
+    if (center) center.innerHTML = tile(spine.center,true);
+    if (down) down.innerHTML = (spine.downstream||[]).map(a => tile(a,false)).join('');
+  }
+
+  // Render kill conditions
+  function renderKills() {
+    const container = document.getElementById('kill-container');
+    const kills = D.warrant?.kill_conditions || [];
+    if (!container) return;
+    container.innerHTML = kills.map(k => `
+      <div class="alert-item" style="background:rgba(201,64,64,0.08);color:#dc8b8b;">
+        <strong>Kill:</strong> ${k}
+      </div>
+    `).join('') || '<span class="dim">None defined</span>';
+  }
+
+  // Render dynamics
+  function renderDynamics() {
+    const dyn = D.dynamics || {};
+    const tbody = document.getElementById('dynamics-container');
+    if (!tbody) return;
+    const questions = [
+      {q:'What counts as coherence?', k:'coherence'},
+      {q:'What counts as degradation?', k:'degradation'},
+      {q:'How is it measured?', k:'measurement'},
+      {q:'Is there a threshold?', k:'threshold'},
+      {q:'Is the transition asymmetric?', k:'asymmetric'},
+      {q:'What restores it?', k:'restoration', isSplit:true},
+      {q:'Is there a counterexample?', k:'counterexample'}
+    ];
+    tbody.innerHTML = questions.map((item,i) => {
+      let ans = dyn[item.k];
+      let status = 'OBSERVED';
+      if (item.isSplit && typeof ans === 'object') {
+        ans = `Self: ${ans.self||'—'} | External: ${ans.external||'—'}`;
+        status = 'DEFINED';
+      }
+      if (!ans) { ans = '—'; status = 'UNRESOLVED'; }
+      return `<tr>
+        <td>${i+1}</td>
+        <td class="dyn-q">${item.q}</td>
+        <td class="dyn-a">${ans}</td>
+        <td><span class="dyn-status status-${status.toLowerCase()}">${status}</span></td>
+      </tr>`;
+    }).join('');
+  }
+
+  // Render ATD
+  function renderATD() {
+    const atd = D.ascent_translation_descent || {};
+    const asc = document.getElementById('ascent-container');
+    const trans = document.getElementById('translation-container');
+    const desc = document.getElementById('descent-container');
+    if (asc) asc.innerHTML = (atd.ascent||[]).map(a => `<div class="atd-item">${a}</div>`).join('');
+    if (desc) desc.innerHTML = (atd.descent||[]).map(d => `<div class="atd-item">${d}</div>`).join('');
+    if (trans) {
+      const t = atd.translation || {};
+      let html = '';
+      (t.preserved||[]).forEach(x => html += `<div class="atd-item preserved">✓ ${x}</div>`);
+      (t.lost||[]).forEach(x => html += `<div class="atd-item lost">✗ ${x}</div>`);
+      (t.introduced||[]).forEach(x => html += `<div class="atd-item introduced">+ ${x}</div>`);
+      (t.forbidden||[]).forEach(x => html += `<div class="atd-item forbidden">⊘ ${x}</div>`);
+      trans.innerHTML = html || '<span class="dim">No translation data</span>';
+    }
+  }
+
+  // Render bridges
+  function renderBridges() {
+    const container = document.getElementById('bridges-container');
+    const bridges = D.bridges || [];
+    if (!container) return;
+    container.innerHTML = bridges.map(b => `
+      <div class="bridge-card" data-bridge-id="${b.id}">
+        <div class="bridge-header">
+          <span class="bridge-route">${b.source_domain} → ${b.target_domain}</span>
+          <span class="bridge-state ${b.state.toLowerCase()}">${b.state}</span>
+        </div>
+        <div style="font-size:10px;color:var(--textfaint);margin-bottom:6px;">${b.direction}</div>
+        <div style="display:flex;flex-wrap:wrap;gap:4px;">
+          ${(b.preserved||[]).map(x => `<span class="pill" style="background:rgba(127,199,127,0.1);color:var(--green);border-color:rgba(127,199,127,0.3);">${x}</span>`).join('')}
+          ${(b.lost||[]).map(x => `<span class="pill" style="background:rgba(201,64,64,0.1);color:var(--red);border-color:rgba(201,64,64,0.3);text-decoration:line-through;">${x}</span>`).join('')}
+          ${(b.introduced||[]).map(x => `<span class="pill" style="background:rgba(215,169,75,0.1);color:var(--amber);border-color:rgba(215,169,75,0.3);">+ ${x}</span>`).join('')}
+        </div>
+      </div>
+    `).join('') || '<span class="dim">No bridges defined</span>';
+  }
+
+  // Render alerts
+  function renderAlerts() {
+    const container = document.getElementById('alerts-container');
+    const alerts = D.alerts || [];
+    if (!container) return;
+    container.innerHTML = alerts.map(a => `
+      <div class="alert-item ${a.level}">${a.text}</div>
+    `).join('') || '<span class="dim">No alerts</span>';
+  }
+
+  // Tab switching
+  window.switchTab = function(id) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === id));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.toggle('active', p.dataset.tabPane === id));
+  };
+
+  // Resolution switching
+  window.setResolution = function(res) {
+    document.querySelectorAll('.res-btn').forEach(b => b.classList.toggle('active', b.dataset.res === res));
+    // In production, this would re-render from a different ATLAS_DATA resolution
+    console.log('Resolution switched to:', res);
+  };
+
+  // Graph state
+  window.setGraphState = function(state) {
+    document.querySelectorAll('[data-toggle="graph-state"] .toggle-btn').forEach(b => b.classList.toggle('active', b.dataset.state === state));
+  };
+
+  // Snapshot state
+  window.setSnapshot = function(state) {
+    document.querySelectorAll('[data-toggle="snapshot-state"] .toggle-btn').forEach(b => b.classList.toggle('active', b.dataset.state === state));
+  };
+
+  // Atom click handler (Depth 3)
+  window.openAtom = function(id) {
+    console.log('Open atom stack:', id);
+    // In production: fetch atom stack, render detail drawer
+  };
+
+  // Initialize
+  populateFields();
+  renderP15();
+  renderSpine();
+  renderKills();
+  renderDynamics();
+  renderATD();
+  renderBridges();
+  renderAlerts();
+
+  console.log('Atlas template rendered. ATLAS_DATA keys:', Object.keys(D));
+})();
+</script>
+
+</body>
+</html>

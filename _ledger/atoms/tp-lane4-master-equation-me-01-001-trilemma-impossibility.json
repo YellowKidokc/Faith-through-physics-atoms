@@ -8,7 +8,9 @@
   "claim_class": "theorem",
   "mode_classification": "candidate",
   "ontology_family": "master-equation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "J = T_A/D, M = 1 - T_B/D, T_A = T_B (closed system) => J = 1 - M. QED: J=1 AND M=1 is impossible. Solution: T_ext = D, W_ext = 1 (voluntary external cost-bearer)."
@@ -42,7 +44,9 @@
       "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
       "limits": "Import does not change proof status.",
       "reviewer": "import_me_to_lane4.py",
-      "lane": "mathematics"
+      "lane": "mathematics",
+      "event_id": "sha256:e4a2072e8baf05ec25559af4040075c5fa19946609b0d193cf7a8cf53168d4db",
+      "event_uuid": "644291d6-91c7-5a28-afd0-5ddf2c323452"
     }
   ],
   "source_claim_id": "tp:ME/L5/C1",
@@ -63,5 +67,6 @@
     "cost-bearer",
     "closed system",
     "external transfer"
-  ]
+  ],
+  "atom_uuid": "8e9fb20a-a5b0-58f7-8094-d8fb469cce9b"
 }

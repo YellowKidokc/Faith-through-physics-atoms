@@ -8,7 +8,9 @@
   "claim_class": "theorem",
   "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
   "ontology_family": "13-systems-control",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "—"
@@ -38,7 +40,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:47357ef844fb733dc724134364711b5fba4e1133fdbe4a5fea46ed176e1b7b39",
+      "event_uuid": "7c4b6a5d-52cf-5651-b159-532aa82de76e"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -48,10 +52,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'theorem'. Ontology: 13-systems-control.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:29437d92611daa0e0f404969d4e7ba6c9eb64fa69f538e001cbf8f5d7a9c5308",
+      "event_uuid": "f60fcd42-bc46-54c8-a88f-abd6a75ce662"
     }
   ],
   "source_claim_id": "tp:AXIOMS/META-2",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-182",
-  "original_node_id": "tp:axioms/01/AX-182"
+  "original_node_id": "tp:axioms/01/AX-182",
+  "atom_uuid": "f4d4bcac-1fa8-55a9-b99c-21d98bf53618"
 }

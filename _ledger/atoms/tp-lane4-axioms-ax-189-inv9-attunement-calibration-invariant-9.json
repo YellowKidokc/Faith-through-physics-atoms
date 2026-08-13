@@ -8,7 +8,9 @@
   "claim_class": "floor_axiom",
   "mode_classification": "candidate",
   "ontology_family": "01-foundations",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [],
   "bridges": [],
@@ -35,7 +37,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:27e8fe7b393993ffa5d2e1b09adfeda5dd346a381bc0b437c0aca280721b392d",
+      "event_uuid": "04de45d0-3e9a-5196-bd13-bcc02570f51c"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -45,10 +49,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'floor_axiom'. Ontology: 01-foundations.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:757b2750f9a6d54244a454a282d5774ba0627c29e031c87569930fcf7964caff",
+      "event_uuid": "bd7c47e6-ba4e-57c9-9c60-42648314adc6"
     }
   ],
   "source_claim_id": "tp:AXIOMS/INV9",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-189",
-  "original_node_id": "tp:axioms/01/AX-189"
+  "original_node_id": "tp:axioms/01/AX-189",
+  "atom_uuid": "f73a75c6-5a06-5eac-84b3-0bc96da63417"
 }

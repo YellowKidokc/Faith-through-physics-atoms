@@ -8,7 +8,9 @@
   "claim_class": "definition",
   "mode_classification": "candidate",
   "ontology_family": "master-equation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [],
   "bridges": [],
@@ -19,9 +21,9 @@
   ],
   "negative_guards": [],
   "kill_conditions": [],
-  "proof_label": "NOT_ESTABLISHED",
+  "proof_label": "RERUN_OWED",
   "current_status": "active_candidate",
-  "rerun_status": "not_applicable",
+  "rerun_status": "RERUN_OWED",
   "source_artifacts": [
     "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-040-law-i-logos-lagrangian.jsonld"
   ],
@@ -34,7 +36,9 @@
       "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
       "limits": "Import does not change proof status.",
       "reviewer": "import_me_to_lane4.py",
-      "lane": "mathematics"
+      "lane": "mathematics",
+      "event_id": "sha256:b8baa5de5d6fc0d887d17823dbd1a569d7ee7f80ef762af063aa4975c7fefbc3",
+      "event_uuid": "cea13e92-bfd5-5619-ab3c-5b1fb828356f"
     }
   ],
   "source_claim_id": "tp:ME/ME-01-040",
@@ -49,5 +53,6 @@
     "AX-136",
     "D19.1",
     "Definition"
-  ]
+  ],
+  "atom_uuid": "eae5827b-ae67-52ec-a13b-b7b37f9b8898"
 }

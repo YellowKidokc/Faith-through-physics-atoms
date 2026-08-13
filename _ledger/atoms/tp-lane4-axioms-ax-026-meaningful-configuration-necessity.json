@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "01-foundations",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "¬∃(C) → ¬∃(distinction: meaningful vs meaningless)"
@@ -39,7 +41,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:6836fc258eaf0df09005796a2e94bf77ce6f22305f99dcc0ff6a402b69a64b69",
+      "event_uuid": "44a1ab44-ee7e-5448-8ad2-3f4d782ee3fe"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -49,10 +53,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 01-foundations.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:81b36842964946458253f10a4c16670f25b0a3db928eee65dc02f3fb0477232d",
+      "event_uuid": "b38ddd74-79ab-596e-978a-bcdab65dde60"
     }
   ],
   "source_claim_id": "tp:AXIOMS/LN3.1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-026",
-  "original_node_id": "tp:axioms/01/AX-026"
+  "original_node_id": "tp:axioms/01/AX-026",
+  "atom_uuid": "fb471ec0-591a-5ac6-8702-c2f4dac224a2"
 }

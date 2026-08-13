@@ -8,7 +8,9 @@
   "claim_class": "derived",
   "mode_classification": "candidate",
   "ontology_family": "unclassified",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "Coherence = fundamental organizing principle"
@@ -39,7 +41,9 @@
       "meaning": "Original JSON-LD axiom atom.",
       "limits": "Pre-Lane4 format.",
       "reviewer": "import_axioms_to_lane4.py",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:cd66064a0a2b2e429166960b6cc756031aee0c18102a21072920e348d1ba998c",
+      "event_uuid": "f916fb24-3bc9-5021-8314-af6d8319e1d0"
     },
     {
       "timestamp": "2026-08-09T00:00:00+00:00",
@@ -49,10 +53,13 @@
       "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: unclassified.",
       "limits": "Import does not change proof_label.",
       "reviewer": "Claude Opus 4.6",
-      "lane": "axioms"
+      "lane": "axioms",
+      "event_id": "sha256:03bbf59e768951603ae5a23ec61ea8a2ce7e8bf43d494264428c3c46cb6375a9",
+      "event_uuid": "e2bf5e3c-a7db-52e7-b7c9-b8b107494e46"
     }
   ],
   "source_claim_id": "tp:AXIOMS/U1",
   "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-148",
-  "original_node_id": "tp:axioms/01/AX-148"
+  "original_node_id": "tp:axioms/01/AX-148",
+  "atom_uuid": "4b0548dc-d0c7-5467-bc65-bdc8c97f91d6"
 }

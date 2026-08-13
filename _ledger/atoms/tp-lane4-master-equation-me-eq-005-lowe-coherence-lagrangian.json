@@ -8,7 +8,9 @@
   "claim_class": "mathematical",
   "mode_classification": "candidate",
   "ontology_family": "master-equation",
-  "assumptions": [],
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
   "definitions": [],
   "equations": [
     "L = χ(q,t)(1/2·qdot^T·K·qdot) - S·χ(q,t)"
@@ -38,7 +40,9 @@
       "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
       "limits": "Import does not change proof status.",
       "reviewer": "import_me_to_lane4.py",
-      "lane": "mathematics"
+      "lane": "mathematics",
+      "event_id": "sha256:c79a4b2595b656e65cb1ee47204545a46100c8fa2798c19e4de28806df2c33ea",
+      "event_uuid": "9c92f634-a0d9-57d6-92b9-9d6bf4aa8f4a"
     }
   ],
   "source_claim_id": "tp:ME/ME-EQ-005",
@@ -57,5 +61,6 @@
     "qdot",
     "K",
     "S"
-  ]
+  ],
+  "atom_uuid": "c0968b01-50ad-5847-b6a9-45e84ddc152f"
 }
