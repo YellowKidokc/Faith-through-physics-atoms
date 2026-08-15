@@ -1,0 +1,555 @@
+{
+  "chain": [
+    {
+      "step": 1,
+      "axiom": "God creates.",
+      "layer": "Source / Ground Axiom",
+      "follows_from": "\u2014"
+    },
+    {
+      "step": 2,
+      "axiom": "Creation stands.",
+      "layer": "Existence (P1)",
+      "follows_from": "Step 1"
+    },
+    {
+      "step": 3,
+      "axiom": "Creation is distinguishable.",
+      "layer": "Distinction (P2)",
+      "follows_from": "Step 2"
+    },
+    {
+      "step": 4,
+      "axiom": "Distinction carries information.",
+      "layer": "Information (A1.3)",
+      "follows_from": "Steps 2\u20133"
+    },
+    {
+      "step": 5,
+      "axiom": "Information opens moral valence.",
+      "layer": "Moral Field (MF0)",
+      "follows_from": "Steps 3\u20134"
+    },
+    {
+      "step": 6,
+      "axiom": "Creation has value.",
+      "layer": "Value (VAL1)",
+      "follows_from": "Steps 1, 5"
+    },
+    {
+      "step": 7,
+      "axiom": "Value makes right and wrong meaningful.",
+      "layer": "Right/Wrong (RW1)",
+      "follows_from": "Steps 5\u20136"
+    },
+    {
+      "step": 8,
+      "axiom": "Right and wrong require agents who can choose.",
+      "layer": "Agency (AG1)",
+      "follows_from": "Step 7"
+    },
+    {
+      "step": 9,
+      "axiom": "Choice requires a world with rules, limits, time, and consequences.",
+      "layer": "Law / Boundary (LAW1)",
+      "follows_from": "Step 8"
+    },
+    {
+      "step": 10,
+      "axiom": "Rules plus entropy create decay and vulnerability.",
+      "layer": "Entropy / Decay (ENT1)",
+      "follows_from": "Step 9"
+    },
+    {
+      "step": 11,
+      "axiom": "Decay opens an adversarial attractor.",
+      "layer": "Anti-Lagrangian (AA1)",
+      "follows_from": "Step 10"
+    },
+    {
+      "step": 12,
+      "axiom": "The Enemy is the agency that exploits and amplifies that attractor.",
+      "layer": "Adversarial Agency (EN1)",
+      "follows_from": "Steps 8, 11"
+    },
+    {
+      "step": 13,
+      "axiom": "Adversarial action creates real moral debt, damage, and disorder.",
+      "layer": "Moral Accountability (MA1)",
+      "follows_from": "Steps 7\u20138, 12"
+    },
+    {
+      "step": 14,
+      "axiom": "Perfect Justice requires the debt to be truthfully named and paid.",
+      "layer": "Justice (JM1, \u03b1=1) \u2190 Truth + Damage",
+      "follows_from": "Truth + Step 13"
+    },
+    {
+      "step": 15,
+      "axiom": "Perfect Mercy wills restoration rather than terminal rejection.",
+      "layer": "Mercy (JM1, \u03b1=0) \u2190 Value + Damage",
+      "follows_from": "Steps 6, 13"
+    },
+    {
+      "step": 16,
+      "axiom": "Justice and Mercy together require an external cost-bearing source.",
+      "layer": "Open System / Grace Source (BC2)",
+      "follows_from": "Steps 14\u201315"
+    },
+    {
+      "step": 17,
+      "axiom": "That source must preserve the record while paying the cost.",
+      "layer": "Record / Conservation (BC7)",
+      "follows_from": "Truth + Steps 14, 16"
+    },
+    {
+      "step": 18,
+      "axiom": "That source is Grace.",
+      "layer": "Grace Operator (OP-G)",
+      "follows_from": "Steps 16\u201317"
+    },
+    {
+      "step": 19,
+      "axiom": "Grace restores creation toward God.",
+      "layer": "Coherence / Restoration",
+      "follows_from": "Step 18"
+    },
+    {
+      "step": 20,
+      "axiom": "Christ is the convergence point.",
+      "layer": "Cross / Christ (CROSS, CHI)",
+      "follows_from": "Steps 1\u201319"
+    }
+  ],
+  "proof_stack": [
+    {
+      "order": 0,
+      "id": "GROUND-0",
+      "name": "Truth",
+      "type": "PRE_SYSTEM_GROUND",
+      "statement": "Truth is not inside the system; it makes axioms, definitions, and proofs meaningful.",
+      "kill_condition": "Deny truth-evaluability while making a truth claim"
+    },
+    {
+      "order": 1,
+      "id": "P1",
+      "name": "Existence",
+      "type": "PRIMITIVE",
+      "statement": "Something exists rather than nothing.",
+      "kill_condition": "Show coherent absolute nothing producing system without contradiction"
+    },
+    {
+      "order": 2,
+      "id": "P2",
+      "name": "Distinction",
+      "type": "PRIMITIVE",
+      "statement": "What exists is distinguishable.",
+      "kill_condition": "Show structure with no distinguishable difference"
+    },
+    {
+      "order": 3,
+      "id": "P3",
+      "name": "Information",
+      "type": "PRIMITIVE_DERIVED",
+      "statement": "Information is the presence of distinguishable states.",
+      "kill_condition": "Show information without distinguishable states"
+    },
+    {
+      "order": 4,
+      "id": "MF0",
+      "name": "Moral Field / Valence",
+      "type": "EARLY_DERIVED_FIELD",
+      "statement": "Once distinguishable states exist, states can differ in preservation, coherence, damage, and value-direction. Latent moral field, not yet accountability.",
+      "kill_condition": "Show value-relevant distinction impossible before agents"
+    },
+    {
+      "order": 5,
+      "id": "A2.1",
+      "name": "Substrate Requirement",
+      "type": "AXIOM_CORE",
+      "statement": "Information requires a substrate.",
+      "kill_condition": "Show information existing with no carrier/substrate"
+    },
+    {
+      "order": 6,
+      "id": "A2.2",
+      "name": "Self-Grounding",
+      "type": "AXIOM_CORE_STANCE",
+      "statement": "The final substrate must not collapse into infinite regress.",
+      "kill_condition": "Show finite regress that grounds itself without circularity"
+    },
+    {
+      "order": 7,
+      "id": "A5.1",
+      "name": "Observation Requirement",
+      "type": "AXIOM_CORE_STANCE",
+      "statement": "Possibility becomes actuality through observation/actualization.",
+      "kill_condition": "Show actualization without any selection/actualization relation"
+    },
+    {
+      "order": 8,
+      "id": "VAL1",
+      "name": "Value",
+      "type": "DERIVED",
+      "statement": "Creation/existence has value because chosen existence implies more than nullity and distinguishable preservation/damage.",
+      "kill_condition": "Show value judgment can be denied without using value"
+    },
+    {
+      "order": 9,
+      "id": "RW1",
+      "name": "Right and Wrong",
+      "type": "DERIVED",
+      "statement": "Right/wrong become meaningful when value can be preserved, harmed, repaired, or corrupted.",
+      "kill_condition": "Show moral categories without value"
+    },
+    {
+      "order": 10,
+      "id": "AG1",
+      "name": "Agency / Choice",
+      "type": "THEOREM_TARGET",
+      "statement": "Right and wrong require agents who can choose to align or misalign.",
+      "kill_condition": "Show moral accountability with zero agency"
+    },
+    {
+      "order": 11,
+      "id": "MA1",
+      "name": "Moral Accountability",
+      "type": "DERIVED",
+      "statement": "Moral accountability arises when agents know moral direction and can choose otherwise.",
+      "kill_condition": "Show accountability without agency or agency with no moral content"
+    },
+    {
+      "order": 12,
+      "id": "BC4",
+      "name": "Three Observers Required",
+      "type": "AXIOM_CORE_BOUNDARY",
+      "statement": "Three observers are minimum triangulating structure with no privileged frame.",
+      "kill_condition": "Show stable self-verifying system with one or two observers"
+    },
+    {
+      "order": 13,
+      "id": "BC6",
+      "name": "Infinite Energy Source",
+      "type": "AXIOM_CORE_BOUNDARY",
+      "statement": "A finite closed system runs down; sustained existence requires inexhaustible source.",
+      "kill_condition": "Show finite closed system sustaining final coherence indefinitely"
+    },
+    {
+      "order": 14,
+      "id": "T3.1",
+      "name": "Coherence Cannot Self-Increase",
+      "type": "THEOREM",
+      "statement": "A finite closed system cannot generate final coherence from within itself.",
+      "kill_condition": "Show closed damaged system fully restoring itself"
+    },
+    {
+      "order": 15,
+      "id": "LAW1",
+      "name": "Law / Boundary Conditions",
+      "type": "DERIVED",
+      "statement": "Choice requires a lawful world with rules, limits, time, and consequences.",
+      "kill_condition": "Show meaningful choice in a world with no rules or consequences"
+    },
+    {
+      "order": 16,
+      "id": "ENT1",
+      "name": "Entropy / Decay",
+      "type": "DERIVED_DYNAMICS",
+      "statement": "Rules plus finitude permit decay, drift, and vulnerability.",
+      "kill_condition": "Show finite bounded system immune to all decay/vulnerability"
+    },
+    {
+      "order": 17,
+      "id": "AA1",
+      "name": "Adversarial Attractor",
+      "type": "DERIVED_DYNAMICS",
+      "statement": "Decay opens a path away from coherence \u2014 an attractor, not personal agency by itself.",
+      "kill_condition": "Show decay cannot create exploitable incoherence gradients"
+    },
+    {
+      "order": 18,
+      "id": "EN1",
+      "name": "Enemy / Adversarial Agency",
+      "type": "THEOL_IDENTIFIED",
+      "statement": "The Enemy is agency that exploits and amplifies the adversarial attractor.",
+      "kill_condition": "Show adversarial agency impossible or irrelevant to decay exploitation"
+    },
+    {
+      "order": 19,
+      "id": "BC2",
+      "name": "Grace External to System",
+      "type": "DERIVED_BOUNDARY",
+      "statement": "If coherence cannot self-increase and repair is needed, repair must come from outside.",
+      "kill_condition": "Show internal self-repair without external input"
+    },
+    {
+      "order": 20,
+      "id": "OP-G",
+      "name": "Grace Operator",
+      "type": "OPERATOR",
+      "statement": "External, restorative, record-preserving operation that supplies coherence without falsifying justice.",
+      "kill_condition": "Show restoration without external source, cost, or record preservation"
+    },
+    {
+      "order": 21,
+      "id": "JM1",
+      "name": "Justice-Mercy Operator",
+      "type": "OPERATOR",
+      "statement": "Justice and mercy share structure but differ by cost-bearer; Cross is judge-as-payer.",
+      "kill_condition": "Find perfect mercy where cost genuinely disappears"
+    },
+    {
+      "order": 22,
+      "id": "CROSS",
+      "name": "Cross",
+      "type": "THEOREM",
+      "statement": "Unique convergence configuration where justice and mercy both hold without falsifying ledger.",
+      "kill_condition": "Show second stable configuration satisfying same constraints"
+    },
+    {
+      "order": 23,
+      "id": "CHI",
+      "name": "Christ Coherence / \u03c7",
+      "type": "INTEGRATION_FIELD",
+      "statement": "Coherence wrapper/integrator; not an ordinary product factor.",
+      "kill_condition": "Show final coherence with one load-bearing integration removed"
+    },
+    {
+      "order": 24,
+      "id": "NC1",
+      "name": "New Creation / Eschaton",
+      "type": "COROLLARY",
+      "statement": "Grace restores creation toward God; Christ is final convergence point.",
+      "kill_condition": "Show restoration incomplete at final coherence"
+    }
+  ],
+  "derivative_families": [
+    {
+      "symbol": "G",
+      "family": "Grace Modes",
+      "status": "STRONG",
+      "modes": "8",
+      "kill_condition": "Show closed system self-restores without external source"
+    },
+    {
+      "symbol": "M",
+      "family": "Moral Force Modes",
+      "status": "NEEDS WORK",
+      "modes": "8",
+      "kill_condition": "Show moral acts are scalars, not operators on state"
+    },
+    {
+      "symbol": "T",
+      "family": "Truth Modes",
+      "status": "PARTIAL",
+      "modes": "8",
+      "kill_condition": "Show truth does not stabilize coherence"
+    },
+    {
+      "symbol": "L",
+      "family": "Love Modes (Fruits)",
+      "status": "STRONG",
+      "modes": "9",
+      "kill_condition": "Show bound-state dynamics produce fewer/different modes"
+    },
+    {
+      "symbol": "J",
+      "family": "Judgment Modes",
+      "status": "STRONG",
+      "modes": "8",
+      "kill_condition": "Show justice + mercy cannot be simultaneously maximal"
+    },
+    {
+      "symbol": "\u039b",
+      "family": "Logos Modes",
+      "status": "STRONGEST",
+      "modes": "7",
+      "kill_condition": "Show Shannon channel model does not map to Logos modes"
+    },
+    {
+      "symbol": "R",
+      "family": "Relational Frame Modes",
+      "status": "STRONG",
+      "modes": "7",
+      "kill_condition": "Show relativistic frame transformations don't map to relational dynamics"
+    },
+    {
+      "symbol": "F",
+      "family": "Faith Modes (Armor)",
+      "status": "NEEDS DATA",
+      "modes": "6",
+      "kill_condition": "Show coherence protection doesn't require six-mechanism structure"
+    },
+    {
+      "symbol": "K",
+      "family": "Moral Conservation Modes",
+      "status": "NEEDS WORK",
+      "modes": "8",
+      "kill_condition": "Show moral information CAN disappear without cost"
+    }
+  ],
+  "keeper_deck": [
+    {
+      "deck": "AX_CORE",
+      "id": "A1.1",
+      "name": "Existence",
+      "class": "Primitive",
+      "status": "primitive",
+      "anchor": "Truth",
+      "action": "Keep"
+    },
+    {
+      "deck": "AX_CORE",
+      "id": "A1.2",
+      "name": "Distinction",
+      "class": "Primitive",
+      "status": "primitive",
+      "anchor": "A1.1",
+      "action": "Keep"
+    },
+    {
+      "deck": "AX_CORE",
+      "id": "A2.1",
+      "name": "Substrate Requirement",
+      "class": "Primitive",
+      "status": "primitive",
+      "anchor": "A1.3",
+      "action": "Keep"
+    },
+    {
+      "deck": "AX_CORE",
+      "id": "A2.2",
+      "name": "Self-Grounding",
+      "class": "Stance",
+      "status": "stance",
+      "anchor": "A2.1",
+      "action": "Keep"
+    },
+    {
+      "deck": "AX_CORE",
+      "id": "A5.1",
+      "name": "Observation Requirement",
+      "class": "Stance",
+      "status": "stance",
+      "anchor": "A1.2",
+      "action": "Keep"
+    },
+    {
+      "deck": "AX_CORE",
+      "id": "BC4",
+      "name": "Three Observers Required",
+      "class": "Boundary",
+      "status": "boundary",
+      "anchor": "A5.1",
+      "action": "Keep"
+    },
+    {
+      "deck": "AX_CORE",
+      "id": "BC6",
+      "name": "Infinite Energy Source",
+      "class": "Boundary",
+      "status": "boundary",
+      "anchor": "T3.1",
+      "action": "Keep"
+    },
+    {
+      "deck": "AX_DERIVED",
+      "id": "A1.3",
+      "name": "Information Primacy",
+      "class": "Derived",
+      "status": "derived",
+      "anchor": "A1.1 + A1.2",
+      "action": "Keep"
+    },
+    {
+      "deck": "AX_DERIVED",
+      "id": "MF0",
+      "name": "Moral Field / Valence",
+      "class": "Derived Field",
+      "status": "derived_field",
+      "anchor": "A1.2 + A1.3",
+      "action": "Add"
+    },
+    {
+      "deck": "AX_DERIVED",
+      "id": "T3.1",
+      "name": "Coherence Cannot Self-Increase",
+      "class": "Theorem",
+      "status": "theorem",
+      "anchor": "A2.2",
+      "action": "Keep"
+    },
+    {
+      "deck": "AX_DERIVED",
+      "id": "BC2",
+      "name": "Grace External To System",
+      "class": "Boundary",
+      "status": "boundary",
+      "anchor": "UNANCHORED",
+      "action": "Re-anchor"
+    },
+    {
+      "deck": "AX_DERIVED",
+      "id": "BC7",
+      "name": "Information Conservation",
+      "class": "Boundary",
+      "status": "boundary",
+      "anchor": "BC6",
+      "action": "Re-anchor"
+    },
+    {
+      "deck": "AX_DERIVED",
+      "id": "BC8",
+      "name": "Voluntary Coupling",
+      "class": "Boundary",
+      "status": "boundary",
+      "anchor": "BC6",
+      "action": "Re-anchor"
+    },
+    {
+      "deck": "AX_SCAFFOLD",
+      "id": "D19.1\u2013D19.10",
+      "name": "Ten Law Definitions",
+      "class": "Definition",
+      "status": "definition",
+      "anchor": "UNANCHORED",
+      "action": "Re-anchor"
+    },
+    {
+      "deck": "AX_SCAFFOLD",
+      "id": "E19.1",
+      "name": "Full Master Equation",
+      "class": "Equation",
+      "status": "equation",
+      "anchor": "UNANCHORED",
+      "action": "Re-anchor"
+    },
+    {
+      "deck": "AX_CORE",
+      "id": "7",
+      "name": "Starting commitments / boundary floor",
+      "class": "",
+      "status": "",
+      "anchor": "",
+      "action": ""
+    },
+    {
+      "deck": "AX_DERIVED",
+      "id": "6",
+      "name": "Necessities generated from the core (includes MF0)",
+      "class": "",
+      "status": "",
+      "anchor": "",
+      "action": ""
+    },
+    {
+      "deck": "AX_SCAFFOLD",
+      "id": "42",
+      "name": "Definitions, equations, operators, and formal machinery",
+      "class": "",
+      "status": "",
+      "anchor": "",
+      "action": ""
+    }
+  ]
+}
