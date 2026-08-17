@@ -293,7 +293,7 @@ PR #16 remains the axiom connector layer. This layer may reference a Rosetta nod
 
 ## 11. Current test scope
 
-The probe script projects representative existing records into the unified envelope:
+A local read-only probe prototype projected representative existing records into the unified envelope (harness omitted from this review diff to keep the proposal small):
 
 - `TL-01-004` — Law 4, spiritual-family and Fruits structure;
 - `TL-01-009` — Law 9, conservation structure and open components;
