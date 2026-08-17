@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/rosetta-axiom-node.v0.1.schema.json",
+  "title": "Rosetta Axiom Node v0.1",
+  "description": "Standardized adapter envelope projected from an existing axiom JSON-LD atom for Rosetta Stone routing. This is a candidate routing input, not a canon record.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "node_id",
+    "atom_id",
+    "claim_id",
+    "canonical_uri",
+    "title",
+    "claim",
+    "coherent_statement",
+    "plain_statement",
+    "formal_expressions",
+    "scope_text",
+    "dependencies",
+    "kill_conditions",
+    "truth_unit",
+    "classification",
+    "rosetta_targets",
+    "mirror_search",
+    "source",
+    "governance",
+    "native",
+    "series_carry_forward"
+  ],
+  "properties": {
+    "schema_version": {"const": "rosetta-axiom-node/v0.1"},
+    "node_id": {"type": "string", "minLength": 1},
+    "trace_id": {"type": "string"},
+    "atom_id": {"type": "string", "minLength": 1},
+    "claim_id": {"type": ["string", "null"]},
+    "canonical_uri": {"type": ["string", "null"]},
+    "title": {"type": "string", "minLength": 1},
+    "claim": {"type": "string", "minLength": 1},
+    "coherent_statement": {"type": "string", "minLength": 1},
+    "plain_statement": {"type": "string", "minLength": 1},
+    "formal_expressions": {"type": "array", "items": {"type": "string"}},
+    "scope_text": {"type": "string"},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "kill_conditions": {"type": "array", "items": {"type": "string"}},
+    "truth_unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim", "question", "evidence", "proof_link", "verdict"],
+      "properties": {
+        "claim": {"type": "string"},
+        "question": {"type": ["string", "null"]},
+        "evidence": {"type": "array", "items": {}},
+        "proof_link": {"type": ["string", "null"]},
+        "verdict": {"type": "string"}
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "native_claim_class",
+        "native_new_type",
+        "unified_claim_type",
+        "unified_claim_type_status",
+        "derivation_role",
+        "claim_species",
+        "domain",
+        "stage",
+        "proof_label",
+        "truth_status"
+      ],
+      "properties": {
+        "native_claim_class": {"type": "string"},
+        "native_new_type": {"type": ["string", "null"]},
+        "unified_claim_type": {
+          "enum": ["AXIOM", "DEFINITION", "BOUNDARY", "LEMMA", "THEOREM", "COROLLARY", "MODEL", "HYPOTHESIS", "PREDICTION", "PROTOCOL", "EVIDENCE", "BRIDGE", "IDENTIFICATION", "OPEN", "CLOSURE"]
+        },
+        "unified_claim_type_status": {"const": "adapter_candidate"},
+        "derivation_role": {"type": "string"},
+        "claim_species": {"type": "array", "items": {"type": "string"}},
+        "domain": {"type": ["string", "null"]},
+        "stage": {"type": ["string", "null"]},
+        "proof_label": {
+          "enum": ["NOT_ESTABLISHED", "ISOMORPHIC_EVENT_CANDIDATE", "BRIDGE_DECLARED", "LEAN_GUARDRAIL_SUPPORTED", "LEAN_FULL_VERIFIED", "PYTHON_RUNTIME_SUPPORTED", "ABDUCTIVELY_FAVORED", "NARRATIVE_ANCHOR", "QUARANTINE", "RERUN_OWED", "RETIRED"]
+        },
+        "truth_status": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["ontic", "epistemic"],
+          "properties": {
+            "ontic": {"enum": ["true", "false", "unknown"]},
+            "epistemic": {"type": "string"}
+          }
+        }
+      }
+    },
+    "rosetta_targets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exact_id_hints", "routing_status", "chain_step", "proof_step_id", "family_symbol"],
+      "properties": {
+        "exact_id_hints": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["proof_step_ids", "chain_steps", "keeper_deck_ids"],
+          "properties": {
+            "proof_step_ids": {"type": "array", "items": {"type": "string"}},
+            "chain_steps": {"type": "array", "items": {"type": "integer"}},
+            "keeper_deck_ids": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "routing_status": {"enum": ["unrouted", "routed", "floating", "contested"]},
+        "chain_step": {"type": ["integer", "null"], "minimum": 1, "maximum": 20},
+        "proof_step_id": {"type": ["string", "null"]},
+        "family_symbol": {"type": ["string", "null"]}
+      }
+    },
+    "mirror_search": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "status", "question"],
+      "properties": {
+        "required": {"const": true},
+        "status": {"enum": ["not_run", "candidate_found", "no_defensible_mirror", "failed", "complete"]},
+        "question": {"type": "string"},
+        "candidate_domains": {"type": "array", "items": {"type": "string"}},
+        "natural_process_found": {"type": "boolean"},
+        "human_independence_test": {"type": ["string", "null"]},
+        "shared_structure": {"type": "array", "items": {"type": "string"}},
+        "differences": {"type": "array", "items": {"type": "string"}},
+        "candidate_mapping": {"type": "array", "items": {}},
+        "bridge_grade": {"type": "string"},
+        "next_expansion": {"type": ["string", "null"]},
+        "stop_reason": {"type": ["string", "null"]}
+      }
+    },
+    "bridge_evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bridge_type", "status", "bridge_grade"],
+      "properties": {
+        "bridge_type": {"type": "string"},
+        "status": {"type": "string"},
+        "bridge_grade": {"enum": ["B0", "B1", "B2", "B3", "B4", "B5", "unassessed"]},
+        "source_process": {"type": "string"},
+        "source_transition": {"type": "string"},
+        "target_process": {"type": "string"},
+        "target_transition": {"type": "string"},
+        "mapping": {"type": "object"},
+        "preserved_structure": {"type": "string"},
+        "formal_expression": {"type": "string"},
+        "failure_condition": {"type": ["string", "null"]},
+        "preservation_tests": {"type": "object"}
+      }
+    },
+    "compression_bridge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bridge_type", "source_node", "source_claim", "target_kernel", "proposed_derivation", "compression_grade", "status", "demotion_if_successful", "failure_condition"],
+      "properties": {
+        "bridge_type": {"const": "kernel_compression"},
+        "source_node": {"type": "string"},
+        "source_claim": {"type": "string"},
+        "target_kernel": {"type": "array", "items": {"type": "string"}},
+        "proposed_derivation": {"type": ["string", "null"]},
+        "compression_grade": {"enum": ["K0", "K1", "K2", "K3", "K4", "K5"]},
+        "status": {"type": "string"},
+        "demotion_if_successful": {"type": "string"},
+        "failure_condition": {"type": ["string", "null"]}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "stage", "source_reference", "workbook"],
+      "properties": {
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "stage": {"type": ["string", "null"]},
+        "source_reference": {"type": ["string", "null"]},
+        "workbook": {"type": ["object", "null"]}
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_or_admitted", "kernelChecked", "propagates_evidence", "propagates_falsification", "boundary"],
+      "properties": {
+        "candidate_or_admitted": {"const": "Candidate"},
+        "kernelChecked": {"type": "boolean"},
+        "propagates_evidence": {"const": false},
+        "propagates_falsification": {"const": false},
+        "boundary": {"type": "string"}
+      }
+    },
+    "native": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nodeType", "domainType", "status", "challengeStatus", "tags", "keywords", "axiomRegistry", "edges"],
+      "properties": {
+        "nodeType": {"type": ["string", "null"]},
+        "domainType": {"type": ["string", "null"]},
+        "status": {"type": "string"},
+        "challengeStatus": {"type": ["string", "null"]},
+        "tags": {"type": "array", "items": {}},
+        "keywords": {"type": "array", "items": {}},
+        "axiomRegistry": {"type": "object"},
+        "edges": {"type": "array", "items": {}}
+      }
+    },
+    "series_carry_forward": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_fingerprint", "fingerprint_basis"],
+      "properties": {
+        "claim_fingerprint": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+        "fingerprint_basis": {"type": "string"}
+      }
+    }
+  }
+}
