@@ -1,0 +1,103 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-023",
+  "nodeID": "tp:axioms/01/AX-023",
+  "claimID": "tp:AXIOMS/P3.1",
+  "name": "Coherence Non-Negativity",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "theorem",
+  "statementTechnical": "C[χ] ≥ 0 (coherence is non-negative).",
+  "statementPlain": "C[χ] ≥ 0 (coherence is non-negative).",
+  "mathematicalForm": "C[χ] ≥ 0",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-018",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-021",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-022",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence"
+  ],
+  "keywords": [
+    "P3.1",
+    "Q3",
+    "Ontological",
+    "Property"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Find a physical system where C[χ] < 0. Show S can exceed S_max (would violate 2nd Law). Demonstrate negative coherence is meaningful.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 24
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-023",
+    "oldID": "P3.1",
+    "treeLevel": "Q3",
+    "treeBranch": "Q3-I (Coherence bound property)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Property",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "proposition / lemma target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M03",
+    "moduleTitle": "Coherence Engine",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Non-negativity is essential for coherence to serve as a well-defined metric.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

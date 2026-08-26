@@ -1,0 +1,80 @@
+{
+  "source_id": "python-colab-readiness-packet",
+  "title": "Python and Colab Readiness Packet",
+  "canonical_node": {
+    "axiom": "Do not merge notebook results into public claims until each item has one status: verified, open/conflicted, simulation-only, empirical-fit, or prediction.",
+    "definitions": [
+      "verified: an item whose public status is claims_verified",
+      "open/conflicted: an item whose public status is open_or_conflicted or mixed_verified_and_open",
+      "simulation-only: an item whose evidence class is simulation_or_stability",
+      "empirical-fit: an item whose evidence class is empirical_or_fit",
+      "prediction: an item whose evidence class is prediction_or_forecast"
+    ],
+    "derivation": [
+      "The packet is an inventory, not an execution engine.",
+      "The first sorting rule states that notebook results must not be merged into public claims until each item has one of the five statuses.",
+      "Therefore, the action is to classify each item into one of the five statuses before any merging.",
+      "The packet provides counts and generated files to support this classification."
+    ],
+    "action": "Classify each notebook or script item into exactly one of the five statuses: verified, open/conflicted, simulation-only, empirical-fit, or prediction, before merging any results into public claims.",
+    "boundary": [
+      "Does not execute notebooks or scripts.",
+      "Does not assign statuses itself; it only inventories counts.",
+      "Does not define how to resolve mixed_verified_and_open items.",
+      "Does not define what constitutes a public claim."
+    ],
+    "test": [
+      "Check that no notebook result is merged into a public claim unless the item has exactly one of the five statuses.",
+      "Check that the inventory CSV and summary JSON are generated and contain the counts listed.",
+      "Check that the packet does not claim to execute code."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "python-colab-readiness-inventory.csv",
+      "python-colab-readiness-summary.json"
+    ],
+    "dg2_new_capability": "Provides a sorting rule to prevent premature merging of notebook results into public claims.",
+    "dg3_preserved_floor": "Preserves the inventory of notebooks and scripts and their status counts.",
+    "dg4_collapse_if_removed": "If the sorting rule is removed, there is no explicit guard against merging unclassified results into public claims.",
+    "dg5_translation_registers": [
+      "not_declared -> not yet classified",
+      "open_or_conflicted -> open/conflicted",
+      "claims_verified -> verified",
+      "mixed_verified_and_open -> open/conflicted (until resolved)",
+      "physics_model_bridge -> unclassified_support (no direct mapping)",
+      "prediction_or_forecast -> prediction",
+      "simulation_or_stability -> simulation-only",
+      "empirical_or_fit -> empirical-fit"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural_rule",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "adopt_as_guardrail"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The packet does not prove that the sorting rule is sufficient to ensure correctness of public claims.",
+      "The packet does not define how to resolve mixed_verified_and_open items, so the rule may be incomplete.",
+      "The packet does not specify what constitutes a public claim, leaving ambiguity."
+    ],
+    "kill_conditions": [
+      "If the sorting rule is contradicted by another axiom document.",
+      "If the inventory files are missing or inconsistent with the counts.",
+      "If the packet is used to claim execution capability."
+    ],
+    "lean_target": "A formal guardrail that prevents merging unclassified results into public claims."
+  },
+  "plain_summary": "This packet is an inventory of Python and Colab notebooks and scripts. It does not execute code. Its core rule is that notebook results must not be merged into public claims until each item has one of five statuses: verified, open/conflicted, simulation-only, empirical-fit, or prediction. The packet provides counts and generated files but does not itself classify items or define how to resolve mixed statuses.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\python-colab-readiness-packet.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\python-colab-readiness-packet.canonical-node.json"
+  }
+}

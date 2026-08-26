@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-004",
+  "atom_uid": "sha256:ebb91bb9307bafcd5ed2bdb6b3e783f2b9c759efcd28ecb0772d185dabdd3290",
+  "title": "ISO-004 - Weak Force ↔ Free Will",
+  "claim": "ISO-004: Weak Force ↔ Free Will maps Weak Nuclear Force to Free Will / Transformation. Workbook verdict: Level 2.5. Honest verdict: Flavor-changing specific but assumption baked in.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C2_PARTIAL_CORRESPONDENCE",
+  "assumptions": [
+    "Weak Nuclear Force",
+    "Free Will / Transformation",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "UPGRADED: Lean coupling_modification_irreversible",
+    "Flavor-changing specific but assumption baked in."
+  ],
+  "equations": [],
+  "bridges": [
+    "Weak Nuclear Force -> Free Will / Transformation"
+  ],
+  "dependencies": [
+    "ISO-004"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Requires libertarian free will (unproven)",
+    "Promotion blocker: Requires libertarian free will — unproven metaphysical assumption",
+    "Promotion blocker: Parity violation ↔ moral asymmetry is underdeveloped",
+    "Promotion blocker: No inverse mapping (theology → weak force predictions)"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Test D: Bidirectional fails in source evaluation.",
+    "Weakest link remains unresolved: Requires libertarian free will (unproven)"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-004 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:c1f4a97b65663a87920805a6205bfc1d5a02b52b4c72a28f31206cbb264916e7",
+      "event_uuid": "921963dd-f4c6-5c25-bef8-2393b07ab1ad"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-004",
+  "atom_uuid": "db8d108e-4f37-5876-aa3d-20a9cc0db40b"
+}

@@ -1,0 +1,38 @@
+{
+  "source_claim_id": "DG8-Closure",
+  "title": "DG8 - Closure",
+  "claim": "A derivation cannot deny a capability whose use is required to formulate the denial.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "Self-defeating derivations are not admissible."
+  ],
+  "definitions": [
+    "Closure: the modal condition blocking claims that deny their own required capabilities."
+  ],
+  "equations": [
+    "not (Denies(x, C) and RequiresToFormulate(x, C))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG7-Admissibility"
+  ],
+  "negative_guards": [
+    "Do not call closure a proof of theology.",
+    "Do not confuse closure with self-reference paradox."
+  ],
+  "kill_conditions": [
+    "A self-defeating denial is admitted as valid inside the grammar.",
+    "RequiresToFormulate cannot be stated without making closure circular."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ]
+}
+

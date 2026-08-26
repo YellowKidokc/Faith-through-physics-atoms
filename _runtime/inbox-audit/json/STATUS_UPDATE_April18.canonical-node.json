@@ -1,0 +1,82 @@
+{
+  "source_id": "STATUS_UPDATE_April18",
+  "title": "Status Update April 18, 2026",
+  "canonical_node": {
+    "axiom": "The GTQ-01 HTML file is the gold standard for all article templates; all other articles must be stamped with its CSS and JS while preserving their original content.",
+    "definitions": [
+      "Gold Standard: The rebuilt gtq-01-measurement-collapsed-reality.html file, which includes custom audio players, player strips, oversized Born Rule section, decoherence steps, falsification criteria, sign-out cards, canvas chalkboard, and tab rename.",
+      "Template Stamping: Replacing the CSS and JS blocks of an existing HTML file with those from GTQ-01, adding player strips, renaming tabs, but keeping all article body content unchanged.",
+      "Tangent HTML: An HTML file built from a tangent markdown source using the tangent article template from GTQ-01A as a base."
+    ],
+    "derivation": [
+      "GTQ-01 was rebuilt from the ground up with new features and design.",
+      "A pipeline run processed all 25 GTQ markdown sources, producing fresh Excel and JSON outputs.",
+      "AGENTS.md and articles.json were created to specify the template stamping process and manifest.",
+      "The document lists 20 non-GTQ-01 articles that need template stamping and 5 missing tangent HTML files to build.",
+      "Design rules and anomalies are provided to guide the cowork's actions."
+    ],
+    "action": "Apply the GTQ-01 template to all 20 non-GTQ-01 articles by replacing CSS and JS blocks, adding player strips, renaming tabs, and preserving original content. Build the 5 missing tangent HTML files from their markdown sources. Continue Phase 2-3 tasks as specified.",
+    "boundary": [
+      "Do not modify GTQ-01 itself.",
+      "Do not rewrite article body content during template stamping.",
+      "Do not address the L8 (GoEmotions) pipeline failure; it is known and non-critical.",
+      "Do not fix the audio CDN standardization or empty audio src issues; they are listed as anomalies to fix but not part of the immediate action."
+    ],
+    "test": [
+      "Verify that each stamped article has the GTQ-01 CSS and JS blocks verbatim.",
+      "Verify that player strips appear at the top of Paper and Tangent tabs with correct audio URLs.",
+      "Verify that tab buttons are renamed appropriately.",
+      "Verify that original article body content remains unchanged.",
+      "Verify no unclosed tags or broken CSS in stamped files.",
+      "Verify that the 5 tangent HTML files are built and render correctly."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "GTQ-01 HTML file (gold standard)",
+      "AGENTS.md spec",
+      "articles.json manifest",
+      "Existing HTML files for 20 articles",
+      "Markdown sources for 5 tangent articles",
+      "Tangent article template from GTQ-01A"
+    ],
+    "dg2_new_capability": "Enables systematic template stamping of all articles to match the GTQ-01 gold standard, improving consistency and user experience across the website.",
+    "dg3_preserved_floor": "Preserves the original content and structure of each article while upgrading the visual and interactive elements.",
+    "dg4_collapse_if_removed": "Without this action, the website will remain inconsistent, with GTQ-01 being the only article with the new design, and the 5 tangent articles will remain missing, degrading the overall site coherence.",
+    "dg5_translation_registers": [
+      "HTML/CSS/JS template",
+      "Audio player integration",
+      "Tab navigation",
+      "Article metadata"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "operational directive",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "B",
+    "recommended_atom_action": "execute"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Assuming template stamping will work identically for all articles without testing.",
+      "Assuming the 5 tangent HTML files can be built without issues from markdown sources.",
+      "Assuming the design rules are universally applicable without user feedback."
+    ],
+    "kill_conditions": [
+      "If GTQ-01 is modified or lost, the gold standard is invalidated.",
+      "If AGENTS.md or articles.json are missing or inaccurate, the stamping process fails.",
+      "If the existing HTML files have structural inconsistencies that prevent clean CSS/JS replacement."
+    ],
+    "lean_target": "Minimize manual intervention by automating the template stamping process as much as possible, using the manifest and spec to drive changes."
+  },
+  "plain_summary": "This status update from April 18, 2026, reports that GTQ-01 has been rebuilt as the gold standard for article templates, and a pipeline run has completed. The primary next step is to stamp the GTQ-01 template onto the other 20 articles, build 5 missing tangent HTML files, and continue Phase 2-3 tasks. The document provides design rules and lists anomalies to fix. The action is to execute the template stamping and tangent builds as specified.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\STATUS_UPDATE_April18.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\STATUS_UPDATE_April18.canonical-node.json"
+  }
+}

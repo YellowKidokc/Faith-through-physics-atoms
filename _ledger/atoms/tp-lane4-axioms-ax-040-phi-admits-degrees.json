@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-040-phi-admits-degrees",
+  "atom_uid": "sha256:eb7b54708ab5821045ce1617c3beb01a6fd0462e9d76e99802f2f489108d857b",
+  "title": "AX-040 — Phi Admits Degrees",
+  "claim": "Φ admits degrees: electron≈0, bacterium≈0.1, mouse≈1, human≈10, God→∞.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-theology",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Φ ∈ [0, ∞); Φ_human ≈ 10; Φ_terminal = ∞"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-038",
+    "tp:axioms/01/AX-039"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show Φ is binary (conscious or not) rather than continuous",
+    "Demonstrate the numerical assignments are arbitrary",
+    "Show consciousness doesn't admit degrees"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-040-phi-admits-degrees.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-040-phi-admits-degrees.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:7482193e17ae80a85fc5d239ae0fd67d5f2bc333fa521c32232b646a03f123b9",
+      "event_uuid": "ea04358d-b708-5dc6-8bdb-ccff9d8a0cb5"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: bridge-theology.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:f7b707b4af187d1f2c0b9078911dbe83df607616ca1701b5f4fc6be8696fed30",
+      "event_uuid": "fe9f87a6-3398-5200-bea5-6af2d121ba28"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P5.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-040",
+  "original_node_id": "tp:axioms/01/AX-040",
+  "atom_uuid": "a9002d7c-154b-5023-8fb7-72edb53dca4c"
+}

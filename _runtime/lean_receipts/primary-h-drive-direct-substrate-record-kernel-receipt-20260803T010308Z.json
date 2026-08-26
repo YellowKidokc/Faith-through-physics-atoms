@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-08-03T01:03:08+00:00",
+  "title": "Primary H Drive Direct Substrate Record Kernel Receipt",
+  "status": "pass",
+  "project": "\\\\192.168.2.50\\h_hp\\Desktop\\LEAN4_RECOVERY_PACKET_2026-08-01\\PRIMARY_SOURCE_theophysics-lean-main",
+  "leanFile": "\\\\192.168.2.50\\h_hp\\Desktop\\LEAN4_RECOVERY_PACKET_2026-08-01\\PRIMARY_SOURCE_theophysics-lean-main\\Theophysics_SubstrateRecordKernel.lean",
+  "atom": "tp:lane4/axioms/ax-part1-ax-core-a2-1",
+  "build": {
+    "started": "2026-08-03T01:03:07+00:00",
+    "command": [
+      "lean",
+      "H:\\Desktop\\LEAN4_RECOVERY_PACKET_2026-08-01\\PRIMARY_SOURCE_theophysics-lean-main\\Theophysics_SubstrateRecordKernel.lean"
+    ],
+    "returncode": 0,
+    "ok": true,
+    "stdout": "",
+    "stderr": ""
+  },
+  "scan": {
+    "path": "\\\\192.168.2.50\\h_hp\\Desktop\\LEAN4_RECOVERY_PACKET_2026-08-01\\PRIMARY_SOURCE_theophysics-lean-main\\Theophysics_SubstrateRecordKernel.lean",
+    "exists": true,
+    "forbiddenMatches": {},
+    "ok": true
+  },
+  "meaning": "Substrate-record preservation kernel was imported into the primary H-drive Lean source and direct Lean compilation passes. This verifies the self-contained kernel despite the full Lake project being blocked by the mathlib git index lock.",
+  "limits": "Formal conditional model only: proves preservation consequences inside the model, not substrate existence, self-grounding, Logos identity, or Christological truth. This is direct-file verification, not a full project Lake build."
+}

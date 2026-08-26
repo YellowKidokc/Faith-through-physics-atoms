@@ -1,0 +1,88 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-071",
+  "nodeID": "tp:axioms/01/AX-071",
+  "claimID": "tp:AXIOMS/C8.1",
+  "name": "Self-Flip Impossible",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theorem",
+  "statementTechnical": "Self-operations cannot flip sign from -1 to +1.",
+  "statementPlain": "Self-operations cannot flip sign from -1 to +1.",
+  "mathematicalForm": "¬∃Û(self): Û|-1⟩ = |+1⟩",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-070",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "keywords": [
+    "C8.1",
+    "Q10",
+    "Relational",
+    "Corollary"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Demonstrate a system flipping its own sign from -1 to +1 without external input. Show a person achieving moral transformation purely through internal effort with no external influence.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 73
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-071",
+    "oldID": "C8.1",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-E (Self-flip impossibility — corollary)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Relational",
+    "tier": "2",
+    "newType": "Corollary",
+    "logicalForce": "conditional corollary",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M08",
+    "moduleTitle": "Sign Algebra",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic — the tragedy of sin: you CAN choose -1 but CAN'T undo it alone)",
+    "worldviewsEliminated": "Existentialism (self-creation), Buddhism (self-liberation), Pelagianism",
+    "propagationTest": "YES — Self-flip impossibility propagates DIRECTLY to grace necessity (AX-073) and works-salvation impossibility (AX-072).",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

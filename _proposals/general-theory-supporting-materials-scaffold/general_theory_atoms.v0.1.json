@@ -1,0 +1,1194 @@
+{
+  "pack_id": "tp:proposal/general-theory-supporting-materials-scaffold/v0.1",
+  "title": "General Theory Supporting Materials Scaffold Atom Set",
+  "status": "draft_proposal_not_canon",
+  "created_by": "Codex",
+  "created_date": "2026-08-09",
+  "purpose": "Draft physical, spiritual, and bridge atoms for the General Theory support layer behind the Master Equation.",
+  "source_basis": [
+    "E:\\Faith Through Physics MD\\CAN - Canonical\\_META\\_ARCHIVE_REVIEW_BEFORE_DELETE\\THEOPHYSICS_TREE\\04_PHYSICS\\Theory\\General",
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\PHYSICAL_SPIRITUAL_ATOM_MAPPING_PLAN.md"
+  ],
+  "global_guards": [
+    "This pack is not canon promotion.",
+    "Bridge grades belong to mappings, not to the physical or spiritual definition atoms.",
+    "A physical definition does not prove a spiritual identity.",
+    "A spiritual meaning does not redefine the physics term.",
+    "Use isomorphism only after explicit maps, inverse checks, preservation/reflection, negative controls, and receipts exist.",
+    "Mind-map rendering is visualization, not evidence."
+  ],
+  "master_equation_targets": [
+    "tp:master-equation/01/ME-01-020",
+    "tp:master-equation/01/ME-01-021",
+    "tp:master-equation/01/ME-01-022",
+    "tp:master-equation/01/ME-01-023",
+    "tp:master-equation/01/ME-01-024",
+    "tp:master-equation/01/ME-01-025",
+    "tp:master-equation/01/ME-01-026",
+    "tp:master-equation/01/ME-01-027",
+    "tp:master-equation/01/ME-01-028",
+    "tp:master-equation/01/ME-01-029",
+    "tp:master-equation/01/ME-01-060"
+  ],
+  "atoms": [
+    {
+      "atom_id": "tp:proposal/general-theory/physical/state",
+      "atom_type": "physical_definition",
+      "title": "State",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "A state is the set of quantities needed to describe a system enough to measure it, compare it, or predict what can happen next.",
+      "technical_definition": "A state is the complete or model-sufficient assignment of physical quantities for an experiment, measurement, or prediction about a mechanical or physical system.",
+      "where_it_manifests": [
+        "mechanics",
+        "thermodynamics",
+        "statistical mechanics",
+        "quantum mechanics",
+        "field models",
+        "relativity",
+        "measurement contexts"
+      ],
+      "why_it_manifests_there": "Prediction requires a specified condition. Without a state, the system has not been described tightly enough for lawful change or comparison to be meaningful.",
+      "master_equation_roles": [
+        "state_variable",
+        "measurement_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-060",
+        "tp:master-equation/01/ME-01-029"
+      ],
+      "misuse_guards": [
+        "Do not treat an incomplete state description as the whole object.",
+        "Do not identify physical state with moral or spiritual state without a bridge atom.",
+        "Do not imply prediction is possible before state variables are defined."
+      ],
+      "kill_conditions": [
+        "A better canonical definition shows this description omits a required state component for the intended model.",
+        "The term is used to smuggle spiritual conclusions into the physical definition."
+      ],
+      "mindmap_cluster": "State and Identity"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/condition",
+      "atom_type": "spiritual_definition",
+      "title": "Condition",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Condition names the real state a person, system, or relation is in before judgment, healing, correction, or prediction can be honest.",
+      "technical_definition": "A spiritual condition is a bounded description of alignment, disorder, relation, capacity, and need within a person or community.",
+      "where_it_manifests": [
+        "repentance",
+        "diagnosis of sin",
+        "spiritual maturity",
+        "relational health",
+        "community order",
+        "discernment",
+        "sanctification"
+      ],
+      "why_it_manifests_there": "Spiritual change cannot be described honestly if the starting condition is hidden, mislabeled, or sentimentalized.",
+      "master_equation_roles": [
+        "state_variable",
+        "measurement_condition"
+      ],
+      "misuse_guards": [
+        "Do not reduce spiritual condition to a numeric score.",
+        "Do not confuse a label with real diagnosis.",
+        "Do not claim physics proves spiritual condition."
+      ],
+      "kill_conditions": [
+        "The spiritual definition cannot be distinguished from ordinary mood, behavior, or preference.",
+        "The concept cannot support any actual discernment or corrective action."
+      ],
+      "mindmap_cluster": "State and Identity"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/state-to-condition",
+      "atom_type": "bridge_candidate",
+      "title": "State to Condition",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/state",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/condition",
+      "bridge_grade": "candidate_correspondence",
+      "claim": "Physical state and spiritual condition share the structural need for honest description before prediction, judgment, correction, or transformation.",
+      "preserved_properties": [
+        "descriptive starting point",
+        "constraint on possible next states",
+        "need for defined quantities or qualities",
+        "resistance to vague evaluation"
+      ],
+      "not_claimed": [
+        "Spiritual condition is not identical to a physical state vector.",
+        "The bridge does not prove a soul is physically measurable.",
+        "The bridge does not make moral judgment a physics calculation."
+      ],
+      "master_equation_roles": [
+        "state_variable",
+        "measurement_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "negative_guards": [
+        "Bridge grade is not isomorphism.",
+        "No falsification should propagate to either base definition unless the definition itself fails."
+      ],
+      "kill_conditions": [
+        "The mapping cannot name any shared structure beyond word similarity.",
+        "The spiritual side cannot define condition independently of physics language."
+      ],
+      "mindmap_cluster": "State and Identity"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/physical/table",
+      "atom_type": "physical_definition",
+      "title": "Table",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "A table is an ordered way to hold many possible quantities, cases, or configurations so they can be compared without losing their distinctions.",
+      "technical_definition": "A table is a structured representation that aggregates physical quantities, regimes, cases, or permissible configurations for analysis.",
+      "where_it_manifests": [
+        "configuration spaces",
+        "state tables",
+        "measurement tables",
+        "periodic classifications",
+        "thermodynamic tables",
+        "experimental datasets",
+        "case enumerations"
+      ],
+      "why_it_manifests_there": "When many possibilities must remain distinguishable, a theory needs an ordered representation rather than a single narrative description.",
+      "master_equation_roles": [
+        "mindmap_cluster",
+        "state_variable"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "misuse_guards": [
+        "Do not mistake a table for explanation.",
+        "Do not confuse enumeration with proof.",
+        "Do not flatten unlike categories just because they can be placed in rows."
+      ],
+      "kill_conditions": [
+        "The table cannot preserve meaningful distinctions among the cases it lists.",
+        "The table creates false equivalence between unlike domains."
+      ],
+      "mindmap_cluster": "Possibility Space"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/discernment",
+      "atom_type": "spiritual_definition",
+      "title": "Discernment",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Discernment is the capacity to distinguish what kind of thing is present, what condition it is in, and what response is faithful.",
+      "technical_definition": "Discernment is ordered spiritual judgment that preserves distinction among possibilities rather than collapsing them into impulse, fear, or preference.",
+      "where_it_manifests": [
+        "testing spirits",
+        "moral decision",
+        "pastoral diagnosis",
+        "wisdom",
+        "doctrinal evaluation",
+        "choice under ambiguity"
+      ],
+      "why_it_manifests_there": "Faithful response depends on knowing what kind of situation is actually present.",
+      "master_equation_roles": [
+        "measurement_condition",
+        "mindmap_cluster"
+      ],
+      "misuse_guards": [
+        "Do not make discernment a private certainty immune to correction.",
+        "Do not confuse spiritual discernment with mere categorization.",
+        "Do not treat the table analogy as proof."
+      ],
+      "kill_conditions": [
+        "The concept cannot produce distinctions that matter for action.",
+        "The discernment claim cannot be challenged by evidence, Scripture, or wise counsel."
+      ],
+      "mindmap_cluster": "Possibility Space"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/table-to-discernment",
+      "atom_type": "bridge_candidate",
+      "title": "Table to Discernment",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/table",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/discernment",
+      "bridge_grade": "structural_analogy",
+      "claim": "Tables and discernment both preserve distinctions across a field of possibilities so response does not collapse into confusion.",
+      "preserved_properties": [
+        "enumeration of possibilities",
+        "distinction preservation",
+        "comparison",
+        "ordered review"
+      ],
+      "not_claimed": [
+        "Discernment is not a spreadsheet.",
+        "A table does not decide moral truth.",
+        "Enumeration does not equal wisdom."
+      ],
+      "master_equation_roles": [
+        "mindmap_cluster",
+        "measurement_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "negative_guards": [
+        "Use as analogy unless a formal decision structure is built.",
+        "No falsification propagation."
+      ],
+      "kill_conditions": [
+        "The bridge adds no structure beyond the loose idea of organizing things.",
+        "The spiritual definition cannot name a real act of judgment."
+      ],
+      "mindmap_cluster": "Possibility Space"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/physical/conservation",
+      "atom_type": "physical_definition",
+      "title": "Conservation",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "Conservation means a quantity does not simply disappear as a system changes, under the conditions where the relevant conservation law applies.",
+      "technical_definition": "A conserved quantity remains invariant under specified dynamics, usually connected to symmetry, closure, or a governing conservation equation.",
+      "where_it_manifests": [
+        "energy conservation",
+        "momentum conservation",
+        "angular momentum conservation",
+        "electric charge conservation",
+        "internal energy accounting",
+        "continuity equations",
+        "Noether-related symmetry contexts"
+      ],
+      "why_it_manifests_there": "Conservation appears where the governing structure prevents a quantity from being created or destroyed without lawful accounting.",
+      "master_equation_roles": [
+        "conservation_constraint",
+        "boundary_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-044",
+        "tp:master-equation/01/ME-EQ-008",
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "misuse_guards": [
+        "Do not apply conservation outside its domain conditions.",
+        "Do not claim grace injects physical energy without accounting.",
+        "Do not confuse conservation with moral forgiveness."
+      ],
+      "kill_conditions": [
+        "The supposed conserved quantity is not actually invariant under the specified model.",
+        "The claim ignores open-system boundaries or hidden source terms."
+      ],
+      "mindmap_cluster": "Cost and Consequence"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/moral-accounting",
+      "atom_type": "spiritual_definition",
+      "title": "Moral Accounting",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Moral accounting is the claim that action, cost, harm, debt, repair, and consequence cannot be made truthful by pretending they vanished.",
+      "technical_definition": "Moral accounting tracks the persistence of consequence and cost in personal, relational, and covenantal order until judgment, repair, forgiveness, or redemption addresses them.",
+      "where_it_manifests": [
+        "justice",
+        "repentance",
+        "forgiveness",
+        "restitution",
+        "atonement",
+        "conscience",
+        "relational repair"
+      ],
+      "why_it_manifests_there": "Wrongdoing changes a relational system. Truthful repair must account for what was done, who bore the cost, and how the order is restored.",
+      "master_equation_roles": [
+        "conservation_constraint",
+        "failure_mode"
+      ],
+      "misuse_guards": [
+        "Do not reduce forgiveness to bookkeeping.",
+        "Do not claim every suffering is direct payment for a specific sin.",
+        "Do not make moral accounting a physics conservation law."
+      ],
+      "kill_conditions": [
+        "The concept cannot distinguish justice from vengeance or repair from denial.",
+        "The account has no place for grace, mercy, or substitution without contradiction."
+      ],
+      "mindmap_cluster": "Cost and Consequence"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/conservation-to-moral-accounting",
+      "atom_type": "bridge_candidate",
+      "title": "Conservation to Moral Accounting",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/conservation",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/moral-accounting",
+      "bridge_grade": "candidate_correspondence",
+      "claim": "Conservation and moral accounting share a non-disappearance structure: change must be accounted for rather than rhetorically erased.",
+      "preserved_properties": [
+        "non-disappearance under valid conditions",
+        "accounting across change",
+        "source/sink awareness",
+        "cost tracking"
+      ],
+      "not_claimed": [
+        "Moral debt is not physical energy.",
+        "Forgiveness does not violate physics.",
+        "Conservation laws do not prove atonement."
+      ],
+      "master_equation_roles": [
+        "conservation_constraint",
+        "boundary_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-044",
+        "tp:master-equation/01/ME-EQ-008",
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "negative_guards": [
+        "Bridge must not be used to claim moral cost is a conserved physical scalar.",
+        "Grace language must specify whether it restructures, pays, transforms, or reorders cost."
+      ],
+      "kill_conditions": [
+        "The bridge cannot define what is preserved on the spiritual side.",
+        "The model implies free creation of physical energy or unaccounted moral cancellation."
+      ],
+      "mindmap_cluster": "Cost and Consequence"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/physical/flux",
+      "atom_type": "physical_definition",
+      "title": "Flux",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "Flux measures what passes through a boundary.",
+      "technical_definition": "Flux is the quantity of a field, substance, energy, or other physical measure passing through a chosen surface or control boundary.",
+      "where_it_manifests": [
+        "fluid flow",
+        "heat transfer",
+        "electromagnetic fields",
+        "radiation",
+        "control volumes",
+        "diffusion",
+        "transport processes"
+      ],
+      "why_it_manifests_there": "Flux appears when the relevant question is not only what a system contains, but what crosses the boundary of the system.",
+      "master_equation_roles": [
+        "boundary_condition",
+        "operator"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-020",
+        "tp:master-equation/01/ME-01-022",
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "misuse_guards": [
+        "Do not use flux language without specifying the boundary.",
+        "Do not confuse flux with total quantity stored inside the system.",
+        "Do not treat every spiritual influence as measurable physical flux."
+      ],
+      "kill_conditions": [
+        "The model cannot define what boundary is being crossed.",
+        "The transferred quantity cannot be named."
+      ],
+      "mindmap_cluster": "Boundary Transfer"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/transfer",
+      "atom_type": "spiritual_definition",
+      "title": "Transfer",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Transfer names the movement of cost, help, influence, burden, grace, witness, or responsibility across a relational boundary.",
+      "technical_definition": "Spiritual transfer is a relational movement in which what belongs to one person, system, or domain affects another without collapsing the distinction between them.",
+      "where_it_manifests": [
+        "intercession",
+        "bearing burdens",
+        "forgiveness",
+        "witness",
+        "blessing",
+        "temptation",
+        "teaching",
+        "grace"
+      ],
+      "why_it_manifests_there": "Persons and communities are not sealed containers. Relation allows influence, cost, help, and harm to cross boundaries.",
+      "master_equation_roles": [
+        "boundary_condition",
+        "operator"
+      ],
+      "misuse_guards": [
+        "Do not erase agency by saying everything transfers automatically.",
+        "Do not confuse influence with identity.",
+        "Do not claim spiritual transfer has a measured physical unit."
+      ],
+      "kill_conditions": [
+        "The transfer claim cannot identify giver, receiver, boundary, or changed condition.",
+        "The concept becomes indistinguishable from vague influence."
+      ],
+      "mindmap_cluster": "Boundary Transfer"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/flux-to-transfer",
+      "atom_type": "bridge_candidate",
+      "title": "Flux to Transfer",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/flux",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/transfer",
+      "bridge_grade": "candidate_correspondence",
+      "claim": "Flux and spiritual transfer share a boundary-crossing structure: what matters is named by what passes from one side of a boundary to another.",
+      "preserved_properties": [
+        "boundary",
+        "direction",
+        "quantity or burden moved",
+        "source and receiver distinction",
+        "changed system accounting"
+      ],
+      "not_claimed": [
+        "Grace is not claimed to be a measured physical flux.",
+        "Spiritual influence is not reduced to field flow.",
+        "Boundary language does not prove theological transfer."
+      ],
+      "master_equation_roles": [
+        "boundary_condition",
+        "operator"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-020",
+        "tp:master-equation/01/ME-01-022"
+      ],
+      "negative_guards": [
+        "The boundary must be named before the bridge is used.",
+        "The bridge remains candidate until source/receiver and preserved structure are formalized."
+      ],
+      "kill_conditions": [
+        "The bridge cannot specify what crosses the boundary.",
+        "The spiritual transfer model collapses giver and receiver into one thing."
+      ],
+      "mindmap_cluster": "Boundary Transfer"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/physical/energy-flux",
+      "atom_type": "physical_definition",
+      "title": "Energy Flux",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "Energy flux is energy crossing a boundary per area or per modeled passage through a surface.",
+      "technical_definition": "Energy flux describes the rate or density of energy transfer through a surface or region, depending on the model.",
+      "where_it_manifests": [
+        "thermal radiation",
+        "heat transfer",
+        "Poynting vector contexts",
+        "fluid energy transport",
+        "radiative transfer",
+        "field energy flow"
+      ],
+      "why_it_manifests_there": "Energy flux appears where energy is not merely stored but transported across a chosen boundary.",
+      "master_equation_roles": [
+        "boundary_condition",
+        "conservation_constraint"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-020",
+        "tp:master-equation/01/ME-01-048"
+      ],
+      "misuse_guards": [
+        "Do not use energy flux to claim grace is physical energy.",
+        "Do not ignore conservation constraints.",
+        "Do not use the phrase unless transfer rate or boundary is specified."
+      ],
+      "kill_conditions": [
+        "The model cannot identify energy, boundary, or transfer mechanism.",
+        "The usage violates conservation without explicitly naming an open-system source."
+      ],
+      "mindmap_cluster": "Boundary Transfer"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/active-giving",
+      "atom_type": "spiritual_definition",
+      "title": "Active Giving",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Active giving is transfer that changes the receiver because something real is borne, offered, supplied, or poured out.",
+      "technical_definition": "Active giving names a relational act in which one party supplies help, cost-bearing, instruction, mercy, or grace across a distinction without erasing either party.",
+      "where_it_manifests": [
+        "grace",
+        "sacrifice",
+        "intercession",
+        "mercy",
+        "service",
+        "teaching",
+        "encouragement",
+        "atonement language"
+      ],
+      "why_it_manifests_there": "Love and grace are not merely states of mind. They move toward another and change the relational field.",
+      "master_equation_roles": [
+        "boundary_condition",
+        "operator"
+      ],
+      "misuse_guards": [
+        "Do not make active giving transactional only.",
+        "Do not erase consent, agency, or covenantal context.",
+        "Do not claim active giving is energy flux."
+      ],
+      "kill_conditions": [
+        "The concept cannot distinguish active giving from passive approval.",
+        "The act has no identifiable receiver or changed condition."
+      ],
+      "mindmap_cluster": "Boundary Transfer"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/energy-flux-to-active-giving",
+      "atom_type": "bridge_candidate",
+      "title": "Energy Flux to Active Giving",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/energy-flux",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/active-giving",
+      "bridge_grade": "structural_analogy",
+      "claim": "Energy flux and active giving share the pattern of real transfer across a boundary that changes the receiving system.",
+      "preserved_properties": [
+        "source",
+        "transfer",
+        "boundary",
+        "receiver",
+        "changed condition"
+      ],
+      "not_claimed": [
+        "Active giving is not physical energy flux.",
+        "Grace is not being measured in watts.",
+        "The analogy does not prove divine action."
+      ],
+      "master_equation_roles": [
+        "boundary_condition",
+        "operator"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-020"
+      ],
+      "negative_guards": [
+        "Use as analogy unless an explicit transfer model exists.",
+        "Conservation questions must be addressed separately."
+      ],
+      "kill_conditions": [
+        "The bridge turns spiritual giving into a physical unit.",
+        "The bridge cannot name a real changed condition in the receiver."
+      ],
+      "mindmap_cluster": "Boundary Transfer"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/physical/equilibrium",
+      "atom_type": "physical_definition",
+      "title": "Equilibrium",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "Equilibrium is balance: the system is stable because the relevant forces, torques, flows, or energy tendencies are in a condition that does not drive net change of the chosen kind.",
+      "technical_definition": "Equilibrium is a static, dynamic, thermal, phase, or energy-stability condition in which net driving tendencies vanish or balance under the model assumptions.",
+      "where_it_manifests": [
+        "buildings",
+        "rigid bodies",
+        "force diagrams",
+        "torque systems",
+        "potential wells",
+        "molecular spacing",
+        "material phases",
+        "thermal systems",
+        "dynamic exchange systems"
+      ],
+      "why_it_manifests_there": "Equilibrium appears where the system's competing tendencies resolve into stable balance, restoration, or steady exchange.",
+      "master_equation_roles": [
+        "equilibrium_target",
+        "state_variable"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-029",
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "misuse_guards": [
+        "Do not treat equilibrium as always motionless.",
+        "Do not equate physical equilibrium with spiritual peace without a bridge atom.",
+        "Do not ignore unstable and neutral equilibrium cases."
+      ],
+      "kill_conditions": [
+        "The system is not actually in a stable or balanced condition under the chosen model.",
+        "A claimed equilibrium ignores a hidden driving force, torque, or flow."
+      ],
+      "mindmap_cluster": "Peace and Stability"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/peace",
+      "atom_type": "spiritual_definition",
+      "title": "Peace",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Peace is not mere absence of trouble. It is rightly ordered relation under truth, where the parts no longer war against the whole.",
+      "technical_definition": "Spiritual peace is a stable relational order in which desire, action, truth, God, neighbor, and self are no longer arranged in contradiction.",
+      "where_it_manifests": [
+        "reconciliation",
+        "repentance",
+        "forgiveness",
+        "inner steadiness",
+        "community order",
+        "fruit of the Spirit",
+        "rest after restoration"
+      ],
+      "why_it_manifests_there": "Peace appears where relation has been restored or rightly ordered, not merely where visible conflict has paused.",
+      "master_equation_roles": [
+        "equilibrium_target",
+        "state_variable"
+      ],
+      "misuse_guards": [
+        "Do not confuse peace with numbness, avoidance, or suppression.",
+        "Do not reduce peace to mood.",
+        "Do not claim mechanics proves spiritual peace."
+      ],
+      "kill_conditions": [
+        "The definition cannot distinguish peace from conflict avoidance.",
+        "The concept has no relation to truth, order, or reconciliation."
+      ],
+      "mindmap_cluster": "Peace and Stability"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/equilibrium-to-peace",
+      "atom_type": "bridge_candidate",
+      "title": "Equilibrium to Peace",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/equilibrium",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/peace",
+      "bridge_grade": "candidate_correspondence",
+      "claim": "Equilibrium and peace share a stability-through-right-relation structure: stability is not emptiness, but ordered relation among active tendencies.",
+      "preserved_properties": [
+        "stability",
+        "balance",
+        "right relation",
+        "restoration after disturbance",
+        "distinction between stable and unstable rest"
+      ],
+      "not_claimed": [
+        "Peace is not a force equilibrium calculation.",
+        "Equilibrium does not prove biblical shalom.",
+        "The bridge does not reduce persons to rigid bodies."
+      ],
+      "master_equation_roles": [
+        "equilibrium_target",
+        "state_variable"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-029",
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "negative_guards": [
+        "The paper language should say structural correspondence, not identity.",
+        "Bridge must preserve unstable equilibrium as a warning case."
+      ],
+      "kill_conditions": [
+        "The bridge cannot distinguish stable peace from suppressed conflict.",
+        "The mapping ignores that spiritual peace includes truth and relation, not mere balance."
+      ],
+      "paper_seed": "Peace Is Not Nothing Happening",
+      "mindmap_cluster": "Peace and Stability"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/physical/superposition",
+      "atom_type": "physical_definition",
+      "title": "Superposition",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "Superposition means compatible contributions or possible states coexist in a way the model can combine before a final net result, measurement, or actualization is specified.",
+      "technical_definition": "Superposition is a principle in which a system's net state or effect is represented as a combination of components, such as forces, fields, waves, charges, heat-transfer contributions, currents, or quantum states.",
+      "where_it_manifests": [
+        "superposition of forces",
+        "superposition of fields",
+        "wave interference",
+        "quantum states",
+        "net charge",
+        "relative velocity",
+        "heat transfer",
+        "electrical current"
+      ],
+      "why_it_manifests_there": "Superposition appears where the governing model permits compatible contributions to be combined without destroying the identity of each contribution.",
+      "master_equation_roles": [
+        "actualization_gate",
+        "state_variable"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-027",
+        "tp:master-equation/01/ME-01-046"
+      ],
+      "misuse_guards": [
+        "Do not use quantum superposition language for all human uncertainty.",
+        "Do not ignore linearity or compatibility conditions.",
+        "Do not claim spiritual possibilities are literally quantum states."
+      ],
+      "kill_conditions": [
+        "The model cannot justify additive or state-combination assumptions.",
+        "The term is used where contributions are nonlinear, incompatible, or already actualized."
+      ],
+      "mindmap_cluster": "Potential to Actual"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/potential-choice",
+      "atom_type": "spiritual_definition",
+      "title": "Potential Choice",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Potential choice is the condition before action, where several real possible responses remain open but not yet lived.",
+      "technical_definition": "Potential choice names unresolved agency: the space of morally meaningful possibilities before will, faith, fear, love, or desire actualizes a path.",
+      "where_it_manifests": [
+        "temptation",
+        "discernment",
+        "faith",
+        "repentance",
+        "indecision",
+        "vocation",
+        "prayer",
+        "moral action"
+      ],
+      "why_it_manifests_there": "Persons act through time. Before action, possibility remains open in a way that matters morally and spiritually.",
+      "master_equation_roles": [
+        "actualization_gate",
+        "state_variable"
+      ],
+      "misuse_guards": [
+        "Do not collapse potential choice into quantum mechanics.",
+        "Do not erase responsibility by making choice merely probabilistic.",
+        "Do not imply every possibility is equally good."
+      ],
+      "kill_conditions": [
+        "The concept cannot distinguish possibility from fantasy.",
+        "The definition cannot account for actual responsibility after choice."
+      ],
+      "mindmap_cluster": "Potential to Actual"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/superposition-to-potential-choice",
+      "atom_type": "bridge_candidate",
+      "title": "Superposition to Potential Choice",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/superposition",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/potential-choice",
+      "bridge_grade": "candidate_correspondence",
+      "claim": "Superposition and potential choice share a before-actualization structure: multiple possible contributions or paths remain unresolved until the system's later condition is specified.",
+      "preserved_properties": [
+        "unresolved possibility",
+        "transition to determinate outcome",
+        "need for actualization or measurement condition",
+        "distinction between potential and lived result"
+      ],
+      "not_claimed": [
+        "Human choice is not claimed to be literal quantum collapse.",
+        "Faith is not reduced to measurement physics.",
+        "The bridge does not solve the measurement problem."
+      ],
+      "master_equation_roles": [
+        "actualization_gate",
+        "measurement_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-027",
+        "tp:master-equation/01/ME-01-046"
+      ],
+      "negative_guards": [
+        "Use careful actualization language before quantum-collapse language.",
+        "Bridge grade remains candidate until compatibility conditions are formalized."
+      ],
+      "kill_conditions": [
+        "The bridge requires a false popular observer-effect claim.",
+        "The spiritual side cannot distinguish potential from actualized action."
+      ],
+      "mindmap_cluster": "Potential to Actual"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/physical/random-motion",
+      "atom_type": "physical_definition",
+      "title": "Random Motion",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "Random motion is motion too irregular or complex to predict particle by particle, but still describable in aggregate.",
+      "technical_definition": "Random motion is unpredictable or effectively stochastic motion characterized statistically across populations, distributions, or ensembles.",
+      "where_it_manifests": [
+        "molecular motion",
+        "Brownian motion",
+        "turbulent flow",
+        "noise",
+        "swarming",
+        "diffusion",
+        "statistical mechanics"
+      ],
+      "why_it_manifests_there": "Random motion appears where microscopic detail is too numerous, sensitive, or inaccessible for direct deterministic tracking, while aggregate measures still reveal structure.",
+      "master_equation_roles": [
+        "failure_mode",
+        "measurement_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-023",
+        "tp:master-equation/01/ME-01-022"
+      ],
+      "misuse_guards": [
+        "Do not equate random with meaningless.",
+        "Do not claim aggregate pattern implies divine message.",
+        "Do not ignore stochastic model assumptions."
+      ],
+      "kill_conditions": [
+        "The motion is predictable under the intended model and not random in the stated sense.",
+        "No aggregate measure can be defined."
+      ],
+      "mindmap_cluster": "Noise and Disorder"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/hidden-aggregate-order",
+      "atom_type": "spiritual_definition",
+      "title": "Hidden Aggregate Order",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Hidden aggregate order is the claim that a situation can look chaotic at the local level while still revealing pattern, consequence, or providential structure at a larger scale.",
+      "technical_definition": "Hidden aggregate order is a theological and interpretive concept for patterns that are not visible in isolated events but become meaningful across many events, persons, choices, or consequences.",
+      "where_it_manifests": [
+        "providence",
+        "community patterns",
+        "habit formation",
+        "generational consequence",
+        "sanctification over time",
+        "discernment across repeated fruit",
+        "deception detection"
+      ],
+      "why_it_manifests_there": "Human beings often see events locally and immediately, while moral and spiritual patterns may become visible only through repeated outcomes.",
+      "master_equation_roles": [
+        "failure_mode",
+        "measurement_condition"
+      ],
+      "misuse_guards": [
+        "Do not use hidden order to baptize every event as obvious providence.",
+        "Do not ignore suffering or contingency.",
+        "Do not infer intention from pattern without evidence."
+      ],
+      "kill_conditions": [
+        "The claimed pattern disappears under fair controls.",
+        "The interpretation cannot distinguish providence from hindsight bias."
+      ],
+      "mindmap_cluster": "Noise and Disorder"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/random-motion-to-hidden-aggregate-order",
+      "atom_type": "bridge_candidate",
+      "title": "Random Motion to Hidden Aggregate Order",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/random-motion",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/hidden-aggregate-order",
+      "bridge_grade": "structural_analogy",
+      "claim": "Random motion and hidden aggregate order share a scale distinction: local unpredictability does not exclude aggregate intelligibility.",
+      "preserved_properties": [
+        "local unpredictability",
+        "aggregate pattern",
+        "statistical visibility",
+        "scale-dependent interpretation"
+      ],
+      "not_claimed": [
+        "Statistical pattern does not automatically prove providence.",
+        "Random motion is not spiritual disorder.",
+        "Aggregate order is not always moral meaning."
+      ],
+      "master_equation_roles": [
+        "failure_mode",
+        "measurement_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-023",
+        "tp:master-equation/01/ME-01-022"
+      ],
+      "negative_guards": [
+        "Require controls before using pattern as evidence.",
+        "Keep this bridge analogy-level until empirical or formal tests exist."
+      ],
+      "kill_conditions": [
+        "The aggregate pattern fails under fair sampling.",
+        "The interpretation becomes unfalsifiable hindsight."
+      ],
+      "mindmap_cluster": "Noise and Disorder"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/physical/noise",
+      "atom_type": "physical_definition",
+      "title": "Noise",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "Noise is irregular, broadband, unwanted, or unresolved signal activity that interferes with clear detection or communication.",
+      "technical_definition": "Noise is a random, broadband, turbulent, or otherwise non-signal-like component in a measurement, acoustic, communication, or physical system.",
+      "where_it_manifests": [
+        "sound",
+        "turbulent flow",
+        "speech production",
+        "measurement error",
+        "electrical systems",
+        "communication channels",
+        "thermal systems",
+        "statistical data"
+      ],
+      "why_it_manifests_there": "Noise appears where many uncontrolled contributions enter the channel or where resolution is insufficient to separate structured signal from background activity.",
+      "master_equation_roles": [
+        "failure_mode",
+        "measurement_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-022",
+        "tp:master-equation/01/ME-01-023"
+      ],
+      "misuse_guards": [
+        "Do not call every unwanted message noise.",
+        "Do not assume noise is meaningless in every context.",
+        "Do not ignore measurement limitations."
+      ],
+      "kill_conditions": [
+        "The supposed noise can be decoded as a stable signal under the correct model.",
+        "The term is used to dismiss evidence rather than analyze it."
+      ],
+      "mindmap_cluster": "Noise and Disorder"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/confusion",
+      "atom_type": "spiritual_definition",
+      "title": "Confusion",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Confusion is a condition where signals of truth, desire, fear, deception, and limitation are mixed enough that faithful response becomes harder.",
+      "technical_definition": "Spiritual confusion is a distortion of discernment in which meaningful signal is obscured by falsehood, noise, fragmentation, fear, or competing allegiances.",
+      "where_it_manifests": [
+        "temptation",
+        "deception",
+        "false teaching",
+        "anxiety",
+        "divided desire",
+        "community conflict",
+        "decision paralysis"
+      ],
+      "why_it_manifests_there": "Confusion appears when the channel between truth and action is distorted by mixed motives, false frames, bad information, or unresolved fear.",
+      "master_equation_roles": [
+        "failure_mode",
+        "measurement_condition"
+      ],
+      "misuse_guards": [
+        "Do not call honest complexity confusion.",
+        "Do not use confusion language to control others.",
+        "Do not reduce confusion to lack of faith."
+      ],
+      "kill_conditions": [
+        "The concept cannot distinguish confusion from complexity.",
+        "The diagnosis ignores available truth, evidence, or counsel."
+      ],
+      "mindmap_cluster": "Noise and Disorder"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/noise-to-confusion",
+      "atom_type": "bridge_candidate",
+      "title": "Noise to Confusion",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/noise",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/confusion",
+      "bridge_grade": "structural_analogy",
+      "claim": "Noise and confusion share a signal-obscuring structure: the problem is not always absence of truth, but distortion, interference, or insufficient resolution.",
+      "preserved_properties": [
+        "signal obscuration",
+        "interference",
+        "reduced fidelity",
+        "need for filtering or discernment",
+        "distinction between silence and corrupted channel"
+      ],
+      "not_claimed": [
+        "Confusion is not literal acoustic or electrical noise.",
+        "Noise analysis does not prove spiritual deception.",
+        "Filtering a signal is not the same as sanctification."
+      ],
+      "master_equation_roles": [
+        "failure_mode",
+        "measurement_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-022",
+        "tp:master-equation/01/ME-01-023"
+      ],
+      "negative_guards": [
+        "Keep analogy-level unless a formal signal model is built.",
+        "Do not dismiss hard evidence as noise without method."
+      ],
+      "kill_conditions": [
+        "The bridge cannot identify signal, channel, or distortion.",
+        "The confusion claim is used to evade correction."
+      ],
+      "mindmap_cluster": "Noise and Disorder"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/physical/speed-limit",
+      "atom_type": "physical_definition",
+      "title": "Speed Limit",
+      "domain": "physics",
+      "status": "draft_definition",
+      "plain_definition": "A speed limit is a structural boundary on how fast causal influence, motion, or task completion can occur under a theory.",
+      "technical_definition": "A speed limit is a physical constraint, such as the relativistic causal limit, that marks some tasks as impossible rather than merely difficult within a model's range of validity.",
+      "where_it_manifests": [
+        "special relativity",
+        "causal structure",
+        "signal propagation",
+        "light-speed constraints",
+        "range-of-validity boundaries",
+        "constructor-theory impossible tasks"
+      ],
+      "why_it_manifests_there": "Speed limits appear where a theory's structure forbids certain transformations, not because engineering is weak but because coherence would break if the boundary were crossed.",
+      "master_equation_roles": [
+        "limit_condition",
+        "boundary_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-024",
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "misuse_guards": [
+        "Do not confuse physical impossibility with moral prohibition.",
+        "Do not treat practical difficulty as structural impossibility.",
+        "Do not use speed-limit language outside a stated theory."
+      ],
+      "kill_conditions": [
+        "The alleged limit is shown to be practical rather than structural.",
+        "The model has no stated range of validity."
+      ],
+      "mindmap_cluster": "Limit and Law"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/spiritual/creaturely-limit",
+      "atom_type": "spiritual_definition",
+      "title": "Creaturely Limit",
+      "domain": "theology",
+      "status": "draft_definition",
+      "plain_definition": "Creaturely limit is the boundary that comes from being finite, created, embodied, and not God.",
+      "technical_definition": "Creaturely limit names the conditions under which created agents know, act, love, choose, and suffer without possessing divine omniscience, omnipotence, or self-grounding existence.",
+      "where_it_manifests": [
+        "embodiment",
+        "time",
+        "mortality",
+        "ignorance",
+        "dependence",
+        "obedience",
+        "humility",
+        "worship"
+      ],
+      "why_it_manifests_there": "Created beings are real but not ultimate. Their limits are not merely defects; they are part of the structure of receiving life rather than originating it.",
+      "master_equation_roles": [
+        "limit_condition",
+        "boundary_condition"
+      ],
+      "misuse_guards": [
+        "Do not call every oppression a creaturely limit.",
+        "Do not use limit language to excuse injustice.",
+        "Do not confuse finite humility with worthlessness."
+      ],
+      "kill_conditions": [
+        "The concept cannot distinguish good limits from corrupt restrictions.",
+        "The definition collapses creaturehood into failure."
+      ],
+      "mindmap_cluster": "Limit and Law"
+    },
+    {
+      "atom_id": "tp:proposal/general-theory/bridge/speed-limit-to-creaturely-limit",
+      "atom_type": "bridge_candidate",
+      "title": "Speed Limit to Creaturely Limit",
+      "domain": "cross-domain",
+      "status": "draft_bridge",
+      "physical_atom": "tp:proposal/general-theory/physical/speed-limit",
+      "spiritual_atom": "tp:proposal/general-theory/spiritual/creaturely-limit",
+      "bridge_grade": "candidate_correspondence",
+      "claim": "Speed limit and creaturely limit share a boundary-of-coherence structure: some limits are not failures of power but conditions for an ordered world.",
+      "preserved_properties": [
+        "real boundary",
+        "coherence-preserving constraint",
+        "distinction between impossible and difficult",
+        "humility before structure",
+        "range of validity"
+      ],
+      "not_claimed": [
+        "Moral law is not derived directly from special relativity.",
+        "Creaturely limit is not the speed of light.",
+        "Physical impossibility does not equal sin."
+      ],
+      "master_equation_roles": [
+        "limit_condition",
+        "boundary_condition"
+      ],
+      "supports_master_equation_atoms": [
+        "tp:master-equation/01/ME-01-024",
+        "tp:master-equation/01/ME-01-060"
+      ],
+      "negative_guards": [
+        "Distinguish structural impossibility, practical difficulty, moral prohibition, and mystery.",
+        "Bridge remains candidate until limits are classified cleanly."
+      ],
+      "kill_conditions": [
+        "The bridge treats all limits as good without distinguishing corruption.",
+        "The mapping cannot preserve the difference between physical impossibility and theological finitude."
+      ],
+      "mindmap_cluster": "Limit and Law"
+    }
+  ],
+  "paper_seeds": [
+    {
+      "title": "Peace Is Not Nothing Happening",
+      "primary_atoms": [
+        "tp:proposal/general-theory/physical/equilibrium",
+        "tp:proposal/general-theory/spiritual/peace",
+        "tp:proposal/general-theory/bridge/equilibrium-to-peace"
+      ],
+      "truth_bomb": "A stable system is not one without forces; it is one whose forces have found their truthful relation."
+    },
+    {
+      "title": "What Crosses the Boundary",
+      "primary_atoms": [
+        "tp:proposal/general-theory/physical/flux",
+        "tp:proposal/general-theory/spiritual/transfer",
+        "tp:proposal/general-theory/bridge/flux-to-transfer"
+      ],
+      "truth_bomb": "A boundary does not make cost disappear; it makes transfer visible."
+    },
+    {
+      "title": "The Difference Between Noise and Silence",
+      "primary_atoms": [
+        "tp:proposal/general-theory/physical/noise",
+        "tp:proposal/general-theory/spiritual/confusion",
+        "tp:proposal/general-theory/bridge/noise-to-confusion"
+      ],
+      "truth_bomb": "Noise means something is happening; it does not yet tell us whether anything is being said."
+    }
+  ],
+  "mindmap_layers": [
+    {
+      "layer": "center",
+      "description": "Full Master Equation and ten factor atoms."
+    },
+    {
+      "layer": "physical_grammar",
+      "description": "Physical support atoms: state, table, conservation, flux, energy flux, equilibrium, superposition, random motion, noise, speed limit."
+    },
+    {
+      "layer": "spiritual_meaning",
+      "description": "Spiritual atoms: condition, discernment, moral accounting, transfer, active giving, peace, potential choice, hidden aggregate order, confusion, creaturely limit."
+    },
+    {
+      "layer": "bridge_candidates",
+      "description": "Bridge atoms with grades, guards, and kill conditions."
+    },
+    {
+      "layer": "outputs",
+      "description": "Paper seeds, everyday translations, receipts, objections, and later falsification tests."
+    }
+  ],
+  "next_actions": [
+    "Check for duplicate atoms in existing JSON-LD and Lane 4 ledger files.",
+    "Adapt this proposal pack to the current schema or create a proposal schema.",
+    "Render a dry-run mind map from this pack.",
+    "Review bridge grades manually before any import.",
+    "Promote only after source and negative-guard review."
+  ]
+}

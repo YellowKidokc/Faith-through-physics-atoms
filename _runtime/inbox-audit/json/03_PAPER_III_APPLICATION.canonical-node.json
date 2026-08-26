@@ -1,0 +1,73 @@
+{
+  "source_id": "03_PAPER_III_APPLICATION",
+  "title": "Paper III  -  Cross-Domain Application",
+  "canonical_node": {
+    "axiom": "A principle that works in one domain is local; if it works in three independent domains, it is structural.",
+    "definitions": [
+      "Structural isomorphism: shared logical architecture that constrains predictions in both domains.",
+      "Analogical similarity: pattern looks similar but does not constrain predictions.",
+      "Three-Domain Rule: a universal principle must work in at least three independent domains."
+    ],
+    "derivation": [
+      "Paper I establishes a claim in an original domain.",
+      "Paper III applies the same claim to an unexpected domain.",
+      "If the claim produces novel testable predictions in the new domain, it is structural.",
+      "If it works in three independent domains, it is universal."
+    ],
+    "action": "Apply the Paper I claim to an unexpected domain, test predictions, and assess structural isomorphism.",
+    "boundary": [
+      "Does not claim universality from a single application.",
+      "Does not force analogies; must be structural.",
+      "Does not replace domain expertise."
+    ],
+    "test": [
+      "Can the claim produce novel testable predictions in the new domain",
+      "Does the isomorphism constrain predictions in both domains",
+      "Does the application explain phenomena that existing domain theories do not"
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Paper I claim",
+      "Domain-specific data",
+      "Domain expertise"
+    ],
+    "dg2_new_capability": "Cross-domain validation of a principle, enabling universality assessment.",
+    "dg3_preserved_floor": "The original claim remains intact; application does not alter it.",
+    "dg4_collapse_if_removed": "Without cross-domain application, universality cannot be established.",
+    "dg5_translation_registers": [
+      "Structural isomorphism",
+      "Prediction",
+      "Kill conditions"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Use as a template for cross-domain application; requires concrete instantiation."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming universality from one application.",
+      "Confusing analogy with structural isomorphism.",
+      "Ignoring domain-specific disanalogies."
+    ],
+    "kill_conditions": [
+      "Isomorphism is analogical only.",
+      "Domain experts identify fatal disanalogy.",
+      "No novel testable prediction produced."
+    ],
+    "lean_target": "A formal framework for detecting structural isomorphism across domains."
+  },
+  "plain_summary": "This document is a template for applying a claim from Paper I to an unexpected domain, with emphasis on structural isomorphism and kill conditions. It does not itself establish any empirical result.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\03_PAPER_III_APPLICATION.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\03_PAPER_III_APPLICATION.canonical-node.json"
+  }
+}

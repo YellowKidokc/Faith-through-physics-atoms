@@ -1,0 +1,335 @@
+{
+  "generatedAt": "2026-07-28",
+  "callable": "_scripts/fruit_audit.py",
+  "stdinContract": "Pass '-' as the path and pipe text on stdin.",
+  "fileContract": "Pass a local paper path as argv[1].",
+  "output": "JSON scorecard with one row per fruit.",
+  "boundary": "Canonical Fruits of the Spirit plus companion Theophysics virtues. Duplicate fruit labels found in anti-fruit source lists are intentionally excluded from anti-fruit scoring.",
+  "dependsOn": [
+    "tp:axioms/01/AX-151",
+    "tp:master-equation/01/ME-EQ-009",
+    "tp:master-equation/01/ME-EQ-010"
+  ],
+  "fruits": [
+    {
+      "name": "Love",
+      "symbol": "L",
+      "fruitClass": "canonical-fruit",
+      "axiomID": "AX-152",
+      "antiFruit": "Hatred",
+      "question": "Does the paper preserve the dignity and good of the other?",
+      "positiveMarkers": [
+        "love",
+        "sacrificial",
+        "neighbor",
+        "other",
+        "service",
+        "communion",
+        "restore",
+        "healing"
+      ],
+      "negativeMarkers": [
+        "hate",
+        "hatred",
+        "contempt",
+        "enemy",
+        "dehuman",
+        "revenge",
+        "despise"
+      ]
+    },
+    {
+      "name": "Joy",
+      "symbol": "J",
+      "fruitClass": "canonical-fruit",
+      "axiomID": "AX-153",
+      "antiFruit": "Despair",
+      "question": "Does the paper produce durable gladness rather than collapse into despair?",
+      "positiveMarkers": [
+        "joy",
+        "delight",
+        "gratitude",
+        "resilience",
+        "celebrate",
+        "glad"
+      ],
+      "negativeMarkers": [
+        "despair",
+        "hopeless",
+        "nihil",
+        "meaningless",
+        "fatalism",
+        "despond"
+      ]
+    },
+    {
+      "name": "Peace",
+      "symbol": "P",
+      "fruitClass": "canonical-fruit",
+      "axiomID": "AX-154",
+      "antiFruit": "Conflict",
+      "question": "Does the paper reduce contradiction and disorder rather than amplify conflict?",
+      "positiveMarkers": [
+        "peace",
+        "reconcile",
+        "harmony",
+        "stability",
+        "equilibrium",
+        "nonviolent",
+        "rest"
+      ],
+      "negativeMarkers": [
+        "conflict",
+        "anxiety",
+        "panic",
+        "fear",
+        "threat",
+        "terror",
+        "agitation"
+      ]
+    },
+    {
+      "name": "Patience",
+      "symbol": "Pa",
+      "fruitClass": "canonical-fruit",
+      "axiomID": "AX-155",
+      "antiFruit": "Impatience",
+      "question": "Does the paper honor time, process, and delayed fruit?",
+      "positiveMarkers": [
+        "patience",
+        "long-suffering",
+        "endurance",
+        "delayed",
+        "wait",
+        "slow",
+        "time horizon",
+        "persever"
+      ],
+      "negativeMarkers": [
+        "impatient",
+        "impatience",
+        "rush",
+        "instant",
+        "reactionary",
+        "short-term",
+        "impulsive"
+      ]
+    },
+    {
+      "name": "Kindness",
+      "symbol": "K",
+      "fruitClass": "canonical-fruit",
+      "axiomID": "AX-156",
+      "antiFruit": "Cruelty",
+      "question": "Does the paper export coherence to others at cost to itself?",
+      "positiveMarkers": [
+        "kindness",
+        "mercy",
+        "generous",
+        "gentle help",
+        "care",
+        "compassion",
+        "hospitality"
+      ],
+      "negativeMarkers": [
+        "cruel",
+        "cruelty",
+        "mock",
+        "punish",
+        "humiliate",
+        "extract",
+        "exploit"
+      ]
+    },
+    {
+      "name": "Goodness",
+      "symbol": "Go",
+      "fruitClass": "canonical-fruit",
+      "axiomID": "AX-157",
+      "antiFruit": "Corruption",
+      "question": "Does the paper align action with truth and repair?",
+      "positiveMarkers": [
+        "goodness",
+        "truth",
+        "integrity",
+        "justice",
+        "right",
+        "honest",
+        "repair",
+        "virtue"
+      ],
+      "negativeMarkers": [
+        "corrupt",
+        "corruption",
+        "deceive",
+        "lie",
+        "manipulate",
+        "bribe",
+        "rot",
+        "fraud"
+      ]
+    },
+    {
+      "name": "Faithfulness",
+      "symbol": "Fa",
+      "fruitClass": "canonical-fruit",
+      "axiomID": "AX-158",
+      "antiFruit": "Betrayal",
+      "question": "Does the paper keep covenantal consistency across time?",
+      "positiveMarkers": [
+        "faithful",
+        "faithfulness",
+        "covenant",
+        "promise",
+        "commitment",
+        "loyal",
+        "steadfast",
+        "trustworthy"
+      ],
+      "negativeMarkers": [
+        "betray",
+        "betrayal",
+        "abandon",
+        "treachery",
+        "unfaithful",
+        "break promise",
+        "disloyal"
+      ]
+    },
+    {
+      "name": "Gentleness",
+      "symbol": "Ge",
+      "fruitClass": "canonical-fruit",
+      "axiomID": "AX-159",
+      "antiFruit": "Harshness",
+      "question": "Does the paper calibrate force to necessity?",
+      "positiveMarkers": [
+        "gentle",
+        "gentleness",
+        "meek",
+        "calibrated",
+        "humble",
+        "noncoercive",
+        "tender",
+        "restrained"
+      ],
+      "negativeMarkers": [
+        "harsh",
+        "harshness",
+        "coerce",
+        "coercive",
+        "dominate",
+        "brutal",
+        "threaten",
+        "violent"
+      ]
+    },
+    {
+      "name": "Self-Control",
+      "symbol": "S",
+      "fruitClass": "canonical-fruit",
+      "axiomID": "AX-160",
+      "antiFruit": "Indulgence",
+      "question": "Does the paper show governed agency rather than impulse dominance?",
+      "positiveMarkers": [
+        "self-control",
+        "self_control",
+        "discipline",
+        "restraint",
+        "sober",
+        "temperance",
+        "govern",
+        "regulated"
+      ],
+      "negativeMarkers": [
+        "indulgence",
+        "addiction",
+        "compulsion",
+        "enslaved",
+        "impulse",
+        "uncontrolled",
+        "driven",
+        "obsession"
+      ]
+    },
+    {
+      "name": "Grace",
+      "symbol": "G",
+      "fruitClass": "companion-fruit",
+      "axiomID": "AX-150",
+      "antiFruit": "Self-Sufficiency",
+      "question": "Does the paper name the source of repair without pretending the closed system saves itself?",
+      "positiveMarkers": [
+        "grace",
+        "mercy",
+        "gift",
+        "forgive",
+        "forgiveness",
+        "external input",
+        "restore",
+        "unearned"
+      ],
+      "negativeMarkers": [
+        "self-sufficient",
+        "self saved",
+        "works suffice",
+        "earn salvation",
+        "merit alone",
+        "closed system"
+      ]
+    },
+    {
+      "name": "Hope",
+      "symbol": "H",
+      "fruitClass": "companion-fruit",
+      "axiomID": "AX-151",
+      "antiFruit": "Despair",
+      "question": "Does the paper open a durable future rather than merely diagnose collapse?",
+      "positiveMarkers": [
+        "hope",
+        "hoped",
+        "hopeful",
+        "promise",
+        "future",
+        "resurrection",
+        "renewal",
+        "not yet"
+      ],
+      "negativeMarkers": [
+        "despair",
+        "hopeless",
+        "nihil",
+        "meaningless",
+        "fatalism",
+        "despond"
+      ]
+    },
+    {
+      "name": "Humility",
+      "symbol": "Hu",
+      "fruitClass": "companion-fruit",
+      "axiomID": "AX-066a",
+      "antiFruit": "Pride",
+      "question": "Does the paper stay correctable under truth rather than using the framework to exalt itself?",
+      "positiveMarkers": [
+        "humility",
+        "humble",
+        "repent",
+        "teachability",
+        "receive",
+        "confess",
+        "listen",
+        "submitted"
+      ],
+      "negativeMarkers": [
+        "pride",
+        "arrogant",
+        "boast",
+        "dominate",
+        "self-exalt",
+        "unaccountable",
+        "superior"
+      ]
+    }
+  ]
+}

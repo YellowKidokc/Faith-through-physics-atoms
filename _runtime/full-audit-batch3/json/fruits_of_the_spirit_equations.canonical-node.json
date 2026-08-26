@@ -1,0 +1,78 @@
+{
+  "source_id": "fruits_of_the_spirit_equations",
+  "title": "THE FRUITS OF THE SPIRIT  -  COMPLETE FORMALIZATION",
+  "canonical_node": {
+    "axiom": "The nine Fruits of the Spirit are formalized as a 9-dimensional vector Phi, and their manifestation is a function of system coherence chi via a hyperbolic tangent phase transition.",
+    "definitions": [
+      "Fruits vector Phi = {Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control}",
+      "Anti-Fruits vector Phi = -Phi = {Hatred, Despair, Anxiety, Impatience, Cruelty, Corruption, Betrayal, Harshness, Addiction}",
+      "Coherence chi: system coherence, output of the Master Equation",
+      "Critical coherence threshold chi_c  0.30",
+      "Sensitivity coefficient _i for each Fruit i"
+    ],
+    "derivation": [
+      "Phi_i(chi) = tanh(_i(chi - chi_c))",
+      "For chi > chi_c, Phi_i > 0 (Fruits manifest); for chi < chi_c, Phi_i < 0 (Anti-Fruits manifest); at chi = chi_c, Phi_i = 0 (neutral)",
+      "Master Equation: dchi/dt = G*R_p*(1+E+S)*e^{-Q*C}*F*U*S_s - chi + K*D + Omega*T",
+      "The -chi term is always negative, implying coherence decays without external input",
+      "Empirical claim: nine independent domains correlate at R=0.73, p<10^-9 (5.7) from American data 1960-2000"
+    ],
+    "action": "Use the Phi vector and Master Equation to model and predict the manifestation of Fruits or Anti-Fruits based on system coherence, and to evaluate texts or systems for coherence signals.",
+    "boundary": [
+      "Does not provide a mechanism for measuring chi directly; it is an abstract order parameter",
+      "Does not establish causality between coherence and Fruits; only a mathematical mapping",
+      "Does not validate the theological claims; it is a formalization, not a proof",
+      "The empirical correlation is claimed but not independently verified in this document"
+    ],
+    "test": [
+      "Check that Phi_i(chi) is bounded in (-1, +1) and saturates at extremes",
+      "Verify that the Master Equation reduces to the stated form and that the -chi term is always negative",
+      "Attempt to reproduce the claimed empirical correlation (R=0.73) from the cited data",
+      "Assess whether the SBERT implementation actually measures coherence or merely semantic similarity"
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Master Equation (referenced but not fully derived here)",
+      "Definition of coherence chi (referenced from other conversations)",
+      "Empirical data from American population 1960-2000 (not provided)"
+    ],
+    "dg2_new_capability": "Provides a formal mathematical framework linking theological Fruits to a coherence parameter, enabling quantitative modeling and potential empirical testing.",
+    "dg3_preserved_floor": "Preserves the theological assertion that Fruits are emergent from alignment (connection to chi) rather than self-effort.",
+    "dg4_collapse_if_removed": "If the Phi vector or the tanh mapping is removed, the document loses its formal structure and reduces to a list of theological attributes without quantitative linkage.",
+    "dg5_translation_registers": [
+      "Theological: Fruits of the Spirit, Grace, Repentance, Faith",
+      "Physical: Coherence, Entropy, Phase transition",
+      "Psychological: Positive affect, Self-control, Well-being"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Formalization with empirical claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a formal model; flag empirical claim as unverified; do not treat as proof."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The empirical correlation (R=0.73) is presented as confirmation but lacks methodological detail",
+      "The mathematical formalism may be mistaken for physical law rather than analogy",
+      "The claim that 'Anti-Fruits manifest automatically' could be overinterpreted as deterministic"
+    ],
+    "kill_conditions": [
+      "If the Master Equation is shown to be inconsistent or non-physical",
+      "If the empirical correlation cannot be reproduced with proper controls",
+      "If the tanh mapping is found to be arbitrary and not derived from first principles"
+    ],
+    "lean_target": "A formal model of Fruits as emergent properties of coherence, with explicit caveats that it is a framework, not a proof."
+  },
+  "plain_summary": "This document formalizes the nine Fruits of the Spirit as a vector Phi that depends on a coherence parameter chi via a tanh function. It integrates a Master Equation and claims empirical support from population data. However, the empirical claim is not substantiated with data or methods, and the mathematical framework is an analogy rather than a proven physical law. The document is best treated as a speculative model, not an established result.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\fruits_of_the_spirit_equations.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch3\\json\\fruits_of_the_spirit_equations.canonical-node.json"
+  }
+}

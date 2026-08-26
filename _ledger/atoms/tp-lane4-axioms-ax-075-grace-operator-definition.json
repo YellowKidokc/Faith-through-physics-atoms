@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-075-grace-operator-definition",
+  "atom_uid": "sha256:5414e5fc0c979a5134260ca6e724deb91cc43fba2d8f2f4f147b6b9f3add391e",
+  "title": "AX-075 — Grace Operator Definition",
+  "claim": "Grace operator Ĝ ≡ external operator capable of σ: -1 → +1.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Ĝ = [[1,0],[1,0]]; Ĝ|-1⟩ = |+1⟩; Ĝ|+1⟩ = |+1⟩"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-074"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the operator definition is inconsistent",
+    "Demonstrate Ĝ leads to contradictions in the operator algebra",
+    "Show another operator achieves the same result"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-075-grace-operator-definition.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-075-grace-operator-definition.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:375f0e27141aa8aa7a18abfafac1d5bdb6af2e4fb3a45fadae898c849b471f68",
+      "event_uuid": "25b19aae-90a5-5749-86e1-cb27e6ae0f4e"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:e7fefad447d4ae74f3b00b57e2e86d9d5a414ac9a13ee5fcb23f84d15beb8f22",
+      "event_uuid": "e059f4ac-3bfe-5343-8556-e55b7f7a8886"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D9.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-075",
+  "original_node_id": "tp:axioms/01/AX-075",
+  "atom_uuid": "f920b849-a1dc-5af6-8128-3aca5eb5db53"
+}

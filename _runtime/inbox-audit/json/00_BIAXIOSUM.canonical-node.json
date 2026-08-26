@@ -1,0 +1,70 @@
+{
+  "source_id": "00_BIAXIOSUM",
+  "title": "BIAXIOSUM  -  Hubble Gradient",
+  "canonical_node": {
+    "axiom": "I know my lens. Therefore I exist in truth.",
+    "definitions": [
+      "Biaxiosum: the declared bias or ground from which an author operates.",
+      "Lens: the set of ontological, theological, and methodological commitments that shape interpretation.",
+      "Truth: alignment with the author's declared ground, not necessarily objective verification."
+    ],
+    "derivation": [
+      "The author declares personal biases (faith, intuition, belief in God).",
+      "The author asserts that the Founders declared their axioms, contrasting with hidden academic assumptions.",
+      "The author lists 24 properties of mathematical truth and classical divine attributes, claiming isomorphism.",
+      "The author concludes that analogy becomes identity at some point, implying a stronger connection.",
+      "The author states the Biaxiosum Rule: consistency of starting point throughout discourse."
+    ],
+    "action": "Declare one's biases and ground before proceeding with any thesis work.",
+    "boundary": [
+      "Does not establish the truth of the declared biases.",
+      "Does not prove the isomorphism between mathematical truth and divine attributes.",
+      "Does not provide empirical evidence for the 5.7 - 6.35 significance claim.",
+      "Does not define the 188 axioms or Master Equation chi."
+    ],
+    "test": [
+      "Check that the author's declared position is stated explicitly.",
+      "Check that the Biaxiosum Rule is applied consistently in subsequent arguments.",
+      "Check that the 24-property table is not used as proof of identity without further support."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [],
+    "dg2_new_capability": "Provides a framework for declaring epistemic bias and a rule for consistency in discourse.",
+    "dg3_preserved_floor": "No prior floor is preserved; this is a foundational declaration.",
+    "dg4_collapse_if_removed": "Without this, the thesis lacks explicit grounding and consistency rule, but the core physics claims remain unaffected.",
+    "dg5_translation_registers": [
+      "epistemological honesty",
+      "declared bias",
+      "consistency rule"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "epistemological declaration",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The 24-property table is presented as identity, but it is only an analogy.",
+      "The claim of 5.7 - 6.35 significance is unverified and may be overstated.",
+      "The Biaxiosum Rule could be used to dismiss valid criticism by labeling it as inconsistent bias."
+    ],
+    "kill_conditions": [
+      "If the 24-property table is used as proof of divine identity without further evidence.",
+      "If the Biaxiosum Rule is used to reject counterarguments solely based on the arguer's bias."
+    ],
+    "lean_target": "epistemological honesty"
+  },
+  "plain_summary": "This document declares the author's biases and establishes a rule for consistent discourse. It includes a table comparing mathematical truth and divine attributes, but does not provide proof of identity. The document is a foundational declaration, not a scientific claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\00_BIAXIOSUM.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\00_BIAXIOSUM.canonical-node.json"
+  }
+}

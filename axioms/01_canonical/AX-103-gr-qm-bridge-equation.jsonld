@@ -1,0 +1,103 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-103",
+  "nodeID": "tp:axioms/01/AX-103",
+  "claimID": "tp:AXIOMS/E13.1",
+  "name": "GR-QM Bridge Equation",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "mathematical",
+  "statementTechnical": "G_μν + Λg_μν = (8πG/c⁴)T_μν + κχ_μν — the bridge equation.",
+  "statementPlain": "G_μν + Λg_μν = (8πG/c⁴)T_μν + κχ_μν — the bridge equation.",
+  "mathematicalForm": "G_μν + Λg_μν = (8πG/c⁴)T_μν + κχ_μν",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-100",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-101",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-102",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "equation"
+  ],
+  "keywords": [
+    "E13.1",
+    "Q5",
+    "Material",
+    "Equation"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the χ_μν term violates energy-momentum conservation. Demonstrate the modified equation gives wrong predictions for known gravitational phenomena.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 105
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-103",
+    "oldID": "E13.1",
+    "treeLevel": "Q5",
+    "treeBranch": "Q5-J (Unification equation)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Material",
+    "tier": "2",
+    "newType": "Equation",
+    "logicalForce": "formal proposal",
+    "formalizableInLean": "yes",
+    "leanKind": "def / proposition with typed variables",
+    "riskLevel": "medium",
+    "kernelRole": "definitionRole",
+    "moduleID": "M13",
+    "moduleTitle": "GR-QM Chi Field Physics",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Bridge equation propagates to dark energy, Friedmann modification, and cosmological predictions.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

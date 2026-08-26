@@ -1,0 +1,83 @@
+{
+  "source_id": "test09_constraint_satisfaction",
+  "title": "test09_constraint_satisfaction.ipynb",
+  "canonical_node": {
+    "axiom": "A valid governance/restoration strategy must satisfy all six constraints simultaneously: free will preserved, grace available, justice maintained, community stable, entropy reversible, coherence achievable.",
+    "definitions": [
+      "Free will preserved: the solution cannot override individual choice.",
+      "Grace available: provision for restoration must be accessible.",
+      "Justice maintained: sin debt must be accounted for, not ignored.",
+      "Community stable: the social system must remain functional over time.",
+      "Entropy reversible: the approach must be capable of reversing accumulated decay.",
+      "Coherence achievable: the end state must allow coherence, not just reduce damage.",
+      "Strategy: a proposed governance/restoration approach evaluated against the constraints."
+    ],
+    "derivation": [
+      "Define six constraints that any valid strategy must satisfy.",
+      "Define six candidate strategies: Dictator, Instant Fix, Biblical, Progressive, Constant Low, Absent.",
+      "Evaluate each strategy against each constraint categorically.",
+      "Dictator fails free will; Instant Fix fails community stability and entropy; Progressive fails justice and entropy; Constant Low fails entropy; Absent fails grace, justice, entropy, and coherence.",
+      "Only Biblical satisfies all six constraints simultaneously.",
+      "Conclusion: Biblical strategy is uniquely optimal in this constraint satisfaction model."
+    ],
+    "action": "The system should evaluate any proposed governance/restoration strategy against the six constraints and flag it as valid only if all six are satisfied.",
+    "boundary": [
+      "This test does not prove the biblical strategy is objectively true or divinely inspired.",
+      "It does not model real-world dynamics or probabilistic outcomes.",
+      "It does not compare strategies on any other criteria beyond the six stated constraints.",
+      "It does not claim that the constraints are exhaustive or universally agreed upon."
+    ],
+    "test": [
+      "Check that each strategy is evaluated against all six constraints.",
+      "Verify that the evaluation is categorical (satisfies/violates) and not probabilistic.",
+      "Confirm that the result is reproducible at any seed because the constraints are categorical.",
+      "Check that the conclusion only claims uniqueness within the defined set of strategies and constraints."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "test09_results.json (the evaluation results)",
+      "The definitions of the six constraints and six strategies as stated in the document"
+    ],
+    "dg2_new_capability": "Provides a discrete, categorical constraint satisfaction evaluation of six named strategies, demonstrating that only the biblical strategy satisfies all six constraints simultaneously.",
+    "dg3_preserved_floor": "Preserves the prior capability of evaluating strategies against individual constraints, but adds a simultaneous multi-constraint check.",
+    "dg4_collapse_if_removed": "If this node is removed, the suite loses its highest-level structural comparison of strategies, reducing the empirical suite to text statistics and individual constraint checks without a holistic uniqueness claim.",
+    "dg5_translation_registers": [
+      "constraint satisfaction problem",
+      "categorical evaluation",
+      "strategy comparison",
+      "biblical uniqueness claim"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical result from a computational model",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "C",
+    "recommended_atom_action": "preserve as a reproducible computational experiment, but do not treat as proof of theological truth"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims 'uniquely optimal' but only within the defined set of six strategies and six constraints.",
+      "The conclusion may be interpreted as proving the biblical strategy is objectively superior, which is not established.",
+      "The constraints are chosen by the author and may not be exhaustive or universally accepted.",
+      "The evaluation is categorical and does not account for degrees of satisfaction or real-world complexity."
+    ],
+    "kill_conditions": [
+      "If any constraint is shown to be incorrectly defined or evaluated.",
+      "If a seventh strategy is found that also satisfies all six constraints.",
+      "If the evaluation is shown to be inconsistent or non-reproducible.",
+      "If the constraints are shown to be biased toward the biblical strategy by design."
+    ],
+    "lean_target": "A reproducible constraint satisfaction model that demonstrates the biblical strategy satisfies all six stated constraints, without overclaiming uniqueness beyond the defined scope."
+  },
+  "plain_summary": "This document describes a Colab notebook that evaluates six governance strategies against six constraints. It claims that only the biblical strategy satisfies all six constraints, making it uniquely optimal within that set. The test is categorical and reproducible, but the conclusion is limited to the defined constraints and strategies, and does not prove theological truth.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test09_constraint_satisfaction.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test09_constraint_satisfaction.canonical-node.json"
+  }
+}

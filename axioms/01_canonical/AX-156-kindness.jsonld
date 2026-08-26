@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-156",
+  "nodeID": "tp:axioms/01/AX-156",
+  "claimID": "tp:AXIOMS/F5",
+  "name": "Kindness",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "empirical_anchor",
+  "statementTechnical": "Kindness = rate of coherence transfer from self to others at personal cost.",
+  "statementPlain": "Kindness = rate of coherence transfer from self to others at personal cost.",
+  "mathematicalForm": "F_Kindness = ΔC_other / -ΔC_self",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-151",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence"
+  ],
+  "keywords": [
+    "F5",
+    "Q10",
+    "Relational",
+    "ObservableDomain"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show kindness without coherence transfer. Show coherence transfer that isn't kind.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 158
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-156",
+    "oldID": "F5",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-AF (Fruit 5)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Relational",
+    "tier": "2",
+    "newType": "ObservableDomain",
+    "logicalForce": "empirical hypothesis",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / outside proof kernel",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M20",
+    "moduleTitle": "Universal Coherence / Fruits",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES",
+    "intendedStatus": "classified",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

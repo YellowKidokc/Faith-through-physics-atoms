@@ -1,0 +1,83 @@
+{
+  "source_id": "maxwell_mirror_verification",
+  "title": "Maxwell Mirror Verification: EK Subspace Projection",
+  "canonical_node": {
+    "axiom": "The chi-field's E-K subspace, extracted from the 10D kinetic matrix, yields a 2D dynamical system that structurally mirrors Maxwell's equations in its coupled oscillation, source terms, and conservation laws, within acknowledged scalar-versus-vector limitations.",
+    "definitions": [
+      "chi-field: a 10-dimensional scalar field theory with a Lagrangian and kinetic matrix.",
+      "E (index 2): the electromagnetism/truth component of the chi-field.",
+      "K (index 5): the information (Shannon entropy)/logos component.",
+      "E-K subspace: the 2D block of the 10x10 mass matrix corresponding to indices 2 and 5.",
+      "Mass matrix: Hessian of the Lagrangian with respect to velocities.",
+      "Maxwell mirror: the structural analogy between the E-K subsystem and classical electromagnetism."
+    ],
+    "derivation": [
+      "The 10x10 mass matrix is computed via JAX autodifferentiation.",
+      "The 2x2 E-K block is extracted and verified to be symmetric, positive definite, and well-conditioned.",
+      "The dynamics matrix MV is computed at the E-K operating point.",
+      "A 500-trial scan identifies oscillatory operating points, yielding natural frequencies  and .",
+      "Structural comparison of Maxwell's EM Lagrangian and the E-K restricted Lagrangian shows analogous quadratic forms, coupling, source terms, and conservation laws.",
+      "All five symmetry pairs are compared; EK coupling is consistent with other pairs and stronger than non-pair cross-terms.",
+      "RK4 integration over 2000 steps and FFT analysis confirm E and K oscillate at the same frequency within numerical precision."
+    ],
+    "action": "Run the five tests (M1-M5) to verify that the E-K subspace of the chi-field reproduces Maxwell-type dynamics, and report the results with explicit caveats about scalar versus vector differences.",
+    "boundary": [
+      "Does not claim a full identity with Maxwell's equations; the chi-field is scalar, EM is vector.",
+      "Does not claim a completed gauge field formulation.",
+      "Does not claim physical equivalence beyond structural containment.",
+      "Does not extend to experimental validation or predictive power."
+    ],
+    "test": [
+      "M1: E-K block extraction yields symmetric, positive definite, well-conditioned 2x2 matrix.",
+      "M2: Dynamics matrix at oscillatory operating point yields two natural frequencies.",
+      "M3: Side-by-side Lagrangian comparison shows analogous structure in coupling, source, and conservation.",
+      "M4: EK coupling is consistent with other symmetry pairs and stronger than non-pair cross-terms.",
+      "M5: RK4 integration and FFT show E and K oscillate at the same frequency within numerical precision."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "chi-field Lagrangian and kinetic matrix definition",
+      "JAX autodifferentiation for Hessian computation",
+      "Numerical methods: RK4, FFT, matrix operations"
+    ],
+    "dg2_new_capability": "Provides a computational verification that the E-K subspace of the chi-field exhibits Maxwell-like coupled oscillations, offering a concrete structural bridge between the chi-field and classical electromagnetism.",
+    "dg3_preserved_floor": "Preserves the chi-field's 10D structure and the specific roles of E and K as defined; does not alter the underlying Lagrangian.",
+    "dg4_collapse_if_removed": "If this node is removed, the claim that Maxwell's equations are contained within the chi-field loses its primary computational support, reducing the EK mirror to an unverified assertion.",
+    "dg5_translation_registers": [
+      "chi-field E-K subspace  Maxwell's equations",
+      "mass matrix  Lagrangian quadratic form",
+      "natural frequencies  wave propagation speeds",
+      "source terms  charge/information conservation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "computational verification of structural analogy",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "Preserve as a verified computational demonstration of structural analogy, with explicit caveats about scalar vs vector differences and lack of gauge field completion."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting structural analogy as physical equivalence.",
+      "Ignoring the scalar vs vector distinction when claiming Maxwell containment.",
+      "Treating the computational tests as proof of physical reality rather than mathematical structure."
+    ],
+    "kill_conditions": [
+      "If the E-K block is not symmetric positive definite in a re-run.",
+      "If the oscillatory frequencies do not emerge in a re-run.",
+      "If the coupling strengths are not consistent with symmetry pairs in a re-run."
+    ],
+    "lean_target": "A verified computational demonstration that the E-K subspace of the chi-field exhibits Maxwell-like dynamics, without overclaiming physical identity."
+  },
+  "plain_summary": "This notebook computationally tests whether the E-K subspace of a 10D chi-field reproduces Maxwell-type dynamics. Five tests confirm coupled oscillations, structural analogies in Lagrangian and conservation laws, and consistent pair coupling. The mirror holds computationally, but the chi-field is scalar while EM is vector, so full identity is not claimed. The result is a reproducible computational verification of structural containment.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\maxwell_mirror_verification.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\maxwell_mirror_verification.canonical-node.json"
+  }
+}

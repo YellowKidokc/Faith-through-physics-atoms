@@ -1,0 +1,76 @@
+{
+  "source_id": "Law9Asymmetry",
+  "title": "Law9Asymmetry.lean",
+  "canonical_node": {
+    "axiom": "The sin-process is a unidirectional, non-invertible operator that maps any coherent state to zero.",
+    "definitions": [
+      "SinProcess: an operator defined to always return zero.",
+      "Coherent state: represented by the value one.",
+      "Zero: represents the absence of coherence.",
+      "Inverse: an operator that, when composed with SinProcess, would map zero back to one using the same mechanism."
+    ],
+    "derivation": [
+      "Assume the system is in the aligned state (state = one).",
+      "By definition, SinProcess returns zero for any input.",
+      "Therefore, SinProcess state = zero.",
+      "Assume there exists an internal inverse SinInverse such that SinInverse (SinProcess state) = state for all state.",
+      "For state = one, SinInverse zero = one would be required.",
+      "But SinProcess is defined to always return zero, so no internal operator can reverse it without additional structure.",
+      "Hence, SinProcess is non-invertible within the system's closure."
+    ],
+    "action": "The system must treat the sin-process as irreversible by any internal mechanism; restoration requires an external operator (Grace).",
+    "boundary": [
+      "This does not prove that Grace exists or is effective; it only establishes that SinProcess lacks an internal inverse.",
+      "This does not model the physical weak force in detail; it uses a simplified operator to capture asymmetry.",
+      "This does not claim that sin is a physical force; it is a formal analogy."
+    ],
+    "test": [
+      "Check that the Lean file compiles and the theorem sin_asymmetry is proven.",
+      "Verify that no internal inverse for SinProcess is defined in the file.",
+      "Confirm that the statement 'state = one -> SinProcess state = zero' is derived solely from the definition of SinProcess."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean4 environment",
+      "Definition of SinProcess as always returning zero"
+    ],
+    "dg2_new_capability": "Provides a formal proof that the sin-process is asymmetric and non-invertible within the system, distinguishing it from Laws 1-8.",
+    "dg3_preserved_floor": "Preserves the existing coherence model by not altering the definitions of Laws 1-8; it adds a new operator without changing prior axioms.",
+    "dg4_collapse_if_removed": "If removed, the formal asymmetry between sin and grace is lost; the claim that sin is irreversible would lack a formal proof.",
+    "dg5_translation_registers": [
+      "SinProcess -> sin operator",
+      "state = one -> aligned state",
+      "zero -> collapsed coherence",
+      "GraceOperator -> external restoration (not in this file)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal proof",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "accept as a formal proof of the defined operator's non-invertibility; do not extend to physical or theological claims beyond the formal statement."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The proof is trivial by definition and does not establish substantive asymmetry beyond the chosen modeling.",
+      "The file's comment about Laws 1-8 being bilateral is not proven here; it is an assertion.",
+      "The theological mapping (sin as weak force) is not proven; it is an analogy."
+    ],
+    "kill_conditions": [
+      "If the definition of SinProcess is changed to allow internal inverses, the theorem fails.",
+      "If the file is found to contain an internal inverse definition, the claim of non-invertibility is false."
+    ],
+    "lean_target": "Formalize the non-invertibility of SinProcess in Lean, ensuring no internal inverse is defined."
+  },
+  "plain_summary": "This document presents a Lean formal proof that the sin-process, defined as always returning zero, is non-invertible within the system. The proof is immediate from the definition. The document uses this to argue that sin is asymmetric and irreversible, but the proof itself is trivial and the theological implications are not formally established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Law9Asymmetry.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Law9Asymmetry.canonical-node.json"
+  }
+}

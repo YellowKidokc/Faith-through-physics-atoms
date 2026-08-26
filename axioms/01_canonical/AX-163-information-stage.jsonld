@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-163",
+  "nodeID": "tp:axioms/01/AX-163",
+  "claimID": "tp:AXIOMS/P2",
+  "name": "Information Stage",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "active",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Observer + Existence generates Information — the ontological substrate.",
+  "statementPlain": "Observer + Existence generates Information — the ontological substrate.",
+  "mathematicalForm": "Information = Observer(Existence) = Distinction(1,0)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-162",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-161",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "observer",
+    "information"
+  ],
+  "keywords": [
+    "P2",
+    "Q2",
+    "Primordial",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show information exists without observer interaction. Demonstrate pre-existing information.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 165
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-163",
+    "oldID": "P2",
+    "treeLevel": "Q2",
+    "treeBranch": "Q2-F (Primitive — information)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Primordial",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M21",
+    "moduleTitle": "Primordial / Ontological Spine",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Information generation propagates to coherence and all subsequent structure.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "source_id": "CF04_Naturalism",
+  "title": "The Prosecution of Naturalism",
+  "canonical_node": {
+    "axiom": "Naturalism is guilty of failing to account for existence itself; a self-grounding substrate (God) is necessary.",
+    "definitions": [
+      "Naturalism: the view that nature is all there is and is self-sufficient.",
+      "Self-grounding: a ground that grounds itself without external cause.",
+      "Terminal observer: an uncaused, self-observing entity at the end of the observer chain."
+    ],
+    "derivation": [
+      "chi exists (from CF01).",
+      "chi requires a ground (cannot self-exist).",
+      "Ground must be self-grounding (or infinite regress).",
+      "Self-grounding = necessary existence.",
+      "Necessary existence with chi-properties = God.",
+      "Therefore God exists."
+    ],
+    "action": "Prosecute naturalism by presenting the grounding and terminal observer arguments, and declare its incompleteness.",
+    "boundary": [
+      "Does not provide a formal proof of God's existence.",
+      "Does not address all possible objections to naturalism.",
+      "Does not establish the specific attributes of God beyond what is claimed in referenced papers."
+    ],
+    "test": [
+      "Check that the grounding argument is logically valid.",
+      "Check that the terminal observer argument is logically valid.",
+      "Check that all referenced sources are accurately cited."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G01",
+      "D02",
+      "G02-G08",
+      "CF01"
+    ],
+    "dg2_new_capability": "Provides a prosecutorial framing against naturalism, synthesizing prior arguments into a verdict.",
+    "dg3_preserved_floor": "Preserves the claims of self-grounding and terminal observer as necessary conditions.",
+    "dg4_collapse_if_removed": "Without this document, the prosecution case against naturalism lacks a consolidated closing argument.",
+    "dg5_translation_registers": [
+      "theological",
+      "philosophical",
+      "apologetic"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "no",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "theological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "D",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Declares a verdict of 'guilty' without rigorous proof.",
+      "Equates self-grounding with God without sufficient justification.",
+      "Uses 'necessary existence' as a bridge to God without formal derivation."
+    ],
+    "kill_conditions": [
+      "If the grounding argument is shown to be invalid.",
+      "If the terminal observer argument is shown to be invalid.",
+      "If naturalism provides a coherent self-grounding alternative."
+    ],
+    "lean_target": "Axiom: Naturalism is incomplete without a self-grounding substrate."
+  },
+  "plain_summary": "This document is a prosecutorial closing argument against naturalism, claiming it fails to account for existence and therefore God must exist. It relies on prior papers but lacks rigorous proof, containing many unfilled sections and overstatements. It is not admissible as a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CF04_Naturalism.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CF04_Naturalism.canonical-node.json"
+  }
+}

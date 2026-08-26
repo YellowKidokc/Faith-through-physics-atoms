@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-166-incompleteness-stage",
+  "atom_uid": "sha256:adce17402bfb27ea72e00e073a7139e55e8347ab30ee361b3401ad684071578b",
+  "title": "AX-166 — Incompleteness Stage",
+  "claim": "System with agents and information is Gödel-incomplete — generates entropy it can't resolve.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "06-thermodynamics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Gödel(System(P0-P4)) → Incomplete → Generates(entropy)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-165"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show a self-complete system with agents",
+    "Demonstrate a formal system that proves its own consistency (violating Gödel)",
+    "Show entropy has non-informational source"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-166-incompleteness-stage.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-166-incompleteness-stage.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:7315b3d8022ba82cb09fbb2215225634702ddfe28c0e426d4686c27e089b81f9",
+      "event_uuid": "6d9fad7d-49e8-5a3e-b6fc-06f298de7820"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 06-thermodynamics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:14b9594272c474a438d76128f33d31b8dfb08a7afa3a2e212a1cd037c6509735",
+      "event_uuid": "a9e7eee1-e587-56b7-8b70-5a975074cbba"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P5",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-166",
+  "original_node_id": "tp:axioms/01/AX-166",
+  "atom_uuid": "b48858b6-8525-514f-8199-4ae7a970876a"
+}

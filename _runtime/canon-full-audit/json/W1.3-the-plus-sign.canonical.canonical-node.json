@@ -1,0 +1,85 @@
+{
+  "source_id": "W1.3-the-plus-sign.canonical",
+  "title": "The Plus Sign",
+  "canonical_node": {
+    "axiom": "Reality requires exactly three distinct functions in one unified operation to close the measurement regress.",
+    "definitions": [
+      "Plus sign: the operation that connects two things and produces a third thing that did not exist before.",
+      "Actualization: the operation that makes one possibility into one actuality, irreversibly, at a cost.",
+      "G (Generator): forward-facing, possibility; physically unitary evolution.",
+      "L (Logos/Selector): boundary, structure; physically basis selection.",
+      "A (Actualizer): backward-facing, record; physically thermodynamic irreversibility.",
+      "Triadic composition: three functions in one operation, internally unified, not an external chain."
+    ],
+    "derivation": [
+      "1+1=2 involves three things: two objects and a plus sign that acts.",
+      "General relativity faces forward (possibility); quantum mechanics faces backward (actuality).",
+      "They meet at the present, a zero-width boundary.",
+      "Actualization at that boundary is irreversible and costs energy (Landauer).",
+      "One function cannot both generate and collapse (reversible vs irreversible).",
+      "Two functions regress because the collapser needs its own collapser.",
+      "Three separate functions regress because they need a coordinator.",
+      "No collapse at all abandons the question.",
+      "Only three functions in one operation terminates the regress without external verifier."
+    ],
+    "action": "Adopt the triadic composition T = A  L  G as the structural core for interpreting measurement and unification.",
+    "boundary": [
+      "Does not prove the Christian Trinity true by physics alone.",
+      "Does not provide a testable prediction distinguishing from standard QM interpretations.",
+      "Does not extend from Boolean model to infinite-dimensional Hilbert space.",
+      "Does not derive the Born rule from Landauer cost."
+    ],
+    "test": [
+      "Check that any non-triadic structure (monadic, dyadic, quaternary) fails to terminate the measurement regress under the same definitions.",
+      "Verify the nine Lean 4 theorems compile without errors or sorry.",
+      "Attempt to find a counterexample where a non-triadic structure closes the chain."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Quantum measurement problem",
+      "Von Neumann chain",
+      "Landauer's principle",
+      "Lean 4 theorem prover"
+    ],
+    "dg2_new_capability": "Provides a structural argument that triadic composition is necessary to close the measurement regress, with machine-verified Boolean model.",
+    "dg3_preserved_floor": "Preserves the standard quantum measurement formalism and the irreversibility of actualization.",
+    "dg4_collapse_if_removed": "If the triadic composition is removed, the measurement regress remains open and no alternative closure is provided.",
+    "dg5_translation_registers": [
+      "G -> unitary evolution",
+      "L -> basis selection",
+      "A -> Landauer erasure",
+      "T -> composition of operations"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "structural necessity claim",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "C",
+    "recommended_atom_action": "archive as structural hypothesis with machine-checked Boolean model; flag as not yet extended to full QM"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the Trinity is proven by physics",
+      "Claiming the Boolean model extends to Hilbert space",
+      "Claiming a testable prediction exists",
+      "Claiming the derivation is independent of interpretation when it relies on specific assumptions"
+    ],
+    "kill_conditions": [
+      "A non-triadic structure that terminates the measurement regress without regress or contradiction",
+      "Failure of the Lean 4 theorems to compile in a corrected model",
+      "Demonstration that the Boolean model is not representative of quantum mechanics"
+    ],
+    "lean_target": "Formalize the triadic closure theorem in Lean 4 for a more general model, or find a counterexample."
+  },
+  "plain_summary": "The document argues that the measurement problem in quantum mechanics requires a triadic structure - three functions in one operation - to avoid infinite regress. It claims machine verification in a Boolean model but acknowledges the extension to real quantum mechanics is open. The identification with the Christian Trinity is a metaphysical bridge, not a proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\W1.3-the-plus-sign.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W1.3-the-plus-sign.canonical.canonical-node.json"
+  }
+}

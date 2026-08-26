@@ -1,0 +1,86 @@
+{
+  "source_id": "PROOF_PACKET",
+  "title": "Theophysics Lean 4 Proof Packet",
+  "canonical_node": {
+    "axiom": "Formal verification of the Theophysics derivation chain is achieved by exact-name representation in Lean 4, with successful build and absence of sorry/admit tokens.",
+    "definitions": [
+      "C0, C1: two coupling states",
+      "chi: multiplicative coherence product of ten factors (G, M, E, S, T, K, R, Q, F, C)",
+      "full coherence vs mere order",
+      "passive entropy vs active discoherence",
+      "structured scar vs random gap",
+      "restoration requirements: open boundary, external input, paid cost, information preservation",
+      "signature: domain, mechanism, tendency",
+      "C_op: conversion operator preserving history",
+      "effective channel score: vPos * (100 - vNeg)",
+      "mechanism gates: GGate, MGate, FGate, CGate"
+    ],
+    "derivation": [
+      "Excel inventory defines 171 theorem rows in LEAN_DERIVATION_CHAIN.",
+      "Each row is mapped to a Lean declaration by exact name.",
+      "Lean files implement positive and adversarial layers.",
+      "lake build succeeds, verifying all declarations and #check_failure tests.",
+      "Source scan confirms no sorry or admit tokens.",
+      "Mechanism gates force zero for defined failures, collapsing chi."
+    ],
+    "action": "The system should build the Lean package with lake build, verify exact-name coverage of 171 rows, and enforce that no sorry/admit tokens exist.",
+    "boundary": [
+      "Does not empirically prove historical, physical, philosophical, or theological claims beyond the formal structure.",
+      "Maxwell/Trinity section is structural control, not full doctrine proof.",
+      "Chi evaluator is a diagnostic skeleton, not a truth oracle.",
+      "Restoration layer does not identify external input as a theological person without broader argument."
+    ],
+    "test": [
+      "Run 'lake build' and confirm success.",
+      "Check COVERAGE.md for 171/171 exact-name matches.",
+      "Scan source files for 'sorry' or 'admit' tokens; expect zero.",
+      "Verify #check_failure tests reject malformed structures."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 toolchain pinned in lean-toolchain",
+      "Lake build system",
+      "Excel workbook Theophysics_Lean4_Addendum_Updated (1) (2).xlsx",
+      "Source files: Final_Lean4_From_Excel.lean, Theophysics_Core.lean, Theophysics_Adversarial.lean, etc."
+    ],
+    "dg2_new_capability": "Provides a reproducible Lean 4 proof packet with exact-name coverage of 171 theorem rows, adversarial rejection tests, and mechanism gates for Laws 1, 2, 9, 10.",
+    "dg3_preserved_floor": "Preserves the formal distinction between states, product collapse discipline, signature discipline, and rejection of malformed structures.",
+    "dg4_collapse_if_removed": "If the Lean build fails or sorry/admit tokens are present, the formal verification claim collapses.",
+    "dg5_translation_registers": [
+      "Excel row -> Lean declaration name -> repo file -> implementation status",
+      "Formal theorem names map to Lean declarations"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal verification claim",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as formal artifact; treat as verified only for the stated formal scope"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming empirical or theological proof beyond formal structure",
+      "Interpreting Maxwell/Trinity as full doctrine proof",
+      "Treating chi evaluator as truth oracle",
+      "Assuming restoration layer identifies external input as theological person"
+    ],
+    "kill_conditions": [
+      "lake build fails",
+      "sorry or admit tokens found",
+      "Coverage not 171/171",
+      "Adversarial tests fail to reject malformed structures"
+    ],
+    "lean_target": "Formal verification of the derivation chain and rejection of malformed structures"
+  },
+  "plain_summary": "This document describes a Lean 4 proof packet that claims to formally verify a 171-row derivation chain from an Excel inventory. It includes positive theorems, adversarial rejection tests, and mechanism gates. The build is reproducible via 'lake build'. The scope is limited to formal structure, not empirical or theological proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\PROOF_PACKET.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\PROOF_PACKET.canonical-node.json"
+  }
+}

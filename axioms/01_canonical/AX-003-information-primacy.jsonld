@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-003",
+  "nodeID": "tp:axioms/01/AX-003",
+  "claimID": "tp:AXIOMS/A1.3",
+  "name": "Information Primacy",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "active",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Distinguishability IS information; information is ontologically primitive.",
+  "statementPlain": "Distinguishability IS information; information is ontologically primitive.",
+  "mathematicalForm": "I ≡ Distinguishability (definitional identity); H(X) = -Σp·log p",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-001",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-002",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "information"
+  ],
+  "keywords": [
+    "A1.3",
+    "Q2",
+    "Primordial",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show a physical property NOT derivable from yes/no questions. Show matter without informational properties. Demonstrate information as emergent rather than primitive.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 4
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-003",
+    "oldID": "A1.3",
+    "treeLevel": "Q2",
+    "treeBranch": "Q2-C (Information is primitive, not derived)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Primordial",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M01",
+    "moduleTitle": "Information Ground",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "Materialism, Emergentism, Naturalism, Hard Determinism, Eliminativism, Nihilism",
+    "propagationTest": "YES — Information primacy propagates through Q3 (structure required), Q4 (self-grounding), Q5 (properties derived). Core load-bearing axiom.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

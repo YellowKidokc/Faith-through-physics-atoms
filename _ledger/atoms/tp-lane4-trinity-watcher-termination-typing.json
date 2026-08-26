@@ -1,0 +1,56 @@
+{
+  "atom_id": "tp:lane4/trinity/watcher-termination-typing",
+  "atom_uid": "sha256:939b592488ae9e138d358ecbec11d2749b3b4affac8db6e80a71a65c26490a51",
+  "title": "Watcher Problem Terminates via Operation-Level Typing",
+  "claim": "Von Neumann's regress (1932): every measurer needs a measurer. The regress runs on one hidden premise — every link is the same type of object. Type the actualizer correctly as the application map (operation, not object) and the question 'what measures the actualizer?' dies, the same death as 'what number is +.' Fewer than three roles: nothing actualizes. Three roles all at object level: regress reattaches. Exactly three with exactly one at operation level: unique terminating structure. Necessity, not fit.",
+  "domain": "trinity",
+  "lane": "Mathematics",
+  "claim_class": "theorem",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "assumptions": [
+    "Russell's type boundary: an operation cannot be a member of the collection it operates on",
+    "Von Neumann measurement chain (1932)"
+  ],
+  "definitions": [
+    "Object level: the things being operated on",
+    "Operation level: the thing that relates objects — different KIND",
+    "Three roles: Being (object), Distinction (object-structure), Relation (operation)"
+  ],
+  "equations": [],
+  "bridges": [
+    "Von Neumann measurement regress → Trinity as unique terminating structure"
+  ],
+  "dependencies": [],
+  "negative_guards": [
+    "This is a structural argument, not an ontological proof of the Trinity.",
+    "The claim is that exactly three roles with one at operation level is the unique terminating structure.",
+    "The regress termination does NOT prove the Trinity exists — it proves the Trinity structure terminates."
+  ],
+  "kill_conditions": [
+    "Show that the regress terminates with fewer than three roles.",
+    "Show that three roles all at object level terminate the regress.",
+    "Show that more than one operation-level role is needed."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "atom_created_from_canonical_audit",
+      "result": "recorded",
+      "artifact_path": "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md",
+      "meaning": "Created during three-model audit (Claude/o3/DeepSeek) of canonical doc vs atom ledger.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "Mathematics",
+      "event_id": "sha256:e515e66da4bb16d356b21ac6e21d4b16221f4d6f5855be35fb327666f9c00103",
+      "event_uuid": "8f1ed789-5e69-52a5-b62c-1ca9dae763b1"
+    }
+  ],
+  "source_claim_id": "WATCHER_TERMINATION_TYPING",
+  "atom_uuid": "46ae6deb-d4d7-5076-ba19-dec07e453b5d"
+}

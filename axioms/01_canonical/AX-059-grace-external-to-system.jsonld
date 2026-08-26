@@ -1,0 +1,102 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-059",
+  "nodeID": "tp:axioms/01/AX-059",
+  "claimID": "tp:AXIOMS/BC2",
+  "name": "Grace External To System",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "boundary",
+  "statementTechnical": "The system receives external informational input that reduces MORAL entropy specifically (enabling σ̂ sign-flip from -1 to +1). This input, termed \"grace,\" is ontologically distinct from ordinary thermodynamic negentropy — it acts on the moral sign operator rather than merely feeding energy. [Ordinary sunlight feeds thermodynamic negentropy; grace enables moral transformation.]",
+  "statementPlain": "The system receives external informational input that reduces MORAL entropy specifically (enabling σ̂ sign-flip from -1 to +1). This input, termed \"grace,\" is ontologically distinct from ordinary thermodynamic negentropy — it acts on the moral sign operator rather than merely feeding energy. [Ordinary sunlight feeds thermodynamic negentropy; grace enables moral transformation.]",
+  "mathematicalForm": "G(t) ∉ System; G external",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-025",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-058",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "grace",
+    "entropy",
+    "boundary",
+    "variable",
+    "moral-conservation",
+    "information"
+  ],
+  "keywords": [
+    "BC2",
+    "Q8",
+    "Divine",
+    "BoundaryCondition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show a closed system increasing its own coherence. Demonstrate self-rescue from σ=-1 state. Prove grace is not necessary (works suffice).",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 60
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-059",
+    "oldID": "BC2",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-B (Second boundary condition — external intervention)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "BoundaryCondition",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "constraint predicate",
+    "riskLevel": "medium",
+    "kernelRole": "constraintRole",
+    "moduleID": "M07",
+    "moduleTitle": "Boundary Conditions",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "BC2",
+    "fourModeRelevance": "M4 (Grace Attenuation — if grace coupling weakens, BC2 is starved)",
+    "worldviewsEliminated": "Materialism, Emergentism, Naturalism, Hard Determinism, Eliminativism, Nihilism, Buddhism (self-liberation)",
+    "propagationTest": "YES — BC2 propagates to grace operator (AX-073-074), sign-flip impossibility, and soteriological uniqueness.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

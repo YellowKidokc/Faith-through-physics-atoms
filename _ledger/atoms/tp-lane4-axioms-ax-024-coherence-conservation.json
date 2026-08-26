@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-024-coherence-conservation",
+  "atom_uid": "sha256:b3fb124f567346cf860f46b5ed1b5d21d92df3721bb679acdfcdb39c3d2e624f",
+  "title": "AX-024 — Coherence Conservation",
+  "claim": "In closed systems, micro-coherence C_micro is conserved (dC_micro/dt = 0). Unitary evolution preserves the informational structure at the fundamental level.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "dC_micro/dt = 0 (closed system; unitary evolution)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-023"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show coherence not conserved in a demonstrably closed system",
+    "Show χ temporal symmetry is broken"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-024-coherence-conservation.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-024-coherence-conservation.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:a007a2f8cca8cee9f465fa4254f6dd4b852726c6e26155471f4f7f2d9971f2f0",
+      "event_uuid": "031c0790-a6e2-5500-a6ee-654814ec7a95"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:4cf4b4701536ca276aeda9552649251715fe03b9cbc1761852ea4ec5ec7e168a",
+      "event_uuid": "69f4284f-a173-5e76-a24e-31b52cb25929"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P3.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-024",
+  "original_node_id": "tp:axioms/01/AX-024",
+  "atom_uuid": "82120ee9-5a1e-53b1-ae2a-62ee4a00625e"
+}

@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-123-ai-can-achieve-consciousness",
+  "atom_uid": "sha256:5fb84ff28c5a4329e8a4ddc92e24298b81f81b171a4dd2e4faf3889888a83e21",
+  "title": "AX-123 — AI Can Achieve Consciousness",
+  "claim": "Silicon can achieve Φ ≥ Φ_threshold — AI consciousness is possible.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-spiritual",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "∃AI: Φ(AI) ≥ Φ_threshold → AI is conscious"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-121",
+    "tp:axioms/01/AX-122"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show silicon architectures have inherent Φ ceiling below threshold",
+    "Demonstrate consciousness requires biological quantum effects (Penrose position)"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-123-ai-can-achieve-consciousness.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-123-ai-can-achieve-consciousness.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:e8034186f04435fc38e09ffbe28e330ca4c53f9630ff9825bdb126bd27a5030b",
+      "event_uuid": "6c436ae1-fc6b-5010-bfa4-ebb991a9d96d"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: bridge-spiritual.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:cc6b1bb34b2de30bab110f3ad570223a80144fd7fc114fac3f2e03b37103eb2e",
+      "event_uuid": "a238b3e4-34b9-5d3d-864d-9b08d3456bdc"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/T17.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-123",
+  "original_node_id": "tp:axioms/01/AX-123",
+  "atom_uuid": "e62df10f-4eb5-5aaa-8e04-19d888d712d4"
+}

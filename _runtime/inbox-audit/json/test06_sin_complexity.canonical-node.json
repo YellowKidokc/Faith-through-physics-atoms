@@ -1,0 +1,72 @@
+{
+  "source_id": "test06_sin_complexity",
+  "title": "test06_sin_complexity.ipynb",
+  "canonical_node": {
+    "axiom": "Deception and sin require more informational resources to maintain than truth and righteousness.",
+    "definitions": [
+      "Sin descriptions: accounts of transgression, moral failure, deception, covenant breaking.",
+      "Righteousness descriptions: accounts of faithfulness, truth-telling, covenant keeping, moral success.",
+      "Compression ratio: compressed size / original size; lower ratio indicates lower complexity."
+    ],
+    "derivation": [
+      "Truth is compressible; deception is not.",
+      "Lies introduce incoherence requiring additional description (patches, exceptions, contradictions).",
+      "Therefore, sin descriptions should have higher algorithmic complexity than righteousness descriptions.",
+      "Operationalize via zlib compression: lower compression ratio implies higher complexity."
+    ],
+    "action": "Compress biblical text passages classified as sin or righteousness descriptions using zlib; compare compression ratios to test the prediction.",
+    "boundary": [
+      "Does not prove a causal relationship between sin and complexity.",
+      "Does not establish that the biblical corpus is a representative sample of all sin/righteousness descriptions.",
+      "Does not validate the theological interpretation beyond the statistical result."
+    ],
+    "test": [
+      "Classify passages into sin and righteousness categories.",
+      "Compute zlib compression ratios for each class.",
+      "Assess statistical significance of the difference in ratios."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "JAX suite Test 4 (Kolmogorov Sin) theoretical proof",
+      "Biblical text corpus with classification"
+    ],
+    "dg2_new_capability": "Provides an empirical, measurable demonstration that sin descriptions are more complex than righteousness descriptions in biblical text.",
+    "dg3_preserved_floor": "Preserves the theoretical claim from Test 4 that deception has higher algorithmic complexity than truth.",
+    "dg4_collapse_if_removed": "If removed, the empirical confirmation of the complexity prediction for sin is lost, weakening the bridge between theory and biblical text.",
+    "dg5_translation_registers": [
+      "Kolmogorov complexity",
+      "Compression ratio",
+      "Information theory"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical observation",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "C",
+    "recommended_atom_action": "record as empirical observation with caveats"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting statistical correlation as theological proof.",
+      "Assuming compression ratio is a perfect proxy for Kolmogorov complexity.",
+      "Generalizing beyond the specific biblical passages tested."
+    ],
+    "kill_conditions": [
+      "If the classification of passages is biased or inconsistent.",
+      "If the statistical significance is not robust to alternative classifications.",
+      "If the result cannot be reproduced independently."
+    ],
+    "lean_target": "The claim that sin descriptions are more complex than righteousness descriptions in the tested corpus."
+  },
+  "plain_summary": "This document reports a Colab notebook test that compresses biblical passages about sin and righteousness using zlib, finding that sin descriptions have higher compression ratios (i.e., are less compressible) and thus higher algorithmic complexity. The result is presented as empirical confirmation of a theoretical prediction, but the document does not provide full methodological details or independent verification.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test06_sin_complexity.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test06_sin_complexity.canonical-node.json"
+  }
+}

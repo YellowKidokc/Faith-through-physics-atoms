@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-057-uniqueness-from-boundary-conditions",
+  "atom_uid": "sha256:a73c4df38ee43a337298785c41ac75c59565ed7761f794aba7bcfc27f9d4421d",
+  "title": "AX-057 — Uniqueness From Boundary Conditions",
+  "claim": "Boundary conditions constrain solution space; sufficient conditions yield unique solutions.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "12-materials",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "8 BCs → unique solution (if consistent and independent)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-056"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the 8 BC system admits multiple distinct solutions",
+    "Demonstrate another religion satisfying all 8",
+    "Show BCs are insufficient for uniqueness (system is underdetermined)"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-057-uniqueness-from-boundary-conditions.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-057-uniqueness-from-boundary-conditions.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:9be185902449ec7242cd7d6ba9d1282764978d89c162870156e1040570985ef7",
+      "event_uuid": "64724a9c-2a74-52f3-beeb-0414bd2e9dcd"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 12-materials.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:30780241ee0e506d6173514364db012a464e1a30fd9caac8a12e3f60ae3343cc",
+      "event_uuid": "c8edf3f5-964e-571d-9b19-0a8e3fd248af"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A7.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-057",
+  "original_node_id": "tp:axioms/01/AX-057",
+  "atom_uuid": "74fc74a2-db0c-511d-b21d-bf41228f6dad"
+}

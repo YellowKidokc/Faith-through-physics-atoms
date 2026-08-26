@@ -1,0 +1,67 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-021-master-coherence-equation",
+  "atom_uid": "sha256:4ab4200148caaabcfebb1923e60867c8db900edfa385f7b0a53f714a79b94f16",
+  "title": "AX-021 — Master Coherence Equation",
+  "claim": "C[χ] = ∫√(-g)[kinetic - V(χ) + L_int]d⁴x.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "04-energy",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "C[χ] = ∫√(-g)[½∂μχ∂μχ - V(χ) + L_int]d⁴x"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-018",
+    "tp:axioms/01/AX-019",
+    "tp:axioms/01/AX-020"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the action principle fails for coherence",
+    "Demonstrate C[χ] functional is not stationary under variation",
+    "Show kinetic-potential decomposition doesn't apply to information"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-021-master-coherence-equation.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-021-master-coherence-equation.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:b57b0f2fa8463d6192e2ec27c1d825750467d3a79fa19f4546ba2a6374c6acef",
+      "event_uuid": "61cd1519-4706-51b5-b35b-f67f968b2a1d"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'mathematical' -> 'derived'. Ontology: 04-energy.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:e6e63ed48fc5e4d97b89e062b9d3139b94d47d5b14f7b0e94bdd283258297b4a",
+      "event_uuid": "5e5036a9-e2ac-57f7-9583-3b8490f9388d"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/E3.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-021",
+  "original_node_id": "tp:axioms/01/AX-021",
+  "atom_uuid": "36a48066-14ea-55b0-b59d-f2957aed7b7c"
+}

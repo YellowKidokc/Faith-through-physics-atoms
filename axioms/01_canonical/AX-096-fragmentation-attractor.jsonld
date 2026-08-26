@@ -1,0 +1,93 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-096",
+  "nodeID": "tp:axioms/01/AX-096",
+  "claimID": "tp:AXIOMS/D12.2",
+  "name": "Fragmentation Attractor",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "definition",
+  "statementTechnical": "Decoherent terminus = eternal death — infinite decoherence. σ=-1 attractor.",
+  "statementPlain": "Decoherent terminus = eternal death — infinite decoherence. σ=-1 attractor.",
+  "mathematicalForm": "lim(t→∞, σ=-1) C(t) = 0 (decoherence attractor)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-094",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "decoherence",
+    "definition"
+  ],
+  "keywords": [
+    "D12.2",
+    "Q11",
+    "Eschatology",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the -1 attractor is not truly stable (trajectory reverses). Demonstrate eternal decoherence is not a stable state (eventually reaches equilibrium).",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 98
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-096",
+    "oldID": "D12.2",
+    "treeLevel": "Q11",
+    "treeBranch": "Q11-D (Hell defined)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Eschatology",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M12",
+    "moduleTitle": "Destiny / Attractor",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1, M2, M3 (all drive toward fragmentation)",
+    "worldviewsEliminated": "Universalism",
+    "propagationTest": "YES — Fragmentation attractor propagates to hell-as-decoherence and the permanence of rejection.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

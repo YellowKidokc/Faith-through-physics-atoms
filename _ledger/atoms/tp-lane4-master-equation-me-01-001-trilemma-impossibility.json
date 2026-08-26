@@ -1,0 +1,72 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-001-trilemma-impossibility",
+  "atom_uid": "sha256:72cff6f2d03640144be4a152536c796951fbbd531f74ab28bd8d01fad8fdd513",
+  "title": "The Trilemma Impossibility — J + M + W = 3 requires an external cost-bearer",
+  "claim": "When someone gets hurt, somebody has to pay. If the offender pays fully, that is justice but not mercy. If the offender pays nothing, that is mercy but not justice. You cannot have both in a closed system — the math literally forbids it. The only way to get full justice AND full mercy is if someone from outside the system voluntarily steps in and pays the cost themselves. That is not theology. That is algebra. And it has exactly one historical instantiation.",
+  "domain": "master-equation",
+  "lane": "mathematics",
+  "claim_class": "theorem",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "J = T_A/D, M = 1 - T_B/D, T_A = T_B (closed system) => J = 1 - M. QED: J=1 AND M=1 is impossible. Solution: T_ext = D, W_ext = 1 (voluntary external cost-bearer)."
+  ],
+  "bridges": [
+    "tp:bridges/master-equation/economics/trilemma-cost-bearing",
+    "tp:theology/01/001"
+  ],
+  "bridge_grade": "structural_identity",
+  "dependencies": [
+    "tp:ten-laws/01/law-05-thermodynamics",
+    "tp:ten-laws/01/law-09-weak-force"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Exhibit a closed-system mechanism that achieves J=1, M=1, W=1 simultaneously without an external transfer",
+    "Alternatively, show that Myerson-Satterthwaite does not apply to moral transfers"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-001-trilemma-impossibility.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-001-trilemma-impossibility.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:e4a2072e8baf05ec25559af4040075c5fa19946609b0d193cf7a8cf53168d4db",
+      "event_uuid": "644291d6-91c7-5a28-afd0-5ddf2c323452"
+    }
+  ],
+  "source_claim_id": "tp:ME/L5/C1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/001",
+  "original_node_id": "tp:master-equation/01/001",
+  "tags": [
+    "justice",
+    "mercy",
+    "free-will",
+    "atonement",
+    "cross",
+    "moral-conservation"
+  ],
+  "keywords": [
+    "trilemma",
+    "budget balance",
+    "Myerson-Satterthwaite",
+    "cost-bearer",
+    "closed system",
+    "external transfer"
+  ],
+  "atom_uuid": "8e9fb20a-a5b0-58f7-8094-d8fb469cce9b"
+}

@@ -1,0 +1,76 @@
+{
+  "source_id": "lean-repo-run-order",
+  "title": "Lean Repo Run Order",
+  "canonical_node": {
+    "axiom": "The recommended order for the first real Lean test is: smallest proof pulse first, then theophysics-lean-main, then Faith-Thru-Physics-Lean-4--main, and finally the verification package scripts.",
+    "definitions": [
+      "Smallest proof pulse: the directory `narrow_product_test` under the theophysics-lean-verification-package, containing its own lakefile.toml and lean-toolchain, with only 2 Lean files.",
+      "Theophysics Lean Main: the directory `theophysics-lean-main` with both lakefile.lean and lean-toolchain, containing 14 Lean files.",
+      "Faith Thru Physics Lean Main: the directory `Faith-Thru-Physics-Lean-4--main` with both lakefile.lean and lean-toolchain, containing 24 Lean files and repeated evidence folders.",
+      "Verification Package Scripts: the directory `theophysics-lean-verification-package` with a lean-toolchain but no root lakefile, including Windows runner scripts."
+    ],
+    "derivation": [
+      "The smallest proof pulse is first because it has its own lakefile.toml and lean-toolchain, and only 2 Lean files, providing the cleanest first signal.",
+      "Theophysics Lean Main is second because it has both lakefile.lean and lean-toolchain, and looks like a real project root with 14 Lean files.",
+      "Faith Thru Physics Lean Main is third because it has both lakefile.lean and lean-toolchain, contains 24 Lean files, but also has duplicate theorem names needing canonical handling.",
+      "Verification package scripts are separate because they have a lean-toolchain but no root lakefile, and include Windows runner scripts; use after lake roots are understood."
+    ],
+    "action": "Execute Lean tests in the specified order: first narrow_product_test, then theophysics-lean-main, then Faith-Thru-Physics-Lean-4--main, and finally the verification package scripts, using the provided PowerShell commands.",
+    "boundary": [
+      "This document does not claim that any Lean builds have been run; it explicitly states 'I did not run these builds yet.'",
+      "This document does not provide proof of correctness for any theorems; it only recommends an order for testing.",
+      "This document does not resolve the 408 duplicate theorem names; it only notes the need for canonical handling."
+    ],
+    "test": [
+      "Check that the narrow_product_test directory exists and contains exactly 2 Lean files.",
+      "Check that the theophysics-lean-main directory contains both lakefile.lean and lean-toolchain, and 14 Lean files.",
+      "Check that the Faith-Thru-Physics-Lean-4--main directory contains both lakefile.lean and lean-toolchain, and 24 Lean files.",
+      "Check that the verification package directory contains a lean-toolchain but no root lakefile, and includes the specified Windows runner scripts.",
+      "Run the PowerShell commands and verify they target the correct directories."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The existence of the specified directories and files (lakefile.toml, lean-toolchain, lakefile.lean, Lean files, Windows runner scripts).",
+      "The PowerShell script RUN_LATER_LEAN_TESTS.ps1 with the -Target parameter."
+    ],
+    "dg2_new_capability": "Provides a recommended execution order for Lean verification tests, enabling systematic testing of multiple Lean repositories.",
+    "dg3_preserved_floor": "Preserves the static scan finding of 0 real sorry/admit holes and the identification of 3 proper lake roots and 408 duplicate theorem names.",
+    "dg4_collapse_if_removed": "If this run order is removed, there is no prescribed sequence for Lean testing, potentially leading to ad-hoc or incorrect test ordering.",
+    "dg5_translation_registers": [
+      "narrow_product_test -> smallest proof pulse",
+      "theophysics-lean-main -> Theophysics Lean Main",
+      "Faith-Thru-Physics-Lean-4--main -> Faith Thru Physics Lean Main",
+      "theophysics-lean-verification-package -> Verification Package Scripts"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural recommendation",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "store as procedural guidance; do not treat as verified proof"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that the recommended order is the only correct order.",
+      "Implying that the Lean tests have been run or passed.",
+      "Treating the static scan results as proof of theorem correctness."
+    ],
+    "kill_conditions": [
+      "If the specified directories do not exist or do not match the described structure.",
+      "If the PowerShell script does not support the -Target parameter.",
+      "If the document is used to claim that Lean proofs have been verified."
+    ],
+    "lean_target": "The recommended run order for Lean verification tests."
+  },
+  "plain_summary": "This document recommends an order for running Lean tests on three repositories and a verification package, based on directory structure and file counts. It explicitly states that no builds have been run yet, so it is a procedural recommendation, not a proof of correctness.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\lean-repo-run-order.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\lean-repo-run-order.canonical-node.json"
+  }
+}

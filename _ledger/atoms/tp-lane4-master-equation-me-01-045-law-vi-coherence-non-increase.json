@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-045-law-vi-coherence-non-increase",
+  "atom_uid": "sha256:ba4d2142dab9d1c436138f8503fde952c29479a141051f7d783c7e5253a0f438",
+  "title": "Law VI: Coherence Non-Increase",
+  "claim": "Law VI: Coherence Non-Increase names one law rail inside the Master Equation.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "definition",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-010",
+    "tp:axioms/01/AX-141"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "RERUN_OWED",
+  "current_status": "active_candidate",
+  "rerun_status": "RERUN_OWED",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-045-law-vi-coherence-non-increase.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-045-law-vi-coherence-non-increase.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:39a34c58b504c69dbeac960193d7a7cc38e224a4238612ddf5237819de0d396c",
+      "event_uuid": "6bcee6eb-7883-5f89-93d4-33d585f78eed"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-01-045",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-045",
+  "original_node_id": "tp:master-equation/01/ME-01-045",
+  "tags": [
+    "logos",
+    "coherence",
+    "equation"
+  ],
+  "keywords": [
+    "AX-141",
+    "D19.6",
+    "Definition"
+  ],
+  "atom_uuid": "80eb5840-e16e-5163-a951-24bb6afeaae1"
+}

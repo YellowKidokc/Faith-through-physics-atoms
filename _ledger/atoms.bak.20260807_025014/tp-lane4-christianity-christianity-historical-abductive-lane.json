@@ -1,0 +1,50 @@
+{
+  "atom_id": "tp:lane4/christianity/christianity-historical-abductive-lane",
+  "atom_uid": "sha256:cdc8b002b21acb93b1c4f7f0882f9c1cd9414aa6ce49d37dd505bada21a1adcd",
+  "title": "Christianity Historical Abductive Lane",
+  "claim": "Christianity claims in this lane are historical and abductive, not Lean theorems.",
+  "domain": "christianity",
+  "lane": "Historical",
+  "claim_class": "historical_abductive",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Lane labels are interpreted according to their declared evidentiary scope."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "ABDUCTIVELY_FAVORED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "LANE4_ATOM_LEDGER_BUILD_REPORT.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_seeded",
+      "result": "recorded",
+      "artifact_path": "LANE4_ATOM_LEDGER_BUILD_REPORT.md",
+      "meaning": "Initial Lane 4 fixture created.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Codex",
+      "lane": "Historical",
+      "event_id": "sha256:c5a8a96096f4e5cde307985b20e7c7af52b5e9ffca5a23e6d1da9b4811622cde"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "Historical-Abductive",
+      "result": "source_received",
+      "artifact_path": "O:\\_Theophysics_v5\\David\\Family\\The Hardest Questions\\12 INTRO LOGO PAPERS.md",
+      "meaning": "LOGOS intro papers received as source material for the Christianity historical-abductive and moral-first lanes.",
+      "limits": "This source does not prove Christianity, God, the Master Equation, or the Lagrangian lane; it supplies claims, posture discipline, rival-burden language, and future atomization targets.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T18:57:50+00:00",
+      "event_id": "sha256:de7a49e59422c69fbde2daa2ecb18fa9978f79728f441cc8daae615878af58e7"
+    }
+  ],
+  "source_claim_id": "CHRISTIANITY_HISTORICAL_ABDUCTIVE_LANE"
+}

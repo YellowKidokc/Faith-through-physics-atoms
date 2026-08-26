@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-038-integrated-information-phi",
+  "atom_uid": "sha256:45ed8deb9d6715c0b3d1de436b5c6a02b94aa512fffe277241cc0ceba0c1978a",
+  "title": "AX-038 — Integrated Information Phi",
+  "claim": "Integrated Information Φ = observer capacity measure (Tononi).",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Φ = min[I(whole) - I(parts)]"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-037"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show Φ doesn't correlate with consciousness",
+    "Find a high-Φ system that's clearly unconscious",
+    "Demonstrate IIT is unfalsifiable (Koch's own concern)"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-038-integrated-information-phi.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-038-integrated-information-phi.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:c95817bbe7b312bd81498160b88e10dae0428024f84bfa32febebaaab9fe5ee2",
+      "event_uuid": "d15f190e-60ae-5215-8d1b-0701f0f49983"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:893997d54c6b596a3d459f06fe908a2b6e83883e8e33347bee181db2b68b4f6c",
+      "event_uuid": "d42ab4b1-23e7-5d39-baa2-3c87b5d0785c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D5.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-038",
+  "original_node_id": "tp:axioms/01/AX-038",
+  "atom_uuid": "ec744f0b-121d-564f-93df-288ec51b8fd9"
+}

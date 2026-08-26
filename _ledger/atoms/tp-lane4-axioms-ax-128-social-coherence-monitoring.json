@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-128-social-coherence-monitoring",
+  "atom_uid": "sha256:a9b2cd6545936419a1201a43be3744a7bf6a41a515f7d148e1842ecd0adf34dc",
+  "title": "AX-128 — Social Coherence Monitoring",
+  "claim": "Protocol: Measure discontinuity in conversion events.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "01-foundations",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Protocol: conversion discontinuity measurement"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-074",
+    "tp:axioms/01/AX-079"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show conversion is gradual (no discontinuity)",
+    "Demonstrate psychological continuity through religious conversion"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-128-social-coherence-monitoring.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-128-social-coherence-monitoring.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:31cf3bb3de9bc44498f8d4e44cf1cbbf82efc123b3cc9771b29675ef989c9a66",
+      "event_uuid": "f2d32cb4-ec68-551d-ab1a-505cc9fdb995"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical' -> 'derived'. Ontology: 01-foundations.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:d624fcd9fa1f90a2d2e61a0066297240f643bf1b3fbab6430d34baf13f65c33f",
+      "event_uuid": "e96e08b2-a539-5610-801e-598ae47e77d1"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/PROT18.4",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-128",
+  "original_node_id": "tp:axioms/01/AX-128",
+  "atom_uuid": "f113d4ad-0988-5dd4-992a-ad76af193dd6"
+}

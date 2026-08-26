@@ -1,0 +1,67 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-073-external-intervention-required",
+  "atom_uid": "sha256:adf8dde456eb6d0ecc53d34bdaf7d71d8bd3f964f4d73555d3266104115dff96",
+  "title": "AX-073 — External Intervention Required",
+  "claim": "Sign-flip requires operator external to the system.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "05-conservation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "∃Ĝ(external): Ĝ|-1⟩ = |+1⟩; Ĝ ∉ System"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-071",
+    "tp:axioms/01/AX-072",
+    "tp:axioms/01/AX-059"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show internal sign-flip",
+    "Demonstrate self-generated non-unitary operation",
+    "Prove a system can transcend its own limitations without external input"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-073-external-intervention-required.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-073-external-intervention-required.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:c5211e67ac5644b08becb2bb6c19f0128ca59c116c8d367ca9d1fa76a6a685ef",
+      "event_uuid": "7da357f4-3bdc-5bf7-b6ac-aef7238a721b"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 05-conservation.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:152f0f2f20d9d773c0034b3f46c1fe817c5c2b5033de1e3b998a6754db170d34",
+      "event_uuid": "eeb0fad1-00d4-5fd1-bc88-02c3088da97f"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A9.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-073",
+  "original_node_id": "tp:axioms/01/AX-073",
+  "atom_uuid": "3b902b89-9882-503a-8c75-37cb5720a395"
+}

@@ -1,0 +1,105 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-035",
+  "nodeID": "tp:axioms/01/AX-035",
+  "claimID": "tp:AXIOMS/A5.1",
+  "name": "Observation Requirement",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Information requires observer to be actual (vs potential).",
+  "statementPlain": "Information requires observer to be actual (vs potential).",
+  "mathematicalForm": "Actual(I) ↔ ∃Observer: Observes(Observer, I)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-003",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-015",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-034",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "observer",
+    "information"
+  ],
+  "keywords": [
+    "A5.1",
+    "Q6",
+    "Ontological",
+    "FrameworkCommitment"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show a quantum system actualizing without any observer. Demonstrate information becomes definite without measurement. Show observation is eliminable from QM (many-worlds may claim this).",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 36
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-035",
+    "oldID": "A5.1",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-A (Observer requirement — information actualization)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Ontological",
+    "tier": "1",
+    "newType": "FrameworkCommitment",
+    "logicalForce": "framework assumption",
+    "formalizableInLean": "partly",
+    "leanKind": "parameter / assumption, not theorem",
+    "riskLevel": "high",
+    "kernelRole": "guardedPremise",
+    "moduleID": "M05",
+    "moduleTitle": "Observer / Actualization",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (Q6: observer level begins here)",
+    "worldviewsEliminated": "Materialism, Emergentism, Naturalism, Hard Determinism, Eliminativism, Nihilism",
+    "propagationTest": "YES — Observer requirement propagates to Terminal Observer (Q7), consciousness (Q6 properties), and moral agency (Q10).",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

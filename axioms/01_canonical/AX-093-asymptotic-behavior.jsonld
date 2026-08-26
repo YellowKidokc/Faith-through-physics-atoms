@@ -1,0 +1,94 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-093",
+  "nodeID": "tp:axioms/01/AX-093",
+  "claimID": "tp:AXIOMS/A12.1",
+  "name": "Asymptotic Behavior",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "All trajectories have limiting behavior as t → ∞.",
+  "statementPlain": "All trajectories have limiting behavior as t → ∞.",
+  "mathematicalForm": "∀trajectory τ: lim(t→∞) τ(t) = attractor",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-066",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-092",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "keywords": [
+    "A12.1",
+    "Q11",
+    "Eschatology",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show trajectories without limiting behavior (chaotic with no attractor). Demonstrate moral trajectories that oscillate indefinitely without convergence.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 95
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-093",
+    "oldID": "A12.1",
+    "treeLevel": "Q11",
+    "treeBranch": "Q11-A (Eschatology — asymptotic limits exist)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Eschatology",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M12",
+    "moduleTitle": "Destiny / Attractor",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1, M2, M3, M4 (all modes determine asymptotic trajectory)",
+    "worldviewsEliminated": "Nihilism (no ultimate fate)",
+    "propagationTest": "YES — Asymptotic behavior propagates to bimodal outcome, heaven/hell attractors, and destiny equation.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

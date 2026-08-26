@@ -1,0 +1,93 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-024",
+  "nodeID": "tp:axioms/01/AX-024",
+  "claimID": "tp:AXIOMS/P3.2",
+  "name": "Coherence Conservation",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "theorem",
+  "statementTechnical": "In closed systems, micro-coherence C_micro is conserved (dC_micro/dt = 0). Unitary evolution preserves the informational structure at the fundamental level.",
+  "statementPlain": "In closed systems, micro-coherence C_micro is conserved (dC_micro/dt = 0). Unitary evolution preserves the informational structure at the fundamental level.",
+  "mathematicalForm": "dC_micro/dt = 0 (closed system; unitary evolution)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-023",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "information",
+    "conservation"
+  ],
+  "keywords": [
+    "P3.2",
+    "Q3",
+    "Ontological",
+    "Property"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show coherence not conserved in a demonstrably closed system. Show χ temporal symmetry is broken.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 25
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-024",
+    "oldID": "P3.2",
+    "treeLevel": "Q3",
+    "treeBranch": "Q3-J (Conservation property)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Property",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "proposition / lemma target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M03",
+    "moduleTitle": "Coherence Engine",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Conservation undergirds the thermodynamic framework and boundary condition arguments.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

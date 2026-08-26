@@ -1,0 +1,39 @@
+{
+  "source_claim_id": "DG6-Dynamics",
+  "title": "DG6 - Dynamics",
+  "claim": "A derivation layer can occupy coherent, defective, or ruptured states, allowing the grammar to describe successful derivation and failure modes.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "definition",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "A framework must be able to classify not only valid structure but also damaged or failed structure."
+  ],
+  "definitions": [
+    "Coherent: dependencies are preserved and the layer operates lawfully.",
+    "Defective: the layer exists but fails to preserve or express dependencies fully.",
+    "Ruptured: the layer collapses or loses required dependency structure."
+  ],
+  "equations": [
+    "State in {Coherent, Defective, Ruptured}"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2"
+  ],
+  "negative_guards": [
+    "Do not treat every imperfect claim as fully collapsed.",
+    "Do not treat defective as verified."
+  ],
+  "kill_conditions": [
+    "The state classes cannot classify real framework failures without ambiguity.",
+    "The coherent/defective/ruptured categories collapse into mere rhetoric."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ]
+}
+

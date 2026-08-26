@@ -1,0 +1,81 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "nodeID": "tp:axioms/01/AX-001",
+  "claimID": "tp:AXIOMS/A1.1",
+  "name": "Existence",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "active",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Something exists rather than nothing.",
+  "statementPlain": "Something exists rather than nothing.",
+  "mathematicalForm": "∃x (existential quantifier — irreducible)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [],
+  "keywords": [
+    "A1.1",
+    "Q0",
+    "Primordial",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show absolute nothingness is coherent and stable. Show that 'nothing' can be consistently conceived without implicit 'something.' Note: every attempt to describe nothing presupposes a describer.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 2
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-001",
+    "oldID": "A1.1",
+    "treeLevel": "Q0",
+    "treeBranch": "Q0-A (Existence affirmed)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Primordial",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M01",
+    "moduleTitle": "Information Ground",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "Nihilism (qualified — accepts existence but denies meaning)",
+    "propagationTest": "YES — Existence propagates as the ground condition for every subsequent level. Without Q0, no tree.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "source_id": "chi_field_potential_search",
+  "title": "chi_field_potential_search.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field potential V(chi) = mchi + chi defines the stability landscape; parameter regions must be mapped to determine where stable solutions exist.",
+    "definitions": [
+      "chi-field: a scalar field with potential V(chi) = mchi + chi",
+      "m: mass squared parameter, can be negative (tachyonic), zero, or positive",
+      ": self-coupling parameter, non-negative",
+      "_G: grace coupling constant, strength of grace source term",
+      "STABLE: solution remains bounded over integration time",
+      "OSCILLATORY: solution oscillates without divergence",
+      "DECAYING: solution decays to zero",
+      "UNSTABLE: solution diverges"
+    ],
+    "derivation": [
+      "The potential form is given as V(chi) = mchi + chi.",
+      "Parameter space is scanned over m, , and _G.",
+      "For each grid point, the chi-field solver is initialized and integrated for N time steps.",
+      "The outcome is classified as STABLE, OSCILLATORY, DECAYING, or UNSTABLE based on boundedness.",
+      "The stability map is constructed from these outcomes."
+    ],
+    "action": "Systematically scan the chi-field parameter space (m, , _G) to map stable and unstable regions, and record the outcome for each parameter set.",
+    "boundary": [
+      "Does not derive the potential from first principles; it assumes the given form.",
+      "Does not provide analytical stability proofs; it is a numerical scan.",
+      "Does not establish physical viability of the chi-field; it only maps stability.",
+      "Does not include all possible parameter ranges; only the scanned grid."
+    ],
+    "test": [
+      "For each parameter set, verify that the solver integration is deterministic and reproducible.",
+      "Check that the classification (STABLE, OSCILLATORY, DECAYING, UNSTABLE) matches the boundedness of the solution.",
+      "Confirm that the canonical parameters (m = 10 kg*m*s,  = 0.01) are classified as STABLE.",
+      "Verify that the stability map is consistent with known analytic expectations (e.g., m<0, =0 is unstable)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "chi_field_solver",
+      "numerical integration routines",
+      "parameter grid definitions"
+    ],
+    "dg2_new_capability": "Provides a stability map of the chi-field potential across parameter space, identifying stable and unstable regions.",
+    "dg3_preserved_floor": "Preserves the ability to evaluate the chi-field potential at specific parameter sets and to determine local stability.",
+    "dg4_collapse_if_removed": "Without this scan, the stability of the chi-field at canonical parameters would be unverified, and the robustness claim would be unsupported.",
+    "dg5_translation_registers": [
+      "m: mass squared parameter",
+      ": self-coupling",
+      "_G: grace coupling",
+      "STABLE/UNSTABLE: stability classification"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "numerical_stability_scan",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "preserve as numerical evidence; do not treat as proof of physical viability"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The scan is numerical and may miss instabilities outside the grid resolution.",
+      "The stability map is not a proof of physical existence; it only shows boundedness in a finite-time integration.",
+      "The claim that canonical parameters are 'deep within stable region' depends on the grid and integration time; may be overstated."
+    ],
+    "kill_conditions": [
+      "If the solver is found to be numerically unstable or incorrect, the stability map is invalid.",
+      "If the canonical parameters are not actually in the stable region when re-run with higher precision or longer integration, the robustness claim collapses.",
+      "If the potential form is not the actual chi-field potential, the scan is irrelevant."
+    ],
+    "lean_target": "Formalize the stability classification as a predicate: for given parameters, the solution remains bounded for all time (or for a specified horizon)."
+  },
+  "plain_summary": "This document describes a numerical parameter scan of the chi-field potential to map stable and unstable regions. It claims the canonical parameters are stable with large margins, but this is based on numerical integration, not proof. The scan is useful as evidence but should not be overinterpreted.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\chi_field_potential_search.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\chi_field_potential_search.canonical-node.json"
+  }
+}

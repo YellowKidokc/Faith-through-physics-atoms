@@ -239,6 +239,65 @@ format, sourceArticle, impactStatement, actionItems,
 legalWarning
 ```
 
+### SEO NODE
+```
+targetURL, primaryKeywords, metaTitle, metaDescription,
+h1Variants, sourceArticle, searchIntent
+Generated: structured data (Article/FAQPage/ClaimReview)
+```
+
+### SOCIAL NODE
+```
+platform, format, sourceArticle, hook, coreMessage
+Optional: duration, hashtags, callToAction, visualDescription
+Platforms: tiktok, twitter, instagram, linkedin, youtube, podcast
+```
+
+### FAQ NODE
+```
+question, answer, sourceClaim
+The actual question someone googles + 2-3 sentence plain answer.
+Renders as FAQPage structured data for Google.
+```
+
+### GLOSSARY NODE
+```
+term, definitionPlain (9th grade), definitionTechnical (PhD),
+sourceClaim
+Optional: definitionEveryday (5th grade), equation, misconception,
+greekOriginal, strongsNumber
+```
+
+### TESTIMONY NODE
+```
+sourceRef, outcome, context, result
+outcome: applied | debated | shared | taught | life_changed
+The "did this actually help someone" layer.
+```
+
+### VISUAL NODE
+```
+visualType, sourceClaim, altText, filePath
+Types: diagram, chart, infographic, 3d_render, timeline,
+comparison, process_flow, equation_visual, glyph
+Optional: renderScript (path to matplotlib generator)
+```
+
+### DEBATE_MOVE NODE
+```
+moveName, trigger, response, structure, sourceClaim
+Optional: selfRefutationProof, commonCounters, videoScript,
+difficulty, fieldTested, winRate
+The Three Gates protocol lives here.
+```
+
+### SERIES NODE
+```
+seriesID, seriesName, articleOrder (ordered edges)
+Optional: entryPoint, prerequisiteSeries, seriesThesis
+Breadcrumbs auto-generate from this — no separate authoring.
+```
+
 ### RESULT NODE
 ```
 predictionRef, outcome, data, accuracy, revisionTrigger

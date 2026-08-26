@@ -1,0 +1,75 @@
+{
+  "source_id": "GraceOperator",
+  "title": "GraceOperator.lean",
+  "canonical_node": {
+    "axiom": "The Grace Operator G is an external operator that maps any state, including the zero state, to one (coherent), and is idempotent and irreversible within the system.",
+    "definitions": [
+      "Grace Operator (G): an operator in CoherenceAlgebra that maps zero to one and is idempotent (G = G).",
+      "Zero state: a state with coherence chi = 0, fully collapsed.",
+      "One state: a coherent state.",
+      "Internal operator: an operator that preserves zero (sign conservation).",
+      "External operator: an operator not generated from within the system's closure."
+    ],
+    "derivation": [
+      "grace_idempotent: graceStep (graceStep x) = graceStep x, proved by simp.",
+      "grace_is_restorative: graceStep zero = one, proved by simp.",
+      "grace_irreversible: If all internal operators preserve zero, then no internal operator can invert Grace; proof uses contradiction, but final steps contain a sorry."
+    ],
+    "action": "The system should treat Grace as an external, non-internalizable operator that restores coherence from zero, and should not attempt to derive it from internal operations.",
+    "boundary": [
+      "Does not claim Grace is physically equivalent to gravitation beyond analogy.",
+      "Does not claim the irreversibility proof is fully formal due to the sorry.",
+      "Does not claim salvation is literally a mathematical theorem."
+    ],
+    "test": [
+      "Check that grace_idempotent and grace_is_restorative are verified by Lean.",
+      "Check that grace_irreversible has no sorry or is explicitly marked as incomplete.",
+      "Check that the definitions of internal/external operators are consistent with the algebra."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CoherenceAlgebra definitions",
+      "Lean4 environment",
+      "sign_conservation hypothesis",
+      "restores_spirit hypothesis"
+    ],
+    "dg2_new_capability": "Formally proves that an external operator can restore a collapsed state, and that such an operator cannot be internal if internal operators preserve zero.",
+    "dg3_preserved_floor": "Preserves the existing CoherenceAlgebra structure and its theorems; adds new theorems about Grace.",
+    "dg4_collapse_if_removed": "If removed, the framework loses its formal grounding for the claim that restoration from zero requires an external operator.",
+    "dg5_translation_registers": [
+      "GraceOperator.lean",
+      "CoherenceAlgebra",
+      "Lean4"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "formal proof",
+    "proof_label": "LEAN_CONDITIONAL_PROOF",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims 'Lean verified it' while one theorem contains a sorry.",
+      "Equates Grace with gravitation without rigorous physical justification.",
+      "Overstates the theological implications as mathematical facts."
+    ],
+    "kill_conditions": [
+      "If the sorry in grace_irreversible cannot be filled, the irreversibility claim is unproven.",
+      "If the CoherenceAlgebra axioms are inconsistent, all theorems collapse.",
+      "If the mapping to physics is not established, the physical claims are unsupported."
+    ],
+    "lean_target": "Complete the proof of grace_irreversible by filling the sorry or reformulating the argument."
+  },
+  "plain_summary": "This document presents a Lean formalization of a Grace Operator in a CoherenceAlgebra, proving idempotence and restoration from zero, but the irreversibility proof is incomplete due to a sorry. It claims to formally ground the idea that restoration from collapse requires an external operator, but the proof is not fully verified and the physical analogy to gravitation is not rigorously established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\GraceOperator.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\GraceOperator.canonical-node.json"
+  }
+}

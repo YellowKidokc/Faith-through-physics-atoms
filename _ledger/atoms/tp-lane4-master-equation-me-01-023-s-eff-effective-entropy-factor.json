@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-023-s-eff-effective-entropy-factor",
+  "atom_uid": "sha256:be0b265b45b11afb8c6adcc0350b026d0b0e061c1db273dfcc46bf0e05c272e0",
+  "title": "S_eff - Effective Entropy Factor",
+  "claim": "Entropy does not feed coherence directly; it enters as the thing that lowers the contribution.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "definition",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "S_eff in (0, 1]"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-010",
+    "tp:axioms/01/AX-092"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-023-s-eff-effective-entropy-factor.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-023-s-eff-effective-entropy-factor.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:a6fffb48aac4cee3960d2b9a90fe4a43531326f583f8905570d71287f7dc5c28",
+      "event_uuid": "db2a7d2f-6220-55b0-a07c-c79f0651fde4"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-01-023",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-023",
+  "original_node_id": "tp:master-equation/01/ME-01-023",
+  "tags": [
+    "entropy",
+    "decoherence"
+  ],
+  "keywords": [
+    "master-equation-factor",
+    "S_eff",
+    "(0, 1]"
+  ],
+  "atom_uuid": "49901615-e0a4-51ca-80a4-c201e1e3176a"
+}

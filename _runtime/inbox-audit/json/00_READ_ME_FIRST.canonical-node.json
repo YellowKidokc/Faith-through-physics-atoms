@@ -1,0 +1,83 @@
+{
+  "source_id": "00_READ_ME_FIRST",
+  "title": "README FIRST  -  The Three-Layer Cannon",
+  "canonical_node": {
+    "axiom": "The Master Equation framework must be maintained in three distinct layers: formal, physical-theological, and teaching. Layer separation is the irreducible rule that prevents drift.",
+    "definitions": [
+      "Layer 1 (Formal): typed mathematical spine, Definition 10 (ten factors with explicit domains) and Definition 11 (Master Equation as integral product). Lean-verified and locked.",
+      "Layer 2 (Physical-Theological): for each formal factor, two readings: physical law-form and spiritual law-form. Same algebra, two interpretations. Isomorphism claim lives here.",
+      "Layer 3 (Teaching): human-facing law chapters, negotiable, may have 9 or 10 chapters.",
+      "Factor: a typed mathematical object in Layer 1.",
+      "Law chapter: a human-facing explanatory unit in Layer 3.",
+      "C: the tenth factor, measures total integration locally.",
+      "chi: the integrated output, the product integrated over space and time.",
+      "S_eff: effective entropy production, defined as e^(-*S_prod) or 1/(1+S_prod), mapping 0 to (0,1] and antitone in S_prod."
+    ],
+    "derivation": [
+      "Fifteen-month framework drift diagnosed as collapse of three layers into one document.",
+      "Fix is layer separation: three documents, one per layer.",
+      "Layer 1 has 10 formal factors, always 10, locked. Layer 3 has 9 or 10 teaching chapters, negotiable. They are not the same number-question.",
+      "C is the tenth factor; chi is the integrated output. The product never includes chi inside itself.",
+      "Entropy sign repair: raw entropy production cannot multiply coherence directly; it enters through S_eff = e^(-*S_prod) or 1/(1+S_prod), both antitone in S_prod.",
+      "Lean kernel verifies seven structural properties of the Master Equation."
+    ],
+    "action": "Maintain the three-layer separation. Use Layer 1 as source of truth for math. Use Layer 2 for paper bridge equations. Use Layer 3 for public communication. Apply the Three-Layer Reconciliation Test to verify any claim.",
+    "boundary": [
+      "Does not define the specific formal factors or the Master Equation itself; that is Layer 1's content.",
+      "Does not provide the physical and spiritual interpretations; that is Layer 2's content.",
+      "Does not fix the number of teaching chapters; Layer 3 is negotiable.",
+      "Does not prove the isomorphism claim; it only states where the claim lives.",
+      "Does not provide the Lean kernel code or its full verification details; it references the kernel."
+    ],
+    "test": [
+      "Three-Layer Reconciliation Test: (1) Does the public claim reduce to a Layer 2 pairing (2) Does the Layer 2 pairing reduce to a Layer 1 factor (3) Does the Layer 1 factor have its formal domain and verified property in the Lean kernel If all three pass, claim is consistent; if any fails, drift has appeared.",
+      "Check that Layer 1 always has 10 factors and is locked.",
+      "Check that Layer 3 may have 9 or 10 chapters without affecting Layer 1.",
+      "Check that C and chi are distinct: product never includes chi inside itself.",
+      "Check that S_eff is antitone in S_prod and maps 0 to (0,1]."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Layer 1 formal definitions (Definition 10 and 11) as referenced.",
+      "Lean kernel verification artifact as referenced.",
+      "Canonical April 16 doc as referenced."
+    ],
+    "dg2_new_capability": "Provides a meta-rule for organizing and maintaining the Master Equation framework across three layers, preventing drift by separating formal, interpretive, and teaching concerns.",
+    "dg3_preserved_floor": "Preserves the formal Layer 1 as the locked source of truth, and preserves the Lean kernel as the canonical verification artifact.",
+    "dg4_collapse_if_removed": "If this layer separation is removed, the framework collapses into a single document, causing drift and making failure points unfindable.",
+    "dg5_translation_registers": [
+      "Formal factor  physical law-form  spiritual law-form (Layer 2 isomorphism)",
+      "Layer 1 factor  Layer 3 teaching chapter (not necessarily one-to-one)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "meta-framework instruction",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "B",
+    "recommended_atom_action": "preserve as structural directive; do not treat as mathematical proof"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that the Lean kernel verifies the Master Equation itself, when it only verifies seven structural properties.",
+      "Claiming that the isomorphism between physical and spiritual readings is proven, when it is only declared to live in Layer 2.",
+      "Claiming that the three-layer separation is sufficient to prevent all drift, when it is a proposed fix."
+    ],
+    "kill_conditions": [
+      "If Layer 1 is not actually Lean-verified or is changed without updating this document.",
+      "If the Lean kernel does not exist or does not verify the claimed properties.",
+      "If the three-layer separation is not implemented in the actual documents."
+    ],
+    "lean_target": "The Lean kernel verifies the antitone property of S_eff and other structural properties of the Master Equation, but not the full framework or its interpretations."
+  },
+  "plain_summary": "This document is a meta-instruction that mandates separating the Master Equation framework into three layers: formal (math), physical-theological (interpretation), and teaching (explanation). It describes the fix for drift and outlines a reconciliation test. It references a Lean kernel that verifies seven structural properties, but does not itself provide mathematical proofs or establish the isomorphism claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\00_READ_ME_FIRST.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\00_READ_ME_FIRST.canonical-node.json"
+  }
+}

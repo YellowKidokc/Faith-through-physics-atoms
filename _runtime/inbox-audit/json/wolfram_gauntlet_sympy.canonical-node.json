@@ -1,0 +1,75 @@
+{
+  "source_id": "wolfram_gauntlet_sympy",
+  "title": "wolfram_gauntlet_sympy.ipynb",
+  "canonical_node": {
+    "axiom": "The Theophysics framework must be subjected to adversarial testing that seeks failures, and any discovered failure must be documented as a boundary condition rather than hidden.",
+    "definitions": [
+      "Gauntlet: a systematic battery of physical law checks designed to find failures, not demonstrate success.",
+      "Born rule failure: when the weak force parameter F exceeds 1.0, the chi-weighted probability measure fails to normalize to 1.",
+      "Maxwell mirror: the structural identity between classical electromagnetism and the chi-field projected onto the E-K subspace."
+    ],
+    "derivation": [
+      "The gauntlet is structured in four parts: physical law verification, charitable break tests, spiritual mapping tests, and Maxwell mirror comparison.",
+      "Part 1 verifies that physical law components (G through C) reproduce their source equations; all pass.",
+      "Part 2 tests plausible failure conditions; all pass.",
+      "Part 3 tests theological mappings; the Born rule fails when F > 1, indicating a boundary condition.",
+      "Part 4 shows that the chi-field projected onto the E-K subspace has analogous structure to the Maxwell Lagrangian.",
+      "The Born rule failure is interpreted as a constraint: sin cannot be unbounded without destroying probability normalization."
+    ],
+    "action": "Run the four-part gauntlet on the Theophysics framework, score each part independently, and document any failures as boundary conditions requiring future work.",
+    "boundary": [
+      "Does not claim to prove the framework's correctness; it only tests for failures.",
+      "Does not resolve the Born rule failure; it flags it as an open boundary condition.",
+      "Does not claim the Maxwell mirror is a poetic analogy; it asserts a structural identity verifiable by computation."
+    ],
+    "test": [
+      "Part 1: Verify each physical law component reproduces its source equation.",
+      "Part 2: Test no-signaling, open-system entropy, and Lorentz invariance under charitable conditions.",
+      "Part 3: Test chi-field Lagrangian, grace source term, modified gravity, and Born rule.",
+      "Part 4: Compare the E-K subspace structure to the Maxwell Lagrangian."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Theophysics framework components (G through C)",
+      "SymPy symbolic mathematics environment",
+      "Previous test suites that establish baseline behavior"
+    ],
+    "dg2_new_capability": "Provides an adversarial testing methodology that systematically seeks failures and documents them as boundary conditions, enhancing credibility.",
+    "dg3_preserved_floor": "Preserves the existing Theophysics framework's claims by subjecting them to rigorous testing and documenting any failures.",
+    "dg4_collapse_if_removed": "Without the gauntlet, the framework would lack adversarial validation, making its claims less credible and potential failures undisclosed.",
+    "dg5_translation_registers": [
+      "Physical law verification",
+      "Charitable break tests",
+      "Spiritual mapping tests",
+      "Maxwell mirror comparison"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "preserve as adversarial test protocol"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting the Born rule failure as a meaningful constraint rather than a genuine flaw may overstate its significance.",
+      "Claiming the Maxwell mirror is a structural identity without full formal proof may overstate the result."
+    ],
+    "kill_conditions": [
+      "If the Born rule failure is shown to be irreparable and not a boundary condition, the framework's probability structure collapses.",
+      "If the Maxwell mirror is shown to be a coincidence rather than a structural identity, the claim weakens."
+    ],
+    "lean_target": "Formalize the Born rule boundary condition and the Maxwell mirror identity in a proof assistant."
+  },
+  "plain_summary": "This document describes an adversarial test suite for the Theophysics framework, consisting of four parts. Most tests pass, but the Born rule fails when the weak force parameter exceeds 1, which is documented as a boundary condition. The Maxwell mirror shows structural similarity to electromagnetism. The document is honest about failures and treats them as constraints.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\wolfram_gauntlet_sympy.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\wolfram_gauntlet_sympy.canonical-node.json"
+  }
+}

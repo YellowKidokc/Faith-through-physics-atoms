@@ -1,0 +1,77 @@
+{
+  "source_id": "W7.2-the-verification.canonical",
+  "title": "The Verification",
+  "canonical_node": {
+    "axiom": "The kernel does not grade its own homework, and neither do we.",
+    "definitions": [
+      "justice := accountsFor",
+      "mercy := restores  accountsFor  recordPreserved",
+      "grace := restores  externalSource  noncoercive"
+    ],
+    "derivation": [
+      "0 axioms, 4 assumptions, 3 definitions, 17 theorems, 0 sorry in the Lean kernel.",
+      "All load-bearing commitments are carried as structure fields on AxiomBundle, so every theorem displays its dependencies.",
+      "The four assumptions are destructive_degrades, good_preserves, good_alignment_is_moral, moral_good_repairs_damage.",
+      "Seventeen theorems are proved with zero sorry, including mercy_restores, grace_restores, veto_collapse, and both_positive_imply_positive.",
+      "Three bridges are declared open with kernelProved := false and status := openBridge."
+    ],
+    "action": "Treat the four AxiomBundle assumptions as the entire attack surface; treat the seventeen theorems as the only machine-checked claims; treat the three open bridges as unfinished work requiring explicit derivation or theological identification, not as theorems.",
+    "boundary": [
+      "Does not claim the four assumptions are proven; they are assumptions.",
+      "Does not claim the open bridges are closed; they are labeled open.",
+      "Does not claim the /Mathlib port is complete; it is pending.",
+      "Does not claim the definition-ablation matrix for the Maxwell coupling is complete; it is remaining work."
+    ],
+    "test": [
+      "Check that the keyword 'axiom' does not appear in the kernel source.",
+      "Check that the four assumptions are the only assumptions in the AxiomBundle structure.",
+      "Check that all seventeen theorems compile with zero 'sorry'.",
+      "Check that the three open bridges have kernelProved := false and status := openBridge."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 proof kernel",
+      "AxiomBundle structure with four assumptions",
+      "Mathlib (for  port, pending)"
+    ],
+    "dg2_new_capability": "Provides a machine-checked inventory of the formal kernel: zero axioms, four assumptions, seventeen theorems, and three open bridges, establishing a single visible attack surface.",
+    "dg3_preserved_floor": "Preserves the distinction between machine-verified claims and theological identifications, and maintains the honest labeling of open work.",
+    "dg4_collapse_if_removed": "If this sheet is removed, the framework loses its authoritative list of what the kernel actually proves, allowing unverified claims to be mistaken for verified ones.",
+    "dg5_translation_registers": [
+      "axiom count: 0 kernel axioms, 4 bundle assumptions, 38 spine axioms (proposed), ~188 axiom-tagged ledger rows (inventory)",
+      "theorem count: 17 theorems, 0 sorry",
+      "open bridges: 3 (Lagrangian-to-product form, maximal coherence identified with Christ, global uniqueness of coherence fixed point)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "formal verification inventory",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as canonical inventory; do not upgrade open bridges to theorems"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the four assumptions as proven facts rather than assumptions.",
+      "Treating the three open bridges as closed theorems.",
+      "Treating the /Mathlib port as complete when it is pending.",
+      "Treating the Maxwell coupling invariant as fully verified when the definition-ablation matrix is remaining work."
+    ],
+    "kill_conditions": [
+      "If the keyword 'axiom' appears in the kernel source, the zero-axiom claim fails.",
+      "If any of the seventeen theorems contains 'sorry', the zero-sorry claim fails.",
+      "If any open bridge is presented as a theorem without explicit derivation, the honesty protocol fails."
+    ],
+    "lean_target": "Formalize the three open bridges or explicitly mark them as non-theological, and complete the /Mathlib port."
+  },
+  "plain_summary": "This sheet is the authoritative inventory of the Lean 4 formal kernel: zero axioms, four assumptions, three definitions, seventeen theorems, and three open bridges. It establishes the attack surface and the honest labeling of unfinished work. The claims are machine-checked for the core, but the  port and some ablation work remain pending.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W7.2-the-verification.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W7.2-the-verification.canonical.canonical-node.json"
+  }
+}

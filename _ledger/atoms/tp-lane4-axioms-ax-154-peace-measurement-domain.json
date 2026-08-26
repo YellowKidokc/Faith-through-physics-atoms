@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-154-peace-measurement-domain",
+  "atom_uid": "sha256:e1fc10e0be9ff120a186b83a774dab06b6f05d469974e9b98dacf4107e449a57",
+  "title": "AX-154 — Peace Measurement Domain",
+  "claim": "Peace = absence of internal contradiction; coherence stability.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "F_Peace = 1 - (contradictions/total_beliefs); equilibrium"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-151"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show peace without coherence stability",
+    "Demonstrate stable coherence without peace"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-154-peace-measurement-domain.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-154-peace-measurement-domain.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:3a14f78038eaf050571460d747ee53240a7d4455dd67920d3fc012dd083dd3a1",
+      "event_uuid": "ad4fb9a8-2e8a-5de6-91c1-4c4092a68fd4"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:7cc7852a59784af053ab0e9c01e76c0b54cc52edf9aa214566affeed73e8bf9b",
+      "event_uuid": "ff72fbad-7404-5354-8465-920c587e9b11"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/F3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-154",
+  "original_node_id": "tp:axioms/01/AX-154",
+  "atom_uuid": "daa22b83-e0d4-5706-b188-39f07ed9e24d"
+}

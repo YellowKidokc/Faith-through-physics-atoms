@@ -1,0 +1,71 @@
+{
+  "source_id": "06_PUBLIC_SUMMARY",
+  "title": "Public Summary  -  Hubble Gradient",
+  "canonical_node": {
+    "axiom": "The Hubble Gradient thesis must be communicable to a smart non-specialist in plain language, without jargon, and must include honest disclosure of evidence, kill conditions, and narrative origin.",
+    "definitions": [
+      "Public Summary: A document intended for a smart non-specialist audience, approximately 2,000 words, with no unexplained jargon.",
+      "Kill conditions: Explicit statements of what evidence or argument would disprove the thesis.",
+      "Biaxiosum: The narrative of the author's bias, journey, and honesty about both."
+    ],
+    "derivation": [
+      "The document template mandates sections for findings, significance, testing, falsification, origin, and next steps.",
+      "The audit block requires a jargon check and word count target.",
+      "Therefore, the canonical action is to produce a plain-language summary that meets these structural and honesty requirements."
+    ],
+    "action": "Produce a public summary of the Hubble Gradient thesis that is accessible to a non-specialist, includes sections on findings, significance, testing, falsification, origin, and next steps, and passes the jargon check.",
+    "boundary": [
+      "Does not provide the technical derivation or full evidence for the thesis.",
+      "Does not replace the full thesis document.",
+      "Does not guarantee the thesis is true; it only ensures the summary is clear and honest."
+    ],
+    "test": [
+      "Check that the document is approximately 2,000 words.",
+      "Check that no unexplained jargon is used (jargon check passes).",
+      "Check that all required sections are present and filled with substantive content.",
+      "Check that kill conditions are explicitly stated in plain language."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The full thesis document (DT-004) for accurate content.",
+      "The author's understanding of the thesis and its evidence."
+    ],
+    "dg2_new_capability": "Provides a non-specialist entry point to the thesis, enabling broader communication and scrutiny.",
+    "dg3_preserved_floor": "The core claims and evidence of the thesis are preserved in summary form without distortion.",
+    "dg4_collapse_if_removed": "Without the public summary, the thesis lacks an accessible communication layer, reducing its reach and potential for public engagement.",
+    "dg5_translation_registers": [
+      "Plain language for non-specialists",
+      "Honest disclosure of evidence and limitations",
+      "Narrative transparency (Biaxiosum)"
+    ],
+    "dg6_state": "unknown",
+    "dg7_admissible": "needs_review",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "communication artifact",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Draft the public summary according to the template, then review for clarity and honesty."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The summary might overstate the certainty of the thesis if not carefully worded.",
+      "The summary might omit important caveats or kill conditions, misleading readers."
+    ],
+    "kill_conditions": [
+      "If the summary uses unexplained jargon, it fails its purpose.",
+      "If the summary omits kill conditions or misrepresents evidence, it is dishonest.",
+      "If the summary exceeds or falls far short of the word target, it may not meet the intended format."
+    ],
+    "lean_target": "A clear, honest, and accessible summary that accurately reflects the thesis and its limitations."
+  },
+  "plain_summary": "This document is a template for a public summary of the Hubble Gradient thesis. It outlines required sections and an audit block, but contains no actual content. The canonical action is to fill in the template with plain-language explanations of the thesis, its significance, testing, falsification, origin, and next steps, ensuring it is understandable to non-specialists and honest about evidence and limitations.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\06_PUBLIC_SUMMARY.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\06_PUBLIC_SUMMARY.canonical-node.json"
+  }
+}

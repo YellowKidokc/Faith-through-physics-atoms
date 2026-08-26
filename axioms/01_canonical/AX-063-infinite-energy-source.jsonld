@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-063",
+  "nodeID": "tp:axioms/01/AX-063",
+  "claimID": "tp:AXIOMS/BC6",
+  "name": "Infinite Energy Source",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "boundary",
+  "statementTechnical": "Energy source E = ∞ required for entropy defeat.",
+  "statementPlain": "Energy source E = ∞ required for entropy defeat.",
+  "mathematicalForm": "E_source = ∞ (necessary for ΔS_total < 0)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-025",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-062",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "kill-condition",
+    "entropy",
+    "boundary"
+  ],
+  "keywords": [
+    "BC6",
+    "Q8",
+    "Divine",
+    "BoundaryCondition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show entropy can be reversed with finite energy. Demonstrate perpetual motion of the second kind. Show coherence increase without energy input.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 64
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-063",
+    "oldID": "BC6",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-F (Sixth boundary condition — entropy reversal)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "BoundaryCondition",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "constraint predicate",
+    "riskLevel": "medium",
+    "kernelRole": "constraintRole",
+    "moduleID": "M07",
+    "moduleTitle": "Boundary Conditions",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "BC6",
+    "fourModeRelevance": "M2 (Entropic — without infinite energy, entropy wins)",
+    "worldviewsEliminated": "Materialism, Naturalism, Nihilism",
+    "propagationTest": "YES — BC6 propagates to omnipotence claim, resurrection possibility, and eschatological coherence restoration.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

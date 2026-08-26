@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/derivation-grammar/dg-t4-independent-convergence",
+  "atom_uid": "sha256:f2df0607443be469dffd72ba3aeb6b12357a79e53e6aecac61e59ae8e0eade2c",
+  "title": "DG T4 - Independent Convergence",
+  "claim": "If two frameworks independently satisfy DG and preserve the same dependency graph, capability classes, collapse structure, and translation behavior, they may instantiate a shared abstract derivation object under different names.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "theorem_candidate",
+  "mode_classification": "DG_THEOREM_CANDIDATE",
+  "assumptions": [
+    "Structural equivalence can be defined for dependency graphs, capability classes, collapse behavior, and translation behavior.",
+    "Independence can be assessed without assuming one framework borrowed the result from the other."
+  ],
+  "definitions": [
+    "Independent Convergence: equivalent DG structure reached by independent frameworks.",
+    "IC-5: shared dependency graph, capability classes, collapse behavior, and translation behavior."
+  ],
+  "equations": [
+    "Models(A, DG) and Models(B, DG) and EquivalentStructure(F(A), F(B)) -> SharedAbstractDGObject(A, B)"
+  ],
+  "bridges": [
+    "This is a convergence criterion, not a metaphysical identity claim by itself."
+  ],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency",
+    "DG2-Minimal-Capability",
+    "DG3-Preservation",
+    "DG4-Collapse",
+    "DG5-Translation",
+    "DG7-Admissibility"
+  ],
+  "negative_guards": [
+    "Do not claim Independent Convergence is already Lean-proved.",
+    "Do not call vocabulary resemblance convergence.",
+    "Do not use Independent Convergence to erase real doctrinal or domain differences."
+  ],
+  "kill_conditions": [
+    "EquivalentStructure cannot be formalized.",
+    "Independence cannot be assessed.",
+    "The candidate permits IC-5 status without preserving dependency, capability, collapse, and translation behavior."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\DG_V02_ATOM_SEED_BATCH_2026-08-01\\DG-T4-Independent-Convergence.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-08-01T04:17:55+00:00",
+      "lane": "Framework",
+      "event_id": "sha256:2b6d1ecdb430b3daa5b977cc2d028ea6fe09006cd094b284962ad35c7450f363",
+      "event_uuid": "3ee2f5c0-5608-5794-977e-12a7222082ce"
+    }
+  ],
+  "source_claim_id": "DG-T4-Independent-Convergence",
+  "atom_uuid": "8fbef0f9-c74c-5108-9f47-4d360f335622"
+}

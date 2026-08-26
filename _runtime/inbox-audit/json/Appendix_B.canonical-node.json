@@ -1,0 +1,83 @@
+{
+  "source_id": "Appendix_B",
+  "title": "The Hubble Gradient Function H(z)",
+  "canonical_node": {
+    "axiom": "The measured Hubble constant H is frame-dependent and varies with redshift according to the structure fraction f_s(z), following H(z) = H_thermal + H * f_s(z).",
+    "definitions": [
+      "H_thermal = 67.4 km/s/Mpc (Planck 2018 CMB value)",
+      "H_local = 73.5 km/s/Mpc (SH0ES local distance ladder value)",
+      "H = H_local - H_thermal = 6.1 km/s/Mpc",
+      "f_s(z) = structure fraction: fraction of baryonic matter in gravitationally collapsed, thermodynamically structured systems at redshift z",
+      "z_t = transition redshift where f_s(z_t) = 0.5",
+      " = steepness parameter of the logistic transition"
+    ],
+    "derivation": [
+      "At z ~ 1100, f_s  0, so H  H_thermal.",
+      "At z ~ 0, f_s  1, so H  H_local.",
+      "Assume a smooth transition modeled by a generalized logistic: f_s(z) = 1 / (1 + (z/z_t)^).",
+      "Combine to obtain Eq. B.1: H(z) = 67.4 + 6.1 / (1 + (z/z_t)^).",
+      "Parameters z_t and  are constrained by structure formation simulations: z_t in [1.0, 2.5],  in [1.5, 2.5].",
+      "The standard Friedmann H(z) is recovered at z=0, with a redshift-dependent calibration factor H(z)/H(0)."
+    ],
+    "action": "Use Eq. B.1 to predict H at various redshifts, with parameters derived from structure formation data, and test against model-independent distance ladder measurements.",
+    "boundary": [
+      "Does not derive the thermodynamic reference frame from first principles.",
+      "Does not prove structure formation is the correct variable.",
+      "Does not replace CDM; standard cosmology is recovered as a special case.",
+      "Does not claim certainty about z_t and ; they are testable predictions."
+    ],
+    "test": [
+      "Compare predicted H(z) with direct distance ladder measurements at z > 1 (not BAO).",
+      "Check if best-fit z_t and  from Hubble data fall within allowed ranges and are consistent with structure formation data.",
+      "Falsification if H(z > 3) > 70 km/s/Mpc for any allowed parameter combination."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Planck 2018 H_thermal = 67.4",
+      "SH0ES H_local = 73.5",
+      "Structure formation simulations (Illustris-TNG, EAGLE, FLAMINGO) for z_t and  ranges",
+      "Standard Friedmann equation as baseline"
+    ],
+    "dg2_new_capability": "Provides a quantitative, testable prediction for the redshift dependence of the Hubble constant, offering a potential resolution to the Hubble tension without modifying gravity or adding particles.",
+    "dg3_preserved_floor": "Preserves all predictions of GR and CDM within each reference frame; standard cosmology is recovered at z=0.",
+    "dg4_collapse_if_removed": "Without this appendix, the paper's claim of resolving the Hubble tension lacks a concrete, testable functional form and would remain a qualitative hypothesis.",
+    "dg5_translation_registers": [
+      "H(z) as a function of redshift",
+      "Structure fraction f_s(z)",
+      "Parameters z_t and "
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "testable physical hypothesis",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "test"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The functional form is assumed, not derived from first principles.",
+      "The parameters z_t and  are not precisely known; the allowed ranges are broad.",
+      "The claim that H(z) is frame-dependent is an interpretation, not proven.",
+      "BAO measurements are model-dependent and may not directly test the gradient."
+    ],
+    "kill_conditions": [
+      "KC-B1: Best-fit z_t outside [0.5, 5.0]",
+      "KC-B2: Best-fit  outside [0.5, 4.0]",
+      "KC-B3: H(z > 3) > 70 km/s/Mpc",
+      "KC-B4: Best-fit z_t and  inconsistent with structure formation data (>3)",
+      "KC-B5: Direct distance ladder at z > 1 shows H > 72"
+    ],
+    "lean_target": "A lean formalization would focus on the algebraic definition of H(z) and the parameter constraints, without asserting the physical interpretation as proven."
+  },
+  "plain_summary": "This appendix proposes a mathematical function for how the measured Hubble constant varies with redshift, based on the idea that the 'ruler' used to measure expansion depends on the fraction of matter that has formed structures. It provides specific predictions and falsification criteria, but the underlying physical interpretation is not derived from first principles and the parameters are not precisely known.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Appendix_B.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Appendix_B.canonical-node.json"
+  }
+}

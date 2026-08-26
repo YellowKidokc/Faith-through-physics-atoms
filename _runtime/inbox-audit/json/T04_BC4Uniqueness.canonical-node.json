@@ -1,0 +1,81 @@
+{
+  "source_id": "T04_BC4Uniqueness",
+  "title": "Why Only Christianity Satisfies BC4",
+  "canonical_node": {
+    "axiom": "Only a triune God (three persons, one essence) satisfies the boundary condition BC4 requiring exactly three observers for maximal coherence; all non-Trinitarian religions fail this condition.",
+    "definitions": [
+      "BC4: Boundary condition requiring N_observers = 3 for C = C_max (zero-uncertainty self-referential system).",
+      "Trinity: Three distinct persons (Father, Son, Spirit) sharing one essence (homoousios).",
+      "N: Number of distinct personal observers.",
+      "|E|: Number of essences or beings.",
+      "C: Coherence measure; C_max is maximum coherence."
+    ],
+    "derivation": [
+      "Self-knowledge requires a distinction between knower and known (T.1).",
+      "Self-love requires an eternal beloved (T.2).",
+      "For a self-referential system to achieve zero uncertainty, exactly three observers are required (BC4).",
+      "Christianity posits three persons in one essence, satisfying N=3 and |E|=1.",
+      "Islam, Judaism, Unitarianism posit N=1; Buddhism N=0; Hinduism variants yield N=0,1, or 3 with |E|1.",
+      "Therefore, only Christianity satisfies BC4."
+    ],
+    "action": "Evaluate any proposed religion or worldview against BC4 by counting distinct personal observers and essences; if N=3 and |E|=1, it passes; otherwise, it fails.",
+    "boundary": [
+      "Does not prove Christianity is true in all respects; only claims coherence with BC4.",
+      "Does not address other boundary conditions BC1-BC8 in full detail.",
+      "Does not claim to have examined all possible religions; logical space limited to N=0,1,2,3,many.",
+      "Does not assert that BC4 is the only necessary condition for truth."
+    ],
+    "test": [
+      "For any religion R, compute N(R) and |E(R)|; check if N=3 and |E|=1.",
+      "Verify that the three persons are distinct yet share one essence (not tritheism or modalism).",
+      "Check that the religion affirms eternal self-knowledge and self-love without creation."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "T.10 (BC4 requires Trinity structure)",
+      "D4 (Only Christianity satisfies all BCs)",
+      "T.1 (self-knowledge requires knower/known)",
+      "T.2 (self-love requires eternal beloved)"
+    ],
+    "dg2_new_capability": "Provides a formal criterion (N=3, |E|=1) to evaluate religious claims against BC4, enabling systematic comparison.",
+    "dg3_preserved_floor": "Preserves the prior axioms T.10 and D4 by operationalizing BC4 into a testable condition.",
+    "dg4_collapse_if_removed": "If this node is removed, the uniqueness claim for Christianity loses its mathematical justification; BC4 remains but no religion is shown to satisfy it.",
+    "dg5_translation_registers": [
+      "Theology: Trinity, persons, essence",
+      "Mathematics: N, |E|, coherence",
+      "Information theory: observers, self-reference"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Uniqueness claim with mathematical formalism",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine as a conditional claim pending formal verification of BC4 derivation and uniqueness proof."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims 'mathematical' proof without rigorous formalization.",
+      "Equates BC4 with Trinity without independent justification.",
+      "Dismisses other religions based on simplified characterizations.",
+      "Assumes BC4 is necessary and sufficient for coherence."
+    ],
+    "kill_conditions": [
+      "If BC4 is shown not to require N=3.",
+      "If another religion is shown to have N=3 and |E|=1.",
+      "If the derivation of BC4 from self-reference is invalid.",
+      "If the boundary conditions are shown to be arbitrary."
+    ],
+    "lean_target": "Formalize BC4 in a proof assistant (e.g., Lean) to verify the uniqueness claim."
+  },
+  "plain_summary": "This document argues that only Christianity, with its Trinity, satisfies a boundary condition BC4 requiring exactly three observers for a coherent self-referential God. It evaluates Islam, Judaism, Hinduism, Buddhism, and Unitarianism as failing. However, the proof is not formally established and relies on theological interpretations.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\T04_BC4Uniqueness.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\T04_BC4Uniqueness.canonical-node.json"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-032",
+  "atom_uid": "sha256:6c3acc9d78ac2726aba4d71c3401421356c103d6f3ba2a39e015691e8c7c3231",
+  "title": "ISO-032 - Attachment Theory ↔ Prayer/Worship",
+  "claim": "ISO-032: Attachment Theory ↔ Prayer/Worship maps Attachment Theory to Prayer / Worship. Workbook verdict: Level 3. Honest verdict: Full doc confirms. Published AGI. Closest to Level 4.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "assumptions": [
+    "Attachment Theory",
+    "Prayer / Worship",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "AGI empirically bridges domains. Swap partially metric-supported.",
+    "Full doc confirms. Published AGI. Closest to Level 4."
+  ],
+  "equations": [],
+  "bridges": [
+    "Attachment Theory -> Prayer / Worship"
+  ],
+  "dependencies": [
+    "ISO-032"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Bridge may be partially definitional",
+    "Promotion blocker: Need prospective prediction study using AGI instrument (not just retrospective)",
+    "Promotion blocker: Need independent replication beyond Beck & McDonald",
+    "Promotion blocker: Must show a NOVEL prediction not expected without the mapping"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: Bridge may be partially definitional"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-032 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:e99b25f8ef7b5602485af716d1bab499bf20fa5e0f3a33d0bcf3bd7dcca4b67a"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-032"
+}

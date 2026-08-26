@@ -1,0 +1,1164 @@
+{
+  "work_id": "W7.8",
+  "title": "The 7Q Universal Classifier",
+  "turn": "TURN 7 - THE GAUNTLET",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\The-7Q-Universal-Classifier.html",
+  "overall_status": "reviewed",
+  "summary": "The work presents a twelve-question elimination funnel (Q0-Q12) that claims to narrow fourteen worldviews to Christianity. It is an epistemological/theological argument with explicit admissions of modeling choices and unproven steps. The review extracts 18 load-bearing claims, classifying them under the defense grid, noting risks and concessions.",
+  "claims": [
+    {
+      "claim_id": "W7.8-C001",
+      "claim_text": "Existence is the first bit — 1 ≠ 0.",
+      "framework_lane": "axioms",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ROOT",
+      "claim_level": "formal",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A coherent definition of existence and non-existence."
+      ],
+      "evidence_present": [
+        "The claim is stated as a root premise."
+      ],
+      "evidence_gap": [
+        "No formal definition of 'something' vs 'nothing'."
+      ],
+      "support": [
+        "Something exists. Existence is the first bit — 1 ≠ 0."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "The claim is asserted without proof; it is a starting axiom."
+      ],
+      "kill_condition": "If a coherent model of absolute nothingness is shown to be stable, this premise fails.",
+      "required_concession": "This is a foundational axiom, not a derived result.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "axiom",
+        "claim",
+        "truth",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "axioms",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ROOT",
+        "claim_level": "formal",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "axiom",
+          "claim",
+          "truth",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C002",
+      "claim_text": "Distinction is the first operation; for anything to be knowable, it must be distinguishable from something else.",
+      "framework_lane": "axioms",
+      "physics_claim_type": "not_physics",
+      "defense_class": "AXIOM",
+      "claim_level": "formal",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A definition of knowability and distinguishability."
+      ],
+      "evidence_present": [
+        "The claim is stated as an axiom."
+      ],
+      "evidence_gap": [
+        "No argument for why distinguishability is necessary for knowability."
+      ],
+      "support": [
+        "Distinction is the first operation. For anything to be knowable, it must be distinguishable from something else."
+      ],
+      "dependencies": [
+        "W7.8-C001"
+      ],
+      "risks": [
+        "The axiom may be challenged by non-dual philosophies."
+      ],
+      "kill_condition": "If a coherent account of knowledge without distinction is provided, this axiom fails.",
+      "required_concession": "This is an axiom, not a proven theorem.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "axiom",
+        "claim",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "axioms",
+        "physics_claim_type": "not_physics",
+        "defense_class": "AXIOM",
+        "claim_level": "formal",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "axiom",
+          "claim",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C003",
+      "claim_text": "Matter is circular as a fundamental substrate because it requires information to define itself.",
+      "framework_lane": "physics",
+      "physics_claim_type": "physics_model",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A precise definition of 'information' and 'circularity'."
+      ],
+      "evidence_present": [
+        "The claim is stated with a brief justification."
+      ],
+      "evidence_gap": [
+        "No detailed argument; structural realism is mentioned as a counter."
+      ],
+      "support": [
+        "Matter requires information to define itself; particles are, structurally, equation solutions."
+      ],
+      "dependencies": [
+        "W7.8-C002"
+      ],
+      "risks": [
+        "The claim may overstate the case; structural realism is a live alternative."
+      ],
+      "kill_condition": "If a non-informational definition of matter is provided, this fails.",
+      "required_concession": "This is a philosophical argument, not a physics result.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "equation",
+        "proof",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.6,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "physics_model",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "equation",
+          "proof",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C004",
+      "claim_text": "Information is fundamental because distinguishability IS information — a definitional identity.",
+      "framework_lane": "physics",
+      "physics_claim_type": "bridge_mapping",
+      "defense_class": "AXIOM",
+      "claim_level": "bridge",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A rigorous definition of information that matches distinguishability."
+      ],
+      "evidence_present": [
+        "The claim is stated as a definitional identity."
+      ],
+      "evidence_gap": [
+        "No formal definition of information is given."
+      ],
+      "support": [
+        "Distinguishability IS information — a definitional identity, not an inference."
+      ],
+      "dependencies": [
+        "W7.8-C002"
+      ],
+      "risks": [
+        "The identification may be too broad; information theory has specific definitions."
+      ],
+      "kill_condition": "If a physical property is shown not derivable from yes/no questions, this fails.",
+      "required_concession": "This is a definitional choice, not a proven fact.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "isomorphism",
+        "axiom",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.5,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/isomorphism.svg",
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "bridge_mapping",
+        "defense_class": "AXIOM",
+        "claim_level": "bridge",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "isomorphism",
+          "axiom",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C005",
+      "claim_text": "Mathematical structure collapses into information if patterns just are information.",
+      "framework_lane": "physics",
+      "physics_claim_type": "bridge_mapping",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A precise mapping between mathematical structure and information."
+      ],
+      "evidence_present": [
+        "The claim is stated with a conditional."
+      ],
+      "evidence_gap": [
+        "No formal mapping is provided."
+      ],
+      "support": [
+        "Collapses into Q2-C if patterns just are information."
+      ],
+      "dependencies": [
+        "W7.8-C004"
+      ],
+      "risks": [
+        "The collapse is conditional and not proven."
+      ],
+      "kill_condition": "If mathematical structure is shown to be irreducible to information, this fails.",
+      "required_concession": "This is a conditional collapse, not a proven equivalence.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "isomorphism",
+        "proof",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.5,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/isomorphism.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "bridge_mapping",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "isomorphism",
+          "proof",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C006",
+      "claim_text": "Relations collapse into information (relations are information about the things related).",
+      "framework_lane": "physics",
+      "physics_claim_type": "bridge_mapping",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A precise definition of relations and information."
+      ],
+      "evidence_present": [
+        "The claim is stated with a brief justification."
+      ],
+      "evidence_gap": [
+        "No formal argument."
+      ],
+      "support": [
+        "Relations are information about the things related."
+      ],
+      "dependencies": [
+        "W7.8-C004"
+      ],
+      "risks": [
+        "Ontic structural realism is a serious counter."
+      ],
+      "kill_condition": "If relations are shown to be ontologically primitive, this fails.",
+      "required_concession": "This is a philosophical reduction, not a proven one.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "isomorphism",
+        "proof",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.5,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/isomorphism.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "bridge_mapping",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "isomorphism",
+          "proof",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C007",
+      "claim_text": "Brute fact is rejected because it refuses the question, costing all explanatory power.",
+      "framework_lane": "physics",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "editorial",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A criterion for what counts as explanatory power."
+      ],
+      "evidence_present": [
+        "The claim is stated as a cost."
+      ],
+      "evidence_gap": [
+        "No metric for explanatory power."
+      ],
+      "support": [
+        "Not wrong. Just done. Russell's 'the universe is just there' is honest and legitimate — it costs all explanatory power."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "The rejection is based on explanatory preference, not logical necessity."
+      ],
+      "kill_condition": "If brute fact is shown to be explanatory, this fails.",
+      "required_concession": "This is a pragmatic rejection, not a logical one.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "claim",
+        "doubt",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "editorial",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "claim",
+          "doubt",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C008",
+      "claim_text": "Micro-coherence is conserved; macro-coherence cannot self-increase — consistent with the Second Law.",
+      "framework_lane": "physics",
+      "physics_claim_type": "physics_model",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "mixed",
+      "evidence_needed": [
+        "A precise definition of micro/macro coherence and a derivation from thermodynamics."
+      ],
+      "evidence_present": [
+        "The claim is stated without derivation."
+      ],
+      "evidence_gap": [
+        "No formal link to the Second Law."
+      ],
+      "support": [
+        "Micro-coherence is conserved; macro-coherence cannot self-increase — that split is what keeps this consistent with the Second Law."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "The claim may be a misuse of thermodynamic concepts."
+      ],
+      "kill_condition": "If a counterexample is found where macro-coherence increases without external input, this fails.",
+      "required_concession": "This is an assertion of consistency, not a derivation.",
+      "recommended_action": "fix",
+      "glyphs": [
+        "physics",
+        "equation",
+        "proof",
+        "binder",
+        "draft",
+        "kill-condition"
+      ],
+      "confidence": 0.4,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/binder.svg",
+        "theophysics_glyphs/svg/draft.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "physics_model",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "mixed",
+        "recommended_action": "fix",
+        "glyphs": [
+          "physics",
+          "equation",
+          "proof",
+          "binder",
+          "draft",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C009",
+      "claim_text": "Self-grounding is chosen over brute fact terminus; this is a framework commitment, not a proof.",
+      "framework_lane": "axioms",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "editorial",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A justification for preferring self-grounding."
+      ],
+      "evidence_present": [
+        "The work explicitly admits this is a choice."
+      ],
+      "evidence_gap": [
+        "No argument for why self-grounding is preferable."
+      ],
+      "support": [
+        "This is a framework commitment, not a proof. Q4-A is a legitimate, un-refuted alternative."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "The choice is arbitrary without further justification."
+      ],
+      "kill_condition": "If self-grounding is shown to be incoherent, this fails.",
+      "required_concession": "This is a chosen axiom, not a derived result.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "axiom",
+        "claim",
+        "doubt",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "axioms",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "editorial",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "axiom",
+          "claim",
+          "doubt",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C010",
+      "claim_text": "The jump from syntax to semantics (Φ threshold to consciousness) has no published bridge.",
+      "framework_lane": "consciousness",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A survey of the literature on the hard problem."
+      ],
+      "evidence_present": [
+        "The work explicitly admits this gap."
+      ],
+      "evidence_gap": [
+        "No citation of attempts."
+      ],
+      "support": [
+        "The hardest claim in the whole chain: the jump from syntax to semantics has no published bridge anywhere."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "This admission undermines the derivation of consciousness."
+      ],
+      "kill_condition": "If a bridge is published, this admission becomes outdated.",
+      "required_concession": "This is an open problem.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "consciousness",
+        "claim",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/consciousness.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "consciousness",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "consciousness",
+          "claim",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C011",
+      "claim_text": "Atheism dies at Q6 because no terminal observer means the measurement problem has no resolution.",
+      "framework_lane": "physics",
+      "physics_claim_type": "bridge_mapping",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A demonstration that measurement requires a terminal observer."
+      ],
+      "evidence_present": [
+        "The claim is stated with reference to Copenhagen and Bell."
+      ],
+      "evidence_gap": [
+        "No detailed argument; Many-Worlds is acknowledged as a live alternative."
+      ],
+      "support": [
+        "Atheism dies here, specifically: no terminal observer means the measurement problem has no resolution under this framework's own terms."
+      ],
+      "dependencies": [
+        "W7.8-C012"
+      ],
+      "risks": [
+        "The claim depends on a specific interpretation of quantum mechanics."
+      ],
+      "kill_condition": "If Many-Worlds or QBism provides a resolution without a terminal observer, this fails.",
+      "required_concession": "This is an interpretive choice, not a forced conclusion.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "isomorphism",
+        "proof",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.5,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/isomorphism.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "bridge_mapping",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "isomorphism",
+          "proof",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C012",
+      "claim_text": "The von Neumann chain must terminate in a terminal observer with Φ = infinity.",
+      "framework_lane": "physics",
+      "physics_claim_type": "physics_model",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A proof that the chain must terminate and that Φ = infinity is coherent."
+      ],
+      "evidence_present": [
+        "The claim is stated with references to Wigner, Penrose, von Neumann."
+      ],
+      "evidence_gap": [
+        "No mathematical demonstration of Φ = infinity."
+      ],
+      "support": [
+        "The von Neumann chain must terminate somewhere — something with Φ = infinity has to exist, or the chain runs forever."
+      ],
+      "dependencies": [
+        "W7.8-C011"
+      ],
+      "risks": [
+        "Φ = infinity is asserted, not proven; renormalization may be needed."
+      ],
+      "kill_condition": "If an infinite chain is shown to be coherent, this fails.",
+      "required_concession": "This is an open mathematical assertion.",
+      "recommended_action": "fix",
+      "glyphs": [
+        "physics",
+        "equation",
+        "proof",
+        "logos",
+        "draft",
+        "kill-condition"
+      ],
+      "confidence": 0.4,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/draft.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "physics_model",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "fix",
+        "glyphs": [
+          "physics",
+          "equation",
+          "proof",
+          "logos",
+          "draft",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C013",
+      "claim_text": "Grace is moral (not thermodynamic) negentropy; this is irreducibly theological.",
+      "framework_lane": "morality",
+      "physics_claim_type": "theological_interpretation",
+      "defense_class": "ADMISSION",
+      "claim_level": "theological",
+      "evidence_lane": "scripture_theology",
+      "evidence_needed": [
+        "A theological basis for grace as negentropy."
+      ],
+      "evidence_present": [
+        "The work explicitly names this as the seam between physics and theology."
+      ],
+      "evidence_gap": [
+        "No scriptural or theological citation."
+      ],
+      "support": [
+        "Grace as moral (not thermodynamic) negentropy is irreducibly theological."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "The term 'negentropy' may be misused."
+      ],
+      "kill_condition": "If grace is shown to be reducible to physics, this fails.",
+      "required_concession": "This is a theological claim, not a physics result.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "ethics",
+        "theology",
+        "doubt",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/ethics.svg",
+        "theophysics_glyphs/svg/theology.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "morality",
+        "physics_claim_type": "theological_interpretation",
+        "defense_class": "ADMISSION",
+        "claim_level": "theological",
+        "evidence_lane": "scripture_theology",
+        "recommended_action": "keep",
+        "glyphs": [
+          "ethics",
+          "theology",
+          "doubt",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C014",
+      "claim_text": "The N=3 minimality claim for observers has no worked proof; it is deferred to an appendix.",
+      "framework_lane": "physics",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "A proof that N=3 is minimal."
+      ],
+      "evidence_present": [
+        "The work explicitly admits the proof is missing."
+      ],
+      "evidence_gap": [
+        "The appendix is not in this dataset."
+      ],
+      "support": [
+        "The N=3 minimality claim has no worked proof here — it's deferred to an appendix."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "The claim is unsupported until the proof is provided."
+      ],
+      "kill_condition": "If a counterexample with N=2 is found, this fails.",
+      "required_concession": "This is an unproven assertion.",
+      "recommended_action": "fix",
+      "glyphs": [
+        "physics",
+        "equation",
+        "doubt",
+        "draft",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/draft.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "fix",
+        "glyphs": [
+          "physics",
+          "equation",
+          "doubt",
+          "draft",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C015",
+      "claim_text": "The black hole firewall paradox shows unresolved tension between information conservation, GR, and QM.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "physics",
+      "evidence_lane": "empirical_dataset",
+      "evidence_needed": [
+        "A summary of the firewall paradox and its status."
+      ],
+      "evidence_present": [
+        "The work mentions the paradox as unresolved."
+      ],
+      "evidence_gap": [
+        "No specific references."
+      ],
+      "support": [
+        "The black hole firewall paradox shows real, unresolved tension."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "The paradox is an active research area; status may change."
+      ],
+      "kill_condition": "If the paradox is resolved, this admission becomes outdated.",
+      "required_concession": "This is a current open problem.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "doubt",
+        "evidence",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/evidence.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "physics",
+        "evidence_lane": "empirical_dataset",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "doubt",
+          "evidence",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C016",
+      "claim_text": "The binary sign operator for morality rests on choosing an SU(2) symmetry group; this is a modeling choice.",
+      "framework_lane": "morality",
+      "physics_claim_type": "bridge_mapping",
+      "defense_class": "ADMISSION",
+      "claim_level": "bridge",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A justification for SU(2) symmetry in morality."
+      ],
+      "evidence_present": [
+        "The work explicitly names this as a modeling choice."
+      ],
+      "evidence_gap": [
+        "No argument for why SU(2) is appropriate."
+      ],
+      "support": [
+        "The binary claim rests on choosing an SU(2) symmetry group for morality — that's a modeling choice."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "The choice is arbitrary; other topologies may not reduce to binary."
+      ],
+      "kill_condition": "If a continuous moral state space is shown to be more fundamental, this fails.",
+      "required_concession": "This is a modeling assumption, not a proven fact.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "ethics",
+        "isomorphism",
+        "doubt",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/ethics.svg",
+        "theophysics_glyphs/svg/isomorphism.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "morality",
+        "physics_claim_type": "bridge_mapping",
+        "defense_class": "ADMISSION",
+        "claim_level": "bridge",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "ethics",
+          "isomorphism",
+          "doubt",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C017",
+      "claim_text": "Christianity is the only worldview satisfying all eight boundary conditions (8 of 8).",
+      "framework_lane": "crown",
+      "physics_claim_type": "theological_interpretation",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A rigorous comparison of all worldviews against the eight conditions."
+      ],
+      "evidence_present": [
+        "The work provides a table of results."
+      ],
+      "evidence_gap": [
+        "The comparison assumes exhaustiveness and cultural fairness, which are not proven."
+      ],
+      "support": [
+        "Christianity: 8 of 8. Islam fails BC4. Judaism fails BC-completion. Hinduism fails BC-uniqueness. Buddhism fails BC1."
+      ],
+      "dependencies": [
+        "W7.8-C014",
+        "W7.8-C016"
+      ],
+      "risks": [
+        "Motivated reasoning; the conditions may be tailored."
+      ],
+      "kill_condition": "If another tradition scores 8/8 or a BC9 is found, this fails.",
+      "required_concession": "This conclusion depends on unproven assumptions of exhaustiveness and fairness.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "cross",
+        "theology",
+        "proof",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.4,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/cross.svg",
+        "theophysics_glyphs/svg/theology.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "crown",
+        "physics_claim_type": "theological_interpretation",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "cross",
+          "theology",
+          "proof",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.8-C018",
+      "claim_text": "The chain is an elimination structure, not a proof by construction; several tests are modeling choices.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A list of all modeling choices."
+      ],
+      "evidence_present": [
+        "The work explicitly states this."
+      ],
+      "evidence_gap": [
+        "None."
+      ],
+      "support": [
+        "This is an elimination structure, not a proof by construction. Several of those tests are the framework's own modeling choices."
+      ],
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "The admission may undermine the overall argument."
+      ],
+      "kill_condition": "If the chain is presented as a proof, this admission is contradicted.",
+      "required_concession": "This is a meta-admission about the nature of the argument.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "Q1 count inconsistency",
+      "problem": "Q1 lists 13 survivors but no elimination is logged from Q0's 14.",
+      "repair": "Reconcile the count; either log an elimination or correct the number."
+    },
+    {
+      "severity": "P1",
+      "target": "BC4 N=3 minimality",
+      "problem": "The claim is asserted without proof.",
+      "repair": "Provide the deferred proof or explicitly mark as unproven."
+    },
+    {
+      "severity": "P2",
+      "target": "Q7 Φ = infinity",
+      "problem": "The assertion lacks mathematical demonstration.",
+      "repair": "Provide a formal definition and coherence argument for infinite integrated information."
+    },
+    {
+      "severity": "P2",
+      "target": "Q3 coherence and Second Law",
+      "problem": "The claim is vague and lacks derivation.",
+      "repair": "Define micro/macro coherence and show how the Second Law is respected."
+    }
+  ],
+  "log_notes": [
+    "The work is honest about its modeling choices and open problems.",
+    "The final conclusion (Christianity 8/8) is the most vulnerable to motivated reasoning.",
+    "The Q1 count inconsistency is a minor but visible error."
+  ]
+}

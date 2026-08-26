@@ -1,0 +1,75 @@
+{
+  "source_id": "test08_revelation_density",
+  "title": "Revelation Density S-Curve Test",
+  "canonical_node": {
+    "axiom": "Revelation density in biblical text follows a logistic growth curve over time.",
+    "definitions": [
+      "Revelation density: information content per unit of text across biblical eras, measured using compression-based complexity proxies.",
+      "Sigmoid curve: a logistic function R(t) = R_max / (1 + exp(-k(t - t0))).",
+      "Biblical eras: sequential periods of biblical history as defined in the test."
+    ],
+    "derivation": [
+      "The chi-field's K component predicts logistic growth for revelation density.",
+      "Logistic growth is expected when growth is limited by carrying capacity.",
+      "Measure revelation density per era using compression-based proxies.",
+      "Fit the era sequence to a sigmoid curve and evaluate R.",
+      "Compare sigmoid fit to linear and exponential fits."
+    ],
+    "action": "Compute revelation density across biblical eras, fit to a sigmoid, and assess fit quality.",
+    "boundary": [
+      "Does not claim to prove divine action.",
+      "Does not make claims about canon.",
+      "Does not establish the chi-field model's validity.",
+      "Does not measure revelation itself, only text information structure."
+    ],
+    "test": [
+      "R of sigmoid fit is high and better than linear and exponential fits.",
+      "Inflection point falls in mid-prophetic period.",
+      "Reproducible in Colab notebook."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Compression-based complexity measurement method (from Tests 03 and 06).",
+      "Biblical era segmentation.",
+      "Chi-field model's K component prediction."
+    ],
+    "dg2_new_capability": "Provides a quantitative test of the S-curve prediction for revelation density.",
+    "dg3_preserved_floor": "Preserves the empirical observation that the biblical text has non-random information structure.",
+    "dg4_collapse_if_removed": "Without this test, the empirical support for the logistic growth prediction is weakened.",
+    "dg5_translation_registers": [
+      "Information theory",
+      "Statistics (curve fitting)",
+      "Theology (revelation history)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical pattern claim",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "C",
+    "recommended_atom_action": "preserve as empirical observation; do not treat as proof of chi-field"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting a curve fit as evidence for the chi-field model.",
+      "Assuming the measurement proxies accurately reflect revelation density.",
+      "Overgeneralizing from a single test to the entire framework."
+    ],
+    "kill_conditions": [
+      "If the sigmoid fit is not reproducible.",
+      "If alternative models fit equally well or better.",
+      "If the measurement method is shown to be biased."
+    ],
+    "lean_target": "Formalize the curve fitting and statistical comparison in Lean."
+  },
+  "plain_summary": "This document reports a test that fits a sigmoid curve to the density of revelatory content across biblical eras, claiming a good fit. It is an empirical observation, not a proof of the underlying theory.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test08_revelation_density.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test08_revelation_density.canonical-node.json"
+  }
+}

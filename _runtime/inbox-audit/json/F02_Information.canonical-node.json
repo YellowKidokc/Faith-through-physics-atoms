@@ -1,0 +1,77 @@
+{
+  "source_id": "F02_Information",
+  "title": "Information is Fundamental",
+  "canonical_node": {
+    "axiom": "Information is ontologically prior to matter; distinguishability is information.",
+    "definitions": [
+      "Information: That which distinguishes one state from another.",
+      "Distinguishability: The property of being different from something else.",
+      "Logos Field (chi): The self-grounding substrate that instantiates information.",
+      "Self-grounding: A structure that grounds itself, denoted chi(chi) = chi."
+    ],
+    "derivation": [
+      "1. Existence and distinction are established (prior axioms).",
+      "2. Distinguishability is information (definitional identity).",
+      "3. Information requires a substrate (O1.1).",
+      "4. The substrate must be self-instantiating to avoid infinite regress (O1.2).",
+      "5. Information is conserved (O1.3).",
+      "6. Therefore, information is fundamental and matter is derivative."
+    ],
+    "action": "Treat information as the fundamental ontological category; interpret physical theories in information-theoretic terms.",
+    "boundary": [
+      "Does not claim that mind or consciousness is fundamental.",
+      "Does not claim that all information is meaningful or semantic.",
+      "Does not provide a complete physical theory of the Logos Field."
+    ],
+    "test": [
+      "Check that any physical state can be described as a pattern of distinctions.",
+      "Verify that information-theoretic interpretations of physics (e.g., holographic principle) are consistent with the axioms.",
+      "Attempt to find a counterexample where matter exists without any distinguishing properties."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "P0.3",
+      "O1.1",
+      "O1.2",
+      "O1.3"
+    ],
+    "dg2_new_capability": "Provides an ontological foundation for physics based on information, unifying quantum mechanics, thermodynamics, and gravity.",
+    "dg3_preserved_floor": "Preserves the empirical success of physics while reinterpreting its foundations.",
+    "dg4_collapse_if_removed": "If information is not fundamental, the argument for the Logos Field and the critique of materialism collapses.",
+    "dg5_translation_registers": [
+      "Ontology",
+      "Physics",
+      "Theology"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Ontological claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims 'It from Bit' is literally true without rigorous proof.",
+      "Equates information with distinguishability without addressing philosophical objections.",
+      "Uses theological references as confirmation rather than as separate evidence."
+    ],
+    "kill_conditions": [
+      "If a physical system can be shown to exist without any distinguishing properties.",
+      "If information is shown to be purely epistemic (mind-dependent).",
+      "If the self-grounding substrate is shown to be logically inconsistent."
+    ],
+    "lean_target": "Information is a fundamental aspect of reality, but the strong claim of ontological priority requires further formalization."
+  },
+  "plain_summary": "This document argues that information is more fundamental than matter, using the idea that distinguishability is information. It critiques materialism, physicalism, and reductive naturalism, and proposes a self-grounding 'Logos Field' as the substrate. However, the argument is largely philosophical and lacks rigorous formal proof, so it is not yet established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F02_Information.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\F02_Information.canonical-node.json"
+  }
+}

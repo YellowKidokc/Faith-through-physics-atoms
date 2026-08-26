@@ -1,0 +1,103 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-088",
+  "nodeID": "tp:axioms/01/AX-088",
+  "claimID": "tp:AXIOMS/A11.1",
+  "name": "Moral Realism",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Moral facts exist objectively — not mere preference or convention.",
+  "statementPlain": "Moral facts exist objectively — not mere preference or convention.",
+  "mathematicalForm": "∃(moral facts) independent of opinion",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-014",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-066",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-067",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "moral-conservation"
+  ],
+  "keywords": [
+    "A11.1",
+    "Q10",
+    "Relational",
+    "FrameworkCommitment"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show all moral claims are reducible to preference (error theory). Demonstrate moral anti-realism is coherent and complete. Show coherence-morality identity (AX-089) fails.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 90
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-088",
+    "oldID": "A11.1",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-P (Moral realism — moral facts are real)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Relational",
+    "tier": "1",
+    "newType": "FrameworkCommitment",
+    "logicalForce": "framework assumption",
+    "formalizableInLean": "partly",
+    "leanKind": "parameter / assumption, not theorem",
+    "riskLevel": "high",
+    "kernelRole": "guardedPremise",
+    "moduleID": "M11",
+    "moduleTitle": "Moral Coherence",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic — moral facts constrain agency)",
+    "worldviewsEliminated": "Nihilism (no moral facts), Eliminativism, Hard Determinism (no moral responsibility)",
+    "propagationTest": "YES — Moral realism propagates to coherence-morality identity, virtue-Φ correlation, and the entire moral framework.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "source_id": "LOAD_BEARING_GAP_SUMMARY",
+  "title": "Load-Bearing Gap Summary",
+  "canonical_node": {
+    "axiom": "The 10-variable product form is either derivable from the chi-field Lagrangian or must be explicitly treated as a postulate/axiom in the Lean layer and in public claims.",
+    "definitions": [
+      "chi-field Lagrangian: the formal Lagrangian defining the chi-field, whose exact definition is to be located.",
+      "10-variable product form: the product form involving 10 variables, whose exact definition is to be located.",
+      "bridge: a formal derivation connecting the chi-field Lagrangian to the 10-variable product form."
+    ],
+    "derivation": [
+      "The document identifies the Lagrangian-to-product-form bridge as the central formal gap.",
+      "It states that downstream claims depend on the product form as a load-bearing spine.",
+      "It asserts that if the product form is derived, the system is stronger; if assumed, public wording must change.",
+      "It lists professional tasks to locate definitions and determine the status of the product form."
+    ],
+    "action": "Determine whether the 10-variable product form is derivable from the chi-field Lagrangian; if derivable, formalize the bridge in Lean; if not, add explicit axiom/postulate labels and revise public claim status.",
+    "boundary": [
+      "This document does not itself provide the derivation or the formal definitions.",
+      "It does not assert that the product form is derivable or not; it only identifies the gap and required actions.",
+      "It does not resolve secondary gaps such as marker theorems or provenance."
+    ],
+    "test": [
+      "Check whether a formal Lean proof exists that derives the 10-variable product form from the chi-field Lagrangian.",
+      "Check whether the product form is explicitly labeled as an axiom/postulate in the Lean layer and public claims if not derived.",
+      "Check whether public claims are revised to match the actual formal status."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Exact formal definition of the chi-field Lagrangian",
+      "Exact formal definition of the 10-variable product form",
+      "Lean formalization of the bridge if derivable"
+    ],
+    "dg2_new_capability": "Provides a clear directive to close the central formal gap by either deriving the product form or explicitly labeling it as an axiom, thereby enabling honest and accurate public claims.",
+    "dg3_preserved_floor": "Preserves the existing conditional/postulated status of the product form as recorded in the V2 ledger, and maintains the requirement for honest public wording.",
+    "dg4_collapse_if_removed": "If this node is removed, the framework loses the explicit identification of the central gap and the directive to resolve it, risking continued overstatement in public claims.",
+    "dg5_translation_registers": [
+      "Lean formal proof of the bridge",
+      "Axiom/postulate label in Lean",
+      "Public claim status labels"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "meta-level directive",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "track as a task/requirement; do not treat as a proven theorem"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the product form as derived without a formal proof",
+      "Public claims exceeding the formal status of the product form",
+      "Ignoring the need to label the product form as an axiom if not derived"
+    ],
+    "kill_conditions": [
+      "If the bridge is proven derivable, the axiom label is unnecessary; the node's directive becomes obsolete.",
+      "If the bridge is proven not derivable and the product form is not labeled as an axiom, the node's directive is violated."
+    ],
+    "lean_target": "Formalize the bridge in Lean if derivable; otherwise, add axiom/postulate labels to the product form in the Lean layer."
+  },
+  "plain_summary": "This document identifies the main formal gap: whether the 10-variable product form can be derived from the chi-field Lagrangian. It says that if it can be derived, the system is stronger; if not, it must be treated as an axiom and public claims must be adjusted. The document does not itself provide the derivation or definitions, so it is a directive for future work, not a proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\LOAD_BEARING_GAP_SUMMARY.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\LOAD_BEARING_GAP_SUMMARY.canonical-node.json"
+  }
+}

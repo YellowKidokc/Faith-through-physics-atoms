@@ -1,0 +1,1152 @@
+{
+  "work_id": "W7.1",
+  "title": "The Honest Fight",
+  "turn": "TURN 7 - THE GAUNTLET",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\08_LEDGER_OBJECTIONS_PROOFS\\06-the-honest-fight.html",
+  "overall_status": "reviewed",
+  "summary": "This work is a public ledger of corrections and concessions after adversarial audits. It explicitly kills or reduces several earlier claims, and lists open derivations and proposed experiments. The core surviving claims are the structural isomorphism gates, the information primacy, and the Shannon base layer, all with scope labels. The work is honest about its limits, but some claims still carry overclaim risks, especially the 7Q classifier's 'prove anything' claim and the experimental correlations.",
+  "claims": [
+    {
+      "claim_id": "W7.1-C001",
+      "claim_text": "The veto architecture survives in the repaired canonical form: χ = ∏X_i over normalized global sector scores, where one zeroed sector collapses the whole.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Formal proof that the product form yields global collapse when any factor is zero."
+      ],
+      "evidence_present": [
+        "The work states the repaired form and that the veto architecture survives."
+      ],
+      "evidence_gap": [
+        "No explicit proof or Lean receipt is given in this work."
+      ],
+      "support": [
+        "The veto architecture survives in the repaired canonical form: χ = ∏X_i over normalized global sector scores."
+      ],
+      "dependencies": [
+        "W3.2",
+        "Lean receipt"
+      ],
+      "risks": [
+        "The claim is stated without proof here; may rely on external verification."
+      ],
+      "kill_condition": "If a counterexample shows a zero factor does not collapse the product under the defined normalization.",
+      "required_concession": "The formal proof is not shown in this work; it is referenced as repaired.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C002",
+      "claim_text": "The four forms (product, ratio, dynamic, field) of the master equation survived both audit passes.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Formal definitions of the four forms and their intended uses."
+      ],
+      "evidence_present": [
+        "The work states the four forms survived both passes."
+      ],
+      "evidence_gap": [
+        "No formal definitions or proofs are provided in this work."
+      ],
+      "support": [
+        "The four forms (product, ratio, dynamic, field) RIGHT. The layered structure survived both passes."
+      ],
+      "dependencies": [
+        "W3.2"
+      ],
+      "risks": [
+        "Scope label applies: formal model forms, not yet operationally validated physics."
+      ],
+      "kill_condition": "If any form is shown to be internally inconsistent or not well-defined.",
+      "required_concession": "These are formal model forms, not yet operationally validated physics.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C003",
+      "claim_text": "Seven of nine fruits derive as properties of one equilibrium expanded around one minimum (Hessian); gentleness and self-control are control-theoretic add-ons.",
+      "framework_lane": "ten_laws",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "A derivation showing seven fruits from a single Hessian expansion."
+      ],
+      "evidence_present": [
+        "The work states this as a derivation owed, not yet complete."
+      ],
+      "evidence_gap": [
+        "The actual derivation is not provided."
+      ],
+      "support": [
+        "Seven of nine derive as properties of one equilibrium expanded around one minimum (Hessian)."
+      ],
+      "dependencies": [
+        "W3.2"
+      ],
+      "risks": [
+        "The claim is marked as derivation owed; if not completed, it remains unproven."
+      ],
+      "kill_condition": "If the derivation cannot be completed or yields different fruits.",
+      "required_concession": "The derivation is owed, not optional.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "law",
+        "equation",
+        "doubt",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/law.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "ten_laws",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "law",
+          "equation",
+          "doubt",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C004",
+      "claim_text": "The Maxwell coupling invariant is the strongest formal result: quaternion EM and Trinity relational structure pass the same gates; vector reduction and modalism fail the same gates; controls prove gates are load-bearing.",
+      "framework_lane": "trinity",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Lean 4 verification with zero sorry."
+      ],
+      "evidence_present": [
+        "The work states Lean 4 verified, zero sorry."
+      ],
+      "evidence_gap": [
+        "The definition-ablation matrix is remaining work."
+      ],
+      "support": [
+        "Lean 4 verified, zero sorry. Caveat: definition-ablation matrix is remaining work."
+      ],
+      "dependencies": [
+        "Lean receipt",
+        "W3.2"
+      ],
+      "risks": [
+        "The claim depends on the Lean verification being correct and the gates being properly defined."
+      ],
+      "kill_condition": "If the Lean verification is found to have a flaw or the gates are not load-bearing.",
+      "required_concession": "Definition-ablation matrix is remaining work.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "theology",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.85,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/theology.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "trinity",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "theology",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C005",
+      "claim_text": "Consciousness derived from χ-field equilibrium is overstated; a completely non-conscious scalar field satisfies every stated equilibrium condition.",
+      "framework_lane": "consciousness",
+      "physics_claim_type": "bridge_mapping",
+      "defense_class": "ADMISSION",
+      "claim_level": "bridge",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A demonstration that the equilibrium conditions are insufficient to distinguish conscious from non-conscious."
+      ],
+      "evidence_present": [
+        "The work states this as a reduction."
+      ],
+      "evidence_gap": [
+        "No explicit demonstration is given, but the admission is clear."
+      ],
+      "support": [
+        "A completely non-conscious scalar field satisfies every stated equilibrium condition."
+      ],
+      "dependencies": [
+        "W3.2"
+      ],
+      "risks": [
+        "The claim is a concession; it reduces the original claim."
+      ],
+      "kill_condition": "If a future derivation shows the equilibrium conditions are sufficient after all.",
+      "required_concession": "The consciousness chain was overstated and has been reduced.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "consciousness",
+        "isomorphism",
+        "doubt",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.95,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/consciousness.svg",
+        "theophysics_glyphs/svg/isomorphism.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "consciousness",
+        "physics_claim_type": "bridge_mapping",
+        "defense_class": "ADMISSION",
+        "claim_level": "bridge",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "consciousness",
+          "isomorphism",
+          "doubt",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C006",
+      "claim_text": "The internal-regress argument stands: self-interpretation cannot ground itself (Gödel/Tarski/Turing); the regress has three exits; two fail; a self-grounding terminus requires internal differentiation.",
+      "framework_lane": "consciousness",
+      "physics_claim_type": "not_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "philosophical",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A rigorous argument showing the three exits and why two fail."
+      ],
+      "evidence_present": [
+        "The work states the argument stands with two named holes publicly listed."
+      ],
+      "evidence_gap": [
+        "The full argument is not reproduced here."
+      ],
+      "support": [
+        "Self-interpretation cannot ground itself (Gödel/Tarski/Turing). The regress has three exits; two fail."
+      ],
+      "dependencies": [
+        "Gödel/Tarski/Turing"
+      ],
+      "risks": [
+        "The argument is philosophical, not formal; may be challenged."
+      ],
+      "kill_condition": "If a valid self-grounding without internal differentiation is found.",
+      "required_concession": "Two named holes are publicly listed.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "consciousness",
+        "claim",
+        "proof",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/consciousness.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "consciousness",
+        "physics_claim_type": "not_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "philosophical",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "consciousness",
+          "claim",
+          "proof",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C007",
+      "claim_text": "Information primacy survives all five elimination rounds; every rival either goes circular or collapses into information primacy.",
+      "framework_lane": "axioms",
+      "physics_claim_type": "not_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "philosophical",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A detailed elimination argument showing all rivals fail."
+      ],
+      "evidence_present": [
+        "The work states it survives all five elimination rounds."
+      ],
+      "evidence_gap": [
+        "The elimination rounds are not detailed here."
+      ],
+      "support": [
+        "Survives all five elimination rounds. Every rival either goes circular or collapses into information primacy."
+      ],
+      "dependencies": [
+        "W3.2"
+      ],
+      "risks": [
+        "The claim is strong; may be challenged by alternative philosophies."
+      ],
+      "kill_condition": "If a rival theory is found that is neither circular nor collapses into information primacy.",
+      "required_concession": "The elimination rounds are not shown in this work.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "axiom",
+        "claim",
+        "proof",
+        "logos",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "axioms",
+        "physics_claim_type": "not_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "philosophical",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "keep",
+        "glyphs": [
+          "axiom",
+          "claim",
+          "proof",
+          "logos",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C008",
+      "claim_text": "The Shannon base layer C_i = A_i · log₂(1 + T_i/D_i) is the measurement layer beneath every law.",
+      "framework_lane": "axioms",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Formal derivation that this formula underlies all laws."
+      ],
+      "evidence_present": [
+        "The work states its structural role held under audit."
+      ],
+      "evidence_gap": [
+        "No derivation is provided in this work."
+      ],
+      "support": [
+        "C_i = A_i · log₂(1 + T_i/D_i) as the measurement layer beneath every law."
+      ],
+      "dependencies": [
+        "W3.2"
+      ],
+      "risks": [
+        "The claim is broad; may be challenged if a law is found not to use this base."
+      ],
+      "kill_condition": "If a law is shown to not depend on this measurement layer.",
+      "required_concession": "The derivation is not shown here.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "axiom",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "axioms",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "axiom",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C009",
+      "claim_text": "Experimental correlations at 5.7–6.35σ are real but are correlations within declared axioms, not independent confirmations of the full framework.",
+      "framework_lane": "physics",
+      "physics_claim_type": "empirical_prediction",
+      "defense_class": "ADMISSION",
+      "claim_level": "physics",
+      "evidence_lane": "empirical_dataset",
+      "evidence_needed": [
+        "The datasets and statistical methods for each correlation."
+      ],
+      "evidence_present": [
+        "The work cites PEAR-LAB at 6.35σ, GCP at 6σ, PROP-COSMOS at 5.7σ."
+      ],
+      "evidence_gap": [
+        "No detailed methods or datasets are provided."
+      ],
+      "support": [
+        "PEAR-LAB at 6.35σ, Global Consciousness Project at 6σ, PROP-COSMOS at 5.7σ."
+      ],
+      "dependencies": [
+        "PEAR-LAB",
+        "GCP",
+        "PROP-COSMOS"
+      ],
+      "risks": [
+        "The correlations are not independent confirmations; scope label is critical."
+      ],
+      "kill_condition": "If the correlations are shown to be artifacts or not reproducible.",
+      "required_concession": "These are correlations within declared axioms, not independent confirmations.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "prediction",
+        "doubt",
+        "evidence",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/prediction.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/evidence.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "empirical_prediction",
+        "defense_class": "ADMISSION",
+        "claim_level": "physics",
+        "evidence_lane": "empirical_dataset",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "prediction",
+          "doubt",
+          "evidence",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C010",
+      "claim_text": "The 7Q classifier is a universal classifier that collapses all inquiry; forward = classify anything, reverse = prove anything by exhaustive elimination.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "RHETORIC",
+      "claim_level": "meta",
+      "evidence_lane": "philosophical_argument",
+      "evidence_needed": [
+        "A rigorous demonstration that the 7Q can classify anything and prove anything."
+      ],
+      "evidence_present": [
+        "The work states this as the epistemological engine."
+      ],
+      "evidence_gap": [
+        "No formal proof is given; it is a strong claim."
+      ],
+      "support": [
+        "The 7Q is the epistemological engine of the framework: a universal classifier that collapses all inquiry."
+      ],
+      "dependencies": [
+        "W3.2"
+      ],
+      "risks": [
+        "Overclaim: 'prove anything' is likely too strong; may be challenged."
+      ],
+      "kill_condition": "If a counterexample is found that the 7Q cannot classify or prove.",
+      "required_concession": "This is a strong claim; the work does not provide a formal proof.",
+      "recommended_action": "demote",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "render-html",
+        "logos",
+        "boundary",
+        "kill-condition"
+      ],
+      "confidence": 0.6,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/render-html.svg",
+        "theophysics_glyphs/svg/logos.svg",
+        "theophysics_glyphs/svg/boundary.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "RHETORIC",
+        "claim_level": "meta",
+        "evidence_lane": "philosophical_argument",
+        "recommended_action": "demote",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "render-html",
+          "logos",
+          "boundary",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C011",
+      "claim_text": "The six generating axioms are operational rules that generated the framework; every claim was produced by applying them, and every killed claim was killed by them.",
+      "framework_lane": "axioms",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ROOT",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; these are stated as root commitments."
+      ],
+      "evidence_present": [
+        "The work lists the six axioms."
+      ],
+      "evidence_gap": [
+        "No external evidence needed."
+      ],
+      "support": [
+        "Not beliefs. Operational rules that generated the framework."
+      ],
+      "dependencies": [],
+      "risks": [
+        "The claim that every claim was produced by them is unverifiable."
+      ],
+      "kill_condition": "If a claim is found that was not produced by these axioms.",
+      "required_concession": "This is a root commitment, not a derived claim.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "axiom",
+        "claim",
+        "truth",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "axioms",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ROOT",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "axiom",
+          "claim",
+          "truth",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C012",
+      "claim_text": "The audit standard adopted July 9, 2026, ensures that a wording error kills a claim only if it changes the claim's logical content.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "AXIOM",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; this is a procedural rule."
+      ],
+      "evidence_present": [
+        "The work describes the audit standard."
+      ],
+      "evidence_gap": [
+        "No external evidence needed."
+      ],
+      "support": [
+        "A wording error kills a claim only if it changes the claim's logical content."
+      ],
+      "dependencies": [],
+      "risks": [
+        "The rule is subjective; may be applied inconsistently."
+      ],
+      "kill_condition": "If the rule is shown to be unworkable.",
+      "required_concession": "This is a procedural axiom.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "axiom",
+        "truth",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "AXIOM",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "axiom",
+          "truth",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C013",
+      "claim_text": "The proposed experiments are falsification routes, not confirmations; each has a specific falsification criterion.",
+      "framework_lane": "physics",
+      "physics_claim_type": "empirical_prediction",
+      "defense_class": "ADMISSION",
+      "claim_level": "physics",
+      "evidence_lane": "empirical_dataset",
+      "evidence_needed": [
+        "The protocols and criteria are listed."
+      ],
+      "evidence_present": [
+        "The work lists five experiments with hypotheses and falsification criteria."
+      ],
+      "evidence_gap": [
+        "No data yet; these are proposals."
+      ],
+      "support": [
+        "These are proposed falsification routes, not confirmations of the framework."
+      ],
+      "dependencies": [],
+      "risks": [
+        "If the experiments are not conducted, they remain untested."
+      ],
+      "kill_condition": "If the experiments are conducted and fail to falsify, they do not confirm the framework.",
+      "required_concession": "These are proposals, not confirmations.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "prediction",
+        "doubt",
+        "evidence",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.95,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/prediction.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/evidence.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "empirical_prediction",
+        "defense_class": "ADMISSION",
+        "claim_level": "physics",
+        "evidence_lane": "empirical_dataset",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "prediction",
+          "doubt",
+          "evidence",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C014",
+      "claim_text": "The framework does not operationally validate the spiritual terms as physics; the derivations are structural mappings within declared axioms.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; this is a concession."
+      ],
+      "evidence_present": [
+        "The work lists this as a public concession."
+      ],
+      "evidence_gap": [
+        "No evidence needed."
+      ],
+      "support": [
+        "The framework does not operationally validate the spiritual terms as physics."
+      ],
+      "dependencies": [],
+      "risks": [
+        "This concession limits the scope of all theological claims."
+      ],
+      "kill_condition": "If the framework later claims operational validation.",
+      "required_concession": "This is a stated limit.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 1.0,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C015",
+      "claim_text": "Seven of ten law-family derivative chains are incomplete (Laws 1, 2, 3, 6, 7-complete, 8, 10).",
+      "framework_lane": "ten_laws",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; this is a concession."
+      ],
+      "evidence_present": [
+        "The work lists the incomplete chains."
+      ],
+      "evidence_gap": [
+        "No evidence needed."
+      ],
+      "support": [
+        "Seven of ten law-family derivative chains are incomplete."
+      ],
+      "dependencies": [],
+      "risks": [
+        "This concession means many laws are not fully derived."
+      ],
+      "kill_condition": "If the chains are completed, this concession becomes outdated.",
+      "required_concession": "This is a stated limit.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "law",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 1.0,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/law.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "ten_laws",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "law",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C016",
+      "claim_text": "The gradient dynamics (Level 2) have not reproduced Law 5 decay or Law 9 Γ_sin.",
+      "framework_lane": "ten_laws",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; this is a concession."
+      ],
+      "evidence_present": [
+        "The work lists this as a concession."
+      ],
+      "evidence_gap": [
+        "No evidence needed."
+      ],
+      "support": [
+        "The gradient dynamics (Level 2) have not reproduced Law 5 decay or Law 9 Γ_sin."
+      ],
+      "dependencies": [],
+      "risks": [
+        "This concession indicates a gap in the framework."
+      ],
+      "kill_condition": "If the dynamics are later shown to reproduce them.",
+      "required_concession": "This is a stated limit.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "law",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 1.0,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/law.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "ten_laws",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "law",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C017",
+      "claim_text": "The bridge language (η = grace, W = free will) is exactly that — bridge language, not theorem.",
+      "framework_lane": "other",
+      "physics_claim_type": "bridge_mapping",
+      "defense_class": "ADMISSION",
+      "claim_level": "bridge",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; this is a concession."
+      ],
+      "evidence_present": [
+        "The work lists this as a concession."
+      ],
+      "evidence_gap": [
+        "No evidence needed."
+      ],
+      "support": [
+        "The bridge language (η = grace, W = free will) is exactly that — bridge language, not theorem."
+      ],
+      "dependencies": [],
+      "risks": [
+        "This concession limits the strength of any bridge claims."
+      ],
+      "kill_condition": "If the bridge is later upgraded to a theorem.",
+      "required_concession": "This is a stated limit.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "claim",
+        "isomorphism",
+        "doubt",
+        "truth",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 1.0,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/isomorphism.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "other",
+        "physics_claim_type": "bridge_mapping",
+        "defense_class": "ADMISSION",
+        "claim_level": "bridge",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "claim",
+          "isomorphism",
+          "doubt",
+          "truth",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.1-C018",
+      "claim_text": "The Lean verification covers the formal structure: product/wrapper zero behavior and source-motion dynamics. It does not verify the physics-to-theology mapping itself.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; this is a concession."
+      ],
+      "evidence_present": [
+        "The work lists this as a concession."
+      ],
+      "evidence_gap": [
+        "No evidence needed."
+      ],
+      "support": [
+        "The Lean verification covers the formal structure... It does not verify the physics-to-theology mapping itself."
+      ],
+      "dependencies": [],
+      "risks": [
+        "This concession limits the scope of the Lean verification."
+      ],
+      "kill_condition": "If the mapping is later verified.",
+      "required_concession": "This is a stated limit.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 1.0,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "W7.1-C010",
+      "problem": "The claim that the 7Q can 'prove anything' is an overclaim without formal support.",
+      "repair": "Demote to a stated aspiration or add a formal proof of completeness."
+    },
+    {
+      "severity": "P2",
+      "target": "W7.1-C001",
+      "problem": "The repaired veto architecture is stated without proof in this work.",
+      "repair": "Add a reference to the Lean receipt or include a proof sketch."
+    },
+    {
+      "severity": "P2",
+      "target": "W7.1-C003",
+      "problem": "The derivation for seven fruits is owed but not provided.",
+      "repair": "Complete the derivation or mark as pending."
+    }
+  ],
+  "log_notes": [
+    "This work is a ledger of corrections; many claims are concessions or reductions.",
+    "The 7Q classifier claim is a risk; it may be overstated.",
+    "The experimental correlations are explicitly scoped as within declared axioms.",
+    "The Lean verification scope is limited to formal structure, not the mapping."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-086-soul-identity-persistence",
+  "atom_uid": "sha256:0be36b420245f9be06b791c3b1036b442307224626ee42500f8ab9958248f12c",
+  "title": "AX-086 — Soul Identity Persistence",
+  "claim": "Soul intensity ∝ Φ — higher integration yields stronger soul coupling.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "I_soul ∝ Φ"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-085",
+    "tp:axioms/01/AX-038"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show soul persistence independent of Φ",
+    "Demonstrate identity persists when Φ → 0 (deep anesthesia)"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-086-soul-identity-persistence.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-086-soul-identity-persistence.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:a3b61ca4c9f091cb39b0dd42cebaa32a47ae80247bab0d0e221733193ce9f6a5",
+      "event_uuid": "a7db8cc8-3cf4-521f-b082-e8ec40d3f848"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:6efe27b0c74a6e678c302965267e11e7ec2d709106513d354234dc1b4e196b35",
+      "event_uuid": "94598667-2f97-5008-9fef-888ca3f14590"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P10.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-086",
+  "original_node_id": "tp:axioms/01/AX-086",
+  "atom_uuid": "de3340f2-f86d-5aa3-a9be-3a00cbdb83df"
+}

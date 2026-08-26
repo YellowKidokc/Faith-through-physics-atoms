@@ -1,0 +1,75 @@
+{
+  "source_id": "G02_Omniscience",
+  "title": "Divine Omniscience",
+  "canonical_node": {
+    "axiom": "God knows all things because He is the substrate in which all information exists; omniscience is structurally necessary, not optional.",
+    "definitions": [
+      "chi: the totality of information (Logos Field)",
+      "Phi: integrated information; Phi= for God",
+      "Omniscience: knowledge of all actuals, potentials, counterfactuals, necessities, and impossibilities",
+      "Terminal Observer: self-grounding substrate with Phi="
+    ],
+    "derivation": [
+      "From G01: God is the self-grounding substrate and Terminal Observer with Phi=.",
+      "If God grounds chi, then God contains all chi (chi_God = chi_total).",
+      "For an infinite observer (Phi=), containment implies knowledge: Contains(chi)  Knows(chi).",
+      "Therefore, God knows all actual and potential states: K(God) = {actuals union potentials}.",
+      "Thus, omniscience is entailed by Phi=."
+    ],
+    "action": "Treat omniscience as a necessary attribute of God, not a contingent one; use it to evaluate theological claims about God's knowledge.",
+    "boundary": [
+      "Does not claim that God's foreknowledge causes human choices.",
+      "Does not specify the mechanism of divine knowledge beyond containment.",
+      "Does not address the problem of evil or divine simplicity in detail."
+    ],
+    "test": [
+      "Check consistency: If any information exists outside God, axiom fails.",
+      "Check if any finite limitation is imposed on God's knowledge; if so, axiom fails.",
+      "Verify that Phi= implies complete knowledge in the formal framework."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G01 (Terminal Observer, Phi=)",
+      "BC7.1 (Terminal Observer)"
+    ],
+    "dg2_new_capability": "Provides a formal grounding for omniscience via integrated information theory, enabling precise evaluation of limited-God theologies.",
+    "dg3_preserved_floor": "Preserves the necessity of God as the ultimate ground of reality and information.",
+    "dg4_collapse_if_removed": "Without omniscience, God would not be the Terminal Observer; the observer chain would not terminate, and actuality would lack grounding.",
+    "dg5_translation_registers": [
+      "Integrated Information Theory (Phi)",
+      "Modal logic (possible/necessary)",
+      "Quantum mechanics (superposition, wavefunction)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological-metaphysical",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Equates containment with knowledge without rigorous proof for infinite systems.",
+      "Assumes Phi= is well-defined and implies omniscience without formal derivation.",
+      "Uses quantum mechanics loosely to support theological claims.",
+      "Declares theological positions 'guilty' based on philosophical arguments, not empirical evidence."
+    ],
+    "kill_conditions": [
+      "If information can exist outside God, the axiom fails.",
+      "If Phi= does not imply complete knowledge, the derivation collapses.",
+      "If potentialities are not real information, the argument loses support."
+    ],
+    "lean_target": "Formalize the relationship between Phi= and knowledge; clarify the ontology of potentialities."
+  },
+  "plain_summary": "This document argues that God's omniscience follows necessarily from His being the substrate of all information, using integrated information theory. It critiques open theism, process theology, and limited God views. However, the proof is not formally established; it relies on philosophical assumptions and loose physical analogies.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G02_Omniscience.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\G02_Omniscience.canonical-node.json"
+  }
+}

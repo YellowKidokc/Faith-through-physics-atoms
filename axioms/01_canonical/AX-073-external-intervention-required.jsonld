@@ -1,0 +1,103 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-073",
+  "nodeID": "tp:axioms/01/AX-073",
+  "claimID": "tp:AXIOMS/A9.1",
+  "name": "External Intervention Required",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Sign-flip requires operator external to the system.",
+  "statementPlain": "Sign-flip requires operator external to the system.",
+  "mathematicalForm": "∃Ĝ(external): Ĝ|-1⟩ = |+1⟩; Ĝ ∉ System",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-071",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-072",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-059",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "variable"
+  ],
+  "keywords": [
+    "A9.1",
+    "Q10",
+    "Divine",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show internal sign-flip. Demonstrate self-generated non-unitary operation. Prove a system can transcend its own limitations without external input.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 75
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-073",
+    "oldID": "A9.1",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-G (Grace as external operator — necessity)",
+    "questionType": "Type 3 (What grounds X?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M09",
+    "moduleTitle": "Grace Operator",
+    "spineRole": "core_spine",
+    "boundaryCondition": "BC2",
+    "fourModeRelevance": "M1 (Agentic — the system chose wrong but can't unchoose), M4 (Grace Attenuation — if external source is rejected)",
+    "worldviewsEliminated": "Buddhism, Existentialism, Pelagianism, Hard Determinism",
+    "propagationTest": "YES — External intervention necessity propagates to grace operator definition, grace properties, and all of soteriology.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

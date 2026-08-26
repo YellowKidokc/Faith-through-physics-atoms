@@ -1,0 +1,121 @@
+{
+  "source_id": "W2.6-the-descent.canonical",
+  "title": "The Descent",
+  "canonical_node": {
+    "axiom": "From the first act of creation to the point where all things converge  -  one unbroken line. Begin with being. Everything else follows.",
+    "definitions": [
+      "Being: that which exists rather than nothing.",
+      "Distinction: the property of being distinguishable from other things.",
+      "Intelligibility: the property of being knowable or readable.",
+      "Information: reduction of uncertainty via distinguishability.",
+      "Relation: the standing of one thing with another in a way that can be kept or broken.",
+      "Value: that which can be honored or violated, revealing right or wrong orientation.",
+      "Moral valence: the property of actions or orientations being aligned with or against the good.",
+      "Right and wrong: directions relative to the good; good is reference fullness, evil is privation or rupture.",
+      "Agency: the capacity to choose, receive, answer, refuse, repent, or resist.",
+      "Choice: a decision made within an ordered world of rules, limits, time, and consequences.",
+      "Decay: the possibility of damage, vulnerability, and loss in finite created order.",
+      "Adversarial refusal: an agent's choice against coherence, exploiting vulnerability, not creating a rival good.",
+      "Enemy: the agency of refusal that exploits disorder against the good, asymmetric and downstream of the good.",
+      "Debt: real damage or disorder caused by adversarial action.",
+      "Perfect Justice: reality refusing to lie about what happened; truthfully answering and paying for damage.",
+      "Perfect Mercy: willing restoration rather than abandonment, without denying justice.",
+      "Grace: external, non-closed-system rescue that preserves truth and enables restoration.",
+      "Christ: the convergence point where justice, mercy, truth, and restoration meet."
+    ],
+    "derivation": [
+      "God creates (STEP 01).",
+      "Creation stands (STEP 02).",
+      "What stands is distinguishable (STEP 03).",
+      "Distinction makes being intelligible (STEP 04).",
+      "What is intelligible carries information (STEP 05).",
+      "What carries information can stand in relation (STEP 06).",
+      "What can stand in relation can be kept or broken (STEP 07).",
+      "Therefore relation reveals value (STEP 08).",
+      "What has value can be regarded rightly or wrongly (STEP 09).",
+      "Thus value opens moral valence (STEP 10).",
+      "Moral valence makes right and wrong meaningful (STEP 11).",
+      "Right and wrong require agents who can choose (STEP 12).",
+      "Choice requires a world of rules, limits, time, and consequences (STEP 13).",
+      "Such a world permits decay, vulnerability, and loss (STEP 14).",
+      "Decay and vulnerability open the possibility of adversarial refusal of coherence (STEP 15).",
+      "The Enemy is that agency of refusal (STEP 16).",
+      "Adversarial action creates real debt, damage, and disorder (STEP 17).",
+      "Perfect Justice requires that this be truthfully answered and paid (STEP 18).",
+      "Perfect Mercy wills restoration rather than abandonment (STEP 19).",
+      "Justice and Mercy together require a cost-bearing source beyond the damaged order itself (STEP 20).",
+      "That source must preserve truth while making restoration possible (STEP 21).",
+      "That source is Grace (STEP 22).",
+      "Grace restores creation toward God (STEP 23).",
+      "Christ is the convergence point (STEP 24)."
+    ],
+    "action": "The system should trace the unbroken line from being to the Cross, ensuring each step is logically entailed by the previous, and explicitly name the two implied nodes REL-VAL and ADV-REF in the axiom workbook.",
+    "boundary": [
+      "This document does not provide formal proofs for each step; it is a narrative chain.",
+      "It does not claim that the theological steps are empirically verifiable.",
+      "It does not assert that the chain is complete; two nodes are recommended for naming.",
+      "It does not bridge from theology to physics; it stays within the theological axiom chain."
+    ],
+    "test": [
+      "Check that each step's conclusion follows from the previous step's premise without hidden assumptions.",
+      "Verify that the two recommended nodes (REL-VAL and ADV-REF) are indeed implied by the surrounding steps.",
+      "Ensure that no step introduces a new concept without a derivation or explicit definition.",
+      "Confirm that the chain does not claim empirical proof for theological claims."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "A1.1 (existence)",
+      "A1.2 (distinction)",
+      "A1.3 (information)",
+      "D1.1, D1.2 (information definitions)",
+      "D2.1, P2.2 (relation, Logos field)",
+      "A3.1, A3.2, D3.1 (order/disorder)",
+      "A11.1, A11.2 (moral orientation)",
+      "A5.1, A5.2, BC8 (agency)",
+      "Stages 4 - 7 (law/time/boundary)",
+      "P3.2, T3.1, A6.3 (finitude/decay)",
+      "D8.1, T8.1, T11.2 (debt/damage)",
+      "C8.1, C8.2, A9.1 (closed-system break)",
+      "BC2, A9.2, D9.1, P9.1 - P9.5 (grace)",
+      "Logos - Christ, LAMBDA, FINAL-1, OMEGA (convergence)"
+    ],
+    "dg2_new_capability": "Provides a narrative chain from creation to the Cross, explicitly identifying two missing named nodes (REL-VAL and ADV-REF) that are structurally present but unnamed.",
+    "dg3_preserved_floor": "Preserves the existing axiom chain's logical flow from existence to morality to redemption, without introducing new premises.",
+    "dg4_collapse_if_removed": "If this document is removed, the chain still exists in the workbook but the two implied nodes remain unnamed, potentially causing a gap in the walk from information to morality and from vulnerability to enemy-action.",
+    "dg5_translation_registers": [
+      "Theological narrative",
+      "Axiom chain references",
+      "Canon node recommendations"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological narrative",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as narrative anchor; extract the two recommended nodes (REL-VAL and ADV-REF) as explicit axioms in the workbook."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims 'one unbroken line' but does not provide formal proof of logical entailment for each step.",
+      "It asserts that 'being, followed all the way down, arrives at the Cross' without rigorous derivation.",
+      "It recommends naming nodes but does not provide full definitions or derivations for them."
+    ],
+    "kill_conditions": [
+      "If any step is found to introduce a non-sequitur or hidden premise.",
+      "If the two recommended nodes are not actually implied by the surrounding steps.",
+      "If the document is treated as a formal proof rather than a narrative summary."
+    ],
+    "lean_target": "Formalize the two recommended nodes (REL-VAL and ADV-REF) as explicit axioms with definitions and derivations, and verify the logical chain in a proof assistant."
+  },
+  "plain_summary": "This document presents a narrative chain from creation to the Cross, outlining 24 steps that move from being to distinction, information, relation, value, moral valence, agency, decay, adversarial refusal, justice, mercy, grace, and finally Christ. It identifies two nodes that are implied but not explicitly named: Relation Discloses Value (REL-VAL) and Adversarial Refusal (ADV-REF). The document is a theological narrative, not a formal proof, and should be treated as a narrative anchor rather than a rigorous derivation.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W2.6-the-descent.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W2.6-the-descent.canonical.canonical-node.json"
+  }
+}

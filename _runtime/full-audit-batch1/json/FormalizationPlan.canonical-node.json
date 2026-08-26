@@ -1,0 +1,100 @@
+{
+  "source_id": "FormalizationPlan",
+  "title": "Formalization Plan",
+  "canonical_node": {
+    "axiom": "Formalization proceeds incrementally, separating crisp toy claims from speculative physics, and maintaining an audit trail of assumptions and proof status.",
+    "definitions": [
+      "C0 and C1: coupling states in the toy structural core.",
+      "Transition relation: a relation from C0 to C1.",
+      "Irreversibility: relative to the transition relation.",
+      "Q = 0 gate: multiplicative gate in the toy master equation.",
+      "Stages: localization, stabilization, release, confirmation, redistribution.",
+      "Legal transitions: allowed stage transitions.",
+      "Candidate isomorphism: a mapping between physics-side and theology-side operation sequences preserving order and composition.",
+      "LawIso: minimal isomorphism preserving binary abstraction.",
+      "RichLawIso: enriched isomorphism adding role and transition preservation.",
+      "BridgeMatrix: encoding of ten canonical factor rows with physical/spiritual signatures.",
+      "Claim matrix: public audit trail of claims and proof status."
+    ],
+    "derivation": [
+      "Phase 1 formalizes coupling states, transition, irreversibility, and Q=0 gate.",
+      "Phase 2 defines stages and legal transitions, proving reachability and non-reversal.",
+      "Phase 3 defines mapping between physics and theology sequences, testing order and composition preservation.",
+      "LawIso proved binary abstraction but admitted a coin false positive.",
+      "RichLawIso added role and transition preservation, blocking natural coin false positive but still admitting deliberately relabeled coin.",
+      "BridgeMatrix validates signatures and rejects targeted semantic swaps, rechecks full-product zero collapse.",
+      "Phase 4 separates speculative assumptions from proved claims.",
+      "Phase 5 defines empirical test targets without claiming historical testing."
+    ],
+    "action": "Maintain a formalization repository that separates crisp toy claims from speculative assumptions, tracks proof status in a claim matrix, and incrementally extends formalization only when claims are crisp.",
+    "boundary": [
+      "Does not claim physics is proved.",
+      "Does not claim Lean can test history.",
+      "Does not claim composition preservation is proved (still open).",
+      "Does not claim RichLawIso is fully semantically grounded.",
+      "Does not claim BridgeMatrix is source-grounded.",
+      "Does not claim empirical confirmation."
+    ],
+    "test": [
+      "Check that toy claims are formalized in separate files from speculative assumptions.",
+      "Check that claim matrix is maintained and public.",
+      "Check that composition preservation is either proved or marked open.",
+      "Check that RichLawIso is tested against deliberately relabeled coin and other false positives.",
+      "Check that BridgeMatrix rejects targeted semantic swaps and rechecks zero collapse.",
+      "Check that empirical interface separates historical datasets from formal definitions."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Toy structural core definitions (C0, C1, transition, Q=0).",
+      "Stage machine definitions.",
+      "Mapping definitions for candidate isomorphism.",
+      "LawIso and RichLawIso formalizations.",
+      "BridgeMatrix encoding."
+    ],
+    "dg2_new_capability": "Provides a structured plan for incremental formalization with explicit separation of proved toy claims from speculative assumptions, and an audit trail via claim matrix.",
+    "dg3_preserved_floor": "Preserves the existing toy formalizations (LawIso, RichLawIso, BridgeMatrix) and their proof statuses.",
+    "dg4_collapse_if_removed": "Without this plan, the formalization effort lacks a clear roadmap and audit trail, risking conflation of proved and speculative claims.",
+    "dg5_translation_registers": [
+      "C0, C1 -> coupling states",
+      "transition relation -> transition relation",
+      "Q=0 gate -> multiplicative gate",
+      "stages -> localization, stabilization, release, confirmation, redistribution",
+      "LawIso -> minimal isomorphism",
+      "RichLawIso -> enriched isomorphism",
+      "BridgeMatrix -> ten canonical factor rows"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "planning_document",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "preserve_as_planning_artifact"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be mistaken for a proof of physics claims.",
+      "May be mistaken for a proof of composition preservation.",
+      "May be mistaken for a proof of semantic grounding.",
+      "May be mistaken for a proof of empirical confirmation."
+    ],
+    "kill_conditions": [
+      "If the plan claims physics is proved.",
+      "If the plan claims composition preservation is proved when it is open.",
+      "If the plan claims RichLawIso is fully grounded when it is not.",
+      "If the plan claims BridgeMatrix is source-grounded when it is not.",
+      "If the plan claims empirical confirmation."
+    ],
+    "lean_target": "Formalize the toy structural core and stage machine in Lean, and prove reachability and non-reversal facts."
+  },
+  "plain_summary": "This document is a formalization plan that outlines incremental steps to formalize toy claims while separating speculative assumptions. It reports progress on LawIso, RichLawIso, and BridgeMatrix, noting remaining gaps such as composition preservation and semantic grounding. It does not claim to have proved physics or historical claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\FormalizationPlan.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\FormalizationPlan.canonical-node.json"
+  }
+}

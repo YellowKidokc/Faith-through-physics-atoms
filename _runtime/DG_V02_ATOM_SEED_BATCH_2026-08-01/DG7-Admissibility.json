@@ -1,0 +1,40 @@
+{
+  "source_claim_id": "DG7-Admissibility",
+  "title": "DG7 - Admissibility",
+  "claim": "A derivation step is valid only if its dependencies exist, its new capability is genuinely new, and its prior layer is preserved.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "Validity requires dependency, novelty, and preservation together."
+  ],
+  "definitions": [
+    "ValidStep(L(n), L(n+1)): the proposed step passes dependency, capability, and preservation checks."
+  ],
+  "equations": [
+    "ValidStep(L(n), L(n+1)) iff DependsOn(L(n+1), L(n)) and NewCapability(C(n+1)) and Preserves(L(n+1), L(n))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency",
+    "DG2-Minimal-Capability",
+    "DG3-Preservation"
+  ],
+  "negative_guards": [
+    "Do not admit claims that add novelty by destroying the floor.",
+    "Do not admit claims that preserve the floor but add no capability."
+  ],
+  "kill_conditions": [
+    "A derivation step passes despite failing dependency, novelty, or preservation.",
+    "The admissibility predicate cannot be implemented in a repeatable review process."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ]
+}
+

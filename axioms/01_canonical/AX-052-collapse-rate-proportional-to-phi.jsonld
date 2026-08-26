@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-052",
+  "nodeID": "tp:axioms/01/AX-052",
+  "claimID": "tp:AXIOMS/P6.1",
+  "name": "Collapse Rate Proportional To Phi",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "theorem",
+  "statementTechnical": "γ ∝ Φ — collapse rate scales with observer integrated information.",
+  "statementPlain": "γ ∝ Φ — collapse rate scales with observer integrated information.",
+  "mathematicalForm": "∂Γ/∂Φ > 0",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-051",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-040",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "observer",
+    "information"
+  ],
+  "keywords": [
+    "P6.1",
+    "Q6",
+    "Ontological",
+    "Property"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Measure collapse rates for observers with calibrated Φ levels. Show no correlation. This is the most direct test of Q6 claims.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 53
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-052",
+    "oldID": "P6.1",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-R (Proportionality property)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Property",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "proposition / lemma target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M06",
+    "moduleTitle": "Collapse / Measurement",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic)",
+    "worldviewsEliminated": "Materialism, Eliminativism",
+    "propagationTest": "YES — Proportionality propagates to Terminal Observer argument (Φ=∞ → γ=∞ → instantaneous collapse = omniscience).",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

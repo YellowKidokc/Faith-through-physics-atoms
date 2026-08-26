@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-173-bridge-info-mind-information-consciousness-bridge",
+  "atom_uid": "sha256:063f85e47ed5468197104615a511489e4992fc8918a8f652e5c7cf627e47278b",
+  "title": "AX-173 — BRIDGE-INFO-MIND - Information-Consciousness Bridge",
+  "claim": "The Information-Consciousness Bridge: Information and consciousness are not separate substances but two aspects of the same underlying reality. Information is the objective structure; consciousness is the subjective experience of that structure.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "bridge",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "—"
+  ],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [
+    "### DC-1: Functionalist Reduction Success If consciousness can be fully explained as information processing",
+    "### DC-2: Dualist Demonstration If consciousness exists independently of information structures",
+    "### DC-3: Epiphenomenal Information If information exists without any experiential aspect",
+    "### DC-4: Incommensurable Descriptions"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-173-bridge-info-mind-information-consciousness-bridge.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-173-bridge-info-mind-information-consciousness-bridge.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:898509be619d2450b235d161e729386c903800e9f819c5aadb93f45f93b02e34",
+      "event_uuid": "52741db6-0524-5e43-aedb-9af35f24941b"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'bridge' -> 'bridge'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:84d0a1a806c860b9084ce3acff1094e6cafe6c24737490bccd20142046aefd1c",
+      "event_uuid": "ef60d04b-fc77-5f7f-a48c-7caebe32e1a4"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/BRIDGE-INFO-MIND",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-173",
+  "original_node_id": "tp:axioms/01/AX-173",
+  "atom_uuid": "934d6bd0-1905-589a-80e7-f519f98fb52d"
+}

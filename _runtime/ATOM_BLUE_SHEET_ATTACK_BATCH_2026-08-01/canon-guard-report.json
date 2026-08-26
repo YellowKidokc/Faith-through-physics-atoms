@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "tool_version": "0.1.0",
+  "root": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\ATOM_BLUE_SHEET_ATTACK_BATCH_2026-08-01",
+  "canonical_documents": {},
+  "summary": {
+    "files_scanned": 27,
+    "findings": 11,
+    "critical": 0,
+    "errors": 11,
+    "warnings": 0,
+    "changed": 0
+  },
+  "changed_files": [],
+  "findings": [
+    {
+      "code": "MASTER_EQUATION_DRIFT",
+      "severity": "error",
+      "path": "canon-root/01-trinity-chain.md",
+      "message": "Possible Master Equation drift. Semantic adjudication required; never auto-fixed.",
+      "line": 63,
+      "canonical_id": "master-equation",
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "MASTER_EQUATION_DRIFT",
+      "severity": "error",
+      "path": "canon-root/03-three-body-solution.md",
+      "message": "Possible Master Equation drift. Semantic adjudication required; never auto-fixed.",
+      "line": 79,
+      "canonical_id": "master-equation",
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "TERMINUS_SUI_QUOTE_PACKET",
+      "severity": "error",
+      "path": "canon-root/03-three-body-solution.md",
+      "message": "Terminus Sui / five-limit synthesis requires the exact quote packet and source links. The theorems are external authority; the synthesis is Theophysics interpretation. Missing: Stanford Godel incompleteness quote, outside consistency quote, Tarski internal truth quote, Turing halting quote, thermodynamic closed-system quote, Landauer reset-cost quote.",
+      "line": 143,
+      "canonical_id": "consilience-rule",
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "TERMINUS_SUI_QUOTE_PACKET",
+      "severity": "error",
+      "path": "canon-root/07-spiritual-terms.md",
+      "message": "Terminus Sui / five-limit synthesis requires the exact quote packet and source links. The theorems are external authority; the synthesis is Theophysics interpretation. Missing: Stanford Godel incompleteness quote, outside consistency quote, Tarski internal truth quote, Turing halting quote, thermodynamic closed-system quote, Landauer reset-cost quote.",
+      "line": 33,
+      "canonical_id": "consilience-rule",
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "MASTER_EQUATION_DRIFT",
+      "severity": "error",
+      "path": "canon-root/08-the-bridge.md",
+      "message": "Possible Master Equation drift. Semantic adjudication required; never auto-fixed.",
+      "line": 137,
+      "canonical_id": "master-equation",
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "UNREGISTERED_CANON",
+      "severity": "error",
+      "path": "canon-root/LEAN4_GOLD_TICKET_STANDARD.md",
+      "message": "Document claims canonical authority but is not registered in the authority manifest.",
+      "line": null,
+      "canonical_id": null,
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "UNREGISTERED_CANON",
+      "severity": "error",
+      "path": "canon-root/P-01-playground-protocol.md",
+      "message": "Document claims canonical authority but is not registered in the authority manifest.",
+      "line": null,
+      "canonical_id": null,
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "TERMINUS_SUI_QUOTE_PACKET",
+      "severity": "error",
+      "path": "canon-root/T-02-the-trinity-unified.md",
+      "message": "Terminus Sui / five-limit synthesis requires the exact quote packet and source links. The theorems are external authority; the synthesis is Theophysics interpretation. Missing: Stanford Godel incompleteness quote, outside consistency quote, Tarski internal truth quote, Turing halting quote, thermodynamic closed-system quote, Landauer reset-cost quote.",
+      "line": 390,
+      "canonical_id": "consilience-rule",
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "CANON_MISSING",
+      "severity": "error",
+      "path": "canon/no-drift-master-equation.md",
+      "message": "Canonical document master-equation is missing.",
+      "line": null,
+      "canonical_id": "master-equation",
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "CANON_MISSING",
+      "severity": "error",
+      "path": "canon/no-drift-spiritual-derivatives.md",
+      "message": "Canonical document spiritual-derivatives is missing.",
+      "line": null,
+      "canonical_id": "spiritual-derivatives",
+      "repairable": false,
+      "proposed_replacement": null
+    },
+    {
+      "code": "CANON_MISSING",
+      "severity": "error",
+      "path": "canon/the-consilience-rule.md",
+      "message": "Canonical document consilience-rule is missing.",
+      "line": null,
+      "canonical_id": "consilience-rule",
+      "repairable": false,
+      "proposed_replacement": null
+    }
+  ]
+}

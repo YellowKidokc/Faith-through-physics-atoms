@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-090-moral-coherence-definition",
+  "atom_uid": "sha256:78d148e9f30300af2ba475125cbd5714bccff31c62802cdf7d48e5bb4d957613",
+  "title": "AX-090 — Moral Coherence Definition",
+  "claim": "Moral Coherence (χ_M): degree of non-contradiction within agent's informational structure.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "χ_M = 1 - (internal contradictions / total beliefs)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-089"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show moral coherence can't be defined formally",
+    "Demonstrate agents with high internal consistency but immoral behavior"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-090-moral-coherence-definition.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-090-moral-coherence-definition.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:bd28f492dccd11fac8e7208e78e4454cb5ae5722ac99bc63da8c38bf9c4cb12e",
+      "event_uuid": "287143f2-fb93-50ee-8675-2d76103a4cf6"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:893997d54c6b596a3d459f06fe908a2b6e83883e8e33347bee181db2b68b4f6c",
+      "event_uuid": "d42ab4b1-23e7-5d39-baa2-3c87b5d0785c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D11.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-090",
+  "original_node_id": "tp:axioms/01/AX-090",
+  "atom_uuid": "b2c82411-31a5-5085-bb9b-aaf263aad89b"
+}

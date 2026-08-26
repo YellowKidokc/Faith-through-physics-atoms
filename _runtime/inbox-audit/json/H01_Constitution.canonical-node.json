@@ -1,0 +1,77 @@
+{
+  "source_id": "H01_Constitution",
+  "title": "Human Constitution: Body, Soul, Spirit",
+  "canonical_node": {
+    "axiom": "Humans are tripartite: body, soul, spirit, reflecting the Imago Dei.",
+    "definitions": [
+      "Body (soma): material substrate",
+      "Soul (psyche): consciousness, personality, mind",
+      "Spirit (pneuma): divine interface, spiritual capacity",
+      "Tripartite: three distinct aspects united in one person",
+      "Imago Dei: structural parallel to the Trinity"
+    ],
+    "derivation": [
+      "Scripture explicitly names three components: 1 Thess 5:23, Hebrews 4:12, Genesis 2:7.",
+      "Soul and spirit are distinguished in Hebrews 4:12, implying distinctness.",
+      "Each component has distinct function: body interfaces with matter, soul with self/others, spirit with God.",
+      "Unity of person is maintained despite three aspects, analogous to Trinity.",
+      "Therefore, humans are tripartite."
+    ],
+    "action": "Treat humans as tripartite in all theological and practical reasoning, preserving the distinct functions of body, soul, and spirit while maintaining personal unity.",
+    "boundary": [
+      "Does not claim physical or empirical proof of tripartite nature.",
+      "Does not specify exact interaction mechanisms between components.",
+      "Does not address the state of the spirit before regeneration in detail.",
+      "Does not extend tripartite structure to animals."
+    ],
+    "test": [
+      "Check consistency with key scriptures (1 Thess 5:23, Heb 4:12, Gen 2:7).",
+      "Verify that functional distinctions are maintained without overlap.",
+      "Ensure personal unity is not compromised by tripartite distinction.",
+      "Assess whether the model coherently addresses objections from dualism, monism, and dichotomism."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Scripture (1 Thess 5:23, Heb 4:12, Gen 2:7)",
+      "Theological tradition (tripartite anthropology)"
+    ],
+    "dg2_new_capability": "Provides a structured tripartite model of human nature that distinguishes body, soul, and spirit with functional roles.",
+    "dg3_preserved_floor": "Preserves the core Christian doctrines of creation, incarnation, and resurrection by affirming the goodness and essentiality of the body.",
+    "dg4_collapse_if_removed": "If removed, the distinction between soul and spirit is lost, leading to dichotomism or monism, which the document argues are biblically deficient.",
+    "dg5_translation_registers": [
+      "Theological anthropology",
+      "Biblical exegesis",
+      "Philosophical theology"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological_anthropology",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve_as_axiom"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims structural isomorphism with Trinity without rigorous definition.",
+      "Uses functional distinction to prove ontological distinction, which is not logically necessary.",
+      "Presents the tripartite view as the only biblical option despite historical debate."
+    ],
+    "kill_conditions": [
+      "If scripture is shown to not clearly teach tripartition.",
+      "If soul and spirit are demonstrated to be synonymous in biblical usage.",
+      "If the model contradicts established scientific understanding of human consciousness."
+    ],
+    "lean_target": "Reduce claims of structural isomorphism to 'analogical' rather than 'isomorphic'."
+  },
+  "plain_summary": "This document argues that humans consist of three parts - body, soul, and spirit - based on biblical passages, and that this tripartite structure mirrors the Trinity. It critiques dualism, monism, and dichotomism. However, the proof is primarily scriptural and theological, not formally verified, so it is classified as not established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\H01_Constitution.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\H01_Constitution.canonical-node.json"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "source_id": "DEEPSEEK_UNIFICATION_ATOMS_2026-08-09",
+  "title": "DeepSeek Unification Atoms Audit",
+  "canonical_node": {
+    "axiom": "The Unification Atom Set is a proposal draft that is not yet canon-aligned; it requires overclaim removal, vocabulary alignment, explicit kill edges, and a warranted grade mapping before it can function as the graph's unification layer.",
+    "definitions": [
+      "Canonical C_W wrapper: a wrapper, not a boundary-condition wrapper; boundary condition is an open R ruling.",
+      "R_agency(t): the agency parameter distinct from the open R ruling.",
+      "External slot (): grace/external source; openness requirement.",
+      "Kill edge: a condition that, if met, invalidates the claim.",
+      "Canonical grade vocabulary: MAPPED, DERIVED, SPLIT, PARTIAL, OPEN, LOCKED, DEFINITIONAL.",
+      "Bridge-status categories: 12 categories; no silent truth propagation."
+    ],
+    "derivation": [
+      "The audit compares the Unification Atom Set against the Aug 9 canonical Master Equation.",
+      "It identifies blocking issues: all 10 UC atoms lack explicit kill edges; 6 contain overclaims or non-canonical vocabulary; 4 are broadly supportable but need repairs.",
+      "It maps each UC atom to canonical relations, warrant labels, boundaries, and required kill edges.",
+      "It lists non-canonical vocabulary and retired-claim watch items.",
+      "It provides an upgrade list for canon alignment."
+    ],
+    "action": "Treat the Unification Atom Set as a non-canonical proposal. Apply the upgrade list: add kill edges, rewrite overclaiming atoms, replace non-canonical vocabulary, map warrant taxonomy, and re-stamp for Aug 9 canon. Do not admit any UC atom into the canonical graph until these repairs are made.",
+    "boundary": [
+      "Does not establish any UC atom as canon-compliant as written.",
+      "Does not provide the actual kill edges; only specifies required kill edges.",
+      "Does not resolve the open R ruling or C_W identity.",
+      "Does not claim any formal proof or verified artifact.",
+      "Does not endorse the D/C/E/P/H/T/A/O warrant taxonomy as canonical."
+    ],
+    "test": [
+      "Check that each UC atom has an explicit kill edge listed.",
+      "Check that overclaiming atoms (UC-01, UC-03, UC-05, UC-07, UC-08, UC-09) are rewritten per the upgrade list.",
+      "Check that non-canonical vocabulary is replaced or marked domain-specific.",
+      "Check that the warrant taxonomy is mapped to canonical grades.",
+      "Check that the atom set is re-stamped for Aug 9 canon."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Aug 9 canonical Master Equation",
+      "12 bridge-status categories",
+      "13 conservation results",
+      "14 retired claims",
+      "17 boundary sections",
+      "18.11 negative controls"
+    ],
+    "dg2_new_capability": "Provides an audit framework and upgrade list for aligning the Unification Atom Set with the Aug 9 canon, including required kill edges and vocabulary repairs.",
+    "dg3_preserved_floor": "Preserves the canonical Master Equation and its boundaries; does not alter any canonical claims.",
+    "dg4_collapse_if_removed": "If removed, the Unification Atom Set remains non-canonical and unaligned; the audit trail for its repair is lost.",
+    "dg5_translation_registers": [
+      "Canonical grade vocabulary: MAPPED, DERIVED, SPLIT, PARTIAL, OPEN, LOCKED, DEFINITIONAL",
+      "Bridge-status categories: 12",
+      "Non-canonical terms: socket, trial-stack verdict, constraint-class, reduction-class, typeclass sense, normative pole, boundary-condition wrapper, McMillions-class anchors"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "no",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "audit/proposal",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "D",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the Unification Atom Set is canon-aligned when it is not.",
+      "Using non-canonical vocabulary as if canonical.",
+      "Treating the audit's required kill edges as actual kill edges.",
+      "Assuming the upgrade list has been implemented."
+    ],
+    "kill_conditions": [
+      "If any UC atom is admitted to the canonical graph without explicit kill edges.",
+      "If overclaiming atoms are not rewritten per the upgrade list.",
+      "If non-canonical vocabulary is not replaced or marked domain-specific.",
+      "If the warrant taxonomy is not mapped to canonical grades."
+    ],
+    "lean_target": "Formalize the required kill edges and vocabulary mappings as machine-checkable rules."
+  },
+  "plain_summary": "This document is an audit of the Unification Atom Set, concluding it is not canon-aligned. It identifies missing kill edges, overclaims, and non-canonical vocabulary, and provides a list of required upgrades. The document itself is a proposal for repair, not a verified claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-zip\\DEEPSEEK_UNIFICATION_ATOMS_2026-08-09.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-meta-audit\\json\\DEEPSEEK_UNIFICATION_ATOMS_2026-08-09.canonical-node.json"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-062",
+  "nodeID": "tp:master-equation/01/ME-01-062",
+  "claimID": "tp:ME/ME-01-062",
+  "nodeType": "claim",
+  "name": "Laws Derive From Chi",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "theorem",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "statementTechnical": "All ten laws are represented as derivative rails of the chi architecture, with symmetry pairs 1<->8, 2<->9, 3<->10, 4<->7, and 5<->6 recorded as a theorem-level claim.",
+  "statementPlain": "The ten laws are not loose decorations around the equation; they are claimed to be rails derived from chi.",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-010",
+      "propagates": true,
+      "note": "Derivation theorem depends on the integration atom."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-060",
+      "propagates": true,
+      "note": "Derivation theorem depends on the full equation atom."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-040",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-041",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-042",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-043",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-044",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-045",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-046",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-047",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-048",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-049",
+      "propagates": true,
+      "note": "Derivation theorem depends on this law rail."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-147",
+      "propagates": true,
+      "note": "Axiom registry source: Laws Derive From Chi."
+    }
+  ],
+  "keywords": [
+    "AX-147",
+    "T19.1",
+    "Theorem"
+  ],
+  "tags": [
+    "logos",
+    "coherence",
+    "proof"
+  ],
+  "verificationStatus": "registry-import",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_vocab\\axiom_registry.json",
+  "masterEquationRole": {
+    "sourceAxiomID": "AX-147",
+    "sourceOldID": "T19.1",
+    "sourceRow": 149,
+    "sourceType": "Theorem"
+  }
+}

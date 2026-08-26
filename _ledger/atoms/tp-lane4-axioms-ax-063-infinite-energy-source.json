@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-063-infinite-energy-source",
+  "atom_uid": "sha256:2756cdf0981c3cbab52f2734f985c254e078369cff27a59c250270f1ede1a989",
+  "title": "AX-063 — Infinite Energy Source",
+  "claim": "Energy source E = ∞ required for entropy defeat.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "06-thermodynamics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "E_source = ∞ (necessary for ΔS_total < 0)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-025",
+    "tp:axioms/01/AX-062"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show entropy can be reversed with finite energy",
+    "Demonstrate perpetual motion of the second kind",
+    "Show coherence increase without energy input"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-063-infinite-energy-source.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-063-infinite-energy-source.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:2b97f3ea3bee7d685eb48c7bbb5d053e5b0ebef6368a09488ca71fe8b22d2f1d",
+      "event_uuid": "1bdf8ef6-8e24-5392-9c62-93e8a4248147"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'boundary' -> 'derived'. Ontology: 06-thermodynamics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:aab0de5d0b851971cd81be281b7c8b8bdffd78b47b1a3372b35892abc7e4e48b",
+      "event_uuid": "55c3baee-d0b2-5b48-bc76-b2c8e2c1031d"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/BC6",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-063",
+  "original_node_id": "tp:axioms/01/AX-063",
+  "atom_uuid": "f72c2b5f-9a80-5c98-9090-eed1b5c2293d"
+}

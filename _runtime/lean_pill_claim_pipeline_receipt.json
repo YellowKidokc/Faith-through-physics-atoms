@@ -1,0 +1,115 @@
+{
+  "generatedAt": "2026-07-28T20:55:30+00:00",
+  "status": "passed",
+  "purpose": "Lean corpus pill, topbar packet rebuild, live claim logging, and Lane 4 validation.",
+  "boundary": "This pipeline logs and sorts claims. It does not create Lean proof status unless a Lean proof receipt is explicitly attached.",
+  "inputs": {
+    "leanCorpus": {
+      "path": "\\\\192.168.2.50\\h_hp\\Desktop 2\\LEAN 4\\LEAN4_CORPUS_CLASSIFIED.json",
+      "exists": true,
+      "length": 253002,
+      "lastWriteTime": "2026-06-28T22:25:52+00:00"
+    },
+    "masterPacket": {
+      "path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\11_articles\\TOPBAR_FILL_PACKET.master-equation.generated.json",
+      "exists": true,
+      "length": 34917,
+      "lastWriteTime": "2026-07-28T20:55:30+00:00"
+    }
+  },
+  "outputs": {
+    "liveClaimLedger": {
+      "path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\live_claim_ledger.jsonl",
+      "exists": true,
+      "length": 143857,
+      "lastWriteTime": "2026-07-28T20:55:30+00:00"
+    },
+    "frameworkGraphJson": {
+      "path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\framework_graph.json",
+      "exists": true,
+      "length": 130230,
+      "lastWriteTime": "2026-07-28T09:20:15+00:00"
+    },
+    "frameworkMindmapHtml": {
+      "path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\framework_mindmap.html",
+      "exists": true,
+      "length": 22237,
+      "lastWriteTime": "2026-07-28T09:20:15+00:00"
+    },
+    "receiptMarkdown": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\LEAN_PILL_CLAIM_PIPELINE_RECEIPT.md",
+    "receiptJson": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\lean_pill_claim_pipeline_receipt.json"
+  },
+  "steps": [
+    {
+      "name": "lane4_validate_before",
+      "required": true,
+      "started": "2026-07-28T20:55:30+00:00",
+      "returncode": 0,
+      "ok": true,
+      "command": [
+        "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "D:\\GitHub\\Faith-through-physics-atoms\\_scripts\\lane4_ledger.py",
+        "validate"
+      ],
+      "stdout": "validated 253 atoms: 0 error(s)",
+      "stderr": ""
+    },
+    {
+      "name": "build_topbar_packet",
+      "required": true,
+      "started": "2026-07-28T20:55:30+00:00",
+      "returncode": 0,
+      "ok": true,
+      "command": [
+        "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "D:\\GitHub\\Faith-through-physics-atoms\\_scripts\\build_topbar_packet.py"
+      ],
+      "stdout": "[ok] wrote D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\11_articles\\TOPBAR_FILL_PACKET.master-equation.generated.json\n[ok] terms=11 claims=7 proofs=7 mtl=10",
+      "stderr": ""
+    },
+    {
+      "name": "add_lean_corpus_pill",
+      "required": true,
+      "started": "2026-07-28T20:55:30+00:00",
+      "returncode": 0,
+      "ok": true,
+      "command": [
+        "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "D:\\GitHub\\Faith-through-physics-atoms\\_scripts\\add_lean_corpus_pill.py"
+      ],
+      "stdout": "Updated D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\11_articles\\TOPBAR_FILL_PACKET.master-equation.generated.json\nCopied D:\\GitHub\\Python-WEB\\topbar\\canonical-page-shell\\pages\\TOPBAR_FILL_PACKET.master-equation.generated.json\nFour numbers: files=231, tier_s=8, master_equation=2, needs_review=98",
+      "stderr": ""
+    },
+    {
+      "name": "claim_runtime_intake_master_packet",
+      "required": true,
+      "started": "2026-07-28T20:55:30+00:00",
+      "returncode": 0,
+      "ok": true,
+      "command": [
+        "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "D:\\GitHub\\Faith-through-physics-atoms\\_scripts\\claim_runtime.py",
+        "intake",
+        "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\11_articles\\TOPBAR_FILL_PACKET.master-equation.generated.json",
+        "--limit",
+        "80"
+      ],
+      "stdout": "[ok] inspected=39 ledger=D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\live_claim_ledger.jsonl\n[ok] likely-existing-atom=18\n[ok] needs-review=15\n[ok] weak-match=6",
+      "stderr": ""
+    },
+    {
+      "name": "lane4_validate_after",
+      "required": true,
+      "started": "2026-07-28T20:55:30+00:00",
+      "returncode": 0,
+      "ok": true,
+      "command": [
+        "C:\\Users\\David\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "D:\\GitHub\\Faith-through-physics-atoms\\_scripts\\lane4_ledger.py",
+        "validate"
+      ],
+      "stdout": "validated 253 atoms: 0 error(s)",
+      "stderr": ""
+    }
+  ]
+}

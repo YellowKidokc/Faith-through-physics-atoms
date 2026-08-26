@@ -1,0 +1,349 @@
+{
+  "runtime": "theophysics-research-runtime",
+  "version": "0.1.0",
+  "generatedAt": "2026-07-28T09:20:15.663185+00:00",
+  "source": "master-equation\\11_articles\\TOPBAR_FILL_PACKET.master-equation.generated.json",
+  "oneSentence": "Master Equation / Atom Graph The Master Equation is the framework's integration center: the place where the ten factor rails become one computable coherence structure.",
+  "claimIDs": [
+    "RTC-8964988b7068",
+    "RTC-9d9a40c702bb",
+    "RTC-d4b4962e27e4",
+    "RTC-1ec6de5aead7",
+    "RTC-72efebf618cb",
+    "RTC-34d36a4ae6b5",
+    "RTC-228ddbf8a0c2",
+    "RTC-799166dcda1a",
+    "RTC-304d96661387",
+    "RTC-ded132feb25f",
+    "RTC-83464c676d2c",
+    "RTC-6a52cf0b4f11",
+    "RTC-92794122c050",
+    "RTC-6b6c3b0646fa",
+    "RTC-595e9b864ee8",
+    "RTC-6ea728177907",
+    "RTC-d2cfcb1858fc",
+    "RTC-33f7f43123a6",
+    "RTC-07a3602d5b5d",
+    "RTC-0147bbdcb15f",
+    "RTC-d86a3a66ed86",
+    "RTC-0113c00e6d9a",
+    "RTC-a8a438950569",
+    "RTC-82d68fbd5874",
+    "RTC-ff7e00659b2d",
+    "RTC-7b6edad8375a",
+    "RTC-90157af7ffdd",
+    "RTC-9167e1a44662",
+    "RTC-f940c5235bce",
+    "RTC-538e265152ab",
+    "RTC-cefbd51770ad",
+    "RTC-fe5cc6b99507",
+    "RTC-3b010a3d9085",
+    "RTC-b1940d5dc5b0",
+    "RTC-390158ee08d6",
+    "RTC-0eebfb0f4092",
+    "RTC-b5cff186b0f7"
+  ],
+  "claimSummary": {
+    "likely-existing-atom": 18,
+    "needs-review": 14,
+    "weak-match": 5
+  },
+  "hiddenDependencies": {
+    "status": "needs-review",
+    "missing": [
+      "observer",
+      "scale"
+    ],
+    "checks": {
+      "source": {
+        "status": "named",
+        "markers": [
+          "authority",
+          "source",
+          "grace",
+          "external"
+        ],
+        "question": "Where do energy, order, information, or authority enter?"
+      },
+      "payer": {
+        "status": "named",
+        "markers": [
+          "burden"
+        ],
+        "question": "Who bears the cost?"
+      },
+      "observer": {
+        "status": "missing",
+        "markers": [],
+        "question": "Who measures, verifies, interprets, or actualizes?"
+      },
+      "standard": {
+        "status": "named",
+        "markers": [
+          "truth"
+        ],
+        "question": "What defines success, goodness, truth, or the target state?"
+      },
+      "boundary": {
+        "status": "named",
+        "markers": [
+          "boundary",
+          "inside"
+        ],
+        "question": "What is inside the system, and what is outside?"
+      },
+      "scale": {
+        "status": "missing",
+        "markers": [],
+        "question": "Is the claim local, global, individual, institutional, or cosmic?"
+      },
+      "time": {
+        "status": "named",
+        "markers": [
+          "now",
+          "time"
+        ],
+        "question": "Does the result hold now, later, asymptotically, or briefly?"
+      }
+    }
+  },
+  "types": {
+    "terms": [
+      {
+        "term": "G",
+        "type": "source"
+      },
+      {
+        "term": "grace",
+        "type": "source"
+      },
+      {
+        "term": "M",
+        "type": "measure"
+      },
+      {
+        "term": "meaning",
+        "type": "value judgment"
+      },
+      {
+        "term": "E",
+        "type": "variable"
+      },
+      {
+        "term": "entropy",
+        "type": "variable"
+      },
+      {
+        "term": "S_eff",
+        "type": "state"
+      },
+      {
+        "term": "self",
+        "type": "receiver"
+      },
+      {
+        "term": "T",
+        "type": "boundary condition"
+      },
+      {
+        "term": "time",
+        "type": "boundary condition"
+      },
+      {
+        "term": "K",
+        "type": "measure"
+      },
+      {
+        "term": "knowledge",
+        "type": "measure"
+      },
+      {
+        "term": "R",
+        "type": "relation"
+      },
+      {
+        "term": "relation",
+        "type": "relation"
+      },
+      {
+        "term": "Q",
+        "type": "state"
+      },
+      {
+        "term": "quantum",
+        "type": "state"
+      },
+      {
+        "term": "F",
+        "type": "operator"
+      },
+      {
+        "term": "faith",
+        "type": "operator"
+      },
+      {
+        "term": "C",
+        "type": "integrator"
+      },
+      {
+        "term": "Christ",
+        "type": "integrator"
+      },
+      {
+        "term": "boundary",
+        "type": "boundary condition"
+      }
+    ],
+    "silentTypeShiftFlags": [],
+    "status": "typecheck-pass"
+  },
+  "survivalVector": {
+    "scale": "0 absent, 1 named, 2 implemented, 3 independently tested",
+    "lowestCoordinate": "discriminability",
+    "dimensions": {
+      "grounding": {
+        "score": 2,
+        "meaning": "implemented",
+        "evidence": [
+          "axiom",
+          "definition",
+          "32/37 claims mapped or reviewable"
+        ]
+      },
+      "typeSafety": {
+        "score": 2,
+        "meaning": "implemented",
+        "evidence": [
+          "G",
+          "grace",
+          "M",
+          "meaning",
+          "E",
+          "entropy",
+          "S_eff",
+          "self"
+        ]
+      },
+      "hiddenDependencyCompleteness": {
+        "score": 2,
+        "meaning": "implemented",
+        "evidence": [
+          "source",
+          "payer",
+          "standard",
+          "boundary",
+          "time"
+        ]
+      },
+      "derivationDepth": {
+        "score": 2,
+        "meaning": "implemented",
+        "evidence": [
+          "proof",
+          "implies"
+        ]
+      },
+      "discriminability": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "countermodelSurvival": {
+        "score": 1,
+        "meaning": "named",
+        "evidence": [
+          "alternative"
+        ]
+      },
+      "falsifiability": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "reproducibility": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "bidirectionality": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "semanticFidelity": {
+        "score": 2,
+        "meaning": "implemented",
+        "evidence": [
+          "translation",
+          "formal",
+          "meaning"
+        ]
+      },
+      "failureContainment": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "provenanceIndependence": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      }
+    }
+  },
+  "misuseAudit": {
+    "boundary": "Score claims, actions, and systems; do not score souls.",
+    "flags": [
+      {
+        "risk": "authority_capture",
+        "status": "flagged",
+        "markers": [
+          "source"
+        ]
+      }
+    ],
+    "checks": [
+      {
+        "risk": "score_actions_not_souls",
+        "status": "not-detected",
+        "markers": []
+      },
+      {
+        "risk": "coercive_use",
+        "status": "not-detected",
+        "markers": []
+      },
+      {
+        "risk": "victim_cost_hidden",
+        "status": "not-detected",
+        "markers": []
+      },
+      {
+        "risk": "authority_capture",
+        "status": "flagged",
+        "markers": [
+          "source"
+        ]
+      },
+      {
+        "risk": "insult_language",
+        "status": "not-detected",
+        "markers": []
+      }
+    ]
+  },
+  "registeredButNotRun": [
+    "Corpus.semantic_address",
+    "Ledger.cost_and_consent",
+    "BIDIRECTIONALITY",
+    "BASIS_CHALLENGE",
+    "DOMAIN_HOLDOUT",
+    "BLIND_MATCH",
+    "ASSUMPTION_SWAP",
+    "SEMANTIC_CHECKSUM",
+    "WITNESS_PANEL",
+    "PREDICTION_ESCROW",
+    "SCALE_SCAN",
+    "COUNTERMODEL"
+  ]
+}

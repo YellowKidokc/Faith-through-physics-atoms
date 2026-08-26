@@ -1,0 +1,77 @@
+{
+  "source_id": "W2.2-single-expression.canonical",
+  "title": "The Single Expression",
+  "canonical_node": {
+    "axiom": "Creation is one act expressed four ways: time, space, matter, motion; no member is prior.",
+    "definitions": [
+      "Time: the authored when",
+      "Space: the relation-field",
+      "Matter: the content",
+      "Motion: change in relation",
+      "bara: one act of creation",
+      "Fullness (plrma): everything God is, complete",
+      "Vestigium Trinitatis: trace of the Trinity in creation"
+    ],
+    "derivation": [
+      "Sheet 000 established the Fullness as one being in three persons.",
+      "Creation begins when the Fullness speaks outward.",
+      "The first act cannot be an assembly; it must be an expression.",
+      "Genesis 1:1-2 presents time, space, matter, and motion in one verb (bara) without sequence.",
+      "Attempting to order the four leads to contradictions: matter needs space, space needs matter, motion needs space and time, time needs change.",
+      "Therefore, the four are not sequential but simultaneous aspects of one act.",
+      "This structure mirrors the perichoretic shape of the Trinity, a vestigium Trinitatis."
+    ],
+    "action": "Treat time, space, matter, and motion as co-original aspects of a single creative act, not as separable entities with priority.",
+    "boundary": [
+      "Does not claim to prove the Trinity from physics.",
+      "Does not assert that the unorderability result holds under Newtonian absolute space.",
+      "Does not provide a full derivation of the cosmos from first principles."
+    ],
+    "test": [
+      "Check that any proposed ordering of the four fundamentals leads to a contradiction.",
+      "Verify that the relational view of space is assumed; if absolute space is used, the unorderability result may fail.",
+      "Confirm that the vestigium claim is treated as correspondence, not proof."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "W2.1 (Sheet 000) - Fullness, Trinity, perichoresis"
+    ],
+    "dg2_new_capability": "Provides a unified framework for the four fundamentals as one act, enabling a non-sequential ontology.",
+    "dg3_preserved_floor": "Preserves the Trinity as ground; creation is not derived from physics.",
+    "dg4_collapse_if_removed": "Without this node, the four fundamentals remain separate and ordered, losing the perichoretic signature and the basis for the vestigium claim.",
+    "dg5_translation_registers": [
+      "Theology: one act, four faces",
+      "Philosophy: relational space, co-originality",
+      "Physics: spacetime as L1 instantiation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological ontology",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as working sheet; flag as not proven"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the unorderability result is proven when it depends on relational space.",
+      "Elevating the vestigium to a proof of the Trinity.",
+      "Conflating the four faces in creation with the four debts in God."
+    ],
+    "kill_conditions": [
+      "If absolute space is shown to be viable, the unorderability argument fails.",
+      "If the perichoretic structure is not uniquely Trinitarian, the vestigium claim weakens."
+    ],
+    "lean_target": "A formalization of the unorderability argument under relational space, and a clear statement of the vestigium as abductive."
+  },
+  "plain_summary": "This sheet argues that creation is a single act with four inseparable aspects: time, space, matter, and motion. It claims these cannot be ordered without contradiction, and that this structure mirrors the Trinity, serving as a trace (vestigium) but not a proof. The argument relies on a relational view of space and is not a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\W2.2-single-expression.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W2.2-single-expression.canonical.canonical-node.json"
+  }
+}

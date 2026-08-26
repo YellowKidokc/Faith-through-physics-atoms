@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-157",
+  "nodeID": "tp:axioms/01/AX-157",
+  "claimID": "tp:AXIOMS/F6",
+  "name": "Goodness",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "empirical_anchor",
+  "statementTechnical": "Goodness = constructive intent and output; alignment with coherence increase.",
+  "statementPlain": "Goodness = constructive intent and output; alignment with coherence increase.",
+  "mathematicalForm": "F_Goodness = Σ(ΔC_produced by agent)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-151",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-089",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence"
+  ],
+  "keywords": [
+    "F6",
+    "Q10",
+    "Relational",
+    "ObservableDomain"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show goodness without net coherence increase. Demonstrate net coherence increase without goodness.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 159
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-157",
+    "oldID": "F6",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-AG (Fruit 6)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Relational",
+    "tier": "2",
+    "newType": "ObservableDomain",
+    "logicalForce": "empirical hypothesis",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / outside proof kernel",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M20",
+    "moduleTitle": "Universal Coherence / Fruits",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1",
+    "worldviewsEliminated": "Nihilism",
+    "propagationTest": "YES",
+    "intendedStatus": "classified",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

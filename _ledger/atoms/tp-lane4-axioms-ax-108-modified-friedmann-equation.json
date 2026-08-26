@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-108-modified-friedmann-equation",
+  "atom_uid": "sha256:3650b6bc9baf93937a584d4238994a4f33f193c6c4d9a3a572899c889ce6470b",
+  "title": "AX-108 — Modified Friedmann Equation",
+  "claim": "(ȧ/a)² = (8πG/3)ρ - k/a² + G(t)/3 — Modified Friedmann with Grace Function.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "(ȧ/a)² = (8πG/3)ρ - k/a² + G(t)/3"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-105",
+    "tp:axioms/01/AX-107"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show modified Friedmann violates known cosmological observations",
+    "Demonstrate G(t) gives wrong CMB power spectrum or BAO scale"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-108-modified-friedmann-equation.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-108-modified-friedmann-equation.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:62242f03ec98d7744a3d5c423fc2daede0cefff0e716ca850d4e1665b1681ca1",
+      "event_uuid": "e299219a-4198-513b-bafc-b79f87fd441f"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'mathematical' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:90288e3dc00d4eb425f6e2545345af34d327f33ec0c90960020805121571d3fa",
+      "event_uuid": "97038b62-e468-5264-af06-f46d8430671f"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/E14.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-108",
+  "original_node_id": "tp:axioms/01/AX-108",
+  "atom_uuid": "13fab65f-d305-5876-b3df-3509f8b6d720"
+}

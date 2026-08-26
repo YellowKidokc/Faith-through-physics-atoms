@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-028",
+  "atom_uid": "sha256:7066194c00992653257ac3376db30e430af99077b3c00441195a751667257164",
+  "title": "ISO-028 - Ecology ↔ Ecclesiology",
+  "claim": "ISO-028: Ecology ↔ Ecclesiology maps Ecology to Pauline Ecclesiology (1 Cor 12). Workbook verdict: Level 2.5. Honest verdict: UPGRADED from L2. Swap passed. 8/10 robust.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C2_PARTIAL_CORRESPONDENCE",
+  "assumptions": [
+    "Ecology",
+    "Pauline Ecclesiology (1 Cor 12)",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "Swap PASSED. 10 corr. (8 robust). Monoculture fragility.",
+    "UPGRADED from L2. Swap passed. 8/10 robust."
+  ],
+  "equations": [],
+  "bridges": [
+    "Ecology -> Pauline Ecclesiology (1 Cor 12)"
+  ],
+  "dependencies": [
+    "ISO-028"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: 2/10 correspondences weaker",
+    "Promotion blocker: Fix 2/10 weaker mappings",
+    "Promotion blocker: Show church-specific ecological predictions",
+    "Promotion blocker: Demonstrate trophic cascade in church contexts"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: 2/10 correspondences weaker"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-028 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:a098fc7be874c37dd6eb0bcd2532d0f5c982cb1a75f517667b5bd42abf972b07",
+      "event_uuid": "8992f636-add7-54f6-8f26-cc334b167755"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-028",
+  "atom_uuid": "d877970f-c0d6-579c-a6fb-8ff002e9cd65"
+}

@@ -1,0 +1,83 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-ax-core-bc4",
+  "atom_uid": "sha256:a623dc9df08369de59677280a240e61a6d19b8b7e2fcae447934858b49527353",
+  "title": "BC4 — Three Observers Required",
+  "claim": "BC4 — Three Observers Required is classified in Part 1 as AX_CORE with decision KEEP and anchor BC4 (Three Observers Required).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "AX_CORE",
+  "assumptions": [
+    "BC4 (Three Observers Required)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "BC4 (Three Observers Required)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row BC4 as AX_CORE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:c81bc682c9a9f02bc66a054130afe0055e9774d46416de92beba34d72585ceb2",
+      "event_uuid": "c1574700-f96f-5730-9a89-d78083b1ae80"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for BC4 as AX_CORE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:36+00:00",
+      "event_uuid": "b30b81d2-ece1-4383-825b-8096a1f12d7a",
+      "event_id": "sha256:99b70110014ce9470cda124b4dc96738198c103942a8484bc8af966e3b249a88"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for BC4 as AX_CORE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "27e3789b-6f65-434f-bb28-b6e2af735adb",
+      "event_id": "sha256:11f045d9760f69d2af9235eb7c21c317f8b74d1b0c7704e1c9dc8a7d02dc8edf"
+    }
+  ],
+  "source_claim_id": "AX_PART1:AX_CORE:BC4",
+  "glyphs": [
+    "axiom",
+    "truth"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/axiom.svg",
+    "theophysics_glyphs/svg/truth.svg"
+  ],
+  "atom_uuid": "ecc072ac-3804-5a94-a663-b78616ec5c69"
+}

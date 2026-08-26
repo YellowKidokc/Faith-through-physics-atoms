@@ -1,0 +1,107 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-ax-core-a2-1",
+  "atom_uid": "sha256:4e22e0caac6c6a085e1d7d3f7998dd6a438759b3026f1a451b61334f38116a28",
+  "title": "A2.1 — Substrate Requirement",
+  "claim": "A2.1 — Substrate Requirement is classified in Part 1 as AX_CORE with decision KEEP and anchor A2.1 (Substrate Requirement).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "AX_CORE",
+  "assumptions": [
+    "A2.1 (Substrate Requirement)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "A2.1 (Substrate Requirement)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row A2.1 as AX_CORE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:167d1bedfecd840c5a9f71502bfdfc473b86240878760e5ae62559bc862eb7d7",
+      "event_uuid": "561b8dd8-5e70-542b-a41f-7174631be874"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "Lean4",
+      "result": "pass",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\lean_receipts\\SUBSTRATE_RECORD_KERNEL_RECEIPT_2026-08-02.md",
+      "meaning": "Lean compiled a formal substrate/record identity kernel: declared substrate and record identities are preserved through transformation, and visible form alone is not identity.",
+      "limits": "Conditional formal-model receipt only; does not prove substrate existence, self-grounding, Logos, Christ, or the adequacy of the theological mapping.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-03T00:43:16+00:00",
+      "event_uuid": "eea31bb9-843f-4fae-a408-863a2cf2e904",
+      "event_id": "sha256:958767d8d4fe121e3cf4add65ce2061eaaf78ad796903a468d294de0cfa34b68"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "Lean4",
+      "result": "pass",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\lean_receipts\\primary-h-drive-direct-substrate-record-kernel-receipt-20260803T010308Z.md",
+      "meaning": "Substrate-record preservation kernel was imported into the primary H-drive Lean source and direct Lean compilation passes. This verifies the self-contained kernel despite the full Lake project being blocked by the mathlib git index lock.",
+      "limits": "Formal conditional model only: proves preservation consequences inside the model, not substrate existence, self-grounding, Logos identity, or Christological truth. This is direct-file verification, not a full project Lake build.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-03T01:03:08+00:00",
+      "event_uuid": "220e2c3c-fbb4-47be-8337-b728243c1448",
+      "event_id": "sha256:209929c889f8ba174bca54e825d5e4aa0133c5ac924750220c5ddcef01180cf3"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A2.1 as AX_CORE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:36+00:00",
+      "event_uuid": "91ab5cdd-893f-4ce2-b4f0-3e8e20304e39",
+      "event_id": "sha256:03e4a114b14d615e921a5753eafd16745376d602a466568a8b57ba63e377fc0c"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A2.1 as AX_CORE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "222f94b8-811d-406b-87af-4af8044301f0",
+      "event_id": "sha256:1fea36dc385f6e3b6bc5e9489543969d362adf73042afaf9f0c3690e779f9e0c"
+    }
+  ],
+  "source_claim_id": "AX_PART1:AX_CORE:A2.1",
+  "glyphs": [
+    "axiom",
+    "truth"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/axiom.svg",
+    "theophysics_glyphs/svg/truth.svg"
+  ],
+  "atom_uuid": "d407cc86-0f2f-5d51-b917-297ca424ec71"
+}

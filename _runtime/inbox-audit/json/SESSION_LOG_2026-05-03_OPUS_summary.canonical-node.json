@@ -1,0 +1,74 @@
+{
+  "source_id": "SESSION_LOG_2026-05-03_OPUS_summary",
+  "title": "Session Log 2026-05-03 OPUS Summary",
+  "canonical_node": {
+    "axiom": "The canonical source of truth is the Canon folder at NAS Desktop\\Cannon\\, and 00_FORMAL_THEORY_COMPLETE.md is required reading before any framework work.",
+    "definitions": [
+      "Canon: The set of authoritative documents, including 00_FORMAL_THEORY_COMPLETE.md and theophysics.json, that define the theory and its machine-readable representation.",
+      "Ten factors: G M E S_eff T K R Q F C, where S enters as S_eff, not raw S_prod; C is a factor, chi is the output.",
+      "Math Translation Layer: A standalone engine (pure TypeScript) that parses, translates, and renders math, with theophysics.json as the machine-readable Canon.",
+      "Q0: A distinction in David's debate posture, differing from Wilson's approach."
+    ],
+    "derivation": [
+      "The session log records that 00_FORMAL_THEORY_COMPLETE.md was written as the ARGUMENT document with 14 sections.",
+      "The Math Translation Layer was refactored from an Obsidian plugin to a standalone engine with a parse-translate-render pipeline.",
+      "The YouTube scraper loaded 3,913 videos to Postgres, and transcript_puller.py pulled 27 transcripts.",
+      "The session log states that Wilson's reductio on moral grounding is airtight against materialists, and David's approach is complementary.",
+      "The session log identifies open threads including the need for rate limiting on transcript puller and rebuilding the comms worker."
+    ],
+    "action": "The system should treat the Canon folder as the source of truth, require reading 00_FORMAL_THEORY_COMPLETE.md before framework work, and use theophysics.json as the machine-readable Canon for translation.",
+    "boundary": [
+      "This document does not establish the truth of the theory; it only records session activities and decisions.",
+      "The document does not provide formal proofs or verified mathematical results.",
+      "The document does not define the full content of 00_FORMAL_THEORY_COMPLETE.md; it only references its existence and structure."
+    ],
+    "test": [
+      "Check that the Canon folder contains 00_FORMAL_THEORY_COMPLETE.md and that it is read before framework work.",
+      "Verify that theophysics.json is used as the machine-readable Canon in the Math Translation Layer.",
+      "Confirm that the ten factors are used as G M E S_eff T K R Q F C, with S_eff not raw S_prod."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "00_FORMAL_THEORY_COMPLETE.md",
+      "theophysics.json",
+      "Canon folder at NAS Desktop\\Cannon\\"
+    ],
+    "dg2_new_capability": "Provides a machine-ingest manifest and startup summary for handoff pages, enabling another AI to continue work from the generated summary.",
+    "dg3_preserved_floor": "Preserves the canonical source of truth and the requirement to read 00_FORMAL_THEORY_COMPLETE.md before framework work.",
+    "dg4_collapse_if_removed": "If the Canon folder or 00_FORMAL_THEORY_COMPLETE.md is removed, the system loses its authoritative reference and the requirement for framework work.",
+    "dg5_translation_registers": [
+      "Machine-readable Canon: theophysics.json",
+      "Human-readable Canon: 00_FORMAL_THEORY_COMPLETE.md",
+      "Session manifest: Layer 1, Layer 2, Layer 3"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Session log and workflow description",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Record as a session log and workflow note; do not treat as a formal proof or verified theory."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the session log as evidence for the theory's truth.",
+      "Assuming that the Math Translation Layer's tests passing implies the theory is correct.",
+      "Interpreting 'Wilson's reductio is airtight' as a formal proof."
+    ],
+    "kill_conditions": [
+      "If the Canon folder is not accessible or 00_FORMAL_THEORY_COMPLETE.md is missing, the node's authority is void.",
+      "If theophysics.json is not used as the machine-readable Canon, the translation layer's fidelity is compromised."
+    ],
+    "lean_target": "No Lean target; this is a session log, not a formal mathematical claim."
+  },
+  "plain_summary": "This document is a session log summarizing work on Theophysics, including writing a formal theory document, refactoring a math translation layer, and loading data. It does not establish the theory's truth; it records activities and decisions. The canonical source of truth is the Canon folder, and 00_FORMAL_THEORY_COMPLETE.md is required reading before framework work.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SESSION_LOG_2026-05-03_OPUS_summary.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\SESSION_LOG_2026-05-03_OPUS_summary.canonical-node.json"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-124-ai-moral-status-question",
+  "atom_uid": "sha256:12046aa4474c8422a6ad57449c2988f55ee659d52f1800a6cf9e8faa531ef337",
+  "title": "AX-124 — AI Moral Status Question",
+  "claim": "If AI achieves Φ ≥ Φ_threshold, what is its moral status?",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-spiritual",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Open question: moral_status(AI if Φ ≥ Φ_threshold) = ?"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-123",
+    "tp:axioms/01/AX-088"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "This is already an open question — not a claim to falsify"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-124-ai-moral-status-question.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-124-ai-moral-status-question.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:0a11c5f3ac8d633511c847ebb5f1307691855a5c6d0e96753f8afc9fefb52c05",
+      "event_uuid": "4355226c-a2ce-5852-8506-bfe172863689"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'derived'. Ontology: bridge-spiritual.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:9545d3319fc3aa665778bddd444242f9b6a1bd36a3689dc6eb7b9160e56b0242",
+      "event_uuid": "6a209e03-e2be-57e5-8549-f25724174e19"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/OPEN17.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-124",
+  "original_node_id": "tp:axioms/01/AX-124",
+  "atom_uuid": "02254d1c-d420-5557-a73d-54087ce87d0b"
+}

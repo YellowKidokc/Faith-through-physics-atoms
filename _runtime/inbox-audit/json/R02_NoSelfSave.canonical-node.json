@@ -1,0 +1,80 @@
+{
+  "source_id": "R02_NoSelfSave",
+  "title": "Why You Cannot Save Yourself: Self-Flip Impossibility Theorem",
+  "canonical_node": {
+    "axiom": "No self-generated operation can change the moral sign of a system from negative to positive; external intervention is required.",
+    "definitions": [
+      "Moral sign (): A binary eigenvalue (+1 or -1) representing the moral orientation of a system.",
+      "Self-operation (U_self): Any operation generated entirely within the system, assumed to be unitary.",
+      "External intervention (_ext): An operation originating outside the system, capable of changing .",
+      "Unitary operation: An operation that preserves the eigenvalue spectrum of the system."
+    ],
+    "derivation": [
+      "Assume a system with moral sign  = -1.",
+      "Any self-operation U_self is unitary, preserving eigenvalues.",
+      " is an eigenvalue of the moral orientation operator.",
+      "Therefore, U_self preserves , so U_self|=-1  |=+1.",
+      "Thus, self-flip is impossible.",
+      "Since self-flip is impossible, any change to =+1 must come from an external operation _ext.",
+      "Therefore, external intervention is required."
+    ],
+    "action": "The system must not attempt self-salvation; it must seek and accept external grace.",
+    "boundary": [
+      "Does not claim that self-improvement is impossible or without value.",
+      "Does not deny human agency within the given moral sign.",
+      "Does not specify the exact nature of the external intervention.",
+      "Does not claim that all external interventions are salvific."
+    ],
+    "test": [
+      "Check that no self-generated operation can change  from -1 to +1 in the formal model.",
+      "Verify that the formal model assumes unitary self-operations.",
+      "Confirm that the theorem does not overstate by claiming self-improvement is useless.",
+      "Ensure that the necessity of external intervention is logically derived from the impossibility of self-flip."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "R1.5: Sin cannot be undone by the sinner",
+      "D1: Self-flip impossibility theorem",
+      "D2: External intervention required"
+    ],
+    "dg2_new_capability": "Provides a formal argument for the impossibility of self-salvation, grounding the necessity of external grace.",
+    "dg3_preserved_floor": "Preserves the core theological claim that salvation is by grace alone, not by works.",
+    "dg4_collapse_if_removed": "If removed, the argument for sola gratia loses its formal grounding, weakening the case against works-salvation and Pelagianism.",
+    "dg5_translation_registers": [
+      "Quantum mechanics: unitary evolution preserves eigenvalues; non-unitary intervention can change them.",
+      "Theology: grace as external intervention.",
+      "Ethics: moral inability and the need for external redemption."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological impossibility theorem",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical proof for a theological claim without rigorous formalization.",
+      "Assumes unitary self-operations without justification.",
+      "Equates moral sign with quantum eigenvalues without empirical basis.",
+      "Uses scripture as evidence for mathematical impossibility."
+    ],
+    "kill_conditions": [
+      "If self-flip is demonstrated possible under the model's assumptions.",
+      "If the unitary assumption is shown to be inapplicable to moral change.",
+      "If external intervention is shown to be unnecessary or impossible."
+    ],
+    "lean_target": "Formalize the theorem in a proof assistant (e.g., Lean) to verify the logical steps, or clearly label as theological metaphor."
+  },
+  "plain_summary": "This document argues that self-salvation is impossible because any self-generated operation preserves one's moral orientation, so external grace is necessary. It uses a quantum analogy but lacks rigorous formal proof, so it is not established as a mathematical theorem.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\R02_NoSelfSave.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\R02_NoSelfSave.canonical-node.json"
+  }
+}

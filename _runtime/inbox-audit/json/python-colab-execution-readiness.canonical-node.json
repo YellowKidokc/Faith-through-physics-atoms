@@ -1,0 +1,70 @@
+{
+  "source_id": "python-colab-execution-readiness",
+  "title": "Python / Colab Execution Readiness",
+  "canonical_node": {
+    "axiom": "The runtime side is prepared but does not execute notebooks or scripts.",
+    "definitions": [
+      "Run tier: a classification of execution readiness (T1_FAST_LOCAL_CHECK, T2_DEPENDENCY_CHECK, T2_RUNTIME_CHECK, T3_DATA_OR_NETWORK_CHECK, T4_REPAIR_FIRST).",
+      "Artifact: a file or resource tracked in the readiness packet.",
+      "Claim family: a grouping of related claims in the packet."
+    ],
+    "derivation": [
+      "The document lists artifacts, run tiers, claim families, and generated files.",
+      "It states that dependency rows are 0 and path references are 4 with 4 missing.",
+      "It defines run tier meanings and generated file names.",
+      "Therefore, the packet is a preparation artifact, not an execution artifact."
+    ],
+    "action": "Use this packet to identify which artifacts are ready for execution and which require review or repair before running.",
+    "boundary": [
+      "Does not execute notebooks or scripts.",
+      "Does not provide dependency rows (0).",
+      "Does not resolve missing path references (4 missing)."
+    ],
+    "test": [
+      "Check that the CSV and JSON files listed are present and contain the stated counts.",
+      "Verify that run tier labels match the definitions.",
+      "Confirm that no execution is performed by this packet."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "None explicitly stated; dependency rows are 0."
+    ],
+    "dg2_new_capability": "Provides a structured readiness assessment for Python/Colab execution, categorizing artifacts by run tier.",
+    "dg3_preserved_floor": "Preserves the ability to plan execution steps without executing them.",
+    "dg4_collapse_if_removed": "Without this packet, execution planning loses its tiered readiness classification and path reference tracking.",
+    "dg5_translation_registers": [
+      "run_tiers",
+      "claim_families",
+      "generated_files"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Meta/Operational",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Log as operational metadata; do not treat as proof of execution."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting readiness as execution success.",
+      "Assuming missing path references are resolved.",
+      "Treating run tier labels as verified execution status."
+    ],
+    "kill_conditions": [
+      "If the packet claims to execute notebooks or scripts.",
+      "If run tier definitions are inconsistent with actual execution results."
+    ],
+    "lean_target": "A minimal JSON manifest of artifacts and run tiers, with explicit non-execution status."
+  },
+  "plain_summary": "This document is a readiness packet for Python/Colab execution, listing artifacts and run tiers but explicitly not executing anything. It is operational metadata, not a proof of execution.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\python-colab-execution-readiness.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\python-colab-execution-readiness.canonical-node.json"
+  }
+}

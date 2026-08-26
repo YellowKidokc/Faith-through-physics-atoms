@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-065-voluntary-coupling",
+  "atom_uid": "sha256:422a66598b27473f2d0e04c7c47d4e518c209ca4651bff625a30d73375f48495",
+  "title": "AX-065 — Voluntary Coupling",
+  "claim": "Coupling must be voluntary — free will preserved. V(Ψ) ∈ [0,1].",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "V(Ψ) ∈ [0,1]; voluntary; not predetermined"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-062",
+    "tp:axioms/01/AX-064"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show consciousness has no causal power over choices (epiphenomenalism)",
+    "Demonstrate all decisions are deterministic",
+    "Show coupling can be forced (grace irresistible) without contradiction"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-065-voluntary-coupling.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-065-voluntary-coupling.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:aa260d5442f8953bac95303fb2c087d9b59723a2115fac693723d304284775d2",
+      "event_uuid": "b73657e3-8bbc-50e2-b6a9-87743d3655f2"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'boundary' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:8b3513bb741849f015eac99908182324bed502dceb05fa8139415a7ed0ba4afa",
+      "event_uuid": "ce5d32ea-dd25-517b-a3b0-ef0577456298"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/BC8",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-065",
+  "original_node_id": "tp:axioms/01/AX-065",
+  "atom_uuid": "08079572-841d-54eb-b6cd-465a7edb9c44"
+}

@@ -1,0 +1,79 @@
+{
+  "source_id": "01_PAPER_I_FOUNDATIONAL",
+  "title": "Paper I  -  Foundational Claim",
+  "canonical_node": {
+    "axiom": "The foundational claim is the single bedrock assumption; if false, the entire paper fails.",
+    "definitions": [
+      "Foundational Axiom: The one-sentence bedrock assumption that the paper is built upon.",
+      "Anomaly: An observed pattern that demands explanation.",
+      "Bias: The compressed Biaxiosum declaration of worldview, core belief, epistemology, priors, off-ramp, and mea culpa.",
+      "Claim: The thesis statement, one sentence, no hedging.",
+      "Kill Condition: A specified threshold that, if satisfied, falsifies the paper."
+    ],
+    "derivation": [
+      "The paper follows the Lowe FACTS format: Find, Admit, Claim, Test, Snap.",
+      "The Foundational Axiom is declared in Section 0.",
+      "The anomaly is identified in the Find section.",
+      "The bias is admitted in the Admit section.",
+      "The claim is stated in the Claim section.",
+      "The proof is tested in the Test section.",
+      "Kill conditions are listed in the Snap section."
+    ],
+    "action": "The system should treat the foundational axiom as the irreducible rule that governs the paper's validity, and use the FACTS structure to ensure that every claim is tested against kill conditions.",
+    "boundary": [
+      "This document is a template, not a completed paper.",
+      "It does not assert any specific empirical or mathematical claim.",
+      "It does not provide evidence or proof for any particular thesis.",
+      "It does not define the content of the foundational axiom."
+    ],
+    "test": [
+      "Check that the foundational axiom is stated in one sentence.",
+      "Check that the paper includes sections for Find, Admit, Claim, Test, and Snap.",
+      "Check that kill conditions are explicitly listed with thresholds.",
+      "Check that the Lowe Battery tests (LCT, LFT, LMT) are applied."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lowe FACTS Format v1.0",
+      "Biaxiosum declaration template",
+      "Theophysics framework (Master Equation, Ten Laws, 188 axioms)"
+    ],
+    "dg2_new_capability": "Provides a structured template for formulating and testing a foundational claim in a thesis unit.",
+    "dg3_preserved_floor": "Ensures that any foundational claim is explicitly stated and subjected to kill conditions.",
+    "dg4_collapse_if_removed": "Without the foundational axiom, the paper loses its basis and cannot be evaluated.",
+    "dg5_translation_registers": [
+      "Theophysics",
+      "Academic thesis",
+      "F.A.C.T.S. methodology"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Template",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a template for structuring foundational claims; do not treat as a verified claim."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the template as a completed proof.",
+      "Assuming the foundational axiom is true without testing.",
+      "Interpreting the FACTS structure as evidence of validity."
+    ],
+    "kill_conditions": [
+      "If the foundational axiom is false, the paper fails.",
+      "If any kill condition is satisfied, the paper is falsified."
+    ],
+    "lean_target": "Formalize the template as a schema for thesis papers, not as a proof artifact."
+  },
+  "plain_summary": "This document is a template for a foundational claim paper in a thesis, following the Lowe FACTS format. It defines the structure but contains no actual content or evidence. It should be treated as a procedural guide, not as a claim with established proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_PAPER_I_FOUNDATIONAL.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\01_PAPER_I_FOUNDATIONAL.canonical-node.json"
+  }
+}

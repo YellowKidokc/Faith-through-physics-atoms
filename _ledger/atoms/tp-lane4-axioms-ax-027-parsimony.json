@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-027-parsimony",
+  "atom_uid": "sha256:1d3c9e56d2412e693f0fec9b01d028dea86602c40330ae7ccd5779f50ed0dba2",
+  "title": "AX-027 — Parsimony",
+  "claim": "Nature prefers minimal description.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "01-foundations",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "dK/dt = -αχ(t)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-026",
+    "tp:axioms/01/AX-017"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show nature systematically preferring complex over simple descriptions",
+    "Demonstrate the action principle fails (paths are NOT extremal)"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-027-parsimony.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-027-parsimony.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:e22311f16853c388cf21dcba404b021bee4759332f7721308cebf654ccf916bd",
+      "event_uuid": "ca542a32-a692-522d-9718-1f1ab68fb067"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 01-foundations.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:77399155b5601743928da57433a8ab0eb392fe69ee71bfb6089bae43873020a3",
+      "event_uuid": "235a94ec-fba0-57d1-b434-2ee8070f1071"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A4.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-027",
+  "original_node_id": "tp:axioms/01/AX-027",
+  "atom_uuid": "ae384ada-1ec8-563e-a309-c052a7526eb2"
+}

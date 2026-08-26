@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-041",
+  "nodeID": "tp:axioms/01/AX-041",
+  "claimID": "tp:AXIOMS/P5.2",
+  "name": "Observer Effect Proportional To Phi",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "theorem",
+  "statementTechnical": "Observer effect magnitude ∝ Φ.",
+  "statementPlain": "Observer effect magnitude ∝ Φ.",
+  "mathematicalForm": "Γ = Γ₀·g(Φ); ∂Γ/∂Φ > 0",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-040",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "observer"
+  ],
+  "keywords": [
+    "P5.2",
+    "Q6",
+    "Ontological",
+    "Property"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show observer effect is independent of Φ. Demonstrate a low-Φ system with large observer effect. Show a high-Φ system with zero observer effect.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 42
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-041",
+    "oldID": "P5.2",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-G (Phi-dependent observer effect)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Property",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "proposition / lemma target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M05",
+    "moduleTitle": "Observer / Actualization",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic — high-Φ agents have proportionally larger effects)",
+    "worldviewsEliminated": "Materialism, Naturalism, Hard Determinism, Eliminativism",
+    "propagationTest": "YES — Proportionality propagates to collapse rate, Terminal Observer properties, and prayer/meditation efficacy claims.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

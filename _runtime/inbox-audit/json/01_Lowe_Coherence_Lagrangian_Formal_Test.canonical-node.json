@@ -1,0 +1,75 @@
+{
+  "source_id": "01_Lowe_Coherence_Lagrangian_Formal_Test",
+  "title": "01_Lowe_Coherence_Lagrangian_Formal_Test.ipynb",
+  "canonical_node": {
+    "axiom": "The Lowe Coherence Lagrangian (LLC) is a legitimate Lagrangian in the sense of classical mechanics, satisfying formal requirements of positive-definite mass matrix and Hamiltonian conservation.",
+    "definitions": [
+      "Lagrangian: L(q, qdot, t) = chi(q,t) * (0.5 * qdot^T K qdot) - S * chi(q,t)",
+      "Mass matrix: Hessian of L with respect to qdot",
+      "Positive definite: all eigenvalues > 0",
+      "Hamiltonian: H = qdot^T (dL/dqdot) - L",
+      "chi_expanded: 4-term Taylor-type expansion of chi(q,t)"
+    ],
+    "derivation": [
+      "Test 1: Compute mass matrix via jax.hessian of L with respect to qdot.",
+      "Check all eigenvalues positive and condition number acceptable.",
+      "Test 2: Integrate equations of motion using RK4 for N=1000 steps.",
+      "Compute Hamiltonian at each step and verify drift within numerical tolerance."
+    ],
+    "action": "Certify the LLC as a legitimate Lagrangian based on two passed tests: positive-definite mass matrix and Hamiltonian conservation.",
+    "boundary": [
+      "Does not prove physical reality or empirical validity of the LLC.",
+      "Does not establish that chi_expanded is the true chi function.",
+      "Does not address uniqueness or global validity beyond tested conditions."
+    ],
+    "test": [
+      "Mass matrix eigenvalues all positive and condition number below threshold.",
+      "Hamiltonian drift consistent with machine epsilon times N for RK4."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "JAX autodiff",
+      "chi_expanded function",
+      "llc_lagrangian function",
+      "RK4 integrator"
+    ],
+    "dg2_new_capability": "Provides formal certification that the LLC satisfies Lagrangian mechanics requirements, distinguishing it from mere formulaic resemblance.",
+    "dg3_preserved_floor": "Preserves the claim that the LLC is a well-posed dynamical system with healthy kinetic structure.",
+    "dg4_collapse_if_removed": "Without this test, the LLC's legitimacy as a Lagrangian remains unverified, weakening the foundation for further derivations.",
+    "dg5_translation_registers": [
+      "Lagrangian mechanics",
+      "Numerical analysis",
+      "Automatic differentiation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal verification",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "Accept as verified formal property of the LLC under specified conditions."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be interpreted as proof of physical reality rather than mathematical consistency.",
+      "chi_expanded may not represent the full chi function, limiting generality.",
+      "Numerical tests are not mathematical proofs."
+    ],
+    "kill_conditions": [
+      "If mass matrix eigenvalues are not all positive for some valid parameter range.",
+      "If Hamiltonian drift grows unboundedly with longer integration.",
+      "If chi_expanded is later shown to be an inadequate approximation."
+    ],
+    "lean_target": "Formalize the mass matrix positive-definiteness condition and Hamiltonian conservation as lemmas in Lean, using the specific definitions of chi_expanded and llc_lagrangian."
+  },
+  "plain_summary": "This notebook reports two numerical tests that pass, claiming the Lowe Coherence Lagrangian is a legitimate Lagrangian. The tests check positive-definiteness of the mass matrix and Hamiltonian conservation via RK4 integration. The results support the claim under the tested conditions, but they are numerical verifications, not formal proofs.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_Lowe_Coherence_Lagrangian_Formal_Test.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\01_Lowe_Coherence_Lagrangian_Formal_Test.canonical-node.json"
+  }
+}

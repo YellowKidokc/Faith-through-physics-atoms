@@ -1,0 +1,67 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-088-moral-realism",
+  "atom_uid": "sha256:b487ede013475552a702cc7732d4caba816322adbeab86e302f3b714cdf0e3be",
+  "title": "AX-088 — Moral Realism",
+  "claim": "Moral facts exist objectively — not mere preference or convention.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-spiritual",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "∃(moral facts) independent of opinion"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-014",
+    "tp:axioms/01/AX-066",
+    "tp:axioms/01/AX-067"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show all moral claims are reducible to preference (error theory)",
+    "Demonstrate moral anti-realism is coherent and complete",
+    "Show coherence-morality identity (AX-089) fails"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-088-moral-realism.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-088-moral-realism.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:c8f5e40baaf687c6f74daef0b5695c9a5a4b386f33645e51256c393906a685de",
+      "event_uuid": "f2b4a5ec-091a-54bf-ba06-9257beffa1d2"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: bridge-spiritual.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:758beb8b536514954d46bc5f03fe8b5ffe6ed2915b9a4e649a7d25d02a4d1ed8",
+      "event_uuid": "950253cc-0b58-54bd-a74b-e5996134b120"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A11.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-088",
+  "original_node_id": "tp:axioms/01/AX-088",
+  "atom_uuid": "605e664f-727e-52d6-9145-daeddbfef22a"
+}

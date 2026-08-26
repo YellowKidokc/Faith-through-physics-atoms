@@ -1,0 +1,38 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/A042/L9/C1",
+  "claimID": "tp:A042/L9/C1",
+  "name": "Law 9 Moral Conservation — Claim 1",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-02-14",
+  "dateModified": "2026-07-22",
+  "version": "1.2.0",
+  "axiomRoot": "https://faiththruphysics.com/claims/A042",
+  "claimClass": "theorem",
+  "domainType": "mathematics",
+  "statementTechnical": "Time-translation symmetry preserved in the moral domain implies, via Noether's theorem, a conserved current: ∇βTαβ = 0, derived independently of GR Bianchi identities.",
+  "statementPlain": "If the moral laws don't change over time, then something moral is conserved — it cannot be created or destroyed. This follows from the same theorem physicists use to prove energy conservation, reached by a second, independent route.",
+  "dependsOn": [],
+  "evidenceType": "formal-derivation",
+  "verificationStatus": "machine-verified",
+  "kernelChecked": true,
+  "challengeStatus": "challenged-survived",
+  "falsificationCondition": "Exhibit a moral-domain transformation that preserves the Lagrangian but yields no conserved current, or show the two derivation paths diverge under the same axiom set.",
+  "isPartOf": "https://faiththruphysics.com/papers/POF2828-2026-0001",
+  "verificationSystem": "Lean 4"
+}

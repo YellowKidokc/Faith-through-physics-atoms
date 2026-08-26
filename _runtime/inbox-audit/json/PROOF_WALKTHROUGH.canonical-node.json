@@ -1,0 +1,82 @@
+{
+  "source_id": "PROOF_WALKTHROUGH",
+  "title": "Proof Walkthrough",
+  "canonical_node": {
+    "axiom": "A finite product is zero exactly when at least one factor is zero.",
+    "definitions": [
+      "CoherenceOperator: a structure with apply and preserves_zero, where preserves_zero means apply A.zero = A.zero.",
+      "Grace: a function from Regime to Regime mapping destructive to constructive and constructive to constructive.",
+      "LawIso: a structure requiring forward map, backward map, left inverse, right inverse, value preservation, and collapse preservation.",
+      "Corrected entropy: S_eff(S_prod) is a positive function that decreases as S_prod increases, used in place of raw entropy multiplication."
+    ],
+    "derivation": [
+      "The core theorem listProd_eq_zero_iff states that a finite product is zero iff zero is in the list.",
+      "For any CoherenceOperator that preserves zero, applying it to a zero product yields zero, so it cannot rescue a collapsed product.",
+      "Grace is idempotent and not invertible, modeling a regime reset that cannot be reversed.",
+      "LawIso requires explicit maps and proofs of preservation, so equivalence is not assumed for free.",
+      "Corrected entropy uses S_eff(S_prod) to attenuate rather than multiply raw entropy, with formal properties tracked.",
+      "The narrow product test with S_eff = exp(-eta*S_prod) shows Version A can be sign-unstable when M<0, while Version B with M_eff=(1+M)/2 behaves cleanly under nonnegative-factor assumptions."
+    ],
+    "action": "The system should formally verify structural properties of the Master Equation product architecture in Lean 4, and use Python/Colab mirrors for numerical exploration, while clearly stating the boundary of what is proven.",
+    "boundary": [
+      "Does not claim Lean has proven the full physical Lagrangian.",
+      "Does not claim Lean has proven empirical truth.",
+      "Does not claim Lean has proven all spiritual interpretations.",
+      "Does not assume LawIso equivalence without explicit maps and proofs."
+    ],
+    "test": [
+      "Check that the Lean theorem listProd_eq_zero_iff is proven.",
+      "Check that CoherenceOperator preserves_zero is used to prove zero_if_any_factor_zero.",
+      "Check that grace_idempotent and grace_not_invertible are proven.",
+      "Check that LawIso requires all six components and that no equivalence is assumed without proof.",
+      "Check that CorrectedEntropyKernel tracks the required properties of S_eff.",
+      "Check that narrow_product_test proves the sign-instability of Version A and the clean behavior of Version B."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 and Mathlib",
+      "TheophysicsProductionKernel.lean",
+      "CorrectedEntropyKernel.lean",
+      "narrow_product_test/NarrowProductTest/Basic.lean"
+    ],
+    "dg2_new_capability": "Provides a formal, machine-checked backbone for the collapse claim and the no-rescue operator claim, and a formal framework for LawIso equivalence and corrected entropy.",
+    "dg3_preserved_floor": "Preserves the existing structural properties of the Master Equation product architecture and the honest boundary of claims.",
+    "dg4_collapse_if_removed": "If the core theorem listProd_eq_zero_iff is removed, the collapse claim loses its formal backbone and becomes unsupported.",
+    "dg5_translation_registers": [
+      "Lean 4 theorem statements",
+      "Plain English explanations",
+      "Python/Colab numerical mirrors"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal verification of structural properties",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as formal backbone; do not extend claims beyond stated boundary"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that Lean has proven the full physical Lagrangian.",
+      "Claiming that Lean has proven empirical truth.",
+      "Claiming that Lean has proven all spiritual interpretations.",
+      "Assuming LawIso equivalence without explicit maps and proofs."
+    ],
+    "kill_conditions": [
+      "If the Lean proofs are not actually checked by Lean.",
+      "If the core theorem listProd_eq_zero_iff is false in the intended interpretation.",
+      "If the boundary claims are violated by adding unsupported assertions."
+    ],
+    "lean_target": "TheophysicsProductionKernel.lean and CorrectedEntropyKernel.lean"
+  },
+  "plain_summary": "This document explains the Lean proof package's core claims: a finite product is zero iff a factor is zero, zero-preserving operators cannot rescue a collapsed product, grace is an idempotent non-invertible reset, LawIso requires explicit maps and proofs, and corrected entropy uses attenuation. It honestly states what is and is not proven, and the repo provides formal verification in Lean 4 with Python/Colab mirrors.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\PROOF_WALKTHROUGH.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\PROOF_WALKTHROUGH.canonical-node.json"
+  }
+}

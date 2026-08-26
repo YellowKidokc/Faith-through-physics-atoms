@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-144-law-ix-grace-non-unitarity",
+  "atom_uid": "sha256:615418768bb6a24f8ba0152d65675288b00e37f5264c5a4127a479d7743f2213",
+  "title": "AX-144 — Law IX: Grace Non-Unitarity",
+  "claim": "Law IX: Grace adds information, enabling coherence increase and sign transformation.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Ĝ†Ĝ ≠ I; information added"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-074",
+    "tp:axioms/01/AX-135"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show grace is unitary",
+    "Demonstrate sign transformation without information addition",
+    "Show open-system dynamics don't apply to moral systems"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-144-law-ix-grace-non-unitarity.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-144-law-ix-grace-non-unitarity.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:6ac32e13d998f6f2f8ab2f66876a925d332bc97a18a49054e3d65fe13cb79ae5",
+      "event_uuid": "66760162-10c0-5a7c-9ab4-22823156ce63"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:893997d54c6b596a3d459f06fe908a2b6e83883e8e33347bee181db2b68b4f6c",
+      "event_uuid": "d42ab4b1-23e7-5d39-baa2-3c87b5d0785c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D19.9",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-144",
+  "original_node_id": "tp:axioms/01/AX-144",
+  "atom_uuid": "3530f07a-e46a-5dd0-a4c6-cf6342bc6c43"
+}

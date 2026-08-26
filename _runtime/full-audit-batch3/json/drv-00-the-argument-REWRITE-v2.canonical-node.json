@@ -1,0 +1,90 @@
+{
+  "source_id": "drv-00-the-argument-REWRITE-v2",
+  "title": "DRV Argument-in-One-Page  -  REWRITE v2",
+  "canonical_node": {
+    "axiom": "The Master Equation is the integrated product of ten typed factors, each with a fixed mathematical domain, and the distinction between the factor C and the output chi is structural.",
+    "definitions": [
+      "G: external negentropy influx rate, domain 0",
+      "M: alignment cosine between system state and reference vector, domain [1,1]",
+      "E: signal propagation fidelity (channel capacity), domain 0",
+      "S_prod: entropy production rate, enters as S_eff = e^( S_prod), domain 0",
+      "T: temporal integration parameter, domain >0",
+      "K: information compression ratio (Kolmogorov), domain 0",
+      "R: phase transition indicator, domain {0,1}",
+      "Q: superposition measure, domain [0,1]",
+      "F: non-local correlation strength, domain [0,1]",
+      "C: total integration measure, domain [0,1]",
+      "chi: integrated output, not a factor"
+    ],
+    "derivation": [
+      "The original variable labels were type-incompatible with the canonical Definition 10.",
+      "The dV element is corrected from dx dy dt to dx dt per the canon.",
+      "The entropy sign repair S_eff = e^( S_prod) is added explicitly, verified antitone by the Lean kernel.",
+      "The C vs chi distinction is enforced: C is a factor, chi is the output, never confused.",
+      "The Ten Laws table is replaced by the canonical Layer 2 ten-factor bridge.",
+      "The asymmetry structure is reduced to two canonical asymmetries: F directional, C sovereign.",
+      "Free will is anchored to Factor M (alignment cosine) per Axiom 3.",
+      "The Unified Field Equation is reframed as a reduced-form coherence equation.",
+      "The Lowe Coherence Lagrangian is marked provisional, not Lean-verified.",
+      "The K-Drop argument is anchored to Factors G and K, with the intelligence inference marked named-contestable."
+    ],
+    "action": "The system must use the canonical typed factors and the C vs chi distinction in all formal statements, and must mark provisional or contestable claims explicitly.",
+    "boundary": [
+      "Does not assert the Lowe Coherence Lagrangian as Lean-verified.",
+      "Does not assert the five-pair fractal symmetry structure.",
+      "Does not assert 'Christ is coherence' as a formal identity; only as Asymmetry 2 reframing.",
+      "Does not claim the K-Drop intelligence inference as proven; it is named-contestable."
+    ],
+    "test": [
+      "Check that every variable in the Master Equation uses the canonical domain.",
+      "Check that C is never used as the output chi.",
+      "Check that the dV element is dx dt.",
+      "Check that the entropy term is S_eff = e^( S_prod).",
+      "Check that the Ten Laws table is replaced by the Layer 2 bridge.",
+      "Check that the Lagrangian is labeled provisional.",
+      "Check that the K-Drop intelligence inference is marked named-contestable."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "FORMAL_VERIFICATION_PACKET_2026-05-10/ (Layer 1, Layer 2, Definition 10, Axiom 3, Formal Theory v1.0)"
+    ],
+    "dg2_new_capability": "Provides a corrected, canon-aligned Master Equation with typed domains and explicit C vs chi distinction, and reframes several claims to avoid overreach.",
+    "dg3_preserved_floor": "The core argument that coherence is an integrated product of ten factors and that energy is not grace is preserved.",
+    "dg4_collapse_if_removed": "If the typed domains or C vs chi distinction are removed, the Master Equation becomes ambiguous and the no-drift fix is lost.",
+    "dg5_translation_registers": [
+      "Physical: open-system thermodynamics, Shannon channel capacity, Kolmogorov compression, phase transitions, quantum superposition, entanglement, integrated information",
+      "Spiritual: Grace, Logos, Christ, moral alignment, sin, faith, conversion"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "revision_document",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "adopt_as_canonical_revision"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The Master Equation itself is not proven; it is a definitional framework.",
+      "The Lean kernel verifies only structural properties, not the full equation.",
+      "The Lowe Coherence Lagrangian is explicitly provisional.",
+      "The K-Drop intelligence inference is named-contestable."
+    ],
+    "kill_conditions": [
+      "If the canonical Definition 10 is superseded, the typed domains change.",
+      "If the Lean kernel rejects the entropy sign repair, the Master Equation fails.",
+      "If the C vs chi distinction is violated in any formal statement."
+    ],
+    "lean_target": "Formalize the Master Equation with typed factors and verify the antitone property of S_eff."
+  },
+  "plain_summary": "This document is a revision of the DRV argument-in-one-page, correcting the Master Equation to use canonical typed factors, fixing the entropy sign, distinguishing C from chi, and reframing several claims to avoid overreach. It marks the Lowe Coherence Lagrangian as provisional and the K-Drop intelligence inference as contestable. The document is coherent and admissible, but it does not establish new proofs; it aligns with the existing canon.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\drv-00-the-argument-REWRITE-v2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch3\\json\\drv-00-the-argument-REWRITE-v2.canonical-node.json"
+  }
+}

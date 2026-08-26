@@ -1,0 +1,68 @@
+{
+  "atom_id": "tp:lane4/derivation-grammar/dg-core-v0-2",
+  "atom_uid": "sha256:1b4177fe08fc4b9310d0b73510fd26a968d735d1bb362452df20d7a05e8045ea",
+  "title": "DG v0.2 Core Grammar",
+  "claim": "Unified Derivation Grammar v0.2 is a theology-free grammar for testing layered necessity through dependency, capability, preservation, collapse, translation, closure, and convergence.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "method",
+  "mode_classification": "DG_CORE",
+  "assumptions": [
+    "Layered claims can be represented as dependency structures.",
+    "Framework claims must be evaluated without smuggling domain-specific conclusions into the grammar."
+  ],
+  "definitions": [
+    "Layer: a level in a derivation staircase.",
+    "Capability: a new irreducible operation introduced at a layer.",
+    "State: coherent, defective, or ruptured condition of a layer or derivation.",
+    "DependsOn: relation expressing required prior structure.",
+    "TranslatesTo: relation expressing structure-preserving register transfer.",
+    "Constraint: modal operator governing admissibility."
+  ],
+  "equations": [
+    "L(n+1) = L(n) + C(n+1)"
+  ],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [
+    "Do not place Father, Son, Spirit, Trinity, Christ, Logos, Ehad, Islam, or Christianity inside DG core.",
+    "Do not claim DG proves theology.",
+    "Do not claim Lean has proved DG v0.2 until a build receipt exists."
+  ],
+  "kill_conditions": [
+    "The grammar cannot consistently distinguish objects, relations, and modal operators.",
+    "The grammar cannot demote invalid or overreached bridges.",
+    "A domain-specific conclusion is required inside DG core for the grammar to function."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\DG_V02_ATOM_SEED_BATCH_2026-08-01\\DG-CORE-v0.2.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-08-01T04:17:55+00:00",
+      "lane": "Framework",
+      "event_id": "sha256:bbe916cc8fa827b090d1a2fdc9d999dad6227bdb847667c0bb7da333b3a7f1c8"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "Lean4",
+      "result": "pass",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\lean_receipts\\primary-h-drive-direct-triadic-science-kernel-receipt-20260803T013059Z.md",
+      "meaning": "POF 2828 Science Argument guardrail kernel was imported into the primary H-drive Lean source and direct Lean compilation passes. It formalizes valid triadic structure as non-decorative, removable-third failure, and the guardrail that science-side structure does not directly prove theology.",
+      "limits": "Formal structural guardrail only: does not prove the Trinity, Christianity, or any scientific domain claim; direct-file verification rather than full Lake build because the primary source Lake build is still blocked by the mathlib git index lock.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-03T01:30:59+00:00",
+      "event_uuid": "11bafc58-38de-470a-8c59-ebc3af7b5610",
+      "event_id": "sha256:ad1e32edf33b917078ff399ae19685c51b84bda53d249d99d59696ae4faa86b9"
+    }
+  ],
+  "source_claim_id": "DG-CORE-v0.2"
+}

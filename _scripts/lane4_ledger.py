@@ -8,13 +8,14 @@ import hashlib
 import json
 import re
 import sys
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "_ledger"
 ATOMS = LEDGER / "atoms"
-FIELDS = ("atom_id atom_uid claim_title claim_class lane event_type result proof_label "
+FIELDS = ("atom_id atom_uid atom_uuid event_uuid claim_title claim_class lane event_type result proof_label "
           "current_status rerun_status artifact_path source_path new_path reviewer "
           "timestamp meaning limits").split()
 LABELS = {
@@ -34,6 +35,11 @@ def canonical(value):
 def digest(value):
     raw = value if isinstance(value, bytes) else canonical(value).encode()
     return "sha256:" + hashlib.sha256(raw).hexdigest()
+
+
+def event_digest(event):
+    stable = {k: v for k, v in event.items() if k not in {"event_uuid", "event_id"}}
+    return digest(stable)
 
 
 def slug(value):
@@ -77,7 +83,8 @@ def append_event(atom, event):
     event = {k: v for k, v in event.items() if v not in (None, "")}
     event.setdefault("timestamp", now())
     event.setdefault("lane", atom["lane"])
-    event["event_id"] = digest(event)
+    event.setdefault("event_uuid", str(uuid.uuid4()))
+    event["event_id"] = event_digest(event)
     if any(e["event_id"] == event["event_id"] for e in atom["ledger"]):
         raise SystemExit("duplicate event refused")
     atom["ledger"].append(event)
@@ -90,7 +97,8 @@ def normalize_atom(data, source=None):
     if not claim:
         raise SystemExit("ingest requires a claim (claim, statementTechnical, or statementPlain)")
     atom = {
-        "atom_id": "", "atom_uid": "", "title": title, "claim": claim,
+        "atom_id": "", "atom_uid": "", "atom_uuid": data.get("atom_uuid") or str(uuid.uuid4()),
+        "title": title, "claim": claim,
         "domain": data.get("domain") or data.get("domainType") or "unclassified",
         "lane": data.get("lane", "Lane4"), "claim_class": data.get("claim_class") or data.get("claimKind", "unclassified"),
         "mode_classification": data.get("mode_classification", "candidate"),
@@ -102,6 +110,12 @@ def normalize_atom(data, source=None):
         "rerun_status": data.get("rerun_status", "not_applicable"),
         "source_artifacts": data.get("source_artifacts", [str(source)] if source else []), "ledger": [],
     }
+    if data.get("glyphs"):
+        atom["glyphs"] = data["glyphs"]
+    if data.get("glyph_paths"):
+        atom["glyph_paths"] = data["glyph_paths"]
+    if data.get("classification_bundle"):
+        atom["classification_bundle"] = data["classification_bundle"]
     if data.get("source_claim_id") or data.get("claimID"):
         atom["source_claim_id"] = data.get("source_claim_id") or data["claimID"]
     old_master = "master equation" in (title + " " + claim).lower() and V3 not in " ".join(atom["equations"])
@@ -134,6 +148,7 @@ def rows():
     for atom in load_atoms():
         for event in atom["ledger"]:
             row = {"atom_id": atom["atom_id"], "atom_uid": atom["atom_uid"], "claim_title": atom["title"],
+                   "atom_uuid": atom.get("atom_uuid", ""),
                    "claim_class": atom["claim_class"], "proof_label": atom["proof_label"],
                    "current_status": atom["current_status"], "rerun_status": atom["rerun_status"]}
             row.update(event)
@@ -164,7 +179,7 @@ def validate():
     errors = []
     for a in load_atoms():
         pfx = a.get("atom_id", "unknown")
-        for key in ("assumptions", "source_artifacts", "current_status"):
+        for key in ("atom_uuid", "assumptions", "source_artifacts", "current_status"):
             if not a.get(key): errors.append(f"{pfx}: missing {key}")
         label, cls, lane = a.get("proof_label"), a.get("claim_class", "").lower(), a.get("lane", "").lower()
         if label not in LABELS: errors.append(f"{pfx}: unknown proof_label {label}")
@@ -174,6 +189,9 @@ def validate():
         if "isomorph" in cls and a.get("mode_classification") not in {"C5", "formal_isomorphism"} and label == "LEAN_FORMAL_PROOF": errors.append(f"{pfx}: below-C5 event cannot be formal isomorphism")
         text = (a.get("title", "") + a.get("claim", "")).lower()
         if "master equation" in text and V3 not in " ".join(a.get("equations", [])) and a.get("rerun_status") != "RERUN_OWED": errors.append(f"{pfx}: old Master Equation requires RERUN_OWED")
+        for index, event in enumerate(a.get("ledger", []), 1):
+            if not event.get("event_id"): errors.append(f"{pfx}: ledger event {index} missing event_id")
+            if not event.get("event_uuid"): errors.append(f"{pfx}: ledger event {index} missing event_uuid")
         ids = [e.get("event_id") for e in a.get("ledger", [])]
         if len(ids) != len(set(ids)): errors.append(f"{pfx}: duplicate ledger event")
     for error in errors: print("ERROR", error)

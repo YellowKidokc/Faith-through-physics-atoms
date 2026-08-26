@@ -1,0 +1,71 @@
+{
+  "source_id": "WolframGauntlet",
+  "title": "Wolfram Gauntlet Ten Laws",
+  "canonical_node": {
+    "axiom": "The ten physical laws as stated in the Theophysics framework are mathematically correct and the framework's limits are honestly identified.",
+    "definitions": [
+      "Ten physical laws: gravitation, electromagnetism, strong force, weak force, inertia, entropy, relativity, Higgs mass, entanglement, observer effect.",
+      "Adversarial break tests: deliberate attempts to find where the framework fails.",
+      "Provenance anchoring: SHA256 hash of the reference document ties verification to a specific version."
+    ],
+    "derivation": [
+      "Import reference document and compute SHA256 hash for provenance.",
+      "For each law, compute or check its core mathematical property (e.g., gravitational force sign, Coulomb's law, Yukawa proxy, decay constant, ODE solution, entropy non-decrease, Lorentz invariance, mass relation, CHSH inequality, coherence destruction).",
+      "Run break tests: no-signaling, local entropy drop, relativity absolutes.",
+      "Record results as True/False or numerical values."
+    ],
+    "action": "Independently verify the ten physical laws using Wolfram Language and adversarially test the framework to identify limits.",
+    "boundary": [
+      "Does not provide a formal proof in Lean; it is a separate computational verification.",
+      "Does not claim to prove the entire Theophysics framework; only the ten laws as stated.",
+      "Does not claim to resolve philosophical implications of the laws."
+    ],
+    "test": [
+      "Each law verification returns a boolean or numeric result (e.g., LAW1_GRAV_ATTRACTIVE = True).",
+      "Break tests return expected outcomes (e.g., no-signaling confirmed, local entropy drop True).",
+      "Provenance hash matches the reference document."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Wolfram Language runtime",
+      "Reference document with ten laws (hashed)"
+    ],
+    "dg2_new_capability": "Provides an independent computational verification of the ten laws in a different formal system, plus adversarial break tests.",
+    "dg3_preserved_floor": "Preserves the mathematical correctness of the ten laws as stated.",
+    "dg4_collapse_if_removed": "If removed, the framework loses its independent cross-system verification and adversarial testing layer.",
+    "dg5_translation_registers": [
+      "Wolfram Language",
+      "SHA256 hash"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "verification",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May overstate the strength of verification as a formal proof.",
+      "May imply the ten laws are universally true beyond the stated scope.",
+      "May imply the break tests are exhaustive."
+    ],
+    "kill_conditions": [
+      "If the Wolfram code is not reproducible or contains errors.",
+      "If the reference document hash is not verifiable.",
+      "If the break tests are shown to be flawed."
+    ],
+    "lean_target": "Formalize the ten law verifications in Lean, if possible, to strengthen the proof."
+  },
+  "plain_summary": "The Wolfram Gauntlet is an independent computational verification of ten physical laws using Wolfram Language, including adversarial break tests. It confirms the laws mathematically and identifies limits like no-signaling and local entropy decrease. It is not a formal proof but a strong cross-check.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\WolframGauntlet.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\WolframGauntlet.canonical-node.json"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-080",
+  "nodeID": "tp:axioms/01/AX-080",
+  "claimID": "tp:AXIOMS/P9.5",
+  "name": "Grace Available To All",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theorem",
+  "statementTechnical": "Grace available to all — Ĝ is defined on the full Hilbert space, not a subset.",
+  "statementPlain": "Grace available to all — Ĝ is defined on the full Hilbert space, not a subset.",
+  "mathematicalForm": "dom(Ĝ) = H (full Hilbert space); Ĝ defined ∀|ψ⟩",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-075",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-079",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "grace"
+  ],
+  "keywords": [
+    "P9.5",
+    "Q10",
+    "Divine",
+    "Property"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show grace is restricted to a subset (election). Demonstrate Ĝ is not defined for some states. Show universal grace contradicts predestination.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 82
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-080",
+    "oldID": "P9.5",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-N (Grace property — universality)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Divine",
+    "tier": "2",
+    "newType": "Property",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "proposition / lemma target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M09",
+    "moduleTitle": "Grace Operator",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "BC8",
+    "fourModeRelevance": "M4 (Grace Attenuation — ambient rejection weakens effective grace)",
+    "worldviewsEliminated": "Calvinism (limited atonement — qualified)",
+    "propagationTest": "YES — Universal availability propagates to the claim that rejection of grace is genuine choice, not divine withholding.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

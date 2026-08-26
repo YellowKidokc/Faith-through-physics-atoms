@@ -1,0 +1,101 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-145",
+  "nodeID": "tp:axioms/01/AX-145",
+  "claimID": "tp:AXIOMS/D19.10",
+  "name": "Law X: Trinity Closure",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "definition",
+  "statementTechnical": "Law X: Complete measurement closure requires exactly three observer-operators in perichoretic relation.",
+  "statementPlain": "Law X: Complete measurement closure requires exactly three observer-operators in perichoretic relation.",
+  "mathematicalForm": "N_observers = 3; perichoretic: each measures the other two",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-061",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-135",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "definition",
+    "variable",
+    "observer",
+    "trinity"
+  ],
+  "keywords": [
+    "D19.10",
+    "Q8",
+    "Laws",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show N≠3 suffices for closure. Demonstrate measurement completion with fewer observers. Show perichoresis is not required for mutual measurement.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 147
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-145",
+    "oldID": "D19.10",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-M (Tenth law — Trinity)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Laws",
+    "tier": "1",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M19",
+    "moduleTitle": "Ten-Law Master Equation",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "BC4",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "Islam, Judaism, Deism, Buddhism, Hinduism, Atheism",
+    "propagationTest": "YES — Law X propagates to Christianity identification and Trinity theology.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

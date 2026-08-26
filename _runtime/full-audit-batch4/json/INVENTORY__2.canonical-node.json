@@ -1,0 +1,74 @@
+{
+  "source_id": "INVENTORY__2",
+  "title": "Inventory of Lean Surface and Theorem Families",
+  "canonical_node": {
+    "axiom": "The inventory file is a reader-facing map of the current Lean surface, listing core files, theorem families, integrity markers, and a strong-law mechanism layer.",
+    "definitions": [
+      "Core files: specific Lean files with designated roles in the formalization.",
+      "Theorem families: groups of theorems sharing a common theme or structure.",
+      "Integrity markers: compact checkpoints that compile to indicate key definitions and theorem dependencies hold together.",
+      "Strong-law mechanism layer: a file closing GAP-01 at the mechanism-gate level for Laws 1, 2, 9, and 10, adding gates GGate, MGate, FGate, CGate."
+    ],
+    "derivation": [
+      "The document lists core files and their roles.",
+      "It enumerates major theorem families.",
+      "It identifies integrity markers as compact checkpoints.",
+      "It describes the strong-law mechanism layer and its additions."
+    ],
+    "action": "The system should treat this inventory as a map of the Lean surface, using it to locate files, theorem families, and markers, and to understand the strong-law mechanism layer's role.",
+    "boundary": [
+      "This document does not provide proofs or formal derivations.",
+      "It does not define the axioms or theorems themselves.",
+      "It does not assert that the listed items are complete or verified beyond their presence in the files."
+    ],
+    "test": [
+      "Check that each listed file exists and contains the described roles.",
+      "Check that each named marker theorem compiles in the corresponding file.",
+      "Check that the strong-law mechanism layer file exists and includes the described gates and theorems."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The listed Lean files and their contents.",
+      "The named marker theorems.",
+      "The strong-law mechanism layer file."
+    ],
+    "dg2_new_capability": "Provides a reader-facing map of the Lean surface, enabling navigation and understanding of the formalization's structure.",
+    "dg3_preserved_floor": "Preserves the existence and roles of the listed files and theorem families as described.",
+    "dg4_collapse_if_removed": "Without this inventory, readers lose a structured overview of the Lean surface, but the underlying files and theorems remain unaffected.",
+    "dg5_translation_registers": [
+      "File names map to actual Lean files.",
+      "Theorem family names map to groups of theorems.",
+      "Marker names map to specific theorem declarations."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "inventory",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as inventory metadata"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the inventory as a proof of the theorems it lists.",
+      "Assuming the inventory is exhaustive or current.",
+      "Interpreting the marker theorems as more than compact checkpoints."
+    ],
+    "kill_conditions": [
+      "If any listed file does not exist or lacks the described content.",
+      "If any named marker theorem fails to compile.",
+      "If the strong-law mechanism layer is absent or does not contain the described gates."
+    ],
+    "lean_target": "The inventory itself is not a Lean target; it describes Lean targets."
+  },
+  "plain_summary": "This document is an inventory of the Lean formalization, listing core files, theorem families, integrity markers, and a strong-law mechanism layer. It is a map, not a proof, and should be treated as metadata.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\INVENTORY__2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\INVENTORY__2.canonical-node.json"
+  }
+}

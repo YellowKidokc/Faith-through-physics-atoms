@@ -1,0 +1,82 @@
+{
+  "source_id": "chi_field_potential_search",
+  "title": "chi_field_potential_search.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field potential V(chi) = mchi + chi defines the stability landscape; parameter regions must be mapped to determine where stable solutions exist.",
+    "definitions": [
+      "chi-field: a scalar field with potential V(chi) = mchi + chi",
+      "m: mass squared parameter, can be negative (tachyonic), zero, or positive",
+      ": self-coupling constant, non-negative",
+      "_G: grace coupling constant, strength of grace source term",
+      "STABLE: solution remains bounded over integration time",
+      "OSCILLATORY: solution oscillates without divergence",
+      "DECAYING: solution decays to zero",
+      "UNSTABLE: solution diverges"
+    ],
+    "derivation": [
+      "The potential form is given as V(chi) = mchi + chi.",
+      "Parameter space is scanned over m, , and _G.",
+      "At each grid point, the chi-field solver is initialized and integrated for N time steps.",
+      "The outcome is classified as STABLE, OSCILLATORY, DECAYING, or UNSTABLE based on boundedness.",
+      "The stability map is constructed from these classifications."
+    ],
+    "action": "Systematically scan the chi-field parameter space (m, , _G) to map regions of stability and instability, and record the outcome at each grid point.",
+    "boundary": [
+      "Does not derive the potential from first principles; it assumes the given form.",
+      "Does not provide analytical proofs of stability; relies on numerical integration.",
+      "Does not extend to full cosmological dynamics; only the potential landscape.",
+      "Does not claim physical reality of the chi-field; it is a model parameter scan."
+    ],
+    "test": [
+      "For each parameter set, verify that the numerical integration is performed for the specified N time steps.",
+      "Check that the classification (STABLE, OSCILLATORY, DECAYING, UNSTABLE) is consistent with the boundedness of the solution.",
+      "Confirm that the canonical parameters (m = 10 kg*m*s,  = 0.01) are reported as stable.",
+      "Reproduce the stability map by rerunning the notebook with the same parameters."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "chi-field solver implementation",
+      "numerical integration method",
+      "parameter grid definitions"
+    ],
+    "dg2_new_capability": "Provides a stability map of the chi-field potential across parameter space, identifying stable and unstable regions.",
+    "dg3_preserved_floor": "Preserves the canonical chi-field parameters as stable, supporting the internal consistency claim.",
+    "dg4_collapse_if_removed": "Without this scan, the stability of the chi-field at canonical parameters is not demonstrated, weakening the internal consistency argument.",
+    "dg5_translation_registers": [
+      "m: mass squared",
+      ": self-coupling",
+      "_G: grace coupling",
+      "STABLE/UNSTABLE: boundedness of numerical solution"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "numerical_stability_scan",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "preserve as numerical evidence; do not upgrade to formal proof"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The scan is numerical, not analytical; stability conclusions are limited to the sampled grid and integration time.",
+      "The claim of 'large margins' is qualitative and depends on grid resolution.",
+      "The notebook does not prove the chi-field exists; it only maps a model potential."
+    ],
+    "kill_conditions": [
+      "If the notebook cannot be rerun to reproduce the stability map.",
+      "If the canonical parameters are found to be near an instability boundary when using finer grids or longer integration times.",
+      "If the potential form is not the one used in the canonical model."
+    ],
+    "lean_target": "Formalize the stability conditions for the chi-field potential analytically, if possible, to support the numerical findings."
+  },
+  "plain_summary": "This notebook scans the chi-field potential's parameter space to map stable and unstable regions. It finds the canonical parameters are stable with large margins, supporting internal consistency. However, the results are numerical and not formal proofs.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\chi_field_potential_search.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\chi_field_potential_search.canonical-node.json"
+  }
+}

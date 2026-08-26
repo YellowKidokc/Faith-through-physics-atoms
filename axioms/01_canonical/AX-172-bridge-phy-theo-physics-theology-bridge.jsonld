@@ -1,0 +1,86 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-172",
+  "nodeID": "tp:axioms/01/AX-172",
+  "claimID": "tp:AXIOMS/BRIDGE-PHY-THEO",
+  "name": "BRIDGE-PHY-THEO - Physics-Theology Bridge",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "bridge",
+  "statementTechnical": "The Physics-Theology Bridge: Physics and theology are not separate magisteria but complementary descriptions of a unified reality. The chi-field provides the ontological substrate where physical law and divine action are both expressions of the same underlying coherence dynamics.",
+  "statementPlain": "The Physics-Theology Bridge: Physics and theology are not separate magisteria but complementary descriptions of a unified reality. The chi-field provides the ontological substrate where physical law and divine action are both expressions of the same underlying coherence dynamics.",
+  "mathematicalForm": "—",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [],
+  "tags": [
+    "logos",
+    "coherence",
+    "field"
+  ],
+  "keywords": [
+    "BRIDGE-PHY-THEO",
+    "—",
+    "physics; theology",
+    "BridgePrinciple"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "### DC-1: Demonstrable Incommensurability If physics and theology can be shown to make contradictory predictions about the same observable. ### DC-2: Causal Closure Success If physics achieves complete causal closure. ### DC-3: Eliminative Naturalism If theological concepts can be fully eliminated. ### DC-4: Bridge Inconsistency If the bridge itself introduces inconsistencies.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 174
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-172",
+    "oldID": "BRIDGE-PHY-THEO",
+    "treeLevel": "—",
+    "treeBranch": "—",
+    "questionType": "—",
+    "domain": "physics; theology",
+    "tier": "—",
+    "newType": "BridgePrinciple",
+    "logicalForce": "bridge identification",
+    "formalizableInLean": "partly",
+    "leanKind": "bridge predicate / explicit assumption",
+    "riskLevel": "high",
+    "kernelRole": "guardedPremise",
+    "moduleID": "M22",
+    "moduleTitle": "Logos / Bridge Layer",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "TBD",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

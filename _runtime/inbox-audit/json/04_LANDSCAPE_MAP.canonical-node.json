@@ -1,0 +1,72 @@
+{
+  "source_id": "04_LANDSCAPE_MAP",
+  "title": "Landscape Map  -  Hubble Gradient",
+  "canonical_node": {
+    "axiom": "A thesis must be positioned within the intellectual landscape before it can be evaluated.",
+    "definitions": [
+      "Landscape Map: a structured document that positions a thesis relative to three key thinkers, identifies the gap, and clarifies what the thesis is not.",
+      "Thinker: an individual whose work is relevant to the thesis and is analyzed for contributions and limitations."
+    ],
+    "derivation": [
+      "If a thesis cannot be positioned in 5 pages, adding more pages will not help.",
+      "Positioning requires identifying what key thinkers got right and wrong.",
+      "The gap is what all thinkers miss and the thesis addresses.",
+      "A position map across ontology, epistemology, methodology, scope, and falsifiability clarifies the thesis's stance.",
+      "Explicitly stating what the thesis is not prevents misreading."
+    ],
+    "action": "Produce a Landscape Map section (max 5 pages) that identifies three key thinkers, their contributions and limitations, the structural gap, a position map, and explicit non-claims.",
+    "boundary": [
+      "Does not provide the actual content of the thesis argument.",
+      "Does not evaluate the thinkers in depth beyond 2-3 sentences each.",
+      "Does not claim to be exhaustive in mapping all relevant thinkers."
+    ],
+    "test": [
+      "The section is at most 5 pages.",
+      "Three thinkers are named and analyzed.",
+      "A gap paragraph is present.",
+      "A position map table is filled.",
+      "A 'What This Thesis Is NOT' section is present."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The thesis content itself (to be positioned).",
+      "Knowledge of relevant thinkers and literature."
+    ],
+    "dg2_new_capability": "Provides a structured method for positioning a thesis within an intellectual landscape, ensuring clarity and preventing overclaiming.",
+    "dg3_preserved_floor": "Preserves the requirement that a thesis must be clearly situated relative to existing work.",
+    "dg4_collapse_if_removed": "Without this, the thesis may lack context, appear ungrounded, or fail to demonstrate its contribution.",
+    "dg5_translation_registers": [
+      "Thesis positioning",
+      "Literature review",
+      "Research contribution"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological guideline",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "retain as structural template"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be mistaken for a substantive thesis claim rather than a positioning template.",
+      "The template's effectiveness is not empirically validated."
+    ],
+    "kill_conditions": [
+      "If the thesis does not require positioning (e.g., purely formal work).",
+      "If the template is applied rigidly without adaptation."
+    ],
+    "lean_target": "A concise, structured positioning section that avoids overclaiming."
+  },
+  "plain_summary": "This document is a template for writing a 'Landscape Map' section in a thesis. It instructs the author to identify three key thinkers, their contributions and limitations, the gap they miss, a position map, and explicit non-claims. It is a methodological guideline, not a substantive claim, and is graded C as a useful but unverified template.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\04_LANDSCAPE_MAP.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\04_LANDSCAPE_MAP.canonical-node.json"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "source_id": "verify_master_equation",
+  "title": "verify_master_equation.ipynb",
+  "canonical_node": {
+    "axiom": "The LLC Lagrangian in canonical form L = chi(q,t)*(0.5*qdot^T K qdot) - q[4]*chi(q,t) is the irreducible definition; its canonical properties (positive definite mass matrix, energy conservation, symmetry pair structure, chi normalization) must hold independently of any particular implementation.",
+    "definitions": [
+      "LLC Lagrangian: L = chi(q,t)*(0.5*qdot^T K qdot) - q[4]*chi(q,t), where K is a 10x10 kinetic matrix with symmetry pair couplings.",
+      "Mass matrix: M(q) = L/q.",
+      "SYMMETRY_PAIRS: specified off-diagonal couplings in K with PAIR_STRENGTH = 0.45.",
+      "chi normalization: sigmoid normalization mapping each q_i to X_i in [0,1]; INVERTED flag (indices 4 and 8) uses 1-sigmoid.",
+      "Canonical properties: positive definiteness of M, energy conservation under RK4, exact symmetry pair structure, chi normalization."
+    ],
+    "derivation": [
+      "Start from the raw Lagrangian definition without class abstraction.",
+      "Compute mass matrix M(q) via JAX autodiff at multiple operating points.",
+      "Verify positive definiteness of M at all tested points.",
+      "Integrate equations of motion using RK4 with canonical parameters over 10,000 steps.",
+      "Measure Hamiltonian drift per step; confirm O(dt^4) as expected for RK4.",
+      "Check off-diagonal elements of K against SYMMETRY_PAIRS with PAIR_STRENGTH = 0.45.",
+      "Verify chi normalization: X_i in [0,1] for all q_i, with INVERTED indices producing 1-sigmoid."
+    ],
+    "action": "Independently re-derive and numerically verify the canonical properties of the LLC Lagrangian from first principles, without relying on the MasterEquation class implementation.",
+    "boundary": [
+      "Does not define the LLC Lagrangian itself; assumes the canonical form as given.",
+      "Does not prove the physical validity or interpretational claims of the LLC; only verifies mathematical consistency of the stated properties.",
+      "Does not extend to other notebooks or broader theory; standalone verification only.",
+      "Does not claim formal proof; numerical verification at finite points and finite steps."
+    ],
+    "test": [
+      "Mass matrix positive definiteness at multiple operating points via JAX autodiff.",
+      "Hamiltonian drift per step over 10,000 RK4 steps; expected O(dt^4).",
+      "Exact match of K off-diagonal elements to SYMMETRY_PAIRS with PAIR_STRENGTH = 0.45.",
+      "Chi values within [0,1] for all variables; INVERTED indices produce 1-sigmoid."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Canonical form of LLC Lagrangian as stated.",
+      "JAX for autodiff and numerical integration.",
+      "Specified SYMMETRY_PAIRS and PAIR_STRENGTH."
+    ],
+    "dg2_new_capability": "Provides an independent, implementation-free verification of the LLC's canonical properties, serving as a cross-check against the class-based implementation.",
+    "dg3_preserved_floor": "Preserves the mathematical definition of the LLC Lagrangian and its canonical properties as the floor; does not alter or extend them.",
+    "dg4_collapse_if_removed": "If removed, the suite loses an independent verification layer; the class implementation would lack a from-scratch cross-check, weakening confidence in correctness.",
+    "dg5_translation_registers": [
+      "Canonical form verification",
+      "Positive definiteness check",
+      "Energy conservation",
+      "Symmetry pair structure",
+      "Chi normalization"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "verification",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as verification artifact"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Numerical verification at finite points does not constitute a formal proof of positive definiteness for all q.",
+      "Energy conservation over 10,000 steps is empirical, not a proof of exact conservation.",
+      "The document claims 'They agree' but does not provide quantitative agreement metrics.",
+      "The interpretation section overstates the strength of the verification ('intellectual rigor', 'correct')."
+    ],
+    "kill_conditions": [
+      "If the canonical form of the Lagrangian is not the authoritative definition, the verification is moot.",
+      "If numerical tests fail at other operating points or longer integration times.",
+      "If the independent implementation shares hidden assumptions with the class implementation."
+    ],
+    "lean_target": "Formalize the verification as a set of assertions in Lean, proving positive definiteness symbolically where possible and bounding numerical errors for energy conservation."
+  },
+  "plain_summary": "This notebook independently re-derives and numerically verifies the canonical properties of the LLC Lagrangian (mass matrix positive definiteness, energy conservation, symmetry pair structure, chi normalization) without relying on the class implementation. It serves as a cross-check but does not provide formal proof; it is a runtime-supported verification artifact.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\verify_master_equation.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\verify_master_equation.canonical-node.json"
+  }
+}

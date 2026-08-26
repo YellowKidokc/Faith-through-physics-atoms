@@ -1,0 +1,71 @@
+{
+  "source_id": "constraint_model",
+  "title": "constraint_model.ipynb",
+  "canonical_node": {
+    "axiom": "A strategy is admissible if and only if it satisfies all six constraint functions: justice, mercy, freewill, love, entropy, and holiness.",
+    "definitions": [
+      "Constraint function: a function taking a 10-parameter strategy vector and returning True/False based on threshold conditions.",
+      "Parameter vector: 10 continuous/discrete parameters including payment_magnitude, cost_to_sinner, coercion_level, relational_access, negentropy_input, corruption_addressed, voluntary_by_redeemer, scope, permanence, source_is_external.",
+      "All-passed boolean: True if all six constraint functions return True for a given parameter vector.",
+      "Cross configuration: the parameter vector corresponding to an external voluntary substitute, full payment, zero coercion, full access, full negentropy, full corruption resolution."
+    ],
+    "derivation": [
+      "Define six constraint functions with threshold conditions on the parameter vector.",
+      "Evaluate a strategy by checking all six constraints; if all pass, the strategy is admissible.",
+      "Use grid search and random search over the parameter space to find all admissible configurations.",
+      "Verify that the only admissible configuration found is the cross configuration."
+    ],
+    "action": "Given a strategy parameter vector, evaluate all six constraint functions and return the count of satisfied constraints and whether all are satisfied. Use optimization to search for admissible configurations.",
+    "boundary": [
+      "Does not define the specific threshold values for each constraint function.",
+      "Does not apply the model to specific biblical strategies; that is the role of test09_constraint_satisfaction.ipynb.",
+      "Does not extend to 100,000 random trials; that is the role of free_body_model.ipynb."
+    ],
+    "test": [
+      "For any parameter vector, the constraint functions return deterministic True/False based on thresholds.",
+      "The optimization search should find no admissible configuration other than the cross configuration.",
+      "The notebook should be reproducible in a Colab environment."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Parameter space definition",
+      "Constraint function definitions"
+    ],
+    "dg2_new_capability": "Provides a reusable constraint satisfaction engine for evaluating strategies against six constraints.",
+    "dg3_preserved_floor": "Preserves the ability to evaluate any strategy against the six constraints in a deterministic manner.",
+    "dg4_collapse_if_removed": "Without this model, the constraint-based evaluation of strategies would lack a defined implementation, making test09 and free_body_model unable to run.",
+    "dg5_translation_registers": [
+      "constraint functions",
+      "parameter vector",
+      "all-passed boolean"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodology",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims exhaustive search verifies uniqueness of the cross configuration, but the search method (grid/random) may not be truly exhaustive over continuous parameters.",
+      "The threshold values for constraints are not specified, so the model's behavior is not fully reproducible without additional details."
+    ],
+    "kill_conditions": [
+      "If the constraint functions are not deterministic or thresholds are not fixed, the model is not a valid constraint satisfaction engine.",
+      "If the optimization search finds an admissible configuration other than the cross configuration, the uniqueness claim is falsified."
+    ],
+    "lean_target": "Formalize the constraint functions and thresholds in Lean, and prove that the cross configuration is the unique solution."
+  },
+  "plain_summary": "This document describes a constraint satisfaction engine that evaluates strategies against six constraints. It defines the parameter space and constraint functions, and claims that optimization verifies the uniqueness of the cross configuration. The model is a precursor to formal tests and is implemented as a Colab notebook.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\constraint_model.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\constraint_model.canonical-node.json"
+  }
+}

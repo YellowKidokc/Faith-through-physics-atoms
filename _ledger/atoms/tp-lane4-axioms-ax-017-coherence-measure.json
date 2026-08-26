@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-017-coherence-measure",
+  "atom_uid": "sha256:a8e26a9bccb23fa4750c7d90f12e313c6f6382f4c2d898b151daaecd12dd91bd",
+  "title": "AX-017 — Coherence Measure",
+  "claim": "The Logos Field (χ) operates to continuously minimize the total Kolmogorov Complexity of the universe's description.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "dK/dt = -αχ(t); C[χ] = S_max - S[χ]"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-010",
+    "tp:axioms/01/AX-016"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the universe's description length INCREASING over time despite χ",
+    "Demonstrate Kolmogorov complexity is not computable (it isn't — this is a genuine issue)",
+    "Show a domain where χ fails to compress"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-017-coherence-measure.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-017-coherence-measure.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:8fa9c5177f116717deecb9a10b087532027a24c187a701684a7285b399392c76",
+      "event_uuid": "e49eb00b-bd81-56ec-b3e0-c60702fcf2e5"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:325531521ca0a9149f1893d05c1b248caa5cae4828bf5b16ca864fd3491b20af",
+      "event_uuid": "8738ea6a-7ca2-5727-b20e-970e77550a83"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A3.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-017",
+  "original_node_id": "tp:axioms/01/AX-017",
+  "atom_uuid": "eb376e7e-d8b4-594d-842a-06cebc153cb6"
+}

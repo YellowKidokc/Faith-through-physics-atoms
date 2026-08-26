@@ -1,0 +1,122 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-010",
+  "nodeID": "tp:master-equation/01/ME-EQ-010",
+  "claimID": "tp:ME/ME-EQ-010",
+  "nodeType": "claim",
+  "name": "Fruit Vector",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "mathematical",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "statementTechnical": "Φ⃗ = {Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control}",
+  "statementPlain": "The fruits form a nine-dimensional observable output vector.",
+  "mathematicalForm": "Φ⃗ = {Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control}",
+  "mathFormNormal": "Phi_vector = [Love,Joy,Peace,Patience,Kindness,Goodness,Faithfulness,Gentleness,SelfControl]",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-151",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-152",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-153",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-154",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-155",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-156",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-157",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-158",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-159",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-160",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    }
+  ],
+  "tags": [
+    "equation",
+    "coherence"
+  ],
+  "keywords": [
+    "equation",
+    "Φ⃗"
+  ],
+  "verificationStatus": "equation-registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer.",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\fruits_of_the_spirit_equations.md",
+  "equationRegistry": {
+    "equationID": "ME-EQ-010",
+    "variables": [
+      "Φ⃗"
+    ],
+    "normalForm": "Phi_vector = [Love,Joy,Peace,Patience,Kindness,Goodness,Faithfulness,Gentleness,SelfControl]",
+    "source": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\fruits_of_the_spirit_equations.md"
+  }
+}

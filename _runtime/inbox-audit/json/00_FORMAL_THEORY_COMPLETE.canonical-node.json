@@ -1,0 +1,81 @@
+{
+  "source_id": "00_FORMAL_THEORY_COMPLETE",
+  "title": "The Formal Theory of Theophysics",
+  "canonical_node": {
+    "axiom": "There exists a single Master Equation whose ten factors admit dual physical and spiritual readings with identical algebraic structure, grounded in three axioms: God-as-axiom, Trinity isomorphism, and free will.",
+    "definitions": [
+      "Master Equation: chi_local = G * M * E * S_eff * T * K * R * Q * F * C, integrated over space and time.",
+      "S_eff = e^(- * S_prod), mapping 0 to (0,1], antitone in S_prod.",
+      "C: tenth factor, total integration measure, C in [0,1].",
+      "chi: integrated output, chi in 0.",
+      "Structural isomorphism: same topology, falloff behavior, boundary conditions, conservation laws between physical and spiritual readings."
+    ],
+    "derivation": [
+      "Axiom 1: God-as-axiom required for von Neumann chain termination and reference vector.",
+      "Axiom 2: Trinity isomorphism via CPT symmetry.",
+      "Axiom 3: Free will required for non-trivial M.",
+      "Definition of ten factors with domains.",
+      "Entropy sign repair: S_eff = e^(-*S_prod).",
+      "Master Equation defined as product of ten factors.",
+      "Seven Lean-verified properties: antitone entropy, zero collapse, strict positivity, monotonicity, C/chi distinction.",
+      "Two asymmetries: F directional, C integrator with no anti-principle.",
+      "Seven forced conclusions: sin=entropy, grace=negentropy, faith=observation, terminal observer, coherence conservation, open system, time wall."
+    ],
+    "action": "Use the Master Equation as a formal bridge between physics and theology, applying the three-layer reconciliation test to any new claim.",
+    "boundary": [
+      "Does not claim to explain divine mechanics.",
+      "Does not claim to solve the Time variable's grace-side (Time Wall).",
+      "Does not claim to know specific numerical values of spiritual coupling constants.",
+      "Does not claim to have a final canonical law ordering.",
+      "Does not claim to have a precise mechanism of consciousness-quantum coupling."
+    ],
+    "test": [
+      "Falsification test: substituting spiritual variables into physics equations must preserve topology, falloff, boundary conditions, conservation laws.",
+      "Three-layer reconciliation test: claim reduces to Layer 2, Layer 2 to Layer 1, Layer 1 has Lean-verified property.",
+      "Statistical evidence: PEAR, GCP, PROP-COSMOS at 5 threshold."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 kernel for formal proofs",
+      "Statistical datasets (PEAR, GCP, PROP-COSMOS)",
+      "Independent verification from Oxford, CTNS, BU"
+    ],
+    "dg2_new_capability": "Provides a formal mathematical framework that unifies physical and theological descriptions via a single equation with dual readings.",
+    "dg3_preserved_floor": "Preserves the three axioms (God-as-axiom, Trinity isomorphism, free will) as the formal boundary established Feb 14, 2026.",
+    "dg4_collapse_if_removed": "If the Master Equation or its axioms are removed, the framework collapses into separate, non-communicating disciplines.",
+    "dg5_translation_registers": [
+      "Physical register: thermodynamics, quantum mechanics, information theory",
+      "Spiritual register: grace, sin, faith, covenant"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "formal theory with empirical evidence",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims of structural isomorphism may be overextended beyond evidence.",
+      "Statistical evidence at 5 may be misinterpreted as proof.",
+      "Theological claims may be presented as mathematically forced when they are not."
+    ],
+    "kill_conditions": [
+      "If any factor isolation fails to produce its expected natural equation.",
+      "If the Lean proofs are found to be flawed or incomplete.",
+      "If the statistical datasets are discredited or fail replication."
+    ],
+    "lean_target": "Formalize the seven structural properties in Lean 4 and verify the isomorphism claims."
+  },
+  "plain_summary": "This document presents a formal theory that unifies physics and theology through a single Master Equation with ten factors, each having dual physical and spiritual readings. It claims structural isomorphism, supported by Lean-verified properties and statistical evidence. The framework is bounded by a 'Time Wall' and a formal floor of three axioms. It is intended as a foundational argument for the Theophysics framework.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\00_FORMAL_THEORY_COMPLETE.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\00_FORMAL_THEORY_COMPLETE.canonical-node.json"
+  }
+}

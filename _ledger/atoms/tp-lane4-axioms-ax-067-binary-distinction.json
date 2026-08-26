@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-067-binary-distinction",
+  "atom_uid": "sha256:1969dffc4ed23c1111ab3c099e6b0d3c4b2b6839756373e0d291971fb62813b3",
+  "title": "AX-067 — Binary Distinction",
+  "claim": "Orientation admits only two values: σ ∈ {+1, -1}. Macroscopic moral ambiguity maps to quantum superposition of fundamental binary micro-states. [DEFENSE REQUIRED: The binary claim depends on an underlying symmetry group (SU(2)) that grounds two-state behavior. This is a modeling choice, not a deduction. If continuous moral state space with different topology exists, the binary reduction might not hold. Full defense required in Appendix C: Moral Symmetry Argument.]",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "σ̂ = diag(1,-1); σ ∈ {+1,-1}; no σ = 0"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-066"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show moral orientation admits a third value (neutral)",
+    "Demonstrate continuous moral spectrum",
+    "Show binary is a false dichotomy imposed on continuous reality"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-067-binary-distinction.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-067-binary-distinction.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:b718a88eb0f03e6dcc5fae52c0c84caf52bbd165f0fd039b1abbefc676834f74",
+      "event_uuid": "a5a4f51a-3e63-5a13-b7de-0a5043089a45"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:08871aa26f513ebd444339fbb2979ad7f5a63c92da3e486dcc081d1b1d396107",
+      "event_uuid": "cd537d3a-b886-5444-b637-04cdba88279c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A8.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-067",
+  "original_node_id": "tp:axioms/01/AX-067",
+  "atom_uuid": "b690ff70-a827-590e-b025-022d07d28239"
+}

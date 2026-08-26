@@ -1,0 +1,1173 @@
+{
+  "work_id": "W7.3",
+  "title": "The Lean Survivors",
+  "turn": "TURN 7 - THE GAUNTLET",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\BLUE\\o\\09-the-lean-survivors.html",
+  "overall_status": "reviewed",
+  "summary": "This sheet lists Lean proofs claimed to survive the Master Equation v3 form change. It carefully bounds its claims: survivors are structural kernels and proof obligations, not full Master Equation, Lagrangian bridge, Christianity, or empirical claims. The defense classes are mostly ADMISSION and DERIVATION, with some RHETORIC in the framing. The main risks are the unverified bridge from Lean proofs to theological meaning, and the open KIMMY items.",
+  "claims": [
+    {
+      "claim_id": "W7.3-C001",
+      "claim_text": "The proofs listed on this page are structural enough that the Master Equation v3 form change does not appear to invalidate them.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A formal argument that the listed proofs are independent of the v3 form change."
+      ],
+      "evidence_present": [
+        "The page states the proofs are structural and do not depend on the old form."
+      ],
+      "evidence_gap": [
+        "No formal independence proof is provided; only a claim of structural independence."
+      ],
+      "support": [
+        "Structural enough to stand on either side of the boundary."
+      ],
+      "dependencies": [
+        "Master Equation v3 form change"
+      ],
+      "risks": [
+        "The claim of 'does not appear to invalidate' is weaker than a proof of independence."
+      ],
+      "kill_condition": "If any listed proof is shown to depend on the old form.",
+      "required_concession": "This is a claim of apparent survival, not a formal proof of independence.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C002",
+      "claim_text": "The product-collapse kernel proves that if any factor is zero, the product is zero, and conversely, under the declared algebra.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "A Lean proof of the product-collapse theorem."
+      ],
+      "evidence_present": [
+        "Lean items listProd_eq_zero_of_mem_zero and mem_zero_of_listProd_eq_zero are listed as formally proved conditional."
+      ],
+      "evidence_gap": [
+        "The actual Lean code is not included in this work."
+      ],
+      "support": [
+        "listProd_eq_zero_of_mem_zero: If zero appears in the factor list, product is zero."
+      ],
+      "dependencies": [
+        "CoherenceAlgebra",
+        "listProd"
+      ],
+      "risks": [
+        "The proof is conditional on the declared algebra; if the algebra is not the intended one, the result may not apply."
+      ],
+      "kill_condition": "If the declared algebra does not match the intended product structure.",
+      "required_concession": "This is a formal result conditional on the declared algebraic structure.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C003",
+      "claim_text": "A zero-preserving operator cannot rescue zero: if a factor is zero, the operator-wrapped chi remains zero.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "A Lean proof of the zero-preservation theorem."
+      ],
+      "evidence_present": [
+        "Lean items cannot_rescue_zero and chi_zero_if_any_factor_zero are listed as formally proved conditional."
+      ],
+      "evidence_gap": [
+        "The Lean code is not shown."
+      ],
+      "support": [
+        "cannot_rescue_zero: A zero-preserving operator cannot rescue zero."
+      ],
+      "dependencies": [
+        "CoherenceOperator",
+        "MasterState.chi"
+      ],
+      "risks": [
+        "The result depends on the operator being zero-preserving; if the wrapper is not zero-preserving, the claim fails."
+      ],
+      "kill_condition": "If the wrapper operator is not zero-preserving in the intended model.",
+      "required_concession": "This holds under the declared zero-preserving operator assumption.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C004",
+      "claim_text": "The grace reset model proves that grace is idempotent and not invertible as a total map.",
+      "framework_lane": "ten_laws",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Lean proofs of idempotence and non-invertibility."
+      ],
+      "evidence_present": [
+        "Lean items grace_idempotent and grace_not_invertible are listed as formally proved conditional."
+      ],
+      "evidence_gap": [
+        "The Lean code is not shown."
+      ],
+      "support": [
+        "grace_idempotent: Applying grace twice equals applying grace once."
+      ],
+      "dependencies": [
+        "Regime",
+        "grace"
+      ],
+      "risks": [
+        "The model is a declared reset function; it may not capture the theological concept of grace."
+      ],
+      "kill_condition": "If the reset function is not idempotent in the intended model.",
+      "required_concession": "This proves properties of the encoded grace model, not the theological doctrine.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "law",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/law.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "ten_laws",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "law",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C005",
+      "claim_text": "The formal isomorphism burden requires any isomorphism claim to supply maps, inverse laws, value preservation, and collapse preservation.",
+      "framework_lane": "axioms",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "A Lean definition of LawIso and its requirements."
+      ],
+      "evidence_present": [
+        "Lean item LawIso is defined with the required components."
+      ],
+      "evidence_gap": [
+        "The Lean code is not shown."
+      ],
+      "support": [
+        "LawIso: Isomorphism requires maps, inverse laws, value preservation, and collapse preservation."
+      ],
+      "dependencies": [
+        "LawModel"
+      ],
+      "risks": [
+        "The burden is defined, but no specific isomorphism is proved."
+      ],
+      "kill_condition": "If the definition of LawIso is incomplete or inconsistent.",
+      "required_concession": "This defines the burden; it does not prove any specific isomorphism.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "axiom",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "axioms",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "axiom",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C006",
+      "claim_text": "The fruit gate bookkeeping proves that the nine-fruit list has length nine and no duplicates, and that the gate is true iff all fruits manifest.",
+      "framework_lane": "morality",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Lean proofs of the fruit list properties and gate logic."
+      ],
+      "evidence_present": [
+        "Lean items Fruit.count, Fruit.no_duplicates, and gate_true_of_allManifest are listed as formally proved."
+      ],
+      "evidence_gap": [
+        "The Lean code is not shown."
+      ],
+      "support": [
+        "Fruit.count: The list has length nine."
+      ],
+      "dependencies": [
+        "Fruit",
+        "FruitProfile"
+      ],
+      "risks": [
+        "The gate logic is a formal model; it may not capture the moral or theological meaning of the fruits."
+      ],
+      "kill_condition": "If the fruit list is not canonical or the gate logic is flawed.",
+      "required_concession": "This is bookkeeping about a declared list; it does not prove the moral significance.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "ethics",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/ethics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "morality",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "ethics",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C007",
+      "claim_text": "The typed canon module metadata compiles and routes claims, but compiling metadata does not prove the claims it routes.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "A Lean compile of the metadata modules."
+      ],
+      "evidence_present": [
+        "The page states the metadata modules compile."
+      ],
+      "evidence_gap": [
+        "The actual compile output is not shown."
+      ],
+      "support": [
+        "Metadata compiling is not the same as proving every module claim."
+      ],
+      "dependencies": [
+        "ModuleSlot",
+        "KernelRole",
+        "ModuleNode"
+      ],
+      "risks": [
+        "The metadata may be mistaken for proof."
+      ],
+      "kill_condition": "If the metadata modules do not compile.",
+      "required_concession": "This is classification scaffolding, not theorem proving.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C008",
+      "claim_text": "CorrectedEntropyKernel is not a clean survivor because it treats C as a factor, conflicting with the v3 wrapper form; it requires a port.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "A Lean compile of CorrectedEntropyKernel and an analysis of its C-as-factor dependency."
+      ],
+      "evidence_present": [
+        "The page states it compiles but conflicts with v3."
+      ],
+      "evidence_gap": [
+        "The specific conflicting theorems are not detailed."
+      ],
+      "support": [
+        "It explicitly treats C as a factor and proves ten-factor claims."
+      ],
+      "dependencies": [
+        "Master Equation v3"
+      ],
+      "risks": [
+        "The port may be non-trivial and may change the theorems."
+      ],
+      "kill_condition": "If the port cannot be done without losing the intended results.",
+      "required_concession": "This file is useful but not a survivor; it needs a v3 port.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "doubt",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "doubt",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C009",
+      "claim_text": "The package-context-owed files are not rejected but need their original context or imports rewritten before they can be considered survivors.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "A Lean compile of the files with proper context."
+      ],
+      "evidence_present": [
+        "The page lists the files as package-context-owed."
+      ],
+      "evidence_gap": [
+        "The specific missing imports are not listed."
+      ],
+      "support": [
+        "They need their original Lake/project context restored, or imports rewritten."
+      ],
+      "dependencies": [
+        "Lean project context"
+      ],
+      "risks": [
+        "The files may contain errors beyond missing imports."
+      ],
+      "kill_condition": "If the files cannot be compiled even with context.",
+      "required_concession": "These files are not yet survivors; they are pending restoration.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C010",
+      "claim_text": "The do-not-include list correctly excludes old ten-factor C-as-factor claims, old Master Equation dynamics, old Lagrangian bridge claims, and other unestablished items from survivor status.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A justification for each exclusion."
+      ],
+      "evidence_present": [
+        "The page lists reasons for each exclusion."
+      ],
+      "evidence_gap": [
+        "The reasons are brief and not fully argued."
+      ],
+      "support": [
+        "Old ten-factor C-as-factor claims: Conflicts with v3 wrapper form."
+      ],
+      "dependencies": [
+        "Master Equation v3"
+      ],
+      "risks": [
+        "The exclusions may be incomplete."
+      ],
+      "kill_condition": "If any excluded item is actually a survivor.",
+      "required_concession": "This is a conservative list; some items may be salvageable after porting.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C011",
+      "claim_text": "The surviving Lean work proves structural kernels and proof obligations, not the full Master Equation, the Lagrangian bridge, Christianity, or any empirical claim.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A clear demarcation of what the Lean proofs do and do not establish."
+      ],
+      "evidence_present": [
+        "The page repeatedly states this boundary."
+      ],
+      "evidence_gap": [
+        "No formal argument for why the Lean proofs cannot be extended to those larger claims."
+      ],
+      "support": [
+        "That is not a small thing. That is the floor the rebuild stands on."
+      ],
+      "dependencies": [
+        "All survivor proofs"
+      ],
+      "risks": [
+        "The boundary may be violated in other parts of the canon."
+      ],
+      "kill_condition": "If any survivor proof is used to claim the full Master Equation or Christianity.",
+      "required_concession": "This is a boundary statement; it does not prove the larger claims.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C012",
+      "claim_text": "The identity-vs-threshold question (KIMMY-003) remains open and must be decided in Lean, not prose.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A Lean proof deciding the identity-vs-threshold question."
+      ],
+      "evidence_present": [
+        "The page states the question remains open."
+      ],
+      "evidence_gap": [
+        "No Lean proof is provided."
+      ],
+      "support": [
+        "The identity-vs-threshold question (KIMMY-003) remains open and must be decided in Lean, not prose."
+      ],
+      "dependencies": [
+        "CoherenceOperator"
+      ],
+      "risks": [
+        "The question may be undecidable in the current framework."
+      ],
+      "kill_condition": "If a Lean proof is found that resolves it.",
+      "required_concession": "This is an open problem; no claim is made about its resolution.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C013",
+      "claim_text": "Law 5 lock-gate pass/fail status and Law 9 Γ-sin lock-gate status are not established because no protocol is stated.",
+      "framework_lane": "ten_laws",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A stated protocol for the lock-gate status."
+      ],
+      "evidence_present": [
+        "The page lists them as not established."
+      ],
+      "evidence_gap": [
+        "No protocol is provided."
+      ],
+      "support": [
+        "Law 5 lock-gate pass/fail status: Gate protocol with kill criterion still being written (KIMMY-001)."
+      ],
+      "dependencies": [
+        "KIMMY-001"
+      ],
+      "risks": [
+        "The status may be misinterpreted as established."
+      ],
+      "kill_condition": "If a protocol is written and the status is determined.",
+      "required_concession": "These are open items; no claim is made about their status.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "law",
+        "equation",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/law.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "ten_laws",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "law",
+          "equation",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C014",
+      "claim_text": "The 0.567 threshold/root claims are not established until derived under a declared bundle (KIMMY-008).",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "empirical_prediction",
+      "defense_class": "ADMISSION",
+      "claim_level": "physics",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A derivation of the 0.567 threshold under a declared bundle."
+      ],
+      "evidence_present": [
+        "The page lists it as not established."
+      ],
+      "evidence_gap": [
+        "No derivation is provided."
+      ],
+      "support": [
+        "0.567 threshold/root claims: NOT ESTABLISHED until derived under a declared bundle (KIMMY-008)."
+      ],
+      "dependencies": [
+        "KIMMY-008"
+      ],
+      "risks": [
+        "The threshold may be used without proper derivation."
+      ],
+      "kill_condition": "If a derivation is provided under a declared bundle.",
+      "required_concession": "This is an open item; no claim is made about the threshold.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "prediction",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/prediction.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "empirical_prediction",
+        "defense_class": "ADMISSION",
+        "claim_level": "physics",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "prediction",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C015",
+      "claim_text": "Specific law-to-law isomorphism claims must clear the LawIso burden of Section 5.",
+      "framework_lane": "axioms",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A Lean proof of any specific isomorphism satisfying LawIso."
+      ],
+      "evidence_present": [
+        "The page states the requirement."
+      ],
+      "evidence_gap": [
+        "No specific isomorphism is proved."
+      ],
+      "support": [
+        "Specific law-to-law isomorphism claims: Must clear the LawIso burden of Section 5."
+      ],
+      "dependencies": [
+        "LawIso"
+      ],
+      "risks": [
+        "The burden may be too high or too low."
+      ],
+      "kill_condition": "If a specific isomorphism is proved that meets the burden.",
+      "required_concession": "This is a requirement, not a proof of any isomorphism.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "axiom",
+        "equation",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "axioms",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "axiom",
+          "equation",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C016",
+      "claim_text": "The expanded fruit/anti-fruit evaluator needs a new typed list and cannot inherit the nine-fruit proof.",
+      "framework_lane": "morality",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A new typed list for the expanded evaluator."
+      ],
+      "evidence_present": [
+        "The page states the boundary."
+      ],
+      "evidence_gap": [
+        "The new list is not provided."
+      ],
+      "support": [
+        "David's expanded fruit/anti-fruit evaluator includes hope, humility, grace, and anti-fruits. That expanded evaluator needs a new typed list and cannot silently inherit the nine-fruit proof."
+      ],
+      "dependencies": [
+        "Fruit",
+        "FruitProfile"
+      ],
+      "risks": [
+        "The expanded evaluator may be used without proper typing."
+      ],
+      "kill_condition": "If a new typed list is provided and the evaluator is proved.",
+      "required_concession": "This is a boundary; the expanded evaluator is not yet formalized.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "ethics",
+        "equation",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/ethics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "morality",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "ethics",
+          "equation",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C017",
+      "claim_text": "Historical/theological interpretations of Lean structures are bridges, not theorems, and are labeled elsewhere.",
+      "framework_lane": "other",
+      "physics_claim_type": "theological_interpretation",
+      "defense_class": "ADMISSION",
+      "claim_level": "theological",
+      "evidence_lane": "scripture_theology",
+      "evidence_needed": [
+        "A clear labeling of such interpretations as bridges."
+      ],
+      "evidence_present": [
+        "The page states they are bridges."
+      ],
+      "evidence_gap": [
+        "The specific interpretations are not listed."
+      ],
+      "support": [
+        "Historical/theological interpretations of Lean structures: Bridges, not theorems — labeled elsewhere."
+      ],
+      "dependencies": [
+        "None"
+      ],
+      "risks": [
+        "The bridge may be mistaken for a theorem."
+      ],
+      "kill_condition": "If a bridge is presented as a theorem.",
+      "required_concession": "These are bridges, not proofs.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "claim",
+        "theology",
+        "doubt",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/theology.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "other",
+        "physics_claim_type": "theological_interpretation",
+        "defense_class": "ADMISSION",
+        "claim_level": "theological",
+        "evidence_lane": "scripture_theology",
+        "recommended_action": "keep",
+        "glyphs": [
+          "claim",
+          "theology",
+          "doubt",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.3-C018",
+      "claim_text": "Old Python/Colab/JAX passes do not transfer as v3 proof because they are old-form evidence.",
+      "framework_lane": "other",
+      "physics_claim_type": "simulation_runtime",
+      "defense_class": "ADMISSION",
+      "claim_level": "physics",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [
+        "A v3-compatible simulation or proof."
+      ],
+      "evidence_present": [
+        "The page states they do not transfer."
+      ],
+      "evidence_gap": [
+        "No v3-compatible evidence is provided."
+      ],
+      "support": [
+        "Old Python/Colab/JAX passes as v3 proof: Old-form evidence; does not transfer."
+      ],
+      "dependencies": [
+        "Master Equation v3"
+      ],
+      "risks": [
+        "Old results may be incorrectly used as v3 proof."
+      ],
+      "kill_condition": "If a v3-compatible simulation is provided.",
+      "required_concession": "Old evidence is not v3 proof.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "claim",
+        "python-verified",
+        "doubt",
+        "ai-validated",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/python-verified.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "other",
+        "physics_claim_type": "simulation_runtime",
+        "defense_class": "ADMISSION",
+        "claim_level": "physics",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "claim",
+          "python-verified",
+          "doubt",
+          "ai-validated",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "Section 2-6: Lean proofs",
+      "problem": "The Lean proofs are not included in the work, only listed as items.",
+      "repair": "Include the Lean code or a link to the compiled files for verification."
+    },
+    {
+      "severity": "P2",
+      "target": "Section 1: 'does not appear to invalidate'",
+      "problem": "The claim of survival is hedged with 'appear', which is weak.",
+      "repair": "Strengthen to a formal independence proof or clearly state it is a provisional assessment."
+    },
+    {
+      "severity": "P3",
+      "target": "Section 4: Grace model",
+      "problem": "The bridge from the formal grace model to theological grace is not fully articulated.",
+      "repair": "Add a clear statement that the model is a formal analogue, not a proof of the doctrine."
+    }
+  ],
+  "log_notes": [
+    "The work is careful to bound its claims, but the actual Lean code is not included, making verification difficult.",
+    "The KIMMY items are open problems that need resolution.",
+    "The bridge from Lean proofs to theological meaning is a recurring risk."
+  ]
+}

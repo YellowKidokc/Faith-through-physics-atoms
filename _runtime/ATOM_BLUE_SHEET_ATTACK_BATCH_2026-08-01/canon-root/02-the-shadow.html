@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheet 2 — The Shadow</title>
+<style>
+:root{--bg:#0a0e17;--bg2:#111827;--fg:#c9d1d9;--fg2:#8b949e;--gold:#c9a227;--green:#22c55e;--red:#ef4444;--purple:#a78bfa;--border:rgba(255,255,255,.08)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:Georgia,'Times New Roman',serif;line-height:1.8;font-size:1.04em}
+.wrap{max-width:740px;margin:0 auto;padding:0 20px 100px}
+.header{text-align:center;padding:52px 16px 30px;border-bottom:1px solid var(--border)}
+.header .kicker{font-family:monospace;font-size:.7em;letter-spacing:4px;text-transform:uppercase;color:var(--gold);opacity:.7}
+.header h1{font-size:1.9em;margin:10px 0 6px;color:#fff}
+.header .sub{font-size:.85em;color:var(--fg2);font-style:italic}
+.nav{text-align:center;padding:14px;font-family:monospace;font-size:.72em}
+.nav a{color:var(--gold);text-decoration:none;margin:0 10px}
+h2{color:#fff;font-size:1.3em;margin:36px 0 10px}
+p{margin:10px 0}
+a{color:var(--gold)}
+.section-label{font-family:monospace;font-size:.68em;letter-spacing:3px;text-transform:uppercase;color:var(--gold);opacity:.7;margin:44px 0 6px}
+.diamond{text-align:center;color:var(--gold);padding:22px 0 6px;font-size:1.1em}
+.note{background:rgba(201,162,39,.05);border-left:3px solid var(--gold);padding:12px 16px;margin:20px 0;font-size:.88em;color:var(--fg2)}
+.keyline{background:rgba(201,162,39,.05);border-left:3px solid var(--gold);padding:10px 16px;margin:12px 0;font-style:italic;color:#fff;font-size:.95em}
+.scripture{border-left:3px solid var(--green);background:rgba(34,197,94,.04);padding:10px 16px;margin:14px 0;font-style:italic;color:#dbe4dd;font-size:.94em}
+.scripture .ref{display:block;font-style:normal;font-family:monospace;font-size:.68em;letter-spacing:1px;color:var(--green);margin-top:4px;opacity:.85}
+.cite{font-family:monospace;font-size:.72em;color:var(--purple);opacity:.9}
+.assume{background:rgba(239,68,68,.05);border-left:3px solid var(--red);padding:14px 18px;margin:14px 0}
+.assume h3{color:#fff;font-size:1em;margin-bottom:3px}
+.assume .tag{display:inline-block;font-family:monospace;font-size:.62em;padding:2px 9px;border-radius:10px;letter-spacing:.5px;margin-left:8px;vertical-align:middle;color:var(--red);background:rgba(239,68,68,.12)}
+.assume p{margin:6px 0;font-size:.94em}
+.reading{padding:14px 0;border-bottom:1px dashed var(--border)}
+.reading .rnum{font-family:monospace;font-size:.68em;letter-spacing:2px;color:var(--gold);text-transform:uppercase}
+.reading h3{color:#fff;font-size:1.05em;margin:3px 0 5px}
+.reading .was{font-family:monospace;font-size:.72em;color:var(--red)}
+.phase{display:flex;gap:16px;padding:11px 0;border-bottom:1px dashed var(--border);align-items:baseline}
+.phase .n{font-family:monospace;color:var(--gold);font-size:.75em;min-width:26px;text-align:right;opacity:.8}
+.phase p{margin:0}
+.phase.key p{color:#fff;font-weight:600}
+.closer{text-align:center;font-style:italic;color:#fff;padding:40px 0 12px;line-height:1.9}
+.status{background:rgba(167,139,250,.05);border-left:3px solid var(--purple);padding:12px 16px;margin:20px 0;font-size:.86em;color:var(--fg2)}
+.footer{text-align:center;padding:26px 16px;font-size:.7em;opacity:.35;font-family:monospace}
+.big-claim{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:24px;margin:24px 0;text-align:center}
+.big-claim .claim-text{font-size:1.15em;color:#fff;font-weight:600;line-height:1.5;margin-bottom:8px}
+.big-claim .claim-sub{font-size:.85em;color:var(--fg2);font-style:italic}
+.wrong-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.wrong-card{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.2);border-radius:10px;padding:16px;text-align:center}
+.wrong-card h4{color:var(--red);font-size:.9em;margin-bottom:6px}
+.wrong-card p{font-size:.82em;color:var(--fg2);line-height:1.4}
+@media(max-width:640px){.wrong-grid{grid-template-columns:1fr}}
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<div class="header">
+  <div class="kicker">Sheet 2 · POF 2828</div>
+  <h1>The Shadow</h1>
+  <div class="sub">Why evil exists — and why it is not God's rival.</div>
+</div>
+<div class="nav"><a href="01-the-cosmos.html">← The Cosmos</a> · <a href="03-the-foundation.html">The Foundation →</a></div>
+<div class="wrap">
+
+<div class="section-label">Part One — The Question Everyone Asks</div>
+<h2>If God is good, why is there evil?</h2>
+<p>This is the question that stops every conversation. A child asks it after a funeral. A soldier asks it after a battle. A parent asks it in a hospital hallway. It is the oldest question, and every answer that has ever been given falls into one of three traps.</p>
+
+<div class="wrong-grid">
+  <div class="wrong-card">
+    <h4>Trap One: Two Gods</h4>
+    <p>Good and evil are equal forces, eternally at war. Zoroaster said it. Hollywood loves it. But if evil is as old as God, God is not God.</p>
+  </div>
+  <div class="wrong-card">
+    <h4>Trap Two: God Needs Evil</h4>
+    <p>You can't appreciate the sun without rain. God lets evil exist so you can appreciate good. But this makes God dependent on the very thing He hates.</p>
+  </div>
+  <div class="wrong-card">
+    <h4>Trap Three: Evil Is Fake</h4>
+    <p>It's all an illusion. Suffering isn't real. Tell that to someone holding a dying child. The denial of evil is the denial of love.</p>
+  </div>
+</div>
+
+<p>All three traps share one mistake: they treat evil as a <strong>thing</strong>. Something with weight, substance, a seat at the table. It is not. Evil is a <strong>hole</strong> where something should be. A shadow where light is blocked. A parasite that cannot live without a host.</p>
+
+<div class="big-claim">
+  <div class="claim-text">Evil has no source term.</div>
+  <div class="claim-sub">It creates nothing. It sustains nothing. It can only corrupt what already exists.</div>
+</div>
+
+<div class="section-label">Part Two — The Shadow</div>
+<h2>What light creates without trying</h2>
+
+<p>Stand in a dark room and flip a switch. The light does not create darkness. It creates <strong>direction</strong> — photons traveling outward from a source. And the instant there is direction, there is also an away-direction. The wall blocks the light. A shadow appears.</p>
+
+<p>The shadow is real. You can measure it. You can trip over it. But the shadow has no source. It is not a second lightbulb, dim and malevolent. It is the <strong>absence</strong> of light, cast by the presence of light.</p>
+
+<div class="scripture">And God saw the light, that it was good: and God divided the light from the darkness.<span class="ref">Genesis 1:4</span></div>
+
+<p>Notice: God does not create darkness. He divides light from it. Darkness is already there — the pre-existing void, the unformed deep. Light enters, and darkness becomes <strong>bounded</strong>. It has an edge now. It is real, but it is not sovereign.</p>
+
+<div class="keyline">The shadow is not the rival of light. It is the price of direction. Where there is a toward, there is an away — not because the away is needed, but because direction implies orientation, and orientation implies the possibility of turning around.</div>
+
+<div class="section-label">Part Three — The Parasite</div>
+<h2>He creates nothing. He only corrupts.</h2>
+
+<p>A virus is not alive. It cannot eat, breathe, or reproduce on its own. It is a snippet of code that hijacks a living cell and forces the cell to do its work. Without the cell, the virus is inert chemistry. With the cell, it is devastating.</p>
+
+<p>Mold does not build bread. It finds bread that was already baked and digests it. Rust does not forge steel. It finds steel that was already strong and oxidizes it. The pattern is identical in every case: <strong>the parasite needs a host it did not make.</strong></p>
+
+<p>The adversary works exactly like this. Scripture never calls him a creator. It calls him a <strong>liar</strong>, a <strong>thief</strong>, a <strong>murderer</strong> — all words for someone who takes what exists and twists it.</p>
+
+<div class="scripture">He was a murderer from the beginning, and abode not in the truth, because there is no truth in him. When he speaketh a lie, he speaketh of his own: for he is a liar, and the father of it.<span class="ref">John 8:44</span></div>
+
+<p>"Of his own" — the Greek is <em>ek tou idiou</em>, from his own substance. But his substance is borrowed. He has nothing that was not given. The lie is the only thing he can generate, and even that is just a distortion of language he did not invent.</p>
+
+<div class="big-claim">
+  <div class="claim-text">He is the prince of the power of the air.</div>
+  <div class="claim-sub">Not the ground. Not the substance. The air — the medium, the channel, the space between. Exactly what a noise-injector would rule.</div>
+</div>
+
+<div class="section-label">Part Four — The Chain</div>
+<h2>From glory to the garden, link by link</h2>
+
+<div class="phase key"><span class="n">1</span><p><strong>Created good.</strong> "Thou wast perfect in thy ways from the day that thou wast created." Not a demon from the start. A creature, good, with beauty and rank.</p></div>
+<div class="scripture">Thou wast perfect in thy ways from the day that thou wast created, till iniquity was found in thee.<span class="ref">Ezekiel 28:15</span></div>
+
+<div class="phase"><span class="n">2</span><p><strong>Refusal.</strong> "I will ascend... I will be like the most High." The first directional act: not toward coherence, but away from it. Pride is the choice to be the source of your own orientation.</p></div>
+<div class="scripture">For thou hast said in thine heart, I will ascend into heaven, I will exalt my throne above the stars of God... I will be like the most High.<span class="ref">Isaiah 14:13–14</span></div>
+
+<div class="phase"><span class="n">3</span><p><strong>Expelled.</strong> Cast out of the presence. Not dated — this event is off our clock, because the presence is not a place in time. But the direction is clear: down the gradient, away from coherence.</p></div>
+<div class="scripture">How art thou fallen from heaven, O Lucifer, son of the morning! how art thou cut down to the ground!<span class="ref">Isaiah 14:12</span></div>
+
+<div class="phase"><span class="n">4</span><p><strong>Confined.</strong> Where can a parasite live? Only where there is a host. Heaven has no D — no denominator, no drift channel, no finite system to degrade. The finite order is the only habitat his mode of existence permits.</p></div>
+<div class="scripture">And the LORD said unto Satan, Whence comest thou? Then Satan answered the LORD, and said, From going to and fro in the earth, and from walking up and down in it.<span class="ref">Job 1:7</span></div>
+
+<div class="phase"><span class="n">5</span><p><strong>Eden.</strong> Drawn to the highest-bandwidth channel in creation: the image-bearers, fresh W, free will capable of refusing orientation. He doesn't attack the body or the tree. He attacks the <strong>signal</strong>.</p></div>
+<div class="scripture">Now the serpent was more subtil than any beast of the field which the LORD God had made. And he said unto the woman, Yea, hath God said...<span class="ref">Genesis 3:1</span></div>
+
+<div class="note">"Hath God said" is not a blow. It is a whisper. It is noise injected into the command channel — the first fake news, the first gaslighting, the first "are you sure you heard that right?" The serpent doesn't deny God's existence. He denies the clarity of God's word. That is the only move available to a being with no source term.</div>
+
+<div class="section-label">Part Five — Why This Changes Everything</div>
+<h2>Evil is real, but it is not ultimate</h2>
+
+<p>Your suffering is not an illusion. The shadow is real — you can trip over it, you can die in it. But the shadow is not sovereign. It has no army, no treasury, no territory it earned. Everything it uses was built by Someone else.</p>
+
+<p>This means two things that change how you face the darkness:</p>
+
+<div class="reading"><span class="rnum">First</span><h3>The shadow cannot win</h3>
+<p>It has no source term. It cannot outlast the light, because it is borrowed light, twisted. Every move it makes depends on a channel God sustains. Cut the power, and the noise stops.</p></div>
+
+<div class="reading"><span class="rnum">Second</span><h3>God metabolizes evil into good</h3>
+<p>The Cross is the proof. The enemy's greatest act — the murder of the Son — was "delivered by the determinate counsel and foreknowledge of God" and turned into the atonement. The parasite's feast became the host's triumph.</p></div>
+<div class="scripture">Him, being delivered by the determinate counsel and foreknowledge of God, ye have taken, and by wicked hands have crucified and slain.<span class="ref">Acts 2:23</span></div>
+
+<div class="keyline">God does not need evil to create good. He is so sovereign that He can take evil — real, operative, parasitic evil — and make it serve a purpose it never intended. That is not dependence. That is mastery.</div>
+
+<div class="section-label">Part Six — The Sun and the Rain</div>
+<h2>You do not need evil to appreciate good</h2>
+
+<p>The old saying is wrong. "You need rain to appreciate the sun" makes evil a necessary ingredient, like salt in bread. But the framework says: <strong>contrast is structural; evil is not.</strong></p>
+
+<p>You need darkness to see stars — but darkness is just the absence of light, not a rival force. You need silence to hear music — but silence is not a competing symphony. You need an empty page to write — but the empty page is not an enemy author.</p>
+
+<p>The shadow proves the light is real. It does not prove the shadow is needed. The light would still be light if every wall were transparent. The shadow exists because finitude exists — because creatures can turn away — not because God wanted a foil.</p>
+
+<div class="scripture">And we know that all things work together for good to them that love God, to them who are the called according to his purpose.<span class="ref">Romans 8:28</span></div>
+
+<div class="note">"All things" includes the evil things. Not because evil is good, but because God is so sovereign that even the parasite's work gets pressed into service. The shadow is not redeemed. It is outlasted, outspent, and ultimately unnecessary.</div>
+
+<div class="closer">Evil is not God's rival.<br>It is God's dependent.<br>It is real, but it is not ultimate.<br>And the One who made the light<br>has already named the shadow's end.<br><span style="font-size:.85em;color:var(--fg2)">Next: the creation of the world — the descent from the Fullness to the particular.</span></div>
+
+<div class="status"><strong>Status: working sheet, not doctrine.</strong> Open items: the "no source term" claim is a framework ruling, not a derived theorem; the parasite analogy is pedagogical, not ontological; the Job 1:7 reading assumes a literal Satan, which the framework does not require for the structural argument; the "metabolizes evil" claim (Acts 2:23) is [C]-grade — correspondence, not derivation; the "sun and rain" reframe needs testing against pastoral experience. When any of these settles, this sheet gets amended.</div>
+
+</div>
+<div class="footer">POF 2828 · Sheet 2 · The Shadow — working draft</div>
+</body>
+</html>

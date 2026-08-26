@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-059-grace-external-to-system",
+  "atom_uid": "sha256:143c2d31712b6cd0dd449e1fb8ccd783009d694b6c730d2751ee0441e00b7fed",
+  "title": "AX-059 — Grace External To System",
+  "claim": "The system receives external informational input that reduces MORAL entropy specifically (enabling σ̂ sign-flip from -1 to +1). This input, termed \"grace,\" is ontologically distinct from ordinary thermodynamic negentropy — it acts on the moral sign operator rather than merely feeding energy. [Ordinary sunlight feeds thermodynamic negentropy; grace enables moral transformation.]",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "06-thermodynamics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "G(t) ∉ System; G external"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-025",
+    "tp:axioms/01/AX-058"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show a closed system increasing its own coherence",
+    "Demonstrate self-rescue from σ=-1 state",
+    "Prove grace is not necessary (works suffice)"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-059-grace-external-to-system.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-059-grace-external-to-system.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:92e2ea7f1b1460a8f977f51d485fc65a7da02c682dd9603a356ac22c484b71c6",
+      "event_uuid": "b0d5202a-621d-581d-b6da-b760b7503501"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'boundary' -> 'derived'. Ontology: 06-thermodynamics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:aab0de5d0b851971cd81be281b7c8b8bdffd78b47b1a3372b35892abc7e4e48b",
+      "event_uuid": "55c3baee-d0b2-5b48-bc76-b2c8e2c1031d"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/BC2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-059",
+  "original_node_id": "tp:axioms/01/AX-059",
+  "atom_uuid": "ed31cd29-d7af-5e82-b60f-383f7581e69c"
+}

@@ -1,0 +1,73 @@
+{
+  "source_id": "continuous_string_axiom_test_v0",
+  "title": "Continuous String Axiom Test v0",
+  "canonical_node": {
+    "axiom": "If an action is aligned with destruction and is not restored, then it is not morally good and not aligned with good.",
+    "definitions": [
+      "alignedWithDestruction: an action's alignment with destruction.",
+      "restored: the state is restored after the action.",
+      "moralGood: morally good action.",
+      "alignedWithGood: aligned with good."
+    ],
+    "derivation": [
+      "Assume an action is aligned with destruction and not restored.",
+      "By destructive_degrades, the action degrades the state.",
+      "By good_preserves, if it were aligned with good, it would preserve the state.",
+      "By good_alignment_is_moral, if aligned with good, it would be morally good.",
+      "By moral_good_repairs_damage, if morally good and degrades, it would restore.",
+      "Since not restored, it cannot be morally good, hence not aligned with good."
+    ],
+    "action": "In the Lean kernel, enforce that any action aligned with destruction and not restored is excluded from moral goodness and alignment with good.",
+    "boundary": [
+      "Does not prove the full Master Equation.",
+      "Does not prove gravity=grace, strong force=love, thermodynamics=judgment, coherence=Christ, or all event systems isomorphic.",
+      "Only applies within the starter AxiomBundle and toy model."
+    ],
+    "test": [
+      "Lean build passes with no sorry/admit/axiom/unsafe.",
+      "The theorem destructive_unrestored_exclusion_chain is kernel-checked.",
+      "The concrete model theorem toy_bad_action_excluded_by_chain holds."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "AxiomBundle with 4 assumptions: destructive_degrades, good_preserves, good_alignment_is_moral, moral_good_repairs_damage."
+    ],
+    "dg2_new_capability": "Provides a kernel-checked theorem chain showing destructive non-restored actions are excluded from moral good and alignment with good.",
+    "dg3_preserved_floor": "Preserves the existing AxiomBundle and its consistency via a concrete satisfiable model.",
+    "dg4_collapse_if_removed": "If removed, the package loses its first continuous downstream theorem chain and concrete model validation, reducing confidence in the axiom bundle's consistency.",
+    "dg5_translation_registers": [
+      "destructive_degrades",
+      "good_preserves",
+      "good_alignment_is_moral",
+      "moral_good_repairs_damage"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal_verification",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The theorem is only within the toy model and starter axioms; it does not generalize to physical or theological claims.",
+      "The document explicitly states it does not prove the Master Equation or bridge claims."
+    ],
+    "kill_conditions": [
+      "If the Lean package is not reproducible or contains hidden axioms.",
+      "If the concrete model is inconsistent with the axioms."
+    ],
+    "lean_target": "The theorem destructive_unrestored_exclusion_chain and the concrete model theorem toy_bad_action_excluded_by_chain."
+  },
+  "plain_summary": "This document reports a successful Lean formalization of a theorem chain: destructive alignment plus non-restoration implies not morally good and not aligned with good, within a minimal axiom bundle and a toy model. It explicitly does not claim to prove the full Master Equation or any physical identifications.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\continuous_string_axiom_test_v0.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch3\\json\\continuous_string_axiom_test_v0.canonical-node.json"
+  }
+}

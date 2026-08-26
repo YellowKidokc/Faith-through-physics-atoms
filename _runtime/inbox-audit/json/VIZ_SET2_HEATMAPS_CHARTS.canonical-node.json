@@ -1,0 +1,71 @@
+{
+  "source_id": "VIZ_SET2_HEATMAPS_CHARTS",
+  "title": "VIZ_SET2_HEATMAPS_CHARTS.py",
+  "canonical_node": {
+    "axiom": "The visualization layer must render the mathematical structure of the LLC (kinetic coupling matrix, symmetry pairs, sensitivity, stability) in a way that is legible to a technical audience without requiring matrix algebra literacy.",
+    "definitions": [
+      "Kinetic coupling matrix: a 10x10 matrix of coupling strengths between the ten variables of the LLC, with diagonal self-coupling weights and off-diagonal symmetry pair couplings (PAIR_STRENGTH = 0.45).",
+      "Symmetry pairs: the five pairs (GT, SF, EK, MQ, RC) that are highlighted in the heatmap with distinct colors.",
+      "Set 2: the second visualization layer, complementing Set 1 with analytical depth (heatmaps, sensitivity, stability, test results)."
+    ],
+    "derivation": [
+      "The document describes the kinetic matrix heatmap as the mathematical heart of the LLC, making the coupling structure visible.",
+      "The heatmap includes annotations of coupling strength values and symmetry pair highlights, making the structure legible without matrix algebra.",
+      "The document states that Set 2 is for the technical audience, to see the coupling structure and follow test results in detail.",
+      "The document claims that the kinetic matrix heatmap shows the coupling structure is not arbitrary, with symmetry pairs highlighted against near-zero off-diagonal elements."
+    ],
+    "action": "Generate the described visualizations (kinetic matrix heatmap with annotations and symmetry pair highlights, chi-field time evolution plots, sensitivity analysis charts, stability phase diagram, biblical test results bar charts, coherence collapse scenario comparison) using the specified dark theme (#0a0b0f) and consistent color coding.",
+    "boundary": [
+      "Does not define the mathematical derivation of the kinetic matrix or the LLC equations.",
+      "Does not assert that the visualizations prove the underlying theory; they are communication tools.",
+      "Does not include interactive features; those are suggestions for website display, not part of the script."
+    ],
+    "test": [
+      "Check that the heatmap renders the 10x10 matrix with YlOrBr colormap and overlaid coupling strength values.",
+      "Verify that the five symmetry pairs are outlined in the specified colors (red, blue, green, purple, gold).",
+      "Verify that the dark theme (#0a0b0f) is consistent across all Set 2 visualizations.",
+      "Check that the additional chart types (chi-field evolution, sensitivity, stability, test results, collapse scenarios) are present as described."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "COLAB_MASTER.ipynb (Set 1 visualizations)",
+      "LLC mathematical model (kinetic matrix, chi-field, parameter scan results)"
+    ],
+    "dg2_new_capability": "Provides analytical depth visualizations (heatmaps, sensitivity, stability) that complement Set 1's high-impact single images, making the coupling structure and test results visible to a technical audience.",
+    "dg3_preserved_floor": "Preserves the visual coherence of the project by using the same dark theme and consistent color coding as Set 1.",
+    "dg4_collapse_if_removed": "Without Set 2, the project lacks the analytical depth and detailed visualization of the coupling structure, sensitivity, and stability, reducing the ability to communicate the rigor of the results.",
+    "dg5_translation_registers": [
+      "Python script (VIZ_SET2_HEATMAPS_CHARTS.py)",
+      "COLAB_MASTER.ipynb cells 19+",
+      "Visual outputs (heatmaps, charts, diagrams)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "visualization_artifact",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve_as_visualization_artifact"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document implies the visualizations 'prove' the results were arrived at rigorously, but the visualizations themselves do not constitute proof.",
+      "The claim that the coupling structure is 'mathematically derived' is not substantiated in this document; it references the LLC model without derivation."
+    ],
+    "kill_conditions": [
+      "If the kinetic matrix or symmetry pairs are not actually derived from the LLC model, the visualizations would be misleading.",
+      "If the visualizations are not reproducible from the described script, the artifact loses its utility."
+    ],
+    "lean_target": "A visualization script that accurately renders the LLC coupling structure and analysis charts, without overclaiming proof."
+  },
+  "plain_summary": "This document describes a Python script for additional visualizations (Set 2) that render the LLC's kinetic coupling matrix as a heatmap with symmetry pair highlights, along with sensitivity, stability, and test result charts. It is a visualization artifact intended for technical audiences, but it does not itself establish the underlying theory. The script is coherent and admissible as a visualization tool, but its claims of rigor are not proven by the visualizations alone.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\VIZ_SET2_HEATMAPS_CHARTS.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\VIZ_SET2_HEATMAPS_CHARTS.canonical-node.json"
+  }
+}

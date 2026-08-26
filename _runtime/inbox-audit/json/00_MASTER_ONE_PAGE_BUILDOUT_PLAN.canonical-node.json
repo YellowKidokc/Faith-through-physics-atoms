@@ -1,0 +1,80 @@
+{
+  "source_id": "00_MASTER_ONE_PAGE_BUILDOUT_PLAN",
+  "title": "Master One-Page Buildout Plan",
+  "canonical_node": {
+    "axiom": "Each article should become one canonical HTML page with invisible machine-readable layer markers and a merged manifest driving the topbar and page structure.",
+    "definitions": [
+      "one_page_html_manifest.json: merged output of site_inventory.json and paper_metric_manifest.json",
+      "reader-layer markers: invisible HTML comments delimiting sections for scripts and Codex",
+      "reader layers: college, easy, academic, proof, math, source, audit, falsification, qa, metadata",
+      "site_inventory.json: owns page slug, series order, prev/next, file paths, topbar presence, layer source paths, HTML marker positions",
+      "paper_metric_manifest.json: owns proof scores, claim counts, law/variable activation, coherence scores, graph metrics, reading difficulty, audit/falsification status"
+    ],
+    "derivation": [
+      "The plan identifies best current source pieces for page body, topbar, variable spec, and one-page layer protocol.",
+      "It defines a two-input manifest system: site_inventory.json + paper_metric_manifest.json = one_page_html_manifest.json.",
+      "It specifies the one-page rule: each article becomes one canonical HTML page with invisible layer markers.",
+      "It lists reader layers and expanded variables to add to the manifest.",
+      "It provides build order and existing tools to reuse.",
+      "It sets guardrails to prevent overreach."
+    ],
+    "action": "Implement the exporter, site inventory builder, and merger scripts, then apply the one-page manifest and reader-layer markers to a pilot page before full-site conversion.",
+    "boundary": [
+      "Does not specify exact implementation details of the scripts.",
+      "Does not define the full schema of the manifests.",
+      "Does not provide proof of the claims mentioned.",
+      "Does not mandate which variables must appear in the visible topbar.",
+      "Does not resolve the missing apply_reader_mode_baseline.py status."
+    ],
+    "test": [
+      "Pilot page passes Playwright visual checks on desktop and mobile.",
+      "Merged manifest correctly drives topbar and layer markers.",
+      "Guardrails are respected: no HTML edits by Paper Intelligence, no giant Excel parsing, no full-site conversion before pilot passes."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "site_inventory.json",
+      "paper_metric_manifest.json",
+      "existing Python-WEB tools (apply_faith_topbar.py, audit_v2_layer_coverage.py, etc.)",
+      "best source pieces (faith-topbar.js, topbar-page-variable-master-spec.md, one-page-reader-layer-marker-spec.md)"
+    ],
+    "dg2_new_capability": "Enables a unified one-page HTML manifest system with reader-layer markers and expanded topbar variables, improving site consistency and machine readability.",
+    "dg3_preserved_floor": "Preserves existing site structure and source assets; does not delete separate easy/academic assets; keeps original/college page body visible.",
+    "dg4_collapse_if_removed": "Without this plan, the site lacks a standardized one-page manifest and reader-layer system, leading to inconsistent page structures and harder automation.",
+    "dg5_translation_registers": [
+      "HTML comments as machine boundaries",
+      "section attributes for browser",
+      "manifest fields for data exchange"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "planning/architecture",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "adopt as planning directive; do not treat as proof of any underlying claims"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the three-body solution or J-space claims as proven when they are only seeds.",
+      "Assuming the manifest system will work without testing.",
+      "Assuming all listed tools exist and function as described."
+    ],
+    "kill_conditions": [
+      "If the pilot fails visual checks or manifest merge breaks.",
+      "If guardrails are violated (e.g., Paper Intelligence edits HTML).",
+      "If the missing apply_reader_mode_baseline.py is required and not found."
+    ],
+    "lean_target": "Implement the exporter and merger scripts, run pilot on revolution-of-truth, and validate with Playwright."
+  },
+  "plain_summary": "This document is a buildout plan for converting articles into one-page HTML with a merged manifest and reader-layer markers. It is a planning document, not a proof of any scientific claims. It should be used as a directive for implementation, with caution not to overstate the status of the claim seeds.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\00_MASTER_ONE_PAGE_BUILDOUT_PLAN.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\00_MASTER_ONE_PAGE_BUILDOUT_PLAN.canonical-node.json"
+  }
+}

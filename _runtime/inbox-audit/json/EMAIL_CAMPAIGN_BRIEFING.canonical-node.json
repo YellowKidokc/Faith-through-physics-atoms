@@ -1,0 +1,94 @@
+{
+  "source_id": "EMAIL_CAMPAIGN_BRIEFING",
+  "title": "Theophysics Email Campaign  -  Master Briefing",
+  "canonical_node": {
+    "axiom": "The email campaign must systematically contact every relevant institution and individual across all domains touched by the Theophysics framework, documenting every outreach attempt to create an accountability record that closes the 'we never heard of this' escape route.",
+    "definitions": [
+      "Theophysics: A unified framework bridging physics, theology, consciousness, and mathematics into a single coherent structure.",
+      "Master Equation (chi): A 10-variable equation spanning physical and spiritual domains.",
+      "10 Universal Laws: Laws with symmetry pairs and fractal coherence.",
+      "Formal boundary proof: A proof (dated Feb 14, 2026) establishing Trinity isomorphism, free will, and God-as-axiom as mathematical necessities.",
+      "Three Truths: Gdel's incompleteness, Tarski's undefinability, Church's undecidability  -  used to argue any coherent system requires an external ground.",
+      "Principia Mathematica Moralia: A math-formalized gospel written for AI.",
+      "7-Question Scientific Method: A universal classifier; forward = classify anything, reverse = prove by exhaustive elimination.",
+      "Logos Root Protocol: A formal alignment framework referenced in AI framing.",
+      "Coherence field: A term used in physics framing instead of 'Logos field'.",
+      "Accountability record: A documented log of all outreach attempts, including non-responses."
+    ],
+    "derivation": [
+      "The campaign has two purposes: find collaborators and create a documented record.",
+      "Every institution gets emailed multiple times; if they ignore it, that's on record.",
+      "When they eventually engage or try to dismiss it later, David can say 'I emailed you 40 times. You never responded.'",
+      "This closes the 'we never heard of this' escape route.",
+      "The framework is pitched with domain-specific framing: physics leads with math, theology leads with Trinity isomorphism, etc.",
+      "The campaign architecture includes initial email, follow-ups at 2 and 4 weeks, and subsequent follow-ups on a cadence.",
+      "Every email sent gets logged with date, recipient, subject, and response status.",
+      "The log becomes evidence of contact attempts."
+    ],
+    "action": "Execute a systematic outreach campaign to academic institutions, researchers, and authors across physics, biology, psychology, theology, mathematics, AI, and first-principles apologetics. For each target, send an initial personalized email and follow-ups on a documented cadence. Log every send and response. Use domain-specific framing per the email categorizer skill. Track all outreach in a spreadsheet or database.",
+    "boundary": [
+      "Does not guarantee any response or engagement from recipients.",
+      "Does not verify the scientific validity of the Theophysics framework or its experimental claims.",
+      "Does not establish that the framework is accepted by the academic community.",
+      "Does not include building the email lists or drafting templates; those are pending tasks.",
+      "Does not include the homepage redesign or other pending website tasks."
+    ],
+    "test": [
+      "Check that every target institution has a documented initial email and follow-up sequence.",
+      "Verify that the email log records date, recipient, subject, and response status for each send.",
+      "Confirm that domain-specific framing is applied according to the categorizer skill.",
+      "Check that no-responses are documented as such.",
+      "Verify that the campaign covers all seven target domains."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Theophysics framework assets (Master Equation, 10 Universal Laws, papers, etc.)",
+      "Email categorizer skill (logos-email-categorizer)",
+      "Target lists (university email lists, Webset CSV of authors)",
+      "Email templates (drafted for first-principles authors, pending for other domains)",
+      "Email tracking system (spreadsheet or database, pending)",
+      "David's papers for cross-domain reading (pending)"
+    ],
+    "dg2_new_capability": "Enables systematic, documented outreach to all relevant institutions, creating an accountability record that can be cited in future engagements.",
+    "dg3_preserved_floor": "Preserves the existing outreach efforts (7 drafted emails, identified targets) and the framework's presentation materials.",
+    "dg4_collapse_if_removed": "Without this campaign, the 'we never heard of this' escape route remains open, and potential collaborators may remain unaware of the framework.",
+    "dg5_translation_registers": [
+      "Academic physics: math-forward, minimal theology",
+      "Academic theology: Trinity isomorphism, boundary proof",
+      "Pastoral: story-driven, practical ministry application",
+      "General curious: hook-driven, one clean insight",
+      "AI research: Principia Mathematica Moralia, formal moral framework"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "operational_plan",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "log_and_track"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims of experimental validation (6.35, 6, 5.7) are presented as fact without independent verification.",
+      "The 'formal boundary proof' is asserted as mathematical necessity without peer review.",
+      "The campaign's documentation strategy may be perceived as harassment if not handled carefully.",
+      "The framework's scientific validity is not established; outreach may be premature."
+    ],
+    "kill_conditions": [
+      "If the framework's core claims are disproven, the campaign loses its foundation.",
+      "If outreach is conducted without proper consent or becomes spam, it may backfire.",
+      "If the email tracking system is not built, the accountability record fails."
+    ],
+    "lean_target": "Build the email tracking system and domain-specific templates, then execute the campaign with careful documentation."
+  },
+  "plain_summary": "This document is a briefing for an email outreach campaign to promote the Theophysics framework. It outlines the framework's assets, target domains, and a strategy to systematically contact institutions and individuals, logging all attempts to create an accountability record. The campaign is operational, not a scientific proof, and its claims about the framework's validity are not independently verified.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\EMAIL_CAMPAIGN_BRIEFING.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\EMAIL_CAMPAIGN_BRIEFING.canonical-node.json"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-165",
+  "nodeID": "tp:axioms/01/AX-165",
+  "claimID": "tp:AXIOMS/P4",
+  "name": "Agency Stage",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "active",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Coherence implies collapse of potential → actual, requiring agency.",
+  "statementPlain": "Coherence implies collapse of potential → actual, requiring agency.",
+  "mathematicalForm": "Actual(x) ← Agency(select(x, {possibilities}))",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-164",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "observer"
+  ],
+  "keywords": [
+    "P4",
+    "Q6",
+    "Primordial",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show actualization without agency. Demonstrate non-agentive collapse.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 167
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-165",
+    "oldID": "P4",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-AH (Primitive — agency)",
+    "questionType": "Type 3 (What grounds X?)",
+    "domain": "Primordial",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M21",
+    "moduleTitle": "Primordial / Ontological Spine",
+    "spineRole": "core_spine",
+    "boundaryCondition": "BC5, BC8",
+    "fourModeRelevance": "M1",
+    "worldviewsEliminated": "Hard Determinism",
+    "propagationTest": "YES — Agency propagates to free will, moral responsibility, and BC8.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

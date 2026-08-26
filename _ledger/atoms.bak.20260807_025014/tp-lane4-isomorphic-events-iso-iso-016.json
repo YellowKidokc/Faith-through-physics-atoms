@@ -1,0 +1,62 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-016",
+  "atom_uid": "sha256:5049e75c41cd9bc4e270b95ab318dd88ff2026fcacd3a7c31c57e05648ec31d7",
+  "title": "ISO-016 - Eschatological Attractors",
+  "claim": "ISO-016: Eschatological Attractors maps Dynamical Systems to Eschatology (Heaven/Hell). Workbook verdict: Level 2.5. Honest verdict: Dynamical systems genuinely illuminates.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C2_PARTIAL_CORRESPONDENCE",
+  "assumptions": [
+    "Dynamical Systems",
+    "Eschatology (Heaven/Hell)",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "Bimodal attractor genuine; saddle as 'narrow gate'",
+    "Dynamical systems genuinely illuminates."
+  ],
+  "equations": [],
+  "bridges": [
+    "Dynamical Systems -> Eschatology (Heaven/Hell)"
+  ],
+  "dependencies": [
+    "ISO-016"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Binary attractor assumed, not derived",
+    "Promotion blocker: Binary attractor assumed from theology (HM.2), not derived from dynamics",
+    "Promotion blocker: Incompatible with Catholic purgatory — needs metastable extension",
+    "Promotion blocker: Saddle-point prediction untested against conversion-timing data"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: Binary attractor assumed, not derived"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-016 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:43f4e380800d596717650bee9e157d93a4d91c3a67d2746a5ed9c7f3f58c3d99"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-016"
+}

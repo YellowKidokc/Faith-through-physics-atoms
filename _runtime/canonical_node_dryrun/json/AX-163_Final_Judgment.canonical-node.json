@@ -1,0 +1,42 @@
+{
+  "source_id": "AX-163_Final_Judgment",
+  "title": "AX-163_Final_Judgment",
+  "canonical_node": {
+    "axiom": "",
+    "definitions": [],
+    "derivation": [],
+    "action": "",
+    "boundary": [
+      "dry run only"
+    ],
+    "test": []
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [],
+    "dg2_new_capability": "",
+    "dg3_preserved_floor": "",
+    "dg4_collapse_if_removed": "",
+    "dg5_translation_registers": [],
+    "dg6_state": "unknown",
+    "dg7_admissible": "needs_review",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "dry_run",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "E",
+    "recommended_atom_action": "keep_in_inbox"
+  },
+  "risk": {
+    "overstatement_risks": [],
+    "kill_conditions": [],
+    "lean_target": ""
+  },
+  "plain_summary": "Dry run only.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\AXIOM-REACT\\03_SCAFFOLDING\\TIER_1\\AX-163_Final_Judgment.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canonical_node_dryrun\\json\\AX-163_Final_Judgment.canonical-node.json"
+  }
+}

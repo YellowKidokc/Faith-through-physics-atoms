@@ -1,0 +1,78 @@
+{
+  "source_id": "2026-07-02-theophysics-isolator-design",
+  "title": "Theophysics Isolator  -  Neutral Core + Adjudication Protocol",
+  "canonical_node": {
+    "axiom": "Under positive decay, a coherence system with a bounded effective source that is a function only of its internal state cannot reach perfect coherence; perfect coherence requires an unbounded or external source contribution.",
+    "definitions": [
+      "RestorationFramework: structure with State, coherence c, source sigma, decay delta, openness omega, and derivative deriv = omega * sigma * (1 - c) - delta * c.",
+      "EndogenousSource: sigma is determined entirely by the system's own state (exists f such that sigma s = f s).",
+      "BoundedEffectiveSource: effective_source = omega * sigma is bounded above by a finite state-independent constant K_eff.",
+      "PositiveDecay: delta s > 0 for all states s.",
+      "ExogenousSource: sigma includes a contribution not computable from the system state (sigma = f_internal + sigma_ext).",
+      "FaithIsCoupling: omega scales the rate of source reception but does not itself add source; sigma is constant in omega at fixed internal state."
+    ],
+    "derivation": [
+      "At equilibrium, deriv = 0 implies omega * sigma * (1 - c) = delta * c.",
+      "Let lambda = omega * sigma. Then c = lambda / (lambda + delta).",
+      "Given lambda <= K_eff and delta >= delta_min > 0, and since x/(x+d) is increasing in x for x >= 0, c <= K_eff / (K_eff + delta_min).",
+      "Since K_eff / (K_eff + delta_min) < 1, c < 1 at equilibrium."
+    ],
+    "action": "Implement the neutral core in Lean 4 (Isolator.lean) proving the bound theorem and corollary, and provide interpretation modules and a protocol document that assigns proof obligations to Christian, Buddhist, and materialist interpretations without presupposing any.",
+    "boundary": [
+      "The neutral core does not import or assert any theological interpretation.",
+      "The theorem applies only to scalar coherence in [0,1] and to bounded effective sources; it does not address unbounded or exogenous sources.",
+      "The theorem does not claim finite-time reachability of perfect coherence; it only states an equilibrium bound.",
+      "The protocol does not decide which worldview is correct; it only specifies what each must prove."
+    ],
+    "test": [
+      "lake build succeeds with all new files.",
+      "Neutral core compiles independently of interpretation modules.",
+      "Interpretation modules compile only by importing the neutral core.",
+      "Include concrete examples: linear bounded effective source with k_eff < delta_min gives c* < 1; constant exogenous source with Lambda -> infinity gives c* -> 1."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Existing abstract CoherenceSystem in DharmaMirror.lean",
+      "Lean 4 environment with lake build"
+    ],
+    "dg2_new_capability": "Provides a formal, neutral isolator theorem that bounded endogenous restoration cannot reach perfect coherence under positive decay, and a protocol for adjudicating worldview interpretations without presupposing any.",
+    "dg3_preserved_floor": "Preserves the existing abstract coherence skeleton and prior results in DharmaMirror.lean; does not alter them.",
+    "dg4_collapse_if_removed": "Without the isolator, the project lacks a formal constraint-based test to distinguish endogenous vs exogenous restoration claims; the adjudication protocol would have no neutral mathematical anchor.",
+    "dg5_translation_registers": [
+      "Lean 4 formal proof",
+      "Plain-language protocol document",
+      "Interpretation modules (Christian, Buddhist, Materialist)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "formal mathematical theorem (proposed)",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Implement and verify in Lean 4; then reclassify based on actual proof artifacts."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The EndogenousSource class is trivial unless paired with BoundedEffectiveSource; the isolator's force may be overstated if this pairing is not emphasized.",
+      "The theorem assumes bounded effective source; unbounded functions that grow with state could mimic exogenous behavior and must be classified separately.",
+      "The theorem concerns scalar coherence; worldviews rejecting this metric may sidestep the isolator, and the protocol's requirement to defend alternative metrics may be insufficient.",
+      "The proof sketch relies on monotonicity of x/(x+d); must be formally verified in Lean."
+    ],
+    "kill_conditions": [
+      "If the bound theorem fails to compile or the proof is invalid in Lean 4.",
+      "If the neutral core inadvertently imports theological language.",
+      "If the interpretation modules cannot be implemented without violating the dependency direction."
+    ],
+    "lean_target": "Isolator.lean with theorems bounded_endogenous_equilibrium_bound, bounded_endogenous_cannot_perfect, unbounded_source_perfect_attractor, and faith_coupling_not_source."
+  },
+  "plain_summary": "This design spec proposes a Lean 4 formal isolator proving that a coherence system with positive decay and a bounded endogenous source cannot reach perfect coherence, and pairs it with a protocol for how Christian, Buddhist, and materialist interpretations must engage the result. The document is a design plan, not a verified proof; the theorems are not yet established in Lean.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\2026-07-02-theophysics-isolator-design.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\2026-07-02-theophysics-isolator-design.canonical-node.json"
+  }
+}

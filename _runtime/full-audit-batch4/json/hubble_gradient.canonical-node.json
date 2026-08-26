@@ -1,0 +1,83 @@
+{
+  "source_id": "hubble_gradient",
+  "title": "hubble_gradient.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field modifies the effective gravitational constant as G_eff(z) = G / (1 + chi(z)), producing a smooth sigmoid transition in the Hubble constant from local (H=73.5) to CMB (H=67.4) values over redshift.",
+    "definitions": [
+      "chi-field: a scalar field with value chi(z) at redshift z, derived from a Lagrangian structure.",
+      "G_eff(z): effective gravitational constant at redshift z, modified by the chi-field.",
+      "H(z): Hubble constant as a function of redshift, following a sigmoid profile.",
+      "H_CMB: Planck CMB value of the Hubble constant, 67.4 km/s/Mpc.",
+      "H_local: SH0ES local value of the Hubble constant, 73.5 km/s/Mpc.",
+      "z_transition: redshift at which the transition occurs, approximately 0.3.",
+      "5 match: statistical consistency at the five-sigma level, a standard for discovery claims in particle physics."
+    ],
+    "derivation": [
+      "The chi-field modifies gravity via G_eff(z) = G / (1 + chi(z)).",
+      "At high redshift, chi -> 0, so G_eff -> G, recovering standard gravity and Planck H.",
+      "At low redshift, chi is nonzero, suppressing G_eff and increasing the measured H.",
+      "The resulting H(z) follows a sigmoid: H(z) = H_CMB + (H_local  H_CMB) / (1 + exp(k(z  z_transition))).",
+      "The chi-field parameters are set by the Lagrangian, not fitted to the Hubble data.",
+      "The notebook computes the chi-field H(z) curve and compares it to observational data, claiming a 5 match."
+    ],
+    "action": "The system should compute the chi-field prediction for H(z) and compare it to observational data, specifically the SH0ES and Planck measurements, to test the Hubble tension resolution.",
+    "boundary": [
+      "This document does not provide a full derivation of the chi-field Lagrangian or the modified Friedmann equations.",
+      "It does not include the actual code or data analysis steps of the notebook.",
+      "It does not claim to resolve the Hubble tension definitively; it claims a 5 match and a future test with Euclid.",
+      "It does not address other cosmological tensions or anomalies beyond the Hubble tension and DESI DR2 compatibility."
+    ],
+    "test": [
+      "Compute the chi-field H(z) curve using the stated formula and compare to observational data at multiple redshifts.",
+      "Verify the claimed 5 statistical match using appropriate statistical methods.",
+      "Check the compatibility with DESI DR2 evidence for dark energy evolution.",
+      "Await the Euclid spacecraft data in October 2026 to test the sigmoid prediction against alternatives."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Chi-field Lagrangian and parameters (not fully specified in this document).",
+      "Modified Friedmann equations (not derived here).",
+      "Observational data: SH0ES, Planck, DESI DR2.",
+      "Statistical methods for significance testing."
+    ],
+    "dg2_new_capability": "Provides a specific, testable prediction for the Hubble constant as a function of redshift, offering a potential resolution to the Hubble tension.",
+    "dg3_preserved_floor": "Preserves standard gravity at high redshift (G_eff -> G) and matches local measurements at low redshift.",
+    "dg4_collapse_if_removed": "Without this prediction, the chi-field framework lacks a direct, externally verifiable cosmological test, reducing its scientific credibility.",
+    "dg5_translation_registers": [
+      "Cosmology: Hubble constant, redshift, gravitational constant.",
+      "Particle physics: 5 significance.",
+      "Observational astronomy: SH0ES, Planck, DESI, Euclid."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical prediction",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims a 5 match without providing the actual statistical analysis or data.",
+      "Presents the prediction as derived from the Lagrangian without showing the derivation.",
+      "Assumes the chi-field parameters are fixed by the Lagrangian but does not specify them.",
+      "Uses 'evidence' language that may overstate the strength of the match."
+    ],
+    "kill_conditions": [
+      "Euclid data shows no evolution in H(z) or a step-function transition.",
+      "The claimed 5 match is not reproducible from the notebook.",
+      "The chi-field parameters are found to be fitted to the Hubble data rather than derived."
+    ],
+    "lean_target": "A lean version would state the prediction formula and the planned Euclid test, without claiming a 5 match until the analysis is independently verified."
+  },
+  "plain_summary": "This document describes a cosmological test for the chi-field framework, predicting a smooth sigmoid transition in the Hubble constant from local to CMB values. It claims a 5 match with existing data and a definitive test with Euclid in 2026. However, the document lacks the actual derivation and statistical analysis, so the claims are not yet established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\hubble_gradient.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\hubble_gradient.canonical-node.json"
+  }
+}

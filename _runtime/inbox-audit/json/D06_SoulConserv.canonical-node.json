@@ -1,0 +1,83 @@
+{
+  "source_id": "D06_SoulConserv",
+  "title": "The Soul Conservation Theorem",
+  "canonical_node": {
+    "axiom": "The soul (_S) is an information pattern in the chi-field and cannot be destroyed because information is conserved; death is a state transition (decoupling) not extinction.",
+    "definitions": [
+      "Soul (_S): Information pattern in the chi-field, a unique configuration of integrated data representing personal identity.",
+      "Information conservation: The principle that information cannot be created or destroyed, only transformed.",
+      "Death: Decoupling of the soul from the body, not destruction of the soul pattern.",
+      "chi-field: The substrate in which the soul pattern persists after death.",
+      "Moral sign (): A value in {-1, +1} indicating alignment, determining post-death trajectory."
+    ],
+    "derivation": [
+      "Information is conserved (axiom BC7).",
+      "The soul is an information pattern (axiom A10.2).",
+      "Therefore, the soul's information cannot be destroyed.",
+      "Death is decoupling, not destruction.",
+      "Therefore, the soul persists after death."
+    ],
+    "action": "The system should treat the soul as an information pattern that persists after death, and use this to counter annihilationism, materialism, and death-as-end claims.",
+    "boundary": [
+      "Does not specify the exact nature of the chi-field or its physical basis.",
+      "Does not prove the existence of an afterlife; only argues for persistence of information.",
+      "Does not address the mechanism of decoupling in physical terms.",
+      "Does not claim that all souls have the same destination; destination depends on moral state."
+    ],
+    "test": [
+      "Check that information conservation is applied consistently to the soul pattern.",
+      "Verify that death is modeled as decoupling, not destruction.",
+      "Ensure that the persistence of personal identity is derived from the persistence of the information pattern.",
+      "Confirm that the argument does not overstate evidence from NDEs or historical testimony."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "BC7 (Information Conservation)",
+      "A10.2 (Soul Conservation)",
+      "F02 (Information Fundamental)",
+      "H03 (Soul Field)",
+      "H06 (Consciousness and Phi)",
+      "R07 (Bimodal Destiny)"
+    ],
+    "dg2_new_capability": "Provides a formal argument for soul persistence after death based on information conservation, offering a counter to annihilationism and materialism.",
+    "dg3_preserved_floor": "Preserves the axioms of information conservation and soul conservation, and maintains the consistency of the broader theological framework.",
+    "dg4_collapse_if_removed": "If removed, the framework loses its argument for post-death persistence, weakening the case against annihilationism and materialism.",
+    "dg5_translation_registers": [
+      "Physics: information conservation",
+      "Theology: soul immortality",
+      "Philosophy: personal identity persistence"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Derived theorem",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine for further verification; treat as a derived claim requiring stronger evidence."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Equates information conservation with soul persistence without empirical evidence.",
+      "Uses NDEs and historical testimony as evidence without rigorous validation.",
+      "Assumes the soul is purely informational without addressing dualism or other ontologies.",
+      "Overstates the resolution of the black hole information paradox."
+    ],
+    "kill_conditions": [
+      "If information can be destroyed (e.g., in black holes), the argument collapses.",
+      "If the soul is not an information pattern, the argument fails.",
+      "If death destroys the pattern, the argument fails.",
+      "If personal identity does not persist with the pattern, the argument fails."
+    ],
+    "lean_target": "Reduce overstatement by clearly distinguishing between information conservation and personal survival; avoid claiming physical proof."
+  },
+  "plain_summary": "This document argues that the soul is an information pattern and, since information is conserved, the soul cannot be destroyed at death. It critiques annihilationism, materialism, and death-as-end views. However, the argument relies on unverified assumptions and overstates evidence, so it is not established as a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\D06_SoulConserv.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\D06_SoulConserv.canonical-node.json"
+  }
+}

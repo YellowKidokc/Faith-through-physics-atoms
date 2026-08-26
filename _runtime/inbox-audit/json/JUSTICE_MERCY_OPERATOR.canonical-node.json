@@ -1,0 +1,84 @@
+{
+  "source_id": "JUSTICE_MERCY_OPERATOR",
+  "title": "THE JUSTICE-MERCY OPERATOR  -  COMPLETE FORMALIZATION",
+  "canonical_node": {
+    "axiom": "Perfect Justice and Perfect Mercy are the same restoration operator with one parameter swapped: who pays the cost of restoring coherence after a violation.",
+    "definitions": [
+      "Justice: Restore coherence by requiring the offender to pay the cost of the violation.",
+      "Mercy: Restore coherence by having a willing third party pay the cost of the violation on behalf of the offender.",
+      "Cost-bearer parameter :  in [0,1]; =1 means offender pays, =0 means third party pays, 0<<1 means shared cost.",
+      "Perfect Justice: all five components (Proportionality, Impartiality, Truth-naming, Restoration of victim, Cost-borne-by-offender) at maximum.",
+      "Perfect Mercy: all five components (Proportionality, Impartiality, Truth-naming, Restoration of victim, Cost-borne-by-third-party) at maximum.",
+      "Anti-Justice (Vengeance): disproportionate, partial, truth-denying, victim-ignoring, cost-displacing.",
+      "Anti-Mercy (Enabling): cost-waiving, partial, offense-denying, victim-abandoning, nobody pays."
+    ],
+    "derivation": [
+      "Law 5 (Thermodynamics  Judgment) requires that disorder be accounted for; Helmholtz free energy F = E  TS provides the mechanism: when external energy E exceeds entropy cost TS, local order is restored.",
+      "Justice and Mercy both satisfy the coherence requirement; the only variable is the source of E (the cost-bearer).",
+      "The Justice vector and Mercy vector share four identical components: Proportionality, Impartiality, Truth-naming, Restoration of victim.",
+      "The only difference is the fifth component: cost-bearer index (offender vs third party).",
+      "The unified operator R(offense, ) = (Proportionality, Impartiality, Truth-naming, Restoration of victim, *C_offender + (1)*C_third-party) contains both as special cases.",
+      "The Cross is claimed to be the unique configuration satisfying five conditions: Perfect Justice, Perfect Mercy, voluntary cost-bearer, authority of cost-bearer, universal availability.",
+      "Phase transition forms: Phi_J(chi) = tanh(_J(chichi_c)), Phi_M(chi) = tanh(_M(chichi_c))."
+    ],
+    "action": "When a violation occurs, the system should restore coherence by ensuring the cost is paid either by the offender (Justice) or by a willing third party (Mercy), while maintaining proportionality, impartiality, truth-naming, and victim restoration.",
+    "boundary": [
+      "Does not claim that mercy is free; the cost must be paid by someone.",
+      "Does not claim that justice and mercy are identical in all respects; they differ in cost-bearer.",
+      "Does not claim that the Cross is physically proven; it is a mathematical uniqueness claim within the operator space.",
+      "Does not claim that the Python validation fully confirms all components; H1 partially failed due to exemplar wording."
+    ],
+    "test": [
+      "H2 cost-bearer axis: statistically significant separation between Justice and Mercy along the cost-bearer dimension (p=0.014).",
+      "H1 shared components: 2 of 4 passed (Truth-naming, Victim-restoration); Proportionality and Impartiality failed due to domain-locked exemplar wording.",
+      "H3 cross convergence: partial pass; cross exemplars closer to both Justice and Mercy than controls."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Law 5 (Boltzmann-Clausius / Thermodynamics  Judgment)",
+      "Helmholtz free energy F = E  TS",
+      "Second Law of Thermodynamics",
+      "Law 9 (Sin / Fermi) moral conservation law",
+      "Law 10 (Christ / Coherence)"
+    ],
+    "dg2_new_capability": "Provides a unified operator framework for Justice and Mercy, reducing them to a single parameter (cost-bearer), and claims a unique solution for the Cross.",
+    "dg3_preserved_floor": "Preserves the requirement that disorder must be accounted for; mercy does not eliminate the cost.",
+    "dg4_collapse_if_removed": "If the cost-bearer parameter is removed, Justice and Mercy become indistinguishable and the framework loses its explanatory power for why they differ.",
+    "dg5_translation_registers": [
+      "Thermodynamics: entropy, free energy, external work",
+      "Moral: justice, mercy, cost, restoration",
+      "Theological: cross, atonement, grace"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "formalization",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical uniqueness of the Cross without rigorous proof.",
+      "H1 partial failure undermines the claim of four shared components.",
+      "Theological claims (e.g., 'Jesus absorbed the entropy') are not empirically verified.",
+      "The Python validation is based on SBERT embeddings, which are not a formal proof."
+    ],
+    "kill_conditions": [
+      "If a counterexample shows a configuration satisfying all five Cross conditions without the judge as cost-bearer.",
+      "If the cost-bearer axis fails to replicate in a domain-neutral test.",
+      "If the thermodynamic mapping is shown to be incoherent."
+    ],
+    "lean_target": "Reduce claims to the cost-bearer parameter as a conceptual model, not a proven mathematical theorem."
+  },
+  "plain_summary": "This document formalizes Justice and Mercy as the same operator differing only in who pays the cost of restoration. It claims the Cross is the unique solution satisfying both perfectly. Python validation partially supports the cost-bearer axis but not all shared components. The document is a theological-philosophical framework with some empirical support, but not a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\JUSTICE_MERCY_OPERATOR.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\JUSTICE_MERCY_OPERATOR.canonical-node.json"
+  }
+}

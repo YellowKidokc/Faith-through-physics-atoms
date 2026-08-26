@@ -1,0 +1,75 @@
+{
+  "source_id": "CODEX_CODE",
+  "title": "CODEX CODE",
+  "canonical_node": {
+    "axiom": "The formal product behavior of the Master Equation is governed by the multiplicative structure of its factors, with the effective alignment factor M_eff = (1+M)/2 ensuring nonnegativity and monotonicity under stated bounds.",
+    "definitions": [
+      "M: raw alignment factor in [-1,1]",
+      "M_eff: effective alignment factor, M_eff = (1+M)/2",
+      "S_eff: effective entropy factor, S_eff = exp(- S_prod) with  > 0 and S_prod  0",
+      "chi_local: local product, chi_local = G * M_eff * E * S_eff * T * K * R * Q * F * C (Version B) or with M (Version A)"
+    ],
+    "derivation": [
+      "Version A: chi_local = G * M * E * S_eff * T * K * R * Q * F * C, with M in [-1,1].",
+      "Lean proves S_eff > 0, S_eff  1 when  > 0 and S_prod  0, and S_eff decreases as S_prod increases.",
+      "Lean proves R = 0 implies chi_local = 0, and zero in any multiplicative factor except S_eff forces chi_local = 0.",
+      "Lean proves chi_local > 0 only with added sign condition M > 0; monotonicity in G and antitonicity in S_prod require M  0.",
+      "Version B: replace M with M_eff = (1+M)/2, which is nonnegative for M in [-1,1].",
+      "Lean proves the same structural facts more cleanly for Version B because all factors are nonnegative under stated bounds."
+    ],
+    "action": "Adopt Version B (M_eff) as the formalization target for the Master Equation product layer, and use the provided Lean proofs to verify product behavior.",
+    "boundary": [
+      "Does not attempt to prove theology.",
+      "Does not establish physical validity of the Master Equation.",
+      "Only proves formal product behavior within the stated mathematical assumptions."
+    ],
+    "test": [
+      "Run `lake env lean NarrowProductTest/Basic.lean` and `lake env lean NarrowProductTest.lean`; both must pass.",
+      "Check that Lean proofs establish the listed properties: S_eff positivity, boundedness, monotonicity, zero-factor implications, and sign conditions."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 and Mathlib",
+      "CorrectedEntropyKernel.lean",
+      "TheophysicsProductionKernel.lean (for comparison)"
+    ],
+    "dg2_new_capability": "Provides a Lean-verified formal comparison of two product formulations, recommending Version B for cleaner nonnegativity and monotonicity.",
+    "dg3_preserved_floor": "Preserves the existing production kernel and the abstract entropy-attenuation structure.",
+    "dg4_collapse_if_removed": "Without this node, the formal verification of the product layer and the recommendation for Version B would be lost, weakening the formal basis for the Master Equation product test.",
+    "dg5_translation_registers": [
+      "Lean 4",
+      "Mathlib",
+      "Master Equation product layer"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal verification claim",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "adopt as formal reference for product layer"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims Lean proofs but does not provide the actual proof scripts or detailed theorem statements.",
+      "The recommendation for Version B is based on formal cleanliness, not physical or theological superiority.",
+      "The scope is limited to formal product behavior; do not extend to physical or theological claims."
+    ],
+    "kill_conditions": [
+      "If the Lean files are not reproducible or the proofs do not match the stated properties.",
+      "If the assumptions (e.g.,  > 0, S_prod  0) are violated in intended applications.",
+      "If the document is used to claim theological or physical truth beyond formal product behavior."
+    ],
+    "lean_target": "Formalize the product layer using Version B with M_eff, ensuring all factors are nonnegative and monotonicity properties hold."
+  },
+  "plain_summary": "This document describes a Lean 4 formalization effort for the Master Equation product layer, comparing two versions: one with raw signed M and one with effective M_eff = (1+M)/2. The Lean proofs establish structural properties like positivity, boundedness, and monotonicity, and recommend Version B for cleaner formalization. The scope is strictly formal product behavior, not theology or physics.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CODEX_CODE.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CODEX_CODE.canonical-node.json"
+  }
+}

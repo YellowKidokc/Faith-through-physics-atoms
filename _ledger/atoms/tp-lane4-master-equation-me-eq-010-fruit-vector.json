@@ -1,0 +1,68 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-eq-010-fruit-vector",
+  "atom_uid": "sha256:ea99591225dbb22e0da025235d0fc5ce739feeb668b89bcba8033c670d69370a",
+  "title": "Fruit Vector",
+  "claim": "The fruits form a nine-dimensional observable output vector.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "mathematical",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Φ⃗ = {Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control}"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:axioms/01/AX-151",
+    "tp:axioms/01/AX-152",
+    "tp:axioms/01/AX-153",
+    "tp:axioms/01/AX-154",
+    "tp:axioms/01/AX-155",
+    "tp:axioms/01/AX-156",
+    "tp:axioms/01/AX-157",
+    "tp:axioms/01/AX-158",
+    "tp:axioms/01/AX-159",
+    "tp:axioms/01/AX-160"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-010-fruit-vector.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-010-fruit-vector.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:462a09d1b658193901ef3995c6ecc7d89f7a7ca0c60ec86be920e4edb12fd399",
+      "event_uuid": "399c92de-4b4f-5004-80b8-a384330dd640"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-EQ-010",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-010",
+  "original_node_id": "tp:master-equation/01/ME-EQ-010",
+  "tags": [
+    "equation",
+    "coherence"
+  ],
+  "keywords": [
+    "equation",
+    "Φ⃗"
+  ],
+  "atom_uuid": "926def14-151f-5f25-a69f-23c4d282a6c8"
+}

@@ -1,0 +1,109 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-097",
+  "nodeID": "tp:axioms/01/AX-097",
+  "claimID": "tp:AXIOMS/E12.1",
+  "name": "Destiny Equation",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "mathematical",
+  "statementTechnical": "dΦ/dt = σ·γ·(Φ_max - Φ)·Φ — the Destiny Equation governing individual trajectory.",
+  "statementPlain": "dΦ/dt = σ·γ·(Φ_max - Φ)·Φ — the Destiny Equation governing individual trajectory.",
+  "mathematicalForm": "dΦ/dt = σ·γ·(Φ_max - Φ)·Φ",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-093",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-094",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-095",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-096",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "equation"
+  ],
+  "keywords": [
+    "E12.1",
+    "Q11",
+    "Eschatology",
+    "Equation"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the equation gives wrong asymptotic behavior. Demonstrate real moral trajectories don't follow logistic dynamics. Show γ or σ are not the correct control parameters.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 99
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-097",
+    "oldID": "E12.1",
+    "treeLevel": "Q11",
+    "treeBranch": "Q11-E (Eschatology — master dynamics)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Eschatology",
+    "tier": "2",
+    "newType": "Equation",
+    "logicalForce": "formal proposal",
+    "formalizableInLean": "yes",
+    "leanKind": "def / proposition with typed variables",
+    "riskLevel": "medium",
+    "kernelRole": "definitionRole",
+    "moduleID": "M12",
+    "moduleTitle": "Destiny / Attractor",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1, M2, M3, M4 (all modes appear as parameters)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Destiny equation governs all individual eschatological outcomes.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

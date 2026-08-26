@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ten Laws - Internal Canon Walk</title>
+<style>
+:root{--bg:#0a0e17;--fg:#c9d1d9;--fg2:#8b949e;--gold:#c9a227;--blue:#58a6ff;--green:#22c55e;--yellow:#eab308;--red:#ef4444;--purple:#a78bfa;--border:rgba(255,255,255,.08);--panel:rgba(255,255,255,.018)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:Georgia,'Times New Roman',serif;line-height:1.78;font-size:1.04em}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 100px}
+.header{text-align:center;padding:52px 16px 30px;border-bottom:1px solid var(--border)}
+.header .kicker{font-family:monospace;font-size:.7em;letter-spacing:4px;text-transform:uppercase;color:var(--gold);opacity:.72}
+.header h1{font-size:2em;margin:10px 0 6px;color:#fff}
+.header .sub{font-size:.86em;color:var(--fg2);font-style:italic;max-width:680px;margin:0 auto}
+.nav{text-align:center;padding:14px;font-family:monospace;font-size:.72em}
+.nav a{color:var(--gold);text-decoration:none;margin:0 10px}
+h2{color:#fff;font-size:1.35em;margin:38px 0 10px}
+h3{color:#fff;font-size:1.08em;margin:20px 0 6px}
+p{margin:10px 0}
+a{color:var(--gold)}
+code{font-family:Consolas,monospace;color:var(--gold);background:rgba(255,255,255,.045);padding:1px 5px;border-radius:4px}
+.intro{padding:28px 0 16px;border-bottom:1px solid var(--border)}
+.keyline{background:rgba(201,162,39,.055);border-left:3px solid var(--gold);padding:12px 16px;margin:16px 0;font-style:italic;color:#fff}
+.warn{background:rgba(239,68,68,.045);border-left:3px solid var(--red);padding:12px 16px;margin:16px 0;color:var(--fg);font-size:.94em}
+.warn b,.note b{display:block;font-family:monospace;font-size:.72em;letter-spacing:1px;text-transform:uppercase;margin-bottom:5px}
+.warn b{color:var(--red)}
+.note{background:rgba(88,166,255,.04);border-left:3px solid var(--blue);padding:12px 16px;margin:16px 0;color:var(--fg);font-size:.94em}
+.note b{color:var(--blue)}
+.eq{background:rgba(201,162,39,.06);border:1px solid rgba(201,162,39,.18);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:Consolas,monospace;color:#fff;text-align:center;line-height:1.65;overflow-wrap:anywhere}
+.matrix{width:100%;border-collapse:collapse;margin:14px 0;font-size:.82em}
+.matrix th,.matrix td{border:1px solid var(--border);padding:7px 9px;text-align:left;vertical-align:top}
+.matrix th{font-family:monospace;color:var(--gold);font-size:.73em;letter-spacing:1px;text-transform:uppercase}
+details.law{background:var(--panel);border:1px solid var(--border);border-radius:8px;margin:14px 0;overflow:hidden}
+details.law>summary{display:grid;grid-template-columns:74px 1fr auto;gap:12px;align-items:center;padding:16px 18px;cursor:pointer;list-style:none}
+details.law>summary::-webkit-details-marker{display:none}
+details.law>summary:before{content:'+';font-family:monospace;color:var(--gold);font-size:1em}
+details.law[open]>summary:before{content:'-'}
+.law-num{font-family:monospace;color:var(--gold);font-size:.7em;letter-spacing:2px;text-transform:uppercase}
+.law-title{font-weight:700;color:#fff}
+.status{font-family:monospace;font-size:.6em;letter-spacing:.6px;text-transform:uppercase;border-radius:999px;padding:3px 8px;white-space:nowrap}
+.mapped{color:var(--yellow);background:rgba(234,179,8,.14)}
+.locked{color:var(--green);background:rgba(34,197,94,.14)}
+.open{color:var(--red);background:rgba(239,68,68,.13)}
+.partial{color:var(--purple);background:rgba(167,139,250,.14)}
+.def{color:var(--blue);background:rgba(88,166,255,.14)}
+.body{padding:18px 22px 22px;border-top:1px solid var(--border)}
+.story{background:rgba(167,139,250,.04);border-left:3px solid var(--purple);padding:13px 16px;margin:8px 0 16px}
+.story .label,.section-label{font-family:monospace;font-size:.68em;letter-spacing:1px;text-transform:uppercase;color:var(--purple);display:block;margin-bottom:5px}
+.section-label{color:var(--gold);margin-top:18px}
+.record{background:rgba(255,255,255,.025);border:1px solid var(--border);border-radius:8px;padding:13px 15px;margin:16px 0;font-size:.92em;color:var(--fg2)}
+.record h4{font-family:monospace;color:var(--fg);font-size:.74em;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.record ul{margin:7px 0 0 18px}
+.footer{text-align:center;padding:30px 16px;font-size:.7em;opacity:.4;font-family:monospace}
+@media(max-width:640px){body{font-size:1em}.wrap{padding:0 15px 80px}details.law>summary{grid-template-columns:1fr;gap:4px}.status{justify-self:start}.body{padding:16px}}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="kicker">Internal Canon - July 29/30 Rulings Preserved</div>
+  <h1>The Ten Laws</h1>
+  <div class="sub">Story first. Then the law. Then the record: what is locked, what is mapped, what is still open, and what we are not allowed to say anymore.</div>
+</div>
+<div class="nav"><a href="../00-god-index.html">God Index</a> - <a href="the-descent.html">The Descent</a> - <a href="The-7Q-Universal-Classifier.html">7Q</a></div>
+<div class="wrap">
+
+<div class="intro">
+<p>This page is not public apologetics. It is an internal canon walk. It is allowed to be long. It is allowed to preserve the record of overclaims, repairs, and pending rulings. The point is not to make the framework look cleaner than it is. The point is to keep the living structure in one place so the next pass can be honest.</p>
+<div class="keyline">The physics is told first for its strangeness. The theology arrives after the reader has already felt the shape.</div>
+</div>
+
+<h2>The Master Equation</h2>
+<div class="eq">chi(X) = C_W[ product(i=1..9) X_i ], &nbsp; X in [0,1]^9, &nbsp; chi in [0,1]</div>
+<div class="eq">Lambda_i = A_i log2(1 + T_i / D_i) [bits/s], &nbsp; X_i = Lambda_i / Lambda_i_ref [dimensionless]</div>
+<div class="eq">dot X = W grad chi + eta(X,t), &nbsp; [W] = [eta] = s^-1</div>
+<p>The laws are measured in bits per second. The equation multiplies them only after each has been divided by its own reference capacity. The mistake detector stays attached: <strong>did you divide by the full capacity first?</strong></p>
+<p>The product is not aesthetic. It is the veto property. Addition lets a dead axis be compensated by other strengths. Multiplication says a necessary condition cannot be replaced by abundance elsewhere.</p>
+
+<table class="matrix">
+<tr><th>Key</th><th>Eponym</th><th>Physical Register</th><th>Spiritual Register</th><th>Current Grade</th></tr>
+<tr><td>I</td><td>Newton-Grace</td><td>Gravitation</td><td>Grace / Sin</td><td>Mapped</td></tr>
+<tr><td>II</td><td>Newton-Momentum</td><td>Mechanics of response</td><td>Sin nature / Repentance</td><td>Mapped, upgraded</td></tr>
+<tr><td>III</td><td>Maxwell-Truth</td><td>Electromagnetism</td><td>Truth / Deception</td><td>Mapped, eigenmode conjecture</td></tr>
+<tr><td>IV</td><td>Yukawa-Agape</td><td>Strong force</td><td>Love / Captivity</td><td>Mapped; fruits two-tier</td></tr>
+<tr><td>V</td><td>Clausius-Judgment</td><td>Thermodynamics</td><td>Judgment / Heat death</td><td>Derived; strongest</td></tr>
+<tr><td>VI</td><td>Shannon-Logos</td><td>Information</td><td>Logos / Chaos</td><td>Split: instance plus open K</td></tr>
+<tr><td>VII</td><td>Heisenberg-Faith</td><td>Quantum mechanics</td><td>Faith / Doubt</td><td>Partial</td></tr>
+<tr><td>VIII</td><td>Fermi-Conservation</td><td>Weak force</td><td>Moral conservation</td><td>Locked; second strongest</td></tr>
+<tr><td>IX</td><td>Einstein-Frame</td><td>Relativity</td><td>Grace-frame / Frame-lock</td><td>Pending David under AM-1</td></tr>
+<tr><td>W</td><td>Coherence-Christ</td><td>Wrapper</td><td>Christ</td><td>Definitional closure</td></tr>
+</table>
+
+<div class="warn"><b>July 30 amendment carried forward</b>The law count is not allowed to be sloppy. If Einstein-Frame is restored, it must receive a native relativistic invariant or equation, an explicit bridge, a grade, and a kill condition. If it cannot do that, the project must rule eight active laws plus wrapper. This page renders IX as a full candidate because the v4 walk contains it, but it remains pending David.</div>
+
+<h2>Law Walk</h2>
+
+<details class="law" open><summary><span class="law-num">I</span><span class="law-title">Newton-Grace - Gravitation / Convergence</span><span class="status mapped">Mapped</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why God Built This</span>God knew His children would wander. A wandering system needs a pull that does not quit, a field that reaches across distance, a curve that holds even when the held thing does not understand it. So creation gives you gravity before it gives you the word grace. Every step is taken inside a holding you did not generate.</div>
+<span class="section-label">Physical strangeness</span>
+<p>Gravity is not mainly a push or a shove. In the relativistic picture, mass-energy curves spacetime and bodies move along the curve. The apple falls because the shape of the world tells it how to move. The orbit is not self-powered striving. It is free fall.</p>
+<div class="eq">Central-field candidate: Phi_g(r) = -mu_g / r, &nbsp; a(r) = -grad Phi_g(r) = -mu_g r_hat / r^2</div>
+<span class="section-label">Spiritual law</span>
+<p>Grace-as-geometry is the given curvature of created reality toward God. Sin is departure from that geodesic. Under the July 29 ruling, <code>R</code> is proper acceleration: deviation from free fall. Refusal is not stillness. Refusal is thrust away from the path that would have carried you.</p>
+<div class="eq">X_G includes refusal asymmetry: 1 - R(t)/R_max</div>
+<span class="section-label">Interpretation</span>
+<p>This law says grace is not first a felt intervention. It is the prior shape of the world. You can resist it, but resistance is not a competing field. It is non-geodesic motion. The spiritual surprise is severe: rebellion and works-righteousness become the same category of motion when both are self-thrust. Only free fall is grace.</p>
+<div class="record"><h4>Record / open repairs</h4><ul><li>The old two-body expression is reciprocal and cannot be the main Creator-to-creature model. AM-3 recommends the central-field repair.</li><li>The two-body form may survive as creature-to-creature relational dynamics, not the God-to-soul direction.</li><li>Kill condition: if a system reaches the source by self-generated thrust, the grace-as-geodesic reading fails.</li></ul></div>
+</div></details>
+
+<details class="law"><summary><span class="law-num">II</span><span class="law-title">Newton-Momentum - Mechanics of Response</span><span class="status mapped">Mapped Upgraded</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why God Built This</span>A soul with momentum does not redirect itself by wishing. Habit has inertia. Shame has inertia. Addiction has inertia. God built mechanics so you could feel the difference between wanting a different path and actually receiving the impulse that turns you.</div>
+<span class="section-label">Physical strangeness</span>
+<p>Momentum persists. A body keeps moving unless an external impulse changes its state. Force is not vague motivation; it integrates over time into a real change of momentum.</p>
+<div class="eq">p = m v; &nbsp; F = dp/dt; &nbsp; J = integral F dt = Delta p</div>
+<span class="section-label">Spiritual law</span>
+<p>Sin nature is moral inertia: the resistance of a person to change of state. Repentance is not self-generated redirection. It is response to grace-as-impulse. Law I carries grace as the unfelt geometry of free fall; Law II carries grace as the felt impulse that turns an entrenched trajectory onto that geodesic.</p>
+<div class="eq">Grace-as-impulse: J_grace = integral F_ext dt -> Delta p_soul</div>
+<span class="section-label">Interpretation</span>
+<p>The turn is felt because it is acceleration relative to the old path. But the impulse is not meant to continue forever. Once the trajectory is turned, the thrust ends and free fall resumes. That is the reconciliation between Law I and Law II: grace turns, then grace carries.</p>
+<div class="record"><h4>Record / open repairs</h4><ul><li>Mass-energy is no longer the eponym. It is pending David as interior vs commentary. AM-7 recommends commentary for the present revision.</li><li>The old <code>gamma(R) = (1 - R^2/c^2)^(-1/2)</code> is dimensionally invalid if R is acceleration. Repair required: use a dimensionless acceleration ratio, velocity gamma separately, or rapidity from integrated proper acceleration.</li><li>Lean target: equal impulse gives equal momentum change regardless of dramatic peak. This protects undramatic conversion.</li></ul></div>
+</div></details>
+
+<details class="law"><summary><span class="law-num">III</span><span class="law-title">Maxwell-Truth - Electromagnetism / Signal</span><span class="status partial">Conjectural Family</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why God Built This</span>God knew His children would mistake silence for absence. So He built a world filled with fields whose mechanisms are hidden and whose effects are everywhere. Light reveals without asking permission. Truth does the same.</div>
+<span class="section-label">Physical strangeness</span>
+<p>Electric and magnetic fields generate one another in a self-propagating wave. Light carries information, travels at an invariant speed, and reveals what it touches. The potential can be gauge-hidden while the field effects remain real.</p>
+<div class="eq">Maxwell system: div E = rho/epsilon0; div B = 0; curl E = -dB/dt; curl B = mu0 J + mu0 epsilon0 dE/dt</div>
+<span class="section-label">Spiritual law</span>
+<p>Truth and witness propagate together. The Word is not merely content; it is signal with authority. Deception is not an equal field. It is distortion, absorption, noise, and false phase.</p>
+<span class="section-label">Interpretation</span>
+<p>This is the law that wants to become the Truth story. Maxwell-Truth is isolated in two ways: the wrapper ruling broke the old Truth-Christ symmetry pair, and the derivative engine leaves it alone as the eigenmode law. That isolation may be signal, not failure. It may be the herald: light announcing the wrapper rather than pairing with it.</p>
+<div class="record"><h4>Record / open repairs</h4><ul><li>The Seven I AM eigenmode program is well-posed conjecture, not resolved.</li><li>The number seven is imported from Scripture, not produced by the math. Complete-basis claims are retired.</li><li>Promotion requires specifying the operator, passing the self-adjointness gate, characterizing the nullspace, and demonstrating that a seven-mode truncation captures the dynamics.</li><li>Sharp structural prediction: no self-sourced witness, represented by a divergence-free or source-constrained witness field. Still needs formal socket.</li></ul></div>
+</div></details>
+
+<details class="law"><summary><span class="law-num">IV</span><span class="law-title">Yukawa-Agape - Strong Force / Love</span><span class="status mapped">Mapped</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why God Built This</span>Inside every atom, repulsion should win. Protons should fly apart. They do not, because a binding stronger than repulsion holds at close range. God built that into matter so love would not arrive as sentiment. Love is the structure that holds what should have separated.</div>
+<span class="section-label">Physical strangeness</span>
+<p>The strong interaction binds quarks and nucleons under a potential with a close-range well and a confinement behavior. It is intimate, not distant. It does not operate as a vague universal feeling. It binds where there is nearness.</p>
+<div class="eq">V_eff(d) = -alpha_L/d + kappa d + L^2/(2 mu d^2)</div>
+<span class="section-label">Spiritual law</span>
+<p>Agape is not preference. It is covenantal binding under stress. Betrayal is deviation from the maintained bond and is now typed as <code>B(R)</code>: betrayal as a mode of departure from the geodesic.</p>
+<span class="section-label">Fruits two-tier ruling</span>
+<p>The beautiful claim died: not all nine fruits derive from one Hamiltonian. The honest structure is stronger because it is true. Tier 1 derives Love, Peace, and Joy from one stationary calculation: equilibrium, stability, and real oscillation. The other six are structural lenses from adjacent frameworks.</p>
+<table class="matrix">
+<tr><th>Tier</th><th>Fruit</th><th>Status</th></tr>
+<tr><td>1</td><td>Love -> Peace -> Joy</td><td>Derived ordering target</td></tr>
+<tr><td>2</td><td>Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control</td><td>C2 lenses with individual Lean targets</td></tr>
+</table>
+<div class="record"><h4>Record / open repairs</h4><ul><li>"All nine fruits from one Hamiltonian" is retired. Do not resurrect it.</li><li>Three Tier-2 kernels compiled in Lean, but Lean verifies structure, not the spiritual naming.</li><li>Centrifugal-repair timing objection remains recorded.</li></ul></div>
+</div></details>
+
+<details class="law"><summary><span class="law-num">V</span><span class="law-title">Clausius-Judgment - Thermodynamics / Entropy</span><span class="status locked">Derived Strongest</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why God Built This</span>This is the hardest lesson and the most merciful one. A closed system runs down. God built decay into the classroom so nobody could honestly believe self-enclosure is life. Apart from the source, everything we preserve eventually disperses.</div>
+<span class="section-label">Physical strangeness</span>
+<p>The Second Law does not say disorder usually wins. It says entropy in a closed system does not decrease. The law is not cruelty. It is bookkeeping. Heat, cost, work, and irreversibility all have to be paid somewhere.</p>
+<div class="eq">dS/dt >= 0 for a closed system; &nbsp; F = E - T S</div>
+<span class="section-label">Spiritual law</span>
+<p>Judgment is truthful thermodynamic accounting in the moral domain. Mercy is not the cancellation of cost. Mercy is the Judge becoming payer without making the ledger lie.</p>
+<div class="eq">R(offense, alpha): alpha=1 -> offender pays; alpha=0 -> third party pays; alpha=0 + judge=payer -> Cross</div>
+<span class="section-label">Interpretation</span>
+<p>This is the closest thing to derivation in the set because nothing had to be added. The law already says closed systems cannot rescue themselves. The spiritual reading does not need a free-will switch to make the structure interesting.</p>
+<div class="record"><h4>Record / open repairs</h4><ul><li>Law V gradient-decay test is now unblocked by the R ruling and should be run.</li><li>Prediction on record: first attempt fails as written if pure gradient ascent cannot produce decay without arbitrary eta tuning.</li><li>Do not say Landauer proves grace. Retired. Landauer gives cost discipline; the naming is theological.</li></ul></div>
+</div></details>
+
+<details class="law"><summary><span class="law-num">VI</span><span class="law-title">Shannon-Logos - Information / Communication</span><span class="status partial">Split</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why God Built This</span>God knew His children would drown in noise and call it silence. So He built a universe where signal, bandwidth, drift, and reception can be measured. The Word is not just spoken; the channel has a capacity.</div>
+<span class="section-label">Physical strangeness</span>
+<p>Shannon and Boltzmann reached the same form from different worlds: messages and heat. Information theory is the one bridge in the framework with a documented history of crossing domains rigorously.</p>
+<div class="eq">Lambda_i = A_i log2(1 + T_i/D_i)</div>
+<span class="section-label">Spiritual law</span>
+<p>Logos is true signal. Chaos is not a rival source; it is drift, noise, corruption, and loss of intelligible order. The no-drift limit is the theological denominator insight: fullness is the reference capacity against which the actual channel is measured.</p>
+<span class="section-label">Interpretation</span>
+<p>The Shannon half is almost too strong because it is the unit system for every law. The Kolmogorov half is where the substantive open work lives: compression, description length, and machine-dependence.</p>
+<div class="record"><h4>Record / open repairs</h4><ul><li>Raw bits/s multiplication is retired. The equation multiplies only dimensionless X_i fractions.</li><li>Kolmogorov complexity remains machine-dependent and open.</li><li>Do not say information theory alone proves God. Retired as an overclaim.</li></ul></div>
+</div></details>
+
+<details class="law"><summary><span class="law-num">VII</span><span class="law-title">Heisenberg-Faith - Quantum / Observation</span><span class="status partial">Partial</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why God Built This</span>A world with no uncertainty would leave no room for trust. A world with total darkness would leave no room for responsibility. God built a world where engagement matters and where enough is hidden for faith to be real.</div>
+<span class="section-label">Physical strangeness</span>
+<p>Quantum mechanics does not give a classical object with unknown properties. It gives a state whose measurable outcomes depend on basis, amplitude, and act of measurement. The Born Rule gives probabilities, not chosen outcomes.</p>
+<div class="eq">P(outcome) = |&lt;psi|phi&gt;|^2</div>
+<span class="section-label">Spiritual law</span>
+<p>Faith selects the basis; it does not control the outcome. That correction is essential. Faith is not magic causation. It is trustful participation under uncertainty.</p>
+<div class="eq">A(R) = integral R dt; under AM-4 this is accumulated acceleration / velocity change, not physical action unless a separate action functional is supplied.</div>
+<span class="section-label">Interpretation</span>
+<p>This law protects dignity without overpromising control. It says participation is real while refusing the false claim that prayer is a quantum measurement device or that consciousness-caused collapse has been proven.</p>
+<div class="record"><h4>Record / open repairs</h4><ul><li>Threshold pinning is a protocol, not a prediction. The old p_c number was lattice-dependent and is retired.</li><li>Faith collapses the wavefunction is blocked language. Do not use it.</li><li>Many-Worlds, QBism, and other interpretations remain live objections.</li></ul></div>
+</div></details>
+
+<details class="law"><summary><span class="law-num">VIII</span><span class="law-title">Fermi-Conservation - Weak Force / Moral Conservation</span><span class="status locked">Locked</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why God Built This</span>God built one force that changes what a thing is and still keeps the books. That is the moral lesson: what happened cannot be made to un-happen, and it also does not vanish. Suppression is not repair. The ledger balances, even when the missing term is nearly invisible.</div>
+<span class="section-label">Physical strangeness</span>
+<p>The weak interaction performs transmutation. It violates parity. It has an arrow. Yet time-translation symmetry preserves the ledger. Beta decay has a third product, the antineutrino, that was inferred because the visible accounting did not balance.</p>
+<div class="eq">n -> p + e^- + anti-nu_e; &nbsp; Gamma = G_F^2 m^5 / (192 pi^3)</div>
+<span class="section-label">Spiritual law</span>
+<p>Moral breakdown is modeled as a three-body event: what remains, what is visibly damaged, and an invisible loss term. The central result is simple and brutal: you cannot undo it, and it does not go away.</p>
+<div class="eq">psi_whole -> psi_broken + delta + nu_loss</div>
+<div class="eq">Gamma_sin = G_fall^2 psi^5 / (192 pi^3) * P_will(R), with P_will(R)=exp(-lambda R^2)</div>
+<span class="section-label">Interpretation</span>
+<p>This may be the sharpest structural result in the framework. Moral consequence is irreversible and conserved. Visible suppression with total conservation pushes the remainder into the unseen channel. That gives a real theorem target: suppression is not repair.</p>
+<div class="record"><h4>Record / open repairs</h4><ul><li>The psi^5 dimensional repair is ratified through L_c and [G_fall]=[psi]^-2, but should still be formalized.</li><li>The 192 pi^3 factor transfers only if moral decay is genuinely three-body with analogous phase-space structure. Otherwise it is decoration.</li><li>P_will double-count check remains owed.</li><li>Lean target: if delta -> 0 while total is conserved, nu_loss becomes maximal.</li></ul></div>
+</div></details>
+
+<details class="law"><summary><span class="law-num">IX</span><span class="law-title">Einstein-Frame - Relativity / Grace-Frame</span><span class="status open">Pending</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why God Built This</span>God knew every creature would mistake its own perspective for the whole. So He built a universe where frames are real but not final, where no observer owns the whole picture, and where the invariant is what lets disagreeing observers still speak truthfully.</div>
+<span class="section-label">Physical strangeness</span>
+<p>Relativity does not mean anything goes. It means observers in different frames may disagree about measured quantities while preserving invariant structure. The speed of light and spacetime interval discipline the disagreement.</p>
+<div class="eq">ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2</div>
+<span class="section-label">Spiritual law</span>
+<p>Grace-frame is the invariant reference by which personal frames can be transformed without collapsing into relativism. Frame-lock is the refusal to let one's own coordinate system be transformed by truth.</p>
+<span class="section-label">Interpretation</span>
+<p>This law wants to say something profound about perspective, testimony, and humility. But the amendment packet is right: it cannot be a canonical active law unless it receives a native relativistic invariant or equation, explicit bridge, grade, and kill condition.</p>
+<div class="record"><h4>Record / open repairs</h4><ul><li>AM-1 pending David: restore Einstein-Frame as Law IX or rule eight laws plus wrapper.</li><li>If restored, Maxwell-Truth can become the Herald and the arithmetic closes: four pairs plus one herald plus wrapper.</li><li>Kill condition candidate: if moral frame changes cannot preserve any invariant, the law fails.</li><li>Another kill: if causal order becomes frame-dependent in the moral domain, the law collapses into relativism and should die.</li></ul></div>
+</div></details>
+
+<details class="law" open><summary><span class="law-num">W</span><span class="law-title">Coherence-Christ - The Wrapper</span><span class="status def">Definitional</span></summary>
+<div class="body">
+<div class="story"><span class="label">Why This Is Not a Peer Law</span>Christ is not one more ingredient inside the mixture. Christ is what coherence is when the nine axes are running. Put C inside the product and the equation becomes circular. Put C as wrapper and the structure says the true thing.</div>
+<div class="eq">chi(X) = C_W[ product X_i ]; &nbsp; C_W(0)=0; &nbsp; 0 <= C_W(y) <= 1 for y in [0,1]</div>
+<p>The wrapper has no free-will term because refusing coherence is already incoherence. There is no anti-Christ peer variable. The destructive regimes live inside the nine axes; the wrapper receives the value.</p>
+<div class="record"><h4>Record / open repairs</h4><ul><li>C-inside and ten-factor products are retired. Nine inside. Wrapper outside.</li><li>C_W identity vs replacement remains pending David in the v2 registry, but AM-5 requires wrapper closure conditions before test claims.</li><li>Single kill condition: if a residual free-will factor is required at wrapper level, chi = C fails.</li></ul></div>
+</div></details>
+
+<h2>The Pair Structure</h2>
+<p>Under the active candidate structure, the cleanest arrangement is four pairs, one herald, and one wrapper:</p>
+<table class="matrix">
+<tr><th>Pair</th><th>Laws</th><th>Shared Structure</th><th>Status</th></tr>
+<tr><td>P1</td><td>Newton-Grace / Einstein-Frame</td><td>Geometry and frame; grace as geodesic and invariant</td><td>Pending AM-1</td></tr>
+<tr><td>P2</td><td>Newton-Momentum / Fermi-Conservation</td><td>Conversion and identity-change; the thing that resists change is the thing that decays</td><td>Strengthened</td></tr>
+<tr><td>P3</td><td>Yukawa-Agape / Heisenberg-Faith</td><td>Bond and collapse; maintained coherence under vulnerability</td><td>Holds</td></tr>
+<tr><td>P4</td><td>Clausius-Judgment / Shannon-Logos</td><td>Entropy/counting; Boltzmann and Shannon convergence</td><td>Strongest</td></tr>
+<tr><td>Herald</td><td>Maxwell-Truth</td><td>Light announces the wrapper rather than pairing symmetrically</td><td>Pending David</td></tr>
+<tr><td>Wrapper</td><td>Coherence-Christ</td><td>Closure, not peer mechanism</td><td>Ruled structurally</td></tr>
+</table>
+
+<h2>The Record We Keep</h2>
+<div class="record"><h4>Contested decisions still alive</h4>
+<ul>
+<li><strong>AM-1:</strong> Restore Einstein-Frame as IX, or rule eight laws plus wrapper.</li>
+<li><strong>AM-3:</strong> Law I should move to central-field form for God-to-soul; two-body form can remain secondary.</li>
+<li><strong>AM-4:</strong> R as proper acceleration needs dimensional repairs everywhere it appears.</li>
+<li><strong>AM-5:</strong> C_W and X_i boundary behavior need explicit closure conditions before test claims.</li>
+<li><strong>AM-7:</strong> Mass-energy placement under Newton-Momentum remains pending; current recommendation is commentary.</li>
+</ul></div>
+
+<div class="record"><h4>Retired claims not to resurrect</h4>
+<ul>
+<li>Raw bits/s product inside the Master Equation.</li>
+<li>C as a tenth product factor.</li>
+<li>Faith collapses the wavefunction, prayer as quantum measurement, or any FTL soul/entanglement claim.</li>
+<li>Landauer proves grace.</li>
+<li>All nine fruits derive from one Hamiltonian.</li>
+<li>The Seven I AMs form a complete basis.</li>
+<li>Exit code 0 proves spiritual mechanics. Lean verifies structure, never a naming.</li>
+<li>The Master Equation replaces native physical equations. It is a wrapper and measurement instrument, not a replacement for GR, QCD, Maxwell, quantum mechanics, or thermodynamics.</li>
+</ul></div>
+
+<div class="keyline">The finding of the set: the two laws closest to isomorphic are the two where nothing, or almost nothing, had to be added. Every other law is blocked by exactly the thing that makes it theologically interesting: freedom.</div>
+
+<div class="nav"><a href="../00-god-index.html">God Index</a> - <a href="the-descent.html">The Descent</a> - <a href="The-7Q-Universal-Classifier.html">7Q</a></div>
+<div class="footer">De Revolutionibus Veritatis - David Lowe - POF 2828 - Internal Ten Laws Canon Walk - built from v4, unified v2, and July 30 amendment packet.</div>
+</div>
+</body>
+</html>

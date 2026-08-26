@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-188",
+  "nodeID": "tp:axioms/01/AX-188",
+  "claimID": "tp:AXIOMS/OMEGA",
+  "name": "Final Axiom — Omega",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theorem",
+  "statementTechnical": "All coherence originates from Logos (Alpha) and returns to Logos (Omega). The circuit is complete.",
+  "statementPlain": "All coherence originates from Logos (Alpha) and returns to Logos (Omega). The circuit is complete.",
+  "mathematicalForm": "Logos(Alpha) → Reality → Logos(Omega); circuit complete",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-187",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-171",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "logos",
+    "coherence"
+  ],
+  "keywords": [
+    "OMEGA",
+    "Q11",
+    "Eschatology",
+    "CapstoneTerminalClaim"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the circuit is not closed (open-ended). Demonstrate coherence doesn't return to source. Show the Omega point is not achievable.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 190
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-188",
+    "oldID": "OMEGA",
+    "treeLevel": "Q11",
+    "treeBranch": "Q11-I (Omega — eschatological completion)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Eschatology",
+    "tier": "1",
+    "newType": "CapstoneTerminalClaim",
+    "logicalForce": "closure claim",
+    "formalizableInLean": "partly",
+    "leanKind": "terminal theorem/claim target",
+    "riskLevel": "high",
+    "kernelRole": "auditRole",
+    "moduleID": "M24",
+    "moduleTitle": "Meta / Closure",
+    "spineRole": "closure_capstone",
+    "boundaryCondition": "BC1-BC8 (all)",
+    "fourModeRelevance": "M1, M2, M3, M4 (all modes resolved at Omega)",
+    "worldviewsEliminated": "Nihilism, Materialism, Naturalism",
+    "propagationTest": "Terminal axiom — circuit closure.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

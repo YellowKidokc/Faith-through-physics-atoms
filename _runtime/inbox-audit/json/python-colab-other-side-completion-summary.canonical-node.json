@@ -1,0 +1,89 @@
+{
+  "source_id": "python-colab-other-side-completion-summary",
+  "title": "Python/Colab Other-Side Completion Summary",
+  "canonical_node": {
+    "axiom": "Runtime artifacts must not support public claims until their status is explicitly bucketed into verified, open/conflicted, simulation-only, empirical-fit, prediction, or utility/support.",
+    "definitions": [
+      "Runtime artifact: a notebook or Python script in the repository.",
+      "Claim-status registry: a mapping of public claims to their verification status.",
+      "Claim-to-runtime matrix: a mapping of claims to the runtime artifacts that purportedly support them.",
+      "Run order: a sequence for executing runtime artifacts.",
+      "Data/path ledger: a record of data paths and their references.",
+      "Import ledger: a record of imports used by runtime artifacts.",
+      "Phase 1: fast local checks.",
+      "Phase 2: runtime-JAX checks.",
+      "Phase 3: data-network-path checks.",
+      "Verified computational result: a result that has been confirmed by execution.",
+      "Open/conflicted result: a result that is not yet resolved or has conflicting evidence.",
+      "Simulation-only support: support that comes only from simulation, not from formal proof.",
+      "Empirical-fit support: support that comes from fitting data.",
+      "Prediction support: support that comes from making predictions.",
+      "Utility/support only: support that is only for utility or auxiliary purposes."
+    ],
+    "derivation": [
+      "The document inventories 25 runtime artifacts and builds registries and ledgers.",
+      "The document reports execution readiness phases and claim status counts.",
+      "The document identifies claim families and their artifact counts.",
+      "The document provides a safe next move via a PowerShell helper.",
+      "The document states the main rule: runtime artifacts must not support public claims until status is bucketed."
+    ],
+    "action": "Maintain a claim-status registry and a claim-to-runtime matrix; execute runtime artifacts in phases; ensure every runtime artifact's support for a public claim is classified into one of the six buckets before it is used as evidence.",
+    "boundary": [
+      "Does not execute any runtime artifacts itself.",
+      "Does not verify any claims.",
+      "Does not provide formal proofs.",
+      "Does not assign specific claims to specific artifacts in this document.",
+      "Does not resolve open or conflicted claims."
+    ],
+    "test": [
+      "Check that every runtime artifact has a status bucket assigned before it is cited as support for a public claim.",
+      "Check that the claim-status registry is updated after each execution.",
+      "Check that the claim-to-runtime matrix is consistent with the registry.",
+      "Check that the run order is followed and phases are executed in sequence."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean side evidence discipline",
+      "Existing runtime artifacts (20 notebooks, 5 Python scripts)",
+      "PowerShell helper script (RUN_LATER_PYTHON_COLAB_CHECKS.ps1)"
+    ],
+    "dg2_new_capability": "Provides a structured inventory and status registry for Python/Colab runtime artifacts, enabling disciplined alignment with Lean evidence standards.",
+    "dg3_preserved_floor": "Preserves the requirement that runtime artifacts cannot support public claims without explicit status classification.",
+    "dg4_collapse_if_removed": "If this node is removed, runtime artifacts may be used as evidence without status classification, breaking the alignment with Lean evidence discipline.",
+    "dg5_translation_registers": [
+      "Runtime artifact -> claim support bucket",
+      "Claim -> runtime artifact matrix",
+      "Execution phase -> artifact list"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "maintain"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document does not verify any claims; it only prepares for verification.",
+      "The document does not provide evidence that any runtime artifact actually supports a claim.",
+      "The document's counts and registries are not themselves verified."
+    ],
+    "kill_conditions": [
+      "If runtime artifacts are used to support claims without status bucketing.",
+      "If the registries are not maintained or become inconsistent.",
+      "If the run order is not followed."
+    ],
+    "lean_target": "The Lean side should provide formal proofs; the Python/Colab side should only provide computational support that is clearly labeled and not conflated with proof."
+  },
+  "plain_summary": "This document describes the preparation of Python/Colab runtime artifacts for verification, including inventories, registries, and a run plan. It does not verify any claims itself but establishes a discipline: runtime artifacts must be classified into specific support buckets before they can back public claims. The node is coherent and admissible as a procedural guardrail, but it does not establish any mathematical or physical claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\python-colab-other-side-completion-summary.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\python-colab-other-side-completion-summary.canonical-node.json"
+  }
+}

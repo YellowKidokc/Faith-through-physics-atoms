@@ -1,0 +1,69 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-062-laws-derive-from-chi",
+  "atom_uid": "sha256:23d146dc3e6f9014b91df1c589781bd5f3d51b0f3d26ee399d2b336c0f3bb06f",
+  "title": "Laws Derive From Chi",
+  "claim": "The ten laws are not loose decorations around the equation; they are claimed to be rails derived from chi.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "theorem",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-010",
+    "tp:master-equation/01/ME-01-060",
+    "tp:master-equation/01/ME-01-040",
+    "tp:master-equation/01/ME-01-041",
+    "tp:master-equation/01/ME-01-042",
+    "tp:master-equation/01/ME-01-043",
+    "tp:master-equation/01/ME-01-044",
+    "tp:master-equation/01/ME-01-045",
+    "tp:master-equation/01/ME-01-046",
+    "tp:master-equation/01/ME-01-047",
+    "tp:master-equation/01/ME-01-048",
+    "tp:master-equation/01/ME-01-049",
+    "tp:axioms/01/AX-147"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-062-laws-derive-from-chi.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-062-laws-derive-from-chi.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:e4f6b5b2ce7f53feca7d7b3d812c1258a7d0ca4606f17d612ab08e2f04c26542",
+      "event_uuid": "cd725880-eeaf-5098-9418-8db43e37b37b"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-01-062",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-062",
+  "original_node_id": "tp:master-equation/01/ME-01-062",
+  "tags": [
+    "logos",
+    "coherence",
+    "proof"
+  ],
+  "keywords": [
+    "AX-147",
+    "T19.1",
+    "Theorem"
+  ],
+  "atom_uuid": "d7a80834-cd6a-56c6-ab0c-08c27ed5b536"
+}

@@ -1,0 +1,84 @@
+{
+  "source_id": "R04_Faith",
+  "title": "Faith as Coupling",
+  "canonical_node": {
+    "axiom": "Faith is the coupling mechanism (g > 0) that allows grace to operate on you. Without faith, grace is offered but not received. Faith is not a work - it is the opening that allows the external operator to act.",
+    "definitions": [
+      "Faith  g (coupling constant), g in [0, )",
+      "Grace () is the constant offer from God",
+      "Effective grace: _effective = g  _offered",
+      "Salvation condition: Salvation  g > 0",
+      "Faith content: Faith = Trust(Christ), not Trust(empty-set) or Trust(self)",
+      "Works: Works = f(), where  is the state of the soul"
+    ],
+    "derivation": [
+      "1. Grace is sufficient but must be received (axiom).",
+      "2. Faith is the reception mechanism, modeled as coupling constant g (R3.1).",
+      "3. If g > 0, grace becomes effective: _effective = g  _offered > 0 (R3.2).",
+      "4. If g = 0, effective grace is zero: _effective = 0, regardless of _offered (R3.3).",
+      "5. Faith is trust in Christ, not a work (R3.4).",
+      "6. Therefore, salvation requires faith (g > 0) but not perfect faith; any positive g suffices."
+    ],
+    "action": "The system should treat faith as the necessary and sufficient condition for receiving grace, where any positive faith (g > 0) activates grace, and zero faith (g = 0) blocks it. Faith is not a work but a trust in Christ, and works are evidence of faith, not its cause.",
+    "boundary": [
+      "This does not claim that faith itself saves; grace saves.",
+      "This does not specify the exact nature of grace beyond its sufficiency.",
+      "This does not address exceptional cases (infants, mentally disabled) beyond noting God's justice and mercy.",
+      "This does not quantify the strength of faith required beyond g > 0.",
+      "This does not claim that faith is a human achievement; it is a gift."
+    ],
+    "test": [
+      "Check that the model _effective = g  _offered is consistently applied.",
+      "Verify that the document does not equate faith with works.",
+      "Confirm that the document maintains that faith has content (Christ) and is not contentless.",
+      "Ensure that the document does not claim universal salvation or automatic salvation.",
+      "Check that the document does not promote fideism (faith against reason)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "R03 (Grace as Operator)  -  provides the concept of grace as an external operator",
+      "R01 (God as Source)  -  provides the nature of God as love",
+      "R02 (Human as Receiver)  -  provides the human capacity to respond"
+    ],
+    "dg2_new_capability": "Introduces a formal model of faith as a coupling constant, enabling quantitative reasoning about salvation conditions and distinguishing faith from works.",
+    "dg3_preserved_floor": "Preserves the core Christian doctrine that salvation is by grace through faith, and that faith is not a work.",
+    "dg4_collapse_if_removed": "If this axiom is removed, the distinction between faith and works collapses, and the necessity of human response to grace is lost, leading to universalism or automatic salvation.",
+    "dg5_translation_registers": [
+      "Theological register: faith as trust in Christ",
+      "Physics register: coupling constant g",
+      "Mathematics register: _effective = g  _offered"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological_model",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve_as_model"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The mathematical formalism (_effective = g  _offered) is presented as if it were a proven physical law, but it is an analogy.",
+      "The claim that 'any g > 0' is sufficient may be an oversimplification of theological nuances.",
+      "The document asserts that universalism, automatic salvation, and fideism are 'guilty' without rigorous logical proof.",
+      "The use of 'coupling constant' may imply a precision that is not warranted."
+    ],
+    "kill_conditions": [
+      "If faith is shown to be unnecessary for salvation, the model fails.",
+      "If grace operates without faith, the model fails.",
+      "If faith is demonstrated to be a work, the model fails.",
+      "If faith is shown to be contentless, the model fails."
+    ],
+    "lean_target": "A lean version would state: 'Faith is the necessary condition for receiving grace; it is trust in Christ, not a work.' without the mathematical formalism."
+  },
+  "plain_summary": "This document presents a model of faith as a coupling constant that determines whether grace is received. It argues against universalism, automatic salvation, and fideism, and provides a mathematical analogy to physics. The model is coherent but not formally proven.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\R04_Faith.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\R04_Faith.canonical-node.json"
+  }
+}

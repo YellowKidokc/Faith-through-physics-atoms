@@ -1,0 +1,61 @@
+{
+  "atom_id": "tp:lane4/ten-laws/law9-irreversible-conserved-transfer",
+  "atom_uid": "sha256:1d87a933471a62c6366b9ec9f30908b3b1a046ec0042dce9b6df0ea91f44c04f",
+  "title": "Law 9: Irreversible and Conserved → Transfer, Not Erasure",
+  "claim": "From the weak force: parity broken (process has intrinsic direction, cannot be undone from inside) AND time-translation preserved (Noether gives a conserved quantity, it does not disappear). Both simultaneously from one force. This forbids both 'time heals' (violates conservation) and 'I have changed so it is finished' (violates parity). The two together leave exactly one option: the amount is transferred. The neutrino argument: if the accounting balances only with an unmeasured term, the term exists. Suppression theorem: behavioral suppression without grace maximizes displacement into the unmeasured channel.",
+  "domain": "ten-laws",
+  "lane": "Mathematics",
+  "claim_class": "theorem",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "assumptions": [
+    "Weak force physics: n → p + e⁻ + ν̄_e",
+    "Noether's theorem applied to time-translation symmetry in moral domain"
+  ],
+  "definitions": [
+    "Parity violation: process is directional, irreversible from inside",
+    "Conservation: Noether guarantees the quantity does not disappear",
+    "Transfer: the only resolution when both hold simultaneously"
+  ],
+  "equations": [
+    "ψ_whole → ψ_broken + δ + ν_loss",
+    "Γ_sin = (G²_fall · ψ⁵)/(192π³) · P_will",
+    "dS_m/dt = σ − W_grace/T"
+  ],
+  "bridges": [
+    "Weak force (beta decay) → Moral conservation / Atonement"
+  ],
+  "dependencies": [],
+  "negative_guards": [
+    "G_fall and ψ have no measurement values — conceded flatly.",
+    "ψ⁵ is copied from physics, not derived — conceded, mark as inherited.",
+    "Parity violation is spatial; moral irreversibility is temporal — restate as 'handedness' not 'parity violation.'",
+    "Second Law gives irreversibility WITHOUT conservation. Law 9 gives irreversibility WITH conservation. That combination forces transfer."
+  ],
+  "kill_conditions": [
+    "Find a moral event whose ledger closes with no invisible remainder.",
+    "Show that behavioral suppression without grace does NOT maximize displacement.",
+    "Show that irreversible + conserved does NOT force transfer."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "atom_created_from_canonical_audit",
+      "result": "recorded",
+      "artifact_path": "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md",
+      "meaning": "Created during three-model audit (Claude/o3/DeepSeek) of canonical doc vs atom ledger.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "Mathematics",
+      "event_id": "sha256:e515e66da4bb16d356b21ac6e21d4b16221f4d6f5855be35fb327666f9c00103",
+      "event_uuid": "8f1ed789-5e69-52a5-b62c-1ca9dae763b1"
+    }
+  ],
+  "source_claim_id": "LAW9_IRREVERSIBLE_CONSERVED_TRANSFER",
+  "atom_uuid": "6aa5d0f7-9f42-5d7b-85ba-3e637a8e776d"
+}

@@ -1,0 +1,82 @@
+{
+  "source_id": "R01_Sin",
+  "title": "Sin as Decoherence",
+  "canonical_node": {
+    "axiom": "Sin is decoherence - measurable loss of alignment with chi_God. It is not arbitrary, not merely social construct, not just psychological dysfunction. Sin is objective collapse of coherence with the source of all coherence.",
+    "definitions": [
+      "chi_God: God's coherence pattern - the standard",
+      "_S: Human soul field - the variable",
+      "C[_S, chi_God]: Coherence between human and God",
+      "Sin: Decrease in this coherence, C[_S, chi_God] < 0"
+    ],
+    "derivation": [
+      "Good = coherence-promotion (G07)",
+      "God = maximal coherence (G01)",
+      "Alignment with God = coherence",
+      "Misalignment = decoherence = sin",
+      "Therefore, sin is defined as decoherence from chi_God"
+    ],
+    "action": "The system should treat sin as an objective, measurable loss of coherence with the divine standard, and not as a mere social construct, relative moral claim, or psychological dysfunction.",
+    "boundary": [
+      "Does not claim to measure sin in physical units",
+      "Does not claim to provide a method for measuring coherence in practice",
+      "Does not claim to explain all moral phenomena",
+      "Does not claim to be a scientific theory; it is a theological model"
+    ],
+    "test": [
+      "Check that sin is defined as C[_S, chi_God] < 0",
+      "Check that the model predicts sin reduces internal coherence",
+      "Check that the model predicts sin accumulates over time",
+      "Check that the model predicts sin cannot be self-undone",
+      "Check that the model predicts sin leads to death",
+      "Check that the model asserts universality of sin"
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G01: God = maximal coherence",
+      "G07: Good = coherence-promotion",
+      "H08: Self-flip impossibility",
+      "D1: Self-flip impossibility"
+    ],
+    "dg2_new_capability": "Provides a formal definition of sin as decoherence, enabling objective measurement and prediction of moral failure.",
+    "dg3_preserved_floor": "Preserves the traditional theological concept of sin as objective moral failure and its consequences.",
+    "dg4_collapse_if_removed": "If removed, the framework loses its definition of sin, undermining the moral ontology and the need for external rescue.",
+    "dg5_translation_registers": [
+      "Theology",
+      "Physics (decoherence)",
+      "Philosophy (moral ontology)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Theological/physical analogy",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine as a theological model; do not treat as established physics."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims sin is measurable without providing a measurement protocol",
+      "Equates theological concepts with physical decoherence without empirical support",
+      "Uses scripture as evidence for physical claims",
+      "Overstates the objectivity of moral constants"
+    ],
+    "kill_conditions": [
+      "If coherence is not physically measurable in this context",
+      "If the model cannot be empirically tested",
+      "If the universal moral core is shown to be culturally constructed",
+      "If self-repair of sin is shown to be possible"
+    ],
+    "lean_target": "Theological model of sin as moral failure; not a physical theory."
+  },
+  "plain_summary": "This document defines sin as a loss of coherence with God, using a physics analogy. It argues against social constructivism, moral relativism, and therapeutic models. However, it lacks empirical grounding and is best treated as a theological model, not a scientific claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\R01_Sin.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\R01_Sin.canonical-node.json"
+  }
+}

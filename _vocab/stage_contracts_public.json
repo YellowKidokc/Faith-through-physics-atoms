@@ -1,0 +1,122 @@
+{
+  "_comment": "Public branch (20-26) and convergence (30-31) contracts.",
+  "stages": {
+    "20_everyday_canon": {
+      "question": "What is the simplest faithful statement?",
+      "branch": "public", "glyph": "truth",
+      "nodeTypes": ["rendered-view"],
+      "required": ["plainStatement", "confidence", "scope", "uncertainty", "boundaries", "whatWouldChangeIt"],
+      "edgesIn": ["renders <- 02_claim_atoms.statementPlain"],
+      "edgesOut": ["feedsInto -> 21, 22, 23, 24, 26"],
+      "completion": "Descent invariant reviewed and all four flags true.",
+      "propagation": "Inherits from the atom. Never originates falsification.",
+      "nlp": "Verify meaning, confidence, boundaries and failure condition survived translation. Flag any added premise.",
+      "validation": "GENERATED, NOT HAND-AUTHORED. This is a canonical expression, not a loose summary. If it adds advice, that advice becomes a 24_application node.",
+      "rendering": "Default public view."
+    },
+    "21_everyday_paradigm": {
+      "question": "How does this change the way a person sees the problem?",
+      "branch": "public", "glyph": "consciousness",
+      "nodeTypes": ["paradigm"],
+      "required": ["ordinaryAssumption", "whatToSeeDifferently", "commonMistakeFromOldFrame", "whatBecomesVisible"],
+      "edgesIn": ["descendsTo <- 11_technical_paradigm"],
+      "edgesOut": ["feedsInto -> 26_audience"],
+      "completion": "A named ordinary mistake that follows from the old frame.",
+      "propagation": "Local.",
+      "nlp": "Detect simplified-literature-review drift. This is a lived mental-model change, not a summary.",
+      "validation": "Asks what a PERSON sees differently, not what a DISCIPLINE changes. Those are separate nodes.",
+      "rendering": "Reframe section."
+    },
+    "22_lived_synthesis": {
+      "question": "How does this meet the world people already know?",
+      "branch": "public", "glyph": "mesh",
+      "nodeTypes": ["synthesis"],
+      "required": ["dailyLifeConnections", "mainstreamFraming", "baselineSources"],
+      "edgesIn": ["descendsTo <- 12_technical_synthesis"],
+      "edgesOut": ["feedsInto -> 26_audience"],
+      "completion": "Mainstream baseline recorded without being treated as evidence.",
+      "propagation": "None. Never propagates.",
+      "nlp": "This is where LLM and wiki summaries belong. Label them as baseline maps.",
+      "validation": "LLM and wiki checks are maps of the surrounding conversation. They do NOT become evidence merely because several summaries agree.",
+      "rendering": "Context section."
+    },
+    "23_public_evidence": {
+      "question": "What receipts can an ordinary person inspect?",
+      "branch": "public", "glyph": "witness",
+      "nodeTypes": ["evidence"],
+      "required": ["accessibleWitness", "sourceTrail", "linkToTechnicalEvidence"],
+      "edgesIn": ["descendsTo <- 14_evidence"],
+      "edgesOut": ["feedsInto -> 26_audience"],
+      "completion": "Every public receipt links upward to the complete technical evidence.",
+      "propagation": "Inherits. Never originates.",
+      "nlp": "Verify each receipt is actually inspectable by a non-specialist.",
+      "validation": "Evidence is simplified in PRESENTATION, never strengthened in CONCLUSION. Public case is not a replacement for the technical ledger.",
+      "rendering": "Receipts, each with a link up."
+    },
+    "24_application": {
+      "question": "What might someone do differently?",
+      "branch": "public", "glyph": "sanctification",
+      "nodeTypes": ["application"],
+      "required": ["sourceClaim", "intendedPerson", "desiredOutcome", "addedPremises", "contextAssumptions", "risks", "alternatives", "stopCondition", "professionalBoundaries"],
+      "edgesIn": ["dependsOn <- 20_everyday_canon"],
+      "edgesOut": ["feedsInto -> 25_worldcheck, 30_real_world_verdict"],
+      "completion": "Added premises listed explicitly so they can be attacked independently.",
+      "propagation": "APPLICATION FAILURE ATTACKS THE APPLICATION MAPPING FIRST, never automatically the source claim.",
+      "nlp": "Extract every premise not present in the source claim. An unlisted added premise is a defect.",
+      "validation": "Application is a separate operation from translation because it ADDS PREMISES. A valid claim must never smuggle in unsupported advice.",
+      "rendering": "Clearly marked as application, with premises visible."
+    },
+    "25_worldcheck": {
+      "question": "Does the plain claim survive contact with people and reality?",
+      "branch": "public", "glyph": "seven-question",
+      "nodeTypes": ["check"],
+      "required": ["comprehensionResult", "confidencePreserved", "naturalObjections", "applicationOutcome", "contradictingPublicFacts"],
+      "edgesIn": ["tests <- 20_everyday_canon, 24_application"],
+      "edgesOut": ["feedsInto -> 30_real_world_verdict, 26_audience"],
+      "completion": "Tested with real people outside the project.",
+      "propagation": "Translation failure triggers a rewrite, not a falsification of the claim.",
+      "nlp": "Run 7Q. Compare reader-reported meaning against statementPlain.",
+      "validation": "This is the pressure test of the PUBLIC branch, not the final scientific verdict.",
+      "rendering": "Optional; results inform the audience layer."
+    },
+    "26_audience": {
+      "question": "How does the claim reach the person who needs it?",
+      "branch": "public", "glyph": "logos",
+      "nodeTypes": ["reach"],
+      "required": ["format", "sourceRef", "audienceLevel"],
+      "edgesIn": ["descendsTo <- 20, 21, 22, 23, 25"],
+      "edgesOut": ["feedsInto -> 30_real_world_verdict"],
+      "completion": "At least one artifact reaches audienceLevel=everyday.",
+      "propagation": "None.",
+      "nlp": "Check reading level matches declared audienceLevel.",
+      "validation": "The published story is NOT the raw seed with better prose. It carries the corrections earned by the full process.",
+      "rendering": "Published."
+    },
+    "30_real_world_verdict": {
+      "question": "What actually happened?",
+      "branch": "verdict", "glyph": "justice",
+      "nodeTypes": ["result"],
+      "required": ["formal_verdict", "empirical_verdict", "bridge_verdict", "translation_verdict", "application_verdict"],
+      "edgesIn": ["resolves <- 13_hypothesis, 15_falsification, 24_application, 25_worldcheck"],
+      "edgesOut": ["feedsInto -> 31_revision_return"],
+      "completion": "All five verdict types recorded or explicitly marked pending.",
+      "propagation": "Typed per verdict. ONE SUCCESS CANNOT SILENTLY STAND IN FOR EVERY VERDICT TYPE.",
+      "nlp": "Detect a single verdict being reported as overall success.",
+      "validation": "Shared by both branches. Neither branch may declare its own success.",
+      "rendering": "Verdict card, all five types shown."
+    },
+    "31_revision_return": {
+      "question": "What changes now?",
+      "branch": "verdict", "glyph": "repentance",
+      "nodeTypes": ["revision"],
+      "required": ["changeType", "affectedClaims", "newInboxEntries"],
+      "edgesIn": ["dependsOn <- 30_real_world_verdict"],
+      "edgesOut": ["feedsInto -> 02_claim_atoms (update), 00_inbox_working (new)"],
+      "completion": "Every verdict has produced either a canon update or a new inbox entry.",
+      "propagation": "Closes the cycle. Applies the verdict to the atom.",
+      "nlp": "Verify no verdict was recorded without a corresponding revision or explicit no-change note.",
+      "validation": "Failed mappings may leave the source claim intact. Harmful applications are STOPPED. Unresolved anomalies become new inbox material.",
+      "rendering": "Changelog."
+    }
+  }
+}

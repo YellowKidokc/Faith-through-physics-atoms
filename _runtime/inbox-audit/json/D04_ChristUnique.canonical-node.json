@@ -1,0 +1,86 @@
+{
+  "source_id": "D04_ChristUnique",
+  "title": "The Christianity Uniqueness Theorem",
+  "canonical_node": {
+    "axiom": "Only Christianity satisfies all eight boundary conditions (BC1-BC8); all other worldviews fail at least one.",
+    "definitions": [
+      "BC1: Terminal observer exists (self-grounding chi(chi)=chi).",
+      "BC2: Grace external to system (information fundamental).",
+      "BC3: Measurement orthogonality (God exists necessarily).",
+      "BC4: Three observers required (Trinity, N_observers=3).",
+      "BC5: Superposition preserved until collapse (humans need salvation, =-1).",
+      "BC6: Infinite energy source (external grace required, [_int, ]=0).",
+      "BC7: Information conservation (faith as coupling, g_faith>0).",
+      "BC8: Voluntary coupling (bimodal destiny, Stable(C)  Cin{0,C_max})."
+    ],
+    "derivation": [
+      "Each BC is derived from prior Theophysics axioms (F01, F02, G02, T01-T04, H08, D01, R04, D08).",
+      "Define Score(W) =  BC(W) with BC in {0, 0.5, 1}.",
+      "Evaluate major worldviews: Christianity=8, Islam=5, Judaism=5, Hinduism=2, Buddhism=0, Atheism=1, Mormonism=6, Deism=4.",
+      "Since max{Score(W)} = 8 and only Christianity achieves 8, Christianity uniquely satisfies all BCs."
+    ],
+    "action": "The system should apply the eight boundary conditions to any worldview and score it; only accept worldviews that achieve 8/8.",
+    "boundary": [
+      "Does not claim to prove the existence of God or the truth of Christianity independently of the BCs.",
+      "Does not address all possible worldviews; only lists major ones.",
+      "Does not provide a formal mathematical proof of the BC derivations.",
+      "Does not claim that partial scores are impossible; only that they are incomplete."
+    ],
+    "test": [
+      "Check that each BC is clearly defined and non-arbitrary.",
+      "Verify that the scoring of each worldview is consistent with the definitions.",
+      "Attempt to find a counterexample: a worldview that satisfies all 8 BCs.",
+      "Check whether the derivation of BCs from prior axioms is logically valid."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "F01 (existence)",
+      "F02 (information)",
+      "G02 (necessity)",
+      "T01-T04 (Trinity)",
+      "H08 (moral sign)",
+      "D01 (self-flip)",
+      "R04 (faith coupling)",
+      "D08 (bimodal destiny)"
+    ],
+    "dg2_new_capability": "Provides a comparative scoring framework to evaluate worldviews against eight boundary conditions.",
+    "dg3_preserved_floor": "Preserves the prior axioms and their derivations; does not alter them.",
+    "dg4_collapse_if_removed": "Without this node, the uniqueness claim is unsupported; the framework loses its comparative edge.",
+    "dg5_translation_registers": [
+      "Theophysics axioms to boundary conditions",
+      "Boundary conditions to worldview scoring",
+      "Scoring to uniqueness conclusion"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "no",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "theological uniqueness claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "D",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical necessity without formal proof.",
+      "Scores worldviews subjectively (e.g., partial credits).",
+      "Assumes BCs are non-arbitrary without rigorous derivation.",
+      "Uses scripture as evidence in a mathematical context."
+    ],
+    "kill_conditions": [
+      "If any BC is shown to be arbitrary or not derived from prior axioms.",
+      "If a worldview is found that satisfies all 8 BCs.",
+      "If the scoring is shown to be inconsistent or biased."
+    ],
+    "lean_target": "Reduce to a conditional claim: IF the BCs are accepted as necessary, THEN Christianity uniquely satisfies them; but the necessity is not established."
+  },
+  "plain_summary": "This document argues that only Christianity meets all eight boundary conditions derived from Theophysics, scoring 8/8 against other worldviews. However, the derivation of the BCs is not formally proven, the scoring is subjective, and the claim of mathematical necessity is overreaching. The document is quarantined pending rigorous formalization.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\D04_ChristUnique.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\D04_ChristUnique.canonical-node.json"
+  }
+}

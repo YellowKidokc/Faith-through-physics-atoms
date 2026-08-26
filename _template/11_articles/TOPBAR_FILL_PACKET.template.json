@@ -1,0 +1,222 @@
+{
+  "page": {
+    "id": "DOMAIN-SLUG-001",
+    "title": "REPLACE_WITH_TITLE",
+    "series": "REPLACE_WITH_SERIES",
+    "subtitle": "REPLACE_WITH_ONE_LINE_SUBTITLE",
+    "kicker": "REPLACE_WITH_DOMAIN / REPLACE_WITH_STAGE",
+    "byline": "David Lowe · Faith Through Physics · July 2026",
+    "sourceAtoms": [
+      "tp:domain/stage/001"
+    ],
+    "prev": {
+      "label": "",
+      "url": ""
+    },
+    "next": {
+      "label": "",
+      "url": ""
+    }
+  },
+  "terms": [
+    {
+      "id": "replace-term-id",
+      "label": "Replace Term",
+      "tone": "gold",
+      "front": {
+        "eyebrow": "Definition",
+        "subtitle": "One short subtitle",
+        "equation": "",
+        "summary": "Plain definition of this term.",
+        "rows": [
+          {
+            "label": "Meaning",
+            "value": "What this term means in this article."
+          },
+          {
+            "label": "Why it matters",
+            "value": "Why the reader needs it."
+          }
+        ]
+      },
+      "back": {
+        "eyebrow": "Verification",
+        "rows": [
+          {
+            "label": "Source",
+            "value": "Atom, paper, proof, or glossary source."
+          },
+          {
+            "label": "Risk",
+            "value": "What could make this definition too broad or too strong."
+          }
+        ]
+      },
+      "proofUrl": ""
+    }
+  ],
+  "claims": [
+    {
+      "id": "DOMAIN-C001",
+      "sentence": "Replace with the exact visible claim sentence.",
+      "formal": "Replace with formal restatement.",
+      "status": "draft",
+      "derivation": [
+        "Step 1.",
+        "Step 2."
+      ],
+      "killCondition": "Replace with a specific falsification condition.",
+      "proofIds": [
+        "DOMAIN-P001"
+      ]
+    }
+  ],
+  "proofs": [
+    {
+      "id": "DOMAIN-P001",
+      "title": "Replace Proof Title",
+      "status": "draft",
+      "summary": "Replace with proof or evidence summary.",
+      "claimIds": [
+        "DOMAIN-C001"
+      ],
+      "url": ""
+    }
+  ],
+  "mtl": [
+    {
+      "id": "DOMAIN-MTL-001",
+      "format": "box",
+      "title": "Replace Equation Title",
+      "equation": "REPLACE_WITH_EQUATION",
+      "wordEquation": "Replace every symbol with one-to-two-word plain labels while preserving structure.",
+      "structuralInsight": "Explain why the equation is built this way if the structure carries meaning.",
+      "plain": "Plain English version for a smart sixteen-year-old.",
+      "influence": "What changes the result, strengthens it, weakens it, or makes it fail."
+    }
+  ],
+  "verification": [
+    {
+      "title": "Page Contract",
+      "rows": [
+        [
+          "Shell",
+          "canonical"
+        ],
+        [
+          "Reading levels",
+          "3"
+        ],
+        [
+          "Source atoms",
+          "1"
+        ],
+        [
+          "Status",
+          "draft"
+        ]
+      ]
+    },
+    {
+      "title": "Claims",
+      "rows": [
+        [
+          "Total",
+          "1"
+        ],
+        [
+          "Verified",
+          "0"
+        ],
+        [
+          "Partial",
+          "0"
+        ],
+        [
+          "Draft",
+          "1"
+        ]
+      ]
+    },
+    {
+      "title": "Math Translation",
+      "rows": [
+        [
+          "Equations",
+          "1"
+        ],
+        [
+          "Plain translations",
+          "1"
+        ],
+        [
+          "Structural insights",
+          "1"
+        ],
+        [
+          "Format",
+          "box"
+        ]
+      ]
+    },
+    {
+      "title": "Media",
+      "rows": [
+        [
+          "Read",
+          "pending"
+        ],
+        [
+          "Debate",
+          "pending"
+        ],
+        [
+          "Deep dive",
+          "pending"
+        ],
+        [
+          "Critique",
+          "pending"
+        ]
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "id": "read",
+      "label": "Read Aloud",
+      "url": ""
+    },
+    {
+      "id": "debate",
+      "label": "Debate",
+      "url": ""
+    },
+    {
+      "id": "deep",
+      "label": "Deep Dive",
+      "url": ""
+    },
+    {
+      "id": "critique",
+      "label": "Critique",
+      "url": ""
+    }
+  ],
+  "audit": {
+    "right": [
+      "Replace with one thing the page gets right."
+    ],
+    "overstated": [
+      "Replace with one thing that may be too strong."
+    ],
+    "wrong": [
+      "Replace with one thing that is wrong, incomplete, or still unknown."
+    ]
+  },
+  "reader_layers": {
+    "highschool": "<h2>The Idea, Simply</h2><p>Replace with the simple version. Use concrete language. No jargon.</p><p><span class=\"ftp-claim-sentence\" data-claim-id=\"DOMAIN-C001\">Replace with the exact visible claim sentence.</span></p>",
+    "college": "<h2>The Argument</h2><p>Replace with the standard article version. Explain the reasoning and evidence.</p><p><span class=\"ftp-claim-sentence\" data-claim-id=\"DOMAIN-C001\">Replace with the exact visible claim sentence.</span></p>",
+    "phd": "<h2>The Formal Statement</h2><p>Replace with the rigorous version. State assumptions, boundary conditions, and formal dependencies.</p><p><span class=\"ftp-claim-sentence\" data-claim-id=\"DOMAIN-C001\">Replace with the exact visible claim sentence.</span></p>"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "source_id": "version_manager",
+  "title": "version_manager.ipynb",
+  "canonical_node": {
+    "axiom": "Reproducibility is the standard of proof; a result that cannot be reproduced is not a result.",
+    "definitions": [
+      "Checksum: SHA256 hash of notebook source code, cell outputs, and result JSON files.",
+      "Canonical run: the archived run with seed 2828 on 2026-03-26, producing the master checksum.",
+      "Master checksum: the fingerprint of the entire proof state, stored in version_manager.ipynb and printed at each run.",
+      "Drift: any change in checksums compared to the canonical run."
+    ],
+    "derivation": [
+      "Each notebook's source, outputs, and result JSONs are hashed with SHA256.",
+      "A master checksum is computed from the canonical run and stored.",
+      "Subsequent runs compute fresh checksums and compare to the canonical master checksum.",
+      "If any checksum differs, drift is detected and the check fails with a list of changed files.",
+      "Environment versions (JAX, Python, NumPy, SymPy, Colab) are logged to enable environment reproduction."
+    ],
+    "action": "Compute SHA256 checksums for all notebooks and result files, compare against the canonical master checksum, and report any drift or mismatch.",
+    "boundary": [
+      "Does not verify the correctness of the physics or mathematics; only verifies that code and outputs are unchanged.",
+      "Does not guarantee that the same checksum implies the same results if the environment changes in ways not captured by the logged versions.",
+      "Does not provide a mechanism for updating the canonical checksum when intentional changes are made."
+    ],
+    "test": [
+      "Run the version_manager notebook and confirm it prints the master checksum matching the canonical value.",
+      "Modify a notebook source or output and rerun; the drift detection should fail and list the changed file.",
+      "Check that environment logging records the expected versions for JAX, Python, NumPy, SymPy, and Colab."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "All notebooks in the Theophysics suite (source code and outputs)",
+      "Result JSON files",
+      "Software environment (JAX, Python, NumPy, SymPy, Colab)"
+    ],
+    "dg2_new_capability": "Provides verifiable reproducibility by computing and comparing SHA256 checksums against a canonical master checksum, enabling drift detection.",
+    "dg3_preserved_floor": "Preserves the ability to verify that the exact proof state has not changed since the canonical run.",
+    "dg4_collapse_if_removed": "Without version_manager, reproducibility becomes an unverifiable claim; there is no automated way to detect modifications to the proof suite.",
+    "dg5_translation_registers": [
+      "SHA256 checksum",
+      "Master checksum",
+      "Version tag (theophysics-v1.0.0)",
+      "Seed 2828",
+      "Date 2026-03-26"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "infrastructure",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that reproducibility is 'essential' and 'the standard of proof' may overstate the role of version control in establishing scientific validity.",
+      "The document implies that matching checksums proves the same proof state, but checksums only cover code and outputs, not the full environment or interpretation.",
+      "The phrase 'last line of defense' may imply stronger protection than actually provided."
+    ],
+    "kill_conditions": [
+      "If the canonical master checksum is not stored or is lost, the entire verification mechanism fails.",
+      "If the environment logging is incomplete, checksum matching may not guarantee reproducibility.",
+      "If any notebook is modified without updating the canonical checksum, the system will falsely report drift."
+    ],
+    "lean_target": "Implement a Lean function that computes SHA256 hashes of files and compares them to a stored canonical hash, returning a boolean for drift detection."
+  },
+  "plain_summary": "version_manager.ipynb is a reproducibility certification notebook that computes SHA256 checksums of all notebooks and result files, compares them to a canonical master checksum, and flags any drift. It also logs environment versions. It is infrastructure for verifying that the proof state has not changed, but it does not validate the physics or mathematics itself.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\version_manager.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\version_manager.canonical-node.json"
+  }
+}

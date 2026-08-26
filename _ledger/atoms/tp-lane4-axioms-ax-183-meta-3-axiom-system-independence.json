@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-183-meta-3-axiom-system-independence",
+  "atom_uid": "sha256:9bc257df9e5d2f50b71e4b1c4fd3877d48dc7808bc9896d5e31d712f5a2aba25",
+  "title": "AX-183 — META-3 - Axiom System Independence",
+  "claim": "Axiom System Independence: The primitive axioms are mutually independent - no primitive can be derived from the others. The 188 axioms decompose into primitives and derivatives. The primitive set is minimal and irreducible.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "theorem",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "ontology_family": "13-systems-control",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "—"
+  ],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [
+    "### DC-1: Primitive Derivability",
+    "### DC-2: Missing Primitive",
+    "### DC-3: Redundant Non-Primitive",
+    "### DC-4: Over-Minimalizing"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-183-meta-3-axiom-system-independence.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-183-meta-3-axiom-system-independence.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:de1a257f8c62f2561f609530806c3f9e6881478b7e8b07cbdf5d8d9866cfc0ef",
+      "event_uuid": "ded8b5d4-e9ed-54b9-9da9-2977216b6952"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'theorem'. Ontology: 13-systems-control.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:29437d92611daa0e0f404969d4e7ba6c9eb64fa69f538e001cbf8f5d7a9c5308",
+      "event_uuid": "f60fcd42-bc46-54c8-a88f-abd6a75ce662"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/META-3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-183",
+  "original_node_id": "tp:axioms/01/AX-183",
+  "atom_uuid": "34407996-3c97-58dd-963a-f1c3de049c01"
+}

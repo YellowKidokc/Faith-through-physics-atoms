@@ -1,0 +1,75 @@
+{
+  "source_id": "test3_pt_validation",
+  "title": "test3_pt_validation.ipynb",
+  "canonical_node": {
+    "axiom": "A result is validated only if it survives cross-validation, permutation testing, alternative metrics, and sensitivity analysis.",
+    "definitions": [
+      "Cross-validation: splitting the 10 eras into training and test subsets and verifying correlation holds in both.",
+      "Permutation test: shuffling era labels 10,000 times to build an empirical null distribution.",
+      "Alternative metrics: using zlib compression ratio, gzip compression ratio, and raw entropy estimate as proxies for complexity.",
+      "Sensitivity analysis: removing each era one at a time and recomputing the correlation."
+    ],
+    "derivation": [
+      "The primary test (Test 03) reports Spearman  = 1.0 with analytical p = 6.65  10.",
+      "Cross-validation: both splits maintain high positive correlation; no reversal.",
+      "Permutation test: 0 out of 10,000 shuffles produce   1.0; empirical p < 10.",
+      "Alternative metrics: all three compression proxies show the same monotonic pattern.",
+      "Sensitivity: leave-one-out yields   0.97 for all 9-era subsets."
+    ],
+    "action": "Apply these four validation techniques to any strong result before declaring it robust.",
+    "boundary": [
+      "Does not establish the truth of the underlying hypothesis; only checks statistical robustness.",
+      "Does not claim the result is causal or that the complexity pattern is divinely ordained.",
+      "Does not extend beyond the specific dataset of 10 biblical eras."
+    ],
+    "test": [
+      "Check that cross-validation splits maintain positive correlation.",
+      "Check that permutation test yields zero successes in 10,000 trials.",
+      "Check that all three compression proxies show monotonic pattern.",
+      "Check that leave-one-out   0.97 for all removals."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "test03_pt_biblical_complexity.ipynb (primary measurement)",
+      "Dataset of 10 biblical eras with complexity measurements"
+    ],
+    "dg2_new_capability": "Provides a validation protocol that can be applied to any strong statistical result to rule out artifacts.",
+    "dg3_preserved_floor": "Preserves the primary result's statistical significance while adding robustness evidence.",
+    "dg4_collapse_if_removed": "Without this validation, the primary result remains statistically significant but lacks robustness evidence; the claim of a 'validated result' collapses.",
+    "dg5_translation_registers": [
+      "Statistical validation",
+      "Robustness checking",
+      "Empirical p-value"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "validation protocol",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "preserve as a validation protocol node"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims the result is 'a finding' after validation, which may overstate the theological significance.",
+      "The permutation test's empirical p-value is reported as < 10, but the exact precision is limited by 10,000 trials.",
+      "The validation does not rule out all possible artifacts, only those tested."
+    ],
+    "kill_conditions": [
+      "If the primary test's data or methodology is found to be flawed, the validation cannot rescue it.",
+      "If the validation code is not reproducible or contains errors.",
+      "If the complexity proxies are not independent of the primary metric."
+    ],
+    "lean_target": "A robust statistical validation protocol for strong results."
+  },
+  "plain_summary": "This document describes a validation notebook for Test 03, which measures biblical complexity. It applies cross-validation, permutation testing, alternative metrics, and sensitivity analysis to confirm that the observed perfect correlation ( = 1.0) is robust. The validation passes all checks, but it does not establish the underlying theological claim; it only supports the statistical robustness of the measurement.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test3_pt_validation.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test3_pt_validation.canonical-node.json"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "source_id": "7Q_FORWARD_CLASSIFIER",
+  "title": "The 7 Questions  -  Universal Classifier (Forward) v2.0",
+  "canonical_node": {
+    "axiom": "Every scientific object must be classified by seven ordered questions: identity, domain, claim, evidence, dependency, consequence, and falsification.",
+    "definitions": [
+      "Q1 Identity: What the object is, its stability, authorship, and mathematical content.",
+      "Q2 Domain: The scientific or framework domain, subdomain, scale, regime, and cross-domain mappings.",
+      "Q3 Claim: The precise assertion, claim type, strength, and framework-specific predictions.",
+      "Q4 Evidence: The supporting evidence types, independence, replication status, and experimental data.",
+      "Q5 Dependency: The upstream axioms, laws, definitions, and assumptions required.",
+      "Q6 Consequence: The downstream implications, predictions, and forced framework elements.",
+      "Q7 Falsification: The conditions that would kill the object, collapse severity, and debate status."
+    ],
+    "derivation": [
+      "The classifier is a procedural template, not a derived theorem.",
+      "It organizes existing classification practices into a fixed seven-question sequence.",
+      "The reverse flow (Q7 to Q1) is presented as a proof strategy but is not formally derived.",
+      "No mathematical derivation is provided for the classifier itself."
+    ],
+    "action": "Apply the seven questions in order to any scientific object to classify it, and optionally use the reverse flow for proof attempts.",
+    "boundary": [
+      "Does not itself classify any specific object.",
+      "Does not provide evidence for any scientific claim.",
+      "Does not establish the truth of any framework-specific assertion.",
+      "Does not define the content of the Ten Laws or Master Equation variables beyond naming them."
+    ],
+    "test": [
+      "Check that all seven questions are answered for a given object.",
+      "Verify that the classification fields match the object's properties.",
+      "Ensure that Q7 (falsification) is always specified for any object classified."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "None explicitly required; the classifier is a meta-template."
+    ],
+    "dg2_new_capability": "Provides a standardized, universal classification schema for any scientific object, including fields for evidence, dependencies, and falsification.",
+    "dg3_preserved_floor": "Preserves the ability to describe any object's identity, domain, claim, evidence, dependencies, consequences, and falsification conditions.",
+    "dg4_collapse_if_removed": "Without this classifier, objects lack a consistent classification structure, but the underlying objects and their properties remain unaffected.",
+    "dg5_translation_registers": [
+      "Q1 Identity -> entity_type, status, origin",
+      "Q2 Domain -> domain, subdomain, scale, regime",
+      "Q3 Claim -> claim_type, certainty_type, mathematical_form",
+      "Q4 Evidence -> evidence_type, independent_lines, experimental_data",
+      "Q5 Dependency -> depends_on, axiom_dependencies, derivation",
+      "Q6 Consequence -> enables, implies, predicts",
+      "Q7 Falsification -> falsification, kill_conditions, collapse_scope"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural_template",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "adopt_as_template"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The classifier is presented as 'universal' but is not proven to cover all possible scientific objects.",
+      "The reverse flow is labeled as a proof method but is not a formal proof technique.",
+      "The template includes fields for framework-specific concepts (e.g., Master Equation) that may not apply to all domains."
+    ],
+    "kill_conditions": [
+      "If a scientific object cannot be classified using the seven questions, the classifier's universality is falsified.",
+      "If the reverse flow is shown to produce false proofs, its validity as a proof strategy is undermined."
+    ],
+    "lean_target": "Formalize the classifier as a schema and validate its applicability across diverse scientific domains."
+  },
+  "plain_summary": "This document defines a universal classifier for scientific objects, consisting of seven ordered questions covering identity, domain, claim, evidence, dependency, consequence, and falsification. It provides a detailed YAML schema for each question and describes both forward (classification) and reverse (proof) flows. The classifier is a procedural template, not a scientific claim itself, and its universality is asserted but not formally proven.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\7Q_FORWARD_CLASSIFIER.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\7Q_FORWARD_CLASSIFIER.canonical-node.json"
+  }
+}

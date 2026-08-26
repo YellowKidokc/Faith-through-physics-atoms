@@ -1,0 +1,13 @@
+[
+ {"nodeID":"UC-01","claimID":"UC-01","nodeType":"claim","label":"C","status":"conditional",
+  "kill":["wrapper requires replacing a native equation","socket grades fail re-audit","random-order control passes"],
+  "name":"boundary wrapper claim",
+  "edges":[{"type":"dependsOn","target":"trial-stack","grade":"structural_analogy","propagates":false}]},
+ {"nodeID":"DP-04","nodeType":"definition","label":"D","status":"active","name":"wrapper pill","edges":[]},
+ {"nodeID":"BAD-01","nodeType":"claim","claimID":"BAD-01","label":"E","status":"active",
+  "name":"overclaim plant","summary":"Shannon entropy proves the Bible is divine code","kill":["x"]},
+ {"nodeID":"BAD-02","nodeType":"claim","claimID":"BAD-02","label":"C","status":"active",
+  "name":"unarmed claim (no kill conditions)","edges":[]},
+ {"nodeID":"BAD-03","nodeType":"evidence","label":"E","status":"active","name":"ungraded edge plant",
+  "edges":[{"type":"supports","target":"UC-01","grade":"vibes"}]}
+]

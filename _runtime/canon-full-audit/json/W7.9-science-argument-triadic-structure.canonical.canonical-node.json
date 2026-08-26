@@ -1,0 +1,108 @@
+{
+  "source_id": "W7.9-science-argument-triadic-structure.canonical",
+  "title": "The Science Argument for Triadic Structure",
+  "canonical_node": {
+    "axiom": "Stable scientific explanation repeatedly requires three irreducible roles: something that is, something that mediates or transforms, and something that stabilizes, records, constrains, or witnesses the result.",
+    "definitions": [
+      "Triad: a set of three roles that are irreducible, functionally dependent, mediated, asymmetric, and formally visible.",
+      "Irreducible roles: each part performs a different job that cannot be collapsed into another.",
+      "Functional dependence: removing one role causes the explanation to fail.",
+      "Mediation: the third term mediates, constrains, records, stabilizes, or makes the relation intelligible.",
+      "Asymmetry: the three roles are not interchangeable.",
+      "Formal visibility: the triad appears in an equation, model, theorem, or experimental protocol.",
+      "L1 Physics: equations, models, experiments, measurements, invariants, dynamics.",
+      "L2 Information: signal, channel, record, error correction, distinguishability, recoverability.",
+      "L3 Consciousness: personhood, moral agency, subjective witness.",
+      "L4 Theology: God, Trinity, revelation, incarnation, grace, sin, salvation."
+    ],
+    "derivation": [
+      "Physical science does not explain stable reality through isolated objects alone.",
+      "Two-term explanations often describe opposition or exchange but do not by themselves explain public stability, measurement, conservation, correction, or record.",
+      "In many mature frameworks, the missing role is a third term: boundary, channel, environment, invariant, measurement context, record, connection, controller, syndrome, or coupling.",
+      "That third term frequently performs the same class of work: it mediates, stabilizes, selects, preserves, compares, or makes the relation public.",
+      "Therefore, triadic grammar is a recurring architecture inside scientific explanation itself.",
+      "The bridge question is not whether science proves the Trinity. It does not.",
+      "The bridge question is why reality is so often intelligible through irreducible three-role structures."
+    ],
+    "action": "The system should treat triadic structure as a recurring explanatory pattern in science, not as proof of theological claims. It should identify and grade scientific triads according to the strength criteria, and avoid overstating the bridge to theology.",
+    "boundary": [
+      "Does not prove the Trinity or any theological doctrine.",
+      "Does not claim all science reduces to the number three.",
+      "Does not map every scientific triad to Father/Son/Spirit.",
+      "Does not treat interpretation-dependent quantum claims as settled physics.",
+      "Does not ignore non-triadic structures that are equally fundamental."
+    ],
+    "test": [
+      "Check that each triad has irreducible roles, functional dependence, mediation, asymmetry, and formal visibility.",
+      "Check that removing the third role changes the scientific explanation.",
+      "Check that the document does not say 'physics proves the Trinity'.",
+      "Check that the strongest hostile objection is addressed: the claim is not that all science is triadic, but that stable explanation often needs a third role.",
+      "Check that the kill conditions are not triggered: examples are not merely lists of three, third term cannot be removed, no bridge language claiming proof, non-triadic structures are acknowledged, interpretation-dependent claims are not treated as settled."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Shannon communication theory",
+      "Quantum measurement theory (Born Rule)",
+      "Decoherence and einselection (Zurek)",
+      "Quantum Darwinism",
+      "Open quantum systems (Lindblad, etc.)",
+      "Noether's theorem",
+      "Gauge theory",
+      "CPT symmetry",
+      "Thermodynamics",
+      "Landauer's principle",
+      "Feedback control theory",
+      "Error correction (classical and quantum)",
+      "Variational principle",
+      "General relativity",
+      "Standard Model",
+      "Symmetry breaking",
+      "Phase transitions",
+      "Relational quantum mechanics",
+      "Wigner's friend",
+      "Classical observation"
+    ],
+    "dg2_new_capability": "Provides a graded catalog of twenty scientific triads with explicit criteria for what counts as a real triad, and a clear boundary separating science-side claims from theological bridges.",
+    "dg3_preserved_floor": "Preserves the scientific integrity of each example by requiring formal visibility and functional dependence, and by explicitly stating that science does not prove the Trinity.",
+    "dg4_collapse_if_removed": "If the triadic structure claim is removed, the document loses its central thesis and becomes a mere list of scientific examples without a unifying explanatory pattern.",
+    "dg5_translation_registers": [
+      "Physics: equations, models, experiments, measurements, invariants, dynamics.",
+      "Information: signal, channel, record, error correction, distinguishability, recoverability.",
+      "Theology: God, Trinity, revelation, incarnation, grace, sin, salvation (explicitly not proven)."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Scientific pattern claim with explicit boundary to theology",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Retain as a graded scientific pattern claim; do not upgrade to proof of theological claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting the triadic pattern as proof of the Trinity.",
+      "Treating all scientific triads as equally strong or as direct analogies to theological persons.",
+      "Ignoring non-triadic structures that are equally fundamental.",
+      "Treating interpretation-dependent quantum claims (e.g., relational QM, Wigner's friend) as settled physics."
+    ],
+    "kill_conditions": [
+      "The examples are merely lists of three without functional irreducibility.",
+      "The third term can be removed without changing the scientific explanation.",
+      "The bridge language starts saying physics proves theology.",
+      "Better formulations show these domains are not triadic in any meaningful sense.",
+      "The document ignores non-triadic structures that are equally fundamental.",
+      "The document treats interpretation-dependent quantum claims as settled physics."
+    ],
+    "lean_target": "A formalization of the triadic pattern as a recurring explanatory structure in physics and information theory, with explicit grading and boundaries, without theological overreach."
+  },
+  "plain_summary": "This document argues that stable scientific explanation often requires three irreducible roles: something that is, something that mediates, and something that stabilizes or records. It provides twenty examples from physics and information theory, graded by strength, and explicitly states that this does not prove the Trinity. The claim is that triadic grammar is a recurring architecture in science, not a proof of theology.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W7.9-science-argument-triadic-structure.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W7.9-science-argument-triadic-structure.canonical.canonical-node.json"
+  }
+}

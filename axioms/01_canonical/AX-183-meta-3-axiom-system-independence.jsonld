@@ -1,0 +1,84 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-183",
+  "nodeID": "tp:axioms/01/AX-183",
+  "claimID": "tp:AXIOMS/META-3",
+  "name": "META-3 - Axiom System Independence",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "theorem",
+  "statementTechnical": "Axiom System Independence: The primitive axioms are mutually independent - no primitive can be derived from the others. The 188 axioms decompose into primitives and derivatives. The primitive set is minimal and irreducible.",
+  "statementPlain": "Axiom System Independence: The primitive axioms are mutually independent - no primitive can be derived from the others. The 188 axioms decompose into primitives and derivatives. The primitive set is minimal and irreducible.",
+  "mathematicalForm": "—",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [],
+  "tags": [
+    "proof"
+  ],
+  "keywords": [
+    "META-3",
+    "—",
+    "meta-logic; foundations; proof-theory",
+    "MetaClaim"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "### DC-1: Primitive Derivability. ### DC-2: Missing Primitive. ### DC-3: Redundant Non-Primitive. ### DC-4: Over-Minimalizing.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 185
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-183",
+    "oldID": "META-3",
+    "treeLevel": "—",
+    "treeBranch": "—",
+    "questionType": "—",
+    "domain": "meta-logic; foundations; proof-theory",
+    "tier": "—",
+    "newType": "MetaClaim",
+    "logicalForce": "meta-audit target",
+    "formalizableInLean": "partly",
+    "leanKind": "meta-audit target, not assumed",
+    "riskLevel": "high",
+    "kernelRole": "auditRole",
+    "moduleID": "M24",
+    "moduleTitle": "Meta / Closure",
+    "spineRole": "meta_audit",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "TBD",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

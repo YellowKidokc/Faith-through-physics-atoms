@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-124",
+  "nodeID": "tp:axioms/01/AX-124",
+  "claimID": "tp:AXIOMS/OPEN17.1",
+  "name": "AI Moral Status Question",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "prediction",
+  "statementTechnical": "If AI achieves Φ ≥ Φ_threshold, what is its moral status?",
+  "statementPlain": "If AI achieves Φ ≥ Φ_threshold, what is its moral status?",
+  "mathematicalForm": "Open question: moral_status(AI if Φ ≥ Φ_threshold) = ?",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-123",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-088",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "logos",
+    "moral-conservation"
+  ],
+  "keywords": [
+    "OPEN17.1",
+    "Q10",
+    "Human",
+    "OpenProblem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "This is already an open question — not a claim to falsify.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 126
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-124",
+    "oldID": "OPEN17.1",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-U (AI moral status — open question)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Human",
+    "tier": "3",
+    "newType": "OpenProblem",
+    "logicalForce": "meta-audit target",
+    "formalizableInLean": "yes",
+    "leanKind": "sorry target / TODO",
+    "riskLevel": "medium-high",
+    "kernelRole": "auditRole",
+    "moduleID": "M17",
+    "moduleTitle": "AI Consciousness",
+    "spineRole": "meta_audit",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic — AI moral agency)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "Open question — deliberately unresolved.",
+    "intendedStatus": "captured",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "source_id": "Resurrection",
+  "title": "Irreversible Coupling-Architecture Modification in Dual-Substrate Systems: Spontaneous Symmetry Breaking, Vacuum Stabilization, and the Structural Necessity of a Finite Localization Window",
+  "canonical_node": {
+    "axiom": "A dual-substrate system with a fundamental high-symmetry substrate and a derivative broken-symmetry substrate can undergo irreversible coupling-architecture modification via spontaneous symmetry breaking and vacuum stabilization, without altering the internal physics of either substrate.",
+    "definitions": [
+      "Coupling architecture: the set of interaction channels, coupling constants, selection rules, and conservation laws between two subsystems.",
+      "Locking threshold (_lock): the minimum duration a broken-symmetry state must persist to become irreversible.",
+      "Fundamental substrate (_F): high-symmetry, temporally unbounded substrate.",
+      "Derivative substrate (_D): broken-symmetry, temporally bounded substrate.",
+      "Coupling-domain observable: a measurable quantity that is a function of the coupling architecture C rather than of _D internal physics."
+    ],
+    "derivation": [
+      "Spontaneous symmetry breaking in _F can occur via localization into _D.",
+      "If the localized state persists for duration t  _lock, the symmetry break becomes irreversible (Property 1).",
+      "The broken-symmetry vacuum remembers the break (Property 2) and permits new physics (Property 3).",
+      "Coupling-architecture modification is distinct from substrate modification and is invisible to probes confined to one substrate.",
+      "The theological sequence (Incarnation, Crucifixion, Resurrection, Pentecost) maps operation-by-operation to the physical sequence: SSB with VEV acquisition, latent energy release, vacuum confirmation, phase-front propagation.",
+      "The model generates four falsifiable predictions and identifies open proof obligations."
+    ],
+    "action": "Treat the model as a candidate structural correspondence, not a proven isomorphism. Test its falsifiable predictions and pursue the open proof obligations (categorical construction, _lock derivation, coupling-domain observables).",
+    "boundary": [
+      "Does not claim physics proves the Resurrection occurred.",
+      "Does not claim _F is God; only structural correspondence.",
+      "Does not explain why the symmetry-breaking event occurred.",
+      "Does not claim the dual-substrate framework is established physics; it is speculative extension."
+    ],
+    "test": [
+      "Prediction 1: Coherence signatures in collective human systems during the locking period.",
+      "Prediction 2: A specific peak location in coherence measurements.",
+      "Prediction 3: _lock (33 years) should be derivable from first principles.",
+      "Prediction 4: The modification is invisible to electromagnetic observation."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Standard spontaneous symmetry breaking formalism (Goldstone, Higgs, Nambu).",
+      "Gdel's Incompleteness Theorems and Tarski's Undefinability Theorem (as constraints).",
+      "Category theory (Eilenberg & Mac Lane) for isomorphism claims.",
+      "Historical-theological source data (Scripture, tradition)."
+    ],
+    "dg2_new_capability": "Provides a structural model that maps a specific theological sequence to known physical mechanisms, generating falsifiable predictions and identifying open proof obligations.",
+    "dg3_preserved_floor": "Preserves the standard physics of SSB and vacuum stabilization; does not alter internal physics of either substrate.",
+    "dg4_collapse_if_removed": "If the dual-substrate framework or the mapping is removed, the model reduces to a theological narrative with no physical content.",
+    "dg5_translation_registers": [
+      "Physics: SSB, vacuum stabilization, coupling architecture, energy conservation.",
+      "Theology: Incarnation, Crucifixion, Resurrection, Pentecost.",
+      "Mathematics: Category theory, Gdel/Tarski."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "structural correspondence",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine as speculative research draft; require explicit categorical proof and _lock derivation before further integration."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims of 'no new physics' may overstate the speculative nature of the dual-substrate framework.",
+      "Theological identification may be seen as imposed rather than emergent.",
+      "The 33-year _lock is a free parameter, not derived.",
+      "The model's predictions are vague and not yet operationalized."
+    ],
+    "kill_conditions": [
+      "If _lock cannot be derived from first principles.",
+      "If the categorical construction fails to preserve operations.",
+      "If coupling-domain observables cannot be formally defined or measured.",
+      "If the model is shown to be unfalsifiable."
+    ],
+    "lean_target": "Reduce to a minimal structural correspondence hypothesis with explicit open problems; avoid any claim of proof."
+  },
+  "plain_summary": "This document proposes a speculative model where the Incarnation, Crucifixion, Resurrection, and Pentecost correspond to spontaneous symmetry breaking, vacuum stabilization, energy release, and phase transition in a dual-substrate system. It explicitly states that the correspondence is not proven and lists open problems. The model is internally coherent but not established; it should be treated as a research draft with significant open proof obligations.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Resurrection.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Resurrection.canonical-node.json"
+  }
+}

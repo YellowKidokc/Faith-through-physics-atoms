@@ -1,0 +1,80 @@
+{
+  "source_id": "INVENTORY__2",
+  "title": "Inventory of Lean Surface",
+  "canonical_node": {
+    "axiom": "The inventory file is a reader-facing map of the current Lean surface, listing core files, theorem families, integrity markers, and the strong-law mechanism layer.",
+    "definitions": [
+      "Core files: Lean files containing theorem spines, integration layers, adversarial tests, coherence, fracture, fall, chi evaluator, Maxwell/Trinity, delayed-choice, and God-test formal layers.",
+      "Major theorem families: collections of theorems addressing coupling, chi product, signature discipline, field-control gates, coherence, entropy, restoration, fracture, fall, grace-floor, chi evaluator, pressure-gradient, fruit, Maxwell/Trinity, delayed-choice, God-marker, and adversarial rejection.",
+      "Integrity markers: compact checkpoint theorems that, if they compile, indicate a bundle of key definitions and theorem dependencies still holds together.",
+      "Strong-law mechanism layer: a file closing GAP-01 at the mechanism-gate level for Laws 1, 2, 9, and 10, adding GGate, MGate, FGate, CGate."
+    ],
+    "derivation": [
+      "The inventory lists core files and their roles.",
+      "It enumerates major theorem families.",
+      "It identifies integrity markers as compact checkpoints.",
+      "It describes the strong-law mechanism layer and its gates.",
+      "It concludes that the inventory is a map, not a proof artifact."
+    ],
+    "action": "The system should treat this inventory as a navigational index for the Lean surface, using it to locate files, theorem families, and markers, but not as a source of new theorems or proofs.",
+    "boundary": [
+      "This document does not contain formal proofs or theorem statements.",
+      "It does not establish any mathematical or theological claim.",
+      "It does not define the semantics of the gates or markers beyond naming them.",
+      "It does not provide verification results or compilation status."
+    ],
+    "test": [
+      "Check that each listed file exists and corresponds to the described role.",
+      "Check that each named marker theorem is present in the corresponding file.",
+      "Check that the listed theorem families are represented in the files.",
+      "Check that the strong-law mechanism layer file exists and contains the named gates and marker."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The listed Lean files (Final_Lean4_From_Excel.lean, Theophysics_Core.lean, etc.)",
+      "The named marker theorems (core_pipeline_marker, chi_evaluator_marker, etc.)",
+      "The strong-law mechanism file (Theophysics_LawMechanisms.lean)"
+    ],
+    "dg2_new_capability": "Provides a reader-facing map of the Lean surface, enabling navigation and orientation but adding no new formal capability.",
+    "dg3_preserved_floor": "Preserves the existing Lean surface by documenting it without modification.",
+    "dg4_collapse_if_removed": "If removed, readers lose a convenient index but the Lean files and theorems remain unaffected.",
+    "dg5_translation_registers": [
+      "Inventory",
+      "Lean surface",
+      "Core files",
+      "Theorem families",
+      "Integrity markers",
+      "Strong-law mechanism layer"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "descriptive inventory",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "index"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the inventory as a proof of the listed theorems' validity.",
+      "Assuming the listed files compile or are correct.",
+      "Interpreting the inventory as a formal specification of the gates or markers."
+    ],
+    "kill_conditions": [
+      "If any listed file does not exist or does not match its described role.",
+      "If any named marker theorem is absent from its file.",
+      "If the inventory is used as a substitute for formal verification."
+    ],
+    "lean_target": "The inventory itself is not a Lean target; it is a documentation file. The Lean targets are the listed files and markers."
+  },
+  "plain_summary": "This document is an inventory of the Lean formalization surface, listing core files, theorem families, integrity markers, and a strong-law mechanism layer. It is a navigational map, not a proof artifact, and should be treated as such.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\INVENTORY__2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\INVENTORY__2.canonical-node.json"
+  }
+}

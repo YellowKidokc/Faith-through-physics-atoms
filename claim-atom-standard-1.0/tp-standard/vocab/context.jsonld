@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "tp": "https://faiththruphysics.com/vocab/",
+
+    "Claim": "schema:Claim",
+    "ScholarlyArticle": "schema:ScholarlyArticle",
+    "name": "schema:name",
+    "author": "schema:author",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+    "url": "schema:url",
+    "version": "schema:version",
+    "isPartOf": "schema:isPartOf",
+
+    "claimID":            {"@id": "tp:claimID"},
+    "statementTechnical": {"@id": "tp:statementTechnical"},
+    "statementPlain":     {"@id": "tp:statementPlain"},
+    "domainType":         {"@id": "tp:domainType"},
+    "claimClass":         {"@id": "tp:claimClass"},
+    "axiomRoot":          {"@id": "tp:axiomRoot", "@type": "@id"},
+    "dependsOn":          {"@id": "tp:dependsOn", "@type": "@id", "@container": "@set"},
+    "evidenceType":       {"@id": "tp:evidenceType"},
+    "falsificationCondition": {"@id": "tp:falsificationCondition"},
+    "verificationStatus": {"@id": "tp:verificationStatus"},
+    "verificationSystem": {"@id": "tp:verificationSystem"},
+    "kernelChecked":      {"@id": "tp:kernelChecked", "@type": "http://www.w3.org/2001/XMLSchema#boolean"},
+    "challengeStatus":    {"@id": "tp:challengeStatus"},
+
+    "expands":    {"@id": "tp:expands",    "@type": "@id"},
+    "forksFrom":  {"@id": "tp:forksFrom",  "@type": "@id"},
+    "bridgesTo":  {"@id": "tp:bridgesTo",  "@type": "@id"},
+    "challenges": {"@id": "tp:challenges", "@type": "@id"},
+
+    "bridgeGrade": {"@id": "tp:bridgeGrade"},
+    "isomorphismConstrains": {"@id": "tp:isomorphismConstrains", "@container": "@set"},
+
+    "aiContributionDeclared": {"@id": "tp:aiContributionDeclared", "@type": "http://www.w3.org/2001/XMLSchema#boolean"},
+    "dataLineage": {"@id": "tp:dataLineage"}
+  },
+  "tp:meta": {
+    "standard": "claim-atom/1.0",
+    "maintainer": "Theophysics Research Initiative (POF 2828)",
+    "published": "2026-07-22",
+    "enums": {
+      "claimClass": ["floor-axiom", "definition", "theorem", "bridge", "empirical-anchor", "prediction", "boundary"],
+      "domainType": ["physics", "theology", "mathematics", "information", "consciousness", "psychology", "history"],
+      "verificationStatus": ["machine-verified", "informal", "falsified"],
+      "challengeStatus": ["unchallenged", "challenged-open", "challenged-survived", "falsified", "upstream-falsified"],
+      "bridgeGrade": ["structural_identity", "structural_isomorphism", "structural_analogy", "metaphorical", "independent"],
+      "evidenceType": ["formal-derivation", "empirical-correlation", "formal-derivation + empirical-correlation", "definitional", "scriptural-attestation"]
+    },
+    "edge_rules": {
+      "human_choices": ["build-on", "dispute"],
+      "auto_classification": "build-on: same domainType as parent = expands; different domainType = bridgesTo. dispute: targets falsificationCondition = challenges; otherwise = forksFrom.",
+      "propagation": "verificationStatus=falsified on any node sets challengeStatus=upstream-falsified on all nodes reachable via dependsOn edges. Bridge edges graded structural_identity or structural_isomorphism propagate across domains; structural_analogy and below do not."
+    }
+  }
+}

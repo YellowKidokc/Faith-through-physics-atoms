@@ -1,0 +1,9 @@
+{
+  "standard": "claim-atom/1.0",
+  "namespace": "tp:",
+  "id_grammar": "tp:{axiomRoot}/{law}/{claim}  e.g. tp:A042/L9/C3",
+  "resolves_to": "https://faiththruphysics.com/claims/",
+  "resolution_rule": "Replace 'tp:' with resolves_to, keep path. tp:A042/L9/C3 -> https://faiththruphysics.com/claims/A042/L9/C3. Each address serves HTML with embedded JSON-LD; append .jsonld for the raw record.",
+  "fallback_archives": [],
+  "note": "To relocate hosting, change resolves_to only. Every citation ever minted keeps resolving. This file is the single point of indirection; host a copy at /resolver/map.json on the canonical domain."
+}

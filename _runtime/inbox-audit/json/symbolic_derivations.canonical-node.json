@@ -1,0 +1,78 @@
+{
+  "source_id": "symbolic_derivations",
+  "title": "symbolic_derivations.ipynb",
+  "canonical_node": {
+    "axiom": "Analytical derivations using SymPy provide exact mathematical results that support the chi-field framework, including coherence ODE solutions, modified Friedmann equations, Klein-Gordon verification, and entropy-coherence relationships.",
+    "definitions": [
+      "Chi-field: a scalar field representing coherence or spiritual health.",
+      "Coherence ODE: dchi/dt = -*chi + G(t), where chi is coherence,  is decay rate, G(t) is grace injection.",
+      "Modified Friedmann equation: H = (8G/3)* / (1 - (/3)*chi).",
+      "Entropy-coherence relationship: information content I  -S, where S is entropy; coherence is negentropy.",
+      "Grace injection: external input G(t) that sustains coherence against decay."
+    ],
+    "derivation": [
+      "Derivation 1: Master equation integrand G(s)*K(s) integrated over [0, 2] confirms structural form and normalization.",
+      "Derivation 2: SymPy dsolve solves dchi/dt = -*chi + G(t) with constant G yielding chi(t) = chi*e^(-t) + (G/)*(1 - e^(-t)); steady state chi_ = G/.",
+      "Derivation 3: Modified Friedmann equation derived from chi-field coupling; perturbative expansion H  (8G/3)**[1 + (/3)*chi + O(chi)].",
+      "Derivation 4: Klein-Gordon equation ( + m_s)_s = 0 in 1+1D; plane wave solution verified symbolically; dispersion relation  = k + m_s confirmed.",
+      "Derivation 5: Entropy-coherence relationship derived: I  -S; in closed system dC/dt  0; sustainability requires lim(t->) G(t) > *C_.",
+      "Additional Derivation A: Coherence ODE with exponential grace G(t) = G*e^(-t/) solved exactly, yielding rise-then-fall trajectory with computable peak."
+    ],
+    "action": "Use these symbolic derivations as exact mathematical anchors for the chi-field framework, providing analytical solutions and verification for numerical simulations and theoretical predictions.",
+    "boundary": [
+      "Does not provide a rigorous formal derivation of the entire chi-field theory; that is in canonical_derivation.ipynb.",
+      "Does not establish physical reality of the chi-field; derivations are mathematical within the assumed framework.",
+      "Does not prove the modified Friedmann equation matches observational data; only derives the form.",
+      "Does not prove the entropy-coherence relationship applies to actual spiritual systems; it is a mathematical analogy."
+    ],
+    "test": [
+      "Numerical verification: symbolic results compared to Euler integration; e.g., chi(5) symbolic 1.14869 vs Euler 1.14843, difference < 210.",
+      "SymPy algebraic verification: Klein-Gordon solution substitution reduces to zero exactly.",
+      "Independent computation: notebook available for rerun in Colab."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "SymPy computer algebra system",
+      "canonical_derivation.ipynb (as rigorous formal derivation)",
+      "Standard physics equations (Friedmann, Klein-Gordon, thermodynamics)"
+    ],
+    "dg2_new_capability": "Provides exact analytical solutions and symbolic verifications for key equations in the chi-field framework, including coherence ODE, modified Friedmann, and entropy-coherence, enabling precise predictions and cross-checking of numerical results.",
+    "dg3_preserved_floor": "Preserves the mathematical consistency of the chi-field framework by ensuring derived equations are algebraically correct and numerically verified.",
+    "dg4_collapse_if_removed": "Without these symbolic derivations, the framework loses exact analytical support for coherence dynamics and cosmological modifications, reducing confidence in numerical simulations and theoretical predictions.",
+    "dg5_translation_registers": [
+      "Mathematics: ODE solutions, perturbative expansions, dispersion relations",
+      "Physics: Friedmann equations, Klein-Gordon equation, entropy",
+      "Theology: coherence as spiritual health, grace as external input"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "mathematical derivation",
+    "proof_label": "SYMBOLIC_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as supporting mathematical derivation"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting mathematical derivations as physical proof of chi-field existence.",
+      "Treating the modified Friedmann equation as confirmed by data when only derived.",
+      "Extending entropy-coherence analogy to theological claims without additional evidence."
+    ],
+    "kill_conditions": [
+      "If SymPy derivations are found to contain algebraic errors.",
+      "If numerical verification fails to converge to symbolic results.",
+      "If the modified Friedmann equation contradicts observational constraints beyond H tension."
+    ],
+    "lean_target": "Mathematical consistency and analytical support for the chi-field framework, without overclaiming physical reality."
+  },
+  "plain_summary": "This document presents five symbolic derivations using SymPy that support the chi-field framework: integration of the master equation, analytical solution of the coherence ODE, modified Friedmann equations, Klein-Gordon verification, and entropy-coherence relationships. All results are numerically verified. The derivations are mathematically sound but do not establish physical reality; they serve as exact mathematical anchors within the assumed framework.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\symbolic_derivations.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\symbolic_derivations.canonical-node.json"
+  }
+}

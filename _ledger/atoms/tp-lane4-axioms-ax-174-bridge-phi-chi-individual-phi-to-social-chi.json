@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-174-bridge-phi-chi-individual-phi-to-social-chi",
+  "atom_uid": "sha256:84ee2748229f28c04c926dd8690fb6c73032bd30acdcc5afc8e06e14d00612dc",
+  "title": "AX-174 — BRIDGE-PHI-CHI - Individual Phi To Social Chi",
+  "claim": "The Scale Bridge: Social Coherence is not a metaphor; it is the integrated sum of individual consciousness vectors weighted by their alignment.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "bridge",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-spiritual",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "—"
+  ],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [
+    "### DC-1: Methodological Individualism Victory",
+    "### DC-2: No Downward Causation",
+    "### DC-3: Non-Measurable Coherence",
+    "### DC-4: Compositional Independence"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-174-bridge-phi-chi-individual-phi-to-social-chi.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-174-bridge-phi-chi-individual-phi-to-social-chi.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:4fdd5575ad88ec14ff20b86c856e3c29db0e453c50a51d736caf120045c85f20",
+      "event_uuid": "f8fd9fc0-aa49-5123-8fc6-1928ad4bfb3f"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'bridge' -> 'bridge'. Ontology: bridge-spiritual.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:b644f824d8c2ad1838dfa3818a74aab34524fe3a936f9489c56c49ffdfca464a",
+      "event_uuid": "1a61c00b-8960-5aa5-a873-f1ab9a042d73"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/BRIDGE-PHI-CHI",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-174",
+  "original_node_id": "tp:axioms/01/AX-174",
+  "atom_uuid": "039c0815-5227-5051-bd5f-635135cea6ad"
+}

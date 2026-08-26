@@ -1,0 +1,80 @@
+:root {
+  --bg: #08111f;
+  --panel: #101827;
+  --panel2: #0d1524;
+  --fg: #d8e1ea;
+  --muted: #91a2b4;
+  --line: rgba(255,255,255,.12);
+  --gold: #d4af37;
+  --blue: #72c7ff;
+  --green: #36d399;
+  --red: #ff7a7a;
+  --amber: #f5c76b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+}
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 34px 22px 80px; }
+.hero { border-bottom: 1px solid var(--line); padding: 36px 0 24px; margin-bottom: 26px; }
+.kicker { font: 700 12px/1.2 Consolas, monospace; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); }
+h1 { margin: 10px 0 8px; font-size: clamp(30px, 5vw, 54px); line-height: 1.05; color: #fff; }
+h2 { margin: 34px 0 10px; color: #fff; font-size: 24px; }
+h3 { margin: 20px 0 6px; color: #fff; }
+.sub { max-width: 840px; color: var(--muted); font-size: 18px; }
+.toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0; }
+.toolbar button {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--fg);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font: 700 12px/1 Consolas, monospace;
+  text-transform: uppercase;
+}
+.toolbar button:hover { border-color: var(--blue); }
+.grid { width: 100%; border-collapse: collapse; background: var(--panel2); border: 1px solid var(--line); }
+.grid th, .grid td { border-bottom: 1px solid var(--line); padding: 14px 12px; vertical-align: top; }
+.grid th { text-align: left; color: #fff; background: rgba(255,255,255,.04); font: 700 12px/1.2 Consolas, monospace; text-transform: uppercase; letter-spacing: 1px; }
+.grid tr:hover td { background: rgba(255,255,255,.025); }
+.topic { font-weight: 700; color: #fff; }
+.cell-link { display: block; color: inherit; }
+.status { display: inline-block; font: 700 11px/1 Consolas, monospace; padding: 4px 7px; border-radius: 999px; margin-bottom: 6px; }
+.present { color: #062014; background: var(--green); }
+.partial { color: #201500; background: var(--amber); }
+.gap { color: #2a0505; background: var(--red); }
+.locked { color: #061825; background: var(--blue); }
+.note, .section, .source-trace {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 18px 0;
+}
+.section.theology { border-left: 4px solid var(--gold); }
+.section.science { border-left: 4px solid var(--blue); }
+.section.bridge { border-left: 4px solid var(--green); }
+.section.gap-section { border-left: 4px solid var(--red); }
+.register { font: 700 12px/1.2 Consolas, monospace; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+.term { color: #f6d77b; border-bottom: 1px dotted rgba(246,215,123,.55); }
+code { color: #b8f0ff; background: rgba(255,255,255,.06); padding: 2px 5px; border-radius: 4px; }
+ul { padding-left: 22px; }
+.back { font: 700 12px/1 Consolas, monospace; text-transform: uppercase; letter-spacing: 1px; }
+@media (max-width: 820px) {
+  .grid, .grid thead, .grid tbody, .grid tr, .grid th, .grid td { display: block; width: 100%; }
+  .grid thead { display: none; }
+  .grid tr { border-bottom: 2px solid var(--line); }
+  .grid td::before { display: block; font: 700 11px/1 Consolas, monospace; color: var(--muted); text-transform: uppercase; margin-bottom: 4px; }
+  .grid td:nth-child(1)::before { content: "Topic"; }
+  .grid td:nth-child(2)::before { content: "A - Theology"; }
+  .grid td:nth-child(3)::before { content: "B - Science"; }
+  .grid td:nth-child(4)::before { content: "C - Theophysics"; }
+  .grid td:nth-child(5)::before { content: "Dive"; }
+}

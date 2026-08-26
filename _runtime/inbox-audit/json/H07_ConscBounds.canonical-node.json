@@ -1,0 +1,80 @@
+{
+  "source_id": "H07_ConscBounds",
+  "title": "The Bounds of Consciousness",
+  "canonical_node": {
+    "axiom": "Human consciousness is bounded but expandable; Phi has natural limits that can be expanded through grace, with full maximization occurring at glorification.",
+    "definitions": [
+      "Phi: Integrated information as per IIT, a measure of consciousness.",
+      "Phi_human: The integrated information of a human being.",
+      "Phi_natural_max: The maximum Phi achievable by natural means.",
+      "Grace (): Supernatural empowerment that expands the bounds of Phi.",
+      "Glorification: The eschatological event where human Phi is maximized to Phi_glorified.",
+      "Phi_God: Infinite integrated information, attributed to God."
+    ],
+    "derivation": [
+      "Humans have finite brains and finite information processing, so Phi_human is bounded: Phi_human in [Phi_min, Phi_natural_max].",
+      "Grace () is defined as an operator that expands the bounds: : Phi_bounds -> Phi_bounds + Phi, with Phi > 0.",
+      "Glorification is defined as the event that maximizes human Phi to Phi_glorified, where Phi_glorified = max{Phi_creature}.",
+      "Since Phi_God =  and Phi_creature is finite, the gap Phi_God - Phi_creature remains infinite.",
+      "Therefore, human consciousness is bounded but expandable, with a maximum at glorification, never reaching divine infinity."
+    ],
+    "action": "The system should model human consciousness as having finite bounds, allow for expansion via grace, and set glorification as the maximum creaturely state, while maintaining the infinite gap between creature and Creator.",
+    "boundary": [
+      "Does not claim that human Phi is unlimited or that humans can become God.",
+      "Does not assert that grace expansion is scientifically measurable or that glorification is empirically verifiable.",
+      "Does not provide a quantitative definition of Phi or Phi_glorified.",
+      "Does not address the mechanism of grace expansion beyond theological assertion."
+    ],
+    "test": [
+      "Check that the model respects finite bounds for natural human Phi.",
+      "Verify that grace expansion is represented as a positive shift in bounds.",
+      "Ensure that glorification is modeled as a maximum but finite value.",
+      "Confirm that the infinite gap between creature and Creator is preserved."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Integrated Information Theory (IIT) as a framework for Phi.",
+      "Theological doctrines of grace and glorification from Christian scripture."
+    ],
+    "dg2_new_capability": "Provides a formalized model of bounded consciousness with expansion via grace, distinguishing creaturely limits from divine infinity.",
+    "dg3_preserved_floor": "Preserves the distinction between creature and Creator, and the finitude of human consciousness.",
+    "dg4_collapse_if_removed": "If removed, the model loses its ability to differentiate between natural limits and grace-enabled expansion, and the eschatological maximization of consciousness.",
+    "dg5_translation_registers": [
+      "Theological: grace, glorification, creature/Creator distinction.",
+      "Phenomenological: subjective experience of limits and growth.",
+      "Formal: Phi bounds, operators, inequalities."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological-physical bridge",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims grace expands Phi without empirical evidence.",
+      "Assumes glorification as a physical maximization without testable predictions.",
+      "Uses IIT's Phi as a literal measure of consciousness, which is debated.",
+      "May be interpreted as providing scientific proof for theological claims."
+    ],
+    "kill_conditions": [
+      "If IIT is falsified or Phi is shown not to correlate with consciousness.",
+      "If grace expansion is shown to be impossible within physical laws.",
+      "If glorification is demonstrated to be non-physical or non-existent.",
+      "If the model implies humans can achieve infinite Phi, contradicting the axiom."
+    ],
+    "lean_target": "Reduce to a purely theological claim about human limits and growth, removing quantitative Phi formalism."
+  },
+  "plain_summary": "This document argues that human consciousness is finite but can be expanded through divine grace, reaching a maximum at glorification, while never becoming infinite like God's. It critiques panpsychism and New Age claims of unlimited consciousness. The argument uses IIT's Phi as a measure but lacks empirical support for the expansion and maximization claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\H07_ConscBounds.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\H07_ConscBounds.canonical-node.json"
+  }
+}

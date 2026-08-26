@@ -1,0 +1,81 @@
+{
+  "source_id": "FORMAL_TO_PHYSICS_GAUNTLET_AUDIT",
+  "title": "Formal-to-Physics Gauntlet Audit",
+  "canonical_node": {
+    "axiom": "Formal verification (Lean) and numerical testing (Python/Colab) do not by themselves establish physical or theological truth; empirical validation is required to connect models to measurable reality.",
+    "definitions": [
+      "Formal proof: a derivation within a declared axiom system, not a statement about nature.",
+      "Numerical test: a check that equations behave as claimed, are numerically coherent, exhibit predicted equilibria, survive perturbation, and generate discriminating predictions.",
+      "Empirical validation: connection of the model to real measurements, datasets, rival models, and prospective predictions.",
+      "Gauntlet: a set of tests and audits that must be passed before a claim can be considered physically or theologically supported."
+    ],
+    "derivation": [
+      "Lean proves only that conclusions follow from declared axioms and definitions.",
+      "Python/Colab tests numerical behavior but does not prove physical truth.",
+      "Therefore, the stack must be stated as: Lean for formal consistency, Python/Colab for numerical behavior, empirical validation for physical connection.",
+      "The physicist's objection is valid: formal consistency does not imply correspondence to nature.",
+      "The answer is a gauntlet of tests, not rhetoric.",
+      "The document lists five kill risks and a 16-notebook minimum package to address them.",
+      "The 85-objection map groups objections into fourteen gates, each with required deliverables.",
+      "The honest status statement distinguishes what is currently established from what is needed."
+    ],
+    "action": "Implement the gauntlet: build the 16-notebook package, run the 85-objection gates, maintain the topbar manifest with honest status fields, and use the honest status statements as appropriate.",
+    "boundary": [
+      "Does not claim that Lean or Python proves physical truth.",
+      "Does not claim that the theological interpretation is proven.",
+      "Does not claim that the gauntlet is complete; many items are marked 'needed'.",
+      "Does not provide the actual notebooks or test results; it is an audit and plan."
+    ],
+    "test": [
+      "Check that the topbar manifest fields are present and accurate.",
+      "Check that the 16-notebook package is built and each notebook addresses its stated purpose.",
+      "Check that the 85-objection map is used as a test registry and each gate has a deliverable.",
+      "Check that the honest status statements are used appropriately: the first now, the second only after the gauntlet exists."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Existing Lean proof artifacts (PROOF_PACKET.md, WALKTHROUGH.md)",
+      "Existing Python test stack (MASTER_TEST_STACK.md)",
+      "Existing objection closure maps (PHYSICIST_OBJECTION_CLOSURE_MAP.md, COUPLING_BREAK_MAP.md)",
+      "Existing runtime index (runtime_dynamics_index.json)"
+    ],
+    "dg2_new_capability": "Provides a structured audit and plan for transitioning from formal/numerical claims to empirically validated physical claims, including a 16-notebook package and 85-objection gate map.",
+    "dg3_preserved_floor": "Preserves the honest distinction between formal proof, numerical testing, and empirical validation; does not overclaim physical or theological truth.",
+    "dg4_collapse_if_removed": "Without this audit, the framework risks overclaiming formal verification as physical proof, inviting valid physicist objections and undermining credibility.",
+    "dg5_translation_registers": [
+      "Lean theorem -> literal translation -> public claim -> gap table",
+      "Physics terms -> units, operational variables, scope labels",
+      "Theological mapping -> blind matching, permutation/null tests"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "methodological audit and plan",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "adopt as a planning and audit document; do not treat as proof of physical or theological claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the audit itself as evidence that the gauntlet has been passed.",
+      "Using the 'after the gauntlet exists' statement prematurely.",
+      "Ignoring the many 'needed' statuses and presenting the plan as completed work."
+    ],
+    "kill_conditions": [
+      "If the 16-notebook package is not built, the gauntlet is not satisfied.",
+      "If the 85-objection gates are not addressed, the physicist's objection remains open.",
+      "If the topbar manifest is not maintained, the honest status is lost."
+    ],
+    "lean_target": "Formalize the distinction between formal proof and physical truth, and the requirement for empirical validation."
+  },
+  "plain_summary": "This document is an audit and plan that correctly states that Lean and Python do not prove physical truth. It outlines a gauntlet of tests (16 notebooks, 85 objections) needed to move from formal/numerical claims to empirically validated physical claims. It is not itself a proof or a completed gauntlet; it is a roadmap with honest status labels.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\FORMAL_TO_PHYSICS_GAUNTLET_AUDIT.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\FORMAL_TO_PHYSICS_GAUNTLET_AUDIT.canonical-node.json"
+  }
+}

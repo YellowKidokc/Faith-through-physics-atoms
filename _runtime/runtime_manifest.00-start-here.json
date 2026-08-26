@@ -1,0 +1,220 @@
+{
+  "runtime": "theophysics-research-runtime",
+  "version": "0.1.0",
+  "generatedAt": "2026-08-01T09:17:15.531871+00:00",
+  "source": "O:\\_Theophysics_v5\\David\\Family\\The Hardest Questions\\Seven-Day Family Series\\00 - Start Here.md",
+  "oneSentence": "## Why This Exists This series is about one of the hardest questions Christians face: > [!question] The question > How do we reconcile the love, grace, mercy, and goodness of God with Old Testament commands where God appears to order the violent destruction of entire people groups?",
+  "claimIDs": [
+    "RTC-723d0bc2da81",
+    "RTC-bcafa3409bb5",
+    "RTC-e447276914ff",
+    "RTC-cb43a454ebcb",
+    "RTC-a06bcaa82a36"
+  ],
+  "claimSummary": {
+    "weak-match": 4,
+    "unmapped-candidate": 1
+  },
+  "hiddenDependencies": {
+    "status": "needs-review",
+    "missing": [
+      "payer",
+      "observer",
+      "standard"
+    ],
+    "checks": {
+      "source": {
+        "status": "named",
+        "markers": [
+          "order",
+          "grace"
+        ],
+        "question": "Where do energy, order, information, or authority enter?"
+      },
+      "payer": {
+        "status": "missing",
+        "markers": [],
+        "question": "Who bears the cost?"
+      },
+      "observer": {
+        "status": "missing",
+        "markers": [],
+        "question": "Who measures, verifies, interprets, or actualizes?"
+      },
+      "standard": {
+        "status": "missing",
+        "markers": [],
+        "question": "What defines success, goodness, truth, or the target state?"
+      },
+      "boundary": {
+        "status": "named",
+        "markers": [
+          "boundary",
+          "inside"
+        ],
+        "question": "What is inside the system, and what is outside?"
+      },
+      "scale": {
+        "status": "named",
+        "markers": [
+          "family"
+        ],
+        "question": "Is the claim local, global, individual, institutional, or cosmic?"
+      },
+      "time": {
+        "status": "named",
+        "markers": [
+          "now"
+        ],
+        "question": "Does the result hold now, later, asymptotically, or briefly?"
+      }
+    }
+  },
+  "types": {
+    "terms": [
+      {
+        "term": "grace",
+        "type": "source"
+      },
+      {
+        "term": "Christ",
+        "type": "integrator"
+      },
+      {
+        "term": "boundary",
+        "type": "boundary condition"
+      },
+      {
+        "term": "mercy",
+        "type": "value judgment"
+      }
+    ],
+    "silentTypeShiftFlags": [],
+    "status": "typecheck-pass"
+  },
+  "survivalVector": {
+    "scale": "0 absent, 1 named, 2 implemented, 3 independently tested",
+    "lowestCoordinate": "derivationDepth",
+    "dimensions": {
+      "grounding": {
+        "score": 1,
+        "meaning": "named",
+        "evidence": [
+          "0/5 claims mapped or reviewable"
+        ]
+      },
+      "typeSafety": {
+        "score": 2,
+        "meaning": "implemented",
+        "evidence": [
+          "grace",
+          "Christ",
+          "boundary",
+          "mercy"
+        ]
+      },
+      "hiddenDependencyCompleteness": {
+        "score": 1,
+        "meaning": "named",
+        "evidence": [
+          "source",
+          "boundary",
+          "scale",
+          "time"
+        ]
+      },
+      "derivationDepth": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "discriminability": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "countermodelSurvival": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "falsifiability": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "reproducibility": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "bidirectionality": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "semanticFidelity": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "failureContainment": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "provenanceIndependence": {
+        "score": 1,
+        "meaning": "named",
+        "evidence": [
+          "ai"
+        ]
+      }
+    }
+  },
+  "misuseAudit": {
+    "boundary": "Score claims, actions, and systems; do not score souls.",
+    "flags": [],
+    "checks": [
+      {
+        "risk": "score_actions_not_souls",
+        "status": "not-detected",
+        "markers": []
+      },
+      {
+        "risk": "coercive_use",
+        "status": "not-detected",
+        "markers": []
+      },
+      {
+        "risk": "victim_cost_hidden",
+        "status": "not-detected",
+        "markers": []
+      },
+      {
+        "risk": "authority_capture",
+        "status": "not-detected",
+        "markers": []
+      },
+      {
+        "risk": "insult_language",
+        "status": "not-detected",
+        "markers": []
+      }
+    ]
+  },
+  "registeredButNotRun": [
+    "Corpus.semantic_address",
+    "Ledger.cost_and_consent",
+    "BIDIRECTIONALITY",
+    "BASIS_CHALLENGE",
+    "DOMAIN_HOLDOUT",
+    "BLIND_MATCH",
+    "ASSUMPTION_SWAP",
+    "SEMANTIC_CHECKSUM",
+    "WITNESS_PANEL",
+    "PREDICTION_ESCROW",
+    "SCALE_SCAN",
+    "COUNTERMODEL"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "atom_id": "tp:lane4/derivation-grammar/method-00-bridge-discipline",
+  "atom_uid": "sha256:725c7a3cd59c13d04d7f031edb02b3e6a4ec1f6af2fdd3ef3171461f72b716e4",
+  "title": "METHOD-00 - Bridge Discipline",
+  "claim": "The Theophysics method tests structural correspondence by auditing borrowed foundations, mapping structure rather than vocabulary, modeling only what survives mapping, and verifying before rhetoric.",
+  "domain": "derivation-grammar",
+  "lane": "Method",
+  "claim_class": "method",
+  "mode_classification": "BRIDGE_DISCIPLINE",
+  "assumptions": [
+    "Cross-domain claims need a repeatable bridge discipline.",
+    "The same evidence should be evaluated under symmetric register standards."
+  ],
+  "definitions": [
+    "Audit: identify borrowed foundations.",
+    "Map: preserve roles, order, constraints, failure modes, and boundary conditions.",
+    "Model: define dynamics only after a mapping survives.",
+    "Verify: test with proof, data, adversarial review, kill conditions, and register labels."
+  ],
+  "equations": [
+    "Audit -> Map -> Model -> Verify"
+  ],
+  "bridges": [
+    "Wilsonian RG / effective field theory is a guarded bridge for the article workflow, not a claim that Theophysics is literally QFT."
+  ],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG5-Translation",
+    "DG7-Admissibility"
+  ],
+  "negative_guards": [
+    "Do not let analogy pass as proof.",
+    "Do not cite Lean without a build receipt.",
+    "Do not smuggle theology into physics-register claims.",
+    "Do not smuggle physics into theology-register claims."
+  ],
+  "kill_conditions": [
+    "Bridge claims depend on forced relabeling.",
+    "The method cannot demote favorite claims.",
+    "Physics claims exceed what physics actually says.",
+    "Theology appears inside the formal grammar layer."
+  ],
+  "proof_label": "BRIDGE_DECLARED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\METHOD-00-from-axiom-to-coherence.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\DG_V02_ATOM_SEED_BATCH_2026-08-01\\METHOD-00-Bridge-Discipline.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-08-01T04:17:55+00:00",
+      "lane": "Method",
+      "event_id": "sha256:8a176a457bf96bc1a040691f7594b589411ea8b87e7bc5b93bedf3c30b4911e6"
+    }
+  ],
+  "source_claim_id": "METHOD-00-Bridge-Discipline"
+}

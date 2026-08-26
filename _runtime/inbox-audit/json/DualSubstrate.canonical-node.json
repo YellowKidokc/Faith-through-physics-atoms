@@ -1,0 +1,74 @@
+{
+  "source_id": "DualSubstrate",
+  "title": "DualSubstrate.lean: Two irreducible modes of distinction require at least two substrates",
+  "canonical_node": {
+    "axiom": "If two modes of distinction are irreducible (distinct and support-injective), then there exist at least two distinct substrates.",
+    "definitions": [
+      "Distinction: an opaque type representing a mode of distinction.",
+      "Substrate: an opaque type representing a substrate that supports distinction.",
+      "support: a function mapping each Distinction to a Substrate.",
+      "Irreducible support: for any distinctions a and b, if a  b then support a  support b.",
+      "Single substrate: all distinctions map to the same substrate (i.e., support is constant)."
+    ],
+    "derivation": [
+      "Assume physical and informational are distinct distinctions (physical  informational).",
+      "Assume irreducible support: a  b -> support a  support b.",
+      "Let s = support physical and s = support informational.",
+      "From physical  informational and irreducible support, derive support physical  support informational.",
+      "Therefore s  s, so there exist two distinct substrates.",
+      "If additionally assume single substrate (support physical = support informational), then contradiction with support physical  support informational, yielding False."
+    ],
+    "action": "In formal reasoning, assert that any ontology with two irreducible modes of distinction must posit at least two substrates; reject monist claims that reduce one to the other.",
+    "boundary": [
+      "Does not assert that physical and informational distinctions are actually irreducible in reality.",
+      "Does not assert the existence of any specific substrates beyond the formal consequence.",
+      "Does not claim empirical or theological truth; only formal consequence from stated premises."
+    ],
+    "test": [
+      "Check that the Lean file compiles without 'sorry' and with no imports.",
+      "Verify that the theorem statement matches the formal derivation.",
+      "Confirm that the proof uses only the stated hypotheses and definitions."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "No external dependencies; self-contained Lean file."
+    ],
+    "dg2_new_capability": "Provides a formal proof that irreducible distinction implies at least two substrates, which can be used to rule out monist ontologies under that premise.",
+    "dg3_preserved_floor": "Preserves the minimal formal claim: if the premises hold, the conclusion follows; does not extend beyond that.",
+    "dg4_collapse_if_removed": "Without this node, the formal justification for dual-substrate ontology from irreducible distinction is absent; the claim would rely on informal argument.",
+    "dg5_translation_registers": [
+      "Lean theorem: dual_substrates_from_irreducible_distinctions",
+      "Lean theorem: one_substrate_denies_irreducible_duality"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal theorem",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "A",
+    "recommended_atom_action": "preserve as formal lemma; do not use as empirical evidence"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting the formal result as proof that physical and informational distinctions are actually irreducible.",
+      "Claiming that the proof establishes the existence of two physical substrates in reality.",
+      "Using the theorem to assert the existence of God or any theological claim."
+    ],
+    "kill_conditions": [
+      "If the Lean file is found to contain 'sorry' or hidden axioms.",
+      "If the theorem statement is misrepresented in downstream usage.",
+      "If the premises are assumed true without empirical support."
+    ],
+    "lean_target": "Formalize the theorem in Lean and verify it compiles; optionally extend to check consistency with additional axioms."
+  },
+  "plain_summary": "This document describes a Lean formal proof that if two modes of distinction are distinct and support-injective, then there must be at least two substrates. It is a clean, self-contained formal result, but it does not establish that physical and informational distinctions are actually irreducible in reality. The proof is rigorous within its assumptions, but those assumptions are not empirically verified here.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\DualSubstrate.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\DualSubstrate.canonical-node.json"
+  }
+}

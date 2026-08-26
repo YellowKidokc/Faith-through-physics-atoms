@@ -1,0 +1,75 @@
+{
+  "source_id": "G07_MoralNature",
+  "title": "The Moral Nature of God",
+  "canonical_node": {
+    "axiom": "Goodness is coherence-promotion; God is maximal coherence; therefore God is maximally good by nature, not by arbitrary will.",
+    "definitions": [
+      "Good(x)  C[chi | x] > 0",
+      "Evil(x)  C[chi | x] < 0",
+      "C[God] = C_max",
+      "God IS coherence"
+    ],
+    "derivation": [
+      "Goodness is defined as increasing total coherence.",
+      "God is defined as maximal coherence.",
+      "Therefore, God's nature is identical to maximal goodness.",
+      "God's commands reflect His coherent nature, so they cannot be incoherent.",
+      "Thus, goodness is neither external to God nor arbitrary."
+    ],
+    "action": "The system should treat moral evaluation as coherence impact assessment, and divine commands as necessarily coherence-preserving.",
+    "boundary": [
+      "Does not provide a complete decision procedure for all moral dilemmas.",
+      "Does not claim empirical verification of coherence metrics.",
+      "Does not address the problem of evil beyond a redirect."
+    ],
+    "test": [
+      "Check that any proposed 'good' action increases coherence in a defined model.",
+      "Check that any proposed divine command is consistent with maximal coherence.",
+      "Check that the Euthyphro resolution avoids both horns."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G6.1 (Goodness = coherence-promotion)",
+      "G6.2 (God is maximally good)",
+      "G6.3 (Good is grounded in chi)"
+    ],
+    "dg2_new_capability": "Provides a non-arbitrary grounding for divine goodness, dissolving the Euthyphro dilemma.",
+    "dg3_preserved_floor": "Preserves the moral weight of divine commands while avoiding tautology.",
+    "dg4_collapse_if_removed": "Without this, divine goodness becomes arbitrary or externally constrained, undermining the coherence of the theological framework.",
+    "dg5_translation_registers": [
+      "Theological",
+      "Ethical",
+      "Formal logic"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Theological-ethical claim with formal analogies",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine for further formalization and empirical grounding"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Equating coherence with goodness is asserted, not proven.",
+      "Claiming God IS coherence is a metaphysical leap.",
+      "The Euthyphro resolution may be a redefinition rather than a solution."
+    ],
+    "kill_conditions": [
+      "If coherence is not a well-defined measure of moral value.",
+      "If God's nature is not demonstrably identical to coherence.",
+      "If the Euthyphro dilemma is not actually dissolved."
+    ],
+    "lean_target": "Formalize coherence as a measurable quantity and test the correlation with moral intuitions."
+  },
+  "plain_summary": "This document argues that God's goodness is not arbitrary but is identical to His nature as maximal coherence. It critiques divine command theory, relativism, and voluntarism, and proposes that goodness is coherence-promotion. However, the argument relies on unproven definitions and metaphysical identifications, so it is not formally established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G07_MoralNature.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\G07_MoralNature.canonical-node.json"
+  }
+}

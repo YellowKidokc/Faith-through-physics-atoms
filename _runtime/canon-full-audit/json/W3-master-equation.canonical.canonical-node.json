@@ -1,0 +1,84 @@
+{
+  "source_id": "W3-master-equation.canonical",
+  "title": "The Master Equation",
+  "canonical_node": {
+    "axiom": "The Master Equation chi(X) = CW[ X] with  = Wchi +  is the canonical form describing alignment with truth, where W is free will and  is grace.",
+    "definitions": [
+      "chi: coherence alignment score, chi in [0,1]",
+      "X: alignment fraction on axis i, X in [0,1], dimensionless",
+      "CW: coherence wrapper, identity operator, not a factor",
+      "W: free will, acts through gradient chi",
+      ": grace, acts even at zero gradient",
+      ": channel capacity in bits/s,  = A log(1 + T/D)",
+      "X =  / _ref, reference capacity"
+    ],
+    "derivation": [
+      "The equation multiplies nine alignment factors, not adds them, to enforce the veto property: any zero factor collapses chi.",
+      "Free will is not a tenth factor; it appears in the derivative term  = Wchi + .",
+      "The wrapper CW is an identity, not a factor, to avoid self-reference.",
+      "The four axioms (Existence, Distinction, Relation, Orientation) are presupposed and grounded in the Trinity.",
+      "The equation is a meta-formalism wrapping native physical equations, not a replacement."
+    ],
+    "action": "Use the Master Equation as a meta-formalism to assess alignment with truth across nine axes, with free will and grace as dynamic drivers.",
+    "boundary": [
+      "Does not replace physics; it is a boundary-condition wrapper.",
+      "Does not prove God or derive the Trinity.",
+      "Does not make quantitative predictions (yet).",
+      "Theological identifications are bridge claims, not theorems.",
+      "Does not claim chi is the salvation variable."
+    ],
+    "test": [
+      "Machine-verified in Lean: veto_collapse, stationary_without_source, source_makes_velocity_nonzero.",
+      "Lock gates: dX/dt reproduces Law 5 decay (OPEN), dX/dt reproduces Law 9 sin (OPEN), Lean compiles core (DONE), Mathlib/ (PENDING), CW zero-preserving (DONE), gradChi connected to chi (BASE ABSTRACT ONLY), [0,1] invariance (OPEN), CW defined beyond identity (OPEN), W functional form (OPEN),  functional form (OPEN).",
+      "Kill conditions: sustained local moral improvement with no external input; justice-mercy trade-off; moral event with no invisible remainder; Shannon capacity no moral analogue; triadic coupling reproducible by non-triadic."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Four axioms: Existence, Distinction, Relation, Orientation",
+      "Trinity doctrine",
+      "Noether's theorem",
+      "Shannon information theory",
+      "Lean 4 verification"
+    ],
+    "dg2_new_capability": "Provides a unified meta-formalism for assessing alignment with truth across nine axes, integrating free will and grace as dynamic drivers, with a veto property ensuring necessity of each axis.",
+    "dg3_preserved_floor": "Preserves the four axioms as presuppositions and the Trinity as grounding; maintains the veto property and the distinction between measurement (bits/s) and dimensionless fractions.",
+    "dg4_collapse_if_removed": "If the Master Equation is removed, the framework loses its central organizing principle, the veto property, and the integration of free will and grace; the four axioms remain but lack a unifying formalism.",
+    "dg5_translation_registers": [
+      "Physical: gravitation, mechanics, electromagnetism, strong nuclear force, thermodynamics, information, quantum mechanics, relativity, weak nuclear force",
+      "Spiritual: grace, repentance, truth, love, judgment, logos, faith, frame, moral conservation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "meta-formalism",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims of derivation of spiritual terms from physics may overstate; they are bridge claims.",
+      "The Trinity generating numbers is a theological claim, not mathematically proven.",
+      "The uniqueness of the Cross result depends on parameterization; may be overclaimed.",
+      "The veto property is proven for algebraic multiplication but its application to moral axes is an analogy."
+    ],
+    "kill_conditions": [
+      "Sustained local moral improvement with no external input",
+      "Justice and mercy require a trade-off",
+      "Moral event with no invisible remainder",
+      "Shannon capacity has no moral analogue",
+      "Triadic coupling reproducible by non-triadic"
+    ],
+    "lean_target": "Formalize the Master Equation in Lean with real numbers, prove [0,1] invariance under dX/dt, and specify W and  functional forms."
+  },
+  "plain_summary": "The Master Equation is a meta-formalism that multiplies nine alignment factors to produce a coherence score chi, with free will and grace as dynamic drivers. It is grounded in four axioms and the Trinity, and is partially verified in Lean. The document claims to derive spiritual properties from physics at equilibrium, but these are bridge claims, not theorems. The framework has clear boundaries and kill conditions, and is not yet fully closed.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W3-master-equation.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W3-master-equation.canonical.canonical-node.json"
+  }
+}

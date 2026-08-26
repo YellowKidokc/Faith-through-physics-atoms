@@ -1,0 +1,77 @@
+{
+  "source_id": "CONTRIBUTING",
+  "title": "Contributing Standards for Speculative Cross-Domain Model",
+  "canonical_node": {
+    "axiom": "Contributions are welcome when they make the formal status of a claim clearer.",
+    "definitions": [
+      "Formal status: the classification of a claim as proven, conditional, supported, or not established, as recorded in PaperClaims.md.",
+      "Countermodel: a model or interpretation that demonstrates a proposed theorem is false under current definitions.",
+      "Axiom: a starting assumption not derived from other statements.",
+      "Theorem: a statement derived from axioms and definitions via accepted logical steps."
+    ],
+    "derivation": [
+      "The project's purpose is to make a speculative cross-domain model easier to test, criticize, and sharpen.",
+      "Therefore, contributions that clarify the formal status of a claim serve the project's purpose.",
+      "Thus, such contributions are welcome.",
+      "To maintain clarity, empirical, theological, and formal claims must be kept separate.",
+      "To maintain rigor, small theorems with explicit assumptions are preferred.",
+      "To avoid circularity, one must not prove a claim by baking the conclusion into the definition unless explicitly documented."
+    ],
+    "action": "When reviewing contributions, accept those that tighten definitions, replace axioms with theorems, show falsehood via countermodels, update claim statuses accurately, or improve documentation of Lean's capabilities. Reject contributions that blur claim types or introduce circular proofs without documentation.",
+    "boundary": [
+      "This document does not define the specific formal system or logic used.",
+      "It does not specify which claims are true or false.",
+      "It does not mandate any particular contribution type; it only states that such contributions are welcome.",
+      "It does not override the README or claim matrix when they explicitly allow a definitional proof."
+    ],
+    "test": [
+      "Check that contributions separate empirical, theological, and formal claims.",
+      "Check that proposed theorems have explicit assumptions.",
+      "Check that no conclusion is baked into a definition unless the README or claim matrix explicitly states that is the demonstration.",
+      "Check that `lake build` passes before merging."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "PaperClaims.md",
+      "README.md",
+      "Lean project build system (lake)"
+    ],
+    "dg2_new_capability": "Provides a governance rule for accepting contributions that clarify formal status, thereby enabling systematic improvement of the model's rigor.",
+    "dg3_preserved_floor": "Preserves the existing separation of empirical, theological, and formal claims, and the requirement that Lean builds pass.",
+    "dg4_collapse_if_removed": "Without this node, there is no explicit standard for what contributions are welcome, risking acceptance of unclear or circular claims and degrading the project's testability.",
+    "dg5_translation_registers": [
+      "Formal status",
+      "Countermodel",
+      "Axiom",
+      "Theorem"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "governance",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "B",
+    "recommended_atom_action": "adopt as a governance rule"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The axiom 'Contributions are welcome when they make the formal status of a claim clearer' could be read as a claim that such contributions are always beneficial, but it is a normative preference, not an empirical fact.",
+      "The derivation assumes that clarifying formal status always serves the project's purpose, but there may be edge cases where it does not (e.g., if it introduces unnecessary complexity)."
+    ],
+    "kill_conditions": [
+      "If the project's purpose changes, the axiom may no longer hold.",
+      "If the README or claim matrix explicitly allows circular proofs without documentation, the derivation's step against baking conclusions is invalid."
+    ],
+    "lean_target": "Formalize the governance rule as a set of acceptance criteria in a Lean theorem about contribution validity, if desired."
+  },
+  "plain_summary": "This document sets standards for contributing to a speculative cross-domain model: contributions should clarify formal status, keep claim types separate, prefer small theorems with explicit assumptions, avoid circular proofs unless documented, and pass `lake build`. It is a governance rule, not a scientific claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CONTRIBUTING.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CONTRIBUTING.canonical-node.json"
+  }
+}

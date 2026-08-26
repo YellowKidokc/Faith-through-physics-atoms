@@ -1,0 +1,75 @@
+{
+  "source_id": "F01_Existence",
+  "title": "Why Something Rather Than Nothing",
+  "canonical_node": {
+    "axiom": "Something exists rather than nothing, and this is undeniable.",
+    "definitions": [
+      "Existence: that which is not nothing; the state of being real.",
+      "Nothing: the absence of any existence; ontological nullity.",
+      "Distinguishability: the property of being different from something else, especially from nothing.",
+      "Information: the capacity to distinguish states; equivalently, distinguishability."
+    ],
+    "derivation": [
+      "P0.1: x (Something exists).",
+      "If something exists, it must be distinguishable from nothing; otherwise it would be nothing.",
+      "P0.2: x,y : x  y (Existence requires distinguishability).",
+      "Distinguishability is information by definition.",
+      "P0.3: H(X) = - p(x) log p(x); Information  Distinguishability.",
+      "P0.4: Whatever exists is intelligible (declared, not derived)."
+    ],
+    "action": "Treat P0.1 as the irreducible foundation. Reject any claim that denies existence or presupposes non-existence as a stable state. Use P0.1 to block nihilism, radical skepticism, and solipsism in discourse.",
+    "boundary": [
+      "Does not derive existence from anything prior; existence is primitive.",
+      "Does not claim to explain why something exists; only that it does.",
+      "Does not assert the nature of what exists beyond distinguishability and intelligibility.",
+      "Does not claim that all existence is physical or material."
+    ],
+    "test": [
+      "Attempt to deny P0.1 without presupposing existence; if the denial requires a speaker/thinker/writer, the denial is self-refuting.",
+      "Check that any proposed 'nothing' is not actually something (e.g., quantum vacuum, imagined nothing).",
+      "Verify that any physical theory presupposes existence (e.g., wavefunctions, spacetime, fields)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [],
+    "dg2_new_capability": "Provides an undeniable foundation for all subsequent axioms; blocks radical skepticism and nihilism at the root.",
+    "dg3_preserved_floor": "Establishes the minimal ontological commitment: something exists.",
+    "dg4_collapse_if_removed": "Without P0.1, no other axiom can be asserted; the entire framework collapses into incoherence.",
+    "dg5_translation_registers": [
+      "Ontological: x",
+      "Logical: self-refutation of denial",
+      "Physical: presupposed by all physical theories",
+      "Theological: 'I AM WHO I AM'"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "foundational_axiom",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "accept_as_axiom"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims 'undeniable' but proof is dialectical, not formal.",
+      "Equates distinguishability with information without rigorous definition.",
+      "Uses scripture as support, which is not a logical proof.",
+      "May overstate the self-refutation of solipsism (it concedes existence but not the rest)."
+    ],
+    "kill_conditions": [
+      "A coherent model of non-existence that does not presuppose existence.",
+      "A meaningful predication of 'nothing' without existential presupposition.",
+      "A formal counterexample to the self-refutation argument."
+    ],
+    "lean_target": "Formalize the self-refutation argument in a proof assistant (e.g., Lean) to establish LEAN_FORMAL_PROOF."
+  },
+  "plain_summary": "This document establishes the foundational axiom that something exists, arguing that any denial is self-refuting. It defines existence, nothing, distinguishability, and information, and derives that existence requires distinguishability which is information. The document is coherent as an axiom but lacks formal proof; it is admissible as a foundational axiom but should not be treated as proven beyond dialectical argument.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F01_Existence.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\F01_Existence.canonical-node.json"
+  }
+}

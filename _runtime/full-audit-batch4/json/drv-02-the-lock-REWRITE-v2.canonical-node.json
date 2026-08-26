@@ -1,0 +1,85 @@
+{
+  "source_id": "drv-02-the-lock-REWRITE-v2",
+  "title": "DRV Book I  -  The Lock  -  REWRITE v2 (Phase 4.1 III)",
+  "canonical_node": {
+    "axiom": "The framework's formal system rests on three primitive axioms (God-as-Axiom, Trinity Isomorphism, Free Will) and a below-floor presupposition of Truth; the argument from properties of truth to the Logos is a derived chain, not a set of twenty independent axioms.",
+    "definitions": [
+      "Truth: the below-floor presupposition that mathematical truths are necessary, eternal, universal, immaterial, coherent, discoverable, and existent (P0.1 - P0.7).",
+      "Logos: the name given to the ground of mathematical and moral truth (Definition 6.1).",
+      "God-as-Axiom (Axiom 1): the Logos is functionally identical to the terminal ground required by the von Neumann measurement chain, the regress argument, and the open-system requirement.",
+      "Central Claim: mathematical and moral truth share a single ground (Layer 5).",
+      "Master Equation: the operationalization of the Central Claim, with ten factors (including veracity, value, and alignment)."
+    ],
+    "derivation": [
+      "Layer 0: Truth exhibits seven properties (P0.1 - P0.7) as below-floor presuppositions.",
+      "Layer 1: Gdel-Chaitlin theorem (external) establishes that the ground of mathematical truth is external to mathematics.",
+      "Layer 2: From the theorem, the ground cannot be nothing, chaos, or deceptive (Inferences 2.1 - 2.3).",
+      "Layer 3: Source-Property Transmission Lemma transfers the seven properties plus veracity to the ground.",
+      "Layer 4: Definitions and postulates: truth is valuable, deception is wrong.",
+      "Layer 5: Central Claim: math and moral truth share a single ground.",
+      "Layer 6: The ground is named Logos and identified as Axiom 1 (God-as-Axiom)."
+    ],
+    "action": "The system should treat the three primitive axioms as the formal floor, treat the III argument as a derived chain with layer-specific epistemic status, and not push beyond the Feb 14 floor into divine mechanics.",
+    "boundary": [
+      "Does not assert the seven properties as axioms; they are below-floor presuppositions.",
+      "Does not treat the Central Claim as an axiom; it is the thesis defended.",
+      "Does not exercise Axiom 2 (Trinity Isomorphism) in this series.",
+      "Does not descend below the Feb 14 floor (e.g., internal divine mechanics)."
+    ],
+    "test": [
+      "Check that each layer's epistemic status matches the taxonomy (below-floor, theorem, inference, lemma, definition, postulate, central claim, axiom).",
+      "Verify that the three primitive axioms are the only axioms used as load-bearing in the formal theory.",
+      "Confirm that the argument terminates at the Feb 14 floor and does not claim to prove divine internals."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Formal Theory v1.0 (May 10, 2026 canon)",
+      "Gdel's Second Incompleteness theorem",
+      "Chaitin's complexity bound",
+      "Feb 14 floor (three primitive axioms)"
+    ],
+    "dg2_new_capability": "Reclassifies the twenty axioms into a layered argument with distinct epistemic statuses, promoting A20 to the foundational Axiom 1 and demoting A1 - A7 to below-floor properties.",
+    "dg3_preserved_floor": "The three primitive axioms (God-as-Axiom, Trinity Isomorphism, Free Will) remain the formal floor; the argument's content is preserved but reclassified.",
+    "dg4_collapse_if_removed": "If the reclassification is removed, the framework reverts to a flat twenty-axiom structure that misrepresents the epistemic load and obscures the foundational role of Axiom 1.",
+    "dg5_translation_registers": [
+      "A1 - A7 -> P0.1 - P0.7 (below-floor properties)",
+      "A8 -> Theorem 1 (Gdel-Chaitin)",
+      "A9 - A11 -> Inferences 2.1 - 2.3",
+      "A12 - A15 -> Lemma 3 (Source-Property Transmission)",
+      "A16 - A17 -> Definitions 4.1 - 4.2",
+      "A18 -> Central Claim",
+      "A19 -> Definition 6.1",
+      "A20 -> Axiom 1 (God-as-Axiom)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological_metaphysical",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that the argument 'derives' the existence of the Logos, but the derivation relies on unproven postulates and a contestable moral inference.",
+      "Treats the Gdel-Chaitin theorem as forcing a specific metaphysical conclusion, which is an overreach.",
+      "The identity of indiscernibles argument for Axiom 1 assumes the profile is complete and unique."
+    ],
+    "kill_conditions": [
+      "If the Gdel-Chaitin theorem does not entail an external ground, the argument collapses.",
+      "If the Source-Property Transmission Lemma is invalid, the transfer of properties fails.",
+      "If the Central Claim is not independently supported, the identification with the Logos is unsupported."
+    ],
+    "lean_target": "The document should be treated as a theological argument with a formal veneer, not as a mathematical proof. The reclassification is a structural improvement but does not establish the truth of the claims."
+  },
+  "plain_summary": "This document rewrites Section III of a theological work, reclassifying twenty axioms into a layered argument with distinct epistemic statuses. It promotes the final axiom to the foundational 'God-as-Axiom' and demotes the first seven to below-floor properties of truth. The rewrite is internally coherent but does not provide proof for its central claims; it remains a theological argument, not a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\drv-02-the-lock-REWRITE-v2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\drv-02-the-lock-REWRITE-v2.canonical-node.json"
+  }
+}

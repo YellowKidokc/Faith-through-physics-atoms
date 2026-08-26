@@ -1,0 +1,88 @@
+{
+  "source_id": "W4-trinity-t02.canonical",
+  "title": "The Trinity",
+  "canonical_node": {
+    "axiom": "God is one being in three persons: Father, Son, and Holy Spirit, who are distinct yet fully united in being, love, and will.",
+    "definitions": [
+      "Trinity: one God in three persons, not three gods, not one person in three modes.",
+      "Existence: God as being itself (ipsum esse subsistens).",
+      "Distinction: real difference among the persons, original in God.",
+      "Relation: the mutual indwelling (perichoresis) and begetting/proceeding among persons.",
+      "Orientation: the mutual self-gift and love among persons, the gradient of good.",
+      "Aseity: God's self-existence; God does not have existence but is existence.",
+      "Perichoresis: mutual indwelling of the persons.",
+      "Tota simul: the whole, simultaneous, perfect possession of unending life (Boethius)."
+    ],
+    "derivation": [
+      "The document asserts the Trinity as the ground of all reality, prior to creation.",
+      "It identifies four fundamental assumptions (existence, distinction, relation, orientation) that all worldviews presuppose.",
+      "It claims these four debts are dissolved in the Trinity: existence as aseity, distinction as persons, relation as perichoresis, orientation as love.",
+      "It presents a mathematical isomorphism between quaternion electromagnetism and the Trinity structure, claimed to be Lean 4 verified.",
+      "It derives seven terms (T.1-T.7) from this isomorphism, each mapping a physical concept to a divine attribute.",
+      "It defines truth as a three-mode structure (Being, Expression, Witness) corresponding to the persons.",
+      "It outlines an order of operations from eternity to consummation, as logical moments in God's single act."
+    ],
+    "action": "The system should treat the Trinity as the foundational axiom, using the four-fold structure (existence, distinction, relation, orientation) to interpret all other claims, and maintain the distinction between theological interpretation and formal derivation.",
+    "boundary": [
+      "Does not claim to formally derive the Trinity from logic or physics.",
+      "Does not claim that the Lean 4 verification proves the theological identification, only the mathematical structure.",
+      "Does not claim that the four debts are only payable by the Trinity; rival ontologies may ground them differently.",
+      "Does not claim to have a physics of temporal origination; time-authored is a theological claim.",
+      "Does not include the Watcher, Anti-Properties, Hard Questions, or Three Postulates in this document."
+    ],
+    "test": [
+      "Check that all statements about the Trinity are consistent with the definitions of existence, distinction, relation, orientation.",
+      "Verify that any claim of formal derivation is labeled as such and not conflated with theological interpretation.",
+      "Ensure that the Lean 4 verification is cited only for the mathematical isomorphism, not for the theological identification.",
+      "Check that the four debts are presented as assumptions, not as proven necessities.",
+      "Verify that the boundary conditions are respected: no overclaiming of physics from theology."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Scripture (Bible verses cited)",
+      "Church Fathers (Gregory of Nazianzus, John of Damascus, Augustine)",
+      "Philosophical sources (Leibniz, Aristotle, Hume, Boethius, Aquinas)",
+      "Lean 4 verified quaternion EM isomorphism (claimed)"
+    ],
+    "dg2_new_capability": "Provides a unified framework that grounds existence, distinction, relation, and orientation in the Trinity, offering a theological interpretation of these fundamental assumptions.",
+    "dg3_preserved_floor": "Preserves the truth of the four debts as real assumptions; does not deny their validity.",
+    "dg4_collapse_if_removed": "If the Trinity axiom is removed, the framework loses its grounding for the four debts, reducing to a set of ungrounded assumptions.",
+    "dg5_translation_registers": [
+      "Theological register: Trinity, perichoresis, aseity",
+      "Philosophical register: existence, distinction, relation, orientation",
+      "Physical register: quaternion EM, coupling constants, Noether's theorem",
+      "Mathematical register: Lean 4 verified isomorphism"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological_framework",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the Lean 4 verification proves the theological identification.",
+      "Presenting the four debts as necessarily grounded in the Trinity.",
+      "Treating the physical analogies (e.g., coupling constants) as literal identities.",
+      "Overstating the formal status of the derivative terms T.1-T.7."
+    ],
+    "kill_conditions": [
+      "If the Lean 4 verification is found to be flawed or not reproducible.",
+      "If the theological interpretation is presented as a formal derivation.",
+      "If the document claims to have derived physics from theology without qualification."
+    ],
+    "lean_target": "The quaternion EM / Trinity isomorphism, claimed to be Lean 4 verified with zero sorry."
+  },
+  "plain_summary": "This document presents the Trinity as the foundational axiom, interpreting existence, distinction, relation, and orientation as aspects of God. It claims a Lean 4 verified mathematical isomorphism between quaternion electromagnetism and the Trinity structure, but explicitly notes that this verifies only the math, not the theology. The document is a theological framework with some formal mathematical support, but many claims are analogical or interpretive, not proven.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W4-trinity-t02.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W4-trinity-t02.canonical.canonical-node.json"
+  }
+}

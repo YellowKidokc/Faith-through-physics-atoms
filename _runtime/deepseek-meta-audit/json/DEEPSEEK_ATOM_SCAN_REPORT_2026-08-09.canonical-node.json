@@ -1,0 +1,80 @@
+{
+  "source_id": "DEEPSEEK_ATOM_SCAN_REPORT_2026-08-09",
+  "title": "DeepSeek Cold Atom Scan Report 2026-08-09",
+  "canonical_node": {
+    "axiom": "The canonical atom ledger must be reconciled to the 2026-08-09 canonical revision; any atom not updated after that date is suspect for drift.",
+    "definitions": [
+      "Canonical revision: the 2026-08-09 document that fixes the Master Equation, four axioms, three levels, and ten laws.",
+      "Atom: a ledger entry with an ID and status; must contain full claim text to be canonically safe.",
+      "Drift: any atom that conflicts with the canonical revision, e.g., a fifth axiom, bits/s in all nine factors, or old spine numbering.",
+      "ORPHANED: an atom with no physics-side anchor, reclassified from active_candidate_unanchored."
+    ],
+    "derivation": [
+      "The ledger contains 268 atoms, but only 2 are in the master-equation namespace.",
+      "198 atoms are NOT_ESTABLISHED, 44 are ISOMORPHIC_EVENT_CANDIDATE, 10 are BRIDGE_DECLARED.",
+      "The sample atom tp:ME/L5/C1 is not in the ledger, indicating a ledger integrity failure.",
+      "Many sections (Level 0, gradient dynamics, Ten Laws, conservation results, retired claims, Numbers-in-God) have no covering atoms.",
+      "Therefore, the ledger is an unverified scaffold, not a canonical atom base."
+    ],
+    "action": "Reconcile the ledger to the 2026-08-09 canonical revision; add missing load-bearing atoms; add or retire the sample atom; reclassify unanchored atoms as ORPHANED; quarantine python-colab-runtime-lane; re-run audit after each law and spiritual family has a typed atom with kill condition.",
+    "boundary": [
+      "This document does not establish any new physics or theology; it is an audit of ledger completeness.",
+      "It does not claim that any atom is canonically safe; it only identifies gaps and drifts.",
+      "It does not provide full claim text for atoms; mapping is ID-inferred."
+    ],
+    "test": [
+      "Check that every 7 law and 8 spiritual family has a typed atom with a kill condition.",
+      "Verify that no atom asserts a fifth axiom, bits/s in all nine factors, or old spine numbering.",
+      "Confirm that all active_candidate_unanchored atoms are reclassified as ORPHANED.",
+      "Ensure the sample atom tp:ME/L5/C1 is either added to the ledger or formally retired."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Canonical revision 2026-08-09",
+      "268-atom ledger",
+      "Master Equation canonical form",
+      "Four axioms A1-A4",
+      "Ten Laws",
+      "Lean proof labels",
+      "Bridge discipline"
+    ],
+    "dg2_new_capability": "Provides a structural integrity audit that identifies ledger gaps and drifts, enabling prioritization of atom writing and reclassification.",
+    "dg3_preserved_floor": "Preserves the canonical revision's claims and boundaries, including the four-axiom canon, bits/s only in Level 0, and the honest boundary of non-claims.",
+    "dg4_collapse_if_removed": "Without this audit, the ledger would remain incomplete and unverified, risking drift and resurrection of retired claims.",
+    "dg5_translation_registers": [
+      "Atom ID to canonical claim mapping (ID-inferred)",
+      "Ontology families (01-14)",
+      "Proof labels (NOT_ESTABLISHED, ISOMORPHIC_EVENT_CANDIDATE, BRIDGE_DECLARED)"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "Audit report",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Use as a gap analysis and priority list; do not treat as a canonical atom itself."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the audit's ID-inferred mappings as verified claim text.",
+      "Assuming the audit's priority list is exhaustive or that the canonical revision is final.",
+      "Using the audit's verdict to claim the canon is dishonest."
+    ],
+    "kill_conditions": [
+      "If the canonical revision is superseded, the audit's findings become stale.",
+      "If the ledger is fully reconciled, the audit's gap list becomes obsolete.",
+      "If any atom is added without full claim text, the ledger remains unsafe."
+    ],
+    "lean_target": "No Lean target; this is a ledger integrity audit."
+  },
+  "plain_summary": "This document is an audit of a 268-atom ledger against a canonical revision. It finds the ledger incomplete and unverified, with only two master-equation atoms and many gaps. It recommends reconciliation, adding missing atoms, reclassifying unanchored atoms, and re-running the audit. It does not establish new claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-zip\\DEEPSEEK_ATOM_SCAN_REPORT_2026-08-09.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\deepseek-meta-audit\\json\\DEEPSEEK_ATOM_SCAN_REPORT_2026-08-09.canonical-node.json"
+  }
+}

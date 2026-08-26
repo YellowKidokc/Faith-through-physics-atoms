@@ -1,0 +1,82 @@
+{
+  "source_id": "12-the-is-ought-dissolution.canonical",
+  "title": "The Is-Ought Dissolution",
+  "canonical_node": {
+    "axiom": "A moral 'ought' is not a separate category of truth but the recognition of existing misalignment with invariant structure phi, from the temporal perspective of an agent who has not yet experienced the consequence.",
+    "definitions": [
+      "ought(a, phi, t)  misaligned(state(a, t), phi)  consequences not yet arrived",
+      "Misalignment: deviation from invariant structure phi, measurable via the chi functional.",
+      "Invariant structure phi: the structural form of the Good, anchored in M1 coherence postulates.",
+      "Deployment: the act of applying invariant structure to a state, making misalignment visible.",
+      "Moral ought: the specific case of ought that concerns structural misalignment with moral invariants; distinct from deliberative ought."
+    ],
+    "derivation": [
+      "1. Mathematical structure, when deployed, reveals misalignment between actual state and invariant constraints (e.g., load calculation exposes under-engineering).",
+      "2. This revelation is a judgment, not mere description; it exposes structural violation and leads to consequences.",
+      "3. Moral constraints (truth-telling, promise-keeping, etc.) exhibit the same pattern: deviation from invariant constraints produces measurable cost (e.g., societal collapse).",
+      "4. Therefore, moral judgments are structurally identical to mathematical deployment judgments.",
+      "5. The 'ought' is simply the recognition of existing misalignment before consequences arrive; past and present moral judgments are the same recognition after or during consequences.",
+      "6. Hence, 'ought' is not a different category but a tense of 'is'."
+    ],
+    "action": "The system should treat moral 'ought' statements as time-indexed recognitions of existing misalignment with invariant structure phi, and apply the same measurement and deployment logic as in mathematical judgment.",
+    "boundary": [
+      "Does not claim to derive moral obligations from purely descriptive facts without the premise of universal cost.",
+      "Does not cover deliberative ought (choices between futures not yet misaligned).",
+      "Does not claim that all moral judgments are reducible to mathematical calculation; it claims structural isomorphism.",
+      "Does not assert the identity of mathematical and moral truth beyond the shared properties listed; the identity claim is conditional on F3 not obtaining."
+    ],
+    "test": [
+      "F1: Produce a case where correct mathematical deployment fails to expose existing structural misalignment.",
+      "F2: Produce a society, family, economy, or institution achieving stable flourishing while systematically violating a core moral invariant.",
+      "F3: Identify an ontological property possessed by mathematical truth but not moral truth (or vice versa), not reducible to measurement domain.",
+      "F4: Produce a genuine moral 'ought' that cannot be reframed as recognition of existing misalignment.",
+      "F5: Controlled experiments show no asymmetric decoherence; Euclid/DESI fit CDM with zero residuals; GCP effects vanish."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "M1: coherence as the structural form of the Good; four kernel postulates",
+      "M4: measurement registers the coherence-condition of the registered; observation_required",
+      "Moral dynamics theorems (17, zero sorry)",
+      "MemoryCase retention theorems (package-context owed)",
+      "PMM 7 temporal reorientation"
+    ],
+    "dg2_new_capability": "Provides a dissolution of the is-ought gap by reinterpreting 'ought' as a tense of 'is', enabling moral judgments to be treated as structural alignment measurements.",
+    "dg3_preserved_floor": "Preserves the distinction between descriptive and prescriptive statements in ordinary language, but reframes the underlying structure as identical.",
+    "dg4_collapse_if_removed": "If removed, the framework loses its answer to the is-ought objection, weakening the claim that morality is objective and measurable.",
+    "dg5_translation_registers": [
+      "Moral statements  structural alignment statements",
+      "Ought statements  time-indexed misalignment recognitions",
+      "Mathematical deployment  moral judgment"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "philosophical dissolution",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims 'there is no gap' when the argument depends on unproven premises (universal cost, moral ought scope).",
+      "The identity claim (mathematical and moral truth share all properties) is asserted without rigorous proof.",
+      "The empirical parallel (societies collapse under lying) is anecdotal, not controlled evidence."
+    ],
+    "kill_conditions": [
+      "F1-F5 as published; any one obtaining invalidates the argument.",
+      "If universal cost premise is falsified (durably cost-free misalignment), the dissolution fails.",
+      "If a genuine moral ought is found that is purely future-facing with no present structural basis, the temporal dissolution fails."
+    ],
+    "lean_target": "A formalization of the temporal dissolution in a proof assistant, conditional on the declared premises."
+  },
+  "plain_summary": "This document argues that the is-ought gap is a grammatical illusion: 'ought' is just 'is' viewed from a temporal perspective before consequences arrive. It claims moral judgments are structurally identical to mathematical deployment judgments, both measuring misalignment against invariant structure. The argument rests on two declared premises (universal cost and moral ought scope) and is falsifiable via five published kill criteria. However, the argument is not formally proven and relies on empirical analogies and unverified identity claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\12-the-is-ought-dissolution.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\12-the-is-ought-dissolution.canonical.canonical-node.json"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "source_id": "COLAB_MASTER",
+  "title": "COLAB_MASTER.ipynb",
+  "canonical_node": {
+    "axiom": "The coherence collapse equation dC/dt = -sigma*C + G/tau governs the dynamics of the chi-field, and its numerical integration under varying grace conditions yields observable trajectories.",
+    "definitions": [
+      "C: coherence of the chi-field",
+      "sigma: decay rate",
+      "G: grace input",
+      "tau: time constant",
+      "Component: a modular object representing a physical law with name, weight, enabled flag, and evaluate(q,t) method",
+      "Grace Slider: an interactive widget adjusting G from 0 to 1"
+    ],
+    "derivation": [
+      "The ODE dC/dt = -sigma*C + G/tau is stated as the coherence collapse equation.",
+      "Four scenarios are defined by initial conditions and time-dependent G: no grace (G=0), full grace (G=1), restored grace (G=0 until t=50 then G=1), declining grace (G=1 initially then fades to 0).",
+      "Numerical integration of the ODE for each scenario produces the Four Lines trajectories."
+    ],
+    "action": "Run the notebook in sequence to produce the full test suite, visualizations, and final scorecard PNG, including the Four Lines plot and interactive Grace Slider.",
+    "boundary": [
+      "Does not provide a formal proof of the ODE's derivation from underlying physics.",
+      "Does not claim the ODE is derived from first principles; it is presented as a model.",
+      "Does not assert that the numerical integration constitutes a physical experiment."
+    ],
+    "test": [
+      "Run the notebook and verify that the Four Lines match the expected qualitative behavior: red decays to zero, green stabilizes above zero, gold recovers after t=50, gray declines as grace fades.",
+      "Verify that the SHA256 checksum is printed and matches the expected value for the unmodified suite.",
+      "Verify that the Grace Slider changes the coherence output in real time."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "JAX",
+      "ipywidgets",
+      "matplotlib",
+      "numpy",
+      "Google Colab environment"
+    ],
+    "dg2_new_capability": "Provides an interactive demonstration of the coherence collapse equation with a Grace Slider and a visually compelling Four Lines plot, plus a cryptographic checksum for reproducibility.",
+    "dg3_preserved_floor": "Preserves the ability to run the full test suite and generate a scorecard in a single session.",
+    "dg4_collapse_if_removed": "If the notebook is removed, the interactive demonstration and the iconic Four Lines visualization are lost, reducing the accessibility and tangible impact of the framework.",
+    "dg5_translation_registers": [
+      "ODE integration",
+      "Interactive visualization",
+      "Cryptographic checksum"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Demonstration artifact",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "Preserve as a demonstration and interactive tool; do not treat as a proof of the underlying physics."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The Four Lines are described as 'the math of total entropy' and 'the math of sustained spiritual health', which may overstate the theological interpretation.",
+      "The SHA256 checksum is claimed to be a 'higher evidentiary standard than most published papers meet', which is an overstatement regarding scientific evidence.",
+      "The ODE is presented as governing the chi-field without derivation, which could be mistaken for a fundamental law."
+    ],
+    "kill_conditions": [
+      "If the ODE is shown to be inconsistent with empirical data or derived from unsupported assumptions.",
+      "If the numerical integration is found to be flawed or non-reproducible.",
+      "If the theological interpretations are presented as scientific conclusions."
+    ],
+    "lean_target": "Keep the notebook as a demonstration and educational tool, but clearly separate the mathematical model from theological interpretation."
+  },
+  "plain_summary": "This document describes a Google Colab notebook that demonstrates a coherence collapse equation with an interactive grace slider and four visualization scenarios. It is a deployment artifact for running tests and generating visualizations, but it does not provide a formal proof of the underlying physics.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\COLAB_MASTER.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\COLAB_MASTER.canonical-node.json"
+  }
+}

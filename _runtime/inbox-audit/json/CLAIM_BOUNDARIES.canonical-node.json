@@ -1,0 +1,71 @@
+{
+  "source_id": "CLAIM_BOUNDARIES",
+  "title": "Claim Boundaries",
+  "canonical_node": {
+    "axiom": "Claim drift is prevented by explicit boundaries on what is verified and what is not.",
+    "definitions": [
+      "Lean Verified: The repository's definitions and theorems compile and type-check under Lean.",
+      "Internally Canonical: Stable enough to preserve, consistent with the current Theophysics framework, useful as a build target, and not disposable scratch work.",
+      "Externally Reviewed: Endorsed by the external Lean community after review."
+    ],
+    "derivation": [
+      "Lean verification is limited to the listed items: toy substrate, stage/mapping structures, rejection-first tests, quaternion coupling, triadic gate.",
+      "Internally canonical status is defined by the four criteria and explicitly excludes peer review or external endorsement.",
+      "Because external review is pending, public language must state 'Lean-build verified and internally canonical; external Lean review pending.'",
+      "Open failure modes are specification drift and false-positive leakage, which are productive for tightening the formal structure."
+    ],
+    "action": "Maintain explicit claim boundaries in documentation and public language, ensuring that statements about verification status do not overstate external review.",
+    "boundary": [
+      "Does not claim peer review or external endorsement.",
+      "Does not claim a proof of the full theological or physical claim.",
+      "Does not claim immunity from revision after specification review."
+    ],
+    "test": [
+      "Check that public language uses the exact phrase 'Lean-build verified and internally canonical; external Lean review pending.'",
+      "Check that no statement says 'Lean experts have approved this.'",
+      "Check that the listed Lean-verified items match the current repository state."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean toolchain and repository definitions/theorems",
+      "Theophysics framework consistency"
+    ],
+    "dg2_new_capability": "Provides a guardrail against claim drift by codifying the exact scope of verification and the required public language.",
+    "dg3_preserved_floor": "Preserves the distinction between internal canonical status and external review, preventing overstatement.",
+    "dg4_collapse_if_removed": "Without this node, public claims could drift into implying external approval or full proof, undermining trust and clarity.",
+    "dg5_translation_registers": [
+      "Lean verification status",
+      "Internal canonical status",
+      "External review status"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Meta-claim about verification status and boundaries",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Preserve as a guardrail node; do not upgrade to a proof of the underlying claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting 'Lean Verified' as proof of the full theological/physical claim.",
+      "Treating 'internally canonical' as external endorsement.",
+      "Using language that implies external review has occurred."
+    ],
+    "kill_conditions": [
+      "If external review returns negative results, the 'externally reviewed' status must be updated.",
+      "If the Lean-verified items change, the list must be updated to avoid false claims."
+    ],
+    "lean_target": "Formalize the boundary conditions as a specification that can be checked by Lean, e.g., a predicate that ensures public statements match the actual verification status."
+  },
+  "plain_summary": "This document sets boundaries on what the project claims: Lean verification is limited to specific items, internal canonical status is not peer review, and external review is pending. It mandates precise public language and identifies failure modes. It is a guardrail, not a proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CLAIM_BOUNDARIES.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CLAIM_BOUNDARIES.canonical-node.json"
+  }
+}

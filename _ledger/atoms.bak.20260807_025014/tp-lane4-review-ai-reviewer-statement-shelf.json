@@ -1,0 +1,39 @@
+{
+  "atom_id": "tp:lane4/review/ai-reviewer-statement-shelf",
+  "atom_uid": "sha256:7c48dfd5863480628d2740585e5ec5049f21bace5f0327ee22eaceb8a5cacd4f",
+  "title": "AI Reviewer Statement Shelf",
+  "claim": "AI reviewer statements remain attributed notes until promoted through review.",
+  "domain": "review",
+  "lane": "AI-review",
+  "claim_class": "reviewer_note",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Lane labels are interpreted according to their declared evidentiary scope."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "QUARANTINE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "LANE4_ATOM_LEDGER_BUILD_REPORT.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_seeded",
+      "result": "recorded",
+      "artifact_path": "LANE4_ATOM_LEDGER_BUILD_REPORT.md",
+      "meaning": "Initial Lane 4 fixture created.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Codex",
+      "lane": "AI-review",
+      "event_id": "sha256:f81148fc50e2649bbcad5305fb350c75a802c8d7e83f54127c947d07f0ef84b7"
+    }
+  ],
+  "source_claim_id": "AI_REVIEWER_STATEMENT_SHELF"
+}

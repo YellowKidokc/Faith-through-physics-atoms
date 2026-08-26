@@ -1,17 +1,19 @@
 {
   "_comment": "Machine-readable enums. Classifiers and the NLP stack read THIS file. Every allowed value in the framework, with its glyph. If a value is not here, it is not legal.",
-  "version": "1.0.0",
-  "updated": "2026-07-23",
+  "version": "2.1.0",
+  "updated": "2026-07-24",
+  "_changelog": "v2.1: Collapsed 7 media-specific types back into reach.format. Added question + series + audienceProfile. GPT correction: atomize the descent process, not the delivery formats.",
 
   "nodeType": {
     "raw": "◌", "claim": "◆", "paradigm": "⊘", "bridge": "≅",
     "prediction": "⧖", "evidence": "E", "kill": "⛔", "paper": "▤",
     "objection": "⚔", "translation": "☖", "check": "⊙", "article": "✍",
-    "reach": "⌘", "result": "⟡", "application": "↦"
+    "reach": "⌘", "result": "⟡", "application": "↦",
+    "question": "？", "series": "⟰"
   },
 
   "status": {
-    "captured": "◌", "classified": "◇", "proposed": "❖", "active": "◈",
+    "captured": "◌", "classified": "◇", "proposed": "❖", "active": "●",
     "verified": "◆", "kernel_verified": "⊢", "weakened": "⊝",
     "falsified": "⊗", "deprecated": "⊠", "superseded": "⇄"
   },
@@ -22,10 +24,16 @@
     "everyday": "☖", "child": "✎"
   },
 
+  "audienceProfile": {
+    "_comment": "Reusable audience configurations. Referenced by ID, not rewritten per atom.",
+    "fields": ["audienceID", "priorKnowledge", "primaryQuestion", "stakes",
+               "trustedEvidence", "likelyMisconceptions", "vocabularyKnown", "timeBudget"]
+  },
+
   "evidenceType": {
     "formal_derivation": "⟐", "machine_verified": "⊢",
     "mathematical_model": "∫", "statistical": "⌖", "empirical": "E",
-    "historical": "⧗", "textual": "✝", "interpretive": "Θ",
+    "historical": "⊡", "textual": "✝", "interpretive": "Θ",
     "analogical": "≈", "personal": "◊p"
   },
 
@@ -41,7 +49,8 @@
 
   "edgeType": {
     "dependsOn": "↓", "feedsInto": "→", "bridgesTo": "≅",
-    "challenges": "⚔", "expands": "⇧", "forksFrom": "⑂", "descendsTo": "↦"
+    "challenges": "⚔", "expands": "⇧", "forksFrom": "⑂", "descendsTo": "↦",
+    "answers": "？", "translatesFor": "☖"
   },
 
   "bridgeGrade": {
@@ -53,10 +62,27 @@
   },
 
   "propagationScope": {
+    "_comment": "FAILURE travelling outward. Every entry here is a failure type. Status ceilings are a different direction and live in statusCeiling below.",
     "root_claim": "global", "mapping_invalid": "bridge_peers",
     "boundary_exceeded": "dependents", "measurement_invalid": "local",
     "empirical_failure": "dependents", "interpretation": "local",
     "application_failure": "application_node_only"
+  },
+
+  "statusRank": {
+    "_comment": "Ordering of the confidence ladder. weakened sits at 1 because it was knocked down from higher. Dead states are not ranked - they are absolute ceilings.",
+    "captured": 0, "classified": 1, "weakened": 1, "proposed": 2,
+    "active": 3, "verified": 4, "kernel_verified": 5
+  },
+
+  "statusCeiling": {
+    "_comment": "STATUS travelling up from dependencies. The third direction, added 2026-07-26. propagationScope covers failure going out; descentInvariant.confidencePreserved covers confidence going down to a public audience; this covers status going up. Enforced by _scripts/validate_atoms.py::check_status_monotonicity.",
+    "rule": "status <= min(status of every dependsOn target, and of every bridgesTo target whose grade propagates)",
+    "deadStates": ["falsified", "deprecated", "superseded"],
+    "deadRule": "any dependsOn target in a dead state is an absolute ceiling - the dependent cannot hold any live status",
+    "exception": "rederivation.artifact",
+    "exceptionRule": "status may exceed the ceiling ONLY when the atom carries rederivation.artifact naming an independent re-derivation. Citation, restatement, summary and compression are NOT re-derivation.",
+    "basis": "data processing inequality - truth -> source -> restatement is a Markov chain and post-processing cannot increase information about the source. Re-derivation breaks the chain, which is why it is the only exception."
   },
 
   "claimClass": [
@@ -65,5 +91,31 @@
     "isomorphism", "causal", "practical_application",
     "floor_axiom", "definition", "theorem", "bridge",
     "empirical_anchor", "prediction", "boundary"
+  ],
+
+  "reachFormat": [
+    "seo_page", "faq", "glossary_entry", "tiktok_script", "twitter_thread",
+    "instagram_caption", "linkedin_post", "youtube_script", "podcast_outline",
+    "substack_post", "infographic", "one_pager", "toolkit", "debate_card",
+    "visual", "carousel", "reel", "story"
+  ],
+
+  "searchIntent": [
+    "informational", "navigational", "transactional", "comparison"
+  ],
+
+  "visualType": [
+    "diagram", "chart", "infographic", "3d_render", "timeline",
+    "comparison", "process_flow", "equation_visual", "glyph"
+  ],
+
+  "questionContext": [
+    "public_debate", "personal_crisis", "academic_inquiry", "pastoral_care",
+    "family_conversation", "online_comment", "classroom", "self_study"
+  ],
+
+  "resultOutcome": [
+    "applied", "debated", "shared", "taught", "life_changed",
+    "rejected", "partial", "misunderstood", "harmed"
   ]
 }

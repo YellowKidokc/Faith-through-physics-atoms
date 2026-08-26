@@ -1,0 +1,44 @@
+{
+  "atom_id": "tp:lane4/lagrangian/lagrangian-action-bridge-candidate",
+  "atom_uid": "sha256:37d09ff8a66aec29bfb4673e304583176b8035151f545de3ceb21e522cb6d5c7",
+  "title": "Lagrangian Action Bridge Candidate",
+  "claim": "The Lagrangian-to-action relationship is a declared candidate bridge pending bridge proof.",
+  "domain": "lagrangian",
+  "lane": "Lane4",
+  "claim_class": "bridge_candidate",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Lane labels are interpreted according to their declared evidentiary scope."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [
+    {
+      "status": "declared",
+      "proof": "pending"
+    }
+  ],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "BRIDGE_DECLARED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "LANE4_ATOM_LEDGER_BUILD_REPORT.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_seeded",
+      "result": "recorded",
+      "artifact_path": "LANE4_ATOM_LEDGER_BUILD_REPORT.md",
+      "meaning": "Initial Lane 4 fixture created.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Codex",
+      "lane": "Lane4",
+      "event_id": "sha256:aa201c5a2bebe4bdfa3426aca6f37702447972fd01721cce9d20f721cc94422f"
+    }
+  ],
+  "source_claim_id": "LAGRANGIAN_ACTION_BRIDGE_CANDIDATE"
+}

@@ -1,0 +1,67 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-044-chi-requires-observer-for-actualization",
+  "atom_uid": "sha256:8a37736a55f6e3a363380cfc8a9fea34a012a904f292dd70a36594b42de01716",
+  "title": "AX-044 — Chi Requires Observer For Actualization",
+  "claim": "Without observers, χ remains pure potential, never actualized.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "04-energy",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "χ_actual = Ŵ(Φ)·χ_potential; Ŵ=0 → χ_actual=0"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-035",
+    "tp:axioms/01/AX-039",
+    "tp:axioms/01/AX-043"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show χ-field actualizes in regions with zero observers",
+    "Demonstrate reality exists fully without observation (realism)",
+    "Show χ is already actual, not potential"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-044-chi-requires-observer-for-actualization.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-044-chi-requires-observer-for-actualization.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:d14985779c186fa5335b1b25be6e9705d4af0f76a62b95980f9e7a5f8a5b6821",
+      "event_uuid": "06166771-daf1-5110-9596-0c4e7631ea3d"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 04-energy.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:cfef5f258dda422036311af35b68dc2c7dd2a39ca4aaa08b230c3e50ad6bfe06",
+      "event_uuid": "baf1691c-5601-55a1-b1b3-8aa0d9a25282"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/LN5.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-044",
+  "original_node_id": "tp:axioms/01/AX-044",
+  "atom_uuid": "9287cc4f-aa56-5b2f-b011-97c4ce557b43"
+}

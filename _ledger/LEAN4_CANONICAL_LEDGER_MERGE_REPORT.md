@@ -45,23 +45,3 @@ The existing repo-wide Lane 4 validator currently reports pre-existing atom
 issues outside this Lean ledger merge lane, so this run does not rebuild the
 global claim ledger CSV/JSONL. The merge is logged in the control atom and
 `LEAN4_RUN_LOG.jsonl`.
-
-## Active Copy / Archive Follow-up
-
-After review request, the merged workbook was kept as the canonical workbook and
-two active copies were created:
-
-- Desktop copy: `C:\Users\David\Desktop\Lean 4 - CANONICAL_LEDGER_MERGED.xlsx`
-- Hidden backup: `D:\.lean4_canonical_backup\Lean 4 - CANONICAL_LEDGER_MERGED.hidden-backup.xlsx`
-
-Seven older source workbooks were moved into:
-
-`\\192.168.2.50\h_hp\Desktop\Master EXCEL\ZZZ_ARCHIVE_LEAN4_WORKBOOKS_20260813`
-
-The canonical workbook, Desktop copy, and hidden backup were verified to have
-the same SHA-256:
-
-`dc5136f1b78c43aa6f02fa72884c8fafdc0723b802180584abbe33f1aba553f9`
-
-This follow-up is logged in the same control atom and in
-`_ledger/LEAN4_WORKBOOK_CLEANUP_LOG.jsonl`.

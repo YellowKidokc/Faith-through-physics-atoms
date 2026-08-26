@@ -1,0 +1,81 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-006",
+  "nodeID": "tp:master-equation/01/ME-EQ-006",
+  "claimID": "tp:ME/ME-EQ-006",
+  "nodeType": "claim",
+  "name": "Zero-Collapse Theorem",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "mathematical",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "statementTechnical": "χ = 0 ⇔ ∃ required factor f_i = 0",
+  "statementPlain": "A required zero channel collapses the product, and product collapse implies a zero channel under the kernel assumptions.",
+  "mathematicalForm": "χ = 0 ⇔ ∃ required factor f_i = 0",
+  "mathFormNormal": "listProd(xs)=zero iff zero in xs",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-061",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-132",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    }
+  ],
+  "tags": [
+    "equation",
+    "proof",
+    "kill-condition"
+  ],
+  "keywords": [
+    "equation",
+    "χ",
+    "f_i",
+    "zero",
+    "listProd"
+  ],
+  "verificationStatus": "equation-registry-import",
+  "kernelChecked": true,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer.",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\VERIFIED_SECTION_BY_SECTION_REPORT.md",
+  "equationRegistry": {
+    "equationID": "ME-EQ-006",
+    "variables": [
+      "χ",
+      "f_i",
+      "zero",
+      "listProd"
+    ],
+    "normalForm": "listProd(xs)=zero iff zero in xs",
+    "source": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\VERIFIED_SECTION_BY_SECTION_REPORT.md"
+  }
+}

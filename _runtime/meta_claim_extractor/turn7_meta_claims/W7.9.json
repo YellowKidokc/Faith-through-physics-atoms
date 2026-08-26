@@ -1,0 +1,1010 @@
+{
+  "work_id": "W7.9",
+  "title": "Science Argument for Triadic Structure",
+  "turn": "TURN 7 - THE GAUNTLET",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\03_SCIENCE_FLOOR_BEFORE_BEGINNING\\SCI-00-the-science-argument-for-triadic-structure.md",
+  "overall_status": "reviewed",
+  "summary": "This work compiles physics and information-theory examples to argue that triadic structure is a recurring architecture in stable scientific explanation, while explicitly disclaiming that physics proves the Trinity. It provides a defense grid with grades and kill conditions, and distinguishes science-side claims from theological bridges.",
+  "claims": [
+    {
+      "claim_id": "W7.9-C001",
+      "claim_text": "Triadic structure is a recurring architecture in stable explanation in physics and information theory.",
+      "framework_lane": "physics",
+      "physics_claim_type": "bridge_mapping",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "evidence_lane": "mixed",
+      "evidence_needed": [
+        "A systematic survey of scientific theories showing that stable explanations often require three irreducible roles."
+      ],
+      "evidence_present": [
+        "Multiple examples: Shannon, quantum measurement, decoherence, Noether, open systems, thermodynamics, error correction."
+      ],
+      "evidence_gap": [
+        "No systematic survey; examples are selected, not exhaustive."
+      ],
+      "support": [
+        "Science says: triadic structure is a recurring architecture in stable explanation."
+      ],
+      "dependencies": [
+        "A1-A4",
+        "W3.2"
+      ],
+      "risks": [
+        "Cherry-picking objection; non-triadic structures equally fundamental."
+      ],
+      "kill_condition": "If a counterexample shows a stable explanation without a third role, the claim weakens.",
+      "required_concession": "The claim is not that all science is triadic, but that triadic structure is recurring.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "isomorphism",
+        "proof",
+        "binder",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/isomorphism.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/binder.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "bridge_mapping",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "evidence_lane": "mixed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "isomorphism",
+          "proof",
+          "binder",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C002",
+      "claim_text": "Physics does not prove the Trinity.",
+      "framework_lane": "other",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "theological",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [],
+      "evidence_present": [
+        "Explicit statement: 'Physics proves the Trinity' is not allowed."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "This paper is not allowed to say: Physics proves the Trinity."
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a boundary statement, not a proof.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "claim",
+        "doubt",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 1.0,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "other",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "theological",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "claim",
+          "doubt",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C003",
+      "claim_text": "A scientific triad must have irreducible roles, functional dependence, mediation, asymmetry, and formal visibility.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "AXIOM",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [],
+      "evidence_present": [
+        "Definition provided in the work."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "For this framework, a scientific triad only counts if it has these features."
+      ],
+      "dependencies": [],
+      "risks": [
+        "May be seen as ad hoc definition."
+      ],
+      "kill_condition": "",
+      "required_concession": "This is a definitional criterion, not an empirical discovery.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "axiom",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "AXIOM",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "axiom",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C004",
+      "claim_text": "Shannon communication requires source, channel, and receiver; none are optional.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Standard information theory reference."
+      ],
+      "evidence_present": [
+        "Shannon's 1948 paper cited."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Information is not just difference. Communicated information requires a triadic path: source, channel, receiver."
+      ],
+      "dependencies": [
+        "Shannon 1948"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.95,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C005",
+      "claim_text": "Quantum measurement is structurally triadic: system, measurement context, and outcome.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Standard quantum mechanics formalism."
+      ],
+      "evidence_present": [
+        "Born rule and measurement context described."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Quantum measurement is not object alone or observer alone. It is system, question, and registered answer."
+      ],
+      "dependencies": [
+        "Born rule"
+      ],
+      "risks": [
+        "Interpretation-dependent aspects."
+      ],
+      "kill_condition": "",
+      "required_concession": "Measurement problem interpretations vary.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.85,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C006",
+      "claim_text": "Decoherence and einselection require system, environment, and pointer states to explain classical stability.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Zurek's decoherence papers."
+      ],
+      "evidence_present": [
+        "Zurek 2003 cited."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Decoherence turns fragile possibility into stable record by means of a third role: the environment that selects what can persist."
+      ],
+      "dependencies": [
+        "Zurek 2003"
+      ],
+      "risks": [
+        "Interpretation-dependent."
+      ],
+      "kill_condition": "",
+      "required_concession": "Decoherence is a widely accepted framework but not universally interpreted.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C007",
+      "claim_text": "Quantum Darwinism models objectivity as redundant environmental encoding.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Zurek's Quantum Darwinism paper."
+      ],
+      "evidence_present": [
+        "arXiv:0903.5082 cited."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "In Quantum Darwinism, the classical world becomes objective because the environment carries many records of the same selected state."
+      ],
+      "dependencies": [
+        "Zurek 2009"
+      ],
+      "risks": [
+        "Still an active research area."
+      ],
+      "kill_condition": "",
+      "required_concession": "Quantum Darwinism is a proposed mechanism, not fully settled.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C008",
+      "claim_text": "Open quantum systems are described by system, bath, and coupling terms in the Hamiltonian.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Standard open quantum systems formalism."
+      ],
+      "evidence_present": [
+        "Hamiltonian decomposition H = H_S + H_B + H_SB."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "An open system is not just a system plus surroundings. It is system, surroundings, and coupling."
+      ],
+      "dependencies": [
+        "Open quantum systems literature"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "equation",
+        "canonical"
+      ],
+      "confidence": 0.95,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "equation",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C009",
+      "claim_text": "Noether's theorem shows that conservation arises from symmetry under transformation.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Noether's theorem proof."
+      ],
+      "evidence_present": [
+        "Noether 1918 cited."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Noether teaches that what remains is revealed by how a law survives transformation."
+      ],
+      "dependencies": [
+        "Noether 1918"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "equation",
+        "canonical"
+      ],
+      "confidence": 0.95,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "equation",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C010",
+      "claim_text": "Gauge theory requires a connection field to maintain coherence under local symmetry.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Standard gauge theory formalism."
+      ],
+      "evidence_present": [
+        "Description of local symmetry and gauge connection."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Gauge theory says local freedom does not remain coherent without a connection."
+      ],
+      "dependencies": [
+        "Gauge theory literature"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "equation",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "equation",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C011",
+      "claim_text": "CPT invariance is a combined transformation that can hold even when individual symmetries fail.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "CPT theorem references."
+      ],
+      "evidence_present": [
+        "Mention of CPT in quantum field theory."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "CPT is not proof of a divine triad; it is evidence that some invariances live only at the combined level."
+      ],
+      "dependencies": [
+        "CPT theorem"
+      ],
+      "risks": [
+        "Overuse as theological bridge."
+      ],
+      "kill_condition": "",
+      "required_concession": "CPT is a combined symmetry, not a triadic role structure.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.85,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C012",
+      "claim_text": "Thermodynamics classifies systems by system, boundary, and environment.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Standard thermodynamics references."
+      ],
+      "evidence_present": [
+        "Description of isolated, closed, open systems."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "In thermodynamics, a system's fate is not read from the system alone. It is read from system, boundary, and environment."
+      ],
+      "dependencies": [
+        "Thermodynamics"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C013",
+      "claim_text": "Landauer's principle ties irreversible information processing to thermodynamic cost.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Landauer 1961 paper."
+      ],
+      "evidence_present": [
+        "Landauer 1961 cited."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Information is not free once it is physically enacted."
+      ],
+      "dependencies": [
+        "Landauer 1961"
+      ],
+      "risks": [
+        "Overstatement as moral cost."
+      ],
+      "kill_condition": "",
+      "required_concession": "Landauer does not imply moral or semantic cost.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C014",
+      "claim_text": "Feedback control requires plant, sensor, and controller for stable correction.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Control theory references."
+      ],
+      "evidence_present": [
+        "Description of feedback loop."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Correction is triadic: state must be measured, compared, and acted upon."
+      ],
+      "dependencies": [
+        "Control theory"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.85,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C015",
+      "claim_text": "Error correction requires data, check, and recovery roles.",
+      "framework_lane": "physics",
+      "physics_claim_type": "established_physics",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Error correction coding theory."
+      ],
+      "evidence_present": [
+        "Mention of data, check, recovery."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Repair requires data/check/recovery structures."
+      ],
+      "dependencies": [
+        "Information theory"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.85,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "established_physics",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C016",
+      "claim_text": "Relational quantum mechanics treats facts as system-relative relations.",
+      "framework_lane": "physics",
+      "physics_claim_type": "physics_model",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Rovelli's RQM paper."
+      ],
+      "evidence_present": [
+        "Rovelli 1996 cited."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "In relational quantum mechanics, facts are not bare objects; they are system-relative relations."
+      ],
+      "dependencies": [
+        "Rovelli 1996"
+      ],
+      "risks": [
+        "Interpretation-dependent."
+      ],
+      "kill_condition": "",
+      "required_concession": "RQM is one interpretation among many.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "equation",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "physics_model",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "equation",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C017",
+      "claim_text": "Wigner's Friend illustrates that observers can become part of the system for another observer.",
+      "framework_lane": "physics",
+      "physics_claim_type": "physics_model",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "historical_source",
+      "evidence_needed": [
+        "Wigner's Friend thought experiment."
+      ],
+      "evidence_present": [
+        "Description of the scenario."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Wigner's Friend shows that measurement is not fully settled by naming a system and one observer; the observer can become part of the system to another observer."
+      ],
+      "dependencies": [
+        "Quantum measurement"
+      ],
+      "risks": [
+        "Not a standard laboratory fact."
+      ],
+      "kill_condition": "",
+      "required_concession": "It is a thought experiment, not empirical proof.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "physics",
+        "equation",
+        "proof",
+        "source-term",
+        "canonical"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/source-term.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "physics",
+        "physics_claim_type": "physics_model",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "historical_source",
+        "recommended_action": "keep",
+        "glyphs": [
+          "physics",
+          "equation",
+          "proof",
+          "source-term",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.9-C018",
+      "claim_text": "The strongest hostile objection is that the examples are cherry-picked threes.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "adversarial_review",
+      "evidence_needed": [],
+      "evidence_present": [
+        "The objection is stated and answered."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "You are cherry-picking threes."
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "The claim is narrower: the third role performs a recurring function.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "ai-validated",
+        "canonical"
+      ],
+      "confidence": 1.0,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/ai-validated.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "adversarial_review",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "ai-validated",
+          "canonical"
+        ]
+      }
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P2",
+      "target": "Overall argument",
+      "problem": "The claim that triadic structure is recurring is supported by examples but not by a systematic survey.",
+      "repair": "Add a note that the examples are illustrative, not exhaustive, and that a systematic survey is needed."
+    },
+    {
+      "severity": "P3",
+      "target": "Section 8 CPT",
+      "problem": "CPT is presented as a triad but it is a combined symmetry, not three roles.",
+      "repair": "Explicitly downgrade CPT to a weaker analogy and avoid using it as a primary example."
+    }
+  ],
+  "log_notes": [
+    "The work explicitly disclaims physics proving the Trinity, which is a key boundary.",
+    "Kill conditions are provided and should be monitored.",
+    "The work is a source map, not a formal derivation; claims are mostly bridge mappings."
+  ]
+}

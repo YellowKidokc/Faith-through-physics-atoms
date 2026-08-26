@@ -1,0 +1,108 @@
+[manifest]
+schema = 1
+name = "Crown / atoms canonical drift guard"
+exclude = [
+  ".git",
+  ".canon-guard",
+  "canon_guard/tests",
+  "canon_guard/_backup_quote_guard_20260728",
+  "canon_guard/__pycache__"
+]
+
+[[documents]]
+id = "crown-knowledge-atom"
+path = "canon_guard_v0.1.0/canon_guard/canon/crown-knowledge-atom-no-drift.md"
+version = "0.1.0"
+effective_date = "2026-07-29"
+authority = 100
+locked = true
+
+[[documents]]
+id = "stage-contracts-v12"
+path = "_vocab/stage_contracts.json"
+version = "1.0.0"
+effective_date = "2026-07-28"
+authority = 90
+locked = true
+
+[[claims]]
+id = "CROWN_C_TENTH_FACTOR_LANGUAGE"
+mode = "forbid"
+pattern = '(?i)\bC\s+(?:is|=)\s+(?:a\s+)?(?:ordinary\s+)?(?:tenth|10th)\s+factor\b|\bC\s+-\s+Total\s+Integration\s+Measure\b|\b"C"\s*,\s*"Ï‡_(?:total|local)"'
+message = "Possible Crown drift: C is being treated as an ordinary tenth factor. Current Crown rule says C_W is the wrapper/operator and C is not a tenth product factor."
+severity = "critical"
+safe_fix = false
+canonical_id = "crown-knowledge-atom"
+scope = ["**/*.md", "**/*.txt", "**/*.json", "**/*.jsonld"]
+exclude_scope = ["canon_guard_v0.1.0/canon_guard/canon/crown-knowledge-atom-no-drift.md"]
+
+[[claims]]
+id = "CROWN_FACTOR_COUNT_TEN"
+mode = "forbid"
+pattern = '"factorCount"\s*:\s*10|Ten factors only:\s*G,\s*M,\s*E,\s*S_eff,\s*T,\s*K,\s*R,\s*Q,\s*F,\s*C'
+message = "Possible Crown drift: factor count is still ten with C as a factor. Review against current nine-factor-plus-C_W-wrapper rule."
+severity = "error"
+safe_fix = false
+canonical_id = "crown-knowledge-atom"
+scope = ["**/*.md", "**/*.json", "**/*.jsonld"]
+
+[[claims]]
+id = "CROWN_OLD_MASTER_PRODUCT_WITH_C"
+mode = "forbid"
+pattern = '(?i)(?:Ï‡|\\chi|chi)(?:_[a-z]+)?\s*(?:\(.*?\))?\s*=\s*(?:âˆ«|\\int|integrate|iiint|triple_integral)?.{0,120}G.{0,20}M.{0,20}E.{0,20}S(?:_eff|_prod)?.{0,20}T.{0,20}K.{0,20}R.{0,20}Q.{0,20}F.{0,20}(?:Â·|\*|\\cdot|,)\s*C\b'
+message = "Possible old Master Equation product: G*M*E*S*T*K*R*Q*F*C. Current Crown rule expects G*M*E*S*T*K*R*Q*F inside C_W[...], with C not a tenth factor."
+severity = "critical"
+safe_fix = false
+canonical_id = "crown-knowledge-atom"
+scope = ["**/*.md", "**/*.txt", "**/*.tex", "**/*.json", "**/*.jsonld"]
+exclude_scope = ["canon_guard_v0.1.0/canon_guard/canon/crown-knowledge-atom-no-drift.md"]
+
+[[claims]]
+id = "ATOM_STATUS_PARTIAL"
+mode = "forbid"
+pattern = '"status"\s*:\s*"partial"'
+message = "Status vocabulary drift: atom status uses 'partial'. Map it to draft/proposed/active/verified/kernel_verified/weakened/falsified/deprecated/superseded, or document it as view-layer status."
+severity = "error"
+safe_fix = false
+canonical_id = "stage-contracts-v12"
+scope = ["**/*.json", "**/*.jsonld"]
+
+[[claims]]
+id = "LEGACY_VERIFICATION_FIELDS"
+mode = "forbid"
+pattern = '"(?:verificationStatus|kernelChecked|challengeStatus)"\s*:'
+message = "Legacy verification field detected. Newer atom model should migrate to status + verifiedBy or explicitly document this as legacy view data."
+severity = "warning"
+safe_fix = false
+canonical_id = "stage-contracts-v12"
+scope = ["**/*.json", "**/*.jsonld", "**/*.md"]
+
+[[claims]]
+id = "OLD_STAGE_MODEL_V11"
+mode = "forbid"
+pattern = 'Domain Architecture v11|00_inbox_working through 13_fulfilled|13_fulfilled'
+message = "Old v11/14-stage language detected. v12 stage_contracts currently defines 00_inbox_working, 01_middle_seed, and 02_claim_atoms."
+severity = "warning"
+safe_fix = false
+canonical_id = "stage-contracts-v12"
+scope = ["README*.md", "**/README.md"]
+
+[[claims]]
+id = "BARE_HEDGE"
+mode = "forbid"
+pattern = '(?im)^(?!.*consilience).*does not (?:constitute )?pro(?:ve|of) (?:the |a )?theolog(?:y|ical claim).*$'
+message = "Cross-domain non-proof hedge lacks the required consilience posture."
+severity = "error"
+safe_fix = false
+canonical_id = "crown-knowledge-atom"
+scope = ["**/*.md", "**/*.txt"]
+exclude_scope = ["canon_guard_v0.1.0/canon_guard/canon/crown-knowledge-atom-no-drift.md"]
+
+[[equation_aliases]]
+id = "MASTER_EQUATION_DRIFT"
+detect = 'Ï‡\s*=|\\chi\s*=|chi\s*='
+canonical = 'chi(W) = C_W[ triple_integral (G*M*E*S*T*K*R*Q*F) dx dy dt ]'
+message = "Equation involving chi differs from the Crown no-drift equation. Semantic adjudication required; never auto-fixed."
+severity = "error"
+safe_fix = false
+canonical_id = "crown-knowledge-atom"

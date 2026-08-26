@@ -1,0 +1,78 @@
+{
+  "source_id": "01_THE_GOD_STORY_Narrative_Map_Part_1",
+  "title": "THE GOD STORY  -  Narrative Map",
+  "canonical_node": {
+    "axiom": "The narrative arc of the gospel is derivable from first principles, and each story beat maps to specific axioms in the gospel chain.",
+    "definitions": [
+      "Gospel chain: the sequence of axioms (A1.1 through A12.2) that together derive the gospel from first principles.",
+      "Story beat: a question that walks the reader through the gospel from God's perspective.",
+      "Axiom cluster: a grouping of related axioms (e.g., EXISTENCE, SUBSTRATE, COHERENCE).",
+      "First principles: irreducible truths from which the narrative is derived.",
+      "Structural isomorphism: the claimed mapping between physics and theology."
+    ],
+    "derivation": [
+      "The document presents a series of questions (Q1-Q13) that build a narrative from God's perspective.",
+      "Each question is mapped to specific axioms and axiom clusters.",
+      "The narrative claims to derive the gospel without citing scripture until a later section.",
+      "The document asserts that the axiom chain validates pre-installed information rather than introducing new information.",
+      "The document claims that the narrative is supported by structural isomorphism between physics and theology."
+    ],
+    "action": "Use this narrative map as the Section 3 (Narrative Case) in axiom fortification files, weaving the story beats into the axiom presentations.",
+    "boundary": [
+      "This document does not provide formal proofs or rigorous derivations.",
+      "It does not establish the truth of the axioms; it only maps a narrative onto them.",
+      "It does not include the full development of Q13 (Destiny), which is marked as TBD.",
+      "It does not provide empirical evidence for the claims made."
+    ],
+    "test": [
+      "Check that each question in the narrative maps to the stated axioms.",
+      "Verify that the narrative is consistent with the axiom definitions.",
+      "Ensure that the narrative does not introduce new axioms not listed in the map.",
+      "Confirm that the narrative is used only as a pedagogical tool, not as proof."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Axiom definitions from the gospel chain (A1.1-A12.2)",
+      "Axiom fortification files (to be woven into Section 3)",
+      "Previous sessions' outputs (Opus Session, March 26, 2026)"
+    ],
+    "dg2_new_capability": "Provides a narrative framework that connects abstract axioms to a coherent story, enabling pedagogical presentation and cross-referencing.",
+    "dg3_preserved_floor": "Preserves the axiom chain structure and the mapping between questions and axioms.",
+    "dg4_collapse_if_removed": "Without this narrative map, the axioms lose their pedagogical context and the connection to the gospel story becomes fragmented.",
+    "dg5_translation_registers": [
+      "Theological narrative",
+      "Axiom chain references",
+      "Physics analogies (e.g., entropy, quantum mechanics)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Narrative mapping",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "C",
+    "recommended_atom_action": "Use as narrative anchor for axiom presentations; do not treat as proof."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims of 'derivation' may be overstated; the document only maps narrative to axioms.",
+      "The 'Evolution Kill Shot' and 'Universal Convergence' are presented as evidence but lack rigorous support.",
+      "The 'physics' claims (e.g., QM as scar of the fall) are metaphorical and not scientifically established."
+    ],
+    "kill_conditions": [
+      "If the axiom chain is found to be internally inconsistent, the narrative collapses.",
+      "If the mapping between questions and axioms is shown to be arbitrary, the narrative loses coherence.",
+      "If the document is used as proof of the axioms, it fails."
+    ],
+    "lean_target": "Narrative coherence and pedagogical utility, not formal proof."
+  },
+  "plain_summary": "This document provides a narrative map for presenting the gospel from God's perspective, linking each story beat to specific axioms in a chain. It is intended as a pedagogical tool, not as a proof. The narrative is coherent but relies on unverified claims and should be used with caution.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_THE_GOD_STORY_Narrative_Map_Part_1.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\me-audit\\json\\01_THE_GOD_STORY_Narrative_Map_Part_1.canonical-node.json"
+  }
+}

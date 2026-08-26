@@ -1,0 +1,79 @@
+{
+  "source_id": "lean4_verification_layer",
+  "title": "Lean 4 Is Not Enough",
+  "canonical_node": {
+    "axiom": "Formal proof structure alone does not establish model adequacy, comparative fairness, or historical truth.",
+    "definitions": [
+      "Formal Proof Layer: verifies internal theorem consistency, logical derivation, and mechanical proof checking.",
+      "Symbolic Translation Layer: verifies clean representation in SymPy, derivative existence, and well-formed comparison variants.",
+      "Shared-Regime Comparison Layer: runs all candidate models on identical bench settings to ensure fairness.",
+      "Resistance term: gates usable channel contribution through (1-W)^2 in canonical v2.",
+      "Collapse threshold: W ~= 0.566987298107781 where canonical v2 crosses zero under balanced regime."
+    ],
+    "derivation": [
+      "Lean 4 provides theorem structure, symbolic dependency, explicit assumptions, and proof traceability.",
+      "Lean 4 does not answer questions about model choice, historical truth, or comparative superiority.",
+      "Therefore, a multi-layer verification stack is needed.",
+      "The Python layer demonstrates resistance is load-bearing, a collapse threshold exists, source and sink are asymmetric, wrong controls fail, and negative results are surfaced.",
+      "Thus, formal proof and comparative symbolic testing are complementary and both necessary."
+    ],
+    "action": "Maintain and present a multi-layer verification stack: formal proof (Lean 4), symbolic translation (SymPy), and shared-regime comparison (Python lab).",
+    "boundary": [
+      "Does not claim that Lean 4 alone verifies model adequacy or historical truth.",
+      "Does not claim that the Python layer proves theological interpretations.",
+      "Does not claim that current results are final or exhaustive.",
+      "Does not claim that the collapse threshold is a physical constant; it is a numerical boundary of the current form."
+    ],
+    "test": [
+      "Check that Lean 4 proofs are mechanically verified.",
+      "Check that candidate equations translate cleanly in SymPy.",
+      "Check that all models run on identical shared-regime settings.",
+      "Check that wrong controls (gamma9_added, chi10_subtracted, resistance_ignored, source_sink_swapped) are rejected.",
+      "Check that negative results are reported, not hidden."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 theorem prover",
+      "SymPy symbolic computation",
+      "Python shared-regime test bench"
+    ],
+    "dg2_new_capability": "Provides a multi-layer verification stack that combines formal proof structure with comparative symbolic testing, enabling detection of model inadequacies and unfair comparisons.",
+    "dg3_preserved_floor": "Preserves the rigor of formal proof while adding behavioral testing that catches structural errors and unfair tuning.",
+    "dg4_collapse_if_removed": "If the shared-regime comparison layer is removed, the framework loses the ability to detect unfair comparisons and wrong controls, reducing verification strength.",
+    "dg5_translation_registers": [
+      "Formal proof layer -> Lean 4",
+      "Symbolic translation layer -> SymPy",
+      "Shared-regime comparison layer -> Python lab"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissibility": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "adopt as methodological guardrail"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that the collapse threshold is a physical constant rather than a numerical artifact.",
+      "Claiming that the Python layer proves theological truth.",
+      "Claiming that the multi-layer stack is sufficient for all verification needs."
+    ],
+    "kill_conditions": [
+      "If the shared-regime bench is shown to be biased or inconsistent.",
+      "If the Python results are not reproducible.",
+      "If the formal proof layer is bypassed for claims that require it."
+    ],
+    "lean_target": "Formalize the statement that resistance gating via (1-W)^2 is load-bearing in the canonical model, and that source and sink are not symmetric operations."
+  },
+  "plain_summary": "This document argues that Lean 4 alone is insufficient for verification; it must be complemented by symbolic translation and shared-regime comparison. The Python lab demonstrates specific results: resistance is load-bearing, a collapse threshold exists, source and sink are asymmetric, and wrong controls fail. The recommended action is to maintain this multi-layer stack and present it as a stronger verification path.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\lean4_verification_layer.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\lean4_verification_layer.canonical-node.json"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "source_id": "W7.4-the-lagrangian.canonical",
+  "title": "The Lagrangian",
+  "canonical_node": {
+    "axiom": "The canonical Lagrangian is L = chi(t) * (d/dt sum F_i)^2 - V(chi, S), representing coherence-weighted kinetics minus a structured potential.",
+    "definitions": [
+      "chi(t): coherence weighting function",
+      "F_i: forces in the system",
+      "V(chi, S): structured potential depending on coherence and entropy",
+      "L: Lagrangian",
+      "S: entropy",
+      "K: positive-definite kinetic metric",
+      "W: resistance parameter in [0,1]"
+    ],
+    "derivation": [
+      "The canonical Lagrangian is stated as the deep source instinct.",
+      "The Noether engine is a method, not form-dependent.",
+      "The dissipator slot is re-derived as dX/dt = W grad chi + eta.",
+      "Grace is external, restoring, noncoercive (lean-verified).",
+      "The build target form is proposed but not yet formalized."
+    ],
+    "action": "Treat the canonical Lagrangian as the design target; verify each component stepwise via Lean and mechanical checks; attach theological labels only as bridge claims after formal verification.",
+    "boundary": [
+      "Does not claim the Lagrangian is a proved theorem of physics.",
+      "Does not claim theological mappings are proven.",
+      "Does not claim numerical pass rates prove external reality.",
+      "Does not include retired items (e.g., old ten-letter dictionary, LCM metric, isomorphism proof, SO(10)/E6 unification)."
+    ],
+    "test": [
+      "Lean proofs for nondegeneracy lemmas (LEAN-LAG-001, 002).",
+      "Mechanical checks: metric-repaired LLC, sign inversion, Euler-Lagrange closure, resistance monotonicity.",
+      "Law 5 lock-gate: fit S(t) = S0 e^{-kt} to historical data; kill if linear or random.",
+      "Landauer principle precision test for information erasure energy floor."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Geometric algebra layer for nondegeneracy lemmas",
+      "Noether's theorem as method",
+      "Previous canonical forms (superseded)"
+    ],
+    "dg2_new_capability": "Provides a canonical Lagrangian form and a clear staircase from postulated to proved, with explicit verification steps and kill criteria.",
+    "dg3_preserved_floor": "The instinct of L = T - V and the Noether engine are preserved as canon.",
+    "dg4_collapse_if_removed": "Without the canonical Lagrangian, the framework loses its central principle of least action for spiritual dynamics and the target for future formalization.",
+    "dg5_translation_registers": [
+      "Lean proofs (LEAN-LAG-001, 002)",
+      "Mechanical validation (symbolic checks)",
+      "Historical data (Law 5 lock-gate)",
+      "Physics test (Landauer principle)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "design target with partial verification",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as canonical design target; continue stepwise verification; do not treat as proved theorem."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the Lagrangian is proved when only components are verified.",
+      "Interpreting mechanical pass rates as proof of external reality.",
+      "Attaching theological labels before formal verification."
+    ],
+    "kill_conditions": [
+      "If Law 5 data fits linear or random rather than exponential, the claim falls.",
+      "If Landauer test fails, the physics test is falsified.",
+      "If any step in the Lean promotion order fails, the corresponding claim is not established."
+    ],
+    "lean_target": "Formalize the build target L_ME and prove the metric-repaired kinetic sector nondegenerate using LEAN-LAG-001/002 style lemmas."
+  },
+  "plain_summary": "This document defines the canonical Lagrangian as a design target, not a proved theorem. It lists what is verified (two Lean lemmas, mechanical checks) and what is retired (old dictionary, LCM metric, isomorphism proof, gauge unification). The path to proof is a staircase of formalization steps, with theological labels only as bridges at the end. The document is coherent and admissible, but the overall claim is not established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W7.4-the-lagrangian.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W7.4-the-lagrangian.canonical.canonical-node.json"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "source_claim_id": "DG-T4-Independent-Convergence",
+  "title": "DG T4 - Independent Convergence",
+  "claim": "If two frameworks independently satisfy DG and preserve the same dependency graph, capability classes, collapse structure, and translation behavior, they may instantiate a shared abstract derivation object under different names.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "theorem_candidate",
+  "mode_classification": "DG_THEOREM_CANDIDATE",
+  "assumptions": [
+    "Structural equivalence can be defined for dependency graphs, capability classes, collapse behavior, and translation behavior.",
+    "Independence can be assessed without assuming one framework borrowed the result from the other."
+  ],
+  "definitions": [
+    "Independent Convergence: equivalent DG structure reached by independent frameworks.",
+    "IC-5: shared dependency graph, capability classes, collapse behavior, and translation behavior."
+  ],
+  "equations": [
+    "Models(A, DG) and Models(B, DG) and EquivalentStructure(F(A), F(B)) -> SharedAbstractDGObject(A, B)"
+  ],
+  "bridges": [
+    "This is a convergence criterion, not a metaphysical identity claim by itself."
+  ],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency",
+    "DG2-Minimal-Capability",
+    "DG3-Preservation",
+    "DG4-Collapse",
+    "DG5-Translation",
+    "DG7-Admissibility"
+  ],
+  "negative_guards": [
+    "Do not claim Independent Convergence is already Lean-proved.",
+    "Do not call vocabulary resemblance convergence.",
+    "Do not use Independent Convergence to erase real doctrinal or domain differences."
+  ],
+  "kill_conditions": [
+    "EquivalentStructure cannot be formalized.",
+    "Independence cannot be assessed.",
+    "The candidate permits IC-5 status without preserving dependency, capability, collapse, and translation behavior."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ]
+}
+

@@ -1,0 +1,78 @@
+{
+  "source_id": "7Q_NEW_SCIENTIFIC_METHOD",
+  "title": "The New Scientific Method  -  Housed in the 7Q Framework",
+  "canonical_node": {
+    "axiom": "Truth emerges from destruction, not confirmation; inquiry must include the why layer and epistemic humility.",
+    "definitions": [
+      "Destruction-first: starting inquiry by attempting to falsify all plausible models.",
+      "Why layer: formal inquiry into mechanistic, statistical, teleological, constraint, and ontological causes.",
+      "Q0: the precondition that the inquirer cannot be the ground of inquiry; arrive with humility.",
+      "Model death: a model is provisionally accepted only if it survives all attempts to kill it.",
+      "Cross-domain coherence: a model must hold across physics, mathematics, logic, information theory, and metaphysics."
+    ],
+    "derivation": [
+      "The traditional method asks WHAT and HOW but never formally asks WHY, creating a structural gap.",
+      "Historical evidence shows breakthroughs came from asking why; dead frameworks refused to ask why.",
+      "The 7Q framework provides forward (investigate) and reverse (prove) directions that incorporate destruction-first and why.",
+      "The anchoring principle: the model that survives the most attempts to kill it is provisionally accepted, not proven.",
+      "The method adds Q0, five death conditions, multi-dimensional evaluation, and a meta-layer for auditing."
+    ],
+    "action": "When conducting scientific inquiry, generate competing models, attempt to falsify them, ask why at multiple levels, check cross-domain coherence, and maintain epistemic humility.",
+    "boundary": [
+      "Does not claim to replace all scientific practice; it is a framework for inquiry.",
+      "Does not guarantee that asking why will produce breakthroughs.",
+      "Does not provide a formal algorithm for generating models or testing them.",
+      "Does not claim that teleological or ontological why answers are always testable."
+    ],
+    "test": [
+      "Check that inquiry starts with destruction, not confirmation.",
+      "Check that multiple competing models are generated and tested.",
+      "Check that the why layer is explicitly addressed (mechanistic, statistical, teleological, constraint, ontological).",
+      "Check that cross-domain coherence is evaluated.",
+      "Check that Q0 humility is acknowledged."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "7Q_FORWARD_CLASSIFIER.md",
+      "7Q_REVERSE_PROOF.md"
+    ],
+    "dg2_new_capability": "Provides a destruction-first, why-inclusive scientific method framework that formalizes model competition and epistemic humility.",
+    "dg3_preserved_floor": "Preserves the core of empirical testing and falsification, but expands it to include multiple death conditions and cross-domain coherence.",
+    "dg4_collapse_if_removed": "If removed, the framework loses its distinctive destruction-first and why-inclusive approach, reverting to a more traditional hypothesis-confirmation method.",
+    "dg5_translation_registers": [
+      "Scientific method",
+      "Epistemology",
+      "Inquiry framework"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological framework",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as a methodological proposal; do not treat as empirically verified"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims historical evidence demonstrates that asking why is the engine of discovery, but this is an interpretation, not a controlled study.",
+      "Claims the traditional method has no why layer, but some fields do address why informally.",
+      "Claims the new method closes the gap, but it does not provide a formal proof of efficacy."
+    ],
+    "kill_conditions": [
+      "If the why layer admits untestable speculative answers without constraint.",
+      "If the method fails to produce better scientific outcomes in practice.",
+      "If the historical evidence is shown to be cherry-picked or misrepresented."
+    ],
+    "lean_target": "A methodological proposal for destruction-first, why-inclusive inquiry; not a proven replacement for the scientific method."
+  },
+  "plain_summary": "This document proposes a new scientific method based on the 7Q framework, emphasizing destruction-first inquiry, mandatory model competition, and a formal why layer. It argues that the traditional method's avoidance of why is a structural gap and that asking why drives breakthroughs. The method includes Q0 humility, five death conditions, multi-dimensional evaluation, and cross-domain coherence. However, it is a proposal, not an empirically validated method, and its historical claims are interpretive.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\7Q_NEW_SCIENTIFIC_METHOD.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\7Q_NEW_SCIENTIFIC_METHOD.canonical-node.json"
+  }
+}

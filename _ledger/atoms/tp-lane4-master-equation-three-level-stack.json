@@ -1,0 +1,60 @@
+{
+  "atom_id": "tp:lane4/master-equation/three-level-stack",
+  "atom_uid": "sha256:6a507e4d7ac980503a484f6fbde6471a8d2bc22dae8c325dcf890fcb8798cb1a",
+  "title": "Three-Level Stack: Measurement → Snapshot → Motion",
+  "claim": "Level 0 (Measurement): Λ_i = A_i · log₂(1 + T_i/D_i), units bits·s⁻¹. The Shannon layer IS the unit system. Level 0→1 Boundary: X_i = Λ_i/Λ_{i,ref}, dimensionless, X_i ∈ [0,1]. Each register is a fraction of its own full capacity. Level 1 (Snapshot): χ = C_W[∏ X_i], dimensionless. Level 2 (Motion): Ẋ = W·∇χ + η. RETIRED: 'All nine factors carry bits/s' — bits/s lives only in Level 0. RETIRED: 'Level 2 is Level 1 differentiated.'",
+  "domain": "master-equation",
+  "lane": "Mathematics",
+  "claim_class": "formal_system",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Shannon channel capacity as the measurement foundation",
+    "The reference capacity Λ_{i,ref} is itself a capacity, so the ratio is dimensionless"
+  ],
+  "definitions": [
+    "Level 0: measurement in bits/s",
+    "Level 1: dimensionless snapshot, fractions of full capacity",
+    "Level 2: open gradient dynamics, postulated not derived"
+  ],
+  "equations": [
+    "Λ_i = A_i · log₂(1 + T_i/D_i)",
+    "X_i = Λ_i / Λ_{i,ref}",
+    "χ = C_W[∏ X_i]",
+    "dX/dt = W·∇χ + η"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:lane4/master-equation/master-equation-v3-canonical-form"
+  ],
+  "negative_guards": [
+    "Nine quantities in bits/s multiplied together give bits⁹·s⁻⁹, which means nothing. Each register enters as a fraction.",
+    "RETIRED: 'All nine factors carry bits/s.' Bits/s lives only in Level 0.",
+    "RETIRED: 'Level 2 is Level 1 differentiated.' Level 2 postulates first-order open gradient dynamics."
+  ],
+  "kill_conditions": [
+    "Show that the Shannon layer does not function as a unit system for the ten laws.",
+    "Show that the dimensionless ratio X_i loses information critical to the law's operation."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "atom_created_from_canonical_audit",
+      "result": "recorded",
+      "artifact_path": "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md",
+      "meaning": "Created during three-model audit (Claude/o3/DeepSeek) of canonical doc vs atom ledger.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "Mathematics",
+      "event_id": "sha256:e515e66da4bb16d356b21ac6e21d4b16221f4d6f5855be35fb327666f9c00103",
+      "event_uuid": "8f1ed789-5e69-52a5-b62c-1ca9dae763b1"
+    }
+  ],
+  "source_claim_id": "THREE_LEVEL_STACK",
+  "atom_uuid": "65d92f7a-0f7b-5aa0-a02d-bdbeddecb51a"
+}

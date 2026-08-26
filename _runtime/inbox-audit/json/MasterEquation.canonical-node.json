@@ -1,0 +1,73 @@
+{
+  "source_id": "MasterEquation",
+  "title": "MasterEquation.lean",
+  "canonical_node": {
+    "axiom": "Reality coherence chi is the multiplicative product of ten coupled laws: chi = G*M*E*S*T*K*R*Q*F*C.",
+    "definitions": [
+      "LawIndex: the set {0,1,2,...,8} indexing nine laws (coherence implicit).",
+      "State : a function from LawIndex to values in the CoherenceAlgebra.",
+      "chi: the product of all nine law values.",
+      "LawCoupling: the product of all laws except one, representing the derivative structure."
+    ],
+    "derivation": [
+      "Define LawIndex as the finite set of nine indices.",
+      "Define State  as a function from LawIndex to CoherenceAlgebra.",
+      "Define chi as the product of all law values in the state.",
+      "Define LawCoupling for each law as the product of all other laws.",
+      "State theorem chi_collapse: if any law is zero, chi is zero."
+    ],
+    "action": "The system should treat chi as a formal typed object in Lean 4, enabling proof checking and reasoning about the coupled product structure.",
+    "boundary": [
+      "Does not provide a completed proof of chi_collapse; it contains 'sorry' placeholders.",
+      "Does not establish physical validity of the master equation; it only formalizes the symbolic claim.",
+      "Does not cover all ten laws explicitly; uses nine indices with coherence implicit."
+    ],
+    "test": [
+      "Check that the Lean file compiles without errors.",
+      "Verify that the 'sorry' placeholders are resolved in the final compiled suite.",
+      "Confirm that chi_collapse theorem is proven without 'sorry' in the ResurrectionFormal package."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CoherenceAlgebra",
+      "Lean 4 proof assistant",
+      "ResurrectionFormal package (for resolving sorry)"
+    ],
+    "dg2_new_capability": "Provides a formal typed representation of the master equation, enabling machine-checked reasoning about its structure.",
+    "dg3_preserved_floor": "Preserves the symbolic claim that chi is a product of coupled laws, now as a formal object.",
+    "dg4_collapse_if_removed": "Without this, the master equation remains an informal symbolic claim, lacking machine-checkable structure.",
+    "dg5_translation_registers": [
+      "Lean 4 formal proof",
+      "Theophysics axiom documents"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "formalization claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating 'sorry' as proof of the theorem.",
+      "Interpreting formalization as physical validation.",
+      "Assuming the ten-law product is fully represented when only nine indices are used."
+    ],
+    "kill_conditions": [
+      "If the 'sorry' placeholders are not resolved, the formal proof is incomplete.",
+      "If the CoherenceAlgebra axioms are inconsistent, the formalization is invalid."
+    ],
+    "lean_target": "Prove chi_collapse without 'sorry' and verify the full ten-law representation."
+  },
+  "plain_summary": "This document describes a Lean 4 formalization of the master equation chi = G*M*E*S*T*K*R*Q*F*C. It defines the product structure and states a collapse theorem, but the proof is incomplete due to 'sorry' placeholders. The formalization is a step toward machine-checked reasoning but does not yet constitute a verified proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\MasterEquation.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\MasterEquation.canonical-node.json"
+  }
+}

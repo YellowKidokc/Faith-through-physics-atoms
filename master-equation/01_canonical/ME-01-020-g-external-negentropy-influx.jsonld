@@ -1,0 +1,85 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-020",
+  "nodeID": "tp:master-equation/01/ME-01-020",
+  "claimID": "tp:ME/ME-01-020",
+  "nodeType": "claim",
+  "name": "G - External Negentropy Influx",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "definition",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "statementTechnical": "External negentropy influx rate.",
+  "statementPlain": "Coherence cannot be self-sufficient in a closed system; it needs an outside influx.",
+  "mathematicalForm": "G in R>=0",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-010",
+      "propagates": true,
+      "note": "Factor slot belongs to the Master Equation integration atom."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-059",
+      "propagates": true,
+      "note": "Factor is grounded by AX-059 in the axiom spine."
+    }
+  ],
+  "tags": [
+    "grace",
+    "entropy",
+    "coherence"
+  ],
+  "keywords": [
+    "master-equation-factor",
+    "G",
+    "R>=0"
+  ],
+  "verificationStatus": "formal-layer-import",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+  "masterEquationFactor": {
+    "id": "ME-01-020",
+    "symbol": "G",
+    "name": "External Negentropy Influx",
+    "domain": "R>=0",
+    "definition": "External negentropy influx rate.",
+    "plain": "Coherence cannot be self-sufficient in a closed system; it needs an outside influx.",
+    "axiom": "AX-059",
+    "tags": [
+      "grace",
+      "entropy",
+      "coherence"
+    ]
+  }
+}

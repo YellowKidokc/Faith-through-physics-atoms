@@ -1,0 +1,97 @@
+{
+  "source_id": "theophysics-module-map",
+  "title": "Theophysics Proof Module Map",
+  "canonical_node": {
+    "axiom": "The system is organized by ClaimType, ModuleSlot, and KernelRole, where ClaimType determines what a node is, ModuleSlot determines its job in a proof module, and KernelRole determines what Lean is allowed to do with it.",
+    "definitions": [
+      "ClaimType: the type of claim a node makes (e.g., Primitive, Definition, Theorem, FrameworkCommitment).",
+      "ModuleSlot: the role a node plays within a proof module (e.g., Primitive/Base Assumption, Definition, Theorem, Evidence/Prediction/Protocol).",
+      "KernelRole: the role Lean is permitted to assign to the node (e.g., candidateAxiom, definitionRole, proofTarget, guardedPremise, metadataRole, auditRole, constraintRole, formalObjectRole)."
+    ],
+    "derivation": [
+      "The document enumerates 25 modules (M01-M25) and assigns 191 canon nodes to specific ModuleSlots and KernelRoles.",
+      "Each module has an output statement, kernel status, risk level, and dependencies on other modules.",
+      "The mapping is intended to support a proof kernel in Lean, with some nodes marked as proof targets and others as guarded premises or metadata.",
+      "The document itself does not provide formal derivations; it is a structural map."
+    ],
+    "action": "Use this map to assign each canon node to a module slot and kernel role, and to sequence proof development according to module dependencies.",
+    "boundary": [
+      "This document does not provide formal proofs or derivations.",
+      "It does not establish the truth of any theological or physical claim.",
+      "It does not define the exact formal content of any axiom or theorem.",
+      "It does not resolve open problems such as PERSONHOOD or the precise typing of C[chi]."
+    ],
+    "test": [
+      "Check that every canon node has a unique module assignment and kernel role.",
+      "Verify that module dependencies are respected in proof development order.",
+      "Ensure that nodes marked as guardedPremise or metadataRole are not used as unguarded axioms in the Lean kernel.",
+      "Confirm that proof targets are only those nodes explicitly marked as proofTarget."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "M01: no dependencies",
+      "M02: M01",
+      "M03: M01, M02",
+      "M04: M01, M03",
+      "M05: M03",
+      "M06: M05",
+      "M07: M06",
+      "M08: M03",
+      "M09: M08",
+      "M10: M05",
+      "M11: M03, M08",
+      "M12: M08, M09, M11",
+      "M13: M02, M03",
+      "M14: M13",
+      "M15: M05, M18",
+      "M16: M07",
+      "M17: M05, M10",
+      "M18: M14, M15",
+      "M19: M01, M02, M03, M04, M05, M06, M08, M09, M11, M12",
+      "M20: M03, M11",
+      "M21: none listed",
+      "M22: M02, M05, M20, M23",
+      "M23: M03, M20",
+      "M24: all modules M01-M25",
+      "M25: M17"
+    ],
+    "dg2_new_capability": "Provides a structured mapping of 191 canon nodes into 25 proof modules with explicit kernel roles, enabling a modular approach to formal verification in Lean.",
+    "dg3_preserved_floor": "Preserves the existing canon node inventory and their ClaimTypes, ensuring no node is lost or duplicated.",
+    "dg4_collapse_if_removed": "If this map is removed, the assignment of nodes to modules and kernel roles becomes undefined, hindering coordinated proof development and Lean integration.",
+    "dg5_translation_registers": [
+      "ClaimType -> ModuleSlot -> KernelRole",
+      "Module dependencies -> proof development order",
+      "Kernel status -> risk level"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Structural map / metadata",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Use as a planning and tracking document; do not treat as a source of formal theorems."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating module outputs as proven theorems when they are only proposals.",
+      "Assuming guarded premises are axioms.",
+      "Interpreting the map as evidence for the truth of the underlying claims."
+    ],
+    "kill_conditions": [
+      "If any node is assigned a kernel role inconsistent with its ClaimType (e.g., a FrameworkCommitment as candidateAxiom).",
+      "If module dependencies are cyclic or missing.",
+      "If the map claims proof status for modules marked as 'guarded' or 'outside-kernel'."
+    ],
+    "lean_target": "Formalize the proof-ready modules (e.g., M01, M03, M08) in Lean, while keeping guarded premises as assumptions and metadata outside the kernel."
+  },
+  "plain_summary": "This document is a structural map of the Theophysics canon, organizing 191 nodes into 25 modules with assigned roles for Lean formalization. It does not provide proofs or establish truth; it is a planning tool. Many modules are marked as guarded or high-risk, and the map itself makes no claims about the validity of the underlying ideas.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\theophysics-module-map.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\theophysics-module-map.canonical-node.json"
+  }
+}

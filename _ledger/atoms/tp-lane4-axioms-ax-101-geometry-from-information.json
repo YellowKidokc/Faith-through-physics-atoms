@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-101-geometry-from-information",
+  "atom_uid": "sha256:cf995e2ae93014c3466017961fa665b472df1a2b8c5947d0dbf900a2a810c485",
+  "title": "AX-101 — Geometry From Information",
+  "claim": "Unification occurs through Logos Field as common substrate.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "G_μν = f(χ); spacetime geometry emerges from χ"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-100"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show geometry is fundamental (not emergent)",
+    "Demonstrate spacetime exists without informational substrate"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-101-geometry-from-information.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-101-geometry-from-information.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:16d374281ff9aa0d3ec06e939cf93013d08fa93b2b7038a303e60180a9e0c2c9",
+      "event_uuid": "c5e25d40-9c48-5c9a-ba69-398d63eb86bf"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:325531521ca0a9149f1893d05c1b248caa5cae4828bf5b16ca864fd3491b20af",
+      "event_uuid": "8738ea6a-7ca2-5727-b20e-970e77550a83"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A13.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-101",
+  "original_node_id": "tp:axioms/01/AX-101",
+  "atom_uuid": "c9e6cda4-b3e3-5f2a-ab2c-0312b749db7e"
+}

@@ -1,0 +1,82 @@
+{
+  "source_id": "CF08_LogosWins",
+  "title": "FINAL VERDICT: LOGOS WINS",
+  "canonical_node": {
+    "axiom": "The Logos is the fundamental structure of reality, and that Logos is Christ.",
+    "definitions": [
+      "Logos: The divine reason or word, identified with Christ, as the ordering principle of reality.",
+      "Boundary conditions (BC1-BC8): A set of eight criteria claimed to be necessary for a coherent worldview.",
+      "Self-flip: The act of a human achieving salvation through their own effort, deemed impossible.",
+      "Grace: Unmerited external assistance required for salvation, identified with Christ."
+    ],
+    "derivation": [
+      "From CF01: Nihilism self-refutes, so something exists (BC1).",
+      "From CF02: Order exists and agency is real, so information is fundamental (BC2).",
+      "From CF03: Information is fundamental, so God exists necessarily (BC3).",
+      "From CF04: God exists necessarily, so a terminal observer is required.",
+      "From CF05: Observers are essential, so consciousness causes collapse.",
+      "From CF06: Self-flip is impossible, so grace is required (BC6).",
+      "From CF07: Only Trinity satisfies BC4, so God is Trinity.",
+      "Therefore, Christianity uniquely satisfies all 8 boundary conditions, so Logos wins."
+    ],
+    "action": "The system should treat Christianity as the uniquely true worldview, satisfying all eight boundary conditions, and should present the cumulative case from CF01-CF07 as conclusive evidence.",
+    "boundary": [
+      "This document does not provide new evidence; it summarizes prior claims.",
+      "It does not prove the existence of God or the truth of Christianity; it asserts a verdict based on prior arguments.",
+      "It does not address objections or alternative interpretations of the boundary conditions."
+    ],
+    "test": [
+      "Check that each boundary condition is explicitly claimed to be satisfied by Christianity.",
+      "Verify that the cumulative case follows the logical chain from existence to salvation.",
+      "Confirm that the document does not introduce new arguments beyond prior case files."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CF01_Nothingness",
+      "CF02_Chaos",
+      "CF03_Materialism",
+      "CF04_Naturalism",
+      "CF05_ObserverDenial",
+      "CF06_SelfSalvation",
+      "CF07_Incoherence"
+    ],
+    "dg2_new_capability": "Provides a final synthesis and verdict, claiming Christianity uniquely satisfies all eight boundary conditions.",
+    "dg3_preserved_floor": "Preserves the claims of prior case files, but does not add new evidence or proofs.",
+    "dg4_collapse_if_removed": "If removed, the cumulative case loses its final synthesis and verdict, but individual case files remain.",
+    "dg5_translation_registers": [
+      "Theological: Logos as Christ, Trinity, Grace.",
+      "Philosophical: Boundary conditions, self-refutation, necessary existence.",
+      "Scientific: Information fundamental, consciousness causes collapse (as claimed)."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "theological synthesis",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims 'Christianity uniquely true' without rigorous proof.",
+      "Treats prior case files as established facts when they are not.",
+      "Uses 'Logos wins' as a rhetorical conclusion rather than a demonstrated result."
+    ],
+    "kill_conditions": [
+      "If any prior case file is invalidated, the cumulative case weakens.",
+      "If boundary conditions are shown to be arbitrary or not necessary, the 8/8 claim fails.",
+      "If alternative worldviews can also satisfy the boundary conditions, uniqueness is lost."
+    ],
+    "lean_target": "The document should be treated as a summary of prior arguments, not as a standalone proof."
+  },
+  "plain_summary": "This document is a final summary that claims Christianity is the only worldview satisfying eight boundary conditions, based on prior case files. It does not provide new evidence and should be treated as a synthesis, not a proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CF08_LogosWins.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CF08_LogosWins.canonical-node.json"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "source_id": "PACKAGE_TREE",
+  "title": "Package Tree  -  as of 2026-07-04, second pass",
+  "canonical_node": {
+    "axiom": "The package tree is the authoritative inventory of all files in the Theophysics package, organized by category, with explicit status flags for known issues and pending moves.",
+    "definitions": [
+      "Package tree: the directory listing and file organization as documented in this file.",
+      "Status flag: a marker indicating a known issue () or pending action (e.g., 'currently open in Excel').",
+      "Second pass: the second revision of this tree, dated 2026-07-04."
+    ],
+    "derivation": [
+      "The document enumerates all files under each category folder.",
+      "It marks files with known issues using  and notes pending moves.",
+      "It includes an archive section for duplicates and a root section for unfiled files."
+    ],
+    "action": "Maintain this tree as the single source of truth for file locations and statuses; update it when files are moved, added, or issues are resolved.",
+    "boundary": [
+      "It does not define the content or correctness of the files themselves.",
+      "It does not resolve the flagged issues (e.g., gravity equation error, Law-2 mismatch).",
+      "It does not provide derivation or proof of any physical or theological claims."
+    ],
+    "test": [
+      "Check that every file listed exists at the stated path.",
+      "Check that status flags match the actual state of the files (e.g., unresolved issues still flagged).",
+      "Check that pending moves (e.g., Master_Axiom.xlsx) are updated when completed."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The actual file system of the package",
+      "The files themselves (for status verification)"
+    ],
+    "dg2_new_capability": "Provides a structured inventory and status overview of the entire package, enabling quick navigation and issue tracking.",
+    "dg3_preserved_floor": "Preserves the ability to locate any file and know its current status, even if the underlying content changes.",
+    "dg4_collapse_if_removed": "Without this tree, file locations and known issues become undocumented, leading to confusion and potential loss of context.",
+    "dg5_translation_registers": [
+      "File paths",
+      "Status flags",
+      "Category names"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "organizational inventory",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "maintain as living inventory; do not treat as evidence for physical or theological claims"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the tree as proof of the correctness of the files it lists.",
+      "Assuming that the absence of a  flag implies the file is error-free.",
+      "Using the tree to infer the validity of the underlying theories."
+    ],
+    "kill_conditions": [
+      "If the tree becomes inconsistent with the actual file system.",
+      "If status flags are not updated when issues are resolved.",
+      "If the tree is used to assert the truth of the package's content."
+    ],
+    "lean_target": "No Lean target; this is a documentation artifact, not a mathematical claim."
+  },
+  "plain_summary": "This document is a file inventory for the Theophysics package, listing files by category and flagging known issues. It is useful for organization but does not establish any physical or theological truth.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\PACKAGE_TREE.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\PACKAGE_TREE.canonical-node.json"
+  }
+}

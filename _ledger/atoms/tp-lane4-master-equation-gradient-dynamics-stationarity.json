@@ -1,0 +1,57 @@
+{
+  "atom_id": "tp:lane4/master-equation/gradient-dynamics-stationarity",
+  "atom_uid": "sha256:c1b8c7ed6502ef0d8bbd84e62555565d048bd456095ec18962157fe93af24c7b",
+  "title": "Gradient Dynamics and η-Stationarity Theorem",
+  "claim": "Level 2 dynamics: dX/dt = W·∇χ(X) + η(X,t). W = mobility operator (acts only through gradient). η = external source term (acts at zero slope). Lean-verified: if ∇χ=0 and W·0=0 and η≠0, then Ẋ≠0. This proves escape initiation only — no trajectory, no basin, no convergence. Global annealing theorem is OPEN. η=grace and W=will are bridge identifications, not theorems.",
+  "domain": "master-equation",
+  "lane": "Mathematics",
+  "claim_class": "theorem",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "assumptions": [
+    "Level 1 canonical form χ = C_W[∏ X_i] exists as the landscape",
+    "W and η are postulated first-order open gradient dynamics, not uniquely forced"
+  ],
+  "definitions": [
+    "W: mobility operator, [W] = s⁻¹, placeholder W(x) = w₀·(1−R_agency(x))",
+    "η: external source term, [η] = s⁻¹, state- and time-dependent"
+  ],
+  "equations": [
+    "dX/dt = W·∇χ(X) + η(X,t)",
+    "Lean: source_makes_velocity_nonzero, stationary_without_source"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:lane4/master-equation/master-equation-v3-canonical-form"
+  ],
+  "negative_guards": [
+    "Global convergence/annealing is OPEN, not a textbook application.",
+    "η=grace and W=will are bridge claims, not theorems. Lean verifies structure, not naming.",
+    "This is escape initiation only. No trajectory, basin departure, or finite displacement claimed."
+  ],
+  "kill_conditions": [
+    "Exhibit a system at ∇χ=0 with nonzero η that does NOT produce nonzero velocity under the declared axioms.",
+    "Show that the gradient dynamics are the uniquely forced form (would upgrade from chosen model to necessity)."
+  ],
+  "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "atom_created_from_canonical_audit",
+      "result": "recorded",
+      "artifact_path": "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md",
+      "meaning": "Created during three-model audit (Claude/o3/DeepSeek) of canonical doc vs atom ledger.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "Mathematics",
+      "event_id": "sha256:e515e66da4bb16d356b21ac6e21d4b16221f4d6f5855be35fb327666f9c00103",
+      "event_uuid": "8f1ed789-5e69-52a5-b62c-1ca9dae763b1"
+    }
+  ],
+  "source_claim_id": "GRADIENT_DYNAMICS_STATIONARITY",
+  "atom_uuid": "84a0032f-82a6-53cd-9fcb-5d7ba09dfb7b"
+}

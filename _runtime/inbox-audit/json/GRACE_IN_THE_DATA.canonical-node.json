@@ -1,0 +1,89 @@
+{
+  "source_id": "GRACE_IN_THE_DATA",
+  "title": "Grace in the Data: What 475 Occurrences Across 66 Books Actually Show",
+  "canonical_node": {
+    "axiom": "Grace in the biblical text is a data-detectable phenomenon: three distinct Hebrew/Greek words (chen, chesed, charis) with distinct semantics, distributed non-uniformly across the canon, and correlated with moral failure and narrative framing.",
+    "definitions": [
+      "chen (): Hebrew term for grace, root meaning 'to bend down'; unilateral posture of a stronger toward a weaker; 69 occurrences.",
+      "chesed (): Hebrew term for covenant loyalty/grace, root meaning 'to bow the head in courtesy to an equal'; binding obligation; 248 occurrences.",
+      "charis (chi): Greek term for grace, root meaning 'to rejoice'; in NT, free unearned enabling power of God; 156 occurrences.",
+      "Grace occurrence: any instance of chen, chesed, or charis in the source text as indexed in the grace_study schema.",
+      "Grace density: number of grace occurrences per unit of text or time period as computed by analytical queries."
+    ],
+    "derivation": [
+      "The document reports query results from a PostgreSQL database (grace_study schema) containing 475 indexed occurrences of three grace words across 66 books.",
+      "Finding 1: David's Psalms contain 127 of 248 chesed (51.2%); Paul's 13 epistles contain 101 of 156 charis (64.7%); both men are described as murderers, supporting a correlation between moral failure and grace language.",
+      "Finding 2: Jesus never speaks the word charis in the Gospels; occurrences are in narrator voice or Prologue, indicating a pattern of demonstration over labeling.",
+      "Finding 3: KJV translation hides chesed entirely (0 rendered as 'grace'), hiding 248 occurrences; overall 305 of 473 occurrences (64%) are invisible in English.",
+      "Finding 4: First occurrence Genesis 6:8, last Revelation 22:21; grace is the last word of the Bible.",
+      "Finding 5: 425-year gap between last OT grace word (Zechariah ~430 BC) and first NT (Luke 1:30 ~5 BC), with identical construction to Genesis 6:8.",
+      "Finding 6: Grace density peaks in David's era (~1000 BC) and Paul's era (~49-67 AD), both after catastrophe; low in prophetic era and Gospels.",
+      "Finding 7: Paul coins hyperperisseu (Romans 5:20) to express grace's super-overflow, indicating linguistic inadequacy.",
+      "Finding 8: Psalm 136 repeats 'ki le'olam chasdo' 26 times, covering creation, Exodus, wilderness, conquest, rescue, and sustenance."
+    ],
+    "action": "The system should treat the reported query results as empirical data points about biblical text, and when reasoning about grace, incorporate the distribution and semantic distinctions of chen, chesed, and charis, and the translation invisibility, without asserting theological truth beyond the data.",
+    "boundary": [
+      "Does not claim that the data proves theological doctrines about grace.",
+      "Does not claim that the reported numbers are exhaustive or error-free; they are based on a specific schema and queries.",
+      "Does not claim that correlation between moral failure and grace language implies causation.",
+      "Does not claim that the 475 occurrences are the only grace-related concepts; other terms may exist.",
+      "Does not claim that the KJV translation is the only or best translation; it is a specific historical artifact."
+    ],
+    "test": [
+      "Verify the reported counts (chen 69, chesed 248, charis 156) against the grace_study schema or other standard concordances.",
+      "Verify the KJV rendering statistics (e.g., chesed as 'mercy' 149 times, etc.) using a searchable KJV text.",
+      "Verify the claim that Jesus never speaks charis in the Gospels by searching the Greek New Testament for charis in Jesus's direct speech.",
+      "Verify the 425-year gap and the construction similarity between Genesis 6:8 and Luke 1:30.",
+      "Verify the existence and usage of hyperperisseu in Greek literature before Paul.",
+      "Verify Psalm 136's 26 occurrences of the refrain."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "PostgreSQL database with grace_study schema on 192.168.1.177:2665",
+      "Biblical text corpus (Hebrew and Greek) with morphological tagging",
+      "KJV translation text",
+      "Analytical queries Q1-Q15 as described"
+    ],
+    "dg2_new_capability": "Provides a quantitative, data-driven mapping of grace terminology across the biblical canon, revealing distribution patterns, translation invisibility, and historical gaps that are not apparent from a purely theological reading.",
+    "dg3_preserved_floor": "Preserves the traditional lexical distinction among chen, chesed, and charis, and the canonical narrative arc from Genesis to Revelation, while adding empirical grounding.",
+    "dg4_collapse_if_removed": "If the data layer is removed, the document reduces to anecdotal theological claims without quantitative support; the specific findings (e.g., 51.2%, 64.7%, 305 hidden occurrences) lose their evidentiary basis.",
+    "dg5_translation_registers": [
+      "Hebrew: chen, chesed",
+      "Greek: charis, hyperperisseu",
+      "English: grace, mercy, kindness, lovingkindness, goodness, favour"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical observation",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Treat as a data hypothesis requiring verification; do not use as a proof of theological claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document states 'The data tells a story whether you believe the story or not' which may overstate the objectivity of the interpretation.",
+      "The claim that 'Paul invented a word' (hyperperisseu) may be an overstatement if the word appears in earlier non-canonical texts.",
+      "The correlation between moral failure and grace language is presented as a 'framework predicts' but is not statistically tested.",
+      "The document uses '475 occurrences' but the table sums to 473; a discrepancy that needs resolution.",
+      "The claim that 'Grace is the last word of the Bible' depends on the edition and translation; in Greek, the last word is 'Amen'."
+    ],
+    "kill_conditions": [
+      "If the database schema or queries are not reproducible, the findings cannot be verified.",
+      "If the counts of occurrences are incorrect (e.g., due to tagging errors), the conclusions collapse.",
+      "If the KJV rendering statistics are inaccurate, the translation invisibility claim weakens.",
+      "If hyperperisseu is found in pre-Pauline literature, the 'invented word' claim is falsified."
+    ],
+    "lean_target": "A verified dataset of grace word occurrences with transparent query definitions and reproducible counts."
+  },
+  "plain_summary": "This document reports quantitative findings about the distribution of three biblical grace words (chen, chesed, charis) based on a PostgreSQL database. It claims that grace language clusters around figures like David and Paul, that Jesus never uses the word, that English translations hide most occurrences, and that grace appears at key narrative points. However, the document does not provide the actual queries or raw data, and some claims (like Paul inventing a word) need external verification. It should be treated as a data hypothesis, not a proven fact.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\GRACE_IN_THE_DATA.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\GRACE_IN_THE_DATA.canonical-node.json"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-084",
+  "nodeID": "tp:axioms/01/AX-084",
+  "claimID": "tp:AXIOMS/D10.1",
+  "name": "Soul Field Psi_S",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "definition",
+  "statementTechnical": "Soul Field Ψ_S ≡ real scalar field carrying individual consciousness.",
+  "statementPlain": "Soul Field Ψ_S ≡ real scalar field carrying individual consciousness.",
+  "mathematicalForm": "Ψ_S(x,t) ∈ ℝ; (□ + m_S²)Ψ_S = 0",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-082",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-083",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "definition",
+    "field"
+  ],
+  "keywords": [
+    "D10.1",
+    "Q6",
+    "Human",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Detect the soul field directly. Show no scalar field couples to consciousness. Demonstrate consciousness is fully explained by neural activity without additional field.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 86
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-084",
+    "oldID": "D10.1",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-V (Soul field defined)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Human",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M10",
+    "moduleTitle": "Soul / Consciousness Field",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M2 (Entropic)",
+    "worldviewsEliminated": "Materialism, Naturalism, Eliminativism",
+    "propagationTest": "YES — Soul field propagates to soul equation (AX-087), soul-chi coupling, and afterlife physics.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

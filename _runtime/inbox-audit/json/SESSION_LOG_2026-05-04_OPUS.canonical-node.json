@@ -1,0 +1,76 @@
+{
+  "source_id": "SESSION_LOG_2026-05-04_OPUS",
+  "title": "Session Log: Forge, Seshat, MDA, Podcast, Website",
+  "canonical_node": {
+    "axiom": "The session log records decisions and results from a work session, but does not establish any new physical or mathematical law.",
+    "definitions": [
+      "Seshat: Global History Databank used for correlation tests.",
+      "chi: A variable representing social complexity, as defined in the Theophysics framework.",
+      "SPC: Social complexity measure, as defined in the Theophysics framework.",
+      "Forge: A cloud-first build project for a web application.",
+      "MDA: Moral Decline of America, a narrative project."
+    ],
+    "derivation": [
+      "The log reports that a correlation test between chi and SPC yielded Pearson r = 0.6375, Spearman  = 0.88, Log r = 0.90.",
+      "A reduced chi test (dropping SPC-component variables) yielded Pearson r = 0.6935.",
+      "A temporal test chi(t) -> SPC(t+1) yielded Pearson r = 0.6283, Spearman  = 0.82.",
+      "A delta test chi -> SPC yielded r = -0.124, indicating weak predictive power.",
+      "A collapse prediction test showed a 3.3 base rate improvement (base rate 2.97%, conditional on sharp chi drop: 9.86%)."
+    ],
+    "action": "The system should treat the reported correlations as provisional empirical findings, not as established laws. It should await further validation (e.g., AUC tests) before considering them as evidence for the Theophysics framework.",
+    "boundary": [
+      "This document does not provide a formal proof or derivation of the correlations.",
+      "It does not establish causality between chi and SPC.",
+      "It does not validate the Theophysics framework as a whole."
+    ],
+    "test": [
+      "Check if the reported correlation coefficients are reproducible from the raw data.",
+      "Verify that the circularity controls were properly applied.",
+      "Check if the collapse prediction test used a proper AUC metric."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Seshat Global History Databank",
+      "Statistical methods (Pearson, Spearman, log correlation)",
+      "Theophysics framework definitions of chi and SPC"
+    ],
+    "dg2_new_capability": "Provides empirical correlation data between chi and SPC, and a collapse prediction signal, but does not establish a new theoretical capability.",
+    "dg3_preserved_floor": "Preserves the existing Theophysics framework by not contradicting it, but does not strengthen it either.",
+    "dg4_collapse_if_removed": "If removed, the Theophysics framework loses a potential empirical anchor, but the framework does not collapse because it is not solely based on this data.",
+    "dg5_translation_registers": [
+      "Empirical correlation",
+      "Historical data analysis",
+      "Predictive modeling"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical observation",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "log"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating correlation as causation",
+      "Overgeneralizing from a single dataset",
+      "Ignoring potential confounders"
+    ],
+    "kill_conditions": [
+      "If the correlation fails to replicate in independent datasets",
+      "If the collapse prediction is not robust to different statistical methods",
+      "If the circularity controls are found to be inadequate"
+    ],
+    "lean_target": "The lean target is to treat the reported correlations as provisional and to await further validation before using them as evidence for the Theophysics framework."
+  },
+  "plain_summary": "This session log reports on various project activities, including a correlation test between social complexity (chi) and SPC using the Seshat database. The results show moderate to strong correlations, but the document does not provide a formal proof or establish causality. The log also covers decisions on Forge, MDA, podcast, and website architecture. The overall status is that the empirical findings are provisional and require further validation.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SESSION_LOG_2026-05-04_OPUS.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\SESSION_LOG_2026-05-04_OPUS.canonical-node.json"
+  }
+}

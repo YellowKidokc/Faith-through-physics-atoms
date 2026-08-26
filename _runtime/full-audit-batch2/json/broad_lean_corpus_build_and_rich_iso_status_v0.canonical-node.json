@@ -1,0 +1,83 @@
+{
+  "source_id": "broad_lean_corpus_build_and_rich_iso_status_v0",
+  "title": "Broad Lean Corpus Build and Rich Isomorphism Status v0",
+  "canonical_node": {
+    "axiom": "The broader Lean corpus contains a richer structural testing layer beyond equation-shape analogy, and its full build passes locally without active proof escapes.",
+    "definitions": [
+      "Rich isomorphism: a mapping that preserves roles, transitions, signature discipline, gate behavior, and passes adversarial wrong-swap checks.",
+      "Proof escape: active use of sorry, admit, axiom, or unsafe in source files (excluding expected #check_failure diagnostics).",
+      "Seed kernel: a clean compressed assumption spine with 4 front-loaded assumptions and 17 no-sorry starter theorems.",
+      "Broad corpus: a richer formal archive with reported 287 theorems, zero sorry, zero admit, and adversarial proof surface."
+    ],
+    "derivation": [
+      "Full build command 'lake build' completed successfully with 17 jobs.",
+      "Targeted builds for Theophysics_Core, Theophysics_Adversarial, and other modules passed.",
+      "Source scan for sorry/admit/axiom/unsafe found no active proof escapes in main source files.",
+      "The corpus docs list RichLawIso, richLaw4Iso, no_rich_iso_to_natural_coin, richRelabeledCoinIso, BridgeMatrix, MasterEquationInvariance, and wrong-swap rejection rows.",
+      "The upgraded isomorphism layer requires role preservation, transition preservation, signature discipline, gate behavior, and adversarial wrong-swap failures.",
+      "The safe claim is that the framework does not rely merely on equation-shape analogy; it includes a richer structural testing layer.",
+      "Boundary: Lean verifies the encoded structure, not domain-faithfulness of human labels."
+    ],
+    "action": "Maintain the broad corpus as a separate build layer from the seed kernel; do not merge until theorem inventory is normalized and wrapper/trivial rows are separated from substantive theorem rows.",
+    "boundary": [
+      "Does not claim Lean independently proves domain-faithfulness of human labels.",
+      "Does not claim the broad corpus is equivalent to the seed kernel.",
+      "Does not claim the reported 287 theorems are all substantive without normalization.",
+      "Does not claim the rich isomorphism layer is present in the small seed package."
+    ],
+    "test": [
+      "Run 'lake build' and confirm success.",
+      "Run rg scan for sorry/admit/axiom/unsafe and confirm no active escapes.",
+      "Check that the rich isomorphism symbols (RichLawIso, etc.) are present in the corpus.",
+      "Verify that wrong-swap rejection rows exist and fail as expected.",
+      "Confirm that the seed kernel and broad corpus remain separate build layers."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 toolchain v4.31.0",
+      "Local Lean standard-library cache",
+      "Theophysics_Core, Theophysics_Adversarial, Theophysics_Coherence, Theophysics_Fracture, Theophysics_Fall, Theophysics_ChiEvaluator, Theophysics_NegativeInventory modules"
+    ],
+    "dg2_new_capability": "Provides a richer structural testing layer (signature discipline, role/transition preservation, gate tests, adversarial wrong-swap checks) beyond equation-shape analogy.",
+    "dg3_preserved_floor": "Preserves the seed kernel's clean compressed assumption spine and its 17 no-sorry starter theorems.",
+    "dg4_collapse_if_removed": "If the rich isomorphism layer is removed, the framework reverts to a weaker equation-shape analogy, losing the ability to reject wrong-swap mappings and to demonstrate structural fidelity.",
+    "dg5_translation_registers": [
+      "Lean formal verification",
+      "Theological mapping claims",
+      "Physics modeling claims",
+      "Historical source grounding"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal verification status report",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "archive as verified build status; do not merge with seed kernel until normalization"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming Lean proves domain-faithfulness of human labels.",
+      "Claiming the rich isomorphism layer is equivalent to the seed kernel.",
+      "Claiming the reported 287 theorems are all substantive without normalization.",
+      "Claiming the broad corpus is a replacement for the seed kernel."
+    ],
+    "kill_conditions": [
+      "If the full build fails on a clean checkout.",
+      "If active sorry/admit/axiom/unsafe escapes are found in main source files.",
+      "If the rich isomorphism symbols are absent or non-functional.",
+      "If the seed kernel and broad corpus are merged without normalization."
+    ],
+    "lean_target": "Formalize the rich isomorphism layer as a standalone Lean module with explicit theorems for role preservation, transition preservation, signature discipline, and wrong-swap rejection."
+  },
+  "plain_summary": "This document reports that a broader Lean corpus builds successfully and contains a richer structural testing layer for isomorphisms, including signature discipline and adversarial checks. It explicitly warns against overclaiming domain-faithfulness and against merging the broad corpus with the seed kernel until normalization. The status is coherent and admissible, but the proof label is limited to runtime support, not formal proof of domain claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\broad_lean_corpus_build_and_rich_iso_status_v0.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\broad_lean_corpus_build_and_rich_iso_status_v0.canonical-node.json"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-042",
+  "nodeID": "tp:axioms/01/AX-042",
+  "claimID": "tp:AXIOMS/EXP5.1",
+  "name": "Wheeler Delayed Choice",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "empirical_anchor",
+  "statementTechnical": "Wheeler Delayed Choice experiment — observer choice retroactively affects photon path.",
+  "statementPlain": "Wheeler Delayed Choice experiment — observer choice retroactively affects photon path.",
+  "mathematicalForm": "Experimentally confirmed (Jacques et al. 2007)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-041",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "observer"
+  ],
+  "keywords": [
+    "EXP5.1",
+    "Q6",
+    "Ontological",
+    "EvidenceNode"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show delayed choice results have a non-observer-dependent explanation. Demonstrate retrocausality is not the correct interpretation. MWI explains it without observers.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 43
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-042",
+    "oldID": "EXP5.1",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-H (Experimental support — retrocausality)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Ontological",
+    "tier": "3",
+    "newType": "EvidenceNode",
+    "logicalForce": "evidence node",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / outside proof kernel",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M05",
+    "moduleTitle": "Observer / Actualization",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "Hard Determinism",
+    "propagationTest": "YES — Experimental confirmation propagates as evidence for participatory universe and observer-dependent reality.",
+    "intendedStatus": "classified",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

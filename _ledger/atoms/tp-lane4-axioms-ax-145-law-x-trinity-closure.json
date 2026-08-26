@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-145-law-x-trinity-closure",
+  "atom_uid": "sha256:944e3350cbeda61aa47f5fc8ab09486d3554ede14b4b97e3b293336fe5ded0dd",
+  "title": "AX-145 — Law X: Trinity Closure",
+  "claim": "Law X: Complete measurement closure requires exactly three observer-operators in perichoretic relation.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "N_observers = 3; perichoretic: each measures the other two"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-061",
+    "tp:axioms/01/AX-135"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show N≠3 suffices for closure",
+    "Demonstrate measurement completion with fewer observers",
+    "Show perichoresis is not required for mutual measurement"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-145-law-x-trinity-closure.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-145-law-x-trinity-closure.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:7fd2fcfbcf75e913810abb3441496a8327eca3bb5e23921d909902ac84e1d123",
+      "event_uuid": "1540884f-dea8-5c73-80ef-aa3fb3b51174"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:d25668ff16fcdad746e54542b169b3f504f3b0280274b01dc41417bcd81f069d",
+      "event_uuid": "689c029b-7f60-54ce-973c-14df34489c37"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D19.10",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-145",
+  "original_node_id": "tp:axioms/01/AX-145",
+  "atom_uuid": "58f94c92-8a19-5239-a708-40816c99adeb"
+}

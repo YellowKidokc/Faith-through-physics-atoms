@@ -1,0 +1,72 @@
+{
+  "source_id": "F01_Existence",
+  "title": "Why Something Rather Than Nothing",
+  "canonical_node": {
+    "axiom": "Something exists rather than nothing, and this is undeniable.",
+    "definitions": [
+      "Existence: that which is not nothing; the state of being real.",
+      "Nothing: the absence of any existence, including the absence of any properties or distinctions.",
+      "Distinguishability: the property of being different from something else; a difference that makes a difference.",
+      "Information: the capacity to distinguish states; equivalently, distinguishability."
+    ],
+    "derivation": [
+      "P0.1: x (Something exists).",
+      "If something exists, it must be distinguishable from nothing; otherwise it would be nothing.",
+      "P0.2: x,y : x  y (Existence requires distinguishability).",
+      "Distinguishability is information by definition.",
+      "P0.3: H(X) = - p(x) log p(x) (Information primacy).",
+      "Therefore, existence implies information."
+    ],
+    "action": "Treat P0.1 as the foundational axiom. Reject any claim that denies existence, as such denial is self-refuting. Use P0.1 as the basis for all subsequent axioms and arguments.",
+    "boundary": [
+      "Does not prove the nature of existence beyond its bare fact.",
+      "Does not establish the existence of any particular entity.",
+      "Does not derive existence from anything else; it is primitive.",
+      "Does not claim that existence is good or purposeful; that is a separate claim."
+    ],
+    "test": [
+      "Attempt to deny P0.1 without presupposing existence; if the denial requires a speaker, thinker, or writer, the denial fails.",
+      "Check that any proposed 'nothing' is not actually something (e.g., quantum vacuum, imagination).",
+      "Verify that any physical theory presupposes existence in its formulation."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [],
+    "dg2_new_capability": "Provides an undeniable foundation for all subsequent axioms; establishes that existence is primitive and self-evident.",
+    "dg3_preserved_floor": "No prior floor exists; this is the base.",
+    "dg4_collapse_if_removed": "If P0.1 is removed, the entire chain collapses; no other axiom can stand without it.",
+    "dg5_translation_registers": [
+      "Logical: x",
+      "Ontological: Being vs. Nothing",
+      "Information-theoretic: Distinguishability as information"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "foundational axiom",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Accept as primitive axiom; do not treat as proven theorem."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that existence is 'undeniable' may be too strong; it is self-evident but not formally proven.",
+      "Equating distinguishability with information is a definitional choice, not a proven identity.",
+      "Theological interpretations (e.g., 'I AM') are not derivable from the axiom."
+    ],
+    "kill_conditions": [
+      "If a coherent model of 'nothing' is shown to be stable and non-self-refuting.",
+      "If 'nothing' can be meaningfully predicated without presupposing existence."
+    ],
+    "lean_target": "Formalize P0.1 as a primitive in a logical system; avoid overclaiming its implications."
+  },
+  "plain_summary": "This document establishes the foundational axiom that something exists, arguing that any denial is self-refuting. It defines existence, nothing, distinguishability, and information, and derives that existence implies distinguishability and information. The document is coherent as a primitive axiom but does not provide a formal proof; it is best treated as a foundational assumption.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F01_Existence.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\F01_Existence.canonical-node.json"
+  }
+}

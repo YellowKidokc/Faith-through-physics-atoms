@@ -1,0 +1,85 @@
+{
+  "source_id": "MAXWELL_TRINITY_LEAN_SPEC",
+  "title": "Maxwell Quaternion / Trinity Isomorphism  -  Lean 4 Specification",
+  "canonical_node": {
+    "axiom": "The triadic structure of Maxwell's quaternion electromagnetism is isomorphic to the Christian Trinity, characterized by three interdependent, non-substitutable operations: source, mediator, and actualizer.",
+    "definitions": [
+      "TriadicSystem: A type class with three distinct elements (Source, Mediator, Actualizer) and a product operation, satisfying structural constraints of generation, dependence, unification, and mutual necessity.",
+      "Source: The generative, non-propagating, singular origin (e.g., scalar potential in EM; Father in Trinity).",
+      "Mediator: The propagating, dual, dependent intermediary (e.g., vector field in EM; Son in Trinity).",
+      "Actualizer: The unifying, non-decomposable operation that actualizes potential (e.g., quaternion product in EM; Spirit in Trinity).",
+      "Non-decomposability: The unified product cannot be reduced to the sum of its scalar and vector parts (dot + cross).",
+      "Mutual necessity: The system is coherent if and only if all three operations are present and interdependent."
+    ],
+    "derivation": [
+      "Maxwell's original quaternion formulation has 20 equations preserving a triadic structure (scalar, vector, product).",
+      "Heaviside's vector reformulation reduces to 4 equations, decomposing the product into dot and cross, losing the unified operation.",
+      "The Trinity is traditionally described as three persons (Father, Son, Spirit) with distinct roles: source, mediator, actualizer.",
+      "The structural roles and interdependence in quaternion EM match the theological roles and interdependence in the Trinity.",
+      "Therefore, a formal isomorphism can be constructed between the two systems, preserving roles and collapse behavior."
+    ],
+    "action": "Formalize the TriadicSystem type class in Lean 4, construct instances for QuaternionEM and Trinity, prove the isomorphism, and run adversarial tests to ensure the spec rejects Heaviside EM, modalism, static single-field EM, arbitrary triples, and relabeled roles.",
+    "boundary": [
+      "Does not claim historical proof that Maxwell intended a Trinity analogy.",
+      "Does not claim the isomorphism is unique or that all triadic systems are isomorphic.",
+      "Does not assert the physical superiority of quaternion EM over vector calculus for all purposes.",
+      "Does not claim the Trinity is reducible to a mathematical structure; only that a structural isomorphism exists."
+    ],
+    "test": [
+      "Lean 4 compilation of the TriadicSystem class and instances.",
+      "Adversarial tests: Heaviside EM must fail TriadicSystem; modalism must fail distinctness; static charge must be distinguished; arbitrary triples must fail role constraints.",
+      "Proof that the quaternion product is not reconstructible from dot and cross alone.",
+      "Proof that removing any one operation collapses the system (mutual necessity)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Hamilton's quaternion algebra",
+      "Maxwell's original 1865 quaternion equations",
+      "Heaviside's vector reformulation (as counterexample)",
+      "Theological doctrine of the Trinity (orthodox formulation)",
+      "Lean 4 theorem prover"
+    ],
+    "dg2_new_capability": "Provides a formal, machine-checkable specification for the strongest claimed isomorphism in the framework, with explicit adversarial rejection tests to prevent false positives.",
+    "dg3_preserved_floor": "Preserves the existing Law 4 (Strong Force/Love) as a weaker, two-state isomorphism; this spec supersedes it in priority but does not invalidate it.",
+    "dg4_collapse_if_removed": "If this spec is removed, the framework loses its strongest candidate for a formal isomorphism, reducing to weaker analogies and risking overstatement without rigorous checks.",
+    "dg5_translation_registers": [
+      "QuaternionEM  Trinity",
+      "Source  Father",
+      "Mediator  Son",
+      "Actualizer  Spirit",
+      "Quaternion product  Divine operation"
+    ],
+    "dg6_state": "unknown",
+    "dg7_admissible": "needs_review",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "formal isomorphism claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "formalize and test"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The isomorphism may be too loose, allowing arbitrary triples or modalism to pass.",
+      "The non-decomposability of the quaternion product may be overstated if dot+cross can reconstruct it.",
+      "The static charge case (E without B) may violate the triadic interdependence.",
+      "Theological distinctness may not be captured by the formal constraints, failing to exclude modalism."
+    ],
+    "kill_conditions": [
+      "If Heaviside EM satisfies TriadicSystem, the spec is too loose.",
+      "If modalism satisfies TriadicSystem, the theological spec is too weak.",
+      "If the quaternion product is reconstructible from dot+cross, the structural claim collapses.",
+      "If static charge configurations break the triadic structure without a principled distinction, the spec fails."
+    ],
+    "lean_target": "Formalize TriadicSystem, prove QuaternionEM and Trinity instances, and prove rejection of Heaviside and modalism."
+  },
+  "plain_summary": "This document specifies a Lean 4 formalization of an isomorphism between Maxwell's quaternion electromagnetism and the Christian Trinity, based on a shared triadic structure of source, mediator, and actualizer. It is a specification, not a proof, and includes adversarial tests to prevent false positives. The current status is unverified; formalization and testing are required.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\MAXWELL_TRINITY_LEAN_SPEC.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\MAXWELL_TRINITY_LEAN_SPEC.canonical-node.json"
+  }
+}

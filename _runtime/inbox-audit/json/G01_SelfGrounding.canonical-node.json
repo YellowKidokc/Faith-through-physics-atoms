@@ -1,0 +1,84 @@
+{
+  "source_id": "G01_SelfGrounding",
+  "title": "The Self-Grounding Substrate",
+  "canonical_node": {
+    "axiom": "A self-grounding substrate (God) is mathematically necessary; the observer chain must terminate in an infinite observer.",
+    "definitions": [
+      "chi: The Logos Field, the substrate of information and instantiation.",
+      "Ground(chi): The entity or condition that provides the basis for chi's existence.",
+      "Self-grounding: An entity that is the ground of its own existence, requiring infinite capacity.",
+      "Terminal Observer: An observer with infinite integrated information (Phi = ) that terminates the von Neumann chain.",
+      "Necessary existence: Existence that cannot fail to be; G."
+    ],
+    "derivation": [
+      "chi requires a ground (G0.1).",
+      "The ground must be self-grounding (G0.2).",
+      "Self-grounding implies necessary existence (G0.3).",
+      "This necessary self-grounding entity is called 'God' (G0.4).",
+      "God is the source of chi (G0.5).",
+      "The von Neumann chain of observers must terminate in a terminal observer with Phi = ."
+    ],
+    "action": "Accept the necessary existence of a self-grounding, infinite observer (God) as the terminus of all grounding and observation chains.",
+    "boundary": [
+      "Does not provide empirical evidence for God's existence.",
+      "Does not claim to prove all divine attributes, only those derived from the argument.",
+      "Does not address the nature of God beyond the properties listed.",
+      "Does not claim to solve the measurement problem in physics; it posits a metaphysical terminus."
+    ],
+    "test": [
+      "Check if any finite observer can terminate the von Neumann chain without being in superposition.",
+      "Check if self-grounding is coherent for finite systems given Gdel's incompleteness.",
+      "Check if brute contingency is a satisfactory explanation for existence.",
+      "Check if the derived properties of the terminal observer align with classical divine attributes."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "017_G0.1_Ground-Required",
+      "018_G0.2_Self-Grounding",
+      "019_G0.3_Necessary-Existence",
+      "020_G0.4_God-Definition",
+      "021_G0.5_God-Source",
+      "BC7.1-Terminal-Observer"
+    ],
+    "dg2_new_capability": "Provides a metaphysical terminus for the observer chain and a grounding for existence, addressing the measurement problem and brute contingency.",
+    "dg3_preserved_floor": "Preserves the necessity of a ground for all existence and the coherence of inquiry.",
+    "dg4_collapse_if_removed": "If removed, the observer chain regresses infinitely, and existence lacks a sufficient reason, undermining the entire chain of reasoning.",
+    "dg5_translation_registers": [
+      "Quantum mechanics: von Neumann chain, superposition, measurement problem.",
+      "Gdel's incompleteness: finite systems cannot self-ground.",
+      "Integrated Information Theory: Phi as measure of consciousness.",
+      "Theology: divine attributes (aseity, necessity, omniscience)."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "metaphysical necessity",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical necessity without a formal proof.",
+      "Equates derived properties with classical divine attributes without rigorous justification.",
+      "Uses Gdel's theorems to argue for infinite self-grounding, which is a philosophical extrapolation.",
+      "Assumes the von Neumann chain must terminate in a non-superposed observer, which is not established in physics."
+    ],
+    "kill_conditions": [
+      "If a finite observer can be shown to terminate the chain without being in superposition.",
+      "If self-grounding is shown to be coherent for finite systems.",
+      "If brute contingency is accepted as a valid explanatory stopping point."
+    ],
+    "lean_target": "Axiom G0.1 (Ground required) and G0.2 (Self-grounding) are the most defensible; G0.4 (God definition) is a naming convention."
+  },
+  "plain_summary": "This document argues that a self-grounding, infinite observer (God) is mathematically necessary to terminate the observer chain and ground existence. It uses Gdel's theorems and quantum mechanics to support the claim, but the argument is philosophical and not formally proven. The document is internally coherent but overstates its certainty.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G01_SelfGrounding.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\G01_SelfGrounding.canonical-node.json"
+  }
+}

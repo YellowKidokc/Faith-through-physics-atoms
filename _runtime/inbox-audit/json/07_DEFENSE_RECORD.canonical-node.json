@@ -1,0 +1,77 @@
+{
+  "source_id": "07_DEFENSE_RECORD",
+  "title": "Defense Record  -  Hubble Gradient",
+  "canonical_node": {
+    "axiom": "A thesis claim earns its degree only if it survives a live adversarial session with an attacker from outside the thesis domain.",
+    "definitions": [
+      "Adversarial session: a structured exchange where a designated attacker with a declared worldview attempts to break the thesis claim.",
+      "Attacker: a person or AI system whose field is outside the thesis domain, with priors stated before the session.",
+      "Survived: the claim held under attack without breaking, or broke but was fixable and fixed.",
+      "Broke: a part of the thesis that failed under pressure and could not be immediately repaired."
+    ],
+    "derivation": [
+      "The current defense is theater; therefore, replace it with a real adversarial session.",
+      "If the argument survives the session, it earned the degree.",
+      "The session must include an attacker from outside the domain to avoid groupthink.",
+      "The record must document attacks, defenses, outcomes, what broke, what survived, and lessons learned."
+    ],
+    "action": "Conduct a live adversarial session for thesis unit DT-004, with a designated attacker from outside the thesis domain, and record the exchange, outcomes, and verdict in the Defense Record.",
+    "boundary": [
+      "Does not define the specific content of the thesis claim or its proof.",
+      "Does not guarantee that survival in the session constitutes absolute truth.",
+      "Does not specify the exact format or duration of the session beyond being live or async.",
+      "Does not replace the need for formal verification or empirical evidence."
+    ],
+    "test": [
+      "Check that the Defense Record contains a named attacker from outside the thesis domain.",
+      "Check that the attacker's worldview and primary line of attack are stated before the session.",
+      "Check that at least one round of attack and defense is documented with outcomes.",
+      "Check that the record includes a list of what broke and what survived.",
+      "Check that a verdict (Passed/Conditional/Failed) is recorded."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "DT-004 thesis claim",
+      "Papers I-III (referenced as needing updates)",
+      "Destruction Manual (for kill conditions)"
+    ],
+    "dg2_new_capability": "Provides a structured adversarial validation process for the thesis, producing a defense record that can be audited.",
+    "dg3_preserved_floor": "Preserves the requirement that the thesis be tested against strong objections, and that failures are documented.",
+    "dg4_collapse_if_removed": "Without this record, the thesis lacks a demonstrated adversarial defense, weakening its claim to have 'earned the degree'.",
+    "dg5_translation_registers": [
+      "adversarial session -> stress test",
+      "survived -> passed under attack",
+      "broke -> failed under pressure"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "procedural requirement",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "treat as a process directive, not a proof; implement the session and record results"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Assuming survival in the session proves the thesis true.",
+      "Assuming the record itself is sufficient without actual execution.",
+      "Assuming the attacker's field being outside the domain guarantees objectivity."
+    ],
+    "kill_conditions": [
+      "If the session is not conducted, the record is empty and the claim is void.",
+      "If the attacker is from within the thesis domain, the adversarial requirement is violated.",
+      "If the record omits failures, it is dishonest and invalid."
+    ],
+    "lean_target": "Formalize the session protocol as a checklist; do not attempt to formalize the thesis content."
+  },
+  "plain_summary": "This document is a template for a defense record, requiring a live adversarial session to validate the thesis. It does not contain actual results or proof, only a procedure to follow.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\07_DEFENSE_RECORD.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\07_DEFENSE_RECORD.canonical-node.json"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-08-03T00:50:13+00:00",
+  "title": "Substrate Record Kernel Recorder Test",
+  "status": "pass",
+  "project": "\\\\192.168.2.50\\h_hp\\Desktop 2\\LEAN 4\\GPT\\AXIOM_BUNDLE\\minimal_no_sorry_package_draft",
+  "leanFile": "\\\\192.168.2.50\\h_hp\\Desktop 2\\LEAN 4\\GPT\\AXIOM_BUNDLE\\minimal_no_sorry_package_draft\\Theophysics\\SubstrateRecordKernel.lean",
+  "atom": "tp:lane4/axioms/ax-part1-ax-core-a2-1",
+  "build": {
+    "started": "2026-08-03T00:50:12+00:00",
+    "command": [
+      "lake",
+      "build"
+    ],
+    "returncode": 0,
+    "ok": true,
+    "stdout": "Build completed successfully (0 jobs).",
+    "stderr": ""
+  },
+  "scan": {
+    "path": "\\\\192.168.2.50\\h_hp\\Desktop 2\\LEAN 4\\GPT\\AXIOM_BUNDLE\\minimal_no_sorry_package_draft\\Theophysics\\SubstrateRecordKernel.lean",
+    "exists": true,
+    "forbiddenMatches": {},
+    "ok": true
+  },
+  "meaning": "Recorder test: Lean compiled the substrate/record identity kernel and the named Lean file passed the integrity scan.",
+  "limits": "Recorder test only; no ledger attachment in this run and no claim promotion."
+}

@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-010-logos-field-definition",
+  "atom_uid": "sha256:cc3828ecb2c689da9a466380d761ab5f23a8ecc40c4b546afdbe6f52d84ca6c0",
+  "title": "AX-010 — Logos Field Definition",
+  "claim": "Logos Field χ(x,t) = self-grounding informational substrate.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "χ(x,t) ≡ self-grounding informational substrate; χ = ∫(G·K)dΩ"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-009"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the chi-field is not necessary — another substrate works equally well",
+    "Show self-grounding is achievable without a field structure",
+    "Demonstrate χ leads to internal contradictions"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-010-logos-field-definition.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-010-logos-field-definition.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:89d0b4f92b6d2c339629866ccf0f037b402cf560df2644c6a950f3a0c2c57181",
+      "event_uuid": "57384629-7648-560c-9630-295035e7abcc"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:893997d54c6b596a3d459f06fe908a2b6e83883e8e33347bee181db2b68b4f6c",
+      "event_uuid": "d42ab4b1-23e7-5d39-baa2-3c87b5d0785c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D2.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-010",
+  "original_node_id": "tp:axioms/01/AX-010",
+  "atom_uuid": "9872ad1c-bc18-5b37-b250-1f42989ed9fe"
+}

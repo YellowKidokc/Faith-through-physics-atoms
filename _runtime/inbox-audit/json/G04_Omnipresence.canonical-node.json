@@ -1,0 +1,80 @@
+{
+  "source_id": "G04_Omnipresence",
+  "title": "Divine Omnipresence",
+  "canonical_node": {
+    "axiom": "God is present everywhere because chi is everywhere and God is the ground of chi.",
+    "definitions": [
+      "chi: the fundamental information substrate of reality.",
+      "Omega: the total spacetime manifold.",
+      "Present(G, x): God is immediately related to and sustains x.",
+      "Located(G, x): God is spatially bounded at x.",
+      "Ground(chi(x)): the source or sustainer of chi at point x."
+    ],
+    "derivation": [
+      "From F02: information is fundamental and chi is the ground of reality.",
+      "Reality exists at every point of spacetime, so chi exists at every point: xinOmega: chi(x) exists.",
+      "From G01: God is the ground of all existence, so God grounds chi at every point: x: Ground(chi(x)) = G.",
+      "Presence is defined as grounding: Present(G, x)  Ground(G, chi(x)).",
+      "Therefore, x: Present(G, x).",
+      "God is not located at any point: not x: Located(G, x). Presence without location is coherent."
+    ],
+    "action": "The system should treat God as immediately present at every point of spacetime, sustaining all existence, without spatial location or division.",
+    "boundary": [
+      "Does not claim God is identical to the universe (pantheism).",
+      "Does not claim God is spatially extended or divisible.",
+      "Does not claim God's presence implies approval of evil or sin.",
+      "Does not claim that every location is a physical place; includes abstract or spiritual realms."
+    ],
+    "test": [
+      "For any proposed location x, verify that chi(x) exists and is grounded by God.",
+      "Check that no location is asserted to be absent from God's presence.",
+      "Ensure that presence is not conflated with location or identity.",
+      "Verify that the distinction between presence and identity is maintained in all statements."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G01",
+      "F02",
+      "F04"
+    ],
+    "dg2_new_capability": "Provides a formal definition of omnipresence grounded in the chi-field, enabling logical refutation of deism, localized God, and pantheism.",
+    "dg3_preserved_floor": "Preserves the necessity of continuous divine sustenance for existence.",
+    "dg4_collapse_if_removed": "Without omnipresence, the sustaining requirement of G01 fails, and the coherence of the theological framework collapses.",
+    "dg5_translation_registers": [
+      "Theological",
+      "Philosophical",
+      "Physical"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Conflating presence with identity (pantheism).",
+      "Assuming chi-field ubiquity without empirical evidence.",
+      "Equating divine grounding with physical causation.",
+      "Overinterpreting scripture as formal proof."
+    ],
+    "kill_conditions": [
+      "If chi does not exist at some point, the axiom fails.",
+      "If something can exist without God's grounding, the axiom fails.",
+      "If God can be absent from some location, the axiom fails."
+    ],
+    "lean_target": "Formalize the definition of presence as grounding and verify the logical consistency of the axioms."
+  },
+  "plain_summary": "This document argues that God is omnipresent because the fundamental information field chi exists everywhere and God grounds chi at every point. It refutes deism, localized God, and pantheism, but the proof relies on unverified premises about chi and divine grounding.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G04_Omnipresence.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\G04_Omnipresence.canonical-node.json"
+  }
+}

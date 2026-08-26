@@ -1,0 +1,82 @@
+{
+  "source_id": "rotation_curves_chi_field",
+  "title": "rotation_curves_chi_field.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field modified gravity model must produce galaxy rotation curve fits comparable in quality to standard NFW dark matter halo fits, using the same coupling constant  = 0.01 as in cosmological tests, without additional free parameters.",
+    "definitions": [
+      "chi-field: a modified gravity scalar field that couples to density, with coupling constant .",
+      "rotation curve: observed orbital velocity v(r) as a function of radius r for a galaxy.",
+      "NFW halo: Navarro-Frenk-White dark matter density profile used as standard model fit.",
+      "v_chi(r): predicted rotation velocity from chi-field, computed as sqrt(G_eff(r) * M(r) / r).",
+      ": dimensionless coupling constant, set to 0.01 from cosmological constraints."
+    ],
+    "derivation": [
+      "For each target galaxy, obtain observational data of velocity vs. radius.",
+      "Fit the chi-field modified gravity profile to the rotation data.",
+      "Compute chi(r) radial profile using chi-field coupling to density.",
+      "Predict v_chi(r) = sqrt(G_eff(r) * M(r) / r).",
+      "Compare chi-field prediction to observation and to standard NFW dark matter halo model.",
+      "Assess whether chi-field fits are within observational uncertainty and comparable to NFW fits."
+    ],
+    "action": "Implement and run the chi-field rotation curve fitting procedure for representative galaxies, producing quantitative predictions and comparisons to NFW fits, using  = 0.01 without additional free parameters.",
+    "boundary": [
+      "Does not claim perfect fits; only comparable within observational uncertainty.",
+      "Does not establish that chi-field is the correct theory; only that it matches NFW quality.",
+      "Does not extend to all galaxies; only representative galaxies from a standard dataset.",
+      "Does not provide a full derivation of the chi-field equations; assumes the model is given."
+    ],
+    "test": [
+      "For each galaxy, compute chi-field fit and NFW fit; check that chi-field residuals are within observational error bars.",
+      "Verify that the same  = 0.01 is used in both galactic and cosmological fits.",
+      "Check that no additional free parameters are introduced for the galactic case.",
+      "Compare chi-field and NFW fits statistically (e.g., chi-squared) to confirm comparable quality."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Observational galaxy rotation curve dataset",
+      "Chi-field modified gravity model equations",
+      "NFW dark matter halo profile as comparison",
+      "Numerical fitting routines (e.g., scipy)"
+    ],
+    "dg2_new_capability": "Provides quantitative rotation curve predictions from chi-field theory, enabling direct comparison to NFW fits and testing multi-scale consistency of the  parameter.",
+    "dg3_preserved_floor": "Preserves the existing claim that chi-field matches NFW quality at galactic scale, as stated in the companion galaxy rotation curves notebook.",
+    "dg4_collapse_if_removed": "Without this notebook, the chi-field theory lacks quantitative galactic-scale validation; the claim of multi-scale consistency with  = 0.01 would be unsupported.",
+    "dg5_translation_registers": [
+      "Observational astronomy: rotation curve data, velocity vs. radius",
+      "Modified gravity: chi-field, coupling constant , effective gravitational constant G_eff",
+      "Dark matter phenomenology: NFW halo profile, standard model fits"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical validation claim",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "C",
+    "recommended_atom_action": "Run the notebook to verify the fitting results and document the statistical comparison to NFW fits."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims 'comparable quality' without specifying statistical thresholds or error bars.",
+      "Uses 'representative galaxies' without specifying which or how many.",
+      "States 'independent validation' of  but does not provide formal statistical evidence.",
+      "May overstate 'multi-scale consistency' if fits are only comparable, not superior."
+    ],
+    "kill_conditions": [
+      "If the notebook cannot be reproduced with the stated dataset and code.",
+      "If chi-field fits require additional free parameters beyond .",
+      "If chi-field fits are significantly worse than NFW fits beyond observational uncertainty.",
+      "If the same  = 0.01 is not actually used in the galactic fits."
+    ],
+    "lean_target": "A reproducible notebook that produces chi-field rotation curve fits with residuals within observational error bars, using  = 0.01, and a statistical comparison showing no significant degradation relative to NFW."
+  },
+  "plain_summary": "This document describes a Colab notebook that fits chi-field modified gravity predictions to galaxy rotation curves, claiming fits comparable to NFW dark matter halos using the same coupling constant  = 0.01 as in cosmological tests. It is a supporting artifact for multi-scale consistency, but lacks detailed statistical evidence and reproducibility details.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\rotation_curves_chi_field.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\rotation_curves_chi_field.canonical-node.json"
+  }
+}

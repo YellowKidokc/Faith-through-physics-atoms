@@ -1,0 +1,76 @@
+{
+  "source_id": "SystemRegistry",
+  "title": "SystemRegistry.lean",
+  "canonical_node": {
+    "axiom": "The semantic address of a system state is a typed function from the ten variables to a score in Fin 4, and the mapping from algebraic values to scores is fixed by stateToScore.",
+    "definitions": [
+      "Variable: an inductive type with ten constructors G, M, E, S, T, K, R, Q, F, C.",
+      "Score: a Fin 4 value (0,1,2,3) representing Absent, Weak, Moderate, Dominant.",
+      "Address: a function from Variable to Score.",
+      "stateToScore: maps one to 3, zero to 0, and any other value to 1."
+    ],
+    "derivation": [
+      "Define Variable with ten constructors.",
+      "Define Score as Fin 4.",
+      "Define Address as Variable -> Score.",
+      "Define stateToScore mapping algebraic values to scores.",
+      "State theorem address_convergence: if all laws are one, then all variables map to Score 3.",
+      "The proof is incomplete, containing sorry statements pending LawIndex-to-Variable mapping."
+    ],
+    "action": "Provide a typed mapping between algebraic values and semantic scores, enabling the Semantic Addressing System to be used as a diagnostic tool.",
+    "boundary": [
+      "Does not define the LawIndex-to-Variable mapping; the theorem is not fully proven.",
+      "Does not establish that the mapping is unique or canonical beyond the stated definitions.",
+      "Does not provide a procedure for computing scores from real-world situations."
+    ],
+    "test": [
+      "Check that Variable has exactly ten constructors.",
+      "Check that Score is Fin 4.",
+      "Check that stateToScore maps one to 3, zero to 0, and other values to 1.",
+      "Check that address_convergence is stated and that its proof is incomplete (contains sorry)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CoherenceAlgebra.lean",
+      "LawIndex.lean (pending)"
+    ],
+    "dg2_new_capability": "Provides a formal bridge from algebraic states to semantic scores, enabling a typed diagnostic addressing system.",
+    "dg3_preserved_floor": "Preserves the algebraic definitions of one and zero as the basis for semantic scores.",
+    "dg4_collapse_if_removed": "Without this file, the semantic addressing system loses its formal connection to the algebra, reducing to an arbitrary scoring scheme.",
+    "dg5_translation_registers": [
+      "Variable",
+      "Score",
+      "Address",
+      "stateToScore",
+      "address_convergence"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "formal bridge definition",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that the semantic addressing system is derived from algebra when the mapping is incomplete.",
+      "Treating address_convergence as proven despite sorry statements."
+    ],
+    "kill_conditions": [
+      "If the LawIndex-to-Variable mapping is inconsistent with the ten variables.",
+      "If stateToScore mapping is not well-defined for all algebraic values."
+    ],
+    "lean_target": "Complete the proof of address_convergence by providing the LawIndex-to-Variable mapping and removing sorry."
+  },
+  "plain_summary": "SystemRegistry.lean defines a typed mapping from algebraic values to semantic scores (Variable, Score, Address) and states a theorem that total algebraic coherence implies all scores are Dominant. However, the proof is incomplete, so the bridge is not yet formally established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SystemRegistry.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\SystemRegistry.canonical-node.json"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-027",
+  "atom_uid": "sha256:bb0dd23ee6caae5060bd6d8afd60d402d1355a1309ac22b6ed52b8a6e40b7ed0",
+  "title": "ISO-027 - Epidemiology ↔ Sin Propagation",
+  "claim": "ISO-027: Epidemiology ↔ Sin Propagation maps Epidemiology (SIR Model) to Hamartiology (Sin Spread). Workbook verdict: Level 3. Honest verdict: Full doc confirms. Biblical leaven language confirms.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "assumptions": [
+    "Epidemiology (SIR Model)",
+    "Hamartiology (Sin Spread)",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "Swap PASSED. 10 correspondences. Super-spreader confirmed.",
+    "Full doc confirms. Biblical leaven language confirms."
+  ],
+  "equations": [],
+  "bridges": [
+    "Epidemiology (SIR Model) -> Hamartiology (Sin Spread)"
+  ],
+  "dependencies": [
+    "ISO-027"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Quantitative R₀ not yet measured for sins"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: Quantitative R₀ not yet measured for sins"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-027 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:2341b06172c86581c96fafaf2a7238e49202db7c76bb1feac1c2dc06921c29c9",
+      "event_uuid": "9a6732bf-22bc-5548-82c0-804aaefd0c86"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-027",
+  "atom_uuid": "a3d5ea40-94ba-5d25-b3ca-9344c3c730bb"
+}
