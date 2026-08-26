@@ -1,0 +1,83 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-ax-core-a2-2",
+  "atom_uid": "sha256:da0425f46dadd69063b6ef97f54e25bd3dede9399bdce67a36f41ddda6da95a7",
+  "title": "A2.2 — Self-Grounding",
+  "claim": "A2.2 — Self-Grounding is classified in Part 1 as AX_CORE with decision KEEP and anchor A2.2 (Self-Grounding).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "AX_CORE",
+  "assumptions": [
+    "A2.2 (Self-Grounding)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "A2.2 (Self-Grounding)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row A2.2 as AX_CORE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:86f38f6b4b2fde747fa52ee07a8be07eaed6d1674b6f934f8f1819f1e2d3d1f3",
+      "event_uuid": "a97a2bff-56cb-5fe9-b69f-f7df9a32ead0"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A2.2 as AX_CORE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:36+00:00",
+      "event_uuid": "443d2c1c-7c93-4870-babe-8cfcbd3d7188",
+      "event_id": "sha256:7e27d832a7c7357550a386e88a9afa214156d5af89868310e55a2fa23b61ad56"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A2.2 as AX_CORE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "af1cc35b-71f4-4b75-9193-61ca37a9708d",
+      "event_id": "sha256:a379b67969670953a7df3a08eccbbb394e85cf3787c8ca9d4798de1ca31db859"
+    }
+  ],
+  "source_claim_id": "AX_PART1:AX_CORE:A2.2",
+  "glyphs": [
+    "axiom",
+    "truth"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/axiom.svg",
+    "theophysics_glyphs/svg/truth.svg"
+  ],
+  "atom_uuid": "5808fe1d-f9ae-5b81-9f60-a8d8d77e19cf"
+}

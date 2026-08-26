@@ -68,7 +68,7 @@ premises. They are separate operations and must be separate nodes.
 | ◌ | `captured` | Exists, unprocessed |
 | ◇ | `classified` | Typed and filed, not asserted |
 | ❖ | `proposed` | Asserted, unsupported |
-| ◈ | `active` | Supported, in use |
+| ● | `active` | Supported, in use |
 | ◆ | `verified` | Burden met for its claimClass |
 | ⊢ | `kernel_verified` | Machine-checked in Lean 4 |
 | ⊝ | `weakened` | Survived a kill attempt with damage |
@@ -213,16 +213,32 @@ Any two atoms whose `mathFormNormal` matches are **candidate structural
 identities** — the strongest bridge grade — regardless of domain. This is
 the field that makes cross-domain matching computable instead of intuitive.
 
-### 2. `glyphs[]` — the type signature (max 5, ordered)
+### 2. `glyphs[]` — the type signature (exactly 5 slots, positional)
 Compact machine+human readable declaration prefixing a canonical block.
-Order: **state · type · domain · evidence · concept**
+**Slots are positional and fixed:**
+
+| Slot | Axis | Enum source |
+|---|---|---|
+| 1 | `status` | vocab.json → status |
+| 2 | `nodeType` | vocab.json → nodeType |
+| 3 | `scope` | domains_and_tags.json → root_layer + domainType |
+| 4 | `evidenceType` | vocab.json → evidenceType |
+| 5 | `primaryTag` | domains_and_tags.json → tags |
 
 ```
 ◆ ⟐ Μ ⊢ ⚖   = verified · proof · master-equation · lean-checked · justice
 ◇ ❖ ✎ ⌖ ☉   = draft · claim · education · statistical · truth
 ```
-Five slots is the constraint that makes the signature scannable. If a
-sixth is needed, the atom is doing two jobs and should be split.
+
+**`audienceLevel` and `verifiedBy` are metadata, not signature slots.** They
+carry glyphs for display only and never occupy a positional slot. Five slots
+is a hard constraint — if a sixth is needed, the atom is doing two jobs and
+should be split.
+
+Because slots are positional, cross-axis glyph reuse is unambiguous (`⊢` in
+slot 1 = kernel_verified, in slot 4 = machine_verified). **Within-axis reuse
+is illegal** unless the terms are declared members of one compression class
+(see `compressions.json`).
 
 ### 3. `tags[]` — controlled, cross-domain concept anchors
 Tags are the **concept vocabulary** — drawn from the theological/physical

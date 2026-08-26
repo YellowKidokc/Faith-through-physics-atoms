@@ -1,0 +1,67 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-135-master-equation-integration",
+  "atom_uid": "sha256:a8f5760270b80f0b49cd39368eb63969d774d0a3abce5a3f08ae8d059bd0d683",
+  "title": "AX-135 — Master Equation Integration",
+  "claim": "All fundamental dynamics integrate into a single unified framework.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "11-relativity",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "L_total = Σ(Law_i); all laws derive from χ"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-021",
+    "tp:axioms/01/AX-050",
+    "tp:axioms/01/AX-081",
+    "tp:axioms/01/AX-103"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the ten laws are inconsistent with each other",
+    "Demonstrate the master equation is overconstrained or internally contradictory"
+  ],
+  "proof_label": "RERUN_OWED",
+  "current_status": "active_candidate",
+  "rerun_status": "RERUN_OWED",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-135-master-equation-integration.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-135-master-equation-integration.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:830a35ee8963d7af8abab148d3b47fb42c6fb045e9ec735513aab4528a739a86",
+      "event_uuid": "cd2396d1-f600-5dd7-ac90-25fae83734c1"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'derived'. Ontology: 11-relativity.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:7f9fe82d9a75c478562b365742317ae7835b9540a5db616b9bce537fc5aea114",
+      "event_uuid": "207abeb1-24a6-5a32-8cab-46dd1a13cb42"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A19.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "original_node_id": "tp:axioms/01/AX-135",
+  "atom_uuid": "f0dbe74d-3461-51b5-a87e-3f599adbd356"
+}

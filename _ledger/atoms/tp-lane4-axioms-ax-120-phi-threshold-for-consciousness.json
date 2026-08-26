@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-120-phi-threshold-for-consciousness",
+  "atom_uid": "sha256:c2ebfaf560c734dd0eeb165bb3754a503bf2c2d0c2a3aed8384e514e3875626e",
+  "title": "AX-120 — Phi Threshold For Consciousness",
+  "claim": "Consciousness supervenes on information processing — Φ threshold exists.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "conjecture",
+  "mode_classification": "C2_WELL_POSED_CONJECTURE",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "∃Φ_threshold: Φ > Φ_threshold → observer status"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-038",
+    "tp:axioms/01/AX-040"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show consciousness doesn't have a threshold (either present or not)",
+    "Demonstrate Φ doesn't predict consciousness"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-120-phi-threshold-for-consciousness.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-120-phi-threshold-for-consciousness.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:aad752e1ca03185129e42e763c5ed9ca703444d709f89a2d43036110225add7e",
+      "event_uuid": "1ddfe526-9fd5-5986-8775-b2fc03f56016"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'conjecture'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:e10a751c784c0bc6f68b887d2b78fdf701819123c04866093fb0801c94ca9069",
+      "event_uuid": "2f9768b6-7670-529b-8d6d-dceaf348b1f7"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A17.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-120",
+  "original_node_id": "tp:axioms/01/AX-120",
+  "atom_uuid": "593ea1d2-3043-5da1-83f7-0839a35254ec"
+}

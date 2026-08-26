@@ -1,0 +1,87 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-174",
+  "nodeID": "tp:axioms/01/AX-174",
+  "claimID": "tp:AXIOMS/BRIDGE-PHI-CHI",
+  "name": "BRIDGE-PHI-CHI - Individual Phi To Social Chi",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "bridge",
+  "statementTechnical": "The Scale Bridge: Social Coherence is not a metaphor; it is the integrated sum of individual consciousness vectors weighted by their alignment.",
+  "statementPlain": "The Scale Bridge: Social Coherence is not a metaphor; it is the integrated sum of individual consciousness vectors weighted by their alignment.",
+  "mathematicalForm": "—",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [],
+  "tags": [
+    "logos",
+    "coherence",
+    "witness",
+    "observer"
+  ],
+  "keywords": [
+    "BRIDGE-PHI-CHI",
+    "—",
+    "coherence; observer; sociology",
+    "BridgePrinciple"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "### DC-1: Methodological Individualism Victory. ### DC-2: No Downward Causation. ### DC-3: Non-Measurable Coherence. ### DC-4: Compositional Independence.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 176
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-174",
+    "oldID": "BRIDGE-PHI-CHI",
+    "treeLevel": "—",
+    "treeBranch": "—",
+    "questionType": "—",
+    "domain": "coherence; observer; sociology",
+    "tier": "—",
+    "newType": "BridgePrinciple",
+    "logicalForce": "bridge identification",
+    "formalizableInLean": "partly",
+    "leanKind": "bridge predicate / explicit assumption",
+    "riskLevel": "high",
+    "kernelRole": "guardedPremise",
+    "moduleID": "M22",
+    "moduleTitle": "Logos / Bridge Layer",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "TBD",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

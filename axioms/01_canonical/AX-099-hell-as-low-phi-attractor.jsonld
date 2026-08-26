@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-099",
+  "nodeID": "tp:axioms/01/AX-099",
+  "claimID": "tp:AXIOMS/T12.2",
+  "name": "Hell As Low-Phi Attractor",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theorem",
+  "statementTechnical": "-1 states asymptote to minimal coherence (hell).",
+  "statementPlain": "-1 states asymptote to minimal coherence (hell).",
+  "mathematicalForm": "σ=-1 → lim(t→∞) Φ(t) = 0",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-097",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-096",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "proof"
+  ],
+  "keywords": [
+    "T12.2",
+    "Q11",
+    "Eschatology",
+    "Theorem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show σ=-1 trajectory stabilizes at non-zero Φ. Demonstrate decoherence has a floor (can't reach zero). Show annihilationism is correct (soul ceases to exist rather than persisting in decoherence).",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 101
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-099",
+    "oldID": "T12.2",
+    "treeLevel": "Q11",
+    "treeBranch": "Q11-G (Hell theorem)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Eschatology",
+    "tier": "2",
+    "newType": "Theorem",
+    "logicalForce": "derivable theorem",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M12",
+    "moduleTitle": "Destiny / Attractor",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1, M2, M3",
+    "worldviewsEliminated": "Universalism, Annihilationism",
+    "propagationTest": "YES — Hell theorem propagates to permanence of rejection and eschatological bimodality.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

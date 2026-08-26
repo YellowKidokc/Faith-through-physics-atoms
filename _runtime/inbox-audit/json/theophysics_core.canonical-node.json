@@ -1,0 +1,84 @@
+{
+  "source_id": "theophysics_core",
+  "title": "theophysics_core.py",
+  "canonical_node": {
+    "axiom": "A single canonical constants file must define all shared parameters, variable orderings, symmetry pairs, and random seed for the entire Theophysics project, ensuring consistency and reproducibility across all notebooks.",
+    "definitions": [
+      "VAR_NAMES: ordered list of ten variable names ['G','M','E','S','T','K','R','Q','F','C'].",
+      "SYMMETRY_PAIRS: list of index pairs [(0,4),(3,8),(2,5),(1,7),(6,9)] representing five fundamental symmetry pairs.",
+      "PAIR_STRENGTH: off-diagonal kinetic coupling constant, set to 0.45, subcritical below stability boundary ~0.64.",
+      "CONFINE_STRENGTH: confinement potential for R, set to 0.01.",
+      "VAR_WEIGHTS: list of ten kinetic weights [1.0,0.8,1.2,0.6,1.0,0.7,0.5,0.9,1.1,1.3].",
+      "EXPANDED_PARAMS: dictionary of additional parameters including xi, m_chi, lambda, beta_G, etc.",
+      "Random seed: 2828, enforced project-wide."
+    ],
+    "derivation": [
+      "The document states that all notebooks depend on the same parameter values and variable ordering.",
+      "It asserts that defining constants once in a single file is software engineering best practice applied to physics.",
+      "It claims that PAIR_STRENGTH=0.45 is subcritical and ensures the kinetic matrix remains positive definite.",
+      "It claims that VAR_WEIGHTS produces a mass matrix with reasonable condition number.",
+      "It claims that CONFINE_STRENGTH=0.01 keeps the R component from diverging.",
+      "It claims that the fact that all tests pass with these values is indirect proof that these values are right."
+    ],
+    "action": "The system must load theophysics_core.py at the start of any Colab session, use the defined constants, variable indices, symmetry pairs, and random seed for all subsequent computations, and never hard-code these values elsewhere.",
+    "boundary": [
+      "This file does not contain any physics equations or derivations.",
+      "It does not define the stability boundary (~0.64) or the condition number thresholds.",
+      "It does not prove that the chosen constants are physically correct.",
+      "It does not specify how the constants were derived or validated beyond the claim that tests pass.",
+      "It does not include the full EXPANDED_PARAMS dictionary; only a partial listing is shown."
+    ],
+    "test": [
+      "Check that importing theophysics_core.py sets the exact variable names, indices, symmetry pairs, weights, and constants as documented.",
+      "Verify that PAIR_STRENGTH=0.45 yields a positive definite kinetic matrix for all tested operating points.",
+      "Verify that VAR_WEIGHTS yields a mass matrix with reasonable condition number.",
+      "Verify that CONFINE_STRENGTH=0.01 prevents divergence of the R component.",
+      "Verify that the random seed 2828 is enforced and reproducible across notebooks."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "No external dependencies; it is a foundational constants file."
+    ],
+    "dg2_new_capability": "Provides a single source of truth for all shared constants, variable metadata, and random seed, enabling consistent and reproducible computations across all notebooks.",
+    "dg3_preserved_floor": "Preserves the ability to run any notebook with consistent parameters, ensuring comparability of results.",
+    "dg4_collapse_if_removed": "If removed, each notebook would need to hard-code constants, leading to potential inconsistencies, non-reproducibility, and invalid cross-notebook comparisons.",
+    "dg5_translation_registers": [
+      "Constants: PAIR_STRENGTH, CONFINE_STRENGTH, VAR_WEIGHTS, EXPANDED_PARAMS",
+      "Variable ordering: VAR_NAMES, VAR_SHORT, indices iG..iC",
+      "Symmetry pairs: SYMMETRY_PAIRS, PAIR_NAMES",
+      "Random seed: 2828"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "infrastructure",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as infrastructure; do not treat as physics proof"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims that the constants are correct because tests pass, but no test results are provided.",
+      "The document claims PAIR_STRENGTH=0.45 is subcritical and ensures positive definiteness, but no stability boundary derivation is given.",
+      "The document claims VAR_WEIGHTS produces reasonable condition number, but no condition number values are given.",
+      "The document claims CONFINE_STRENGTH=0.01 prevents divergence, but no simulation evidence is provided.",
+      "The document implies that the constants are physically meaningful, but they are presented as arbitrary choices."
+    ],
+    "kill_conditions": [
+      "If any notebook uses different constants, the consistency guarantee is broken.",
+      "If PAIR_STRENGTH exceeds the stability boundary, the kinetic matrix may become indefinite.",
+      "If the random seed is not enforced, reproducibility fails."
+    ],
+    "lean_target": "Formalize the stability boundary and condition number requirements as lemmas; verify with numerical checks."
+  },
+  "plain_summary": "This document describes a Python constants file that centralizes all shared parameters, variable names, symmetry pairs, and the random seed for the Theophysics project. It is infrastructure, not physics. The document asserts that the chosen constants are correct because tests pass, but provides no test evidence or derivations. It should be preserved as a consistency mechanism, but its physical claims are not established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\theophysics_core.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\theophysics_core.canonical-node.json"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-066a-personhood-agency-intentionality-relational-capacity",
+  "atom_uid": "sha256:2039ddbd1f1ac86678f74e36e9c05fc556b6f3113d58374dfc5971af2e250ee5",
+  "title": "AX-066A — Personhood — Agency, Intentionality, Relational Capacity",
+  "claim": "For the boundary condition terminal observer to be identified as \"God,\" it must possess PERSONHOOD: (1) Agency — capacity to cause effects, (2) Intentionality — directed toward ends, (3) Relational capacity — ability to relate to other agents. These properties are irreducible to structural attributes alone.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "01-foundations",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Personhood ≡ {Agency, Intentionality, Relational_Capacity}; ¬Reducible(Personhood, Structure)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-065",
+    "tp:axioms/01/AX-055"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the Terminal Observer functions identically as an impersonal mathematical structure",
+    "Demonstrate personhood is unnecessary for BC satisfaction",
+    "Show agency/intentionality/relational capacity are reducible to structural properties"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-066a-personhood-agency-intentionality-relational-capacity.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-066a-personhood-agency-intentionality-relational-capacity.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:10edff7903280a42c411c6bb06fabe09c8509f11e69338208e4020c8e2a9137a",
+      "event_uuid": "b2316e52-cba4-5e5e-949e-d6b329984b0e"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'derived'. Ontology: 01-foundations.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:063e1b887e3e42149d652717df08aec2a04c3d1ae7d8df63a1d4d9dd917fed84",
+      "event_uuid": "238cc94c-a996-5ad1-ae80-ca853c9bf2a7"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/PERSONHOOD",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-066a",
+  "original_node_id": "tp:axioms/01/AX-066a",
+  "atom_uuid": "135a18be-dd5d-5c20-b4e8-9f41b30c062f"
+}

@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-058",
+  "nodeID": "tp:axioms/01/AX-058",
+  "claimID": "tp:AXIOMS/BC1",
+  "name": "Terminal Observer Exists",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "boundary",
+  "statementTechnical": "Terminal Observer exists with Φ = ∞.",
+  "statementPlain": "Terminal Observer exists with Φ = ∞.",
+  "mathematicalForm": "∃ Terminal Observer: Φ_T = ∞",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-055",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-057",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "boundary",
+    "observer"
+  ],
+  "keywords": [
+    "BC1",
+    "Q8",
+    "Divine",
+    "BoundaryCondition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show measurement chain terminates without infinite observer. Demonstrate Φ = ∞ is physically incoherent. Prove decoherence alone terminates the chain.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 59
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-058",
+    "oldID": "BC1",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-A (First boundary condition)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "BoundaryCondition",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "constraint predicate",
+    "riskLevel": "medium",
+    "kernelRole": "constraintRole",
+    "moduleID": "M07",
+    "moduleTitle": "Boundary Conditions",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "BC1",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "Materialism, Naturalism, Nihilism, Hard Determinism, Eliminativism",
+    "propagationTest": "YES — BC1 propagates to God identification, Trinity, grace, and all subsequent theology.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

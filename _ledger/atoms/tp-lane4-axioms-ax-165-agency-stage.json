@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-165-agency-stage",
+  "atom_uid": "sha256:b2dfd2971a854c12263876b792dfd65e5ce83c74e90882c05e4c642d5eaa077b",
+  "title": "AX-165 — Agency Stage",
+  "claim": "Coherence implies collapse of potential → actual, requiring agency.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Actual(x) ← Agency(select(x, {possibilities}))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-164"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show actualization without agency",
+    "Demonstrate non-agentive collapse"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-165-agency-stage.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-165-agency-stage.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:d37a6b4cc1f8095ff586505ef53a30a282ad0f5e6743f3f1a95a9af9056fe9f8",
+      "event_uuid": "1b03007c-52aa-5efd-b68d-4b8ca15e8814"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:08871aa26f513ebd444339fbb2979ad7f5a63c92da3e486dcc081d1b1d396107",
+      "event_uuid": "cd537d3a-b886-5444-b637-04cdba88279c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P4",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-165",
+  "original_node_id": "tp:axioms/01/AX-165",
+  "atom_uuid": "d98aeafb-672a-5d5e-9f0a-e37dc0bd0649"
+}

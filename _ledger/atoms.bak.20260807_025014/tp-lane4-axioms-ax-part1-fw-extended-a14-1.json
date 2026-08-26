@@ -1,0 +1,81 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-fw-extended-a14-1",
+  "atom_uid": "sha256:7cae07b6c91bf7fcf7d958f80533f35b4ef5e11167e19af6b3b6d93d615bdb05",
+  "title": "A14.1 — Dynamic Dark Energy",
+  "claim": "A14.1 — Dynamic Dark Energy is classified in Part 1 as FW_EXTENDED with decision MOVE_OUT_OF_STRICT_CORE and anchor BC6 (Infinite Energy Source).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "FW_EXTENDED",
+  "assumptions": [
+    "BC6 (Infinite Energy Source)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "BC6 (Infinite Energy Source)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row A14.1 as FW_EXTENDED.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:4c34957e89b79734e16fd5f0eaf83b4d8810d92af09df4491db973f16c37a339"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A14.1 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:38+00:00",
+      "event_uuid": "5d6648c7-290d-4ac4-9f1d-83cb050be59f",
+      "event_id": "sha256:a71c59c29a0c823133449bcfeeedca2be62f2b71921f1cec0f06ca38bcd4d957"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A14.1 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "4248a411-6903-4624-8d9d-98fc38ac3bc3",
+      "event_id": "sha256:916811409a40fa19d82c8be44ce88230ab911c79e0c349dd3c79280064e97953"
+    }
+  ],
+  "source_claim_id": "AX_PART1:FW_EXTENDED:A14.1",
+  "glyphs": [
+    "mesh",
+    "domain-tag"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/mesh.svg",
+    "theophysics_glyphs/svg/domain-tag.svg"
+  ]
+}

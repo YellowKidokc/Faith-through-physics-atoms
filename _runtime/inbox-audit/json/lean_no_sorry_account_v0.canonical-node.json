@@ -1,0 +1,75 @@
+{
+  "source_id": "lean_no_sorry_account_v0",
+  "title": "Lean No-Sorry Account v0",
+  "canonical_node": {
+    "axiom": "The public claim about Lean proof strength must be based on verified no-sorry builds and proof-strength classification, not raw declaration counts.",
+    "definitions": [
+      "no-sorry source text: a Lean file with no active sorry or admit proof holes",
+      "proof-strength class: a category such as SUBSTANTIVE_OR_CASE_PROOF, FINITE_DECIDABLE, SIMPLIFICATION, DEFINITIONAL_RFL, TRIVIAL_TRUE, WRAPPER_OR_IMPORTED, DECLARATION_OR_UNKNOWN",
+      "raw theorem/lemma declaration: any theorem or lemma statement in a Lean file, regardless of proof strength"
+    ],
+    "derivation": [
+      "The workspace contains 91 Lean file copies, deduplicated to 44 unique source texts by SHA256.",
+      "Of these, 43 are likely unique no-sorry source texts; 1 is a sorry-bearing spec file.",
+      "Across the unique Lean texts, there are about 880 raw theorem/lemma declarations.",
+      "The proof-strength summary shows only 43 substantive or case proofs, with many definitional, trivial, or wrapper declarations.",
+      "Therefore, the raw count of 880 must not be presented as deep proofs.",
+      "A no-sorry text scan is not equivalent to a clean build; further verification is required."
+    ],
+    "action": "Report the no-sorry inventory as 'about 43 unique no-sorry Lean source texts' and 'about 880 raw theorem/lemma declarations' only with the caveat that proof-strength classification is pending. Do not claim machine-checked proof counts until a clean build and classification are completed.",
+    "boundary": [
+      "Does not assert that any Lean file has been successfully compiled or verified.",
+      "Does not equate raw declaration counts with proof strength.",
+      "Does not claim that the 43 no-sorry files are all substantive proofs.",
+      "Does not provide a final machine-checked proof count."
+    ],
+    "test": [
+      "Check that any public statement about Lean proofs includes the qualifier 'no-sorry candidate inventory' unless a clean build log exists.",
+      "Verify that the proof-strength summary is used instead of raw theorem counts when describing substantive proofs.",
+      "Confirm that the single sorry-bearing spec file is not counted as a no-sorry source."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean source files in the workspace",
+      "SHA256 deduplication",
+      "Proof-strength classification summary"
+    ],
+    "dg2_new_capability": "Provides a conservative inventory of no-sorry Lean source texts and raw declaration counts, with explicit caution against overclaiming proof strength.",
+    "dg3_preserved_floor": "Preserves the distinction between raw declarations and verified proofs, preventing inflation of the proof count.",
+    "dg4_collapse_if_removed": "Without this node, the raw 880 declaration count could be misreported as 880 deep proofs, misleading stakeholders.",
+    "dg5_translation_registers": [
+      "no-sorry candidate inventory",
+      "raw theorem/lemma declarations",
+      "proof-strength class"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "inventory/status report",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Use as a conservative inventory; do not upgrade to verified proof count without further build verification."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting raw declaration counts as deep proofs",
+      "Assuming no-sorry text scan implies successful compilation",
+      "Ignoring proof-strength classification when reporting substantive proofs"
+    ],
+    "kill_conditions": [
+      "If a clean build of the no-sorry package fails, the inventory is invalid.",
+      "If the proof-strength summary is found to be inaccurate, the classification is invalid."
+    ],
+    "lean_target": "A verified Lean build log with per-theorem proof-strength classification."
+  },
+  "plain_summary": "This document provides a conservative count of no-sorry Lean files and raw theorem declarations, warning that these numbers are not proof counts. It emphasizes the need for further verification and classification before making stronger claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\lean_no_sorry_account_v0.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\lean_no_sorry_account_v0.canonical-node.json"
+  }
+}

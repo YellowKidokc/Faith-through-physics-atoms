@@ -1,0 +1,304 @@
+{
+  "work_id": "W4.1",
+  "title": "The Trinity (canonical, T-02)",
+  "turn": "TURN 4 - GOD DEEPER",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\00_START_HERE_DOORWAY_METHOD\\CODEX_BLUE_WORKING_LANE\\sources\\parallel-start\\T-02-the-trinity-canonical.html",
+  "overall_status": "reviewed",
+  "summary": "This work presents the Trinity as the root axiom and derives the four debts (existence, distinction, relation, orientation) as absolved in God. It includes formal claims (Lean-verified quaternion EM isomorphism), open problems (T.4, T.7), and explicit boundaries. The review extracts 16 load-bearing claims, classifying them under the defense grid, with attention to overclaims and required concessions.",
+  "claims": [
+    {
+      "claim_id": "W4.1-C001",
+      "claim_text": "Before anything is assumed, Someone is: the Trinity is the self-sufficient ground of all reality.",
+      "defense_class": "ROOT",
+      "claim_level": "theological",
+      "support": "Before there was time... there was love. A Father, a Son, and the Spirit between them—one being, three persons.",
+      "dependencies": [
+        "none"
+      ],
+      "risks": [
+        "Root commitment; not derivable."
+      ],
+      "required_concession": "This is a declared starting premise, not a conclusion.",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "W4.1-C002",
+      "claim_text": "The Trinity is one being, three persons: Father, Son, and Spirit are distinct centers of consciousness, love, and will.",
+      "defense_class": "AXIOM",
+      "claim_level": "theological",
+      "support": "One being, three distinct centers of consciousness, love, and will—so united that to know one is to know all.",
+      "dependencies": [
+        "W4.1-C001"
+      ],
+      "risks": [
+        "Mystery; not fully formalizable."
+      ],
+      "required_concession": "This is an axiom of the framework.",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "W4.1-C003",
+      "claim_text": "The four debts (existence, distinction, relation, orientation) are assumed by every rival system but derived by none.",
+      "defense_class": "DERIVATION",
+      "claim_level": "philosophical",
+      "support": "Four assumptions. Each true. Each unable to pay for itself. Every rival ontology dies or collapses.",
+      "dependencies": [
+        "Leibniz",
+        "Aristotle",
+        "Hume"
+      ],
+      "risks": [
+        "Overgeneralization; may be contested."
+      ],
+      "required_concession": "This is a strong claim about all rival systems; not exhaustively proven.",
+      "recommended_action": "fix",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W4.1-C004",
+      "claim_text": "The four debts are absolved in the Trinity: existence as aseity, distinction as persons, relation as perichoresis, orientation as love.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "We hold one axiom—God—and the four dissolve into Him.",
+      "dependencies": [
+        "W4.1-C001",
+        "W4.1-C002",
+        "Aquinas",
+        "John of Damascus",
+        "Augustine"
+      ],
+      "risks": [
+        "Analogical; not formal proof."
+      ],
+      "required_concession": "This is a theological resolution, not a formal derivation.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W4.1-C005",
+      "claim_text": "The Trinity is the structural minimum for truth to be fully real: truth requires being, expression, and witness.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "A solitary god could be powerful, but could not be truth in the full sense—because truth requires expression and witness.",
+      "dependencies": [
+        "W4.1-C002",
+        "John 14:6"
+      ],
+      "risks": [
+        "Anthropomorphic; may overstate."
+      ],
+      "required_concession": "This is a conceptual argument, not a formal proof.",
+      "recommended_action": "fix",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W4.1-C006",
+      "claim_text": "Truth is dimensionless and three-moded: Truth = (Being) × (Expression) × (Witness).",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "Truth is dimensionless in exactly this sense... It is a three-mode operator.",
+      "dependencies": [
+        "W4.1-C005",
+        "Zurek's decoherence"
+      ],
+      "risks": [
+        "Physics analogy may be overextended."
+      ],
+      "required_concession": "This is an analogy, not a mathematical identity.",
+      "recommended_action": "fix",
+      "confidence": 0.5
+    },
+    {
+      "claim_id": "W4.1-C007",
+      "claim_text": "The quaternion EM / Trinity isomorphism is Lean 4 verified with 478 theorems and zero sorry.",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "support": "Quaternion EM / Trinity isomorphism: Lean 4 verified, 478 theorems, zero sorry.",
+      "dependencies": [
+        "Lean 4",
+        "Quaternion EM"
+      ],
+      "risks": [
+        "Formal verification only covers the mathematical structure, not theological meaning."
+      ],
+      "required_concession": "This is a formal mathematical result, not a proof of the Trinity.",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "W4.1-C008",
+      "claim_text": "Time is authored, not created: time is something the Trinity does, not a medium they inhabit.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "Time is something the Trinity does, not a medium they inhabit.",
+      "dependencies": [
+        "W4.1-C001",
+        "Boethius"
+      ],
+      "risks": [
+        "May conflict with some physics views."
+      ],
+      "required_concession": "This is a theological claim about the nature of time.",
+      "recommended_action": "keep",
+      "confidence": 0.8
+    },
+    {
+      "claim_id": "W4.1-C009",
+      "claim_text": "The nine fruits of the Spirit are the character of God Himself, existing eternally in the Trinity.",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "support": "The nine fruits of the Spirit are not a to-do list... They are the character of God Himself.",
+      "dependencies": [
+        "W4.1-C002",
+        "Galatians 5:22-23"
+      ],
+      "risks": [
+        "Exegetical interpretation."
+      ],
+      "required_concession": "This is a theological interpretation of Scripture.",
+      "recommended_action": "keep",
+      "confidence": 0.7
+    },
+    {
+      "claim_id": "W4.1-C010",
+      "claim_text": "The four debts are the price of admission to thinking at all; every rival system assumes them without payment.",
+      "defense_class": "DERIVATION",
+      "claim_level": "philosophical",
+      "support": "The price of admission to thinking at all.",
+      "dependencies": [
+        "W4.1-C003"
+      ],
+      "risks": [
+        "Overstatement; may be challenged."
+      ],
+      "required_concession": "This is a strong claim about all rival systems.",
+      "recommended_action": "fix",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W4.1-C011",
+      "claim_text": "The denial of orientation is an act of orientation; any critic who calls a claim false assumes the gradient.",
+      "defense_class": "CLOSURE",
+      "claim_level": "philosophical",
+      "support": "Anyone who calls any claim false—including the critic who calls this framework false—has already assumed the gradient.",
+      "dependencies": [
+        "W4.1-C003"
+      ],
+      "risks": [
+        "Self-referential; may be seen as rhetorical."
+      ],
+      "required_concession": "This is a self-referential argument; its force depends on the premise.",
+      "recommended_action": "keep",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W4.1-C012",
+      "claim_text": "The Trinity mapping is A1=Father (Existence), A2=Son (Distinction), A3=Spirit (Relation), A4=Truth (Orientation).",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "Trinity mapping: A1=Father (Existence), A2=Son (Distinction), A3=Spirit (Relation), A4=Truth (Orientation).",
+      "dependencies": [
+        "W4.1-C002",
+        "A1-A4 axioms"
+      ],
+      "risks": [
+        "Mapping may be arbitrary; Version B needs check."
+      ],
+      "required_concession": "This mapping is proposed, not fully verified.",
+      "recommended_action": "fix",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W4.1-C013",
+      "claim_text": "T.4 (Omniscience) requires a formal bridge from coupling invariant to Shannon mutual information; this is open.",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "support": "T.4 (Omniscience): Formal bridge from coupling invariant → Shannon mutual information needed.",
+      "dependencies": [
+        "T.4"
+      ],
+      "risks": [
+        "None; open problem."
+      ],
+      "required_concession": "This is an open problem.",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "W4.1-C014",
+      "claim_text": "T.7 (Love as Ground State) is a proposed identification of inter-person coupling with Yukawa coupling; it is not yet confirmed as the same force.",
+      "defense_class": "ADMISSION",
+      "claim_level": "bridge",
+      "support": "T.7 (Love as Ground State): Formal identification of inter-person coupling with Yukawa coupling—same form, but is it the SAME force or structural analogy?",
+      "dependencies": [
+        "T.7"
+      ],
+      "risks": [
+        "Overclaim if presented as proven."
+      ],
+      "required_concession": "This is a proposed analogy, not a proven identity.",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "W4.1-C015",
+      "claim_text": "The n ≥ 4 bound in the Watcher is parsimony, not proof; never present all five instances as equally proven.",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "support": "n ≥ 4 bound in Watcher is parsimony, not proof.",
+      "dependencies": [
+        "Watcher"
+      ],
+      "risks": [
+        "Overclaim if presented as proof."
+      ],
+      "required_concession": "This is a parsimony argument, not a proof.",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "W4.1-C016",
+      "claim_text": "The derivative terms T.1–T.7 are newly derived (July 2026) and have NOT been through adversarial testing at the term level.",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "support": "The derivative terms T.1–T.7 are newly derived (July 2026) and have NOT been through adversarial testing at the term level.",
+      "dependencies": [
+        "T.1-T.7"
+      ],
+      "risks": [
+        "None; explicit boundary."
+      ],
+      "required_concession": "This is an explicit admission of untested status.",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "W4.1-C003",
+      "problem": "Overgeneralizes about all rival systems without exhaustive proof.",
+      "repair": "Soften to 'many rival systems' or add a qualifier."
+    },
+    {
+      "severity": "P1",
+      "target": "W4.1-C006",
+      "problem": "Physics analogy may be overextended; truth as dimensionless is not mathematically defined.",
+      "repair": "Explicitly label as analogy and avoid implying formal equivalence."
+    },
+    {
+      "severity": "P2",
+      "target": "W4.1-C012",
+      "problem": "Trinity mapping may be arbitrary; Version B needs check.",
+      "repair": "Add a note that this mapping is provisional and subject to revision."
+    }
+  ],
+  "log_notes": [
+    "The work explicitly lists open problems and boundaries; these are correctly classified as ADMISSION.",
+    "The Lean-verified isomorphism is a formal result but should not be used to claim theological proof.",
+    "The four debts argument is central but needs careful handling to avoid overclaim.",
+    "The work is part of a larger framework; dependencies on other sheets (e.g., Watcher) are noted."
+  ]
+}

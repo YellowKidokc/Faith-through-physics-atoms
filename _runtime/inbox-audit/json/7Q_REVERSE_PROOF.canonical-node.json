@@ -1,0 +1,83 @@
+{
+  "source_id": "7Q_REVERSE_PROOF",
+  "title": "The 7 Questions  -  Proof Engine (Reverse)",
+  "canonical_node": {
+    "axiom": "A claim is proven only if it survives exhaustive elimination of all possible death conditions.",
+    "definitions": [
+      "Death condition: any falsification attempt, self-refutation, infinite regress, empirical contradiction, logical incoherence, or unsupported assertion.",
+      "Survivor: the claim that remains after all death conditions have been tested and eliminated.",
+      "Forced consequence: a necessary implication of the survivor that cannot be avoided.",
+      "Exhaustive elimination: the process of testing every defined death condition without holding back."
+    ],
+    "derivation": [
+      "1. Enumerate all possible death conditions for the claim.",
+      "2. Test each death condition; kill branches that fail.",
+      "3. The surviving claim is provisionally proven.",
+      "4. Identify what the survivor necessarily forces downstream.",
+      "5. Trace the foundations the survivor depends on.",
+      "6. Present evidence only after survival is established.",
+      "7. State the claim as a conclusion, not a hypothesis.",
+      "8. Generalize across domains to show universality.",
+      "9. Name the survivor last, as identity earned through survival."
+    ],
+    "action": "Apply the 7Q Reverse protocol to any scientific claim: start with destruction, then force, ground, support, state, generalize, and name.",
+    "boundary": [
+      "Does not guarantee that all death conditions have been enumerated; exhaustive is aspirational.",
+      "Does not replace empirical evidence; evidence is used only after survival.",
+      "Does not prove a claim is true; it proves it survived the tested death conditions.",
+      "Does not provide a formal logical proof system; it is a methodological template."
+    ],
+    "test": [
+      "Check that all death conditions are explicitly listed and tested.",
+      "Verify that the survivor's forced consequences are logically entailed.",
+      "Confirm that evidence is presented after survival, not before.",
+      "Ensure the claim is stated only after survival is established.",
+      "Check that the final identity is derived from the survival process."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The concept of falsification and death conditions.",
+      "The logical principle of elimination (modus tollens).",
+      "The scientific method as a baseline for contrast."
+    ],
+    "dg2_new_capability": "Provides a structured reverse method for proving claims by exhaustive elimination, shifting from confirmation to destruction.",
+    "dg3_preserved_floor": "Preserves the core scientific value of falsifiability and evidence, but reorders their role.",
+    "dg4_collapse_if_removed": "If the death-condition-first approach is removed, the method collapses into traditional hypothesis testing, losing its distinctive reverse proof structure.",
+    "dg5_translation_registers": [
+      "Scientific method",
+      "Falsificationism",
+      "Eliminative induction"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as methodological template; do not treat as proven scientific law"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims to 'prove anything' without formal proof.",
+      "Assumes exhaustive elimination is achievable in practice.",
+      "May overstate the power of survival as proof.",
+      "The method itself is not empirically validated."
+    ],
+    "kill_conditions": [
+      "If exhaustive elimination is impossible, the method fails.",
+      "If survival does not imply truth, the method is invalid.",
+      "If the method cannot be applied to real scientific claims, it is vacuous."
+    ],
+    "lean_target": "Formalize the elimination process as a logical framework; test on historical scientific claims."
+  },
+  "plain_summary": "This document proposes a reverse scientific method: instead of confirming a hypothesis, you first try to kill it by listing all possible death conditions. Whatever survives is considered proven. The method is presented as a template with seven steps, but it is not a formal proof system and its claims of exhaustive proof are not established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\7Q_REVERSE_PROOF.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\7Q_REVERSE_PROOF.canonical-node.json"
+  }
+}

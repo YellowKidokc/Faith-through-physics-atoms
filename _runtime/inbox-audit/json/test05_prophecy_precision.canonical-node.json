@@ -1,0 +1,75 @@
+{
+  "source_id": "test05_prophecy_precision",
+  "title": "test05_prophecy_precision.ipynb",
+  "canonical_node": {
+    "axiom": "Prophetic precision, operationalized as information content, increases monotonically across biblical eras.",
+    "definitions": [
+      "Precision: number of independent, testable, specific claims in a prophetic statement.",
+      "Specific conditions: countable elements such as named entities, time qualifications, and mechanistic specificity.",
+      "Monotonic growth: non-decreasing trend in precision scores across successive biblical eras."
+    ],
+    "derivation": [
+      "The Theophysics framework predicts K (Information/Logos) component growth over time.",
+      "Prophetic statements are a subcategory of biblical text.",
+      "If K grows, then prophetic statements should show increasing information content.",
+      "Test 05 measures precision as a proxy for information content in prophetic statements.",
+      "The measured precision shows the expected monotonic growth pattern."
+    ],
+    "action": "The system should measure prophetic precision across biblical eras using the defined criteria and compare the trend to the predicted monotonic growth.",
+    "boundary": [
+      "Does not verify that prophecies came true.",
+      "Does not establish a causal mechanism.",
+      "Does not claim that the scoring is objective beyond the defined criteria.",
+      "Does not generalize beyond the specific corpus and scoring method."
+    ],
+    "test": [
+      "Apply the scoring criteria to prophetic statements across eras.",
+      "Check that precision scores do not decrease over time.",
+      "Compare the observed trend to the prediction of monotonic growth."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Test 03 (informational complexity of the whole textual corpus)",
+      "Theophysics framework assumptions about K component growth"
+    ],
+    "dg2_new_capability": "Provides a measurement of prophetic precision as a subcategory of information content, complementing Test 03.",
+    "dg3_preserved_floor": "Preserves the claim that information content in biblical text increases over time, as measured by Test 03.",
+    "dg4_collapse_if_removed": "If removed, the suite loses a specific test for prophetic statements, but the overall claim of increasing information content may still be supported by Test 03.",
+    "dg5_translation_registers": [
+      "Information content",
+      "Prophetic precision",
+      "Monotonic growth"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical observation",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "C",
+    "recommended_atom_action": "record as empirical observation with stated limitations"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The term 'precision' is operationalized in a specific way that may not match common usage.",
+      "The scoring criteria are deterministic but may be subjective in application.",
+      "The result is presented as 'PASSED' without statistical rigor or comparison to a null model.",
+      "The interpretation implies theological significance beyond the measurement."
+    ],
+    "kill_conditions": [
+      "If the scoring criteria are shown to be arbitrary or inconsistent.",
+      "If the monotonic trend disappears when applied to a broader or different corpus.",
+      "If the measurement is not reproducible by independent researchers."
+    ],
+    "lean_target": "A lean version would state: 'Using the defined criteria, prophetic statements in this corpus show a non-decreasing trend in information content over time.'"
+  },
+  "plain_summary": "This document describes a Colab notebook that claims to measure prophetic precision in the Bible and finds it increases over time. The measurement is based on a specific operationalization of precision as information content. The result is presented as passed, but the document does not provide statistical analysis or external validation. The claim is limited to the defined criteria and does not verify prophecy fulfillment.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test05_prophecy_precision.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test05_prophecy_precision.canonical-node.json"
+  }
+}

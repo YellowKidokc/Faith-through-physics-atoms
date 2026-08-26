@@ -1,0 +1,53 @@
+{
+  "atom_id": "tp:lane4/derivation-grammar/dg4-collapse",
+  "atom_uid": "sha256:17fe0add9d5d8c476bcd8f2c08abdab92132e8b7ad0be1312e20de80fed67b89",
+  "title": "DG4 - Collapse",
+  "claim": "If a required lower layer collapses, any higher layer depending on it collapses unless an explicit repair or alternate dependency is supplied.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "Dependency creates vulnerability unless repaired or rerouted."
+  ],
+  "definitions": [
+    "Collapse: loss of required dependency structure."
+  ],
+  "equations": [
+    "not L(n) -> not L(n+1)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency"
+  ],
+  "negative_guards": [
+    "Do not let dependent claims keep higher status than their failed dependencies.",
+    "Do not hide repair mechanisms."
+  ],
+  "kill_conditions": [
+    "A dependent layer remains valid after its required lower layer collapses with no repair or alternate dependency.",
+    "Collapse propagation cannot be distinguished from ordinary revision."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\DG_V02_ATOM_SEED_BATCH_2026-08-01\\DG4-Collapse.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-08-01T04:17:53+00:00",
+      "lane": "Framework",
+      "event_id": "sha256:11597754bd09cbce5bc3cee30a515dcabaea0104092133fcf3878a1fab76934c",
+      "event_uuid": "3ec079d9-3665-58de-98f4-ea366f4e9066"
+    }
+  ],
+  "source_claim_id": "DG4-Collapse",
+  "atom_uuid": "a1395b4e-3c04-5de8-9500-6d186d1d88ec"
+}

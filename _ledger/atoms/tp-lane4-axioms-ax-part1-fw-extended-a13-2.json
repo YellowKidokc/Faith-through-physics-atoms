@@ -1,0 +1,83 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-fw-extended-a13-2",
+  "atom_uid": "sha256:b659c255f2f7ffb2b5a830e651d4d12975825a472d95d0be982982daac653c11",
+  "title": "A13.2 — Geometry From Information",
+  "claim": "A13.2 — Geometry From Information is classified in Part 1 as FW_EXTENDED with decision MOVE_OUT_OF_STRICT_CORE and anchor BC6 (Infinite Energy Source).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "FW_EXTENDED",
+  "assumptions": [
+    "BC6 (Infinite Energy Source)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "BC6 (Infinite Energy Source)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row A13.2 as FW_EXTENDED.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:866b34fe2a8a5426eee458587584998c76920f125219289f526eb3c6b8877f49",
+      "event_uuid": "f0253c1c-f527-5b19-894d-e0814f078413"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A13.2 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:38+00:00",
+      "event_uuid": "9e758c18-fda2-4ad3-9505-f0f0f87f5aed",
+      "event_id": "sha256:f341718d30f3798afd3f536192d52da23021801a7df6764c21a0bc1ac5ff761e"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A13.2 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "d2c5ab97-296e-4f0c-bf87-631ff5d3a851",
+      "event_id": "sha256:a26cc280118cbd64e1203d9dac72459d6c3f0dd1755b6912a87efeaa59a2b5ba"
+    }
+  ],
+  "source_claim_id": "AX_PART1:FW_EXTENDED:A13.2",
+  "glyphs": [
+    "mesh",
+    "domain-tag"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/mesh.svg",
+    "theophysics_glyphs/svg/domain-tag.svg"
+  ],
+  "atom_uuid": "45299bbb-1f99-5f70-9de0-8865f05f5b3f"
+}

@@ -1,0 +1,54 @@
+{
+  "atom_id": "tp:lane4/honest-boundary/framework-kill-conditions",
+  "atom_uid": "sha256:70721502b2d097e550e080ce7cc5326bf1e7963b10561a674096678689b3d6f5",
+  "title": "Five Framework-Level Kill Conditions",
+  "claim": "The framework declares five kill conditions, any one of which would collapse the structure: (1) Grace kill: exhibit sustained local moral improvement with no external input. (2) Cross-uniqueness kill: show justice and mercy require a trade-off with no simultaneous maximum. (3) Moral conservation kill: find a moral event whose ledger closes with no invisible remainder. (4) Shannon kill: show bandwidth/signal/noise fails to apply to a moral channel. (5) Trinity kill: show the triadic-coupled equilibrium system can be reproduced by n≠3.",
+  "domain": "master-equation",
+  "lane": "Methodology",
+  "claim_class": "falsification_registry",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "The canonical Master Equation document (Aug 9, 2026) declares these as the integrity backbone"
+  ],
+  "definitions": [
+    "Grace kill: closed system reducing its own S_m",
+    "Cross-uniqueness kill: justice/mercy requiring trade-off",
+    "Moral conservation kill: ledger closing without invisible remainder",
+    "Shannon kill: bandwidth/signal/noise inapplicable to moral channel",
+    "Trinity kill: non-triadic coupling reproducing the equilibrium"
+  ],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "tp:lane4/master-equation/master-equation-v3-canonical-form"
+  ],
+  "negative_guards": [
+    "These are framework-level kills, not per-law kills. Each law has additional kill conditions in §7.",
+    "A kill condition firing is a successful test result, not a failure of the testing system."
+  ],
+  "kill_conditions": [
+    "Any of the five conditions is met with rigorous evidence."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "atom_created_from_canonical_audit",
+      "result": "recorded",
+      "artifact_path": "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md",
+      "meaning": "Created during three-model audit (Claude/o3/DeepSeek) of canonical doc vs atom ledger.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "Methodology",
+      "event_id": "sha256:bb9d361261308d47c62041e9ea858747ae2d92a4b3f4db55bf915b9ac559fbe8",
+      "event_uuid": "813b2790-664f-587d-9d26-a36c45233417"
+    }
+  ],
+  "source_claim_id": "FRAMEWORK_KILL_CONDITIONS",
+  "atom_uuid": "f954ffd8-7204-5c8c-a97e-645501b8a983"
+}

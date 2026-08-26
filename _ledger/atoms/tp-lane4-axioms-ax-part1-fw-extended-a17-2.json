@@ -1,0 +1,84 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-fw-extended-a17-2",
+  "atom_uid": "sha256:467aaab02ed21ac8c5f4138a51643a012347da1bbc6e30282583f526be104f69",
+  "title": "A17.2 — Substrate Independence",
+  "claim": "A17.2 — Substrate Independence is classified in Part 1 as FW_EXTENDED with decision MOVE_OUT_OF_STRICT_CORE and anchor UNANCHORED_IN_CURRENT_CHAIN.",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "FW_EXTENDED",
+  "assumptions": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status.",
+    "Unanchored entry cannot be treated as bedrock until a clean dependency path is supplied."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate_unanchored",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row A17.2 as FW_EXTENDED.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:78fc650e57f3d2fcc89d8831963d0087bb34618cca5b7a7f224ff0de1efe1621",
+      "event_uuid": "3e341193-a48b-59d2-ad57-150d146cafe3"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A17.2 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:38+00:00",
+      "event_uuid": "74a7ea5c-c16d-4ed0-9f18-0f0289168907",
+      "event_id": "sha256:57994f0c84aa38fef5ce7054f6c625673ae98ef7eaf5f043b49fbe93fff42e44"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A17.2 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "c6765417-7c1d-45ec-87c2-59a0fc7f1eb0",
+      "event_id": "sha256:241a1a0ba59c73eeddbda11d7a0a258b8decc94aa6475e03645cb16b918798f1"
+    }
+  ],
+  "source_claim_id": "AX_PART1:FW_EXTENDED:A17.2",
+  "glyphs": [
+    "mesh",
+    "domain-tag"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/mesh.svg",
+    "theophysics_glyphs/svg/domain-tag.svg"
+  ],
+  "atom_uuid": "af9859a9-55ae-5ff9-934b-907741714a9d"
+}

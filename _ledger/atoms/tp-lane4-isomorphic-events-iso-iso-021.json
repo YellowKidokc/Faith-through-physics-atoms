@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-021",
+  "atom_uid": "sha256:017dc96f455b36ef8a62575f5949a1460876312cd570e444bc3eea7f08739da5",
+  "title": "ISO-021 - Falsifiability Architecture",
+  "claim": "ISO-021: Falsifiability Architecture maps Philosophy of Science to Theological Epistemology. Workbook verdict: Level 1. Honest verdict: Self-classified L1. Any rational inquiry.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C0_ANALOGY",
+  "assumptions": [
+    "Philosophy of Science",
+    "Theological Epistemology",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "Real shared epistemic loop",
+    "Self-classified L1. Any rational inquiry."
+  ],
+  "equations": [],
+  "bridges": [
+    "Philosophy of Science -> Theological Epistemology"
+  ],
+  "dependencies": [
+    "ISO-021"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Self-classifies L1. Too generic."
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Test B: Non-Arbitrariness fails in source evaluation.",
+    "Test C: Constraint fails in source evaluation.",
+    "Test D: Bidirectional fails in source evaluation.",
+    "Weakest link remains unresolved: Self-classifies L1. Too generic."
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-021 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:f9f9bb1229e7b5adc8d2ba1ddd2824842eab38a5b1ec14250587c90dcef7b497",
+      "event_uuid": "f09c05b2-e43b-5df9-a9ef-9aaee9d1729d"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-021",
+  "atom_uuid": "23dbc5be-7b55-5685-8349-3c2bf94f12d1"
+}

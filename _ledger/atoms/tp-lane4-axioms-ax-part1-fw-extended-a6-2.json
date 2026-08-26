@@ -1,0 +1,83 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-fw-extended-a6-2",
+  "atom_uid": "sha256:fabd40a7632546e9b6d82b60a44acfe86290a9a2f03fc1160f1ca0ed85f99ebe",
+  "title": "A6.2 — Collapse",
+  "claim": "A6.2 — Collapse is classified in Part 1 as FW_EXTENDED with decision MOVE_OUT_OF_STRICT_CORE and anchor A5.1 (Observation Requirement).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "FW_EXTENDED",
+  "assumptions": [
+    "A5.1 (Observation Requirement)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "A5.1 (Observation Requirement)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row A6.2 as FW_EXTENDED.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:42a811ce987a4a6bfced81520fee1dadfd89f225f48b7f924f3ffd322ed61825",
+      "event_uuid": "4275568c-cc9b-544c-972e-3583becf48ee"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A6.2 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:37+00:00",
+      "event_uuid": "18968e15-c8d5-4c81-8198-97f2d9c76b26",
+      "event_id": "sha256:2bcdeb14347de82afedcabec9329842a91c3bad77508e03e97b453f43cbd062c"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A6.2 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "71ab92c7-7077-4df5-a7b2-88a82d99ee1c",
+      "event_id": "sha256:4834da02263768e5864a8e38878f3dc5ab16e37dea7664b634639f3fa16dfb83"
+    }
+  ],
+  "source_claim_id": "AX_PART1:FW_EXTENDED:A6.2",
+  "glyphs": [
+    "mesh",
+    "domain-tag"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/mesh.svg",
+    "theophysics_glyphs/svg/domain-tag.svg"
+  ],
+  "atom_uuid": "47f4ded6-0bc8-5bc5-a1c3-8d03d957d601"
+}

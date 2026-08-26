@@ -1,0 +1,81 @@
+{
+  "source_id": "H08_MoralSign",
+  "title": "The Moral Sign ()",
+  "canonical_node": {
+    "axiom": "Every human is born with  = -1 (negative moral sign). You cannot flip your own sign. Only an external operator can.",
+    "definitions": [
+      " (moral sign): a binary quantity in {-1, +1} representing alignment with God (+1) or misalignment (-1).",
+      "_S: the soul field, the substrate on which  is defined.",
+      " (Grace): an external, non-unitary operator that flips  from -1 to +1.",
+      "C[_S, chi_God]: coherence between soul and God;  = -1 implies C < threshold.",
+      "Unitary operation: an information-preserving transformation; self-operations are assumed unitary."
+    ],
+    "derivation": [
+      " is binary (HM.1).",
+      "All humans are born with  = -1 (HM.2).",
+      " = -1 implies alienation from God (HM.3).",
+      "Self-operations are unitary; unitary operations preserve eigenvalues;  is an eigenvalue; therefore self-flip is impossible (HM.4, Theorem D1).",
+      "Only an external operator () can flip  (HM.5)."
+    ],
+    "action": "The system must treat moral status as binary and universally negative at birth, and must not allow any internal mechanism to change that status; only an external grace operator can flip the sign.",
+    "boundary": [
+      "Does not claim to prove the existence of God or the actual operation of grace; it only formalizes the internal logic.",
+      "Does not claim that all humans are morally culpable for Adam's sin; it states inherited condition.",
+      "Does not claim that external grace is automatic; it requires voluntary coupling (BC8).",
+      "Does not claim that  = +1 is permanent without continued grace; it states stability under the operator."
+    ],
+    "test": [
+      "Check that  is always either -1 or +1 in all formal contexts.",
+      "Check that no internal operation (self-effort, education, therapy, etc.) is represented as flipping .",
+      "Check that any flip of  is attributed to an external operator ().",
+      "Check that the theorem D1 is logically valid: unitary operations preserve eigenvalues."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "F03 (coherence is objectively measurable)",
+      "G01 (God exists)",
+      "G07 (good = coherence-promotion)",
+      "T8.1 (unitary operations preserve sign)",
+      "BC8 (voluntary coupling)"
+    ],
+    "dg2_new_capability": "Provides a formal binary moral sign that is universally negative at birth and cannot be self-flipped, enabling a mathematical distinction between internal and external moral transformation.",
+    "dg3_preserved_floor": "Preserves the objectivity of moral status (against relativism) and the necessity of external grace (against Pelagianism), consistent with prior axioms on coherence and God.",
+    "dg4_collapse_if_removed": "If removed, the framework loses the formal basis for original sin and the impossibility of self-salvation, weakening the coherence of the theological system.",
+    "dg5_translation_registers": [
+      "Physics: spin quantization, unitary evolution, non-unitary collapse",
+      "Theology: original sin, sola gratia, grace",
+      "Philosophy: moral objectivism, self-reference"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological formalization",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical impossibility of self-flip based on unitary assumption, but self-operations may not be strictly unitary in a theological context.",
+      "Claims universal  = -1 without empirical evidence; relies on theological assertion.",
+      "Uses physics analogies (spin, unitary) as if they were proof, but they are analogies only.",
+      "Declares 'GUILTY' verdicts against opposing views without rigorous logical proof."
+    ],
+    "kill_conditions": [
+      "If  is shown to be non-binary or if a self-flip mechanism is demonstrated.",
+      "If the existence of God (G01) is disproven, the objectivity of alignment collapses.",
+      "If the unitary assumption for self-operations is invalidated."
+    ],
+    "lean_target": "Reduce overstatement by clearly labeling the mathematical proof as conditional on the unitary assumption and the theological premises; avoid declaring 'mathematically impossible' without formal verification."
+  },
+  "plain_summary": "This document formalizes the theological claim that all humans are born with a negative moral sign ( = -1) and cannot change it by their own efforts; only external grace can flip it. It uses physics analogies (spin, unitary evolution) to argue for the impossibility of self-flip, but these are analogies, not proofs. The document is internally coherent but relies on unverified theological premises and should be treated as a formalization, not a proven theorem.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\H08_MoralSign.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\H08_MoralSign.canonical-node.json"
+  }
+}

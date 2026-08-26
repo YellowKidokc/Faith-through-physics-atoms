@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-032-laws-are-low-k-descriptions",
+  "atom_uid": "sha256:625282906bc15033aa2ac9e85822167915ad97ac30b96ba48dad56af6ceba33b",
+  "title": "AX-032 — Laws Are Low-K Descriptions",
+  "claim": "Physical laws are low-K descriptions generating high complexity.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "∀(Law L): K(L) << K(outputs(L))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-029",
+    "tp:axioms/01/AX-031"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Find a fundamental law with high Kolmogorov complexity",
+    "Show that physical laws cannot be described as compression algorithms"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-032-laws-are-low-k-descriptions.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-032-laws-are-low-k-descriptions.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:77753b953a0ce3389933d7c777b67554f1c8dcf41a2926fa5bb6746f99801e33",
+      "event_uuid": "7dfd0c95-29b4-58d3-ba62-88cd78d79258"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:02717a0eb8c759b405d2d77b593f2614d1f472b3ee91d2009fbaeb2a88aaf68c",
+      "event_uuid": "c266c672-4deb-5e97-873f-a8516dff3fd4"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/T4.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-032",
+  "original_node_id": "tp:axioms/01/AX-032",
+  "atom_uuid": "ceeb5a32-af03-59e2-9d68-56ab58370457"
+}

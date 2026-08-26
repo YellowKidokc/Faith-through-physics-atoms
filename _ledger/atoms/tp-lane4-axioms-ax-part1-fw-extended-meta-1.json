@@ -1,0 +1,83 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-fw-extended-meta-1",
+  "atom_uid": "sha256:0464efea4fdba09e17bd2f0a8755696258eacfb78187ce47cf6906f762c16cba",
+  "title": "META-1 - Axiom System Consistency",
+  "claim": "META-1 - Axiom System Consistency is classified in Part 1 as FW_EXTENDED with decision MOVE_OUT_OF_STRICT_CORE and anchor A2.2 (Self-Grounding).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "FW_EXTENDED",
+  "assumptions": [
+    "A2.2 (Self-Grounding)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "A2.2 (Self-Grounding)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row META-1 as FW_EXTENDED.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:3b0e2efbe5690313488ab764a148ae9fc3592de3ad78d168952d01f2eb3110db",
+      "event_uuid": "afcc3c99-ae4c-5c66-9929-6e37aa16b8e0"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for META-1 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:38+00:00",
+      "event_uuid": "f98bae42-31ff-44fb-bf76-cbd7176dfb92",
+      "event_id": "sha256:feb7589a4c1ad29149128b72800bb570d83db284987914b1c86a9322599e1a6a"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for META-1 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "b9690f08-c76a-408a-8028-4aa3f25e6168",
+      "event_id": "sha256:cde5ed62fd119c060c8c5bb7eb1940d4264464819bc2bd611de38735e5e61483"
+    }
+  ],
+  "source_claim_id": "AX_PART1:FW_EXTENDED:META-1",
+  "glyphs": [
+    "mesh",
+    "domain-tag"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/mesh.svg",
+    "theophysics_glyphs/svg/domain-tag.svg"
+  ],
+  "atom_uuid": "c1b5dd4f-5e56-548a-8b2b-83f032ec0adc"
+}

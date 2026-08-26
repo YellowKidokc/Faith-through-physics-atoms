@@ -1,0 +1,80 @@
+{
+  "source_id": "T01_TrinityNecessity",
+  "title": "The Trinity: Mathematical Necessity",
+  "canonical_node": {
+    "axiom": "A self-knowing, self-loving God necessarily exists as Trinity: exactly three persons, not one, not two, not four or more.",
+    "definitions": [
+      "Self-knowledge: God's knowledge of Himself, requiring a distinction between knower and known.",
+      "Self-love: God's love of Himself, requiring a distinction between lover and beloved.",
+      "Person: A distinct hypostasis within the Godhead, sharing the same essence.",
+      "Essence: The divine nature common to all three persons.",
+      "BC4: The boundary condition that maximal coherence (C_max) requires exactly three observers."
+    ],
+    "derivation": [
+      "If God is self-knowing, then there must be a knower and a known within God (T.1).",
+      "If God is self-loving, then there must be a lover and a beloved within God (T.2).",
+      "The relation between the knower and the known, and between the lover and the beloved, is real and personal (T.3).",
+      "The Father is the knower and lover; the Son is the known and beloved; the Spirit is the personal relation of love between them.",
+      "For maximal coherence, the number of persons must be exactly three: one is insufficient for self-relation, two is unstable, and four or more is redundant (T.6)."
+    ],
+    "action": "The system should treat the Trinity as a necessary consequence of divine self-knowledge and self-love, and use this to evaluate theological claims about God's nature.",
+    "boundary": [
+      "This does not claim to prove the Trinity from physics or mathematics alone; it is a philosophical/theological derivation.",
+      "It does not assert that all unitarian views are logically impossible, only that they fail to account for self-knowledge and self-love.",
+      "It does not provide empirical evidence for the Trinity."
+    ],
+    "test": [
+      "Check that the derivation from self-knowledge and self-love to three persons is logically valid.",
+      "Verify that the definitions of person and essence are consistent.",
+      "Assess whether the argument against unitarian views is sound.",
+      "Check that the claim 'exactly three' is not overextended beyond the given reasoning."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "T.1 Self-Knowledge",
+      "T.2 Self-Love",
+      "T.3 Relation-Real",
+      "T.4 Three-One",
+      "T.5 Names",
+      "T.6 BC4"
+    ],
+    "dg2_new_capability": "Provides a philosophical derivation for the necessity of the Trinity, offering a framework to critique unitarian theologies.",
+    "dg3_preserved_floor": "Preserves the core Christian doctrine of the Trinity as a coherent and necessary truth.",
+    "dg4_collapse_if_removed": "Without this axiom, the Trinity would appear arbitrary or merely revealed, weakening the case against unitarian alternatives.",
+    "dg5_translation_registers": [
+      "Theological",
+      "Philosophical",
+      "Mathematical (informal)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Theological necessity claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Treat as a philosophical argument, not a formal proof; require further formalization for stronger status."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical necessity without rigorous formal proof.",
+      "Uses analogies to physics (e.g., SU(3)) that are not direct evidence.",
+      "May overstate the failure of unitarian views."
+    ],
+    "kill_conditions": [
+      "If self-knowledge can be shown to not require distinction.",
+      "If self-love can be shown to not require relation.",
+      "If a coherent unitarian model of self-knowledge and self-love is provided."
+    ],
+    "lean_target": "Formalize the argument in a proof assistant to test logical validity."
+  },
+  "plain_summary": "This document argues that God's self-knowledge and self-love necessitate three distinct persons within the Godhead, making the Trinity a logical necessity. It critiques unitarian views for failing to account for these aspects. However, the argument is philosophical and not formally proven, so it should be treated as a plausible but not established claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\T01_TrinityNecessity.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\T01_TrinityNecessity.canonical-node.json"
+  }
+}

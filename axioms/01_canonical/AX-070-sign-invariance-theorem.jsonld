@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-070",
+  "nodeID": "tp:axioms/01/AX-070",
+  "claimID": "tp:AXIOMS/T8.1",
+  "name": "Sign Invariance Theorem",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theorem",
+  "statementTechnical": "For any self-generated unitary Û: [σ̂, Û] = 0 — sign invariant under self-transformation.",
+  "statementPlain": "For any self-generated unitary Û: [σ̂, Û] = 0 — sign invariant under self-transformation.",
+  "mathematicalForm": "∀Û(self-generated): [σ̂, Û] = 0",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-069",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "invariant",
+    "proof"
+  ],
+  "keywords": [
+    "T8.1",
+    "Q10",
+    "Relational",
+    "Theorem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Construct a self-generated unitary that doesn't commute with σ̂. This would require an operation that mixes the +1 and -1 eigenspaces internally. Prove such mixing is possible.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 72
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-070",
+    "oldID": "T8.1",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-D (Sign invariance proven)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Relational",
+    "tier": "2",
+    "newType": "Theorem",
+    "logicalForce": "derivable theorem",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M08",
+    "moduleTitle": "Sign Algebra",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Sign invariance theorem propagates to self-flip impossibility and works-salvation impossibility.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

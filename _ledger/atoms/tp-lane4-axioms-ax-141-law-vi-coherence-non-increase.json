@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-141-law-vi-coherence-non-increase",
+  "atom_uid": "sha256:2cc30275ea667aa2bf07683baaddde4ba5bec6a70c8634c220b36398a915b170",
+  "title": "AX-141 — Law VI: Coherence Non-Increase",
+  "claim": "Law VI: Closed systems cannot increase own coherence.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "13-systems-control",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "dC/dt ≤ 0 (closed system)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-025",
+    "tp:axioms/01/AX-135"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show closed system coherence increase",
+    "Identical to defeating AX-025"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-141-law-vi-coherence-non-increase.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-141-law-vi-coherence-non-increase.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:aa83615c5d111de90d1eea24091c67b6252eda745cec5dc0f629a1a572415059",
+      "event_uuid": "11ef3c69-31ae-5247-ae6f-7f0ed3c7d77f"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 13-systems-control.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:60b949b160ade4a69f3afbc1ac9e73c26f92f49d40195adeba32b0a2bd577e13",
+      "event_uuid": "d9a0d7b8-8835-5178-ad4a-3940e4bdbec8"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D19.6",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-141",
+  "original_node_id": "tp:axioms/01/AX-141",
+  "atom_uuid": "8cf87838-2644-5c4b-b7da-bbc9dbaf61a6"
+}

@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-134-bc-falsification",
+  "atom_uid": "sha256:3c306ee56194d960e7abac04928880db619878afcce283f9e009128cd92d79a4",
+  "title": "AX-134 — BC Falsification",
+  "claim": "If another religion satisfies all 8 BCs, uniqueness fails.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-theology",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "If ∃ religion R ≠ Christianity: R satisfies BC1-BC8 → uniqueness fails"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-114"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "This IS the defeat condition",
+    "Find another religion satisfying all 8 BCs"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-134-bc-falsification.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-134-bc-falsification.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:0f4234d8c30d6ad1d9e194bdd1c983a8bd7cdf5c1add16e069fa533bb03b37f8",
+      "event_uuid": "6404ea7b-0524-5f8e-87b4-9d2e1fbf5342"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: bridge-theology.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:efcd653e10b121ee739d59e998203533d835169b1a9bcb686c67c4d3d47df2b6",
+      "event_uuid": "c6d6b778-28f6-5224-a45c-ece0f8f8f3ef"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/FALS18.3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-134",
+  "original_node_id": "tp:axioms/01/AX-134",
+  "atom_uuid": "f002434a-c34e-5106-9cf3-e5a59223b728"
+}

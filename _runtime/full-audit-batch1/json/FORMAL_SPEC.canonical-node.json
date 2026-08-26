@@ -1,0 +1,80 @@
+{
+  "source_id": "FORMAL_SPEC",
+  "title": "Formal Specification for Master Equation",
+  "canonical_node": {
+    "axiom": "The local coherence output is the product of ten named factors, with entropy entering through a non-increasing attenuation function, and any zero factor collapses the product.",
+    "definitions": [
+      "chi_local = G * M * E * S_eff(S_prod) * T * K * R * Q * F * C",
+      "S_eff(S_prod) > 0 and non-increasing in S_prod",
+      "R is a binary renewal gate (0 or 1)",
+      "M_eff = (1 + M)/2 for canonical version B",
+      "grace is a regime-level reset: grace(destructive) = constructive, idempotent, non-invertible",
+      "C_op is a zero-preserving coherence operator: C_op(0) = 0"
+    ],
+    "derivation": [
+      "Product collapse: product(xs) = 0 iff at least one factor is 0.",
+      "R = 0 => chi_local = 0.",
+      "Version A with M in [-1,1] is sign-unstable; Lean provides counterexamples.",
+      "Version B with M_eff in [0,1] is recommended canonical layer.",
+      "Grace operator is idempotent and non-invertible as total regime map.",
+      "Internal zero-preserving operator cannot rescue an already-zero product."
+    ],
+    "action": "Use Version B product layer with M_eff = (1+M)/2, S_eff = exp(-eta*S_prod) for tests, and treat grace as a regime reset outside the product.",
+    "boundary": [
+      "Does not claim Lean proof of full physical Lagrangian.",
+      "Does not claim Noether theorem for commandments.",
+      "Does not claim empirical truth.",
+      "Does not assume physical-spiritual isomorphism without proof obligations."
+    ],
+    "test": [
+      "Check that S_eff is positive and non-increasing in S_prod.",
+      "Check that any zero factor yields chi_local = 0.",
+      "Check that grace(grace(r)) = grace(r) and grace is not invertible.",
+      "Check that C_op(0) = 0 and cannot rescue zero product.",
+      "Check that isomorphism claims provide toFun, invFun, left_inverse, right_inverse, preserves_value, preserves_collapse."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean formalization of product collapse",
+      "Lean formalization of grace operator properties",
+      "Lean formalization of zero-preserving operator"
+    ],
+    "dg2_new_capability": "Provides a conservative public contract for the Master Equation, distinguishing formal results from interpretations.",
+    "dg3_preserved_floor": "Preserves the core product architecture and entropy attenuation behavior as formalizable claims.",
+    "dg4_collapse_if_removed": "Without this spec, the formalization lacks a clear public contract and risks overclaiming.",
+    "dg5_translation_registers": [
+      "Lean",
+      "Python numerical mirrors"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal specification",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "adopt as canonical specification with clear boundaries"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting grace operator as theological proof",
+      "Claiming physical-spiritual isomorphism without proof",
+      "Treating Lagrangian as proven when it is only a model"
+    ],
+    "kill_conditions": [
+      "If Lean counterexample found for product collapse",
+      "If entropy attenuation monotonicity fails",
+      "If grace operator properties are inconsistent"
+    ],
+    "lean_target": "Formalize the product collapse theorem, grace operator idempotence and non-invertibility, and zero-preserving operator property in Lean."
+  },
+  "plain_summary": "This document defines the formal contract for the Master Equation: a product of ten factors with entropy attenuation, a canonical nonnegative alignment version, and structural properties of grace and coherence operators. It explicitly limits claims to what is formally encoded, avoiding overstatements about physics or theology.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\FORMAL_SPEC.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\FORMAL_SPEC.canonical-node.json"
+  }
+}

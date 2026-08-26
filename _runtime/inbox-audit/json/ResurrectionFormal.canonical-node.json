@@ -1,0 +1,77 @@
+{
+  "source_id": "ResurrectionFormal",
+  "title": "ResurrectionFormal.lean (Package)",
+  "canonical_node": {
+    "axiom": "The Lean 4 type checker is the final arbiter of proof validity; a package that compiles with zero sorry and zero admit constitutes a verified proof system.",
+    "definitions": [
+      "Assembly point: a file that imports all core modules and confirms they compile together.",
+      "Zero sorry: every theorem has an actual proof checked by Lean, no placeholders.",
+      "Zero admit: no unproved assumptions admitted.",
+      "Compiled clean: the build succeeds with no errors."
+    ],
+    "derivation": [
+      "ResurrectionFormal.lean imports six modules: Core, StageMachine, Mapping, IsomorphismTest, BridgeMatrix, MaxwellTrinity.",
+      "If any imported theorem has an error or type mismatch, the build fails.",
+      "The DASHBOARD entry reports 287 theorems, 0 axioms, 0 sorry, 0 admit, 16 Lean files, compiled clean.",
+      "Therefore, the package is a formally verified proof suite."
+    ],
+    "action": "Run `lake build` on the repository; if it succeeds with no errors, accept the package as formally verified.",
+    "boundary": [
+      "Does not prove any theological claim by itself; it only confirms the internal consistency of the Lean proofs.",
+      "Does not assert that the proofs are sound in an external mathematical sense beyond Lean's type theory.",
+      "Does not claim that the imported modules are correct in their modeling of physics or theology."
+    ],
+    "test": [
+      "Run `lake build` and check for zero errors.",
+      "Verify that the DASHBOARD entry matches the actual build output.",
+      "Check that no `sorry` or `admit` appears in any imported file."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "ResurrectionFormal.Core",
+      "ResurrectionFormal.StageMachine",
+      "ResurrectionFormal.Mapping",
+      "ResurrectionFormal.IsomorphismTest",
+      "ResurrectionFormal.BridgeMatrix",
+      "ResurrectionFormal.MaxwellTrinity"
+    ],
+    "dg2_new_capability": "Provides a single entry point that, when compiled, demonstrates the entire proof suite is formally verified.",
+    "dg3_preserved_floor": "Preserves the verified status of all six modules by requiring them to compile together.",
+    "dg4_collapse_if_removed": "If removed, the package loses its unified verification claim; individual modules may still compile but the assembly proof is gone.",
+    "dg5_translation_registers": [
+      "Lean 4 type checker",
+      "lake build",
+      "DASHBOARD entry"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal verification claim",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as assembly point; verify build log independently"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims 'the proof' but the file itself is only an assembly point; the actual proofs are in imported modules.",
+      "The DASHBOARD entry is self-reported and not independently verified in this document.",
+      "The claim that 'the entire proof system compiles clean' depends on the correctness of the build environment and the imported files."
+    ],
+    "kill_conditions": [
+      "If any imported module contains a `sorry` or `admit`.",
+      "If the build fails on a clean checkout.",
+      "If the DASHBOARD entry is inaccurate."
+    ],
+    "lean_target": "ResurrectionFormal.lean"
+  },
+  "plain_summary": "This document describes a Lean 4 package entry point that imports six modules and claims that the whole suite compiles with zero sorry/admit, thus constituting a formal proof. The node captures the assembly action and verification test, but the actual proof content resides in the imported modules.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\ResurrectionFormal.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\ResurrectionFormal.canonical-node.json"
+  }
+}

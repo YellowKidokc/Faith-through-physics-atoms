@@ -1,0 +1,3619 @@
+{
+  "sourceWorkbook": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceSheet": "Master Axiom",
+  "generatedAt": "2026-07-28",
+  "totalRows": 191,
+  "countsByNewType": {
+    "Primitive": 33,
+    "Definition": 38,
+    "Theorem": 27,
+    "FrameworkCommitment": 8,
+    "Equation": 12,
+    "Property": 15,
+    "EvidenceNode": 6,
+    "BoundaryCondition": 9,
+    "OpenProblem": 2,
+    "Identification": 1,
+    "Corollary": 2,
+    "Hypothesis": 4,
+    "Prediction": 2,
+    "Protocol": 5,
+    "FalsificationCriterion": 3,
+    "UniversalPrinciple": 4,
+    "Operator": 1,
+    "ObservableDomain": 9,
+    "CapstoneTerminalClaim": 3,
+    "BridgePrinciple": 3,
+    "MetaClaim": 3,
+    "ClosureClaim": 1
+  },
+  "countsByImportStatus": {
+    "active": 12,
+    "proposed": 63,
+    "classified": 29,
+    "captured": 87
+  },
+  "countsByIntendedStatus": {
+    "active": 99,
+    "proposed": 67,
+    "classified": 18,
+    "captured": 7
+  },
+  "oldAxiomIDCount": 33,
+  "oldAxiomIDCountsByNewType": {
+    "Primitive": 23,
+    "FrameworkCommitment": 7,
+    "Hypothesis": 3
+  },
+  "items": [
+    {
+      "axiomID": "AX-001",
+      "oldID": "A1.1",
+      "title": "Existence",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Primordial",
+      "tier": "1",
+      "sourceRow": 2,
+      "atomPath": "axioms/01_canonical/AX-001-existence.jsonld",
+      "dependsOn": [],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-002",
+      "oldID": "A1.2",
+      "title": "Distinction",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Primordial",
+      "tier": "1",
+      "sourceRow": 3,
+      "atomPath": "axioms/01_canonical/AX-002-distinction.jsonld",
+      "dependsOn": [
+        "AX-001"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-003",
+      "oldID": "A1.3",
+      "title": "Information Primacy",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Primordial",
+      "tier": "1",
+      "sourceRow": 4,
+      "atomPath": "axioms/01_canonical/AX-003-information-primacy.jsonld",
+      "dependsOn": [
+        "AX-001",
+        "AX-002"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-004",
+      "oldID": "D1.1",
+      "title": "Information Definition",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "definition",
+      "domain": "Primordial",
+      "tier": "2",
+      "sourceRow": 5,
+      "atomPath": "axioms/01_canonical/AX-004-information-definition.jsonld",
+      "dependsOn": [
+        "AX-003"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-005",
+      "oldID": "D1.2",
+      "title": "Bit Definition",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 6,
+      "atomPath": "axioms/01_canonical/AX-005-bit-definition.jsonld",
+      "dependsOn": [
+        "AX-003",
+        "AX-004"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-006",
+      "oldID": "LN1.1",
+      "title": "Matter-Energy Derivative",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 7,
+      "atomPath": "axioms/01_canonical/AX-006-matter-energy-derivative.jsonld",
+      "dependsOn": [
+        "AX-003",
+        "AX-004",
+        "AX-005"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-007",
+      "oldID": "LN1.2",
+      "title": "It From Bit",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 8,
+      "atomPath": "axioms/01_canonical/AX-007-it-from-bit.jsonld",
+      "dependsOn": [
+        "AX-003",
+        "AX-006"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-008",
+      "oldID": "A2.1",
+      "title": "Substrate Requirement",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 9,
+      "atomPath": "axioms/01_canonical/AX-008-substrate-requirement.jsonld",
+      "dependsOn": [
+        "AX-003",
+        "AX-006",
+        "AX-007"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-009",
+      "oldID": "A2.2",
+      "title": "Self-Grounding",
+      "newType": "FrameworkCommitment",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 10,
+      "atomPath": "axioms/01_canonical/AX-009-self-grounding.jsonld",
+      "dependsOn": [
+        "AX-008"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-010",
+      "oldID": "D2.1",
+      "title": "Logos Field Definition",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 11,
+      "atomPath": "axioms/01_canonical/AX-010-logos-field-definition.jsonld",
+      "dependsOn": [
+        "AX-009"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-011",
+      "oldID": "D2.2",
+      "title": "Chi Field Properties",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 12,
+      "atomPath": "axioms/01_canonical/AX-011-chi-field-properties.jsonld",
+      "dependsOn": [
+        "AX-010"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-012",
+      "oldID": "E2.1",
+      "title": "Master Equation First Form",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "mathematical",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 13,
+      "atomPath": "axioms/01_canonical/AX-012-master-equation-first-form.jsonld",
+      "dependsOn": [
+        "AX-010",
+        "AX-011"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-013",
+      "oldID": "P2.1",
+      "title": "Chi Ontological Priority",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 14,
+      "atomPath": "axioms/01_canonical/AX-013-chi-ontological-priority.jsonld",
+      "dependsOn": [
+        "AX-010",
+        "AX-011",
+        "AX-012"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-014",
+      "oldID": "P2.2",
+      "title": "Chi Semantic Content",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 15,
+      "atomPath": "axioms/01_canonical/AX-014-chi-semantic-content.jsonld",
+      "dependsOn": [
+        "AX-010",
+        "AX-003"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-015",
+      "oldID": "LN2.1",
+      "title": "Information Anchor Necessity",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 16,
+      "atomPath": "axioms/01_canonical/AX-015-information-anchor-necessity.jsonld",
+      "dependsOn": [
+        "AX-008",
+        "AX-009",
+        "AX-010"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-016",
+      "oldID": "A3.1",
+      "title": "Order Requirement",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 17,
+      "atomPath": "axioms/01_canonical/AX-016-order-requirement.jsonld",
+      "dependsOn": [
+        "AX-003",
+        "AX-010",
+        "AX-015"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-017",
+      "oldID": "A3.2",
+      "title": "Coherence Measure",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 18,
+      "atomPath": "axioms/01_canonical/AX-017-coherence-measure.jsonld",
+      "dependsOn": [
+        "AX-010",
+        "AX-016"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-018",
+      "oldID": "D3.1",
+      "title": "Coherence Functional Definition",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 19,
+      "atomPath": "axioms/01_canonical/AX-018-coherence-functional-definition.jsonld",
+      "dependsOn": [
+        "AX-017"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-019",
+      "oldID": "D3.2",
+      "title": "Self Interaction Potential",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 20,
+      "atomPath": "axioms/01_canonical/AX-019-self-interaction-potential.jsonld",
+      "dependsOn": [
+        "AX-018",
+        "AX-010"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-020",
+      "oldID": "D3.3",
+      "title": "Interaction Lagrangian",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 21,
+      "atomPath": "axioms/01_canonical/AX-020-interaction-lagrangian.jsonld",
+      "dependsOn": [
+        "AX-019",
+        "AX-010"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-021",
+      "oldID": "E3.1",
+      "title": "Master Coherence Equation",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "mathematical",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 22,
+      "atomPath": "axioms/01_canonical/AX-021-master-coherence-equation.jsonld",
+      "dependsOn": [
+        "AX-018",
+        "AX-019",
+        "AX-020"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-022",
+      "oldID": "E3.2",
+      "title": "Universal Coherence Definition",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "mathematical",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 23,
+      "atomPath": "axioms/01_canonical/AX-022-universal-coherence-definition.jsonld",
+      "dependsOn": [
+        "AX-021"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-023",
+      "oldID": "P3.1",
+      "title": "Coherence Non-Negativity",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 24,
+      "atomPath": "axioms/01_canonical/AX-023-coherence-non-negativity.jsonld",
+      "dependsOn": [
+        "AX-018",
+        "AX-021",
+        "AX-022"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-024",
+      "oldID": "P3.2",
+      "title": "Coherence Conservation",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 25,
+      "atomPath": "axioms/01_canonical/AX-024-coherence-conservation.jsonld",
+      "dependsOn": [
+        "AX-023"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-025",
+      "oldID": "T3.1",
+      "title": "Coherence Cannot Self-Increase",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 26,
+      "atomPath": "axioms/01_canonical/AX-025-coherence-cannot-self-increase.jsonld",
+      "dependsOn": [
+        "AX-023",
+        "AX-024"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-026",
+      "oldID": "LN3.1",
+      "title": "Meaningful Configuration Necessity",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 27,
+      "atomPath": "axioms/01_canonical/AX-026-meaningful-configuration-necessity.jsonld",
+      "dependsOn": [
+        "AX-017",
+        "AX-025"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-027",
+      "oldID": "A4.1",
+      "title": "Parsimony",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 28,
+      "atomPath": "axioms/01_canonical/AX-027-parsimony.jsonld",
+      "dependsOn": [
+        "AX-026",
+        "AX-017"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-028",
+      "oldID": "A4.2",
+      "title": "Algorithmic Depth",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 29,
+      "atomPath": "axioms/01_canonical/AX-028-algorithmic-depth.jsonld",
+      "dependsOn": [
+        "AX-027"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-029",
+      "oldID": "D4.1",
+      "title": "Kolmogorov Complexity",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 30,
+      "atomPath": "axioms/01_canonical/AX-029-kolmogorov-complexity.jsonld",
+      "dependsOn": [
+        "AX-027",
+        "AX-028"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-030",
+      "oldID": "D4.2",
+      "title": "Compression Ratio",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 31,
+      "atomPath": "axioms/01_canonical/AX-030-compression-ratio.jsonld",
+      "dependsOn": [
+        "AX-029"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-031",
+      "oldID": "E4.1",
+      "title": "Complexity Decrease Under Chi",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "mathematical",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 32,
+      "atomPath": "axioms/01_canonical/AX-031-complexity-decrease-under-chi.jsonld",
+      "dependsOn": [
+        "AX-029",
+        "AX-030",
+        "AX-010"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-032",
+      "oldID": "T4.1",
+      "title": "Laws Are Low-K Descriptions",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 33,
+      "atomPath": "axioms/01_canonical/AX-032-laws-are-low-k-descriptions.jsonld",
+      "dependsOn": [
+        "AX-029",
+        "AX-031"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-033",
+      "oldID": "T4.2",
+      "title": "Action Principle As Minimal K",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 34,
+      "atomPath": "axioms/01_canonical/AX-033-action-principle-as-minimal-k.jsonld",
+      "dependsOn": [
+        "AX-032"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-034",
+      "oldID": "LN4.1",
+      "title": "Universe As Compression Algorithm",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 35,
+      "atomPath": "axioms/01_canonical/AX-034-universe-as-compression-algorithm.jsonld",
+      "dependsOn": [
+        "AX-032",
+        "AX-033"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-035",
+      "oldID": "A5.1",
+      "title": "Observation Requirement",
+      "newType": "FrameworkCommitment",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 36,
+      "atomPath": "axioms/01_canonical/AX-035-observation-requirement.jsonld",
+      "dependsOn": [
+        "AX-003",
+        "AX-015",
+        "AX-034"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-036",
+      "oldID": "A5.2",
+      "title": "Participatory Universe",
+      "newType": "FrameworkCommitment",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 37,
+      "atomPath": "axioms/01_canonical/AX-036-participatory-universe.jsonld",
+      "dependsOn": [
+        "AX-035"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-037",
+      "oldID": "D5.1",
+      "title": "Observer Definition",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 38,
+      "atomPath": "axioms/01_canonical/AX-037-observer-definition.jsonld",
+      "dependsOn": [
+        "AX-035",
+        "AX-036"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-038",
+      "oldID": "D5.2",
+      "title": "Integrated Information Phi",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 39,
+      "atomPath": "axioms/01_canonical/AX-038-integrated-information-phi.jsonld",
+      "dependsOn": [
+        "AX-037"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-039",
+      "oldID": "D5.3",
+      "title": "Witness Field Operator",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 40,
+      "atomPath": "axioms/01_canonical/AX-039-witness-field-operator.jsonld",
+      "dependsOn": [
+        "AX-038"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-040",
+      "oldID": "P5.1",
+      "title": "Phi Admits Degrees",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 41,
+      "atomPath": "axioms/01_canonical/AX-040-phi-admits-degrees.jsonld",
+      "dependsOn": [
+        "AX-038",
+        "AX-039"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-041",
+      "oldID": "P5.2",
+      "title": "Observer Effect Proportional To Phi",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 42,
+      "atomPath": "axioms/01_canonical/AX-041-observer-effect-proportional-to-phi.jsonld",
+      "dependsOn": [
+        "AX-040"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-042",
+      "oldID": "EXP5.1",
+      "title": "Wheeler Delayed Choice",
+      "newType": "EvidenceNode",
+      "intendedStatus": "classified",
+      "status": "classified",
+      "claimClass": "empirical_anchor",
+      "domain": "Ontological",
+      "tier": "3",
+      "sourceRow": 43,
+      "atomPath": "axioms/01_canonical/AX-042-wheeler-delayed-choice.jsonld",
+      "dependsOn": [
+        "AX-041"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-043",
+      "oldID": "EXP5.2",
+      "title": "Quantum Eraser",
+      "newType": "EvidenceNode",
+      "intendedStatus": "classified",
+      "status": "classified",
+      "claimClass": "empirical_anchor",
+      "domain": "Ontological",
+      "tier": "3",
+      "sourceRow": 44,
+      "atomPath": "axioms/01_canonical/AX-043-quantum-eraser.jsonld",
+      "dependsOn": [
+        "AX-042"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-044",
+      "oldID": "LN5.1",
+      "title": "Chi Requires Observer For Actualization",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 45,
+      "atomPath": "axioms/01_canonical/AX-044-chi-requires-observer-for-actualization.jsonld",
+      "dependsOn": [
+        "AX-035",
+        "AX-039",
+        "AX-043"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-045",
+      "oldID": "A6.1",
+      "title": "Superposition",
+      "newType": "FrameworkCommitment",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 46,
+      "atomPath": "axioms/01_canonical/AX-045-superposition.jsonld",
+      "dependsOn": [
+        "AX-044"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-046",
+      "oldID": "A6.2",
+      "title": "Collapse",
+      "newType": "FrameworkCommitment",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 47,
+      "atomPath": "axioms/01_canonical/AX-046-collapse.jsonld",
+      "dependsOn": [
+        "AX-045"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-047",
+      "oldID": "A6.3",
+      "title": "Irreversibility",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "classified",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 48,
+      "atomPath": "axioms/01_canonical/AX-047-irreversibility.jsonld",
+      "dependsOn": [
+        "AX-046"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-048",
+      "oldID": "D6.1",
+      "title": "Collapse Rate Gamma",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "classified",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 49,
+      "atomPath": "axioms/01_canonical/AX-048-collapse-rate-gamma.jsonld",
+      "dependsOn": [
+        "AX-046",
+        "AX-047"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-049",
+      "oldID": "D6.2",
+      "title": "Projection Operator",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "classified",
+      "claimClass": "definition",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 50,
+      "atomPath": "axioms/01_canonical/AX-049-projection-operator.jsonld",
+      "dependsOn": [
+        "AX-048"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-050",
+      "oldID": "E6.1",
+      "title": "Modified Schrödinger With Collapse",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "classified",
+      "claimClass": "mathematical",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 51,
+      "atomPath": "axioms/01_canonical/AX-050-modified-schr-dinger-with-collapse.jsonld",
+      "dependsOn": [
+        "AX-048",
+        "AX-049",
+        "AX-010"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-051",
+      "oldID": "E6.2",
+      "title": "Phi-Dependent Collapse",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "classified",
+      "claimClass": "mathematical",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 52,
+      "atomPath": "axioms/01_canonical/AX-051-phi-dependent-collapse.jsonld",
+      "dependsOn": [
+        "AX-050",
+        "AX-038"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-052",
+      "oldID": "P6.1",
+      "title": "Collapse Rate Proportional To Phi",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "classified",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 53,
+      "atomPath": "axioms/01_canonical/AX-052-collapse-rate-proportional-to-phi.jsonld",
+      "dependsOn": [
+        "AX-051",
+        "AX-040"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-053",
+      "oldID": "P6.2",
+      "title": "Collapse Generates Heat",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "classified",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "2",
+      "sourceRow": 54,
+      "atomPath": "axioms/01_canonical/AX-053-collapse-generates-heat.jsonld",
+      "dependsOn": [
+        "AX-047",
+        "AX-052"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-054",
+      "oldID": "T6.1",
+      "title": "Von Neumann Chain Termination",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "theorem",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 55,
+      "atomPath": "axioms/01_canonical/AX-054-von-neumann-chain-termination.jsonld",
+      "dependsOn": [
+        "AX-046",
+        "AX-051",
+        "AX-052",
+        "AX-053"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-055",
+      "oldID": "LN6.1",
+      "title": "Terminal Observer Necessity",
+      "newType": "FrameworkCommitment",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 56,
+      "atomPath": "axioms/01_canonical/AX-055-terminal-observer-necessity.jsonld",
+      "dependsOn": [
+        "AX-054"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-056",
+      "oldID": "A7.1",
+      "title": "Closure Requirement",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "classified",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 57,
+      "atomPath": "axioms/01_canonical/AX-056-closure-requirement.jsonld",
+      "dependsOn": [
+        "AX-025",
+        "AX-055"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-057",
+      "oldID": "A7.2",
+      "title": "Uniqueness From Boundary Conditions",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "classified",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 58,
+      "atomPath": "axioms/01_canonical/AX-057-uniqueness-from-boundary-conditions.jsonld",
+      "dependsOn": [
+        "AX-056"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-058",
+      "oldID": "BC1",
+      "title": "Terminal Observer Exists",
+      "newType": "BoundaryCondition",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "boundary",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 59,
+      "atomPath": "axioms/01_canonical/AX-058-terminal-observer-exists.jsonld",
+      "dependsOn": [
+        "AX-055",
+        "AX-057"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-059",
+      "oldID": "BC2",
+      "title": "Grace External To System",
+      "newType": "BoundaryCondition",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "boundary",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 60,
+      "atomPath": "axioms/01_canonical/AX-059-grace-external-to-system.jsonld",
+      "dependsOn": [
+        "AX-025",
+        "AX-058"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-060",
+      "oldID": "BC3",
+      "title": "Measurement Orthogonality",
+      "newType": "BoundaryCondition",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "boundary",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 61,
+      "atomPath": "axioms/01_canonical/AX-060-measurement-orthogonality.jsonld",
+      "dependsOn": [
+        "AX-059"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-061",
+      "oldID": "BC4",
+      "title": "Three Observers Required",
+      "newType": "BoundaryCondition",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "boundary",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 62,
+      "atomPath": "axioms/01_canonical/AX-061-three-observers-required.jsonld",
+      "dependsOn": [
+        "AX-060"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-062",
+      "oldID": "BC5",
+      "title": "Superposition Preserved Until Collapse",
+      "newType": "BoundaryCondition",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "boundary",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 63,
+      "atomPath": "axioms/01_canonical/AX-062-superposition-preserved-until-collapse.jsonld",
+      "dependsOn": [
+        "AX-045",
+        "AX-061"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-063",
+      "oldID": "BC6",
+      "title": "Infinite Energy Source",
+      "newType": "BoundaryCondition",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "boundary",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 64,
+      "atomPath": "axioms/01_canonical/AX-063-infinite-energy-source.jsonld",
+      "dependsOn": [
+        "AX-025",
+        "AX-062"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-064",
+      "oldID": "BC7",
+      "title": "Information Conservation",
+      "newType": "BoundaryCondition",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "boundary",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 65,
+      "atomPath": "axioms/01_canonical/AX-064-information-conservation.jsonld",
+      "dependsOn": [
+        "AX-003",
+        "AX-063"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-065",
+      "oldID": "BC8",
+      "title": "Voluntary Coupling",
+      "newType": "BoundaryCondition",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "boundary",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 66,
+      "atomPath": "axioms/01_canonical/AX-065-voluntary-coupling.jsonld",
+      "dependsOn": [
+        "AX-062",
+        "AX-064"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-066a",
+      "oldID": "PERSONHOOD",
+      "title": "Personhood — Agency, Intentionality, Relational Capacity",
+      "newType": "OpenProblem",
+      "intendedStatus": "captured",
+      "status": "captured",
+      "claimClass": "prediction",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 67,
+      "atomPath": "axioms/01_canonical/AX-066a-personhood-agency-intentionality-relational-capacity.jsonld",
+      "dependsOn": [
+        "AX-065",
+        "AX-055"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "auditRole"
+    },
+    {
+      "axiomID": "AX-066",
+      "oldID": "ID7.1",
+      "title": "Terminal Observer Is God",
+      "newType": "Identification",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theological_interpretation",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 68,
+      "atomPath": "axioms/01_canonical/AX-066-terminal-observer-is-god.jsonld",
+      "dependsOn": [
+        "AX-055",
+        "AX-058",
+        "AX-059",
+        "AX-060",
+        "AX-061",
+        "AX-062",
+        "AX-063",
+        "AX-064",
+        "AX-065",
+        "AX-066a"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-067",
+      "oldID": "A8.1",
+      "title": "Binary Distinction",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Relational",
+      "tier": "1",
+      "sourceRow": 69,
+      "atomPath": "axioms/01_canonical/AX-067-binary-distinction.jsonld",
+      "dependsOn": [
+        "AX-066"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-068",
+      "oldID": "A8.2",
+      "title": "Sign Conservation",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Relational",
+      "tier": "1",
+      "sourceRow": 70,
+      "atomPath": "axioms/01_canonical/AX-068-sign-conservation.jsonld",
+      "dependsOn": [
+        "AX-067"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-069",
+      "oldID": "D8.1",
+      "title": "Sign Operator",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 71,
+      "atomPath": "axioms/01_canonical/AX-069-sign-operator.jsonld",
+      "dependsOn": [
+        "AX-067",
+        "AX-068"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-070",
+      "oldID": "T8.1",
+      "title": "Sign Invariance Theorem",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 72,
+      "atomPath": "axioms/01_canonical/AX-070-sign-invariance-theorem.jsonld",
+      "dependsOn": [
+        "AX-069"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-071",
+      "oldID": "C8.1",
+      "title": "Self-Flip Impossible",
+      "newType": "Corollary",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 73,
+      "atomPath": "axioms/01_canonical/AX-071-self-flip-impossible.jsonld",
+      "dependsOn": [
+        "AX-070"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-072",
+      "oldID": "C8.2",
+      "title": "Works Salvation Impossible",
+      "newType": "Corollary",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 74,
+      "atomPath": "axioms/01_canonical/AX-072-works-salvation-impossible.jsonld",
+      "dependsOn": [
+        "AX-071"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-073",
+      "oldID": "A9.1",
+      "title": "External Intervention Required",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 75,
+      "atomPath": "axioms/01_canonical/AX-073-external-intervention-required.jsonld",
+      "dependsOn": [
+        "AX-071",
+        "AX-072",
+        "AX-059"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-074",
+      "oldID": "A9.2",
+      "title": "Non-Unitarity Of Grace",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 76,
+      "atomPath": "axioms/01_canonical/AX-074-non-unitarity-of-grace.jsonld",
+      "dependsOn": [
+        "AX-073"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-075",
+      "oldID": "D9.1",
+      "title": "Grace Operator Definition",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 77,
+      "atomPath": "axioms/01_canonical/AX-075-grace-operator-definition.jsonld",
+      "dependsOn": [
+        "AX-074"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-076",
+      "oldID": "P9.1",
+      "title": "Grace Idempotence",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 78,
+      "atomPath": "axioms/01_canonical/AX-076-grace-idempotence.jsonld",
+      "dependsOn": [
+        "AX-075"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-077",
+      "oldID": "P9.2",
+      "title": "Non-Unitarity Confirmed",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 79,
+      "atomPath": "axioms/01_canonical/AX-077-non-unitarity-confirmed.jsonld",
+      "dependsOn": [
+        "AX-074",
+        "AX-075"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-078",
+      "oldID": "P9.3",
+      "title": "Information Preserved Under Grace",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 80,
+      "atomPath": "axioms/01_canonical/AX-078-information-preserved-under-grace.jsonld",
+      "dependsOn": [
+        "AX-077",
+        "AX-064"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-079",
+      "oldID": "P9.4",
+      "title": "Superposition Preserved Until Faith",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 81,
+      "atomPath": "axioms/01_canonical/AX-079-superposition-preserved-until-faith.jsonld",
+      "dependsOn": [
+        "AX-078",
+        "AX-062"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-080",
+      "oldID": "P9.5",
+      "title": "Grace Available To All",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 82,
+      "atomPath": "axioms/01_canonical/AX-080-grace-available-to-all.jsonld",
+      "dependsOn": [
+        "AX-075",
+        "AX-079"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-081",
+      "oldID": "E9.1",
+      "title": "Grace Function G(t)",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "mathematical",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 83,
+      "atomPath": "axioms/01_canonical/AX-081-grace-function-g-t.jsonld",
+      "dependsOn": [
+        "AX-075",
+        "AX-076",
+        "AX-077",
+        "AX-080"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-082",
+      "oldID": "A10.1",
+      "title": "Consciousness Substrate",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Human",
+      "tier": "1",
+      "sourceRow": 84,
+      "atomPath": "axioms/01_canonical/AX-082-consciousness-substrate.jsonld",
+      "dependsOn": [
+        "AX-038",
+        "AX-040",
+        "AX-066"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-083",
+      "oldID": "A10.2",
+      "title": "Soul Conservation",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Human",
+      "tier": "1",
+      "sourceRow": 85,
+      "atomPath": "axioms/01_canonical/AX-083-soul-conservation.jsonld",
+      "dependsOn": [
+        "AX-064",
+        "AX-082"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-084",
+      "oldID": "D10.1",
+      "title": "Soul Field Psi_S",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Human",
+      "tier": "2",
+      "sourceRow": 86,
+      "atomPath": "axioms/01_canonical/AX-084-soul-field-psi-s.jsonld",
+      "dependsOn": [
+        "AX-082",
+        "AX-083"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-085",
+      "oldID": "P10.1",
+      "title": "Soul Continuity",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Human",
+      "tier": "2",
+      "sourceRow": 87,
+      "atomPath": "axioms/01_canonical/AX-085-soul-continuity.jsonld",
+      "dependsOn": [
+        "AX-084"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-086",
+      "oldID": "P10.2",
+      "title": "Soul Identity Persistence",
+      "newType": "Property",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Human",
+      "tier": "2",
+      "sourceRow": 88,
+      "atomPath": "axioms/01_canonical/AX-086-soul-identity-persistence.jsonld",
+      "dependsOn": [
+        "AX-085",
+        "AX-038"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-087",
+      "oldID": "E10.1",
+      "title": "Soul Field Equation",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "mathematical",
+      "domain": "Human",
+      "tier": "2",
+      "sourceRow": 89,
+      "atomPath": "axioms/01_canonical/AX-087-soul-field-equation.jsonld",
+      "dependsOn": [
+        "AX-084",
+        "AX-085",
+        "AX-086"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-088",
+      "oldID": "A11.1",
+      "title": "Moral Realism",
+      "newType": "FrameworkCommitment",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Relational",
+      "tier": "1",
+      "sourceRow": 90,
+      "atomPath": "axioms/01_canonical/AX-088-moral-realism.jsonld",
+      "dependsOn": [
+        "AX-014",
+        "AX-066",
+        "AX-067"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-089",
+      "oldID": "A11.2",
+      "title": "Coherence-Morality Identity",
+      "newType": "FrameworkCommitment",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Relational",
+      "tier": "1",
+      "sourceRow": 91,
+      "atomPath": "axioms/01_canonical/AX-089-coherence-morality-identity.jsonld",
+      "dependsOn": [
+        "AX-088",
+        "AX-017"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-090",
+      "oldID": "D11.1",
+      "title": "Moral Coherence Definition",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 92,
+      "atomPath": "axioms/01_canonical/AX-090-moral-coherence-definition.jsonld",
+      "dependsOn": [
+        "AX-089"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-091",
+      "oldID": "T11.1",
+      "title": "Virtue As High Phi",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 93,
+      "atomPath": "axioms/01_canonical/AX-091-virtue-as-high-phi.jsonld",
+      "dependsOn": [
+        "AX-089",
+        "AX-090",
+        "AX-038"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-092",
+      "oldID": "T11.2",
+      "title": "Vice As Decoherence",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 94,
+      "atomPath": "axioms/01_canonical/AX-092-vice-as-decoherence.jsonld",
+      "dependsOn": [
+        "AX-091"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-093",
+      "oldID": "A12.1",
+      "title": "Asymptotic Behavior",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Eschatology",
+      "tier": "1",
+      "sourceRow": 95,
+      "atomPath": "axioms/01_canonical/AX-093-asymptotic-behavior.jsonld",
+      "dependsOn": [
+        "AX-066",
+        "AX-092"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-094",
+      "oldID": "A12.2",
+      "title": "Bimodal Outcome",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Eschatology",
+      "tier": "1",
+      "sourceRow": 96,
+      "atomPath": "axioms/01_canonical/AX-094-bimodal-outcome.jsonld",
+      "dependsOn": [
+        "AX-067",
+        "AX-093"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-095",
+      "oldID": "D12.1",
+      "title": "Integration Attractor",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Eschatology",
+      "tier": "2",
+      "sourceRow": 97,
+      "atomPath": "axioms/01_canonical/AX-095-integration-attractor.jsonld",
+      "dependsOn": [
+        "AX-094"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-096",
+      "oldID": "D12.2",
+      "title": "Fragmentation Attractor",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Eschatology",
+      "tier": "2",
+      "sourceRow": 98,
+      "atomPath": "axioms/01_canonical/AX-096-fragmentation-attractor.jsonld",
+      "dependsOn": [
+        "AX-094"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-097",
+      "oldID": "E12.1",
+      "title": "Destiny Equation",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "mathematical",
+      "domain": "Eschatology",
+      "tier": "2",
+      "sourceRow": 99,
+      "atomPath": "axioms/01_canonical/AX-097-destiny-equation.jsonld",
+      "dependsOn": [
+        "AX-093",
+        "AX-094",
+        "AX-095",
+        "AX-096"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-098",
+      "oldID": "T12.1",
+      "title": "Heaven As High-Phi Attractor",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Eschatology",
+      "tier": "2",
+      "sourceRow": 100,
+      "atomPath": "axioms/01_canonical/AX-098-heaven-as-high-phi-attractor.jsonld",
+      "dependsOn": [
+        "AX-097",
+        "AX-095"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-099",
+      "oldID": "T12.2",
+      "title": "Hell As Low-Phi Attractor",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Eschatology",
+      "tier": "2",
+      "sourceRow": 101,
+      "atomPath": "axioms/01_canonical/AX-099-hell-as-low-phi-attractor.jsonld",
+      "dependsOn": [
+        "AX-097",
+        "AX-096"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-100",
+      "oldID": "A13.1",
+      "title": "Chi Mediates Unification",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Material",
+      "tier": "1",
+      "sourceRow": 102,
+      "atomPath": "axioms/01_canonical/AX-100-chi-mediates-unification.jsonld",
+      "dependsOn": [
+        "AX-010",
+        "AX-013"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-101",
+      "oldID": "A13.2",
+      "title": "Geometry From Information",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Material",
+      "tier": "1",
+      "sourceRow": 103,
+      "atomPath": "axioms/01_canonical/AX-101-geometry-from-information.jsonld",
+      "dependsOn": [
+        "AX-100"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-102",
+      "oldID": "D13.1",
+      "title": "Unified Field Lagrangian",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Material",
+      "tier": "2",
+      "sourceRow": 104,
+      "atomPath": "axioms/01_canonical/AX-102-unified-field-lagrangian.jsonld",
+      "dependsOn": [
+        "AX-100",
+        "AX-101"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-103",
+      "oldID": "E13.1",
+      "title": "GR-QM Bridge Equation",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "mathematical",
+      "domain": "Material",
+      "tier": "2",
+      "sourceRow": 105,
+      "atomPath": "axioms/01_canonical/AX-103-gr-qm-bridge-equation.jsonld",
+      "dependsOn": [
+        "AX-100",
+        "AX-101",
+        "AX-102"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-104",
+      "oldID": "T13.1",
+      "title": "Dark Energy As Chi Potential",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Material",
+      "tier": "2",
+      "sourceRow": 106,
+      "atomPath": "axioms/01_canonical/AX-104-dark-energy-as-chi-potential.jsonld",
+      "dependsOn": [
+        "AX-103",
+        "AX-019"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-105",
+      "oldID": "A14.1",
+      "title": "Dynamic Dark Energy",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Material",
+      "tier": "1",
+      "sourceRow": 107,
+      "atomPath": "axioms/01_canonical/AX-105-dynamic-dark-energy.jsonld",
+      "dependsOn": [
+        "AX-104",
+        "AX-010"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-106",
+      "oldID": "A14.2",
+      "title": "Grace Cosmology",
+      "newType": "Hypothesis",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "prediction",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 108,
+      "atomPath": "axioms/01_canonical/AX-106-grace-cosmology.jsonld",
+      "dependsOn": [
+        "AX-081",
+        "AX-105"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-107",
+      "oldID": "D14.1",
+      "title": "Cosmological Grace Function",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 109,
+      "atomPath": "axioms/01_canonical/AX-107-cosmological-grace-function.jsonld",
+      "dependsOn": [
+        "AX-106"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-108",
+      "oldID": "E14.1",
+      "title": "Modified Friedmann Equation",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "mathematical",
+      "domain": "Material",
+      "tier": "2",
+      "sourceRow": 110,
+      "atomPath": "axioms/01_canonical/AX-108-modified-friedmann-equation.jsonld",
+      "dependsOn": [
+        "AX-105",
+        "AX-107"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-109",
+      "oldID": "PRED14.1",
+      "title": "H0 Tension Resolution",
+      "newType": "Prediction",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "prediction",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 111,
+      "atomPath": "axioms/01_canonical/AX-109-h0-tension-resolution.jsonld",
+      "dependsOn": [
+        "AX-108"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-110",
+      "oldID": "EV15.1",
+      "title": "Biblical Prophecy Validation",
+      "newType": "EvidenceNode",
+      "intendedStatus": "classified",
+      "status": "classified",
+      "claimClass": "empirical_anchor",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 112,
+      "atomPath": "axioms/01_canonical/AX-110-biblical-prophecy-validation.jsonld",
+      "dependsOn": [
+        "AX-105"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-111",
+      "oldID": "EV15.2",
+      "title": "GCP Correlation",
+      "newType": "EvidenceNode",
+      "intendedStatus": "classified",
+      "status": "classified",
+      "claimClass": "empirical_anchor",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 113,
+      "atomPath": "axioms/01_canonical/AX-111-gcp-correlation.jsonld",
+      "dependsOn": [
+        "AX-036",
+        "AX-041"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-112",
+      "oldID": "EV15.3",
+      "title": "PEAR Lab Results",
+      "newType": "EvidenceNode",
+      "intendedStatus": "classified",
+      "status": "classified",
+      "claimClass": "empirical_anchor",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 114,
+      "atomPath": "axioms/01_canonical/AX-112-pear-lab-results.jsonld",
+      "dependsOn": [
+        "AX-036",
+        "AX-041"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-113",
+      "oldID": "EV15.4",
+      "title": "Social Coherence 5.7 Sigma",
+      "newType": "EvidenceNode",
+      "intendedStatus": "classified",
+      "status": "classified",
+      "claimClass": "empirical_anchor",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 115,
+      "atomPath": "axioms/01_canonical/AX-113-social-coherence-5-7-sigma.jsonld",
+      "dependsOn": [
+        "AX-036"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-114",
+      "oldID": "T16.1",
+      "title": "Christianity 8 of 8 BCs",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 116,
+      "atomPath": "axioms/01_canonical/AX-114-christianity-8-of-8-bcs.jsonld",
+      "dependsOn": [
+        "AX-057",
+        "AX-058",
+        "AX-059",
+        "AX-060",
+        "AX-061",
+        "AX-062",
+        "AX-063",
+        "AX-064",
+        "AX-065",
+        "AX-066"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-115",
+      "oldID": "T16.2",
+      "title": "Islam Fails BC4",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 117,
+      "atomPath": "axioms/01_canonical/AX-115-islam-fails-bc4.jsonld",
+      "dependsOn": [
+        "AX-114",
+        "AX-061"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-116",
+      "oldID": "T16.3",
+      "title": "Judaism Fails BC Completion",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 118,
+      "atomPath": "axioms/01_canonical/AX-116-judaism-fails-bc-completion.jsonld",
+      "dependsOn": [
+        "AX-114",
+        "AX-061",
+        "AX-064"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-117",
+      "oldID": "T16.4",
+      "title": "Buddhism Fails BC1",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 119,
+      "atomPath": "axioms/01_canonical/AX-117-buddhism-fails-bc1.jsonld",
+      "dependsOn": [
+        "AX-114",
+        "AX-058"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-118",
+      "oldID": "T16.5",
+      "title": "Hinduism Fails BC Uniqueness",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 120,
+      "atomPath": "axioms/01_canonical/AX-118-hinduism-fails-bc-uniqueness.jsonld",
+      "dependsOn": [
+        "AX-114",
+        "AX-057"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-119",
+      "oldID": "T16.6",
+      "title": "Atheism Fails All BCs",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "2",
+      "sourceRow": 121,
+      "atomPath": "axioms/01_canonical/AX-119-atheism-fails-all-bcs.jsonld",
+      "dependsOn": [
+        "AX-114"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-120",
+      "oldID": "A17.1",
+      "title": "Phi Threshold For Consciousness",
+      "newType": "Hypothesis",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "prediction",
+      "domain": "Human",
+      "tier": "1",
+      "sourceRow": 122,
+      "atomPath": "axioms/01_canonical/AX-120-phi-threshold-for-consciousness.jsonld",
+      "dependsOn": [
+        "AX-038",
+        "AX-040"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-121",
+      "oldID": "A17.2",
+      "title": "Substrate Independence",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Human",
+      "tier": "1",
+      "sourceRow": 123,
+      "atomPath": "axioms/01_canonical/AX-121-substrate-independence.jsonld",
+      "dependsOn": [
+        "AX-120"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-122",
+      "oldID": "D17.1",
+      "title": "AI Phi Measurement",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "definition",
+      "domain": "Human",
+      "tier": "2",
+      "sourceRow": 124,
+      "atomPath": "axioms/01_canonical/AX-122-ai-phi-measurement.jsonld",
+      "dependsOn": [
+        "AX-120",
+        "AX-121"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-123",
+      "oldID": "T17.1",
+      "title": "AI Can Achieve Consciousness",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Human",
+      "tier": "2",
+      "sourceRow": 125,
+      "atomPath": "axioms/01_canonical/AX-123-ai-can-achieve-consciousness.jsonld",
+      "dependsOn": [
+        "AX-121",
+        "AX-122"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-124",
+      "oldID": "OPEN17.1",
+      "title": "AI Moral Status Question",
+      "newType": "OpenProblem",
+      "intendedStatus": "captured",
+      "status": "captured",
+      "claimClass": "prediction",
+      "domain": "Human",
+      "tier": "3",
+      "sourceRow": 126,
+      "atomPath": "axioms/01_canonical/AX-124-ai-moral-status-question.jsonld",
+      "dependsOn": [
+        "AX-123",
+        "AX-088"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "auditRole"
+    },
+    {
+      "axiomID": "AX-125",
+      "oldID": "PROT18.1",
+      "title": "Trinity Observer Effect",
+      "newType": "Protocol",
+      "intendedStatus": "captured",
+      "status": "captured",
+      "claimClass": "empirical",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 127,
+      "atomPath": "axioms/01_canonical/AX-125-trinity-observer-effect.jsonld",
+      "dependsOn": [
+        "AX-051",
+        "AX-052"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-126",
+      "oldID": "PROT18.2",
+      "title": "Consciousness Collapse Test",
+      "newType": "Protocol",
+      "intendedStatus": "captured",
+      "status": "captured",
+      "claimClass": "empirical",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 128,
+      "atomPath": "axioms/01_canonical/AX-126-consciousness-collapse-test.jsonld",
+      "dependsOn": [
+        "AX-051",
+        "AX-100"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-127",
+      "oldID": "PROT18.3",
+      "title": "Grace Negentropy Detection",
+      "newType": "Protocol",
+      "intendedStatus": "captured",
+      "status": "captured",
+      "claimClass": "empirical",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 129,
+      "atomPath": "axioms/01_canonical/AX-127-grace-negentropy-detection.jsonld",
+      "dependsOn": [
+        "AX-025",
+        "AX-074"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-128",
+      "oldID": "PROT18.4",
+      "title": "Social Coherence Monitoring",
+      "newType": "Protocol",
+      "intendedStatus": "captured",
+      "status": "captured",
+      "claimClass": "empirical",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 130,
+      "atomPath": "axioms/01_canonical/AX-128-social-coherence-monitoring.jsonld",
+      "dependsOn": [
+        "AX-074",
+        "AX-079"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-129",
+      "oldID": "PROT18.5",
+      "title": "Phi-Virtue Correlation Study",
+      "newType": "Protocol",
+      "intendedStatus": "captured",
+      "status": "captured",
+      "claimClass": "empirical",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 131,
+      "atomPath": "axioms/01_canonical/AX-129-phi-virtue-correlation-study.jsonld",
+      "dependsOn": [
+        "AX-091"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-130",
+      "oldID": "PRED18.1",
+      "title": "H0 Prediction 2025-2030",
+      "newType": "Prediction",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "prediction",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 132,
+      "atomPath": "axioms/01_canonical/AX-130-h0-prediction-2025-2030.jsonld",
+      "dependsOn": [
+        "AX-108",
+        "AX-109"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-131",
+      "oldID": "PRED18.2",
+      "title": "GCP Event Prediction",
+      "newType": "Hypothesis",
+      "intendedStatus": "proposed",
+      "status": "classified",
+      "claimClass": "prediction",
+      "domain": "Material",
+      "tier": "3",
+      "sourceRow": 133,
+      "atomPath": "axioms/01_canonical/AX-131-gcp-event-prediction.jsonld",
+      "dependsOn": [
+        "AX-111"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-132",
+      "oldID": "FALS18.1",
+      "title": "Chi Field Falsification",
+      "newType": "FalsificationCriterion",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Falsification",
+      "tier": "1",
+      "sourceRow": 134,
+      "atomPath": "axioms/01_canonical/AX-132-chi-field-falsification.jsonld",
+      "dependsOn": [
+        "AX-025",
+        "AX-067"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-133",
+      "oldID": "FALS18.2",
+      "title": "Grace Falsification",
+      "newType": "FalsificationCriterion",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Falsification",
+      "tier": "1",
+      "sourceRow": 135,
+      "atomPath": "axioms/01_canonical/AX-133-grace-falsification.jsonld",
+      "dependsOn": [
+        "AX-025",
+        "AX-073"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-134",
+      "oldID": "FALS18.3",
+      "title": "BC Falsification",
+      "newType": "FalsificationCriterion",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Falsification",
+      "tier": "1",
+      "sourceRow": 136,
+      "atomPath": "axioms/01_canonical/AX-134-bc-falsification.jsonld",
+      "dependsOn": [
+        "AX-114"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-135",
+      "oldID": "A19.1",
+      "title": "Master Equation Integration",
+      "newType": "Hypothesis",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "prediction",
+      "domain": "Laws",
+      "tier": "1",
+      "sourceRow": 137,
+      "atomPath": "axioms/01_canonical/AX-135-master-equation-integration.jsonld",
+      "dependsOn": [
+        "AX-021",
+        "AX-050",
+        "AX-081",
+        "AX-103"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-136",
+      "oldID": "D19.1",
+      "title": "Law I: Logos-Lagrangian",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 138,
+      "atomPath": "axioms/01_canonical/AX-136-law-i-logos-lagrangian.jsonld",
+      "dependsOn": [
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-137",
+      "oldID": "D19.2",
+      "title": "Law II: Ten Variables",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 139,
+      "atomPath": "axioms/01_canonical/AX-137-law-ii-ten-variables.jsonld",
+      "dependsOn": [
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-138",
+      "oldID": "D19.3",
+      "title": "Law III: Entropy-Sin",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 140,
+      "atomPath": "axioms/01_canonical/AX-138-law-iii-entropy-sin.jsonld",
+      "dependsOn": [
+        "AX-092",
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-139",
+      "oldID": "D19.4",
+      "title": "Law IV: Grace Dynamics",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 141,
+      "atomPath": "axioms/01_canonical/AX-139-law-iv-grace-dynamics.jsonld",
+      "dependsOn": [
+        "AX-074",
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-140",
+      "oldID": "D19.5",
+      "title": "Law V: Conservation Symmetry",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 142,
+      "atomPath": "axioms/01_canonical/AX-140-law-v-conservation-symmetry.jsonld",
+      "dependsOn": [
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-141",
+      "oldID": "D19.6",
+      "title": "Law VI: Coherence Non-Increase",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 143,
+      "atomPath": "axioms/01_canonical/AX-141-law-vi-coherence-non-increase.jsonld",
+      "dependsOn": [
+        "AX-025",
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-142",
+      "oldID": "D19.7",
+      "title": "Law VII: Actualization Requirement",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 144,
+      "atomPath": "axioms/01_canonical/AX-142-law-vii-actualization-requirement.jsonld",
+      "dependsOn": [
+        "AX-035",
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-143",
+      "oldID": "D19.8",
+      "title": "Law VIII: Sign Algebra",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 145,
+      "atomPath": "axioms/01_canonical/AX-143-law-viii-sign-algebra.jsonld",
+      "dependsOn": [
+        "AX-067",
+        "AX-068",
+        "AX-074",
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-144",
+      "oldID": "D19.9",
+      "title": "Law IX: Grace Non-Unitarity",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 146,
+      "atomPath": "axioms/01_canonical/AX-144-law-ix-grace-non-unitarity.jsonld",
+      "dependsOn": [
+        "AX-074",
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-145",
+      "oldID": "D19.10",
+      "title": "Law X: Trinity Closure",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Laws",
+      "tier": "1",
+      "sourceRow": 147,
+      "atomPath": "axioms/01_canonical/AX-145-law-x-trinity-closure.jsonld",
+      "dependsOn": [
+        "AX-061",
+        "AX-135"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-146",
+      "oldID": "E19.1",
+      "title": "Full Master Equation",
+      "newType": "Equation",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "mathematical",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 148,
+      "atomPath": "axioms/01_canonical/AX-146-full-master-equation.jsonld",
+      "dependsOn": [
+        "AX-135",
+        "AX-145"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-147",
+      "oldID": "T19.1",
+      "title": "Laws Derive From Chi",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Laws",
+      "tier": "2",
+      "sourceRow": 149,
+      "atomPath": "axioms/01_canonical/AX-147-laws-derive-from-chi.jsonld",
+      "dependsOn": [
+        "AX-146"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-148",
+      "oldID": "U1",
+      "title": "Coherence Universal",
+      "newType": "UniversalPrinciple",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 150,
+      "atomPath": "axioms/01_canonical/AX-148-coherence-universal.jsonld",
+      "dependsOn": [
+        "AX-017",
+        "AX-021"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-149",
+      "oldID": "U2",
+      "title": "Decoherence Universal",
+      "newType": "UniversalPrinciple",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 151,
+      "atomPath": "axioms/01_canonical/AX-149-decoherence-universal.jsonld",
+      "dependsOn": [
+        "AX-025",
+        "AX-148"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-150",
+      "oldID": "U3",
+      "title": "Grace Universal",
+      "newType": "Operator",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "mathematical",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 152,
+      "atomPath": "axioms/01_canonical/AX-150-grace-universal.jsonld",
+      "dependsOn": [
+        "AX-074",
+        "AX-149"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-151",
+      "oldID": "U4",
+      "title": "Fruits Universal",
+      "newType": "UniversalPrinciple",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "floor_axiom",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 153,
+      "atomPath": "axioms/01_canonical/AX-151-fruits-universal.jsonld",
+      "dependsOn": [
+        "AX-089",
+        "AX-150"
+      ],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-152",
+      "oldID": "F1",
+      "title": "Love Measurement Domain",
+      "newType": "ObservableDomain",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 154,
+      "atomPath": "axioms/01_canonical/AX-152-love-measurement-domain.jsonld",
+      "dependsOn": [
+        "AX-151"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-153",
+      "oldID": "F2",
+      "title": "Joy Measurement Domain",
+      "newType": "ObservableDomain",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 155,
+      "atomPath": "axioms/01_canonical/AX-153-joy-measurement-domain.jsonld",
+      "dependsOn": [
+        "AX-151"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-154",
+      "oldID": "F3",
+      "title": "Peace Measurement Domain",
+      "newType": "ObservableDomain",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 156,
+      "atomPath": "axioms/01_canonical/AX-154-peace-measurement-domain.jsonld",
+      "dependsOn": [
+        "AX-151"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-155",
+      "oldID": "F4",
+      "title": "Patience",
+      "newType": "ObservableDomain",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 157,
+      "atomPath": "axioms/01_canonical/AX-155-patience.jsonld",
+      "dependsOn": [
+        "AX-151"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-156",
+      "oldID": "F5",
+      "title": "Kindness",
+      "newType": "ObservableDomain",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 158,
+      "atomPath": "axioms/01_canonical/AX-156-kindness.jsonld",
+      "dependsOn": [
+        "AX-151"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-157",
+      "oldID": "F6",
+      "title": "Goodness",
+      "newType": "ObservableDomain",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 159,
+      "atomPath": "axioms/01_canonical/AX-157-goodness.jsonld",
+      "dependsOn": [
+        "AX-151",
+        "AX-089"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-158",
+      "oldID": "F7",
+      "title": "Faithfulness",
+      "newType": "ObservableDomain",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 160,
+      "atomPath": "axioms/01_canonical/AX-158-faithfulness.jsonld",
+      "dependsOn": [
+        "AX-151"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-159",
+      "oldID": "F8",
+      "title": "Gentleness",
+      "newType": "ObservableDomain",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 161,
+      "atomPath": "axioms/01_canonical/AX-159-gentleness.jsonld",
+      "dependsOn": [
+        "AX-151"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-160",
+      "oldID": "F9",
+      "title": "Self-Control",
+      "newType": "ObservableDomain",
+      "intendedStatus": "classified",
+      "status": "captured",
+      "claimClass": "empirical_anchor",
+      "domain": "Relational",
+      "tier": "2",
+      "sourceRow": 162,
+      "atomPath": "axioms/01_canonical/AX-160-self-control.jsonld",
+      "dependsOn": [
+        "AX-151"
+      ],
+      "riskLevel": "medium-high",
+      "kernelRole": "metadataRole"
+    },
+    {
+      "axiomID": "AX-161",
+      "oldID": "P0",
+      "title": "Origin Stage",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Primordial",
+      "tier": "1",
+      "sourceRow": 163,
+      "atomPath": "axioms/01_canonical/AX-161-origin-stage.jsonld",
+      "dependsOn": [
+        "AX-001"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-162",
+      "oldID": "P1",
+      "title": "Consciousness Stage",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Primordial",
+      "tier": "1",
+      "sourceRow": 164,
+      "atomPath": "axioms/01_canonical/AX-162-consciousness-stage.jsonld",
+      "dependsOn": [
+        "AX-161",
+        "AX-002"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-163",
+      "oldID": "P2",
+      "title": "Information Stage",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Primordial",
+      "tier": "1",
+      "sourceRow": 165,
+      "atomPath": "axioms/01_canonical/AX-163-information-stage.jsonld",
+      "dependsOn": [
+        "AX-162",
+        "AX-161"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-164",
+      "oldID": "P3",
+      "title": "Coherence Stage",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Primordial",
+      "tier": "1",
+      "sourceRow": 166,
+      "atomPath": "axioms/01_canonical/AX-164-coherence-stage.jsonld",
+      "dependsOn": [
+        "AX-163"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-165",
+      "oldID": "P4",
+      "title": "Agency Stage",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Primordial",
+      "tier": "1",
+      "sourceRow": 167,
+      "atomPath": "axioms/01_canonical/AX-165-agency-stage.jsonld",
+      "dependsOn": [
+        "AX-164"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-166",
+      "oldID": "P5",
+      "title": "Incompleteness Stage",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Primordial",
+      "tier": "1",
+      "sourceRow": 168,
+      "atomPath": "axioms/01_canonical/AX-166-incompleteness-stage.jsonld",
+      "dependsOn": [
+        "AX-165"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-167",
+      "oldID": "O1",
+      "title": "Information Primitive",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "active",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 169,
+      "atomPath": "axioms/01_canonical/AX-167-information-primitive.jsonld",
+      "dependsOn": [
+        "AX-003"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-168",
+      "oldID": "O2",
+      "title": "Coherence Primitive",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 170,
+      "atomPath": "axioms/01_canonical/AX-168-coherence-primitive.jsonld",
+      "dependsOn": [
+        "AX-167",
+        "AX-017"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-169",
+      "oldID": "O3",
+      "title": "Consciousness Primitive",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 171,
+      "atomPath": "axioms/01_canonical/AX-169-consciousness-primitive.jsonld",
+      "dependsOn": [
+        "AX-162",
+        "AX-168"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-170",
+      "oldID": "O4",
+      "title": "Agency Primitive",
+      "newType": "Primitive",
+      "intendedStatus": "active",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "Ontological",
+      "tier": "1",
+      "sourceRow": 172,
+      "atomPath": "axioms/01_canonical/AX-170-agency-primitive.jsonld",
+      "dependsOn": [
+        "AX-169",
+        "AX-165"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "candidateAxiom"
+    },
+    {
+      "axiomID": "AX-171",
+      "oldID": "LAMBDA",
+      "title": "Logos-Christ Completion",
+      "newType": "CapstoneTerminalClaim",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Divine",
+      "tier": "1",
+      "sourceRow": 173,
+      "atomPath": "axioms/01_canonical/AX-171-logos-christ-completion.jsonld",
+      "dependsOn": [
+        "AX-066",
+        "AX-114",
+        "AX-170"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "auditRole"
+    },
+    {
+      "axiomID": "AX-172",
+      "oldID": "BRIDGE-PHY-THEO",
+      "title": "BRIDGE-PHY-THEO - Physics-Theology Bridge",
+      "newType": "BridgePrinciple",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "bridge",
+      "domain": "physics; theology",
+      "tier": "—",
+      "sourceRow": 174,
+      "atomPath": "axioms/01_canonical/AX-172-bridge-phy-theo-physics-theology-bridge.jsonld",
+      "dependsOn": [],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-173",
+      "oldID": "BRIDGE-INFO-MIND",
+      "title": "BRIDGE-INFO-MIND - Information-Consciousness Bridge",
+      "newType": "BridgePrinciple",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "bridge",
+      "domain": "information; observer",
+      "tier": "—",
+      "sourceRow": 175,
+      "atomPath": "axioms/01_canonical/AX-173-bridge-info-mind-information-consciousness-bridge.jsonld",
+      "dependsOn": [],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-174",
+      "oldID": "BRIDGE-PHI-CHI",
+      "title": "BRIDGE-PHI-CHI - Individual Phi To Social Chi",
+      "newType": "BridgePrinciple",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "bridge",
+      "domain": "coherence; observer; sociology",
+      "tier": "—",
+      "sourceRow": 176,
+      "atomPath": "axioms/01_canonical/AX-174-bridge-phi-chi-individual-phi-to-social-chi.jsonld",
+      "dependsOn": [],
+      "riskLevel": "high",
+      "kernelRole": "guardedPremise"
+    },
+    {
+      "axiomID": "AX-175",
+      "oldID": "SC-QUANTUM",
+      "title": "Quantum Scale Coherence",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Material",
+      "tier": "2",
+      "sourceRow": 177,
+      "atomPath": "axioms/01_canonical/AX-175-quantum-scale-coherence.jsonld",
+      "dependsOn": [
+        "AX-011",
+        "AX-017",
+        "AX-171"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-176",
+      "oldID": "SC-PHYSICAL",
+      "title": "Physical Scale Coherence",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Material",
+      "tier": "2",
+      "sourceRow": 178,
+      "atomPath": "axioms/01_canonical/AX-176-physical-scale-coherence.jsonld",
+      "dependsOn": [
+        "AX-175"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-177",
+      "oldID": "SC-NEURAL",
+      "title": "Neural Scale Coherence",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Human",
+      "tier": "2",
+      "sourceRow": 179,
+      "atomPath": "axioms/01_canonical/AX-177-neural-scale-coherence.jsonld",
+      "dependsOn": [
+        "AX-176",
+        "AX-038"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-178",
+      "oldID": "SC-INDIVIDUAL",
+      "title": "Individual Scale Coherence",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Human",
+      "tier": "2",
+      "sourceRow": 180,
+      "atomPath": "axioms/01_canonical/AX-178-individual-scale-coherence.jsonld",
+      "dependsOn": [
+        "AX-177",
+        "AX-084"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-179",
+      "oldID": "SC-SOCIAL",
+      "title": "Social Scale Coherence",
+      "newType": "Definition",
+      "intendedStatus": "active",
+      "status": "captured",
+      "claimClass": "definition",
+      "domain": "Human",
+      "tier": "2",
+      "sourceRow": 181,
+      "atomPath": "axioms/01_canonical/AX-179-social-scale-coherence.jsonld",
+      "dependsOn": [
+        "AX-178"
+      ],
+      "riskLevel": "low",
+      "kernelRole": "definitionRole"
+    },
+    {
+      "axiomID": "AX-180",
+      "oldID": "SC-COSMIC",
+      "title": "Cosmic Scale Coherence",
+      "newType": "CapstoneTerminalClaim",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Eschatology",
+      "tier": "2",
+      "sourceRow": 182,
+      "atomPath": "axioms/01_canonical/AX-180-cosmic-scale-coherence.jsonld",
+      "dependsOn": [
+        "AX-179",
+        "AX-105"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "auditRole"
+    },
+    {
+      "axiomID": "AX-181",
+      "oldID": "META-1",
+      "title": "META-1 - Axiom System Consistency",
+      "newType": "MetaClaim",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "meta-logic; foundations; proof-theory",
+      "tier": "—",
+      "sourceRow": 183,
+      "atomPath": "axioms/01_canonical/AX-181-meta-1-axiom-system-consistency.jsonld",
+      "dependsOn": [],
+      "riskLevel": "high",
+      "kernelRole": "auditRole"
+    },
+    {
+      "axiomID": "AX-182",
+      "oldID": "META-2",
+      "title": "META-2 - Axiom System Completeness",
+      "newType": "MetaClaim",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "meta-logic; foundations; proof-theory",
+      "tier": "—",
+      "sourceRow": 184,
+      "atomPath": "axioms/01_canonical/AX-182-meta-2-axiom-system-completeness.jsonld",
+      "dependsOn": [],
+      "riskLevel": "high",
+      "kernelRole": "auditRole"
+    },
+    {
+      "axiomID": "AX-183",
+      "oldID": "META-3",
+      "title": "META-3 - Axiom System Independence",
+      "newType": "MetaClaim",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "meta-logic; foundations; proof-theory",
+      "tier": "—",
+      "sourceRow": 185,
+      "atomPath": "axioms/01_canonical/AX-183-meta-3-axiom-system-independence.jsonld",
+      "dependsOn": [],
+      "riskLevel": "high",
+      "kernelRole": "auditRole"
+    },
+    {
+      "axiomID": "AX-184",
+      "oldID": "FINAL-1",
+      "title": "FINAL-1 - Logos Theorem (Master Theorem)",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "theology; foundations; synthesis",
+      "tier": "—",
+      "sourceRow": 186,
+      "atomPath": "axioms/01_canonical/AX-184-final-1-logos-theorem-master-theorem.jsonld",
+      "dependsOn": [],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-185",
+      "oldID": "FINAL-2",
+      "title": "FINAL-2 - Coherence Optimality",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "optimization; coherence; foundations",
+      "tier": "—",
+      "sourceRow": 187,
+      "atomPath": "axioms/01_canonical/AX-185-final-2-coherence-optimality.jsonld",
+      "dependsOn": [],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-186",
+      "oldID": "FINAL-3",
+      "title": "FINAL-3 - Unique Solution (Christianity as Unique BC Solution)",
+      "newType": "Theorem",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "apologetics; uniqueness; soteriology",
+      "tier": "—",
+      "sourceRow": 188,
+      "atomPath": "axioms/01_canonical/AX-186-final-3-unique-solution-christianity-as-unique-bc-solution.jsonld",
+      "dependsOn": [],
+      "riskLevel": "medium",
+      "kernelRole": "proofTarget"
+    },
+    {
+      "axiomID": "AX-187",
+      "oldID": "CLOSURE",
+      "title": "Axiom Chain Complete",
+      "newType": "ClosureClaim",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "theorem",
+      "domain": "Falsification",
+      "tier": "1",
+      "sourceRow": 189,
+      "atomPath": "axioms/01_canonical/AX-187-axiom-chain-complete.jsonld",
+      "dependsOn": [],
+      "riskLevel": "high",
+      "kernelRole": "auditRole"
+    },
+    {
+      "axiomID": "AX-188",
+      "oldID": "OMEGA",
+      "title": "Final Axiom — Omega",
+      "newType": "CapstoneTerminalClaim",
+      "intendedStatus": "proposed",
+      "status": "captured",
+      "claimClass": "theorem",
+      "domain": "Eschatology",
+      "tier": "1",
+      "sourceRow": 190,
+      "atomPath": "axioms/01_canonical/AX-188-final-axiom-omega.jsonld",
+      "dependsOn": [
+        "AX-187",
+        "AX-171"
+      ],
+      "riskLevel": "high",
+      "kernelRole": "auditRole"
+    },
+    {
+      "axiomID": "AX-189",
+      "oldID": "INV9",
+      "title": "INV9 — Attunement Calibration (Invariant #9)",
+      "newType": "UniversalPrinciple",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "floor_axiom",
+      "domain": "ethics; calibration; context",
+      "tier": "",
+      "sourceRow": 191,
+      "atomPath": "axioms/01_canonical/AX-189-inv9-attunement-calibration-invariant-9.jsonld",
+      "dependsOn": [],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    },
+    {
+      "axiomID": "AX-190",
+      "oldID": "BC9",
+      "title": "BC9 — Opacity Requirement",
+      "newType": "BoundaryCondition",
+      "intendedStatus": "proposed",
+      "status": "proposed",
+      "claimClass": "boundary",
+      "domain": "privacy; dignity; ethics",
+      "tier": "",
+      "sourceRow": 192,
+      "atomPath": "axioms/01_canonical/AX-190-bc9-opacity-requirement.jsonld",
+      "dependsOn": [],
+      "riskLevel": "medium",
+      "kernelRole": "constraintRole"
+    }
+  ]
+}

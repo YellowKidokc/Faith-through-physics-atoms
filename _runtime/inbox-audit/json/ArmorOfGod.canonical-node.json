@@ -1,0 +1,75 @@
+{
+  "source_id": "ArmorOfGod",
+  "title": "ArmorOfGod.lean",
+  "canonical_node": {
+    "axiom": "Each piece of the Armor of God is a protection operator that preserves a coherent state (one) against environmental noise, and does not generate coherence.",
+    "definitions": [
+      "Coherent state (one): a state of alignment or righteousness that is to be preserved.",
+      "Protects operator: a function that maps state one to one, and any other state to itself unchanged.",
+      "Armor piece: one of six constructors (BeltOfTruth, Breastplate, ShoesOfPeace, ShieldOfFaith, Helmet, Sword) each implementing the Protects operator."
+    ],
+    "derivation": [
+      "Define inductive type Armor with six constructors.",
+      "Define Protects p s = if s = one then one else s.",
+      "Prove armor_stability: for any armor piece p, if state = one then Protects p state = one, by simplification.",
+      "Conclude that armor preserves coherence when already coherent."
+    ],
+    "action": "The system should treat each armor piece as a coherence-preserving operator that only defends existing coherence, never creates it, and requires the precondition of alignment (state = one) for preservation.",
+    "boundary": [
+      "Does not model generation of coherence from noise.",
+      "Does not distinguish between the six pieces in formal effect; all implement the same Protects operator.",
+      "Does not model specific decoherence channels beyond the generic preservation.",
+      "Does not assert theological truth; only formalizes a mathematical interpretation."
+    ],
+    "test": [
+      "Check that Protects p one = one for all p.",
+      "Check that Protects p s = s for s  one.",
+      "Check that armor_stability theorem is proved by simp in Lean.",
+      "Check that no theorem claims armor creates coherence from noise."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CoherenceAlgebra definitions (state one, noise)",
+      "Lean4 standard library for simplification"
+    ],
+    "dg2_new_capability": "Formalizes the Armor of God as coherence-preserving operators, enabling verification of preservation properties in a noisy environment.",
+    "dg3_preserved_floor": "Preserves the existing CoherenceAlgebra framework and the notion of coherent state (one).",
+    "dg4_collapse_if_removed": "If removed, the formal link between the Armor of God and coherence preservation is lost, weakening the theological-to-mathematical bridge.",
+    "dg5_translation_registers": [
+      "Ephesians 6:10-18",
+      "CoherenceAlgebra",
+      "Law Q (Faith coupling)",
+      "Decoherence protection"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal_definitional",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be interpreted as proving theological efficacy of armor, but it only proves a mathematical property of a simplified model.",
+      "The simplicity of the Protects operator may be overgeneralized to real-world decoherence channels.",
+      "The special role of the Shield of Faith is commented but not formally distinguished."
+    ],
+    "kill_conditions": [
+      "If the CoherenceAlgebra definitions are inconsistent or not accepted.",
+      "If the mapping from Ephesians to the formal model is rejected as arbitrary.",
+      "If the claim is extended to say armor generates coherence or works without precondition."
+    ],
+    "lean_target": "Formalize the six armor pieces as protection operators and prove preservation of coherent state under the Protects operator."
+  },
+  "plain_summary": "This document formalizes the six pieces of the Armor of God as operators that preserve a coherent state (one) against noise, but do not create coherence. It proves that if the state is already coherent, any armor piece preserves it. The model is deliberately simple and does not distinguish between pieces formally. The proof is a Lean formal proof of a definitional property.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\ArmorOfGod.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\ArmorOfGod.canonical-node.json"
+  }
+}

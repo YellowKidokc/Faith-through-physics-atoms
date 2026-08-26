@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-110",
+  "nodeID": "tp:axioms/01/AX-110",
+  "claimID": "tp:AXIOMS/EV15.1",
+  "name": "Biblical Prophecy Validation",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "empirical_anchor",
+  "statementTechnical": "Biblical 'stretched heavens' passages describe cosmic expansion ~2,700 years before Hubble.",
+  "statementPlain": "Biblical 'stretched heavens' passages describe cosmic expansion ~2,700 years before Hubble.",
+  "mathematicalForm": "Cross-domain validation evidence",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-105",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "glory"
+  ],
+  "keywords": [
+    "EV15.1",
+    "Q12",
+    "Material",
+    "EvidenceNode"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show 'stretched heavens' language refers to tent-making, not cosmic expansion. Demonstrate the passages have no cosmological content.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 112
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-110",
+    "oldID": "EV15.1",
+    "treeLevel": "Q12",
+    "treeBranch": "Q12-A (Cross-validation evidence)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Material",
+    "tier": "3",
+    "newType": "EvidenceNode",
+    "logicalForce": "evidence node",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / outside proof kernel",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M15",
+    "moduleTitle": "Evidence Chain",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "Naturalism, Nihilism, Atheism",
+    "propagationTest": "Evidence node — supports framework but doesn't prove it.",
+    "intendedStatus": "classified",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

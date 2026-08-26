@@ -1,0 +1,77 @@
+{
+  "source_id": "continuous_string_axiom_test_v0",
+  "title": "Continuous String Axiom Test v0",
+  "canonical_node": {
+    "axiom": "If an action is aligned with destruction and is not restored, then it is not morally good and not aligned with good.",
+    "definitions": [
+      "alignedWithDestruction: an action's alignment with destruction.",
+      "restored: the state is restored after the action.",
+      "moralGood: morally good action.",
+      "alignedWithGood: aligned with good."
+    ],
+    "derivation": [
+      "Assume action is aligned with destruction.",
+      "Assume action is not restored.",
+      "From destructive_degrades, action degrades state.",
+      "From good_preserves, if action were aligned with good, it would preserve state.",
+      "From good_alignment_is_moral, if action were aligned with good, it would be morally good.",
+      "From moral_good_repairs_damage, if action were morally good and degrades state, it would restore state.",
+      "Since action is not restored, it cannot be morally good.",
+      "Since it is not morally good, it cannot be aligned with good.",
+      "Therefore, action is not morally good and not aligned with good."
+    ],
+    "action": "In the Lean formal system, enforce that any action aligned with destruction and not restored is excluded from moral goodness and alignment with good.",
+    "boundary": [
+      "Does not prove the full Master Equation.",
+      "Does not prove gravity = grace, strong force = love, thermodynamics = judgment, coherence = Christ, or all event systems are isomorphic.",
+      "Does not claim any physical or theological bridge beyond the toy model."
+    ],
+    "test": [
+      "Lean kernel-checked proof of destructive_unrestored_exclusion_chain.",
+      "No-sorry scan: no matches for sorry, admit, axiom, unsafe.",
+      "Concrete model test: toy_bad_action_excluded_by_chain in ConcreteModel.lean."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "AxiomBundle with 4 assumptions: destructive_degrades, good_preserves, good_alignment_is_moral, moral_good_repairs_damage.",
+      "World vocabulary: Agent, Action, State, Source, Record, acts, step, coherent, preserves, degrades, restores, alignedWithGood, alignedWithDestruction, moralGood, accountsFor, recordPreserved, externalSource, noncoercive."
+    ],
+    "dg2_new_capability": "Provides a kernel-checked theorem chain that destructive alignment plus non-restoration excludes moral goodness and alignment with good, with a concrete satisfiable model.",
+    "dg3_preserved_floor": "Preserves the existing AxiomBundle assumptions and vocabulary; no new axioms introduced.",
+    "dg4_collapse_if_removed": "If this theorem is removed, the package loses its first continuous downstream theorem chain and concrete model test, but the AxiomBundle remains intact.",
+    "dg5_translation_registers": [
+      "Lean theorem destructive_unrestored_exclusion_chain",
+      "Concrete model ToyAction.good and ToyAction.bad"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal theorem in toy model",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as a verified formal theorem within its stated scope"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be interpreted as proving more than the toy model, e.g., full Master Equation.",
+      "The theorem's applicability to real-world or theological domains is not established.",
+      "The concrete model is minimal and may not represent all relevant cases."
+    ],
+    "kill_conditions": [
+      "If the Lean package is not reproducible or the no-sorry scan is invalid.",
+      "If the AxiomBundle assumptions are inconsistent or not as stated.",
+      "If the theorem is used to claim physical or theological truth beyond the formal system."
+    ],
+    "lean_target": "Formalize the next EventSystem layer with structure-preserving mappings and prove intended mappings preserve structure while wrong swaps fail."
+  },
+  "plain_summary": "This document reports a successful Lean formal proof of a theorem: in a toy model with four axioms, an action aligned with destruction and not restored is neither morally good nor aligned with good. It includes a concrete model to show satisfiability. The proof is kernel-checked and no-sorry. However, it does not prove any broader physical or theological claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\continuous_string_axiom_test_v0.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\continuous_string_axiom_test_v0.canonical-node.json"
+  }
+}

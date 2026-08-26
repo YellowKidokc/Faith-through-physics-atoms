@@ -1,0 +1,91 @@
+{
+  "source_id": "lagrangian_side_by_side",
+  "title": "Lagrangian Side-by-Side Report",
+  "canonical_node": {
+    "axiom": "The framework's truth is not decided by this harness; it only checks whether each candidate behaves like a disciplined formal model under the same test bench.",
+    "definitions": [
+      "chi / chi_bar: coherence weight; higher means the system can carry ordered motion.",
+      "S_entropy / S_v1: entropy drag; higher means more disorder pressure.",
+      "W: resistance or grace leak; higher means the system resists alignment.",
+      "chi10: upward source term; think coherence support, grace support, or Christ-source term.",
+      "Gamma9: downward sink term; think decoherence drain, adversary sink, or collapse pressure.",
+      "xdot / Fdot / Fsum_dot: activity term; motion through the system.",
+      "V: stored potential cost; what the system has to carry or overcome."
+    ],
+    "derivation": [
+      "The harness defines five shared regimes (balanced, resistance_drag, source_rich, sink_heavy, entropy_heavy) with fixed parameter values.",
+      "Each candidate Lagrangian is evaluated under these regimes, producing regime values and deltas vs balanced.",
+      "Dimension checks verify that terms added or subtracted share the same dimension class (action_density).",
+      "Euler-Lagrange equations are derived symbolically where a single time-dependent generalized coordinate is declared.",
+      "Cross-model checks verify algebraic relationships (e.g., Anti = -Spirit, v2 zero-resistance limit).",
+      "Preregistered predictions (P1-P5, P7, P10) are tested against the computed results.",
+      "Wrong-control variants are run through the same gauntlet to test whether the canonical structure matters.",
+      "Invariant search identifies algebraic invariants or symmetry residues under constrained transformations."
+    ],
+    "action": "Use this harness to evaluate candidate Lagrangian models for disciplined formal behavior, checking dimension compatibility, response signs, Euler-Lagrange closure, and preregistered predictions.",
+    "boundary": [
+      "This harness does not decide whether the framework is true.",
+      "It does not claim full Noether conserved quantities; only algebraic invariants under constrained transforms.",
+      "It does not derive theological relations; it only reports what is and is not derived.",
+      "It does not claim that passing checks establishes physical truth."
+    ],
+    "test": [
+      "Dimension checks: PASS for all models.",
+      "Cross-model checks: anti_vs_spirit, llc_v2_zero_resistance_limit, llc_v1_core_reference, resistance_penalty_sign, source_sink_direction, historical_vs_canonical_note all PASS.",
+      "Preregistered predictions P1, P2, P3, P4, P5, P7, P10 all PASS.",
+      "Wrong-control gauntlet rejects gamma9_added, chi10_subtracted, resistance_ignored, source_sink_swapped.",
+      "Invariant search: paired_source_sink_shift, source_gap_generator, net_source_sink_gap, per_channel_core, recovered_channel_sum all PASS."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "SymPy symbolic computation",
+      "Preregistered prediction definitions",
+      "Shared regime parameter sets",
+      "Dimension class definitions (action_density)"
+    ],
+    "dg2_new_capability": "Provides a side-by-side disciplined formal model evaluation harness for candidate Lagrangians, including wrong-control rejection and invariant search.",
+    "dg3_preserved_floor": "Preserves the ability to check whether a model is mechanically well-formed (dimension checks, Euler-Lagrange closure) and whether preregistered predictions hold.",
+    "dg4_collapse_if_removed": "If this node is removed, there is no systematic way to compare candidate Lagrangians under identical regimes, no wrong-control gauntlet, and no preregistered prediction tracking.",
+    "dg5_translation_registers": [
+      "chi/chi_bar -> coherence weight",
+      "S_entropy/S_v1 -> entropy drag",
+      "W -> resistance/grace leak",
+      "chi10 -> upward source/grace support",
+      "Gamma9 -> downward sink/decoherence drain",
+      "xdot/Fdot/Fsum_dot -> activity",
+      "V -> stored potential cost"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological_harness",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as methodological harness; do not treat as proof of framework truth"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Passing checks may be misinterpreted as validating the theological framework.",
+      "Algebraic invariants may be mistaken for full Noether conserved quantities.",
+      "The harness's checks are necessary but not sufficient for physical truth."
+    ],
+    "kill_conditions": [
+      "If dimension checks fail for a candidate, it is not ready.",
+      "If anti-model is not exactly the negative of spirit, contrast claim is weak.",
+      "If resistance W does not reduce useful part of v2, grace-leak story is weak.",
+      "If chi10 does not help and Gamma9 does not hurt, source/sink story is weak.",
+      "If Euler-Lagrange equation does not close cleanly, model is not mechanically well-formed."
+    ],
+    "lean_target": "Formalize the harness's checks as executable specifications in Lean, ensuring that all PASS verdicts are mechanically verified."
+  },
+  "plain_summary": "This document is a methodological harness that evaluates several Lagrangian models (LLC v1, Spirit, Anti, LLC v2) under shared regimes, checking dimension compatibility, response signs, Euler-Lagrange closure, and preregistered predictions. It also runs wrong-control variants to test whether the canonical structure matters, and searches for algebraic invariants. The harness explicitly does not decide whether the framework is true; it only checks disciplined formal behavior. All listed checks pass, but this does not establish physical or theological truth.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\lagrangian_side_by_side.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\lagrangian_side_by_side.canonical-node.json"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "source_id": "W8.1-what-if-we-measured-the-wrong-thing.canonical",
+  "title": "What If We Measured the Wrong Thing",
+  "canonical_node": {
+    "axiom": "The holographic principle is a consequence of the Logos generating the projection; therefore, distance measurements in different information-density substrates are not directly commensurable.",
+    "definitions": [
+      "Hubble tension: the ~5 sigma discrepancy between early-universe (CMB) and late-universe (distance ladder) measurements of the Hubble constant H0.",
+      "Information-density substrate: the holographic encoding density of a region, which changes over cosmic history.",
+      "Emergent distance: distance is not fundamental but derived from the holographic encoding; a meter in one substrate is not ontologically identical to a meter in another."
+    ],
+    "derivation": [
+      "The holographic principle states that the information content of a region scales with surface area, not volume.",
+      "If the universe is a holographic projection, then the encoding density changes as the universe evolves (e.g., from hot plasma to structured galaxies).",
+      "Early-universe and late-universe measurements of H0 are made in different information-density substrates.",
+      "Therefore, the two measurements are not measuring the same physical quantity; comparing them directly introduces a systematic discrepancy.",
+      "Correcting for the information-density difference should resolve the Hubble tension without adding new dynamical fields."
+    ],
+    "action": "Develop and test an information-density correction function that translates between early-universe and late-universe distance measurements, and evaluate whether it resolves the Hubble tension.",
+    "boundary": [
+      "This is a framework prediction, not a proven result.",
+      "It does not claim to replace the standard model of cosmology.",
+      "It does not assert that the holographic principle is fully established in all cosmological contexts.",
+      "It does not claim that the Hubble tension is definitively a metrology problem; it is a proposal."
+    ],
+    "test": [
+      "Supporting: A formal derivation showing that early and late universe methods involve different information-density assumptions, and that correcting for this reduces the tension without new dynamical fields.",
+      "Falsifying: A resolution of the Hubble tension through dynamical new physics that demonstrably does not involve any information-density correction."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Holographic principle (established physics)",
+      "AdS/CFT correspondence (theoretical physics)",
+      "Standard cosmological measurements (CMB, distance ladder)"
+    ],
+    "dg2_new_capability": "Provides a novel explanation for the Hubble tension by reframing it as a metrology problem due to changing information-density substrates, rather than requiring new physics.",
+    "dg3_preserved_floor": "Preserves the established physics of the holographic principle and the empirical measurements of H0; does not contradict existing cosmological observations.",
+    "dg4_collapse_if_removed": "If the holographic principle or the concept of information-density substrates is removed, the proposed explanation for the Hubble tension loses its foundation and becomes unsupported.",
+    "dg5_translation_registers": [
+      "Cosmology: Hubble tension, H0, CMB, distance ladder",
+      "Holography: information density, boundary encoding",
+      "Metrology: measurement incommensurability"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "framework prediction",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the Hubble tension is resolved without formal derivation.",
+      "Treating the holographic principle as fully applicable to cosmology without qualification.",
+      "Implying that the framework's prediction is more than a proposal."
+    ],
+    "kill_conditions": [
+      "A dynamical new physics resolution of the Hubble tension that does not involve information-density corrections.",
+      "A formal proof that early and late universe measurements are commensurable despite information-density differences."
+    ],
+    "lean_target": "Reframe the Hubble tension as a potential metrology issue due to holographic information-density changes, but clearly mark it as an untested prediction."
+  },
+  "plain_summary": "This document proposes that the Hubble tension arises because early and late universe measurements are taken in different holographic information-density substrates, making them incommensurable. It is a framework prediction, not a proven result, and requires formal derivation and testing.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W8.1-what-if-we-measured-the-wrong-thing.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W8.1-what-if-we-measured-the-wrong-thing.canonical.canonical-node.json"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-eq-006-zero-collapse-theorem",
+  "atom_uid": "sha256:155dc0a449693a68f9aa21f48d88cc15addc6f9cee634d51e571a5e63c556d9d",
+  "title": "Zero-Collapse Theorem",
+  "claim": "A required zero channel collapses the product, and product collapse implies a zero channel under the kernel assumptions.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "mathematical",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "χ = 0 ⇔ ∃ required factor f_i = 0"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-061",
+    "tp:axioms/01/AX-132"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-006-zero-collapse-theorem.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-006-zero-collapse-theorem.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:4df94bcf7d051aff018ad6e6021c7801e20d4d26141d3b32045f47b6d36f17bd",
+      "event_uuid": "b0afcd9c-6c26-5872-b630-0772855332da"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-EQ-006",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-006",
+  "original_node_id": "tp:master-equation/01/ME-EQ-006",
+  "tags": [
+    "equation",
+    "proof",
+    "kill-condition"
+  ],
+  "keywords": [
+    "equation",
+    "χ",
+    "f_i",
+    "zero",
+    "listProd"
+  ],
+  "atom_uuid": "690a30cf-ec4b-51a9-ba72-efcd2b795bde"
+}

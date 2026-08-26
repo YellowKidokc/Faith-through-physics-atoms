@@ -1,0 +1,84 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-hy-evidence-open17-1",
+  "atom_uid": "sha256:5b496d300045bd301c338665106ba4b5ce4ee47b0ce3708ab81442803c20989a",
+  "title": "OPEN17.1 — AI Moral Status Question",
+  "claim": "OPEN17.1 — AI Moral Status Question is classified in Part 1 as HY_EVIDENCE with decision MOVE_OUT_OF_STRICT_CORE and anchor UNANCHORED_IN_CURRENT_CHAIN.",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "HY_EVIDENCE",
+  "assumptions": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status.",
+    "Unanchored entry cannot be treated as bedrock until a clean dependency path is supplied."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate_unanchored",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row OPEN17.1 as HY_EVIDENCE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:baccb122e8e4d3deca2dbc5be87f9fec33374ae082fc5e2433b0f2fe80b9a7bd",
+      "event_uuid": "a75cdfc6-e3f9-5e77-b1e3-52ee0cb5f1a6"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for OPEN17.1 as HY_EVIDENCE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:38+00:00",
+      "event_uuid": "202cfbfb-6424-4dd6-b8d3-629f615fee12",
+      "event_id": "sha256:3d52b74e6d0405fb440f99bdd7828eb3ec89d0484d69afe5af4989beaa2c5dd3"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for OPEN17.1 as HY_EVIDENCE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "d11d39cf-e4d1-4f27-8827-6f41035d8f3c",
+      "event_id": "sha256:dd48d0505dcef6e340f554c69a449f2e339946cbd7d98e83f14f6c23e843fe65"
+    }
+  ],
+  "source_claim_id": "AX_PART1:HY_EVIDENCE:OPEN17.1",
+  "glyphs": [
+    "evidence",
+    "prediction"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/evidence.svg",
+    "theophysics_glyphs/svg/prediction.svg"
+  ],
+  "atom_uuid": "9b5d1789-6041-5c13-8619-282a4ef685e6"
+}

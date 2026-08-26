@@ -1,0 +1,70 @@
+{
+  "source_id": "constraint_model",
+  "title": "constraint_model.ipynb",
+  "canonical_node": {
+    "axiom": "A strategy is admissible if and only if it satisfies all six constraints: justice, mercy, freewill, love, entropy, and holiness.",
+    "definitions": [
+      "Constraint function: a function taking a 10-parameter strategy vector and returning True/False based on threshold conditions.",
+      "Parameter vector: 10 continuous/discrete parameters including payment_magnitude, cost_to_sinner, coercion_level, relational_access, negentropy_input, corruption_addressed, voluntary_by_redeemer, scope, permanence, source_is_external.",
+      "All-passed boolean: True if all six constraint functions return True for a given parameter vector."
+    ],
+    "derivation": [
+      "Define six constraint functions with threshold conditions on the parameter vector.",
+      "Evaluate a strategy by applying all six constraints and checking if all pass.",
+      "Use grid search and random search to explore the parameter space for configurations satisfying all constraints.",
+      "Verify uniqueness of the cross configuration by exhaustive search."
+    ],
+    "action": "Given a strategy parameter vector, evaluate all six constraints and return the count of satisfied constraints and whether all are satisfied. Use optimization to search for all-passing configurations.",
+    "boundary": [
+      "Does not define the specific threshold values for each constraint.",
+      "Does not apply the model to specific biblical strategies; that is the role of test09_constraint_satisfaction.ipynb.",
+      "Does not extend to 100,000 random trials; that is the role of free_body_model.ipynb."
+    ],
+    "test": [
+      "For any parameter vector, the constraint functions return deterministic True/False.",
+      "The optimization search should find no all-passing configuration other than the cross configuration.",
+      "The Monte Carlo variant should reproduce the same uniqueness result."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Parameter space definition",
+      "Constraint function definitions"
+    ],
+    "dg2_new_capability": "Provides a reusable constraint satisfaction engine for evaluating strategies against six constraints.",
+    "dg3_preserved_floor": "Preserves the ability to evaluate any strategy against the six constraints in a deterministic manner.",
+    "dg4_collapse_if_removed": "Without this model, the constraint satisfaction test (test09) and the free body model have no underlying evaluation framework.",
+    "dg5_translation_registers": [
+      "constraint functions",
+      "parameter vector",
+      "all-passed boolean"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodology",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as tool definition"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims uniqueness of the cross configuration is verified by exhaustive search, but the actual search results are not shown in this document.",
+      "The threshold values for constraints are not specified, so the model is incomplete without them."
+    ],
+    "kill_conditions": [
+      "If the constraint functions are not actually implemented or are inconsistent with the described thresholds.",
+      "If the optimization search finds additional all-passing configurations beyond the cross configuration."
+    ],
+    "lean_target": "Formalize the constraint functions and thresholds in Lean, and verify the uniqueness claim."
+  },
+  "plain_summary": "This document describes a constraint satisfaction engine that evaluates strategies against six constraints. It defines the parameter space and the evaluation framework, and claims that exhaustive search verifies the uniqueness of the cross configuration. It is a tool definition, not a proof of theological claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\constraint_model.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch3\\json\\constraint_model.canonical-node.json"
+  }
+}

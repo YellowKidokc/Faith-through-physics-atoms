@@ -1,0 +1,87 @@
+{
+  "source_id": "17_LEAN_PYTHON_COLAB_EXCEL_CROSSWALK_READOUT_v0",
+  "title": "Lean / Python / Colab / Excel Crosswalk Readout v0",
+  "canonical_node": {
+    "axiom": "Every claim must be typed, supported, and guarded according to its actual evidence layer; no layer may be inflated beyond what it proves.",
+    "definitions": [
+      "Lane4 Typed Canon: a discipline layer that classifies items into types such as Primitive, Definition, Theorem, BridgePrinciple, etc., and dictates which types may become Lean axioms, definitions, proof targets, or metadata.",
+      "Lean proof surface: the set of authored Lean 4 files and theorems, with proof strength categories (definition, wrapper, trivial marker, finite decidable, simplification, substantive case proof, domain judgment, needs source path).",
+      "Python/Colab runtime packet: the collection of notebooks and scripts with runtime status (not_declared, open_or_conflicted, claims_verified, mixed_verified_and_open) and evidence classes.",
+      "Excel Canonical Ledger: the workbook with sheets for canonical rows, repair summary, staging, alignment, missing rows, false positives, open guards, proof strength, and Python/Colab audit; currently placeholder-heavy.",
+      "Open Guards: explicit guardrails that limit claims, such as fixed-point existence is partial, timestamp evidence proves existence not truth, and certain bridges remain open."
+    ],
+    "derivation": [
+      "The Excel ledger has 270 rows with placeholder statuses for definition, python, colab, wolfram, empirical, and numerical support; only 56 lean_match_status are SUPPORTED, 171 PARTIAL, 42 NEEDS_SOURCE_PATH, 1 DOMAIN_JUDGMENT_NOT_LEAN_PROOF.",
+      "Lane4 Typed Canon provides the strongest discipline layer, with counts of types and a rule that only true primitives become Lean axioms, definitions become definitions, theorems become proof targets, and predictions/protocols/evidence nodes stay outside the proof kernel.",
+      "Lean files show no active sorry/admit markers in inspected authored folders, but Proof Strength Summary shows many entries are wrappers (193), declarations (281), definitional (451), finite decidable (58), simplification (189), substantive (43), trivial (352).",
+      "Python/Colab packet has 20 notebooks and 5 scripts; status counts: 11 not_declared, 5 open_or_conflicted, 3 claims_verified, 6 mixed; best runtime support is test_master_equation.py with 9 passed tests.",
+      "Open Guards list key limitations: fixed-point existence is partial, timestamp evidence proves existence not truth, public evidence pages are review summaries, independent review requires reproducible source, Lagrangian-to-product-form bridge remains conditional, design-to-moral-character step must be defended.",
+      "The recommended crosswalk sheet and repair order are specified to join the layers without overclaiming."
+    ],
+    "action": "Create a repaired copy of the Excel ledger named 'Lean 4 - CANONICAL_LEDGER_V2.crosswalk_repair.xlsx', add a 'LEAN_PYTHON_COLAB_EXCEL_CROSSWALK' sheet with the specified columns, and populate it using Lane4 for claim typing, Lean for formal support, Python/Colab for runtime support, and Open Guards for public-status limits. Rewrite public claims to match actual support levels.",
+    "boundary": [
+      "Does not claim that the Excel ledger is fully aligned or ready as a joined proof/evidence ledger.",
+      "Does not claim that all Lean theorems are substantive proofs; marker theorems and definitional proofs are labeled as such.",
+      "Does not claim that notebook evidence is public-grade until rerun, saved, hashed, and classified.",
+      "Does not claim that the Lagrangian-to-product-form bridge or design-to-moral-character derivation is closed.",
+      "Does not use raw file counts as evidence; counts must be filtered to exclude build artifacts and internals."
+    ],
+    "test": [
+      "Check that every V2 row has a typed_canon_id and claim_type from Lane4.",
+      "Check that every Lean support entry has a proof strength classification from the allowed list.",
+      "Check that every Python/Colab artifact has a runtime status and evidence class.",
+      "Check that every public claim has a public_status value from the allowed list and references an open guard if applicable.",
+      "Check that no claim states 'Lean proves the Master Equation' without the qualified wording provided."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lane4 Typed Canon (typed-canon-reclassification.csv, typed-canon-summary.md, TheophysicsCanon.lean, TheophysicsModules.lean)",
+      "Lean proof surface (authored .lean files in EVIDENCE, MASTER_EQUATION, Lane4 folders)",
+      "Python/Colab runtime packet (readiness summary, inventory, claim runtime matrix, status register)",
+      "Excel Canonical Ledger (CANONICAL_LEDGER_V2.xlsx and Python Colab Audit copy)",
+      "Open Guards sheet"
+    ],
+    "dg2_new_capability": "Provides a crosswalk that joins claim type, Lean proof strength, Python/Colab runtime status, and open guards into a single ledger, enabling accurate public claim wording and preventing overclaiming.",
+    "dg3_preserved_floor": "Preserves the existing discipline of Lane4, the no-sorry Lean core, the cautious Python/Colab packet, and the structural architecture of the Excel ledger.",
+    "dg4_collapse_if_removed": "Without this crosswalk, the Excel ledger remains placeholder-heavy, public claims risk overstatement, and the layers remain unjoined, leading to potential misrepresentation of evidence strength.",
+    "dg5_translation_registers": [
+      "typed_canon_id -> claim_type -> logical_force",
+      "lean_theorem -> lean_source -> lean_proof_strength",
+      "python_colab_artifact -> runtime_status -> evidence_class",
+      "public_claim_text -> public_status -> open_guard"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "MetaClaim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Create crosswalk sheet and repair ledger as specified; do not treat as proof of any underlying claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the Excel ledger as fully joined when it is placeholder-heavy.",
+      "Treating all Lean theorems as substantive proofs without labeling proof strength.",
+      "Citing notebook evidence as public-grade without rerun and saved outputs.",
+      "Claiming the Lagrangian-to-product-form bridge is closed.",
+      "Using raw file counts as evidence without filtering."
+    ],
+    "kill_conditions": [
+      "If the crosswalk sheet is not created or populated as specified.",
+      "If public claims are rewritten without matching actual support levels.",
+      "If open guards are removed or hidden.",
+      "If the repaired ledger is presented as proof of theological identifications or closed physics bridges."
+    ],
+    "lean_target": "Formalize the crosswalk as a data structure in Lean, if desired, but the primary target is the Excel ledger repair."
+  },
+  "plain_summary": "This document audits the current state of Lean proofs, Python/Colab runtime artifacts, and Excel ledgers, concluding that the pieces exist but are not fully joined. It recommends creating a crosswalk sheet to type every claim, attach proof strength, runtime status, and open guards, and rewrite public claims to match actual support. The document itself is a meta-claim about the state of the project, not a proof of any underlying physics or theology.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\17_LEAN_PYTHON_COLAB_EXCEL_CROSSWALK_READOUT_v0.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\17_LEAN_PYTHON_COLAB_EXCEL_CROSSWALK_READOUT_v0.canonical-node.json"
+  }
+}

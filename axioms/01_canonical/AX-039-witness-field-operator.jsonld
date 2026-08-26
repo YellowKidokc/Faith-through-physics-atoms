@@ -1,0 +1,94 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-039",
+  "nodeID": "tp:axioms/01/AX-039",
+  "claimID": "tp:AXIOMS/D5.3",
+  "name": "Witness Field Operator",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "definition",
+  "statementTechnical": "Witness Field Φ̂ ≡ operator mapping potential → actual: H → H_actualized.",
+  "statementPlain": "Witness Field Φ̂ ≡ operator mapping potential → actual: H → H_actualized.",
+  "mathematicalForm": "Ŵ(Φ) = √Γ(Φ)·P̂; Ŵ: H_potential → H_actual",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-038",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "definition",
+    "variable",
+    "field"
+  ],
+  "keywords": [
+    "D5.3",
+    "Q6",
+    "Ontological",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the witness field operator is mathematically ill-defined. Demonstrate it contradicts established QM operator algebra. Show collapse doesn't require a field.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 40
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-039",
+    "oldID": "D5.3",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-E (Formalization of observation as operator)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M05",
+    "moduleTitle": "Observer / Actualization",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (definition level)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Witness field propagates to collapse equations, Φ-dependent measurement, and Terminal Observer necessity.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

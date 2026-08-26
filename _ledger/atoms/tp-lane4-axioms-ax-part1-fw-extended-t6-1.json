@@ -1,0 +1,84 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-fw-extended-t6-1",
+  "atom_uid": "sha256:0becd59fcc2247c14522add2b4be39643637b87371c33d9789aaa6c5dd175468",
+  "title": "T6.1 — Von Neumann Chain Termination",
+  "claim": "T6.1 — Von Neumann Chain Termination is classified in Part 1 as FW_EXTENDED with decision MOVE_OUT_OF_STRICT_CORE and anchor UNANCHORED_IN_CURRENT_CHAIN.",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "FW_EXTENDED",
+  "assumptions": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status.",
+    "Unanchored entry cannot be treated as bedrock until a clean dependency path is supplied."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate_unanchored",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row T6.1 as FW_EXTENDED.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:c4ca594079e7e0731f57bc2caa7fc4056d08e4fd830792b14e27a7945c85bd22",
+      "event_uuid": "eaef5c1d-ff86-5745-9cba-efde6fe478bc"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for T6.1 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:37+00:00",
+      "event_uuid": "2f8ad9d8-3fb1-4597-9be7-65f72b928150",
+      "event_id": "sha256:d3a116c15a84864d7c8a61f1fcc67bf0cea33173f56d92b90d5f0d972bd034f2"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for T6.1 as FW_EXTENDED.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "703ee7ad-8838-4712-ac4e-d087d7593be7",
+      "event_id": "sha256:6a7b85ac54aaaa96f9d8e755952e18a896dcb203a90ace91ef501c082e68f306"
+    }
+  ],
+  "source_claim_id": "AX_PART1:FW_EXTENDED:T6.1",
+  "glyphs": [
+    "mesh",
+    "domain-tag"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/mesh.svg",
+    "theophysics_glyphs/svg/domain-tag.svg"
+  ],
+  "atom_uuid": "23ed0062-0c19-58ad-b034-c5dc7374ee8a"
+}

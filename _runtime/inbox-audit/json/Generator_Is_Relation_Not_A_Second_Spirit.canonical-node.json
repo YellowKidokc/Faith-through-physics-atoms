@@ -1,0 +1,76 @@
+{
+  "source_id": "Generator_Is_Relation_Not_A_Second_Spirit",
+  "title": "The Generator Is Relation, Not a Second Spirit",
+  "canonical_node": {
+    "axiom": "The Spirit is the operation-level term, not an object-level one; the generator (e.g., Hamiltonian) is an instance of the Relation type, not a second spirit.",
+    "definitions": [
+      "Relation (A): the application map that relates structure L to state G, actualizing an outcome; cannot be an object in the same space without regress.",
+      "Generator: an operator that generates transitions between states (e.g., Hamiltonian generates time translation).",
+      "Object-level: a member of the state space or structure being operated upon.",
+      "Operation-level: the act or map that relates objects, not itself an object in the same space."
+    ],
+    "derivation": [
+      "Part 0.5 (Watcher route) establishes that the application map A cannot be a peer object without regress; hence Relation is operation-level.",
+      "Energy route: Hamiltonian H is not a state variable; it generates time translation via U(t)=e^{-iHt/hbar}.",
+      "Check H against Relation criteria: H relates state at t to state at t+dt; H is not a member of the Hilbert space; asking 'state of H' is a category error.",
+      "Therefore H satisfies the Relation predicate; energy-as-generator is a corollary of Part 0.5, not a parallel theorem.",
+      "The Poincar group has ten generators; energy is mapped, but momentum is not; this is the load-bearing open item."
+    ],
+    "action": "Publish the energy-generator result as Part 0.5, 7, explicitly subordinate to the Relation-type, with the momentum gap stated as the next test.",
+    "boundary": [
+      "Does not claim that momentum is Relation; that is an open question.",
+      "Does not claim that the reconciliation is proven; it is a draft reconciliation.",
+      "Does not claim that the Spirit is a physical operator; it uses physical analogy."
+    ],
+    "test": [
+      "Check if momentum, when worked through the same test (relates two objects / not itself a member of the space / category error on 'what is momentum's state'), reduces to Relation.",
+      "If momentum fails the type test or maps to a different Person or Law, the reconciliation fails.",
+      "Verify that the Hamiltonian satisfies all criteria of the Relation predicate as defined in Part 0.5."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Part 0.5 Watcher termination argument",
+      "Energy-as-generator result from TikTok-debate thread",
+      "Noether's theorem",
+      "Poincar group generator structure"
+    ],
+    "dg2_new_capability": "Provides a unified framework where energy-as-generator is a specific instance of the Relation type, resolving apparent competition between two derivations.",
+    "dg3_preserved_floor": "Preserves the core claim that the Spirit is operation-level, not object-level, from both derivations.",
+    "dg4_collapse_if_removed": "If this reconciliation is removed, the two derivations remain as separate, potentially competing claims without a stated relationship, leading to ambiguity.",
+    "dg5_translation_registers": [
+      "Type theory: Relation as application map",
+      "Physics: Hamiltonian as generator of time translation",
+      "Theology: Spirit as operation-level term"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "reconciliation hypothesis",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming energy-as-generator is a corollary without full proof of the type match.",
+      "Implying the reconciliation is settled when momentum mapping is unresolved.",
+      "Conflating physical generator with theological Spirit without explicit caveats."
+    ],
+    "kill_conditions": [
+      "Momentum does not reduce to Relation under the same test.",
+      "Momentum maps to a different Person or Law.",
+      "Momentum behaves like a state variable in a formal treatment."
+    ],
+    "lean_target": "A lean version would state: 'The Hamiltonian is an instance of the Relation type as defined in Part 0.5; the momentum case remains open.'"
+  },
+  "plain_summary": "This document proposes that the energy-as-generator result is not a separate proof of the Spirit's operational nature, but a specific instance of the Relation type from Part 0.5. It argues that the Hamiltonian satisfies the criteria for being a Relation, and thus should be published as a subordinate corollary. However, the reconciliation is incomplete because the momentum generator has not been tested, and the document itself is a draft not yet canon.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Generator_Is_Relation_Not_A_Second_Spirit.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Generator_Is_Relation_Not_A_Second_Spirit.canonical-node.json"
+  }
+}

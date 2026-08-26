@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-136-law-i-logos-lagrangian",
+  "atom_uid": "sha256:3d85c7eb43d2f033e1af515b5cfecbf026faf260d0de301bb7e7cd30a0bcdf95",
+  "title": "AX-136 — Law I: Logos-Lagrangian",
+  "claim": "Law I: The Logos-Lagrangian Correspondence.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "L = L(χ, ∂χ, g_μν)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-135"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show reality requires non-Lagrangian description",
+    "Demonstrate χ can't serve as Lagrangian variable"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-136-law-i-logos-lagrangian.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-136-law-i-logos-lagrangian.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:6a08104fdd19d7c7a106e6c7e6c8f08c3b4b6c6073b99594cfa697cc2b253d72",
+      "event_uuid": "f18581ef-78c8-5b24-9a8b-97d7cf7a6d0b"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:893997d54c6b596a3d459f06fe908a2b6e83883e8e33347bee181db2b68b4f6c",
+      "event_uuid": "d42ab4b1-23e7-5d39-baa2-3c87b5d0785c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D19.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-136",
+  "original_node_id": "tp:axioms/01/AX-136",
+  "atom_uuid": "172b0eeb-4b6c-577c-96fc-9f4af93fb8d7"
+}

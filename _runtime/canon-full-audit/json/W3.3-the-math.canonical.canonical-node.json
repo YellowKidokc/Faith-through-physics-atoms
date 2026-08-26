@@ -1,0 +1,89 @@
+{
+  "source_id": "W3.3-the-math.canonical",
+  "title": "Why God Built Physics",
+  "canonical_node": {
+    "axiom": "The coherence field C is sovereign over the product of nine normalized law-family contributions; each law family maps to a spiritual term via its stable state, and gaps are explicitly marked.",
+    "definitions": [
+      "Coherence field C: the ground of the product, not a factor; sovereign.",
+      "Law families: nine normalized contributions f_i(X_i/X_0i) from gravitation, motion, electromagnetism, strong force, thermodynamics, information, quantum mechanics, relativity, weak force.",
+      "Stable state: equilibrium condition of the physical equation.",
+      "Tier 1 derivation: equilibrium condition extracted from solving the parent equation.",
+      "Tier 2 correspondence: named analogy, not derived from the equation.",
+      "R(offense, ): function where =1 offender pays (Justice), =0 third party pays (Mercy), =0 and judge=payer (The Cross).",
+      "loss: conserved loss term in moral decay.",
+      "Wgrace: atonement, external source term injecting order."
+    ],
+    "derivation": [
+      "chi = C *  f_i(X_i/X_0i); if any f_i -> 0, product -> 0.",
+      "Law 4: Yukawa potential V(r) = s/r + k*r; bound state yields Love (V at minimum), Peace (F=0), Joy (=0).",
+      "Law 5: F = E  TS with dS/dt  0; R(offense, ) yields Justice, Mercy, Cross without contradiction.",
+      "Law 9: weak force violates parity but preserves time-translation; Noether guarantees conserved quantity; moral decay whole -> broken +  + loss;  conserved; atonement as external source term dSm/dt =   Wgrace/T.",
+      "Fruits: Tier 1 derived from Yukawa; Tier 2 correspondences listed.",
+      "Anti-fruits: same equation run toward instability; phase transition PhiL(chi) = tanh(L(chi  chic))."
+    ],
+    "action": "The system should treat the coherence field as sovereign, map each law family to its spiritual term via stable states, mark OPEN/PARTIAL/LOCKED status honestly, and use the derived equations (Laws 4, 5, 9) as theorem-grade while labeling Tier 2 correspondences as non-derived.",
+    "boundary": [
+      "Does not claim derivation for OPEN laws (1, 2, 3, 6, 8, 10).",
+      "Does not claim Tier 2 Fruits as derived.",
+      "Does not claim atonement is identical to physics; it is a correspondence.",
+      "Does not claim heaven as proof; it is a formal picture.",
+      "Does not claim to have found a counterexample to Law 9."
+    ],
+    "test": [
+      "Check that each LOCKED law has a derivation chain from physics to spiritual term.",
+      "Check that OPEN laws are not presented as derived.",
+      "Check that Tier 2 Fruits are labeled as correspondences.",
+      "Check that the standing falsifier (kill condition 2) is acknowledged as open.",
+      "Check that the product form chi = C*f_i is used, not the retired integral form."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Yukawa potential (strong force)",
+      "Free energy F = E  TS (thermodynamics)",
+      "Noether's theorem (weak force symmetry)",
+      "Shannon capacity formula",
+      "Standard physics laws (gravitation, motion, electromagnetism, quantum mechanics, relativity)"
+    ],
+    "dg2_new_capability": "Provides a unified mapping from ten physical law families to spiritual terms, with explicit derivation status and a coherence field as sovereign ground.",
+    "dg3_preserved_floor": "Preserves the physical equations as stated; does not alter physics.",
+    "dg4_collapse_if_removed": "If the coherence field C is removed, the product loses its sovereign ground and the mapping collapses into a mere list of analogies.",
+    "dg5_translation_registers": [
+      "Physics to theology",
+      "Equilibrium to spiritual property",
+      "Noether conservation to moral ledger",
+      "Source term to atonement"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "theological-physics correspondence",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating Tier 2 correspondences as derived",
+      "Treating OPEN laws as derived",
+      "Claiming atonement is physically identical",
+      "Claiming heaven as proof",
+      "Ignoring the standing falsifier"
+    ],
+    "kill_conditions": [
+      "A verified moral event with no invisible remainder (breaks Law 9)",
+      "A derived law that contradicts the physical equation",
+      "A Tier 2 correspondence presented as Tier 1"
+    ],
+    "lean_target": "Formalize the derivation of Laws 4, 5, 9 in Lean; mark all other laws as OPEN."
+  },
+  "plain_summary": "This document proposes a mapping from ten physical laws to spiritual terms, with three laws claimed as fully derived (strong force, thermodynamics, weak force) and the rest marked as open or partial. It explicitly separates derived results from correspondences and includes a standing falsifier. However, the derivations are not formalized and the mappings are largely analogical, so the proof status is not established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W3.3-the-math.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W3.3-the-math.canonical.canonical-node.json"
+  }
+}

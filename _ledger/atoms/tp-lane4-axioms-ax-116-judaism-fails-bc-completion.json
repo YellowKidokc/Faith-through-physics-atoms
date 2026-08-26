@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-116-judaism-fails-bc-completion",
+  "atom_uid": "sha256:093ce0787e8dd739e626571ec918fb01327ae1115704b3d8195261fdff86279e",
+  "title": "AX-116 — Judaism Fails BC Completion",
+  "claim": "Judaism fails BC-completion — partial solution, necessary but not sufficient.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-theology",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Judaism: partial BC satisfaction (necessary, not sufficient)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-114",
+    "tp:axioms/01/AX-061",
+    "tp:axioms/01/AX-064"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show Judaism satisfies all 8 BCs",
+    "Demonstrate progressive revelation completes the BC system within Judaism"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-116-judaism-fails-bc-completion.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-116-judaism-fails-bc-completion.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:841e700ba4ec6af7abe9b45a29c227ae86096caa897540fc0579a41d7df2775f",
+      "event_uuid": "53298836-23b8-5703-b5ea-70b9bfde900f"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: bridge-theology.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:f7b707b4af187d1f2c0b9078911dbe83df607616ca1701b5f4fc6be8696fed30",
+      "event_uuid": "fe9f87a6-3398-5200-bea5-6af2d121ba28"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/T16.3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-116",
+  "original_node_id": "tp:axioms/01/AX-116",
+  "atom_uuid": "d6a3e28e-7886-5d48-b3eb-7cc19ac05a56"
+}

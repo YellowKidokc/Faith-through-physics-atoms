@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-055",
+  "nodeID": "tp:axioms/01/AX-055",
+  "claimID": "tp:AXIOMS/LN6.1",
+  "name": "Terminal Observer Necessity",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Chain terminates in perfect observer: Φ_terminal = ∞.",
+  "statementPlain": "Chain terminates in perfect observer: Φ_terminal = ∞.",
+  "mathematicalForm": "Φ_terminal = ∞; lim(Φ→∞) Γ(Φ) = ∞ (instantaneous collapse)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-054",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "observer"
+  ],
+  "keywords": [
+    "LN6.1",
+    "Q7",
+    "Ontological",
+    "FrameworkCommitment"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the measurement chain terminates finitely (at decoherence or at some high but finite Φ). Demonstrate Φ = ∞ is physically meaningless. Show the chain doesn't need termination.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 56
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-055",
+    "oldID": "LN6.1",
+    "treeLevel": "Q7",
+    "treeBranch": "Q7-B (Terminal Observer derived)",
+    "questionType": "Type 3 (What grounds X?)",
+    "domain": "Ontological",
+    "tier": "1",
+    "newType": "FrameworkCommitment",
+    "logicalForce": "framework assumption",
+    "formalizableInLean": "partly",
+    "leanKind": "parameter / assumption, not theorem",
+    "riskLevel": "high",
+    "kernelRole": "guardedPremise",
+    "moduleID": "M06",
+    "moduleTitle": "Collapse / Measurement",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "BC1 (Terminal Observer Exists)",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "Materialism, Naturalism, Eliminativism, Nihilism, Hard Determinism",
+    "propagationTest": "YES — Terminal Observer necessity propagates to God identification (AX-066), Trinity (BC4), grace (BC2), and all theological claims.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

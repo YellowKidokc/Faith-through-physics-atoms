@@ -398,3 +398,370 @@ The graph gives it connections. The pill gives it a face.
 
 _Theophysics Research Initiative | POF 2828_
 _Claim Atom Standard 1.0 + Domain Architecture v11_
+
+
+---
+
+## NEW NODE TYPES (v2.1 — Public Descent Layer)
+
+Added: 2026-07-24 by Claude Opus + GPT correction
+v2.0 atomized delivery formats (SEO, social, FAQ, glossary, etc).
+GPT correctly identified this as container proliferation, not knowledge
+structure. v2.1 collapses those back into reach.format variants and
+adds only the genuinely missing types: question, series, audienceProfile.
+
+Rule: atomize the descent PROCESS, not the delivery FORMAT.
+
+---
+
+### QUESTION NODE (genuinely new)
+
+The public starts with questions, not claims. This is the entry point
+for the entire public descent chain.
+
+```
+NODE_TYPES["question"] = {
+    "type": "question",
+    "required": [
+        "question",              # the actual question a person asks
+        "askedBy",               # audience type: skeptic, parent, student, pastor, etc
+        "questionContext",       # public_debate|personal_crisis|academic_inquiry|pastoral_care|
+                                 # family_conversation|online_comment|classroom|self_study
+        "sourceClaims"           # edges to claim atoms that answer this question
+    ],
+    "optional": [
+        "timeBudget",            # how long the person has: 60_seconds, 5_minutes, 30_minutes
+        "priorKnowledge",        # none|low|moderate|high
+        "audienceProfileRef",    # edge to reusable audience profile
+        "urgency"                # casual|important|crisis
+    ]
+}
+```
+
+### SERIES NODE (genuinely new)
+
+Defines article order for breadcrumb generation and series navigation.
+Breadcrumbs are computed from this — no separate authoring.
+
+```
+NODE_TYPES["series"] = {
+    "type": "series",
+    "required": [
+        "seriesID",              # gtq|mda|convergence|three-gates|logos-papers
+        "seriesName",            # human-readable full name
+        "articleOrder"           # ordered list of edges to article atoms
+    ],
+    "optional": [
+        "entryPoint",            # edge to article new readers start at
+        "description",
+        "totalReadingTime",      # estimated minutes for full series
+        "prerequisiteSeries",    # edge to series atom: "read MDA before GTQ"
+        "status",                # in_progress|complete|paused
+        "seriesThesis"           # one sentence: what the whole series argues
+    ]
+}
+```
+
+### AUDIENCE PROFILE (reusable object, not a node)
+
+Not a separate atom. A reusable configuration stored in _vocab/audiences/
+and referenced by ID from question, translation, reach, and article nodes.
+
+```
+AUDIENCE_PROFILE = {
+    "audienceID":           # truck-driver-skeptic, grieving-mother, physics-phd, etc
+    "priorKnowledge":       # none|low|moderate|high
+    "primaryQuestion":      # what they most need answered
+    "stakes":               # personal|academic|professional|spiritual|political
+    "trustedEvidence":      # historical|empirical|personal|scriptural|mathematical
+    "likelyMisconceptions": # what they probably believe that's wrong
+    "vocabularyKnown":      # terms they already understand
+    "timeBudget":           # 60_seconds|5_minutes|30_minutes|unlimited
+}
+```
+
+### REACH NODE (expanded, replaces 7 media-specific types)
+
+One node type, many formats. Format is a field, not a type.
+
+```
+NODE_TYPES["reach"] = {
+    "type": "reach",
+    "required": [
+        "reachFormat",           # seo_page|faq|glossary_entry|tiktok_script|twitter_thread|
+                                 # instagram_caption|linkedin_post|youtube_script|podcast_outline|
+                                 # substack_post|infographic|one_pager|toolkit|debate_card|
+                                 # visual|carousel|reel|story
+        "sourceNodes",           # edges to article/translation/claim atoms this renders
+        "impactStatement"        # one sentence: what this changes for the audience
+    ],
+    "optional": [
+        "audienceProfileRef",    # edge to audience profile
+        "questionRef",           # edge to question atom this answers
+        "actionItems",
+        "legalWarning",
+        "hook",                  # for social formats: first line / first 3 seconds
+        "coreMessage",           # for social formats: one sentence takeaway
+        "duration",              # for video/audio: seconds
+        "hashtags",
+        "callToAction",
+        "visualType",            # for visual renders: diagram|chart|infographic|3d_render|etc
+        "altText",               # for visuals: accessibility
+        "filePath",              # for visuals: path to rendered file
+        "renderScript",          # for visuals: path to generator script
+        "keywords",              # for SEO: primary search terms
+        "metaTitle",             # for SEO: max 60 chars
+        "metaDescription",       # for SEO: max 155 chars
+        "searchIntent",          # for SEO: informational|navigational|transactional|comparison
+        "structuredDataType"     # for SEO: Article|FAQPage|HowTo|ClaimReview
+    ]
+}
+```
+
+### PUBLIC DESCENT COMPLETION RULE (from GPT)
+
+A claim has reached people only when:
+1. A real question receives a faithful answer
+2. An inspectable receipt exists (plain evidence, plain limits)
+3. A bounded application exists where appropriate
+4. A comprehension check confirms the audience preserved meaning
+5. A traceable route back to rigor exists
+
+### WHAT THE OLD v2.0 TYPES BECAME
+
+| v2.0 type    | v2.1 home                                    |
+|-------------|----------------------------------------------|
+| seo         | reach node with reachFormat: seo_page        |
+| social      | reach node with reachFormat: tiktok_script etc|
+| faq         | reach node with reachFormat: faq             |
+| glossary    | reach node with reachFormat: glossary_entry  |
+| testimony   | result node with evidenceType: personal      |
+| visual      | reach node with reachFormat: visual          |
+| debate_move | objection + application node pair            |
+| breadcrumb  | computed from series node + article edges     |
+
+---
+
+## UPDATED ROUTE PROFILES (v2.1)
+
+### Route A: Pastoral / Everyday (unchanged)
+```
+theological grounding → translation → article → reach → result
+```
+
+### Route B: Explanatory Article (unchanged)
+```
+canonical refs → evidence → translation → article → reach → result
+```
+
+### Route C: Framework Argument (unchanged)
+```
+canonical → paradigm → synthesis → hypothesis → evidence →
+falsification → objections → translation → article → reach → result
+```
+
+### Route D: Formal Paper (unchanged)
+```
+canonical → proof → evidence → falsification → paper →
+objections → translation → application → article → reach → result
+```
+
+### Route E: Public Ministry (v2.1)
+```
+question → claim → translation → article → reach(faq + glossary_entry +
+tiktok_script + seo_page) → result
+```
+Question node is the entry. Reach node handles all formats.
+
+### Route F: Debate Arsenal (v2.1)
+```
+question → claim → objection + application → reach(debate_card +
+tiktok_script) → result
+```
+Three Gates is the prototype.
+
+### Route G: Series Publication (v2.1)
+```
+series → article[] → reach(seo_page)[] → breadcrumbs auto-generated
+```
+
+---
+
+## BREADCRUMB GENERATION (computed, not authored)
+
+1. Find current article atom
+2. Read its seriesID
+3. Find series atom with that seriesID
+4. Read articleOrder to get prev/next
+5. Render: [Series Name] > [Article N of M] | ← Prev | Next →
+
+Additionally:
+- upwardLink: article → paper edge → "Go deeper →"
+- downwardLink: article → translation edge → "Simpler version →"
+- parallelLinks: claim with multiple translations at different
+  readingLevels → reading level switcher
+
+---
+
+## PUBLIC DESCENT SPINE (from GPT, v2.1)
+
+The public equivalent of the doctoral rigor chain:
+
+```
+QUESTION (what does the person need answered?)
+   ↓
+AUDIENCE CONTEXT (who are they, what do they trust?)
+   ↓
+FAITHFUL TRANSLATION (meaning + confidence + boundaries preserved)
+   ↓
+LIVED RELEVANCE (where this appears in ordinary life)
+   ↓
+INSPECTABLE RECEIPT (plain evidence + plain limits)
+   ↓
+APPLICATION (if appropriate — with disclosed premises)
+   ↓
+COMPREHENSION CHECK (did meaning survive descent?)
+   ↓
+PUBLIC RENDERINGS (reach nodes in various formats)
+   ↓
+REAL-WORLD RESULT (what actually happened)
+```
+
+Node mapping:
+- QUESTION → question node
+- AUDIENCE CONTEXT → audienceProfile object
+- FAITHFUL TRANSLATION → translation node with descentInvariant
+- LIVED RELEVANCE → article node (humanAnchor, soWhat, feltProblem)
+- INSPECTABLE RECEIPT → evidence node rendered plain (plainFinding, plainLimit)
+- APPLICATION → application node (addedPremises disclosed)
+- COMPREHENSION CHECK → check node
+- PUBLIC RENDERINGS → reach nodes (one per format)
+- REAL-WORLD RESULT → result node
+
+---
+
+_End of v2.1 additions._
+
+---
+
+## ARCHIVED v2.0 SPECS (kept for reference, superseded by v2.1)
+
+The following node types from v2.0 have been collapsed into existing
+types per the mapping table above. Specs preserved below for any
+tooling that referenced them during the v2.0 window.
+
+<!--  ARCHIVED v2.0 SPECS START (everything below is superseded by v2.1)
+TESTIMONY NODE (now result with evidenceType: personal)
+        "platform",              # where the testimony came from
+        "date",
+        "permission",            # true|false — do we have permission to publish
+        "followUp",              # edge to result atom if tracked
+        "anonymized"             # true if identifying details removed
+    ]
+}
+```
+
+### VISUAL NODE
+```
+NODE_TYPES["visual"] = {
+    "type": "visual",
+    "required": [
+        "visualType",            # diagram|chart|infographic|3d_render|timeline|comparison|process_flow|equation_visual|glyph
+        "sourceClaim",           # edge to claim atom
+        "altText",               # accessibility description
+        "filePath"               # relative path to the image/render file
+    ],
+    "optional": [
+        "dataSource",            # edge to evidence atom
+        "readingLevel",          # which audience this visual targets
+        "printable",             # true if suitable for PDF/print
+        "animationSteps",        # list of steps for animated visuals
+        "renderScript",          # path to the Python/matplotlib script that generates it
+        "dimensions"             # width x height
+    ]
+}
+```
+
+### DEBATE_MOVE NODE
+```
+NODE_TYPES["debate_move"] = {
+    "type": "debate_move",
+    "required": [
+        "moveName",              # e.g. "Gate 1: Is There Truth?"
+        "trigger",               # what the opponent says that activates this
+        "response",              # what you say back
+        "structure",             # WHY it works — the logical mechanism
+        "sourceClaim"            # edge to claim atom
+    ],
+    "optional": [
+        "selfRefutationProof",   # if the denial is self-refuting, the formal proof
+        "commonCounters",        # list of expected pushback
+        "videoScript",           # edge to social atom (tiktok script)
+        "difficulty",            # beginner|intermediate|advanced
+        "fieldTested",           # true if used in actual debate
+        "winRate"                # if tracked — what % of the time this lands
+    ]
+}
+```
+
+### SERIES NODE
+```
+NODE_TYPES["series"] = {
+    "type": "series",
+    "required": [
+        "seriesID",              # gtq|mda|convergence|three-gates|logos-papers|etc
+        "seriesName",            # human-readable full name
+        "articleOrder"           # ordered list of edges to article atoms
+    ],
+    "optional": [
+        "entryPoint",            # edge to the article new readers should start at
+        "description",
+        "totalReadingTime",      # estimated minutes for the whole series
+        "prerequisiteSeries",    # edge to series atom — "read MDA before GTQ"
+        "status",                # in_progress|complete|paused
+        "seriesThesis"           # one sentence — what the whole series argues
+    ]
+}
+```
+
+---
+
+## UPDATED ROUTE PROFILES
+
+### Route E: Public Ministry
+```
+claim → translation → article → faq + glossary + social + seo → testimony
+```
+No paper required. Claims still carry their burden.
+
+### Route F: Debate Arsenal
+```
+claim → objection → debate_move → social (tiktok scripts) → testimony
+```
+The Three Gates is the prototype for this route.
+
+### Route G: Series Publication
+```
+series → article [] → seo [] → social [] → breadcrumbs auto-generated
+```
+Series atom defines order. Breadcrumbs render from the graph.
+
+---
+
+## BREADCRUMB GENERATION (not a separate atom)
+
+Breadcrumbs are COMPUTED from existing atoms, not authored:
+
+1. Find the current article atom
+2. Read its seriesID
+3. Find the series atom with that seriesID
+4. Read articleOrder to get prev/next
+5. Render: [Series Name] > [Article N of M] | ← Prev | Next →
+
+Additionally:
+- upwardLink: if article has edge to paper atom, render "Go deeper →"
+- downwardLink: if article has edge to translation atom, render "Simpler version →"
+- parallelLinks: if claim has multiple translation atoms at different readingLevels, render reading level switcher
+
+All computed. No authoring required.
+ARCHIVED v2.0 SPECS END -->

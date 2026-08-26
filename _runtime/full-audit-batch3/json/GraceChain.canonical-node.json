@@ -1,0 +1,73 @@
+{
+  "source_id": "GraceChain",
+  "title": "GraceChain.lean",
+  "canonical_node": {
+    "axiom": "The redemption sequence is a function composition chain: Grace -> Faith -> Hope -> Salvation, where Grace must be applied before Faith.",
+    "definitions": [
+      "Faith: a function that maps zero to zero and any non-zero state to one.",
+      "Hope: identity function on the state, representing temporal persistence.",
+      "Salvation: identity function on the state, representing the locked final state.",
+      "Grace: an operator that lifts zero to one, applied before Faith."
+    ],
+    "derivation": [
+      "Define Faith, Hope, Salvation as above.",
+      "Define chain as Salvation(Hope(Faith(state))).",
+      "Theorem salvation_requires_grace: if state = zero, then chain(state) = zero, because Faith(zero)=zero, Hope(zero)=zero, Salvation(zero)=zero.",
+      "Theorem salvation_via_grace: if state = zero, then chain(graceStep(state)) = one, because graceStep(zero)=one, Faith(one)=one, Hope(one)=one, Salvation(one)=one."
+    ],
+    "action": "The system should apply Grace before Faith in any formal or implemented redemption sequence, ensuring the chain produces salvation only when Grace is applied first.",
+    "boundary": [
+      "This does not prove that Grace is necessary in all possible logical systems; it only proves within the defined functions.",
+      "This does not establish the actual existence of Grace or salvation; it is a formal model.",
+      "This does not address the nature of non-zero states beyond their mapping to one."
+    ],
+    "test": [
+      "Check that the Lean file compiles and the two theorems are proven.",
+      "Verify that the definitions of Faith, Hope, Salvation, and graceStep match the stated behavior.",
+      "Confirm that the chain composition is exactly Salvation(Hope(Faith(state))) and that graceStep is applied before Faith."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean4 proof environment",
+      "Definitions of Faith, Hope, Salvation, graceStep"
+    ],
+    "dg2_new_capability": "Formally proves the ordering requirement: Grace must precede Faith for salvation to result from a zero state.",
+    "dg3_preserved_floor": "Preserves the logical consistency of the defined functions and the chain composition.",
+    "dg4_collapse_if_removed": "If removed, the formal proof of the ordering requirement is lost, leaving the sequence as an unverified assertion.",
+    "dg5_translation_registers": [
+      "Lean4 theorem statements",
+      "Function definitions",
+      "Proof scripts"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal proof",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "A",
+    "recommended_atom_action": "preserve as formal proof artifact"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The proof is only about the defined functions, not about actual theological reality.",
+      "The theorem 'salvation_via_grace' assumes graceStep is applied; it does not prove that graceStep is always available or effective.",
+      "The proof does not show that Faith is the only possible response to a non-zero signal."
+    ],
+    "kill_conditions": [
+      "If the Lean file does not compile or the theorems are not proven.",
+      "If the definitions are altered such that the theorems no longer hold.",
+      "If the chain composition is changed."
+    ],
+    "lean_target": "Formalize the proof in Lean and verify the theorems."
+  },
+  "plain_summary": "GraceChain.lean is a Lean4 formal proof that the sequence Grace -> Faith -> Hope -> Salvation is ordered: without Grace, the chain from zero yields zero; with Grace applied first, it yields one. It defines simple functions and proves two theorems, establishing the formal ordering requirement.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\GraceChain.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch3\\json\\GraceChain.canonical-node.json"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-181",
+  "nodeID": "tp:axioms/01/AX-181",
+  "claimID": "tp:AXIOMS/META-1",
+  "name": "META-1 - Axiom System Consistency",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "theorem",
+  "statementTechnical": "Axiom System Consistency: The 188-axiom Theophysics system is internally consistent - no axiom contradicts another, no derivation leads to both P and not-P, and the system admits at least one model.",
+  "statementPlain": "Axiom System Consistency: The 188-axiom Theophysics system is internally consistent - no axiom contradicts another, no derivation leads to both P and not-P, and the system admits at least one model.",
+  "mathematicalForm": "—",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [],
+  "tags": [
+    "proof"
+  ],
+  "keywords": [
+    "META-1",
+    "—",
+    "meta-logic; foundations; proof-theory",
+    "MetaClaim"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "### DC-1: Derived Contradiction. ### DC-2: No Model. ### DC-3: Circular Dependency Collapse. ### DC-4: Domain Conflict.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 183
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-181",
+    "oldID": "META-1",
+    "treeLevel": "—",
+    "treeBranch": "—",
+    "questionType": "—",
+    "domain": "meta-logic; foundations; proof-theory",
+    "tier": "—",
+    "newType": "MetaClaim",
+    "logicalForce": "meta-audit target",
+    "formalizableInLean": "partly",
+    "leanKind": "meta-audit target, not assumed",
+    "riskLevel": "high",
+    "kernelRole": "auditRole",
+    "moduleID": "M24",
+    "moduleTitle": "Meta / Closure",
+    "spineRole": "meta_audit",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "TBD",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

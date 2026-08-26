@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-043-law-iv-grace-dynamics",
+  "atom_uid": "sha256:b1b7035d4373c99221b307ff58e5e701ccae4ad5bf8a39126124ee626f74b2d0",
+  "title": "Law IV: Grace Dynamics",
+  "claim": "Law IV: Grace Dynamics names one law rail inside the Master Equation.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "definition",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-010",
+    "tp:axioms/01/AX-139"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "RERUN_OWED",
+  "current_status": "active_candidate",
+  "rerun_status": "RERUN_OWED",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-043-law-iv-grace-dynamics.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-043-law-iv-grace-dynamics.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:38e47f5ee672f9090a6958f4d293e86f3477c26155169ed74746cc88352d9246",
+      "event_uuid": "56ee1170-4022-5908-aad9-1f756b795f78"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-01-043",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-043",
+  "original_node_id": "tp:master-equation/01/ME-01-043",
+  "tags": [
+    "logos",
+    "coherence",
+    "equation"
+  ],
+  "keywords": [
+    "AX-139",
+    "D19.4",
+    "Definition"
+  ],
+  "atom_uuid": "b7be50af-4a34-5f94-85f9-b653a32ee6f3"
+}

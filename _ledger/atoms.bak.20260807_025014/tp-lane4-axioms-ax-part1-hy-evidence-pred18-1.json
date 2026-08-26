@@ -1,0 +1,82 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-hy-evidence-pred18-1",
+  "atom_uid": "sha256:28fb83508eacddea87eaf6a809cbfb9360c6b3a7f03a6adf06fd6ea967546dda",
+  "title": "PRED18.1 — H0 Prediction 2025-2030",
+  "claim": "PRED18.1 — H0 Prediction 2025-2030 is classified in Part 1 as HY_EVIDENCE with decision MOVE_OUT_OF_STRICT_CORE and anchor UNANCHORED_IN_CURRENT_CHAIN.",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "HY_EVIDENCE",
+  "assumptions": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status.",
+    "Unanchored entry cannot be treated as bedrock until a clean dependency path is supplied."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate_unanchored",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row PRED18.1 as HY_EVIDENCE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:bc0510d3dd76e59cf1b74025f2284d221fcba9a8869092cd3541d67d521bd2ad"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for PRED18.1 as HY_EVIDENCE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:38+00:00",
+      "event_uuid": "fc4d5338-d2a1-44e9-9e6c-9e6cf8100ba9",
+      "event_id": "sha256:39e666ffdd0ffbea4253d365ec77dfedaf96020376d93041b237f29bf6aca89a"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for PRED18.1 as HY_EVIDENCE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "92b3e5f6-78cc-4d07-8e7d-82f3ab1b027a",
+      "event_id": "sha256:07786af187175280ac816eaf21e8e07d5e8db25b67d36055c10de3de447731d3"
+    }
+  ],
+  "source_claim_id": "AX_PART1:HY_EVIDENCE:PRED18.1",
+  "glyphs": [
+    "evidence",
+    "prediction"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/evidence.svg",
+    "theophysics_glyphs/svg/prediction.svg"
+  ]
+}

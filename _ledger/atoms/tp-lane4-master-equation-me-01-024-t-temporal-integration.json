@@ -1,0 +1,58 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-01-024-t-temporal-integration",
+  "atom_uid": "sha256:24558ebd79c53fef2025f2003943313475009ddb1a2e8a8de9d33dae9a830715",
+  "title": "T - Temporal Integration",
+  "claim": "Time turns possibility into accumulated consequence.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "definition",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "T in R>0"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-010",
+    "tp:axioms/01/AX-097"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-024-t-temporal-integration.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-01-024-t-temporal-integration.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:313b7a2e23ceb86f6a68b48dd3e8bedd9afaa9591335d952b5f82182496ce3da",
+      "event_uuid": "ec268f94-ff76-55aa-8d1f-9ca44ac7acd0"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-01-024",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-024",
+  "original_node_id": "tp:master-equation/01/ME-01-024",
+  "tags": [
+    "phase-transition"
+  ],
+  "keywords": [
+    "master-equation-factor",
+    "T",
+    "R>0"
+  ],
+  "atom_uuid": "54340973-e14d-5610-9656-76341c21a185"
+}

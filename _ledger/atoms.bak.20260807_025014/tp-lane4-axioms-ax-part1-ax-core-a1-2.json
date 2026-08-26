@@ -1,0 +1,81 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-ax-core-a1-2",
+  "atom_uid": "sha256:36ec35e35c1dbb09fec511485e66c64159a91d066864ff053fb969f4af083787",
+  "title": "A1.2 — Distinction",
+  "claim": "A1.2 — Distinction is classified in Part 1 as AX_CORE with decision KEEP and anchor A1.2 (Distinction).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "AX_CORE",
+  "assumptions": [
+    "A1.2 (Distinction)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "A1.2 (Distinction)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row A1.2 as AX_CORE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:7952fe74d3ee84e061f3d9084144f66822e47ac1d0a6c60bd79afa3561a94f66"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A1.2 as AX_CORE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:36+00:00",
+      "event_uuid": "2f72a814-268a-483c-a478-a4c3fab31473",
+      "event_id": "sha256:5ec8ed7032ce1c91787629cbf3ab56db39da4b367d100111239dbba526747a32"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A1.2 as AX_CORE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "bda5577a-3ae2-4e4f-9fc9-a0e02d982453",
+      "event_id": "sha256:4ded85eabd9eceaf8ecd703cde6ca7224e4d7a8bdff9561be6f6c4905d572fe7"
+    }
+  ],
+  "source_claim_id": "AX_PART1:AX_CORE:A1.2",
+  "glyphs": [
+    "axiom",
+    "truth"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/axiom.svg",
+    "theophysics_glyphs/svg/truth.svg"
+  ]
+}

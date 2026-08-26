@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-159-gentleness",
+  "atom_uid": "sha256:9a34d7748494235291a2b9bab44c22adabc4f33c5f7a55195d26406d362277a6",
+  "title": "AX-159 — Gentleness",
+  "claim": "Gentleness = calibration of force to necessity; minimal force for coherent outcome.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "F_Gentleness = min(force) s.t. outcome = coherent"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-151"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show gentleness without force optimization",
+    "Demonstrate optimal force without gentleness"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-159-gentleness.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-159-gentleness.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:00b7273927c6b688680bbc7cb42517ba0dbf083a1e479cfc871074f94a162f23",
+      "event_uuid": "bca48643-6d48-5177-8c2f-cd4634181497"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:3ba0b76518a5f7531262ce9ebf9f3ffe2ac6372457405aada393752c21e3baa0",
+      "event_uuid": "01df38af-80bd-5bc0-9199-012ca98d025a"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/F8",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-159",
+  "original_node_id": "tp:axioms/01/AX-159",
+  "atom_uuid": "a0376615-22a1-5009-adaa-fdb85766ab3e"
+}

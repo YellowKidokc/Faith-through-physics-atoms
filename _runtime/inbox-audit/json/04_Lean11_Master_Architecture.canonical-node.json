@@ -1,0 +1,79 @@
+{
+  "source_id": "04_Lean11_Master_Architecture",
+  "title": "Lean 11 Master Architecture",
+  "canonical_node": {
+    "axiom": "The corpus must be represented as a complete, honest, and buildable Lean 4 architecture that matches the intended whole, not merely the currently compiled subset.",
+    "definitions": [
+      "Canonical stack: the intended 11-part architecture (Foundational Core, Stage and Sequence Discipline, Mapping Layer, Bridge Matrix, Field Controls and Invariance, Score and Constraint Discipline, Polarity and Fracture Mechanics, Memory Persistence and Conversion, Christ/Mediation/Justice Operators, Chi Evaluation and Adversarial Testing, Isomorphism and Consilience Layer).",
+      "Compiled packet: the currently compiling set of Lean files (Theophysics_Core.lean, Final_Lean4_From_Excel.lean, Theophysics_Coherence.lean, Theophysics_ChiEvaluator.lean, Theophysics_Fall.lean, Theophysics_Fracture.lean, Theophysics_Adversarial.lean).",
+      "Gap set: modules present in workbook/architecture but not yet in the active root package.",
+      "Status vocabulary: COMPILED_NOW, SCaffolded, EXCEL_ONLY, NEEDS_DEFINITION_EXPANSION, BLOCKED_BY_IMPORTS, DEMOTED_TO_TEACHING_LAYER, RETIRED; roll-up: LEAN_PROVEN, STRUCTURALLY_MAPPED, THEOLOGICALLY_IDENTIFIED."
+    ],
+    "derivation": [
+      "The current repo compiles as a seven-file staged packet.",
+      "The Excel workbook is larger than the compiled repo and serves as a map of the broader architecture.",
+      "To carry the whole framework honestly, the repo must expand to an eleven-part canonical architecture.",
+      "The gap set lists modules that need to be promoted into the root package.",
+      "Build doctrine requires keeping one small compiling package, expanding definitions before rhetoric, promoting modules one at a time, and recording status after each promotion.",
+      "The recommended build order lists the sequence of promotions to reach the full eleven-part chain."
+    ],
+    "action": "Maintain a single compiling Lean package; expand definitions before rhetoric; promote modules from the gap set into the root package one at a time; after each promotion run 'lake build', record warnings, theorem coverage, and what remains Excel-only; never let workbook and repo drift silently; use the status vocabulary to mark every theorem or claim.",
+    "boundary": [
+      "This document does not itself prove any theorem; it defines an architecture and a build discipline.",
+      "It does not claim that the eleven-part architecture is already compiled; it identifies the gap set.",
+      "It does not authorize using the word 'derived' where the real status is identification.",
+      "It does not specify the exact Lean code for each module; it specifies the intended content and role."
+    ],
+    "test": [
+      "Check that the repo always has at least one small compiling package.",
+      "Check that after each promotion, 'lake build' succeeds and warnings are recorded.",
+      "Check that every theorem or claim in the workbook is marked with one of the status vocabulary terms.",
+      "Check that the repo does not use 'derived' lazily where the real status is identification.",
+      "Check that the workbook and repo do not drift silently; i.e., the gap set is tracked and reduced."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Theophysics_Core.lean (foundational vocabulary)",
+      "Existing compiled packet (Theophysics_Core, Final_Lean4_From_Excel, Theophysics_Coherence, Theophysics_ChiEvaluator, Theophysics_Fall, Theophysics_Fracture, Theophysics_Adversarial)",
+      "Excel workbook as architecture map"
+    ],
+    "dg2_new_capability": "Defines a target end-to-end Lean 4 architecture (11 parts) and a build discipline to expand the current seven-file packet into that whole, including a status vocabulary and promotion order.",
+    "dg3_preserved_floor": "The existing seven-file compiling packet remains the current executable subset and must be kept green; the architecture does not discard it.",
+    "dg4_collapse_if_removed": "If this architecture document is removed, the repo may continue to compile but the target end-to-end shape and the discipline for expanding to the full corpus would be lost, risking silent drift between workbook and repo.",
+    "dg5_translation_registers": [
+      "Status vocabulary: COMPILED_NOW, SCaffolded, EXCEL_ONLY, NEEDS_DEFINITION_EXPANSION, BLOCKED_BY_IMPORTS, DEMOTED_TO_TEACHING_LAYER, RETIRED",
+      "Roll-up statuses: LEAN_PROVEN, STRUCTURALLY_MAPPED, THEOLOGICALLY_IDENTIFIED",
+      "Build doctrine steps: keep compiling package, expand definitions, promote modules, run lake build, record warnings/coverage/Excel-only"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Architecture specification and build discipline",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Adopt as a planning and governance document; do not treat as a formal proof artifact."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document describes an intended architecture, not a proven one; treating it as a proof of the full chain would be overstatement.",
+      "The phrase 'canonical stack' might imply the modules are already formalized; they are not all compiled.",
+      "The build order is a recommendation, not a verified sequence; promoting modules may encounter unforeseen issues."
+    ],
+    "kill_conditions": [
+      "If the repo is allowed to drift from the workbook without tracking, the architecture becomes aspirational rather than operational.",
+      "If the status vocabulary is not enforced, the honesty discipline fails.",
+      "If the build is not kept green, the foundation collapses."
+    ],
+    "lean_target": "Formalize the 11-part architecture as a set of Lean modules with clear dependencies and statuses; ensure each module compiles and the whole chain is buildable."
+  },
+  "plain_summary": "This document outlines a target 11-part Lean 4 architecture for the Faith Thru Physics corpus, expanding the current seven-file compiling packet. It defines the intended modules, a build doctrine, and a status vocabulary to track progress. It is a planning document, not a proof artifact; its value is in guiding the expansion and maintaining honesty about what is proven versus mapped versus identified.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\04_Lean11_Master_Architecture.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\04_Lean11_Master_Architecture.canonical-node.json"
+  }
+}

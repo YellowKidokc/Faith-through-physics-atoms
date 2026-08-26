@@ -1,0 +1,78 @@
+{
+  "source_id": "R06_Coherence",
+  "title": "Coherence Restoration",
+  "canonical_node": {
+    "axiom": "Redemption restores coherence with chi_God, setting the redeemed on a trajectory toward C_max, completed by glorification.",
+    "definitions": [
+      "C[_S, chi_God]: coherence between soul state _S and God's pattern chi_God.",
+      "C_max: maximal coherence with God, the state of heaven.",
+      ": orientation parameter; =+1 for redeemed, =-1 for unredeemed.",
+      "Glorification: the event completing restoration, resulting in C = C_max."
+    ],
+    "derivation": [
+      "Sin causes decoherence (R01).",
+      "Grace restores coherence (R03).",
+      "Redemption flips  from -1 to +1.",
+      "=+1 implies dC/dt > 0, trajectory toward C_max.",
+      "Glorification completes the trajectory, achieving C = C_max.",
+      "Heaven is the eternal state of C_max; hell is the asymptotic approach to C=0."
+    ],
+    "action": "The system should model the redeemed soul's trajectory as increasing coherence toward C_max, with glorification as the completion event, and treat heaven and hell as stable attractors determined by .",
+    "boundary": [
+      "Does not specify the mechanism of grace or glorification.",
+      "Does not address the fate of those who never heard the gospel.",
+      "Does not provide empirical evidence for the existence of afterlife.",
+      "Does not quantify the rate of coherence increase."
+    ],
+    "test": [
+      "Check that the trajectory equation dC/dt = f(, , effort) yields dC/dt > 0 for =+1 and dC/dt < 0 for =-1.",
+      "Verify that the model predicts two stable equilibria: C_max and C=0.",
+      "Ensure that the model does not allow post-death switching between attractors."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "R01_Decoherence",
+      "R03_Grace",
+      "F02_Information_Conservation",
+      "H02_Brain_Interface"
+    ],
+    "dg2_new_capability": "Provides a formal trajectory model for eternal destiny based on coherence, linking redemption to a specific final state.",
+    "dg3_preserved_floor": "Preserves the core claim that redemption changes the soul's ultimate state, consistent with traditional Christian eschatology.",
+    "dg4_collapse_if_removed": "Without this axiom, the model lacks a mechanism for how redemption leads to heaven; the trajectory to C_max is undefined.",
+    "dg5_translation_registers": [
+      "theology",
+      "dynamical systems",
+      "information theory"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological_physics",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treats theological claims as physical laws without empirical support.",
+      "Assumes information conservation applies to soul states without justification.",
+      "Equates mathematical attractors with theological destinations without evidence."
+    ],
+    "kill_conditions": [
+      "If information conservation does not apply to _S, the argument against annihilationism fails.",
+      "If consciousness is not preserved after brain death, the no-afterlife argument collapses.",
+      "If personal identity does not require memory continuity, the reincarnation critique is invalid."
+    ],
+    "lean_target": "Theological coherence model with dynamical systems analogy; not a physical theory."
+  },
+  "plain_summary": "This document argues that redemption restores the soul's coherence with God, setting it on a trajectory toward maximal coherence (heaven), completed by glorification. It critiques annihilationism, no-afterlife views, and reincarnation using information conservation and identity arguments. However, the claims are theological and lack empirical verification, so they are not established as physical facts.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\R06_Coherence.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\R06_Coherence.canonical-node.json"
+  }
+}

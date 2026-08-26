@@ -1,0 +1,99 @@
+{
+  "source_id": "WALKTHROUGH",
+  "title": "Walkthrough: What This Lean 4 Repo Shows",
+  "canonical_node": {
+    "axiom": "Formal definitions in Lean 4 determine structural consequences; a zero channel collapses the product; restoration requires openness, input, cost, and memory; coherence requires the right kind of order, not mere control.",
+    "definitions": [
+      "chi = G * M * E * S * T * K * R * Q * F * C (multiplicative product)",
+      "Effective channel score = vPos * (100 - vNeg)",
+      "Full coherence: requires the right kind of order, not mere control",
+      "Passive entropy: not the same as active, chosen, relational discoherence",
+      "Restoration: requires open boundary, external input, paid repair cost, information/memory preservation",
+      "Fracture: structured mismatch: global coherence plus local rupture plus scar signature",
+      "Fall: structural spine with defined conditions; separation alone is not the Fall",
+      "Signature: factor has domain, mechanism, tendency",
+      "Fruit/anti-Fruit: lived output of a claim",
+      "Hit-rate: honest denominator; 8/10 is 80%, not 90%"
+    ],
+    "derivation": [
+      "Lean checks that if any effective channel is zero, the full product collapses.",
+      "Lean proves states C0 and C1 are distinct and transition is one-way.",
+      "Lean rejects label swaps by checking signatures.",
+      "Lean checks that coercive order is not full coherence.",
+      "Lean checks that passive entropy is not active evil.",
+      "Lean checks that restoration requires openness, input, cost, and memory.",
+      "Lean checks that a random gap is not a structured fracture.",
+      "Lean checks that separation alone is not the Fall.",
+      "Lean checks that high-signal deception is rejected.",
+      "Lean checks that inadequate substitutes for Trinity structure are rejected.",
+      "Lean checks that justice/mercy failure modes are rejected.",
+      "Lean checks that memory/identity requirements are enforced.",
+      "Lean checks hit-rate honesty."
+    ],
+    "action": "The system should use Lean 4 to verify formal definitions and reject false positives, label swaps, coercion, hidden denominators, and malformed structural claims.",
+    "boundary": [
+      "Does not prove Christianity, Trinity, historical resurrection, moral theology, physics, or metaphysics in full real-world content.",
+      "Does not prove the Trinity from Maxwell's equations.",
+      "Does not prove grace as a person.",
+      "Chi evaluator is not a truth oracle.",
+      "Empirical and historical claims require evidence, interpretation, and public review."
+    ],
+    "test": [
+      "Run `lake build`; success means Lean accepted definitions and proofs.",
+      "Adversarial file compiles including intentional rejection checks.",
+      "Check that zero channel collapses chi.",
+      "Check that coercive order is rejected as full coherence.",
+      "Check that passive entropy is not active evil.",
+      "Check that restoration requires openness, input, cost, memory.",
+      "Check that random gap is not fracture.",
+      "Check that separation alone is not Fall.",
+      "Check that high-signal deception is rejected.",
+      "Check that modalism, static single-field, arbitrary three-part are rejected.",
+      "Check that 8/10 is not reported as 90%."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 theorem prover",
+      "Formal definitions of chi structure, coupling states, signatures, coherence, restoration, fracture, fall, evaluator, justice/mercy, memory, hit-rate"
+    ],
+    "dg2_new_capability": "Provides a formal, checkable framework that rejects false positives and malformed structural claims in theological/physics analogies.",
+    "dg3_preserved_floor": "Preserves the ability to reason about structural consequences from definitions without claiming full real-world verification.",
+    "dg4_collapse_if_removed": "Without the formal definitions and Lean checks, the project reduces to an informal essay with no teeth.",
+    "dg5_translation_registers": [
+      "Theological: coherence, fall, grace, justice, mercy, restoration",
+      "Thermodynamic: entropy, openness, cost, memory",
+      "Mathematical: product collapse, signatures, structural gates"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal verification of structural consequences",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as formal structural framework; do not extend to real-world claims without additional evidence"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting formal rejection of inadequate substitutes as proof of the real theological structure.",
+      "Treating the chi evaluator as a truth oracle.",
+      "Assuming Lean verifies the definitions capture reality.",
+      "Overgeneralizing from formal model to empirical/historical claims."
+    ],
+    "kill_conditions": [
+      "If Lean build fails, the formal claims are not verified.",
+      "If definitions are changed, the verified consequences may no longer hold.",
+      "If the adversarial file does not compile, the rejection checks are not verified."
+    ],
+    "lean_target": "Formalize the structural gates and rejection checks in Lean 4, ensuring the build succeeds and the adversarial file compiles."
+  },
+  "plain_summary": "This document explains a Lean 4 repository that formalizes structural claims about coherence, restoration, fracture, fall, and related concepts. It emphasizes that Lean verifies formal consequences from definitions, not real-world truth. The repo includes positive theorems and an adversarial file that rejects false positives. The key idea is that a zero channel collapses the product, and restoration requires openness, input, cost, and memory. The document clearly states boundaries: it does not prove theology or physics, but only checks formal structure.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\WALKTHROUGH.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\WALKTHROUGH.canonical-node.json"
+  }
+}

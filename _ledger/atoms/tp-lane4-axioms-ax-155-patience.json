@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-155-patience",
+  "atom_uid": "sha256:563566020ce2e5ce741889be43a4c9a14172661d53b487345193eecac8b6e3eb",
+  "title": "AX-155 — Patience",
+  "claim": "Patience = temporal horizon of coherent planning; delayed gratification capacity.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "bridge-spiritual",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "F_Patience = temporal_horizon(coherent_planning)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-151"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show patience without coherence",
+    "Demonstrate impulsive behavior with high coherence"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-155-patience.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-155-patience.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:6d27a98f21544ff8abbe43d7dcdf4a833c53ebeeeddc82339c380fe559ff7fe7",
+      "event_uuid": "d0798ef3-2443-5881-95eb-50a0faa26fe5"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: bridge-spiritual.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:0d4b27a361d39204d71f2285aee354b06e2dda9df566c4d4129fa85291f18d02",
+      "event_uuid": "051e6f6b-56d3-5f45-87cd-b02a836d97af"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/F4",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-155",
+  "original_node_id": "tp:axioms/01/AX-155",
+  "atom_uuid": "a24e1abe-5527-5529-9932-003a33ca8f0a"
+}

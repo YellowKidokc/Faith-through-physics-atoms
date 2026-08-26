@@ -1,0 +1,69 @@
+{
+  "source_id": "constraint_model",
+  "title": "constraint_model.ipynb",
+  "canonical_node": {
+    "axiom": "A strategy is admissible if and only if it satisfies all six constraint functions: justice, mercy, freewill, love, entropy, and holiness.",
+    "definitions": [
+      "Constraint function: a function taking a strategy parameter vector and returning True/False based on threshold conditions.",
+      "Strategy parameter vector: a 10-dimensional vector with components payment_magnitude, cost_to_sinner, coercion_level, relational_access, negentropy_input, corruption_addressed, voluntary_by_redeemer, scope, permanence, source_is_external.",
+      "All-passed boolean: a boolean indicating whether all six constraint functions return True for a given parameter vector."
+    ],
+    "derivation": [
+      "Define six constraint functions with threshold conditions on the parameter vector.",
+      "Evaluate a strategy by applying all six functions and checking if all return True.",
+      "Use grid search and random search over the parameter space to find configurations that satisfy all constraints.",
+      "The notebook claims that exhaustive search finds no solution except the cross configuration."
+    ],
+    "action": "Given a strategy parameter vector, evaluate all six constraint functions and return the count of satisfied constraints and whether all are satisfied. Use optimization to search for parameter configurations that satisfy all constraints.",
+    "boundary": [
+      "The notebook defines the constraint model and its evaluation framework; it does not apply the model to specific biblical strategies.",
+      "The constraint functions are deliberately simple and do not include hidden optimization or parameter tuning.",
+      "The notebook does not prove the uniqueness of the cross configuration; it claims verification by exhaustive search."
+    ],
+    "test": [
+      "For any parameter vector, the evaluation function returns the correct count and all-passed boolean.",
+      "The optimization search covers the specified parameter space and reports all configurations that satisfy all constraints.",
+      "The notebook's claim of uniqueness of the cross configuration is reproducible from the code and search results."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Python runtime with NumPy and Matplotlib (typical Colab environment)",
+      "The constraint functions defined in this notebook"
+    ],
+    "dg2_new_capability": "Provides a reusable constraint satisfaction engine that can evaluate any strategy parameter vector against six constraints and search for admissible configurations.",
+    "dg3_preserved_floor": "Preserves the ability to evaluate strategies against the six constraints in a deterministic and reproducible manner.",
+    "dg4_collapse_if_removed": "Without this notebook, the constraint model would lack a concrete implementation and the basis for test09 and free_body_model would be undefined.",
+    "dg5_translation_registers": [
+      "Python functions: justice_constraint, mercy_constraint, freewill_constraint, love_constraint, entropy_constraint, holiness_constraint",
+      "Parameter vector schema: 10 parameters as listed"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodology",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as implementation artifact"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The claim that exhaustive search verifies uniqueness of the cross configuration may overstate if the search is not truly exhaustive over the continuous parameter space.",
+      "The constraint functions are described as simple but their thresholds are not specified in the document, making verification difficult."
+    ],
+    "kill_conditions": [
+      "If the constraint functions are not actually implemented as described.",
+      "If the optimization search does not cover the full parameter space as claimed."
+    ],
+    "lean_target": "Formalize the constraint functions and the search procedure in Lean to verify the uniqueness claim."
+  },
+  "plain_summary": "This notebook defines a constraint satisfaction engine with six constraint functions over a 10-parameter strategy space. It evaluates strategies and searches for admissible configurations, claiming that only the cross configuration satisfies all constraints. It is a precursor to formal tests and is implemented in Python.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\constraint_model.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\constraint_model.canonical-node.json"
+  }
+}

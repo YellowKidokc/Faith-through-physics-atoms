@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-046-collapse",
+  "atom_uid": "sha256:5199593c58afdc2d3f7dfd514ac66d5e657b2b7ca395c33fed8804cc2f508159",
+  "title": "AX-046 — Collapse",
+  "claim": "Observation induces transition from superposition to definite eigenstate.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "dΨ/dt = -(i/ℏ)ĤΨ - γ(χ)P̂Ψ"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-045"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show collapse doesn't occur (MWI — all branches real)",
+    "Demonstrate decoherence fully explains apparent collapse without actual state reduction",
+    "Show objective collapse occurs without observers"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-046-collapse.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-046-collapse.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:7b16183c5bed491704a5c6b34606dc372b9d590a2f2dd72234eb9c288ebd4fbe",
+      "event_uuid": "d9c793a2-6ea0-5190-90d7-7982b208c57c"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:08871aa26f513ebd444339fbb2979ad7f5a63c92da3e486dcc081d1b1d396107",
+      "event_uuid": "cd537d3a-b886-5444-b637-04cdba88279c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A6.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-046",
+  "original_node_id": "tp:axioms/01/AX-046",
+  "atom_uuid": "c84be65a-283b-5334-b1f1-c8bfdac1dad3"
+}

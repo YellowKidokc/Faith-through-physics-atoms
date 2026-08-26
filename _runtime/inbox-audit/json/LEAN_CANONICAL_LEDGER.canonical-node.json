@@ -1,0 +1,76 @@
+{
+  "source_id": "LEAN_CANONICAL_LEDGER",
+  "title": "Lean Canonical Ledger Summary",
+  "canonical_node": {
+    "axiom": "Each unique theorem or declaration name in the Lean scan has exactly one canonical owner, and the public proof count must derive only from canonical theorems that compile.",
+    "definitions": [
+      "canonical_theorem_count_pending_compile: number of unique theorem names that are not scaffolding and not low-content true, pending compile verification.",
+      "scaffolding_excluded: declarations marked as SCAFFOLDING_NOT_PUBLIC_COUNT, not counted as proofs.",
+      "low_content_true_excluded: declarations marked as LOW_CONTENT_TRUE_NOT_PUBLIC_COUNT, not counted as proofs.",
+      "proof_strength: classification of proof by strength, e.g., TRIVIAL_TRUE, SIMPLIFICATION, DEFINITIONAL_RFL, WRAPPER_OR_IMPORTED, SUBSTANTIVE_OR_CASE_PROOF, FINITE_DECIDABLE."
+    ],
+    "derivation": [
+      "Scan 47 Lean files and collect all declaration instances.",
+      "Deduplicate by declaration name to obtain unique names.",
+      "Classify each unique name by kind and proof strength.",
+      "Exclude scaffolding and low-content true declarations from public proof count.",
+      "Compute canonical_theorem_count_pending_compile as the remaining unique theorem count.",
+      "Note that compile status is pending; no Lean build was run in this pass."
+    ],
+    "action": "Use canonical_theorem_count_pending_compile as the only public proof count, and only after the relevant canonical roots compile.",
+    "boundary": [
+      "Does not claim any theorem is proven; compile status is pending.",
+      "Does not publish raw declaration counts as proof counts.",
+      "Does not include scaffolding or low-content true declarations in the public proof count."
+    ],
+    "test": [
+      "Check that the public proof count equals canonical_theorem_count_pending_compile.",
+      "Check that no scaffolding or low-content true declarations are included in the public proof count.",
+      "Check that compile status is reported as pending when no Lean build has been run."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Full 47-file Lean scan results",
+      "Declaration name deduplication logic",
+      "Classification of proof strength and public count buckets"
+    ],
+    "dg2_new_capability": "Provides a deduplicated canonical ledger that prevents double-counting and establishes a disciplined public proof count.",
+    "dg3_preserved_floor": "Preserves the distinction between raw declaration instances and unique canonical theorems, and maintains the exclusion of scaffolding and low-content true declarations.",
+    "dg4_collapse_if_removed": "Without this ledger, the public proof count would be ambiguous and could incorrectly include scaffolding or low-content true declarations, leading to overcounting.",
+    "dg5_translation_registers": [
+      "canonical_theorem_count_pending_compile",
+      "scaffolding_excluded",
+      "low_content_true_excluded",
+      "proof_strength_counts_unique_names"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "meta-claim about ledger discipline",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "record as canonical ledger metadata; do not treat as proof of any theorem"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that canonical_theorem_count_pending_compile represents proven theorems when compile is pending.",
+      "Publishing raw declaration counts as proof counts.",
+      "Including scaffolding or low-content true declarations in public proof counts."
+    ],
+    "kill_conditions": [
+      "If a canonical theorem fails to compile, the count must be reduced.",
+      "If deduplication is incorrect, the ledger is invalid."
+    ],
+    "lean_target": "Formalize the ledger as a data structure in Lean, with functions to compute canonical counts and enforce exclusions."
+  },
+  "plain_summary": "This document is a meta-ledger that deduplicates Lean declarations and sets rules for what counts as a public proof. It does not prove any theorems; it only organizes the scan results and warns that compile status is pending.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\LEAN_CANONICAL_LEDGER.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\LEAN_CANONICAL_LEDGER.canonical-node.json"
+  }
+}

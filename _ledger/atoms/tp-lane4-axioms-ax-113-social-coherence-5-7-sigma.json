@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-113-social-coherence-5-7-sigma",
+  "atom_uid": "sha256:f8a7d09639a1a75ad6892180cb893cd668ad9fa9156d2ad3ad3990598faa5011",
+  "title": "AX-113 — Social Coherence 5.7 Sigma",
+  "claim": "TM/group prayer studies: 5.7σ reduction in social violence.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "5.7σ social violence reduction"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-036"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Replicate with pre-registered protocol and null result",
+    "Show confounding variables",
+    "Demonstrate selection bias in study design"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-113-social-coherence-5-7-sigma.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-113-social-coherence-5-7-sigma.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:b6b85a0c1e3efd7b1b3ab25cc8e3a0273708d7e39cc08b5b365bb1bc2ceb1bbb",
+      "event_uuid": "f786ea15-e46e-580a-be2f-ebd02d87c7c0"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:5ffd09e433752c37cf138976ef1c0a85ffc34ed958da59a3eb23bd48a05ac601",
+      "event_uuid": "56039641-f2d1-5b2d-92ae-06c71d707541"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/EV15.4",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-113",
+  "original_node_id": "tp:axioms/01/AX-113",
+  "atom_uuid": "cc3fe83b-5da2-5873-a940-7a445c3310a4"
+}

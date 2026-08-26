@@ -1,0 +1,78 @@
+{
+  "source_id": "LEAN_AUDIT_NOTES",
+  "title": "Lean Audit Notes  -  Theophysics Master Equation",
+  "canonical_node": {
+    "axiom": "A file is production-grade only if it contains no sorry, no unmarked axiom, no unsafe, no Float equality proofs, no theorem that merely restates the hypothesis, and no theological conclusion hidden inside a definition.",
+    "definitions": [
+      "Production-grade: a Lean file that compiles without sorry, unmarked axiom, unsafe, Float equality proofs, tautological theorems, or hidden theological conclusions.",
+      "Assumption layer: an explicit declaration that an axiom is assumed rather than proven.",
+      "Formal architecture: the set of theorems proven in TheophysicsProductionKernel.lean, including product annihilation, nonzero product, zero-preserving coherence operator non-rescue, grace idempotence and non-invertibility, and LawIso requirement."
+    ],
+    "derivation": [
+      "The uploaded files contain two categories: real Lean proof layer and placeholder/exploratory layer.",
+      "Red flags: SystemRegistry.lean contains sorry; NoetherCommandments.lean contains axiom frame_lock_decay; Thermodynamics.lean defines entropy and decay as placeholders; older Float-based files have Float equality problems and sorry.",
+      "Therefore, those files are not production-proof-ready.",
+      "The production kernel proves only the formal architecture, not the truth of the ten laws, the isomorphism of spiritual/physical pairs, the physical validity of the Lagrangian, the applicability of Noether's theorem, or the formal derivation of thermodynamic decay."
+    ],
+    "action": "Run the Lean compiler on TheophysicsProductionKernel.lean and search for sorry, axiom, unsafe, and admit in all .lean files; then report the results.",
+    "boundary": [
+      "This document does not prove any theological or physical claim.",
+      "It does not establish that the ten named laws are true descriptions of reality.",
+      "It does not establish that any spiritual/physical pair is isomorphic.",
+      "It does not establish that the Lagrangian is physically valid.",
+      "It does not establish that Noether's theorem applies to the commandments.",
+      "It does not establish that thermodynamic decay has been formally derived."
+    ],
+    "test": [
+      "Run 'lean TheophysicsProductionKernel.lean' and check for successful compilation.",
+      "Run 'findstr /S /N /I \"sorry axiom unsafe admit\" *.lean' and verify that no production-grade file contains these tokens.",
+      "Inspect each theorem to ensure it does not merely restate its hypothesis.",
+      "Inspect each definition to ensure no theological conclusion is hidden inside it."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean theorem prover",
+      "TheophysicsProductionKernel.lean",
+      "The uploaded .lean files (SystemRegistry.lean, NoetherCommandments.lean, Thermodynamics.lean, etc.)"
+    ],
+    "dg2_new_capability": "Provides a production rule for classifying Lean files as production-grade or not, and identifies the exact scope of what the production kernel proves.",
+    "dg3_preserved_floor": "Preserves the distinction between formal proof and unproven assumptions, preventing overstatement of verified status.",
+    "dg4_collapse_if_removed": "If this node is removed, the audit findings and production rule are lost, leading to potential misrepresentation of placeholder files as fully verified.",
+    "dg5_translation_registers": [
+      "Lean proof layer",
+      "Placeholder/exploratory layer",
+      "Production-grade rule",
+      "Formal architecture"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "audit_notes",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as audit metadata; do not treat as proof of any theological or physical claim"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Misinterpreting the audit notes as proof that the ten laws are true.",
+      "Treating the production kernel's formal architecture as evidence for physical validity.",
+      "Assuming that the absence of sorry/axiom in a file implies the truth of its statements."
+    ],
+    "kill_conditions": [
+      "If the production kernel fails to compile.",
+      "If the search for sorry/axiom/unsafe/admit finds tokens in files claimed to be production-grade.",
+      "If any theorem in the production kernel is found to restate its hypothesis."
+    ],
+    "lean_target": "Formalize the production rule as a Lean predicate that checks a file for forbidden tokens and tautological theorems."
+  },
+  "plain_summary": "This document is an audit note that distinguishes between real Lean proofs and placeholder files. It sets a production rule requiring no sorry, unmarked axioms, unsafe, Float equality proofs, tautological theorems, or hidden theological conclusions. It clarifies that the production kernel only proves formal architecture, not the truth of the ten laws or any physical validity. The recommended action is to run Lean and search for forbidden tokens.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\LEAN_AUDIT_NOTES.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\LEAN_AUDIT_NOTES.canonical-node.json"
+  }
+}

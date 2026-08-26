@@ -1,0 +1,83 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-ax-scaffold-d12-2",
+  "atom_uid": "sha256:86d7b62cc7abc6c773688a0cd81e9587c61aef5611026af8f70482eba5ff0aed",
+  "title": "D12.2 — Fragmentation Attractor",
+  "claim": "D12.2 — Fragmentation Attractor is classified in Part 1 as AX_SCAFFOLD with decision KEEP and anchor BC6 (Infinite Energy Source).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "AX_SCAFFOLD",
+  "assumptions": [
+    "BC6 (Infinite Energy Source)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "BC6 (Infinite Energy Source)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row D12.2 as AX_SCAFFOLD.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:107c2c22048daac54eed4cc7a5f2d11e37c15c83620bee17d50c3dd5d5d3b76a",
+      "event_uuid": "1f8ef31c-1ba2-5c0e-a940-cbd6b73e92c1"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for D12.2 as AX_SCAFFOLD.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:37+00:00",
+      "event_uuid": "5f6d0bc4-fcc1-4c8e-bc4d-5b8c42b48846",
+      "event_id": "sha256:6508d8a1b1f0d165f3a5a664e7a1ddd38507ec7eed6372433342ef56af62aa38"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for D12.2 as AX_SCAFFOLD.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "432fb452-40c4-4755-ae4b-d9080b32c0ae",
+      "event_id": "sha256:efbdaf854ad981840d843b15ab4b42721d42d7465259b9033a7ee833e837f740"
+    }
+  ],
+  "source_claim_id": "AX_PART1:AX_SCAFFOLD:D12.2",
+  "glyphs": [
+    "definition",
+    "axiom"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/definition.svg",
+    "theophysics_glyphs/svg/axiom.svg"
+  ],
+  "atom_uuid": "c68e9195-2cf4-5ff7-be4f-aaa922b68247"
+}

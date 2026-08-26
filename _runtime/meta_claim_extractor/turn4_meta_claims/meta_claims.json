@@ -1,0 +1,1864 @@
+[
+  {
+    "work_id": "W4.1",
+    "title": "The Trinity (canonical, T-02)",
+    "turn": "TURN 4 - GOD DEEPER",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\00_START_HERE_DOORWAY_METHOD\\CODEX_BLUE_WORKING_LANE\\sources\\parallel-start\\T-02-the-trinity-canonical.html",
+    "overall_status": "reviewed",
+    "summary": "This work presents the Trinity as the root axiom and derives the four debts (existence, distinction, relation, orientation) as absolved in God. It includes formal claims about a Lean-verified quaternion EM/Trinity isomorphism and a proposed truth operator. The document is largely theological and philosophical, with some physics bridges that are marked as open or analogical. The main risks are overclaiming the physics connections and treating theological assertions as formal derivations.",
+    "claims": [
+      {
+        "claim_id": "W4.1-C001",
+        "claim_text": "Before anything is assumed, Someone is: the Trinity is the self-sufficient ground of all reality.",
+        "defense_class": "ROOT",
+        "claim_level": "theological",
+        "support": "Before there was time... there was love. A Father, a Son, and the Spirit between them—one being, three persons.",
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "Root commitment; not derivable."
+        ],
+        "required_concession": "This is a declared starting premise, not a conclusion.",
+        "recommended_action": "keep",
+        "confidence": 1.0
+      },
+      {
+        "claim_id": "W4.1-C002",
+        "claim_text": "The Trinity is one being, three persons, with real distinction and mutual indwelling.",
+        "defense_class": "AXIOM",
+        "claim_level": "theological",
+        "support": "One being, three distinct centers of consciousness, love, and will.",
+        "dependencies": [
+          "W4.1-C001"
+        ],
+        "risks": [
+          "Theological axiom; not formally proven."
+        ],
+        "required_concession": "This is an assumed theological axiom.",
+        "recommended_action": "keep",
+        "confidence": 1.0
+      },
+      {
+        "claim_id": "W4.1-C003",
+        "claim_text": "The four debts (existence, distinction, relation, orientation) are assumed by every worldview and cannot be derived by any system.",
+        "defense_class": "DERIVATION",
+        "claim_level": "philosophical",
+        "support": "Strip any system down to its floor, and four assumptions are sitting there, used by everyone, derived by no one.",
+        "dependencies": [
+          "Leibniz",
+          "Aristotle",
+          "Hume"
+        ],
+        "risks": [
+          "Overgeneralization; may be contested."
+        ],
+        "required_concession": "This is a philosophical argument, not a formal proof.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.1-C004",
+        "claim_text": "The four debts are absolved in the Trinity: existence as aseity, distinction as persons, relation as perichoresis, orientation as love.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "We hold one axiom—God—and the four dissolve into Him.",
+        "dependencies": [
+          "W4.1-C001",
+          "W4.1-C002",
+          "W4.1-C003"
+        ],
+        "risks": [
+          "Theological mapping; not formal."
+        ],
+        "required_concession": "This is a theological interpretation, not a formal derivation.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.1-C005",
+        "claim_text": "The Trinity is the structural minimum for truth to be fully real, requiring being, expression, and witness.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "A solitary god could not be truth in the full sense—because truth requires expression and witness.",
+        "dependencies": [
+          "W4.1-C002"
+        ],
+        "risks": [
+          "Philosophical claim; not formally proven."
+        ],
+        "required_concession": "This is a theological argument, not a formal proof.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.1-C006",
+        "claim_text": "Truth is a three-mode operator: Truth = (Being) × (Expression) × (Witness).",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "Truth is a three-mode operator that acts on the space of possibilities.",
+        "dependencies": [
+          "W4.1-C005"
+        ],
+        "risks": [
+          "Invented formalism; not mathematically defined."
+        ],
+        "required_concession": "This is a proposed formal analogy, not a proven mathematical identity.",
+        "recommended_action": "demote",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W4.1-C007",
+        "claim_text": "The quaternion EM/Trinity isomorphism is Lean 4 verified with 478 theorems and zero sorry.",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "support": "Quaternion EM / Trinity isomorphism: Lean 4 verified, 478 theorems, zero sorry.",
+        "dependencies": [
+          "Lean 4 proof"
+        ],
+        "risks": [
+          "Formal proof exists but may not be independently reviewed."
+        ],
+        "required_concession": "The formal proof is internal to the project; external verification is pending.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W4.1-C008",
+        "claim_text": "Time is authored, not created.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "Time is something the Trinity does, not a medium they inhabit.",
+        "dependencies": [
+          "W4.1-C001"
+        ],
+        "risks": [
+          "Theological claim; not formally defined."
+        ],
+        "required_concession": "This is a theological assertion, not a physical theory.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.1-C009",
+        "claim_text": "The nine fruits of the Spirit are the character of God Himself, existing eternally in the Trinity.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "The fruits are not a to-do list... They are the character of God Himself.",
+        "dependencies": [
+          "W4.1-C002"
+        ],
+        "risks": [
+          "Theological interpretation; not formally proven."
+        ],
+        "required_concession": "This is a theological claim based on scripture.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.1-C010",
+        "claim_text": "The four debts are the price of admission to thinking at all.",
+        "defense_class": "RHETORIC",
+        "claim_level": "philosophical",
+        "support": "The price of admission to thinking at all.",
+        "dependencies": [
+          "W4.1-C003"
+        ],
+        "risks": [
+          "Rhetorical flourish; not a formal claim."
+        ],
+        "required_concession": "This is a rhetorical statement, not a logical necessity.",
+        "recommended_action": "demote",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.1-C011",
+        "claim_text": "The denial of orientation is an act of orientation.",
+        "defense_class": "CLOSURE",
+        "claim_level": "philosophical",
+        "support": "Anyone who calls any claim false has already assumed the gradient.",
+        "dependencies": [
+          "W4.1-C003"
+        ],
+        "risks": [
+          "Self-referential argument; may be seen as a performative contradiction."
+        ],
+        "required_concession": "This is a self-referential argument; its force depends on the assumption that truth is better than falsehood.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.1-C012",
+        "claim_text": "The Trinity mapping A1=Father, A2=Son, A3=Spirit, A4=Truth is locked.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "Trinity mapping: A1=Father (Existence), A2=Son (Distinction), A3=Spirit (Relation), A4=Truth (Orientation).",
+        "dependencies": [
+          "W4.1-C002"
+        ],
+        "risks": [
+          "Mapping is theological; not formally proven."
+        ],
+        "required_concession": "This mapping is a theological interpretation, not a formal derivation.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.1-C013",
+        "claim_text": "The derivative terms T.1–T.7 are newly derived and have NOT been through adversarial testing.",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "support": "The derivative terms T.1–T.7 are newly derived (July 2026) and have NOT been through adversarial testing at the term level.",
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "None; this is an honest admission."
+        ],
+        "required_concession": "None needed.",
+        "recommended_action": "keep",
+        "confidence": 1.0
+      },
+      {
+        "claim_id": "W4.1-C014",
+        "claim_text": "T.4 (Omniscience) requires a formal bridge from coupling invariant to Shannon mutual information.",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "support": "T.4 (Omniscience): Formal bridge from coupling invariant → Shannon mutual information needed.",
+        "dependencies": [
+          "T.4"
+        ],
+        "risks": [
+          "Open problem; not yet proven."
+        ],
+        "required_concession": "This is an open problem, not a proven claim.",
+        "recommended_action": "keep",
+        "confidence": 1.0
+      },
+      {
+        "claim_id": "W4.1-C015",
+        "claim_text": "T.7 (Love as Ground State) is a structural analogy, not necessarily the same force.",
+        "defense_class": "ADMISSION",
+        "claim_level": "physics",
+        "support": "Same form, but is it the SAME force or structural analogy?",
+        "dependencies": [
+          "T.7"
+        ],
+        "risks": [
+          "Overclaiming if presented as identity."
+        ],
+        "required_concession": "This is an open question; the analogy is not yet established as identity.",
+        "recommended_action": "keep",
+        "confidence": 1.0
+      },
+      {
+        "claim_id": "W4.1-C016",
+        "claim_text": "The n ≥ 4 bound in Watcher is parsimony, not proof.",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "support": "n ≥ 4 bound in Watcher is parsimony, not proof.",
+        "dependencies": [
+          "Watcher"
+        ],
+        "risks": [
+          "None; this is an honest admission."
+        ],
+        "required_concession": "None needed.",
+        "recommended_action": "keep",
+        "confidence": 1.0
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "Truth operator claim (W4.1-C006)",
+        "problem": "The truth operator is presented as a formal product but lacks mathematical definition.",
+        "repair": "Either define the operator rigorously or explicitly label it as a theological analogy."
+      },
+      {
+        "severity": "P2",
+        "target": "Four debts absolved (W4.1-C004)",
+        "problem": "The mapping of the four debts to the Trinity is theological and not formally derived.",
+        "repair": "Add a concession that this is a theological interpretation, not a formal derivation."
+      },
+      {
+        "severity": "P2",
+        "target": "Time authored (W4.1-C008)",
+        "problem": "The claim 'time is authored' is ambiguous and could be misinterpreted as a physical theory.",
+        "repair": "Clarify that this is a theological statement about God's relation to time, not a physical model."
+      }
+    ],
+    "log_notes": [
+      "The work contains a mix of theological axioms, philosophical arguments, and formal claims. The formal claims (Lean verification) are strong but need external review.",
+      "The physics bridges (T.4, T.7) are explicitly open and should not be presented as proven.",
+      "The truth operator is a proposed formalism and should be treated as a hypothesis, not a theorem.",
+      "The document includes a clear boundary section listing what is locked and what is open, which is helpful for meta-analysis."
+    ]
+  },
+  {
+    "work_id": "W4.2",
+    "title": "The Shadow",
+    "turn": "TURN 4 - GOD DEEPER",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\00_START_HERE_DOORWAY_METHOD\\CODEX_BLUE_WORKING_LANE\\sources\\parallel-start\\02-the-shadow.html",
+    "overall_status": "reviewed",
+    "summary": "Working sheet arguing evil is a privation (shadow) not a rival, with explicit open items. Claims are mostly theological/bridge, with clear admissions.",
+    "claims": [
+      {
+        "claim_id": "W4.2-C001",
+        "claim_text": "Evil is not a thing but a privation: a hole where something should be.",
+        "defense_class": "ROOT",
+        "claim_level": "theological",
+        "support": "Evil is a hole where something should be. A shadow where light is blocked.",
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "Ontological status of privation is debated; may be seen as unfalsifiable."
+        ],
+        "required_concession": "This is a framework ruling, not a derived theorem.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.2-C002",
+        "claim_text": "Evil has no source term; it creates nothing and only corrupts what exists.",
+        "defense_class": "AXIOM",
+        "claim_level": "theological",
+        "support": "Evil has no source term. It creates nothing. It sustains nothing.",
+        "dependencies": [
+          "W4.2-C001"
+        ],
+        "risks": [
+          "May be challenged by those who see evil as a positive force."
+        ],
+        "required_concession": "This is a framework ruling, not a derived theorem.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.2-C003",
+        "claim_text": "The shadow analogy: light creates direction, and shadow is the absence of light, not a second source.",
+        "defense_class": "RHETORIC",
+        "claim_level": "story",
+        "support": "The shadow is real. You can measure it. But it has no source.",
+        "dependencies": [
+          "W4.2-C001"
+        ],
+        "risks": [
+          "Analogy may be pressed too far; not a proof."
+        ],
+        "required_concession": "This is an illustration, not an argument.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W4.2-C004",
+        "claim_text": "God does not create darkness; He divides light from it, bounding the pre-existing void.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "God does not create darkness. He divides light from it. (Genesis 1:4)",
+        "dependencies": [
+          "Scripture",
+          "W4.2-C001"
+        ],
+        "risks": [
+          "Exegesis of Genesis 1:4 may be contested."
+        ],
+        "required_concession": "This reading assumes a particular interpretation of Genesis.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.2-C005",
+        "claim_text": "The adversary is a parasite: he creates nothing, only corrupts what exists.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "He creates nothing. He only corrupts. (John 8:44)",
+        "dependencies": [
+          "Scripture",
+          "W4.2-C002"
+        ],
+        "risks": [
+          "Parasite analogy is pedagogical, not ontological."
+        ],
+        "required_concession": "The parasite analogy is pedagogical, not ontological.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.2-C006",
+        "claim_text": "Satan's lie is the only thing he can generate, and it is a distortion of language he did not invent.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "The lie is the only thing he can generate, and even that is just a distortion.",
+        "dependencies": [
+          "W4.2-C005"
+        ],
+        "risks": [
+          "May overstate the nature of lies."
+        ],
+        "required_concession": "This is a theological claim about the nature of evil.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.2-C007",
+        "claim_text": "Satan rules the air, the medium, not the ground or substance.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "He is the prince of the power of the air. (Ephesians 2:2)",
+        "dependencies": [
+          "Scripture"
+        ],
+        "risks": [
+          "Metaphorical interpretation may be disputed."
+        ],
+        "required_concession": "This is a metaphorical reading.",
+        "recommended_action": "keep",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.2-C008",
+        "claim_text": "Satan was created good, then fell through pride.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "Thou wast perfect in thy ways... till iniquity was found in thee. (Ezekiel 28:15)",
+        "dependencies": [
+          "Scripture"
+        ],
+        "risks": [
+          "Interpretation of Ezekiel 28 as referring to Satan is debated."
+        ],
+        "required_concession": "This reading assumes a literal Satan and a particular exegesis.",
+        "recommended_action": "keep",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.2-C009",
+        "claim_text": "The fall of Satan is off our clock because the presence is not a place in time.",
+        "defense_class": "ADMISSION",
+        "claim_level": "theological",
+        "support": "Not dated — this event is off our clock.",
+        "dependencies": [
+          "W4.2-C008"
+        ],
+        "risks": [
+          "May be seen as speculative."
+        ],
+        "required_concession": "This is a speculative claim about the nature of time.",
+        "recommended_action": "keep",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W4.2-C010",
+        "claim_text": "Heaven has no D, no denominator, no drift channel, so Satan is confined to the finite order.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": "Heaven has no D — no denominator, no drift channel.",
+        "dependencies": [
+          "Framework terminology"
+        ],
+        "risks": [
+          "Uses framework jargon without definition; may be opaque."
+        ],
+        "required_concession": "This relies on framework-specific terms not defined in this sheet.",
+        "recommended_action": "fix",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.2-C011",
+        "claim_text": "Satan attacks the signal, not the body or tree, by injecting noise into the command channel.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "He attacks the signal. 'Hath God said' is noise injected.",
+        "dependencies": [
+          "W4.2-C010"
+        ],
+        "risks": [
+          "May be anachronistic use of information theory."
+        ],
+        "required_concession": "This is a metaphorical extension.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.2-C012",
+        "claim_text": "Evil cannot win because it has no source term and depends on God's sustained channels.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "It cannot outlast the light, because it is borrowed light, twisted.",
+        "dependencies": [
+          "W4.2-C002"
+        ],
+        "risks": [
+          "May be seen as overconfident about eschatology."
+        ],
+        "required_concession": "This is a theological hope, not a logical proof.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.2-C013",
+        "claim_text": "God metabolizes evil into good, as proven by the Cross.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "The Cross is the proof. (Acts 2:23)",
+        "dependencies": [
+          "Scripture"
+        ],
+        "risks": [
+          "This is correspondence, not derivation; grade C."
+        ],
+        "required_concession": "This claim is [C]-grade — correspondence, not derivation.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.2-C014",
+        "claim_text": "God does not need evil to create good; He is so sovereign He can use it.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "God does not need evil to create good. That is mastery.",
+        "dependencies": [
+          "W4.2-C013"
+        ],
+        "risks": [
+          "May be seen as theodicy overreach."
+        ],
+        "required_concession": "This is a theological assertion, not a formal proof.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.2-C015",
+        "claim_text": "Contrast is structural; evil is not needed to appreciate good.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": "Contrast is structural; evil is not.",
+        "dependencies": [
+          "W4.2-C001"
+        ],
+        "risks": [
+          "Needs testing against pastoral experience."
+        ],
+        "required_concession": "This reframe needs testing against pastoral experience.",
+        "recommended_action": "keep",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.2-C016",
+        "claim_text": "The shadow is not redeemed; it is outlasted, outspent, and ultimately unnecessary.",
+        "defense_class": "CLOSURE",
+        "claim_level": "theological",
+        "support": "The shadow is not redeemed. It is outlasted, outspent, and ultimately unnecessary.",
+        "dependencies": [
+          "W4.2-C012",
+          "W4.2-C013"
+        ],
+        "risks": [
+          "May be seen as speculative about final state."
+        ],
+        "required_concession": "This is a theological conclusion, not a formal derivation.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "W4.2-C010",
+        "problem": "Uses framework jargon 'D', 'denominator', 'drift channel' without definition in this sheet.",
+        "repair": "Define these terms or link to the framework sheet."
+      },
+      {
+        "severity": "P2",
+        "target": "W4.2-C013",
+        "problem": "Claim 'metabolizes evil' is marked as correspondence, not derivation.",
+        "repair": "Explicitly label as [C]-grade in the claim text."
+      }
+    ],
+    "log_notes": [
+      "Open items explicitly listed: 'no source term' is framework ruling; parasite analogy pedagogical; Job 1:7 assumes literal Satan; Acts 2:23 is C-grade; sun/rain reframe needs pastoral testing.",
+      "No punch list found."
+    ]
+  },
+  {
+    "work_id": "W4.3",
+    "title": "The Cost",
+    "turn": "TURN 4 - GOD DEEPER",
+    "source_path": "D:\\DONT TOUCH HTML\\HTML\\03-the-cost.html",
+    "overall_status": "reviewed",
+    "summary": "This sheet distinguishes structural cost from moral evil, introduces two entropies, and frames the Fall as relational breach. It contains several theological claims and interpretive bridges that need careful handling.",
+    "claims": [
+      {
+        "claim_id": "W4.3-C001",
+        "claim_text": "Every good thing has a price; the burn is not evil but the cost of heat.",
+        "defense_class": "ROOT",
+        "claim_level": "theological",
+        "support": [
+          "A child touches a hot stove and learns a lesson: fire burns.",
+          "The burn is not evil. It is the price of heat."
+        ],
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "May be seen as justifying suffering."
+        ],
+        "required_concession": "This is a foundational premise, not a proof.",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W4.3-C002",
+        "claim_text": "Finitude is the condition under which good things can exist at all.",
+        "defense_class": "ROOT",
+        "claim_level": "theological",
+        "support": [
+          "Finitude is not evil. Finitude is the condition under which good things can exist at all."
+        ],
+        "dependencies": [
+          "W4.3-C001"
+        ],
+        "risks": [
+          "Needs philosophical defense."
+        ],
+        "required_concession": "This is an axiom about creation.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.3-C003",
+        "claim_text": "Cost is structural; evil is directional.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Cost is structural. Evil is directional.",
+          "Cost is the price of finitude. Evil is the refusal of orientation."
+        ],
+        "dependencies": [
+          "W4.3-C001",
+          "W4.3-C002",
+          "W2.2"
+        ],
+        "risks": [
+          "Depends on orientation concept from Sheet 2."
+        ],
+        "required_concession": "This distinction is framework-law.",
+        "recommended_action": "keep",
+        "confidence": 0.85
+      },
+      {
+        "claim_id": "W4.3-C004",
+        "claim_text": "Genesis 1:31 'very good' includes the cost of finitude, not its absence.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "'Very good' — not 'perfectly painless.'",
+          "The world has fire, gravity, entropy, death. These are not flaws."
+        ],
+        "dependencies": [
+          "W4.3-C002"
+        ],
+        "risks": [
+          "Interpretive claim about scripture."
+        ],
+        "required_concession": "This is an interpretation of Genesis 1:31.",
+        "recommended_action": "keep",
+        "confidence": 0.75
+      },
+      {
+        "claim_id": "W4.3-C005",
+        "claim_text": "Structural entropy is the neutral cost of finitude; moral entropy is the directional fracture of will.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Structural entropy: The neutral cost of finitude.",
+          "Moral entropy: The directional fracture of will."
+        ],
+        "dependencies": [
+          "W4.3-C003"
+        ],
+        "risks": [
+          "Needs formalization in Master Equation."
+        ],
+        "required_concession": "This distinction is framework-law but not yet formalized.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.3-C006",
+        "claim_text": "Calling structural entropy 'evil' makes God the author of evil; calling moral entropy 'natural' excuses refusal.",
+        "defense_class": "CLOSURE",
+        "claim_level": "theological",
+        "support": [
+          "The error to avoid: Calling structural entropy 'evil' ... or calling moral entropy 'natural'."
+        ],
+        "dependencies": [
+          "W4.3-C005"
+        ],
+        "risks": [
+          "Polarizing dichotomy."
+        ],
+        "required_concession": "This is a framework-internal closure.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.3-C007",
+        "claim_text": "Before creation, the shadow existed only as possibility, not actuality.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Before creation, the shadow existed only as possibility, not as actuality."
+        ],
+        "dependencies": [
+          "W2.2"
+        ],
+        "risks": [
+          "Speculative about pre-creation state."
+        ],
+        "required_concession": "This is a theological inference.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.3-C008",
+        "claim_text": "God names the darkness but does not create it as an independent thing.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "God names the darkness. He does not create it as an independent thing."
+        ],
+        "dependencies": [
+          "Genesis 1:4-5"
+        ],
+        "risks": [
+          "Interpretive claim."
+        ],
+        "required_concession": "This is an interpretation of Genesis 1:4-5.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.3-C009",
+        "claim_text": "The shadow was cast at creation as bounded possibility; entered at the Fall as actual refusal.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "The shadow was cast at creation as bounded possibility. It was entered at the Fall as actual refusal."
+        ],
+        "dependencies": [
+          "W4.3-C007",
+          "W4.3-C008"
+        ],
+        "risks": [
+          "Depends on Fall narrative."
+        ],
+        "required_concession": "This is a theological narrative claim.",
+        "recommended_action": "keep",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.3-C010",
+        "claim_text": "Before the Fall, the laws of physics were the same but experienced as structural cost within a maintained coherence.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Before the Fall, the laws of physics were the same.",
+          "But these were experienced as structural cost within a maintained coherence."
+        ],
+        "dependencies": [
+          "W4.3-C005"
+        ],
+        "risks": [
+          "Empirically inaccessible."
+        ],
+        "required_concession": "This is a theological claim, not scientific.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.3-C011",
+        "claim_text": "The Fall is a relational breach (removal of grace-maintenance), not a physics change.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "The fracture was not a design flaw. It was a relational breach.",
+          "The removal of grace-maintenance, not the addition of new physics."
+        ],
+        "dependencies": [
+          "W4.3-C010"
+        ],
+        "risks": [
+          "Interpretive claim about Fall."
+        ],
+        "required_concession": "This is a framework-law claim.",
+        "recommended_action": "keep",
+        "confidence": 0.75
+      },
+      {
+        "claim_id": "W4.3-C012",
+        "claim_text": "Romans 8:20-22 is the key text for creation's non-willing subjection to futility.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Romans 8:20 says creation was subjected to futility not willingly.",
+          "For we know that the whole creation groaneth and travaileth in pain together until now."
+        ],
+        "dependencies": [
+          "Scripture"
+        ],
+        "risks": [
+          "Interpretive claim."
+        ],
+        "required_concession": "This is an interpretation of Romans 8.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.3-C013",
+        "claim_text": "Grace is the re-orientation of the field, restoring G > 0 as dominant direction.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "Grace is the re-orientation of the field.",
+          "The restoration of G > 0 as the dominant direction."
+        ],
+        "dependencies": [
+          "W4.3-C011",
+          "Master Equation"
+        ],
+        "risks": [
+          "Uses undefined G; needs formalization."
+        ],
+        "required_concession": "This is a framework claim pending formalization.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.3-C014",
+        "claim_text": "The Cross is a field-repair event, not a physics event.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "The Cross is not a physics event. It is a field-repair event."
+        ],
+        "dependencies": [
+          "W4.3-C013"
+        ],
+        "risks": [
+          "Metaphorical language."
+        ],
+        "required_concession": "This is a theological metaphor.",
+        "recommended_action": "keep",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.3-C015",
+        "claim_text": "The Resurrection verifies that the repair holds: G > 0 can overcome G < 0 even in total system death.",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "support": [
+          "The Resurrection is the verification that the repair holds."
+        ],
+        "dependencies": [
+          "W4.3-C013",
+          "W4.3-C014"
+        ],
+        "risks": [
+          "Overreach from physics analogy."
+        ],
+        "required_concession": "This is a theological claim using physics analogy.",
+        "recommended_action": "keep",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.3-C016",
+        "claim_text": "Grace does not remove the cost; grace orients the cost.",
+        "defense_class": "CLOSURE",
+        "claim_level": "theological",
+        "support": [
+          "Grace does not remove the cost. Grace orients the cost."
+        ],
+        "dependencies": [
+          "W4.3-C013"
+        ],
+        "risks": [
+          "Punchline."
+        ],
+        "required_concession": "This is a summary statement.",
+        "recommended_action": "keep",
+        "confidence": 0.8
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "W4.3-C013",
+        "problem": "G > 0 and G < 0 are used without formal definition.",
+        "repair": "Define G in the Master Equation or mark as placeholder."
+      },
+      {
+        "severity": "P2",
+        "target": "W4.3-C010",
+        "problem": "Claim about pre-Fall experience is empirically inaccessible.",
+        "repair": "Explicitly label as theological, not scientific."
+      },
+      {
+        "severity": "P2",
+        "target": "W4.3-C015",
+        "problem": "Resurrection as verification of G > 0 may overreach physics analogy.",
+        "repair": "Soften to 'theological interpretation'."
+      }
+    ],
+    "log_notes": [
+      "The sheet explicitly lists open items: Tree of Life as grace-maintenance, pre-Fall experience, formalization of two entropies.",
+      "No punch list found; status is working draft.",
+      "Next pass should check consistency with Master Equation and Sheet 2."
+    ]
+  },
+  {
+    "work_id": "W4.4",
+    "title": "Character of God from Physics",
+    "turn": "TURN 4 - GOD DEEPER",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\01_AXIOM_SELF_PROCLAMATION_I_AM\\Review\\character-of-god-from-physics.html",
+    "overall_status": "reviewed",
+    "summary": "This work maps ten physical phenomena to attributes of God, claiming that the properties of physics uniquely describe a specific Person. It is a rhetorical/theological synthesis, not a formal derivation. The main risks are proof inflation, category errors, and overreach from physics to theology.",
+    "claims": [
+      {
+        "claim_id": "W4.4-C001",
+        "claim_text": "The properties of the ten fundamental forces, when read together, describe a specific Person matching only Jesus Christ.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“they compose a portrait so specific that only one Person in history matches it.”",
+        "dependencies": [
+          "W4.4-C002 to C011"
+        ],
+        "risks": [
+          "Overreach: physics properties are analogies, not proofs.",
+          "No formal derivation."
+        ],
+        "required_concession": "This is an interpretive analogy, not a logical proof.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W4.4-C002",
+        "claim_text": "Gravity's properties (weakest, always attractive, infinite range, etc.) describe the character of grace.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“Read together: There is something that is the gentlest force... Physics calls it gravity.”",
+        "dependencies": [
+          "Physics facts"
+        ],
+        "risks": [
+          "Anthropomorphic projection.",
+          "Selective property selection."
+        ],
+        "required_concession": "This is a poetic analogy, not a scientific finding.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C003",
+        "claim_text": "The strong nuclear force's properties (strongest, confinement, etc.) describe the character of love.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“Read together: There is something that is the strongest force... Physics calls it the strong nuclear force.”",
+        "dependencies": [
+          "Physics facts"
+        ],
+        "risks": [
+          "Analogy overreach.",
+          "Confuses physical force with moral attribute."
+        ],
+        "required_concession": "This is an analogy, not a proof.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C004",
+        "claim_text": "Electromagnetism's properties (self-sustaining, non-degrading, etc.) describe the character of truth.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“Read together: There is something that sustains itself... Physics calls it light.”",
+        "dependencies": [
+          "Physics facts"
+        ],
+        "risks": [
+          "Equating light with truth is metaphorical.",
+          "No logical necessity."
+        ],
+        "required_concession": "This is a metaphor, not a derivation.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C005",
+        "claim_text": "Mass-energy equivalence (E=mc^2) implies that nothing is insignificant, describing the character of significance.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“Read together: There is a principle woven into reality that says nothing is insignificant.”",
+        "dependencies": [
+          "E=mc^2"
+        ],
+        "risks": [
+          "Category error: physical energy does not imply moral worth."
+        ],
+        "required_concession": "This is an analogy, not a logical entailment.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C006",
+        "claim_text": "The Second Law of Thermodynamics implies that closed systems cannot save themselves, describing the necessity of grace.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“The only way to reverse entropy locally is to open the system to an external energy source.”",
+        "dependencies": [
+          "Second Law"
+        ],
+        "risks": [
+          "Analogy between physical entropy and moral salvation is not rigorous."
+        ],
+        "required_concession": "This is an analogy, not a proof of grace.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C007",
+        "claim_text": "Information theory (Shannon, Kolmogorov) describes the character of the Word (Logos).",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“John called it the Word.”",
+        "dependencies": [
+          "Information theory concepts"
+        ],
+        "risks": [
+          "Equating information with the divine Word is a leap."
+        ],
+        "required_concession": "This is a poetic connection, not a formal proof.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C008",
+        "claim_text": "Relativity's invariance across frames describes the faithfulness of God.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“The faithfulness of a God who appears differently to different people but whose nature never changes.”",
+        "dependencies": [
+          "Relativity"
+        ],
+        "risks": [
+          "Analogy overreach."
+        ],
+        "required_concession": "This is an analogy, not a proof.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C009",
+        "claim_text": "Quantum mechanics (superposition, measurement) describes a universe that responds to the act of looking, implying faith collapses possibility.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“It describes a universe that was built to respond to the act of looking.”",
+        "dependencies": [
+          "Quantum mechanics"
+        ],
+        "risks": [
+          "Misinterpretation of quantum measurement.",
+          "Overreach to free will."
+        ],
+        "required_concession": "This is a speculative analogy, not a scientific claim.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C010",
+        "claim_text": "The weak force's behavior (stable inside nucleus, decays outside) describes mercy and the covenant.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“It describes what happens when you leave the covenant. Not as punishment. As physics.”",
+        "dependencies": [
+          "Weak force facts"
+        ],
+        "risks": [
+          "Analogy overreach.",
+          "Moralizing physics."
+        ],
+        "required_concession": "This is an analogy, not a proof.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C011",
+        "claim_text": "Coherence (all waves in phase) describes the completion of all things in Christ.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“The answer to the equation is a Person.”",
+        "dependencies": [
+          "Coherence concept"
+        ],
+        "risks": [
+          "Overreach: coherence is a physical concept, not a person."
+        ],
+        "required_concession": "This is a poetic metaphor, not a derivation.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C012",
+        "claim_text": "The 24 properties derived from physics are all measured and published, and together they describe one Person specifically.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“Twenty-four properties. Derived from physics. Not one of them required theology to discover.”",
+        "dependencies": [
+          "W4.4-C002 to C011"
+        ],
+        "risks": [
+          "Proof inflation: properties are selected and interpreted.",
+          "No uniqueness proof."
+        ],
+        "required_concession": "The properties are analogies, not evidence for a specific person.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W4.4-C013",
+        "claim_text": "The universe's specific combination of physical properties is not random or indifferent, but built by someone who wanted to be found.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“That is a universe built by someone who wanted to be found by anyone willing to look at the physics.”",
+        "dependencies": [
+          "W4.4-C001"
+        ],
+        "risks": [
+          "Fine-tuning argument overreach.",
+          "No statistical basis."
+        ],
+        "required_concession": "This is a rhetorical conclusion, not a scientific one.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W4.4-C014",
+        "claim_text": "The Hessian matrix scored the strong nuclear force as the most connected node, implying love is the greatest.",
+        "defense_class": "RHETORIC",
+        "claim_level": "physics",
+        "support": "“The Hessian matrix... scored this variable as the most connected node... The greatest of these is love.”",
+        "dependencies": [
+          "Hessian matrix analysis"
+        ],
+        "risks": [
+          "Unverified computation.",
+          "Equating connectivity with love is a leap."
+        ],
+        "required_concession": "The Hessian result is not provided; the interpretation is metaphorical.",
+        "recommended_action": "quarantine",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.4-C015",
+        "claim_text": "The document does not argue for God's existence but presents properties and asks a question.",
+        "defense_class": "ADMISSION",
+        "claim_level": "editorial",
+        "support": "“This document does not argue for God’s existence.”",
+        "dependencies": [],
+        "risks": [],
+        "required_concession": "",
+        "recommended_action": "keep",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.4-C016",
+        "claim_text": "The physics answers the WHAT so completely that the WHY becomes self-evident.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "“But it answers the WHAT so completely that the why becomes self-evident.”",
+        "dependencies": [
+          "W4.4-C001"
+        ],
+        "risks": [
+          "Overclaim: self-evidence is subjective."
+        ],
+        "required_concession": "This is a rhetorical flourish, not a logical conclusion.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "Overall document",
+        "problem": "Claims are presented as if they are derivations from physics, but they are analogies.",
+        "repair": "Add a clear disclaimer that these are metaphorical interpretations, not scientific proofs."
+      },
+      {
+        "severity": "P1",
+        "target": "Hessian matrix claim",
+        "problem": "Unverified and potentially fabricated computation.",
+        "repair": "Either provide the actual computation or remove the claim."
+      },
+      {
+        "severity": "P2",
+        "target": "Quantum mechanics section",
+        "problem": "Misinterprets quantum measurement as requiring a conscious observer and links to faith.",
+        "repair": "Clarify that quantum measurement is a physical process, not a theological one."
+      },
+      {
+        "severity": "P2",
+        "target": "Thermodynamics section",
+        "problem": "Analogy between entropy and sin is not rigorous.",
+        "repair": "Explicitly state that this is an analogy, not a proof."
+      }
+    ],
+    "log_notes": [
+      "All claims are rhetorical analogies; none are formal derivations.",
+      "The work explicitly disclaims arguing for God's existence, but the tone implies proof.",
+      "The Hessian matrix claim is a red flag; needs verification.",
+      "Next pass should check if any claims are used as premises elsewhere."
+    ]
+  },
+  {
+    "work_id": "W4.5",
+    "title": "The Trinity Signature",
+    "turn": "TURN 4 - GOD DEEPER",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\02_TRUTH_TRINITY_FOUNDATION\\02-the-trinity-signature.md",
+    "overall_status": "reviewed",
+    "summary": "This work maps the Trinity onto physical principles: Born rule, Noether's theorem, CPT symmetry, holographic principle, Casimir effect, Higgs field, decoherence, and the measurement problem. It claims these are not analogies but structural identities. The review identifies overclaims and missing derivations.",
+    "claims": [
+      {
+        "claim_id": "W4.5-C001",
+        "claim_text": "The Born Rule has exactly three pieces and removing any one collapses it.",
+        "defense_class": "AXIOM",
+        "claim_level": "physics",
+        "support": "P = |⟨ψ|φ⟩|²; remove any one and the whole thing collapses.",
+        "dependencies": [
+          "Born rule"
+        ],
+        "risks": [
+          "Mathematically, the Born rule is a postulate; 'three pieces' is interpretive."
+        ],
+        "required_concession": "The Born rule is a postulate; its three-part structure is a reading, not a derivation.",
+        "recommended_action": "demote",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.5-C002",
+        "claim_text": "The Born Rule is what the Trinity looks like when projected into measurement theory.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The Born Rule is not a picture of the Trinity. It is what the Trinity looks like when projected into measurement theory.",
+        "dependencies": [
+          "W4.5-C001"
+        ],
+        "risks": [
+          "Overclaim: no formal mapping provided."
+        ],
+        "required_concession": "This is an interpretive claim, not a mathematical derivation.",
+        "recommended_action": "demote",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.5-C003",
+        "claim_text": "The Master Equation χ = ∭ (G·M·E·S·T·K·R·Q·F·C) dx dy dt is multiplicative and any variable zero collapses it.",
+        "defense_class": "AXIOM",
+        "claim_level": "physics",
+        "support": "Multiplicative structure. Pull any variable to zero and the whole product collapses.",
+        "dependencies": [
+          "Master equation definition"
+        ],
+        "risks": [
+          "No derivation; variables undefined."
+        ],
+        "required_concession": "The Master Equation is introduced without derivation or variable definitions.",
+        "recommended_action": "fix",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.5-C004",
+        "claim_text": "Every continuous symmetry produces a conservation law (Noether's theorem).",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": "Emmy Noether proved this in 1915. Every continuous symmetry of a physical system produces a conservation law.",
+        "dependencies": [
+          "Noether's theorem"
+        ],
+        "risks": [],
+        "required_concession": "",
+        "recommended_action": "keep",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.5-C005",
+        "claim_text": "The Logos is the source of symmetries and conservation laws.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "Logos → symmetries → conservation laws → mathematical coherence.",
+        "dependencies": [
+          "W4.5-C004"
+        ],
+        "risks": [
+          "No mechanism; leaps from physics to theology."
+        ],
+        "required_concession": "This is a theological interpretation, not a physical derivation.",
+        "recommended_action": "demote",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W4.5-C006",
+        "claim_text": "The smoothness of physical law is a sustained act of the Logos.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The smoothness of physical law is not a property physics discovered. It is a sustained act.",
+        "dependencies": [
+          "W4.5-C005"
+        ],
+        "risks": [
+          "Unfalsifiable; no physical evidence."
+        ],
+        "required_concession": "This is a metaphysical claim, not a scientific one.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W4.5-C007",
+        "claim_text": "CPT symmetry is never broken in any experiment.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": "Never broken. Not once. In every experiment ever run in the history of physics.",
+        "dependencies": [
+          "CPT theorem"
+        ],
+        "risks": [
+          "Overstatement: CPT is tested but not proven for all conditions."
+        ],
+        "required_concession": "CPT symmetry is a theorem under certain assumptions; it has not been tested at all energy scales.",
+        "recommended_action": "fix",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.5-C008",
+        "claim_text": "The armor of God is the CPT theorem applied to the soul.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The armor of God is not poetry. It's the CPT theorem applied to transformation.",
+        "dependencies": [
+          "W4.5-C007"
+        ],
+        "risks": [
+          "Category error: physics theorem applied to spiritual warfare."
+        ],
+        "required_concession": "This is an analogy, not a literal identity.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W4.5-C009",
+        "claim_text": "The information content of a region of space is proportional to its surface area (holographic principle).",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": "Maldacena proved the information content is proportional to surface area.",
+        "dependencies": [
+          "AdS/CFT correspondence"
+        ],
+        "risks": [
+          "Holographic principle is a conjecture in general spacetimes."
+        ],
+        "required_concession": "The holographic principle is proven in specific string theory contexts, not universally.",
+        "recommended_action": "fix",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.5-C010",
+        "claim_text": "The Logos is the boundary condition from which physical reality projects.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The Logos is the boundary condition. The holographic plate from which physical reality projects.",
+        "dependencies": [
+          "W4.5-C009"
+        ],
+        "risks": [
+          "Overclaim: no physical mechanism."
+        ],
+        "required_concession": "This is a theological interpretation of the holographic principle.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W4.5-C011",
+        "claim_text": "The Casimir force demonstrates that the vacuum has energy and God never fully withdraws.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The ground state is not zero. The vacuum has energy. ... He who neither slumbers nor sleeps.",
+        "dependencies": [
+          "Casimir effect"
+        ],
+        "risks": [
+          "Equating vacuum energy with divine presence is an analogy."
+        ],
+        "required_concession": "The Casimir effect is a physical phenomenon; its theological interpretation is not physics.",
+        "recommended_action": "demote",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W4.5-C012",
+        "claim_text": "The Higgs field is the χ vacuum and provides a floor that never reaches zero.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The Higgs field is the χ vacuum. The ground state of the universe is not zero.",
+        "dependencies": [
+          "Higgs mechanism"
+        ],
+        "risks": [
+          "Equating Higgs field with a theological vacuum floor is unsupported."
+        ],
+        "required_concession": "This is an analogy, not a physical identity.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W4.5-C013",
+        "claim_text": "The serpent in Genesis is a decoherence agent.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The serpent is a decoherence agent. This is not analogy. It is the same process described in two languages.",
+        "dependencies": [
+          "Decoherence theory"
+        ],
+        "risks": [
+          "Overclaim: equating narrative with quantum process."
+        ],
+        "required_concession": "This is a metaphorical interpretation, not a literal identity.",
+        "recommended_action": "demote",
+        "confidence": 0.3
+      },
+      {
+        "claim_id": "W4.5-C014",
+        "claim_text": "The measurement problem is explained by the Fall: Schrödinger equation is Eden, measurement postulate is the Fall.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The Schrödinger equation is Eden. The measurement postulate is the Fall.",
+        "dependencies": [
+          "Measurement problem"
+        ],
+        "risks": [
+          "No physical evidence; purely theological narrative."
+        ],
+        "required_concession": "This is a theological interpretation, not a solution to the measurement problem.",
+        "recommended_action": "demote",
+        "confidence": 0.2
+      },
+      {
+        "claim_id": "W4.5-C015",
+        "claim_text": "The fine structure constant is set from the boundary and is the watermark of God.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "The constant is set from the boundary. ... That is the watermark. That is where He signed it.",
+        "dependencies": [
+          "Fine structure constant"
+        ],
+        "risks": [
+          "No evidence; fine structure constant may be derivable in future theories."
+        ],
+        "required_concession": "This is a theological claim about an unexplained constant.",
+        "recommended_action": "demote",
+        "confidence": 0.2
+      },
+      {
+        "claim_id": "W4.5-C016",
+        "claim_text": "χ is a Lorentz scalar and frame-independent, and low χ corresponds to moral failure.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": "χ is a Lorentz scalar. ... Low χ: truth becomes frame-dependent. That is the physics of moral failure.",
+        "dependencies": [
+          "Master equation"
+        ],
+        "risks": [
+          "No physical definition of χ; moral mapping is arbitrary."
+        ],
+        "required_concession": "χ is not a defined physical quantity; this is a metaphor.",
+        "recommended_action": "demote",
+        "confidence": 0.2
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "W4.5-C001",
+        "problem": "The Born rule is a postulate; 'three pieces' is an interpretation.",
+        "repair": "Explicitly state that the three-piece structure is an interpretive framework, not a derivation."
+      },
+      {
+        "severity": "P1",
+        "target": "W4.5-C003",
+        "problem": "Master equation variables undefined.",
+        "repair": "Define each variable and provide a derivation or reference."
+      },
+      {
+        "severity": "P2",
+        "target": "W4.5-C007",
+        "problem": "Overstatement of CPT symmetry universality.",
+        "repair": "Qualify: CPT is a theorem under standard assumptions and has passed all tests to date."
+      },
+      {
+        "severity": "P2",
+        "target": "W4.5-C009",
+        "problem": "Holographic principle is not universally proven.",
+        "repair": "State that it is a conjecture in general spacetimes, proven in specific string theory contexts."
+      },
+      {
+        "severity": "P3",
+        "target": "Multiple theological claims",
+        "problem": "Theological interpretations presented as physical identities.",
+        "repair": "Clearly label as analogies or theological interpretations, not physics."
+      }
+    ],
+    "log_notes": [
+      "The work uses strong language ('not analogy', 'is') to assert theological mappings as literal.",
+      "Many claims are rhetorical and should be demoted to RHETORIC class.",
+      "The Master Equation is central but undefined; needs formalization if kept.",
+      "The work references 'Punch list status: NO PUNCH LIST FOUND' - indicates no prior review."
+    ]
+  },
+  {
+    "work_id": "W4.6",
+    "title": "The Trinity Chain",
+    "turn": "TURN 4 - GOD DEEPER",
+    "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\02_TRUTH_TRINITY_FOUNDATION\\01-trinity-chain.md",
+    "overall_status": "reviewed",
+    "summary": "The work proposes a formal isomorphism between quaternion electromagnetism and the Christian Trinity, deriving seven divine attributes as emergent properties of a triadic coupled system at equilibrium. The parent isomorphism is claimed Lean-verified, but the derived terms are explicitly marked as unverified and open items are declared. The review identifies several overclaims and missing formal bridges.",
+    "claims": [
+      {
+        "claim_id": "W4.6-C001",
+        "claim_text": "The operation '+' in arithmetic is a person (the Holy Spirit).",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": [
+          "Living math: 1 + 1 = 3. Because the between is real. Because the operation is Someone."
+        ],
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "Category error: mathematical operation as person; not derivable from physics."
+        ],
+        "required_concession": "This is a poetic analogy, not a formal claim.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W4.6-C002",
+        "claim_text": "The Trinity is multiplicative, not additive: 1 × 1 × 1 = 1.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": [
+          "Addition separates — it counts discrete objects. Multiplication unites."
+        ],
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "Mathematical metaphor; no formal basis."
+        ],
+        "required_concession": "This is an illustrative analogy, not a proof.",
+        "recommended_action": "demote",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.6-C003",
+        "claim_text": "The Trinity generates numbers: 1 requires Being, 2 requires Distinction, 3 requires Relation.",
+        "defense_class": "RHETORIC",
+        "claim_level": "theological",
+        "support": [
+          "Without Being, nothing to count. Without Distinction, nothing else to count. Without Relation, no way to count."
+        ],
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "Invented precision; no formal derivation."
+        ],
+        "required_concession": "This is a philosophical reflection, not a mathematical theorem.",
+        "recommended_action": "demote",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W4.6-C004",
+        "claim_text": "The quaternion EM formulation is isomorphic to the Trinity, with Father=scalar, Son=vector, Spirit=coupling.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": [
+          "Maxwell's Quaternion Formulation ... Lean 4 verified isomorphism."
+        ],
+        "dependencies": [
+          "Lean receipt",
+          "March 2026 session"
+        ],
+        "risks": [
+          "Mapping is interpretive; Lean verifies math, not theology."
+        ],
+        "required_concession": "The Lean proof verifies a mathematical structure, not the theological identification.",
+        "recommended_action": "fix",
+        "confidence": 0.7
+      },
+      {
+        "claim_id": "W4.6-C005",
+        "claim_text": "Heaviside's vector reduction provably loses information that the quaternion product preserves.",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "support": [
+          "Lean: vector-only dot/cross CANNOT determine the full quaternion product."
+        ],
+        "dependencies": [
+          "Lean receipt"
+        ],
+        "risks": [
+          "None if Lean proof is correct."
+        ],
+        "required_concession": "",
+        "recommended_action": "keep",
+        "confidence": 0.9
+      },
+      {
+        "claim_id": "W4.6-C006",
+        "claim_text": "Perichoresis (mutual indwelling) is the coupling invariant of the quaternion product.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": [
+          "The coupling invariant itself. ... No person is isolable."
+        ],
+        "dependencies": [
+          "W4.6-C004"
+        ],
+        "risks": [
+          "Theological term mapped to math; needs explicit bridge."
+        ],
+        "required_concession": "The mapping is asserted, not formally derived.",
+        "recommended_action": "fix",
+        "confidence": 0.6
+      },
+      {
+        "claim_id": "W4.6-C007",
+        "claim_text": "Aseity (self-existence) corresponds to self-sustaining EM wave propagation.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": [
+          "An EM wave in vacuum propagates indefinitely ... The wave IS its own sustaining mechanism."
+        ],
+        "dependencies": [
+          "W4.6-C004"
+        ],
+        "risks": [
+          "Analogy: EM wave requires initial conditions; aseity implies no origin."
+        ],
+        "required_concession": "The analogy is structural, not causal.",
+        "recommended_action": "fix",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.6-C008",
+        "claim_text": "Divine simplicity is the irreducibility of the quaternion product.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": [
+          "The whole is not the sum of its parts. It is prior to its parts."
+        ],
+        "dependencies": [
+          "W4.6-C004"
+        ],
+        "risks": [
+          "Simplicity in theology is stronger than mathematical irreducibility."
+        ],
+        "required_concession": "The mapping is partial; divine simplicity includes more.",
+        "recommended_action": "fix",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.6-C009",
+        "claim_text": "Omniscience is zero conditional entropy between persons.",
+        "defense_class": "ADMISSION",
+        "claim_level": "bridge",
+        "support": [
+          "H(Person_A | Person_B) = 0 ... Needs formal bridge from the coupling invariant to Shannon mutual information. OPEN."
+        ],
+        "dependencies": [
+          "W4.6-C004"
+        ],
+        "risks": [
+          "No formal bridge; open item."
+        ],
+        "required_concession": "This is a proposed formulation, not yet derived.",
+        "recommended_action": "fix",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W4.6-C010",
+        "claim_text": "Omnipotence is perpetual mutual actuation of the fields.",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": [
+          "E generates B generates E generates B — perpetual mutual actuation."
+        ],
+        "dependencies": [
+          "W4.6-C004"
+        ],
+        "risks": [
+          "Infinite power claim is not rigorously defined."
+        ],
+        "required_concession": "The physical analogy is suggestive, not a proof of omnipotence.",
+        "recommended_action": "fix",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.6-C011",
+        "claim_text": "Immutability is time-translation symmetry (Noether's theorem).",
+        "defense_class": "DERIVATION",
+        "claim_level": "bridge",
+        "support": [
+          "Noether's theorem is proven mathematics. ∂L/∂t = 0 → conserved charge is rigorous."
+        ],
+        "dependencies": [
+          "W4.6-C004"
+        ],
+        "risks": [
+          "Mapping from physical symmetry to divine attribute is interpretive."
+        ],
+        "required_concession": "The mapping is analogical, not formal.",
+        "recommended_action": "fix",
+        "confidence": 0.5
+      },
+      {
+        "claim_id": "W4.6-C012",
+        "claim_text": "Love is the ground state of the coupling potential, identified with agapē.",
+        "defense_class": "ADMISSION",
+        "claim_level": "bridge",
+        "support": [
+          "The coupling between persons IS agapē. ... Needs formalization."
+        ],
+        "dependencies": [
+          "Chain 2",
+          "W4.6-C004"
+        ],
+        "risks": [
+          "Open item: is it the same force or structural analogy?"
+        ],
+        "required_concession": "This is a proposed identification, not yet formalized.",
+        "recommended_action": "fix",
+        "confidence": 0.4
+      },
+      {
+        "claim_id": "W4.6-C013",
+        "claim_text": "The Trinity chain is the interior structure that every other chain runs inside of.",
+        "defense_class": "RHETORIC",
+        "claim_level": "meta",
+        "support": [
+          "It is the INTERIOR structure that every other chain runs inside of."
+        ],
+        "dependencies": [
+          "W4.6-C004"
+        ],
+        "risks": [
+          "Overclaim; no formal dependency shown."
+        ],
+        "required_concession": "This is a structural claim, not proven.",
+        "recommended_action": "demote",
+        "confidence": 0.8
+      },
+      {
+        "claim_id": "W4.6-C014",
+        "claim_text": "The derivative terms (T.1–T.7) are newly derived and not yet adversarially tested.",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "support": [
+          "This chain has NOT been through adversarial testing or independent AI confirmation at the term level."
+        ],
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "None; honest admission."
+        ],
+        "required_concession": "",
+        "recommended_action": "keep",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.6-C015",
+        "claim_text": "Kill condition: show a property inconsistent with the seven terms, or non-triadic coupling yields same properties, or coupling invariant not load-bearing.",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "support": [
+          "Show that the triadic-coupled system ... exhibits a property inconsistent with these seven terms, OR ..."
+        ],
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "None; clear kill condition."
+        ],
+        "required_concession": "",
+        "recommended_action": "keep",
+        "confidence": 0.95
+      },
+      {
+        "claim_id": "W4.6-C016",
+        "claim_text": "The chain operates at the boundary and does not push into divine mechanics.",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "support": [
+          "BOUNDARY (Feb 14, 2026): This chain operates AT the boundary."
+        ],
+        "dependencies": [
+          "none"
+        ],
+        "risks": [
+          "None; boundary respected."
+        ],
+        "required_concession": "",
+        "recommended_action": "keep",
+        "confidence": 0.95
+      }
+    ],
+    "fixes": [
+      {
+        "severity": "P1",
+        "target": "W4.6-C004",
+        "problem": "Theological mapping is asserted as isomorphism without formal bridge.",
+        "repair": "Explicitly state that Lean verifies the mathematical structure, not the theological identification."
+      },
+      {
+        "severity": "P1",
+        "target": "W4.6-C009",
+        "problem": "Omniscience as zero conditional entropy lacks formal derivation from coupling.",
+        "repair": "Provide a formal bridge from quaternion coupling to Shannon mutual information, or mark as open."
+      },
+      {
+        "severity": "P1",
+        "target": "W4.6-C012",
+        "problem": "Identification of love with Yukawa coupling is not formalized.",
+        "repair": "Either formalize the identification or explicitly label as structural analogy."
+      },
+      {
+        "severity": "P2",
+        "target": "W4.6-C001, C002, C003",
+        "problem": "Rhetorical claims presented as foundational insights.",
+        "repair": "Clearly mark as illustrative analogies, not formal claims."
+      },
+      {
+        "severity": "P2",
+        "target": "W4.6-C013",
+        "problem": "Claim that Trinity chain is interior structure of all chains is unsupported.",
+        "repair": "Provide explicit dependencies or demote to rhetorical."
+      }
+    ],
+    "log_notes": [
+      "Parent isomorphism is Lean-verified; derivative terms are not.",
+      "Open items: T.4 and T.7 need formal bridges.",
+      "Kill condition is clearly stated.",
+      "Boundary respected."
+    ]
+  }
+]

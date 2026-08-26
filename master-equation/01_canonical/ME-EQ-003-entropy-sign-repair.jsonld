@@ -1,0 +1,79 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-003",
+  "nodeID": "tp:master-equation/01/ME-EQ-003",
+  "claimID": "tp:ME/ME-EQ-003",
+  "nodeType": "claim",
+  "name": "Entropy Sign Repair",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "mathematical",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "statementTechnical": "S_eff(x,t) = exp(-η·S_prod(x,t))",
+  "statementPlain": "Raw entropy production is converted into an effective factor that decreases coherence.",
+  "mathematicalForm": "S_eff(x,t) = exp(-η·S_prod(x,t))",
+  "mathFormNormal": "S_eff = exp(-eta*S_prod); alternative S_eff = 1/(1+S_prod)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-023",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-092",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    }
+  ],
+  "tags": [
+    "equation",
+    "entropy",
+    "decoherence"
+  ],
+  "keywords": [
+    "equation",
+    "S_eff",
+    "S_prod",
+    "η"
+  ],
+  "verificationStatus": "equation-registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer.",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+  "equationRegistry": {
+    "equationID": "ME-EQ-003",
+    "variables": [
+      "S_eff",
+      "S_prod",
+      "η"
+    ],
+    "normalForm": "S_eff = exp(-eta*S_prod); alternative S_eff = 1/(1+S_prod)",
+    "source": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md"
+  }
+}

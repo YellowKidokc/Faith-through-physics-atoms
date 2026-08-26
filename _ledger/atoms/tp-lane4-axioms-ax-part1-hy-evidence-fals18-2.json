@@ -1,0 +1,84 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-hy-evidence-fals18-2",
+  "atom_uid": "sha256:a92b35d1604f133f07b4f6c278825d927e5bc475cfb6c8a7060cf39b4d50ff75",
+  "title": "FALS18.2 — Grace Falsification",
+  "claim": "FALS18.2 — Grace Falsification is classified in Part 1 as HY_EVIDENCE with decision MOVE_OUT_OF_STRICT_CORE and anchor UNANCHORED_IN_CURRENT_CHAIN.",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "HY_EVIDENCE",
+  "assumptions": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status.",
+    "Unanchored entry cannot be treated as bedrock until a clean dependency path is supplied."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate_unanchored",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row FALS18.2 as HY_EVIDENCE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:b308def339a2960460187c2ff9a8553a6888be77bee1cbc9dda9065cc2c8175b",
+      "event_uuid": "7b81cb1a-8de2-5bdf-b01a-15c511d6ca11"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for FALS18.2 as HY_EVIDENCE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:38+00:00",
+      "event_uuid": "fbc56cc1-26e5-4039-831e-44b8b3cc42ca",
+      "event_id": "sha256:41687952d0b5e26c8377e4bc8322f58539bee626b663b43723653b3658f5d35a"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for FALS18.2 as HY_EVIDENCE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "ce87ab86-d2cb-4a08-bfce-b153c8639633",
+      "event_id": "sha256:3fb3760acd58cb88518c7c55bf24d853c5f4c0ac2b2ee0fcb9c75fe1d5fcbd85"
+    }
+  ],
+  "source_claim_id": "AX_PART1:HY_EVIDENCE:FALS18.2",
+  "glyphs": [
+    "evidence",
+    "prediction"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/evidence.svg",
+    "theophysics_glyphs/svg/prediction.svg"
+  ],
+  "atom_uuid": "889d44d0-19eb-5948-a239-9ab0f566b65c"
+}

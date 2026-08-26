@@ -1,0 +1,74 @@
+{
+  "source_id": "Isomorphism",
+  "title": "Isomorphism.lean",
+  "canonical_node": {
+    "axiom": "Physical and moral domains are structurally isomorphic because both are mapped to the same abstract coherence algebra.",
+    "definitions": [
+      "Domain: inductive type with constructors physical and moral.",
+      "DomainMap: maps any Domain to a fixed abstract type .",
+      "IsHeatDeath: predicate on state, defined as state = zero.",
+      "CoherenceAlgebra: abstract type  with a zero element."
+    ],
+    "derivation": [
+      "Define Domain with two constructors: physical and moral.",
+      "Define DomainMap to map both constructors to the same type .",
+      "Prove G6_Kill_Isomorphism: IsHeatDeath state  state = zero by rfl.",
+      "Prove isomorphism_canonical: DomainMap  d1 = DomainMap  d2 by cases on d1 and d2; all cases reduce to rfl."
+    ],
+    "action": "Treat physical and moral domains as instances of the same abstract algebra in formal reasoning, allowing theorems about one to apply to the other.",
+    "boundary": [
+      "Does not construct an explicit isomorphism between distinct structures; it asserts definitional equality via a common mapping.",
+      "Does not provide a detailed gate structure for entropy production; G1_Source is a placeholder.",
+      "Does not establish that physical entropy and moral coherence are empirically correlated."
+    ],
+    "test": [
+      "Check that DomainMap is defined to return the same type for both constructors.",
+      "Verify that G6_Kill_Isomorphism and isomorphism_canonical are proved by rfl.",
+      "Ensure no additional axioms or non-definitional steps are used."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean4 environment",
+      "Definition of CoherenceAlgebra with zero",
+      "Definition of Domain and DomainMap"
+    ],
+    "dg2_new_capability": "Formally states that physical and moral domains share the same abstract structure, enabling cross-domain theorem transfer.",
+    "dg3_preserved_floor": "Preserves the existing formalization of CoherenceAlgebra and its properties.",
+    "dg4_collapse_if_removed": "Without this node, the claimed structural isomorphism between physical and moral thermodynamics is not formally represented.",
+    "dg5_translation_registers": [
+      "physical  moral",
+      "heat death  spiritual death",
+      "entropy  coherence"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "formal theorem",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as formal artifact; annotate as definitional isomorphism, not empirical bridge"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The isomorphism is definitional, not empirical; it does not prove physical and moral laws are actually the same.",
+      "The proof is trivial because DomainMap ignores the domain; it does not show a meaningful structural correspondence beyond the chosen abstraction.",
+      "The document claims 'not an analogy' but the proof relies on a mapping that makes the isomorphism true by construction."
+    ],
+    "kill_conditions": [
+      "If DomainMap is not well-defined or if  is not a valid CoherenceAlgebra.",
+      "If the proof uses hidden axioms or non-definitional steps.",
+      "If the claim is interpreted as empirical equivalence between physical and moral thermodynamics."
+    ],
+    "lean_target": "Formalize the isomorphism as a definitional equality in Lean, but avoid claiming empirical or theological significance beyond the formal statement."
+  },
+  "plain_summary": "This Lean file defines a formal isomorphism between physical and moral domains by mapping both to the same abstract type. The proofs are trivial by definition, showing that the isomorphism is a consequence of the chosen representation, not an empirical discovery. It is a valid formal artifact but should not be overinterpreted as evidence for a real correspondence between physics and theology.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Isomorphism.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Isomorphism.canonical-node.json"
+  }
+}

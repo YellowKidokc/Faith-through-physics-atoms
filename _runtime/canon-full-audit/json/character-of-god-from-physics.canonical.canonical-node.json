@@ -1,0 +1,80 @@
+{
+  "source_id": "character-of-god-from-physics.canonical",
+  "title": "The Character of God  -  Read from Physics",
+  "canonical_node": {
+    "axiom": "The measured properties of the ten fundamental forces, when read together, compose a specific portrait that matches one historical Person.",
+    "definitions": [
+      "Force: one of the ten physical phenomena listed (gravity, strong nuclear, electromagnetic, mass-energy equivalence, thermodynamics, information theory, relativity, quantum mechanics, weak force, coherence).",
+      "Property: a measured, published, laboratory-confirmed attribute of a force as listed in the document.",
+      "Portrait: the composite set of 24 properties derived from the ten forces.",
+      "Person: the historical figure claimed to match the portrait (implied to be Jesus Christ)."
+    ],
+    "derivation": [
+      "Each of the ten forces is assigned a set of measured properties.",
+      "Each set is read together to yield a character trait (e.g., gravity yields grace).",
+      "The ten traits are combined into a single portrait of 24 properties.",
+      "The document asserts that this portrait specifically matches one historical Person.",
+      "The document does not argue for existence but asks what kind of universe has these properties."
+    ],
+    "action": "Present the measured properties of the ten forces and the resulting composite portrait as a question about the nature of the universe.",
+    "boundary": [
+      "Does not claim to prove God's existence.",
+      "Does not claim that physics explains why forces behave as they do.",
+      "Does not claim that the properties are unique to one Person.",
+      "Does not claim that the mapping from force to character trait is unique or necessary."
+    ],
+    "test": [
+      "Verify that each listed property is accurately reported from physics literature.",
+      "Check whether the mapping from each force to a character trait is logically forced or merely interpretive.",
+      "Assess whether the composite portrait uniquely identifies a single historical Person.",
+      "Check whether the document's claim of 'specificity' is supported by evidence or is an overstatement."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Physics: measured properties of fundamental forces (gravity, strong, EM, weak, etc.)",
+      "Information theory: Shannon, Kolmogorov, quantum no-cloning/no-deleting",
+      "Thermodynamics: Second Law, Landauer's principle",
+      "Relativity: invariance of spacetime interval",
+      "Quantum mechanics: superposition, entanglement, measurement"
+    ],
+    "dg2_new_capability": "Provides a systematic mapping from physical properties to theological character traits, creating a composite portrait that is claimed to be specific.",
+    "dg3_preserved_floor": "Preserves the integrity of the physical measurements as reported; does not alter the physics.",
+    "dg4_collapse_if_removed": "If the mapping from forces to traits is removed, the document reduces to a list of physical properties with no theological conclusion.",
+    "dg5_translation_registers": [
+      "Physics: measured properties",
+      "Theology: character traits (grace, love, truth, etc.)",
+      "Narrative: portrait of a Person"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "interpretive synthesis",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a narrative anchor; do not treat as proof."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that the portrait is 'specific' and 'precise' without rigorous uniqueness argument.",
+      "Uses language like 'the math said it without being asked' to imply mathematical proof of love.",
+      "Suggests that the properties 'compose a portrait so specific that only one Person in history matches it' without evidence.",
+      "Makes interpretive leaps from physical properties to theological attributes without logical necessity."
+    ],
+    "kill_conditions": [
+      "If any listed physical property is factually incorrect, the corresponding trait mapping is invalidated.",
+      "If the mapping from force to trait is shown to be arbitrary or non-unique, the composite portrait loses specificity.",
+      "If another historical figure can be matched to the same portrait with equal plausibility, the claim of uniqueness fails."
+    ],
+    "lean_target": "Reduce overstatement by framing the portrait as one possible interpretation, not a unique conclusion."
+  },
+  "plain_summary": "This document maps the measured properties of ten fundamental forces to theological character traits, producing a composite portrait that the author claims matches a specific historical Person. It does not argue for God's existence but asks what kind of universe would have these properties. The mapping is interpretive and not logically forced, so the claim of specificity is not established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\character-of-god-from-physics.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\character-of-god-from-physics.canonical.canonical-node.json"
+  }
+}

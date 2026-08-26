@@ -1,0 +1,92 @@
+{
+  "source_id": "VERIFIED_SECTION_BY_SECTION_REPORT",
+  "title": "Theophysics Lean Kernel Verified Section-by-Section Report",
+  "canonical_node": {
+    "axiom": "A formal kernel defines a product-collapse architecture over a coherence algebra with zero, one, multiplication, identity, zero-annihilation, one_ne_zero, and no_zero_divisors, and a zero-preserving operator C, such that a product is zero iff zero is a factor.",
+    "definitions": [
+      "CoherenceAlgebra: algebraic structure with zero, one, mul, identity laws, zero-annihilation, one_ne_zero, no_zero_divisors.",
+      "listProd: recursive product of a finite list; empty list maps to one.",
+      "CoherenceOperator: structure with apply map and preserves_zero law.",
+      "Regime: two states constructive and destructive; grace maps both to constructive.",
+      "LawModel: packages state type, value map, collapse predicate, and proof that collapsed states map to zero.",
+      "LawIso: requires maps both ways, inverse laws, value preservation, collapse preservation.",
+      "MasterState: contains factor list and C operator; rawChi is list product; chi is operator-applied rawChi."
+    ],
+    "derivation": [
+      "listProd_eq_zero_of_mem_zero: if zero in list, product is zero.",
+      "mem_zero_of_listProd_eq_zero: if product is zero, zero in list.",
+      "listProd_eq_zero_iff: product zero iff zero in list.",
+      "listProd_ne_zero_of_all_ne_zero: if all factors nonzero, product nonzero.",
+      "cannot_rescue_zero: zero-preserving operator sends zero to zero.",
+      "zero_if_any_factor_zero: if any factor zero, C applied after product yields zero.",
+      "grace_idempotent: grace twice equals once.",
+      "grace_not_invertible: no total inverse for grace.",
+      "rawChi_zero_iff, chi_zero_if_any_factor_zero, rawChi_nonzero_if_all_factors_nonzero: master state inherits collapse logic."
+    ],
+    "action": "Treat the verified kernel as establishing a formal collapse architecture, not as proof of theological or physical truth. Use it as a rigorous foundation for future law models and isomorphisms, requiring explicit LawModel and LawIso instances for any concrete claims.",
+    "boundary": [
+      "Does not prove full theological truth claims.",
+      "Does not prove full physical truth claims.",
+      "Does not establish specific empirical correspondences.",
+      "Does not prove specific law-to-law isomorphism instances.",
+      "Does not verify semantics of named law slots (G M E S T K R Q F C)."
+    ],
+    "test": [
+      "Compile TheophysicsProductionKernel.lean unchanged with LEAN_EXIT=0.",
+      "Check that no axiom, unsafe, admit, or proof-level sorry appear in the file.",
+      "Verify each theorem block as listed in the report.",
+      "Attempt to derive a specific physical theorem from the file alone; should fail.",
+      "Attempt to prove a concrete law isomorphism without adding a concrete LawModel; should fail."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean theorem prover",
+      "CoherenceAlgebra interface",
+      "List product definition",
+      "Zero-preserving operator definition",
+      "Regime and grace definitions",
+      "LawModel and LawIso structures"
+    ],
+    "dg2_new_capability": "Provides a verified formal kernel for product-collapse architecture, with explicit burden of proof for law models and isomorphisms, and a clean zero-sorry proof base.",
+    "dg3_preserved_floor": "Preserves the algebraic ground rules and collapse theorems as verified by Lean; does not regress to hand-waving.",
+    "dg4_collapse_if_removed": "If removed, the formal foundation for collapse architecture is lost, and broader claims lose their verified basis, reverting to unverified narrative.",
+    "dg5_translation_registers": [
+      "CoherenceAlgebra -> algebraic structure",
+      "listProd -> product of factors",
+      "CoherenceOperator -> operator on product",
+      "Regime -> state with grace reset",
+      "LawModel -> evidence package for law behavior",
+      "LawIso -> isomorphism evidence between laws"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal verification report",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "Adopt as a verified formal kernel; require explicit LawModel and LawIso instances for any concrete claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Overreading semantics of law slot names as having theological or physical meaning.",
+      "Assuming the kernel proves empirical claims about the universe.",
+      "Assuming the kernel is embedded in a broader project-level verification pipeline."
+    ],
+    "kill_conditions": [
+      "If the file fails to compile unchanged.",
+      "If hidden axioms, unsafe, admit, or sorry appear in the proof content.",
+      "If a concrete physical theorem is derived from the file alone without additional models."
+    ],
+    "lean_target": "Formalize a concrete LawModel and LawIso instance for a specific law pair, and prove a physical theorem from the kernel plus that model."
+  },
+  "plain_summary": "This report documents a Lean-verified kernel for a product-collapse architecture. It proves that a product is zero iff zero is a factor, and that a zero-preserving operator preserves collapse. It defines law slots, a grace map, and rigorous burdens of proof for law models and isomorphisms. The kernel is clean (no sorry/axiom) but does not by itself prove theological or physical truth; it provides a formal foundation for future concrete models.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\VERIFIED_SECTION_BY_SECTION_REPORT.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\VERIFIED_SECTION_BY_SECTION_REPORT.canonical-node.json"
+  }
+}

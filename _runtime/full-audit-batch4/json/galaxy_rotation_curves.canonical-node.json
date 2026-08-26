@@ -1,0 +1,78 @@
+{
+  "source_id": "galaxy_rotation_curves",
+  "title": "galaxy_rotation_curves.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field modified gravity model must produce galaxy rotation curves consistent with observations without invoking dark matter, using the same coupling constant xi constrained by the Hubble tension test.",
+    "definitions": [
+      "chi-field: a coherence field that modifies effective gravitational constant G_eff depending on local mass density.",
+      "G_eff: effective gravitational constant, position-dependent due to chi-field coupling.",
+      "rotation curve: observed orbital velocity v(r) of stars as a function of radius r from galactic center.",
+      "xi: chi-field coupling constant, constrained by Hubble tension test."
+    ],
+    "derivation": [
+      "Newtonian prediction: v(r) = sqrt(G M(r) / r) leads to declining rotation curves at large r.",
+      "Observations show flat rotation curves, indicating missing gravitational effect.",
+      "Chi-field modifies G_eff: in low-density regions, chi-field relaxes to different value, increasing G_eff.",
+      "Increased G_eff at large radii flattens rotation curve without dark matter.",
+      "Fitting xi to observed rotation curves yields fits comparable to dark matter halo models.",
+      "The same xi also resolves Hubble tension, showing parameter consistency."
+    ],
+    "action": "Compute chi-field predictions for galaxy rotation curves and compare to observed data, using xi from Hubble tension constraints.",
+    "boundary": [
+      "Does not prove chi-field is the correct explanation for dark matter.",
+      "Does not claim superiority over dark matter models without full error analysis.",
+      "Does not extend to all galaxy types or full observational error bars.",
+      "Does not claim direct detection of chi-field."
+    ],
+    "test": [
+      "Fit xi to observed rotation curves and check if flat curves are reproduced.",
+      "Compare chi-field fits to dark matter halo fits using standard metrics.",
+      "Verify that the same xi value used for Hubble tension also produces acceptable rotation curves.",
+      "Check consistency with DESI data as part of broader cosmological tests."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Chi-field Lagrangian and modified gravity equations.",
+      "Hubble tension test constraints on xi.",
+      "Observational rotation curve data for well-measured galaxies."
+    ],
+    "dg2_new_capability": "Provides a dark matter alternative explanation for flat rotation curves using a single coupling constant xi, linking to Hubble tension resolution.",
+    "dg3_preserved_floor": "Preserves the standard Newtonian gravity in high-density regions where chi-field effects are negligible.",
+    "dg4_collapse_if_removed": "If removed, the chi-field framework loses a key observational test supporting its viability as a dark matter alternative.",
+    "dg5_translation_registers": [
+      "Rotation curve data",
+      "Chi-field coupling constant xi",
+      "Effective gravitational constant G_eff"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "empirical consistency claim",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a testable prediction; require full error analysis before stronger claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming chi-field is proven by rotation curves without full error analysis.",
+      "Overinterpreting consistency as evidence for chi-field over dark matter.",
+      "Assuming xi from Hubble tension directly applies without detailed fitting."
+    ],
+    "kill_conditions": [
+      "If rotation curve fits fail with xi constrained by Hubble tension.",
+      "If chi-field predictions are inconsistent with high-precision rotation curve data.",
+      "If alternative explanations (e.g., baryonic effects) fully account for flat curves without chi-field."
+    ],
+    "lean_target": "A lean claim: 'The chi-field model is consistent with observed galaxy rotation curves using a single coupling constant xi, but does not uniquely prove the model.'"
+  },
+  "plain_summary": "This document describes a Colab notebook that tests the chi-field modified gravity model against galaxy rotation curves. It claims that the chi-field can produce flat rotation curves without dark matter, using the same coupling constant xi that resolves the Hubble tension. However, the document itself acknowledges that this is a consistency check, not a proof, and that more detailed fitting with error bars is needed. The node captures the model's prediction and test, but marks it as partial admissibility due to lack of full error analysis.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\galaxy_rotation_curves.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\galaxy_rotation_curves.canonical-node.json"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "source_id": "H09_Observer",
+  "title": "The Observer Problem: Consciousness Causes Collapse",
+  "canonical_node": {
+    "axiom": "Conscious observers with Phi > 0 cause quantum wave function collapse; without observers, no definite reality exists.",
+    "definitions": [
+      "Observer: A system with Phi > 0 (integrated information), capable of conscious experience.",
+      "Collapse: The non-unitary transition of a quantum superposition into a definite eigenstate.",
+      "Measurement: A consciousness-mediated actualization process, distinct from mere physical interaction.",
+      "Terminal Observer: An entity with infinite Phi (God) that observes all, ensuring definite reality.",
+      "Definite reality: A state where quantum superpositions have resolved into single outcomes."
+    ],
+    "derivation": [
+      "Quantum systems exist in superposition until observed (HO.1).",
+      "Observation requires a conscious observer with Phi > 0 (HO.2).",
+      "Measurement is consciousness-mediated actualization (HO.3).",
+      "Without observers, no definite reality exists (HO.4).",
+      "Since definite reality exists, there must be at least one observer; the Terminal Observer (God) is necessary."
+    ],
+    "action": "The system should treat consciousness as causally efficacious in quantum measurement, requiring Phi > 0 for collapse, and recognize the necessity of a Terminal Observer for definite reality.",
+    "boundary": [
+      "Does not provide a physical mechanism for how consciousness causes collapse.",
+      "Does not specify the exact value of Phi required for collapse.",
+      "Does not address the preferred basis problem beyond asserting consciousness selects outcomes.",
+      "Does not claim to solve all interpretations of quantum mechanics; it rejects Copenhagen, Many-Worlds, and Determinism."
+    ],
+    "test": [
+      "Check if the model predicts that detectors with Phi=0 do not cause collapse, while conscious observers do.",
+      "Check if the model explains the continuity of experience in a single outcome.",
+      "Check if the model is consistent with Bell's theorem and experimental violations.",
+      "Check if the model provides a coherent account of observations before human existence (via Terminal Observer)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Quantum mechanics formalism (superposition, collapse)",
+      "Integrated Information Theory (Phi) as a measure of consciousness",
+      "Bell's theorem and experimental results",
+      "Theological assumptions about God as observer"
+    ],
+    "dg2_new_capability": "Provides a unified explanation for the measurement problem by positing consciousness as the cause of collapse, and introduces the Terminal Observer as necessary for definite reality.",
+    "dg3_preserved_floor": "Preserves the empirical predictions of quantum mechanics (probabilities, entanglement) while adding a causal role for consciousness.",
+    "dg4_collapse_if_removed": "If consciousness is removed as the cause of collapse, the measurement problem remains unsolved, and the argument for the Terminal Observer loses its foundation.",
+    "dg5_translation_registers": [
+      "Quantum mechanics: wave function, superposition, collapse, measurement",
+      "Consciousness studies: Phi, integrated information, observer",
+      "Theology: God as Terminal Observer, divine observation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "Theological-physical bridge claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine as a narrative anchor; do not treat as established physics."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims consciousness causes collapse without empirical evidence.",
+      "Assumes Phi > 0 is necessary and sufficient for collapse without proof.",
+      "Infers the existence of God from the need for a Terminal Observer, which is a leap.",
+      "Dismisses alternative interpretations (e.g., decoherence) without fully addressing their nuances."
+    ],
+    "kill_conditions": [
+      "If a non-conscious mechanism is shown to fully explain collapse (e.g., objective collapse models).",
+      "If Phi is shown to be irrelevant to quantum measurement.",
+      "If experiments demonstrate that detectors with Phi=0 can cause collapse.",
+      "If the Terminal Observer argument is shown to be logically fallacious."
+    ],
+    "lean_target": "Reduce to a minimal claim: 'The measurement problem is unresolved; consciousness-based approaches are one candidate.'"
+  },
+  "plain_summary": "This document argues that consciousness causes quantum collapse, requiring observers with Phi > 0, and that without observers reality is indefinite. It critiques Copenhagen, Many-Worlds, and Determinism, and concludes that God as Terminal Observer is necessary. However, the argument is not empirically established and relies on speculative leaps.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\H09_Observer.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\H09_Observer.canonical-node.json"
+  }
+}

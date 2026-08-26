@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-011-chi-field-properties",
+  "atom_uid": "sha256:0e817c7994efafcf61feeb3832cb3d153d87d0bee26ee22a454c30ba053c195a",
+  "title": "AX-011 — Chi Field Properties",
+  "claim": "Chi is a real scalar field with informational content, carrying semantic potential and instantiating reality through its configuration space. (Note: Uses pre-geometric configuration space, not spacetime coordinates.)",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "χ ∈ ℝ; (□ + m²)χ = J(sources); χ(x,t) ≠ 0 ∀(x,t)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-010"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show χ must be non-scalar (vector, tensor, spinor)",
+    "Show that a real field cannot carry semantic content",
+    "Detect a region of spacetime with zero χ-field value"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-011-chi-field-properties.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-011-chi-field-properties.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:e5450587c28e575228dcf00039fccd739db598255e696e287838979defee69ed",
+      "event_uuid": "6f4543dc-0ab3-5a55-938a-a56d46cf01af"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:893997d54c6b596a3d459f06fe908a2b6e83883e8e33347bee181db2b68b4f6c",
+      "event_uuid": "d42ab4b1-23e7-5d39-baa2-3c87b5d0785c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D2.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-011",
+  "original_node_id": "tp:axioms/01/AX-011",
+  "atom_uuid": "9ff6169c-0184-5366-8234-b95bfe59f5ba"
+}

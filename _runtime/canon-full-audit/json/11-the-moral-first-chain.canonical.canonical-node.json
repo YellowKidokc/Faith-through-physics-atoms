@@ -1,0 +1,85 @@
+{
+  "source_id": "11-the-moral-first-chain.canonical",
+  "title": "The Moral-First Chain",
+  "canonical_node": {
+    "axiom": "The Good exists, underived, and is the foundation from which all else is derived downward.",
+    "definitions": [
+      "The Good: the underived, postulated ultimate source, personal in nature.",
+      "Coherence: the structural form of the Good; alignment with what is, was, and will be.",
+      "Projection: the physical world as a shadow cast by the moral structure.",
+      "Measurement: the registration of coherence-condition when the projection meets a witness.",
+      "M-series: the postulate stack M0-M5 replacing bottom-up bridges."
+    ],
+    "derivation": [
+      "M0 postulates the Good as underived.",
+      "M1 defines coherence as the structural form of the Good.",
+      "M2 derives the physical as a projection of the moral structure.",
+      "M3 interprets sciences as domain vocabularies of the projection.",
+      "M4 defines measurement as coherence-registration.",
+      "M5 postulates the personal nature of the source."
+    ],
+    "action": "Adopt the M-series postulate stack as the working orientation for the framework, deriving all subsequent theorems downward from M0.",
+    "boundary": [
+      "Does not claim the postulates are proven results.",
+      "Does not dissolve the is-ought gap as a formal proof; it is a reframing.",
+      "Does not resolve the problem of evil; it sharpens it.",
+      "Does not claim the postulates are minimal; minimality is abductive and open."
+    ],
+    "test": [
+      "Check that all derived theorems are labeled as theorems of the moral-first system, not conditional on borrowed bundles.",
+      "Verify that the four kernel assumptions are treated as postulates, not mid-chain debts.",
+      "Ensure that any counterexample to the projection grammar is preserved as a finding.",
+      "Confirm that the two soft spots (universal-cost premise, deliberative vs. moral ought) are stated as falsification criteria."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Existing Lean kernel theorems (17 theorems, zero sorry)",
+      "PMM Paper 0 4 (temporal dissolution of is-ought)",
+      "Coherence Atlas (seventy domain vocabularies)",
+      "Fall/Fracture layer (package-context-owed files)"
+    ],
+    "dg2_new_capability": "Provides a top-down derivation order that eliminates the need for bridges between physics, morals, and God, allowing theorems to carry stronger labels.",
+    "dg3_preserved_floor": "Preserves the 17 kernel theorems and the irreducibility result (dual_substrates_from_irreducible_distinctions).",
+    "dg4_collapse_if_removed": "Without the M-series, the framework reverts to bottom-up with permanent construction sites (is-ought gap, bridge defenses), weakening theorem labels.",
+    "dg5_translation_registers": [
+      "M0  The Good (postulated)",
+      "M1  Coherence (kernel assumptions)",
+      "M2  Physical projection (CDR grammar)",
+      "M3  Sciences (domain vocabularies)",
+      "M4  Measurement (coherence-registration)",
+      "M5  Personal source (personhood argument)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "working postulate stack",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "ratify as direction; continue construction"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the is-ought gap is dissolved when it is only reframed.",
+      "Treating the postulates as proven results.",
+      "Assuming the projection grammar applies universally without counterexample.",
+      "Overstating the minimality of the five postulates."
+    ],
+    "kill_conditions": [
+      "A counterexample to the projection grammar is found and not preserved.",
+      "The universal-cost premise is shown to be false.",
+      "The deliberative vs. moral ought distinction collapses.",
+      "The postulates are shown to be inconsistent with the kernel theorems."
+    ],
+    "lean_target": "Formalize the M-series as a postulate stack in Lean, with the kernel theorems as theorems of the system."
+  },
+  "plain_summary": "This sheet proposes a top-down orientation for the framework: postulate the Good (M0) and derive everything else downward, replacing bottom-up bridges. It is a working direction, not a proven result. The document claims this makes proofs easier and dissolves old problems, but those claims are not formally established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\11-the-moral-first-chain.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\11-the-moral-first-chain.canonical.canonical-node.json"
+  }
+}

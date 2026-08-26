@@ -1,0 +1,75 @@
+{
+  "source_id": "test_10_laws",
+  "title": "test_10_laws.ipynb",
+  "canonical_node": {
+    "axiom": "The Theophysics framework is specific enough to be numerically tested; its 10 laws can be encoded as deterministic unit tests with pass/fail outcomes.",
+    "definitions": [
+      "PhysicalConstants: c=299792458.0, hbar=1.054571817e-34, G=6.674e-11, k_B=1.380649e-23, H0=70.0, xi=0.01, m_s=1e-33, lambda_coupling=1e-15, f_critical=0.35",
+      "Law-to-theology mapping: G=Gravity/Grace, M=Mass-Energy/Meaning, E=Electromagnetism/Truth, S=Entropy/Judgment, T=Relativity/Relationship, K=Information/Logos, R=Strong Force/Love, Q=Quantum Mechanics/Faith, F=Weak Force/Sin, C=Coherence/Christ",
+      "f_critical: critical faith threshold, value 0.35, below which coherence cannot be maintained against entropic decay",
+      "m_s: soul field mass, 1e-33 kg, smallest possible massive excitation of chi-field, order-of-magnitude estimate"
+    ],
+    "derivation": [
+      "Each law is mapped to a test class with specific constants and initial conditions.",
+      "Each test asserts a computed output matches an analytical prediction within tolerance  1e-10.",
+      "The test suite passes all tests, demonstrating internal consistency of the framework's numerical predictions.",
+      "The existence of testable assertions implies the framework is specific enough for numerical verification."
+    ],
+    "action": "Run the pytest-style test suite to verify that all 10 law classes and integration tests pass, confirming the numerical consistency of the Theophysics framework.",
+    "boundary": [
+      "Does not prove the physical reality of the chi-field or theological claims.",
+      "Does not compare against experimental data beyond known physical constants.",
+      "Does not establish the framework's external validity; only internal numerical consistency.",
+      "Does not address the speculative nature of parameters like m_s and f_critical."
+    ],
+    "test": [
+      "Execute the notebook and confirm all tests pass.",
+      "Check that each test uses tolerance  1e-10.",
+      "Verify that the integration tests confirm total chi is product of all components and mass matrix is positive definite."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "PhysicalConstants dataclass",
+      "Analytical predictions for each law",
+      "pytest framework and Colab environment"
+    ],
+    "dg2_new_capability": "Provides automated unit tests for all 10 laws, enabling rapid verification of numerical consistency and regression testing.",
+    "dg3_preserved_floor": "Preserves the existing law definitions and their analytical predictions; does not alter the framework's axioms.",
+    "dg4_collapse_if_removed": "Without this test suite, there is no automated verification of the framework's numerical consistency, increasing risk of undetected errors.",
+    "dg5_translation_registers": [
+      "Law-to-theology mapping (G, M, E, S, T, K, R, Q, F, C)",
+      "Physical constants and parameters",
+      "Test assertions and tolerances"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "verification artifact",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as test suite; do not treat as proof of physical reality"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting passing tests as evidence for the physical existence of the chi-field.",
+      "Treating f_critical and m_s as empirically validated constants.",
+      "Assuming the test suite validates the theological mappings."
+    ],
+    "kill_conditions": [
+      "If any test fails under standard execution.",
+      "If the test suite is found to contain tautological assertions.",
+      "If the analytical predictions are derived from the same assumptions being tested."
+    ],
+    "lean_target": "Formalize the test suite in a theorem prover to verify the mathematical correctness of the analytical predictions."
+  },
+  "plain_summary": "This document describes a pytest-style test suite for the 10 laws of Theophysics. It claims that all tests pass, demonstrating numerical consistency. However, it does not provide external validation or proof of the underlying physics/theology. The suite is a useful verification tool but should not be overinterpreted.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test_10_laws.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test_10_laws.canonical-node.json"
+  }
+}

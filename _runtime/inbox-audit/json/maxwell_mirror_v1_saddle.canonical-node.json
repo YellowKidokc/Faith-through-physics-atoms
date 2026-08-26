@@ -1,0 +1,72 @@
+{
+  "source_id": "maxwell_mirror_v1_saddle",
+  "title": "maxwell_mirror_v1_saddle.ipynb",
+  "canonical_node": {
+    "axiom": "The E-K Maxwell mirror is state-dependent: it holds at oscillatory operating points, not at all points in phase space.",
+    "definitions": [
+      "E-K subspace: the two-dimensional subspace of the 10D phase space spanned by the electric and kinetic variables.",
+      "Saddle point: a point where the potential has positive curvature in one direction and negative curvature in another, leading to mixed oscillatory and exponential dynamics.",
+      "Canonical initial conditions: the specific seed 2828 initial conditions used in the v1 notebook.",
+      "Operating point: a specific point in the 10D phase space at which the dynamics are evaluated."
+    ],
+    "derivation": [
+      "The chi-field potential is evaluated at the canonical initial conditions (seed 2828).",
+      "The E-K dynamics at that point exhibit positive curvature in one direction and negative curvature in another, indicating a saddle point.",
+      "Because the E-K subspace dynamics depend on all 10 variables through chi, the curvature at the seed point is mixed.",
+      "Therefore, the E-K Maxwell mirror is not unconditional; it requires specifying an operating point.",
+      "A subsequent scan (v2) found oscillatory operating points, confirming that the mirror holds at those points."
+    ],
+    "action": "Document the saddle-point finding as a negative result and specify the operating point when claiming the Maxwell mirror holds.",
+    "boundary": [
+      "Does not claim the Maxwell mirror holds at all operating points.",
+      "Does not prove the existence of oscillatory operating points; that is left to v2.",
+      "Does not provide a full verification of the Maxwell mirror; it is a precursor notebook."
+    ],
+    "test": [
+      "Check that the E-K potential at seed 2828 indeed has mixed curvature (one positive, one negative).",
+      "Verify that the v2 scan finds oscillatory operating points, supporting the state-dependence claim.",
+      "Ensure that any claim of the Maxwell mirror specifies the operating point."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The 10D phase space model and chi-field potential definition.",
+      "The canonical initial conditions (seed 2828)."
+    ],
+    "dg2_new_capability": "Introduces the concept that the E-K Maxwell mirror is state-dependent, specifically identifying a saddle point at the canonical seed.",
+    "dg3_preserved_floor": "Preserves the possibility that the Maxwell mirror holds at some operating points, as later found in v2.",
+    "dg4_collapse_if_removed": "If this finding is removed, the claim that the Maxwell mirror is unconditional would be unsupported and potentially false.",
+    "dg5_translation_registers": [
+      "Saddle point analysis",
+      "State-dependent dynamics",
+      "Negative result documentation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "negative result / state-dependence claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as documented negative result"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the Maxwell mirror is false based solely on the saddle point at one operating point.",
+      "Claiming the saddle point is a failure of the framework without considering other operating points."
+    ],
+    "kill_conditions": [
+      "If the v2 scan fails to find any oscillatory operating points, the state-dependence claim is weakened.",
+      "If the saddle point analysis is mathematically incorrect, the negative result is invalid."
+    ],
+    "lean_target": "A formal proof that the E-K potential has a saddle point at seed 2828 and that oscillatory points exist elsewhere."
+  },
+  "plain_summary": "This v1 notebook documents that at the canonical seed, the E-K dynamics are saddle-like, not oscillatory, meaning the Maxwell mirror is state-dependent. It does not prove the mirror holds anywhere, but it motivates the v2 scan that finds oscillatory points. The document is a coherent negative result but not a proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\maxwell_mirror_v1_saddle.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\maxwell_mirror_v1_saddle.canonical-node.json"
+  }
+}

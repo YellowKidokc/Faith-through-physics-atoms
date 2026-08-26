@@ -1,0 +1,82 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-ax-scaffold-d19-10",
+  "atom_uid": "sha256:bbea4d97222e2d9e7f1b61dc5970fe793ad52068d3fcd62511a3ee57e6cff82e",
+  "title": "D19.10 — Law X Definition (Trinity Closure)",
+  "claim": "D19.10 — Law X Definition (Trinity Closure) is classified in Part 1 as AX_SCAFFOLD with decision KEEP and anchor UNANCHORED_IN_CURRENT_CHAIN.",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "AX_SCAFFOLD",
+  "assumptions": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status.",
+    "Unanchored entry cannot be treated as bedrock until a clean dependency path is supplied."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate_unanchored",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row D19.10 as AX_SCAFFOLD.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:67606cb628e940bd12fbe149ff920ee1aed4a073d05d41cabc18269efae6f567"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for D19.10 as AX_SCAFFOLD.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:37+00:00",
+      "event_uuid": "ec69c6fe-e1be-42b3-8cba-06f1edf55252",
+      "event_id": "sha256:56143ef95cdfe259d9e79d6da1868d5dd429ac9713bb8be500c40d34c8d357f7"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for D19.10 as AX_SCAFFOLD.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "c9ed9455-0689-44aa-b7cd-b2e1557a027d",
+      "event_id": "sha256:d0a46ea0f989880712b4f07629d40b7f90a07b4f45b22a00be1fb788c0fa5530"
+    }
+  ],
+  "source_claim_id": "AX_PART1:AX_SCAFFOLD:D19.10",
+  "glyphs": [
+    "definition",
+    "axiom"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/definition.svg",
+    "theophysics_glyphs/svg/axiom.svg"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-144",
+  "nodeID": "tp:axioms/01/AX-144",
+  "claimID": "tp:AXIOMS/D19.9",
+  "name": "Law IX: Grace Non-Unitarity",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "definition",
+  "statementTechnical": "Law IX: Grace adds information, enabling coherence increase and sign transformation.",
+  "statementPlain": "Law IX: Grace adds information, enabling coherence increase and sign transformation.",
+  "mathematicalForm": "Ĝ†Ĝ ≠ I; information added",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-074",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-135",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "grace",
+    "coherence",
+    "definition",
+    "information"
+  ],
+  "keywords": [
+    "D19.9",
+    "Q10",
+    "Laws",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show grace is unitary. Demonstrate sign transformation without information addition. Show open-system dynamics don't apply to moral systems.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 146
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-144",
+    "oldID": "D19.9",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-Y (Ninth law)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Laws",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M19",
+    "moduleTitle": "Ten-Law Master Equation",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "BC2",
+    "fourModeRelevance": "M4",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Law IX propagates to conversion mechanics and cosmological grace function.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

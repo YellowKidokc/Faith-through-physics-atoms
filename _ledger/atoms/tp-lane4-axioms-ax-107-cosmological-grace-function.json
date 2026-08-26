@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-107-cosmological-grace-function",
+  "atom_uid": "sha256:9bdd0a9484d1343286dbe9511bde8235aaae0a1b327ca7c3413eec9c59e8e1d8",
+  "title": "AX-107 — Cosmological Grace Function",
+  "claim": "G(t, Ψ_collective) defined — replaces static Λ in Friedmann equations.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "G(t, Ψ_collective): dynamic grace-cosmology function"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-106"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show G(t,Ψ) gives wrong expansion history",
+    "Demonstrate Ψ_collective dependence is undetectable"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-107-cosmological-grace-function.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-107-cosmological-grace-function.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:ed1ace71457ef2277cfe10771fa790b4cc8bde742a25d368a72e3cf29c5579ff",
+      "event_uuid": "f7ae4088-38ee-5ddf-8a54-bd27bcdab3b2"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:e7fefad447d4ae74f3b00b57e2e86d9d5a414ac9a13ee5fcb23f84d15beb8f22",
+      "event_uuid": "e059f4ac-3bfe-5343-8556-e55b7f7a8886"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D14.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-107",
+  "original_node_id": "tp:axioms/01/AX-107",
+  "atom_uuid": "f7840fd5-f70c-5e14-a0c1-32e7f3017ea2"
+}

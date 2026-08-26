@@ -1,0 +1,77 @@
+{
+  "source_id": "Audio_Mapping_OUTBOX_to_Articles",
+  "title": "Audio Mapping: OUTBOX MP3 -> Website Article",
+  "canonical_node": {
+    "axiom": "Each MP3 file in the OUTBOX directory must be mapped to a corresponding website article, and the mapping must be used to upload the audio to R2 and inject the player into the article.",
+    "definitions": [
+      "OUTBOX: Directory containing MP3 files ready for upload.",
+      "INBOX: Directory containing MP3 files still being processed.",
+      "R2: Cloud storage bucket for hosting audio files.",
+      "Article: HTML page on the website that should embed the audio player.",
+      "Canonical batch: The newer GTQ_ prefixed audio files, preferred over older format."
+    ],
+    "derivation": [
+      "The document lists 102 MP3s in OUTBOX and 56 in INBOX.",
+      "It provides a mapping table from MP3 filenames to article paths.",
+      "It specifies an upload workflow using R2 keys and a URL pattern.",
+      "It notes that some MP3s have no matching article and are considered bonus content.",
+      "It instructs to use the GTQ_ prefixed versions for duplicate GTQ audio."
+    ],
+    "action": "For each MP3 in OUTBOX, if a matching article exists, upload the MP3 to the R2 bucket under the audio/ prefix, then inject the player HTML into the corresponding article. If no matching article exists, either create the article or leave the MP3 unmapped as bonus content.",
+    "boundary": [
+      "Does not define the content or theology of the audio.",
+      "Does not specify the exact player HTML or injection method.",
+      "Does not handle the INBOX files; they are not yet ready.",
+      "Does not resolve the ambiguity of the 'Turtles' file or 'THE_PRISM_Article'."
+    ],
+    "test": [
+      "For each mapped MP3, verify that the file exists in R2 at the expected URL.",
+      "Verify that the corresponding article contains a player element referencing that URL.",
+      "Verify that the mapping table is complete and consistent with the actual files in OUTBOX."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "R2 access keys",
+      "Node.js environment for running list-r2.mjs",
+      "Website repository with article HTML files"
+    ],
+    "dg2_new_capability": "Provides a systematic mapping from audio files to articles, enabling automated upload and player injection.",
+    "dg3_preserved_floor": "Preserves the existing mapping information and the canonical GTQ batch selection.",
+    "dg4_collapse_if_removed": "Without this mapping, the audio files would not be associated with their intended articles, breaking the audio integration.",
+    "dg5_translation_registers": [
+      "MP3 filename -> article path",
+      "MP3 filename -> R2 URL",
+      "Article path -> player HTML"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "operational_mapping",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "store_as_operational_guide"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Assumes all listed MP3s exist and are correctly named.",
+      "Assumes the mapping is complete and accurate.",
+      "Assumes the R2 bucket and URL pattern are correct."
+    ],
+    "kill_conditions": [
+      "If the R2 keys are not available, the upload cannot proceed.",
+      "If the mapping is incorrect, audio may be linked to wrong articles.",
+      "If the GTQ_ prefixed files are not the canonical versions, the wrong audio may be used."
+    ],
+    "lean_target": "A script that reads the mapping table and performs uploads and injections."
+  },
+  "plain_summary": "This document is an operational mapping from MP3 files in an OUTBOX directory to website articles, including instructions for uploading to R2 and embedding players. It is not a theological or scientific claim, but a practical guide for audio integration.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Audio_Mapping_OUTBOX_to_Articles.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Audio_Mapping_OUTBOX_to_Articles.canonical-node.json"
+  }
+}

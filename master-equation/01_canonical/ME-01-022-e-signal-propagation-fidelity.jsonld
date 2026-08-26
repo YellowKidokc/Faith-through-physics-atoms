@@ -1,0 +1,85 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-022",
+  "nodeID": "tp:master-equation/01/ME-01-022",
+  "claimID": "tp:ME/ME-01-022",
+  "nodeType": "claim",
+  "name": "E - Signal Propagation Fidelity",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "definition",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "statementTechnical": "Signal propagation fidelity, structurally matching channel capacity.",
+  "statementPlain": "Truth transmission depends on whether signal survives noise.",
+  "mathematicalForm": "E in R>=0",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-010",
+      "propagates": true,
+      "note": "Factor slot belongs to the Master Equation integration atom."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-003",
+      "propagates": true,
+      "note": "Factor is grounded by AX-003 in the axiom spine."
+    }
+  ],
+  "tags": [
+    "information",
+    "signal-noise",
+    "truth"
+  ],
+  "keywords": [
+    "master-equation-factor",
+    "E",
+    "R>=0"
+  ],
+  "verificationStatus": "formal-layer-import",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+  "masterEquationFactor": {
+    "id": "ME-01-022",
+    "symbol": "E",
+    "name": "Signal Propagation Fidelity",
+    "domain": "R>=0",
+    "definition": "Signal propagation fidelity, structurally matching channel capacity.",
+    "plain": "Truth transmission depends on whether signal survives noise.",
+    "axiom": "AX-003",
+    "tags": [
+      "information",
+      "signal-noise",
+      "truth"
+    ]
+  }
+}

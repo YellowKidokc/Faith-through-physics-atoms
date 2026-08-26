@@ -1,0 +1,63 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-eq-009-fruits-phase-transition",
+  "atom_uid": "sha256:950d498015a5da441411d9702ea5c7b9e77d046a2d8ff3748b973898dec535ab",
+  "title": "Fruits Phase Transition",
+  "claim": "Fruit and anti-fruit outputs appear as bounded phase behavior around a coherence threshold.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "mathematical",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Φ_i(χ) = tanh(β_i(χ - χ_c))"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:axioms/01/AX-151"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-009-fruits-phase-transition.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-009-fruits-phase-transition.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:581f51d3d3337b4c58439aa8d72176f57ceb1987147594c6de7080a0bd3d92cc",
+      "event_uuid": "e1f5af4c-1d88-51b5-bc66-7de75dbef171"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-EQ-009",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-009",
+  "original_node_id": "tp:master-equation/01/ME-EQ-009",
+  "tags": [
+    "equation",
+    "coherence",
+    "phase-transition"
+  ],
+  "keywords": [
+    "equation",
+    "Φ_i",
+    "χ",
+    "β_i",
+    "χ_c"
+  ],
+  "atom_uuid": "1eee5f22-5b0e-5476-9194-7e56544f2078"
+}

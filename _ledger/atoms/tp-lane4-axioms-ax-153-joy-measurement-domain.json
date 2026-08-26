@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-153-joy-measurement-domain",
+  "atom_uid": "sha256:a0d73a81c3a81148a407f290db482dccd4f7e07d05462a10f46f650b549f5eb3",
+  "title": "AX-153 — Joy Measurement Domain",
+  "claim": "Joy = positive gradient of coherence or stable high coherence.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "F_Joy = dC/dt > 0 or C = C_stable_high"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-151"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show joy without coherence increase",
+    "Demonstrate coherence increase without subjective joy"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-153-joy-measurement-domain.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-153-joy-measurement-domain.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:3e25a5f93fa5a79120a795c922db4abd1214abaecd1589e3db68a18ac6099b04",
+      "event_uuid": "c4ee5a74-e942-5b95-897d-80c05deee4f6"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:7cc7852a59784af053ab0e9c01e76c0b54cc52edf9aa214566affeed73e8bf9b",
+      "event_uuid": "ff72fbad-7404-5354-8465-920c587e9b11"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/F2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-153",
+  "original_node_id": "tp:axioms/01/AX-153",
+  "atom_uuid": "709aacd6-1867-59d3-a6ff-96c3c57658ec"
+}

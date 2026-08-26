@@ -1,0 +1,42 @@
+{
+  "source_claim_id": "DG3-Preservation",
+  "title": "DG3 - Preservation / Monotonic Inheritance",
+  "claim": "A valid higher layer preserves the valid capabilities of the lower layer it depends on while adding a new capability class.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM_LOAD_BEARING",
+  "assumptions": [
+    "A higher layer cannot depend on a lower layer while abolishing the valid structure that makes the dependence possible."
+  ],
+  "definitions": [
+    "Preserves(L2, L1): L2 retains the valid capability structure of L1 inside its own layer.",
+    "Monotonic inheritance: higher layers inherit and add rather than erase and replace."
+  ],
+  "equations": [
+    "L(n+1) = L(n) + C(n+1)",
+    "Valid(L(n+1)) -> Preserves(L(n+1), L(n))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency",
+    "DG2-Minimal-Capability"
+  ],
+  "negative_guards": [
+    "Do not use theology to abolish valid physics.",
+    "Do not use physics to abolish valid logic or lived-reality data.",
+    "Do not confuse contextualizing a lower layer with invalidating it."
+  ],
+  "kill_conditions": [
+    "A valid derivation step depends on a prior layer while denying the valid capability it requires.",
+    "Preservation cannot be formalized well enough to test."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ]
+}
+

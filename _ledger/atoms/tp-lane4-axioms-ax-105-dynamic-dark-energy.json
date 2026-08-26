@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-105-dynamic-dark-energy",
+  "atom_uid": "sha256:9ed8e9bcf9a0a8650716f9e812fc480fc43e18f7c3d07ebd387fd51ca11648c3",
+  "title": "AX-105 — Dynamic Dark Energy",
+  "claim": "Universe evolves via chi-modified Friedmann dynamics.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "conjecture",
+  "mode_classification": "C2_WELL_POSED_CONJECTURE",
+  "ontology_family": "04-energy",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "(ȧ/a)² = (8πG/3)ρ - k/a² + G(t)/3"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-104",
+    "tp:axioms/01/AX-010"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show dark energy is static (w = -1 exactly)",
+    "Demonstrate Hubble tension resolves without dynamic dark energy",
+    "Show χ-modified Friedmann gives wrong expansion history"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-105-dynamic-dark-energy.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-105-dynamic-dark-energy.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:77bce56b53c87494a50247ff9fb805a98644755191434024f7662df974ad333d",
+      "event_uuid": "d9dfedfe-8ca8-519e-bd3f-ed969ef327ea"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'conjecture'. Ontology: 04-energy.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:125229d9a24e4901093dec2c1e02c84c540da8c5334907cca409bf928fa8712c",
+      "event_uuid": "7ad7c95d-f22d-5f1e-a0b7-eaf3feef7417"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A14.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-105",
+  "original_node_id": "tp:axioms/01/AX-105",
+  "atom_uuid": "9acfc02e-b35e-5905-b16d-83eaf1df6f11"
+}

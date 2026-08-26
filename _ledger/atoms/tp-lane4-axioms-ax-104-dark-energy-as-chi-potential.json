@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-104-dark-energy-as-chi-potential",
+  "atom_uid": "sha256:afd4fcc493f07b9f448bc2ee34f601a42c08eed5fac466536d36263d838be0f5",
+  "title": "AX-104 — Dark Energy As Chi Potential",
+  "claim": "Dark energy is the vacuum potential energy of the chi-field.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Λ_eff = V(χ_vacuum) = dark energy"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-103",
+    "tp:axioms/01/AX-019"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Measure dark energy properties inconsistent with scalar field potential",
+    "Show dark energy is truly constant (not field-dependent)"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-104-dark-energy-as-chi-potential.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-104-dark-energy-as-chi-potential.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:f34c8748324ce4fbda5b1a4b596c774ed8a3fcc1b9059830e0cdfc48651b6284",
+      "event_uuid": "3c058505-b2b8-555e-9f30-5cd5b14dff86"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:6efe27b0c74a6e678c302965267e11e7ec2d709106513d354234dc1b4e196b35",
+      "event_uuid": "94598667-2f97-5008-9fef-888ca3f14590"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/T13.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-104",
+  "original_node_id": "tp:axioms/01/AX-104",
+  "atom_uuid": "fd34b6b7-8f67-5a6d-9f91-59cf031c8dfb"
+}

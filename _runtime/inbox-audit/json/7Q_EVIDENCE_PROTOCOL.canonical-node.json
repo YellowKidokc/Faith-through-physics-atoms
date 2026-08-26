@@ -1,0 +1,84 @@
+{
+  "source_id": "7Q_EVIDENCE_PROTOCOL",
+  "title": "The 7Q Evidence Protocol  -  Comprehensive Classification",
+  "canonical_node": {
+    "axiom": "Evidence without explanation is incomplete; explanation without evidence is speculation. Three channels multiply; you cannot compensate for zero in one channel by maxing another.",
+    "definitions": [
+      "Phenomenon Strength (PS): weighted score of reproducibility (0.40), effect size (0.30), and measurement quality (0.30).",
+      "Explanatory Depth (ED): weighted score of mechanism clarity (0.40), constraint consistency (0.30), and explanatory scope (0.30).",
+      "Experiential Coherence (EC): weighted score of internal consistency (0.25), longitudinal stability (0.25), behavioral transformation (0.25), and intersubjective pattern (0.25).",
+      "Completeness Factor (CF): CF = (0.5 + 0.5  ED)  (0.5 + 0.5  EC).",
+      "Final Evidence Score (E_final): E_final = PS  CF, with caps applied.",
+      "Five Evidence Gates: Identity (E1), Type (E2), Strength (E3), Linkage (E4), Vulnerabilities (E5)."
+    ],
+    "derivation": [
+      "PS = reproducibility  0.40 + effect_size  0.30 + measurement_quality  0.30",
+      "ED = mechanism  0.40 + constraints  0.30 + scope  0.30",
+      "EC = consistency  0.25 + stability  0.25 + transformation  0.25 + pattern  0.25",
+      "CF = (0.5 + 0.5  ED)  (0.5 + 0.5  EC)",
+      "E_final = PS  CF",
+      "If ED < 0.3, E_final capped at 0.50 (why-penalty). If EC < 0.1, flag NO_LIVED_VALIDITY."
+    ],
+    "action": "Apply the 7Q protocol to any evidence claim entering the system: classify philosophically, score across three channels, compute completeness and final evidence score, pass through five gates, assess competing models, audit the chain, and derive truth score contributions.",
+    "boundary": [
+      "Does not guarantee truth; it guarantees transparency.",
+      "Does not itself provide evidence; it classifies and weighs evidence.",
+      "Does not replace domain-specific expertise; it provides a structured framework.",
+      "Does not assign absolute truth values; it produces scores and flags."
+    ],
+    "test": [
+      "For any evidence claim, verify that all three channels (PS, ED, EC) are scored and multiplied, not added.",
+      "Verify that the why-penalty is applied when ED < 0.3.",
+      "Verify that the no-lived-validity flag is raised when EC < 0.1.",
+      "Verify that all five gates are addressed in sequence.",
+      "Verify that the final evidence score is computed as PS  CF with caps applied."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "None explicitly; it is a meta-protocol for evaluating evidence claims."
+    ],
+    "dg2_new_capability": "Provides a rigorous, transparent, and multi-dimensional classification and scoring system for evidence claims, enabling consistent evaluation across domains.",
+    "dg3_preserved_floor": "Preserves the requirement that evidence must be both explained and lived; unexplained or unlived evidence is penalized mathematically.",
+    "dg4_collapse_if_removed": "Without this protocol, evidence evaluation becomes ad hoc and lacks transparency; the system loses a standardized method for weighing claims.",
+    "dg5_translation_registers": [
+      "Evidence classification (ontological status, epistemological mode, inquiry type, scope, cross-domain status)",
+      "Three-channel scoring (PS, ED, EC)",
+      "Completeness factor and final evidence score",
+      "Five evidence gates (E1-E5)",
+      "Competing models assessment",
+      "Evidence chain audit",
+      "Truth score contribution (S/E/L/D/P/C)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological_protocol",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "adopt_as_protocol"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The protocol's scoring formulas are presented as definitive but are not empirically validated.",
+      "The multiplicative nature of channels is asserted without justification.",
+      "The caps (e.g., ED < 0.3 -> cap at 0.50) are arbitrary and not derived from evidence.",
+      "The protocol claims to be 'comprehensive' but may not cover all evidence types."
+    ],
+    "kill_conditions": [
+      "If the protocol is used to claim that its scores are objective truth rather than heuristic tools.",
+      "If the protocol is applied without domain expertise, leading to misclassification.",
+      "If the protocol is used to reject evidence solely based on low scores without considering context."
+    ],
+    "lean_target": "A transparent, structured method for evaluating evidence claims, with clear scoring and flags, but not a proof of any specific claim."
+  },
+  "plain_summary": "This document defines a comprehensive protocol for classifying and scoring evidence claims. It introduces three channels (Phenomenon Strength, Explanatory Depth, Experiential Coherence) that multiply to produce a final evidence score, along with five gates for evaluating evidence quality. The protocol emphasizes that unexplained or unlived evidence is incomplete and should be penalized. It is a methodological framework, not a proof of any particular claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\7Q_EVIDENCE_PROTOCOL.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\7Q_EVIDENCE_PROTOCOL.canonical-node.json"
+  }
+}

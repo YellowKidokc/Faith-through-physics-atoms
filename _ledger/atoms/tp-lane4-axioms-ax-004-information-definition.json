@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-004-information-definition",
+  "atom_uid": "sha256:1ed26eb44ee275cd647061a8ccf335381b87da7dbd398d4b010ebf27345bedfd",
+  "title": "AX-004 — Information Definition",
+  "claim": "Information ≡ that which reduces uncertainty about the state of a system.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "H(X) = -Σ p(xᵢ) log₂ p(xᵢ)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-003"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show a system where uncertainty reduction fails to capture information",
+    "Show information that doesn't reduce uncertainty"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-004-information-definition.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-004-information-definition.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:745275bcc106ddfd7147457b9de1f86a2267d42e90e3611a0d20d2b63d16d73f",
+      "event_uuid": "1214411b-3c5b-5310-a071-c6f8cde8ad42"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:d25668ff16fcdad746e54542b169b3f504f3b0280274b01dc41417bcd81f069d",
+      "event_uuid": "689c029b-7f60-54ce-973c-14df34489c37"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D1.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-004",
+  "original_node_id": "tp:axioms/01/AX-004",
+  "atom_uuid": "9d5827f1-3752-53f6-bf17-d749818ed74b"
+}

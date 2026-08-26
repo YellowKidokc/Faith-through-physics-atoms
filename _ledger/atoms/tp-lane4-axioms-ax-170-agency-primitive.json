@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-170-agency-primitive",
+  "atom_uid": "sha256:81a6d6ebd7c1d41c7d06f8d718cfb6adb029e4dc96fb6ada2024247e9016e276",
+  "title": "AX-170 — Agency Primitive",
+  "claim": "Agency is ontologically primitive — irreducible capacity for causal initiation.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Agency ∈ Primitives; ¬Reducible(Agency)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-169",
+    "tp:axioms/01/AX-165"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show agency is fully reducible to deterministic mechanism",
+    "Demonstrate epiphenomenalism is correct",
+    "Show consciousness without agency"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-170-agency-primitive.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-170-agency-primitive.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:a5c6a41550e030301f5379f4d10d299cff73a0278010b2d11b0ce45ebbf60d56",
+      "event_uuid": "e84e845f-96d5-52e9-b50a-6aea1c5e7623"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:03bbf59e768951603ae5a23ec61ea8a2ce7e8bf43d494264428c3c46cb6375a9",
+      "event_uuid": "e2bf5e3c-a7db-52e7-b7c9-b8b107494e46"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/O4",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-170",
+  "original_node_id": "tp:axioms/01/AX-170",
+  "atom_uuid": "b3f6f565-1b23-5f77-be48-a981799f063b"
+}

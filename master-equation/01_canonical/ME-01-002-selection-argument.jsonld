@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/002",
+  "nodeID": "tp:master-equation/01/002",
+  "claimID": "tp:ME/L7/C2",
+  "nodeType": "claim",
+  "name": "The Selection Argument — constraints cannot select; selection requires an agent term",
+  "author": [
+    {"@type": "Person", "name": "David Lowe"},
+    {"@type": "SoftwareApplication", "name": "Claude Opus (Anthropic)", "tp:role": "ai-collaborator"},
+    {"@type": "SoftwareApplication", "name": "GPT (OpenAI)", "tp:role": "ai-collaborator"}
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-23",
+  "dateModified": "2026-07-23",
+  "version": "1.0.0",
+
+  "claimClass": "theorem",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "breaks",
+  "evidenceType": "formal_derivation",
+
+  "glyphs": ["❖", "◆", "Μ", "⟐", "⑂"],
+  "tags": ["free-will", "logos", "boundary", "invariant"],
+  "keywords": ["selection", "constraint", "actualization", "measurement problem",
+               "contingency", "agent causation", "type error"],
+
+  "statementTechnical": "A constraint C restricts a possibility space, yielding a permitted set P. Where |P| > 1, C is exhausted and no further constraint collapses P to a single member without either (a) reducing |P| to 1, in which case no selection occurred and the outcome was determined, or (b) introducing a non-constraint term. Selection — the map P → p_i for |P| > 1 — is therefore not a constraint operation. Candidate selectors reduce to law (fails by (a)), chance (a measure over P is itself a constraint and does not draw), or agent (the residual: a term capable of resolving P without being compelled by C). The operation appears at three scales sharing four invariants: multi-valued permitted set, single actual outcome, agent-requiring resolution, irreversibility with cost. Cosmological actualization, quantum measurement (Law 7), and moral regime selection (W in Laws 1-8) are structurally isomorphic under this description.",
+
+  "statementPlain": "Rules say what is allowed. They never pick. Building code has never built a house — it only says what a legal house must satisfy. If two outcomes are both allowed, the rules have said everything they can say and both are still standing. Something has to pick one. That picking is not a rule, and adding more rules will never produce it. The same picking shows up three times: one universe out of the many the laws permit, one measurement outcome out of many, one choice out of two open to a person. Each time: many possible, one actual, no going back without paying. The framework already calls that W.",
+
+  "mathematicalForm": "C: possibility space → P (permitted set). |P| > 1 ⟹ C exhausted. select: P → p_i requires term S ∉ C. cost(select) > 0. reverse(select) > cost(select).",
+
+  "mathFormNormal": "P = {p1..pn}, n > 1, all permitted by C ; select(P) -> pi ; cost(select) > 0 ; reverse(select) requires cost > cost(select) ; C alone does not determine i",
+
+  "axiomRoot": "https://faiththruphysics.com/claims/master-equation/01/000",
+
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:ten-laws/01/law-07-quantum",
+      "note": "Law 7: measurement selects one actuality from superposition"
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:ten-laws/01/law-09-weak-force",
+      "note": "Law 9: moral cost is conserved, not dissipated — the discriminator between agent selection and natural dissipation"
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:physics/01/measurement-problem",
+      "grade": "structural_isomorphism",
+      "propagates": true,
+      "note": "Reclassifies the measurement problem as a type error rather than an unsolved dynamical question"
+    },
+    {
+      "type": "bridgesTo",
+      "target": "tp:master-equation/01/001",
+      "grade": "structural_isomorphism",
+      "propagates": true,
+      "note": "Trilemma requires W_ext = 1 — a voluntary external cost-bearer. Same requirement for an agent term, derived independently"
+    },
+    {
+      "type": "feedsInto",
+      "target": "tpl:logos",
+      "note": "Supplies the selection layer of the vertical stack (layers.json)"
+    },
+    {
+      "type": "challenges",
+      "target": "tp:physics/01/law-selects-world",
+      "note": "Against any programme seeking a fundamental law that explains why this world obtains"
+    }
+  ],
+
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+
+  "falsificationCondition": "PRIMARY: exhibit selection of one actual from many permitted with no agent and no irreversible cost. SECONDARY: (1) a constraint that collapses a multi-member permitted set without an additional term; (2) a fourth candidate selector that is neither law, chance, nor agent; (3) demonstration that the three scales do not share the four invariants; (4) STRONGEST — demonstration that the permitted set is always single-membered, i.e. full determinism, in which case nothing is ever selected and the argument is vacuous.",
+
+  "priorArt": "Leibniz 1714 (sufficient reason); Hawking 1988 ('what breathes fire into the equations'); Craig 1979- (Kalam, agent causation from a timeless cause); Swinburne (personal explanation). Contested by Krauss, Carroll, Hartle-Hawking no-boundary. Novelty claimed is narrow: formalization as a term in a working equation, the cross-scale isomorphism as a graded claim, and the type-error framing that makes it falsifiable rather than merely unsolved.",
+
+  "sourceReference": "C:\\theophysics\\CANONICAL\\_THESIS\\01_architecture\\THE_SELECTION_ARGUMENT.md"
+}

@@ -1,0 +1,77 @@
+{
+  "source_id": "F03_Coherence",
+  "title": "The Coherence Imperative",
+  "canonical_node": {
+    "axiom": "Coherence is measurable, necessary, and the basis of all structure. Order is not an accident - it is a feature of reality's architecture.",
+    "definitions": [
+      "Coherence C[chi] = 1 - (S_observed / S_maximum), measuring organized information density.",
+      "Order(I) > 0 for meaning: information must be organized to be meaningful.",
+      "Parsimony: nature prefers minimal description, dK/dt = -chi(t)."
+    ],
+    "derivation": [
+      "Information exists (A1.3, F02).",
+      "Not all information is equal - some carries meaning, some is noise.",
+      "The difference is organization (coherence).",
+      "Therefore, coherence is the condition for meaning.",
+      "Coherence is measurable via entropy: C = 1 - S/S_max.",
+      "Nature prefers minimal description (parsimony), as evidenced by elegant physical laws."
+    ],
+    "action": "The system should treat coherence as a fundamental, measurable property, and use it to evaluate the organization of information and the validity of physical and theological claims.",
+    "boundary": [
+      "Does not claim to prove the existence of God or specific theological doctrines.",
+      "Does not claim that coherence is conserved in all circumstances; only in closed systems.",
+      "Does not claim that all order is intentional or designed.",
+      "Does not provide a complete physical theory of coherence; it is a conceptual framework."
+    ],
+    "test": [
+      "Verify that coherence C[chi] is non-negative and well-defined for given entropy values.",
+      "Check that the master coherence equation is consistent with known physics (e.g., second law).",
+      "Assess whether parsimony (dK/dt = -chi(t)) aligns with observed simplicity of physical laws.",
+      "Evaluate whether the defense grid arguments successfully counter the listed attack vectors."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "F02_Information",
+      "A1.3"
+    ],
+    "dg2_new_capability": "Provides a quantitative measure of order (coherence) and links it to meaning and structure.",
+    "dg3_preserved_floor": "Preserves the foundational role of information and adds a criterion for meaningful organization.",
+    "dg4_collapse_if_removed": "Without coherence, the framework cannot distinguish meaningful information from noise, undermining the entire information-based ontology.",
+    "dg5_translation_registers": [
+      "Entropy",
+      "Kolmogorov complexity",
+      "Signal-to-noise ratio"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "metaphysical",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims coherence is fundamental without rigorous proof.",
+      "Equates theological coherence with physical coherence without justification.",
+      "Uses fine-tuning arguments that are contested.",
+      "Assumes parsimony is a fundamental principle rather than a heuristic."
+    ],
+    "kill_conditions": [
+      "If meaning can be shown to exist without organization.",
+      "If coherence cannot be measured in practice.",
+      "If nature is shown to not prefer parsimony."
+    ],
+    "lean_target": "A formal definition of coherence and its properties, with empirical support."
+  },
+  "plain_summary": "This document argues that coherence (order) is fundamental and measurable, using entropy-based definitions. It critiques chaos, random universe, and entropy-only views. However, it lacks rigorous proof and mixes theology with physics, so it is not established as a formal axiom.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F03_Coherence.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\F03_Coherence.canonical-node.json"
+  }
+}

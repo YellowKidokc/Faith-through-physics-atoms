@@ -135,7 +135,7 @@
     "external transfer"
   ],
   "mathFormNormal": "a = x/d ; b = 1 - y/d ; x = y => a = 1 - b ; solve(a=1,b=1) requires z_ext = d, w_ext = 1",
-  "verificationStatus": "informal",
+  "verificationStatus": "formal_derivation",
   "kernelChecked": false,
   "challengeStatus": "unchallenged",
   "falsificationCondition": "Exhibit a closed-system mechanism that achieves J=1, M=1, W=1 simultaneously without an external transfer. Alternatively, show that Myerson-Satterthwaite does not apply to moral transfers.",

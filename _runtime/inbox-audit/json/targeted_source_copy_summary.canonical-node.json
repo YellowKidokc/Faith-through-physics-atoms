@@ -1,0 +1,67 @@
+{
+  "source_id": "targeted_source_copy_summary",
+  "title": "Targeted Source Copy Summary",
+  "canonical_node": {
+    "axiom": "A source copy summary is a faithful inventory of copied files and directories, preserving the original structure and content without alteration.",
+    "definitions": [
+      "Source root: a top-level directory or repository from which files are copied.",
+      "Copied file: a file whose content is byte-for-byte identical to the original at the time of copying.",
+      "Excluded artifact: build outputs, toolchain dependencies, and generated files that are not part of the source content."
+    ],
+    "derivation": [
+      "The document lists source roots and file counts per root.",
+      "It provides extension counts for all copied files.",
+      "It states that excluded items are build/toolchain/dependency outputs.",
+      "Therefore, the document is a summary of a copy operation, not a proof or derivation of any physical law."
+    ],
+    "action": "The system should treat this document as a record of source file inventory and use it to verify that the copy operation preserved the original files without modification.",
+    "boundary": [
+      "This document does not assert any physical or mathematical theorem.",
+      "It does not provide proof of any theophysics claim.",
+      "It does not validate the content of the copied files."
+    ],
+    "test": [
+      "Check that the listed source roots and file counts match the actual copied directories.",
+      "Verify that the extension counts sum to the total number of files.",
+      "Confirm that excluded artifacts are not part of the copied set."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [],
+    "dg2_new_capability": "Provides an inventory of source files for auditing and provenance tracking.",
+    "dg3_preserved_floor": "Preserves the record of which source directories were copied and their file counts.",
+    "dg4_collapse_if_removed": "Without this summary, the provenance of the copied files would be less clear, but the files themselves would remain.",
+    "dg5_translation_registers": [
+      "source_root",
+      "file_count",
+      "extension_count"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "administrative_record",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting file counts as evidence for the truth of theophysics claims.",
+      "Assuming that copied files are verified or proven."
+    ],
+    "kill_conditions": [
+      "If the document is used as a proof of a physical theory.",
+      "If the file counts are found to be inaccurate."
+    ],
+    "lean_target": "none"
+  },
+  "plain_summary": "This document is a summary of a file copy operation, listing source directories and file counts. It is not a scientific or mathematical proof and should not be treated as one.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\targeted_source_copy_summary.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\targeted_source_copy_summary.canonical-node.json"
+  }
+}

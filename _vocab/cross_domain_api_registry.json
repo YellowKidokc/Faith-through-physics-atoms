@@ -1,0 +1,222 @@
+{
+  "registryID": "cross-domain-api-registry",
+  "source": "C:\\theophysics\\_PRODUCTION_DEEP_SOURCE_ARCHIVE_2026-07-26\\Cross-Domain Coherence Project\\00_CROSS_DOMAIN_ROADMAP.md",
+  "packet": "D:\\GitHub\\Faith-through-physics-atoms\\cross-domain\\11_articles\\TOPBAR_FILL_PACKET.cross-domain.roadmap.json",
+  "calls": [
+    {
+      "name": "CrossDomain.intake",
+      "status": "implemented",
+      "script": "_scripts/cross_domain_pill_adapter.py",
+      "returns": "canonical topbar fill packet with roadmap and hit-scanned domain pills"
+    },
+    {
+      "name": "Domain.scanHits",
+      "status": "implemented",
+      "contract": [
+        "Master Equation hits",
+        "coherence hits",
+        "entropy hits",
+        "falsification hits"
+      ]
+    },
+    {
+      "name": "Domain.instantiate",
+      "status": "implemented",
+      "contract": [
+        "C",
+        "S",
+        "G",
+        "O",
+        "evidence",
+        "killCondition"
+      ]
+    },
+    {
+      "name": "LegacyEquation.translate",
+      "status": "implemented",
+      "from": "dC/dt = O*G*(1-C) - S*C",
+      "to": "Master Equation atom graph, MTL, claim runtime, fruit audit"
+    },
+    {
+      "name": "CrossDomain.promote",
+      "status": "planned",
+      "requires": "API or human review of evidence, rival models, and live claim dependencies"
+    }
+  ],
+  "domains": [
+    {
+      "code": "PSY",
+      "label": "Psychological Entropy",
+      "hardProblem": "Mental-health collapse, addiction, trauma, and recovery.",
+      "C": "Psychological integration, mental health.",
+      "S": "Trauma load, addiction severity, disorder.",
+      "G": "External negentropic input (community, transcendent source).",
+      "O": "Capacity for faith/reception.",
+      "evidence": "Recovery dynamics, addiction research, trauma burden, 12-step/open-system recovery claims."
+    },
+    {
+      "code": "SEM",
+      "label": "Semantic Entropy",
+      "hardProblem": "Collapse of shared meaning, moral vocabulary, and civic language.",
+      "C": "Shared meaning, moral clarity, linguistic precision.",
+      "S": "Ambiguity, \"thinning\" of thick concepts, rise of subjective/therapeutic language.",
+      "G": "Objective truth, Logos-aligned language, virtue-ethics vocabulary.",
+      "O": "Cultural receptivity to enduring truths, collective attention to meaning.",
+      "evidence": "Ngram trends (virtue decline, therapeutic rise), dictionary definition shifts, SCI."
+    },
+    {
+      "code": "SOM",
+      "label": "Somatic Entropy",
+      "hardProblem": "Physiological degradation: metabolic, hormonal, reproductive, and mortality signals.",
+      "C": "Physiological health, reproductive vitality, metabolic function.",
+      "S": "Chronic disease, hormonal disruption, infertility, obesity, exposure to EDCs.",
+      "G": "Natural order, clean environment, healthy lifestyle, intrinsic biological programming.",
+      "O": "Individual/collective adherence to natural law, receptivity to healthy practices.",
+      "evidence": "Declining testosterone/sperm counts, rising obesity, life expectancy reversals."
+    },
+    {
+      "code": "EDU",
+      "label": "Education Entropy",
+      "hardProblem": "Transmission failure: knowledge decay, grade inflation, and civic illiteracy.",
+      "C": "Knowledge acquisition, critical thinking, civic literacy.",
+      "S": "Grade inflation, declining objective test scores, loss of shared historical/civic understanding.",
+      "G": "Objective standards, rigorous curriculum, pursuit of truth, foundational texts.",
+      "O": "Student/societal receptivity to learning, commitment to intellectual discipline.",
+      "evidence": "Declining SAT/NAEP scores, pervasive grade inflation, decreasing civics knowledge."
+    },
+    {
+      "code": "TRIN",
+      "label": "Trinity Coherence",
+      "hardProblem": "Unity and distinction without collapse into contradiction or modal flattening.",
+      "C": "Three-person relational closure with one coherent divine essence.",
+      "S": "Contradiction, collapse of distinction, tritheism, modalism, and semantic drift.",
+      "G": "Revelation and Logos-grounded relational ontology.",
+      "O": "Reader willingness to test paradox by structure rather than slogan.",
+      "evidence": "This equation is **powerful in its own right**, showing the key **interactions** between grace, faith, and coherence.",
+      "hitCount": 3414,
+      "sourceFiles": [
+        "10_Trinity\\07_Needs Sorting\\Untitled 1.md",
+        "10_Trinity\\07_Needs Sorting\\Untitled 4.md",
+        "10_Trinity\\10_Laws\\Law_01_Gravity_Sin\\G Conceptual Framework for Quantum-Spiritual Unification.md"
+      ],
+      "grade": "candidate structural application"
+    },
+    {
+      "code": "HIST",
+      "label": "Historical Coherence Collapse",
+      "hardProblem": "The 1960-1980 American phase transition and the order of civilizational decay.",
+      "C": "Shared moral order, institutional trust, family stability, and civic continuity over time.",
+      "S": "Sequential collapse across semantic, familial, institutional, economic, and somatic domains.",
+      "G": "Transcendent constraint, moral vocabulary, constitutional memory, and covenantal public order.",
+      "O": "A society's willingness to preserve inherited order and repent when feedback turns negative.",
+      "evidence": "The Question of Entropy (Suffering & Meaning) What is the most beautiful or profound moment of realization you have experienced that was immediately preceded by deep suffering or great loss?",
+      "hitCount": 1709,
+      "sourceFiles": [
+        "06_History_AW\\03_Analysis\\Methodology\\Moral_Decline_Methodology.md",
+        "06_History_AW\\02_Evidence\\01_Evidence_Bundles\\1900-2025_The_Moral_Decay_of_America\\Amish\\THE AMISH COHERENCE FACTORY.md",
+        "06_History_AW\\03_Analysis\\Methodology\\Neuroscience_of_Morality_Research.md"
+      ],
+      "grade": "candidate structural application"
+    },
+    {
+      "code": "SCI",
+      "label": "Scientific Method Entropy",
+      "hardProblem": "Science gaining precision while losing explanatory grounding and admissible why-questions.",
+      "C": "Predictive power plus explanatory grounding, falsification, and honest boundary conditions.",
+      "S": "Interpretive debris, method-only reduction, unfalsifiable prestige, and refusal of first causes.",
+      "G": "Truth as an external standard, methodological humility, and falsifiable explanatory structure.",
+      "O": "Research communities willing to ask forbidden questions and accept correction.",
+      "evidence": "- **Source:** `THE COHERENCE COLLAPSE\\Logos Papers Axiom\\03_Axioms_and_Truth\\The Structure 12 Cliffs and Bridge.md` ### 2.",
+      "hitCount": 825,
+      "sourceFiles": [
+        "04_Scientific_Method\\[TX_A8.X] SCIENTIFIC_METHOD_FRAMEWORK\\05_Testability_Analysis.md",
+        "04_Scientific_Method\\[TX_A8.X] SCIENTIFIC_METHOD_FRAMEWORK\\04_Framework_Implications.md",
+        "04_Scientific_Method\\MISSING_STEPS_AND_FLIP.md"
+      ],
+      "grade": "candidate structural application"
+    },
+    {
+      "code": "ECON",
+      "label": "Economic / Monetary Entropy",
+      "hardProblem": "Money, trust, debt, incentives, and paper claims detaching from real value.",
+      "C": "Honest signal between money, labor, value, and time.",
+      "S": "Inflation, debt abstraction, Cantillon distortion, bailout moral hazard, and phantom value.",
+      "G": "Objective standards, honest weights, real collateral, covenantal trust, and productive exchange.",
+      "O": "Institutional and public willingness to receive correction from reality rather than paper over it.",
+      "evidence": "When Λ (Logos coherence) is violated at the foundational level of a civilization's information system - its money - the entropy propagates everywhere.",
+      "hitCount": 155,
+      "sourceFiles": [
+        "Federal Reserve\\01_CHAIN_OF_PAPER_MASTER.md",
+        "01_Federal_Reserve\\01-01_THESIS_Chain_of_Paper.md",
+        "Economics\\The Federal Reserve.md"
+      ],
+      "grade": "candidate structural application"
+    },
+    {
+      "code": "THEO",
+      "label": "Theological Engineering",
+      "hardProblem": "Turning doctrine into falsifiable structure without reducing God to machinery.",
+      "C": "Doctrinal coherence, lived fruit, and faithful mapping between theology and reality.",
+      "S": "Category error, metaphor inflation, dead formalism, and spiritual abstraction without fruit.",
+      "G": "Revelation, grace, Scripture, sacrament, and the Logos as external anchor.",
+      "O": "Faithful reception, repentance, and willingness to let doctrine judge the system.",
+      "evidence": "Archive scan found framework vocabulary, but the evidence summary still needs human review.",
+      "hitCount": 147,
+      "sourceFiles": [
+        "05_Theological_Engineering\\05-06_MATH_Summary.md",
+        "Theological_Engineering\\03_PROOF_The_Thermodynamics_of_Grace.md",
+        "05_Theological_Engineering\\05-03_PROOF_Thermodynamics_of_Grace.md"
+      ],
+      "grade": "candidate structural application"
+    },
+    {
+      "code": "AI",
+      "label": "AI Alignment Entropy",
+      "hardProblem": "Agency, manipulation, survival incentives, and whether intelligence can remain coherence-seeking.",
+      "C": "Truthful, non-exploitative alignment between agent action, human good, and reality.",
+      "S": "Reward hacking, short-term optimization, manipulation, opacity, and runaway agency.",
+      "G": "Coherence constraints, humility, truth-telling, fruit audit, and moral boundary conditions.",
+      "O": "Agent and developer receptivity to constraints that reduce power but preserve goodness.",
+      "evidence": "# AI Alignment via Substrate Coupling to χ-Field **Date:** 2025-10-21 **Source:** Grok Conversation **Status:** 🔥 Testable Framework **Related Papers:** P10 (LOGOS-CODE), P06 (Info-Logos Law) ## Executive Summary Traditional AI alignment approaches fail because they impose external constraints.",
+      "hitCount": 53,
+      "sourceFiles": [
+        "AI_Alignment\\AI-Alignment-Via-Substrate-Coupling.md",
+        "AI_Alignment\\00_LANDING.md",
+        "14_AI_Synthesis_Final\\Load-Bearing_Lines.md"
+      ],
+      "grade": "candidate structural application"
+    },
+    {
+      "code": "TECH",
+      "label": "Technological Entropy",
+      "hardProblem": "Digital systems maximizing attention, manipulation, and designed instability.",
+      "C": "Durable attention, truth-contact, embodied relation, and human-scale agency.",
+      "S": "Dopamine capture, distraction, algorithmic manipulation, unreality, and accelerated social decay.",
+      "G": "Tool discipline, humane design, truthful mediation, Sabbath limits, and embodied community.",
+      "O": "User and institution willingness to choose coherence over frictionless capture.",
+      "evidence": "Psychological Entropy: Internal Systemic Breakdown Psychological Entropy, the internal systemic breakdown characterized by acute mental distress, shows a strong, temporally acute correlation with the saturation of Perpetual Connectivity technology (Phase 3).",
+      "hitCount": 42,
+      "sourceFiles": [
+        "Technology\\Technology_Entropy_Moral_Decline.md"
+      ],
+      "grade": "candidate structural application"
+    },
+    {
+      "code": "COS",
+      "label": "Cosmological Coherence",
+      "hardProblem": "Dark energy, Hubble tension, cosmic order, and open-system source structure.",
+      "C": "Large-scale intelligible order and stable cosmic structure.",
+      "S": "Expansion pressure, heat-death drift, model tension, and unexplained initial order.",
+      "G": "External source term, boundary condition, grace dynamics, and sustaining order.",
+      "O": "Observer-aware cosmology willing to test source-structured models.",
+      "evidence": "If the governing equation $dC/dt = O \\cdot G(1-C) - S \\cdot C$ holds across scales, then the cosmos itself is not a closed system decaying toward heat death, but an open system sustained by an active grace term.",
+      "hitCount": 33,
+      "sourceFiles": [
+        "Cosmology\\00_LANDING.md",
+        "Cosmology\\P7-P3_Negentropic-Cosmic-Engine.md",
+        "Cosmology\\P7-P1_Dynamic-Dark-Energy.md"
+      ],
+      "grade": "candidate structural application"
+    }
+  ]
+}

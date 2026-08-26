@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-055-terminal-observer-necessity",
+  "atom_uid": "sha256:d01f37da248817de221e7a1b60ec5f8507b3e53b7b11fff2c0f69f9ba37f8d49",
+  "title": "AX-055 — Terminal Observer Necessity",
+  "claim": "Chain terminates in perfect observer: Φ_terminal = ∞.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Φ_terminal = ∞; lim(Φ→∞) Γ(Φ) = ∞ (instantaneous collapse)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-054"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the measurement chain terminates finitely (at decoherence or at some high but finite Φ)",
+    "Demonstrate Φ = ∞ is physically meaningless",
+    "Show the chain doesn't need termination"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-055-terminal-observer-necessity.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-055-terminal-observer-necessity.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:086b1b01fa7f341d1de9ff310ef0bd23f580a97a776b8502db1f1db951ae50a0",
+      "event_uuid": "3b667e38-ad16-532a-b8ba-cdad9ca96e78"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:03bbf59e768951603ae5a23ec61ea8a2ce7e8bf43d494264428c3c46cb6375a9",
+      "event_uuid": "e2bf5e3c-a7db-52e7-b7c9-b8b107494e46"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/LN6.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-055",
+  "original_node_id": "tp:axioms/01/AX-055",
+  "atom_uuid": "3ec4171e-7a20-5e9b-8c59-72583114f933"
+}

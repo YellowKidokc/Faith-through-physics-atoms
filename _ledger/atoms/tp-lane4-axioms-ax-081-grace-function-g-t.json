@@ -1,0 +1,68 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-081-grace-function-g-t",
+  "atom_uid": "sha256:0c0a39668d679a6134d0458c21cfe4c4b6e268fd497ca25737ba5d120df64285",
+  "title": "AX-081 — Grace Function G(t)",
+  "claim": "Ĝ = [[1,0],[1,0]] in {|+1⟩, |-1⟩} basis — the explicit grace operator matrix.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Ĝ = [[1,0],[1,0]]; G = χ/(e^(χ/Φ)-1)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-075",
+    "tp:axioms/01/AX-076",
+    "tp:axioms/01/AX-077",
+    "tp:axioms/01/AX-080"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the matrix form leads to contradictions",
+    "Demonstrate the Planck analog doesn't fit coherence distribution data",
+    "Show an alternative operator satisfies BCs better"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-081-grace-function-g-t.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-081-grace-function-g-t.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:c7ecba477f69f4cdc5ecda7183842d4148c7c74a2192ed858faa399f68b57afa",
+      "event_uuid": "46b8de94-c924-51d0-9ec9-fc31cde5a365"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'mathematical' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:90288e3dc00d4eb425f6e2545345af34d327f33ec0c90960020805121571d3fa",
+      "event_uuid": "97038b62-e468-5264-af06-f46d8430671f"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/E9.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-081",
+  "original_node_id": "tp:axioms/01/AX-081",
+  "atom_uuid": "45e1313d-c19a-5aca-ac3c-296d79015523"
+}

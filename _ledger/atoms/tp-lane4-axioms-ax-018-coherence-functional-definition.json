@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-018-coherence-functional-definition",
+  "atom_uid": "sha256:7fd3f08b4886b8f06bc6e7ac97096e193011394183e7aa273fcf8bb8b5a0d878",
+  "title": "AX-018 — Coherence Functional Definition",
+  "claim": "Coherence C[χ] = S_max - S[χ] (organized information density).",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "C[χ] = S_max - S[χ]"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-017"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show coherence cannot be defined as entropy deficit",
+    "Find a system where C[χ]=0 but meaningful organization exists",
+    "Demonstrate S_max is ill-defined for the universe"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-018-coherence-functional-definition.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-018-coherence-functional-definition.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:bca2df6134699ee72b2ce0ccdbcdf7fe27f434f775311b2f48e664343494c0f4",
+      "event_uuid": "869a7297-9686-542e-9b49-8e41f4ef7afd"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:893997d54c6b596a3d459f06fe908a2b6e83883e8e33347bee181db2b68b4f6c",
+      "event_uuid": "d42ab4b1-23e7-5d39-baa2-3c87b5d0785c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D3.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-018",
+  "original_node_id": "tp:axioms/01/AX-018",
+  "atom_uuid": "9f790219-9663-5344-9ec9-8aba9fb3ecdd"
+}

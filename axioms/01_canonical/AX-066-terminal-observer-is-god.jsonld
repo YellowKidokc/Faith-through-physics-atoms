@@ -1,0 +1,148 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-066",
+  "nodeID": "tp:axioms/01/AX-066",
+  "claimID": "tp:AXIOMS/ID7.1",
+  "name": "Terminal Observer Is God",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theological_interpretation",
+  "statementTechnical": "The entity satisfying all boundary conditions (BC1-BC8), when equipped with PERSONHOOD (agency, intentionality, relational capacity), is identical to the transcendent agent denominated \"God.\" [NOTE: Structural property-matching alone doesn't make something a person. A mathematical object could satisfy all boundary conditions without being God. Personhood properties are required — see new PERSONHOOD axiom.]",
+  "statementPlain": "The entity satisfying all boundary conditions (BC1-BC8), when equipped with PERSONHOOD (agency, intentionality, relational capacity), is identical to the transcendent agent denominated \"God.\" [NOTE: Structural property-matching alone doesn't make something a person. A mathematical object could satisfy all boundary conditions without being God. Personhood properties are required — see new PERSONHOOD axiom.]",
+  "mathematicalForm": "TO ≡ G; BC1∧BC2∧BC3∧BC4∧BC5∧BC6∧BC7∧BC8 → unique(TO)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-055",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-058",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-059",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-060",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-061",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-062",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-063",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-064",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-065",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-066a",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "logos",
+    "witness",
+    "boundary",
+    "observer"
+  ],
+  "keywords": [
+    "ID7.1",
+    "Q9",
+    "Divine",
+    "Identification"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show another entity satisfying all 8 BCs. Demonstrate BC1-BC8 don't require a single entity. Show the identification is category error (physics entities ≠ theological entities).",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 68
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-066",
+    "oldID": "ID7.1",
+    "treeLevel": "Q9",
+    "treeBranch": "Q9-A (Identification — physics meets theology)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "Identification",
+    "logicalForce": "bridge identification",
+    "formalizableInLean": "partly",
+    "leanKind": "bridge predicate / outside kernel by default",
+    "riskLevel": "high",
+    "kernelRole": "guardedPremise",
+    "moduleID": "M07",
+    "moduleTitle": "Boundary Conditions",
+    "spineRole": "interpretive_identification",
+    "boundaryCondition": "BC1-BC8 (all)",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "Materialism, Naturalism, Nihilism, Hard Determinism, Eliminativism, Buddhism, Atheism",
+    "propagationTest": "YES — Identification propagates to ALL subsequent theology: Trinity, Christology, soteriology, eschatology.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "source_id": "JusticeMercy",
+  "title": "JusticeMercy.lean",
+  "canonical_node": {
+    "axiom": "Justice and Mercy are structurally isomorphic operations on a coherence algebra: both restore the system to unity, differing only in the routing parameter (who absorbs the cost).",
+    "definitions": [
+      "Debt : a violation creates a formal debt of type  in the CoherenceAlgebra, with a magnitude.",
+      "Resolution: an operator that takes a debt d and a parameter alpha; returns one (unity) when alpha = one (offender pays) and also returns one when alpha = zero (substitute pays).",
+      "Isomorphism: in this context, equality of outputs for the two parameter values, indicating structural sameness of the operation."
+    ],
+    "derivation": [
+      "Define Debt  as a formal representation of violation in the CoherenceAlgebra.",
+      "Define Resolution operator such that Resolution d one = one and Resolution d zero = one.",
+      "Prove theorem justice_mercy_isomorphism: Resolution d one = Resolution d zero.",
+      "Conclude that Justice and Mercy are the same operation with different routing parameters."
+    ],
+    "action": "The system should treat Justice and Mercy as equivalent operations that both restore coherence, with the only difference being the parameter that determines who bears the cost.",
+    "boundary": [
+      "Does not claim that the moral accounting is identical; only the structural outcome is the same.",
+      "Does not assert that the substitute's cost is zero or that the offender's debt is not real.",
+      "Does not extend beyond the formal algebra to theological or ethical implications without further proof."
+    ],
+    "test": [
+      "Check that the theorem justice_mercy_isomorphism is formally proved in Lean.",
+      "Verify that the Resolution operator is defined exactly as specified for both parameter values.",
+      "Ensure that the CoherenceAlgebra axioms are consistent and that the proof does not rely on hidden assumptions."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CoherenceAlgebra definitions",
+      "Lean4 formal proof infrastructure"
+    ],
+    "dg2_new_capability": "Provides a formal proof that Justice and Mercy are isomorphic operations, resolving an apparent theological tension within the algebra.",
+    "dg3_preserved_floor": "Preserves the coherence of the system by showing that both justice and mercy lead to the same restored state.",
+    "dg4_collapse_if_removed": "If removed, the formal resolution of the justice-mercy tension is lost, leaving the apparent contradiction unaddressed.",
+    "dg5_translation_registers": [
+      "Theology: justice and mercy are not opposites but two modes of the same restorative act.",
+      "Mathematics: equality of outputs for different parameters in a function."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal proof",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "A",
+    "recommended_atom_action": "preserve as formal theorem"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The theorem proves equality of outputs, not identity of moral significance.",
+      "The term 'isomorphism' may be overused; it is equality of results, not a full structural isomorphism.",
+      "Theological implications are inferred beyond the formal result."
+    ],
+    "kill_conditions": [
+      "If the Lean proof is not actually verified or the definitions are inconsistent.",
+      "If the CoherenceAlgebra is not well-defined or the theorem is vacuous."
+    ],
+    "lean_target": "Formalize the theorem in Lean and verify the proof script."
+  },
+  "plain_summary": "This document presents a Lean formal proof that justice and mercy are isomorphic operations: both restore the system to unity, differing only in who bears the cost. The proof is accepted by Lean, but the theological interpretation goes beyond the formal result.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\JusticeMercy.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\JusticeMercy.canonical-node.json"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "source_id": "atlas_reference_readout",
+  "title": "ATLAS Lean Reference Readout",
+  "canonical_node": {
+    "axiom": "ATLAS is an external reference corpus for Lean proof patterns and project structure, not evidence for Theophysics claims.",
+    "definitions": [
+      "ATLAS: autoformalized Lean 4 textbook mathematics library, machine-generated, ongoing, with some sorry-backed declarations.",
+      "Reference corpus: a collection used for pattern-matching and structural guidance, not for truth-bearing.",
+      "Proof-pattern: idiomatic Lean/mathlib usage, project layout, and proof-review metadata."
+    ],
+    "derivation": [
+      "ATLAS contains 2654 Lean files across 26 book/domain folders, with report.json and targets.yaml per folder.",
+      "Its own reports indicate some declarations are sorry-backed, so it is not fully verified.",
+      "Therefore, ATLAS is useful for structural and idiomatic reference, but cannot serve as canonical evidence.",
+      "Hence, the action is to use ATLAS only as an external reference for Lean project organization and proof idioms."
+    ],
+    "action": "Use ATLAS as an external reference for Lean project layout, proof-review categories, and mathlib idioms. Do not import its theorems or treat its content as evidence for Theophysics claims.",
+    "boundary": [
+      "Does not assert any mathematical or theological truth.",
+      "Does not provide verified proofs for Theophysics axioms.",
+      "Does not replace the need for independent verification of any Lean formalization.",
+      "Does not authorize copying ATLAS content into the canon."
+    ],
+    "test": [
+      "Check that ATLAS is cited only for structural or idiomatic guidance, not as proof.",
+      "Verify that no ATLAS theorem is used as a dependency in Theophysics formalizations without independent verification.",
+      "Confirm that any copied reference files are quarantined and not treated as canonical."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 v4.29.0",
+      "Mathlib revision 8a178386ffc0f5fef0b77738bb5449d50efeea95",
+      "External reference corpus (ATLAS)"
+    ],
+    "dg2_new_capability": "Provides a reference for Lean project organization, proof-review metadata, and idiomatic mathlib patterns, enabling more efficient Lean formalization work.",
+    "dg3_preserved_floor": "Preserves the requirement that Theophysics claims must be independently verified; ATLAS does not lower the evidence bar.",
+    "dg4_collapse_if_removed": "Without ATLAS, Lean specialists lose a convenient reference for project structure and idioms, but no Theophysics axiom collapses because ATLAS is not a dependency.",
+    "dg5_translation_registers": [
+      "Lean project layout",
+      "Proof-review categories",
+      "targets.yaml / report.json crosswalk"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "reference corpus",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine as external reference; do not promote to canon"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating ATLAS as evidence for Theophysics claims.",
+      "Assuming all ATLAS theorems are fully verified despite sorry declarations.",
+      "Copying ATLAS content into canon without permission or verification."
+    ],
+    "kill_conditions": [
+      "If ATLAS is cited as proof for any Theophysics axiom.",
+      "If ATLAS content is imported into the canon without independent verification.",
+      "If the guardrail is ignored and wholesale copying occurs."
+    ],
+    "lean_target": "Use ATLAS only for structural and idiomatic reference; never as a source of truth."
+  },
+  "plain_summary": "ATLAS is a large Lean 4 math library that can help with project structure and proof idioms, but it is machine-generated and contains unproven declarations. It must be treated as an external reference only, not as evidence for Theophysics claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\atlas_reference_readout.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\atlas_reference_readout.canonical-node.json"
+  }
+}

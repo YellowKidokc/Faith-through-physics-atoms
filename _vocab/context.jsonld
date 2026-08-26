@@ -149,6 +149,149 @@
     "sourceReference": {
       "@id": "tp:sourceReference"
     },
+    "question": {
+      "@id": "tp:question"
+    },
+    "askedBy": {
+      "@id": "tp:askedBy"
+    },
+    "questionContext": {
+      "@id": "tp:questionContext",
+      "@type": "@vocab"
+    },
+    "timeBudget": {
+      "@id": "tp:timeBudget"
+    },
+    "priorKnowledge": {
+      "@id": "tp:priorKnowledge",
+      "@type": "@vocab"
+    },
+    "sourceClaims": {
+      "@id": "tp:sourceClaims",
+      "@container": "@set"
+    },
+    "audienceProfileRef": {
+      "@id": "tp:audienceProfileRef",
+      "@type": "@id"
+    },
+    "audienceID": {
+      "@id": "tp:audienceID"
+    },
+    "primaryQuestion": {
+      "@id": "tp:primaryQuestion"
+    },
+    "stakes": {
+      "@id": "tp:stakes"
+    },
+    "trustedEvidence": {
+      "@id": "tp:trustedEvidence",
+      "@container": "@set"
+    },
+    "likelyMisconceptions": {
+      "@id": "tp:likelyMisconceptions",
+      "@container": "@set"
+    },
+    "vocabularyKnown": {
+      "@id": "tp:vocabularyKnown",
+      "@container": "@set"
+    },
+    "reachFormat": {
+      "@id": "tp:reachFormat",
+      "@type": "@vocab"
+    },
+    "sourceNodes": {
+      "@id": "tp:sourceNodes",
+      "@container": "@set"
+    },
+    "questionRef": {
+      "@id": "tp:questionRef",
+      "@type": "@id"
+    },
+    "impactStatement": {
+      "@id": "tp:impactStatement"
+    },
+    "actionItems": {
+      "@id": "tp:actionItems",
+      "@container": "@set"
+    },
+    "legalWarning": {
+      "@id": "tp:legalWarning"
+    },
+    "humanAnchor": {
+      "@id": "tp:humanAnchor"
+    },
+    "soWhat": {
+      "@id": "tp:soWhat"
+    },
+    "feltProblem": {
+      "@id": "tp:feltProblem"
+    },
+    "ordinaryLanguage": {
+      "@id": "tp:ordinaryLanguage",
+      "@container": "@set"
+    },
+    "plainFinding": {
+      "@id": "tp:plainFinding"
+    },
+    "plainLimit": {
+      "@id": "tp:plainLimit"
+    },
+    "seriesID": {
+      "@id": "tp:seriesID"
+    },
+    "seriesName": {
+      "@id": "tp:seriesName"
+    },
+    "articleOrder": {
+      "@id": "tp:articleOrder",
+      "@container": "@list"
+    },
+    "entryPoint": {
+      "@id": "tp:entryPoint",
+      "@type": "@id"
+    },
+    "prerequisiteSeries": {
+      "@id": "tp:prerequisiteSeries",
+      "@type": "@id"
+    },
+    "seriesThesis": {
+      "@id": "tp:seriesThesis"
+    },
+    "totalReadingTime": {
+      "@id": "tp:totalReadingTime",
+      "@type": "schema:Integer"
+    },
+    "visualType": {
+      "@id": "tp:visualType",
+      "@type": "@vocab"
+    },
+    "altText": {
+      "@id": "tp:altText"
+    },
+    "filePath": {
+      "@id": "tp:filePath"
+    },
+    "renderScript": {
+      "@id": "tp:renderScript"
+    },
+    "resultOutcome": {
+      "@id": "tp:resultOutcome",
+      "@type": "@vocab"
+    },
+    "context": {
+      "@id": "tp:context"
+    },
+    "result": {
+      "@id": "tp:result"
+    },
+    "permission": {
+      "@id": "tp:permission",
+      "@type": "schema:Boolean"
+    },
+    "anonymized": {
+      "@id": "tp:anonymized",
+      "@type": "schema:Boolean"
+    },
     "claimBeacon": {
       "@id": "tp:claimBeacon"
     },
@@ -288,9 +431,6 @@
     },
     "priority": {
       "@id": "tp:priority"
-    },
-    "result": {
-      "@id": "tp:result"
     },
     "monitorID": {
       "@id": "tp:monitorID"

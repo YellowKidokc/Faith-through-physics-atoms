@@ -1,0 +1,95 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-060",
+  "nodeID": "tp:axioms/01/AX-060",
+  "claimID": "tp:AXIOMS/BC3",
+  "name": "Measurement Orthogonality",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "boundary",
+  "statementTechnical": "The observer measurement operator [Ô, Φ̂] = 0 commutes with the agent's moral state operator in the fundamental basis. [NOTE: Commuting operators share eigenstates, implying knowledge along one measurement axis. God knows the agent's moral orientation perfectly, but respects freedom in observables incompatible with σ̂. True omniscience requires additional axioms specifying basis-independence.]",
+  "statementPlain": "The observer measurement operator [Ô, Φ̂] = 0 commutes with the agent's moral state operator in the fundamental basis. [NOTE: Commuting operators share eigenstates, implying knowledge along one measurement axis. God knows the agent's moral orientation perfectly, but respects freedom in observables incompatible with σ̂. True omniscience requires additional axioms specifying basis-independence.]",
+  "mathematicalForm": "[Ô, Φ̂] = 0 (commutation)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-059",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "boundary",
+    "variable",
+    "moral-conservation",
+    "observer"
+  ],
+  "keywords": [
+    "BC3",
+    "Q8",
+    "Divine",
+    "BoundaryCondition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the Terminal Observer necessarily disturbs the system it observes. Demonstrate [Ô, Φ̂] ≠ 0 for any physical observer. Show observer-independence is impossible.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 61
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-060",
+    "oldID": "BC3",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-C (Third boundary condition — observer independence)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Divine",
+    "tier": "2",
+    "newType": "BoundaryCondition",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "constraint predicate",
+    "riskLevel": "medium",
+    "kernelRole": "constraintRole",
+    "moduleID": "M07",
+    "moduleTitle": "Boundary Conditions",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "BC3",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — BC3 propagates to the nature of divine knowledge (omniscience without disturbance).",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "source_id": "7Q_DOMAIN_VOCABULARY",
+  "title": "7Q Domain Vocabulary  -  All Domains",
+  "canonical_node": {
+    "axiom": "The 7Q skeleton is invariant across domains; each domain supplies vocabulary for each Q slot, with five universal death types always present.",
+    "definitions": [
+      "7Q skeleton: the invariant set of seven questions (Q1-Q7) that structure any domain analysis.",
+      "Domain vocabulary: the specific terms, types, and lists that populate each Q slot for a given domain.",
+      "Universal death types: self-refutation, infinite regress, empirical contradiction, logical incoherence, explanatory failure.",
+      "Domain kills: additional death conditions specific to a domain, added to the universal ones."
+    ],
+    "derivation": [
+      "The document defines the 7Q skeleton as invariant and the domain layer as providing vocabulary.",
+      "It provides explicit YAML templates for each domain (physics, biology, theology, consciousness, information theory, economics, moral philosophy, history, theophysics) that specify q1-q7 content.",
+      "It states that the five universal death types are always present and domain kills add to them.",
+      "It provides a template for adding new domains, implying the structure is extensible."
+    ],
+    "action": "When a domain is selected, load the corresponding vocabulary into each Q slot of the 7Q skeleton, ensuring the universal death types are always included.",
+    "boundary": [
+      "Does not define the 7Q skeleton itself; it only provides domain-specific vocabulary.",
+      "Does not specify how the vocabulary is used in reasoning or analysis.",
+      "Does not provide the actual content of the universal death types beyond naming them.",
+      "Does not validate the correctness of the domain vocabularies."
+    ],
+    "test": [
+      "For any domain, the vocabulary must map to each Q slot without contradiction.",
+      "The five universal death types must be present in every domain's kill conditions.",
+      "The template for adding a new domain must be followed to ensure consistency."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "7Q skeleton (invariant structure)",
+      "Five universal death types",
+      "Domain-specific knowledge (physics, biology, etc.)"
+    ],
+    "dg2_new_capability": "Provides a standardized vocabulary layer for applying the 7Q framework across multiple domains, enabling consistent domain-specific analysis.",
+    "dg3_preserved_floor": "Preserves the invariant 7Q skeleton and the universal death types.",
+    "dg4_collapse_if_removed": "Without this vocabulary, the 7Q framework would lack domain-specific terms, making it impossible to apply to concrete domains.",
+    "dg5_translation_registers": [
+      "Domain-specific terminology",
+      "7Q slot labels (Q1-Q7)",
+      "Universal death types"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "template",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "store as canonical template for domain vocabulary; do not treat as empirical claim."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be mistaken for a complete theory rather than a vocabulary template.",
+      "The claim that the 7Q skeleton is invariant is asserted, not proven.",
+      "Domain vocabularies may be incomplete or biased."
+    ],
+    "kill_conditions": [
+      "If the 7Q skeleton is not actually invariant across domains.",
+      "If a domain vocabulary contradicts the universal death types.",
+      "If the template cannot accommodate a legitimate domain."
+    ],
+    "lean_target": "A formal specification of the 7Q skeleton and domain vocabulary as a data schema."
+  },
+  "plain_summary": "This document defines a vocabulary template for applying the 7Q framework to various domains (physics, biology, theology, etc.). It specifies what terms populate each of the seven questions for each domain, and emphasizes that five universal death types always apply. It is a structural template, not a scientific claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\7Q_DOMAIN_VOCABULARY.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\7Q_DOMAIN_VOCABULARY.canonical-node.json"
+  }
+}

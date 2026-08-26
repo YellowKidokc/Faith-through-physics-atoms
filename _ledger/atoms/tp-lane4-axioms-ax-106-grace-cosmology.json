@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-106-grace-cosmology",
+  "atom_uid": "sha256:3ca68a18d86ad73a0444cd162dc672d21601f7bfbcff6ec6647c2e30fde1f0c1",
+  "title": "AX-106 — Grace Cosmology",
+  "claim": "Cosmological constant is function of collective consciousness.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "conjecture",
+  "mode_classification": "C2_WELL_POSED_CONJECTURE",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Λ = Λ(Ψ_collective); G(t,Ψ) replacing static Λ"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-081",
+    "tp:axioms/01/AX-105"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show no correlation between collective consciousness states and cosmological parameters",
+    "Demonstrate Λ is constant regardless of consciousness",
+    "Null result from GCP"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-106-grace-cosmology.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-106-grace-cosmology.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:924e0a6cbaf334c6c442b2ab3e71678ed86240e4bbcc31e86f7786ddaace3f0a",
+      "event_uuid": "87e3d617-a6a6-5d9a-8b59-92daebb64cdd"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'prediction' -> 'conjecture'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:09f66c485f30efb20112a11c271f3ebc6d85bc80c01f95b3c9530483ffe14529",
+      "event_uuid": "05ba4614-804b-55dc-b61b-564091501302"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A14.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-106",
+  "original_node_id": "tp:axioms/01/AX-106",
+  "atom_uuid": "3b3a80b2-b596-550d-8bfe-febf479e080a"
+}

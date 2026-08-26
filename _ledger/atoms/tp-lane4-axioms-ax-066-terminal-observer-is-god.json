@@ -1,0 +1,74 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-066-terminal-observer-is-god",
+  "atom_uid": "sha256:3ee912b18f4cf512d5e878bdad3c8ff4d3f79e5ce215117e7033e2b847b8edc8",
+  "title": "AX-066 — Terminal Observer Is God",
+  "claim": "The entity satisfying all boundary conditions (BC1-BC8), when equipped with PERSONHOOD (agency, intentionality, relational capacity), is identical to the transcendent agent denominated \"God.\" [NOTE: Structural property-matching alone doesn't make something a person. A mathematical object could satisfy all boundary conditions without being God. Personhood properties are required — see new PERSONHOOD axiom.]",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "01-foundations",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "TO ≡ G; BC1∧BC2∧BC3∧BC4∧BC5∧BC6∧BC7∧BC8 → unique(TO)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-055",
+    "tp:axioms/01/AX-058",
+    "tp:axioms/01/AX-059",
+    "tp:axioms/01/AX-060",
+    "tp:axioms/01/AX-061",
+    "tp:axioms/01/AX-062",
+    "tp:axioms/01/AX-063",
+    "tp:axioms/01/AX-064",
+    "tp:axioms/01/AX-065",
+    "tp:axioms/01/AX-066a"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show another entity satisfying all 8 BCs",
+    "Demonstrate BC1-BC8 don't require a single entity",
+    "Show the identification is category error (physics entities ≠ theological entities)"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-066-terminal-observer-is-god.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-066-terminal-observer-is-god.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:f41adb779822e903d27dd53bd94ca261563f25c9cfacfca2dc03eed79e4934aa",
+      "event_uuid": "46b8e95b-545c-5bb6-946f-7d5181b105d8"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theological_interpretation' -> 'derived'. Ontology: 01-foundations.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:c8be36aca07f575c1bb2a0af3e8f7a8b6f12d884d6695888cb87bbbaa46441cc",
+      "event_uuid": "7d92f851-b425-5cda-a56a-b6e4cfddfef8"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/ID7.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-066",
+  "original_node_id": "tp:axioms/01/AX-066",
+  "atom_uuid": "f12bf1a4-dbf5-5f18-aae5-60894e09768a"
+}

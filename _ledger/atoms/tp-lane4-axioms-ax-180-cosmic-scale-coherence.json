@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-180-cosmic-scale-coherence",
+  "atom_uid": "sha256:1605bce8d3c0d05d0d8fabea4b53270e79089919530d5eb9ff52caf5da29a528",
+  "title": "AX-180 — Cosmic Scale Coherence",
+  "claim": "At cosmic scale, coherence = fine-tuning, large-scale structure, eschatological convergence.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "χ(cosmic) = fine_tuning + large_scale_structure"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-179",
+    "tp:axioms/01/AX-105"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show cosmic structure without fine-tuning",
+    "Demonstrate large-scale order from pure chance"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-180-cosmic-scale-coherence.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-180-cosmic-scale-coherence.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:060ec10f32492671badd2929c4066ab9d3b3530c9805f1db299efa2def1a36f5",
+      "event_uuid": "ba3bc6f0-030b-5c9b-aa01-f8970214e981"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:02717a0eb8c759b405d2d77b593f2614d1f472b3ee91d2009fbaeb2a88aaf68c",
+      "event_uuid": "c266c672-4deb-5e97-873f-a8516dff3fd4"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/SC-COSMIC",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-180",
+  "original_node_id": "tp:axioms/01/AX-180",
+  "atom_uuid": "544a71a1-10f2-56ff-8b34-a02b23f26537"
+}

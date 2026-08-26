@@ -1,0 +1,75 @@
+{
+  "source_id": "G07_MoralNature",
+  "title": "The Moral Nature of God",
+  "canonical_node": {
+    "axiom": "God is good by nature, not by fiat. Goodness = coherence-promotion. God IS maximal coherence, therefore God IS maximally good.",
+    "definitions": [
+      "Good(x)  C[chi | x] > 0: x is good if adding x increases total coherence.",
+      "Evil(x)  C[chi | x] < 0: x is evil if adding x decreases total coherence.",
+      "C[God] = C_max: God is maximal coherence.",
+      "Goodness is grounded in the structure of reality (chi), not in arbitrary will."
+    ],
+    "derivation": [
+      "Goodness is defined as coherence-promotion (G6.1).",
+      "God is defined as maximal coherence (G6.2).",
+      "Therefore, God is maximally good by nature.",
+      "Since God's nature is coherence, His commands cannot be incoherent; thus, goodness is neither arbitrary nor external.",
+      "The Euthyphro dilemma is dissolved by identifying goodness with God's nature."
+    ],
+    "action": "The system should treat moral goodness as coherence-promotion and evaluate actions based on their effect on total coherence, with God as the maximal standard.",
+    "boundary": [
+      "Does not claim to provide a complete decision procedure for all moral dilemmas.",
+      "Does not assert that all moral disagreements are resolved by coherence alone.",
+      "Does not claim that God's goodness is empirically verifiable in a physical sense."
+    ],
+    "test": [
+      "Check that the definition of good as coherence-promotion is consistently applied.",
+      "Verify that the derivation from God's maximal coherence to maximal goodness is logically valid.",
+      "Ensure that the resolution of the Euthyphro dilemma does not introduce hidden assumptions."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Axiom 037 (G6.1): Goodness = coherence-promoting",
+      "Axiom 038 (G6.2): God is maximally good (by nature)",
+      "Axiom 039 (G6.3): Good is not arbitrary (grounded in chi)"
+    ],
+    "dg2_new_capability": "Provides a non-arbitrary grounding for divine goodness, resolving the Euthyphro dilemma by identifying goodness with coherence.",
+    "dg3_preserved_floor": "Preserves the claim that God is good and that moral truths are objective, while avoiding the pitfalls of divine command theory and relativism.",
+    "dg4_collapse_if_removed": "If this axiom set is removed, the grounding for divine goodness becomes arbitrary, and the Euthyphro dilemma remains unresolved, weakening the moral framework.",
+    "dg5_translation_registers": [
+      "Theological: God's nature is love and coherence.",
+      "Philosophical: Goodness is defined as coherence-promotion.",
+      "Mathematical: Good(x)  C[chi | x] > 0."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Theological-philosophical synthesis",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Retain as a philosophical/theological proposal, but do not treat as empirically or formally proven."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Equating goodness with coherence is a substantive philosophical claim that is not proven.",
+      "The claim that God IS maximal coherence is not empirically verifiable.",
+      "The resolution of the Euthyphro dilemma is presented as definitive but relies on a specific definition of goodness."
+    ],
+    "kill_conditions": [
+      "If a counterexample is found where an action increases coherence but is intuitively evil.",
+      "If the definition of coherence is shown to be too vague to be meaningful.",
+      "If the identification of God with coherence is shown to be inconsistent with other theological commitments."
+    ],
+    "lean_target": "Axiom 037 (G6.1) is the most critical; if the definition of goodness as coherence-promotion fails, the entire structure collapses."
+  },
+  "plain_summary": "This document argues that God's goodness is not arbitrary but is grounded in His nature as maximal coherence. It defines good as coherence-promotion and evil as coherence-destruction, and uses this to dissolve the Euthyphro dilemma. However, the argument is philosophical and not formally proven, so it should be treated as a proposal rather than an established fact.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G07_MoralNature.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\G07_MoralNature.canonical-node.json"
+  }
+}

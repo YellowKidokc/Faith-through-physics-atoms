@@ -1,0 +1,84 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-hy-evidence-u4",
+  "atom_uid": "sha256:c435972775c4396f55612af9c25146892f12273bc34b561db9cbe88889f89332",
+  "title": "U4 — Fruits Universal",
+  "claim": "U4 — Fruits Universal is classified in Part 1 as HY_EVIDENCE with decision MOVE_OUT_OF_STRICT_CORE and anchor UNANCHORED_IN_CURRENT_CHAIN.",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "HY_EVIDENCE",
+  "assumptions": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "UNANCHORED_IN_CURRENT_CHAIN"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status.",
+    "Unanchored entry cannot be treated as bedrock until a clean dependency path is supplied."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate_unanchored",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row U4 as HY_EVIDENCE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:35655146893b73b0dfdf1f3135d56f844bde0212547b30d2061c2f0199e3fc8d",
+      "event_uuid": "f855788b-e080-5679-a52c-3c16977ebd6e"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for U4 as HY_EVIDENCE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:38+00:00",
+      "event_uuid": "c8231faf-d479-46c2-be3e-812a590a5e16",
+      "event_id": "sha256:815b6f7df9d10a157f05e65809adc1f81aef5c521af3b785d94622482a60d30f"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for U4 as HY_EVIDENCE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "366213e1-9538-42dd-a7a0-1ad6eca74eb1",
+      "event_id": "sha256:e96c4062b847f7ba8982e2154f00e14dce1814066476798fa3173aba9a3cdf29"
+    }
+  ],
+  "source_claim_id": "AX_PART1:HY_EVIDENCE:U4",
+  "glyphs": [
+    "evidence",
+    "prediction"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/evidence.svg",
+    "theophysics_glyphs/svg/prediction.svg"
+  ],
+  "atom_uuid": "fe967961-1aee-58a9-aa20-362859960f6c"
+}

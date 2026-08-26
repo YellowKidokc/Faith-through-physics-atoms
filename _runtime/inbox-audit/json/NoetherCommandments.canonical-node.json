@@ -1,0 +1,72 @@
+{
+  "source_id": "NoetherCommandments",
+  "title": "NoetherCommandments.lean",
+  "canonical_node": {
+    "axiom": "Righteousness is the Noetherian invariant of the chi-system: if a transformation is a symmetry (preserves the coherence product) and all elements are righteous (equal to one), then the coherence product remains one.",
+    "definitions": [
+      "IsSymmetry: a transformation f :  ->  is a symmetry if listProd (xs.map f) = listProd xs for all lists xs.",
+      "IsRighteous: a state is righteous if it equals one (full alignment with the Logos reference frame).",
+      "Coherence product (listProd): the product of coherence values over a list, with empty list product equal to one."
+    ],
+    "derivation": [
+      "Theorem righteousness_preservation: If f is a symmetry and every element in the list is one, then listProd (xs.map f) = one.",
+      "Proof by induction on xs: base case empty list gives one; inductive step uses one_mul and the symmetry hypothesis.",
+      "Axiom frame_lock_decay: If any law value v  one, then there exist inputs where the coherence product is not one."
+    ],
+    "action": "The system should treat righteousness (alignment with the Logos reference frame) as the conserved quantity that symmetry transformations preserve; deviations from righteousness break symmetry and lead to decay.",
+    "boundary": [
+      "Does not claim that righteousness is a physical conserved quantity in the empirical sense.",
+      "Does not prove that all symmetries correspond to righteousness; only that if all elements are righteous, symmetry preserves the product.",
+      "Does not establish that frame_lock_decay is derivable; it is stated as an axiom."
+    ],
+    "test": [
+      "Check that the Lean proof of righteousness_preservation compiles and is accepted by Lean.",
+      "Verify that the definitions of IsSymmetry and IsRighteous are as stated.",
+      "Confirm that frame_lock_decay is explicitly marked as an axiom, not a theorem."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean4 environment",
+      "Definitions of listProd, IsSymmetry, IsRighteous",
+      "Axiom frame_lock_decay"
+    ],
+    "dg2_new_capability": "Provides a formal statement that righteousness is an invariant under symmetry transformations in the chi-system, linking theological concepts to Noether's theorem.",
+    "dg3_preserved_floor": "Preserves the existing coherence product semantics and the notion of symmetry as product preservation.",
+    "dg4_collapse_if_removed": "If removed, the formal link between righteousness and symmetry preservation is lost, weakening the claim that the Ten Commandments are conservation laws.",
+    "dg5_translation_registers": [
+      "Noether's theorem: symmetry implies conservation",
+      "Righteousness as alignment with the Logos",
+      "Coherence product as a measure of system integrity"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Formal proof with axiomatic extension",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "Preserve as a formal theorem with explicit axiom boundary; do not treat as empirical physics."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Conflating mathematical invariance with physical conservation laws.",
+      "Treating the axiom frame_lock_decay as proven when it is only assumed.",
+      "Interpreting righteousness as a measurable physical quantity."
+    ],
+    "kill_conditions": [
+      "If the Lean proof is invalid or does not compile.",
+      "If the axiom frame_lock_decay is contradicted by other axioms.",
+      "If the mapping to Noether's theorem is shown to be logically unsound."
+    ],
+    "lean_target": "Formalize the proof in Lean and verify the axiom's consistency with the rest of the system."
+  },
+  "plain_summary": "This document presents a Lean formal proof that in the chi-system, if all elements are righteous (equal to one) and a transformation preserves the coherence product, then the product remains one. It also states an axiom that any deviation from righteousness breaks symmetry and leads to decay. The proof is verified, but the axiom is not proven. The document draws an analogy to Noether's theorem, but this is a mathematical analogy, not a physical claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\NoetherCommandments.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\NoetherCommandments.canonical-node.json"
+  }
+}

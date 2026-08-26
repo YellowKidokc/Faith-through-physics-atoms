@@ -1,0 +1,98 @@
+{
+  "source_id": "7Q_UNIVERSAL_KERNEL",
+  "title": "The 7 Questions  -  Universal Kernel",
+  "canonical_node": {
+    "axiom": "Every claim can be classified or proven by running seven invariant questions in forward or reverse order, with evidence scored as PS  CF and falsification via five universal death types.",
+    "definitions": [
+      "Q0 Posture: declaration of worldview, epistemology, priors, and off-ramp before inquiry.",
+      "Q1 Identity: what the thing is, its entity type, axiom class, status, origin.",
+      "Q2 Location: domain, subdomain, scale, and cross-domain mappings.",
+      "Q3 Assertion: precise claim, negation, boundary, claim type, precision level.",
+      "Q4 Evidence: three channels (PS, ED, EC) multiplied to E_final = PS  CF.",
+      "Q5 Dependency: upstream dependencies, assumptions, boundary conditions, terminus type.",
+      "Q6 Consequence: what the claim enables, implies, predicts, and forces.",
+      "Q7 Falsification: five death types (self-refutation, infinite regress, empirical contradiction, logical incoherence, explanatory failure).",
+      "PS: Phenomenon Strength = reproducibility0.40 + effect_size0.30 + measurement_quality0.30.",
+      "ED: Explanatory Depth = mechanism0.40 + constraints0.30 + scope0.30.",
+      "EC: Experiential Coherence = consistency0.25 + stability0.25 + transformation0.25 + pattern0.25.",
+      "CF: Coherence Factor = (0.5 + 0.5ED)  (0.5 + 0.5EC).",
+      "E_final: Final Evidence Score = PS  CF, with caps and flags.",
+      "Death types: universal falsification categories.",
+      "Domain plugin: extension slots for domain-specific fields."
+    ],
+    "derivation": [
+      "The kernel defines seven questions (Q1-Q7) plus a precondition Q0.",
+      "It defines two directions: forward (classify) and reverse (prove).",
+      "It defines evidence as three channels (PS, ED, EC) that multiply to E_final.",
+      "It defines five universal death types for falsification.",
+      "It defines a domain plugin interface for domain-specific extensions.",
+      "It defines a failure catalogue of 20 universal failure modes.",
+      "It defines a truth score integration formula.",
+      "It asserts that the form is invariant across domains and directions."
+    ],
+    "action": "When classifying or proving any claim, load the 7Q kernel, select a domain plugin, and run the seven questions in the chosen direction, scoring evidence and applying death tests.",
+    "boundary": [
+      "Does not provide domain-specific content; requires a domain plugin.",
+      "Does not itself prove or classify any specific claim.",
+      "Does not define what counts as a valid domain plugin beyond the schema.",
+      "Does not specify how to resolve conflicts between death tests.",
+      "Does not guarantee that the truth score formula is empirically validated."
+    ],
+    "test": [
+      "For any claim, can the seven questions be applied without changing the kernel",
+      "Does the evidence scoring formula produce a number between 0 and 1",
+      "Are all five death types applicable to any claim",
+      "Does the kernel produce the same structure regardless of domain",
+      "Can the kernel be run in both forward and reverse directions"
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Domain plugins (physics, biology, theology, etc.)",
+      "User-provided Q0 posture declaration",
+      "Evidence data for PS, ED, EC scoring",
+      "Definition of death types as universal"
+    ],
+    "dg2_new_capability": "Provides a universal, domain-agnostic framework for classifying or proving any claim using seven invariant questions and a multiplicative evidence model.",
+    "dg3_preserved_floor": "Preserves the ability to evaluate claims across domains with a consistent structure, including falsification and evidence scoring.",
+    "dg4_collapse_if_removed": "Without the kernel, there is no unified method for applying 7Q across domains; each domain would need its own ad-hoc process, losing cross-domain comparability.",
+    "dg5_translation_registers": [
+      "Forward classification: Q1->Q2->Q3->Q4->Q5->Q6->Q7",
+      "Reverse proof: Q7->Q6->Q5->Q4->Q3->Q2->Q1",
+      "Evidence scoring: PS, ED, EC, CF, E_final",
+      "Death types: self_refutation, infinite_regress, empirical_contradiction, logical_incoherence, explanatory_failure"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological_framework",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve_as_template"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims universality without empirical validation.",
+      "Assumes the five death types are exhaustive and universal.",
+      "Assumes the evidence formula is valid across all domains.",
+      "Uses 'isomorphism' language that may overstate structural equivalence.",
+      "The truth score integration is not derived from evidence."
+    ],
+    "kill_conditions": [
+      "If a domain exists where the seven questions cannot be applied.",
+      "If a claim survives all five death types but is still false.",
+      "If the evidence formula produces inconsistent results across domains.",
+      "If the kernel fails to classify a known valid claim."
+    ],
+    "lean_target": "A methodological template for structured inquiry, not a scientific theory."
+  },
+  "plain_summary": "This document defines a universal framework called the 7Q Kernel, which uses seven questions (identity, location, assertion, evidence, dependency, consequence, falsification) to classify or prove any claim in any domain. It includes a detailed evidence scoring system and a list of universal failure modes. The kernel is intended as an invariant structure that domain plugins extend. However, its universality and the validity of its scoring formulas are not empirically established; it is a proposed methodology rather than a proven system.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\7Q_UNIVERSAL_KERNEL.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\7Q_UNIVERSAL_KERNEL.canonical-node.json"
+  }
+}

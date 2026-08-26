@@ -1,0 +1,62 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-eq-007-grace-non-unitarity",
+  "atom_uid": "sha256:a21e1c658066ea7b47b542b2394282fb326b949a05cbe0529a9721adacfd8ca4",
+  "title": "Grace Non-Unitarity",
+  "claim": "Grace is modeled as information-adding transformation, not merely rearrangement of a closed state.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "mathematical",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Ĝ†Ĝ ≠ I"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-048",
+    "tp:axioms/01/AX-074"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-007-grace-non-unitarity.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-007-grace-non-unitarity.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:709979d1e1d3cfa7bc94a37aaec382de85d44c59fe304e480a5fe8050344f5ca",
+      "event_uuid": "d84d3c2a-7d2e-50ce-88fd-9e95025141c8"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-EQ-007",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-007",
+  "original_node_id": "tp:master-equation/01/ME-EQ-007",
+  "tags": [
+    "equation",
+    "grace",
+    "information"
+  ],
+  "keywords": [
+    "equation",
+    "Ĝ",
+    "I"
+  ],
+  "atom_uuid": "135c716f-5dc0-5574-b48b-faeb6f4afa5e"
+}

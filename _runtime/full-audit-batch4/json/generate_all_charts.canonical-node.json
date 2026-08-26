@@ -1,0 +1,70 @@
+{
+  "source_id": "generate_all_charts",
+  "title": "generate_all_charts.ipynb",
+  "canonical_node": {
+    "axiom": "All project visualizations shall be generated from a single, unified chart-generation notebook that imports all data and produces a consistent, publication-ready output suite.",
+    "definitions": [
+      "Chart generation notebook: a single Colab notebook that produces all visualizations for the project in one execution.",
+      "Publication-ready output: PNG files at 300 DPI, organized into subdirectories by category.",
+      "Consistent formatting: uniform naming, sizing, and styling across all generated charts."
+    ],
+    "derivation": [
+      "The project requires multiple visualizations across field theory, Lagrangian mechanics, and biblical empirical tests.",
+      "Generating charts inline in each test notebook would intermix test logic with presentation logic, reducing clarity.",
+      "A dedicated chart-generation notebook centralizes visualization code, ensuring consistency and ease of maintenance.",
+      "Running this notebook once produces the complete chart suite, saving time and reducing errors compared to running multiple notebooks."
+    ],
+    "action": "Execute generate_all_charts.ipynb to generate all project charts, saving them to /content/charts/ in PNG format at 300 DPI, organized into field_theory/, lagrangian/, biblical/, and summary/ subdirectories.",
+    "boundary": [
+      "Does not perform any new scientific analysis or testing; it only visualizes existing data.",
+      "Does not modify or validate the underlying data; it assumes data is already generated and available.",
+      "Does not produce interactive charts; output is static PNG files."
+    ],
+    "test": [
+      "Run the notebook and verify that all expected chart files are created in the specified directories.",
+      "Check that each chart is in PNG format and has a resolution of 300 DPI.",
+      "Spot-check a sample of charts to ensure they match the expected visualizations (e.g., energy conservation plot is flat)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "All data-generating notebooks (e.g., field theory simulations, Lagrangian mechanics tests, biblical empirical tests) must have been run and their outputs saved.",
+      "The notebook must be run in a Google Colab environment with access to the project data files."
+    ],
+    "dg2_new_capability": "Provides a single-entry-point production pipeline for generating all visualizations, enabling consistent, publication-ready output without needing to run multiple notebooks.",
+    "dg3_preserved_floor": "Preserves the ability to generate each individual chart as before; the notebook aggregates existing visualization code, not replacing it.",
+    "dg4_collapse_if_removed": "If removed, the project loses a centralized chart generation capability, forcing users to run multiple notebooks or manually assemble charts, increasing effort and inconsistency risk.",
+    "dg5_translation_registers": [
+      "Chart generation pipeline",
+      "Publication-ready output",
+      "Visualization consistency"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "operational_pipeline",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve_as_operational_tool"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims the notebook produces 'publication-ready' output, but no evidence of actual publication or peer review is provided.",
+      "The phrase 'all visualizations' may overstate coverage if some charts are not included or if new tests are added later."
+    ],
+    "kill_conditions": [
+      "If the notebook fails to generate all expected charts when run on current data.",
+      "If the output charts are not consistent in format or resolution."
+    ],
+    "lean_target": "A script that generates all charts from a single command, with a manifest of expected outputs."
+  },
+  "plain_summary": "This document describes a Colab notebook that generates all project visualizations in one run, saving them as high-resolution PNGs. It is an operational tool, not a scientific claim, and its value depends on the underlying data and tests.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\generate_all_charts.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\generate_all_charts.canonical-node.json"
+  }
+}

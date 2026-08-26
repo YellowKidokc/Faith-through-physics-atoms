@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-132-chi-field-falsification",
+  "atom_uid": "sha256:372b51ec8d1daa778931b23fe90737ad6fcf2df8196352856ceba9855df801f7",
+  "title": "AX-132 — Chi Field Falsification",
+  "claim": "If χ-field distribution is continuous rather than bimodal, the framework fails.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "03-fields-forces",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Distribution test: bimodal → framework supported; unimodal → framework fails"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-025",
+    "tp:axioms/01/AX-067"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "This IS the defeat condition",
+    "Measure and find unimodal distribution"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-132-chi-field-falsification.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-132-chi-field-falsification.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:24c9f3ca31917370189063c7f88a4cf30d7507a68011ae22892b72db90129eff",
+      "event_uuid": "f711e24a-49b4-5d90-b2dc-61f14ffa9739"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical_anchor' -> 'derived'. Ontology: 03-fields-forces.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:3ba0b76518a5f7531262ce9ebf9f3ffe2ac6372457405aada393752c21e3baa0",
+      "event_uuid": "01df38af-80bd-5bc0-9199-012ca98d025a"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/FALS18.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-132",
+  "original_node_id": "tp:axioms/01/AX-132",
+  "atom_uuid": "a536e6e0-3e14-5682-9896-2f6c8546ffed"
+}

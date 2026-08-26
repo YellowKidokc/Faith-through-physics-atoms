@@ -1,0 +1,59 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-035",
+  "atom_uid": "sha256:6cd1176b3682d191f3b59f1ead028f4b000f8c2b6dc4bf30eb7e82d84650f481",
+  "title": "ISO-035 - Cryptography ↔ Mystery/Revelation",
+  "claim": "ISO-035: Cryptography ↔ Mystery/Revelation maps Cryptography (Shannon) to Mystery / Revelation. Workbook verdict: Level 2.5. Honest verdict: Full doc UPGRADES. Key exchange → prophets/incarnation.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C2_PARTIAL_CORRESPONDENCE",
+  "assumptions": [
+    "Cryptography (Shannon)",
+    "Mystery / Revelation",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "↑ UPGRADED. Forward secrecy, ZK proofs, key exchange map.",
+    "Full doc UPGRADES. Key exchange → prophets/incarnation."
+  ],
+  "equations": [],
+  "bridges": [
+    "Cryptography (Shannon) -> Mystery / Revelation"
+  ],
+  "dependencies": [
+    "ISO-035"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Still non-falsifiable from outside framework"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: Still non-falsifiable from outside framework"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-035 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:891a9d37ec0ecbc5661c4849af257641981a3828d12023bbba99c55ec3afeca6"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-035"
+}

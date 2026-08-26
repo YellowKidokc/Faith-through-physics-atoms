@@ -1,0 +1,54 @@
+{
+  "atom_id": "tp:lane4/master-equation/latch-vs-sector",
+  "atom_uid": "sha256:c0978271dc6a86f8ab582f132bad4c9a03bf894383209874adfd19ad594bd172",
+  "title": "Salvation as Latch, Walk as Sector",
+  "claim": "χ is a measurement instrument. Salvation is a latch — irreversible, non-decreasing, never unset. The walk is a sector that can rise and fall. A man can be saved and far from God at the same time. χ measures the walk and records the latch. It does not set either.",
+  "domain": "master-equation",
+  "lane": "Theology-Bridge",
+  "claim_class": "bridge_claim",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "The Master Equation measures alignment, not salvation status"
+  ],
+  "definitions": [
+    "Latch: irreversible, non-decreasing, never unset",
+    "Sector: can rise and fall, measures current alignment"
+  ],
+  "equations": [],
+  "bridges": [
+    "Soteriology: salvation as permanent status vs progressive sanctification"
+  ],
+  "dependencies": [
+    "tp:lane4/master-equation/master-equation-v3-canonical-form"
+  ],
+  "negative_guards": [
+    "χ is not the salvation variable. The identification of the latch mechanism is a bridge claim.",
+    "This distinction prevents the equation from being read as 'works-based salvation.'"
+  ],
+  "kill_conditions": [
+    "Show that the latch/sector distinction is mathematically incoherent.",
+    "Show that χ must set salvation status rather than merely recording it."
+  ],
+  "proof_label": "BRIDGE_DECLARED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "atom_created_from_canonical_audit",
+      "result": "recorded",
+      "artifact_path": "THE_MASTER_EQUATION_CANONICAL_DOCUMENT_TRIPLE_ISOMORPHISM_BOTTOM_2026-08-09.md",
+      "meaning": "Created during three-model audit (Claude/o3/DeepSeek) of canonical doc vs atom ledger.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "Theology-Bridge",
+      "event_id": "sha256:0f17636dd0ae4550f58cac509b674357ff3d7d42dcfd1553b2d13e15f84a9e99",
+      "event_uuid": "bbb3c51c-d84e-5639-aed6-34011c1eec2d"
+    }
+  ],
+  "source_claim_id": "LATCH_VS_SECTOR",
+  "atom_uuid": "88e33fae-bf81-5f70-9cb5-cebf80989f69"
+}

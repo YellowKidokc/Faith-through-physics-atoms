@@ -1,0 +1,72 @@
+{
+  "source_id": "test_base",
+  "title": "test_base.py: Shared Test Infrastructure",
+  "canonical_node": {
+    "axiom": "Shared test infrastructure must be centralized to ensure consistency across all tests.",
+    "definitions": [
+      "PhysicalConstants: canonical set of physical and framework constants as typed fields.",
+      "tolerance_check: standardized tolerance comparison with logging.",
+      "spearman_test: Spearman rank correlation with significance.",
+      "compression_complexity: zlib-based Kolmogorov complexity proxy.",
+      "TestLogger: class that records pass/fail and computes suite statistics."
+    ],
+    "derivation": [
+      "Without a shared base, each test would independently define constants and validation methods, risking inconsistency.",
+      "Centralizing infrastructure eliminates duplication and ensures uniform standards.",
+      "Consistent infrastructure makes the final scorecard meaningful."
+    ],
+    "action": "Provide a single shared module for constants, utilities, and logging to be imported by all tests.",
+    "boundary": [
+      "Does not implement any specific test logic.",
+      "Does not define the scientific validity of the constants.",
+      "Does not guarantee that tests are correct, only consistent."
+    ],
+    "test": [
+      "Verify that all tests import from test_base.py and use its constants and utilities.",
+      "Check that tolerance thresholds and constants are identical across tests.",
+      "Run the test suite and confirm consistent pass/fail reporting."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Python standard library (zlib, json, logging)",
+      "JAX (for setup_jax)",
+      "SciPy (for spearman_test)"
+    ],
+    "dg2_new_capability": "Provides a single source of truth for constants and test utilities, enabling consistent test execution.",
+    "dg3_preserved_floor": "Ensures that all tests use the same constants and tolerance standards, preserving comparability.",
+    "dg4_collapse_if_removed": "Without it, tests would drift apart, making the suite's results unreliable.",
+    "dg5_translation_registers": [
+      "PhysicalConstants -> constants",
+      "tolerance_check -> validation",
+      "TestLogger -> reporting"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "infrastructure",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as infrastructure, not as scientific evidence"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document implies that consistency implies validity.",
+      "The constants (e.g., f_critical=0.35) are asserted without derivation."
+    ],
+    "kill_conditions": [
+      "If constants are found to be arbitrary or incorrect.",
+      "If the test suite is shown to be inconsistent despite the base."
+    ],
+    "lean_target": "Formalize the infrastructure in Lean as a data structure, not as a proof of physics."
+  },
+  "plain_summary": "This document describes a Python module that centralizes constants and test utilities for a test suite. It is infrastructure, not a scientific claim. The main value is consistency, but consistency does not imply correctness.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test_base.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test_base.canonical-node.json"
+  }
+}

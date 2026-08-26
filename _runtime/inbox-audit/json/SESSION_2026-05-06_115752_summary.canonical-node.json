@@ -1,0 +1,69 @@
+{
+  "source_id": "SESSION_2026-05-06_115752_summary",
+  "title": "Session Handoff Conversion Protocol",
+  "canonical_node": {
+    "axiom": "A session handoff must be converted into a machine-ingest manifest and a human-readable startup summary, preserving the three-layer structure.",
+    "definitions": [
+      "Machine-ingest manifest: structured output that another AI can use immediately.",
+      "Human-readable startup summary: a summary that a human can use to start the next session.",
+      "Three-layer structure: Session Manifest, Decisions and Results, Open Threads."
+    ],
+    "derivation": [
+      "The dropped page is split into a machine-ingest manifest and a startup summary.",
+      "The parser trusts the three-layer structure.",
+      "If the dropped page is freeform or missing layer headers, outputs will be thinner and should be reviewed once."
+    ],
+    "action": "Convert dropped session pages into a machine-ingest manifest and a human-readable startup summary, following the three-layer structure.",
+    "boundary": [
+      "Does not guarantee correct parsing of freeform or missing-layer-header pages.",
+      "Does not wire the vectorization pipeline into the vector store.",
+      "Does not embed session manifests into Qdrant."
+    ],
+    "test": [
+      "Check that the output contains a machine-ingest manifest and a human-readable startup summary.",
+      "Check that the three-layer structure is preserved when the source page has the expected headers.",
+      "Check that the output is usable by another AI immediately."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Canonical framing document",
+      "Ten Laws equations document",
+      "Source session handoff page"
+    ],
+    "dg2_new_capability": "Provides a repeatable workflow for converting dropped session pages into structured handoff outputs.",
+    "dg3_preserved_floor": "Preserves the ability to start the next session from a generated summary instead of raw chat history.",
+    "dg4_collapse_if_removed": "Without this, dropped session pages remain unstructured and harder for another AI to use immediately.",
+    "dg5_translation_registers": [
+      "Machine-ingest manifest",
+      "Human-readable startup summary"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "workflow protocol",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "C",
+    "recommended_atom_action": "preserve as narrative anchor"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that the pipeline works may overstate reliability without formal verification.",
+      "Claims that NotebookLM calls work machine-verified are not substantiated."
+    ],
+    "kill_conditions": [
+      "If the source page is freeform and the parser fails, the protocol may not hold.",
+      "If the vectorization pipeline is required for the protocol to be useful, the protocol is incomplete."
+    ],
+    "lean_target": "Convert dropped session pages into structured handoff outputs with minimal assumptions."
+  },
+  "plain_summary": "This document describes a workflow for converting dropped session pages into a machine-ingest manifest and a human-readable startup summary. It is a narrative anchor for a local handoff process, not a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SESSION_2026-05-06_115752_summary.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\SESSION_2026-05-06_115752_summary.canonical-node.json"
+  }
+}

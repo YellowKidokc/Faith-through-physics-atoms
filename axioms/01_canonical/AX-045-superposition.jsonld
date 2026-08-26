@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-045",
+  "nodeID": "tp:axioms/01/AX-045",
+  "claimID": "tp:AXIOMS/A6.1",
+  "name": "Superposition",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Pre-observation, systems exist in superposition of all possible states.",
+  "statementPlain": "Pre-observation, systems exist in superposition of all possible states.",
+  "mathematicalForm": "|ψ⟩ = Σcᵢ|aᵢ⟩; Σ|cᵢ|² = 1",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-044",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "observer"
+  ],
+  "keywords": [
+    "A6.1",
+    "Q6",
+    "Ontological",
+    "FrameworkCommitment"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show superposition doesn't exist (hidden variables with no Bell violation). Demonstrate macroscopic superposition is impossible in principle.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 46
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-045",
+    "oldID": "A6.1",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-K (Superposition as pre-observation state)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Ontological",
+    "tier": "1",
+    "newType": "FrameworkCommitment",
+    "logicalForce": "framework assumption",
+    "formalizableInLean": "partly",
+    "leanKind": "parameter / assumption, not theorem",
+    "riskLevel": "high",
+    "kernelRole": "guardedPremise",
+    "moduleID": "M06",
+    "moduleTitle": "Collapse / Measurement",
+    "spineRole": "core_spine",
+    "boundaryCondition": "BC5 (Superposition preserved until collapse)",
+    "fourModeRelevance": "M2 (Entropic — superposition fragile under decoherence)",
+    "worldviewsEliminated": "Hard Determinism",
+    "propagationTest": "YES — Superposition propagates to collapse (AX-046), measurement problem, and vulnerability window (BC5).",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

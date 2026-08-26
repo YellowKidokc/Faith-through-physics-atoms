@@ -1,0 +1,75 @@
+{
+  "source_id": "prediction_set_v1",
+  "title": "Prediction Set v1",
+  "canonical_node": {
+    "axiom": "The Theophysics Lagrangian stack should produce testable predictions that can be verified or falsified under controlled conditions.",
+    "definitions": [
+      "LLC v2: The current canonical Lagrangian architecture with terms K, W_i, chi_10, Gamma_9.",
+      "Resistance W_i: A parameter in the kinetic term (1-W_i)^2 that gates the useful contribution of a law channel.",
+      "Source chi_10: A coherence/Christ source term added upward in the Lagrangian.",
+      "Sink Gamma_9: A decoherence/adversary sink term subtracted downward.",
+      "Spirit Lagrangian: The canonical Lagrangian L_spirit.",
+      "Anti-Lagrangian: Defined as L_anti = -L_spirit."
+    ],
+    "derivation": [
+      "The document defines a set of predictions (P1-P10) that the framework should satisfy if internally coherent.",
+      "Each prediction includes a claim, a reason based on the framework's structure, a test method, and a failure condition.",
+      "The predictions are derived from the structural properties of LLC v2, such as the (1-W_i)^2 resistance term, the distinct roles of source and sink, and the sign inversion for the Anti model.",
+      "The document explicitly states that passing predictions does not prove the framework true, only that it behaves as claimed under tested conditions."
+    ],
+    "action": "Run the specified tests for each prediction (P1-P10) under controlled conditions, compare results to expected outcomes, and report failures for repair or rejection.",
+    "boundary": [
+      "This prediction set does not prove Theophysics true.",
+      "It only defines what the current formal models should do if internally coherent.",
+      "It does not claim that the framework is proven.",
+      "It does not cover all possible tests or guarantee completeness."
+    ],
+    "test": [
+      "For each prediction, execute the described test method (e.g., sweep W_i, compare source/sink regimes, check symbolic identity, search for invariants, run trajectory simulations).",
+      "Verify that the observed behavior matches the expected outcome within defined tolerances.",
+      "If any prediction fails, the model, claim wording, or equation form must be repaired, downgraded, or rejected."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Theophysics Lagrangian stack",
+      "LLC v2 architecture",
+      "Spirit and Anti Lagrangian definitions"
+    ],
+    "dg2_new_capability": "Provides a structured set of falsifiable predictions that can be tested to verify the internal coherence of the Theophysics Lagrangian framework.",
+    "dg3_preserved_floor": "Preserves the existing formal architecture and its claims, while adding a testing layer that does not alter the underlying equations.",
+    "dg4_collapse_if_removed": "Without this prediction set, the framework lacks a systematic method to test its internal coherence, making it harder to identify errors or validate behavior.",
+    "dg5_translation_registers": [
+      "Formal-test candidate",
+      "Interpretive claim",
+      "Testable behavior"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "testable predictions",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Run the specified tests and record results; treat as a test suite for the framework."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The predictions may be interpreted as proof of the framework's truth if tests pass, but the document explicitly denies this.",
+      "The tests may be insufficient to fully validate the framework, leading to false confidence."
+    ],
+    "kill_conditions": [
+      "If any prediction fails under the specified test conditions, the corresponding model or claim must be repaired or rejected.",
+      "If wrong-control models pass the same behavioral checks as LLC v2, the framework's distinctiveness is undermined."
+    ],
+    "lean_target": "Formalize the prediction tests into executable code or symbolic checks to automate verification."
+  },
+  "plain_summary": "This document defines a set of ten predictions that the Theophysics Lagrangian framework should satisfy if it is internally coherent. It does not claim proof, but provides testable claims with methods and failure conditions. The predictions cover resistance penalties, source/sink asymmetry, Spirit/Anti contrast, collapse thresholds, conserved quantities, reduction boundaries, wrong-control rejection, entropy coupling, stability shifts, and nonlinearity. The purpose is to make failure visible and guide repair or rejection.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\prediction_set_v1.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\prediction_set_v1.canonical-node.json"
+  }
+}

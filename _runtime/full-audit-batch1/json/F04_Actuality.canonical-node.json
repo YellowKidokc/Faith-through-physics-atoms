@@ -1,0 +1,80 @@
+{
+  "source_id": "F04_Actuality",
+  "title": "Potentiality and Actualization",
+  "canonical_node": {
+    "axiom": "Reality exists in states of potentiality that require actualization; actualization is selective and requires an actualizer.",
+    "definitions": [
+      "Potentiality: a real but not yet actual state, represented by a quantum superposition | =  c|phi.",
+      "Actuality: a definite state, represented by an eigenstate |phi after measurement.",
+      "Actualization: the transition from potential to actual, modeled by wavefunction collapse.",
+      "Actualizer: that which causes the transition from potential to actual; in quantum mechanics, the measurement process or observer."
+    ],
+    "derivation": [
+      "Quantum mechanics describes systems in superposition, which is not merely epistemic because interference patterns are observed.",
+      "Interference requires that multiple potential paths exist simultaneously, giving potentiality ontic status.",
+      "Unitary evolution alone never produces a definite outcome; therefore, a non-unitary process (collapse) is needed for actualization.",
+      "The probability of a particular actualization is given by Born's rule, P(k)=|c|, showing that not all potentials actualize.",
+      "Thus, potentiality is real, actualization requires an actualizer, and actualization is selective."
+    ],
+    "action": "Treat potential states as real and acknowledge that actualization requires a causal mechanism; do not reduce potentiality to mere ignorance or assume all potentials actualize.",
+    "boundary": [
+      "Does not specify the nature of the actualizer (e.g., observer, environment, or divine action).",
+      "Does not claim that quantum mechanics proves Aristotelian metaphysics in all details.",
+      "Does not resolve the measurement problem; it only asserts the need for an actualization process.",
+      "Does not claim that all potentialities are equally real or that actualization is free in a moral sense."
+    ],
+    "test": [
+      "Check that the document does not assert that quantum mechanics proves the existence of God or specific theological doctrines.",
+      "Verify that the distinction between potentiality and actuality is maintained without conflating epistemic and ontic uncertainty.",
+      "Ensure that the claim 'Aristotle was right' is presented as an interpretive bridge, not a proven equivalence.",
+      "Confirm that the document acknowledges alternative interpretations (e.g., Many-Worlds) and does not dismiss them without argument."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "O3.1",
+      "O3.2",
+      "O3.3",
+      "Bell's theorem",
+      "Quantum interference experiments"
+    ],
+    "dg2_new_capability": "Provides a metaphysical framework that interprets quantum superposition as potentiality and collapse as actualization, offering a bridge between ancient philosophy and modern physics.",
+    "dg3_preserved_floor": "Preserves the empirical success of quantum mechanics while adding an interpretive layer; does not alter any physical predictions.",
+    "dg4_collapse_if_removed": "If removed, the chain loses its link between quantum formalism and the metaphysical claims about potentiality and actualization, weakening the case against determinism and actualism.",
+    "dg5_translation_registers": [
+      "Quantum mechanics",
+      "Aristotelian metaphysics",
+      "Theology (divine foreknowledge, creation)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "metaphysical interpretation",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that quantum mechanics proves Aristotle's metaphysics, which is an interpretive leap.",
+      "Asserts that potentiality is 'ontological' based on interference, but this is one interpretation among many.",
+      "Uses theological verses as support, which is not evidence in a scientific context.",
+      "Declares determinism, fatalism, and actualism 'guilty' without fully addressing all counterarguments."
+    ],
+    "kill_conditions": [
+      "If a local hidden variable theory that reproduces all quantum phenomena is found, the Bell's theorem argument fails.",
+      "If a consistent interpretation of quantum mechanics without collapse (e.g., Many-Worlds) is shown to be empirically equivalent and more parsimonious, the actualization requirement is weakened.",
+      "If potentiality is shown to be purely epistemic in a way that still explains interference (e.g., through contextuality), the ontic claim fails."
+    ],
+    "lean_target": "Reduce overstatement by framing the Aristotle-Quantum bridge as an analogy or interpretation, not a proof. Avoid theological claims as evidence."
+  },
+  "plain_summary": "This document argues that quantum mechanics supports the Aristotelian concepts of potentiality and actualization, claiming that superposition represents real potential states and measurement actualizes one of them. It uses Bell's theorem and interference experiments to argue against determinism and actualism. However, the document overreaches by asserting that quantum mechanics 'proves' Aristotle's metaphysics and by integrating theological claims as support. The core idea is coherent but not formally established; it should be treated as an interpretive hypothesis, not a proven fact.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\F04_Actuality.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch1\\json\\F04_Actuality.canonical-node.json"
+  }
+}

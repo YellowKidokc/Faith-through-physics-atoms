@@ -1,0 +1,84 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-drop-duplicate-a1-1",
+  "atom_uid": "sha256:3527d2eee9ab191c3cdc8146631947f6046198adcd4d2bb8723152f9cd333943",
+  "title": "A1.1 — Existence",
+  "claim": "A1.1 — Existence is classified in Part 1 as DROP_DUPLICATE with decision KICK and anchor A1.1 (Existence).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "DROP_DUPLICATE",
+  "assumptions": [
+    "A1.1 (Existence)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "A1.1 (Existence)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status.",
+    "Duplicate row should not survive canonical normalization."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "QUARANTINE",
+  "current_status": "quarantined_duplicate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row A1.1 as DROP_DUPLICATE.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:ce7aa24256498420e8e35bd0bbdbca02368d43563fd2eeff2fba2ebeac99b96b",
+      "event_uuid": "15276cfa-afd7-5f83-9b38-495ba6e1b3d9"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A1.1 as DROP_DUPLICATE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:39+00:00",
+      "event_uuid": "bb743928-1d28-4fbb-b29d-2a3f9901023a",
+      "event_id": "sha256:2477f2e0d40d1277bd7aa48d20a4274a85fe206e4c8bde16aae5f48ab33f81bd"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for A1.1 as DROP_DUPLICATE.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "5ffff5bb-6170-4dd4-b63a-dd73a2bf6277",
+      "event_id": "sha256:dd7c823e541710941081d385d0bf31fd7e8a293c9cc98e4013e065df8fb5d69c"
+    }
+  ],
+  "source_claim_id": "AX_PART1:DROP_DUPLICATE:A1.1",
+  "glyphs": [
+    "boundary",
+    "kill-condition"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/boundary.svg",
+    "theophysics_glyphs/svg/kill-condition.svg"
+  ],
+  "atom_uuid": "c47cf091-abe4-5bf4-b16a-a004f057a7f0"
+}

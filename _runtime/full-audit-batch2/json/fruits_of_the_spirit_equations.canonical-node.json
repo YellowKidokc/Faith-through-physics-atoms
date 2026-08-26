@@ -1,0 +1,78 @@
+{
+  "source_id": "fruits_of_the_spirit_equations",
+  "title": "THE FRUITS OF THE SPIRIT  -  COMPLETE FORMALIZATION",
+  "canonical_node": {
+    "axiom": "The nine Fruits of the Spirit are formalized as a 9-dimensional vector Phi, and their manifestation is a function of system coherence chi via a hyperbolic tangent phase transition. The Anti-Fruits are negative values of the same dimensions. Coherence decays without external input, so Fruits require connection to a coherence source.",
+    "definitions": [
+      "Fruits Vector Phi: {Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control}",
+      "Anti-Fruits Vector Phi: {Hatred, Despair, Anxiety, Impatience, Cruelty, Corruption, Betrayal, Harshness, Addiction}",
+      "Coherence chi: system coherence, output of the Master Equation",
+      "Critical coherence threshold chi_c  0.30",
+      "Sensitivity coefficient _i for each Fruit i",
+      "Master Equation derivative: dchi/dt = G*R_p*(1+E+S)*e^{-Q*C}*F*U*S_s - chi + K*D + Omega*T"
+    ],
+    "derivation": [
+      "The Fruits manifest as Phi_i(chi) = tanh(_i(chi - chi_c)).",
+      "For chi > chi_c, Phi_i > 0 (Fruits manifest); for chi < chi_c, Phi_i < 0 (Anti-Fruits manifest automatically); at chi = chi_c, Phi_i = 0 (neutral).",
+      "The Master Equation includes a decay term -chi that is always negative, implying coherence decays without external input.",
+      "Positive terms (G, R_p, K, Omega) require external coupling, so disconnected systems cannot produce positive Phi values.",
+      "The Vine Principle (John 15:5) is translated as: a system disconnected from the coherence source cannot produce positive Phi values."
+    ],
+    "action": "The system should evaluate text or states against the Fruits vector using the provided SBERT-based scoring engine, computing net fruit score and normalizing to 0-1. It should also map empirical metrics to each Fruit for population-level validation.",
+    "boundary": [
+      "The SBERT implementation is shallow, pattern-matching on surface semantic overlap, not deep structural decomposition.",
+      "The framework does not claim to be a complete physical theory; it is a formalization with theological and psychological analogies.",
+      "The empirical correlation (R=0.73, p<10^-9) is reported from American data 1960-2000 but not independently verified here."
+    ],
+    "test": [
+      "Check that the tanh mapping saturates at 1 and is smooth through the neutral zone.",
+      "Verify that the Master Equation includes the decay term -chi and positive external coupling terms.",
+      "Run the SBERT evaluator on sample texts to confirm it produces scores in [0,1].",
+      "Check that the empirical metrics mapping covers all nine Fruits with measurable proxies."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Master Equation (referenced but not fully derived here)",
+      "SBERT model 'all-MiniLM-L6-v2'",
+      "Empirical data from American population 1960-2000"
+    ],
+    "dg2_new_capability": "Provides a formal vector representation of Fruits and Anti-Fruits, a phase transition mapping from coherence to fruit manifestation, and a computational scoring engine for text evaluation.",
+    "dg3_preserved_floor": "Preserves the theological concept of Fruits of the Spirit as observable outputs of a coherent system, and the Vine Principle.",
+    "dg4_collapse_if_removed": "If the tanh mapping or Master Equation is removed, the formal link between coherence and fruit manifestation is lost, reducing to a list of virtues without a mechanism.",
+    "dg5_translation_registers": [
+      "Theological: Grace, Repentance, Faith, Spiritual state, Divine intervention",
+      "Psychological: Therapeutic support, Willingness to change, Hope, Psychological baseline, Breakthrough moments",
+      "Physical: Energy injection, System optimization, Thermodynamic entropy, Wavefunction coherence, Non-local effects"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Formalization with empirical correlation",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a formalization with clear boundaries; do not treat as proven physics."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The empirical correlation (R=0.73, p<10^-9) is presented as confirmation but lacks methodological detail.",
+      "The Master Equation is asserted without derivation or validation.",
+      "The SBERT evaluator is acknowledged as shallow, yet may be used as if it measures deep coherence."
+    ],
+    "kill_conditions": [
+      "If the empirical correlation is not reproducible with proper controls.",
+      "If the Master Equation is shown to be inconsistent with known physics.",
+      "If the SBERT evaluator is used to make strong claims about individual moral states without validation."
+    ],
+    "lean_target": "A formalized framework for discussing Fruits of the Spirit in terms of coherence, with explicit limitations."
+  },
+  "plain_summary": "This document formalizes the nine Fruits of the Spirit as a vector that depends on a coherence parameter via a tanh function, and links it to a Master Equation. It includes a Python implementation for scoring text, and claims empirical support from population data. However, the physics is analogical, the empirical evidence is not fully detailed, and the computational implementation is shallow. It should be treated as a conceptual framework, not a proven scientific theory.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\fruits_of_the_spirit_equations.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\fruits_of_the_spirit_equations.canonical-node.json"
+  }
+}

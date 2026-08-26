@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-062-superposition-preserved-until-collapse",
+  "atom_uid": "sha256:a0fbd4bb868dba32942e09ac64666c0fe8c259354263db81f08b99c9de3bbd65",
+  "title": "AX-062 — Superposition Preserved Until Collapse",
+  "claim": "Superposition preserved pre-collapse — vulnerability window exists.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "U(t) unitary for t < t_collapse; |ψ⟩ not predetermined"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-045",
+    "tp:axioms/01/AX-061"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show free will doesn't require a vulnerability window",
+    "Demonstrate pre-determination is compatible with BC5",
+    "Show the window doesn't map to free will"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-062-superposition-preserved-until-collapse.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-062-superposition-preserved-until-collapse.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:cd63ff6f848ba6996a8cc222a4d36c95bc60851062c4b5daf67d27d28f130eec",
+      "event_uuid": "d1aa91a2-e5ea-5e83-aa2d-de965263ec14"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'boundary' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:2e9cf945e2f88551f56e3cee6f7f88edabf92acc4a0ad4d3f7972d1f671ea5e4",
+      "event_uuid": "25ae4720-9ad3-5488-98c0-ed7da077e85e"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/BC5",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-062",
+  "original_node_id": "tp:axioms/01/AX-062",
+  "atom_uuid": "71d1e8ed-9f57-5a58-9641-7a22ca0c1ad8"
+}

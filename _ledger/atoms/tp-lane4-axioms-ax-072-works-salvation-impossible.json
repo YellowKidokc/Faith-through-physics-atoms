@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-072-works-salvation-impossible",
+  "atom_uid": "sha256:a59eec7a92cfe522f6a6dade3dc19ee26caa06d1f3c22625cf408ec023001095",
+  "title": "AX-072 — Works Salvation Impossible",
+  "claim": "Works-based salvation is mathematically impossible — cannot lift oneself by one's own hair.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "04-energy",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "¬∃(Works W): W|-1⟩ = |+1⟩"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-071"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show works CAN flip sign",
+    "Demonstrate σ: -1 → +1 through self-effort alone",
+    "This would disprove the sign invariance theorem"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-072-works-salvation-impossible.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-072-works-salvation-impossible.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:458ce5619a082245b1981155a262244dbdf728f0af312646efd8715f95213e55",
+      "event_uuid": "e0a6145e-46c9-5a26-8b64-3233fd09f064"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 04-energy.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:cfef5f258dda422036311af35b68dc2c7dd2a39ca4aaa08b230c3e50ad6bfe06",
+      "event_uuid": "baf1691c-5601-55a1-b1b3-8aa0d9a25282"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/C8.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-072",
+  "original_node_id": "tp:axioms/01/AX-072",
+  "atom_uuid": "6d99ce02-b5d3-57fb-bf15-509dc3c10de5"
+}

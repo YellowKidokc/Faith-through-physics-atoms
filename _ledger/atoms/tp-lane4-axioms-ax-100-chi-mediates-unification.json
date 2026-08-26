@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-100-chi-mediates-unification",
+  "atom_uid": "sha256:05573cda58c928c0d4b64ce9da341f531494a9d8422993cfddf46aed2c23f9c3",
+  "title": "AX-100 — Chi Mediates Unification",
+  "claim": "Fundamental theory must unify gravity and quantum mechanics.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "G_μν + Λg_μν = (8πG/c⁴)T_μν + κχ_μν"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-010",
+    "tp:axioms/01/AX-013"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Achieve GR-QM unification without χ-field",
+    "Show χ cannot couple to both gravity and quantum fields simultaneously",
+    "Demonstrate another substrate unifies them"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-100-chi-mediates-unification.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-100-chi-mediates-unification.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:e03b2efe09e33c7dc2ddc85cbd20fed753770fd58024d5e772004a8577d13365",
+      "event_uuid": "b0af8cf7-0954-57b8-8ef6-521e56278158"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:08871aa26f513ebd444339fbb2979ad7f5a63c92da3e486dcc081d1b1d396107",
+      "event_uuid": "cd537d3a-b886-5444-b637-04cdba88279c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A13.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-100",
+  "original_node_id": "tp:axioms/01/AX-100",
+  "atom_uuid": "95a0544f-1e1a-5538-ae41-44c8190dafc2"
+}

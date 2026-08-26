@@ -1,0 +1,93 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-022",
+  "nodeID": "tp:axioms/01/AX-022",
+  "claimID": "tp:AXIOMS/E3.2",
+  "name": "Universal Coherence Definition",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "mathematical",
+  "statementTechnical": "Universal Coherence Definition — formal specification of total cosmic coherence.",
+  "statementPlain": "Universal Coherence Definition — formal specification of total cosmic coherence.",
+  "mathematicalForm": "C_total = ∫ C[χ] d³x",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-021",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "definition",
+    "equation"
+  ],
+  "keywords": [
+    "E3.2",
+    "Q3",
+    "Ontological",
+    "Equation"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show total cosmic coherence is not well-defined. Demonstrate coherence is not additive or measurable at cosmic scale.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 23
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-022",
+    "oldID": "E3.2",
+    "treeLevel": "Q3",
+    "treeBranch": "Q3-H (Global coherence measure)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Equation",
+    "logicalForce": "formal proposal",
+    "formalizableInLean": "yes",
+    "leanKind": "def / proposition with typed variables",
+    "riskLevel": "medium",
+    "kernelRole": "definitionRole",
+    "moduleID": "M03",
+    "moduleTitle": "Coherence Engine",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Universal coherence defines the total that boundary conditions and eschatology reference.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

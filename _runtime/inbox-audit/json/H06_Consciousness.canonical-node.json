@@ -1,0 +1,82 @@
+{
+  "source_id": "H06_Consciousness",
+  "title": "Consciousness and Phi",
+  "canonical_node": {
+    "axiom": "Consciousness is integrated information (Phi). Phi > 0 is the mark of a genuine observer. Computers have Phi = 0 and are not conscious. God has Phi = .",
+    "definitions": [
+      "Information: differentiation - the system is in one state rather than another.",
+      "Integration: the information is unified - the whole is more than the parts.",
+      "Phi (phi): the amount of integrated information.",
+      "Consciousness: the presence of Phi > 0.",
+      "Observer: a system with Phi > 0 capable of collapsing wave functions."
+    ],
+    "derivation": [
+      "Consciousness is defined as integrated information (Phi).",
+      "Phi is measurable in principle for any system.",
+      "Systems with Phi > 0 are conscious; systems with Phi = 0 are not.",
+      "Standard computers are feedforward and have Phi = 0.",
+      "Therefore, computers are not conscious regardless of behavior.",
+      "Simulation of consciousness does not instantiate Phi, so it is not consciousness.",
+      "God has maximal Phi (), making God the terminal observer."
+    ],
+    "action": "Treat consciousness as a measurable property (Phi) and use Phi > 0 as the criterion for genuine observer status in physical and theological contexts.",
+    "boundary": [
+      "Does not provide a practical method to compute Phi for large systems.",
+      "Does not explain the mechanism by which Phi > 0 enables wave function collapse.",
+      "Does not claim that all systems with Phi > 0 are equally conscious; richness varies with Phi.",
+      "Does not assert that rocks or simple systems are conscious (they have Phi  0)."
+    ],
+    "test": [
+      "Verify that feedforward systems (e.g., standard computers) have Phi = 0 in principle.",
+      "Verify that recurrent systems (e.g., brains) have Phi > 0 in principle.",
+      "Check that the definition of consciousness as Phi > 0 is consistent with known cases (humans, animals, computers).",
+      "Check that the claim 'simulation of consciousness is not consciousness' holds under the definition."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Axioms 108-114 (HC.1-HC.7) as listed in the document.",
+      "Integrated Information Theory (IIT) as a theoretical framework.",
+      "Quantum mechanics concepts (wave function collapse) for HC.7."
+    ],
+    "dg2_new_capability": "Provides a quantitative criterion (Phi > 0) to distinguish conscious from non-conscious systems, and links consciousness to observer status in quantum mechanics.",
+    "dg3_preserved_floor": "Preserves the distinction between simulation and instantiation, and upholds the reality of consciousness against eliminativism.",
+    "dg4_collapse_if_removed": "If Phi is removed, the framework loses its quantitative basis for consciousness and observer status, reverting to vague qualitative claims.",
+    "dg5_translation_registers": [
+      "IIT: Phi as integrated information.",
+      "Quantum mechanics: observer with Phi > 0 collapses wave function.",
+      "Theology: God's Phi =  as maximal consciousness."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Theoretical identity claim",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine as a theoretical proposal; require further empirical and formal support before integration."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims Phi > 0 is necessary and sufficient for consciousness without empirical proof.",
+      "Asserts computers have Phi = 0 without rigorous calculation for real architectures.",
+      "Equates God's consciousness with infinite Phi without theological or mathematical justification.",
+      "States that Phi > 0 enables wave function collapse without a mechanism."
+    ],
+    "kill_conditions": [
+      "If a counterexample shows a system with Phi > 0 that is not conscious.",
+      "If a computer architecture is shown to have Phi > 0.",
+      "If IIT is empirically falsified.",
+      "If the link between Phi and wave function collapse is disproven."
+    ],
+    "lean_target": "Reduce overstatement by framing as a hypothesis; require explicit acknowledgment of lack of proof."
+  },
+  "plain_summary": "This document proposes that consciousness is identical to integrated information (Phi), with Phi > 0 marking conscious entities. It argues that computers, being feedforward, have Phi = 0 and thus are not conscious, while God has infinite Phi. The document critiques functionalism, computationalism, and eliminativism. However, the central identity claim is not proven; it is a theoretical proposal with limited empirical support. The document should be treated as a hypothesis, not an established fact.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\H06_Consciousness.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\H06_Consciousness.canonical-node.json"
+  }
+}

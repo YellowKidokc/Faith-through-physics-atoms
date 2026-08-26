@@ -1,0 +1,73 @@
+{
+  "atom_id": "tp:lane4/trinity/t-02-the-trinity-unified",
+  "atom_uid": "sha256:9bb4a69ba11221a1f095cd2b81dc7a23a3a46e1b5b2dcc727b7f44553f06cda9",
+  "title": "T-02 - The Trinity Unified",
+  "claim": "The Trinity is presented as the theological ground of existence, distinction, relation, and orientation, with selected triadic structures in physics treated as graded bridge correspondences rather than proofs.",
+  "domain": "trinity",
+  "lane": "Lane4",
+  "claim_class": "bridge_candidate",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Christian Trinitarian theology is allowed to speak in its own register.",
+    "Physics-side correspondences do not become theological proof without an explicitly declared bridge.",
+    "The source document remains a working internal canon draft, not a public final paper."
+  ],
+  "definitions": [
+    "Opening postulates: existence, distinction, relation, orientation.",
+    "Bridge correspondence: a cross-register structural resonance that is named with limits."
+  ],
+  "equations": [],
+  "bridges": [
+    {
+      "from": "theological register",
+      "to": "physics register",
+      "status": "graded correspondence, not proof"
+    }
+  ],
+  "dependencies": [
+    "P-00-opening-postulates",
+    "T-00-truth-compendium",
+    "T-01-the-hard-questions"
+  ],
+  "negative_guards": [
+    "Do not say physics proves the Trinity.",
+    "Do not reduce the Trinity to a quantum or mathematical metaphor.",
+    "Do not present all five convergence instances as equally proven."
+  ],
+  "kill_conditions": [
+    "If the physics examples are presented as formal proof rather than graded correspondence, the bridge claim fails.",
+    "If the claimed Lean theorem names or theorem count cannot be verified, those proof labels must be downgraded.",
+    "If the Big Bang/prior-observer argument is stated as standard physics, the section must be quarantined or rewritten."
+  ],
+  "proof_label": "BRIDGE_DECLARED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\T-02-the-trinity-unified.md",
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\_HANDOFF_INBOX\\T-02-the-trinity-unified.md",
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\notes\\T-02-the-trinity-unified-codex-review.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\T-02-the-trinity-unified.atom.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-07-31T22:50:06+00:00",
+      "lane": "Lane4",
+      "event_id": "sha256:c91c5ca03f982bfe59ebcb88811348d21da062a179b2feefe2b1cc2384608b0e"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "CanonHTML",
+      "result": "received",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\T-02-the-trinity-canonical.html",
+      "meaning": "Received and reviewed the top-level canonical HTML condensation of the T-02 Trinity document.",
+      "limits": "HTML condensation requires a cooling pass before canon-lock; presentation does not upgrade physics, bridge, or Lean claims beyond their verified registers.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-31T23:28:56+00:00",
+      "event_id": "sha256:973d685b5a1437a6cfda10b49af99f53dbf4f53dde5c18904fba2a5ac725a255"
+    }
+  ]
+}

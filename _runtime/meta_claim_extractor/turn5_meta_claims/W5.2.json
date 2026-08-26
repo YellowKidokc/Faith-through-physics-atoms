@@ -1,0 +1,277 @@
+{
+  "work_id": "W5.2",
+  "title": "Consciousness at Equilibrium",
+  "turn": "TURN 5 - CONSCIOUSNESS",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\22_SUPPORTING_NOTES\\consciousness-chain.html",
+  "overall_status": "reviewed",
+  "summary": "This draft derives seven spiritual terms from the equilibrium of a scalar field action. It is explicitly marked as not locked, with open items and a kill condition. The physics is standard, but the theological mappings are mostly analogical and require validation.",
+  "claims": [
+    {
+      "claim_id": "W5.2-C001",
+      "claim_text": "The χ-field action S_χ is ghost-free, DESI-consistent, and satisfies all experimental bounds.",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "support": "Parent equation: S_χ = ∫d⁴x √|g| [ ½(1 + ξκ₀χ²)R − ½g^μν ∂_μχ ∂_νχ − ½m²_χχ² − (λ/4)χ⁴ + L_matter ]",
+      "dependencies": [
+        "Paper 3 of Consciousness series",
+        "Lean-adjacent"
+      ],
+      "risks": [
+        "Not yet Lean formalized",
+        "DESI consistency claimed but not detailed"
+      ],
+      "required_concession": "This claim is asserted as locked but not independently verified in this work.",
+      "recommended_action": "keep",
+      "confidence": 0.6
+    },
+    {
+      "claim_id": "W5.2-C002",
+      "claim_text": "At equilibrium (χ → χ₀, ∂_μχ → 0), the seven properties emerge automatically from the action.",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "support": "The method is the same as every other chain: parent equation → equilibrium → emergent properties = spiritual terms.",
+      "dependencies": [
+        "S_χ",
+        "Equilibrium conditions"
+      ],
+      "risks": [
+        "Emergence is asserted, not demonstrated step-by-step",
+        "Potential for imposed properties"
+      ],
+      "required_concession": "The derivation is not fully shown; it is a claim of automatic emergence.",
+      "recommended_action": "fix",
+      "confidence": 0.4
+    },
+    {
+      "claim_id": "W5.2-C003",
+      "claim_text": "χ₀ ≠ 0 (nonzero VEV) implies consciousness exists as a baseline substrate.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "A scalar field with a nonzero VEV means the field is present everywhere, always, as a background.",
+      "dependencies": [
+        "Standard SSB",
+        "m² < 0"
+      ],
+      "risks": [
+        "Mapping from field presence to consciousness is analogical"
+      ],
+      "required_concession": "The physical fact of a nonzero VEV does not logically entail consciousness.",
+      "recommended_action": "demote",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "W5.2-C004",
+      "claim_text": "Zero gradients (∂_μχ → 0) correspond to the 'Mind of Christ' — undistorted awareness.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "When all gradients vanish, there is no local variation. Applied to consciousness: complete, impartial, undistorted awareness.",
+      "dependencies": [
+        "Equilibrium condition"
+      ],
+      "risks": [
+        "Theological mapping is natural but needs formal validation that it's not just analogy."
+      ],
+      "required_concession": "The mapping from mathematical uniformity to cognitive impartiality is not proven.",
+      "recommended_action": "demote",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "W5.2-C005",
+      "claim_text": "The potential minimum (V(χ₀) = min) corresponds to 'Rest' — completed seeking.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "A field at the minimum of its potential has no net force acting on it. It doesn't need to move.",
+      "dependencies": [
+        "Potential structure"
+      ],
+      "risks": [
+        "Augustine mapping is almost too clean — verify it's structural, not just literary."
+      ],
+      "required_concession": "The analogy between physical rest and spiritual rest is not formally established.",
+      "recommended_action": "demote",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "W5.2-C006",
+      "claim_text": "Stable coupling (ξκ₀χ₀²R) corresponds to 'Discernment' — accurate perception of moral curvature.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "The ξ term couples χ to spacetime curvature R. At equilibrium, this coupling is steady — the field accurately reflects the geometry around it.",
+      "dependencies": [
+        "Scalar-tensor coupling"
+      ],
+      "risks": [
+        "Overlap with Chain 6's Discernment",
+        "Mapping is structural but specific identification needs more work"
+      ],
+      "required_concession": "The identification of coupling stability with discernment is tentative.",
+      "recommended_action": "fix",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "W5.2-C007",
+      "claim_text": "No-ghost and no-tachyon conditions correspond to 'Sound Mind' — stability and sanity.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "Ghost freedom means no negative-energy states that would make the vacuum unstable. Tachyon freedom means no exponentially growing modes.",
+      "dependencies": [
+        "Paper 3, Sec 5.2–5.3"
+      ],
+      "risks": [
+        "Mapping stability to soundness of mind is natural but still analogical"
+      ],
+      "required_concession": "Physical stability does not directly imply mental soundness.",
+      "recommended_action": "demote",
+      "confidence": 0.3
+    },
+    {
+      "claim_id": "W5.2-C008",
+      "claim_text": "Causal propagation (v_g ≤ c) corresponds to 'Wisdom' — respecting the order of reality.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "Causal propagation means effects follow causes. Information can spread but cannot arrive before it's sent.",
+      "dependencies": [
+        "Paper 3, Sec 5.1"
+      ],
+      "risks": [
+        "Overlap with Chain 6's Counsel",
+        "Mapping is suggestive but broad"
+      ],
+      "required_concession": "The connection between causality and wisdom is not formally established.",
+      "recommended_action": "fix",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "W5.2-C009",
+      "claim_text": "Renormalized gravity (G_eff = G_N / (1 + ξκ₀χ₀²)) corresponds to 'Relational Calibration'.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "The χ-field modifies how strongly things attract. At its equilibrium value, the attraction is calibrated.",
+      "dependencies": [
+        "Scalar-tensor gravity"
+      ],
+      "risks": [
+        "Mapping is least certain",
+        "Metriotēs is rare in NT",
+        "May belong to Chain 7"
+      ],
+      "required_concession": "This mapping is the weakest and may need revision.",
+      "recommended_action": "fix",
+      "confidence": 0.1
+    },
+    {
+      "claim_id": "W5.2-C010",
+      "claim_text": "The phase form Φ_χ(C) = tanh(β_χ(C − C_c)) is assumed by analogy with other chains.",
+      "defense_class": "ADMISSION",
+      "claim_level": "physics",
+      "support": "The phase form is ASSUMED by analogy with Chains 2, 3, 5, 6, 7. It has not been independently derived for the χ-field.",
+      "dependencies": [
+        "Analogy with other chains"
+      ],
+      "risks": [
+        "Not derived",
+        "May not hold if m² > 0"
+      ],
+      "required_concession": "This is an assumption, not a derivation.",
+      "recommended_action": "keep",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W5.2-C011",
+      "claim_text": "The Consciousness Ladder (dC/dt = O·G(1−C) − S·C) determines which terms activate at each level of voluntary coupling O.",
+      "defense_class": "DERIVATION",
+      "claim_level": "bridge",
+      "support": "The derivative chain gives the TERMS. The Consciousness Ladder gives the GRADIENT — which terms are active at each level of voluntary coupling O.",
+      "dependencies": [
+        "Ladder equation",
+        "Chain terms"
+      ],
+      "risks": [
+        "Ladder integration is proposed, not derived from the equation."
+      ],
+      "required_concession": "The ladder integration is proposed, not derived.",
+      "recommended_action": "fix",
+      "confidence": 0.2
+    },
+    {
+      "claim_id": "W5.2-C012",
+      "claim_text": "The kill condition: show that the χ-field at equilibrium exhibits a property inconsistent with the seven terms, or that one of the seven does not actually emerge.",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "support": "Show that the χ-field at equilibrium exhibits a property NOT listed here that is inconsistent with the seven terms above, or show that one of the seven does not actually emerge at equilibrium but was imposed.",
+      "dependencies": [
+        "None"
+      ],
+      "risks": [
+        "None"
+      ],
+      "required_concession": "None",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "W5.2-C013",
+      "claim_text": "The chain is not yet Lean formalized, not independently AI confirmed, and has open items.",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "support": "No Lean formalization of this chain yet. No independent AI confirmation yet (no David Effect test).",
+      "dependencies": [
+        "None"
+      ],
+      "risks": [
+        "None"
+      ],
+      "required_concession": "None",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    },
+    {
+      "claim_id": "W5.2-C014",
+      "claim_text": "The theological mappings are proposed, not locked.",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "support": "Terms are proposed, not locked. Status flags are on each term.",
+      "dependencies": [
+        "None"
+      ],
+      "risks": [
+        "None"
+      ],
+      "required_concession": "None",
+      "recommended_action": "keep",
+      "confidence": 1.0
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "W5.2-C002",
+      "problem": "Emergence of seven properties is asserted but not demonstrated.",
+      "repair": "Provide explicit derivation steps for each property from the equilibrium conditions."
+    },
+    {
+      "severity": "P1",
+      "target": "W5.2-C006, W5.2-C008, W5.2-C009",
+      "problem": "Overlaps with other chains and weak mappings.",
+      "repair": "Disambiguate or reassign terms; strengthen theological justification."
+    },
+    {
+      "severity": "P2",
+      "target": "W5.2-C010",
+      "problem": "Phase form assumed by analogy.",
+      "repair": "Derive phase transition from V(χ) or explicitly mark as provisional."
+    },
+    {
+      "severity": "P2",
+      "target": "W5.2-C011",
+      "problem": "Ladder integration proposed, not derived.",
+      "repair": "Derive activation conditions from the equation or mark as speculative."
+    }
+  ],
+  "log_notes": [
+    "This work is a draft with explicit open items and kill condition.",
+    "Theological mappings are mostly analogical and need formal validation.",
+    "Overlaps with Chain 6 and Chain 7 need resolution.",
+    "No Lean formalization or AI confirmation yet."
+  ]
+}

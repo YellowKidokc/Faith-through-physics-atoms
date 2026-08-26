@@ -1,0 +1,76 @@
+{
+  "source_id": "7Q_INFERENCE_PROMPT",
+  "title": "7Q Adversarial Inference Prompt",
+  "canonical_node": {
+    "axiom": "Adversarial structural testing of a claim yields a surviving insight, failure points, and a knowledge graph, without returning the worksheet.",
+    "definitions": [
+      "Adversarial: aggressively but fairly testing a claim using a seven-part framework.",
+      "Surviving insight: the strongest precise version of the claim after analysis.",
+      "Failure points: the strongest reasons the claim could fail, each named by death type.",
+      "Knowledge graph: graph-ready nodes and edges representing claims, dependencies, predictions, etc."
+    ],
+    "derivation": [
+      "The prompt defines a seven-part framework (Identity, Domain, Assertion, Support, Dependencies, Consequences, Kill conditions).",
+      "It instructs the LLM to perform the full reasoning internally but return only the inference layer.",
+      "It specifies an output format that includes core claim, surviving version, type/domain, dependencies, consequences, failure points, what survives/dies, robustness estimate, scientific extraction, and knowledge graph YAML.",
+      "It imposes rules to separate unsupported from false, coherent from true, testable from validated, and to test unconventional claims structurally."
+    ],
+    "action": "When given a claim, apply the seven-part adversarial framework internally and return only the specified inference layer outputs, including a knowledge graph YAML.",
+    "boundary": [
+      "Does not return the worksheet or the full reasoning process.",
+      "Does not validate the claim; it only tests structure and separates survival from death.",
+      "Does not dismiss unconventional claims solely for being unconventional.",
+      "Does not conflate lack of evidence with disproof, or coherence with truth."
+    ],
+    "test": [
+      "Check that the output contains all required sections: Core Claim, Best Surviving Version, Type/Domain, Upstream Dependencies, Downstream Consequences, Primary Failure Points, What Survives, What Dies, Robustness Estimate, Scientific Extraction, Knowledge Graph YAML, Executive Summary.",
+      "Check that the knowledge graph YAML is syntactically valid and uses allowed node types and edge relations.",
+      "Check that the robustness estimate separates lack of evidence from disproof and conceptual coherence from empirical support.",
+      "Check that the analysis does not return the worksheet or full reasoning."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "An LLM capable of following complex instructions and performing internal reasoning.",
+      "The user provides a claim to analyze.",
+      "The prompt's rules and output format are followed."
+    ],
+    "dg2_new_capability": "Provides a structured, adversarial method for analyzing any claim, producing a knowledge graph and separating surviving from dead parts.",
+    "dg3_preserved_floor": "The prompt itself remains a reusable instruction set; it does not depend on any specific claim.",
+    "dg4_collapse_if_removed": "Without this prompt, there is no standardized adversarial inference protocol; the capability to systematically test claims and extract knowledge graphs is lost.",
+    "dg5_translation_registers": [
+      "LLM instruction",
+      "Adversarial reasoning framework",
+      "Knowledge graph schema"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Methodological instruction",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Preserve as a reusable prompt template; do not treat as a validated scientific method."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that the prompt guarantees valid or true insights.",
+      "Assuming the output knowledge graph is complete or accurate.",
+      "Treating the robustness estimate as a formal measure."
+    ],
+    "kill_conditions": [
+      "If the prompt is shown to be ineffective in producing coherent outputs.",
+      "If the output format is not followed consistently.",
+      "If the framework is logically incoherent."
+    ],
+    "lean_target": "Formalize the seven-part framework as a Lean structure for checking the internal consistency of the reasoning steps."
+  },
+  "plain_summary": "This document is a prompt template for adversarial analysis of claims. It defines a seven-part framework and an output format that returns only the inference layer, including a knowledge graph. It is a methodological tool, not a scientific claim, and its effectiveness is not formally proven.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\7Q_INFERENCE_PROMPT.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\7Q_INFERENCE_PROMPT.canonical-node.json"
+  }
+}

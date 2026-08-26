@@ -1,0 +1,103 @@
+{
+  "atom_id": "tp:lane4/physics/sci-00-the-science-argument-for-triadic-structure",
+  "atom_uid": "sha256:a3248c73c9c0ecfc17f20343d8aa53e45d77fb47b25304f3f9466e9d4a59e2ad",
+  "title": "SCI-00 - The Science Argument For Triadic Structure",
+  "claim": "Physics and adjacent mathematical sciences repeatedly use three-role structures in stable explanation: system/state, mediation/coupling/transformation, and record/invariant/boundary/witness. This supports a bridge claim about triadic grammar without proving the Trinity.",
+  "domain": "physics",
+  "lane": "Lane4",
+  "claim_class": "bridge_candidate",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "A triad only counts when its three roles are functionally distinct and removing one changes the explanation.",
+    "Science-side triads are not automatically theological proof.",
+    "The document is a source map for later derivation, not the final derivation itself."
+  ],
+  "definitions": [
+    "Scientific triad: three irreducible roles with functional dependence, mediation, asymmetry, and formal visibility.",
+    "Bridge candidate: cross-register structural resonance that must keep its limits visible."
+  ],
+  "equations": [
+    "H = H_S + H_B + H_SB"
+  ],
+  "bridges": [
+    {
+      "from": "physics structures such as decoherence, Noether symmetry, Shannon communication, open systems, and thermodynamics",
+      "to": "Theophysics triadic grammar of reality, mediation, and witness",
+      "status": "science-side source map; bridge declared, not proof"
+    }
+  ],
+  "dependencies": [
+    "P-00-opening-postulates",
+    "T-00-truth-compendium",
+    "T-02-the-trinity-unified"
+  ],
+  "negative_guards": [
+    "Do not say physics proves the Trinity.",
+    "Do not count arbitrary threes as evidence.",
+    "Do not map every scientific triad directly to Father/Son/Spirit.",
+    "Do not use interpretation-dependent quantum claims as settled physics."
+  ],
+  "kill_conditions": [
+    "If the listed examples are only numerological and not functionally irreducible, the claim fails.",
+    "If non-triadic structures explain the same phenomena with equal or greater force, the argument must be narrowed.",
+    "If bridge language is promoted to proof language, the document must be downgraded."
+  ],
+  "proof_label": "BRIDGE_DECLARED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\SCI-00-the-science-argument-for-triadic-structure.md",
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\markdown\\SCI-00-the-science-argument-for-triadic-structure.md",
+    "D:\\DONT TOUCH HTML\\theophysics-canon\\_HANDOFF_INBOX\\SCI-00-the-science-argument-for-triadic-structure.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SCI-00-the-science-argument-for-triadic-structure.atom.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-07-31T23:05:20+00:00",
+      "lane": "Lane4",
+      "event_id": "sha256:ec4c2f646ce78603018dc2e30c2f9051ebf68a12df88f343611b246bbd538a6d",
+      "event_uuid": "4433f0b9-8f1d-5155-8064-218b6e14ac83"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "CanonHTML",
+      "result": "generated",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\SCI-00-the-science-argument-for-triadic-structure.html",
+      "meaning": "Generated top-level canon HTML page for the science-side triadic structure source map.",
+      "limits": "HTML generation is presentation/provenance only; it does not upgrade the bridge claim to proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-31T23:16:33+00:00",
+      "event_id": "sha256:7c1c138901afc9a8417b4c68b668e9d1e129f8fa1c2ddd955013d12ed96fb49c",
+      "event_uuid": "900b32ba-9436-5b40-a633-02284f802565"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "CanonRevision",
+      "result": "patched",
+      "artifact_path": "D:\\DONT TOUCH HTML\\theophysics-canon\\SCI-00-the-science-argument-for-triadic-structure.md",
+      "meaning": "Applied Kimmy/Codex boundary hardening: added Split SCI.1, L1-L2 layer boundary, Four Axioms mapping, and moved theology-facing derivation language into a bridge target.",
+      "limits": "No new physics claim added; Bayesian inference example deferred; HTML and Markdown still require human final read before canon-lock.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-31T23:31:03+00:00",
+      "event_id": "sha256:783898124574523aa10167d505a74b5b35d72a479e164c654e169cc7b8789afe",
+      "event_uuid": "f37e57bf-caa0-57b1-a225-ca4b93212a90"
+    },
+    {
+      "event_type": "test_run",
+      "lane": "Lean4",
+      "result": "pass",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\lean_receipts\\sci-00-direct-triadic-science-kernel-receipt-20260803T013110Z.md",
+      "meaning": "POF 2828 Science Argument guardrail kernel was imported into the primary H-drive Lean source and direct Lean compilation passes. It formalizes valid triadic structure as non-decorative, removable-third failure, and the guardrail that science-side structure does not directly prove theology.",
+      "limits": "Formal structural guardrail only: does not prove the Trinity, Christianity, or any scientific domain claim; direct-file verification rather than full Lake build because the primary source Lake build is still blocked by the mathlib git index lock.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-03T01:31:10+00:00",
+      "event_uuid": "09b7847f-67cb-408f-a489-7dca47ed1301",
+      "event_id": "sha256:852e5bf997890d6692241e9f1a0a07db07f40cc5d6197d69cdaffe60017dad0c"
+    }
+  ],
+  "atom_uuid": "2983b311-0678-5a1a-bf47-eca11b7bbfbc"
+}

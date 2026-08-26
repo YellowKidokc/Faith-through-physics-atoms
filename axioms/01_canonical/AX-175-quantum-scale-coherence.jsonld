@@ -1,0 +1,104 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-175",
+  "nodeID": "tp:axioms/01/AX-175",
+  "claimID": "tp:AXIOMS/SC-QUANTUM",
+  "name": "Quantum Scale Coherence",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "definition",
+  "statementTechnical": "At quantum scale (10⁻³⁵ to 10⁻¹⁰ m), coherence = superposition, entanglement, interference.",
+  "statementPlain": "At quantum scale (10⁻³⁵ to 10⁻¹⁰ m), coherence = superposition, entanglement, interference.",
+  "mathematicalForm": "χ(quantum) = |ψ⟩; coherence = phase preservation",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-011",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-017",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-171",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "definition"
+  ],
+  "keywords": [
+    "SC-QUANTUM",
+    "Q5",
+    "Material",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show quantum coherence doesn't map to χ-field. Demonstrate phase relationships independent of informational substrate.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 177
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-175",
+    "oldID": "SC-QUANTUM",
+    "treeLevel": "Q5",
+    "treeBranch": "Q5-T (Scale — quantum)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Material",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M23",
+    "moduleTitle": "Scale Coherence",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M2 (Entropic — quantum decoherence)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Quantum scale propagates upward through all higher scales.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

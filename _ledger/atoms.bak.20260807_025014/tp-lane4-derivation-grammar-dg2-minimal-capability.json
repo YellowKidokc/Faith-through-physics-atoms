@@ -1,0 +1,51 @@
+{
+  "atom_id": "tp:lane4/derivation-grammar/dg2-minimal-capability",
+  "atom_uid": "sha256:6f61dfbbf3b5c9db047bf4e6d321527d3e7fd53889b9f99a9ee8ab4b110c57f5",
+  "title": "DG2 - Minimal Capability",
+  "claim": "A valid new layer must introduce at least one capability not reducible to the capabilities already present in prior layers.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "A layer that adds no new capability is a restatement rather than a derivation step."
+  ],
+  "definitions": [
+    "NewCapability(C(n+1)): C(n+1) is not reducible to the union of prior capability classes."
+  ],
+  "equations": [
+    "C(n+1) not in reducible_union(C(0)..C(n))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency"
+  ],
+  "negative_guards": [
+    "Do not treat new vocabulary as a new capability.",
+    "Do not count restatement, decoration, or relabeling as derivation."
+  ],
+  "kill_conditions": [
+    "A claimed layer adds only renamed prior content and still passes the DG test.",
+    "No workable criterion for capability novelty can be stated."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\DG_V02_ATOM_SEED_BATCH_2026-08-01\\DG2-Minimal-Capability.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-08-01T04:17:52+00:00",
+      "lane": "Framework",
+      "event_id": "sha256:acf59a2c2aefcd68336648c6904fe2ce6cb975602ae1c365e5e68427ba0debe8"
+    }
+  ],
+  "source_claim_id": "DG2-Minimal-Capability"
+}

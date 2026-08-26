@@ -1,0 +1,78 @@
+{
+  "source_id": "solve_master_equation",
+  "title": "solve_master_equation.ipynb",
+  "canonical_node": {
+    "axiom": "The time evolution of the 10-variable system is governed by the Euler-Lagrange equations derived from the Lowe Coherence Lagrangian, and must be integrated numerically with adaptive step size control to maintain energy conservation.",
+    "definitions": [
+      "Master equation: the second-order 10-dimensional nonlinear ODE system M(q)*q + C(q, q)*q + V(q) = F_external(t), written as a first-order 20-dimensional system in (q, q).",
+      "M(q): 10x10 mass matrix (chi-weighted kinetic metric).",
+      "C(q, q): Coriolis-like term from chi's dependence on q.",
+      "V(q): gradient of the entropic potential.",
+      "F_external(t): external forcing (grace injection over time).",
+      "Adaptive step size: step size adjusted based on energy drift per step; if drift exceeds threshold, step is rejected and retried with smaller dt."
+    ],
+    "derivation": [
+      "The system is derived from the Lowe Coherence Lagrangian via Euler-Lagrange equations.",
+      "The second-order system is reduced to first-order form by introducing velocities as separate variables.",
+      "Numerical integration uses adaptive step size to control energy drift, ensuring accuracy across operating points including stiff regions."
+    ],
+    "action": "Integrate the master equation system numerically with adaptive step size control, producing trajectories q(t), q(t), chi(t), and Hamiltonian H(t) for selected grace profiles.",
+    "boundary": [
+      "Does not solve the chi-field PDE for spatial structure; that is handled by chi_field.ipynb.",
+      "Does not provide analytical solutions or proofs of existence/uniqueness.",
+      "Does not guarantee physical validity beyond numerical accuracy of the ODE integration."
+    ],
+    "test": [
+      "Energy drift per 1000 steps should be below 10^-8 for canonical parameters (seed 2828).",
+      "All 10 variable trajectories should remain bounded.",
+      "Chi-field chi(t) should show expected convergence behavior.",
+      "Grace profiles should produce the expected 'Four Lines' behavior pattern."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lowe Coherence Lagrangian",
+      "MasterEquation class (integrate_rk4 method)",
+      "chi_field.ipynb (for spatial structure, though not directly used here)"
+    ],
+    "dg2_new_capability": "Provides a standalone, adaptive-step ODE solver for the master equation with selectable grace profiles, enabling exploration of different time-evolution scenarios.",
+    "dg3_preserved_floor": "Preserves the ability to integrate the master equation with energy conservation checks, as previously available via integrate_rk4 but with enhanced control.",
+    "dg4_collapse_if_removed": "Without this solver, time-evolution trajectories for the 10-variable system would lack adaptive step size control, risking inaccuracy in stiff regions and reducing trust in scenario exploration.",
+    "dg5_translation_registers": [
+      "ODE solver",
+      "Adaptive step size",
+      "Energy drift",
+      "Grace profiles",
+      "Trajectory output"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "numerical_method",
+    "proof_label": "COLAB_REPRODUCIBLE",
+    "grade": "B",
+    "recommended_atom_action": "preserve as numerical tool; do not treat as proof of physical theory"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that numerical integration validates the underlying physics.",
+      "Assuming that energy drift below 10^-8 implies correctness of the model.",
+      "Extrapolating results beyond tested parameter ranges."
+    ],
+    "kill_conditions": [
+      "If the master equation derivation is found to be inconsistent with the Lagrangian.",
+      "If the adaptive solver fails to maintain energy conservation in stiff regimes.",
+      "If the 'Four Lines' pattern is not reproducible with the stated parameters."
+    ],
+    "lean_target": "A robust numerical solver for the master equation, with clear documentation of its limitations and no overclaiming of physical proof."
+  },
+  "plain_summary": "This document describes a Google Colab notebook that numerically solves the master equation (a 10-dimensional second-order ODE system) using adaptive step size control to maintain energy conservation. It provides trajectory outputs and selectable grace profiles for scenario exploration. The notebook is a numerical tool, not a proof of the underlying theory.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\solve_master_equation.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\solve_master_equation.canonical-node.json"
+  }
+}

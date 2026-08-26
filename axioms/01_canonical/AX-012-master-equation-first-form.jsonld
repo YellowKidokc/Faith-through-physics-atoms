@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-012",
+  "nodeID": "tp:axioms/01/AX-012",
+  "claimID": "tp:AXIOMS/E2.1",
+  "name": "Master Equation First Form",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "mathematical",
+  "statementTechnical": "χ = ∫(G·K)dΩ — the field integrates geometry G and complexity K over configuration space Ω.",
+  "statementPlain": "χ = ∫(G·K)dΩ — the field integrates geometry G and complexity K over configuration space Ω.",
+  "mathematicalForm": "χ = ∫(G·K)dΩ",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-010",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-011",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "equation",
+    "curvature",
+    "field"
+  ],
+  "keywords": [
+    "E2.1",
+    "Q5",
+    "Ontological",
+    "Equation"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the master equation is dimensionally inconsistent. Show G·K integration yields divergences with no renormalization. Demonstrate that geometry and complexity cannot be multiplied in a meaningful way.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 13
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-012",
+    "oldID": "E2.1",
+    "treeLevel": "Q5",
+    "treeBranch": "Q5-C (Properties of the ground — formal equation)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Equation",
+    "logicalForce": "formal proposal",
+    "formalizableInLean": "yes",
+    "leanKind": "def / proposition with typed variables",
+    "riskLevel": "medium",
+    "kernelRole": "definitionRole",
+    "moduleID": "M02",
+    "moduleTitle": "Chi Field Substrate",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Master equation propagates as the generating function for coherence (Q3 formalized), spacetime (Q5 material), and boundary conditions (Q8).",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-054",
+  "nodeID": "tp:axioms/01/AX-054",
+  "claimID": "tp:AXIOMS/T6.1",
+  "name": "Von Neumann Chain Termination",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "theorem",
+  "statementTechnical": "Measurement chain requires termination; infinite regress impossible.",
+  "statementPlain": "Measurement chain requires termination; infinite regress impossible.",
+  "mathematicalForm": "¬∃(infinite_measurement_chain); ∃(terminal_observer)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-046",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-051",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-052",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-053",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "proof",
+    "regress"
+  ],
+  "keywords": [
+    "T6.1",
+    "Q7",
+    "Ontological",
+    "Theorem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show a measurement chain that functions without termination. Demonstrate infinite regress is coherent in QM (MWI claims this). Show the chain terminates at decoherence, not consciousness.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 55
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-054",
+    "oldID": "T6.1",
+    "treeLevel": "Q7",
+    "treeBranch": "Q7-A (Terminal Observer argument begins)",
+    "questionType": "Type 3 (What grounds X?)",
+    "domain": "Ontological",
+    "tier": "1",
+    "newType": "Theorem",
+    "logicalForce": "derivable theorem",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M06",
+    "moduleTitle": "Collapse / Measurement",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "Materialism (decoherence terminates chain), Naturalism",
+    "propagationTest": "YES — CRITICAL THEOREM. Von Neumann chain termination propagates directly to Terminal Observer Necessity (AX-055) and God identification (AX-066).",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

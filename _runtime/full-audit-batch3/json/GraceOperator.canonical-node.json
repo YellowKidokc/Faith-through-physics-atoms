@@ -1,0 +1,75 @@
+{
+  "source_id": "GraceOperator",
+  "title": "GraceOperator.lean  -  Grace Operator Theorems",
+  "canonical_node": {
+    "axiom": "The Grace Operator G maps any state, including the zero state, to one (coherent), is idempotent, and is not internally invertible.",
+    "definitions": [
+      "Grace Operator (G): an operator in CoherenceAlgebra such that graceStep zero = one and graceStep (graceStep x) = graceStep x.",
+      "Zero state: a state with coherence chi = 0, fully collapsed.",
+      "One state: a coherent state, the target of Grace.",
+      "Internal operator: an operator that preserves zero (sign conservation: maps zero to zero).",
+      "Sign conservation: internal operators map zero to zero."
+    ],
+    "derivation": [
+      "grace_idempotent: graceStep (graceStep x) = graceStep x, proved by simplification.",
+      "grace_is_restorative: graceStep zero = one, proved by simplification.",
+      "grace_irreversible: Assuming all internal operators preserve zero, an internal inverse of Grace would need to map one to zero and zero to zero, contradicting the structure. The proof has a 'sorry' in final steps."
+    ],
+    "action": "The system should treat Grace as an external, non-internal operator that restores coherence from zero, and should not attempt to derive it from internal operations.",
+    "boundary": [
+      "Does not claim Grace is physically equivalent to gravitation beyond analogy.",
+      "Does not claim the irreversibility proof is fully formal due to the 'sorry'.",
+      "Does not claim salvation or theological truth; only algebraic structure."
+    ],
+    "test": [
+      "Check that grace_idempotent and grace_is_restorative compile in Lean 4 without 'sorry'.",
+      "Check that grace_irreversible has no 'sorry' or that the 'sorry' is removed and proof completed.",
+      "Verify that the CoherenceAlgebra axioms are consistent and that the theorems are derived from them."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CoherenceAlgebra definitions",
+      "Lean 4 theorem prover",
+      "sign_conservation hypothesis",
+      "restores_spirit hypothesis"
+    ],
+    "dg2_new_capability": "Formally proves that an operator mapping zero to one cannot be internal if internal operators preserve zero, providing a structural basis for external restoration.",
+    "dg3_preserved_floor": "Preserves the existing CoherenceAlgebra and its axioms; adds theorems about Grace without altering the algebra.",
+    "dg4_collapse_if_removed": "If removed, the framework loses its formal grounding for the claim that restoration from zero requires an external operator.",
+    "dg5_translation_registers": [
+      "Lean 4 theorem statements",
+      "CoherenceAlgebra axioms",
+      "sign_conservation and restores_spirit hypotheses"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "formal proof (partial)",
+    "proof_label": "LEAN_CONDITIONAL_PROOF",
+    "grade": "C",
+    "recommended_atom_action": "Complete the 'sorry' in grace_irreversible and re-verify; otherwise treat as conditional."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the irreversibility theorem is fully proved despite the 'sorry'.",
+      "Equating Grace with gravitation as a physical fact rather than analogy.",
+      "Interpreting the algebraic result as theological proof."
+    ],
+    "kill_conditions": [
+      "If the 'sorry' cannot be removed, the irreversibility theorem is not established.",
+      "If the CoherenceAlgebra axioms are inconsistent, all theorems collapse.",
+      "If graceStep is shown to be internal under the axioms, the central claim fails."
+    ],
+    "lean_target": "Complete the proof of grace_irreversible in Lean 4, removing the 'sorry'."
+  },
+  "plain_summary": "This document presents a Lean 4 formalization of a Grace Operator in a CoherenceAlgebra, proving idempotence and restoration from zero, and attempting to prove irreversibility. The first two theorems are proved by simplification, but the third has an unfinished proof with a 'sorry'. The document claims a structural consequence: an operator that restores zero cannot be internal if internal operators preserve zero. However, due to the incomplete proof, the irreversibility claim is not fully established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\GraceOperator.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch3\\json\\GraceOperator.canonical-node.json"
+  }
+}

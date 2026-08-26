@@ -1,0 +1,94 @@
+{
+  "source_id": "06_Lean_Negative_Inventory",
+  "title": "Lean Negative Inventory",
+  "canonical_node": {
+    "axiom": "Every positive claim in the Faith Thru Physics Lean architecture must be paired with a formal negative counterpart: a collapse condition, an insufficiency condition, and at least one adversarial false-positive rejection.",
+    "definitions": [
+      "Negative theorem: a formal statement that asserts the invalidity, insufficiency, or collapse of a proposed positive claim under specified conditions.",
+      "Collapse condition: a condition under which the master equation or a key component becomes zero, rendering the overall coherence invalid.",
+      "Insufficiency condition: a condition where a single factor or local positivity is not enough to guarantee global coherence or validity.",
+      "False-positive rejection: a formal proof that a proposed isomorphism, mapping, or interpretation is invalid because it fails to preserve required structure or signatures.",
+      "COMPILED_NOW: negative theorems already present in the active Lean repository and part of the successful package.",
+      "WORKBOOK_TARGET: negative chains implied by the workbook and addendum docs, not necessarily formalized in the root package.",
+      "MISSING_TARGET: negative families that should exist but are not yet clearly formalized."
+    ],
+    "derivation": [
+      "The master equation is a product of factors; any single zero factor collapses the product to zero (proved by theorems like Q_zero_collapses_chi).",
+      "Nonzero factors are not sufficient to rescue global coherence; necessity is proven, not sufficiency (e.g., Q_nonzero_not_sufficient_for_positive_chi).",
+      "Coupling states are irreversible; C0_ne_C1 and C1_ne_C0 prevent relabeling objections.",
+      "Mapping layer is not arbitrary; signature layer rejects swaps like grace_swapped_with_faith_invalid.",
+      "Fracture and fall are distinguished from generic gaps or separation; random_gap_is_not_structured_scar and pre_fall_is_not_fall.",
+      "Counterfeit coherence is rejected; no_mere_order_as_full_coherence and related theorems block fake wins.",
+      "Stage reversal is impossible; no_stage_step_back_to_pre_from_localization and others enforce one-way transitions.",
+      "Law bypasses force zero; law3_command_bypass_forces_E_zero and others prove each bypass is a collapse condition.",
+      "Isomorphism claims are guarded; no_rich_iso_to_natural_coin and others reject false positives.",
+      "The workbook targets additional negative chains (Maxwell/Trinity, justice/mercy, resurrection, memory, hit-rate) that must be made explicit.",
+      "Missing targets include full per-factor insufficiency, dependency-lattice rejection, sign/conversion rejection, resurrection false-positive family, and full isomorphism-chain inventory."
+    ],
+    "action": "Maintain and extend the negative inventory so that every positive claim in the architecture is accompanied by formal negative theorems: collapse conditions, insufficiency conditions, and false-positive rejections. Prioritize formalizing WORKBOOK_TARGET and MISSING_TARGET families.",
+    "boundary": [
+      "This document does not itself contain formal proofs; it is an inventory of existing and needed negative theorems.",
+      "It does not assert that all listed negative theorems are currently formalized; statuses are explicitly marked.",
+      "It does not upgrade theological claims into physical proofs; it only records the negative side of the Lean program.",
+      "It does not claim completeness; it explicitly lists missing targets."
+    ],
+    "test": [
+      "For each positive claim in the architecture, verify that there exists at least one formal negative theorem addressing collapse, insufficiency, and false-positive rejection.",
+      "Check that all COMPILED_NOW theorems are present in the active Lean repository and compile successfully.",
+      "Check that WORKBOOK_TARGET chains are either formalized or explicitly tracked as pending.",
+      "Check that MISSING_TARGET families are either formalized or listed as open work items.",
+      "Review that no positive claim is made without a corresponding negative counterpart in the inventory."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "04_Lean11_Master_Architecture.md",
+      "05_Lean_Derivation_Redraft_With_Negatives.md",
+      "Lean 4.xlsx workbook",
+      "Theophysics_Core.lean",
+      "Final_Lean4_From_Excel.lean",
+      "Theophysics_Coherence.lean",
+      "Theophysics_ChiEvaluator.lean",
+      "Theophysics_Fall.lean",
+      "Theophysics_Fracture.lean",
+      "Theophysics_Adversarial.lean"
+    ],
+    "dg2_new_capability": "Provides a centralized, reviewable inventory of all negative theorems and negative theorem families in the Lean program, distinguishing compiled, workbook-target, and missing targets, enabling systematic completion of the negative architecture.",
+    "dg3_preserved_floor": "Preserves the existing compiled negative theorems and their status as COMPILED_NOW, ensuring they remain visible and load-bearing.",
+    "dg4_collapse_if_removed": "If this inventory is removed, the negative side of the architecture becomes fragmented and unverifiable; missing negative families may be overlooked, leading to overclaiming and unguarded positive claims.",
+    "dg5_translation_registers": [
+      "Negative theorem -> Lean theorem name",
+      "Status legend -> COMPILED_NOW / WORKBOOK_TARGET / MISSING_TARGET",
+      "Positive claim -> corresponding negative counterpart"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "Inventory of negative theorems and targets",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Track as a living inventory; formalize missing targets; use as a checklist for negative coverage."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May imply that all listed negative theorems are formally proven when some are only workbook targets or missing.",
+      "May overstate the completeness of the negative architecture.",
+      "May conflate theological necessity with mathematical proof."
+    ],
+    "kill_conditions": [
+      "If a listed COMPILED_NOW theorem is not actually present in the Lean repo, the inventory's credibility collapses.",
+      "If the inventory is used to claim that the architecture is locked down without formalizing missing targets, it becomes misleading.",
+      "If negative theorems are misinterpreted as positive proofs of theological claims."
+    ],
+    "lean_target": "Formalize all WORKBOOK_TARGET and MISSING_TARGET negative families in Lean, ensuring every positive chain has collapse, insufficiency, and false-positive rejection."
+  },
+  "plain_summary": "This document is a catalog of negative theorems and negative theorem families in the Faith Thru Physics Lean program. It lists already-compiled negative theorems (e.g., zero-factor collapse, coupling irreversibility, mapping invalidation, fracture/fall distinctions, counterfeit coherence, stage reversal, law bypasses, isomorphism guards), workbook-target chains (Maxwell/Trinity, justice/mercy, resurrection, memory, hit-rate), and missing targets (per-factor insufficiency, dependency-lattice, sign/conversion, resurrection false-positives, isomorphism-chain inventory). It serves as a reviewable checklist to ensure every positive claim has a corresponding negative counterpart, but it does not itself contain formal proofs.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\06_Lean_Negative_Inventory.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\06_Lean_Negative_Inventory.canonical-node.json"
+  }
+}

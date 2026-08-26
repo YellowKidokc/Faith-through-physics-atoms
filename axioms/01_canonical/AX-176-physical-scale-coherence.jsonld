@@ -1,0 +1,92 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-176",
+  "nodeID": "tp:axioms/01/AX-176",
+  "claimID": "tp:AXIOMS/SC-PHYSICAL",
+  "name": "Physical Scale Coherence",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "definition",
+  "statementTechnical": "At physical scale (10⁻¹⁰ to 10⁰ m), coherence = structural order, thermodynamic organization.",
+  "statementPlain": "At physical scale (10⁻¹⁰ to 10⁰ m), coherence = structural order, thermodynamic organization.",
+  "mathematicalForm": "χ(physical) = structural_order",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-175",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "definition"
+  ],
+  "keywords": [
+    "SC-PHYSICAL",
+    "Q5",
+    "Material",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show structural order doesn't require informational substrate. Demonstrate chemistry without coherence principle.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 178
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-176",
+    "oldID": "SC-PHYSICAL",
+    "treeLevel": "Q5",
+    "treeBranch": "Q5-U (Scale — physical)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Material",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M23",
+    "moduleTitle": "Scale Coherence",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M2",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Physical scale propagates to neural and individual scales.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

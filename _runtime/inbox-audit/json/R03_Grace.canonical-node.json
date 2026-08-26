@@ -1,0 +1,87 @@
+{
+  "source_id": "R03_Grace",
+  "title": "Grace as External Operator",
+  "canonical_node": {
+    "axiom": "Grace () is an external operator from God that accomplishes what you cannot:  flip and coherence restoration. It is non-unitary, unmerited, sufficient, and comes through Christ alone.",
+    "definitions": [
+      "Grace (): an external operator from God, not part of the soul system ( not-in _S).",
+      "External: originating from outside the corrupted system, specifically from God.",
+      " flip: the transformation of the moral sign from -1 to +1.",
+      "Non-unitary: an operation that increases coherence, i.e., '|' > |.",
+      "Unmerited: not earned or deserved; a free gift.",
+      "Sufficient: complete and fully adequate; nothing needs to be added.",
+      "Christ alone: the exclusive channel through which grace operates ( = _Christ)."
+    ],
+    "derivation": [
+      "Self-flip is impossible: unitary self-operations preserve eigenvalues (D1), so no internal operation can change  from -1 to +1.",
+      "Therefore, an external operator is required to accomplish the  flip.",
+      "Grace is defined as that external operator ( not-in _S, Source()=God).",
+      "Grace flips : |=-1 = |=+1.",
+      "Grace is non-unitary: it increases coherence, which cannot happen by unitary evolution.",
+      "Grace is unmerited: since =-1, no merit can be produced; thus grace cannot be earned.",
+      "Grace is sufficient: it completes the salvation process; nothing can be added.",
+      "Grace comes through Christ alone: only Christ's payment provides the basis for grace."
+    ],
+    "action": "The system should treat grace as an external, non-unitary, unmerited, sufficient, and Christ-exclusive operator that flips the moral sign and restores coherence, and should reject any model that claims self-salvation, human initiation, or works-based merit.",
+    "boundary": [
+      "Grace is not self-generated or internal.",
+      "Grace is not assistance or help; it is rescue.",
+      "Grace does not require human cooperation as a condition for its operation.",
+      "Grace does not come through any channel other than Christ.",
+      "Grace does not make humans passive; faith is active reception, but reception is not achievement."
+    ],
+    "test": [
+      "Check that the model does not allow self-flip of  via unitary operations.",
+      "Check that grace is defined as external to the soul system.",
+      "Check that the  flip is attributed solely to grace.",
+      "Check that the non-unitary property is preserved (coherence increases).",
+      "Check that grace is not conditioned on human merit or works.",
+      "Check that sufficiency is maintained (no additional requirements).",
+      "Check that Christ is the exclusive channel of grace."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "R02 (self-salvation impossibility)",
+      "D1 (unitary operations preserve eigenvalues)"
+    ],
+    "dg2_new_capability": "Introduces an external operator (grace) that can flip the moral sign and increase coherence, which is impossible for closed systems.",
+    "dg3_preserved_floor": "Preserves the impossibility of self-salvation and the need for external intervention.",
+    "dg4_collapse_if_removed": "Without grace as external operator, salvation becomes impossible, collapsing the entire soteriological framework.",
+    "dg5_translation_registers": [
+      "Theological: grace as divine intervention",
+      "Mathematical: non-unitary operator",
+      "Physical: external forcing / open system"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological_axiom",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve_as_axiom"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical necessity for grace based on D1, but D1 is a formal theorem within the system, not empirically verified.",
+      "Equates theological concepts (, coherence) with physical quantities without rigorous mapping.",
+      "Uses 'non-unitary' in a way that may conflict with standard quantum mechanics; no physical mechanism is provided.",
+      "The sufficiency and exclusivity claims are theological assertions, not proven by the document."
+    ],
+    "kill_conditions": [
+      "If self-flip is shown possible within the system, the external operator becomes unnecessary.",
+      "If grace can be earned or is insufficient, the axiom fails.",
+      "If another channel of grace is established, the Christ-exclusive claim fails."
+    ],
+    "lean_target": "The axiom should be treated as a theological postulate, not a proven physical law. The mathematical formalism is illustrative, not evidence."
+  },
+  "plain_summary": "This document defines grace as an external, non-unitary operator from God that flips the moral sign () from -1 to +1, restores coherence, is unmerited, sufficient, and comes only through Christ. It argues against Pelagianism, Semi-Pelagianism, and Works-Righteousness using a mathematical analogy. However, the proof is not established; it is a theological axiom with illustrative formalism.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\R03_Grace.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\R03_Grace.canonical-node.json"
+  }
+}

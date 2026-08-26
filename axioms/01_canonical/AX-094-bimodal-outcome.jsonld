@@ -1,0 +1,94 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-094",
+  "nodeID": "tp:axioms/01/AX-094",
+  "claimID": "tp:AXIOMS/A12.2",
+  "name": "Bimodal Outcome",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Sign determines asymptotic fate — no neutral terminus.",
+  "statementPlain": "Sign determines asymptotic fate — no neutral terminus.",
+  "mathematicalForm": "lim(t→∞) = {+∞ coherence if σ=+1; 0 coherence if σ=-1}",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-067",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-093",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "keywords": [
+    "A12.2",
+    "Q11",
+    "Eschatology",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show a neutral terminus exists (neither heaven nor hell). Demonstrate moral trajectories that reach stable intermediate state. Show trimodal or continuous outcome distribution.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 96
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-094",
+    "oldID": "A12.2",
+    "treeLevel": "Q11",
+    "treeBranch": "Q11-B (Eschatology — binary outcome)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Eschatology",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M12",
+    "moduleTitle": "Destiny / Attractor",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (σ determines attractor)",
+    "worldviewsEliminated": "Buddhism (nirvana is neither +1 nor -1), Universalism (all reach +1)",
+    "propagationTest": "YES — Bimodal outcome propagates to heaven/hell definitions and the destiny equation.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

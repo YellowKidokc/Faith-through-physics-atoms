@@ -1,0 +1,1063 @@
+{
+  "work_id": "W7.4",
+  "title": "The Lagrangian",
+  "turn": "TURN 7 - THE GAUNTLET",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\BLUE\\o\\08-the-lagrangian.html",
+  "overall_status": "reviewed",
+  "summary": "This sheet audits the Lagrangian layer, separating verified facts from overclaims. It establishes a rerun doctrine due to a canonical form change, lists two Lean-verified lemmas, mechanical validations, retired overclaims, and a promotion order for future proofs. The work is honest about boundaries, but some claims still risk overreach if not carefully labeled.",
+  "claims": [
+    {
+      "claim_id": "W7.4-C001",
+      "claim_text": "The canonical Lagrangian ℒ = χ(t)·(d/dt ΣF_i)² − V(χ,S) is the canonical form from the deep source.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ROOT",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Exact definition of χ, V, and the summation; source reference."
+      ],
+      "evidence_present": [
+        "The expression is stated as canonical."
+      ],
+      "evidence_gap": [
+        "No derivation or formal definition of terms."
+      ],
+      "support": [
+        "ℒ = χ(t)·(d/dt ΣF_i)² − V(χ,S) — canonical Lagrangian from the deep source."
+      ],
+      "dependencies": [
+        "Deep source (not named)"
+      ],
+      "risks": [
+        "If the deep source is not formal, this is a postulate."
+      ],
+      "kill_condition": "If the deep source is not formal, this is a postulate.",
+      "required_concession": "This is a postulated canonical form, not yet derived.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "truth",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.6,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ROOT",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "truth",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C002",
+      "claim_text": "The July 26, 2026 ruling changed the canonical form, and verification does not transfer across a form change.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "AXIOM",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; it is a methodological rule."
+      ],
+      "evidence_present": [
+        "Stated as doctrine."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "The ruling of July 26, 2026 is canon. But the canonical form changed — and verification does not transfer across a form change."
+      ],
+      "dependencies": [
+        "July 2026 ruling"
+      ],
+      "risks": [
+        "If the ruling is not documented, this is unverifiable."
+      ],
+      "kill_condition": "If the ruling is not documented, this is unverifiable.",
+      "required_concession": "This rule depends on the existence of the July 2026 ruling.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "axiom",
+        "truth",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "AXIOM",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "axiom",
+          "truth",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C003",
+      "claim_text": "L = T − V as the shape of spiritual dynamics is canon (model form), independent of letter dictionary.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "theological_interpretation",
+      "defense_class": "ROOT",
+      "claim_level": "theological",
+      "evidence_lane": "scripture_theology",
+      "evidence_needed": [
+        "Theological justification for why spiritual dynamics should follow L=T−V."
+      ],
+      "evidence_present": [
+        "Stated as canon, but no theological argument given."
+      ],
+      "evidence_gap": [
+        "No theological support."
+      ],
+      "support": [
+        "L = T − V as the shape of spiritual dynamics — inertia in T, moral law in V — CANON (model form)"
+      ],
+      "dependencies": [
+        "Canonical deep source"
+      ],
+      "risks": [
+        "This is a theological claim presented as canon without support."
+      ],
+      "kill_condition": "If no theological basis is provided, it is an unsupported assertion.",
+      "required_concession": "This is a theological model form, not a proven law.",
+      "recommended_action": "demote",
+      "glyphs": [
+        "master-equation",
+        "theology",
+        "truth",
+        "boundary",
+        "kill-condition"
+      ],
+      "confidence": 0.4,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/theology.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/boundary.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "theological_interpretation",
+        "defense_class": "ROOT",
+        "claim_level": "theological",
+        "evidence_lane": "scripture_theology",
+        "recommended_action": "demote",
+        "glyphs": [
+          "master-equation",
+          "theology",
+          "truth",
+          "boundary",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C004",
+      "claim_text": "The Noether engine — symmetries force conservation laws; spiritual terms emerge at equilibrium — is canon as a method.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "established_physics",
+      "defense_class": "AXIOM",
+      "claim_level": "physics",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Standard Noether's theorem."
+      ],
+      "evidence_present": [
+        "Referenced as method, not proved here."
+      ],
+      "evidence_gap": [
+        "No derivation in this work."
+      ],
+      "support": [
+        "The Noether engine — symmetries force conservation laws; spiritual terms emerge at equilibrium — CANON (method)"
+      ],
+      "dependencies": [
+        "Noether's theorem (established physics)"
+      ],
+      "risks": [
+        "Applying Noether to spiritual terms is a bridge."
+      ],
+      "kill_condition": "If spiritual terms are not well-defined, Noether does not apply.",
+      "required_concession": "Noether's theorem is established, but its application to spiritual terms is a bridge.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "physics",
+        "axiom",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/physics.svg",
+        "theophysics_glyphs/svg/axiom.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "established_physics",
+        "defense_class": "AXIOM",
+        "claim_level": "physics",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "physics",
+          "axiom",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C005",
+      "claim_text": "The dissipator slot — external restoration enters as a source term, not internal force — is canon (structure).",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "physics_model",
+      "defense_class": "DERIVATION",
+      "claim_level": "physics",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Derivation from the master equation."
+      ],
+      "evidence_present": [
+        "Re-derived cleanly as dX/dt = W∇χ + η in the July ruling; η verified to produce motion (Sheet 7)."
+      ],
+      "evidence_gap": [
+        "The derivation is not shown here."
+      ],
+      "support": [
+        "Re-derived cleanly as dX/dt = W∇χ + η in the July ruling; η verified to produce motion (Sheet 7)."
+      ],
+      "dependencies": [
+        "July ruling",
+        "Sheet 7"
+      ],
+      "risks": [
+        "If the derivation is not formal, this is a model."
+      ],
+      "kill_condition": "If the derivation is not formal, this is a model.",
+      "required_concession": "This is a derived structure, but the derivation is not fully shown.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "proof",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.7,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "physics_model",
+        "defense_class": "DERIVATION",
+        "claim_level": "physics",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "proof",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C006",
+      "claim_text": "Grace as external, restoring, noncoercive is Lean-verified via kernel theorems grace_is_external, grace_is_noncoercive, grace_restores.",
+      "framework_lane": "trinity",
+      "physics_claim_type": "theological_interpretation",
+      "defense_class": "DERIVATION",
+      "claim_level": "theological",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Formal definitions of grace and the theorems."
+      ],
+      "evidence_present": [
+        "Theorems are named, but not shown."
+      ],
+      "evidence_gap": [
+        "No proof terms or definitions."
+      ],
+      "support": [
+        "grace_is_external · grace_is_noncoercive · grace_restores — kernel theorems, form-agnostic"
+      ],
+      "dependencies": [
+        "Lean kernel"
+      ],
+      "risks": [
+        "If the theorems are not actually proved, this is overclaim."
+      ],
+      "kill_condition": "If the theorems are not actually proved, this is overclaim.",
+      "required_concession": "The theorems are claimed Lean-verified, but the proofs are not shown.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "theology",
+        "proof",
+        "lean4",
+        "canonical",
+        "kill-condition"
+      ],
+      "confidence": 0.6,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/theology.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg",
+        "theophysics_glyphs/svg/kill-condition.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "trinity",
+        "physics_claim_type": "theological_interpretation",
+        "defense_class": "DERIVATION",
+        "claim_level": "theological",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "theology",
+          "proof",
+          "lean4",
+          "canonical",
+          "kill-condition"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C007",
+      "claim_text": "LAG-01 (L = T − V) is a formal draft, not a proved theorem of the new canonical form.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Formal proof or explicit demotion."
+      ],
+      "evidence_present": [
+        "Stated as formal draft."
+      ],
+      "evidence_gap": [
+        "No proof."
+      ],
+      "support": [
+        "Formal draft. Promote only via the metric-repaired form or as collective-coordinate"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a draft, not a theorem.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "doubt",
+        "lean4",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "doubt",
+          "lean4",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C008",
+      "claim_text": "LAG-02 (Spirit Lagrangian) is formally defined and symbolically validated, but NOT Lean-proven and rank-deficient as standalone 10D kinetics.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Symbolic validation details."
+      ],
+      "evidence_present": [
+        "Symbolic validation mentioned."
+      ],
+      "evidence_gap": [
+        "No details of symbolic validation."
+      ],
+      "support": [
+        "Formal definition + symbolic validation. Rank-deficient as standalone 10D kinetics. NOT Lean-proven"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a formal definition with symbolic checks, not a proof.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "doubt",
+        "canonical"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "doubt",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C009",
+      "claim_text": "LAG-03 (Anti-Lagrangian) is an exact sign inverse (symbolically checked) and a contrast instrument, not a standalone physical theory.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Symbolic check details."
+      ],
+      "evidence_present": [
+        "Symbolically checked."
+      ],
+      "evidence_gap": [
+        "No details."
+      ],
+      "support": [
+        "Exact sign inverse (symbolically checked). A contrast instrument, not a standalone physical theory"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a symbolic check, not a proof.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "doubt",
+        "canonical"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "doubt",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C010",
+      "claim_text": "LAG-04 (Interaction) is a term-only object that must be embedded in a full action before standalone judgment.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Full action definition."
+      ],
+      "evidence_present": [
+        "Stated as term-only."
+      ],
+      "evidence_gap": [
+        "No full action."
+      ],
+      "support": [
+        "Term-only object. Must be embedded in a full action before standalone judgment"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is not a complete theory.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "doubt",
+        "lean4",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "doubt",
+          "lean4",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C011",
+      "claim_text": "LAG-05 (Unified Field) is a mechanically promising template but needs formal χ-sector and coupling definitions.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Formal definitions."
+      ],
+      "evidence_present": [
+        "Mechanically promising template."
+      ],
+      "evidence_gap": [
+        "No formal definitions."
+      ],
+      "support": [
+        "Mechanically promising template. Needs formal χ-sector and coupling definitions"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a template, not a theory.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "doubt",
+        "lean4",
+        "canonical"
+      ],
+      "confidence": 0.8,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "doubt",
+          "lean4",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C012",
+      "claim_text": "LEAN-LAG-001 (IsNondegenerate'_to_Nondegenerate) is a bridge lemma for kinetic metrics and does not prove the Master Equation Lagrangian or any theological mapping.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Lean proof."
+      ],
+      "evidence_present": [
+        "Named as Lean-backed."
+      ],
+      "evidence_gap": [
+        "Proof not shown."
+      ],
+      "support": [
+        "A bridge lemma for kinetic metrics. It does not prove the Lowe Coherence Lagrangian, the Master Equation, or any theological mapping."
+      ],
+      "dependencies": [
+        "Lean"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This lemma is limited to formal nondegeneracy conversion.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C013",
+      "claim_text": "LEAN-LAG-002 (nondeg_fst_of_orthogonalSum_nondeg) is a lemma about orthogonal sums and has the same boundary: no theology, no Master Equation.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "DERIVATION",
+      "claim_level": "formal",
+      "evidence_lane": "lean_formal",
+      "evidence_needed": [
+        "Lean proof."
+      ],
+      "evidence_present": [
+        "Named as Lean-backed."
+      ],
+      "evidence_gap": [
+        "Proof not shown."
+      ],
+      "support": [
+        "Useful when a kinetic sector is built as a sum. Same boundary: no theology, no Master Equation."
+      ],
+      "dependencies": [
+        "Lean"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This lemma is limited to orthogonal sums.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "proof",
+        "lean4",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/proof.svg",
+        "theophysics_glyphs/svg/lean4.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "DERIVATION",
+        "claim_level": "formal",
+        "evidence_lane": "lean_formal",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "proof",
+          "lean4",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C014",
+      "claim_text": "Numerical pass rates prove internal formal consistency, but they do not prove theology or external reality.",
+      "framework_lane": "meta",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; it is a boundary statement."
+      ],
+      "evidence_present": [
+        "Stated as doctrine."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Numerical pass rates prove internal formal consistency. They do not prove theology, and they do not prove external reality. That sentence is now doctrine."
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a boundary statement.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "mesh",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 1.0,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/mesh.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "meta",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "mesh",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C015",
+      "claim_text": "The retired claim 'χ = ∭(G·M·E·S·T·K·R·Q·F·C)' is false because a pointwise zero does not annihilate an integral and C is a wrapper, not a factor.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "CLOSURE",
+      "claim_level": "formal",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Mathematical reasoning."
+      ],
+      "evidence_present": [
+        "Stated as retired by ruling."
+      ],
+      "evidence_gap": [
+        "No detailed proof."
+      ],
+      "support": [
+        "A pointwise zero does not annihilate an integral; C is a wrapper, never a factor. Retired by ruling"
+      ],
+      "dependencies": [
+        "Ruling"
+      ],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a mathematical correction.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "boundary",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/boundary.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "CLOSURE",
+        "claim_level": "formal",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "boundary",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C016",
+      "claim_text": "The old ten-letter dictionary (S=sin, K=knowledge, etc.) is replaced by the nine-physics-factor spine because drifted letters = drifted document.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "editorial",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; it is a documentation decision."
+      ],
+      "evidence_present": [
+        "Stated as replaced."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Replaced by the nine-physics-factor spine. Drifted letters = drifted document"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a documentation change.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "editorial",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C017",
+      "claim_text": "The LCM 'metric' self-grading (LCM=1) is retired because N_ur has no measurement procedure and no kill condition; the principle of unification survives, the score does not.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "not_physics",
+      "defense_class": "ADMISSION",
+      "claim_level": "meta",
+      "evidence_lane": "none_needed",
+      "evidence_needed": [
+        "None; it is a self-correction."
+      ],
+      "evidence_present": [
+        "Stated as retired."
+      ],
+      "evidence_gap": [],
+      "support": [
+        "Self-grading: N_ur has no measurement procedure and no kill condition. The principle (unification must resolve contradictions) survives; the score does not"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a self-correction.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "claim",
+        "doubt",
+        "truth",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/claim.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/truth.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "not_physics",
+        "defense_class": "ADMISSION",
+        "claim_level": "meta",
+        "evidence_lane": "none_needed",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "claim",
+          "doubt",
+          "truth",
+          "canonical"
+        ]
+      }
+    },
+    {
+      "claim_id": "W7.4-C018",
+      "claim_text": "The 'isomorphism proof' by variable substitution (Lindblad → spiritual names) is retired as analogy, not isomorphism; the structure reached (dissipator = external source) was kept.",
+      "framework_lane": "master_equation",
+      "physics_claim_type": "mathematical_formalism",
+      "defense_class": "ADMISSION",
+      "claim_level": "formal",
+      "evidence_lane": "math_derivation",
+      "evidence_needed": [
+        "Formal isomorphism proof."
+      ],
+      "evidence_present": [
+        "Stated as retired."
+      ],
+      "evidence_gap": [
+        "No formal proof."
+      ],
+      "support": [
+        "One-directional substitution is analogy, not isomorphism. The structure it reached (dissipator = external source) was kept; the overclaim was not"
+      ],
+      "dependencies": [],
+      "risks": [],
+      "kill_condition": "",
+      "required_concession": "This is a correction of an overclaim.",
+      "recommended_action": "keep",
+      "glyphs": [
+        "master-equation",
+        "equation",
+        "doubt",
+        "canonical"
+      ],
+      "confidence": 0.9,
+      "glyph_paths": [
+        "theophysics_glyphs/svg/master-equation.svg",
+        "theophysics_glyphs/svg/equation.svg",
+        "theophysics_glyphs/svg/doubt.svg",
+        "theophysics_glyphs/svg/canonical.svg"
+      ],
+      "classification_bundle": {
+        "framework_lane": "master_equation",
+        "physics_claim_type": "mathematical_formalism",
+        "defense_class": "ADMISSION",
+        "claim_level": "formal",
+        "evidence_lane": "math_derivation",
+        "recommended_action": "keep",
+        "glyphs": [
+          "master-equation",
+          "equation",
+          "doubt",
+          "canonical"
+        ]
+      }
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "W7.4-C003",
+      "problem": "Theological claim presented as canon without support.",
+      "repair": "Add a theological justification or demote to a model form."
+    },
+    {
+      "severity": "P2",
+      "target": "W7.4-C006",
+      "problem": "Lean theorems claimed but not shown.",
+      "repair": "Provide the Lean proof terms or reference the kernel files."
+    },
+    {
+      "severity": "P2",
+      "target": "W7.4-C012, W7.4-C013",
+      "problem": "Lean lemmas claimed but not shown.",
+      "repair": "Provide the Lean proof terms or reference the kernel files."
+    }
+  ],
+  "log_notes": [
+    "The work is honest about boundaries, but some claims still risk overreach if not carefully labeled.",
+    "The rerun doctrine is a key meta-claim that affects all other claims.",
+    "The promotion order is a roadmap, not a proof."
+  ]
+}

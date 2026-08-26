@@ -1,0 +1,56 @@
+{
+  "atom_id": "tp:lane4/derivation-grammar/dg5-translation",
+  "atom_uid": "sha256:0de2143582397643c86a78cf2f9c3e2cb8c529b870f0d4aa169f6fd64dd22853",
+  "title": "DG5 - Translation",
+  "claim": "A capability may translate between registers or frameworks only if the relevant dependency, constraint, collapse, and role structure is preserved.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "Different vocabulary can preserve the same structure, but vocabulary resemblance alone is not enough."
+  ],
+  "definitions": [
+    "TranslatesTo(C1, C2): C1 is carried into another register as C2 while preserving relevant structure."
+  ],
+  "equations": [
+    "TranslatesTo(C1, C2) -> StructurePreserved(C1, C2)"
+  ],
+  "bridges": [
+    "Bridge claims must preserve structure rather than merely compare words."
+  ],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency",
+    "DG3-Preservation"
+  ],
+  "negative_guards": [
+    "Do not call vocabulary resemblance an isomorphism.",
+    "Do not upgrade analogy to proof."
+  ],
+  "kill_conditions": [
+    "A claimed translation preserves vocabulary but not dependency, role, failure mode, or constraint.",
+    "The project cannot state what structure must survive translation."
+  ],
+  "proof_label": "BRIDGE_DECLARED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "claim_ingested",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\DG_V02_ATOM_SEED_BATCH_2026-08-01\\DG5-Translation.json",
+      "meaning": "Source claim ingested into Lane 4 ledger.",
+      "limits": "Ingestion is not proof.",
+      "timestamp": "2026-08-01T04:17:53+00:00",
+      "lane": "Framework",
+      "event_id": "sha256:6ae7a2db1ab8f25c19fc835c059177ed7a843332a2cba8debe35538dbf7475c9",
+      "event_uuid": "962d99ff-7efb-5e3b-be14-b701541e2ac1"
+    }
+  ],
+  "source_claim_id": "DG5-Translation",
+  "atom_uuid": "9527caff-0d86-5202-8ad2-49980b79ffd7"
+}

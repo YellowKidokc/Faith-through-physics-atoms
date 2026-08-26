@@ -1,0 +1,72 @@
+{
+  "source_id": "REPRODUCIBILITY",
+  "title": "Reproducibility",
+  "canonical_node": {
+    "axiom": "The repository must be buildable with the pinned Lean toolchain using the standard Lake build command, with no private paths.",
+    "definitions": [
+      "Lean toolchain: the version specified in the lean-toolchain file.",
+      "Lake build: the command 'lake build' executed from the repository root.",
+      "Build success: the output contains 'Build completed successfully'.",
+      "Expected messages: Lean info messages from #check_failure and linter warnings are not proof failures."
+    ],
+    "derivation": [
+      "The document specifies the installation method (elan) and the pinned version via lean-toolchain.",
+      "The document specifies the build command and the expected success output.",
+      "The document clarifies that certain messages are expected and do not indicate failure.",
+      "The document lists the repository contents that enable reproducibility and states that no private paths are required."
+    ],
+    "action": "The system must ensure that the repository can be built with the pinned Lean toolchain using 'lake build' from the repository root, and that the build succeeds without private paths.",
+    "boundary": [
+      "This document does not specify the content of the proofs or the correctness of the theorems.",
+      "This document does not guarantee that the build will succeed on all platforms or environments.",
+      "This document does not define what constitutes a proof failure beyond a failed build."
+    ],
+    "test": [
+      "Run 'lake build' from the repository root and check that the output contains 'Build completed successfully'.",
+      "Verify that the lean-toolchain file is present and specifies a version.",
+      "Verify that no private desktop paths are referenced in the build configuration."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean toolchain (elan)",
+      "Lake package manager",
+      "Repository files: lean-toolchain, lakefile.lean, Lean source files"
+    ],
+    "dg2_new_capability": "Provides a reproducible build process for the repository, enabling verification of the Lean code.",
+    "dg3_preserved_floor": "Ensures that the repository can be built and that the build process is documented, preserving the ability to check the code.",
+    "dg4_collapse_if_removed": "Without this document, the build process would be undocumented, making it difficult to reproduce the build and verify the code.",
+    "dg5_translation_registers": [
+      "lean-toolchain",
+      "lakefile.lean",
+      "lake build"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as procedural requirement"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document does not prove that the build will succeed; it only states the expected result.",
+      "The document does not guarantee that the build is reproducible across all environments."
+    ],
+    "kill_conditions": [
+      "If the build command fails in a clean environment with the pinned toolchain.",
+      "If the repository lacks the required files (lean-toolchain, lakefile.lean)."
+    ],
+    "lean_target": "The build process itself is not a Lean theorem; it is a procedural requirement."
+  },
+  "plain_summary": "This document specifies how to build the repository using Lean and Lake, and clarifies that certain messages are expected. It does not make claims about the correctness of the proofs, only about the build process.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\REPRODUCIBILITY.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\REPRODUCIBILITY.canonical-node.json"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "source_id": "7Q_MECHANISM_MAP_PHYSICS",
+  "title": "7Q Mechanism Map  -  Physics Instantiation",
+  "canonical_node": {
+    "axiom": "Every claim must be processed through the seven invariant questions (Q0 - Q7) to determine its truth score, with the mechanism never changing across domains; only the vocabulary adapts.",
+    "definitions": [
+      "Q0 Posture Check: Determines whether the investigator is in advocacy or puzzlement mode; advocacy flags bias but does not kill the claim.",
+      "Q1 Identity: Fixes the object's entity type, physics type, formalism, master equation variable, and symmetry pair to prevent identity drift.",
+      "Q2 Location: Fixes the domain, subdomain, scale, regime, and isomorphism status (ISO-CONFIRMED, ISO-PARALLEL, ISO-ANALOGY) to prevent context drift.",
+      "Q3 Assertion: Pins the claim type, precision level, certainty, and physics-specific fields; must be precise enough to negate.",
+      "Q4 Evidence: Three-channel evidence (PS  CF) that multiplies; zero in one channel kills the score.",
+      "Q5 Dependencies: Analyzes the dependency chain to identify hidden assumptions and the axiom floor.",
+      "Q6 Consequences: Maps predictions into confirmed, untested, decisive, or failed categories.",
+      "Q7 Falsification: Names kill conditions using five universal death types and domain-specific kill conditions.",
+      "Truth Score: T = mean(S, E, L, D, P, C) where S=Survivability, E=Evidence, L=Logic, D=Dependencies, P=Predictions, C=Coherence."
+    ],
+    "derivation": [
+      "The document defines the 7Q mechanism as a universal invariant for claim evaluation.",
+      "Each question (Q0 - Q7) has an invariant function and domain-specific vocabulary.",
+      "The truth score is computed as the mean of six variables derived from the answers to Q0 - Q7.",
+      "The mechanism is claimed to be domain-independent: 'The mechanism never changes. The vocabulary does.'"
+    ],
+    "action": "When any claim enters the system, apply Q0 - Q7 in order, compute the truth score, and output a verdict (ALIVE, DEAD, or OPEN) based on the score and kill conditions.",
+    "boundary": [
+      "Does not provide a formal proof of the mechanism's correctness.",
+      "Does not specify the exact formulas for PS and CF in the evidence channel.",
+      "Does not define how to compute S, E, L, D, P, C precisely beyond the mean formula.",
+      "Does not list all possible domain-specific kill conditions for every field.",
+      "Does not claim that the mechanism is complete or that it guarantees truth."
+    ],
+    "test": [
+      "For any claim, verify that each of Q0 - Q7 is answered with the defined vocabulary.",
+      "Check that the claim can be negated (Q3 test).",
+      "Verify that kill conditions are named and testable (Q7).",
+      "Compute the truth score and compare to the confidence level table."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The document depends on the existence of a claim to evaluate.",
+      "It depends on the definitions of the seven questions and their invariant functions.",
+      "It depends on the truth score formula and the confidence level thresholds."
+    ],
+    "dg2_new_capability": "Provides a structured, domain-adaptable framework for evaluating claims across physics and other fields, with explicit kill conditions and a truth score.",
+    "dg3_preserved_floor": "Preserves the invariant core of the 7Q mechanism: the seven questions and the truth score formula remain unchanged across domains.",
+    "dg4_collapse_if_removed": "If the 7Q mechanism is removed, there is no systematic method for evaluating claims, leading to ad-hoc analysis and potential bias.",
+    "dg5_translation_registers": [
+      "Physics vocabulary: entity types, physics types, formalisms, master equation variables, symmetry pairs.",
+      "Domain-specific subdomains, scales, regimes, and isomorphism statuses.",
+      "Claim types, precision levels, certainty levels, and physics-specific fields.",
+      "Evidence channels and prediction categories.",
+      "Kill conditions: five universal death types and domain-specific conditions."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological framework",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Adopt as a structured heuristic for claim evaluation, but do not treat as a proven or complete method."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that the mechanism is 'complete' or 'universal' without formal proof.",
+      "The truth score formula is presented as objective but lacks precise definitions for its components.",
+      "The document implies that the mechanism can determine truth, but it only provides a heuristic score."
+    ],
+    "kill_conditions": [
+      "If the truth score formula is shown to be inconsistent or arbitrary.",
+      "If the mechanism fails to handle a known class of claims.",
+      "If the evidence channels (PS and CF) are not defined precisely enough to be computed."
+    ],
+    "lean_target": "A formal specification of the 7Q mechanism with precise definitions for all components, and a proof of its effectiveness or a clear statement of its limitations."
+  },
+  "plain_summary": "This document describes a seven-question framework (Q0 - Q7) for evaluating claims, with a truth score computed from six variables. It is designed to be domain-adaptable, but it is not formally proven and lacks precise definitions for some components. It should be treated as a structured heuristic, not a definitive method.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\7Q_MECHANISM_MAP_PHYSICS.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\7Q_MECHANISM_MAP_PHYSICS.canonical-node.json"
+  }
+}

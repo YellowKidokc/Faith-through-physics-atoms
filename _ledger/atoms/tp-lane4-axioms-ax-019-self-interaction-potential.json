@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-019-self-interaction-potential",
+  "atom_uid": "sha256:4d7de14fdba11b9326cbc821921db86e29cacc67ccc1411aa6a514f56719aabe",
+  "title": "AX-019 — Self Interaction Potential",
+  "claim": "V(χ) = self-interaction potential of Logos Field.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "V(χ) — functional form TBD"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-018",
+    "tp:axioms/01/AX-010"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Derive V(χ) from first principles and show it leads to contradictions",
+    "Show χ doesn't self-interact",
+    "Demonstrate V(χ) predicts wrong vacuum energy"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-019-self-interaction-potential.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-019-self-interaction-potential.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:995a16c2289e0a86c29a6f6660b184994eb7cfbba54d64ded1712721c0eca918",
+      "event_uuid": "75fc5a2b-4f00-5c29-b2c6-048b546ab26f"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:893997d54c6b596a3d459f06fe908a2b6e83883e8e33347bee181db2b68b4f6c",
+      "event_uuid": "d42ab4b1-23e7-5d39-baa2-3c87b5d0785c"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D3.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-019",
+  "original_node_id": "tp:axioms/01/AX-019",
+  "atom_uuid": "e90b49c6-e87b-5061-8617-e8c61eea7d69"
+}

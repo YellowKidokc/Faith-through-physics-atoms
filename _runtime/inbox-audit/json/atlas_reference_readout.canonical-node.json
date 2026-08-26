@@ -1,0 +1,74 @@
+{
+  "source_id": "atlas_reference_readout",
+  "title": "ATLAS Lean Reference Readout",
+  "canonical_node": {
+    "axiom": "ATLAS is an external reference corpus for Lean proof patterns and project structure, not canon evidence for Theophysics claims.",
+    "definitions": [
+      "ATLAS: autoformalized Lean 4 textbook mathematics library, machine-generated, ongoing, with some sorry-backed declarations.",
+      "Reference corpus: a body of examples used for pattern-matching and structural guidance, not for truth-bearing.",
+      "Canon evidence: material that directly supports or justifies Theophysics axioms or claims."
+    ],
+    "derivation": [
+      "The document reports ATLAS as a Lean 4 library with 2654 files and 26 domain folders.",
+      "It explicitly states ATLAS is useful as a proof-pattern/reference corpus, not as Theophysics canon evidence.",
+      "It lists guardrails: do not copy wholesale, use as external reference, and do not treat as evidence of truth.",
+      "Therefore, the canonical action is to use ATLAS only for structural and idiomatic reference."
+    ],
+    "action": "Use ATLAS as an external reference for Lean project layout, proof-review metadata, and mathlib idioms. Do not import its theorems or treat its content as supporting Theophysics claims.",
+    "boundary": [
+      "Does not assert any mathematical or theological truth.",
+      "Does not provide verified proofs for Theophysics statements.",
+      "Does not authorize copying ATLAS content into the canon.",
+      "Does not serve as evidence for any Theophysics claim."
+    ],
+    "test": [
+      "Check that ATLAS is referenced only for structural patterns, not for claim support.",
+      "Verify that no ATLAS theorem is cited as proof in Theophysics documents.",
+      "Confirm that any copied files are quarantined and marked as external reference."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 toolchain v4.29.0",
+      "Mathlib revision 8a178386ffc0f5fef0b77738bb5449d50efeea95",
+      "External repository at D:\\GitHub\\atlas-lean (moved to G:\\GitHub\\atlas-lean)"
+    ],
+    "dg2_new_capability": "Provides a reference corpus for Lean project organization and proof-review metadata patterns, enabling structural guidance for Theophysics Lean integration.",
+    "dg3_preserved_floor": "Preserves the distinction between external reference and canon evidence, preventing contamination of Theophysics axioms with unverified machine-generated content.",
+    "dg4_collapse_if_removed": "If removed, the Lean specialist loses a concrete example of Lean project layout and proof-review metadata, but no Theophysics claim is weakened.",
+    "dg5_translation_registers": [
+      "Lean project structure",
+      "Proof-review categories",
+      "targets.yaml and report.json metadata patterns"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "reference_artifact",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine_as_external_reference"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating ATLAS as evidence for Theophysics claims.",
+      "Assuming ATLAS theorems are fully verified when some are sorry-backed.",
+      "Copying ATLAS content into canon without proper attribution and quarantine."
+    ],
+    "kill_conditions": [
+      "If ATLAS is cited as proof for a Theophysics claim.",
+      "If ATLAS content is merged into canon without external-reference marking.",
+      "If the document's guardrail is ignored."
+    ],
+    "lean_target": "A Lean file that imports ATLAS patterns but does not depend on ATLAS theorems for Theophysics proofs."
+  },
+  "plain_summary": "This document describes ATLAS, an autoformalized Lean 4 library, as a reference for proof patterns and project structure. It explicitly warns that ATLAS is not canon evidence. The canonical action is to use it only as an external reference, never as support for Theophysics claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\atlas_reference_readout.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\atlas_reference_readout.canonical-node.json"
+  }
+}

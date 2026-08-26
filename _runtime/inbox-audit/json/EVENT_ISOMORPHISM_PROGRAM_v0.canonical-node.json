@@ -1,0 +1,83 @@
+{
+  "source_id": "EVENT_ISOMORPHISM_PROGRAM_v0",
+  "title": "Event Isomorphism Program v0",
+  "canonical_node": {
+    "axiom": "Lean formalizes event systems and proves exactly what kind of sameness exists between them.",
+    "definitions": [
+      "EventSystem: structure with State, Event, step, invariant, cost.",
+      "EventIso: structure-preserving equivalence between EventSystems preserving step, invariant, and cost.",
+      "RichEventSystem: extends EventSystem with Gate, coherent, restored, stage, irreversibleFrom.",
+      "RichEventIso: preserves all RichEventSystem fields.",
+      "Sameness Ladder: levels 0-9 classifying strength of event correspondence."
+    ],
+    "derivation": [
+      "Loose analogy and bare type equivalence are weak.",
+      "Stronger target: preserve transition, invariant, gate, cost, irreversibility, restoration under explicit mapping.",
+      "Define minimal EventSystem and EventIso in Lean.",
+      "Define richer RichEventSystem and RichEventIso as target architecture.",
+      "Classify every event claim using review matrix.",
+      "Use negative proofs to show non-arbitrariness within model.",
+      "Adopt careful public language to avoid overclaiming."
+    ],
+    "action": "Build Lean 4 no-sorry packages for EventSystem, EventIso, and lemmas; prove first theorem targets; migrate existing claims into stronger framework.",
+    "boundary": [
+      "Does not prove theology from nothing.",
+      "Does not claim Lean proves gravity is grace or similar.",
+      "Level 9 theological identification is bridge unless explicit theological premises added.",
+      "Negative proofs only show failure under encoded constraints, not real-world theological falsehood."
+    ],
+    "test": [
+      "Check that EventIso preserves invariant both directions.",
+      "Check that EventIso preserves zero-cost and positive-cost events.",
+      "Check that EventIso preserves one-step reachability.",
+      "Check symmetry and transitivity of EventIso.",
+      "Check invalid mapping theorem for toy swap failing cost preservation."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4",
+      "Minimal kernel (Theophysics/EventSystem.lean, EventIso.lean)",
+      "Existing IsomorphismTest.lean claims"
+    ],
+    "dg2_new_capability": "Provides a rigorous framework for proving structure-preserving correspondences between event systems, with explicit preservation of invariants, costs, gates, and irreversibility.",
+    "dg3_preserved_floor": "Preserves the minimal kernel and existing isomorphism test claims by migrating them into the stronger framework.",
+    "dg4_collapse_if_removed": "Without this program, event correspondences remain at level of loose analogy or bare type equivalence, lacking rigorous structure preservation.",
+    "dg5_translation_registers": [
+      "EventSystem",
+      "EventIso",
+      "RichEventSystem",
+      "RichEventIso",
+      "Sameness Ladder"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "research program",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "adopt as research direction; implement Lean packages"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming Lean proves theological identities without explicit premises.",
+      "Overstating negative proofs as disproving real-world interpretations.",
+      "Equating formal isomorphism with theological sameness."
+    ],
+    "kill_conditions": [
+      "If Lean code cannot be compiled without sorry.",
+      "If structure preservation proofs fail for intended mappings.",
+      "If public claims exceed what Lean actually verifies."
+    ],
+    "lean_target": "Theophysics/EventSystem.lean, Theophysics/EventIso.lean, Theophysics/EventIsoLemmas.lean, Theophysics/Tests/EventIsoConcreteModel.lean"
+  },
+  "plain_summary": "This document outlines a research program to use Lean 4 to formally prove structure-preserving isomorphisms between event systems from different domains, avoiding overclaiming theological proof. It defines minimal and rich event system structures, a sameness ladder, and a review matrix, with immediate next steps to build Lean packages and prove basic theorems.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\EVENT_ISOMORPHISM_PROGRAM_v0.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\EVENT_ISOMORPHISM_PROGRAM_v0.canonical-node.json"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-038",
+  "nodeID": "tp:axioms/01/AX-038",
+  "claimID": "tp:AXIOMS/D5.2",
+  "name": "Integrated Information Phi",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "definition",
+  "statementTechnical": "Integrated Information Φ = observer capacity measure (Tononi).",
+  "statementPlain": "Integrated Information Φ = observer capacity measure (Tononi).",
+  "mathematicalForm": "Φ = min[I(whole) - I(parts)]",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-037",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "witness",
+    "definition",
+    "observer",
+    "information"
+  ],
+  "keywords": [
+    "D5.2",
+    "Q6",
+    "Ontological",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show Φ doesn't correlate with consciousness. Find a high-Φ system that's clearly unconscious. Demonstrate IIT is unfalsifiable (Koch's own concern).",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 39
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-038",
+    "oldID": "D5.2",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-D (Phi as observer metric)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M05",
+    "moduleTitle": "Observer / Actualization",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (definition level)",
+    "worldviewsEliminated": "Materialism, Hard Determinism, Eliminativism",
+    "propagationTest": "YES — Φ propagates as THE measure of consciousness throughout the framework: observer status, collapse rate, soul field coupling.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

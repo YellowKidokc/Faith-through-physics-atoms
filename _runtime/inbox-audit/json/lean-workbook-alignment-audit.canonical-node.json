@@ -1,0 +1,74 @@
+{
+  "source_id": "lean-workbook-alignment-audit",
+  "title": "Lean Workbook Alignment Audit",
+  "canonical_node": {
+    "axiom": "Every workbook claim must be traceable to a Lean declaration with explicit proof strength and public-claim risk before citation.",
+    "definitions": [
+      "Workbook: the canonical Excel file containing LEAN_DERIVATION_CHAIN and GAUNTLET_ARCHITECTURE sheets.",
+      "Lean declaration: a theorem or lemma in the extracted Lean repository.",
+      "Proof strength: a category such as DECLARATION_OR_UNKNOWN, DEFINITIONAL_RFL, FINITE_DECIDABLE, SIMPLIFICATION, SUBSTANTIVE_OR_CASE_PROOF, TRIVIAL_TRUE, WRAPPER_OR_IMPORTED.",
+      "Public claim risk: a flag indicating that a workbook row's English claim is not supported by the Lean proof strength."
+    ],
+    "derivation": [
+      "The audit found 1567 Lean declarations in the extracted hub.",
+      "The workbook has 270 rows in LEAN_DERIVATION_CHAIN.",
+      "756 Lean declarations are not represented by exact theorem name in the workbook.",
+      "122 workbook rows have True/trivial/not-found risk.",
+      "Therefore, the workbook is not yet aligned with the Lean repository.",
+      "Hence, a staging process and evidence-ladder fields are required before public citation."
+    ],
+    "action": "Add missing Lean declarations to a staging sheet, add Proof_Strength and Public_Claim_Risk columns, downgrade or replace TRIVIAL_TRUE flagship rows, and add a five-sentence evidence split per claim.",
+    "boundary": [
+      "This audit does not verify the correctness of any Lean proof.",
+      "This audit does not modify the canonical workbook directly.",
+      "This audit does not establish that any claim is true; it only identifies alignment gaps."
+    ],
+    "test": [
+      "Check that every workbook row has a matching Lean declaration name.",
+      "Check that every workbook row has a Proof_Strength value.",
+      "Check that no TRIVIAL_TRUE row has a strong English claim without a substantive Lean theorem.",
+      "Check that each claim has the five-sentence evidence split."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 repository extraction",
+      "Workbook files with LEAN_DERIVATION_CHAIN and GAUNTLET_ARCHITECTURE sheets"
+    ],
+    "dg2_new_capability": "Provides a method to audit and align workbook claims with Lean declarations, introducing evidence-ladder fields and staging.",
+    "dg3_preserved_floor": "Preserves the existing workbook structure and Lean declarations; does not alter the canonical workbook.",
+    "dg4_collapse_if_removed": "Without this audit, workbook claims may be publicly cited without proof-strength checks, leading to overstatement.",
+    "dg5_translation_registers": [
+      "Workbook row to Lean declaration mapping",
+      "Proof strength categories",
+      "Public claim risk flags"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "C0",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "audit_and_stage"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that workbook rows are formally proven when many are TRIVIAL_TRUE or not found.",
+      "Citing flagship names with broad English claims without stronger Lean statements."
+    ],
+    "kill_conditions": [
+      "If the workbook is not updated with proof strength and risk columns, the audit is incomplete.",
+      "If TRIVIAL_TRUE rows are not downgraded or replaced, public citation is unsafe."
+    ],
+    "lean_target": "Formalize the audit process as a Lean function that checks workbook alignment."
+  },
+  "plain_summary": "This document is an audit report, not a proof. It identifies gaps between the Lean repository and the workbook, and recommends a staging process to add missing declarations and proof-strength metadata. It does not establish any mathematical claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\lean-workbook-alignment-audit.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\lean-workbook-alignment-audit.canonical-node.json"
+  }
+}

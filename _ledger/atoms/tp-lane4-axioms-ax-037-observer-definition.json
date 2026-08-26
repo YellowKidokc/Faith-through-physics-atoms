@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-037-observer-definition",
+  "atom_uid": "sha256:8dedaa73ec525c11c1d13f512e8660c6a2fe25c7c509d040c2e2b57c12bffb4c",
+  "title": "AX-037 — Observer Definition",
+  "claim": "Observer = system capable of registering distinctions.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "13-systems-control",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Observer ≡ System S : ∃ distinctions D, Registers(S,D)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-035",
+    "tp:axioms/01/AX-036"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show a system that registers distinctions but is clearly not an observer",
+    "Show an observer that doesn't register distinctions",
+    "Demonstrate the definition is circular"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-037-observer-definition.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-037-observer-definition.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:bc850149b8bdd2a4409f7e4a1e81efa0dac04a5d0abd2a8d28da1b9990283502",
+      "event_uuid": "58fb1dcd-e7d9-52ff-9d5c-7c6c8d140d81"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 13-systems-control.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:60b949b160ade4a69f3afbc1ac9e73c26f92f49d40195adeba32b0a2bd577e13",
+      "event_uuid": "d9a0d7b8-8835-5178-ad4a-3940e4bdbec8"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/D5.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-037",
+  "original_node_id": "tp:axioms/01/AX-037",
+  "atom_uuid": "26970ad0-99b6-5ee3-94cf-924e94819329"
+}

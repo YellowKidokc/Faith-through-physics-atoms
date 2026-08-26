@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-126-consciousness-collapse-test",
+  "atom_uid": "sha256:34181dd3951d8b2c98264c89ce00fac10bd9e97fea9543c6620630b8150c73f9",
+  "title": "AX-126 — Consciousness Collapse Test",
+  "claim": "Protocol: Measure gravitational deviation in high-coherence states.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Protocol: gravitational deviation measurement"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-051",
+    "tp:axioms/01/AX-100"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Run the experiment and get null result"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-126-consciousness-collapse-test.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-126-consciousness-collapse-test.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:c167e690f2cc0e3f9f31e0484963004e87dc709bd1adb55baae5ec5faed2f164",
+      "event_uuid": "721d9252-2329-5fd4-9af4-fb973295dee1"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'empirical' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:415e8fc4f74ce055518187f85c2d04d10282119f1231d15ebe3438b76a4b2fcc",
+      "event_uuid": "5dcf6940-5ab6-5411-a229-bb877474b4c3"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/PROT18.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-126",
+  "original_node_id": "tp:axioms/01/AX-126",
+  "atom_uuid": "696944e1-5ccc-5edc-9001-1019682c3fcd"
+}

@@ -1,0 +1,81 @@
+{
+  "source_id": "18_LEAN_AXIOM_BUNDLE_ATTACK_SURFACE_v0",
+  "title": "Lean Axiom Bundle / Attack Surface v0",
+  "canonical_node": {
+    "axiom": "All load-bearing assumptions must be collected into a single visible, attackable bundle; downstream proofs must trace to that bundle; bridge claims and theological identifications must be explicitly labeled and separated from formal theorems.",
+    "definitions": [
+      "Assumption Bundle: a small, explicit, named set of primitive assumptions that Lean is allowed to assume.",
+      "Bridge claim: a statement that maps a formal result to a theological or empirical concept, not proven by Lean.",
+      "Theological identification: a claim that a formal object corresponds to a specific theological entity (e.g., Christ).",
+      "Anti-smuggling rule: no theorem may import a theological conclusion as an unnoticed premise.",
+      "Public claim labels: CANON, LEAN_SUPPORTED, RUNTIME_SUPPORTED, STRONG_BUT_NEEDS_SOURCING, USEFUL_BUT_UNVERIFIED, SPECULATIVE, OPEN_BRIDGE, CONTRADICTED, QUARANTINE."
+    ],
+    "derivation": [
+      "Scattered assumptions across files make auditing difficult and allow smuggling.",
+      "Therefore, collect all load-bearing assumptions into one visible bundle.",
+      "Separate primitive assumptions, definitions, bridge assumptions, theological identifications, empirical assumptions, and open conjectures.",
+      "Theorems should run downstream from the bundle and definitions.",
+      "Bridge claims and theological identifications must be labeled and not presented as Lean proofs.",
+      "Critics should be directed to attack the bundle, definitions, inference steps, bridge assumptions, theological identifications, empirical evidence, or public wording overclaims."
+    ],
+    "action": "Implement a formal project structure with a single AxiomBundle file, definitions file, theorem files that accept the bundle as a parameter, and metadata files for bridge claims and public claim status. Ensure every theorem traces back to the bundle and every bridge claim is labeled.",
+    "boundary": [
+      "Does not claim that Lean proves God or any theological conclusion.",
+      "Does not define the final theology; the minimum bundle is a first attackable core.",
+      "Does not allow theorems to silently import theological premises.",
+      "Does not treat definitions as discoveries; they are controlled vocabulary."
+    ],
+    "test": [
+      "Check that all load-bearing assumptions are listed in the AxiomBundle file.",
+      "Check that no theorem file invents fresh assumptions outside the bundle.",
+      "Check that bridge claims and theological identifications are labeled as such.",
+      "Check that public claims carry one of the defined support labels.",
+      "Check that the anti-smuggling rule is enforced: no theorem imports a theological conclusion as an unnoticed premise."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 proof assistant",
+      "Existing Prover9 toy theorem (referenced)",
+      "Excel ledger for public claims"
+    ],
+    "dg2_new_capability": "Provides a structured method to make all assumptions explicit and attackable, enabling honest auditing and preventing smuggling of conclusions.",
+    "dg3_preserved_floor": "Preserves the ability to prove conditional structural theorems under stated assumptions, as already demonstrated by the Prover9 toy theorem.",
+    "dg4_collapse_if_removed": "Without this bundle, the formal system becomes scattered and un-auditable, allowing critics to fairly claim smuggling and undermining the credibility of downstream results.",
+    "dg5_translation_registers": [
+      "Assumption bundle -> Lean structure AxiomBundle",
+      "Definitions -> Lean definitions/structures",
+      "Bridge claims -> metadata labels",
+      "Public claim status -> Excel field assumption_bundle_dependency"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological_standard",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "adopt_as_standard"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "May be interpreted as claiming that the bundle itself is proven or that the listed assumptions are true.",
+      "May be interpreted as claiming that the formal system can prove theological conclusions if the bundle is accepted.",
+      "May be interpreted as claiming that the minimum bundle is sufficient for all downstream results."
+    ],
+    "kill_conditions": [
+      "If the bundle is not actually used consistently in all downstream proofs.",
+      "If bridge claims are presented as formal theorems without proper labeling.",
+      "If the anti-smuggling rule is violated."
+    ],
+    "lean_target": "Implement the AxiomBundle structure and a few downstream theorems that accept the bundle as a parameter, demonstrating the pattern."
+  },
+  "plain_summary": "This document defines a methodological standard for organizing Lean formalizations of Theophysics: collect all assumptions into a single visible bundle, separate definitions and bridge claims, and ensure every theorem traces back to the bundle. It does not prove any theological claim but provides a structure for honest formal reasoning.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\18_LEAN_AXIOM_BUNDLE_ATTACK_SURFACE_v0.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\18_LEAN_AXIOM_BUNDLE_ATTACK_SURFACE_v0.canonical-node.json"
+  }
+}

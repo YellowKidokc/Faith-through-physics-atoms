@@ -1,0 +1,64 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-164-coherence-stage",
+  "atom_uid": "sha256:6fadc65810cf2aad36e13ae1d0c6e1eb2520e49e98790bcb69e82ca006139d74",
+  "title": "AX-164 — Coherence Stage",
+  "claim": "Information must exhibit coherence to be distinguishable from noise.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "14-information-physics",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "Information(meaningful) → Coherent(Information)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-163"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show random information that is meaningful",
+    "Demonstrate noise that carries content without pattern"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-164-coherence-stage.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-164-coherence-stage.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:3fa18bb7b1216984186c8075a980850ca1e94483a5fc671cadaf0a6242358cd2",
+      "event_uuid": "97b7b9ce-1503-54eb-bd26-4fcd9bf3d8d2"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 14-information-physics.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:325531521ca0a9149f1893d05c1b248caa5cae4828bf5b16ca864fd3491b20af",
+      "event_uuid": "8738ea6a-7ca2-5727-b20e-970e77550a83"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-164",
+  "original_node_id": "tp:axioms/01/AX-164",
+  "atom_uuid": "926a1bd6-d811-553e-8bbe-ee1a4348e125"
+}

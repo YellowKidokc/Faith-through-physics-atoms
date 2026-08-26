@@ -1,0 +1,62 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-005",
+  "atom_uid": "sha256:bbe8470f80cf9abf2d130a4dabddf680071e414def1bad626386e58c921c0c4a",
+  "title": "ISO-005 - Thermodynamics ↔ Judgment",
+  "claim": "ISO-005: Thermodynamics ↔ Judgment maps Thermodynamics (2nd Law) to Judgment / Moral Entropy. Workbook verdict: Level 3. Honest verdict: 2nd Law is genuinely specific.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "assumptions": [
+    "Thermodynamics (2nd Law)",
+    "Judgment / Moral Entropy",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "Lean canonical_substitution + 2nd Law specificity",
+    "2nd Law is genuinely specific."
+  ],
+  "equations": [],
+  "bridges": [
+    "Thermodynamics (2nd Law) -> Judgment / Moral Entropy"
+  ],
+  "dependencies": [
+    "ISO-005"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: Moral entropy' needs formal definition",
+    "Promotion blocker: Moral entropy' needs formal information-theoretic definition (Shannon/Kolmogorov)",
+    "Promotion blocker: Need quantitative not just qualitative match",
+    "Promotion blocker: Need to show bidirectional predictions"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: Moral entropy' needs formal definition"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-005 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:65556b854c3c40c55fb71683abf249d8e722b552769a8176c58b35fa986d8f69"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-005"
+}

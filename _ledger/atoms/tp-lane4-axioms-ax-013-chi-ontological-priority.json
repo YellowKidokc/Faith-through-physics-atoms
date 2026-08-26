@@ -1,0 +1,67 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-013-chi-ontological-priority",
+  "atom_uid": "sha256:947a16c9e9127b42a17568d5f0b5def96f0b4b6bac4dd6f9f36f0a9acf690168",
+  "title": "AX-013 — Chi Ontological Priority",
+  "claim": "χ is ontologically prior to spacetime — spacetime emerges from χ, not vice versa.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "11-relativity",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "χ ≻ spacetime (ontological priority); spacetime = f(χ)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-010",
+    "tp:axioms/01/AX-011",
+    "tp:axioms/01/AX-012"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show spacetime existing without any informational substrate",
+    "Demonstrate χ depending on pre-existing spacetime (circular)",
+    "Find a spacetime property that cannot be derived from χ"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-013-chi-ontological-priority.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-013-chi-ontological-priority.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:be5d091a77b1a8fd246dd3e05ba3b68352eec44557f0c26ef2dbfae6a681bb85",
+      "event_uuid": "b9919079-7e30-5a2b-a53e-97d2dc03d271"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: 11-relativity.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:15f4d6b5e9704d4a48fe83b623dc7d9e05d874bc4a07ec1d93820192a90d486f",
+      "event_uuid": "894c2e1f-e9b9-59e9-87aa-124b6d4c9630"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P2.1",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-013",
+  "original_node_id": "tp:axioms/01/AX-013",
+  "atom_uuid": "69f8d19f-bf49-59dc-b52d-88779ad32b41"
+}

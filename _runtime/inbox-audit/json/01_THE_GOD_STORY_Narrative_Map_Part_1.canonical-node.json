@@ -1,0 +1,91 @@
+{
+  "source_id": "01_THE_GOD_STORY_Narrative_Map_Part_1",
+  "title": "THE GOD STORY  -  Narrative Map Part 1",
+  "canonical_node": {
+    "axiom": "The narrative arc of the gospel is derived from first principles, told from God's perspective, and each story beat maps to axioms in the gospel chain.",
+    "definitions": [
+      "Narrative Map: A sequence of questions (Q1-Q13) that walk through the gospel from God's perspective.",
+      "Axiom Cluster: A grouping of axioms (e.g., EXISTENCE, SUBSTRATE) that correspond to narrative questions.",
+      "Free will: The ability to choose, including the ability to reject God; necessary for genuine love.",
+      "Closed system: A system isolated from external input, leading to decay (entropy).",
+      "Open system: A system receiving external input (grace), enabling transformation.",
+      "The Three Truths: Moral law, truth, and mathematics as invariant, pre-cultural, indestructible universals.",
+      "The Fracture: The fall of man, introducing evil into the system, resulting in quantum uncertainty and the GR/QM split.",
+      "The Broadcast: The universe as a continuous real-time projection of God's character, received via physics and conscience.",
+      "The Adversary: A being who rebelled against God, seeks to sabotage creation, but is limited by God.",
+      "The Self-Help Lie: The cultural emphasis on self-improvement, which keeps focus on self rather than God."
+    ],
+    "derivation": [
+      "Q1: If God exists and is good, He creates a universe and desires a witness to appreciate it.",
+      "Q2: The witness must have free will to choose appreciation, otherwise it's an echo.",
+      "Q3: Free will leads to a category error: the creature mistakes receiving for weakness and seeks to be the origin.",
+      "Q4: The alternative to free will is a universe of puppets, which is worse; grace was plan A.",
+      "Q5: The tree makes free will visible; the adversary introduces doubt, but the tree becomes the hinge of redemption.",
+      "Q6: The adversary acts out of envy, not hatred, seeking to destroy what he threw away.",
+      "Q7: God limits the adversary; he can close systems but not lock them permanently; grace has infinite range.",
+      "Q8: God cannot create in the adversary's image; Earth is designed for invisibility to test identity, not compliance.",
+      "Q9: Universal convergence on God's properties (truthful, just, loving) and the Three Truths; evolution cannot explain them.",
+      "Q10: The fall fractures the universe; quantum uncertainty is the scar; GR and QM describe different layers.",
+      "Q11: God's most pervasive power is sustaining all things and broadcasting His character via conscience.",
+      "Q12: The Holy Spirit is the communion; transformation comes from focusing on God, not self-improvement.",
+      "Q13: Destiny involves two trajectories (open vs closed system); the equation proves the choice, not God."
+    ],
+    "action": "Use this narrative map to structure the gospel presentation, ensuring each story beat aligns with the corresponding axioms and fortification files.",
+    "boundary": [
+      "This document is a narrative map, not a formal proof or derivation.",
+      "It does not provide mathematical or empirical evidence for the claims.",
+      "It does not complete Q13 (Destiny); that is marked as TBD.",
+      "It does not replace the axiom fortification files; it is meant to weave into their Section 3."
+    ],
+    "test": [
+      "Check that each question maps to the correct axiom cluster as per the table.",
+      "Verify that the narrative arc is coherent and follows the intended order.",
+      "Ensure that standalone pieces can be extracted without losing context.",
+      "Confirm that Q13 is explicitly marked as incomplete."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Axiom fortification files (A1.1, A1.2, A1.3, etc.)",
+      "Previous Opus session context",
+      "Theological framework (gospel narrative)"
+    ],
+    "dg2_new_capability": "Provides a narrative structure that translates abstract axioms into a story arc, making the gospel accessible from God's perspective.",
+    "dg3_preserved_floor": "Preserves the core theological claims (creation, fall, redemption) and the axiom-to-question mapping.",
+    "dg4_collapse_if_removed": "Without this narrative map, the axioms lack a cohesive story to engage readers; the gospel presentation becomes fragmented.",
+    "dg5_translation_registers": [
+      "Theological narrative",
+      "Axiom cluster mapping",
+      "Story beats (questions)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "Narrative framework",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "C",
+    "recommended_atom_action": "Use as narrative anchor for axiom fortification; do not treat as proof."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims about physics (e.g., QM as scar) are metaphorical, not established physics.",
+      "The 'Evolution Kill Shot' references Monte Carlo trials but no details are provided.",
+      "The narrative asserts theological truths as if self-evident without external validation."
+    ],
+    "kill_conditions": [
+      "If the narrative is presented as empirical evidence for the axioms.",
+      "If Q13 is treated as complete when it is not.",
+      "If the mapping between questions and axioms is found to be inconsistent."
+    ],
+    "lean_target": "Use as a narrative guide, not as a source of formal proof; rely on axiom fortification files for rigorous derivation."
+  },
+  "plain_summary": "This document provides a narrative map for presenting the gospel from God's perspective, structured as a series of questions (Q1-Q13) that correspond to axiom clusters. It outlines the story arc from creation to the fall to redemption, with each question mapping to specific axioms. The document is intended to be woven into axiom fortification files, not as a standalone proof. It includes standalone pieces like the Cupcake Proof and the Tree Reframe, but Q13 (Destiny) is incomplete. The narrative makes theological and metaphorical physics claims, but these are not formal proofs.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_THE_GOD_STORY_Narrative_Map_Part_1.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\01_THE_GOD_STORY_Narrative_Map_Part_1.canonical-node.json"
+  }
+}

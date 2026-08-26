@@ -1,0 +1,104 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-087",
+  "nodeID": "tp:axioms/01/AX-087",
+  "claimID": "tp:AXIOMS/E10.1",
+  "name": "Soul Field Equation",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "mathematical",
+  "statementTechnical": "(□ + m_S²)Ψ_S = 0 — Klein-Gordon equation for the soul field.",
+  "statementPlain": "(□ + m_S²)Ψ_S = 0 — Klein-Gordon equation for the soul field.",
+  "mathematicalForm": "(□ + m_S²)Ψ_S = 0; m_S ≈ 0",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-084",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-085",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-086",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "equation",
+    "field"
+  ],
+  "keywords": [
+    "E10.1",
+    "Q6",
+    "Human",
+    "Equation"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the soul field doesn't obey Klein-Gordon. Detect m_S and show it's inconsistent. Demonstrate soul field has wrong spin for scalar (should be spinor?).",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 89
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-087",
+    "oldID": "E10.1",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-Y (Soul dynamics equation)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Human",
+    "tier": "2",
+    "newType": "Equation",
+    "logicalForce": "formal proposal",
+    "formalizableInLean": "yes",
+    "leanKind": "def / proposition with typed variables",
+    "riskLevel": "medium",
+    "kernelRole": "definitionRole",
+    "moduleID": "M10",
+    "moduleTitle": "Soul / Consciousness Field",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M2 (Entropic)",
+    "worldviewsEliminated": "Materialism, Eliminativism",
+    "propagationTest": "YES — Soul field equation propagates to soul dynamics, afterlife physics, and resurrection mechanics.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

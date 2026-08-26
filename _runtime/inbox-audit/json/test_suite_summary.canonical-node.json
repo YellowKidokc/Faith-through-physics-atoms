@@ -1,0 +1,70 @@
+{
+  "source_id": "test_suite_summary",
+  "title": "test_suite_summary.md",
+  "canonical_node": {
+    "axiom": "The test suite summary file is the authoritative record of test pass/fail status and timing for the Biblical Empirical Suite.",
+    "definitions": [
+      "test_suite_summary.json: a JSON file consolidating results from individual test0X_results.json files.",
+      "PASSED: a test status indicating the test met its criteria.",
+      "Biblical Empirical Suite: tests 03 through 09 as described in the document."
+    ],
+    "derivation": [
+      "The document states it is the master summary file for the Biblical Empirical Suite.",
+      "It provides a consolidated pass/fail record with timing data.",
+      "The JSON content lists seven tests (03-09) all with status PASSED.",
+      "The document interprets total_passed: 9 as including 2 JAX Field Theory tests.",
+      "The document claims the suite runs in under 2.5 seconds total."
+    ],
+    "action": "Treat test_suite_summary.json as the canonical record of test outcomes; use it to answer whether tests passed and to report timing.",
+    "boundary": [
+      "Does not provide detailed test results; those are in individual test0X_results.json files.",
+      "Does not include full JAX suite results; those are recorded elsewhere.",
+      "Does not define test criteria or methodology."
+    ],
+    "test": [
+      "Check that test_suite_summary.json exists and contains the expected fields.",
+      "Verify that the statuses match the individual test result files.",
+      "Verify that the timing values are consistent with the described test durations."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Individual test0X_results.json files for each test (03-09).",
+      "JAX Field Theory test results for the additional two tests."
+    ],
+    "dg2_new_capability": "Provides a single consolidated summary of test outcomes and timing for the entire Biblical Empirical Suite.",
+    "dg3_preserved_floor": "Preserves the pass/fail status and timing information from individual test results.",
+    "dg4_collapse_if_removed": "Without this summary, there is no single authoritative record of the suite's overall pass/fail status; one would need to inspect each individual result file.",
+    "dg5_translation_registers": [
+      "test_suite_summary.json",
+      "test0X_results.json"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "empirical_record",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims 'biblical proof receipt' which is an overstatement; it is a test summary, not proof of any theological claim.",
+      "The total_passed count of 9 includes tests not detailed in the document, which could be misleading without full context."
+    ],
+    "kill_conditions": [
+      "If individual test result files do not match the summary statuses.",
+      "If the timing data is fabricated or inconsistent."
+    ],
+    "lean_target": "A JSON schema validator for test_suite_summary.json"
+  },
+  "plain_summary": "This document is a summary file for a test suite, listing pass/fail statuses and timing. It is a record of empirical tests, not a proof of any theological claim. The summary is coherent but should not be overinterpreted.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\test_suite_summary.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\test_suite_summary.canonical-node.json"
+  }
+}

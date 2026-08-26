@@ -1,0 +1,61 @@
+{
+  "atom_id": "tp:lane4/isomorphic-events/iso-iso-039",
+  "atom_uid": "sha256:cbe84b535b2ac3576054b22a0125e41703cdcdde649344b19b734317795f582c",
+  "title": "ISO-039 - Justice/Mercy Operator (Cross Uniqueness)",
+  "claim": "ISO-039: Justice/Mercy Operator (Cross Uniqueness) maps Operator Algebra / Cost-Bearer α to Soteriology (Atonement). Workbook verdict: Level 3. Honest verdict: Cross is THE ONLY configuration where justice and mercy are both maximal. Machine-verified.",
+  "domain": "isomorphic-events",
+  "lane": "IsomorphicEvents",
+  "claim_class": "isomorphic_event",
+  "mode_classification": "C3_REVIEW_HOMOMORPHISM_OR_ISOMORPHISM_CANDIDATE",
+  "assumptions": [
+    "Operator Algebra / Cost-Bearer α",
+    "Soteriology (Atonement)",
+    "AAA classification workbook accepted as source classification, not proof"
+  ],
+  "definitions": [
+    "Lean: cross_is_unique_solution, cross_unique_convergence_configuration",
+    "Cross is THE ONLY configuration where justice and mercy are both maximal. Machine-verified."
+  ],
+  "equations": [],
+  "bridges": [
+    "Operator Algebra / Cost-Bearer α -> Soteriology (Atonement)"
+  ],
+  "dependencies": [
+    "ISO-039"
+  ],
+  "negative_guards": [
+    "Workbook ISO level is not automatic canon promotion.",
+    "Do not label as C5 formal isomorphism without explicit preservation proof.",
+    "Do not use as Lean proof unless the cited Lean file and theorem compile in the current package context.",
+    "Weakest link: α parameter needs empirical protocol"
+  ],
+  "kill_conditions": [
+    "Mapping fails structural-preservation review.",
+    "A rival explanation preserves the same features with fewer assumptions.",
+    "A claimed Lean theorem cannot be located or compiled in current context.",
+    "Weakest link remains unresolved: α parameter needs empirical protocol"
+  ],
+  "proof_label": "ISOMORPHIC_EVENT_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\Isomorphic_Updated.source-copy.xlsx"
+  ],
+  "ledger": [
+    {
+      "event_type": "isomorphic_workbook_imported",
+      "lane": "IsomorphicEvents",
+      "result": "recorded",
+      "artifact_path": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EXCEL\\Isomorphic_Updated.xlsx",
+      "meaning": "Imported ISO-039 from Isomorphic_Updated.xlsx as an isomorphic-event candidate.",
+      "limits": "Workbook level is preserved as source classification, not automatic formal isomorphism or canon proof.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:21:29+00:00",
+      "event_id": "sha256:dd62456169cafc06bd7a1f5229bf4fb060a384eb1011a6a130bd514a251f2f85",
+      "event_uuid": "bb809732-725a-5752-a5e4-7e384122e114"
+    }
+  ],
+  "source_claim_id": "ISO:ISO-039",
+  "atom_uuid": "757f9691-dfe8-5e5a-bba1-e4964d5dd4b6"
+}

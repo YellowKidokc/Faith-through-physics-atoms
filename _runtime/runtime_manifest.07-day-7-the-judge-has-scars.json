@@ -1,0 +1,275 @@
+{
+  "runtime": "theophysics-research-runtime",
+  "version": "0.1.0",
+  "generatedAt": "2026-08-01T09:17:15.946342+00:00",
+  "source": "O:\\_Theophysics_v5\\David\\Family\\The Hardest Questions\\Seven-Day Family Series\\07 - Day 7 - The Judge Has Scars.md",
+  "oneSentence": "This is one of the hardest things in the Bible for me.",
+  "claimIDs": [
+    "RTC-bc76acc8822b",
+    "RTC-c69d241537fe",
+    "RTC-1a202cac0987",
+    "RTC-6881143e2191",
+    "RTC-4871381a60ef",
+    "RTC-7126847ae4ef",
+    "RTC-34f390a47fd8",
+    "RTC-f7fea7b46cc8",
+    "RTC-256a9712d4cc",
+    "RTC-6528d17ea9f2",
+    "RTC-b4318a3ee52c",
+    "RTC-a7672b75d4bf",
+    "RTC-e5eb80e8d9f1",
+    "RTC-33f5aab005a0",
+    "RTC-5db385348d70",
+    "RTC-ea9234b12d4b",
+    "RTC-25457b43ffd0",
+    "RTC-ade94f427815",
+    "RTC-41ef90eb83c8",
+    "RTC-a54d2c89aa72",
+    "RTC-fa57757ff358",
+    "RTC-b09234a004cb",
+    "RTC-421626f80471",
+    "RTC-3c6d369ce113",
+    "RTC-d315c0ac24af",
+    "RTC-3887564fdfda"
+  ],
+  "claimSummary": {
+    "needs-review": 5,
+    "weak-match": 19,
+    "likely-existing-atom": 2
+  },
+  "hiddenDependencies": {
+    "status": "needs-review",
+    "missing": [
+      "payer",
+      "observer",
+      "standard",
+      "scale"
+    ],
+    "checks": {
+      "source": {
+        "status": "named",
+        "markers": [
+          "authority",
+          "grace"
+        ],
+        "question": "Where do energy, order, information, or authority enter?"
+      },
+      "payer": {
+        "status": "missing",
+        "markers": [],
+        "question": "Who bears the cost?"
+      },
+      "observer": {
+        "status": "missing",
+        "markers": [],
+        "question": "Who measures, verifies, interprets, or actualizes?"
+      },
+      "standard": {
+        "status": "missing",
+        "markers": [],
+        "question": "What defines success, goodness, truth, or the target state?"
+      },
+      "boundary": {
+        "status": "named",
+        "markers": [
+          "boundary",
+          "inside",
+          "outside"
+        ],
+        "question": "What is inside the system, and what is outside?"
+      },
+      "scale": {
+        "status": "missing",
+        "markers": [],
+        "question": "Is the claim local, global, individual, institutional, or cosmic?"
+      },
+      "time": {
+        "status": "named",
+        "markers": [
+          "now",
+          "time"
+        ],
+        "question": "Does the result hold now, later, asymptotically, or briefly?"
+      }
+    }
+  },
+  "types": {
+    "terms": [
+      {
+        "term": "grace",
+        "type": "source"
+      },
+      {
+        "term": "time",
+        "type": "boundary condition"
+      },
+      {
+        "term": "Christ",
+        "type": "integrator"
+      },
+      {
+        "term": "boundary",
+        "type": "boundary condition"
+      },
+      {
+        "term": "justice",
+        "type": "value judgment"
+      },
+      {
+        "term": "mercy",
+        "type": "value judgment"
+      }
+    ],
+    "silentTypeShiftFlags": [],
+    "status": "typecheck-pass"
+  },
+  "survivalVector": {
+    "scale": "0 absent, 1 named, 2 implemented, 3 independently tested",
+    "lowestCoordinate": "discriminability",
+    "dimensions": {
+      "grounding": {
+        "score": 2,
+        "meaning": "implemented",
+        "evidence": [
+          "7/26 claims mapped or reviewable"
+        ]
+      },
+      "typeSafety": {
+        "score": 2,
+        "meaning": "implemented",
+        "evidence": [
+          "grace",
+          "time",
+          "Christ",
+          "boundary",
+          "justice",
+          "mercy"
+        ]
+      },
+      "hiddenDependencyCompleteness": {
+        "score": 1,
+        "meaning": "named",
+        "evidence": [
+          "source",
+          "boundary",
+          "time"
+        ]
+      },
+      "derivationDepth": {
+        "score": 1,
+        "meaning": "named",
+        "evidence": [
+          "because"
+        ]
+      },
+      "discriminability": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "countermodelSurvival": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "falsifiability": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "reproducibility": {
+        "score": 1,
+        "meaning": "named",
+        "evidence": [
+          "version"
+        ]
+      },
+      "bidirectionality": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "semanticFidelity": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "failureContainment": {
+        "score": 0,
+        "meaning": "absent",
+        "evidence": []
+      },
+      "provenanceIndependence": {
+        "score": 1,
+        "meaning": "named",
+        "evidence": [
+          "human"
+        ]
+      }
+    }
+  },
+  "misuseAudit": {
+    "boundary": "Score claims, actions, and systems; do not score souls.",
+    "flags": [
+      {
+        "risk": "score_actions_not_souls",
+        "status": "flagged",
+        "markers": [
+          "soul"
+        ]
+      },
+      {
+        "risk": "coercive_use",
+        "status": "flagged",
+        "markers": [
+          "government"
+        ]
+      }
+    ],
+    "checks": [
+      {
+        "risk": "score_actions_not_souls",
+        "status": "flagged",
+        "markers": [
+          "soul"
+        ]
+      },
+      {
+        "risk": "coercive_use",
+        "status": "flagged",
+        "markers": [
+          "government"
+        ]
+      },
+      {
+        "risk": "victim_cost_hidden",
+        "status": "not-detected",
+        "markers": []
+      },
+      {
+        "risk": "authority_capture",
+        "status": "not-detected",
+        "markers": []
+      },
+      {
+        "risk": "insult_language",
+        "status": "not-detected",
+        "markers": []
+      }
+    ]
+  },
+  "registeredButNotRun": [
+    "Corpus.semantic_address",
+    "Ledger.cost_and_consent",
+    "BIDIRECTIONALITY",
+    "BASIS_CHALLENGE",
+    "DOMAIN_HOLDOUT",
+    "BLIND_MATCH",
+    "ASSUMPTION_SWAP",
+    "SEMANTIC_CHECKSUM",
+    "WITNESS_PANEL",
+    "PREDICTION_ESCROW",
+    "SCALE_SCAN",
+    "COUNTERMODEL"
+  ]
+}

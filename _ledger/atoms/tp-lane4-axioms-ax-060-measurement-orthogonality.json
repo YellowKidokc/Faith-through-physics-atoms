@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-060-measurement-orthogonality",
+  "atom_uid": "sha256:0170c9bb87cad3469806a68579b5f9023541ae9dbe3d24ac4bd99e15d0f04979",
+  "title": "AX-060 — Measurement Orthogonality",
+  "claim": "The observer measurement operator [Ô, Φ̂] = 0 commutes with the agent's moral state operator in the fundamental basis. [NOTE: Commuting operators share eigenstates, implying knowledge along one measurement axis. God knows the agent's moral orientation perfectly, but respects freedom in observables incompatible with σ̂. True omniscience requires additional axioms specifying basis-independence.]",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "[Ô, Φ̂] = 0 (commutation)"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-059"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the Terminal Observer necessarily disturbs the system it observes",
+    "Demonstrate [Ô, Φ̂] ≠ 0 for any physical observer",
+    "Show observer-independence is impossible"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-060-measurement-orthogonality.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-060-measurement-orthogonality.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:b836cc7dd18995a630740d4ad1eaf52049dd3c3f4d4937f050734d34f6c2d317",
+      "event_uuid": "fa2c6c14-60cc-5c17-a468-c96042e95e68"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'boundary' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:2e9cf945e2f88551f56e3cee6f7f88edabf92acc4a0ad4d3f7972d1f671ea5e4",
+      "event_uuid": "25ae4720-9ad3-5488-98c0-ed7da077e85e"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/BC3",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-060",
+  "original_node_id": "tp:axioms/01/AX-060",
+  "atom_uuid": "4679cb59-3b0f-5f0f-bfbe-8cf300d79e9c"
+}

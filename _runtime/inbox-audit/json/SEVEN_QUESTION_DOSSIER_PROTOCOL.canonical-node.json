@@ -1,0 +1,79 @@
+{
+  "source_id": "SEVEN_QUESTION_DOSSIER_PROTOCOL",
+  "title": "Seven-Question Dossier Protocol",
+  "canonical_node": {
+    "axiom": "A dossier is a structured answer set to one core question, organized by seven mandatory questions in fixed order.",
+    "definitions": [
+      "Dossier: a structured investigative object that is primarily an answer set to one core question, not a narrative summary.",
+      "Core Question: the single investigative focus that the dossier answers.",
+      "Investigative Spine: the ordered sequence of seven questions: Identity, Domain, Claim, Evidence, Dependencies, Consequences, Falsification.",
+      "Forward Mode: the normal dossier flow from Identity to Falsification.",
+      "Reverse Mode: the dossier flow from Falsification to Claim, used for adversarial review or kill-switch design."
+    ],
+    "derivation": [
+      "1. A dossier must be deterministic, machine-navigable, comparable, and resistant to rhetorical manipulation.",
+      "2. These properties require strict separation of identity, domain, claim, evidence, dependencies, consequences, and falsification.",
+      "3. Therefore, every dossier must answer the seven questions in the fixed order of the investigative spine.",
+      "4. The dossier is thereby defined as a structured answer set to one core question."
+    ],
+    "action": "When creating or processing a dossier, enforce the seven-question protocol: require Q1-Q7 fields in order, separate evidence from interpretation, expose dependencies, derive consequences, and specify falsification conditions. Support both forward and reverse modes. Render pages backed by Q1-Q7, not arbitrary article ordering. Convert dossiers into graph objects with edges such as depends_on, supports, predicts, contradicts, falsifies.",
+    "boundary": [
+      "Does not define the content of any specific dossier.",
+      "Does not prescribe the visible page layout beyond backing by Q1-Q7.",
+      "Does not specify the exact evidence types or their validity criteria.",
+      "Does not determine the truth of any claim; it only structures the investigation.",
+      "Does not replace domain-specific methodologies."
+    ],
+    "test": [
+      "For any dossier, verify that all seven questions are answered in order and that the required fields for each question are present.",
+      "Check that evidence is listed separately from interpretation and that dependencies are explicitly declared.",
+      "Verify that falsification conditions are specified for each claim.",
+      "Confirm that the dossier can be represented as a graph with the specified edge types.",
+      "Test both forward and reverse modes produce consistent structured outputs."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "A structured representation system for dossiers (e.g., YAML schema).",
+      "A notion of a core question to be answered.",
+      "A graph model for representing relationships between dossiers."
+    ],
+    "dg2_new_capability": "Enables deterministic, machine-navigable, and comparable dossiers by enforcing a fixed seven-question structure, separating evidence from interpretation, and making dependencies and falsification explicit.",
+    "dg3_preserved_floor": "Preserves the ability to represent narrative research pages as dossiers, but adds structure without requiring changes to underlying content.",
+    "dg4_collapse_if_removed": "If the protocol is removed, dossiers revert to unstructured narratives, losing determinism, comparability, and machine-navigability.",
+    "dg5_translation_registers": [
+      "YAML schema for Q1-Q7 fields.",
+      "Graph edges: depends_on, supports, predicts, contradicts, falsifies.",
+      "Page rendering mapping from Q1-Q7 to visual sections."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "procedural protocol",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "adopt as procedural standard for dossier structuring"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that the protocol makes dossiers 'stronger' or 'difficult to manipulate rhetorically' are not formally proven.",
+      "The protocol assumes a single core question, which may not fit all dossier types.",
+      "The required fields may be overly prescriptive for some domains."
+    ],
+    "kill_conditions": [
+      "If a dossier legitimately requires multiple core questions, the protocol fails.",
+      "If the required fields cannot be populated for a given dossier type, the protocol is inapplicable.",
+      "If the protocol is shown to hinder rather than aid investigation, it should be abandoned."
+    ],
+    "lean_target": "A minimal implementation: enforce Q1-Q7 as a checklist, with optional YAML fields, and allow flexible rendering."
+  },
+  "plain_summary": "This document defines a protocol for structuring investigative dossiers as answers to seven mandatory questions: Identity, Domain, Claim, Evidence, Dependencies, Consequences, and Falsification. It aims to make dossiers deterministic, machine-navigable, and comparable by separating evidence from interpretation and making assumptions explicit. The protocol is procedural and not a scientific claim; it is a useful organizational tool but its asserted benefits are not formally proven.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SEVEN_QUESTION_DOSSIER_PROTOCOL.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\SEVEN_QUESTION_DOSSIER_PROTOCOL.canonical-node.json"
+  }
+}

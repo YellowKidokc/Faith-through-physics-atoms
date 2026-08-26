@@ -1,0 +1,65 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-068-sign-conservation",
+  "atom_uid": "sha256:ea29f2365734d6bf819c726f56cb233716c0ae6e560ccaa767004f33f02c8410",
+  "title": "AX-068 — Sign Conservation",
+  "claim": "Self-generated operations cannot change sign: [σ̂, Û] = 0.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "05-conservation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "[σ̂, Û] = 0 for all self-generated unitary Û"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-067"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show a self-generated operation that flips sign",
+    "Demonstrate σ: -1 → +1 through internal process alone",
+    "This would be the mathematical equivalent of works-based salvation"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-068-sign-conservation.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-068-sign-conservation.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:87786cb21a67a3ac34288c158ad162c9b83bba5e3426cee903f2f52643b08495",
+      "event_uuid": "84f60f11-c54f-50f2-b15c-0dca899ba6e2"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'floor_axiom' -> 'derived'. Ontology: 05-conservation.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:152f0f2f20d9d773c0034b3f46c1fe817c5c2b5033de1e3b998a6754db170d34",
+      "event_uuid": "eeb0fad1-00d4-5fd1-bc88-02c3088da97f"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/A8.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-068",
+  "original_node_id": "tp:axioms/01/AX-068",
+  "atom_uuid": "ce7420bd-b77d-5bdc-8cf6-664f5e7deb60"
+}

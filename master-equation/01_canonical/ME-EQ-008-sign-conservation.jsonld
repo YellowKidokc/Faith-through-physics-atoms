@@ -1,0 +1,77 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-008",
+  "nodeID": "tp:master-equation/01/ME-EQ-008",
+  "claimID": "tp:ME/ME-EQ-008",
+  "nodeType": "claim",
+  "name": "Sign Conservation",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "mathematical",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "statementTechnical": "[σ̂, Û] = 0",
+  "statementPlain": "Self-generated unitary operations preserve the sign state.",
+  "mathematicalForm": "[σ̂, Û] = 0",
+  "mathFormNormal": "commutator(sigma_hat,U_hat)=0",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-047",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-068",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    }
+  ],
+  "tags": [
+    "equation",
+    "moral-conservation",
+    "symmetry"
+  ],
+  "keywords": [
+    "equation",
+    "σ̂",
+    "Û"
+  ],
+  "verificationStatus": "equation-registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer.",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+  "equationRegistry": {
+    "equationID": "ME-EQ-008",
+    "variables": [
+      "σ̂",
+      "Û"
+    ],
+    "normalForm": "commutator(sigma_hat,U_hat)=0",
+    "source": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md"
+  }
+}

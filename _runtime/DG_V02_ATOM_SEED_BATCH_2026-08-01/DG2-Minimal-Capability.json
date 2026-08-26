@@ -1,0 +1,38 @@
+{
+  "source_claim_id": "DG2-Minimal-Capability",
+  "title": "DG2 - Minimal Capability",
+  "claim": "A valid new layer must introduce at least one capability not reducible to the capabilities already present in prior layers.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "A layer that adds no new capability is a restatement rather than a derivation step."
+  ],
+  "definitions": [
+    "NewCapability(C(n+1)): C(n+1) is not reducible to the union of prior capability classes."
+  ],
+  "equations": [
+    "C(n+1) not in reducible_union(C(0)..C(n))"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency"
+  ],
+  "negative_guards": [
+    "Do not treat new vocabulary as a new capability.",
+    "Do not count restatement, decoration, or relabeling as derivation."
+  ],
+  "kill_conditions": [
+    "A claimed layer adds only renamed prior content and still passes the DG test.",
+    "No workable criterion for capability novelty can be stated."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ]
+}
+

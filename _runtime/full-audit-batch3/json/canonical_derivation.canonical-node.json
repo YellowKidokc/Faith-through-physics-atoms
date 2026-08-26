@@ -1,0 +1,86 @@
+{
+  "source_id": "canonical_derivation",
+  "title": "canonical_derivation.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field Lagrangian density, when varied, yields the equations of motion and conserved quantities that define the theoretical framework.",
+    "definitions": [
+      "chi-field: a scalar field with Lagrangian density L_chi, coupled to gravity and matter, with a self-interaction term chi.",
+      "J_grace: a source term in the chi-field equation of motion, with an unresolved dimensional issue.",
+      "G_eff: effective gravitational constant defined as G / (1 + chi).",
+      "Ghost modes: states with negative norm; absence indicated by propagator residue +1."
+    ],
+    "derivation": [
+      "Section 1: Write chi-field action in flat and curved spacetime.",
+      "Section 2: Apply Euler-Lagrange to obtain chi + mchi + chi = J_grace.",
+      "Section 3: Perform dimensional analysis; product form fails, Lagrangian passes.",
+      "Section 4: Compute momentum-space propagator; residue is +1.",
+      "Section 5: Take non-relativistic limit to obtain Gross-Pitaevskii equation.",
+      "Section 6: Apply Noether's theorem to derive conserved currents and stress-energy tensor.",
+      "Section 7: Couple to gravity to get modified Einstein equations with G_eff.",
+      "Section 8: Derive grace source term J_grace; note dimensional issue.",
+      "Section 9: Analyze stability at chi=0; stable for m>0, >0.",
+      "Section 10: Provide honest status report of derived vs asserted vs open."
+    ],
+    "action": "Use the chi-field Lagrangian as the foundational theoretical model, and use the derived equations (Klein-Gordon, Gross-Pitaevskii, modified Einstein) for further analysis and predictions.",
+    "boundary": [
+      "Does not provide numerical solutions or experimental validation.",
+      "Does not resolve the dimensional issue in J_grace.",
+      "Does not prove physical reality; only symbolic derivation from assumed Lagrangian.",
+      "Does not address quantization beyond propagator residue check."
+    ],
+    "test": [
+      "Verify each derivation step using SymPy symbolic computation.",
+      "Check that the Euler-Lagrange equation matches the stated Klein-Gordon form.",
+      "Confirm propagator residue equals +1.",
+      "Confirm non-relativistic limit yields Gross-Pitaevskii.",
+      "Confirm G_eff expression follows from coupling.",
+      "Check dimensional consistency of all derived expressions."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "SymPy symbolic mathematics library",
+      "Assumed chi-field Lagrangian density",
+      "Standard physics principles: action principle, Euler-Lagrange, Noether's theorem, general relativity"
+    ],
+    "dg2_new_capability": "Provides an exact symbolic derivation of the chi-field equations and their consequences, including a non-ghost propagator and modified gravity, which can be used for further theoretical analysis.",
+    "dg3_preserved_floor": "Preserves the logical consistency of the framework by deriving results from stated axioms, ensuring that subsequent numerical work has a solid theoretical basis.",
+    "dg4_collapse_if_removed": "Without this derivation, the framework lacks a formal mathematical foundation; numerical results would be unanchored and the theoretical claims would be unsupported.",
+    "dg5_translation_registers": [
+      "Symbolic mathematics (SymPy)",
+      "Theoretical physics (field theory, general relativity)",
+      "Mathematical logic (derivation steps)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "symbolic derivation",
+    "proof_label": "SYMBOLIC_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as theoretical derivation; flag open issues"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The derivation is only as valid as the assumed Lagrangian; if the Lagrangian is not physically motivated, the results are not physically meaningful.",
+      "The propagator residue +1 is a necessary but not sufficient condition for a physically consistent quantum field theory.",
+      "The dimensional issue in J_grace is unresolved and could affect the validity of the source term.",
+      "The modified Einstein equations are derived under specific coupling assumptions; other couplings could yield different results."
+    ],
+    "kill_conditions": [
+      "If the Lagrangian is shown to be non-renormalizable or inconsistent.",
+      "If the dimensional issue in J_grace cannot be resolved.",
+      "If the propagator residue computation is found to be in error.",
+      "If the non-relativistic limit derivation is incorrect."
+    ],
+    "lean_target": "Formalize the derivation in a proof assistant (e.g., Lean) to verify each step and ensure logical correctness."
+  },
+  "plain_summary": "This document is a symbolic derivation notebook using SymPy that derives the chi-field equations and their consequences from an assumed Lagrangian. It includes derivations of the Klein-Gordon equation, propagator residue, Gross-Pitaevskii limit, Noether currents, modified gravity, and stability analysis. It also honestly flags open issues like the dimensional problem in the source term. The derivation is coherent and admissible, but it is only as strong as the assumed Lagrangian and has not been formally verified in a proof assistant.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\canonical_derivation.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch3\\json\\canonical_derivation.canonical-node.json"
+  }
+}

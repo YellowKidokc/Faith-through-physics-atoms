@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-141",
+  "nodeID": "tp:axioms/01/AX-141",
+  "claimID": "tp:AXIOMS/D19.6",
+  "name": "Law VI: Coherence Non-Increase",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "definition",
+  "statementTechnical": "Law VI: Closed systems cannot increase own coherence.",
+  "statementPlain": "Law VI: Closed systems cannot increase own coherence.",
+  "mathematicalForm": "dC/dt ≤ 0 (closed system)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-025",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-135",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "definition"
+  ],
+  "keywords": [
+    "D19.6",
+    "Q3",
+    "Laws",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show closed system coherence increase. Identical to defeating AX-025.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 143
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-141",
+    "oldID": "D19.6",
+    "treeLevel": "Q3",
+    "treeBranch": "Q3-T (Sixth law — 2nd Law analog)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Laws",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M19",
+    "moduleTitle": "Ten-Law Master Equation",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M2",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Law VI IS AX-025 formalized as a law.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

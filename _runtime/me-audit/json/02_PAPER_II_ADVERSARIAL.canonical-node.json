@@ -1,0 +1,77 @@
+{
+  "source_id": "02_PAPER_II_ADVERSARIAL",
+  "title": "Paper II  -  Adversarial Response",
+  "canonical_node": {
+    "axiom": "The strongest objection must be articulated and tested; the idea survives only if it withstands the best critique.",
+    "definitions": [
+      "Adversarial Response: A structured paper that presents the strongest possible objection to a prior claim and then responds to it.",
+      "Objector's Foundational Axiom: The bedrock assumption of the strongest critic, stated without strawman.",
+      "Kill Condition: A specific threshold that, if met, invalidates the claim or the objection."
+    ],
+    "derivation": [
+      "1. The candidate must identify the strongest objection to Paper I's claim.",
+      "2. The objection is presented in its best form, with its worldview and core assumptions.",
+      "3. The candidate concedes where the objection is right and notes any residual gaps.",
+      "4. The candidate provides three independent responses, each targeting a different aspect.",
+      "5. The collision test compares the claim and objection on five criteria.",
+      "6. Kill conditions are defined for both sides, and the verdict is rendered based on whether the idea survives."
+    ],
+    "action": "When processing an adversarial response, the system must: (1) extract the objector's axiom and worldview, (2) list concessions and gaps, (3) evaluate the three responses for logical validity, (4) run the collision test, and (5) determine survival status based on kill conditions.",
+    "boundary": [
+      "Does not guarantee that the objection is the strongest possible; it is only as strong as the author's articulation.",
+      "Does not resolve the objection; it only tests survival.",
+      "Does not provide a formal proof of the claim; it is a structured argument."
+    ],
+    "test": [
+      "Check that the objection is not a strawman: it must be a position a serious critic would hold.",
+      "Verify that concessions are genuine and not rhetorical.",
+      "Ensure each response addresses a distinct aspect of the objection.",
+      "Confirm that the collision test criteria are applied consistently.",
+      "Check that kill conditions are specific and falsifiable."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Paper I claim (DT-003 or similar)",
+      "Lowe FACTS Format v1.0"
+    ],
+    "dg2_new_capability": "Provides a structured method to test a claim against its strongest objection, yielding a survival verdict.",
+    "dg3_preserved_floor": "Preserves the original claim's integrity by requiring honest concessions and rigorous testing.",
+    "dg4_collapse_if_removed": "Without this node, claims remain untested against adversarial critique, weakening their epistemic status.",
+    "dg5_translation_registers": [
+      "Adversarial response",
+      "Objection",
+      "Kill condition",
+      "Survival status"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as template"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Assuming the objection is the strongest without external validation.",
+      "Treating survival as proof of truth rather than as a test outcome.",
+      "Conflating the template's structure with actual logical rigor."
+    ],
+    "kill_conditions": [
+      "If the objection is a strawman, the test is invalid.",
+      "If the responses are logically fallacious, the survival verdict is void.",
+      "If the kill conditions are not falsifiable, the test is meaningless."
+    ],
+    "lean_target": "Formalize the collision test criteria and kill condition thresholds into checkable predicates."
+  },
+  "plain_summary": "This document is a template for adversarial testing of a prior claim. It requires the author to state the strongest objection, concede its valid points, respond with three arguments, and run a collision test. The outcome is a survival verdict, not a proof. The node is coherent as a method but does not establish any specific claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\02_PAPER_II_ADVERSARIAL.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\me-audit\\json\\02_PAPER_II_ADVERSARIAL.canonical-node.json"
+  }
+}

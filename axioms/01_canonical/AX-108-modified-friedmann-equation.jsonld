@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-108",
+  "nodeID": "tp:axioms/01/AX-108",
+  "claimID": "tp:AXIOMS/E14.1",
+  "name": "Modified Friedmann Equation",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "mathematical",
+  "statementTechnical": "(ȧ/a)² = (8πG/3)ρ - k/a² + G(t)/3 — Modified Friedmann with Grace Function.",
+  "statementPlain": "(ȧ/a)² = (8πG/3)ρ - k/a² + G(t)/3 — Modified Friedmann with Grace Function.",
+  "mathematicalForm": "(ȧ/a)² = (8πG/3)ρ - k/a² + G(t)/3",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-105",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-107",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "grace",
+    "equation"
+  ],
+  "keywords": [
+    "E14.1",
+    "Q8",
+    "Material",
+    "Equation"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show modified Friedmann violates known cosmological observations. Demonstrate G(t) gives wrong CMB power spectrum or BAO scale.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 110
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-108",
+    "oldID": "E14.1",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-K (Cosmological equation)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Material",
+    "tier": "2",
+    "newType": "Equation",
+    "logicalForce": "formal proposal",
+    "formalizableInLean": "yes",
+    "leanKind": "def / proposition with typed variables",
+    "riskLevel": "medium",
+    "kernelRole": "definitionRole",
+    "moduleID": "M14",
+    "moduleTitle": "Dynamic Dark Energy",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Modified Friedmann propagates to H₀ prediction and all cosmological tests.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

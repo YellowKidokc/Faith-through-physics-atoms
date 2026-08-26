@@ -1,0 +1,41 @@
+{
+  "source_claim_id": "DG5-Translation",
+  "title": "DG5 - Translation",
+  "claim": "A capability may translate between registers or frameworks only if the relevant dependency, constraint, collapse, and role structure is preserved.",
+  "domain": "derivation-grammar",
+  "lane": "Framework",
+  "claim_class": "axiom",
+  "mode_classification": "DG_AXIOM",
+  "assumptions": [
+    "Different vocabulary can preserve the same structure, but vocabulary resemblance alone is not enough."
+  ],
+  "definitions": [
+    "TranslatesTo(C1, C2): C1 is carried into another register as C2 while preserving relevant structure."
+  ],
+  "equations": [
+    "TranslatesTo(C1, C2) -> StructurePreserved(C1, C2)"
+  ],
+  "bridges": [
+    "Bridge claims must preserve structure rather than merely compare words."
+  ],
+  "dependencies": [
+    "DG-CORE-v0.2",
+    "DG1-Dependency",
+    "DG3-Preservation"
+  ],
+  "negative_guards": [
+    "Do not call vocabulary resemblance an isomorphism.",
+    "Do not upgrade analogy to proof."
+  ],
+  "kill_conditions": [
+    "A claimed translation preserves vocabulary but not dependency, role, failure mode, or constraint.",
+    "The project cannot state what structure must survive translation."
+  ],
+  "proof_label": "BRIDGE_DECLARED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "H:\\Desktop 2\\LEAN 4\\GPT\\THEOLOGY_ATLAS\\00_SCHEMA\\UnifiedDG_v0.2.md"
+  ]
+}
+

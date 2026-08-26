@@ -1,0 +1,74 @@
+{
+  "source_id": "T03_Perichoresis",
+  "title": "Perichoresis and Unity",
+  "canonical_node": {
+    "axiom": "The three Persons mutually indwell (perichoresis). This is how 3 = 1 without contradiction.",
+    "definitions": [
+      "Perichoresis: mutual indwelling, co-inherence of the three Persons.",
+      "Essence (ousia): the one divine nature shared identically by all three Persons.",
+      "Relation (hypostasis): the distinct personal property (paternity, filiation, spiration) that distinguishes the Persons.",
+      "Mutual containment: each Person completely contains the others, not spatially but in a non-spatial, interpenetrating sense."
+    ],
+    "derivation": [
+      "Each Person contains the others (T.7): F  {L, }, L  {F, },   {F, L}.",
+      "Perichoresis (T.10): mutual indwelling, F  L    F.",
+      "Unity in essence, distinction in relation (T.11): Essence(F)=Essence(L)=Essence(); R(F)R(L)R().",
+      "No division, no confusion (T.12): not Division, not Confusion.",
+      "Therefore, the three Persons are one in essence and distinct in relation, without contradiction."
+    ],
+    "action": "The system should treat the Trinity as three Persons in one essence, distinguished only by relation, and reject any model that divides the essence (tritheism) or makes unity contingent (social trinitarianism).",
+    "boundary": [
+      "Does not claim to prove the Trinity from physics or mathematics; analogies are illustrative only.",
+      "Does not define the precise nature of perichoresis beyond mutual indwelling.",
+      "Does not address the logical consistency of self-referential containment beyond asserting coherence."
+    ],
+    "test": [
+      "Check that any representation of the Trinity maintains exactly three Persons and one essence.",
+      "Verify that the relations (paternity, filiation, spiration) are distinct and not confused with essence.",
+      "Ensure that no statement implies division of essence or contingent unity."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "T01 (BC4 requires exactly three for complete self-reference)",
+      "Axioms 051, 054, 055, 056"
+    ],
+    "dg2_new_capability": "Provides a coherent model of the Trinity as perichoresis, distinguishing Persons by relation while maintaining unity of essence.",
+    "dg3_preserved_floor": "Preserves monotheism (one essence) and the distinctness of the three Persons.",
+    "dg4_collapse_if_removed": "Without perichoresis, the Trinity collapses into tritheism or modalism, losing the coherent unity-in-distinction.",
+    "dg5_translation_registers": [
+      "Theological",
+      "Philosophical",
+      "Mathematical (set-theoretic containment)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "Theological axiom",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a theological axiom; do not treat as a proven physical or mathematical theorem."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that perichoresis is proven by physics analogies.",
+      "Treating the mathematical formalism as a rigorous proof of the Trinity.",
+      "Overstating the coherence of self-referential containment without formal proof."
+    ],
+    "kill_conditions": [
+      "If mutual containment is shown to be logically contradictory in a formal system.",
+      "If the distinction between essence and relation is shown to be incoherent.",
+      "If the model fails to preserve monotheism or the distinctness of Persons."
+    ],
+    "lean_target": "Formalize the perichoresis model in a proof assistant to verify its internal consistency, but do not claim it proves the Trinity."
+  },
+  "plain_summary": "This document argues that the Trinity is best understood as perichoresis: three Persons mutually indwelling in one essence, distinguished only by relation. It rejects tritheism and social trinitarianism. The argument is theological and philosophical, using analogies and set-theoretic notation, but does not provide a formal proof. The model is coherent but not established as a mathematical or physical fact.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\T03_Perichoresis.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\T03_Perichoresis.canonical-node.json"
+  }
+}

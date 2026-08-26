@@ -1,0 +1,80 @@
+{
+  "source_id": "G04_Omnipresence",
+  "title": "Divine Omnipresence",
+  "canonical_node": {
+    "axiom": "God is present everywhere because chi is everywhere, and God is the ground of chi. There is no place absent from God.",
+    "definitions": [
+      "chi: The Logos Field, the fundamental substrate of information that grounds reality.",
+      "Omega: The total spacetime manifold.",
+      "Present(G, x): God is immediately related to and sustains x.",
+      "Located(X, x): X is spatially bounded by x.",
+      "Ground(chi(x)) = G: God is the ground of the chi-field at every point x."
+    ],
+    "derivation": [
+      "From F02: Information is fundamental; the substrate of information (chi) is the ground of reality.",
+      "Reality exists at every point of spacetime, therefore chi exists at every point (x in Omega: chi(x) exists).",
+      "From G01: God is the Terminal Observer and ground of all existence.",
+      "Since God grounds chi at every point (x: Ground(chi(x)) = G), and chi exists everywhere, God is present everywhere (x: Present(G, x)).",
+      "Presence is defined as grounding, not spatial containment; thus God is present at all x but located at no x."
+    ],
+    "action": "The system should treat divine omnipresence as the grounding of every point of spacetime by God, not as spatial extension. It should reject any model that localizes God or identifies God with the universe.",
+    "boundary": [
+      "Does not claim God is spatially extended or divisible.",
+      "Does not claim God is identical to the universe (pantheism).",
+      "Does not claim God is absent from any location.",
+      "Does not claim that presence implies approval of evil or sin."
+    ],
+    "test": [
+      "Check that for every point x in the domain, the statement 'chi(x) exists' is true.",
+      "Check that for every point x, the statement 'Ground(chi(x)) = G' is true.",
+      "Check that the statement 'not x: Absent(God, x)' is true.",
+      "Check that the statement 'not x: Located(God, x)' is true.",
+      "Check that the model does not equate God with the universe (i.e., God  Omega)."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G01 (God as Terminal Observer)",
+      "F02 (Information fundamental)",
+      "F04 (Actuality requires observation)"
+    ],
+    "dg2_new_capability": "Provides a formal definition of omnipresence grounded in the chi-field, enabling logical refutation of deism, localized God, and pantheism.",
+    "dg3_preserved_floor": "Preserves the necessity of continuous divine sustaining for existence, consistent with G01 and F04.",
+    "dg4_collapse_if_removed": "If removed, the system loses the basis for divine omnipresence, weakening the coherence of God's relation to all creation and leaving deism/localized God/pantheism unchallenged.",
+    "dg5_translation_registers": [
+      "Theological: omnipresence as divine presence",
+      "Philosophical: presence vs. location",
+      "Physical: chi-field as fundamental field"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "theological_axiom",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "archive"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims about chi-field ubiquity are not empirically verified.",
+      "Equating divine presence with grounding is a metaphysical assumption.",
+      "The refutation of pantheism relies on the premise that the universe is finite and composite, which is not proven.",
+      "The use of quantum field theory as support is analogical, not rigorous."
+    ],
+    "kill_conditions": [
+      "If chi-field is shown not to exist at some point, the axiom fails.",
+      "If something can exist without God's grounding, the axiom fails.",
+      "If God can be absent from some location, the axiom fails."
+    ],
+    "lean_target": "Formalize the definition of presence as grounding and verify the logical consistency of the axioms within the system."
+  },
+  "plain_summary": "This document argues that God is everywhere because the chi-field (the fundamental information substrate) exists everywhere and God grounds it. It refutes deism, localized God, and pantheism. However, the argument relies on unverified metaphysical premises and analogical physics, so it is not formally established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G04_Omnipresence.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\G04_Omnipresence.canonical-node.json"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "source_id": "CONSUMER_OVERVIEW",
+  "title": "Consumer Overview",
+  "canonical_node": {
+    "axiom": "The purpose of the Lean formalization is to make Theophysics claims inspectable by translating their structure into formal objects, proving narrow statements, and building adversarial controls that reject close false positives.",
+    "definitions": [
+      "Formal objects: the mathematical structures defined in Lean 4 to represent Theophysics claims.",
+      "Narrow statements: theorems about those formal objects that are limited in scope and do not claim broad theological or physical truth.",
+      "Adversarial controls: tests or guards designed to reject near-miss false positives, ensuring the formalization is not trivially satisfied."
+    ],
+    "derivation": [
+      "The project defines formal objects for Theophysics claims.",
+      "It proves narrow statements about those objects.",
+      "It builds adversarial controls that should fail if the structure is real.",
+      "The strongest current piece, MaxwellTrinity.lean, formalizes a triadic gate for the Maxwell/quaternion EM and Trinity claim.",
+      "The gate rejects several nearby false positives: vector-only EM, modalism, static single-field EM, arbitrary three-part systems, and relabeled roles.",
+      "Therefore, the formalization provides explicit load-bearing constraints that make the proposed structure inspectable.",
+      "This does not prove theology or physics; it proves narrow statements about the formal system."
+    ],
+    "action": "The system should present the Lean formalization as a tool for inspection, highlighting the adversarial controls and the boundary of what is proved, and directing reviewers to the strongest current file MaxwellTrinity.lean.",
+    "boundary": [
+      "Does not prove Christianity from physics.",
+      "Does not prove new physics.",
+      "Does not prove that every source document has been perfectly encoded into Lean.",
+      "Does not remove the need for judgment; it tells where judgment must focus."
+    ],
+    "test": [
+      "Check that the formal definitions faithfully represent the intended Theophysics claims.",
+      "Check that the rejection controls are strong enough to reject close false positives.",
+      "Check that the assumptions are not too convenient.",
+      "Check whether a better false positive passes the gate.",
+      "Check that the theorem does not prove more than the prose claims."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 proof assistant",
+      "Theophysics claims to be formalized",
+      "MaxwellTrinity.lean file"
+    ],
+    "dg2_new_capability": "Provides a formal, inspectable structure for Theophysics claims with adversarial controls that reject close false positives, enabling reviewers to focus judgment on specific aspects.",
+    "dg3_preserved_floor": "Preserves the original Theophysics claims as the subject of formalization, without altering their theological or physical content.",
+    "dg4_collapse_if_removed": "Without the adversarial controls, the formalization would be weak and could allow almost anything to pass, losing the ability to distinguish the intended structure from false positives.",
+    "dg5_translation_registers": [
+      "Theophysics claims to Lean 4 formal objects",
+      "Prose claims to formal theorems",
+      "Intended structure to triadic gate"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "B",
+    "recommended_atom_action": "anchor"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Overstating the strength of the formalization as proof of the underlying claims.",
+      "Overstating the completeness of the encoding of source documents.",
+      "Overstating the power of the adversarial controls to reject all false positives."
+    ],
+    "kill_conditions": [
+      "If the formalization is found to be unfaithful to the source claims.",
+      "If the adversarial controls are shown to be too weak to reject close false positives.",
+      "If the theorem proves more than the prose claims, indicating overreach."
+    ],
+    "lean_target": "MaxwellTrinity.lean"
+  },
+  "plain_summary": "This document explains the purpose of the Lean formalization: to make Theophysics claims inspectable by defining formal objects, proving narrow statements, and building adversarial controls. It highlights the strongest current file, MaxwellTrinity.lean, which rejects several false positives. It explicitly states what the work does not prove, keeping the claims modest. The document serves as a narrative anchor for the formalization effort.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\CONSUMER_OVERVIEW.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\CONSUMER_OVERVIEW.canonical-node.json"
+  }
+}

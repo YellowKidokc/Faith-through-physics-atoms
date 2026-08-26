@@ -1,0 +1,83 @@
+{
+  "source_id": "W2.5-why-not-otherwise.canonical",
+  "title": "Why Not Otherwise",
+  "canonical_node": {
+    "axiom": "Information is fundamental; distinguishability is information by definitional identity.",
+    "definitions": [
+      "Information: distinguishability; a definitional identity, not an inference.",
+      "Brute fact: a decision to stop asking, not an answer.",
+      "Elimination: a view pressed to circularity, refusal, or collapse into the surviving answer.",
+      "Boundary condition: a load-bearing requirement that survivors must carry forward."
+    ],
+    "derivation": [
+      "Materialism is circular because matter cannot define itself without borrowing information.",
+      "Idealism is circular because mind presupposes informational distinctions.",
+      "Mathematical universe collapses into information or is inert symbols.",
+      "Relations collapse into information or lose subject matter.",
+      "Brute fact refuses the question and has zero explanatory power.",
+      "Information survives its own definition and is the only candidate that continues.",
+      "Information must be organized, grounded, observed, and the observer chain must terminate.",
+      "Eight boundary conditions accumulate; only one historical claim asserts all eight at once."
+    ],
+    "action": "Present every rival in its strongest form, name the exact point where it stops answering, and keep the falsification ledger open.",
+    "boundary": [
+      "Does not claim to defeat brute fact; it declines it.",
+      "Does not claim scientific proof of God; it derives from what is explained.",
+      "Does not use god-of-the-gaps or chance-of-the-gaps.",
+      "Does not assert that any tradition is foolish; only that it misses a load-bearing condition."
+    ],
+    "test": [
+      "Check that each rival is given its strongest form, not a cartoon.",
+      "Check that eliminations are based on circularity, refusal, or collapse, not preference.",
+      "Check that the eight boundary conditions are each load-bearing and not optional.",
+      "Check that the standing challenge remains open: find another tradition satisfying all eight, or show a ninth condition."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Information theory (Shannon)",
+      "Thermodynamics (Landauer)",
+      "Conservation laws",
+      "von Neumann measurement chain"
+    ],
+    "dg2_new_capability": "Provides a systematic elimination funnel that narrows worldviews to one candidate satisfying eight boundary conditions.",
+    "dg3_preserved_floor": "Preserves the legitimacy of brute fact as an undefeatable but explanatory-empty stop.",
+    "dg4_collapse_if_removed": "If the information-primacy axiom is removed, the funnel loses its only surviving candidate and the elimination collapses.",
+    "dg5_translation_registers": [
+      "Information primacy",
+      "Boundary conditions",
+      "Elimination funnel",
+      "Falsification ledger"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological_eliminativism",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that information is definitionally fundamental without formal proof.",
+      "Claims that only one historical claim satisfies all eight conditions without exhaustive survey.",
+      "Uses 'definitional identity' to avoid inference, which may be circular.",
+      "The funnel's gate counts are asserted without detailed derivation."
+    ],
+    "kill_conditions": [
+      "If a rival tradition can be shown to satisfy all eight boundary conditions.",
+      "If a ninth boundary condition is discovered that the surviving claim fails.",
+      "If information-primacy is shown to be circular or incoherent."
+    ],
+    "lean_target": "Formalize the information-primacy axiom and the eight boundary conditions in a proof assistant."
+  },
+  "plain_summary": "This document argues that information is fundamental and uses a funnel of questions to eliminate rival worldviews, concluding that only one historical claim satisfies all eight boundary conditions. It is a theological argument, not a formal proof, and should be treated as a narrative anchor rather than established fact.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W2.5-why-not-otherwise.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W2.5-why-not-otherwise.canonical.canonical-node.json"
+  }
+}

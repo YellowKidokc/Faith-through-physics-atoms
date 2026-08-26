@@ -1,0 +1,76 @@
+{
+  "source_id": "FruitsOfSpirit",
+  "title": "FruitsOfSpirit.lean",
+  "canonical_node": {
+    "axiom": "The nine fruits of the Spirit are emergent properties of total coherence (chi = 1) and collapse if any law is zero.",
+    "definitions": [
+      "Fruit: an observable property defined by the inductive type with constructors Love, Joy, Peace, Patience, Kindness, Goodness, Faithfulness, Gentleness, Self-Control.",
+      "Emerges: a fruit f emerges from state s iff chi s = one.",
+      "chi-system: a system with a coherence value chi s, where s is a state vector of law values.",
+      "Law: a component of the state vector s; each law has a value in {zero, one}."
+    ],
+    "derivation": [
+      "Define Emerges f s := chi s = one.",
+      "Assume  i, s i = zero.",
+      "By zero-collapse theorem from CoherenceAlgebra, chi s = zero.",
+      "Since zero  one, chi s = one is contradicted.",
+      "Therefore not (Emerges f s).",
+      "The proof carries a sorry pending the full chi-product connection."
+    ],
+    "action": "Treat the fruits as indicators of system coherence, not as inputs to be optimized directly. When fruits are absent, diagnose which law has collapsed.",
+    "boundary": [
+      "Does not prove that chi = 1 is sufficient for fruit emergence without the full coherence guarantee.",
+      "Does not provide a mechanism for producing fruits; only states the formal relationship.",
+      "Does not address partial coherence or graded emergence."
+    ],
+    "test": [
+      "Check that the Emerges theorem is stated as iff and that the collapse direction is proven.",
+      "Verify that the proof of fruit_collapse uses the zero-collapse theorem and that the sorry is acknowledged.",
+      "Check that the nine constructors match the traditional list."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CoherenceAlgebra.zero_collapse",
+      "chi-product connection (pending)"
+    ],
+    "dg2_new_capability": "Formalizes the relationship between the nine fruits and total coherence, proving the collapse direction.",
+    "dg3_preserved_floor": "Preserves the prior result that zero in any law collapses chi to zero.",
+    "dg4_collapse_if_removed": "If removed, the formal link between fruits and coherence is lost; the collapse direction would be unproven.",
+    "dg5_translation_registers": [
+      "Emerges",
+      "fruit_collapse",
+      "chi s = one",
+      "chi s = zero"
+    ],
+    "dg6_state": "defective",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "formal proof with acknowledged gap",
+    "proof_label": "LEAN_CONDITIONAL_PROOF",
+    "grade": "C",
+    "recommended_atom_action": "Quarantine until the sorry is resolved; treat as conditional."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming the fruits are proven emergent when the emergence direction is not fully proven.",
+      "Interpreting the fruits as causal outputs rather than indicators.",
+      "Extending the result to partial coherence without justification."
+    ],
+    "kill_conditions": [
+      "If the chi-product connection is not established, the collapse proof is incomplete.",
+      "If the zero-collapse theorem is invalid, the collapse direction fails.",
+      "If the inductive type of fruits is not exhaustive or mismatched, the formalization is flawed."
+    ],
+    "lean_target": "Resolve the sorry in fruit_collapse by completing the chi-product connection."
+  },
+  "plain_summary": "This document describes a Lean formalization claiming that the nine fruits of the Spirit emerge only when total coherence (chi=1) holds, and that any law being zero prevents all fruits. The collapse direction is proven but with a sorry, and the emergence direction is not fully proven. The document is a conditional formal proof with a known gap.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\FruitsOfSpirit.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch2\\json\\FruitsOfSpirit.canonical-node.json"
+  }
+}

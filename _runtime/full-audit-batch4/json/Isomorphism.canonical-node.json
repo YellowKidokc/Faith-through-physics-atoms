@@ -1,0 +1,72 @@
+{
+  "source_id": "Isomorphism",
+  "title": "Isomorphism.lean",
+  "canonical_node": {
+    "axiom": "Physical and moral domains are structurally identical because both are mapped to the same abstract type.",
+    "definitions": [
+      "Domain: inductive type with constructors physical and moral.",
+      "DomainMap: function mapping any Domain to a fixed abstract type .",
+      "IsHeatDeath: predicate on state, defined as state = zero.",
+      "CoherenceAlgebra: the abstract type  shared by both domains."
+    ],
+    "derivation": [
+      "Define Domain with two constructors: physical and moral.",
+      "Define DomainMap to map both constructors to the same type .",
+      "Since DomainMap ignores its domain argument, for any d1 d2, DomainMap  d1 = DomainMap  d2 by definitional equality (rfl).",
+      "IsHeatDeath state is defined as state = zero, so heat death and zero are definitionally equal."
+    ],
+    "action": "Treat physical and moral domains as instances of the same abstract algebra, allowing theorems about one to apply to the other.",
+    "boundary": [
+      "Does not claim empirical equivalence of physical and moral phenomena.",
+      "Does not provide a detailed gate structure for entropy production.",
+      "Does not establish that the chosen abstraction is the only or correct one."
+    ],
+    "test": [
+      "Check that DomainMap maps both constructors to the same type.",
+      "Verify that isomorphism_canonical is proved by rfl.",
+      "Verify that G6_Kill_Isomorphism is proved by rfl."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean4 formalization of CoherenceAlgebra",
+      "Definition of Domain and DomainMap"
+    ],
+    "dg2_new_capability": "Provides a formal statement that physical and moral domains share the same abstract structure, enabling cross-domain theorem transfer.",
+    "dg3_preserved_floor": "Preserves the existing formalization of CoherenceAlgebra and its properties.",
+    "dg4_collapse_if_removed": "Without this, the claimed structural isomorphism between physical and moral domains lacks formal support.",
+    "dg5_translation_registers": [
+      "physical  moral",
+      "heat death  spiritual death",
+      "entropy maximum  coherence zero"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "partial",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "formal structural claim",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve as formal structural claim, but annotate as definitional and not empirical"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The isomorphism is definitional, not empirical; it depends on the chosen abstraction.",
+      "The proof is trivial (rfl) and may be seen as circular.",
+      "The document claims 'not an analogy' but the formalization is a modeling choice."
+    ],
+    "kill_conditions": [
+      "If the shared type  is not a faithful model of either domain, the isomorphism is vacuous.",
+      "If the definitions of physical and moral domains are not independently justified, the theorem is empty."
+    ],
+    "lean_target": "Formalize the isomorphism in Lean, but clearly separate the definitional claim from any empirical or theological interpretation."
+  },
+  "plain_summary": "This document presents a Lean formal proof that physical and moral domains are structurally isomorphic because both are mapped to the same abstract type. The proof is definitional and trivial, relying on the choice of representation. It is a formal structural claim, not an empirical or theological proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Isomorphism.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\Isomorphism.canonical-node.json"
+  }
+}

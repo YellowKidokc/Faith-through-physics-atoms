@@ -1,0 +1,78 @@
+{
+  "source_id": "Phase2_Sidebars_Orphans_Audio",
+  "title": "Phase 2 Cowork Brief: Sidebars, Orphans, Audio, Deploy",
+  "canonical_node": {
+    "axiom": "Every article in a series must be reachable and navigable within its series, and audio must be available for all processed articles.",
+    "definitions": [
+      "Sidebar: fixed overlay navigation panel listing all articles in a series, with current article highlighted.",
+      "Orphan: an article deployed but not linked from its series hub or any other page.",
+      "Sticky nav: a navigation bar fixed at top of viewport for cross-series navigation.",
+      "TTS pipeline: text-to-speech processing producing MP3 files for articles."
+    ],
+    "derivation": [
+      "Phase 1 completed sidebar, prev/next, and PI links for GTQ series.",
+      "Five other series lack in-series navigation, making their articles less discoverable.",
+      "Moral decline chapters are deployed but unreachable from the hub, violating the axiom.",
+      "Audio files are being generated; without wiring, they are not accessible to readers.",
+      "Therefore, tasks 4-8 are required to fulfill the axiom."
+    ],
+    "action": "Implement sidebars for all five series, link orphaned chapters, add sticky nav to all articles, wire TTS audio players, and deploy changes.",
+    "boundary": [
+      "Does not include creating new content or modifying article text.",
+      "Does not include fixing TTS pipeline errors or generating new audio.",
+      "Does not include redesigning site layout beyond specified components.",
+      "Does not include deploying to production until tasks are complete."
+    ],
+    "test": [
+      "Each series has a sidebar with all articles listed and current highlighted.",
+      "Moral decline hub links to all chapters; each chapter has prev/next nav.",
+      "All non-GTQ articles have sticky nav with correct paths and colors.",
+      "Audio players appear on articles with MP3s and play correctly.",
+      "Deployment succeeds with no broken links."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Phase 1 completed tasks (sidebar, prev/next, PI links)",
+      "TTS pipeline output (MP3 files)",
+      "Existing article files and hub pages"
+    ],
+    "dg2_new_capability": "Enables in-series navigation for five series, rescues orphaned chapters, provides consistent sticky nav, and integrates audio playback.",
+    "dg3_preserved_floor": "Preserves existing GTQ sidebar functionality and all existing article content.",
+    "dg4_collapse_if_removed": "Without this, five series remain unnavigable, moral decline chapters remain orphaned, and audio is inaccessible, degrading user experience and content discoverability.",
+    "dg5_translation_registers": [
+      "HTML/CSS/JS injection patterns",
+      "File path conventions",
+      "R2 bucket URL scheme"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "operational_instruction",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "execute"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Assumes TTS pipeline will complete successfully without verification.",
+      "Assumes all files exist and are named as listed without checking.",
+      "Assumes sidebar CSS/JS is compatible with all target files."
+    ],
+    "kill_conditions": [
+      "If TTS pipeline fails or produces incomplete output.",
+      "If any target file is missing or has incompatible structure.",
+      "If deployment fails due to Cloudflare configuration."
+    ],
+    "lean_target": "Implement sidebars and orphan rescue first; defer audio wiring until TTS output is verified."
+  },
+  "plain_summary": "This is a work plan for Phase 2 of a website project, detailing tasks to add navigation sidebars to five article series, link orphaned chapters, add sticky navigation, integrate audio players, and deploy. It is an operational instruction, not a scientific claim.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Phase2_Sidebars_Orphans_Audio.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Phase2_Sidebars_Orphans_Audio.canonical-node.json"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-01-060",
+  "nodeID": "tp:master-equation/01/ME-01-060",
+  "claimID": "tp:ME/ME-01-060",
+  "nodeType": "claim",
+  "name": "Full Master Equation",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "mathematical",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "statementTechnical": "The corrected full Master Equation multiplies the ten formal factors, using S_eff rather than raw S_prod, and integrates the product over region and time.",
+  "statementPlain": "The full equation says coherence is not a sum of nice things. It is a product, so any required channel collapsing matters to the whole.",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-010",
+      "propagates": true,
+      "note": "Full equation instantiates the integration claim."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-020",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-021",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-022",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-023",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-024",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-025",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-026",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-027",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-028",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-029",
+      "propagates": true,
+      "note": "Full equation uses this formal factor slot."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-146",
+      "propagates": true,
+      "note": "Axiom registry source: Full Master Equation."
+    }
+  ],
+  "keywords": [
+    "AX-146",
+    "E19.1",
+    "Equation"
+  ],
+  "tags": [
+    "logos",
+    "coherence",
+    "equation",
+    "proof"
+  ],
+  "verificationStatus": "registry-import",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+  "masterEquationRole": {
+    "sourceAxiomID": "AX-146",
+    "sourceOldID": "E19.1",
+    "sourceRow": 148,
+    "sourceType": "Equation"
+  },
+  "mathematicalForm": "chi_total = integral_{t0}^{t1} integral_Omega G*M*E*S_eff*T*K*R*Q*F*C d^3x dt",
+  "mathFormNormal": "chi_total = integrate(product(ten_factor_slots), space, time)"
+}

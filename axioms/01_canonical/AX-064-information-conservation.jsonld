@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-064",
+  "nodeID": "tp:axioms/01/AX-064",
+  "claimID": "tp:AXIOMS/BC7",
+  "name": "Information Conservation",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "boundary",
+  "statementTechnical": "Information preserved through all transformations — no information permanently lost.",
+  "statementPlain": "Information preserved through all transformations — no information permanently lost.",
+  "mathematicalForm": "dN_total/dt = 0 (total information conserved)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-003",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-063",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "boundary",
+    "information",
+    "conservation"
+  ],
+  "keywords": [
+    "BC7",
+    "Q8",
+    "Divine",
+    "BoundaryCondition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show information is permanently destroyed in some process. Demonstrate black hole information paradox resolves with information loss. Find a unitarity violation in nature.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 65
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-064",
+    "oldID": "BC7",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-G (Seventh boundary condition — conservation)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "BoundaryCondition",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "constraint predicate",
+    "riskLevel": "medium",
+    "kernelRole": "constraintRole",
+    "moduleID": "M07",
+    "moduleTitle": "Boundary Conditions",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "BC7",
+    "fourModeRelevance": "M2 (Entropic — information conservation under entropy is the challenge)",
+    "worldviewsEliminated": "Nihilism (nothing is preserved), Eliminativism",
+    "propagationTest": "YES — BC7 propagates to soul conservation, resurrection, and eschatological information preservation.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

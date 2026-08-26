@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-005",
+  "nodeID": "tp:axioms/01/AX-005",
+  "claimID": "tp:AXIOMS/D1.2",
+  "name": "Bit Definition",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "active",
+  "claimClass": "definition",
+  "statementTechnical": "Bit = minimal unit of distinction (binary choice).",
+  "statementPlain": "Bit = minimal unit of distinction (binary choice).",
+  "mathematicalForm": "bit ≡ min{distinction} = log₂(2) = 1",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-003",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-004",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "definition",
+    "information"
+  ],
+  "keywords": [
+    "D1.2",
+    "Q2",
+    "Ontological",
+    "Definition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show an information unit more fundamental than binary distinction. Show a domain where binary decomposition fails completely.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 6
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-005",
+    "oldID": "D1.2",
+    "treeLevel": "Q2",
+    "treeBranch": "Q2-E (Minimal unit branch)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Definition",
+    "logicalForce": "stipulative definition",
+    "formalizableInLean": "yes",
+    "leanKind": "def / structure / predicate",
+    "riskLevel": "low",
+    "kernelRole": "definitionRole",
+    "moduleID": "M01",
+    "moduleTitle": "Information Ground",
+    "spineRole": "supporting_definition",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — The bit as minimal distinction propagates cleanly. All subsequent structures compose from bits.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

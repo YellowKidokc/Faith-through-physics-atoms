@@ -1,0 +1,81 @@
+{
+  "source_id": "prediction_registry_v1",
+  "title": "Prediction Registry v1",
+  "canonical_node": {
+    "axiom": "Predictions must be recorded before later interpretation, under a shared comparison regime, with failure made visible.",
+    "definitions": [
+      "Prediction: a claim about model behavior under explicit conditions, recorded before tuning.",
+      "Test rule: the explicit comparison procedure used to evaluate a prediction.",
+      "Pass: the model behaved as claimed under the tested regime.",
+      "Failure: the wording, derivation, or equation form must be revised, downgraded, or rejected.",
+      "Wrong control: a deliberately incorrect variant that should fail under the same bench."
+    ],
+    "derivation": [
+      "The registry sits between claiming the framework is proven and pretending formal work means nothing.",
+      "The right claim is that current equations generate testable behavior under a shared comparison regime, and those behaviors can be frozen before later interpretation.",
+      "The registry records predictions, states test rules before results, makes failure visible, separates formal structure from theological interpretation, and provides a neighboring verification layer to Lean 4.",
+      "The variation audit showed that bare variation with respect to x(t) does not insert entropy directly into the equation of motion; entropy enters only when coupled to the varied coordinate, when chi is the varied field, or when extra dissipative structure is introduced.",
+      "This negative result is surfaced as a serious verification layer should."
+    ],
+    "action": "Maintain a registry of preregistered predictions with explicit test rules, record results before interpretation, and ensure wrong controls fail under the same bench.",
+    "boundary": [
+      "This registry does not prove Theophysics true.",
+      "It does not claim that the framework is already proven.",
+      "It does not treat any single tool (Lean 4, Python, website) as sufficient by itself.",
+      "It does not claim full Noether results beyond algebraic invariants."
+    ],
+    "test": [
+      "For each prediction, verify that the test rule is stated before the result is known.",
+      "Check that failures are visible and lead to revision, downgrade, or rejection.",
+      "Verify that wrong controls fail under the same bench as the canonical model.",
+      "Check that the variation audit's negative result is preserved and not hidden."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Theophysics Lagrangian test bench",
+      "Canonical v2 equation",
+      "Symbolic engine translation",
+      "Lean 4 formal proof layer (as neighboring verification)"
+    ],
+    "dg2_new_capability": "Provides a preregistration and wrong-control rejection layer that freezes predictions before later interpretation, complementing Lean 4 and Python.",
+    "dg3_preserved_floor": "Preserves the distinction between formal structure and theological interpretation, and keeps negative results visible.",
+    "dg4_collapse_if_removed": "Without this registry, predictions could be tuned after results, wrong controls might pass unnoticed, and the verification stack would lose its preregistration layer.",
+    "dg5_translation_registers": [
+      "Prediction -> testable behavior",
+      "Test rule -> comparison procedure",
+      "Pass -> model behaved as claimed",
+      "Failure -> revision required",
+      "Wrong control -> deliberately incorrect variant"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as methodological guardrail"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting registry passes as proof of Theophysics truth.",
+      "Treating algebraic invariants as full Noether results.",
+      "Assuming the registry alone is sufficient for verification."
+    ],
+    "kill_conditions": [
+      "If predictions are recorded after results are known.",
+      "If wrong controls pass under the same bench.",
+      "If negative results are suppressed."
+    ],
+    "lean_target": "Formalize the test rule and pass/fail criteria as a specification for the registry."
+  },
+  "plain_summary": "This document establishes a prediction registry that preregisters testable claims, states test rules before results, and makes failures visible. It records several passing predictions and a negative variation audit result, positioning itself as a verification layer alongside Lean 4 and Python, without claiming proof of Theophysics.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\prediction_registry_v1.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\prediction_registry_v1.canonical-node.json"
+  }
+}

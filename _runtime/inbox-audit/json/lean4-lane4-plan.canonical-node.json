@@ -1,0 +1,83 @@
+{
+  "source_id": "lean4-lane4-plan",
+  "title": "Lean 4 Lane 4 Plan",
+  "canonical_node": {
+    "axiom": "Only true primitives may become candidate axioms; definitions become definitions; theorems become proof targets; equations become typed formal objects or propositions; identifications and bridge claims require explicit bridge assumptions; predictions, protocols, evidence nodes, and falsification criteria stay outside the proof kernel.",
+    "definitions": [
+      "Typed formal skeleton: a formal structure where each node is assigned a claim type and logical-force label.",
+      "Bridge claim: a claim that connects formal objects to metaphysical, theological, or empirical reality, requiring explicit labeling.",
+      "Proof-ready chain: a sequence of nodes that can be formally derived from primitives and definitions within the proof kernel.",
+      "Outside-kernel claim: a claim that is not part of the proof kernel, such as predictions, protocols, evidence nodes, and falsification criteria."
+    ],
+    "derivation": [
+      "The Theophysics canon contains 190/191 nodes of various types.",
+      "Encoding all nodes as axioms would conflate definitions, theorems, and bridge claims with primitive truths.",
+      "Therefore, only true primitives may be axioms; other node types must be treated according to their logical role.",
+      "This separation ensures structural integrity and prevents accidental axiomatization of powerful sentences."
+    ],
+    "action": "Implement the Lean 4 Lane 4 plan: produce typed-canon-reclassification.csv/json/summary, run graph hygiene checks, identify formalizable chains, label all bridge claims, and generate a report of proof-ready chains, partially formalizable chains, outside-kernel claims, high-risk bridge claims, contradiction/cycle risks, and missing definitions.",
+    "boundary": [
+      "This plan does not prove theological or empirical claims.",
+      "This plan does not validate the truth of any axiom or theorem.",
+      "This plan does not encode all nodes as axioms.",
+      "This plan does not allow bridge claims to be used as theorem premises without explicit bridge assumptions."
+    ],
+    "test": [
+      "Check that every node has exactly one claim type and one logical-force label.",
+      "Check that all dependencies are explicit and no duplicate IDs remain.",
+      "Check that graph hygiene rules are satisfied (no missing deps, no circular deps, no unjustified upstream/downstream, no theorems depending on predictions/evidence, no identifications used as derivations without bridge guards).",
+      "Check that bridge claims are labeled with one of the five allowed types.",
+      "Check that the report includes all required categories."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Theophysics canon (190/191 nodes)",
+      "Lean 4 proof assistant",
+      "Existing classification of nodes (if any)"
+    ],
+    "dg2_new_capability": "Provides a structural integrity lane that separates primitive axioms from definitions, theorems, equations, bridge claims, and empirical content, enabling a typed formal skeleton before proof attempts.",
+    "dg3_preserved_floor": "Preserves the ability to later attempt proofs on formalizable chains while preventing the conflation of all nodes as axioms.",
+    "dg4_collapse_if_removed": "Without this plan, the canon risks treating every powerful sentence as an axiom, undermining structural honesty and proof integrity.",
+    "dg5_translation_registers": [
+      "typed-canon-reclassification.csv",
+      "typed-canon-reclassification.json",
+      "typed-canon-summary.md",
+      "proof-ready chains",
+      "partially formalizable chains",
+      "outside-kernel claims",
+      "high-risk bridge claims",
+      "contradiction/cycle risks",
+      "missing definitions"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "methodological plan",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "adopt as structural guideline; do not treat as proof"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that Lean 4 can verify theological or empirical reality without precise formal translation.",
+      "Assuming that all nodes can be cleanly reclassified without ambiguity.",
+      "Treating the plan itself as a proof of structural integrity."
+    ],
+    "kill_conditions": [
+      "If the plan is used to claim that Theophysics is formally verified.",
+      "If bridge claims are silently used as theorem premises without explicit labels.",
+      "If the plan is implemented without producing the specified outputs."
+    ],
+    "lean_target": "Implement the plan in Lean 4 to produce the typed canon and graph hygiene checks."
+  },
+  "plain_summary": "This document outlines a plan to convert the Theophysics canon into a typed formal skeleton using Lean 4, ensuring that only true primitives become axioms and that definitions, theorems, and bridge claims are treated appropriately. It emphasizes structural integrity over proof, and it does not claim to prove theological or empirical claims.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\lean4-lane4-plan.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\lean4-lane4-plan.canonical-node.json"
+  }
+}

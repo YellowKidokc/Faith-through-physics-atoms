@@ -1,0 +1,93 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-092",
+  "nodeID": "tp:axioms/01/AX-092",
+  "claimID": "tp:AXIOMS/T11.2",
+  "name": "Vice As Decoherence",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "theorem",
+  "statementTechnical": "Vice → coherence decrease — measurable decoherence signature.",
+  "statementPlain": "Vice → coherence decrease — measurable decoherence signature.",
+  "mathematicalForm": "Vice → ΔΦ < 0; measurable decoherence",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-091",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "decoherence",
+    "proof"
+  ],
+  "keywords": [
+    "T11.2",
+    "Q10",
+    "Relational",
+    "Theorem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show vice doesn't correlate with Φ decrease. Demonstrate moral degradation without measurable decoherence. Show decoherence occurs in morally neutral contexts.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 94
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-092",
+    "oldID": "T11.2",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-T (Vice as decoherence)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Relational",
+    "tier": "2",
+    "newType": "Theorem",
+    "logicalForce": "derivable theorem",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M11",
+    "moduleTitle": "Moral Coherence",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic — vice is choosing decoherence), M2 (Entropic — entropy assists vice)",
+    "worldviewsEliminated": "Nihilism, Eliminativism",
+    "propagationTest": "YES — Vice-decoherence propagates to sin-as-decoherence, eschatological fragmentation, and hell-as-attractor.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

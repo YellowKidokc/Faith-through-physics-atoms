@@ -1,0 +1,80 @@
+{
+  "source_id": "REWORK_PHASE_1-3_DELIVERABLE",
+  "title": "De Revolutionibus Veritatis  -  Rework Deliverable (Phase 1-3)",
+  "canonical_node": {
+    "axiom": "The rework must align the series with the May 10 Formal Theory canon, reclassifying claims and correcting structural inconsistencies before any rewriting.",
+    "definitions": [
+      "May 10 Formal Theory v1.0: The canonical reference document defining the three primitive axioms, seven forced conclusions, and typed factors.",
+      "Below-floor presupposition: Properties of Truth that are pre-system constraints, not axioms within the system.",
+      "Load-bearing: A claim whose reclassification or removal would alter the argument's structure or conclusions.",
+      "No-drift rule: The Layer-1 definition of the Master Equation factors wins over any other usage in the series."
+    ],
+    "derivation": [
+      "The 20 axioms in drv-02 are not axioms under the May 10 canon; they are a mix of presuppositions, theorems, derivations, definitions, and one primitive axiom.",
+      "The Master Equation in drv-00 uses variable assignments that conflict with Definition 10 of the canon; the no-drift rule requires correction.",
+      "The series has internal numbering and scope drift (e.g., Book ordering, Tetralogy vs. Six Books, missing Book V) that must be resolved before structural rework.",
+      "The rework plan prioritizes resolving load-bearing structural issues first, then applying minor cleanups and new sections."
+    ],
+    "action": "Approve, modify, or reject the Phase 1-3 deliverable before Phase 4 execution; if approved, execute the recommended order starting with the decision pass.",
+    "boundary": [
+      "This deliverable stops at Phase 3; no rewriting has happened.",
+      "It does not resolve the five decisions; it only recommends options.",
+      "It does not provide formal proofs for the reclassifications; it relies on the May 10 canon as authority."
+    ],
+    "test": [
+      "Check that all reclassifications match the May 10 canon's taxonomy.",
+      "Verify that the Master Equation variable assignments are corrected to Definition 10.",
+      "Confirm that the series numbering and scope inconsistencies are resolved per the decisions.",
+      "Ensure that the recommended execution order is followed in Phase 4."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "FORMAL_VERIFICATION_PACKET_2026-05-10/00_FORMAL_THEORY_COMPLETE.md",
+      "FORMAL_VERIFICATION_PACKET_2026-05-10/01_FORMAL_LAYER_Definition10.md",
+      "FORMAL_VERIFICATION_PACKET_2026-05-10/02_PHYSICAL_THEOLOGICAL_LAYER_TenFactorTable.md",
+      "AXIOM_DERIVATION_CHAIN_CANONICAL.md",
+      "02_7Q_FRAMEWORK/7Q_BASIC.md",
+      "MAXWELL_TRINITY_FORMAL_LOG_2026-05-10.md",
+      "FormalVerificationTestLog.md",
+      "CorrectedEntropyKernel.lean"
+    ],
+    "dg2_new_capability": "Provides a structured rework plan that reclassifies the series' foundational claims under the May 10 canon, corrects variable assignments, and resolves numbering/scope inconsistencies.",
+    "dg3_preserved_floor": "Preserves the May 10 Formal Theory as the authoritative canon and the Iron Chain as supporting derivation context.",
+    "dg4_collapse_if_removed": "Without this deliverable, the series would continue to use outdated axiom classifications and inconsistent variable assignments, undermining its alignment with the canon.",
+    "dg5_translation_registers": [
+      "Theology: Reclassifies axioms as presuppositions, theorems, derivations, definitions, or primitive axioms.",
+      "Physics: Corrects Master Equation variable assignments to match Definition 10.",
+      "Mathematics: Identifies theorems like Gdel/Chaitin and derivations from Kolmogorov bounds."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Meta-document: rework plan and audit",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "Approve as a planning document; do not treat as a proof of the underlying claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The reclassifications are asserted based on the May 10 canon but not formally proven here.",
+      "The recommendation to mark Book V abandoned may be premature if the content is later needed.",
+      "The probability calculation rebuild is flagged as needing a defensible constraint set, but no new calculation is provided."
+    ],
+    "kill_conditions": [
+      "If the May 10 canon is superseded or revised, the rework plan becomes obsolete.",
+      "If the decisions are not resolved, Phase 4 cannot proceed coherently.",
+      "If the Lindblad mapping is not formally reconciled, the theological mappings remain rhetorical."
+    ],
+    "lean_target": "The rework plan itself is not a formal proof; it is a meta-document. The underlying claims require separate formal verification."
+  },
+  "plain_summary": "This document is a Phase 1-3 deliverable that audits the series' axioms and structure against the May 10 Formal Theory canon. It identifies three key findings: the 20 axioms are misclassified, the Master Equation has wrong variable assignments, and there are numbering/scope inconsistencies. It provides a detailed rework plan with priorities, decisions required, and open questions. It does not rewrite anything yet; it awaits approval for Phase 4.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\REWORK_PHASE_1-3_DELIVERABLE.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\REWORK_PHASE_1-3_DELIVERABLE.canonical-node.json"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-part1-ax-scaffold-d1-1",
+  "atom_uid": "sha256:4e8e79d4997b2bb9c3e99b0d8b8df946a9dc3e4bc0e2a00fc8851c42eef1dc71",
+  "title": "D1.1 — Information Definition",
+  "claim": "D1.1 — Information Definition is classified in Part 1 as AX_SCAFFOLD with decision KEEP and anchor A1.1 (Existence), A1.2 (Distinction).",
+  "domain": "axioms",
+  "lane": "Classification",
+  "claim_class": "classification",
+  "mode_classification": "AX_SCAFFOLD",
+  "assumptions": [
+    "A1.1 (Existence)",
+    "A1.2 (Distinction)"
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "A1.1 (Existence)",
+    "A1.2 (Distinction)"
+  ],
+  "negative_guards": [
+    "Mode classification is not proof.",
+    "Do not encode every Part 1 row as a Lean axiom.",
+    "Lean status must be checked separately from registry status."
+  ],
+  "kill_conditions": [
+    "A later canonical dashboard contradicts this mode classification.",
+    "A clean dependency audit changes the anchor status."
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+    "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md"
+  ],
+  "ledger": [
+    {
+      "event_type": "classification_imported",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "O:\\_Theophysics_v5\\00_AXIOMS\\_LOSSLESS_SUMMARY\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Imported Part 1 mode classification row D1.1 as AX_SCAFFOLD.",
+      "limits": "Classification import is not proof and does not promote the claim to canon.",
+      "reviewer": "Codex",
+      "timestamp": "2026-07-28T19:10:19+00:00",
+      "event_id": "sha256:7a43aadbafad89d21a9c691aa8cd55a122f5a3111c5e730356bfc1e0a2460163",
+      "event_uuid": "3a59a7be-73e4-5987-a73e-906f62dc5335"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for D1.1 as AX_SCAFFOLD.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:29:36+00:00",
+      "event_uuid": "71dac37c-f646-4a32-861c-0567585cfc26",
+      "event_id": "sha256:72d73512bc79f48f7a20278037365055820857c3a062ae41031aa64471e5d2f6"
+    },
+    {
+      "event_type": "classification_glyphs_attached",
+      "lane": "Classification",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\_docs\\AXIOMS_PART1_MODE_CLASSIFICATION.md",
+      "meaning": "Attached Part 1 classification glyphs for D1.1 as AX_SCAFFOLD.",
+      "limits": "Glyphs classify and render the atom; they do not prove it.",
+      "reviewer": "Codex",
+      "timestamp": "2026-08-05T05:30:27+00:00",
+      "event_uuid": "715672ce-f072-4e37-aef4-b6fe4d330d70",
+      "event_id": "sha256:683451446eb3d6c573357c8adf70a4df248a3db89dccffeb8f25a4fa46129ba4"
+    }
+  ],
+  "source_claim_id": "AX_PART1:AX_SCAFFOLD:D1.1",
+  "glyphs": [
+    "definition",
+    "axiom"
+  ],
+  "glyph_paths": [
+    "theophysics_glyphs/svg/definition.svg",
+    "theophysics_glyphs/svg/axiom.svg"
+  ],
+  "atom_uuid": "e9dbe2c2-2ab7-5866-8c97-bd68c2c6d7e3"
+}

@@ -1,0 +1,73 @@
+{
+  "source_id": "05_DESTRUCTION_MANUAL",
+  "title": "How To Destroy This Argument  -  Hubble Gradient",
+  "canonical_node": {
+    "axiom": "A thesis must expose its own kill conditions and open vulnerabilities to be considered scholarship, not marketing.",
+    "definitions": [
+      "Kill condition: an attack or evidence that, if satisfied, falsifies the thesis or a component.",
+      "Terminal kill condition: a condition that falsifies the entire thesis.",
+      "Open vulnerability: a weakness not currently defended but believed defensible with future work."
+    ],
+    "derivation": [
+      "The document asserts that hiding weaknesses is marketing, not scholarship.",
+      "It aggregates kill conditions from three papers and synthesis.",
+      "It expands the three strongest attacks with arguments, consequences, defenses, and assessments.",
+      "It lists terminal kill conditions that would falsify the whole thesis.",
+      "It lists open vulnerabilities and what would resolve them.",
+      "It invites refutation and promises public acknowledgment."
+    ],
+    "action": "Maintain and expose a destruction manual for the thesis, including kill conditions, terminal conditions, open vulnerabilities, and an invitation for refutation.",
+    "boundary": [
+      "Does not provide actual kill conditions or defenses; they are placeholders.",
+      "Does not claim the thesis is falsifiable in a formal sense; it is a methodological stance.",
+      "Does not specify how to verify or test the kill conditions."
+    ],
+    "test": [
+      "Check that the document contains a list of kill conditions with severity and status.",
+      "Check that terminal kill conditions are clearly marked.",
+      "Check that open vulnerabilities are listed with resolution paths.",
+      "Check that the invitation to refute is present."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The three papers (Paper I, II, III) that contain the SNAP sections.",
+      "The synthesis process that identified cross-paper attacks."
+    ],
+    "dg2_new_capability": "Provides a structured method for documenting and exposing thesis vulnerabilities, enabling external falsification attempts.",
+    "dg3_preserved_floor": "Preserves the thesis's commitment to honest scholarship by making weaknesses explicit.",
+    "dg4_collapse_if_removed": "Without this manual, the thesis would lack a formal mechanism for acknowledging and addressing its own weaknesses, undermining its scholarly integrity.",
+    "dg5_translation_registers": [
+      "Kill condition -> falsification condition",
+      "Open vulnerability -> known limitation",
+      "Invitation -> call for refutation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "no"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as a methodological template; do not treat as evidence for the thesis claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document's template could be mistaken for actual kill conditions or defenses.",
+      "The invitation to refute could be interpreted as a claim that the thesis is falsifiable in a formal sense."
+    ],
+    "kill_conditions": [
+      "If the document is used as evidence that the thesis is falsifiable without actual conditions.",
+      "If the placeholders are filled with non-falsifiable statements."
+    ],
+    "lean_target": "Formalize the kill conditions and defenses in a machine-checkable format."
+  },
+  "plain_summary": "This document is a template for a destruction manual, outlining how to expose the thesis's weaknesses. It does not contain actual kill conditions or defenses, only placeholders. It is a methodological commitment to transparency, not a proof or evidence.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\05_DESTRUCTION_MANUAL.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\05_DESTRUCTION_MANUAL.canonical-node.json"
+  }
+}

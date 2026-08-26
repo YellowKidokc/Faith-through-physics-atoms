@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-014-chi-semantic-content",
+  "atom_uid": "sha256:52ec1d9ddf1faa2db89ff87949b5b7af0fd505533646431d80810f3cc50f8b55",
+  "title": "AX-014 — Chi Semantic Content",
+  "claim": "χ carries semantic content (meaning), not merely syntax.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "unclassified",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "χ ⊃ {syntax, semantics}; Semantic(χ) ≠ ∅"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-010",
+    "tp:axioms/01/AX-003"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show meaning can be fully reduced to syntax",
+    "Show a semantic-free universe that functions identically",
+    "Demonstrate Chinese Room argument defeats semantic grounding entirely"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-014-chi-semantic-content.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-014-chi-semantic-content.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:654ffb57f7aefc22e829c9675cfe6f4e79af7540351a54dbd39407795b9d4054",
+      "event_uuid": "f14d8d67-e83e-534d-9b3c-a7b432a039ae"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'theorem' -> 'derived'. Ontology: unclassified.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:02717a0eb8c759b405d2d77b593f2614d1f472b3ee91d2009fbaeb2a88aaf68c",
+      "event_uuid": "c266c672-4deb-5e97-873f-a8516dff3fd4"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/P2.2",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-014",
+  "original_node_id": "tp:axioms/01/AX-014",
+  "atom_uuid": "afff40a6-e2e9-59e8-9054-7038b81614af"
+}

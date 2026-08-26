@@ -1,0 +1,86 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-004",
+  "nodeID": "tp:master-equation/01/ME-EQ-004",
+  "claimID": "tp:ME/ME-EQ-004",
+  "nodeType": "claim",
+  "name": "Grace Dynamics",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "claimClass": "mathematical",
+  "domainType": "master-equation",
+  "stage": "01_canonical",
+  "status": "captured",
+  "audienceLevel": "informed_adult",
+  "paradigmRelation": "reframes",
+  "evidenceType": "formal_derivation",
+  "statementTechnical": "dG/dt = G_ext - γG + β·F·C",
+  "statementPlain": "Grace-like coherence influx grows through external source and relational coupling, while decaying under loss.",
+  "mathematicalForm": "dG/dt = G_ext - γG + β·F·C",
+  "mathFormNormal": "dG_dt = G_ext - gamma*G + beta*F*C",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-135",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:master-equation/01/ME-01-043",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-139",
+      "propagates": true,
+      "note": "Equation atom dependency."
+    }
+  ],
+  "tags": [
+    "equation",
+    "grace",
+    "coherence",
+    "faith"
+  ],
+  "keywords": [
+    "equation",
+    "G",
+    "G_ext",
+    "γ",
+    "β",
+    "F",
+    "C"
+  ],
+  "verificationStatus": "equation-registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer.",
+  "sourceReference": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md",
+  "equationRegistry": {
+    "equationID": "ME-EQ-004",
+    "variables": [
+      "G",
+      "G_ext",
+      "γ",
+      "β",
+      "F",
+      "C"
+    ],
+    "normalForm": "dG_dt = G_ext - gamma*G + beta*F*C",
+    "source": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\01_FORMAL_LAYER_Definition10.md"
+  }
+}

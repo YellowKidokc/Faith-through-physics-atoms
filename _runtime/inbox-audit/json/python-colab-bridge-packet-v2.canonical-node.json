@@ -1,0 +1,79 @@
+{
+  "source_id": "python-colab-bridge-packet-v2",
+  "title": "Python / Colab Bridge Packet v2",
+  "canonical_node": {
+    "axiom": "Every runtime result must have four things before it supports a public claim: exact artifact path, variable/unit/range declaration, side-by-side baseline or ablation control, and output hash or rerun receipt.",
+    "definitions": [
+      "Runtime artifact: a notebook, script, or output file produced by Python/Colab execution.",
+      "Variable/parameter registry: a CSV listing symbols and parameters extracted from runtime artifacts.",
+      "Dimensional audit queue: a CSV tracking which symbols need units, ranges, normalization, and source notes.",
+      "Ablation/control matrix: a CSV ensuring every public-facing runtime claim runs beside a null, rival, or broken-control version.",
+      "Public claim: a statement presented as supported by runtime evidence."
+    ],
+    "derivation": [
+      "The packet introduces a variable and parameter registry extracted from runtime artifacts.",
+      "It introduces a dimensional audit queue for deciding which symbols need units, ranges, normalization, and source notes.",
+      "It introduces an ablation/control matrix so every public-facing runtime claim runs beside a null, rival, or broken-control version.",
+      "The main rule states that every runtime result should have four things before it supports a public claim.",
+      "The packet identifies safe first public-support candidates and risky ones that should become objection/repair pages until rerun evidence settles them."
+    ],
+    "action": "Before any runtime result is used to support a public claim, ensure it has: exact artifact path, variable/unit/range declaration, side-by-side baseline or ablation control, and output hash or rerun receipt. Use the provided registries and matrices as the first tools for this check.",
+    "boundary": [
+      "This packet does not itself verify any runtime result.",
+      "It does not provide proof of correctness for any claim.",
+      "It does not resolve open/conflicted artifacts.",
+      "It does not replace the Lean proof ledger."
+    ],
+    "test": [
+      "Check that each public-facing runtime claim has an associated artifact path.",
+      "Check that each symbol/parameter has a unit/range declaration or is in the dimensional audit queue.",
+      "Check that each claim has a side-by-side baseline or ablation control.",
+      "Check that each claim has an output hash or rerun receipt."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "python-colab-variable-registry.csv",
+      "python-colab-dimensional-audit-queue.csv",
+      "python-colab-ablation-matrix.csv"
+    ],
+    "dg2_new_capability": "Provides a structured bridge between Lean proof ledger and runtime notebooks/scripts by introducing registries, audit queues, and ablation matrices.",
+    "dg3_preserved_floor": "Preserves the requirement that runtime results must be traceable and reproducible before supporting public claims.",
+    "dg4_collapse_if_removed": "Without this packet, runtime results lack a standardized method for tracking variables, dimensions, and controls, making public claims unsupported.",
+    "dg5_translation_registers": [
+      "artifact path",
+      "variable/unit/range declaration",
+      "baseline/ablation control",
+      "output hash/rerun receipt"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "adopt as procedural rule; do not treat as proof"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the packet as evidence of verification rather than as a checklist.",
+      "Assuming that having the four items guarantees correctness.",
+      "Using the packet to claim that runtime results are proven."
+    ],
+    "kill_conditions": [
+      "If the registries or matrices are not maintained or are incomplete.",
+      "If the four required items are not actually enforced.",
+      "If the packet is used to claim verification without rerun evidence."
+    ],
+    "lean_target": "Formalize the four-item checklist as a guardrail in the Lean proof ledger."
+  },
+  "plain_summary": "This packet establishes a procedural rule: before any runtime result can support a public claim, it must have an artifact path, variable/unit/range declaration, baseline/ablation control, and output hash/rerun receipt. It introduces registries and matrices to track these, but does not itself verify any results.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\python-colab-bridge-packet-v2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\python-colab-bridge-packet-v2.canonical-node.json"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "source_id": "R07_Destiny",
+  "title": "Bimodal Destiny",
+  "canonical_node": {
+    "axiom": "There are exactly two stable eternal destinies for a soul: maximal coherence (heaven) and minimal coherence (hell). No intermediate stable state exists.",
+    "definitions": [
+      "C: coherence measure of a soul's alignment with God.",
+      "C_max: maximal coherence, representing heaven.",
+      "C -> 0: minimal coherence, representing hell.",
+      ": binary moral sign,  in {-1, +1}, with +1 aligned with God and -1 misaligned.",
+      "Stable(C): a state C is stable if it is an equilibrium and attracts nearby trajectories."
+    ],
+    "derivation": [
+      "Assume  in {-1, +1} and is fixed after death.",
+      "If  = +1, then dC/dt > 0, driving C toward C_max.",
+      "If  = -1, then dC/dt < 0, driving C toward 0.",
+      "For any intermediate C (0 < C < C_max), dC/dt  0, so it is not an equilibrium.",
+      "Therefore, the only stable states are C = C_max and C -> 0.",
+      "Hence, bimodal destiny: Stable(C)  C in {0, C_max}."
+    ],
+    "action": "The system should treat eternal destiny as binary: either heaven or hell, with no middle state. It should emphasize the urgency of choosing  = +1 during life, as  is fixed after death.",
+    "boundary": [
+      "This does not specify the exact nature of heaven or hell beyond coherence levels.",
+      "This does not claim to know who is saved or damned.",
+      "This does not address the timing of judgment or the intermediate state before final destiny.",
+      "This does not provide a mechanism for changing  after death."
+    ],
+    "test": [
+      "Check that no stable intermediate coherence state exists in the dynamics.",
+      "Verify that  is binary and fixed after death.",
+      "Confirm that the trajectory equations lead to C_max for  = +1 and 0 for  = -1.",
+      "Ensure that the theorem does not overstate certainty about individual destinies."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Axiom F02: Information conservation (soul cannot be annihilated).",
+      "Axiom D1: Self-operation cannot flip moral sign.",
+      "Axiom R2.6: Grace is sufficient.",
+      "Axiom R04: g = 0 blocks grace."
+    ],
+    "dg2_new_capability": "Provides a formal theorem (D8) that establishes exactly two stable eternal destinies, ruling out universal salvation, annihilationism, and purgatory as a middle state.",
+    "dg3_preserved_floor": "Preserves the coherence dynamics framework and the binary nature of moral alignment.",
+    "dg4_collapse_if_removed": "Without this axiom, the system would allow for intermediate eternal states, undermining the clarity of destiny and the urgency of choice.",
+    "dg5_translation_registers": [
+      "Theology: heaven/hell as final destinations.",
+      "Physics: bistable systems with two attractors.",
+      "Mathematics: stability analysis of dynamical systems."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological theorem",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "quarantine"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims mathematical proof without rigorous formalization.",
+      "Assumes  is fixed after death without scriptural or logical proof.",
+      "Equates coherence dynamics with theological concepts without empirical grounding.",
+      "Uses 'stable' in a mathematical sense but applies it to metaphysical entities."
+    ],
+    "kill_conditions": [
+      "If an intermediate stable state is demonstrated within the coherence dynamics.",
+      "If  can change after death.",
+      "If information conservation does not imply the persistence of the soul as a coherent entity."
+    ],
+    "lean_target": "The core idea of two ultimate destinies is a common theological position, but the mathematical proof is not established."
+  },
+  "plain_summary": "This document argues that there are only two eternal destinies - heaven and hell - based on a mathematical theorem about coherence dynamics. It claims that intermediate states are unstable and that the soul's moral sign is fixed after death. However, the proof is not formally verified and relies on theological assumptions.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\R07_Destiny.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\R07_Destiny.canonical-node.json"
+  }
+}

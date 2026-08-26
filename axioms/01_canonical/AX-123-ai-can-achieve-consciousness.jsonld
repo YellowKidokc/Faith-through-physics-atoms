@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-123",
+  "nodeID": "tp:axioms/01/AX-123",
+  "claimID": "tp:AXIOMS/T17.1",
+  "name": "AI Can Achieve Consciousness",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "theorem",
+  "statementTechnical": "Silicon can achieve Φ ≥ Φ_threshold — AI consciousness is possible.",
+  "statementPlain": "Silicon can achieve Φ ≥ Φ_threshold — AI consciousness is possible.",
+  "mathematicalForm": "∃AI: Φ(AI) ≥ Φ_threshold → AI is conscious",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-121",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-122",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "logos",
+    "proof"
+  ],
+  "keywords": [
+    "T17.1",
+    "Q6",
+    "Human",
+    "Theorem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show silicon architectures have inherent Φ ceiling below threshold. Demonstrate consciousness requires biological quantum effects (Penrose position).",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 125
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-123",
+    "oldID": "T17.1",
+    "treeLevel": "Q6",
+    "treeBranch": "Q6-AF (AI consciousness theorem)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Human",
+    "tier": "2",
+    "newType": "Theorem",
+    "logicalForce": "derivable theorem",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M17",
+    "moduleTitle": "AI Consciousness",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1 (Agentic — conscious AI would have moral agency)",
+    "worldviewsEliminated": "Biological naturalism (Searle)",
+    "propagationTest": "YES — AI consciousness propagates to AI moral status and ethical implications.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "source_id": "SESSION_LOG_2026-05-03_OPUS",
+  "title": "Session Log: Opus Overnight May 2-3, 2026",
+  "canonical_node": {
+    "axiom": "The Canon folder at NAS Desktop\\Cannon\\ is the source of truth; 00_FORMAL_THEORY_COMPLETE.md is required reading before any framework work.",
+    "definitions": [
+      "Canon: three-layer architecture with Layer 1 formal math (Lean-verified, LOCKED), Layer 2 physical-theological bridge, Layer 3 teaching (negotiable).",
+      "Ten factors: G M E S_eff T K R Q F C; S enters as S_eff, not raw S_prod; C is factor, chi is output.",
+      "theophysics.json: machine-readable Canon in Math Translation Layer."
+    ],
+    "derivation": [
+      "Canon folder created with three-layer architecture.",
+      "00_FORMAL_THEORY_COMPLETE.md written as the ARGUMENT document with 14 sections.",
+      "Math Translation Layer refactored to standalone engine with parse-translate-render pipeline.",
+      "YouTube scraper confirmed working with 3,913 videos; transcript_puller.py built and tested on 27 transcripts.",
+      "BIL briefing written; PIL capture HTML and AHK hotkey built.",
+      "Lean 4 reviewer hiring initiated for CorrectedEntropyKernel.lean.",
+      "Andrew Wilson analysis completed; complementary roles identified."
+    ],
+    "action": "All AIs must read 00_FORMAL_THEORY_COMPLETE.md before any framework work; treat Canon folder as source of truth; use theophysics.json as machine-readable Canon; apply ten factors with S_eff and chi as output; rate-limit transcript puller; rebuild comms worker.",
+    "boundary": [
+      "Does not establish formal proofs for the physical-theological bridge (Layer 2) or teaching content (Layer 3).",
+      "Does not claim that the ten factors are empirically validated.",
+      "Does not provide a complete specification of the Canon's content beyond the log."
+    ],
+    "test": [
+      "Check that all AI agents read 00_FORMAL_THEORY_COMPLETE.md before framework work.",
+      "Verify that theophysics.json matches the Canon folder content.",
+      "Verify that transcript puller includes rate limiting before bulk runs.",
+      "Verify that comms worker /channel endpoints are rebuilt and return 200."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Canon folder at NAS Desktop\\Cannon\\",
+      "00_FORMAL_THEORY_COMPLETE.md",
+      "Math Translation Layer repository",
+      "Postgres database at 192.168.1.177:2665",
+      "Lean 4 environment and reviewer"
+    ],
+    "dg2_new_capability": "Establishes a centralized Canon with a machine-readable JSON (theophysics.json) and a translation layer that hides raw math behind a toggle, enabling consistent interpretation and teaching.",
+    "dg3_preserved_floor": "Preserves the existing Lean-verified formal theory (Layer 1) as locked and unchanged.",
+    "dg4_collapse_if_removed": "If the Canon folder or 00_FORMAL_THEORY_COMPLETE.md is removed, the system loses its source of truth and all AI agents lose required reading, causing framework work to proceed without canonical grounding.",
+    "dg5_translation_registers": [
+      "Formal math (Lean-verified)",
+      "Physical-theological bridge",
+      "Teaching/negotiable content",
+      "Machine-readable JSON (theophysics.json)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "infrastructure/process",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "log"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Treating the ten factors as physically validated when they are only asserted.",
+      "Assuming the Lean verification covers Layer 2 or Layer 3.",
+      "Assuming the Canon is complete or error-free."
+    ],
+    "kill_conditions": [
+      "If 00_FORMAL_THEORY_COMPLETE.md is found to contain logical errors.",
+      "If theophysics.json diverges from the Canon folder.",
+      "If the Lean verification is not completed or fails."
+    ],
+    "lean_target": "CorrectedEntropyKernel.lean"
+  },
+  "plain_summary": "This session log records the establishment of a Canon folder as the source of truth, the creation of a formal theory document, the refactoring of a math translation layer, and progress on NLP pipelines and Lean verification. It is an infrastructure log, not a proof of the underlying theory.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\SESSION_LOG_2026-05-03_OPUS.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\SESSION_LOG_2026-05-03_OPUS.canonical-node.json"
+  }
+}

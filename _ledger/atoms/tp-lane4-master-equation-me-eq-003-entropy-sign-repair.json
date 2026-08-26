@@ -1,0 +1,63 @@
+{
+  "atom_id": "tp:lane4/master-equation/me-eq-003-entropy-sign-repair",
+  "atom_uid": "sha256:6c2d486fc36b19c8adf9567de5ccd2b4e4df4401285869edb9c6c98326008e8c",
+  "title": "Entropy Sign Repair",
+  "claim": "Raw entropy production is converted into an effective factor that decreases coherence.",
+  "domain": "master-equation",
+  "lane": "master-equation",
+  "claim_class": "mathematical",
+  "mode_classification": "candidate",
+  "ontology_family": "master-equation",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "S_eff(x,t) = exp(-η·S_prod(x,t))"
+  ],
+  "bridges": [],
+  "bridge_grade": "ungraded",
+  "dependencies": [
+    "tp:master-equation/01/ME-01-023",
+    "tp:axioms/01/AX-092"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show the equation is ill-typed, contradicts its dependency atoms, or fails the verification/empirical burden declared by its source layer"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-003-entropy-sign-repair.jsonld"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_from_jsonld",
+      "result": "imported",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\master-equation\\01_canonical\\ME-EQ-003-entropy-sign-repair.jsonld",
+      "meaning": "ME JSON-LD atom imported to Lane 4 ledger.",
+      "limits": "Import does not change proof status.",
+      "reviewer": "import_me_to_lane4.py",
+      "lane": "mathematics",
+      "event_id": "sha256:a29af37042a757866049f490b5e7cb551bcc9a68b81665d7cfd479e9b40e8f00",
+      "event_uuid": "7b87f2f0-3510-5f3c-9839-b34a14ce28d2"
+    }
+  ],
+  "source_claim_id": "tp:ME/ME-EQ-003",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/master-equation/01/ME-EQ-003",
+  "original_node_id": "tp:master-equation/01/ME-EQ-003",
+  "tags": [
+    "equation",
+    "entropy",
+    "decoherence"
+  ],
+  "keywords": [
+    "equation",
+    "S_eff",
+    "S_prod",
+    "η"
+  ],
+  "atom_uuid": "1de85a8f-9913-5a9d-bc00-48740b3a55fc"
+}

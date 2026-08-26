@@ -1,0 +1,145 @@
+{
+  "registryID": "lean-axiom-bundle-attack-surface",
+  "purpose": "Keep the formal attack surface explicit: assumptions, definitions, derived theorems, bridges, empirical claims, and open conjectures are separate.",
+  "starterLeanFile": "lean/Theophysics/AxiomBundle.lean",
+  "recommendedFileOrder": [
+    "Theophysics/AxiomBundle.lean",
+    "Theophysics/CoreDefinitions.lean",
+    "Theophysics/BasicLemmas.lean",
+    "Theophysics/MoralCoherence.lean",
+    "Theophysics/ConsequenceAndCost.lean",
+    "Theophysics/JusticeMercy.lean",
+    "Theophysics/GraceRestoration.lean",
+    "Theophysics/LawFamilyStructures.lean",
+    "Theophysics/MasterEquationStructure.lean",
+    "Theophysics/BridgeClaims.lean",
+    "Theophysics/PublicClaimStatus.lean"
+  ],
+  "claimTypeToLeanRole": {
+    "Primitive": "possible axiom / structure field",
+    "Definition": "Lean def / structure / inductive",
+    "FrameworkCommitment": "explicit bundle field or guarded bridge",
+    "Equation": "def or theorem depending on role",
+    "Property": "theorem or field depending on dependency status",
+    "BoundaryCondition": "hypothesis / theorem context",
+    "ObservableDomain": "metadata or runtime/test object",
+    "Theorem": "proof target",
+    "Lemma": "proof target",
+    "BridgePrinciple": "explicit assumption or metadata",
+    "Identification": "metadata / guarded theological bridge",
+    "EvidenceNode": "outside Lean kernel",
+    "Prediction": "outside Lean kernel, runtime/test object",
+    "Protocol": "outside Lean kernel",
+    "FalsificationCriterion": "outside Lean kernel or metadata",
+    "MetaClaim": "documentation / metadata",
+    "OpenProblem": "theorem stub with no false proof",
+    "ClosureClaim": "only after dependencies close",
+    "CapstoneTerminalClaim": "guarded theorem/bridge; no global uniqueness overclaim"
+  },
+  "firstTheoremTargets": [
+    "T1 distinct classes remain distinct; canonical markers are not silently interchangeable.",
+    "T2 alignedWithDestruction a -> degrades a s; alignedWithGood a -> preserves a s.",
+    "T3 degraded + unrestored -> not alignedWithGood.",
+    "T4 destructive alignment + unrestored -> not alignedWithGood.",
+    "T5 zero factor/gate collapses the product model.",
+    "T6 one nonzero factor is not sufficient for full coherence if other gates are missing.",
+    "T7 selected transitions require named gates/relations.",
+    "T8 invalid substitutions violate declared role constraints.",
+    "T9 selected transitions are irreversible under declared stage rules.",
+    "T10 mercy/restoration preserves truthful accounting instead of deleting the record."
+  ],
+  "guardrails": [
+    "Lean proves selected structural conditionals under stated assumptions; it does not prove God, Jesus, or Christianity from nothing.",
+    "The Lagrangian-to-product-form bridge remains conditional until its open problem is closed.",
+    "Fixed-point existence/stability may be local or conditional; do not claim global uniqueness unless proved.",
+    "Python/Colab/runtime evidence supports tests and empirical fit; it does not become Lean proof automatically.",
+    "Theological identifications require explicit bridge assumptions and must not enter the proof kernel silently."
+  ],
+  "minimumBundleDraft": [
+    {
+      "id": "AB1",
+      "statement": "Reality exists."
+    },
+    {
+      "id": "AB2",
+      "statement": "Distinction is possible."
+    },
+    {
+      "id": "AB3",
+      "statement": "Relation is possible."
+    },
+    {
+      "id": "AB4",
+      "statement": "Information/intelligibility is possible."
+    },
+    {
+      "id": "AB5",
+      "statement": "Agents can act."
+    },
+    {
+      "id": "AB6",
+      "statement": "Actions can preserve or degrade relation/coherence."
+    },
+    {
+      "id": "AB7",
+      "statement": "Degradation without restoration cannot be called moral good."
+    },
+    {
+      "id": "AB8",
+      "statement": "Restoration requires a source or operation not reducible to unrepaired damage itself."
+    },
+    {
+      "id": "AB9",
+      "statement": "Justice requires damage/cost to be truthfully accounted for."
+    },
+    {
+      "id": "AB10",
+      "statement": "Mercy requires restoration without falsifying justice."
+    },
+    {
+      "id": "AB11",
+      "statement": "Grace is non-coercive restorative input."
+    },
+    {
+      "id": "AB12",
+      "statement": "Coherence is the integrated state where truth, relation, justice, mercy, and restoration do not contradict."
+    }
+  ],
+  "publicStatuses": [
+    "CANON",
+    "LEAN_SUPPORTED",
+    "RUNTIME_SUPPORTED",
+    "STRONG_BUT_NEEDS_SOURCING",
+    "USEFUL_BUT_UNVERIFIED",
+    "SPECULATIVE",
+    "OPEN_BRIDGE",
+    "CONTRADICTED",
+    "QUARANTINE"
+  ],
+  "dependencyLabels": [
+    "NONE",
+    "USES_PRIMITIVE",
+    "USES_DEFINITION",
+    "USES_BRIDGE_ASSUMPTION",
+    "USES_THEOLOGICAL_IDENTIFICATION",
+    "USES_EMPIRICAL_EVIDENCE",
+    "USES_OPEN_CONJECTURE"
+  ],
+  "roleCounts": {
+    "primitive_assumption_candidate": 32,
+    "bridge_or_identification": 15,
+    "open_conjecture": 5,
+    "needs_human_classification": 14,
+    "definition": 52,
+    "derived_chain": 60,
+    "empirical_or_runtime": 17
+  },
+  "rules": [
+    "Only primitive_assumption_candidate atoms may be considered for the Lean front bundle.",
+    "Definitions are controlled vocabulary, not discoveries.",
+    "Derived-chain atoms must point back to assumptions/definitions and cannot be primitives.",
+    "Bridge/theological identification atoms must be labeled OPEN_BRIDGE unless separately formalized.",
+    "Empirical/runtime atoms may support the public case but do not enter the Lean kernel as axioms.",
+    "Open conjectures stay speculative until repaired, sourced, or formally derived."
+  ]
+}

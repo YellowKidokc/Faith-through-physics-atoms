@@ -1,0 +1,73 @@
+{
+  "source_id": "migrate_academic",
+  "title": "migrate_academic.ipynb",
+  "canonical_node": {
+    "axiom": "Academic migration is the conversion of validated results into citable, paper-ready formats.",
+    "definitions": [
+      "Academic migration: the process of reformatting JSON results and PNG charts into LaTeX tables, equations, and BibTeX entries.",
+      "Paper-ready format: LaTeX-compatible tables, properly formatted equations, and standard academic citation format.",
+      "Citable: having BibTeX entries that link to established literature."
+    ],
+    "derivation": [
+      "The notebook exists to produce LaTeX equation blocks, LaTeX tables, BibTeX entries, and an abstract draft.",
+      "These outputs are intended for direct inclusion in a LaTeX document for academic submission.",
+      "The presence of this notebook indicates intent to move beyond website demonstration toward formal publication."
+    ],
+    "action": "Reformat validated results into LaTeX-compatible tables, equations, and BibTeX entries for academic submission.",
+    "boundary": [
+      "Does not generate new scientific results.",
+      "Does not validate or test the underlying physics.",
+      "Does not produce web-ready JSON or PNG outputs.",
+      "Does not itself perform peer review or guarantee acceptance."
+    ],
+    "test": [
+      "Check that all major equations are formatted in LaTeX.",
+      "Check that test results are presented in tabular form with required columns.",
+      "Check that BibTeX entries are present and correctly formatted.",
+      "Check that an abstract draft is included."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Validated results from test notebooks (JSON and PNG outputs).",
+      "The framework's equations and test outcomes.",
+      "Established literature references (Klein, Gordon, Riess, Planck, DESI, Shannon, Kolmogorov)."
+    ],
+    "dg2_new_capability": "Enables conversion of results into paper-ready LaTeX and BibTeX formats for academic submission.",
+    "dg3_preserved_floor": "Preserves the underlying results and equations in a citable format.",
+    "dg4_collapse_if_removed": "Without this node, the project lacks a documented path to academic publication; results remain in web-only formats.",
+    "dg5_translation_registers": [
+      "LaTeX",
+      "BibTeX",
+      "Academic paper format"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "preserve as methodological node; do not treat as evidence for physics claims"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The existence of LaTeX formatting may be misinterpreted as validation of the underlying physics.",
+      "BibTeX entries may imply stronger connections to established literature than actually exist.",
+      "The abstract draft may be mistaken for a peer-reviewed publication."
+    ],
+    "kill_conditions": [
+      "If the underlying results are invalidated, this node's outputs lose value.",
+      "If the notebook is not reproducible or the outputs are not actually generated, the node fails its purpose."
+    ],
+    "lean_target": "Keep this node as a formatting and citation tool; do not let it inflate the epistemic status of the framework."
+  },
+  "plain_summary": "This notebook converts existing results into LaTeX and BibTeX formats for academic submission. It does not add scientific evidence; it only prepares outputs for potential publication.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\migrate_academic.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\migrate_academic.canonical-node.json"
+  }
+}

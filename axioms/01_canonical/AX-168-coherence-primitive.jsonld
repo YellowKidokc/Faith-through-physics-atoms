@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-168",
+  "nodeID": "tp:axioms/01/AX-168",
+  "claimID": "tp:AXIOMS/O2",
+  "name": "Coherence Primitive",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Coherence is ontologically primitive — irreducible organizing principle.",
+  "statementPlain": "Coherence is ontologically primitive — irreducible organizing principle.",
+  "mathematicalForm": "Coherence ∈ Primitives",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-167",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-017",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence"
+  ],
+  "keywords": [
+    "O2",
+    "Q3",
+    "Ontological",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show coherence derived from more fundamental principle.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 170
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-168",
+    "oldID": "O2",
+    "treeLevel": "Q3",
+    "treeBranch": "Q3-X (Ontological primitive — coherence)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Ontological",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M21",
+    "moduleTitle": "Primordial / Ontological Spine",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

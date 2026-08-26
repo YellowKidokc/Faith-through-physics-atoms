@@ -1,0 +1,131 @@
+{
+  "work_id": "W6.4",
+  "title": "Series Opener (placeholder)",
+  "turn": "TURN 6 - THE MORAL TURN",
+  "source_path": "D:\\DONT TOUCH HTML\\blue-pages\\00_START_HERE_DOORWAY_METHOD\\CODEX_BLUE_WORKING_LANE\\sources\\parallel-start\\series-opener-template.html",
+  "overall_status": "needs_review",
+  "summary": "Placeholder series opener listing 17 collapse mechanisms and chapter titles. Contains strong claims about societal phase transitions and cascading collapse, but no supporting evidence or definitions. Mostly rhetorical and unclassified.",
+  "claims": [
+    {
+      "claim_id": "W6.4-C001",
+      "claim_text": "Societies don't collapse linearly — they absorb stress until they hit a threshold and phase-transition into a new state.",
+      "defense_class": "RHETORIC",
+      "claim_level": "physics",
+      "support": "Societies don't collapse linearly — they absorb stress until they hit a threshold and phase-transition into a new state.",
+      "dependencies": ["none named"],
+      "risks": ["Physics metaphor overreach; no evidence for threshold behavior in societies."],
+      "required_concession": "This is an analogy, not a proven physical law.",
+      "recommended_action": "demote",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.4-C002",
+      "claim_text": "When one domain fails, it doesn't stay contained. The failure propagates.",
+      "defense_class": "RHETORIC",
+      "claim_level": "physics",
+      "support": "When one domain fails, it doesn't stay contained. The failure propagates.",
+      "dependencies": ["none named"],
+      "risks": ["Unsupported generalization; no mechanism given."],
+      "required_concession": "This is a claim about cascading failures, not yet demonstrated.",
+      "recommended_action": "demote",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.4-C003",
+      "claim_text": "The full sequence of collapse is: language → cognition → spirit → institution → economy → identity.",
+      "defense_class": "RHETORIC",
+      "claim_level": "physics",
+      "support": "The full sequence: language → cognition → spirit → institution → economy → identity.",
+      "dependencies": ["none named"],
+      "risks": ["Arbitrary ordering; no evidence for this specific sequence."],
+      "required_concession": "This sequence is a proposed model, not an established fact.",
+      "recommended_action": "demote",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.4-C004",
+      "claim_text": "When words stop meaning stable things, the society loses the ability to carry complex truth.",
+      "defense_class": "RHETORIC",
+      "claim_level": "physics",
+      "support": "When words stop meaning stable things, the society loses the ability to carry complex truth.",
+      "dependencies": ["none named"],
+      "risks": ["Unsupported; 'complex truth' undefined."],
+      "required_concession": "This is a hypothesis about language and truth, not proven.",
+      "recommended_action": "demote",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.4-C005",
+      "claim_text": "The public mind fragments. Attention collapses. The capacity for sustained reasoning erodes.",
+      "defense_class": "RHETORIC",
+      "claim_level": "physics",
+      "support": "The public mind fragments. Attention collapses. The capacity for sustained reasoning erodes.",
+      "dependencies": ["none named"],
+      "risks": ["Vague and unmeasurable; no evidence."],
+      "required_concession": "This is a rhetorical description, not a measured phenomenon.",
+      "recommended_action": "demote",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.4-C006",
+      "claim_text": "The soul fragments. Not metaphorically — the integrating center that holds a person together loses coherence.",
+      "defense_class": "RHETORIC",
+      "claim_level": "theological",
+      "support": "The soul fragments. Not metaphorically — the integrating center that holds a person together loses coherence.",
+      "dependencies": ["none named"],
+      "risks": ["Theological claim presented as literal; no definition of 'soul'."],
+      "required_concession": "This is a theological assertion, not a scientific one.",
+      "recommended_action": "demote",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.4-C007",
+      "claim_text": "Institutions stopped transmitting signal. The channel capacity dropped to noise.",
+      "defense_class": "RHETORIC",
+      "claim_level": "physics",
+      "support": "Institutions stopped transmitting signal. The channel capacity dropped to noise.",
+      "dependencies": ["none named"],
+      "risks": ["Information theory metaphor; no data on institutional signal capacity."],
+      "required_concession": "This is an analogy, not a measured fact.",
+      "recommended_action": "demote",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.4-C008",
+      "claim_text": "Money detached from reality. Debt became a lifestyle. The economic signal decoupled from the physical substrate.",
+      "defense_class": "RHETORIC",
+      "claim_level": "physics",
+      "support": "Money detached from reality. Debt became a lifestyle. The economic signal decoupled from the physical substrate.",
+      "dependencies": ["none named"],
+      "risks": ["Economic metaphor; no evidence for 'detachment'."],
+      "required_concession": "This is a rhetorical claim about economics, not a proven fact.",
+      "recommended_action": "demote",
+      "confidence": 0.9
+    },
+    {
+      "claim_id": "W6.4-C009",
+      "claim_text": "The individual — the last measurement instrument — lost the ability to observe coherently.",
+      "defense_class": "RHETORIC",
+      "claim_level": "physics",
+      "support": "The individual — the last measurement instrument — lost the ability to observe coherently.",
+      "dependencies": ["none named"],
+      "risks": ["Quantum measurement metaphor; no evidence for 'coherent observation'."],
+      "required_concession": "This is a metaphor, not a literal statement about measurement.",
+      "recommended_action": "demote",
+      "confidence": 0.9
+    }
+  ],
+  "fixes": [
+    {
+      "severity": "P1",
+      "target": "Entire document",
+      "problem": "Claims are presented as fact but are unsupported and metaphorical.",
+      "repair": "Add disclaimers that these are hypotheses or analogies, and provide evidence or references."
+    }
+  ],
+  "log_notes": [
+    "Placeholder document with no punch list; likely early draft.",
+    "All claims are rhetorical and lack support; recommend demoting to RHETORIC until evidence is provided.",
+    "Next pass should check if later works provide evidence for these claims."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "source_id": "W2.3-four-axioms.canonical",
+  "title": "The Four Axioms, Taken Cold",
+  "canonical_node": {
+    "axiom": "A1: Something exists. A2: Difference is real. A3: Distinguishable things interact lawfully. A4: Some states rank above others.",
+    "definitions": [
+      "Existence: the brute given that something is, not nothing.",
+      "Distinction: a real difference between this and not-this; a registrable difference is a bit.",
+      "Relation: lawful interaction between distinguishable things, repeatable and regular.",
+      "Orientation: a ranking of states on at least one real gradient (e.g., signal above noise, truth above error)."
+    ],
+    "derivation": [
+      "A1 is presupposed by any argument, since arguments exist.",
+      "A2 is presupposed by measurement, thought, and the sentence itself.",
+      "A3 is presupposed by induction and all laboratory practice; it cannot be grounded in experiment.",
+      "A4 is presupposed by any inquiry that values truth over error; denying it uses it.",
+      "From A1-A4, the track derives a chain of results (01A-04A) claimed to be valid and checkable."
+    ],
+    "action": "Run the A-track series using only these four axioms, with no theological vocabulary, and derive the chain of results (01A-04A) in a checkable manner.",
+    "boundary": [
+      "Does not answer why there is something rather than nothing.",
+      "Does not derive an 'ought' from an 'is'.",
+      "Does not ask why the four axioms cohere; that is left to a companion series.",
+      "Does not use theological vocabulary or religious claims as load-bearing."
+    ],
+    "test": [
+      "Check that no theological vocabulary appears in any A-sheet.",
+      "Check that every citation is to philosophy, mathematics, or physics.",
+      "Check that every conclusion survives a reader who rejects all religious claims.",
+      "Check that no hidden fifth axiom is doing secret work.",
+      "Check that each derivation step is valid under the stated definitions."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "No prior axioms; these are the foundational axioms of the track."
+    ],
+    "dg2_new_capability": "Provides a minimal axiomatic basis (four axioms) for a parallel track that claims to derive a chain of results without theological assumptions.",
+    "dg3_preserved_floor": "Preserves the ability to reason about existence, distinction, relation, and orientation without invoking religious or theological premises.",
+    "dg4_collapse_if_removed": "If any axiom is removed, the claimed derivations in the track lose their foundation; the track cannot proceed as specified.",
+    "dg5_translation_registers": [
+      "Philosophy (Leibniz, Aristotle, Hume)",
+      "Mathematics (set theory, information theory)",
+      "Physics (relativity, quantum mechanics, thermodynamics)"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "axiomatic charter",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as foundational charter; do not treat as proven derivation"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims that the chain is 'valid' and 'forced' without providing the actual derivations in this document.",
+      "Claims that anyone who has measured, argued, or called a claim false accepts the axioms, which may overstate universality.",
+      "The phrase 'everything after this line is derivation' may imply more rigor than is shown."
+    ],
+    "kill_conditions": [
+      "A fifth hidden axiom found doing secret work in any derivation.",
+      "A broken derivation step under the same definitions.",
+      "Smuggled theological or interpretive vocabulary in an A-sheet."
+    ],
+    "lean_target": "Formalize the four axioms and the derivation chain in a proof assistant (e.g., Lean) to verify the claimed validity."
+  },
+  "plain_summary": "This document is a charter for a parallel track that starts from four stated axioms (existence, distinction, relation, orientation) and claims to derive a chain of results without theological assumptions. It explicitly refuses to answer why the axioms cohere and leaves that to a companion series. The document does not provide the actual derivations, only the roadmap, so the claims of validity are not yet established.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\Master EQ\\Canon\\Canon\\W2.3-four-axioms.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W2.3-four-axioms.canonical.canonical-node.json"
+  }
+}

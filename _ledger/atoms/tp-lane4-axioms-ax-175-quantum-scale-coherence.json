@@ -1,0 +1,66 @@
+{
+  "atom_id": "tp:lane4/axioms/ax-175-quantum-scale-coherence",
+  "atom_uid": "sha256:7acd82daf8ecb890e377ac260cb1bda90dce53ca1cd3a816f9ba906d82052cc3",
+  "title": "AX-175 — Quantum Scale Coherence",
+  "claim": "At quantum scale (10⁻³⁵ to 10⁻¹⁰ m), coherence = superposition, entanglement, interference.",
+  "domain": "axioms",
+  "lane": "axioms",
+  "claim_class": "derived",
+  "mode_classification": "candidate",
+  "ontology_family": "10-quantum",
+  "assumptions": [
+    "LEGACY_IMPORT_ASSUMPTION_UNDECOMPOSED: this atom predates Lane 4 assumption decomposition; do not promote beyond its current proof_label without human review."
+  ],
+  "definitions": [],
+  "equations": [
+    "χ(quantum) = |ψ⟩; coherence = phase preservation"
+  ],
+  "bridges": [],
+  "dependencies": [
+    "tp:axioms/01/AX-011",
+    "tp:axioms/01/AX-017",
+    "tp:axioms/01/AX-171"
+  ],
+  "negative_guards": [],
+  "kill_conditions": [
+    "Show quantum coherence doesn't map to χ-field",
+    "Demonstrate phase relationships independent of informational substrate"
+  ],
+  "proof_label": "NOT_ESTABLISHED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-175-quantum-scale-coherence.jsonld",
+    "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_created_jsonld",
+      "result": "recorded",
+      "artifact_path": "D:\\GitHub\\Faith-through-physics-atoms\\axioms\\01_canonical\\AX-175-quantum-scale-coherence.jsonld",
+      "meaning": "Original JSON-LD axiom atom.",
+      "limits": "Pre-Lane4 format.",
+      "reviewer": "import_axioms_to_lane4.py",
+      "lane": "axioms",
+      "event_id": "sha256:074ef0f0f0a835769637bc1f717aa03c056e984d81a5ba03fbe15e194995d96b",
+      "event_uuid": "5136f3cb-e06b-50b9-99ca-f7a6f3d0c053"
+    },
+    {
+      "timestamp": "2026-08-09T00:00:00+00:00",
+      "event_type": "imported_to_lane4_with_census_corrections",
+      "result": "imported",
+      "artifact_path": "Axiom_Census_AXIOM_AXIOM_AXIOMa_2026-08-05.md",
+      "meaning": "Imported to Lane 4. Census correction: claim_class 'definition' -> 'derived'. Ontology: 10-quantum.",
+      "limits": "Import does not change proof_label.",
+      "reviewer": "Claude Opus 4.6",
+      "lane": "axioms",
+      "event_id": "sha256:d25668ff16fcdad746e54542b169b3f504f3b0280274b01dc41417bcd81f069d",
+      "event_uuid": "689c029b-7f60-54ce-973c-14df34489c37"
+    }
+  ],
+  "source_claim_id": "tp:AXIOMS/SC-QUANTUM",
+  "original_jsonld_id": "https://faiththruphysics.com/claims/axioms/01/AX-175",
+  "original_node_id": "tp:axioms/01/AX-175",
+  "atom_uuid": "5c093fcc-2796-5630-9fce-4ffac2202104"
+}

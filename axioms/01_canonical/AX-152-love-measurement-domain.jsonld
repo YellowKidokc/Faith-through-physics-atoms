@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-152",
+  "nodeID": "tp:axioms/01/AX-152",
+  "claimID": "tp:AXIOMS/F1",
+  "name": "Love Measurement Domain",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "empirical_anchor",
+  "statementTechnical": "Love = degree of coherent integration between agent and others.",
+  "statementPlain": "Love = degree of coherent integration between agent and others.",
+  "mathematicalForm": "F_Love = I(agent; other) — mutual information",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-151",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence"
+  ],
+  "keywords": [
+    "F1",
+    "Q10",
+    "Relational",
+    "ObservableDomain"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show love without coherence. Demonstrate coherent integration without love.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 154
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-152",
+    "oldID": "F1",
+    "treeLevel": "Q10",
+    "treeBranch": "Q10-AB (Fruit 1)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Relational",
+    "tier": "2",
+    "newType": "ObservableDomain",
+    "logicalForce": "empirical hypothesis",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / outside proof kernel",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M20",
+    "moduleTitle": "Universal Coherence / Fruits",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "M1",
+    "worldviewsEliminated": "Nihilism, Eliminativism",
+    "propagationTest": "YES — Love as coherence propagates through relational domain.",
+    "intendedStatus": "classified",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

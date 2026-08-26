@@ -1,0 +1,76 @@
+{
+  "source_id": "Thermodynamics",
+  "title": "Thermodynamics.lean",
+  "canonical_node": {
+    "axiom": "A closed system with only decaying operators inevitably reaches the zero state.",
+    "definitions": [
+      "Entropy: distance from the unity (aligned) state; high coherence corresponds to low entropy, low coherence to maximum entropy.",
+      "IsDecaying: an operator op such that for all x, op x = zero or op x = x.",
+      "IsHeatDeath: the terminal state where state = zero.",
+      "SinProcess: an operator that maps any state to zero, representing the weak force / sin asymmetry."
+    ],
+    "derivation": [
+      "Assume a closed system where every available internal operator is a decay operation (IsDecaying).",
+      "By definition, each such operator either preserves the state or maps it to zero.",
+      "Applying any sequence of such operators, the state can never increase in coherence; it either stays or drops to zero.",
+      "Since the system is closed, no external operators are available.",
+      "Therefore, the only possible terminal state is zero, i.e., heat death is inevitable."
+    ],
+    "action": "Formalize the Second Law of Thermodynamics within the CoherenceAlgebra framework, proving that closed systems without external intervention trend to zero, and connect this to the theological concept of sin as an irreversible decay process.",
+    "boundary": [
+      "Does not claim that the real physical universe will end in heat death.",
+      "Does not define the subtraction or inversion operator needed for a full entropy model.",
+      "Does not provide an internal escape from decay; only external operators (like Grace) can avoid zero."
+    ],
+    "test": [
+      "Check that the theorem heat_death_inevitable is formally proven in LEAN4.",
+      "Verify that the definitions of IsDecaying and IsHeatDeath are consistent with the axioms.",
+      "Confirm that the known gap regarding the subtraction/inversion operator is documented in the open problems register."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "CoherenceAlgebra framework",
+      "LEAN4 proof environment",
+      "Definitions of zero, unity, and operator composition"
+    ],
+    "dg2_new_capability": "Provides a formal proof that closed systems with only decaying operators inevitably reach zero, linking entropy increase to a deterministic outcome.",
+    "dg3_preserved_floor": "Preserves the existing CoherenceAlgebra axioms and the formalization of other laws; does not alter prior results.",
+    "dg4_collapse_if_removed": "If removed, the formal connection between the Second Law and the inevitability of heat death in closed systems is lost, weakening the bridge between physics and theology.",
+    "dg5_translation_registers": [
+      "Second Law of Thermodynamics",
+      "Entropy",
+      "Heat death",
+      "Weak force / sin asymmetry"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "formal proof",
+    "proof_label": "LEAN_FORMAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The file claims a formal proof but admits a gap in the definition of entropy (missing subtraction/inversion operator).",
+      "The equivalence between physical entropy and the formal distance to unity is asserted, not proven.",
+      "The connection to the weak force and sin is theological interpretation, not a physical derivation."
+    ],
+    "kill_conditions": [
+      "If the LEAN proof is found to be invalid or incomplete.",
+      "If the missing subtraction/inversion operator cannot be defined without breaking the algebra.",
+      "If the claim of equivalence between entropy and coherence distance is contradicted by physical evidence."
+    ],
+    "lean_target": "Formalize the missing subtraction/inversion operator to fully define entropy, and verify the proof in LEAN."
+  },
+  "plain_summary": "This document formalizes the Second Law of Thermodynamics in a LEAN4 proof, showing that closed systems with only decaying operators inevitably reach a zero state (heat death). It connects this to the weak force and sin as irreversible decay. The proof is mostly coherent but has a known gap in the definition of entropy.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\Thermodynamics.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\Thermodynamics.canonical-node.json"
+  }
+}

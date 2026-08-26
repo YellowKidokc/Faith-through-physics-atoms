@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-105",
+  "nodeID": "tp:axioms/01/AX-105",
+  "claimID": "tp:AXIOMS/A14.1",
+  "name": "Dynamic Dark Energy",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Universe evolves via chi-modified Friedmann dynamics.",
+  "statementPlain": "Universe evolves via chi-modified Friedmann dynamics.",
+  "mathematicalForm": "(ȧ/a)² = (8πG/3)ρ - k/a² + G(t)/3",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-104",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-010",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "logos",
+    "equation"
+  ],
+  "keywords": [
+    "A14.1",
+    "Q5",
+    "Material",
+    "Primitive"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show dark energy is static (w = -1 exactly). Demonstrate Hubble tension resolves without dynamic dark energy. Show χ-modified Friedmann gives wrong expansion history.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 107
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-105",
+    "oldID": "A14.1",
+    "treeLevel": "Q5",
+    "treeBranch": "Q5-L (Cosmological dynamics)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Material",
+    "tier": "1",
+    "newType": "Primitive",
+    "logicalForce": "self-evident primitive",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom / base proposition",
+    "riskLevel": "low",
+    "kernelRole": "candidateAxiom",
+    "moduleID": "M14",
+    "moduleTitle": "Dynamic Dark Energy",
+    "spineRole": "core_spine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Dynamic dark energy propagates to modified Friedmann, H₀ prediction, and cosmological grace function.",
+    "intendedStatus": "active",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-033",
+  "nodeID": "tp:axioms/01/AX-033",
+  "claimID": "tp:AXIOMS/T4.2",
+  "name": "Action Principle As Minimal K",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "theorem",
+  "statementTechnical": "Action principle = minimal-K path selection.",
+  "statementPlain": "Action principle = minimal-K path selection.",
+  "mathematicalForm": "δS = 0 ↔ δK = 0 (action extremization ≡ K minimization)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-032",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "proof"
+  ],
+  "keywords": [
+    "T4.2",
+    "Q3",
+    "Ontological",
+    "Theorem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show action extremization and K-minimization diverge for any system. Demonstrate a path that minimizes action but maximizes K.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 34
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-033",
+    "oldID": "T4.2",
+    "treeLevel": "Q3",
+    "treeBranch": "Q3-S (Action principle reinterpreted)",
+    "questionType": "Type 3 (What grounds X?)",
+    "domain": "Ontological",
+    "tier": "2",
+    "newType": "Theorem",
+    "logicalForce": "derivable theorem",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M04",
+    "moduleTitle": "Compression / Minimal Description",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "—",
+    "propagationTest": "YES — Reinterpretation of action principle propagates through all physics that uses variational methods.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

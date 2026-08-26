@@ -1,0 +1,77 @@
+{
+  "source_id": "GITHUB_PUBLISHING",
+  "title": "GitHub Publishing Plan",
+  "canonical_node": {
+    "axiom": "The public promise of the theophysics-lean-verification repo is to provide a Lean 4 verification package plus Python/Colab mirrors for the Theophysics Master Equation.",
+    "definitions": [
+      "Theophysics Master Equation: the central equation of the theophysics framework, not formally defined in this document.",
+      "Lean 4 verification package: a set of Lean 4 files that formally verify certain properties.",
+      "Python/Colab mirrors: Python or Colab notebooks that replicate or mirror the Lean verification.",
+      "COPY_PASTE_LEAN4.lean: a standalone Lean 4 file that checks the smallest layer: product collapse, grace idempotence and non-invertibility, fruits gate, zero-preserving justice/mercy operator."
+    ],
+    "derivation": [
+      "The document recommends a dedicated public repo named 'theophysics-lean-verification' for clarity and trust.",
+      "The reader flow is: open repo, read READER_START_HERE.md, run VERIFY_ALL_WINDOWS.bat, install Lean if missing, then run verification.",
+      "For quick checks, COPY_PASTE_LEAN4.lean can be run directly in any Lean 4 environment.",
+      "Publishing requires GitHub write access to DavidLoweOKC or creation of an empty public repo with the specified name."
+    ],
+    "action": "Publish the Lean 4 verification package and Python/Colab mirrors in a dedicated public GitHub repo named 'theophysics-lean-verification', with clear reader instructions and a standalone copy-paste file.",
+    "boundary": [
+      "This document does not define the Theophysics Master Equation or its properties.",
+      "It does not provide the actual Lean code or verification results.",
+      "It does not guarantee that the verification is complete or correct.",
+      "It does not specify the content of READER_START_HERE.md or VERIFY_ALL_WINDOWS.bat beyond their existence."
+    ],
+    "test": [
+      "Check that the repo exists with the exact name 'theophysics-lean-verification' under DavidLoweOKC.",
+      "Check that READER_START_HERE.md exists and provides instructions.",
+      "Check that VERIFY_ALL_WINDOWS.bat exists and runs successfully on Windows.",
+      "Check that COPY_PASTE_LEAN4.lean exists and can be checked with 'lean COPY_PASTE_LEAN4.lean'."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "GitHub account DavidLoweOKC with write access or ability to create public repos.",
+      "Lean 4 toolchain installed on reader machines.",
+      "The actual Lean verification files and Python/Colab mirrors must exist."
+    ],
+    "dg2_new_capability": "Provides a public, verifiable artifact for the Theophysics Master Equation, enabling external validation and trust.",
+    "dg3_preserved_floor": "The existing theophysics repos remain unchanged; this is a new dedicated repo.",
+    "dg4_collapse_if_removed": "If this publishing plan is removed, the public verification package may not be created, but the underlying theophysics claims remain unaffected.",
+    "dg5_translation_registers": [
+      "Lean 4 verification files",
+      "Python/Colab notebooks",
+      "Windows batch scripts",
+      "PowerShell installation script"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "publishing_plan",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "publish"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document implies that the verification package exists and works, but no evidence is provided.",
+      "The phrase 'checks the smallest standalone layer' may overstate the completeness of the verification.",
+      "The document assumes the Theophysics Master Equation is well-defined and verifiable."
+    ],
+    "kill_conditions": [
+      "If the Lean verification files do not exist or fail to compile.",
+      "If the repo name is taken or cannot be created.",
+      "If the Theophysics Master Equation is not formally defined."
+    ],
+    "lean_target": "The Lean 4 verification files for the Theophysics Master Equation, specifically the COPY_PASTE_LEAN4.lean file."
+  },
+  "plain_summary": "This document outlines a plan to publish a Lean 4 verification package and Python/Colab mirrors for the Theophysics Master Equation in a dedicated GitHub repo. It specifies repo naming, reader instructions, and a standalone copy-paste file, but does not provide the actual verification content or evidence of correctness.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\GITHUB_PUBLISHING.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\GITHUB_PUBLISHING.canonical-node.json"
+  }
+}

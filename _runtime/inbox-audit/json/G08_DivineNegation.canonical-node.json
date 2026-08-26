@@ -1,0 +1,75 @@
+{
+  "source_id": "G08_DivineNegation",
+  "title": "What God Cannot Do",
+  "canonical_node": {
+    "axiom": "God cannot violate logic, deny His nature, or do evil; these are perfections, not weaknesses.",
+    "definitions": [
+      "Logic: the structure of coherence; internal to God's nature.",
+      "Evil: decoherence (C < 0).",
+      "Perfection: inability to fail.",
+      "Coherent: that which is logically consistent and specifiable."
+    ],
+    "derivation": [
+      "God is maximal coherence (C_max).",
+      "Contradictions (P  not P) are not specifiable things.",
+      "Therefore, God cannot actualize contradictions (not Can(God, P  not P)).",
+      "God's nature is necessary; He cannot become not-God (not Can(God, not God)).",
+      "Evil is decoherence; C_max cannot cause C < 0 without contradiction.",
+      "Therefore, God cannot do evil (not Can(God, C < 0)).",
+      "Inability to fail is perfection; God's 'limits' are perfections."
+    ],
+    "action": "Treat God's inability to violate logic, deny His nature, or do evil as perfections, not limitations; reject voluntarism, absolute omnipotence, and divine arbitrariness.",
+    "boundary": [
+      "Does not claim God can do all logically possible things.",
+      "Does not define the full scope of God's power.",
+      "Does not address the problem of evil beyond defining evil as decoherence."
+    ],
+    "test": [
+      "Check that any proposed divine action is logically coherent.",
+      "Verify that no statement implies God can contradict His nature.",
+      "Ensure that 'cannot' statements are interpreted as perfections, not weaknesses."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "G07 (definition of evil as decoherence)"
+    ],
+    "dg2_new_capability": "Provides a coherent model of divine omnipotence that excludes contradictions and moral evil.",
+    "dg3_preserved_floor": "Preserves the coherence of God's nature and the reliability of divine promises.",
+    "dg4_collapse_if_removed": "Without this, divine omnipotence becomes incoherent and arbitrary, undermining theistic rationality.",
+    "dg5_translation_registers": [
+      "Theological",
+      "Logical",
+      "Moral"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Theological",
+    "proof_label": "NOT_ESTABLISHED",
+    "grade": "C",
+    "recommended_atom_action": "Preserve as a theological axiom; do not treat as proven physics."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming logical necessity for divine attributes without formal proof.",
+      "Equating theological coherence with physical law.",
+      "Overinterpreting scripture as mathematical proof."
+    ],
+    "kill_conditions": [
+      "If logic is shown to be external to God, the axiom fails.",
+      "If a coherent counterexample to divine inability to sin is provided.",
+      "If the definition of evil as decoherence is rejected."
+    ],
+    "lean_target": "Formalize the logical constraints on omnipotence in a proof assistant."
+  },
+  "plain_summary": "This document argues that God's inability to do certain things (like lying or creating contradictions) is a sign of perfection, not weakness. It uses logical and moral reasoning, but the claims are theological and not formally proven.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\G08_DivineNegation.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\G08_DivineNegation.canonical-node.json"
+  }
+}

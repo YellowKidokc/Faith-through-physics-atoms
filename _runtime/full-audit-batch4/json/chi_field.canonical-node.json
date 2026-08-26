@@ -1,0 +1,81 @@
+{
+  "source_id": "chi_field",
+  "title": "chi_field.ipynb",
+  "canonical_node": {
+    "axiom": "The chi-field evolves as a scalar field in 1+1D according to the Klein-Gordon equation with phi^4 self-interaction and a grace source term.",
+    "definitions": [
+      "chi(x,t): scalar field value at spatial point x and time t",
+      "d'Alembertian in 1+1D: /t  /x",
+      "m: field mass squared, sets oscillation frequency",
+      ": self-coupling strength for phi^4 interaction",
+      "J_grace: external grace source term, defined as _G * Phi * tanh(chi) / (S_local + )",
+      "_G: grace coupling strength",
+      "Phi: spatial grace distribution",
+      "S_local: local entropy",
+      ": small positive number preventing division by zero"
+    ],
+    "derivation": [
+      "The equation of motion is chi + mchi + chi = J_grace(x,t).",
+      "Spatial dimension is discretized using second-order finite differences, converting the PDE into a system of ODEs in time.",
+      "Time integration is performed using RK4.",
+      "Neumann boundary conditions are applied at spatial edges.",
+      "Parameter scans over m and  classify stability regimes."
+    ],
+    "action": "Implement and run a numerical solver (ChiFieldSolver) that integrates the chi-field PDE in 1+1D using method of lines, RK4, and Neumann boundaries, and produce stability phase diagrams.",
+    "boundary": [
+      "Does not provide analytical proofs of existence or uniqueness.",
+      "Does not extend to higher spatial dimensions.",
+      "Does not include dissipative or stochastic terms beyond the specified source.",
+      "Does not claim physical reality; it is a numerical implementation."
+    ],
+    "test": [
+      "Energy drift should remain below 0.5% over 1000 time steps with 128 spatial points and dt=0.01.",
+      "Stability classification: bounded, unbounded, oscillatory, or damped modes.",
+      "Dispersion relation for linearized equation should match  = k + m.",
+      "Spatial profiles should show suppression of grace source in high-entropy regions."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "MasterEquation class (Lagrangian mechanics of 10-variable point system)",
+      "Standard numerical libraries (e.g., NumPy, SciPy) for ODE integration"
+    ],
+    "dg2_new_capability": "Provides a numerical PDE solver for the chi-field, enabling spatial and temporal evolution studies, stability phase diagrams, and observation of grace-entropy tension in spatial profiles.",
+    "dg3_preserved_floor": "Preserves the core chi-field dynamics as a field theory, consistent with the point-system Lagrangian mechanics.",
+    "dg4_collapse_if_removed": "Without this node, the chi-field remains only a point system; spatial structure, propagation, and PDE-level grace-entropy tension cannot be analyzed.",
+    "dg5_translation_registers": [
+      "PDE solver implementation",
+      "Numerical stability analysis",
+      "Field theory simulation"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "implementation",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as numerical implementation node"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claims of physical significance may be overstated; the document uses interpretive language like 'not just an analogy'.",
+      "The grace source term is not derived from first principles; it is an ad hoc addition.",
+      "Stability results are numerical and may not generalize beyond tested parameter ranges."
+    ],
+    "kill_conditions": [
+      "If the notebook is not reproducible or the code does not run.",
+      "If the numerical method is found to be unstable or inaccurate beyond stated tolerances.",
+      "If the grace source term is shown to be physically inconsistent with the underlying theory."
+    ],
+    "lean_target": "Formalize the PDE solver in a theorem prover (e.g., Lean) to verify numerical stability and convergence properties."
+  },
+  "plain_summary": "This document describes a Google Colab notebook that numerically solves the chi-field as a 1+1D PDE using method of lines and RK4. It implements a Klein-Gordon equation with phi^4 self-interaction and a grace source term, and reports stability and energy drift results. The node is a numerical implementation, not a proof of physical reality.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\chi_field.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\chi_field.canonical-node.json"
+  }
+}

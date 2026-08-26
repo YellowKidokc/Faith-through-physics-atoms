@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-148",
+  "nodeID": "tp:axioms/01/AX-148",
+  "claimID": "tp:AXIOMS/U1",
+  "name": "Coherence Universal",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "floor_axiom",
+  "statementTechnical": "Coherence is the fundamental organizing principle of reality.",
+  "statementPlain": "Coherence is the fundamental organizing principle of reality.",
+  "mathematicalForm": "Coherence = fundamental organizing principle",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-017",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-021",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence"
+  ],
+  "keywords": [
+    "U1",
+    "Q3",
+    "Ontological",
+    "UniversalPrinciple"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show reality organized by a principle other than coherence. Demonstrate fundamental disorder that isn't deficiency.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 150
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-148",
+    "oldID": "U1",
+    "treeLevel": "Q3",
+    "treeBranch": "Q3-U (Universal — coherence)",
+    "questionType": "Type 2 (What IS X?)",
+    "domain": "Ontological",
+    "tier": "1",
+    "newType": "UniversalPrinciple",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "axiom schema or theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "constraintRole",
+    "moduleID": "M20",
+    "moduleTitle": "Universal Coherence / Fruits",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "Nihilism",
+    "propagationTest": "YES — Coherence universal propagates as meta-principle through all domains.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

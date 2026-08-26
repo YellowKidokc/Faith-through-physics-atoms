@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-130",
+  "nodeID": "tp:axioms/01/AX-130",
+  "claimID": "tp:AXIOMS/PRED18.1",
+  "name": "H0 Prediction 2025-2030",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "captured",
+  "claimClass": "prediction",
+  "statementTechnical": "H₀ tension resolves toward ~70.5 km/s/Mpc via χ-field dynamics by 2030.",
+  "statementPlain": "H₀ tension resolves toward ~70.5 km/s/Mpc via χ-field dynamics by 2030.",
+  "mathematicalForm": "H₀ = 70.5 ± 1.0 km/s/Mpc by 2030",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-108",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-109",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "field"
+  ],
+  "keywords": [
+    "PRED18.1",
+    "Q12",
+    "Material",
+    "Prediction"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "H₀ measurements converge outside predicted range. Tension resolves via systematic error, not new physics.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 132
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-130",
+    "oldID": "PRED18.1",
+    "treeLevel": "Q12",
+    "treeBranch": "Q12-G (Cosmological prediction)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Material",
+    "tier": "3",
+    "newType": "Prediction",
+    "logicalForce": "testable prediction",
+    "formalizableInLean": "metadata only",
+    "leanKind": "metadata / outside proof kernel",
+    "riskLevel": "medium-high",
+    "kernelRole": "metadataRole",
+    "moduleID": "M18",
+    "moduleTitle": "Protocol / Test Suite",
+    "spineRole": "empirical_test",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "—",
+    "worldviewsEliminated": "—",
+    "propagationTest": "Time-bound prediction — testable by 2030.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

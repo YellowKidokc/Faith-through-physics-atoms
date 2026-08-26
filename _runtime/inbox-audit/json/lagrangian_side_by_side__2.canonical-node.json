@@ -1,0 +1,89 @@
+{
+  "source_id": "lagrangian_side_by_side__2",
+  "title": "Lagrangian Side-by-Side Report",
+  "canonical_node": {
+    "axiom": "A disciplined formal model must behave consistently under a shared test bench, with explicit variables, regimes, and preregistered predictions.",
+    "definitions": [
+      "chi / chi_bar: coherence weight; higher means the system can carry ordered motion.",
+      "S_entropy / S_v1: entropy drag; higher means more disorder pressure.",
+      "W: resistance or grace leak; higher means the system resists alignment.",
+      "chi10: upward source term; coherence support, grace support, or Christ-source term.",
+      "Gamma9: downward sink term; decoherence drain, adversary sink, or collapse pressure.",
+      "xdot / Fdot / Fsum_dot: activity term; motion through the system.",
+      "V: stored potential cost; what the system has to carry or overcome."
+    ],
+    "derivation": [
+      "The report defines five shared regimes: balanced, resistance_drag, source_rich, sink_heavy, entropy_heavy.",
+      "Each candidate Lagrangian is evaluated under the same regimes and checked for dimension compatibility, response signs, Euler-Lagrange closure, and cross-model relations.",
+      "Preregistered predictions P1-P5, P7, P10 are tested against the canonical v2 model and wrong-control variants.",
+      "The wrong-control gauntlet rejects variants that break source/sink direction or resistance monotonicity.",
+      "Invariant search identifies algebraic symmetries under constrained transforms, not full Noether invariants."
+    ],
+    "action": "Run the same test bench on any candidate Lagrangian; require dimension compatibility, response sign checks, Euler-Lagrange closure, and preregistered predictions before accepting a model as disciplined.",
+    "boundary": [
+      "This report does not decide whether the framework is true.",
+      "It does not claim full Noether conserved quantities; only algebraic invariants under constrained transforms.",
+      "It does not derive theological relations from Euler-Lagrange equations; it only checks mechanical well-formedness.",
+      "It does not claim that passing the gauntlet proves physical validity."
+    ],
+    "test": [
+      "Dimension checks: PASS for all models.",
+      "Response signs: verify expected signs for S_entropy, S_v1, W, chi10, Gamma9.",
+      "Euler-Lagrange closure: check if equation solves cleanly.",
+      "Cross-model checks: anti_vs_spirit, llc_v2_zero_resistance_limit, llc_v1_core_reference, resistance_penalty_sign, source_sink_direction, historical_vs_canonical_note.",
+      "Preregistered predictions: P1-P5, P7, P10 all PASS.",
+      "Wrong-control gauntlet: canonical_v2 passes; gamma9_added, chi10_subtracted, resistance_ignored, source_sink_swapped are rejected."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "SymPy symbolic computation",
+      "Shared regime parameter sets",
+      "Preregistered prediction list",
+      "Wrong-control variant definitions"
+    ],
+    "dg2_new_capability": "Provides a reusable test bench for comparing Lagrangian candidates under identical regimes, with preregistered predictions and wrong-control rejection.",
+    "dg3_preserved_floor": "Preserves the historical LLC v1 as a reference and maintains the spirit-anti contrast pair.",
+    "dg4_collapse_if_removed": "If the test bench is removed, there is no disciplined way to compare candidates or reject wrong controls.",
+    "dg5_translation_registers": [
+      "chi/chi_bar -> coherence weight",
+      "S_entropy/S_v1 -> entropy drag",
+      "W -> resistance/grace leak",
+      "chi10 -> upward source",
+      "Gamma9 -> downward sink",
+      "xdot/Fdot/Fsum_dot -> activity",
+      "V -> stored potential cost"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodological test bench",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as a test harness; do not treat as proof of physical truth"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Interpreting passing the gauntlet as evidence for the theological framework.",
+      "Treating algebraic invariants as full Noether conserved quantities.",
+      "Assuming Euler-Lagrange closure implies physical validity.",
+      "Generalizing from the specific parameter regimes to all possible conditions."
+    ],
+    "kill_conditions": [
+      "If the test bench cannot be reproduced in SymPy.",
+      "If preregistered predictions fail on rerun.",
+      "If wrong-control variants pass the gauntlet cleanly.",
+      "If dimension checks fail for any model."
+    ],
+    "lean_target": "A disciplined formal model that behaves consistently under a shared test bench."
+  },
+  "plain_summary": "This document is a test harness for comparing Lagrangian models under identical regimes. It does not claim the framework is true; it checks mechanical consistency, dimension compatibility, and preregistered predictions. The canonical v2 model passes all checks, while several deliberately wrong variants are rejected. The report explicitly limits itself to algebraic invariants, not full Noether conservation.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\lagrangian_side_by_side__2.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\inbox-audit\\json\\lagrangian_side_by_side__2.canonical-node.json"
+  }
+}

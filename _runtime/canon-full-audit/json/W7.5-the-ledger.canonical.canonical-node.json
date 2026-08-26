@@ -1,0 +1,81 @@
+{
+  "source_id": "W7.5-the-ledger.canonical",
+  "title": "The Ledger",
+  "canonical_node": {
+    "axiom": "Claims are cheap; corrections are the currency. Every claim on the site is only as strong as its entry in this ledger, which is permanently open and amended, never erased.",
+    "definitions": [
+      "KILLED: claim is false as written and removed.",
+      "REDUCED: claim is true but overstated; reduced to what evidence carries.",
+      "OPEN: claim stands but has open items.",
+      "REPAIRED: claim was wrong as written but corrected to a stronger form.",
+      "DERIVATION OWED: claim stands but formal derivation is pending.",
+      "STRENGTHENED: claim survived audit and was improved."
+    ],
+    "derivation": [
+      "Two hostile audit passes were run against all site claims.",
+      "Each claim was tested against the strongest complete version.",
+      "Dispositions were assigned: KILLED, REDUCED, OPEN, REPAIRED, DERIVATION OWED, STRENGTHENED.",
+      "The ledger records these dispositions and the corrections.",
+      "The ledger itself is the canonical record; other pages must conform to it."
+    ],
+    "action": "Maintain this ledger as the authoritative record of claim status. When a claim is killed, remove or correct it site-wide. When a claim is reduced, restate it to match the evidence. When derivation is owed, list it in the queue and do not present it as proven. When a claim is strengthened, keep the strengthened form and note the audit.",
+    "boundary": [
+      "This page does not itself prove any theological or physical claim; it records audit outcomes.",
+      "It does not upgrade metaphysical claims to physics; it labels them as formal models or analogies.",
+      "It does not claim that any derivation is complete when the ledger says DERIVATION OWED.",
+      "It does not erase past errors; it amends them."
+    ],
+    "test": [
+      "For every claim on any page, there is a corresponding ledger entry with a disposition.",
+      "If a claim is marked KILLED, it no longer appears as a live claim.",
+      "If a claim is marked OVERSTATED, the page wording matches the reduced claim.",
+      "If a claim is marked DERIVATION OWED, the derivation is listed in the queue and not cited as complete.",
+      "The ledger itself is never erased; amendments are appended."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "The audit standard (adopted July 9, 2026)",
+      "The canonical sources referenced (the-math.html, trinity-chain.html, consciousness-chain.html, etc.)",
+      "The Lean 4 verification for the Maxwell coupling invariant and the Cross operator uniqueness",
+      "The Myerson - Satterthwaite mechanism design result"
+    ],
+    "dg2_new_capability": "Provides a self-correcting audit trail for all claims on the site, enabling the framework to distinguish between established results, overstated claims, and pending derivations.",
+    "dg3_preserved_floor": "Preserves the strongest verified results (e.g., Maxwell coupling invariant, Cross operator uniqueness, triadic termination structure) while explicitly labeling their scope and open questions.",
+    "dg4_collapse_if_removed": "Without this ledger, the site would lose its mechanism for tracking corrections, allowing killed or overstated claims to persist and undermining the framework's credibility as a research program.",
+    "dg5_translation_registers": [
+      "Audit disposition terms (KILLED, REDUCED, OPEN, REPAIRED, DERIVATION OWED, STRENGTHENED)",
+      "Formal model vs. operational physics distinction",
+      "Lean-verified inside declared axioms vs. unverified analogy"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "Meta-audit record",
+    "proof_label": "NARRATIVE_ANCHOR",
+    "grade": "B",
+    "recommended_atom_action": "Maintain as canonical audit ledger; do not treat as a source of new theological or physical claims."
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The ledger itself could be seen as proof that the framework is self-correcting, but that is a process claim, not a substantive result.",
+      "The phrase 'the deepest result' about the method could be seen as self-congratulatory.",
+      "The ledger lists many 'RIGHT' items that are still labeled as formal models or analogies; they must not be upgraded to physics."
+    ],
+    "kill_conditions": [
+      "If the ledger is used to claim that all listed 'RIGHT' items are proven physics, it would be an overstatement.",
+      "If the ledger is used to claim that the audit process itself is infallible, it would be false.",
+      "If the ledger is not updated when new corrections are needed, it fails its purpose."
+    ],
+    "lean_target": "Formalize the audit process as a state machine: claim status transitions (e.g., from OVERSTATED to REDUCED) with explicit conditions."
+  },
+  "plain_summary": "This document is the site's correction ledger. It records which claims were killed, reduced, or strengthened after two hostile audits. It does not itself prove anything; it tracks the status of claims. The strongest verified results are the Maxwell coupling invariant and the Cross operator uniqueness, both machine-verified in Lean, but they carry scope labels. Many other claims are reduced to formal models or analogies, and several derivations are owed. The ledger is the mechanism that keeps the site honest.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-source\\W7.5-the-ledger.canonical.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\canon-full-audit\\json\\W7.5-the-ledger.canonical.canonical-node.json"
+  }
+}

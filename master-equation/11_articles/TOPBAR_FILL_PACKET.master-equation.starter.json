@@ -1,0 +1,295 @@
+{
+  "page": {
+    "id": "MEQ-001",
+    "title": "Master Equation",
+    "series": "Canonical Foundations",
+    "subtitle": "A canonical page packet connecting the master equation, atom claims, proof support, and math translation layer.",
+    "kicker": "Master Equation / Canonical Foundations",
+    "byline": "David Lowe · Faith Through Physics · July 2026",
+    "sourceAtoms": [
+      "tp:master-equation/01/001",
+      "tp:master-equation/01/002"
+    ],
+    "prev": {
+      "label": "",
+      "url": ""
+    },
+    "next": {
+      "label": "",
+      "url": ""
+    }
+  },
+  "terms": [
+    {
+      "id": "coherence",
+      "label": "Coherence",
+      "tone": "gold",
+      "front": {
+        "eyebrow": "Core term",
+        "subtitle": "Everything holding together",
+        "equation": "chi",
+        "summary": "Coherence names the degree to which a system remains meaningfully ordered instead of falling apart.",
+        "rows": [
+          {
+            "label": "Plain meaning",
+            "value": "The parts fit together and stay intelligible."
+          },
+          {
+            "label": "Mathematical role",
+            "value": "The output variable the master equation is trying to describe."
+          }
+        ]
+      },
+      "back": {
+        "eyebrow": "Review note",
+        "rows": [
+          {
+            "label": "Source",
+            "value": "Master-equation atom packet."
+          },
+          {
+            "label": "Risk",
+            "value": "Needs careful definition so it does not become a vague synonym for goodness."
+          }
+        ]
+      },
+      "proofUrl": ""
+    },
+    {
+      "id": "external-cost-bearer",
+      "label": "External Cost-Bearer",
+      "tone": "teal",
+      "front": {
+        "eyebrow": "Formal bridge",
+        "subtitle": "The source outside the closed system",
+        "equation": "T_ext = D",
+        "summary": "An external cost-bearer is the only solution class offered by the trilemma atom for full justice and full mercy together.",
+        "rows": [
+          {
+            "label": "Closed system failure",
+            "value": "If the offender pays, mercy fails. If nobody pays, justice fails."
+          },
+          {
+            "label": "Resolution",
+            "value": "A voluntary source outside the damaged exchange absorbs the cost."
+          }
+        ]
+      },
+      "back": {
+        "eyebrow": "Verification",
+        "rows": [
+          {
+            "label": "Source atom",
+            "value": "tp:master-equation/01/001"
+          },
+          {
+            "label": "Kill condition",
+            "value": "Show a closed-system mechanism satisfying justice, mercy, and free will without external transfer."
+          }
+        ]
+      },
+      "proofUrl": ""
+    }
+  ],
+  "claims": [
+    {
+      "id": "MEQ-C001",
+      "sentence": "The master equation treats coherence as a product of required factors rather than a sum of optional contributions.",
+      "formal": "chi_total = integral(G * M * E * S * T * K * R * Q * F * C) dV dt implies that any zero factor collapses the product.",
+      "status": "draft",
+      "derivation": [
+        "A product is zero when any required factor is zero.",
+        "The proposed equation places the core domains in multiplicative relation."
+      ],
+      "killCondition": "Show that a missing required factor can be compensated for by increasing another factor without changing the intended model.",
+      "proofIds": [
+        "MEQ-P001"
+      ]
+    },
+    {
+      "id": "MEQ-C002",
+      "sentence": "In a closed system, full justice and full mercy cannot both be satisfied after real damage without an external voluntary cost-bearer.",
+      "formal": "Given D > 0, J = T_A/D, M = 1 - T_B/D, and T_A = T_B, J = 1 - M; therefore J = 1 and M = 1 are contradictory unless an external transfer T_ext = D is introduced voluntarily.",
+      "status": "partial",
+      "derivation": [
+        "The trilemma atom defines justice and mercy under strong budget balance.",
+        "Budget balance forces justice and mercy into opposition.",
+        "An external voluntary transfer changes the system boundary."
+      ],
+      "killCondition": "Exhibit a closed-system mechanism that achieves J = 1, M = 1, and W = 1 simultaneously without an external transfer.",
+      "proofIds": [
+        "MEQ-P002"
+      ]
+    }
+  ],
+  "proofs": [
+    {
+      "id": "MEQ-P001",
+      "title": "Product Collapse Rule",
+      "status": "draft",
+      "summary": "In ordinary multiplication, the entire product becomes zero when any required factor is zero.",
+      "claimIds": [
+        "MEQ-C001"
+      ],
+      "url": ""
+    },
+    {
+      "id": "MEQ-P002",
+      "title": "Trilemma Impossibility Atom",
+      "status": "partial",
+      "summary": "The master-equation atom ME-01-001 states the closed-system contradiction and the external cost-bearer solution class.",
+      "claimIds": [
+        "MEQ-C002"
+      ],
+      "url": ""
+    }
+  ],
+  "mtl": [
+    {
+      "id": "MEQ-MTL-001",
+      "format": "box",
+      "title": "Master Equation for Total Coherence",
+      "equation": "chi = integral(G * M * E * S * T * K * R * Q * F * C) dV dt",
+      "wordEquation": "coherence = the accumulated product of grace, meaning, entropy, self, time, knowledge, relation, quantum, faith, and Christ across reality",
+      "structuralInsight": "The terms are multiplied, not added. If any required factor goes to zero, the whole product collapses.",
+      "plain": "Everything essential has to be present together. You cannot replace a missing foundation by increasing a different one.",
+      "influence": "The equation strengthens when required factors remain present together; it collapses when one required factor disappears."
+    },
+    {
+      "id": "MEQ-MTL-002",
+      "format": "box",
+      "title": "Justice and Mercy Closed-System Constraint",
+      "equation": "J = T_A/D, M = 1 - T_B/D, T_A = T_B => J = 1 - M",
+      "wordEquation": "justice = offender payment divided by damage, mercy = one minus victim burden divided by damage, closed balance makes justice equal one minus mercy",
+      "structuralInsight": "The equality T_A = T_B is the closed-system boundary. Under that boundary, justice and mercy move in opposite directions.",
+      "plain": "If the same internal payment must satisfy both sides, making justice complete makes mercy incomplete, and making mercy complete makes justice incomplete.",
+      "influence": "The constraint fails only if the system boundary changes or the definition of justice, mercy, damage, or transfer changes."
+    }
+  ],
+  "verification": [
+    {
+      "title": "Page Contract",
+      "rows": [
+        [
+          "Shell",
+          "canonical"
+        ],
+        [
+          "Reading levels",
+          "3"
+        ],
+        [
+          "Source atoms",
+          "2"
+        ],
+        [
+          "Status",
+          "draft"
+        ]
+      ]
+    },
+    {
+      "title": "Claims",
+      "rows": [
+        [
+          "Total",
+          "2"
+        ],
+        [
+          "Verified",
+          "0"
+        ],
+        [
+          "Partial",
+          "1"
+        ],
+        [
+          "Draft",
+          "1"
+        ]
+      ]
+    },
+    {
+      "title": "Math Translation",
+      "rows": [
+        [
+          "Equations",
+          "2"
+        ],
+        [
+          "Plain translations",
+          "2"
+        ],
+        [
+          "Structural insights",
+          "2"
+        ],
+        [
+          "Format",
+          "box"
+        ]
+      ]
+    },
+    {
+      "title": "Media",
+      "rows": [
+        [
+          "Read",
+          "pending"
+        ],
+        [
+          "Debate",
+          "pending"
+        ],
+        [
+          "Deep dive",
+          "pending"
+        ],
+        [
+          "Critique",
+          "pending"
+        ]
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "id": "read",
+      "label": "Read Aloud",
+      "url": ""
+    },
+    {
+      "id": "debate",
+      "label": "Debate",
+      "url": ""
+    },
+    {
+      "id": "deep",
+      "label": "Deep Dive",
+      "url": ""
+    },
+    {
+      "id": "critique",
+      "label": "Critique",
+      "url": ""
+    }
+  ],
+  "audit": {
+    "right": [
+      "The packet preserves traceability back to the master-equation atom claims.",
+      "The justice-mercy claim includes a concrete kill condition instead of a vague challenge."
+    ],
+    "overstated": [
+      "The master equation should remain draft until the variables and scope are fully formalized.",
+      "The trilemma page should distinguish formal algebraic constraint from theological identification."
+    ],
+    "wrong": [
+      "No final empirical or Lean verification URL has been supplied in this starter packet."
+    ]
+  },
+  "reader_layers": {
+    "highschool": "<h2>The Idea, Simply</h2><p>The master equation says that reality does not hold together because of one ingredient alone. It holds together when the required parts stay connected at the same time.</p><p><span class=\"ftp-claim-sentence\" data-claim-id=\"MEQ-C001\">The master equation treats coherence as a product of required factors rather than a sum of optional contributions.</span></p><p>That means one missing foundation cannot be replaced by simply adding more of another one.</p><p><span class=\"ftp-claim-sentence\" data-claim-id=\"MEQ-C002\">In a closed system, full justice and full mercy cannot both be satisfied after real damage without an external voluntary cost-bearer.</span></p>",
+    "college": "<h2>The Argument</h2><p>The master equation models total coherence as an accumulated product over required domains. Its structural claim is multiplicative: the factors are not interchangeable decorations.</p><p><span class=\"ftp-claim-sentence\" data-claim-id=\"MEQ-C001\">The master equation treats coherence as a product of required factors rather than a sum of optional contributions.</span></p><p>The same logic appears in the trilemma atom. In a closed exchange after damage, justice and mercy cannot both be maximized if the only available transfers remain inside the damaged system.</p><p><span class=\"ftp-claim-sentence\" data-claim-id=\"MEQ-C002\">In a closed system, full justice and full mercy cannot both be satisfied after real damage without an external voluntary cost-bearer.</span></p>",
+    "phd": "<h2>The Formal Statement</h2><p>Let chi denote total coherence under the proposed cross-domain model. The equation places its required terms in product relation under integration across the relevant domain. The immediate mathematical consequence is zero-factor collapse.</p><p><span class=\"ftp-claim-sentence\" data-claim-id=\"MEQ-C001\">The master equation treats coherence as a product of required factors rather than a sum of optional contributions.</span></p><p>For the trilemma atom, assume D > 0, J = T_A/D, M = 1 - T_B/D, and strong budget balance T_A = T_B. Then J = 1 - M, so J = 1 and M = 1 cannot be jointly satisfied within the closed system. A voluntary external transfer changes the boundary condition.</p><p><span class=\"ftp-claim-sentence\" data-claim-id=\"MEQ-C002\">In a closed system, full justice and full mercy cannot both be satisfied after real damage without an external voluntary cost-bearer.</span></p>"
+  }
+}

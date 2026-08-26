@@ -1,0 +1,77 @@
+{
+  "source_id": "isolator_protocol",
+  "title": "Isolator Protocol  -  Adjudicating Endogenous vs Exogenous Restoration",
+  "canonical_node": {
+    "axiom": "For any coherence dynamics dc/dt = omega(s)*sigma(s)*(1-c) - delta(s)*c, if delta(s) >= delta_min > 0 and omega(s)*sigma(s) <= K_eff < infinity, then at equilibrium c* <= K_eff/(K_eff + delta_min) < 1. Perfect coherence (c*=1) is impossible with only a bounded endogenous effective source.",
+    "definitions": [
+      "Endogenous source: sigma(s) is computable from the system's internal state; effective source omega(s)*sigma(s) is bounded by a finite constant independent of state.",
+      "Exogenous source: sigma(s) includes a contribution not determined by the system state; effective source can be made arbitrarily large by increasing an external term.",
+      "Non-coercive grace: received contribution omega*sigma -> 0 as openness/faith omega -> 0; source sigma may remain available but is not coercively received by a closed system.",
+      "Faith: coupling, not production of grace."
+    ],
+    "derivation": [
+      "From the differential equation, at equilibrium dc/dt = 0, so omega(s)*sigma(s)*(1-c*) = delta(s)*c*.",
+      "Solving for c*: c* = omega(s)*sigma(s) / (omega(s)*sigma(s) + delta(s)).",
+      "Given omega(s)*sigma(s) <= K_eff and delta(s) >= delta_min, c* <= K_eff / (K_eff + delta_min).",
+      "Since K_eff is finite and delta_min > 0, K_eff/(K_eff+delta_min) < 1, so c* < 1.",
+      "Thus perfect coherence (c*=1) is impossible with bounded endogenous source."
+    ],
+    "action": "When adjudicating a worldview's restoration claims, classify its source as endogenous or exogenous using the formal criteria, and apply the adjudication rules: no relabeling without identifiability, curve-fitting is not proof, internal inconsistency is decisive, and incommensurability is allowed but costly.",
+    "boundary": [
+      "Does not prove that any particular worldview's source is exogenous or endogenous; only provides formal criteria and obligations.",
+      "Does not establish that grace exists or is non-coercive; only defines what non-coercive would mean in this model.",
+      "Does not claim that scalar coherence is the only valid framework; allows incommensurability but with costs.",
+      "Does not assert that the Lean proofs are correct or complete; they are referenced but not verified here."
+    ],
+    "test": [
+      "Check that the equilibrium bound derivation is mathematically valid given the assumptions.",
+      "Check that the classification of a source as endogenous or exogenous follows the formal criteria, not just theological labels.",
+      "Check that any claim of perfect coherence with bounded endogenous source is flagged as inconsistent.",
+      "Check that the Lean proofs referenced actually exist and prove the stated theorems."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Mathematical model of coherence dynamics (differential equation).",
+      "Lean 4 proofs in DharmaMirror/Isolator.lean (referenced, not verified)."
+    ],
+    "dg2_new_capability": "Provides a formal criterion for adjudicating endogenous vs exogenous restoration claims, and a bound on achievable coherence under bounded endogenous sources.",
+    "dg3_preserved_floor": "Preserves the distinction between source and coupling (grace vs faith) and allows for incommensurable frameworks.",
+    "dg4_collapse_if_removed": "Without the formal bound, the adjudication rules lose their mathematical grounding and become arbitrary; the distinction between endogenous and exogenous becomes purely semantic.",
+    "dg5_translation_registers": [
+      "Mathematics: differential equations, equilibrium analysis.",
+      "Theology: grace, faith, source, coupling.",
+      "Philosophy: endogenous vs exogenous, incommensurability."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "formal mathematical result with theological application",
+    "proof_label": "LEAN_GUARDRAIL_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve as formal guardrail; do not upgrade to proof of theological claims"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming that the formal bound proves the impossibility of perfect coherence in any real system without verifying assumptions.",
+      "Claiming that the Lean proofs are verified without checking them.",
+      "Claiming that the classification of a specific worldview's source is settled without applying the criteria to actual data.",
+      "Claiming that non-coercive grace is proven by the model rather than merely defined."
+    ],
+    "kill_conditions": [
+      "If the Lean proofs are found to be incorrect or missing.",
+      "If the differential equation model is shown to be inapplicable to the intended domain.",
+      "If the definitions of endogenous/exogenous are shown to be inconsistent or vacuous."
+    ],
+    "lean_target": "Formalize and verify the four Lean theorems: bounded_endogenous_equilibrium_bound, bounded_endogenous_cannot_perfect, unbounded_source_perfect_attractor, faith_is_coupling_not_source."
+  },
+  "plain_summary": "This document presents a mathematical bound showing that with a bounded endogenous source and positive decay, perfect coherence is impossible. It then uses this to define criteria for classifying restoration sources as endogenous or exogenous, and sets proof obligations for worldviews. It also defines non-coercive grace as a coupling-dependent reception. The document is coherent as a formal framework, but its theological applications are not proven; they are obligations and definitions.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\isolator_protocol.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\isolator_protocol.canonical-node.json"
+  }
+}

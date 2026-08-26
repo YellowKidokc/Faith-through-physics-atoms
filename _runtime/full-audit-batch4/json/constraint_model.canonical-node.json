@@ -1,0 +1,71 @@
+{
+  "source_id": "constraint_model",
+  "title": "constraint_model.ipynb",
+  "canonical_node": {
+    "axiom": "A strategy is admissible only if it satisfies all six constraints: justice, mercy, freewill, love, entropy, and holiness.",
+    "definitions": [
+      "Constraint function: a function taking a 10-parameter strategy vector and returning True/False based on threshold conditions.",
+      "Parameter vector: 10 continuous/discrete parameters including payment_magnitude, cost_to_sinner, coercion_level, relational_access, negentropy_input, corruption_addressed, voluntary_by_redeemer, scope, permanence, source_is_external.",
+      "All-passed boolean: True if all six constraint functions return True for a given parameter vector."
+    ],
+    "derivation": [
+      "Define six constraint functions with threshold conditions on the parameter vector.",
+      "Evaluate a strategy by applying all six constraints and checking if all pass.",
+      "Use grid and random search to explore the parameter space for configurations that satisfy all constraints.",
+      "Verify uniqueness of the cross configuration by exhaustive search."
+    ],
+    "action": "Given a strategy parameter vector, evaluate all six constraints and return the count of satisfied constraints and whether all are satisfied. Use optimization to search for all-passing configurations.",
+    "boundary": [
+      "Does not define the specific threshold values for each constraint.",
+      "Does not apply the model to specific biblical strategies; that is the role of test09_constraint_satisfaction.ipynb.",
+      "Does not extend to 100,000 random trials; that is the role of free_body_model.ipynb."
+    ],
+    "test": [
+      "For any parameter vector, the constraint functions return deterministic True/False.",
+      "The optimization search should find no all-passing configuration other than the cross configuration.",
+      "The notebook should be reproducible in Google Colab."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Python runtime with numpy and matplotlib (typical Colab environment)."
+    ],
+    "dg2_new_capability": "Provides a reusable constraint satisfaction engine for evaluating strategies against six constraints.",
+    "dg3_preserved_floor": "Preserves the ability to evaluate any strategy parameter vector against the six constraints.",
+    "dg4_collapse_if_removed": "Without this model, the formal test (test09) and the Monte Carlo extension (free_body_model) would lack the constraint functions and evaluation framework.",
+    "dg5_translation_registers": [
+      "constraint_model.ipynb",
+      "test09_constraint_satisfaction.ipynb",
+      "free_body_model.ipynb"
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "yes"
+  },
+  "classification": {
+    "claim_class": "methodology",
+    "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+    "grade": "B",
+    "recommended_atom_action": "preserve"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "The document claims exhaustive search verifies uniqueness, but the search is over a discretized grid and random sampling, not a formal proof.",
+      "The threshold values are not specified, so the constraints are not fully defined.",
+      "The claim that the cross configuration is the only solution is not formally proven."
+    ],
+    "kill_conditions": [
+      "If the constraint functions are not implemented as described.",
+      "If the optimization finds an all-passing configuration other than the cross configuration.",
+      "If the notebook is not reproducible."
+    ],
+    "lean_target": "Formalize the constraint functions and threshold values, and prove uniqueness of the cross configuration."
+  },
+  "plain_summary": "This notebook defines a constraint satisfaction engine with six constraints and a 10-parameter strategy space. It evaluates strategies and searches for all-passing configurations, claiming the cross configuration is unique. It is a methodology tool, not a formal proof.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "D:\\GitHub\\Faith-through-physics-atoms\\_INBOX_HARVEST_TRUTH_CARDS\\constraint_model.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\full-audit-batch4\\json\\constraint_model.canonical-node.json"
+  }
+}

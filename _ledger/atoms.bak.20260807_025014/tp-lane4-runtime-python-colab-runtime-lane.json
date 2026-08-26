@@ -1,0 +1,39 @@
+{
+  "atom_id": "tp:lane4/runtime/python-colab-runtime-lane",
+  "atom_uid": "sha256:2f3814da2cbc6589c5a99993ba2a686f9e44d51102e84fb3bdd8cdf0dc2b3eb3",
+  "title": "Python Colab Runtime Lane",
+  "claim": "Python and Colab receipts establish runtime behavior, not formal proof.",
+  "domain": "runtime",
+  "lane": "Python/Colab",
+  "claim_class": "runtime_result",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Lane labels are interpreted according to their declared evidentiary scope."
+  ],
+  "definitions": [],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [],
+  "negative_guards": [],
+  "kill_conditions": [],
+  "proof_label": "PYTHON_RUNTIME_SUPPORTED",
+  "current_status": "active_candidate",
+  "rerun_status": "not_applicable",
+  "source_artifacts": [
+    "LANE4_ATOM_LEDGER_BUILD_REPORT.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-07-28T00:00:00+00:00",
+      "event_type": "atom_seeded",
+      "result": "recorded",
+      "artifact_path": "LANE4_ATOM_LEDGER_BUILD_REPORT.md",
+      "meaning": "Initial Lane 4 fixture created.",
+      "limits": "Seed status is not additional evidence.",
+      "reviewer": "Codex",
+      "lane": "Python/Colab",
+      "event_id": "sha256:246d4230233e09f3b6bdb467801a4b688379d3343e3eaeef11c0ef478ec2519d"
+    }
+  ],
+  "source_claim_id": "PYTHON_COLAB_RUNTIME_LANE"
+}

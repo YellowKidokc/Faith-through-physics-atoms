@@ -1,0 +1,100 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-025",
+  "nodeID": "tp:axioms/01/AX-025",
+  "claimID": "tp:AXIOMS/T3.1",
+  "name": "Coherence Cannot Self-Increase",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "proposed",
+  "claimClass": "theorem",
+  "statementTechnical": "Macro-coherence (thermodynamic negentropy) C_macro cannot self-increase. Systems require external coherence input to evolve toward higher organization. [Macro-coherence is the coarse-grained measure of order; micro-coherence is conserved but redistributes.]",
+  "statementPlain": "Macro-coherence (thermodynamic negentropy) C_macro cannot self-increase. Systems require external coherence input to evolve toward higher organization. [Macro-coherence is the coarse-grained measure of order; micro-coherence is conserved but redistributes.]",
+  "mathematicalForm": "dC_macro/dt ≤ 0 (closed system, no external input)",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-023",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-024",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "coherence",
+    "entropy",
+    "proof",
+    "conservation"
+  ],
+  "keywords": [
+    "T3.1",
+    "Q3",
+    "Ontological",
+    "Theorem"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show a closed system spontaneously increasing coherence. Demonstrate dC/dt > 0 without external input. This would be equivalent to violating the 2nd Law.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 26
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-025",
+    "oldID": "T3.1",
+    "treeLevel": "Q3",
+    "treeBranch": "Q3-K (Coherence theorem — 2nd Law analog)",
+    "questionType": "Type 1 (Does X hold?)",
+    "domain": "Ontological",
+    "tier": "1",
+    "newType": "Theorem",
+    "logicalForce": "derivable theorem",
+    "formalizableInLean": "yes",
+    "leanKind": "theorem target",
+    "riskLevel": "medium",
+    "kernelRole": "proofTarget",
+    "moduleID": "M03",
+    "moduleTitle": "Coherence Engine",
+    "spineRole": "formal_engine",
+    "boundaryCondition": "—",
+    "fourModeRelevance": "— (pre-observer level)",
+    "worldviewsEliminated": "Materialism (if matter is fundamental, coherence constraint doesn't apply)",
+    "propagationTest": "YES — CRITICAL THEOREM. This is the engine driving the need for grace (external input). Without this, the entire grace framework collapses.",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}

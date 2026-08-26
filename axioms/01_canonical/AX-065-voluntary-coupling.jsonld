@@ -1,0 +1,98 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/axioms/01/AX-065",
+  "nodeID": "tp:axioms/01/AX-065",
+  "claimID": "tp:AXIOMS/BC8",
+  "name": "Voluntary Coupling",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "GPT (OpenAI)",
+      "tp:role": "ai-collaborator"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-07-28",
+  "dateModified": "2026-07-28",
+  "version": "0.1.0",
+  "nodeType": "claim",
+  "domainType": "axioms",
+  "stage": "01_canonical",
+  "status": "classified",
+  "claimClass": "boundary",
+  "statementTechnical": "Coupling must be voluntary — free will preserved. V(Ψ) ∈ [0,1].",
+  "statementPlain": "Coupling must be voluntary — free will preserved. V(Ψ) ∈ [0,1].",
+  "mathematicalForm": "V(Ψ) ∈ [0,1]; voluntary; not predetermined",
+  "axiomRoot": "https://faiththruphysics.com/claims/axioms/01/AX-001",
+  "edges": [
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-062",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    },
+    {
+      "type": "dependsOn",
+      "target": "tp:axioms/01/AX-064",
+      "propagates": true,
+      "note": "Imported from Master Axiom depends_on column."
+    }
+  ],
+  "tags": [
+    "boundary",
+    "free-will"
+  ],
+  "keywords": [
+    "BC8",
+    "Q8",
+    "Divine",
+    "BoundaryCondition"
+  ],
+  "verificationStatus": "registry-import",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Show consciousness has no causal power over choices (epiphenomenalism). Demonstrate all decisions are deterministic. Show coupling can be forced (grace irresistible) without contradiction.",
+  "sourceReference": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+  "sourceWorkbook": {
+    "path": "C:\\theophysics\\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\\CANONICAL\\03_AXIOMS\\01_canonical\\Master_Axiom.xlsx",
+    "sheet": "Master Axiom",
+    "row": 66
+  },
+  "axiomRegistry": {
+    "axiomID": "AX-065",
+    "oldID": "BC8",
+    "treeLevel": "Q8",
+    "treeBranch": "Q8-H (Eighth boundary condition — free will)",
+    "questionType": "Type 4 (What must X be?)",
+    "domain": "Divine",
+    "tier": "1",
+    "newType": "BoundaryCondition",
+    "logicalForce": "model constraint",
+    "formalizableInLean": "yes",
+    "leanKind": "constraint predicate",
+    "riskLevel": "medium",
+    "kernelRole": "constraintRole",
+    "moduleID": "M07",
+    "moduleTitle": "Boundary Conditions",
+    "spineRole": "bridge_guard",
+    "boundaryCondition": "BC8",
+    "fourModeRelevance": "M1 (Agentic — voluntary coupling IS agency), M4 (Grace Attenuation — if agents refuse coupling, grace cannot reach them)",
+    "worldviewsEliminated": "Hard Determinism, Eliminativism, Calvinism (irresistible grace version)",
+    "propagationTest": "YES — BC8 propagates to moral responsibility, sin as genuine choice, and the necessity of faith (voluntary acceptance).",
+    "intendedStatus": "proposed",
+    "importStatusReason": "Status lowered when needed to satisfy dependency monotonicity."
+  }
+}
