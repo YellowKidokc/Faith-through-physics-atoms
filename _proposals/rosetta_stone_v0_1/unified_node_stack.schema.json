@@ -1,0 +1,354 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/atlas/unified-node-stack/v0.1",
+  "title": "Theophysics Unified Node Stack",
+  "description": "One-node, many-facet envelope for generalized-question pre-pass, unified classification, and sparse Atlas facet scoring. Candidate-only; no canon promotion.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "node_id", "node_core", "question_pass", "classification", "facets", "governance", "provenance", "native"],
+  "properties": {
+    "schema_version": {"const": "atlas-unified-node/v0.1"},
+    "node_id": {"type": "string", "minLength": 1},
+    "node_core": {"$ref": "#/$defs/nodeCore"},
+    "question_pass": {"$ref": "#/$defs/questionPass"},
+    "classification": {"$ref": "#/$defs/classification"},
+    "facets": {"$ref": "#/$defs/facets"},
+    "governance": {"$ref": "#/$defs/governance"},
+    "provenance": {"$ref": "#/$defs/provenance"},
+    "native": {"type": "object", "description": "Unmodified or minimally wrapped native source record. Source fields are preserved here rather than rewritten."}
+  },
+  "$defs": {
+    "nullableString": {"type": ["string", "null"]},
+    "stringArray": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "nodeCore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "node_kind", "truth_bearing"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "node_kind": {"type": "string", "enum": ["claim", "evidence", "equation", "bridge", "question", "protocol", "paper", "translation", "objection", "result", "audience", "container"]},
+        "truth_bearing": {"type": "boolean"},
+        "canonical_uri": {"$ref": "#/$defs/nullableString"},
+        "primary_claim": {"$ref": "#/$defs/nullableString"},
+        "aliases": {"$ref": "#/$defs/stringArray"}
+      }
+    },
+    "questionPass": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "generalized_questions"],
+      "properties": {
+        "status": {"type": "string", "enum": ["not_run", "complete", "partial", "error", "not_applicable"]},
+        "api_name": {"type": "string"},
+        "prompt_version": {"type": "string"},
+        "model": {"$ref": "#/$defs/nullableString"},
+        "ran_at": {"$ref": "#/$defs/nullableString"},
+        "generalized_questions": {"type": "array", "items": {"$ref": "#/$defs/generalizedQuestion"}}
+      }
+    },
+    "generalizedQuestion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["question_id", "question", "answer"],
+      "properties": {
+        "question_id": {"type": "string", "enum": ["q1_before", "q2_capability", "q3_collapse", "q4_translation"]},
+        "question": {"type": "string", "enum": ["What must exist before this?", "What can this do that nothing before it could?", "What breaks if this is removed?", "What does this look like in another domain?"]},
+        "answer": {"$ref": "#/$defs/nullableString"},
+        "source_spans": {"type": "array", "items": {"type": "string"}},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_type", "claim_type_status", "proof_label", "proof_class", "display_grade", "domains", "primary_domain", "epistemic_layer", "blast_radius", "primary_law", "bridge_grade"],
+      "properties": {
+        "claim_type": {"type": ["string", "null"], "enum": ["AXIOM", "DEFINITION", "BOUNDARY", "LEMMA", "THEOREM", "COROLLARY", "MODEL", "HYPOTHESIS", "PREDICTION", "PROTOCOL", "EVIDENCE", "BRIDGE", "IDENTIFICATION", "OPEN", "CLOSURE", null]},
+        "claim_type_status": {"type": "string", "enum": ["adapter_candidate", "model_candidate", "human_confirmed", "not_applicable"]},
+        "proof_label": {"type": "string", "enum": ["NOT_ESTABLISHED", "ISOMORPHIC_EVENT_CANDIDATE", "BRIDGE_DECLARED", "LEAN_GUARDRAIL_SUPPORTED", "LEAN_FULL_VERIFIED", "PYTHON_RUNTIME_SUPPORTED", "ABDUCTIVELY_FAVORED", "NARRATIVE_ANCHOR", "QUARANTINE", "RERUN_OWED", "RETIRED"]},
+        "proof_class": {"type": ["string", "null"], "enum": ["D", "S", "L", "M", "H", "E", "BR", "T", "C", "PM", "PH", null]},
+        "display_grade": {"type": ["string", "null"], "enum": ["A", "B", "C", "D", "E", "F", null]},
+        "domains": {"type": "array", "items": {"$ref": "#/$defs/domain"}, "uniqueItems": true},
+        "primary_domain": {"type": ["string", "null"], "enum": ["theology", "physics", "mathematics", "cross-domain", "evidence", "consciousness", "speculative", "information", "moral-decline", "psychology", "economics", "education", "history", null]},
+        "epistemic_layer": {"type": ["string", "null"], "enum": ["L1", "L2", "L3", "L4", null]},
+        "blast_radius": {"type": ["string", "null"], "enum": ["INERT", "LOCAL", "STRUCTURAL", null]},
+        "primary_law": {"$ref": "#/$defs/lawIdNullable"},
+        "bridge_grade": {"type": ["string", "null"], "enum": ["C0", "C1", "C2", "C3", "C4", "C5", "C6", null]},
+        "letter_grade": {"type": ["string", "null"], "enum": ["A", "B", "C", "D", "—", null]},
+        "rationale": {"$ref": "#/$defs/nullableString"}
+      }
+    },
+    "domain": {"type": "string", "enum": ["theology", "physics", "mathematics", "cross-domain", "evidence", "consciousness", "speculative", "information", "moral-decline", "psychology", "economics", "education", "history"]},
+    "lawId": {"type": "string", "pattern": "^L(0[1-9]|10)$"},
+    "lawIdNullable": {"type": ["string", "null"], "pattern": "^L(0[1-9]|10)$"},
+    "chiVariable": {"type": "string", "enum": ["G", "M", "E", "S_eff", "T", "K", "R", "Q", "F", "C_W"]},
+    "facetMode": {"type": "string", "enum": ["source_projection", "document_score", "runtime_result"]},
+    "scorerStatus": {"type": "string", "enum": ["not_run", "complete", "partial", "error", "not_applicable"]},
+    "facets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "axiom_rosetta": {"$ref": "#/$defs/axiomRosettaFacet"},
+        "master_equation": {"$ref": "#/$defs/masterEquationFacet"},
+        "ten_laws": {"$ref": "#/$defs/tenLawsFacet"},
+        "fruits": {"$ref": "#/$defs/fruitsFacet"},
+        "evidence": {"$ref": "#/$defs/evidenceFacet"},
+        "trinity_watcher": {"$ref": "#/$defs/trinityWatcherFacet"},
+        "applied_domains": {"$ref": "#/$defs/appliedDomainsFacet"},
+        "non_claim_objects": {"$ref": "#/$defs/nonClaimObjectsFacet"}
+      }
+    },
+    "axiomRosettaFacet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["facet_mode", "status", "rosetta_node_ref"],
+      "properties": {
+        "facet_mode": {"$ref": "#/$defs/facetMode"},
+        "status": {"$ref": "#/$defs/scorerStatus"},
+        "scorer": {"type": "string"},
+        "scorer_version": {"type": "string"},
+        "ran_at": {"$ref": "#/$defs/nullableString"},
+        "rosetta_node_ref": {"$ref": "#/$defs/nullableString"},
+        "rosetta_targets": {"type": "object", "additionalProperties": true},
+        "truth_unit": {"type": ["object", "null"], "additionalProperties": true},
+        "mirror_search": {"type": ["object", "null"], "additionalProperties": true}
+      }
+    },
+    "masterEquationFacet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["facet_mode", "status", "chi_variables", "primary_law", "equations"],
+      "properties": {
+        "facet_mode": {"$ref": "#/$defs/facetMode"},
+        "status": {"$ref": "#/$defs/scorerStatus"},
+        "scorer": {"type": "string"},
+        "scorer_version": {"type": "string"},
+        "ran_at": {"$ref": "#/$defs/nullableString"},
+        "chi_variables": {"type": "array", "items": {"$ref": "#/$defs/chiVariable"}, "uniqueItems": true},
+        "native_variable_symbols": {"type": "array", "items": {"type": "string"}, "uniqueItems": true, "description": "Raw symbols carried by the source record before any canonical-variable ruling. Presence here is provenance, not normalization."},
+        "primary_law": {"$ref": "#/$defs/lawIdNullable"},
+        "equations": {"type": "array", "items": {"$ref": "#/$defs/equationRef"}},
+        "chi_score": {"type": ["object", "null"], "additionalProperties": false, "required": ["raw_score", "normalized"], "properties": {"raw_score": {"type": ["number", "null"], "minimum": 0, "maximum": 10}, "normalized": {"type": ["number", "null"], "minimum": 0, "maximum": 10}, "method": {"type": "string"}}},
+        "boundary_note": {"$ref": "#/$defs/nullableString"}
+      }
+    },
+    "equationRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["equation_id", "expression"],
+      "properties": {
+        "equation_id": {"$ref": "#/$defs/nullableString"},
+        "expression": {"type": "string"},
+        "normal_form": {"$ref": "#/$defs/nullableString"},
+        "node_ref": {"$ref": "#/$defs/nullableString"}
+      }
+    },
+    "tenLawsFacet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["facet_mode", "status", "engaged_laws", "spiritual_families", "derivation_chains"],
+      "properties": {
+        "facet_mode": {"$ref": "#/$defs/facetMode"},
+        "status": {"$ref": "#/$defs/scorerStatus"},
+        "scorer": {"type": "string"},
+        "scorer_version": {"type": "string"},
+        "ran_at": {"$ref": "#/$defs/nullableString"},
+        "engaged_laws": {"type": "array", "items": {"$ref": "#/$defs/lawId"}, "uniqueItems": true},
+        "spiritual_families": {"type": "array", "items": {"$ref": "#/$defs/spiritualFamily"}},
+        "derivation_chains": {"type": "array", "items": {"$ref": "#/$defs/derivationChain"}}
+      }
+    },
+    "spiritualFamily": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["law_id", "family_name", "derivation_status"],
+      "properties": {
+        "law_id": {"$ref": "#/$defs/lawId"},
+        "family_name": {"type": "string"},
+        "derived_terms": {"$ref": "#/$defs/stringArray"},
+        "correspondence_terms": {"$ref": "#/$defs/stringArray", "description": "Terms carried as structural correspondences rather than derived results, where the canon/source makes that split."},
+        "anti_terms": {"$ref": "#/$defs/stringArray"},
+        "phase_forms": {"$ref": "#/$defs/stringArray"},
+        "equations": {"$ref": "#/$defs/stringArray"},
+        "derivation_status": {"type": "string", "enum": ["DERIVED", "LOCKED", "MAPPED", "PARTIAL", "SPLIT", "OPEN", "DEFINITIONAL", "owed", "unknown"]},
+        "source_node_refs": {"$ref": "#/$defs/stringArray"},
+        "boundary_note": {"$ref": "#/$defs/nullableString"}
+      }
+    },
+    "derivationChain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["law_id", "status", "source_node_refs"],
+      "properties": {
+        "law_id": {"$ref": "#/$defs/lawId"},
+        "status": {"type": "string", "enum": ["complete", "partial", "owed", "candidate", "unknown"]},
+        "source_node_refs": {"$ref": "#/$defs/stringArray"},
+        "open_items": {"$ref": "#/$defs/stringArray"}
+      }
+    },
+    "fruitsFacet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["facet_mode", "status", "present", "count", "law04_link"],
+      "properties": {
+        "facet_mode": {"$ref": "#/$defs/facetMode"},
+        "status": {"$ref": "#/$defs/scorerStatus"},
+        "scorer": {"type": "string"},
+        "scorer_version": {"type": "string"},
+        "ran_at": {"$ref": "#/$defs/nullableString"},
+        "present": {"type": "array", "items": {"$ref": "#/$defs/fruitHit"}},
+        "count": {"type": "integer", "minimum": 0, "maximum": 9},
+        "law04_link": {"$ref": "#/$defs/nullableString"},
+        "tier_boundary_note": {"$ref": "#/$defs/nullableString"}
+      }
+    },
+    "fruitHit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["english", "depth"],
+      "properties": {
+        "english": {"type": "string", "enum": ["Love", "Joy", "Peace", "Patience", "Kindness", "Goodness", "Faithfulness", "Gentleness", "Self-Control"]},
+        "greek": {"type": ["string", "null"], "enum": ["agapē", "chara", "eirēnē", "hypomonē", "chrēstotēs", "agathōsynē", "pistis", "prautēs", "enkrateia", null]},
+        "equation": {"$ref": "#/$defs/nullableString"},
+        "anti_fruit": {"$ref": "#/$defs/nullableString"},
+        "phase_form": {"$ref": "#/$defs/nullableString"},
+        "depth": {"type": "string", "enum": ["mentioned", "explained", "equation_present", "derived", "evidence_linked"]},
+        "derived_status": {"type": ["string", "null"], "enum": ["tier1_derived", "tier2_correspondence", "vector_member", "candidate", null]},
+        "source_spans": {"$ref": "#/$defs/stringArray"},
+        "source_node_refs": {"$ref": "#/$defs/stringArray"}
+      }
+    },
+    "evidenceFacet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["facet_mode", "status", "items"],
+      "properties": {
+        "facet_mode": {"$ref": "#/$defs/facetMode"},
+        "status": {"$ref": "#/$defs/scorerStatus"},
+        "scorer": {"type": "string"},
+        "scorer_version": {"type": "string"},
+        "ran_at": {"$ref": "#/$defs/nullableString"},
+        "items": {"type": "array", "items": {"$ref": "#/$defs/evidenceItem"}}
+      }
+    },
+    "evidenceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_id", "title", "source", "replication_status", "supports_claims", "related_node_refs"],
+      "properties": {
+        "evidence_id": {"type": "string"},
+        "title": {"type": "string"},
+        "source": {"type": "string"},
+        "dataset": {"$ref": "#/$defs/nullableString"},
+        "citation": {"$ref": "#/$defs/nullableString"},
+        "sigma_level": {"type": ["number", "null"], "minimum": 0},
+        "p_value": {"$ref": "#/$defs/nullableString"},
+        "effect_size": {"$ref": "#/$defs/nullableString"},
+        "replication_status": {"type": "string", "enum": ["replicated", "mixed", "disputed", "not_replicated", "unknown"]},
+        "supports_claims": {"$ref": "#/$defs/stringArray"},
+        "related_node_refs": {"$ref": "#/$defs/stringArray"},
+        "evidence_layer": {"type": ["string", "null"], "enum": ["L1", null]},
+        "dispute_note": {"$ref": "#/$defs/nullableString"},
+        "do_not_promote": {"type": "boolean", "const": true}
+      }
+    },
+    "trinityWatcherFacet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["facet_mode", "status", "engaged", "components"],
+      "properties": {
+        "facet_mode": {"$ref": "#/$defs/facetMode"},
+        "status": {"$ref": "#/$defs/scorerStatus"},
+        "scorer": {"type": "string"},
+        "scorer_version": {"type": "string"},
+        "ran_at": {"$ref": "#/$defs/nullableString"},
+        "engaged": {"type": "boolean"},
+        "components": {"type": "array", "items": {"$ref": "#/$defs/watcherComponent"}, "uniqueItems": true},
+        "related_node_refs": {"$ref": "#/$defs/stringArray"},
+        "boundary_note": {"$ref": "#/$defs/nullableString"}
+      }
+    },
+    "watcherComponent": {"type": "string", "enum": ["measurement_problem", "von_neumann_chain", "personhood_bridge", "phi_measure", "mirror_search", "watcher_role", "trinity_structure"]},
+    "appliedDomainsFacet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["facet_mode", "status", "items"],
+      "properties": {
+        "facet_mode": {"$ref": "#/$defs/facetMode"},
+        "status": {"$ref": "#/$defs/scorerStatus"},
+        "scorer": {"type": "string"},
+        "scorer_version": {"type": "string"},
+        "ran_at": {"$ref": "#/$defs/nullableString"},
+        "items": {"type": "array", "items": {"$ref": "#/$defs/appliedDomainItem"}}
+      }
+    },
+    "appliedDomainItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "law_id", "chi_variable", "claimed_pattern", "strength", "evidence_refs"],
+      "properties": {
+        "domain": {"type": "string", "enum": ["psychology", "economics", "education", "history", "semantic_entropy", "somatic", "other"]},
+        "law_id": {"$ref": "#/$defs/lawIdNullable"},
+        "chi_variable": {"type": ["string", "null"], "enum": ["G", "M", "E", "S_eff", "T", "K", "R", "Q", "F", "C_W", null]},
+        "claimed_pattern": {"type": "string"},
+        "strength": {"type": "string", "enum": ["observed", "suggestive", "candidate", "not_assessed"]},
+        "evidence_refs": {"$ref": "#/$defs/stringArray"},
+        "notes": {"$ref": "#/$defs/nullableString"}
+      }
+    },
+    "nonClaimObjectsFacet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["facet_mode", "status", "items"],
+      "properties": {
+        "facet_mode": {"$ref": "#/$defs/facetMode"},
+        "status": {"$ref": "#/$defs/scorerStatus"},
+        "scorer": {"type": "string"},
+        "scorer_version": {"type": "string"},
+        "ran_at": {"$ref": "#/$defs/nullableString"},
+        "items": {"type": "array", "items": {"$ref": "#/$defs/nonClaimObject"}}
+      }
+    },
+    "nonClaimObject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["object_id", "title", "object_kind", "truth_bearing", "relation"],
+      "properties": {
+        "object_id": {"type": "string"},
+        "title": {"type": "string"},
+        "object_kind": {"type": "string", "enum": ["question", "protocol", "paper", "translation", "objection", "result", "audience", "container"]},
+        "truth_bearing": {"type": "boolean", "const": false},
+        "relation": {"type": "string", "enum": ["asks", "describes", "tests", "objects_to", "renders", "reports_result_of", "contains", "translates", "supports_operationally"]},
+        "target_node_ref": {"$ref": "#/$defs/nullableString"}
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_or_admitted", "kernelChecked", "propagates_evidence", "propagates_falsification", "human_gate_required", "no_truth_promotion_from_routing", "no_truth_promotion_from_scoring"],
+      "properties": {
+        "candidate_or_admitted": {"const": "Candidate"},
+        "kernelChecked": {"const": false},
+        "propagates_evidence": {"const": false},
+        "propagates_falsification": {"const": false},
+        "human_gate_required": {"const": true},
+        "no_truth_promotion_from_routing": {"const": true},
+        "no_truth_promotion_from_scoring": {"const": true},
+        "promotion_note": {"type": "string"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["adapter_version", "source_path", "generated_at"],
+      "properties": {
+        "adapter_version": {"type": "string"},
+        "source_path": {"type": "string"},
+        "source_sha256": {"type": ["string", "null"], "pattern": "^sha256:[0-9a-f]{64}$"},
+        "generated_at": {"type": "string"},
+        "generator": {"type": "string"},
+        "notes": {"type": "string"}
+      }
+    }
+  }
+}
