@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en" data-fis-schema="2.1"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="fis-schema" content="2.1"><meta name="generator" content="FIS folder-brain generator">
+<title>FIS | canon_guard_v0.1.0</title>
+<style>
+:root{color-scheme:dark;--bg:#060708;--panel:#0c0f14;--panel2:#090b0f;--line:#222a35;--text:#e7edf5;--muted:#8b97a7;--accent:#d1a922;--accent2:#f1d37a;--link:#6ea8e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}.layout{max-width:1500px;margin:auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:24px;padding:28px}main{min-width:0}
+h1{font:600 34px Georgia,serif;margin:5px 0 8px}h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-top:28px}
+.eyebrow,code{font-family:ui-monospace,Consolas,monospace}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:1px}.muted{color:var(--muted)}
+.identity{border-left:3px solid var(--accent);padding:8px 0 8px 12px;margin:8px 0 10px;background:linear-gradient(90deg,rgba(209,169,34,.08),transparent)}.identity code{display:block;font-size:15px;color:var(--accent2);margin-bottom:4px}.identity span{display:block;color:var(--muted);font-size:12px}
+.crumbs{font:12px ui-monospace,Consolas,monospace;color:var(--muted);margin-bottom:10px}.crumbs a{color:var(--accent)}.crumbs span{margin:0 4px}
+.unresolved{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:2px 10px;border-radius:3px;font:11px ui-monospace,Consolas,monospace;letter-spacing:1px}
+.sidebar{position:sticky;top:20px;align-self:start;border:1px solid var(--line);background:var(--panel);padding:12px;max-height:calc(100vh - 40px);overflow:auto}.sidebar a,.sidebar .child{display:block;padding:7px 6px;border-bottom:1px solid #1a222d}.side-title{font:600 15px Georgia,serif;padding:4px 6px 12px;color:var(--text)}.side-label{color:var(--accent);font:10px ui-monospace,Consolas,monospace;letter-spacing:1px;text-transform:uppercase;padding:16px 6px 5px}.pending{color:var(--muted)}small{font-size:10px}
+.summary{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:7px;margin:14px 0}.metric{border:1px solid var(--line);padding:8px 9px;background:var(--panel)}.metric b{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.score-grid{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:8px}.score-tile{margin:0;border:1px solid var(--line);background:var(--panel);min-height:104px;padding:10px}.score-tile summary{list-style:none;cursor:pointer}.score-tile summary::-webkit-details-marker{display:none}.score-tile strong{display:block;color:var(--accent);font:600 28px Georgia,serif}.score-tile span{font:11px ui-monospace,Consolas,monospace;text-transform:uppercase;color:var(--muted)}.score-tile p{font-size:12px;color:var(--muted)}.score-tile ul{padding-left:17px;font-size:12px}
+table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}code{font-size:12px;color:#d6e5f5;word-break:break-word}
+input[type=search]{width:min(440px,100%);margin:0;padding:9px 10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:3px}.file-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 8px}button{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:8px 10px;border-radius:3px;cursor:pointer}button:hover{border-color:var(--accent)}.file-list{display:grid;gap:4px}.file-block{border:1px solid var(--line);background:var(--panel);padding:0}.file-block summary{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;align-items:center;padding:7px 9px;list-style:none;cursor:pointer}.file-block summary::-webkit-details-marker{display:none}.file-block[open] summary{border-bottom:1px solid var(--line);background:var(--panel2)}.file-name{font-weight:600;color:var(--text)}.source-link{justify-self:end;font-size:12px}.machine{padding:8px 10px 10px}.machine table{background:var(--panel2)}.machine th{width:190px}.machine td,.machine th{padding:6px 8px}.file-head{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;padding:0 10px}
+.actions{display:flex;gap:6px;flex-wrap:wrap}.actions button{padding:5px 9px;font-size:12px}
+.capsule{border:1px solid var(--line);background:var(--panel);padding:12px 14px}.capsule p{margin:6px 0}
+.health-list{list-style:none;padding:0;margin:0;display:grid;gap:4px}.health-list li{border:1px solid var(--line);background:var(--panel);padding:8px 10px;font-size:13px}.health-list li::before{content:"◆ ";font-size:11px}.health-list li.warn::before{color:var(--accent)}.health-list li.ok::before{color:#5f7f6a}.health-list code{margin-left:6px}
+details{border:1px solid var(--line);padding:10px;background:var(--panel)}summary{cursor:pointer;color:var(--muted)}
+@media(max-width:800px){.layout{display:block;padding:16px}.sidebar{position:relative;top:auto;max-height:none;margin-bottom:16px}.summary{grid-template-columns:repeat(2,1fr)}table{display:block;overflow:auto;white-space:nowrap}}
+</style></head><body data-api-base=""><div class="layout"><aside class="sidebar"><div class="side-title">canon_guard_v0.1.0</div><a href="#overview">Overview</a><a href="#semantic">Semantic capsule</a><a href="#health">Health</a><a href="#files">Files</a><a href="#folders">Folders</a><a href="#relationships">Relationships</a><a href="#scores">Signals</a><a href="#context">Audit context</a><div class="side-label">Navigate</div><a class="child" href="../FIS.html">&#8593; Faith-through-physics-atoms</a><div class="side-label">Child folders</div><a class="child" href="canon_guard/FIS.html">canon_guard</a><div class="side-label">Record</div><a href="#context">Machine context</a></aside><main id="overview">
+<nav class="crumbs"><a href="../FIS.html">&#8593; Faith-through-physics-atoms</a><span>/</span>canon_guard_v0.1.0</nav>
+<div class="eyebrow">FIS FOLDER BRAIN v2.1 / RECURSIVE SEMANTIC VIEW</div><h1>canon_guard_v0.1.0</h1>
+<div class="identity"><code>PH__DOC__AUD__20260825__AC</code><span>domain PH=physics | type DOC | tags AUD=audit/review | date 20260825 | status AC | lossless MEQ__canon_guard_v0_1_0__2026-08-25</span></div>
+<div class="identity" style="margin-top:4px"><code style="color:var(--accent2);font-size:13px">G0 M0 E0 S0 T1 K0 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span style="color:var(--muted);font-size:11px">Folder MEQ aggregate (avg CHI across 6 files)</span></div>
+<p><span class="unresolved">UNRESOLVED</span></p>
+<div class="summary"><div class="metric"><b>Lossless Address</b><code>MEQ__canon_guard_v0_1_0__2026-08-25</code></div><div class="metric"><b>Contents</b>cmd: 1 | md: 2 | ps1: 3</div><div class="metric"><b>State</b>active / 6 files</div><div class="metric"><b>Scan</b><code>2026-08-26T00:50:22+00:00</code></div></div>
+<section id="semantic"><h2>Semantic Capsule</h2><div class="capsule"><p>Document folder holding 6 file(s) (4,961 bytes) and 1 child folder(s). Dominant signal T / Time / Kairos; domain physics.</p></div></section>
+<section id="health"><h2>Health</h2><ul class="health-list"><li class="warn">Purpose<code>UNRESOLVED</code></li><li class="warn">Owner<code>UNRESOLVED</code></li><li class="warn">Canonical source<code>not set</code></li><li class="warn">Unclassified files<code>6 of 6</code></li><li class="warn">Presentation coverage<code>0 of 6</code></li></ul></section>
+<details id="context" style="margin-top:28px"><summary>Machine context and audit fields</summary><pre>{
+  &quot;folder_id&quot;: &quot;FLD-5fca5d6c2cf8&quot;,
+  &quot;path&quot;: &quot;D:\\GitHub\\Faith-through-physics-atoms\\canon_guard_v0.1.0&quot;,
+  &quot;name&quot;: &quot;canon_guard_v0.1.0&quot;,
+  &quot;folder_type&quot;: &quot;document&quot;,
+  &quot;purpose&quot;: &quot;UNRESOLVED&quot;,
+  &quot;domain&quot;: &quot;unclassified&quot;,
+  &quot;series_name&quot;: null,
+  &quot;chain_steps&quot;: &quot;[]&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;owner&quot;: &quot;UNRESOLVED&quot;,
+  &quot;canonical_source&quot;: 0,
+  &quot;parent_backbone&quot;: null,
+  &quot;file_count&quot;: 6,
+  &quot;child_folder_count&quot;: 1,
+  &quot;created_at&quot;: &quot;2026-08-26T00:24:44+00:00&quot;,
+  &quot;last_scanned&quot;: &quot;2026-08-26T00:50:22+00:00&quot;,
+  &quot;notes&quot;: &quot;&quot;,
+  &quot;compressed_name&quot;: &quot;PH__DOC__AUD__20260825__AC&quot;,
+  &quot;compressed_name_detail&quot;: &quot;{\&quot;code\&quot;: \&quot;PH__DOC__AUD__20260825__AC\&quot;, \&quot;domain\&quot;: \&quot;PH\&quot;, \&quot;domain_meaning\&quot;: \&quot;physics\&quot;, \&quot;ct\&quot;: \&quot;DOC\&quot;, \&quot;tags\&quot;: [\&quot;AUD\&quot;], \&quot;date\&quot;: \&quot;20260825\&quot;, \&quot;status\&quot;: \&quot;AC\&quot;, \&quot;tag_meanings\&quot;: {\&quot;AUD\&quot;: \&quot;audit/review\&quot;}}&quot;,
+  &quot;lossless_address&quot;: &quot;MEQ__canon_guard_v0_1_0__2026-08-25&quot;,
+  &quot;lossless_address_detail&quot;: &quot;{\&quot;address\&quot;: \&quot;MEQ__canon_guard_v0_1_0__2026-08-25\&quot;, \&quot;mode\&quot;: \&quot;meq\&quot;, \&quot;source_date\&quot;: \&quot;2026-08-25\&quot;, \&quot;basis\&quot;: \&quot;title_and_local_content_sample\&quot;, \&quot;trigger\&quot;: \&quot;Master Equation\&quot;}&quot;
+}</pre></details>
+<h2 id="files">Files Here</h2><div class="file-controls"><input id="file-search" type="search" placeholder="Find by name, address, type, or keyword" aria-label="Filter files"><button id="toggle-files" type="button">Open all</button></div><div class="file-head"><span>File</span><span>MEQ Vector</span><span>Format</span><span>Role</span><span>Keywords</span><span>Lossless</span><span>Open</span></div><div id="file-rows" class="file-list"><details id="FIL-a7e554428d5b" class="file-block" data-search="crown_canon_guard_readme.md g0 m0 e0 s1 t1 k0 r0 q1 f1 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] meq__crown_canon_guard_readme__2026-08-25 ph__not__coh-mrl-ent__20260825__ac.md fca27b12e93bc0f80d8c4e7d415a4af4513ec7d9899235c32a0e6db57af589d7 d:\github\faith-through-physics-atoms\canon_guard_v0.1.0\crown_canon_guard_readme.md article / md plain physics, t, time / kairos, l07, note, time_/_kairos_text, s_eff, entropy, time kairos, q, quantum uncertainty, f, faith fruit, c, christ coherence, row, faith, time, drift, master equation physics (1/3) t / time / kairos s:1, t:1, q:1, f:1, c:1 l07 (1/3) time_/_kairos_text 0.0/100 0.294 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:50:22+00:00 1937 bytes g0 m0 e0 s1 t1 k0 r0 q1 f1 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">CROWN_CANON_GUARD_README.md</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">S1 T1 Q1 F1 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span>md</span><span>article</span><span>physics, T, Time / Kairos, L07, note, time_/_kairos_text</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="MEQ__CROWN_CANON_GUARD_README__2026-08-25">◆ lossless</span><a class="source-link" href="CROWN_CANON_GUARD_README.md">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="CROWN_CANON_GUARD_README.md">D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\CROWN_CANON_GUARD_README.md</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E0 S1 T1 K0 R0 Q1 F1 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>MEQ__CROWN_CANON_GUARD_README__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__NOT__COH-MRL-ENT__20260825__AC.md</code></td></tr><tr><th>SHA-256</th><td><code>fca27b12e93bc0f80d8c4e7d415a4af4513ec7d9899235c32a0e6db57af589d7</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\CROWN_CANON_GUARD_README.md</code></td></tr><tr><th>Type / format</th><td><code>article / md</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>physics, T, Time / Kairos, L07, note, time_/_kairos_text, S_eff, entropy, time kairos, Q, quantum uncertainty, F, faith fruit, C, christ coherence, row, faith, time, drift, master equation</code></td></tr><tr><th>Domain signal</th><td><code>physics (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>T / Time / Kairos</code></td></tr><tr><th>CHI vector</th><td><code>S:1, T:1, Q:1, F:1, C:1</code></td></tr><tr><th>Law signal</th><td><code>L07 (1/3)</code></td></tr><tr><th>Content role</th><td><code>time_/_kairos_text</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.294</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:22+00:00</code></td></tr><tr><th>Size</th><td><code>1937 bytes</code></td></tr></tbody></table></div></details><details id="FIL-6363c81456f2" class="file-block" data-search="quote_packet_guard.md g0 m1 e1 s1 t1 k0 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__quote_packet_guard__2026-08-25 ph__not__coh-mrl-ent__20260825__ac.md 7cbe5ad4375c2dc226482cd4715c80e8c334f52a1bcf1330769adfd7df2b9413 d:\github\faith-through-physics-atoms\canon_guard_v0.1.0\quote_packet_guard.md article / md plain physics, t, time / kairos, l02, note, time_/_kairos_text, m, moral alignment, e, truth signal, s_eff, entropy, time kairos, c, christ coherence, god, thermodynamic, complete, force, order physics (2/3) t / time / kairos m:1, e:1, s:1, t:1, c:1 l02 (2/3) time_/_kairos_text 12.5/100 0.35 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:50:22+00:00 1388 bytes g0 m1 e1 s1 t1 k0 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">QUOTE_PACKET_GUARD.md</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">M1 E1 S1 T1 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span>md</span><span>article</span><span>physics, T, Time / Kairos, L02, note, time_/_kairos_text</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__QUOTE_PACKET_GUARD__2026-08-25">◆ lossless</span><a class="source-link" href="QUOTE_PACKET_GUARD.md">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="QUOTE_PACKET_GUARD.md">D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\QUOTE_PACKET_GUARD.md</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M1 E1 S1 T1 K0 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__QUOTE_PACKET_GUARD__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__NOT__COH-MRL-ENT__20260825__AC.md</code></td></tr><tr><th>SHA-256</th><td><code>7cbe5ad4375c2dc226482cd4715c80e8c334f52a1bcf1330769adfd7df2b9413</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\QUOTE_PACKET_GUARD.md</code></td></tr><tr><th>Type / format</th><td><code>article / md</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>physics, T, Time / Kairos, L02, note, time_/_kairos_text, M, moral alignment, E, truth signal, S_eff, entropy, time kairos, C, christ coherence, god, thermodynamic, complete, force, order</code></td></tr><tr><th>Domain signal</th><td><code>physics (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>T / Time / Kairos</code></td></tr><tr><th>CHI vector</th><td><code>M:1, E:1, S:1, T:1, C:1</code></td></tr><tr><th>Law signal</th><td><code>L02 (2/3)</code></td></tr><tr><th>Content role</th><td><code>time_/_kairos_text</code></td></tr><tr><th>Evidence density</th><td><code>12.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.35</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:22+00:00</code></td></tr><tr><th>Size</th><td><code>1388 bytes</code></td></tr></tbody></table></div></details><details id="FIL-1021a8d9df7e" class="file-block" data-search="run_canon_guard.cmd unscored loss__run_canon_guard__2026-08-25 unresolved 97444230b7bf3fcad0b98aa7aa44242d77e8da15e66c5ad47240a8663bdfa9f0 d:\github\faith-through-physics-atoms\canon_guard_v0.1.0\run_canon_guard.cmd other / cmd plain unknown, unclassified_file, canon, guard unknown (0/3) none / unclassified none none (0/3) unclassified_file 0.0/100  unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:50:22+00:00 222 bytes "><summary><span class="file-name">RUN_CANON_GUARD.cmd</span><code class="meq-tag" style="font-size:10px;color:#f1d37a"></code><span>cmd</span><span>other</span><span>unknown, unclassified_file, canon, guard</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__RUN_CANON_GUARD__2026-08-25">◆ lossless</span><a class="source-link" href="RUN_CANON_GUARD.cmd">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="RUN_CANON_GUARD.cmd">D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\RUN_CANON_GUARD.cmd</a></td></tr><tr><th>MEQ Name</th><td><code>UNSCORED</code></td></tr><tr><th>Internal address</th><td><code>LOSS__RUN_CANON_GUARD__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>UNRESOLVED</code></td></tr><tr><th>SHA-256</th><td><code>97444230b7bf3fcad0b98aa7aa44242d77e8da15e66c5ad47240a8663bdfa9f0</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\RUN_CANON_GUARD.cmd</code></td></tr><tr><th>Type / format</th><td><code>other / cmd</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>unknown, unclassified_file, canon, guard</code></td></tr><tr><th>Domain signal</th><td><code>unknown (0/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>none / unclassified</code></td></tr><tr><th>CHI vector</th><td><code>none</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>unclassified_file</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>UNRESOLVED</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:22+00:00</code></td></tr><tr><th>Size</th><td><code>222 bytes</code></td></tr></tbody></table></div></details><details id="FIL-28e51f59fb0b" class="file-block" data-search="run_canon_guard.ps1 unscored loss__run_canon_guard__2026-08-25 ph__cod__gn__20260825__ac.ps1 fcd3e8f51610e4c8c0fe69ff3d133ec54b04ffacd9f5f7335c636b003420e990 d:\github\faith-through-physics-atoms\canon_guard_v0.1.0\run_canon_guard.ps1 script / ps1 plain unknown, code, unclassified_code, canon, guard unknown (0/3) none / unclassified none none (0/3) unclassified_code 0.0/100  unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:50:22+00:00 392 bytes "><summary><span class="file-name">RUN_CANON_GUARD.ps1</span><code class="meq-tag" style="font-size:10px;color:#f1d37a"></code><span>ps1</span><span>script</span><span>unknown, code, unclassified_code, canon, guard</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__RUN_CANON_GUARD__2026-08-25">◆ lossless</span><a class="source-link" href="RUN_CANON_GUARD.ps1">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="RUN_CANON_GUARD.ps1">D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\RUN_CANON_GUARD.ps1</a></td></tr><tr><th>MEQ Name</th><td><code>UNSCORED</code></td></tr><tr><th>Internal address</th><td><code>LOSS__RUN_CANON_GUARD__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__GN__20260825__AC.ps1</code></td></tr><tr><th>SHA-256</th><td><code>fcd3e8f51610e4c8c0fe69ff3d133ec54b04ffacd9f5f7335c636b003420e990</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\RUN_CANON_GUARD.ps1</code></td></tr><tr><th>Type / format</th><td><code>script / ps1</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>unknown, code, unclassified_code, canon, guard</code></td></tr><tr><th>Domain signal</th><td><code>unknown (0/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>none / unclassified</code></td></tr><tr><th>CHI vector</th><td><code>none</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>unclassified_code</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>UNRESOLVED</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:22+00:00</code></td></tr><tr><th>Size</th><td><code>392 bytes</code></td></tr></tbody></table></div></details><details id="FIL-093d83022e4a" class="file-block" data-search="run_crown_canon_guard.ps1 g0 m1 e0 s0 t1 k0 r1 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__run_crown_canon_guard__2026-08-25 ph__cod__mrl-rel-tmp__20260825__ac.ps1 8298ea04a97aa9ff35077d8d9a7917c11cdb074c9e5ad2ae12aa0e3f76c78c18 d:\github\faith-through-physics-atoms\canon_guard_v0.1.0\run_crown_canon_guard.ps1 script / ps1 plain t, time / kairos, l02, code, time_/_kairos_code, m, moral alignment, time kairos, r, relational frame, row, crown, canon, guard document (1/3) t / time / kairos m:1, t:1, r:1 l02 (1/3) time_/_kairos_code 12.5/100 0.199 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:50:22+00:00 895 bytes g0 m1 e0 s0 t1 k0 r1 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">RUN_CROWN_CANON_GUARD.ps1</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">M1 T1 R1 :: [M.F] [S.R] [T.K]</code><span>ps1</span><span>script</span><span>T, Time / Kairos, L02, code, time_/_kairos_code, M</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__RUN_CROWN_CANON_GUARD__2026-08-25">◆ lossless</span><a class="source-link" href="RUN_CROWN_CANON_GUARD.ps1">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="RUN_CROWN_CANON_GUARD.ps1">D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\RUN_CROWN_CANON_GUARD.ps1</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M1 E0 S0 T1 K0 R1 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__RUN_CROWN_CANON_GUARD__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__MRL-REL-TMP__20260825__AC.ps1</code></td></tr><tr><th>SHA-256</th><td><code>8298ea04a97aa9ff35077d8d9a7917c11cdb074c9e5ad2ae12aa0e3f76c78c18</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\RUN_CROWN_CANON_GUARD.ps1</code></td></tr><tr><th>Type / format</th><td><code>script / ps1</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>T, Time / Kairos, L02, code, time_/_kairos_code, M, moral alignment, time kairos, R, relational frame, row, crown, canon, guard</code></td></tr><tr><th>Domain signal</th><td><code>document (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>T / Time / Kairos</code></td></tr><tr><th>CHI vector</th><td><code>M:1, T:1, R:1</code></td></tr><tr><th>Law signal</th><td><code>L02 (1/3)</code></td></tr><tr><th>Content role</th><td><code>time_/_kairos_code</code></td></tr><tr><th>Evidence density</th><td><code>12.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.199</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:22+00:00</code></td></tr><tr><th>Size</th><td><code>895 bytes</code></td></tr></tbody></table></div></details><details id="FIL-73a7a31bbdf0" class="file-block" data-search="run_deepseek_crown_review.ps1 g0 m0 e0 s0 t0 k0 r1 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__run_deepseek_crown_review__2026-08-25 ph__cod__rel-l08-aud__20260825__rv.ps1 bf4002c4a133f11de45fec5d3d9d751f2f2b36a170557496fe467e06152e4e95 d:\github\faith-through-physics-atoms\canon_guard_v0.1.0\run_deepseek_crown_review.ps1 script / ps1 plain r, relational frame, l08, code, relational_frame_code, row, deepseek, crown, review document (1/3) r / relational frame r:1 l08 (1/3) relational_frame_code 12.5/100 0.103 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:50:23+00:00 127 bytes g0 m0 e0 s0 t0 k0 r1 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">RUN_DEEPSEEK_CROWN_REVIEW.ps1</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">R1 :: [S.R]</code><span>ps1</span><span>script</span><span>R, Relational Frame, L08, code, relational_frame_code, row</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__RUN_DEEPSEEK_CROWN_REVIEW__2026-08-25">◆ lossless</span><a class="source-link" href="RUN_DEEPSEEK_CROWN_REVIEW.ps1">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="RUN_DEEPSEEK_CROWN_REVIEW.ps1">D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\RUN_DEEPSEEK_CROWN_REVIEW.ps1</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E0 S0 T0 K0 R1 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__RUN_DEEPSEEK_CROWN_REVIEW__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__REL-L08-AUD__20260825__RV.ps1</code></td></tr><tr><th>SHA-256</th><td><code>bf4002c4a133f11de45fec5d3d9d751f2f2b36a170557496fe467e06152e4e95</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\canon_guard_v0.1.0\RUN_DEEPSEEK_CROWN_REVIEW.ps1</code></td></tr><tr><th>Type / format</th><td><code>script / ps1</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>R, Relational Frame, L08, code, relational_frame_code, row, deepseek, crown, review</code></td></tr><tr><th>Domain signal</th><td><code>document (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>R / Relational Frame</code></td></tr><tr><th>CHI vector</th><td><code>R:1</code></td></tr><tr><th>Law signal</th><td><code>L08 (1/3)</code></td></tr><tr><th>Content role</th><td><code>relational_frame_code</code></td></tr><tr><th>Evidence density</th><td><code>12.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.103</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:23+00:00</code></td></tr><tr><th>Size</th><td><code>127 bytes</code></td></tr></tbody></table></div></details></div>
+<h2 id="folders">Child Folders</h2><table><thead><tr><th>Folder</th><th>Type</th><th>Files</th><th>Address</th><th>View</th></tr></thead><tbody><tr><td>canon_guard</td><td>document</td><td>9</td><td><code>MEQ__canon_guard__2026-08-25</code></td><td><a href="canon_guard/FIS.html">open</a></td></tr></tbody></table><section id="relationships"><h2>Semantic Network</h2><p class="section-note">Connections based on shared keywords, CHI variables, domain, and law signals. Files sharing 2+ tags are linked.</p><div class="badges" style="margin:8px 0"><span class="badge">time / kairos (3)</span> <span class="badge">t (3)</span> <span class="badge">code (3)</span> <span class="badge">physics (2)</span> <span class="badge">time kairos (2)</span> <span class="badge">time_/_kairos_text (2)</span> <span class="badge">note (2)</span> <span class="badge">l02 (2)</span> <span class="badge">moral alignment (2)</span> <span class="badge">m (2)</span> <span class="badge">canon (2)</span> <span class="badge">unknown (2)</span> <span class="badge">guard (2)</span> <span class="badge">r (2)</span> <span class="badge">relational frame (2)</span></div><table class="signal-table"><thead><tr><th>File A</th><th>File B</th><th>Shared</th><th>Via</th></tr></thead><tbody><tr><td><a href="#FIL-6363c81456f2">QUOTE_PACKET_GUARD.md</a></td><td><a href="#FIL-a7e554428d5b">CROWN_CANON_GUARD_README.md</a></td><td>5</td><td>physics, time / kairos, time_/_kairos_text, note</td></tr><tr><td><a href="#FIL-093d83022e4a">RUN_CROWN_CANON_GUARD.ps1</a></td><td><a href="#FIL-6363c81456f2">QUOTE_PACKET_GUARD.md</a></td><td>5</td><td>time / kairos, t, l02, moral alignment</td></tr><tr><td><a href="#FIL-093d83022e4a">RUN_CROWN_CANON_GUARD.ps1</a></td><td><a href="#FIL-73a7a31bbdf0">RUN_DEEPSEEK_CROWN_REVIEW.ps1</a></td><td>4</td><td>code, r, relational frame, document</td></tr><tr><td><a href="#FIL-093d83022e4a">RUN_CROWN_CANON_GUARD.ps1</a></td><td><a href="#FIL-a7e554428d5b">CROWN_CANON_GUARD_README.md</a></td><td>3</td><td>time / kairos, time kairos, t</td></tr><tr><td><a href="#FIL-1021a8d9df7e">RUN_CANON_GUARD.cmd</a></td><td><a href="#FIL-28e51f59fb0b">RUN_CANON_GUARD.ps1</a></td><td>3</td><td>canon, unknown, guard</td></tr></tbody></table></section><section id="scores"><h2>Folder Signals</h2><p class="muted">Open a block to see the calculation evidence; file links jump to the inline machine block above.</p><div class="score-grid"><details class="score-tile"><summary><strong>40</strong><span>Folder signal</span></summary><p>Composite navigation signal; not truth, quality, or canon status.</p><ul><li><a href="#FIL-a7e554428d5b">CROWN_CANON_GUARD_README.md</a> <code>35/100</code></li><li><a href="#FIL-6363c81456f2">QUOTE_PACKET_GUARD.md</a> <code>35/100</code></li><li><a href="#FIL-1021a8d9df7e">RUN_CANON_GUARD.cmd</a> <code>35/100</code></li><li><a href="#FIL-28e51f59fb0b">RUN_CANON_GUARD.ps1</a> <code>35/100</code></li><li><a href="#FIL-093d83022e4a">RUN_CROWN_CANON_GUARD.ps1</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>64</strong><span>Activity</span></summary><p>6 files modified in the last 30 days; 1 observed modification days.</p><ul><li><a href="#FIL-73a7a31bbdf0">RUN_DEEPSEEK_CROWN_REVIEW.ps1</a> <code>35/100</code></li><li><a href="#FIL-093d83022e4a">RUN_CROWN_CANON_GUARD.ps1</a> <code>35/100</code></li><li><a href="#FIL-1021a8d9df7e">RUN_CANON_GUARD.cmd</a> <code>35/100</code></li><li><a href="#FIL-28e51f59fb0b">RUN_CANON_GUARD.ps1</a> <code>35/100</code></li><li><a href="#FIL-a7e554428d5b">CROWN_CANON_GUARD_README.md</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>24</strong><span>Depth</span></summary><p>6 direct source files and 4,961 source bytes.</p><ul><li><a href="#FIL-a7e554428d5b">CROWN_CANON_GUARD_README.md</a> <code>35/100</code></li><li><a href="#FIL-6363c81456f2">QUOTE_PACKET_GUARD.md</a> <code>35/100</code></li><li><a href="#FIL-093d83022e4a">RUN_CROWN_CANON_GUARD.ps1</a> <code>35/100</code></li><li><a href="#FIL-28e51f59fb0b">RUN_CANON_GUARD.ps1</a> <code>35/100</code></li><li><a href="#FIL-1021a8d9df7e">RUN_CANON_GUARD.cmd</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>0</strong><span>Explicit links</span></summary><p>Counts visible Markdown/wiki/HTML link syntax only; it does not infer semantic relationships.</p><ul><li><a href="#FIL-a7e554428d5b">CROWN_CANON_GUARD_README.md</a> <code>35/100</code></li><li><a href="#FIL-6363c81456f2">QUOTE_PACKET_GUARD.md</a> <code>35/100</code></li><li><a href="#FIL-1021a8d9df7e">RUN_CANON_GUARD.cmd</a> <code>35/100</code></li><li><a href="#FIL-28e51f59fb0b">RUN_CANON_GUARD.ps1</a> <code>35/100</code></li><li><a href="#FIL-093d83022e4a">RUN_CROWN_CANON_GUARD.ps1</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>0</strong><span>Presentation</span></summary><p>Topbar, audio, equations, and claim-marker coverage in directly stored HTML files.</p><ul><li><a href="#FIL-a7e554428d5b">CROWN_CANON_GUARD_README.md</a> <code>35/100</code></li><li><a href="#FIL-6363c81456f2">QUOTE_PACKET_GUARD.md</a> <code>35/100</code></li><li><a href="#FIL-1021a8d9df7e">RUN_CANON_GUARD.cmd</a> <code>35/100</code></li><li><a href="#FIL-28e51f59fb0b">RUN_CANON_GUARD.ps1</a> <code>35/100</code></li><li><a href="#FIL-093d83022e4a">RUN_CROWN_CANON_GUARD.ps1</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>100</strong><span>Registry</span></summary><p>Files with both a SHA-256 content fingerprint and lossless internal address.</p><ul><li><a href="#FIL-a7e554428d5b">CROWN_CANON_GUARD_README.md</a> <code>35/100</code></li><li><a href="#FIL-6363c81456f2">QUOTE_PACKET_GUARD.md</a> <code>35/100</code></li><li><a href="#FIL-1021a8d9df7e">RUN_CANON_GUARD.cmd</a> <code>35/100</code></li><li><a href="#FIL-28e51f59fb0b">RUN_CANON_GUARD.ps1</a> <code>35/100</code></li><li><a href="#FIL-093d83022e4a">RUN_CROWN_CANON_GUARD.ps1</a> <code>35/100</code></li></ul></details></div></section>
+<p class="muted" style="margin-top:24px">Generated from the FIS registry. Source files remain in place; this page is an index, not a replacement.</p>
+</main></div>
+<script type="application/json" id="fis-folder-record">
+{
+  "schema": "fis.folder/2.1",
+  "folder": {
+    "folder_id": "FLD-5fca5d6c2cf8",
+    "path": "D:\\GitHub\\Faith-through-physics-atoms\\canon_guard_v0.1.0",
+    "name": "canon_guard_v0.1.0",
+    "folder_type": "document",
+    "purpose": "UNRESOLVED",
+    "domain": "unclassified",
+    "status": "active",
+    "owner": "UNRESOLVED",
+    "canonical_source": 0,
+    "file_count": 6,
+    "child_folder_count": 1,
+    "created_at": "2026-08-26T00:24:44+00:00",
+    "last_scanned": "2026-08-26T00:50:22+00:00",
+    "compressed_name": "PH__DOC__AUD__20260825__AC",
+    "compressed_name_detail": {
+      "code": "PH__DOC__AUD__20260825__AC",
+      "domain": "PH",
+      "domain_meaning": "physics",
+      "ct": "DOC",
+      "tags": [
+        "AUD"
+      ],
+      "date": "20260825",
+      "status": "AC",
+      "tag_meanings": {
+        "AUD": "audit/review"
+      }
+    },
+    "lossless_address": "MEQ__canon_guard_v0_1_0__2026-08-25",
+    "lossless_address_detail": {
+      "address": "MEQ__canon_guard_v0_1_0__2026-08-25",
+      "mode": "meq",
+      "source_date": "2026-08-25",
+      "basis": "title_and_local_content_sample",
+      "trigger": "Master Equation"
+    },
+    "meq_aggregate": "G0 M0 E0 S0 T1 K0 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]"
+  },
+  "files": [
+    {
+      "file_id": "FIL-a7e554428d5b",
+      "name": "CROWN_CANON_GUARD_README.md",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\canon_guard_v0.1.0\\CROWN_CANON_GUARD_README.md",
+      "meq_name": "G0 M0 E0 S1 T1 K0 R0 Q1 F1 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "MEQ__CROWN_CANON_GUARD_README__2026-08-25",
+      "proposed_compressed_name": "PH__NOT__COH-MRL-ENT__20260825__AC.md",
+      "sha256": "fca27b12e93bc0f80d8c4e7d415a4af4513ec7d9899235c32a0e6db57af589d7",
+      "type": "article",
+      "format": "md",
+      "keywords": [
+        "physics",
+        "T",
+        "Time / Kairos",
+        "L07",
+        "note",
+        "time_/_kairos_text",
+        "S_eff",
+        "entropy",
+        "time kairos",
+        "Q",
+        "quantum uncertainty",
+        "F",
+        "faith fruit",
+        "C",
+        "christ coherence",
+        "row",
+        "faith",
+        "time",
+        "drift",
+        "master equation"
+      ],
+      "domain_signal": "physics (1/3)",
+      "dominant_chi": "T / Time / Kairos",
+      "chi_vector": {
+        "S": 1,
+        "T": 1,
+        "Q": 1,
+        "F": 1,
+        "C": 1
+      },
+      "law_signal": "L07 (1/3)",
+      "content_role": "time_/_kairos_text",
+      "evidence_density": 0.0,
+      "confidence": 0.294,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:50:22+00:00",
+      "size_bytes": 1937
+    },
+    {
+      "file_id": "FIL-6363c81456f2",
+      "name": "QUOTE_PACKET_GUARD.md",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\canon_guard_v0.1.0\\QUOTE_PACKET_GUARD.md",
+      "meq_name": "G0 M1 E1 S1 T1 K0 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__QUOTE_PACKET_GUARD__2026-08-25",
+      "proposed_compressed_name": "PH__NOT__COH-MRL-ENT__20260825__AC.md",
+      "sha256": "7cbe5ad4375c2dc226482cd4715c80e8c334f52a1bcf1330769adfd7df2b9413",
+      "type": "article",
+      "format": "md",
+      "keywords": [
+        "physics",
+        "T",
+        "Time / Kairos",
+        "L02",
+        "note",
+        "time_/_kairos_text",
+        "M",
+        "moral alignment",
+        "E",
+        "truth signal",
+        "S_eff",
+        "entropy",
+        "time kairos",
+        "C",
+        "christ coherence",
+        "god",
+        "thermodynamic",
+        "complete",
+        "force",
+        "order"
+      ],
+      "domain_signal": "physics (2/3)",
+      "dominant_chi": "T / Time / Kairos",
+      "chi_vector": {
+        "M": 1,
+        "E": 1,
+        "S": 1,
+        "T": 1,
+        "C": 1
+      },
+      "law_signal": "L02 (2/3)",
+      "content_role": "time_/_kairos_text",
+      "evidence_density": 12.5,
+      "confidence": 0.35,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:50:22+00:00",
+      "size_bytes": 1388
+    },
+    {
+      "file_id": "FIL-1021a8d9df7e",
+      "name": "RUN_CANON_GUARD.cmd",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\canon_guard_v0.1.0\\RUN_CANON_GUARD.cmd",
+      "meq_name": "",
+      "internal_address": "LOSS__RUN_CANON_GUARD__2026-08-25",
+      "proposed_compressed_name": null,
+      "sha256": "97444230b7bf3fcad0b98aa7aa44242d77e8da15e66c5ad47240a8663bdfa9f0",
+      "type": "other",
+      "format": "cmd",
+      "keywords": [
+        "unknown",
+        "unclassified_file",
+        "canon",
+        "guard"
+      ],
+      "domain_signal": "unknown (0/3)",
+      "dominant_chi": "none / unclassified",
+      "chi_vector": {},
+      "law_signal": "none (0/3)",
+      "content_role": "unclassified_file",
+      "evidence_density": 0.0,
+      "confidence": 0.0,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:50:22+00:00",
+      "size_bytes": 222
+    },
+    {
+      "file_id": "FIL-28e51f59fb0b",
+      "name": "RUN_CANON_GUARD.ps1",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\canon_guard_v0.1.0\\RUN_CANON_GUARD.ps1",
+      "meq_name": "",
+      "internal_address": "LOSS__RUN_CANON_GUARD__2026-08-25",
+      "proposed_compressed_name": "PH__COD__GN__20260825__AC.ps1",
+      "sha256": "fcd3e8f51610e4c8c0fe69ff3d133ec54b04ffacd9f5f7335c636b003420e990",
+      "type": "script",
+      "format": "ps1",
+      "keywords": [
+        "unknown",
+        "code",
+        "unclassified_code",
+        "canon",
+        "guard"
+      ],
+      "domain_signal": "unknown (0/3)",
+      "dominant_chi": "none / unclassified",
+      "chi_vector": {},
+      "law_signal": "none (0/3)",
+      "content_role": "unclassified_code",
+      "evidence_density": 0.0,
+      "confidence": 0.0,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:50:22+00:00",
+      "size_bytes": 392
+    },
+    {
+      "file_id": "FIL-093d83022e4a",
+      "name": "RUN_CROWN_CANON_GUARD.ps1",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\canon_guard_v0.1.0\\RUN_CROWN_CANON_GUARD.ps1",
+      "meq_name": "G0 M1 E0 S0 T1 K0 R1 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__RUN_CROWN_CANON_GUARD__2026-08-25",
+      "proposed_compressed_name": "PH__COD__MRL-REL-TMP__20260825__AC.ps1",
+      "sha256": "8298ea04a97aa9ff35077d8d9a7917c11cdb074c9e5ad2ae12aa0e3f76c78c18",
+      "type": "script",
+      "format": "ps1",
+      "keywords": [
+        "T",
+        "Time / Kairos",
+        "L02",
+        "code",
+        "time_/_kairos_code",
+        "M",
+        "moral alignment",
+        "time kairos",
+        "R",
+        "relational frame",
+        "row",
+        "crown",
+        "canon",
+        "guard"
+      ],
+      "domain_signal": "document (1/3)",
+      "dominant_chi": "T / Time / Kairos",
+      "chi_vector": {
+        "M": 1,
+        "T": 1,
+        "R": 1
+      },
+      "law_signal": "L02 (1/3)",
+      "content_role": "time_/_kairos_code",
+      "evidence_density": 12.5,
+      "confidence": 0.199,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:50:22+00:00",
+      "size_bytes": 895
+    },
+    {
+      "file_id": "FIL-73a7a31bbdf0",
+      "name": "RUN_DEEPSEEK_CROWN_REVIEW.ps1",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\canon_guard_v0.1.0\\RUN_DEEPSEEK_CROWN_REVIEW.ps1",
+      "meq_name": "G0 M0 E0 S0 T0 K0 R1 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__RUN_DEEPSEEK_CROWN_REVIEW__2026-08-25",
+      "proposed_compressed_name": "PH__COD__REL-L08-AUD__20260825__RV.ps1",
+      "sha256": "bf4002c4a133f11de45fec5d3d9d751f2f2b36a170557496fe467e06152e4e95",
+      "type": "script",
+      "format": "ps1",
+      "keywords": [
+        "R",
+        "Relational Frame",
+        "L08",
+        "code",
+        "relational_frame_code",
+        "row",
+        "deepseek",
+        "crown",
+        "review"
+      ],
+      "domain_signal": "document (1/3)",
+      "dominant_chi": "R / Relational Frame",
+      "chi_vector": {
+        "R": 1
+      },
+      "law_signal": "L08 (1/3)",
+      "content_role": "relational_frame_code",
+      "evidence_density": 12.5,
+      "confidence": 0.103,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:50:23+00:00",
+      "size_bytes": 127
+    }
+  ],
+  "child_folders": [
+    {
+      "name": "canon_guard",
+      "type": "document",
+      "file_count": 9
+    }
+  ],
+  "signals": {
+    "folder_signal": 40,
+    "activity": 64,
+    "depth": 24,
+    "explicit_links": 0,
+    "presentation": 0,
+    "registry": 100
+  }
+}
+</script>
+<script>
+const q=document.getElementById('file-search');const blocks=[...document.querySelectorAll('.file-block')];q?.addEventListener('input',()=>{const v=q.value.toLowerCase();blocks.forEach(b=>b.hidden=!(b.dataset.search+' '+b.innerText.toLowerCase()).includes(v));});const toggle=document.getElementById('toggle-files');toggle?.addEventListener('click',()=>{const visible=blocks.filter(b=>!b.hidden);const openSome=visible.some(b=>!b.open);visible.forEach(b=>b.open=openSome);toggle.textContent=openSome?'Close all':'Open all';});document.querySelectorAll('.source-link').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{navigator.clipboard?.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent=b.dataset.copy.startsWith('MEQ')?'Copy address':'Copy SHA-256',900);}));
+document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const payload={file_id:b.dataset.fileId,target:b.dataset.target||null,folder:document.querySelector('h1').textContent};if(window.FIS_API?.run){window.FIS_API.run(b.dataset.action,payload);}else{b.textContent='API not connected';setTimeout(()=>b.textContent=b.dataset.action==='apply-name'?'Apply proposed name':'Mark reviewed',1100);}}))</script></body></html>

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/claim-classification-output/v1",
+  "title": "Claim classification and burden routing output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "stage", "status", "discovery_receipt_hash", "object_type", "register", "claim_species", "native_anatomy", "warrant_class", "lifecycle", "why_outcome", "burdens", "unresolved", "new_fact_exception"],
+  "properties": {
+    "schema_version": {"const": "claim-classification/1.0.0"},
+    "stage": {"const": "CLASSIFICATION_AND_BURDEN_ROUTING"},
+    "status": {"enum": ["CLASSIFICATION_COMPLETE", "CLASSIFICATION_INCOMPLETE", "RETURN_TO_DISCOVERY", "BLOCKED"]},
+    "discovery_receipt_hash": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "object_type": {"enum": ["CLAIM", "EVIDENCE", "PROOF", "PROCESS"]},
+    "register": {"type": "string"},
+    "claim_species": {"type": "string"},
+    "native_anatomy": {"type": "array", "items": {"type": "string"}},
+    "warrant_class": {"type": "string"},
+    "lifecycle": {"const": "candidate"},
+    "why_outcome": {"enum": ["WHY_CLOSED", "WHY_OPEN", "WHY_FAILED", "NOT_APPLICABLE"]},
+    "burdens": {"type": "array", "items": {"type": "string"}},
+    "unresolved": {"type": "array", "items": {"type": "string"}},
+    "new_fact_exception": {"type": ["string", "null"]}
+  }
+}

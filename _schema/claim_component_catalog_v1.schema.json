@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/claim-component-catalog/v1",
+  "title": "Non-discriminatory component catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "stage", "status", "source", "decomposition_rule", "paper_families", "components", "unresolved_boundaries", "prohibited_outputs"],
+  "properties": {
+    "schema_version": {"const": "claim-component-catalog/1.0.0"},
+    "stage": {"const": "NON_DISCRIMINATORY_COMPONENT_DISCOVERY"},
+    "status": {"enum": ["COMPONENT_DISCOVERY_COMPLETE", "COMPONENT_DISCOVERY_INCOMPLETE", "BLOCKED"]},
+    "source": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {"path": {"type": "string"}, "sha256": {"type": "string"}}
+    },
+    "decomposition_rule": {"type": "string"},
+    "paper_families": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["family_id", "working_title", "central_question", "component_ids", "opening_debt", "closing_debt"],
+        "properties": {
+          "family_id": {"type": "string"},
+          "working_title": {"type": "string"},
+          "central_question": {"type": "string"},
+          "component_ids": {"type": "array", "items": {"type": "string"}},
+          "opening_debt": {"type": "string"},
+          "closing_debt": {"type": "string"}
+        }
+      }
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["component_id", "exact_assertion", "plain_assertion", "source_heading", "source_line_start", "verbatim_anchor", "depends_on", "must_not_be_bundled_with", "negation_or_rival", "defeat_or_narrowing_condition", "open_questions"],
+        "properties": {
+          "component_id": {"type": "string"},
+          "exact_assertion": {"type": "string"},
+          "plain_assertion": {"type": "string"},
+          "source_heading": {"type": "string"},
+          "source_line_start": {"type": "integer", "minimum": 1},
+          "verbatim_anchor": {"type": "string"},
+          "depends_on": {"type": "array", "items": {"type": "string"}},
+          "must_not_be_bundled_with": {"type": "array", "items": {"type": "string"}},
+          "negation_or_rival": {"type": "string"},
+          "defeat_or_narrowing_condition": {"type": "string"},
+          "open_questions": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "unresolved_boundaries": {"type": "array", "items": {"type": "string"}},
+    "prohibited_outputs": {"type": "array", "items": {"type": "string"}}
+  }
+}

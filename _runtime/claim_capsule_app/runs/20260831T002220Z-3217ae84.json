@@ -1,0 +1,100 @@
+{
+  "receipt_version": "claim-pipeline-receipt/1.0.0",
+  "run_id": "20260831T002220Z-3217ae84",
+  "created_at": "2026-08-31T00:22:20.013571+00:00",
+  "provider": "mock",
+  "model": "deepseek-chat",
+  "capsule_hash": "sha256:78e62093b9f5cbdc597ca50b0cbfa2f91d7ff4067b5eb6c0051cb887a89d76ab",
+  "stages": [
+    {
+      "name": "discovery",
+      "status": "DISCOVERY_COMPLETE",
+      "hash": "sha256:1f848debf4e4db6118ee53a7da8118f41bd04bac59fb2ab6bc8956d1fbbac9dd",
+      "output": {
+        "schema_version": "claim-discovery/1.0.0",
+        "stage": "NON_DISCRIMINATORY_DISCOVERY",
+        "status": "DISCOVERY_COMPLETE",
+        "raw_expression": "## Statement\n\nThe substrate must be self-grounding — it cannot depend on something outside itself for existence.",
+        "referent": "## Statement\n\nThe substrate must be self-grounding — it cannot depend on something outside itself for existence.",
+        "identities": [
+          "The asserted referent must remain identifiable across restatements."
+        ],
+        "distinctions": [
+          "The assertion must be distinguishable from its negation and nearby alternatives."
+        ],
+        "relations": [],
+        "operations": [],
+        "dependencies": [
+          "Terms require stable definitions."
+        ],
+        "constraints": [
+          "Show infinite regress of substrates is coherent. Demonstrate external grounding without circularity."
+        ],
+        "invariants": [
+          "Meaning preserved between the exact and plain-language statements."
+        ],
+        "collapse_conditions": [
+          "The assertion collapses if its stated defeat condition is met."
+        ],
+        "consequences": [],
+        "countermodels": [
+          "The exact negation remains a live comparison until discriminated."
+        ],
+        "open_questions": [],
+        "prohibited_outputs": [
+          "No discipline, warrant, grade, bridge, or canonical status assigned in Stage 1."
+        ]
+      }
+    },
+    {
+      "name": "classification",
+      "status": "CLASSIFICATION_COMPLETE",
+      "hash": "sha256:497fb0acc4d1691e38d850ced9eb7f63e3f38d57a4983b7b10d04175141a7413",
+      "output": {
+        "schema_version": "claim-classification/1.0.0",
+        "stage": "CLASSIFICATION_AND_BURDEN_ROUTING",
+        "status": "CLASSIFICATION_COMPLETE",
+        "discovery_receipt_hash": "sha256:1f848debf4e4db6118ee53a7da8118f41bd04bac59fb2ab6bc8956d1fbbac9dd",
+        "object_type": "CLAIM",
+        "register": "unresolved",
+        "claim_species": "FRAMEWORK_STANCE",
+        "native_anatomy": [],
+        "warrant_class": "PHILOSOPHICAL",
+        "lifecycle": "candidate",
+        "why_outcome": "WHY_OPEN",
+        "burdens": [
+          "Complete the native anatomy and attach discriminating support."
+        ],
+        "unresolved": [],
+        "new_fact_exception": null
+      }
+    },
+    {
+      "name": "reconciliation",
+      "status": "RECONCILIATION_COMPLETE",
+      "hash": "sha256:b27a9b9c722d16175c1340662a416e8469ee26aa498c7b93f1a546412faeb0c1",
+      "output": {
+        "schema_version": "claim-reconciliation/1.0.0",
+        "stage": "RECONCILIATION_TRANSLATION_AND_FIT",
+        "status": "RECONCILIATION_COMPLETE",
+        "discovery_receipt_hash": "sha256:1f848debf4e4db6118ee53a7da8118f41bd04bac59fb2ab6bc8956d1fbbac9dd",
+        "classification_receipt_hash": "sha256:497fb0acc4d1691e38d850ced9eb7f63e3f38d57a4983b7b10d04175141a7413",
+        "recommended_operation": "new_claim",
+        "graph_fit": "Candidate only; semantic graph matching is pending.",
+        "native_statement": "## Statement\n\nThe substrate must be self-grounding — it cannot depend on something outside itself for existence.",
+        "bridge_statement": null,
+        "identification_statement": null,
+        "safe_public_wording": "## Statement\n\nThe substrate must be self-grounding — it cannot depend on something outside itself for existence.",
+        "preserved": [
+          "Exact claim wording and declared warrant boundary."
+        ],
+        "lost": [],
+        "downstream_effects": [],
+        "publication_eligibility": "ELIGIBLE_FOR_HUMAN_REVIEW",
+        "human_ruling_required": true
+      }
+    }
+  ],
+  "final_status": "PASS",
+  "canonical_promotion_performed": false
+}

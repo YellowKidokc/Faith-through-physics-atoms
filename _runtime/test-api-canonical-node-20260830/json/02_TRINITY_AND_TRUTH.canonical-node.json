@@ -1,0 +1,93 @@
+{
+  "source_id": "02_TRINITY_AND_TRUTH",
+  "title": "THE TRINITY AND TRUTH FOUNDATION",
+  "canonical_node": {
+    "axiom": "Truth is first in inquiry; God is first in reality. Truth is of God, not above God. The triadic structure (Being, Expression, Witness) is the structural minimum for truth to be fully real.",
+    "definitions": [
+      "Truth: faithfulness of reality to what is, of speech to reality, of witness to what has been shown, and of God to Himself.",
+      "Trinity: one God in three persons (Father, Son, Spirit), distinct but not separate, united in being.",
+      "Perichoresis: mutual indwelling of the persons; each fully contains and is contained by the other two.",
+      "Aseity: self-existence; God requires no external input.",
+      "Simplicity: non-compositeness; God is not composed of parts.",
+      "Triadic grammar: Being (Father), Expression (Son), Witness (Spirit) as irreducible roles for truth-bearing manifestation."
+    ],
+    "derivation": [
+      "Every argument assumes truth matters; denial of truth borrows from truth.",
+      "Truth is not above God; God cannot lie; truth is of God's nature.",
+      "Truth is personal before propositional; Christ is the truth.",
+      "Truth is not a scalar; divine truth is not measurable as a quantity.",
+      "Truth manifests in layers: physics (lawful intelligibility), information (correspondence), consciousness (honest witness), theology (personal).",
+      "Truth-bearing manifestation requires three roles: Being, Expression, Witness; fewer than three fails (n=1 self-defeats, n=2 deadlocks).",
+      "The Trinity is the structural minimum for truth to be fully real.",
+      "Four axioms (Existence, Distinction, Relation, Orientation) are assumed by all reasoning; they dissolve into the one axiom of God.",
+      "The plus sign argument: relation is a different kind of thing than the things it connects; math requires Being, Distinction, Relation.",
+      "Five instances (Maxwell/Heaviside, Watcher Problem, Cross, Consciousness, Big Bang) converge on triadic necessity via cardinality elimination."
+    ],
+    "action": "The system must honor truth as first in inquiry, maintain the triadic grammar in all truth-bearing structures, and test claims in their proper registers (physics, theology, etc.) without smuggling one into another.",
+    "boundary": [
+      "Does not claim physics proves the Trinity; physics discovers triadic grammar, theology names the ground.",
+      "Does not claim truth is above God; truth is of God.",
+      "Does not claim divine truth is measurable as a quantity.",
+      "Does not claim the derivative terms (T.1-T.7) are individually proven; they are proposed awaiting adversarial testing.",
+      "Does not claim Instance 5 (Big Bang) is formalized; it is articulated but unformalized.",
+      "Does not claim the fruits of the Spirit are formal variables; they are theological source-register descriptors."
+    ],
+    "test": [
+      "Check that all claims are tested in the register where they belong (physics, theology, etc.).",
+      "Verify that no claim overstates: e.g., 'physics proves the Trinity' is corrected to 'physics discovers triadic grammar'.",
+      "Check that the Lean-verified claims (quaternion EM isomorphism, Cross uniqueness) are not extended beyond their formal scope.",
+      "Check that open gates (T.4, T.7, Instance 4 holes, Instance 5 unformalized) are acknowledged and not treated as closed.",
+      "Check that the triadic grammar is consistently applied without conflating layers."
+    ]
+  },
+  "dg_protocol": {
+    "dg1_dependencies": [
+      "Lean 4 verified quaternion EM isomorphism (quaternionEM_valid, trinityRelational_valid, heavisideVectorEM_invalid, modalism_invalid).",
+      "Lean verified uniqueness of Cross solution (R(offense, alpha) locked).",
+      "Historical sources: Augustine, Gregory of Nazianzus, John of Damascus, Athanasius, Boethius, Aquinas.",
+      "Physics: Maxwell's equations, Noether's theorem, CPT invariance, Casimir effect, Higgs mechanism.",
+      "Mathematics: Gdel, Tarski, Turing incompleteness results."
+    ],
+    "dg2_new_capability": "Provides a unified framework linking truth, Trinity, and triadic structures across physics, information, consciousness, and theology, with a formal Lean-verified core for the Maxwell/Heaviside isomorphism and Cross uniqueness.",
+    "dg3_preserved_floor": "Preserves the distinction between theology and physics; maintains that physics does not prove the Trinity; preserves the historical creeds and patristic sources.",
+    "dg4_collapse_if_removed": "If the triadic grammar is removed, the framework loses its central explanatory structure for truth and the Trinity; the five instances lose their convergence. If the Lean-verified core is removed, the strongest formal evidence is lost, but the philosophical argument remains.",
+    "dg5_translation_registers": [
+      "Theology register: Trinity, truth, divine attributes.",
+      "Physics register: Maxwell's equations, Noether's theorem, CPT, Casimir, Higgs.",
+      "Mathematics register: Lean proofs, quaternion algebra, information theory.",
+      "Philosophy register: cardinality elimination, self-reference, consciousness."
+    ],
+    "dg6_state": "coherent",
+    "dg7_admissible": "yes",
+    "dg8_closure_pass": "unclear"
+  },
+  "classification": {
+    "claim_class": "theological_framework_with_formal_core",
+    "proof_label": "LEAN_CONDITIONAL_PROOF",
+    "grade": "B",
+    "recommended_atom_action": "preserve_as_canonical_with_open_gates"
+  },
+  "risk": {
+    "overstatement_risks": [
+      "Claiming physics proves the Trinity (corrected in document but may be misread).",
+      "Treating derivative terms (T.1-T.7) as proven when they are proposed.",
+      "Treating Instance 5 (Big Bang) as formal when it is unformalized.",
+      "Treating the triadic necessity as a proof of uniqueness when it is a parsimony argument.",
+      "Conflating structural correspondence with derivation."
+    ],
+    "kill_conditions": [
+      "If the Lean-verified quaternion EM isomorphism is found to be flawed or not actually verified.",
+      "If the Cross uniqueness proof is invalidated.",
+      "If the triadic grammar is shown to be insufficient for truth (e.g., a counterexample with n=2 or n=4).",
+      "If the open gates (T.4, T.7, Instance 4 holes) are closed in a way that contradicts the framework."
+    ],
+    "lean_target": "Formalize the derivative terms (T.1-T.7) individually; prove no-isomorphism theorems (quaternion-to-Heaviside, Trinity-to-modalism); formalize Instance 5 (Big Bang) if possible."
+  },
+  "plain_summary": "This document establishes a theological framework where truth is first in inquiry and triadic in structure, mapping the Trinity onto truth's necessary roles (Being, Expression, Witness). It presents five instances of triadic necessity, with the strongest formal support from a Lean-verified quaternion EM isomorphism and a Lean-verified uniqueness proof for the Cross. The document explicitly corrects overclaims and acknowledges open gates, making it a coherent but partially formalized framework.",
+  "_runner": {
+    "provider": "deepseek",
+    "model": "deepseek-chat",
+    "source_file": "\\\\192.168.2.50\\h_hp\\Desktop\\GREEN2Kimi_Agent_Deployment (1)\\TEST API\\02_TRINITY_AND_TRUTH.md",
+    "output_file": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\test-api-canonical-node-20260830\\json\\02_TRINITY_AND_TRUTH.canonical-node.json"
+  }
+}

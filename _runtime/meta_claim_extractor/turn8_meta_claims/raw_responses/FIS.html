@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" data-fis-schema="2.1"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="fis-schema" content="2.1"><meta name="generator" content="FIS folder-brain generator">
+<title>FIS | raw_responses</title>
+<style>
+:root{color-scheme:dark;--bg:#060708;--panel:#0c0f14;--panel2:#090b0f;--line:#222a35;--text:#e7edf5;--muted:#8b97a7;--accent:#d1a922;--accent2:#f1d37a;--link:#6ea8e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}.layout{max-width:1500px;margin:auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:24px;padding:28px}main{min-width:0}
+h1{font:600 34px Georgia,serif;margin:5px 0 8px}h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-top:28px}
+.eyebrow,code{font-family:ui-monospace,Consolas,monospace}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:1px}.muted{color:var(--muted)}
+.identity{border-left:3px solid var(--accent);padding:8px 0 8px 12px;margin:8px 0 10px;background:linear-gradient(90deg,rgba(209,169,34,.08),transparent)}.identity code{display:block;font-size:15px;color:var(--accent2);margin-bottom:4px}.identity span{display:block;color:var(--muted);font-size:12px}
+.crumbs{font:12px ui-monospace,Consolas,monospace;color:var(--muted);margin-bottom:10px}.crumbs a{color:var(--accent)}.crumbs span{margin:0 4px}
+.unresolved{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:2px 10px;border-radius:3px;font:11px ui-monospace,Consolas,monospace;letter-spacing:1px}
+.sidebar{position:sticky;top:20px;align-self:start;border:1px solid var(--line);background:var(--panel);padding:12px;max-height:calc(100vh - 40px);overflow:auto}.sidebar a,.sidebar .child{display:block;padding:7px 6px;border-bottom:1px solid #1a222d}.side-title{font:600 15px Georgia,serif;padding:4px 6px 12px;color:var(--text)}.side-label{color:var(--accent);font:10px ui-monospace,Consolas,monospace;letter-spacing:1px;text-transform:uppercase;padding:16px 6px 5px}.pending{color:var(--muted)}small{font-size:10px}
+.summary{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:7px;margin:14px 0}.metric{border:1px solid var(--line);padding:8px 9px;background:var(--panel)}.metric b{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.score-grid{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:8px}.score-tile{margin:0;border:1px solid var(--line);background:var(--panel);min-height:104px;padding:10px}.score-tile summary{list-style:none;cursor:pointer}.score-tile summary::-webkit-details-marker{display:none}.score-tile strong{display:block;color:var(--accent);font:600 28px Georgia,serif}.score-tile span{font:11px ui-monospace,Consolas,monospace;text-transform:uppercase;color:var(--muted)}.score-tile p{font-size:12px;color:var(--muted)}.score-tile ul{padding-left:17px;font-size:12px}
+table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}code{font-size:12px;color:#d6e5f5;word-break:break-word}
+input[type=search]{width:min(440px,100%);margin:0;padding:9px 10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:3px}.file-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 8px}button{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:8px 10px;border-radius:3px;cursor:pointer}button:hover{border-color:var(--accent)}.file-list{display:grid;gap:4px}.file-block{border:1px solid var(--line);background:var(--panel);padding:0}.file-block summary{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;align-items:center;padding:7px 9px;list-style:none;cursor:pointer}.file-block summary::-webkit-details-marker{display:none}.file-block[open] summary{border-bottom:1px solid var(--line);background:var(--panel2)}.file-name{font-weight:600;color:var(--text)}.source-link{justify-self:end;font-size:12px}.machine{padding:8px 10px 10px}.machine table{background:var(--panel2)}.machine th{width:190px}.machine td,.machine th{padding:6px 8px}.file-head{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;padding:0 10px}
+.actions{display:flex;gap:6px;flex-wrap:wrap}.actions button{padding:5px 9px;font-size:12px}
+.capsule{border:1px solid var(--line);background:var(--panel);padding:12px 14px}.capsule p{margin:6px 0}
+.health-list{list-style:none;padding:0;margin:0;display:grid;gap:4px}.health-list li{border:1px solid var(--line);background:var(--panel);padding:8px 10px;font-size:13px}.health-list li::before{content:"◆ ";font-size:11px}.health-list li.warn::before{color:var(--accent)}.health-list li.ok::before{color:#5f7f6a}.health-list code{margin-left:6px}
+details{border:1px solid var(--line);padding:10px;background:var(--panel)}summary{cursor:pointer;color:var(--muted)}
+@media(max-width:800px){.layout{display:block;padding:16px}.sidebar{position:relative;top:auto;max-height:none;margin-bottom:16px}.summary{grid-template-columns:repeat(2,1fr)}table{display:block;overflow:auto;white-space:nowrap}}
+</style></head><body data-api-base=""><div class="layout"><aside class="sidebar"><div class="side-title">raw_responses</div><a href="#overview">Overview</a><a href="#semantic">Semantic capsule</a><a href="#health">Health</a><a href="#files">Files</a><a href="#folders">Folders</a><a href="#relationships">Relationships</a><a href="#scores">Signals</a><a href="#context">Audit context</a><div class="side-label">Navigate</div><a class="child" href="../FIS.html">&#8593; turn8_meta_claims</a><div class="side-label">Child folders</div><span class="child pending">None</span><div class="side-label">Record</div><a href="#context">Machine context</a></aside><main id="overview">
+<nav class="crumbs"><a href="../FIS.html">&#8593; turn8_meta_claims</a><span>/</span>raw_responses</nav>
+<div class="eyebrow">FIS FOLDER BRAIN v2.1 / RECURSIVE SEMANTIC VIEW</div><h1>raw_responses</h1>
+<div class="identity"><code>PH__DOC__GN__20260825__AC</code><span>domain PH=physics | type DOC | tags GN=general | date 20260825 | status AC | lossless MEQ__raw_responses__2026-08-25</span></div>
+<div class="identity" style="margin-top:4px"><code style="color:var(--accent2);font-size:13px">G0 M0 E2 S1 T0 K2 R2 Q1 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span style="color:var(--muted);font-size:11px">Folder MEQ aggregate (avg CHI across 4 files)</span></div>
+<p><span class="unresolved">UNRESOLVED</span></p>
+<div class="summary"><div class="metric"><b>Lossless Address</b><code>MEQ__raw_responses__2026-08-25</code></div><div class="metric"><b>Contents</b>txt: 4</div><div class="metric"><b>State</b>active / 4 files</div><div class="metric"><b>Scan</b><code>2026-08-26T00:51:40+00:00</code></div></div>
+<section id="semantic"><h2>Semantic Capsule</h2><div class="capsule"><p>Mixed folder holding 4 file(s) (68,365 bytes) and 0 child folder(s). Dominant signal K / Knowledge; domain theology.</p></div></section>
+<section id="health"><h2>Health</h2><ul class="health-list"><li class="warn">Purpose<code>UNRESOLVED</code></li><li class="warn">Owner<code>UNRESOLVED</code></li><li class="warn">Canonical source<code>not set</code></li><li class="warn">Unclassified files<code>4 of 4</code></li><li class="warn">Presentation coverage<code>0 of 4</code></li></ul></section>
+<details id="context" style="margin-top:28px"><summary>Machine context and audit fields</summary><pre>{
+  &quot;folder_id&quot;: &quot;FLD-2cc890f49d00&quot;,
+  &quot;path&quot;: &quot;D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\turn8_meta_claims\\raw_responses&quot;,
+  &quot;name&quot;: &quot;raw_responses&quot;,
+  &quot;folder_type&quot;: &quot;mixed&quot;,
+  &quot;purpose&quot;: &quot;UNRESOLVED&quot;,
+  &quot;domain&quot;: &quot;unclassified&quot;,
+  &quot;series_name&quot;: null,
+  &quot;chain_steps&quot;: &quot;[]&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;owner&quot;: &quot;UNRESOLVED&quot;,
+  &quot;canonical_source&quot;: 0,
+  &quot;parent_backbone&quot;: null,
+  &quot;file_count&quot;: 4,
+  &quot;child_folder_count&quot;: 0,
+  &quot;created_at&quot;: &quot;2026-08-26T00:24:44+00:00&quot;,
+  &quot;last_scanned&quot;: &quot;2026-08-26T00:51:40+00:00&quot;,
+  &quot;notes&quot;: &quot;&quot;,
+  &quot;compressed_name&quot;: &quot;PH__DOC__GN__20260825__AC&quot;,
+  &quot;compressed_name_detail&quot;: &quot;{\&quot;code\&quot;: \&quot;PH__DOC__GN__20260825__AC\&quot;, \&quot;domain\&quot;: \&quot;PH\&quot;, \&quot;domain_meaning\&quot;: \&quot;physics\&quot;, \&quot;ct\&quot;: \&quot;DOC\&quot;, \&quot;tags\&quot;: [], \&quot;date\&quot;: \&quot;20260825\&quot;, \&quot;status\&quot;: \&quot;AC\&quot;, \&quot;tag_meanings\&quot;: {}}&quot;,
+  &quot;lossless_address&quot;: &quot;MEQ__raw_responses__2026-08-25&quot;,
+  &quot;lossless_address_detail&quot;: &quot;{\&quot;address\&quot;: \&quot;MEQ__raw_responses__2026-08-25\&quot;, \&quot;mode\&quot;: \&quot;meq\&quot;, \&quot;source_date\&quot;: \&quot;2026-08-25\&quot;, \&quot;basis\&quot;: \&quot;title_and_local_content_sample\&quot;, \&quot;trigger\&quot;: \&quot;Master Equation\&quot;}&quot;
+}</pre></details>
+<h2 id="files">Files Here</h2><div class="file-controls"><input id="file-search" type="search" placeholder="Find by name, address, type, or keyword" aria-label="Filter files"><button id="toggle-files" type="button">Open all</button></div><div class="file-head"><span>File</span><span>MEQ Vector</span><span>Format</span><span>Role</span><span>Keywords</span><span>Lossless</span><span>Open</span></div><div id="file-rows" class="file-list"><details id="FIL-34c6962d88d7" class="file-block" data-search="w8.1.raw.txt g0 m0 e3 s1 t1 k3 r2 q1 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__w8_1_raw__2026-08-25 ph__not__coh-ent-rel__20260825__ac.txt 7dc76dd3f813745ded816cd9fc195535058cc4784d3084a719ca0e4ae3efda8f d:\github\faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\w8.1.raw.txt document / txt plain theology, k, knowledge, l08, note, knowledge_text, e, truth signal, s_eff, entropy, t, time kairos, knowledge logos, r, relational frame, q, quantum uncertainty, c, christ coherence, evidence theology (2/3) k / knowledge e:3, s:1, t:1, k:3, r:2, q:1, c:1 l08 (2/3) knowledge_text 100.0/100 0.584 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:51:40+00:00 19550 bytes g0 m0 e3 s1 t1 k3 r2 q1 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">W8.1.raw.txt</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E3 S1 T1 K3 R2 Q1 C1 :: [G.C] [E.Q] [S.R] [T.K]</code><span>txt</span><span>document</span><span>theology, K, Knowledge, L08, note, knowledge_text</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__W8_1_raw__2026-08-25">◆ lossless</span><a class="source-link" href="W8.1.raw.txt">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="W8.1.raw.txt">D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\W8.1.raw.txt</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E3 S1 T1 K3 R2 Q1 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__W8_1_raw__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__NOT__COH-ENT-REL__20260825__AC.txt</code></td></tr><tr><th>SHA-256</th><td><code>7dc76dd3f813745ded816cd9fc195535058cc4784d3084a719ca0e4ae3efda8f</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\W8.1.raw.txt</code></td></tr><tr><th>Type / format</th><td><code>document / txt</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>theology, K, Knowledge, L08, note, knowledge_text, E, truth signal, S_eff, entropy, T, time kairos, knowledge logos, R, relational frame, Q, quantum uncertainty, C, christ coherence, evidence</code></td></tr><tr><th>Domain signal</th><td><code>theology (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>K / Knowledge</code></td></tr><tr><th>CHI vector</th><td><code>E:3, S:1, T:1, K:3, R:2, Q:1, C:1</code></td></tr><tr><th>Law signal</th><td><code>L08 (2/3)</code></td></tr><tr><th>Content role</th><td><code>knowledge_text</code></td></tr><tr><th>Evidence density</th><td><code>100.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.584</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:51:40+00:00</code></td></tr><tr><th>Size</th><td><code>19550 bytes</code></td></tr></tbody></table></div></details><details id="FIL-1a13af02372b" class="file-block" data-search="w8.2.raw.txt g0 m1 e2 s1 t0 k0 r1 q1 f0 c2 :: [g.c] [m.f] [e.q] [s.r] [t.k] meq__w8_2_raw__2026-08-25 ph__not__coh-mrl-ent__20260825__ac.txt cd06ec37d82436fe43e05e8cd69add3fdb08d59dc9eac30c37e8b5687bbd687d d:\github\faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\w8.2.raw.txt document / txt plain theology, e, truth signal, l10, note, truth_signal_text, m, moral alignment, s_eff, entropy, r, relational frame, q, quantum uncertainty, c, christ coherence, evidence, physics, frame, class theology (2/3) e / truth signal m:1, e:2, s:1, r:1, q:1, c:2 l10 (2/3) truth_signal_text 50.0/100 0.453 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:51:40+00:00 14692 bytes g0 m1 e2 s1 t0 k0 r1 q1 f0 c2 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">W8.2.raw.txt</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">M1 E2 S1 R1 Q1 C2 :: [G.C] [M.F] [E.Q] [S.R]</code><span>txt</span><span>document</span><span>theology, E, Truth Signal, L10, note, truth_signal_text</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="MEQ__W8_2_raw__2026-08-25">◆ lossless</span><a class="source-link" href="W8.2.raw.txt">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="W8.2.raw.txt">D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\W8.2.raw.txt</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M1 E2 S1 T0 K0 R1 Q1 F0 C2 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>MEQ__W8_2_raw__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__NOT__COH-MRL-ENT__20260825__AC.txt</code></td></tr><tr><th>SHA-256</th><td><code>cd06ec37d82436fe43e05e8cd69add3fdb08d59dc9eac30c37e8b5687bbd687d</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\W8.2.raw.txt</code></td></tr><tr><th>Type / format</th><td><code>document / txt</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>theology, E, Truth Signal, L10, note, truth_signal_text, M, moral alignment, S_eff, entropy, R, relational frame, Q, quantum uncertainty, C, christ coherence, evidence, physics, frame, class</code></td></tr><tr><th>Domain signal</th><td><code>theology (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>E / Truth Signal</code></td></tr><tr><th>CHI vector</th><td><code>M:1, E:2, S:1, R:1, Q:1, C:2</code></td></tr><tr><th>Law signal</th><td><code>L10 (2/3)</code></td></tr><tr><th>Content role</th><td><code>truth_signal_text</code></td></tr><tr><th>Evidence density</th><td><code>50.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.453</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:51:40+00:00</code></td></tr><tr><th>Size</th><td><code>14692 bytes</code></td></tr></tbody></table></div></details><details id="FIL-b604f17da7ac" class="file-block" data-search="w8.3.raw.txt g1 m1 e1 s1 t1 k1 r2 q1 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] meq__w8_3_raw__2026-08-25 ph__not__grc-mrl-ent__20260825__ac.txt b04e41f883e31e6b5a7b482e2628d82b6e8f6e54a9013a92cff614eccb37a5e1 d:\github\faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\w8.3.raw.txt document / txt plain code, r, relational frame, l08, note, relational_frame_text, g, grace, m, moral alignment, e, truth signal, s_eff, entropy, t, time kairos, k, knowledge logos, q, quantum uncertainty code (2/3) r / relational frame g:1, m:1, e:1, s:1, t:1, k:1, r:2, q:1, c:1 l08 (2/3) relational_frame_text 25.0/100 0.539 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:51:40+00:00 13525 bytes g1 m1 e1 s1 t1 k1 r2 q1 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">W8.3.raw.txt</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">G1 M1 E1 S1 T1 K1 R2 Q1 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span>txt</span><span>document</span><span>code, R, Relational Frame, L08, note, relational_frame_text</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="MEQ__W8_3_raw__2026-08-25">◆ lossless</span><a class="source-link" href="W8.3.raw.txt">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="W8.3.raw.txt">D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\W8.3.raw.txt</a></td></tr><tr><th>MEQ Name</th><td><code>G1 M1 E1 S1 T1 K1 R2 Q1 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>MEQ__W8_3_raw__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__NOT__GRC-MRL-ENT__20260825__AC.txt</code></td></tr><tr><th>SHA-256</th><td><code>b04e41f883e31e6b5a7b482e2628d82b6e8f6e54a9013a92cff614eccb37a5e1</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\W8.3.raw.txt</code></td></tr><tr><th>Type / format</th><td><code>document / txt</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, R, Relational Frame, L08, note, relational_frame_text, G, grace, M, moral alignment, E, truth signal, S_eff, entropy, T, time kairos, K, knowledge logos, Q, quantum uncertainty</code></td></tr><tr><th>Domain signal</th><td><code>code (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>R / Relational Frame</code></td></tr><tr><th>CHI vector</th><td><code>G:1, M:1, E:1, S:1, T:1, K:1, R:2, Q:1, C:1</code></td></tr><tr><th>Law signal</th><td><code>L08 (2/3)</code></td></tr><tr><th>Content role</th><td><code>relational_frame_text</code></td></tr><tr><th>Evidence density</th><td><code>25.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.539</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:51:40+00:00</code></td></tr><tr><th>Size</th><td><code>13525 bytes</code></td></tr></tbody></table></div></details><details id="FIL-afab7a49e3f1" class="file-block" data-search="w8.4.raw.txt g0 m0 e1 s0 t0 k2 r1 q1 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__w8_4_raw__2026-08-25 ph__not__coh-rel-qnt__20260825__ac.txt d624a68149f654d872ce513598bfa46a4a63bcdaa895e77c4a543fd8263d5a72 d:\github\faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\w8.4.raw.txt document / txt plain epistemology, k, knowledge, l06, note, knowledge_text, e, truth signal, knowledge logos, r, relational frame, q, quantum uncertainty, c, christ coherence, evidence, class, layer, axiom, physics epistemology (1/3) k / knowledge e:1, k:2, r:1, q:1, c:1 l06 (1/3) knowledge_text 37.5/100 0.322 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:51:40+00:00 20598 bytes g0 m0 e1 s0 t0 k2 r1 q1 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">W8.4.raw.txt</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E1 K2 R1 Q1 C1 :: [G.C] [E.Q] [S.R] [T.K]</code><span>txt</span><span>document</span><span>epistemology, K, Knowledge, L06, note, knowledge_text</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__W8_4_raw__2026-08-25">◆ lossless</span><a class="source-link" href="W8.4.raw.txt">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="W8.4.raw.txt">D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\W8.4.raw.txt</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E1 S0 T0 K2 R1 Q1 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__W8_4_raw__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__NOT__COH-REL-QNT__20260825__AC.txt</code></td></tr><tr><th>SHA-256</th><td><code>d624a68149f654d872ce513598bfa46a4a63bcdaa895e77c4a543fd8263d5a72</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\turn8_meta_claims\raw_responses\W8.4.raw.txt</code></td></tr><tr><th>Type / format</th><td><code>document / txt</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>epistemology, K, Knowledge, L06, note, knowledge_text, E, truth signal, knowledge logos, R, relational frame, Q, quantum uncertainty, C, christ coherence, evidence, class, layer, axiom, physics</code></td></tr><tr><th>Domain signal</th><td><code>epistemology (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>K / Knowledge</code></td></tr><tr><th>CHI vector</th><td><code>E:1, K:2, R:1, Q:1, C:1</code></td></tr><tr><th>Law signal</th><td><code>L06 (1/3)</code></td></tr><tr><th>Content role</th><td><code>knowledge_text</code></td></tr><tr><th>Evidence density</th><td><code>37.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.322</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:51:40+00:00</code></td></tr><tr><th>Size</th><td><code>20598 bytes</code></td></tr></tbody></table></div></details></div>
+<h2 id="folders">Child Folders</h2><table><thead><tr><th>Folder</th><th>Type</th><th>Files</th><th>Address</th><th>View</th></tr></thead><tbody><tr><td colspan="5" class="muted">No child folders.</td></tr></tbody></table><section id="relationships"><h2>Semantic Network</h2><p class="section-note">Connections based on shared keywords, CHI variables, domain, and law signals. Files sharing 2+ tags are linked.</p><div class="badges" style="margin:8px 0"><span class="badge">e (3)</span> <span class="badge">truth signal (3)</span> <span class="badge">k (2)</span> <span class="badge">knowledge_text (2)</span> <span class="badge">s_eff (2)</span> <span class="badge">theology (2)</span> <span class="badge">entropy (2)</span> <span class="badge">l08 (2)</span> <span class="badge">knowledge (2)</span> <span class="badge">moral alignment (2)</span> <span class="badge">m (2)</span> <span class="badge">r (2)</span></div><table class="signal-table"><thead><tr><th>File A</th><th>File B</th><th>Shared</th><th>Via</th></tr></thead><tbody><tr><td><a href="#FIL-34c6962d88d7">W8.1.raw.txt</a></td><td><a href="#FIL-afab7a49e3f1">W8.4.raw.txt</a></td><td>5</td><td>k, knowledge_text, e, knowledge</td></tr><tr><td><a href="#FIL-1a13af02372b">W8.2.raw.txt</a></td><td><a href="#FIL-34c6962d88d7">W8.1.raw.txt</a></td><td>5</td><td>s_eff, e, theology, entropy</td></tr><tr><td><a href="#FIL-1a13af02372b">W8.2.raw.txt</a></td><td><a href="#FIL-afab7a49e3f1">W8.4.raw.txt</a></td><td>2</td><td>e, truth signal</td></tr><tr><td><a href="#FIL-1a13af02372b">W8.2.raw.txt</a></td><td><a href="#FIL-b604f17da7ac">W8.3.raw.txt</a></td><td>2</td><td>moral alignment, m</td></tr></tbody></table></section><section id="scores"><h2>Folder Signals</h2><p class="muted">Open a block to see the calculation evidence; file links jump to the inline machine block above.</p><div class="score-grid"><details class="score-tile"><summary><strong>36</strong><span>Folder signal</span></summary><p>Composite navigation signal; not truth, quality, or canon status.</p><ul><li><a href="#FIL-34c6962d88d7">W8.1.raw.txt</a> <code>39/100</code></li><li><a href="#FIL-afab7a49e3f1">W8.4.raw.txt</a> <code>39/100</code></li><li><a href="#FIL-1a13af02372b">W8.2.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-b604f17da7ac">W8.3.raw.txt</a> <code>38/100</code></li></ul></details><details class="score-tile"><summary><strong>51</strong><span>Activity</span></summary><p>4 files modified in the last 30 days; 1 observed modification days.</p><ul><li><a href="#FIL-afab7a49e3f1">W8.4.raw.txt</a> <code>39/100</code></li><li><a href="#FIL-b604f17da7ac">W8.3.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-1a13af02372b">W8.2.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-34c6962d88d7">W8.1.raw.txt</a> <code>39/100</code></li></ul></details><details class="score-tile"><summary><strong>23</strong><span>Depth</span></summary><p>4 direct source files and 68,365 source bytes.</p><ul><li><a href="#FIL-afab7a49e3f1">W8.4.raw.txt</a> <code>39/100</code></li><li><a href="#FIL-34c6962d88d7">W8.1.raw.txt</a> <code>39/100</code></li><li><a href="#FIL-1a13af02372b">W8.2.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-b604f17da7ac">W8.3.raw.txt</a> <code>38/100</code></li></ul></details><details class="score-tile"><summary><strong>0</strong><span>Explicit links</span></summary><p>Counts visible Markdown/wiki/HTML link syntax only; it does not infer semantic relationships.</p><ul><li><a href="#FIL-34c6962d88d7">W8.1.raw.txt</a> <code>39/100</code></li><li><a href="#FIL-1a13af02372b">W8.2.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-b604f17da7ac">W8.3.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-afab7a49e3f1">W8.4.raw.txt</a> <code>39/100</code></li></ul></details><details class="score-tile"><summary><strong>0</strong><span>Presentation</span></summary><p>Topbar, audio, equations, and claim-marker coverage in directly stored HTML files.</p><ul><li><a href="#FIL-34c6962d88d7">W8.1.raw.txt</a> <code>39/100</code></li><li><a href="#FIL-1a13af02372b">W8.2.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-b604f17da7ac">W8.3.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-afab7a49e3f1">W8.4.raw.txt</a> <code>39/100</code></li></ul></details><details class="score-tile"><summary><strong>100</strong><span>Registry</span></summary><p>Files with both a SHA-256 content fingerprint and lossless internal address.</p><ul><li><a href="#FIL-34c6962d88d7">W8.1.raw.txt</a> <code>39/100</code></li><li><a href="#FIL-1a13af02372b">W8.2.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-b604f17da7ac">W8.3.raw.txt</a> <code>38/100</code></li><li><a href="#FIL-afab7a49e3f1">W8.4.raw.txt</a> <code>39/100</code></li></ul></details></div></section>
+<p class="muted" style="margin-top:24px">Generated from the FIS registry. Source files remain in place; this page is an index, not a replacement.</p>
+</main></div>
+<script type="application/json" id="fis-folder-record">
+{
+  "schema": "fis.folder/2.1",
+  "folder": {
+    "folder_id": "FLD-2cc890f49d00",
+    "path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\turn8_meta_claims\\raw_responses",
+    "name": "raw_responses",
+    "folder_type": "mixed",
+    "purpose": "UNRESOLVED",
+    "domain": "unclassified",
+    "status": "active",
+    "owner": "UNRESOLVED",
+    "canonical_source": 0,
+    "file_count": 4,
+    "child_folder_count": 0,
+    "created_at": "2026-08-26T00:24:44+00:00",
+    "last_scanned": "2026-08-26T00:51:40+00:00",
+    "compressed_name": "PH__DOC__GN__20260825__AC",
+    "compressed_name_detail": {
+      "code": "PH__DOC__GN__20260825__AC",
+      "domain": "PH",
+      "domain_meaning": "physics",
+      "ct": "DOC",
+      "tags": [],
+      "date": "20260825",
+      "status": "AC",
+      "tag_meanings": {}
+    },
+    "lossless_address": "MEQ__raw_responses__2026-08-25",
+    "lossless_address_detail": {
+      "address": "MEQ__raw_responses__2026-08-25",
+      "mode": "meq",
+      "source_date": "2026-08-25",
+      "basis": "title_and_local_content_sample",
+      "trigger": "Master Equation"
+    },
+    "meq_aggregate": "G0 M0 E2 S1 T0 K2 R2 Q1 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]"
+  },
+  "files": [
+    {
+      "file_id": "FIL-34c6962d88d7",
+      "name": "W8.1.raw.txt",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\turn8_meta_claims\\raw_responses\\W8.1.raw.txt",
+      "meq_name": "G0 M0 E3 S1 T1 K3 R2 Q1 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__W8_1_raw__2026-08-25",
+      "proposed_compressed_name": "PH__NOT__COH-ENT-REL__20260825__AC.txt",
+      "sha256": "7dc76dd3f813745ded816cd9fc195535058cc4784d3084a719ca0e4ae3efda8f",
+      "type": "document",
+      "format": "txt",
+      "keywords": [
+        "theology",
+        "K",
+        "Knowledge",
+        "L08",
+        "note",
+        "knowledge_text",
+        "E",
+        "truth signal",
+        "S_eff",
+        "entropy",
+        "T",
+        "time kairos",
+        "knowledge logos",
+        "R",
+        "relational frame",
+        "Q",
+        "quantum uncertainty",
+        "C",
+        "christ coherence",
+        "evidence"
+      ],
+      "domain_signal": "theology (2/3)",
+      "dominant_chi": "K / Knowledge",
+      "chi_vector": {
+        "E": 3,
+        "S": 1,
+        "T": 1,
+        "K": 3,
+        "R": 2,
+        "Q": 1,
+        "C": 1
+      },
+      "law_signal": "L08 (2/3)",
+      "content_role": "knowledge_text",
+      "evidence_density": 100.0,
+      "confidence": 0.584,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:51:40+00:00",
+      "size_bytes": 19550
+    },
+    {
+      "file_id": "FIL-1a13af02372b",
+      "name": "W8.2.raw.txt",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\turn8_meta_claims\\raw_responses\\W8.2.raw.txt",
+      "meq_name": "G0 M1 E2 S1 T0 K0 R1 Q1 F0 C2 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "MEQ__W8_2_raw__2026-08-25",
+      "proposed_compressed_name": "PH__NOT__COH-MRL-ENT__20260825__AC.txt",
+      "sha256": "cd06ec37d82436fe43e05e8cd69add3fdb08d59dc9eac30c37e8b5687bbd687d",
+      "type": "document",
+      "format": "txt",
+      "keywords": [
+        "theology",
+        "E",
+        "Truth Signal",
+        "L10",
+        "note",
+        "truth_signal_text",
+        "M",
+        "moral alignment",
+        "S_eff",
+        "entropy",
+        "R",
+        "relational frame",
+        "Q",
+        "quantum uncertainty",
+        "C",
+        "christ coherence",
+        "evidence",
+        "physics",
+        "frame",
+        "class"
+      ],
+      "domain_signal": "theology (2/3)",
+      "dominant_chi": "E / Truth Signal",
+      "chi_vector": {
+        "M": 1,
+        "E": 2,
+        "S": 1,
+        "R": 1,
+        "Q": 1,
+        "C": 2
+      },
+      "law_signal": "L10 (2/3)",
+      "content_role": "truth_signal_text",
+      "evidence_density": 50.0,
+      "confidence": 0.453,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:51:40+00:00",
+      "size_bytes": 14692
+    },
+    {
+      "file_id": "FIL-b604f17da7ac",
+      "name": "W8.3.raw.txt",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\turn8_meta_claims\\raw_responses\\W8.3.raw.txt",
+      "meq_name": "G1 M1 E1 S1 T1 K1 R2 Q1 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "MEQ__W8_3_raw__2026-08-25",
+      "proposed_compressed_name": "PH__NOT__GRC-MRL-ENT__20260825__AC.txt",
+      "sha256": "b04e41f883e31e6b5a7b482e2628d82b6e8f6e54a9013a92cff614eccb37a5e1",
+      "type": "document",
+      "format": "txt",
+      "keywords": [
+        "code",
+        "R",
+        "Relational Frame",
+        "L08",
+        "note",
+        "relational_frame_text",
+        "G",
+        "grace",
+        "M",
+        "moral alignment",
+        "E",
+        "truth signal",
+        "S_eff",
+        "entropy",
+        "T",
+        "time kairos",
+        "K",
+        "knowledge logos",
+        "Q",
+        "quantum uncertainty"
+      ],
+      "domain_signal": "code (2/3)",
+      "dominant_chi": "R / Relational Frame",
+      "chi_vector": {
+        "G": 1,
+        "M": 1,
+        "E": 1,
+        "S": 1,
+        "T": 1,
+        "K": 1,
+        "R": 2,
+        "Q": 1,
+        "C": 1
+      },
+      "law_signal": "L08 (2/3)",
+      "content_role": "relational_frame_text",
+      "evidence_density": 25.0,
+      "confidence": 0.539,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:51:40+00:00",
+      "size_bytes": 13525
+    },
+    {
+      "file_id": "FIL-afab7a49e3f1",
+      "name": "W8.4.raw.txt",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\turn8_meta_claims\\raw_responses\\W8.4.raw.txt",
+      "meq_name": "G0 M0 E1 S0 T0 K2 R1 Q1 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__W8_4_raw__2026-08-25",
+      "proposed_compressed_name": "PH__NOT__COH-REL-QNT__20260825__AC.txt",
+      "sha256": "d624a68149f654d872ce513598bfa46a4a63bcdaa895e77c4a543fd8263d5a72",
+      "type": "document",
+      "format": "txt",
+      "keywords": [
+        "epistemology",
+        "K",
+        "Knowledge",
+        "L06",
+        "note",
+        "knowledge_text",
+        "E",
+        "truth signal",
+        "knowledge logos",
+        "R",
+        "relational frame",
+        "Q",
+        "quantum uncertainty",
+        "C",
+        "christ coherence",
+        "evidence",
+        "class",
+        "layer",
+        "axiom",
+        "physics"
+      ],
+      "domain_signal": "epistemology (1/3)",
+      "dominant_chi": "K / Knowledge",
+      "chi_vector": {
+        "E": 1,
+        "K": 2,
+        "R": 1,
+        "Q": 1,
+        "C": 1
+      },
+      "law_signal": "L06 (1/3)",
+      "content_role": "knowledge_text",
+      "evidence_density": 37.5,
+      "confidence": 0.322,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:51:40+00:00",
+      "size_bytes": 20598
+    }
+  ],
+  "child_folders": [],
+  "signals": {
+    "folder_signal": 36,
+    "activity": 51,
+    "depth": 23,
+    "explicit_links": 0,
+    "presentation": 0,
+    "registry": 100
+  }
+}
+</script>
+<script>
+const q=document.getElementById('file-search');const blocks=[...document.querySelectorAll('.file-block')];q?.addEventListener('input',()=>{const v=q.value.toLowerCase();blocks.forEach(b=>b.hidden=!(b.dataset.search+' '+b.innerText.toLowerCase()).includes(v));});const toggle=document.getElementById('toggle-files');toggle?.addEventListener('click',()=>{const visible=blocks.filter(b=>!b.hidden);const openSome=visible.some(b=>!b.open);visible.forEach(b=>b.open=openSome);toggle.textContent=openSome?'Close all':'Open all';});document.querySelectorAll('.source-link').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{navigator.clipboard?.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent=b.dataset.copy.startsWith('MEQ')?'Copy address':'Copy SHA-256',900);}));
+document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const payload={file_id:b.dataset.fileId,target:b.dataset.target||null,folder:document.querySelector('h1').textContent};if(window.FIS_API?.run){window.FIS_API.run(b.dataset.action,payload);}else{b.textContent='API not connected';setTimeout(()=>b.textContent=b.dataset.action==='apply-name'?'Apply proposed name':'Mark reviewed',1100);}}))</script></body></html>

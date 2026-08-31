@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en" data-fis-schema="2.1"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="fis-schema" content="2.1"><meta name="generator" content="FIS folder-brain generator">
+<title>FIS | smoke_W4_1</title>
+<style>
+:root{color-scheme:dark;--bg:#060708;--panel:#0c0f14;--panel2:#090b0f;--line:#222a35;--text:#e7edf5;--muted:#8b97a7;--accent:#d1a922;--accent2:#f1d37a;--link:#6ea8e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}.layout{max-width:1500px;margin:auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:24px;padding:28px}main{min-width:0}
+h1{font:600 34px Georgia,serif;margin:5px 0 8px}h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-top:28px}
+.eyebrow,code{font-family:ui-monospace,Consolas,monospace}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:1px}.muted{color:var(--muted)}
+.identity{border-left:3px solid var(--accent);padding:8px 0 8px 12px;margin:8px 0 10px;background:linear-gradient(90deg,rgba(209,169,34,.08),transparent)}.identity code{display:block;font-size:15px;color:var(--accent2);margin-bottom:4px}.identity span{display:block;color:var(--muted);font-size:12px}
+.crumbs{font:12px ui-monospace,Consolas,monospace;color:var(--muted);margin-bottom:10px}.crumbs a{color:var(--accent)}.crumbs span{margin:0 4px}
+.unresolved{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:2px 10px;border-radius:3px;font:11px ui-monospace,Consolas,monospace;letter-spacing:1px}
+.sidebar{position:sticky;top:20px;align-self:start;border:1px solid var(--line);background:var(--panel);padding:12px;max-height:calc(100vh - 40px);overflow:auto}.sidebar a,.sidebar .child{display:block;padding:7px 6px;border-bottom:1px solid #1a222d}.side-title{font:600 15px Georgia,serif;padding:4px 6px 12px;color:var(--text)}.side-label{color:var(--accent);font:10px ui-monospace,Consolas,monospace;letter-spacing:1px;text-transform:uppercase;padding:16px 6px 5px}.pending{color:var(--muted)}small{font-size:10px}
+.summary{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:7px;margin:14px 0}.metric{border:1px solid var(--line);padding:8px 9px;background:var(--panel)}.metric b{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.score-grid{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:8px}.score-tile{margin:0;border:1px solid var(--line);background:var(--panel);min-height:104px;padding:10px}.score-tile summary{list-style:none;cursor:pointer}.score-tile summary::-webkit-details-marker{display:none}.score-tile strong{display:block;color:var(--accent);font:600 28px Georgia,serif}.score-tile span{font:11px ui-monospace,Consolas,monospace;text-transform:uppercase;color:var(--muted)}.score-tile p{font-size:12px;color:var(--muted)}.score-tile ul{padding-left:17px;font-size:12px}
+table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}code{font-size:12px;color:#d6e5f5;word-break:break-word}
+input[type=search]{width:min(440px,100%);margin:0;padding:9px 10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:3px}.file-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 8px}button{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:8px 10px;border-radius:3px;cursor:pointer}button:hover{border-color:var(--accent)}.file-list{display:grid;gap:4px}.file-block{border:1px solid var(--line);background:var(--panel);padding:0}.file-block summary{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;align-items:center;padding:7px 9px;list-style:none;cursor:pointer}.file-block summary::-webkit-details-marker{display:none}.file-block[open] summary{border-bottom:1px solid var(--line);background:var(--panel2)}.file-name{font-weight:600;color:var(--text)}.source-link{justify-self:end;font-size:12px}.machine{padding:8px 10px 10px}.machine table{background:var(--panel2)}.machine th{width:190px}.machine td,.machine th{padding:6px 8px}.file-head{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;padding:0 10px}
+.actions{display:flex;gap:6px;flex-wrap:wrap}.actions button{padding:5px 9px;font-size:12px}
+.capsule{border:1px solid var(--line);background:var(--panel);padding:12px 14px}.capsule p{margin:6px 0}
+.health-list{list-style:none;padding:0;margin:0;display:grid;gap:4px}.health-list li{border:1px solid var(--line);background:var(--panel);padding:8px 10px;font-size:13px}.health-list li::before{content:"◆ ";font-size:11px}.health-list li.warn::before{color:var(--accent)}.health-list li.ok::before{color:#5f7f6a}.health-list code{margin-left:6px}
+details{border:1px solid var(--line);padding:10px;background:var(--panel)}summary{cursor:pointer;color:var(--muted)}
+@media(max-width:800px){.layout{display:block;padding:16px}.sidebar{position:relative;top:auto;max-height:none;margin-bottom:16px}.summary{grid-template-columns:repeat(2,1fr)}table{display:block;overflow:auto;white-space:nowrap}}
+</style></head><body data-api-base=""><div class="layout"><aside class="sidebar"><div class="side-title">smoke_W4_1</div><a href="#overview">Overview</a><a href="#semantic">Semantic capsule</a><a href="#health">Health</a><a href="#files">Files</a><a href="#folders">Folders</a><a href="#relationships">Relationships</a><a href="#scores">Signals</a><a href="#context">Audit context</a><div class="side-label">Navigate</div><a class="child" href="../FIS.html">&#8593; meta_claim_extractor</a><div class="side-label">Child folders</div><a class="child" href="raw_responses/FIS.html">raw_responses</a><div class="side-label">Record</div><a href="#context">Machine context</a></aside><main id="overview">
+<nav class="crumbs"><a href="../FIS.html">&#8593; meta_claim_extractor</a><span>/</span>smoke_W4_1</nav>
+<div class="eyebrow">FIS FOLDER BRAIN v2.1 / RECURSIVE SEMANTIC VIEW</div><h1>smoke_W4_1</h1>
+<div class="identity"><code>PH__DOC__AUD-CLM__20260825__AC</code><span>domain PH=physics | type DOC | tags AUD=audit/review, CLM=claim/assertion | date 20260825 | status AC | lossless LOSS__smoke_W4_1__2026-08-25</span></div>
+<div class="identity" style="margin-top:4px"><code style="color:var(--accent2);font-size:13px">G0 M0 E0 S0 T0 K0 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span style="color:var(--muted);font-size:11px">Folder MEQ aggregate (avg CHI across 5 files)</span></div>
+<p><span class="unresolved">UNRESOLVED</span></p>
+<div class="summary"><div class="metric"><b>Lossless Address</b><code>LOSS__smoke_W4_1__2026-08-25</code></div><div class="metric"><b>Contents</b>json: 2 | jsonl: 2 | md: 1</div><div class="metric"><b>State</b>active / 5 files</div><div class="metric"><b>Scan</b><code>2026-08-26T00:51:37+00:00</code></div></div>
+<section id="semantic"><h2>Semantic Capsule</h2><div class="capsule"><p>Mixed folder holding 5 file(s) (1,394 bytes) and 1 child folder(s). Dominant signal C / Christ Alignment / Coherence; domain code.</p></div></section>
+<section id="health"><h2>Health</h2><ul class="health-list"><li class="warn">Purpose<code>UNRESOLVED</code></li><li class="warn">Owner<code>UNRESOLVED</code></li><li class="warn">Canonical source<code>not set</code></li><li class="warn">Unclassified files<code>5 of 5</code></li><li class="warn">Presentation coverage<code>0 of 5</code></li></ul></section>
+<details id="context" style="margin-top:28px"><summary>Machine context and audit fields</summary><pre>{
+  &quot;folder_id&quot;: &quot;FLD-4259e3f3f77d&quot;,
+  &quot;path&quot;: &quot;D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\smoke_W4_1&quot;,
+  &quot;name&quot;: &quot;smoke_W4_1&quot;,
+  &quot;folder_type&quot;: &quot;mixed&quot;,
+  &quot;purpose&quot;: &quot;UNRESOLVED&quot;,
+  &quot;domain&quot;: &quot;unclassified&quot;,
+  &quot;series_name&quot;: null,
+  &quot;chain_steps&quot;: &quot;[]&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;owner&quot;: &quot;UNRESOLVED&quot;,
+  &quot;canonical_source&quot;: 0,
+  &quot;parent_backbone&quot;: null,
+  &quot;file_count&quot;: 5,
+  &quot;child_folder_count&quot;: 1,
+  &quot;created_at&quot;: &quot;2026-08-26T00:24:44+00:00&quot;,
+  &quot;last_scanned&quot;: &quot;2026-08-26T00:51:37+00:00&quot;,
+  &quot;notes&quot;: &quot;&quot;,
+  &quot;compressed_name&quot;: &quot;PH__DOC__AUD-CLM__20260825__AC&quot;,
+  &quot;compressed_name_detail&quot;: &quot;{\&quot;code\&quot;: \&quot;PH__DOC__AUD-CLM__20260825__AC\&quot;, \&quot;domain\&quot;: \&quot;PH\&quot;, \&quot;domain_meaning\&quot;: \&quot;physics\&quot;, \&quot;ct\&quot;: \&quot;DOC\&quot;, \&quot;tags\&quot;: [\&quot;AUD\&quot;, \&quot;CLM\&quot;], \&quot;date\&quot;: \&quot;20260825\&quot;, \&quot;status\&quot;: \&quot;AC\&quot;, \&quot;tag_meanings\&quot;: {\&quot;AUD\&quot;: \&quot;audit/review\&quot;, \&quot;CLM\&quot;: \&quot;claim/assertion\&quot;}}&quot;,
+  &quot;lossless_address&quot;: &quot;LOSS__smoke_W4_1__2026-08-25&quot;,
+  &quot;lossless_address_detail&quot;: &quot;{\&quot;address\&quot;: \&quot;LOSS__smoke_W4_1__2026-08-25\&quot;, \&quot;mode\&quot;: \&quot;loss\&quot;, \&quot;source_date\&quot;: \&quot;2026-08-25\&quot;, \&quot;basis\&quot;: \&quot;title_and_local_content_sample\&quot;, \&quot;trigger\&quot;: null}&quot;
+}</pre></details>
+<h2 id="files">Files Here</h2><div class="file-controls"><input id="file-search" type="search" placeholder="Find by name, address, type, or keyword" aria-label="Filter files"><button id="toggle-files" type="button">Open all</button></div><div class="file-head"><span>File</span><span>MEQ Vector</span><span>Format</span><span>Role</span><span>Keywords</span><span>Lossless</span><span>Open</span></div><div id="file-rows" class="file-list"><details id="FIL-0a9e3075cdbc" class="file-block" data-search="meta_claim_review.md unscored loss__meta_claim_review__2026-08-25 ph__not__aud-clm__20260825__rv.md f6dd982c64a54da888f25262262db5591365bba9c63657ed619d3ce72d584a1c d:\github\faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_w4_1\meta_claim_review.md article / md plain code, note, unclassified_text, class, meta, claim, review code (1/3) none / unclassified none none (0/3) unclassified_text 0.0/100 0.028 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:51:37+00:00 162 bytes "><summary><span class="file-name">META_CLAIM_REVIEW.md</span><code class="meq-tag" style="font-size:10px;color:#f1d37a"></code><span>md</span><span>article</span><span>code, note, unclassified_text, class, meta, claim</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__META_CLAIM_REVIEW__2026-08-25">◆ lossless</span><a class="source-link" href="META_CLAIM_REVIEW.md">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="META_CLAIM_REVIEW.md">D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\META_CLAIM_REVIEW.md</a></td></tr><tr><th>MEQ Name</th><td><code>UNSCORED</code></td></tr><tr><th>Internal address</th><td><code>LOSS__META_CLAIM_REVIEW__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__NOT__AUD-CLM__20260825__RV.md</code></td></tr><tr><th>SHA-256</th><td><code>f6dd982c64a54da888f25262262db5591365bba9c63657ed619d3ce72d584a1c</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\META_CLAIM_REVIEW.md</code></td></tr><tr><th>Type / format</th><td><code>article / md</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, note, unclassified_text, class, meta, claim, review</code></td></tr><tr><th>Domain signal</th><td><code>code (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>none / unclassified</code></td></tr><tr><th>CHI vector</th><td><code>none</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>unclassified_text</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.028</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:51:37+00:00</code></td></tr><tr><th>Size</th><td><code>162 bytes</code></td></tr></tbody></table></div></details><details id="FIL-bbe4872d9695" class="file-block" data-search="meta_claims.json unscored loss__meta_claims__2026-08-25 ph__dat__cfg-clm__20260825__ac.json a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f d:\github\faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_w4_1\meta_claims.json data / json plain unknown, data, unclassified_code, meta, claims unknown (0/3) none / unclassified none none (0/3) unclassified_code 0.0/100  unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:51:37+00:00 4 bytes "><summary><span class="file-name">meta_claims.json</span><code class="meq-tag" style="font-size:10px;color:#f1d37a"></code><span>json</span><span>data</span><span>unknown, data, unclassified_code, meta, claims</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__meta_claims__2026-08-25">◆ lossless</span><a class="source-link" href="meta_claims.json">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="meta_claims.json">D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\meta_claims.json</a></td></tr><tr><th>MEQ Name</th><td><code>UNSCORED</code></td></tr><tr><th>Internal address</th><td><code>LOSS__meta_claims__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__DAT__CFG-CLM__20260825__AC.json</code></td></tr><tr><th>SHA-256</th><td><code>a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\meta_claims.json</code></td></tr><tr><th>Type / format</th><td><code>data / json</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>unknown, data, unclassified_code, meta, claims</code></td></tr><tr><th>Domain signal</th><td><code>unknown (0/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>none / unclassified</code></td></tr><tr><th>CHI vector</th><td><code>none</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>unclassified_code</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>UNRESOLVED</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:51:37+00:00</code></td></tr><tr><th>Size</th><td><code>4 bytes</code></td></tr></tbody></table></div></details><details id="FIL-3b2375948b51" class="file-block" data-search="meta_claims.jsonl unscored loss__meta_claims__2026-08-25 unresolved e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 d:\github\faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_w4_1\meta_claims.jsonl other / jsonl plain unknown, unclassified_file, meta, claims unknown (0/3) none / unclassified none none (0/3) unclassified_file 0.0/100  unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:51:37+00:00 0 bytes "><summary><span class="file-name">meta_claims.jsonl</span><code class="meq-tag" style="font-size:10px;color:#f1d37a"></code><span>jsonl</span><span>other</span><span>unknown, unclassified_file, meta, claims</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__meta_claims__2026-08-25">◆ lossless</span><a class="source-link" href="meta_claims.jsonl">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="meta_claims.jsonl">D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\meta_claims.jsonl</a></td></tr><tr><th>MEQ Name</th><td><code>UNSCORED</code></td></tr><tr><th>Internal address</th><td><code>LOSS__meta_claims__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>UNRESOLVED</code></td></tr><tr><th>SHA-256</th><td><code>e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\meta_claims.jsonl</code></td></tr><tr><th>Type / format</th><td><code>other / jsonl</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>unknown, unclassified_file, meta, claims</code></td></tr><tr><th>Domain signal</th><td><code>unknown (0/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>none / unclassified</code></td></tr><tr><th>CHI vector</th><td><code>none</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>unclassified_file</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>UNRESOLVED</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:51:37+00:00</code></td></tr><tr><th>Size</th><td><code>0 bytes</code></td></tr></tbody></table></div></details><details id="FIL-2360335a9c71" class="file-block" data-search="run_log.jsonl unscored loss__run_log__2026-08-25 unresolved ae03b1ed15018d05f97491b8de36d17a2d53534332ca14eb10c794f311015429 d:\github\faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_w4_1\run_log.jsonl other / jsonl plain unknown, unclassified_file unknown (0/3) none / unclassified none none (0/3) unclassified_file 0.0/100  unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:51:37+00:00 1085 bytes "><summary><span class="file-name">run_log.jsonl</span><code class="meq-tag" style="font-size:10px;color:#f1d37a"></code><span>jsonl</span><span>other</span><span>unknown, unclassified_file</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__run_log__2026-08-25">◆ lossless</span><a class="source-link" href="run_log.jsonl">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="run_log.jsonl">D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\run_log.jsonl</a></td></tr><tr><th>MEQ Name</th><td><code>UNSCORED</code></td></tr><tr><th>Internal address</th><td><code>LOSS__run_log__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>UNRESOLVED</code></td></tr><tr><th>SHA-256</th><td><code>ae03b1ed15018d05f97491b8de36d17a2d53534332ca14eb10c794f311015429</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\run_log.jsonl</code></td></tr><tr><th>Type / format</th><td><code>other / jsonl</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>unknown, unclassified_file</code></td></tr><tr><th>Domain signal</th><td><code>unknown (0/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>none / unclassified</code></td></tr><tr><th>CHI vector</th><td><code>none</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>unclassified_file</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>UNRESOLVED</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:51:37+00:00</code></td></tr><tr><th>Size</th><td><code>1085 bytes</code></td></tr></tbody></table></div></details><details id="FIL-fd8e38249713" class="file-block" data-search="w4.1.error.json g0 m0 e0 s0 t0 k0 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__w4_1_error__2026-08-25 ph__dat__coh-cfg__20260825__ac.json a43de8a8495a794d4fa8365175a5cea97ea9ae772c41f7084c86938301d8aeae d:\github\faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_w4_1\w4.1.error.json data / json plain theology, c, christ alignment / coherence, data, christ_alignment_/_coherence_code, christ coherence, trinity, column, error theology (1/3) c / christ alignment / coherence c:1 none (0/3) christ_alignment_/_coherence_code 0.0/100 0.076 unclassified 2026-08-26t00:24:44+00:00 2026-08-26t00:51:37+00:00 143 bytes g0 m0 e0 s0 t0 k0 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">W4.1.error.json</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">C1 :: [G.C]</code><span>json</span><span>data</span><span>theology, C, Christ Alignment / Coherence, data, christ_alignment_/_coherence_code, christ coherence</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__W4_1_error__2026-08-25">◆ lossless</span><a class="source-link" href="W4.1.error.json">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="W4.1.error.json">D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\W4.1.error.json</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E0 S0 T0 K0 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__W4_1_error__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__DAT__COH-CFG__20260825__AC.json</code></td></tr><tr><th>SHA-256</th><td><code>a43de8a8495a794d4fa8365175a5cea97ea9ae772c41f7084c86938301d8aeae</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_runtime\meta_claim_extractor\smoke_W4_1\W4.1.error.json</code></td></tr><tr><th>Type / format</th><td><code>data / json</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>theology, C, Christ Alignment / Coherence, data, christ_alignment_/_coherence_code, christ coherence, trinity, column, error</code></td></tr><tr><th>Domain signal</th><td><code>theology (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>C / Christ Alignment / Coherence</code></td></tr><tr><th>CHI vector</th><td><code>C:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>christ_alignment_/_coherence_code</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.076</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:44+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:51:37+00:00</code></td></tr><tr><th>Size</th><td><code>143 bytes</code></td></tr></tbody></table></div></details></div>
+<h2 id="folders">Child Folders</h2><table><thead><tr><th>Folder</th><th>Type</th><th>Files</th><th>Address</th><th>View</th></tr></thead><tbody><tr><td>raw_responses</td><td>mixed</td><td>1</td><td><code>LOSS__raw_responses__2026-08-25</code></td><td><a href="raw_responses/FIS.html">open</a></td></tr></tbody></table><section id="relationships"><h2>Semantic Network</h2><p class="section-note">Connections based on shared keywords, CHI variables, domain, and law signals. Files sharing 2+ tags are linked.</p><div class="badges" style="margin:8px 0"><span class="badge">meta (3)</span> <span class="badge">unknown (3)</span> <span class="badge">claims (2)</span> <span class="badge">data (2)</span> <span class="badge">unclassified_file (2)</span></div><table class="signal-table"><thead><tr><th>File A</th><th>File B</th><th>Shared</th><th>Via</th></tr></thead><tbody><tr><td><a href="#FIL-3b2375948b51">meta_claims.jsonl</a></td><td><a href="#FIL-bbe4872d9695">meta_claims.json</a></td><td>3</td><td>meta, unknown, claims</td></tr><tr><td><a href="#FIL-2360335a9c71">run_log.jsonl</a></td><td><a href="#FIL-3b2375948b51">meta_claims.jsonl</a></td><td>2</td><td>unknown, unclassified_file</td></tr></tbody></table></section><section id="scores"><h2>Folder Signals</h2><p class="muted">Open a block to see the calculation evidence; file links jump to the inline machine block above.</p><div class="score-grid"><details class="score-tile"><summary><strong>38</strong><span>Folder signal</span></summary><p>Composite navigation signal; not truth, quality, or canon status.</p><ul><li><a href="#FIL-0a9e3075cdbc">META_CLAIM_REVIEW.md</a> <code>35/100</code></li><li><a href="#FIL-bbe4872d9695">meta_claims.json</a> <code>35/100</code></li><li><a href="#FIL-3b2375948b51">meta_claims.jsonl</a> <code>35/100</code></li><li><a href="#FIL-2360335a9c71">run_log.jsonl</a> <code>35/100</code></li><li><a href="#FIL-fd8e38249713">W4.1.error.json</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>59</strong><span>Activity</span></summary><p>5 files modified in the last 30 days; 1 observed modification days.</p><ul><li><a href="#FIL-2360335a9c71">run_log.jsonl</a> <code>35/100</code></li><li><a href="#FIL-3b2375948b51">meta_claims.jsonl</a> <code>35/100</code></li><li><a href="#FIL-bbe4872d9695">meta_claims.json</a> <code>35/100</code></li><li><a href="#FIL-fd8e38249713">W4.1.error.json</a> <code>35/100</code></li><li><a href="#FIL-0a9e3075cdbc">META_CLAIM_REVIEW.md</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>20</strong><span>Depth</span></summary><p>5 direct source files and 1,394 source bytes.</p><ul><li><a href="#FIL-2360335a9c71">run_log.jsonl</a> <code>35/100</code></li><li><a href="#FIL-0a9e3075cdbc">META_CLAIM_REVIEW.md</a> <code>35/100</code></li><li><a href="#FIL-fd8e38249713">W4.1.error.json</a> <code>35/100</code></li><li><a href="#FIL-bbe4872d9695">meta_claims.json</a> <code>35/100</code></li><li><a href="#FIL-3b2375948b51">meta_claims.jsonl</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>0</strong><span>Explicit links</span></summary><p>Counts visible Markdown/wiki/HTML link syntax only; it does not infer semantic relationships.</p><ul><li><a href="#FIL-0a9e3075cdbc">META_CLAIM_REVIEW.md</a> <code>35/100</code></li><li><a href="#FIL-bbe4872d9695">meta_claims.json</a> <code>35/100</code></li><li><a href="#FIL-3b2375948b51">meta_claims.jsonl</a> <code>35/100</code></li><li><a href="#FIL-2360335a9c71">run_log.jsonl</a> <code>35/100</code></li><li><a href="#FIL-fd8e38249713">W4.1.error.json</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>0</strong><span>Presentation</span></summary><p>Topbar, audio, equations, and claim-marker coverage in directly stored HTML files.</p><ul><li><a href="#FIL-0a9e3075cdbc">META_CLAIM_REVIEW.md</a> <code>35/100</code></li><li><a href="#FIL-bbe4872d9695">meta_claims.json</a> <code>35/100</code></li><li><a href="#FIL-3b2375948b51">meta_claims.jsonl</a> <code>35/100</code></li><li><a href="#FIL-2360335a9c71">run_log.jsonl</a> <code>35/100</code></li><li><a href="#FIL-fd8e38249713">W4.1.error.json</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>100</strong><span>Registry</span></summary><p>Files with both a SHA-256 content fingerprint and lossless internal address.</p><ul><li><a href="#FIL-0a9e3075cdbc">META_CLAIM_REVIEW.md</a> <code>35/100</code></li><li><a href="#FIL-bbe4872d9695">meta_claims.json</a> <code>35/100</code></li><li><a href="#FIL-3b2375948b51">meta_claims.jsonl</a> <code>35/100</code></li><li><a href="#FIL-2360335a9c71">run_log.jsonl</a> <code>35/100</code></li><li><a href="#FIL-fd8e38249713">W4.1.error.json</a> <code>35/100</code></li></ul></details></div></section>
+<p class="muted" style="margin-top:24px">Generated from the FIS registry. Source files remain in place; this page is an index, not a replacement.</p>
+</main></div>
+<script type="application/json" id="fis-folder-record">
+{
+  "schema": "fis.folder/2.1",
+  "folder": {
+    "folder_id": "FLD-4259e3f3f77d",
+    "path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\smoke_W4_1",
+    "name": "smoke_W4_1",
+    "folder_type": "mixed",
+    "purpose": "UNRESOLVED",
+    "domain": "unclassified",
+    "status": "active",
+    "owner": "UNRESOLVED",
+    "canonical_source": 0,
+    "file_count": 5,
+    "child_folder_count": 1,
+    "created_at": "2026-08-26T00:24:44+00:00",
+    "last_scanned": "2026-08-26T00:51:37+00:00",
+    "compressed_name": "PH__DOC__AUD-CLM__20260825__AC",
+    "compressed_name_detail": {
+      "code": "PH__DOC__AUD-CLM__20260825__AC",
+      "domain": "PH",
+      "domain_meaning": "physics",
+      "ct": "DOC",
+      "tags": [
+        "AUD",
+        "CLM"
+      ],
+      "date": "20260825",
+      "status": "AC",
+      "tag_meanings": {
+        "AUD": "audit/review",
+        "CLM": "claim/assertion"
+      }
+    },
+    "lossless_address": "LOSS__smoke_W4_1__2026-08-25",
+    "lossless_address_detail": {
+      "address": "LOSS__smoke_W4_1__2026-08-25",
+      "mode": "loss",
+      "source_date": "2026-08-25",
+      "basis": "title_and_local_content_sample",
+      "trigger": null
+    },
+    "meq_aggregate": "G0 M0 E0 S0 T0 K0 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]"
+  },
+  "files": [
+    {
+      "file_id": "FIL-0a9e3075cdbc",
+      "name": "META_CLAIM_REVIEW.md",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\smoke_W4_1\\META_CLAIM_REVIEW.md",
+      "meq_name": "",
+      "internal_address": "LOSS__META_CLAIM_REVIEW__2026-08-25",
+      "proposed_compressed_name": "PH__NOT__AUD-CLM__20260825__RV.md",
+      "sha256": "f6dd982c64a54da888f25262262db5591365bba9c63657ed619d3ce72d584a1c",
+      "type": "article",
+      "format": "md",
+      "keywords": [
+        "code",
+        "note",
+        "unclassified_text",
+        "class",
+        "meta",
+        "claim",
+        "review"
+      ],
+      "domain_signal": "code (1/3)",
+      "dominant_chi": "none / unclassified",
+      "chi_vector": {},
+      "law_signal": "none (0/3)",
+      "content_role": "unclassified_text",
+      "evidence_density": 0.0,
+      "confidence": 0.028,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:51:37+00:00",
+      "size_bytes": 162
+    },
+    {
+      "file_id": "FIL-bbe4872d9695",
+      "name": "meta_claims.json",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\smoke_W4_1\\meta_claims.json",
+      "meq_name": "",
+      "internal_address": "LOSS__meta_claims__2026-08-25",
+      "proposed_compressed_name": "PH__DAT__CFG-CLM__20260825__AC.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "type": "data",
+      "format": "json",
+      "keywords": [
+        "unknown",
+        "data",
+        "unclassified_code",
+        "meta",
+        "claims"
+      ],
+      "domain_signal": "unknown (0/3)",
+      "dominant_chi": "none / unclassified",
+      "chi_vector": {},
+      "law_signal": "none (0/3)",
+      "content_role": "unclassified_code",
+      "evidence_density": 0.0,
+      "confidence": 0.0,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:51:37+00:00",
+      "size_bytes": 4
+    },
+    {
+      "file_id": "FIL-3b2375948b51",
+      "name": "meta_claims.jsonl",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\smoke_W4_1\\meta_claims.jsonl",
+      "meq_name": "",
+      "internal_address": "LOSS__meta_claims__2026-08-25",
+      "proposed_compressed_name": null,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "other",
+      "format": "jsonl",
+      "keywords": [
+        "unknown",
+        "unclassified_file",
+        "meta",
+        "claims"
+      ],
+      "domain_signal": "unknown (0/3)",
+      "dominant_chi": "none / unclassified",
+      "chi_vector": {},
+      "law_signal": "none (0/3)",
+      "content_role": "unclassified_file",
+      "evidence_density": 0.0,
+      "confidence": 0.0,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:51:37+00:00",
+      "size_bytes": 0
+    },
+    {
+      "file_id": "FIL-2360335a9c71",
+      "name": "run_log.jsonl",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\smoke_W4_1\\run_log.jsonl",
+      "meq_name": "",
+      "internal_address": "LOSS__run_log__2026-08-25",
+      "proposed_compressed_name": null,
+      "sha256": "ae03b1ed15018d05f97491b8de36d17a2d53534332ca14eb10c794f311015429",
+      "type": "other",
+      "format": "jsonl",
+      "keywords": [
+        "unknown",
+        "unclassified_file"
+      ],
+      "domain_signal": "unknown (0/3)",
+      "dominant_chi": "none / unclassified",
+      "chi_vector": {},
+      "law_signal": "none (0/3)",
+      "content_role": "unclassified_file",
+      "evidence_density": 0.0,
+      "confidence": 0.0,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:51:37+00:00",
+      "size_bytes": 1085
+    },
+    {
+      "file_id": "FIL-fd8e38249713",
+      "name": "W4.1.error.json",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_runtime\\meta_claim_extractor\\smoke_W4_1\\W4.1.error.json",
+      "meq_name": "G0 M0 E0 S0 T0 K0 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__W4_1_error__2026-08-25",
+      "proposed_compressed_name": "PH__DAT__COH-CFG__20260825__AC.json",
+      "sha256": "a43de8a8495a794d4fa8365175a5cea97ea9ae772c41f7084c86938301d8aeae",
+      "type": "data",
+      "format": "json",
+      "keywords": [
+        "theology",
+        "C",
+        "Christ Alignment / Coherence",
+        "data",
+        "christ_alignment_/_coherence_code",
+        "christ coherence",
+        "trinity",
+        "column",
+        "error"
+      ],
+      "domain_signal": "theology (1/3)",
+      "dominant_chi": "C / Christ Alignment / Coherence",
+      "chi_vector": {
+        "C": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "christ_alignment_/_coherence_code",
+      "evidence_density": 0.0,
+      "confidence": 0.076,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:44+00:00",
+      "last_scanned": "2026-08-26T00:51:37+00:00",
+      "size_bytes": 143
+    }
+  ],
+  "child_folders": [
+    {
+      "name": "raw_responses",
+      "type": "mixed",
+      "file_count": 1
+    }
+  ],
+  "signals": {
+    "folder_signal": 38,
+    "activity": 59,
+    "depth": 20,
+    "explicit_links": 0,
+    "presentation": 0,
+    "registry": 100
+  }
+}
+</script>
+<script>
+const q=document.getElementById('file-search');const blocks=[...document.querySelectorAll('.file-block')];q?.addEventListener('input',()=>{const v=q.value.toLowerCase();blocks.forEach(b=>b.hidden=!(b.dataset.search+' '+b.innerText.toLowerCase()).includes(v));});const toggle=document.getElementById('toggle-files');toggle?.addEventListener('click',()=>{const visible=blocks.filter(b=>!b.hidden);const openSome=visible.some(b=>!b.open);visible.forEach(b=>b.open=openSome);toggle.textContent=openSome?'Close all':'Open all';});document.querySelectorAll('.source-link').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{navigator.clipboard?.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent=b.dataset.copy.startsWith('MEQ')?'Copy address':'Copy SHA-256',900);}));
+document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const payload={file_id:b.dataset.fileId,target:b.dataset.target||null,folder:document.querySelector('h1').textContent};if(window.FIS_API?.run){window.FIS_API.run(b.dataset.action,payload);}else{b.textContent='API not connected';setTimeout(()=>b.textContent=b.dataset.action==='apply-name'?'Apply proposed name':'Mark reviewed',1100);}}))</script></body></html>

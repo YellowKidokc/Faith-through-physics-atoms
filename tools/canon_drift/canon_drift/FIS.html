@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en" data-fis-schema="2.1"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="fis-schema" content="2.1"><meta name="generator" content="FIS folder-brain generator">
+<title>FIS | canon_drift</title>
+<style>
+:root{color-scheme:dark;--bg:#060708;--panel:#0c0f14;--panel2:#090b0f;--line:#222a35;--text:#e7edf5;--muted:#8b97a7;--accent:#d1a922;--accent2:#f1d37a;--link:#6ea8e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}.layout{max-width:1500px;margin:auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:24px;padding:28px}main{min-width:0}
+h1{font:600 34px Georgia,serif;margin:5px 0 8px}h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-top:28px}
+.eyebrow,code{font-family:ui-monospace,Consolas,monospace}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:1px}.muted{color:var(--muted)}
+.identity{border-left:3px solid var(--accent);padding:8px 0 8px 12px;margin:8px 0 10px;background:linear-gradient(90deg,rgba(209,169,34,.08),transparent)}.identity code{display:block;font-size:15px;color:var(--accent2);margin-bottom:4px}.identity span{display:block;color:var(--muted);font-size:12px}
+.crumbs{font:12px ui-monospace,Consolas,monospace;color:var(--muted);margin-bottom:10px}.crumbs a{color:var(--accent)}.crumbs span{margin:0 4px}
+.unresolved{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:2px 10px;border-radius:3px;font:11px ui-monospace,Consolas,monospace;letter-spacing:1px}
+.sidebar{position:sticky;top:20px;align-self:start;border:1px solid var(--line);background:var(--panel);padding:12px;max-height:calc(100vh - 40px);overflow:auto}.sidebar a,.sidebar .child{display:block;padding:7px 6px;border-bottom:1px solid #1a222d}.side-title{font:600 15px Georgia,serif;padding:4px 6px 12px;color:var(--text)}.side-label{color:var(--accent);font:10px ui-monospace,Consolas,monospace;letter-spacing:1px;text-transform:uppercase;padding:16px 6px 5px}.pending{color:var(--muted)}small{font-size:10px}
+.summary{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:7px;margin:14px 0}.metric{border:1px solid var(--line);padding:8px 9px;background:var(--panel)}.metric b{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.score-grid{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:8px}.score-tile{margin:0;border:1px solid var(--line);background:var(--panel);min-height:104px;padding:10px}.score-tile summary{list-style:none;cursor:pointer}.score-tile summary::-webkit-details-marker{display:none}.score-tile strong{display:block;color:var(--accent);font:600 28px Georgia,serif}.score-tile span{font:11px ui-monospace,Consolas,monospace;text-transform:uppercase;color:var(--muted)}.score-tile p{font-size:12px;color:var(--muted)}.score-tile ul{padding-left:17px;font-size:12px}
+table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}code{font-size:12px;color:#d6e5f5;word-break:break-word}
+input[type=search]{width:min(440px,100%);margin:0;padding:9px 10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:3px}.file-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 8px}button{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:8px 10px;border-radius:3px;cursor:pointer}button:hover{border-color:var(--accent)}.file-list{display:grid;gap:4px}.file-block{border:1px solid var(--line);background:var(--panel);padding:0}.file-block summary{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;align-items:center;padding:7px 9px;list-style:none;cursor:pointer}.file-block summary::-webkit-details-marker{display:none}.file-block[open] summary{border-bottom:1px solid var(--line);background:var(--panel2)}.file-name{font-weight:600;color:var(--text)}.source-link{justify-self:end;font-size:12px}.machine{padding:8px 10px 10px}.machine table{background:var(--panel2)}.machine th{width:190px}.machine td,.machine th{padding:6px 8px}.file-head{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;padding:0 10px}
+.actions{display:flex;gap:6px;flex-wrap:wrap}.actions button{padding:5px 9px;font-size:12px}
+.capsule{border:1px solid var(--line);background:var(--panel);padding:12px 14px}.capsule p{margin:6px 0}
+.health-list{list-style:none;padding:0;margin:0;display:grid;gap:4px}.health-list li{border:1px solid var(--line);background:var(--panel);padding:8px 10px;font-size:13px}.health-list li::before{content:"◆ ";font-size:11px}.health-list li.warn::before{color:var(--accent)}.health-list li.ok::before{color:#5f7f6a}.health-list code{margin-left:6px}
+details{border:1px solid var(--line);padding:10px;background:var(--panel)}summary{cursor:pointer;color:var(--muted)}
+@media(max-width:800px){.layout{display:block;padding:16px}.sidebar{position:relative;top:auto;max-height:none;margin-bottom:16px}.summary{grid-template-columns:repeat(2,1fr)}table{display:block;overflow:auto;white-space:nowrap}}
+</style></head><body data-api-base=""><div class="layout"><aside class="sidebar"><div class="side-title">canon_drift</div><a href="#overview">Overview</a><a href="#semantic">Semantic capsule</a><a href="#health">Health</a><a href="#files">Files</a><a href="#folders">Folders</a><a href="#relationships">Relationships</a><a href="#scores">Signals</a><a href="#context">Audit context</a><div class="side-label">Navigate</div><a class="child" href="../FIS.html">&#8593; canon_drift</a><div class="side-label">Child folders</div><span class="child pending">None</span><div class="side-label">Record</div><a href="#context">Machine context</a></aside><main id="overview">
+<nav class="crumbs"><a href="../FIS.html">&#8593; canon_drift</a><span>/</span>canon_drift</nav>
+<div class="eyebrow">FIS FOLDER BRAIN v2.1 / RECURSIVE SEMANTIC VIEW</div><h1>canon_drift</h1>
+<div class="identity"><code>PH__DOC__SCN__20260825__AC</code><span>domain PH=physics | type DOC | tags SCN=scanner/screener | date 20260825 | status AC | lossless LOSS__canon_drift__2026-08-25</span></div>
+<div class="identity" style="margin-top:4px"><code style="color:var(--accent2);font-size:13px">G0 M0 E1 S0 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span style="color:var(--muted);font-size:11px">Folder MEQ aggregate (avg CHI across 11 files)</span></div>
+<p><span class="unresolved">UNRESOLVED</span></p>
+<div class="summary"><div class="metric"><b>Lossless Address</b><code>LOSS__canon_drift__2026-08-25</code></div><div class="metric"><b>Contents</b>py: 11</div><div class="metric"><b>State</b>active / 11 files</div><div class="metric"><b>Scan</b><code>2026-08-26T00:50:41+00:00</code></div></div>
+<section id="semantic"><h2>Semantic Capsule</h2><div class="capsule"><p>Document folder holding 11 file(s) (23,835 bytes) and 0 child folder(s). Dominant signal S / Entropy; domain code.</p></div></section>
+<section id="health"><h2>Health</h2><ul class="health-list"><li class="warn">Purpose<code>UNRESOLVED</code></li><li class="warn">Owner<code>UNRESOLVED</code></li><li class="warn">Canonical source<code>not set</code></li><li class="warn">Unclassified files<code>11 of 11</code></li><li class="warn">Presentation coverage<code>0 of 11</code></li></ul></section>
+<details id="context" style="margin-top:28px"><summary>Machine context and audit fields</summary><pre>{
+  &quot;folder_id&quot;: &quot;FLD-fb6486e517d3&quot;,
+  &quot;path&quot;: &quot;D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift&quot;,
+  &quot;name&quot;: &quot;canon_drift&quot;,
+  &quot;folder_type&quot;: &quot;document&quot;,
+  &quot;purpose&quot;: &quot;UNRESOLVED&quot;,
+  &quot;domain&quot;: &quot;unclassified&quot;,
+  &quot;series_name&quot;: null,
+  &quot;chain_steps&quot;: &quot;[]&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;owner&quot;: &quot;UNRESOLVED&quot;,
+  &quot;canonical_source&quot;: 0,
+  &quot;parent_backbone&quot;: null,
+  &quot;file_count&quot;: 11,
+  &quot;child_folder_count&quot;: 0,
+  &quot;created_at&quot;: &quot;2026-08-26T00:24:45+00:00&quot;,
+  &quot;last_scanned&quot;: &quot;2026-08-26T00:50:41+00:00&quot;,
+  &quot;notes&quot;: &quot;&quot;,
+  &quot;compressed_name&quot;: &quot;PH__DOC__SCN__20260825__AC&quot;,
+  &quot;compressed_name_detail&quot;: &quot;{\&quot;code\&quot;: \&quot;PH__DOC__SCN__20260825__AC\&quot;, \&quot;domain\&quot;: \&quot;PH\&quot;, \&quot;domain_meaning\&quot;: \&quot;physics\&quot;, \&quot;ct\&quot;: \&quot;DOC\&quot;, \&quot;tags\&quot;: [\&quot;SCN\&quot;], \&quot;date\&quot;: \&quot;20260825\&quot;, \&quot;status\&quot;: \&quot;AC\&quot;, \&quot;tag_meanings\&quot;: {\&quot;SCN\&quot;: \&quot;scanner/screener\&quot;}}&quot;,
+  &quot;lossless_address&quot;: &quot;LOSS__canon_drift__2026-08-25&quot;,
+  &quot;lossless_address_detail&quot;: &quot;{\&quot;address\&quot;: \&quot;LOSS__canon_drift__2026-08-25\&quot;, \&quot;mode\&quot;: \&quot;loss\&quot;, \&quot;source_date\&quot;: \&quot;2026-08-25\&quot;, \&quot;basis\&quot;: \&quot;title_and_local_content_sample\&quot;, \&quot;trigger\&quot;: null}&quot;
+}</pre></details>
+<h2 id="files">Files Here</h2><div class="file-controls"><input id="file-search" type="search" placeholder="Find by name, address, type, or keyword" aria-label="Filter files"><button id="toggle-files" type="button">Open all</button></div><div class="file-head"><span>File</span><span>MEQ Vector</span><span>Format</span><span>Role</span><span>Keywords</span><span>Lossless</span><span>Open</span></div><div id="file-rows" class="file-list"><details id="FIL-419d32d6cf1b" class="file-block" data-search="__init__.py g0 m0 e0 s1 t0 k0 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__init__2026-08-25 ph__cod__ent-l03__20260825__ac.py 27b12dc9230761fd569fe40b32cdc22f361852eab3d819fbb3bb747b54a7859e d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\__init__.py script / py plain s, entropy, code, entropy_code, s_eff, drift, table, init document (1/3) s / entropy s:1 none (0/3) entropy_code 0.0/100 0.076 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 91 bytes g0 m0 e0 s1 t0 k0 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">__init__.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">S1 :: [S.R]</code><span>py</span><span>script</span><span>S, Entropy, code, entropy_code, S_eff, drift</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__init__2026-08-25">◆ lossless</span><a class="source-link" href="__init__.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="__init__.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\__init__.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E0 S1 T0 K0 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__init__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__ENT-L03__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>27b12dc9230761fd569fe40b32cdc22f361852eab3d819fbb3bb747b54a7859e</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\__init__.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>S, Entropy, code, entropy_code, S_eff, drift, table, init</code></td></tr><tr><th>Domain signal</th><td><code>document (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>S / Entropy</code></td></tr><tr><th>CHI vector</th><td><code>S:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>entropy_code</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.076</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>91 bytes</code></td></tr></tbody></table></div></details><details id="FIL-672f15bd3cc5" class="file-block" data-search="__main__.py unscored loss__main__2026-08-25 ph__cod__gn__20260825__ac.py 482b8693e2fe6dbd732e3d7961e03827d3efa187bad11d29da188be580ebbeea d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\__main__.py script / py plain code, unclassified_code, import, main code (1/3) none / unclassified none none (0/3) unclassified_code 0.0/100 0.028 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 51 bytes "><summary><span class="file-name">__main__.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a"></code><span>py</span><span>script</span><span>code, unclassified_code, import, main</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__main__2026-08-25">◆ lossless</span><a class="source-link" href="__main__.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="__main__.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\__main__.py</a></td></tr><tr><th>MEQ Name</th><td><code>UNSCORED</code></td></tr><tr><th>Internal address</th><td><code>LOSS__main__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__GN__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>482b8693e2fe6dbd732e3d7961e03827d3efa187bad11d29da188be580ebbeea</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\__main__.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, unclassified_code, import, main</code></td></tr><tr><th>Domain signal</th><td><code>code (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>none / unclassified</code></td></tr><tr><th>CHI vector</th><td><code>none</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>unclassified_code</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.028</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>51 bytes</code></td></tr></tbody></table></div></details><details id="FIL-947c4fda0b19" class="file-block" data-search="autolink.py g0 m0 e1 s0 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__autolink__2026-08-25 ph__cod__knw-lgs-l06__20260825__ac.py 0e74c2a8a75a9c38666e1f9d2b0f01a8bc396f7688f1cae81597d6241bb2857f d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\autolink.py script / py plain code, k, knowledge, knowledge_code, e, truth signal, knowledge logos, import, return, class, data, encoding, section, column, autolink code (2/3) k / knowledge e:1, k:1 none (0/3) knowledge_code 25.0/100 0.151 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 3746 bytes g0 m0 e1 s0 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">autolink.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E1 K1 :: [E.Q] [T.K]</code><span>py</span><span>script</span><span>code, K, Knowledge, knowledge_code, E, truth signal</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__autolink__2026-08-25">◆ lossless</span><a class="source-link" href="autolink.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="autolink.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\autolink.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E1 S0 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__autolink__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__KNW-LGS-L06__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>0e74c2a8a75a9c38666e1f9d2b0f01a8bc396f7688f1cae81597d6241bb2857f</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\autolink.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, K, Knowledge, knowledge_code, E, truth signal, knowledge logos, import, return, class, data, encoding, section, column, autolink</code></td></tr><tr><th>Domain signal</th><td><code>code (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>K / Knowledge</code></td></tr><tr><th>CHI vector</th><td><code>E:1, K:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>knowledge_code</code></td></tr><tr><th>Evidence density</th><td><code>25.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.151</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>3746 bytes</code></td></tr></tbody></table></div></details><details id="FIL-6cff8bc5a11b" class="file-block" data-search="cli.py g0 m0 e1 s1 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__cli__2026-08-25 ph__cod__ent-knw-lgs__20260825__ac.py 9f7f2236c7b5cd0d69006286d34063186bafeed0f90cd6eae02bf728597a1565 d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\cli.py script / py plain code, s, entropy, entropy_code, e, truth signal, s_eff, k, knowledge logos, import, result, encoding, return, drift, section, table code (1/3) s / entropy e:1, s:1, k:1 none (0/3) entropy_code 25.0/100 0.171 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 3433 bytes g0 m0 e1 s1 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">cli.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E1 S1 K1 :: [E.Q] [S.R] [T.K]</code><span>py</span><span>script</span><span>code, S, Entropy, entropy_code, E, truth signal</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__cli__2026-08-25">◆ lossless</span><a class="source-link" href="cli.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="cli.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\cli.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E1 S1 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__cli__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__ENT-KNW-LGS__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>9f7f2236c7b5cd0d69006286d34063186bafeed0f90cd6eae02bf728597a1565</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\cli.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, S, Entropy, entropy_code, E, truth signal, S_eff, K, knowledge logos, import, result, encoding, return, drift, section, table</code></td></tr><tr><th>Domain signal</th><td><code>code (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>S / Entropy</code></td></tr><tr><th>CHI vector</th><td><code>E:1, S:1, K:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>entropy_code</code></td></tr><tr><th>Evidence density</th><td><code>25.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.171</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>3433 bytes</code></td></tr></tbody></table></div></details><details id="FIL-4a680c62434a" class="file-block" data-search="models.py g0 m0 e1 s0 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__models__2026-08-25 ph__cod__knw-lgs-l06__20260825__ac.py 3a73c4d3c722ae7e5161d21aa270ecd81921f58780faf856c2e1e60f91eab7ea d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\models.py script / py plain code, k, knowledge, knowledge_code, e, truth signal, knowledge logos, class, result, data, return, column, import, models code (2/3) k / knowledge e:1, k:1 none (0/3) knowledge_code 37.5/100 0.151 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 1384 bytes g0 m0 e1 s0 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">models.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E1 K1 :: [E.Q] [T.K]</code><span>py</span><span>script</span><span>code, K, Knowledge, knowledge_code, E, truth signal</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__models__2026-08-25">◆ lossless</span><a class="source-link" href="models.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="models.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\models.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E1 S0 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__models__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__KNW-LGS-L06__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>3a73c4d3c722ae7e5161d21aa270ecd81921f58780faf856c2e1e60f91eab7ea</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\models.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, K, Knowledge, knowledge_code, E, truth signal, knowledge logos, class, result, data, return, column, import, models</code></td></tr><tr><th>Domain signal</th><td><code>code (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>K / Knowledge</code></td></tr><tr><th>CHI vector</th><td><code>E:1, K:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>knowledge_code</code></td></tr><tr><th>Evidence density</th><td><code>37.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.151</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>1384 bytes</code></td></tr></tbody></table></div></details><details id="FIL-833e90f98ad2" class="file-block" data-search="normalize.py g0 m0 e1 s0 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__normalize__2026-08-25 ph__cod__knw-lgs-l06__20260825__ac.py 578cbb7e6196c1afeb4a31889b7f8da3d1b39ac90bf5c210768ff1ded45214e9 d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\normalize.py script / py plain code, k, knowledge, knowledge_code, e, truth signal, knowledge logos, variable, import, return, data, field, normalize code (2/3) k / knowledge e:1, k:1 none (0/3) knowledge_code 12.5/100 0.151 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 1733 bytes g0 m0 e1 s0 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">normalize.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E1 K1 :: [E.Q] [T.K]</code><span>py</span><span>script</span><span>code, K, Knowledge, knowledge_code, E, truth signal</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__normalize__2026-08-25">◆ lossless</span><a class="source-link" href="normalize.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="normalize.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\normalize.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E1 S0 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__normalize__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__KNW-LGS-L06__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>578cbb7e6196c1afeb4a31889b7f8da3d1b39ac90bf5c210768ff1ded45214e9</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\normalize.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, K, Knowledge, knowledge_code, E, truth signal, knowledge logos, variable, import, return, data, field, normalize</code></td></tr><tr><th>Domain signal</th><td><code>code (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>K / Knowledge</code></td></tr><tr><th>CHI vector</th><td><code>E:1, K:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>knowledge_code</code></td></tr><tr><th>Evidence density</th><td><code>12.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.151</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>1733 bytes</code></td></tr></tbody></table></div></details><details id="FIL-936a38745cdd" class="file-block" data-search="patches.py g0 m0 e0 s0 t0 k1 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__patches__2026-08-25 ph__cod__coh-knw-lgs__20260825__ac.py 7204c09d1efc426f9845ba75947eff3d6f086994c394f83d06e5250c431666ca d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\patches.py script / py plain code, k, knowledge, knowledge_code, knowledge logos, c, christ coherence, return, encoding, import, unified, column, patches code (1/3) k / knowledge k:1, c:1 none (0/3) knowledge_code 12.5/100 0.123 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 2180 bytes g0 m0 e0 s0 t0 k1 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">patches.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">K1 C1 :: [G.C] [T.K]</code><span>py</span><span>script</span><span>code, K, Knowledge, knowledge_code, knowledge logos, C</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__patches__2026-08-25">◆ lossless</span><a class="source-link" href="patches.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="patches.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\patches.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E0 S0 T0 K1 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__patches__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__COH-KNW-LGS__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>7204c09d1efc426f9845ba75947eff3d6f086994c394f83d06e5250c431666ca</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\patches.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, K, Knowledge, knowledge_code, knowledge logos, C, christ coherence, return, encoding, import, unified, column, patches</code></td></tr><tr><th>Domain signal</th><td><code>code (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>K / Knowledge</code></td></tr><tr><th>CHI vector</th><td><code>K:1, C:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>knowledge_code</code></td></tr><tr><th>Evidence density</th><td><code>12.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.123</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>2180 bytes</code></td></tr></tbody></table></div></details><details id="FIL-6cfe99976f52" class="file-block" data-search="registry.py g0 m0 e0 s1 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__registry__2026-08-25 ph__cod__ent-knw-lgs__20260825__ac.py a195285e2bd789c6a5b576623aae885214471b334cd7f73c02a66ffddcd5e2d2 d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\registry.py script / py plain code, s, entropy, entropy_code, s_eff, k, knowledge logos, import, return, encoding, class, drift, registry code (2/3) s / entropy s:1, k:1 none (0/3) entropy_code 0.0/100 0.151 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 937 bytes g0 m0 e0 s1 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">registry.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">S1 K1 :: [S.R] [T.K]</code><span>py</span><span>script</span><span>code, S, Entropy, entropy_code, S_eff, K</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__registry__2026-08-25">◆ lossless</span><a class="source-link" href="registry.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="registry.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\registry.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E0 S1 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__registry__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__ENT-KNW-LGS__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>a195285e2bd789c6a5b576623aae885214471b334cd7f73c02a66ffddcd5e2d2</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\registry.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, S, Entropy, entropy_code, S_eff, K, knowledge logos, import, return, encoding, class, drift, registry</code></td></tr><tr><th>Domain signal</th><td><code>code (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>S / Entropy</code></td></tr><tr><th>CHI vector</th><td><code>S:1, K:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>entropy_code</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.151</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>937 bytes</code></td></tr></tbody></table></div></details><details id="FIL-14a0d9d993f2" class="file-block" data-search="reports.py g0 m0 e1 s1 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__reports__2026-08-25 ph__cod__ent-knw-lgs__20260825__ac.py d0fa1266456c8f48b2a1780d7bba609bf1b78aaf6c3b5854655e20e652cceda0 d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\reports.py script / py plain code, s, entropy, entropy_code, e, truth signal, s_eff, k, knowledge logos, result, import, return, encoding, column, drift, reports code (1/3) s / entropy e:1, s:1, k:1 none (0/3) entropy_code 25.0/100 0.171 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 1360 bytes g0 m0 e1 s1 t0 k1 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">reports.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E1 S1 K1 :: [E.Q] [S.R] [T.K]</code><span>py</span><span>script</span><span>code, S, Entropy, entropy_code, E, truth signal</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__reports__2026-08-25">◆ lossless</span><a class="source-link" href="reports.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="reports.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\reports.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E1 S1 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__reports__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__ENT-KNW-LGS__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>d0fa1266456c8f48b2a1780d7bba609bf1b78aaf6c3b5854655e20e652cceda0</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\reports.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, S, Entropy, entropy_code, E, truth signal, S_eff, K, knowledge logos, result, import, return, encoding, column, drift, reports</code></td></tr><tr><th>Domain signal</th><td><code>code (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>S / Entropy</code></td></tr><tr><th>CHI vector</th><td><code>E:1, S:1, K:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>entropy_code</code></td></tr><tr><th>Evidence density</th><td><code>25.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.171</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>1360 bytes</code></td></tr></tbody></table></div></details><details id="FIL-78a586e77a20" class="file-block" data-search="scanner.py g0 m0 e1 s1 t0 k1 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__scanner__2026-08-25 ph__cod__coh-ent-knw__20260825__ac.py 711fe3eb0b2907ed0b2abf9e7f422c96af57ccb93f72ea960a0b75861e19ea6a d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\scanner.py script / py plain code, s, entropy, entropy_code, e, truth signal, s_eff, k, knowledge logos, c, christ coherence, return, import, data, encoding, image, column, render, result, drift code (2/3) s / entropy e:1, s:1, k:1, c:1 none (0/3) entropy_code 37.5/100 0.247 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 7154 bytes g0 m0 e1 s1 t0 k1 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">scanner.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E1 S1 K1 C1 :: [G.C] [E.Q] [S.R] [T.K]</code><span>py</span><span>script</span><span>code, S, Entropy, entropy_code, E, truth signal</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__scanner__2026-08-25">◆ lossless</span><a class="source-link" href="scanner.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="scanner.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\scanner.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E1 S1 T0 K1 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__scanner__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__COH-ENT-KNW__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>711fe3eb0b2907ed0b2abf9e7f422c96af57ccb93f72ea960a0b75861e19ea6a</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\scanner.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, S, Entropy, entropy_code, E, truth signal, S_eff, K, knowledge logos, C, christ coherence, return, import, data, encoding, image, column, render, result, drift</code></td></tr><tr><th>Domain signal</th><td><code>code (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>S / Entropy</code></td></tr><tr><th>CHI vector</th><td><code>E:1, S:1, K:1, C:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>entropy_code</code></td></tr><tr><th>Evidence density</th><td><code>37.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.247</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>7154 bytes</code></td></tr></tbody></table></div></details><details id="FIL-fd88a6b8475e" class="file-block" data-search="score.py g0 m0 e0 s0 t1 k0 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__score__2026-08-25 ph__cod__tmp-pnl__20260825__ac.py e378c3ae1f25e673eb05e5208ce7fa521806610559b8cc67b968a6b548175742 d:\github\faith-through-physics-atoms\tools\canon_drift\canon_drift\score.py script / py plain code, t, time / kairos, time_/_kairos_code, time kairos, variable, sequence, import, return, score code (2/3) t / time / kairos t:1 none (0/3) time_/_kairos_code 0.0/100 0.103 unclassified 2026-08-26t00:24:45+00:00 2026-08-26t00:50:41+00:00 1766 bytes g0 m0 e0 s0 t1 k0 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">score.py</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">T1 :: [T.K]</code><span>py</span><span>script</span><span>code, T, Time / Kairos, time_/_kairos_code, time kairos, variable</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__score__2026-08-25">◆ lossless</span><a class="source-link" href="score.py">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="score.py">D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\score.py</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E0 S0 T1 K0 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__score__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__COD__TMP-PNL__20260825__AC.py</code></td></tr><tr><th>SHA-256</th><td><code>e378c3ae1f25e673eb05e5208ce7fa521806610559b8cc67b968a6b548175742</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\tools\canon_drift\canon_drift\score.py</code></td></tr><tr><th>Type / format</th><td><code>script / py</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>code, T, Time / Kairos, time_/_kairos_code, time kairos, variable, sequence, import, return, score</code></td></tr><tr><th>Domain signal</th><td><code>code (2/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>T / Time / Kairos</code></td></tr><tr><th>CHI vector</th><td><code>T:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>time_/_kairos_code</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.103</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:45+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:41+00:00</code></td></tr><tr><th>Size</th><td><code>1766 bytes</code></td></tr></tbody></table></div></details></div>
+<h2 id="folders">Child Folders</h2><table><thead><tr><th>Folder</th><th>Type</th><th>Files</th><th>Address</th><th>View</th></tr></thead><tbody><tr><td colspan="5" class="muted">No child folders.</td></tr></tbody></table><section id="relationships"><h2>Semantic Network</h2><p class="section-note">Connections based on shared keywords, CHI variables, domain, and law signals. Files sharing 2+ tags are linked.</p><div class="badges" style="margin:8px 0"><span class="badge">k (8)</span> <span class="badge">knowledge logos (8)</span> <span class="badge">import (7)</span> <span class="badge">e (6)</span> <span class="badge">truth signal (6)</span> <span class="badge">entropy (5)</span> <span class="badge">s (5)</span> <span class="badge">entropy_code (5)</span> <span class="badge">s_eff (5)</span> <span class="badge">return (5)</span> <span class="badge">knowledge_code (4)</span> <span class="badge">knowledge (4)</span> <span class="badge">class (2)</span> <span class="badge">result (2)</span> <span class="badge">variable (2)</span></div><table class="signal-table"><thead><tr><th>File A</th><th>File B</th><th>Shared</th><th>Via</th></tr></thead><tbody><tr><td><a href="#FIL-14a0d9d993f2">reports.py</a></td><td><a href="#FIL-6cff8bc5a11b">cli.py</a></td><td>8</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-6cff8bc5a11b">cli.py</a></td><td><a href="#FIL-78a586e77a20">scanner.py</a></td><td>8</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-14a0d9d993f2">reports.py</a></td><td><a href="#FIL-78a586e77a20">scanner.py</a></td><td>8</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-833e90f98ad2">normalize.py</a></td><td><a href="#FIL-947c4fda0b19">autolink.py</a></td><td>8</td><td>import, return, k, knowledge_code</td></tr><tr><td><a href="#FIL-6cfe99976f52">registry.py</a></td><td><a href="#FIL-6cff8bc5a11b">cli.py</a></td><td>7</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-4a680c62434a">models.py</a></td><td><a href="#FIL-947c4fda0b19">autolink.py</a></td><td>7</td><td>k, knowledge_code, class, e</td></tr><tr><td><a href="#FIL-14a0d9d993f2">reports.py</a></td><td><a href="#FIL-6cfe99976f52">registry.py</a></td><td>6</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-6cfe99976f52">registry.py</a></td><td><a href="#FIL-78a586e77a20">scanner.py</a></td><td>6</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-936a38745cdd">patches.py</a></td><td><a href="#FIL-947c4fda0b19">autolink.py</a></td><td>6</td><td>import, return, k, knowledge_code</td></tr><tr><td><a href="#FIL-833e90f98ad2">normalize.py</a></td><td><a href="#FIL-936a38745cdd">patches.py</a></td><td>6</td><td>import, return, k, knowledge_code</td></tr><tr><td><a href="#FIL-4a680c62434a">models.py</a></td><td><a href="#FIL-833e90f98ad2">normalize.py</a></td><td>6</td><td>k, knowledge_code, e, knowledge logos</td></tr><tr><td><a href="#FIL-6cff8bc5a11b">cli.py</a></td><td><a href="#FIL-947c4fda0b19">autolink.py</a></td><td>5</td><td>import, k, e, knowledge logos</td></tr><tr><td><a href="#FIL-6cff8bc5a11b">cli.py</a></td><td><a href="#FIL-833e90f98ad2">normalize.py</a></td><td>5</td><td>import, k, e, knowledge logos</td></tr><tr><td><a href="#FIL-6cfe99976f52">registry.py</a></td><td><a href="#FIL-936a38745cdd">patches.py</a></td><td>5</td><td>import, return, k, knowledge logos</td></tr><tr><td><a href="#FIL-14a0d9d993f2">reports.py</a></td><td><a href="#FIL-4a680c62434a">models.py</a></td><td>5</td><td>k, e, knowledge logos, truth signal</td></tr><tr><td><a href="#FIL-419d32d6cf1b">__init__.py</a></td><td><a href="#FIL-6cff8bc5a11b">cli.py</a></td><td>4</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-419d32d6cf1b">__init__.py</a></td><td><a href="#FIL-6cfe99976f52">registry.py</a></td><td>4</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-14a0d9d993f2">reports.py</a></td><td><a href="#FIL-419d32d6cf1b">__init__.py</a></td><td>4</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-419d32d6cf1b">__init__.py</a></td><td><a href="#FIL-78a586e77a20">scanner.py</a></td><td>4</td><td>entropy, s, entropy_code, s_eff</td></tr><tr><td><a href="#FIL-6cfe99976f52">registry.py</a></td><td><a href="#FIL-947c4fda0b19">autolink.py</a></td><td>4</td><td>import, return, k, knowledge logos</td></tr><tr><td><a href="#FIL-6cfe99976f52">registry.py</a></td><td><a href="#FIL-833e90f98ad2">normalize.py</a></td><td>4</td><td>import, return, k, knowledge logos</td></tr><tr><td><a href="#FIL-14a0d9d993f2">reports.py</a></td><td><a href="#FIL-947c4fda0b19">autolink.py</a></td><td>4</td><td>k, e, knowledge logos, truth signal</td></tr><tr><td><a href="#FIL-78a586e77a20">scanner.py</a></td><td><a href="#FIL-947c4fda0b19">autolink.py</a></td><td>4</td><td>k, e, knowledge logos, truth signal</td></tr><tr><td><a href="#FIL-4a680c62434a">models.py</a></td><td><a href="#FIL-6cff8bc5a11b">cli.py</a></td><td>4</td><td>k, e, knowledge logos, truth signal</td></tr><tr><td><a href="#FIL-4a680c62434a">models.py</a></td><td><a href="#FIL-936a38745cdd">patches.py</a></td><td>4</td><td>k, knowledge_code, knowledge logos, knowledge</td></tr><tr><td><a href="#FIL-4a680c62434a">models.py</a></td><td><a href="#FIL-78a586e77a20">scanner.py</a></td><td>4</td><td>k, e, knowledge logos, truth signal</td></tr><tr><td><a href="#FIL-14a0d9d993f2">reports.py</a></td><td><a href="#FIL-833e90f98ad2">normalize.py</a></td><td>4</td><td>k, e, knowledge logos, truth signal</td></tr><tr><td><a href="#FIL-78a586e77a20">scanner.py</a></td><td><a href="#FIL-833e90f98ad2">normalize.py</a></td><td>4</td><td>k, e, knowledge logos, truth signal</td></tr><tr><td><a href="#FIL-6cff8bc5a11b">cli.py</a></td><td><a href="#FIL-936a38745cdd">patches.py</a></td><td>3</td><td>import, k, knowledge logos</td></tr><tr><td><a href="#FIL-833e90f98ad2">normalize.py</a></td><td><a href="#FIL-fd88a6b8475e">score.py</a></td><td>3</td><td>import, return, variable</td></tr></tbody></table></section><section id="scores"><h2>Folder Signals</h2><p class="muted">Open a block to see the calculation evidence; file links jump to the inline machine block above.</p><div class="score-grid"><details class="score-tile"><summary><strong>46</strong><span>Folder signal</span></summary><p>Composite navigation signal; not truth, quality, or canon status.</p><ul><li><a href="#FIL-947c4fda0b19">autolink.py</a> <code>36/100</code></li><li><a href="#FIL-6cff8bc5a11b">cli.py</a> <code>36/100</code></li><li><a href="#FIL-78a586e77a20">scanner.py</a> <code>36/100</code></li><li><a href="#FIL-419d32d6cf1b">__init__.py</a> <code>35/100</code></li><li><a href="#FIL-672f15bd3cc5">__main__.py</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>64</strong><span>Activity</span></summary><p>11 files modified in the last 30 days; 1 observed modification days.</p><ul><li><a href="#FIL-fd88a6b8475e">score.py</a> <code>35/100</code></li><li><a href="#FIL-78a586e77a20">scanner.py</a> <code>36/100</code></li><li><a href="#FIL-14a0d9d993f2">reports.py</a> <code>35/100</code></li><li><a href="#FIL-936a38745cdd">patches.py</a> <code>35/100</code></li><li><a href="#FIL-6cfe99976f52">registry.py</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>46</strong><span>Depth</span></summary><p>11 direct source files and 23,835 source bytes.</p><ul><li><a href="#FIL-78a586e77a20">scanner.py</a> <code>36/100</code></li><li><a href="#FIL-947c4fda0b19">autolink.py</a> <code>36/100</code></li><li><a href="#FIL-6cff8bc5a11b">cli.py</a> <code>36/100</code></li><li><a href="#FIL-936a38745cdd">patches.py</a> <code>35/100</code></li><li><a href="#FIL-fd88a6b8475e">score.py</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>0</strong><span>Explicit links</span></summary><p>Counts visible Markdown/wiki/HTML link syntax only; it does not infer semantic relationships.</p><ul><li><a href="#FIL-419d32d6cf1b">__init__.py</a> <code>35/100</code></li><li><a href="#FIL-672f15bd3cc5">__main__.py</a> <code>35/100</code></li><li><a href="#FIL-947c4fda0b19">autolink.py</a> <code>36/100</code></li><li><a href="#FIL-6cff8bc5a11b">cli.py</a> <code>36/100</code></li><li><a href="#FIL-4a680c62434a">models.py</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>0</strong><span>Presentation</span></summary><p>Topbar, audio, equations, and claim-marker coverage in directly stored HTML files.</p><ul><li><a href="#FIL-419d32d6cf1b">__init__.py</a> <code>35/100</code></li><li><a href="#FIL-672f15bd3cc5">__main__.py</a> <code>35/100</code></li><li><a href="#FIL-947c4fda0b19">autolink.py</a> <code>36/100</code></li><li><a href="#FIL-6cff8bc5a11b">cli.py</a> <code>36/100</code></li><li><a href="#FIL-4a680c62434a">models.py</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>100</strong><span>Registry</span></summary><p>Files with both a SHA-256 content fingerprint and lossless internal address.</p><ul><li><a href="#FIL-419d32d6cf1b">__init__.py</a> <code>35/100</code></li><li><a href="#FIL-672f15bd3cc5">__main__.py</a> <code>35/100</code></li><li><a href="#FIL-947c4fda0b19">autolink.py</a> <code>36/100</code></li><li><a href="#FIL-6cff8bc5a11b">cli.py</a> <code>36/100</code></li><li><a href="#FIL-4a680c62434a">models.py</a> <code>35/100</code></li></ul></details></div></section>
+<p class="muted" style="margin-top:24px">Generated from the FIS registry. Source files remain in place; this page is an index, not a replacement.</p>
+</main></div>
+<script type="application/json" id="fis-folder-record">
+{
+  "schema": "fis.folder/2.1",
+  "folder": {
+    "folder_id": "FLD-fb6486e517d3",
+    "path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift",
+    "name": "canon_drift",
+    "folder_type": "document",
+    "purpose": "UNRESOLVED",
+    "domain": "unclassified",
+    "status": "active",
+    "owner": "UNRESOLVED",
+    "canonical_source": 0,
+    "file_count": 11,
+    "child_folder_count": 0,
+    "created_at": "2026-08-26T00:24:45+00:00",
+    "last_scanned": "2026-08-26T00:50:41+00:00",
+    "compressed_name": "PH__DOC__SCN__20260825__AC",
+    "compressed_name_detail": {
+      "code": "PH__DOC__SCN__20260825__AC",
+      "domain": "PH",
+      "domain_meaning": "physics",
+      "ct": "DOC",
+      "tags": [
+        "SCN"
+      ],
+      "date": "20260825",
+      "status": "AC",
+      "tag_meanings": {
+        "SCN": "scanner/screener"
+      }
+    },
+    "lossless_address": "LOSS__canon_drift__2026-08-25",
+    "lossless_address_detail": {
+      "address": "LOSS__canon_drift__2026-08-25",
+      "mode": "loss",
+      "source_date": "2026-08-25",
+      "basis": "title_and_local_content_sample",
+      "trigger": null
+    },
+    "meq_aggregate": "G0 M0 E1 S0 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]"
+  },
+  "files": [
+    {
+      "file_id": "FIL-419d32d6cf1b",
+      "name": "__init__.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\__init__.py",
+      "meq_name": "G0 M0 E0 S1 T0 K0 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__init__2026-08-25",
+      "proposed_compressed_name": "PH__COD__ENT-L03__20260825__AC.py",
+      "sha256": "27b12dc9230761fd569fe40b32cdc22f361852eab3d819fbb3bb747b54a7859e",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "S",
+        "Entropy",
+        "code",
+        "entropy_code",
+        "S_eff",
+        "drift",
+        "table",
+        "init"
+      ],
+      "domain_signal": "document (1/3)",
+      "dominant_chi": "S / Entropy",
+      "chi_vector": {
+        "S": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "entropy_code",
+      "evidence_density": 0.0,
+      "confidence": 0.076,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 91
+    },
+    {
+      "file_id": "FIL-672f15bd3cc5",
+      "name": "__main__.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\__main__.py",
+      "meq_name": "",
+      "internal_address": "LOSS__main__2026-08-25",
+      "proposed_compressed_name": "PH__COD__GN__20260825__AC.py",
+      "sha256": "482b8693e2fe6dbd732e3d7961e03827d3efa187bad11d29da188be580ebbeea",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "unclassified_code",
+        "import",
+        "main"
+      ],
+      "domain_signal": "code (1/3)",
+      "dominant_chi": "none / unclassified",
+      "chi_vector": {},
+      "law_signal": "none (0/3)",
+      "content_role": "unclassified_code",
+      "evidence_density": 0.0,
+      "confidence": 0.028,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 51
+    },
+    {
+      "file_id": "FIL-947c4fda0b19",
+      "name": "autolink.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\autolink.py",
+      "meq_name": "G0 M0 E1 S0 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__autolink__2026-08-25",
+      "proposed_compressed_name": "PH__COD__KNW-LGS-L06__20260825__AC.py",
+      "sha256": "0e74c2a8a75a9c38666e1f9d2b0f01a8bc396f7688f1cae81597d6241bb2857f",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "K",
+        "Knowledge",
+        "knowledge_code",
+        "E",
+        "truth signal",
+        "knowledge logos",
+        "import",
+        "return",
+        "class",
+        "data",
+        "encoding",
+        "section",
+        "column",
+        "autolink"
+      ],
+      "domain_signal": "code (2/3)",
+      "dominant_chi": "K / Knowledge",
+      "chi_vector": {
+        "E": 1,
+        "K": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "knowledge_code",
+      "evidence_density": 25.0,
+      "confidence": 0.151,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 3746
+    },
+    {
+      "file_id": "FIL-6cff8bc5a11b",
+      "name": "cli.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\cli.py",
+      "meq_name": "G0 M0 E1 S1 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__cli__2026-08-25",
+      "proposed_compressed_name": "PH__COD__ENT-KNW-LGS__20260825__AC.py",
+      "sha256": "9f7f2236c7b5cd0d69006286d34063186bafeed0f90cd6eae02bf728597a1565",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "S",
+        "Entropy",
+        "entropy_code",
+        "E",
+        "truth signal",
+        "S_eff",
+        "K",
+        "knowledge logos",
+        "import",
+        "result",
+        "encoding",
+        "return",
+        "drift",
+        "section",
+        "table"
+      ],
+      "domain_signal": "code (1/3)",
+      "dominant_chi": "S / Entropy",
+      "chi_vector": {
+        "E": 1,
+        "S": 1,
+        "K": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "entropy_code",
+      "evidence_density": 25.0,
+      "confidence": 0.171,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 3433
+    },
+    {
+      "file_id": "FIL-4a680c62434a",
+      "name": "models.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\models.py",
+      "meq_name": "G0 M0 E1 S0 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__models__2026-08-25",
+      "proposed_compressed_name": "PH__COD__KNW-LGS-L06__20260825__AC.py",
+      "sha256": "3a73c4d3c722ae7e5161d21aa270ecd81921f58780faf856c2e1e60f91eab7ea",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "K",
+        "Knowledge",
+        "knowledge_code",
+        "E",
+        "truth signal",
+        "knowledge logos",
+        "class",
+        "result",
+        "data",
+        "return",
+        "column",
+        "import",
+        "models"
+      ],
+      "domain_signal": "code (2/3)",
+      "dominant_chi": "K / Knowledge",
+      "chi_vector": {
+        "E": 1,
+        "K": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "knowledge_code",
+      "evidence_density": 37.5,
+      "confidence": 0.151,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 1384
+    },
+    {
+      "file_id": "FIL-833e90f98ad2",
+      "name": "normalize.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\normalize.py",
+      "meq_name": "G0 M0 E1 S0 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__normalize__2026-08-25",
+      "proposed_compressed_name": "PH__COD__KNW-LGS-L06__20260825__AC.py",
+      "sha256": "578cbb7e6196c1afeb4a31889b7f8da3d1b39ac90bf5c210768ff1ded45214e9",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "K",
+        "Knowledge",
+        "knowledge_code",
+        "E",
+        "truth signal",
+        "knowledge logos",
+        "variable",
+        "import",
+        "return",
+        "data",
+        "field",
+        "normalize"
+      ],
+      "domain_signal": "code (2/3)",
+      "dominant_chi": "K / Knowledge",
+      "chi_vector": {
+        "E": 1,
+        "K": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "knowledge_code",
+      "evidence_density": 12.5,
+      "confidence": 0.151,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 1733
+    },
+    {
+      "file_id": "FIL-936a38745cdd",
+      "name": "patches.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\patches.py",
+      "meq_name": "G0 M0 E0 S0 T0 K1 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__patches__2026-08-25",
+      "proposed_compressed_name": "PH__COD__COH-KNW-LGS__20260825__AC.py",
+      "sha256": "7204c09d1efc426f9845ba75947eff3d6f086994c394f83d06e5250c431666ca",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "K",
+        "Knowledge",
+        "knowledge_code",
+        "knowledge logos",
+        "C",
+        "christ coherence",
+        "return",
+        "encoding",
+        "import",
+        "unified",
+        "column",
+        "patches"
+      ],
+      "domain_signal": "code (1/3)",
+      "dominant_chi": "K / Knowledge",
+      "chi_vector": {
+        "K": 1,
+        "C": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "knowledge_code",
+      "evidence_density": 12.5,
+      "confidence": 0.123,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 2180
+    },
+    {
+      "file_id": "FIL-6cfe99976f52",
+      "name": "registry.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\registry.py",
+      "meq_name": "G0 M0 E0 S1 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__registry__2026-08-25",
+      "proposed_compressed_name": "PH__COD__ENT-KNW-LGS__20260825__AC.py",
+      "sha256": "a195285e2bd789c6a5b576623aae885214471b334cd7f73c02a66ffddcd5e2d2",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "S",
+        "Entropy",
+        "entropy_code",
+        "S_eff",
+        "K",
+        "knowledge logos",
+        "import",
+        "return",
+        "encoding",
+        "class",
+        "drift",
+        "registry"
+      ],
+      "domain_signal": "code (2/3)",
+      "dominant_chi": "S / Entropy",
+      "chi_vector": {
+        "S": 1,
+        "K": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "entropy_code",
+      "evidence_density": 0.0,
+      "confidence": 0.151,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 937
+    },
+    {
+      "file_id": "FIL-14a0d9d993f2",
+      "name": "reports.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\reports.py",
+      "meq_name": "G0 M0 E1 S1 T0 K1 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__reports__2026-08-25",
+      "proposed_compressed_name": "PH__COD__ENT-KNW-LGS__20260825__AC.py",
+      "sha256": "d0fa1266456c8f48b2a1780d7bba609bf1b78aaf6c3b5854655e20e652cceda0",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "S",
+        "Entropy",
+        "entropy_code",
+        "E",
+        "truth signal",
+        "S_eff",
+        "K",
+        "knowledge logos",
+        "result",
+        "import",
+        "return",
+        "encoding",
+        "column",
+        "drift",
+        "reports"
+      ],
+      "domain_signal": "code (1/3)",
+      "dominant_chi": "S / Entropy",
+      "chi_vector": {
+        "E": 1,
+        "S": 1,
+        "K": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "entropy_code",
+      "evidence_density": 25.0,
+      "confidence": 0.171,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 1360
+    },
+    {
+      "file_id": "FIL-78a586e77a20",
+      "name": "scanner.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\scanner.py",
+      "meq_name": "G0 M0 E1 S1 T0 K1 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__scanner__2026-08-25",
+      "proposed_compressed_name": "PH__COD__COH-ENT-KNW__20260825__AC.py",
+      "sha256": "711fe3eb0b2907ed0b2abf9e7f422c96af57ccb93f72ea960a0b75861e19ea6a",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "S",
+        "Entropy",
+        "entropy_code",
+        "E",
+        "truth signal",
+        "S_eff",
+        "K",
+        "knowledge logos",
+        "C",
+        "christ coherence",
+        "return",
+        "import",
+        "data",
+        "encoding",
+        "image",
+        "column",
+        "render",
+        "result",
+        "drift"
+      ],
+      "domain_signal": "code (2/3)",
+      "dominant_chi": "S / Entropy",
+      "chi_vector": {
+        "E": 1,
+        "S": 1,
+        "K": 1,
+        "C": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "entropy_code",
+      "evidence_density": 37.5,
+      "confidence": 0.247,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 7154
+    },
+    {
+      "file_id": "FIL-fd88a6b8475e",
+      "name": "score.py",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\tools\\canon_drift\\canon_drift\\score.py",
+      "meq_name": "G0 M0 E0 S0 T1 K0 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__score__2026-08-25",
+      "proposed_compressed_name": "PH__COD__TMP-PNL__20260825__AC.py",
+      "sha256": "e378c3ae1f25e673eb05e5208ce7fa521806610559b8cc67b968a6b548175742",
+      "type": "script",
+      "format": "py",
+      "keywords": [
+        "code",
+        "T",
+        "Time / Kairos",
+        "time_/_kairos_code",
+        "time kairos",
+        "variable",
+        "sequence",
+        "import",
+        "return",
+        "score"
+      ],
+      "domain_signal": "code (2/3)",
+      "dominant_chi": "T / Time / Kairos",
+      "chi_vector": {
+        "T": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "time_/_kairos_code",
+      "evidence_density": 0.0,
+      "confidence": 0.103,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:45+00:00",
+      "last_scanned": "2026-08-26T00:50:41+00:00",
+      "size_bytes": 1766
+    }
+  ],
+  "child_folders": [],
+  "signals": {
+    "folder_signal": 46,
+    "activity": 64,
+    "depth": 46,
+    "explicit_links": 0,
+    "presentation": 0,
+    "registry": 100
+  }
+}
+</script>
+<script>
+const q=document.getElementById('file-search');const blocks=[...document.querySelectorAll('.file-block')];q?.addEventListener('input',()=>{const v=q.value.toLowerCase();blocks.forEach(b=>b.hidden=!(b.dataset.search+' '+b.innerText.toLowerCase()).includes(v));});const toggle=document.getElementById('toggle-files');toggle?.addEventListener('click',()=>{const visible=blocks.filter(b=>!b.hidden);const openSome=visible.some(b=>!b.open);visible.forEach(b=>b.open=openSome);toggle.textContent=openSome?'Close all':'Open all';});document.querySelectorAll('.source-link').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{navigator.clipboard?.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent=b.dataset.copy.startsWith('MEQ')?'Copy address':'Copy SHA-256',900);}));
+document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const payload={file_id:b.dataset.fileId,target:b.dataset.target||null,folder:document.querySelector('h1').textContent};if(window.FIS_API?.run){window.FIS_API.run(b.dataset.action,payload);}else{b.textContent='API not connected';setTimeout(()=>b.textContent=b.dataset.action==='apply-name'?'Apply proposed name':'Mark reviewed',1100);}}))</script></body></html>

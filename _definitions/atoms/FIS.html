@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en" data-fis-schema="2.1"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="fis-schema" content="2.1"><meta name="generator" content="FIS folder-brain generator">
+<title>FIS | atoms</title>
+<style>
+:root{color-scheme:dark;--bg:#060708;--panel:#0c0f14;--panel2:#090b0f;--line:#222a35;--text:#e7edf5;--muted:#8b97a7;--accent:#d1a922;--accent2:#f1d37a;--link:#6ea8e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}.layout{max-width:1500px;margin:auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:24px;padding:28px}main{min-width:0}
+h1{font:600 34px Georgia,serif;margin:5px 0 8px}h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-top:28px}
+.eyebrow,code{font-family:ui-monospace,Consolas,monospace}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:1px}.muted{color:var(--muted)}
+.identity{border-left:3px solid var(--accent);padding:8px 0 8px 12px;margin:8px 0 10px;background:linear-gradient(90deg,rgba(209,169,34,.08),transparent)}.identity code{display:block;font-size:15px;color:var(--accent2);margin-bottom:4px}.identity span{display:block;color:var(--muted);font-size:12px}
+.crumbs{font:12px ui-monospace,Consolas,monospace;color:var(--muted);margin-bottom:10px}.crumbs a{color:var(--accent)}.crumbs span{margin:0 4px}
+.unresolved{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:2px 10px;border-radius:3px;font:11px ui-monospace,Consolas,monospace;letter-spacing:1px}
+.sidebar{position:sticky;top:20px;align-self:start;border:1px solid var(--line);background:var(--panel);padding:12px;max-height:calc(100vh - 40px);overflow:auto}.sidebar a,.sidebar .child{display:block;padding:7px 6px;border-bottom:1px solid #1a222d}.side-title{font:600 15px Georgia,serif;padding:4px 6px 12px;color:var(--text)}.side-label{color:var(--accent);font:10px ui-monospace,Consolas,monospace;letter-spacing:1px;text-transform:uppercase;padding:16px 6px 5px}.pending{color:var(--muted)}small{font-size:10px}
+.summary{display:grid;grid-template-columns:repeat(4,minmax(140px,1fr));gap:7px;margin:14px 0}.metric{border:1px solid var(--line);padding:8px 9px;background:var(--panel)}.metric b{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.score-grid{display:grid;grid-template-columns:repeat(6,minmax(120px,1fr));gap:8px}.score-tile{margin:0;border:1px solid var(--line);background:var(--panel);min-height:104px;padding:10px}.score-tile summary{list-style:none;cursor:pointer}.score-tile summary::-webkit-details-marker{display:none}.score-tile strong{display:block;color:var(--accent);font:600 28px Georgia,serif}.score-tile span{font:11px ui-monospace,Consolas,monospace;text-transform:uppercase;color:var(--muted)}.score-tile p{font-size:12px;color:var(--muted)}.score-tile ul{padding-left:17px;font-size:12px}
+table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}code{font-size:12px;color:#d6e5f5;word-break:break-word}
+input[type=search]{width:min(440px,100%);margin:0;padding:9px 10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:3px}.file-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 8px}button{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:8px 10px;border-radius:3px;cursor:pointer}button:hover{border-color:var(--accent)}.file-list{display:grid;gap:4px}.file-block{border:1px solid var(--line);background:var(--panel);padding:0}.file-block summary{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;align-items:center;padding:7px 9px;list-style:none;cursor:pointer}.file-block summary::-webkit-details-marker{display:none}.file-block[open] summary{border-bottom:1px solid var(--line);background:var(--panel2)}.file-name{font-weight:600;color:var(--text)}.source-link{justify-self:end;font-size:12px}.machine{padding:8px 10px 10px}.machine table{background:var(--panel2)}.machine th{width:190px}.machine td,.machine th{padding:6px 8px}.file-head{display:grid;grid-template-columns:minmax(180px,1.5fr) minmax(140px,1.2fr) 50px 70px minmax(130px,1fr) 68px 50px;gap:6px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;padding:0 10px}
+.actions{display:flex;gap:6px;flex-wrap:wrap}.actions button{padding:5px 9px;font-size:12px}
+.capsule{border:1px solid var(--line);background:var(--panel);padding:12px 14px}.capsule p{margin:6px 0}
+.health-list{list-style:none;padding:0;margin:0;display:grid;gap:4px}.health-list li{border:1px solid var(--line);background:var(--panel);padding:8px 10px;font-size:13px}.health-list li::before{content:"◆ ";font-size:11px}.health-list li.warn::before{color:var(--accent)}.health-list li.ok::before{color:#5f7f6a}.health-list code{margin-left:6px}
+details{border:1px solid var(--line);padding:10px;background:var(--panel)}summary{cursor:pointer;color:var(--muted)}
+@media(max-width:800px){.layout{display:block;padding:16px}.sidebar{position:relative;top:auto;max-height:none;margin-bottom:16px}.summary{grid-template-columns:repeat(2,1fr)}table{display:block;overflow:auto;white-space:nowrap}}
+</style></head><body data-api-base=""><div class="layout"><aside class="sidebar"><div class="side-title">atoms</div><a href="#overview">Overview</a><a href="#semantic">Semantic capsule</a><a href="#health">Health</a><a href="#files">Files</a><a href="#folders">Folders</a><a href="#relationships">Relationships</a><a href="#scores">Signals</a><a href="#context">Audit context</a><div class="side-label">Navigate</div><a class="child" href="../FIS.html">&#8593; _definitions</a><div class="side-label">Child folders</div><span class="child pending">None</span><div class="side-label">Record</div><a href="#context">Machine context</a></aside><main id="overview">
+<nav class="crumbs"><a href="../FIS.html">&#8593; _definitions</a><span>/</span>atoms</nav>
+<div class="eyebrow">FIS FOLDER BRAIN v2.1 / RECURSIVE SEMANTIC VIEW</div><h1>atoms</h1>
+<div class="identity"><code>PH__DOC__GRC-WEB__20260825__AC</code><span>domain PH=physics | type DOC | tags GRC=grace/agape, WEB=html/css | date 20260825 | status AC | lossless MEQ__atoms__2026-08-25</span></div>
+<div class="identity" style="margin-top:4px"><code style="color:var(--accent2);font-size:13px">G0 M0 E1 S0 T0 K1 R1 Q1 F1 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span style="color:var(--muted);font-size:11px">Folder MEQ aggregate (avg CHI across 6 files)</span></div>
+<p><span class="unresolved">UNRESOLVED</span></p>
+<div class="summary"><div class="metric"><b>Lossless Address</b><code>MEQ__atoms__2026-08-25</code></div><div class="metric"><b>Contents</b>html: 3 | jsonld: 3</div><div class="metric"><b>State</b>active / 6 files</div><div class="metric"><b>Scan</b><code>2026-08-26T00:50:46+00:00</code></div></div>
+<section id="semantic"><h2>Semantic Capsule</h2><div class="capsule"><p>Mixed folder holding 6 file(s) (11,610 bytes) and 0 child folder(s). Dominant signal R / Relational Frame; domain physics.</p></div></section>
+<section id="health"><h2>Health</h2><ul class="health-list"><li class="warn">Purpose<code>UNRESOLVED</code></li><li class="warn">Owner<code>UNRESOLVED</code></li><li class="warn">Canonical source<code>not set</code></li><li class="warn">Unclassified files<code>6 of 6</code></li><li class="ok">Presentation coverage<code>3 of 6</code></li></ul></section>
+<details id="context" style="margin-top:28px"><summary>Machine context and audit fields</summary><pre>{
+  &quot;folder_id&quot;: &quot;FLD-ea0e3257f45b&quot;,
+  &quot;path&quot;: &quot;D:\\GitHub\\Faith-through-physics-atoms\\_definitions\\atoms&quot;,
+  &quot;name&quot;: &quot;atoms&quot;,
+  &quot;folder_type&quot;: &quot;mixed&quot;,
+  &quot;purpose&quot;: &quot;UNRESOLVED&quot;,
+  &quot;domain&quot;: &quot;unclassified&quot;,
+  &quot;series_name&quot;: null,
+  &quot;chain_steps&quot;: &quot;[]&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;owner&quot;: &quot;UNRESOLVED&quot;,
+  &quot;canonical_source&quot;: 0,
+  &quot;parent_backbone&quot;: null,
+  &quot;file_count&quot;: 6,
+  &quot;child_folder_count&quot;: 0,
+  &quot;created_at&quot;: &quot;2026-08-26T00:24:42+00:00&quot;,
+  &quot;last_scanned&quot;: &quot;2026-08-26T00:50:46+00:00&quot;,
+  &quot;notes&quot;: &quot;&quot;,
+  &quot;compressed_name&quot;: &quot;PH__DOC__GRC-WEB__20260825__AC&quot;,
+  &quot;compressed_name_detail&quot;: &quot;{\&quot;code\&quot;: \&quot;PH__DOC__GRC-WEB__20260825__AC\&quot;, \&quot;domain\&quot;: \&quot;PH\&quot;, \&quot;domain_meaning\&quot;: \&quot;physics\&quot;, \&quot;ct\&quot;: \&quot;DOC\&quot;, \&quot;tags\&quot;: [\&quot;GRC\&quot;, \&quot;WEB\&quot;], \&quot;date\&quot;: \&quot;20260825\&quot;, \&quot;status\&quot;: \&quot;AC\&quot;, \&quot;tag_meanings\&quot;: {\&quot;GRC\&quot;: \&quot;grace/agape\&quot;, \&quot;WEB\&quot;: \&quot;html/css\&quot;}}&quot;,
+  &quot;lossless_address&quot;: &quot;MEQ__atoms__2026-08-25&quot;,
+  &quot;lossless_address_detail&quot;: &quot;{\&quot;address\&quot;: \&quot;MEQ__atoms__2026-08-25\&quot;, \&quot;mode\&quot;: \&quot;meq\&quot;, \&quot;source_date\&quot;: \&quot;2026-08-25\&quot;, \&quot;basis\&quot;: \&quot;title_and_local_content_sample\&quot;, \&quot;trigger\&quot;: \&quot;master-equation\&quot;}&quot;
+}</pre></details>
+<h2 id="files">Files Here</h2><div class="file-controls"><input id="file-search" type="search" placeholder="Find by name, address, type, or keyword" aria-label="Filter files"><button id="toggle-files" type="button">Open all</button></div><div class="file-head"><span>File</span><span>MEQ Vector</span><span>Format</span><span>Role</span><span>Keywords</span><span>Lossless</span><span>Open</span></div><div id="file-rows" class="file-list"><details id="FIL-2d7b97d1ff32" class="file-block" data-search="goedel-incompleteness.html g0 m0 e1 s0 t0 k1 r1 q1 f1 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__goedel_incompleteness__2026-08-25 ph__doc__coh-mrl-fth__20260825__fn.html 4b1ef5330f7f471d0611918915ec3932e33d4b21ecb209b7f6428a15e9fb804c d:\github\faith-through-physics-atoms\_definitions\atoms\goedel-incompleteness.html article / html claims physics, r, relational frame, l07, relational_frame_code, e, truth signal, k, knowledge logos, q, quantum uncertainty, f, faith fruit, c, christ coherence, complete, data, section, class, faith physics (1/3) r / relational frame e:1, k:1, r:1, q:1, f:1, c:1 l07 (1/3) relational_frame_code 37.5/100 0.342 unclassified 2026-08-26t00:24:42+00:00 2026-08-26t00:50:46+00:00 1088 bytes g0 m0 e1 s0 t0 k1 r1 q1 f1 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">goedel-incompleteness.html</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E1 K1 R1 Q1 F1 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span>html</span><span>article</span><span>physics, R, Relational Frame, L07, relational_frame_code, E</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__goedel_incompleteness__2026-08-25">◆ lossless</span><a class="source-link" href="goedel-incompleteness.html">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="goedel-incompleteness.html">D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\goedel-incompleteness.html</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E1 S0 T0 K1 R1 Q1 F1 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__goedel_incompleteness__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__DOC__COH-MRL-FTH__20260825__FN.html</code></td></tr><tr><th>SHA-256</th><td><code>4b1ef5330f7f471d0611918915ec3932e33d4b21ecb209b7f6428a15e9fb804c</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\goedel-incompleteness.html</code></td></tr><tr><th>Type / format</th><td><code>article / html</code></td></tr><tr><th>Presentation</th><td><code>claims</code></td></tr><tr><th>Keywords</th><td><code>physics, R, Relational Frame, L07, relational_frame_code, E, truth signal, K, knowledge logos, Q, quantum uncertainty, F, faith fruit, C, christ coherence, complete, data, section, class, faith</code></td></tr><tr><th>Domain signal</th><td><code>physics (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>R / Relational Frame</code></td></tr><tr><th>CHI vector</th><td><code>E:1, K:1, R:1, Q:1, F:1, C:1</code></td></tr><tr><th>Law signal</th><td><code>L07 (1/3)</code></td></tr><tr><th>Content role</th><td><code>relational_frame_code</code></td></tr><tr><th>Evidence density</th><td><code>37.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.342</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:42+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:46+00:00</code></td></tr><tr><th>Size</th><td><code>1088 bytes</code></td></tr></tbody></table></div></details><details id="FIL-1a473369c57a" class="file-block" data-search="goedel-incompleteness.jsonld g0 m0 e0 s0 t0 k0 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__goedel_incompleteness__2026-08-25 unresolved f826622a8d331e88eaaf0045aa2a47afccf4e0ece0f0019fb82215d0b51eb28f d:\github\faith-through-physics-atoms\_definitions\atoms\goedel-incompleteness.jsonld other / jsonld plain unknown, c, christ alignment / coherence, christ_alignment_/_coherence_file, christ coherence, complete, goedel, incompleteness unknown (0/3) c / christ alignment / coherence c:1 none (0/3) christ_alignment_/_coherence_file 0.0/100 0.048 unclassified 2026-08-26t00:24:42+00:00 2026-08-26t00:50:46+00:00 2263 bytes g0 m0 e0 s0 t0 k0 r0 q0 f0 c1 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">goedel-incompleteness.jsonld</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">C1 :: [G.C]</code><span>jsonld</span><span>other</span><span>unknown, C, Christ Alignment / Coherence, christ_alignment_/_coherence_file, christ coherence, complete</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__goedel_incompleteness__2026-08-25">◆ lossless</span><a class="source-link" href="goedel-incompleteness.jsonld">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="goedel-incompleteness.jsonld">D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\goedel-incompleteness.jsonld</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E0 S0 T0 K0 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__goedel_incompleteness__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>UNRESOLVED</code></td></tr><tr><th>SHA-256</th><td><code>f826622a8d331e88eaaf0045aa2a47afccf4e0ece0f0019fb82215d0b51eb28f</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\goedel-incompleteness.jsonld</code></td></tr><tr><th>Type / format</th><td><code>other / jsonld</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>unknown, C, Christ Alignment / Coherence, christ_alignment_/_coherence_file, christ coherence, complete, goedel, incompleteness</code></td></tr><tr><th>Domain signal</th><td><code>unknown (0/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>C / Christ Alignment / Coherence</code></td></tr><tr><th>CHI vector</th><td><code>C:1</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>christ_alignment_/_coherence_file</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.048</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:42+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:46+00:00</code></td></tr><tr><th>Size</th><td><code>2263 bytes</code></td></tr></tbody></table></div></details><details id="FIL-2dcb93a026d4" class="file-block" data-search="master-equation-grace.html g1 m0 e1 s0 t0 k1 r1 q1 f1 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] meq__master_equation_grace__2026-08-25 ph__doc__grc-mrl-fth__20260825__ac.html 27e7cf39fbf046cdd8c12152764fce624662f06ee127c6e974c3ffc2db247486 d:\github\faith-through-physics-atoms\_definitions\atoms\master-equation-grace.html article / html claims physics, r, relational frame, l01, relational_frame_code, g, grace, e, truth signal, k, knowledge logos, q, quantum uncertainty, f, faith fruit, data, section, class, faith, master equation physics (1/3) r / relational frame g:1, e:1, k:1, r:1, q:1, f:1 l01 (1/3) relational_frame_code 37.5/100 0.342 unclassified 2026-08-26t00:24:42+00:00 2026-08-26t00:50:46+00:00 1110 bytes g1 m0 e1 s0 t0 k1 r1 q1 f1 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">master-equation-grace.html</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">G1 E1 K1 R1 Q1 F1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code><span>html</span><span>article</span><span>physics, R, Relational Frame, L01, relational_frame_code, G</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="MEQ__master_equation_grace__2026-08-25">◆ lossless</span><a class="source-link" href="master-equation-grace.html">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="master-equation-grace.html">D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\master-equation-grace.html</a></td></tr><tr><th>MEQ Name</th><td><code>G1 M0 E1 S0 T0 K1 R1 Q1 F1 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>MEQ__master_equation_grace__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__DOC__GRC-MRL-FTH__20260825__AC.html</code></td></tr><tr><th>SHA-256</th><td><code>27e7cf39fbf046cdd8c12152764fce624662f06ee127c6e974c3ffc2db247486</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\master-equation-grace.html</code></td></tr><tr><th>Type / format</th><td><code>article / html</code></td></tr><tr><th>Presentation</th><td><code>claims</code></td></tr><tr><th>Keywords</th><td><code>physics, R, Relational Frame, L01, relational_frame_code, G, grace, E, truth signal, K, knowledge logos, Q, quantum uncertainty, F, faith fruit, data, section, class, faith, master equation</code></td></tr><tr><th>Domain signal</th><td><code>physics (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>R / Relational Frame</code></td></tr><tr><th>CHI vector</th><td><code>G:1, E:1, K:1, R:1, Q:1, F:1</code></td></tr><tr><th>Law signal</th><td><code>L01 (1/3)</code></td></tr><tr><th>Content role</th><td><code>relational_frame_code</code></td></tr><tr><th>Evidence density</th><td><code>37.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.342</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:42+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:46+00:00</code></td></tr><tr><th>Size</th><td><code>1110 bytes</code></td></tr></tbody></table></div></details><details id="FIL-04744aee29e9" class="file-block" data-search="master-equation-grace.jsonld g1 m0 e0 s0 t0 k0 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] meq__master_equation_grace__2026-08-25 unresolved 8a08add926eda104b4621cda48ac55444f0c800ad9c306d9c87f788a831c2f44 d:\github\faith-through-physics-atoms\_definitions\atoms\master-equation-grace.jsonld other / jsonld plain theology, g, grace, l01, grace_file, master equation, equation theology (1/3) g / grace g:1 l01 (1/3) grace_file 0.0/100 0.103 unclassified 2026-08-26t00:24:42+00:00 2026-08-26t00:50:46+00:00 2333 bytes g1 m0 e0 s0 t0 k0 r0 q0 f0 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">master-equation-grace.jsonld</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">G1 :: [G.C]</code><span>jsonld</span><span>other</span><span>theology, G, Grace, L01, grace_file, master equation</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="MEQ__master_equation_grace__2026-08-25">◆ lossless</span><a class="source-link" href="master-equation-grace.jsonld">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="master-equation-grace.jsonld">D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\master-equation-grace.jsonld</a></td></tr><tr><th>MEQ Name</th><td><code>G1 M0 E0 S0 T0 K0 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>MEQ__master_equation_grace__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>UNRESOLVED</code></td></tr><tr><th>SHA-256</th><td><code>8a08add926eda104b4621cda48ac55444f0c800ad9c306d9c87f788a831c2f44</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\master-equation-grace.jsonld</code></td></tr><tr><th>Type / format</th><td><code>other / jsonld</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>theology, G, Grace, L01, grace_file, master equation, equation</code></td></tr><tr><th>Domain signal</th><td><code>theology (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>G / Grace</code></td></tr><tr><th>CHI vector</th><td><code>G:1</code></td></tr><tr><th>Law signal</th><td><code>L01 (1/3)</code></td></tr><tr><th>Content role</th><td><code>grace_file</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>0.103</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:42+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:46+00:00</code></td></tr><tr><th>Size</th><td><code>2333 bytes</code></td></tr></tbody></table></div></details><details id="FIL-9fb4056bf903" class="file-block" data-search="terminus-sui.html g0 m0 e1 s0 t1 k1 r1 q1 f1 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k] loss__terminus_sui__2026-08-25 ph__doc__mrl-fth-rel__20260825__ac.html 6ffc69627c5a72ba000e937065643a8874da3ef8b1951bcf8de3415052a63bf4 d:\github\faith-through-physics-atoms\_definitions\atoms\terminus-sui.html article / html claims physics, t, time / kairos, l07, time_/_kairos_code, e, truth signal, time kairos, k, knowledge logos, r, relational frame, q, quantum uncertainty, f, faith fruit, resolution, section, class, data physics (1/3) t / time / kairos e:1, t:1, k:1, r:1, q:1, f:1 l07 (1/3) time_/_kairos_code 37.5/100 0.342 unclassified 2026-08-26t00:24:42+00:00 2026-08-26t00:50:46+00:00 2809 bytes g0 m0 e1 s0 t1 k1 r1 q1 f1 c0 :: [g.c] [m.f] [e.q] [s.r] [t.k]"><summary><span class="file-name">terminus-sui.html</span><code class="meq-tag" style="font-size:10px;color:#f1d37a">E1 T1 K1 R1 Q1 F1 :: [M.F] [E.Q] [S.R] [T.K]</code><span>html</span><span>article</span><span>physics, T, Time / Kairos, L07, time_/_kairos_code, E</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__terminus_sui__2026-08-25">◆ lossless</span><a class="source-link" href="terminus-sui.html">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="terminus-sui.html">D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\terminus-sui.html</a></td></tr><tr><th>MEQ Name</th><td><code>G0 M0 E1 S0 T1 K1 R1 Q1 F1 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]</code></td></tr><tr><th>Internal address</th><td><code>LOSS__terminus_sui__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>PH__DOC__MRL-FTH-REL__20260825__AC.html</code></td></tr><tr><th>SHA-256</th><td><code>6ffc69627c5a72ba000e937065643a8874da3ef8b1951bcf8de3415052a63bf4</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\terminus-sui.html</code></td></tr><tr><th>Type / format</th><td><code>article / html</code></td></tr><tr><th>Presentation</th><td><code>claims</code></td></tr><tr><th>Keywords</th><td><code>physics, T, Time / Kairos, L07, time_/_kairos_code, E, truth signal, time kairos, K, knowledge logos, R, relational frame, Q, quantum uncertainty, F, faith fruit, resolution, section, class, data</code></td></tr><tr><th>Domain signal</th><td><code>physics (1/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>T / Time / Kairos</code></td></tr><tr><th>CHI vector</th><td><code>E:1, T:1, K:1, R:1, Q:1, F:1</code></td></tr><tr><th>Law signal</th><td><code>L07 (1/3)</code></td></tr><tr><th>Content role</th><td><code>time_/_kairos_code</code></td></tr><tr><th>Evidence density</th><td><code>37.5/100</code></td></tr><tr><th>Confidence</th><td><code>0.342</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:42+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:46+00:00</code></td></tr><tr><th>Size</th><td><code>2809 bytes</code></td></tr></tbody></table></div></details><details id="FIL-adebe98b93a0" class="file-block" data-search="terminus-sui.jsonld unscored loss__terminus_sui__2026-08-25 unresolved 5993908736b2b318c5e7fe4575c5bf13261920b543fc6fc91c6c1e1614bc9386 d:\github\faith-through-physics-atoms\_definitions\atoms\terminus-sui.jsonld other / jsonld plain unknown, unclassified_file, terminus unknown (0/3) none / unclassified none none (0/3) unclassified_file 0.0/100  unclassified 2026-08-26t00:24:42+00:00 2026-08-26t00:50:46+00:00 2007 bytes "><summary><span class="file-name">terminus-sui.jsonld</span><code class="meq-tag" style="font-size:10px;color:#f1d37a"></code><span>jsonld</span><span>other</span><span>unknown, unclassified_file, terminus</span><span class="lossless-btn" style="color:#d1a922;cursor:pointer;font-size:11px" title="LOSS__terminus_sui__2026-08-25">◆ lossless</span><a class="source-link" href="terminus-sui.jsonld">source</a></summary><div class="machine"><table><tbody><tr><th>Open source location</th><td><a href="terminus-sui.jsonld">D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\terminus-sui.jsonld</a></td></tr><tr><th>MEQ Name</th><td><code>UNSCORED</code></td></tr><tr><th>Internal address</th><td><code>LOSS__terminus_sui__2026-08-25</code></td></tr><tr><th>Proposed compressed name</th><td><code>UNRESOLVED</code></td></tr><tr><th>SHA-256</th><td><code>5993908736b2b318c5e7fe4575c5bf13261920b543fc6fc91c6c1e1614bc9386</code></td></tr><tr><th>Source path</th><td><code>D:\GitHub\Faith-through-physics-atoms\_definitions\atoms\terminus-sui.jsonld</code></td></tr><tr><th>Type / format</th><td><code>other / jsonld</code></td></tr><tr><th>Presentation</th><td><code>plain</code></td></tr><tr><th>Keywords</th><td><code>unknown, unclassified_file, terminus</code></td></tr><tr><th>Domain signal</th><td><code>unknown (0/3)</code></td></tr><tr><th>Dominant CHI</th><td><code>none / unclassified</code></td></tr><tr><th>CHI vector</th><td><code>none</code></td></tr><tr><th>Law signal</th><td><code>none (0/3)</code></td></tr><tr><th>Content role</th><td><code>unclassified_file</code></td></tr><tr><th>Evidence density</th><td><code>0.0/100</code></td></tr><tr><th>Confidence</th><td><code>UNRESOLVED</code></td></tr><tr><th>Status</th><td><code>unclassified</code></td></tr><tr><th>Last modified</th><td><code>2026-08-26T00:24:42+00:00</code></td></tr><tr><th>Last scanned</th><td><code>2026-08-26T00:50:46+00:00</code></td></tr><tr><th>Size</th><td><code>2007 bytes</code></td></tr></tbody></table></div></details></div>
+<h2 id="folders">Child Folders</h2><table><thead><tr><th>Folder</th><th>Type</th><th>Files</th><th>Address</th><th>View</th></tr></thead><tbody><tr><td colspan="5" class="muted">No child folders.</td></tr></tbody></table><section id="relationships"><h2>Semantic Network</h2><p class="section-note">Connections based on shared keywords, CHI variables, domain, and law signals. Files sharing 2+ tags are linked.</p><div class="badges" style="margin:8px 0"><span class="badge">k (3)</span> <span class="badge">truth signal (3)</span> <span class="badge">e (3)</span> <span class="badge">physics (3)</span> <span class="badge">r (2)</span> <span class="badge">relational frame (2)</span> <span class="badge">relational_frame_code (2)</span> <span class="badge">knowledge logos (2)</span> <span class="badge">l07 (2)</span> <span class="badge">unknown (2)</span> <span class="badge">grace (2)</span> <span class="badge">g (2)</span> <span class="badge">l01 (2)</span></div><table class="signal-table"><thead><tr><th>File A</th><th>File B</th><th>Shared</th><th>Via</th></tr></thead><tbody><tr><td><a href="#FIL-2d7b97d1ff32">goedel-incompleteness.html</a></td><td><a href="#FIL-2dcb93a026d4">master-equation-grace.html</a></td><td>7</td><td>k, r, truth signal, relational frame</td></tr><tr><td><a href="#FIL-2d7b97d1ff32">goedel-incompleteness.html</a></td><td><a href="#FIL-9fb4056bf903">terminus-sui.html</a></td><td>6</td><td>k, truth signal, e, physics</td></tr><tr><td><a href="#FIL-2dcb93a026d4">master-equation-grace.html</a></td><td><a href="#FIL-9fb4056bf903">terminus-sui.html</a></td><td>4</td><td>k, truth signal, e, physics</td></tr><tr><td><a href="#FIL-04744aee29e9">master-equation-grace.jsonld</a></td><td><a href="#FIL-2dcb93a026d4">master-equation-grace.html</a></td><td>3</td><td>grace, g, l01</td></tr></tbody></table></section><section id="scores"><h2>Folder Signals</h2><p class="muted">Open a block to see the calculation evidence; file links jump to the inline machine block above.</p><div class="score-grid"><details class="score-tile"><summary><strong>45</strong><span>Folder signal</span></summary><p>Composite navigation signal; not truth, quality, or canon status.</p><ul><li><a href="#FIL-9fb4056bf903">terminus-sui.html</a> <code>44/100</code></li><li><a href="#FIL-2d7b97d1ff32">goedel-incompleteness.html</a> <code>43/100</code></li><li><a href="#FIL-2dcb93a026d4">master-equation-grace.html</a> <code>43/100</code></li><li><a href="#FIL-1a473369c57a">goedel-incompleteness.jsonld</a> <code>35/100</code></li><li><a href="#FIL-04744aee29e9">master-equation-grace.jsonld</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>64</strong><span>Activity</span></summary><p>6 files modified in the last 30 days; 1 observed modification days.</p><ul><li><a href="#FIL-adebe98b93a0">terminus-sui.jsonld</a> <code>35/100</code></li><li><a href="#FIL-9fb4056bf903">terminus-sui.html</a> <code>44/100</code></li><li><a href="#FIL-04744aee29e9">master-equation-grace.jsonld</a> <code>35/100</code></li><li><a href="#FIL-2dcb93a026d4">master-equation-grace.html</a> <code>43/100</code></li><li><a href="#FIL-2d7b97d1ff32">goedel-incompleteness.html</a> <code>43/100</code></li></ul></details><details class="score-tile"><summary><strong>25</strong><span>Depth</span></summary><p>6 direct source files and 11,610 source bytes.</p><ul><li><a href="#FIL-9fb4056bf903">terminus-sui.html</a> <code>44/100</code></li><li><a href="#FIL-04744aee29e9">master-equation-grace.jsonld</a> <code>35/100</code></li><li><a href="#FIL-1a473369c57a">goedel-incompleteness.jsonld</a> <code>35/100</code></li><li><a href="#FIL-adebe98b93a0">terminus-sui.jsonld</a> <code>35/100</code></li><li><a href="#FIL-2dcb93a026d4">master-equation-grace.html</a> <code>43/100</code></li></ul></details><details class="score-tile"><summary><strong>15</strong><span>Explicit links</span></summary><p>Counts visible Markdown/wiki/HTML link syntax only; it does not infer semantic relationships.</p><ul><li><a href="#FIL-2d7b97d1ff32">goedel-incompleteness.html</a> <code>43/100</code></li><li><a href="#FIL-2dcb93a026d4">master-equation-grace.html</a> <code>43/100</code></li><li><a href="#FIL-9fb4056bf903">terminus-sui.html</a> <code>44/100</code></li><li><a href="#FIL-1a473369c57a">goedel-incompleteness.jsonld</a> <code>35/100</code></li><li><a href="#FIL-04744aee29e9">master-equation-grace.jsonld</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>12</strong><span>Presentation</span></summary><p>Topbar, audio, equations, and claim-marker coverage in directly stored HTML files.</p><ul><li><a href="#FIL-2d7b97d1ff32">goedel-incompleteness.html</a> <code>43/100</code></li><li><a href="#FIL-2dcb93a026d4">master-equation-grace.html</a> <code>43/100</code></li><li><a href="#FIL-9fb4056bf903">terminus-sui.html</a> <code>44/100</code></li><li><a href="#FIL-1a473369c57a">goedel-incompleteness.jsonld</a> <code>35/100</code></li><li><a href="#FIL-04744aee29e9">master-equation-grace.jsonld</a> <code>35/100</code></li></ul></details><details class="score-tile"><summary><strong>100</strong><span>Registry</span></summary><p>Files with both a SHA-256 content fingerprint and lossless internal address.</p><ul><li><a href="#FIL-2d7b97d1ff32">goedel-incompleteness.html</a> <code>43/100</code></li><li><a href="#FIL-1a473369c57a">goedel-incompleteness.jsonld</a> <code>35/100</code></li><li><a href="#FIL-2dcb93a026d4">master-equation-grace.html</a> <code>43/100</code></li><li><a href="#FIL-04744aee29e9">master-equation-grace.jsonld</a> <code>35/100</code></li><li><a href="#FIL-9fb4056bf903">terminus-sui.html</a> <code>44/100</code></li></ul></details></div></section>
+<p class="muted" style="margin-top:24px">Generated from the FIS registry. Source files remain in place; this page is an index, not a replacement.</p>
+</main></div>
+<script type="application/json" id="fis-folder-record">
+{
+  "schema": "fis.folder/2.1",
+  "folder": {
+    "folder_id": "FLD-ea0e3257f45b",
+    "path": "D:\\GitHub\\Faith-through-physics-atoms\\_definitions\\atoms",
+    "name": "atoms",
+    "folder_type": "mixed",
+    "purpose": "UNRESOLVED",
+    "domain": "unclassified",
+    "status": "active",
+    "owner": "UNRESOLVED",
+    "canonical_source": 0,
+    "file_count": 6,
+    "child_folder_count": 0,
+    "created_at": "2026-08-26T00:24:42+00:00",
+    "last_scanned": "2026-08-26T00:50:46+00:00",
+    "compressed_name": "PH__DOC__GRC-WEB__20260825__AC",
+    "compressed_name_detail": {
+      "code": "PH__DOC__GRC-WEB__20260825__AC",
+      "domain": "PH",
+      "domain_meaning": "physics",
+      "ct": "DOC",
+      "tags": [
+        "GRC",
+        "WEB"
+      ],
+      "date": "20260825",
+      "status": "AC",
+      "tag_meanings": {
+        "GRC": "grace/agape",
+        "WEB": "html/css"
+      }
+    },
+    "lossless_address": "MEQ__atoms__2026-08-25",
+    "lossless_address_detail": {
+      "address": "MEQ__atoms__2026-08-25",
+      "mode": "meq",
+      "source_date": "2026-08-25",
+      "basis": "title_and_local_content_sample",
+      "trigger": "master-equation"
+    },
+    "meq_aggregate": "G0 M0 E1 S0 T0 K1 R1 Q1 F1 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]"
+  },
+  "files": [
+    {
+      "file_id": "FIL-2d7b97d1ff32",
+      "name": "goedel-incompleteness.html",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_definitions\\atoms\\goedel-incompleteness.html",
+      "meq_name": "G0 M0 E1 S0 T0 K1 R1 Q1 F1 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__goedel_incompleteness__2026-08-25",
+      "proposed_compressed_name": "PH__DOC__COH-MRL-FTH__20260825__FN.html",
+      "sha256": "4b1ef5330f7f471d0611918915ec3932e33d4b21ecb209b7f6428a15e9fb804c",
+      "type": "article",
+      "format": "html",
+      "keywords": [
+        "physics",
+        "R",
+        "Relational Frame",
+        "L07",
+        "relational_frame_code",
+        "E",
+        "truth signal",
+        "K",
+        "knowledge logos",
+        "Q",
+        "quantum uncertainty",
+        "F",
+        "faith fruit",
+        "C",
+        "christ coherence",
+        "complete",
+        "data",
+        "section",
+        "class",
+        "faith"
+      ],
+      "domain_signal": "physics (1/3)",
+      "dominant_chi": "R / Relational Frame",
+      "chi_vector": {
+        "E": 1,
+        "K": 1,
+        "R": 1,
+        "Q": 1,
+        "F": 1,
+        "C": 1
+      },
+      "law_signal": "L07 (1/3)",
+      "content_role": "relational_frame_code",
+      "evidence_density": 37.5,
+      "confidence": 0.342,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:42+00:00",
+      "last_scanned": "2026-08-26T00:50:46+00:00",
+      "size_bytes": 1088
+    },
+    {
+      "file_id": "FIL-1a473369c57a",
+      "name": "goedel-incompleteness.jsonld",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_definitions\\atoms\\goedel-incompleteness.jsonld",
+      "meq_name": "G0 M0 E0 S0 T0 K0 R0 Q0 F0 C1 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__goedel_incompleteness__2026-08-25",
+      "proposed_compressed_name": null,
+      "sha256": "f826622a8d331e88eaaf0045aa2a47afccf4e0ece0f0019fb82215d0b51eb28f",
+      "type": "other",
+      "format": "jsonld",
+      "keywords": [
+        "unknown",
+        "C",
+        "Christ Alignment / Coherence",
+        "christ_alignment_/_coherence_file",
+        "christ coherence",
+        "complete",
+        "goedel",
+        "incompleteness"
+      ],
+      "domain_signal": "unknown (0/3)",
+      "dominant_chi": "C / Christ Alignment / Coherence",
+      "chi_vector": {
+        "C": 1
+      },
+      "law_signal": "none (0/3)",
+      "content_role": "christ_alignment_/_coherence_file",
+      "evidence_density": 0.0,
+      "confidence": 0.048,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:42+00:00",
+      "last_scanned": "2026-08-26T00:50:46+00:00",
+      "size_bytes": 2263
+    },
+    {
+      "file_id": "FIL-2dcb93a026d4",
+      "name": "master-equation-grace.html",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_definitions\\atoms\\master-equation-grace.html",
+      "meq_name": "G1 M0 E1 S0 T0 K1 R1 Q1 F1 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "MEQ__master_equation_grace__2026-08-25",
+      "proposed_compressed_name": "PH__DOC__GRC-MRL-FTH__20260825__AC.html",
+      "sha256": "27e7cf39fbf046cdd8c12152764fce624662f06ee127c6e974c3ffc2db247486",
+      "type": "article",
+      "format": "html",
+      "keywords": [
+        "physics",
+        "R",
+        "Relational Frame",
+        "L01",
+        "relational_frame_code",
+        "G",
+        "grace",
+        "E",
+        "truth signal",
+        "K",
+        "knowledge logos",
+        "Q",
+        "quantum uncertainty",
+        "F",
+        "faith fruit",
+        "data",
+        "section",
+        "class",
+        "faith",
+        "master equation"
+      ],
+      "domain_signal": "physics (1/3)",
+      "dominant_chi": "R / Relational Frame",
+      "chi_vector": {
+        "G": 1,
+        "E": 1,
+        "K": 1,
+        "R": 1,
+        "Q": 1,
+        "F": 1
+      },
+      "law_signal": "L01 (1/3)",
+      "content_role": "relational_frame_code",
+      "evidence_density": 37.5,
+      "confidence": 0.342,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:42+00:00",
+      "last_scanned": "2026-08-26T00:50:46+00:00",
+      "size_bytes": 1110
+    },
+    {
+      "file_id": "FIL-04744aee29e9",
+      "name": "master-equation-grace.jsonld",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_definitions\\atoms\\master-equation-grace.jsonld",
+      "meq_name": "G1 M0 E0 S0 T0 K0 R0 Q0 F0 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "MEQ__master_equation_grace__2026-08-25",
+      "proposed_compressed_name": null,
+      "sha256": "8a08add926eda104b4621cda48ac55444f0c800ad9c306d9c87f788a831c2f44",
+      "type": "other",
+      "format": "jsonld",
+      "keywords": [
+        "theology",
+        "G",
+        "Grace",
+        "L01",
+        "grace_file",
+        "master equation",
+        "equation"
+      ],
+      "domain_signal": "theology (1/3)",
+      "dominant_chi": "G / Grace",
+      "chi_vector": {
+        "G": 1
+      },
+      "law_signal": "L01 (1/3)",
+      "content_role": "grace_file",
+      "evidence_density": 0.0,
+      "confidence": 0.103,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:42+00:00",
+      "last_scanned": "2026-08-26T00:50:46+00:00",
+      "size_bytes": 2333
+    },
+    {
+      "file_id": "FIL-9fb4056bf903",
+      "name": "terminus-sui.html",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_definitions\\atoms\\terminus-sui.html",
+      "meq_name": "G0 M0 E1 S0 T1 K1 R1 Q1 F1 C0 :: [G.C] [M.F] [E.Q] [S.R] [T.K]",
+      "internal_address": "LOSS__terminus_sui__2026-08-25",
+      "proposed_compressed_name": "PH__DOC__MRL-FTH-REL__20260825__AC.html",
+      "sha256": "6ffc69627c5a72ba000e937065643a8874da3ef8b1951bcf8de3415052a63bf4",
+      "type": "article",
+      "format": "html",
+      "keywords": [
+        "physics",
+        "T",
+        "Time / Kairos",
+        "L07",
+        "time_/_kairos_code",
+        "E",
+        "truth signal",
+        "time kairos",
+        "K",
+        "knowledge logos",
+        "R",
+        "relational frame",
+        "Q",
+        "quantum uncertainty",
+        "F",
+        "faith fruit",
+        "resolution",
+        "section",
+        "class",
+        "data"
+      ],
+      "domain_signal": "physics (1/3)",
+      "dominant_chi": "T / Time / Kairos",
+      "chi_vector": {
+        "E": 1,
+        "T": 1,
+        "K": 1,
+        "R": 1,
+        "Q": 1,
+        "F": 1
+      },
+      "law_signal": "L07 (1/3)",
+      "content_role": "time_/_kairos_code",
+      "evidence_density": 37.5,
+      "confidence": 0.342,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:42+00:00",
+      "last_scanned": "2026-08-26T00:50:46+00:00",
+      "size_bytes": 2809
+    },
+    {
+      "file_id": "FIL-adebe98b93a0",
+      "name": "terminus-sui.jsonld",
+      "source_path": "D:\\GitHub\\Faith-through-physics-atoms\\_definitions\\atoms\\terminus-sui.jsonld",
+      "meq_name": "",
+      "internal_address": "LOSS__terminus_sui__2026-08-25",
+      "proposed_compressed_name": null,
+      "sha256": "5993908736b2b318c5e7fe4575c5bf13261920b543fc6fc91c6c1e1614bc9386",
+      "type": "other",
+      "format": "jsonld",
+      "keywords": [
+        "unknown",
+        "unclassified_file",
+        "terminus"
+      ],
+      "domain_signal": "unknown (0/3)",
+      "dominant_chi": "none / unclassified",
+      "chi_vector": {},
+      "law_signal": "none (0/3)",
+      "content_role": "unclassified_file",
+      "evidence_density": 0.0,
+      "confidence": 0.0,
+      "status": "unclassified",
+      "last_modified": "2026-08-26T00:24:42+00:00",
+      "last_scanned": "2026-08-26T00:50:46+00:00",
+      "size_bytes": 2007
+    }
+  ],
+  "child_folders": [],
+  "signals": {
+    "folder_signal": 45,
+    "activity": 64,
+    "depth": 25,
+    "explicit_links": 15,
+    "presentation": 12,
+    "registry": 100
+  }
+}
+</script>
+<script>
+const q=document.getElementById('file-search');const blocks=[...document.querySelectorAll('.file-block')];q?.addEventListener('input',()=>{const v=q.value.toLowerCase();blocks.forEach(b=>b.hidden=!(b.dataset.search+' '+b.innerText.toLowerCase()).includes(v));});const toggle=document.getElementById('toggle-files');toggle?.addEventListener('click',()=>{const visible=blocks.filter(b=>!b.hidden);const openSome=visible.some(b=>!b.open);visible.forEach(b=>b.open=openSome);toggle.textContent=openSome?'Close all':'Open all';});document.querySelectorAll('.source-link').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{navigator.clipboard?.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent=b.dataset.copy.startsWith('MEQ')?'Copy address':'Copy SHA-256',900);}));
+document.querySelectorAll('[data-action]').forEach(b=>b.addEventListener('click',()=>{const payload={file_id:b.dataset.fileId,target:b.dataset.target||null,folder:document.querySelector('h1').textContent};if(window.FIS_API?.run){window.FIS_API.run(b.dataset.action,payload);}else{b.textContent='API not connected';setTimeout(()=>b.textContent=b.dataset.action==='apply-name'?'Apply proposed name':'Mark reviewed',1100);}}))</script></body></html>

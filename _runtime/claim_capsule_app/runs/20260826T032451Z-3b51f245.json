@@ -1,0 +1,104 @@
+{
+  "receipt_version": "claim-pipeline-receipt/1.0.0",
+  "run_id": "20260826T032451Z-3b51f245",
+  "created_at": "2026-08-26T03:24:51.129242+00:00",
+  "provider": "mock",
+  "model": "deepseek-chat",
+  "capsule_hash": "sha256:3bc0ce77af0a00369a3a816128f22573fa3f316930f5c3f3b767cde493142280",
+  "stages": [
+    {
+      "name": "discovery",
+      "status": "DISCOVERY_COMPLETE",
+      "hash": "sha256:78bed6c74c156a392998f4b419fc456d1b9aa2f2fa8ff84808f558470c68ea00",
+      "output": {
+        "schema_version": "claim-discovery/1.0.0",
+        "stage": "NON_DISCRIMINATORY_DISCOVERY",
+        "status": "DISCOVERY_COMPLETE",
+        "raw_expression": "A separation can be made.",
+        "referent": "A separation can be made.",
+        "identities": [
+          "The asserted referent must remain identifiable across restatements."
+        ],
+        "distinctions": [
+          "The assertion must be distinguishable from its negation and nearby alternatives."
+        ],
+        "relations": [],
+        "operations": [],
+        "dependencies": [
+          "Terms require stable definitions."
+        ],
+        "constraints": [
+          "A coherent denial that makes no distinction."
+        ],
+        "invariants": [
+          "Meaning preserved between the exact and plain-language statements."
+        ],
+        "collapse_conditions": [
+          "The assertion collapses if its stated defeat condition is met."
+        ],
+        "consequences": [],
+        "countermodels": [
+          "The exact negation remains a live comparison until discriminated."
+        ],
+        "open_questions": [
+          "Whether a performer is co-primitive."
+        ],
+        "prohibited_outputs": [
+          "No discipline, warrant, grade, bridge, or canonical status assigned in Stage 1."
+        ]
+      }
+    },
+    {
+      "name": "classification",
+      "status": "CLASSIFICATION_COMPLETE",
+      "hash": "sha256:3884ee39c3788ce3416ea94c1c2e550cfe3f9d86e21056b4bff8ec348cbabc21",
+      "output": {
+        "schema_version": "claim-classification/1.0.0",
+        "stage": "CLASSIFICATION_AND_BURDEN_ROUTING",
+        "status": "CLASSIFICATION_COMPLETE",
+        "discovery_receipt_hash": "sha256:78bed6c74c156a392998f4b419fc456d1b9aa2f2fa8ff84808f558470c68ea00",
+        "object_type": "CLAIM",
+        "register": "domain-neutral",
+        "claim_species": "universal",
+        "native_anatomy": [],
+        "warrant_class": "O",
+        "lifecycle": "candidate",
+        "why_outcome": "WHY_OPEN",
+        "burdens": [
+          "Complete the native anatomy and attach discriminating support."
+        ],
+        "unresolved": [
+          "Whether a performer is co-primitive."
+        ],
+        "new_fact_exception": null
+      }
+    },
+    {
+      "name": "reconciliation",
+      "status": "RECONCILIATION_COMPLETE",
+      "hash": "sha256:2379a599fd04b63a118e55c3c1e396e6cd28baf341297217ff6cc57d1dc6ba23",
+      "output": {
+        "schema_version": "claim-reconciliation/1.0.0",
+        "stage": "RECONCILIATION_TRANSLATION_AND_FIT",
+        "status": "RECONCILIATION_COMPLETE",
+        "discovery_receipt_hash": "sha256:78bed6c74c156a392998f4b419fc456d1b9aa2f2fa8ff84808f558470c68ea00",
+        "classification_receipt_hash": "sha256:3884ee39c3788ce3416ea94c1c2e550cfe3f9d86e21056b4bff8ec348cbabc21",
+        "recommended_operation": "new_claim",
+        "graph_fit": "Candidate only; semantic graph matching is pending.",
+        "native_statement": "A separation can be made.",
+        "bridge_statement": null,
+        "identification_statement": null,
+        "safe_public_wording": "A distinction is possible.",
+        "preserved": [
+          "Exact claim wording and declared warrant boundary."
+        ],
+        "lost": [],
+        "downstream_effects": [],
+        "publication_eligibility": "ELIGIBLE_FOR_HUMAN_REVIEW",
+        "human_ruling_required": true
+      }
+    }
+  ],
+  "final_status": "PASS",
+  "canonical_promotion_performed": false
+}

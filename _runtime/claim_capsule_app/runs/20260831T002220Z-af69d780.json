@@ -1,0 +1,40 @@
+{
+  "receipt_version": "claim-pipeline-receipt/1.0.0",
+  "run_id": "20260831T002220Z-af69d780",
+  "created_at": "2026-08-31T00:22:20.218449+00:00",
+  "provider": "mock",
+  "model": "deepseek-chat",
+  "capsule_hash": "sha256:ff6294d7cbe8c8e6805b63bcb49bcbfcfe39a633d1557c5cc93d7fb199e585e7",
+  "stages": [
+    {
+      "name": "discovery",
+      "status": "DISCOVERY_INCOMPLETE",
+      "hash": "sha256:bf2a11e68dc4aeb3748474645996403852f1041b5299fc2e0eeef1f55971aaa8",
+      "output": {
+        "schema_version": "claim-discovery/1.0.0",
+        "stage": "NON_DISCRIMINATORY_DISCOVERY",
+        "status": "DISCOVERY_INCOMPLETE",
+        "raw_expression": "## Statement\n\nGrace must be external to the system — coherence recovery requires external source.",
+        "referent": "## Statement\n\nGrace must be external to the system — coherence recovery requires external source.",
+        "identities": [],
+        "distinctions": [],
+        "relations": [],
+        "operations": [],
+        "dependencies": [],
+        "constraints": [],
+        "invariants": [],
+        "collapse_conditions": [],
+        "consequences": [],
+        "countermodels": [],
+        "open_questions": [
+          "The pinned source sentence bundles theological identification, a conditional boundary statement, and a proposed bridge. Split before classification."
+        ],
+        "prohibited_outputs": [
+          "No classification, warrant, bridge, proof, or canonical status may be assigned until a human split resolves the source bundle."
+        ]
+      }
+    }
+  ],
+  "final_status": "BLOCKED",
+  "canonical_promotion_performed": false
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/claim-capsule/v1",
+  "title": "Faith Through Physics Sixty-Second Claim Capsule",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "operation", "claim", "plain_language", "claim_type", "defeat_condition", "present_evidence", "open_items", "decision"],
+  "properties": {
+    "schema_version": {"const": "claim-capsule/1.0.0"},
+    "capsule_id": {"type": ["string", "null"]},
+    "canonical_uuid": {"type": ["string", "null"], "format": "uuid"},
+    "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true, "default": []},
+    "operation": {"enum": ["new_claim", "amend", "new_version", "supersede", "add_evidence"]},
+    "target_id": {"type": ["string", "null"]},
+    "claim": {"type": "string", "minLength": 1},
+    "plain_language": {"type": "string", "minLength": 1},
+    "claim_type": {"enum": ["mathematical", "empirical", "historical", "theological", "bridge", "universal", "normative", "everyday_translation", "other"]},
+    "defeat_condition": {"type": "string", "minLength": 1},
+    "present_evidence": {"type": "array", "items": {"type": "string"}},
+    "open_items": {"type": "array", "items": {"type": "string"}},
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["selected_by", "confirmed_by_human"],
+      "properties": {
+        "selected_by": {"enum": ["human", "system_suggestion"]},
+        "confirmed_by_human": {"type": "boolean"},
+        "selection_reason": {"type": ["string", "null"]}
+      }
+    },
+    "type_extension": {"type": "object", "default": {}},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "path_or_uri": {"type": ["string", "null"]},
+        "source_hash": {"type": ["string", "null"], "pattern": "^(sha256:)?[a-fA-F0-9]{64}$"},
+        "source_span": {"type": ["string", "null"]}
+      }
+    },
+    "version_intent": {
+      "enum": ["patch_nonsemantic", "minor_scope_or_support", "major_proposition_change", "not_applicable"]
+    },
+    "lifecycle": {"const": "staged"},
+    "canonical_promotion_requested": {"const": false}
+  },
+  "allOf": [
+    {"if": {"properties": {"operation": {"enum": ["amend", "new_version", "supersede", "add_evidence"]}}}, "then": {"required": ["target_id"]}},
+    {"if": {"properties": {"claim_type": {"const": "mathematical"}}}, "then": {"properties": {"type_extension": {"required": ["definitions", "premises", "derivation", "countermodels", "receipt"]}}}},
+    {"if": {"properties": {"claim_type": {"const": "empirical"}}}, "then": {"properties": {"type_extension": {"required": ["dataset", "method", "denominator", "uncertainty", "replication"]}}}},
+    {"if": {"properties": {"claim_type": {"const": "historical"}}}, "then": {"properties": {"type_extension": {"required": ["primary_sources", "dates", "corroboration"]}}}},
+    {"if": {"properties": {"claim_type": {"const": "theological"}}}, "then": {"properties": {"type_extension": {"required": ["scripture", "doctrine", "interpretive_premises"]}}}},
+    {"if": {"properties": {"claim_type": {"const": "bridge"}}}, "then": {"properties": {"type_extension": {"required": ["source_definition", "target_definition", "mapping", "preserved", "lost", "negative_controls"]}}}},
+    {"if": {"properties": {"claim_type": {"const": "universal"}}}, "then": {"properties": {"type_extension": {"required": ["search_domain", "counterexample_test"]}}}},
+    {"if": {"properties": {"claim_type": {"const": "normative"}}}, "then": {"properties": {"type_extension": {"required": ["moral_standard", "normative_premises"]}}}},
+    {"if": {"properties": {"claim_type": {"const": "everyday_translation"}}}, "then": {"properties": {"type_extension": {"required": ["source_claim", "descent_preservation_check"]}}}}
+  ]
+}
