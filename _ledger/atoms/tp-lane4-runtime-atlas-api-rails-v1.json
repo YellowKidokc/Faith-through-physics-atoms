@@ -1,0 +1,60 @@
+{
+  "atom_id": "tp:lane4/runtime/atlas-api-rails-v1",
+  "atom_uid": "sha256:dc1733f5e3a4f393e7d97d07dc4fd0ec6cb9f057d92eb5294bc81d7c5c365a37",
+  "title": "Atlas API Rails v1",
+  "claim": "Semantic/API interpreters can emit one canonical classification packet that a deterministic Python rail validates, beacons into stable subsystem records, and recombines into a single Atlas record without reclassifying the same primitive for each view.",
+  "domain": "runtime",
+  "lane": "Python/Compute",
+  "claim_class": "runtime_architecture",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Semantic interpreters return ATLAS_API_RAILS_1.0 packets.",
+    "Source document hashes and source spans are preserved before semantic extraction.",
+    "Python validation does not promote semantic inference into truth or canon."
+  ],
+  "definitions": [
+    "Beacon: a stable JSON projection of one canonical subsystem block with a manifest hash.",
+    "Combined Atlas record: the canonical recomposition of identity, source, Nabla, Periodic-15, atom stack, warrant, dynamics, orientation, bridges, Reality Mirror, audit, and deterministic computed fields.",
+    "API rail: the deterministic Python boundary that validates and routes semantic/API output."
+  ],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "tp:lane4/atlas/periodic-table-three-resolutions",
+    "tp:lane4/atlas/classify-once-project-many",
+    "_schema/atlas_api_classification.schema.json",
+    "_scripts/atlas_api_rails.py"
+  ],
+  "negative_guards": [
+    "Python does not invent object type, claim family, bridge meaning, external-anchor meaning, or aggregate standing.",
+    "Candidate and Admitted graph state are never silently merged.",
+    "Marker 12 is never fabricated by the rail.",
+    "Aggregate Nabla semantics are flagged for semantic adjudication rather than guessed."
+  ],
+  "kill_conditions": [
+    "The rail cannot round-trip a valid semantic packet into beacons and a combined record without loss of canonical object identity or source-span provenance.",
+    "Two beacons representing the same canonical primitive diverge semantically after recombination."
+  ],
+  "proof_label": "PYTHON_RAIL_IMPLEMENTED_UNRUN",
+  "current_status": "active_candidate",
+  "rerun_status": "required",
+  "source_artifacts": [
+    "_scripts/atlas_api_rails.py",
+    "_schema/atlas_api_classification.schema.json",
+    "_docs/PERIODIC_TABLE_THREE_RESOLUTIONS_API_RAILS.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-11T00:00:00+00:00",
+      "event_type": "runtime_rail_registered",
+      "result": "implemented_unrun",
+      "artifact_path": "_scripts/atlas_api_rails.py",
+      "meaning": "Deterministic emit/combine rails were added for API classification packets.",
+      "limits": "No claim of successful runtime execution is made until fixture/regression receipts exist.",
+      "reviewer": "GPT",
+      "lane": "Python/Compute",
+      "event_id": "sha256:dc1733f5e3a4f393e7d97d07dc4fd0ec6cb9f057d92eb5294bc81d7c5c365a37"
+    }
+  ],
+  "source_claim_id": "ATLAS_API_RAILS_V1"
+}

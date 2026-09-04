@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faith-through-physics.local/schema/atlas_api_classification.schema.json",
+  "title": "Atlas API Classification Packet v1",
+  "type": "object",
+  "required": ["protocol_version", "source", "identity", "nabla", "periodic15", "atom_stack", "audit"],
+  "properties": {
+    "protocol_version": {"const": "ATLAS_API_RAILS_1.0"},
+    "source": {
+      "type": "object",
+      "required": ["document_id", "sha256", "spans"],
+      "properties": {
+        "document_id": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+        "title": {"type": "string"},
+        "path_or_url": {"type": "string"},
+        "spans": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["span_id", "text"],
+            "properties": {
+              "span_id": {"type": "string"},
+              "text": {"type": "string"},
+              "sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+              "page": {"type": ["integer", "null"]},
+              "start_line": {"type": ["integer", "null"]},
+              "end_line": {"type": ["integer", "null"]}
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "identity": {
+      "type": "object",
+      "required": ["uuid", "semantic_code", "human_label", "resolution"],
+      "properties": {
+        "uuid": {"type": "string"},
+        "semantic_code": {"type": "string"},
+        "human_label": {"type": "string"},
+        "resolution": {"enum": ["local", "paper", "series", "global"]}
+      },
+      "additionalProperties": true
+    },
+    "nabla": {
+      "type": "object",
+      "required": ["filing", "vector", "hash"],
+      "properties": {
+        "filing": {"type": "string"},
+        "vector": {
+          "type": "object",
+          "required": ["G", "M", "E", "S", "T", "K", "R", "Q", "F", "C"],
+          "properties": {
+            "G": {"enum": [0, 3]}, "M": {"enum": [0, 3]}, "E": {"enum": [0, 3]},
+            "S": {"enum": [0, 3]}, "T": {"enum": [0, 3]}, "K": {"enum": [0, 3]},
+            "R": {"enum": [0, 3]}, "Q": {"enum": [0, 3]}, "F": {"enum": [0, 3]},
+            "C": {"enum": [0, 3]}
+          },
+          "additionalProperties": false
+        },
+        "hash": {"type": "string"},
+        "confidence": {"type": "object"},
+        "review_flags": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "periodic15": {
+      "type": "object",
+      "required": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15"],
+      "additionalProperties": true
+    },
+    "atom_stack": {
+      "type": "object",
+      "required": ["atoms", "components", "claims", "evidence", "tests", "edges"],
+      "properties": {
+        "atoms": {"type": "array", "items": {"type": "object"}},
+        "components": {"type": "array", "items": {"type": "object"}},
+        "claims": {"type": "array", "items": {"type": "object"}},
+        "evidence": {"type": "array", "items": {"type": "object"}},
+        "tests": {"type": "array", "items": {"type": "object"}},
+        "edges": {"type": "array", "items": {"type": "object"}},
+        "arguments": {"type": "array", "items": {"type": "object"}},
+        "dynamics": {"type": "object"},
+        "orientation": {"type": "object"},
+        "bridges": {"type": "array", "items": {"type": "object"}},
+        "reality_mirror": {"type": "object"},
+        "open_items": {"type": "array", "items": {"type": "object"}}
+      },
+      "additionalProperties": true
+    },
+    "audit": {
+      "type": "object",
+      "required": ["origin", "admission_state"],
+      "properties": {
+        "origin": {"type": "string"},
+        "admission_state": {"enum": ["candidate", "admitted"]},
+        "model": {"type": ["string", "null"]},
+        "prompt_version": {"type": ["string", "null"]},
+        "run_id": {"type": ["string", "null"]},
+        "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+        "review_flags": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

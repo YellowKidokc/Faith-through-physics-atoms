@@ -1,0 +1,57 @@
+{
+  "atom_id": "tp:lane4/atlas/periodic-table-three-resolutions",
+  "atom_uid": "sha256:1eb3eb7bff39524ad2e907a37f22897bcd6539e2db89e07548cc20da7f4ca686",
+  "title": "Periodic Table at Three Resolutions",
+  "claim": "The Consilience Atlas uses one invariant Periodic-15 grammar at Local, Series, and Global resolutions; higher resolutions aggregate the same meanings rather than inventing a new classification language, while cross-series Phi remains a comparison operation rather than a storage resolution.",
+  "domain": "atlas",
+  "lane": "Architecture",
+  "claim_class": "classification_architecture",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Primitive semantic objects and typed edges are stored canonically before projection.",
+    "Aggregation rules must be declared rather than inferred from visual similarity.",
+    "Candidate and Admitted graph states remain distinct at every resolution."
+  ],
+  "definitions": [
+    "Local: atom/object-level Periodic-15 plus dependency, warrant, dynamics, orientation, bridges, Reality Mirror, and receipts.",
+    "Series: the same Periodic-15 grammar aggregated over papers/atoms with longitudinal resolution, invariant, bridge-family, anchor, and bottleneck views.",
+    "Global: the same Periodic-15 grammar aggregated over series plus Phi registry, anomaly register, emergent topology, global blast radius, external-anchor coverage, and convergence/divergence views.",
+    "Phi Cross-Series: a comparison operation between Series records; not a fourth storage resolution."
+  ],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "_atlas/periodic-table-three-resolutions.json",
+    "_scripts/atlas_api_rails.py"
+  ],
+  "negative_guards": [
+    "Do not add a new marker merely because a higher-resolution view is more complex.",
+    "Do not treat map membership as a new semantic classification when it is derivable from canonical objects/edges.",
+    "Do not let aggregate standing or evidence grade inherit automatically from child records."
+  ],
+  "kill_conditions": [
+    "A required Local/Series/Global object cannot be represented without changing the meaning/order of the Periodic-15 markers and cannot be represented as metadata, typed edge, registry object, or computed projection.",
+    "The same marker acquires incompatible semantics at different stored resolutions."
+  ],
+  "proof_label": "ARCHITECTURE_FREEZE_CANDIDATE",
+  "current_status": "active_candidate",
+  "rerun_status": "required_after_vertical_slice",
+  "source_artifacts": [
+    "_atlas/periodic-table-three-resolutions.json",
+    "_docs/PERIODIC_TABLE_THREE_RESOLUTIONS_API_RAILS.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-11T00:00:00+00:00",
+      "event_type": "architecture_registered",
+      "result": "recorded",
+      "artifact_path": "_atlas/periodic-table-three-resolutions.json",
+      "meaning": "Registered the invariant Periodic-15 grammar across Local, Series, and Global resolution.",
+      "limits": "Registration is an architecture receipt, not proof that every corpus will fit without amendment.",
+      "reviewer": "GPT",
+      "lane": "Architecture",
+      "event_id": "sha256:1eb3eb7bff39524ad2e907a37f22897bcd6539e2db89e07548cc20da7f4ca686"
+    }
+  ],
+  "source_claim_id": "PERIODIC_TABLE_THREE_RESOLUTIONS_V1"
+}
