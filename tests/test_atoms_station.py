@@ -33,13 +33,13 @@ def test_run_atoms_writes_output(tmp_path, monkeypatch):
         ]
     }
 
-    from stations.atoms.run import run_atoms
-    with patch("stations.atoms.run.complete", new=AsyncMock(return_value=(fake_atoms, {"status": "ok", "model": "deepseek-chat"}))):
+    from stations._base import run_station
+    with patch("stations._base.complete", new=AsyncMock(return_value=(fake_atoms, {"status": "ok", "model": "deepseek-chat"}))):
         run_uuid = "run-test-001"
-        asyncio.run(run_atoms(paper_uuid, run_uuid))
+        asyncio.run(run_station("atoms", paper_uuid, run_uuid))
 
     output_path = tmp_path / "runs" / run_uuid / "outputs" / "atoms.json"
     assert output_path.exists()
     data = json.loads(output_path.read_text())
     assert data["station"] == "atoms"
-    assert len(data["atoms"]) == 1
+    assert len(data["results"]["atoms"]) == 1

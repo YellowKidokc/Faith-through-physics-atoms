@@ -22,7 +22,8 @@
     "script": "stations/axiom_nodes/run.py",
     "category": "api_deep",
     "requires": ["atoms"],
-    "outputs": ["axiom_nodes"]
+    "outputs": ["axiom_nodes"],
+    "prompt": {"station": "axiom_nodes", "prompt_id": "extract"}
   },
   {
     "id": "coherence_score",
@@ -30,7 +31,8 @@
     "script": "stations/coherence_score/run.py",
     "category": "api_deep",
     "requires": ["atoms"],
-    "outputs": ["coherence_score"]
+    "outputs": ["coherence_score"],
+    "prompt": {"station": "coherence_score", "prompt_id": "extract"}
   },
   {
     "id": "fruits",
@@ -38,7 +40,8 @@
     "script": "stations/fruits/run.py",
     "category": "api_deep",
     "requires": [],
-    "outputs": ["fruits"]
+    "outputs": ["fruits"],
+    "prompt": {"station": "fruits", "prompt_id": "extract"}
   },
   {
     "id": "lean4",
@@ -46,7 +49,8 @@
     "script": "stations/lean4/run.py",
     "category": "api_deep",
     "requires": ["atoms"],
-    "outputs": ["lean4"]
+    "outputs": ["lean4"],
+    "prompt": {"station": "lean4", "prompt_id": "extract"}
   },
   {
     "id": "master_equation",
@@ -54,7 +58,8 @@
     "script": "stations/master_equation/run.py",
     "category": "api_deep",
     "requires": ["atoms"],
-    "outputs": ["master_equation"]
+    "outputs": ["master_equation"],
+    "prompt": {"station": "master_equation", "prompt_id": "extract"}
   },
   {
     "id": "paper_grader",
@@ -62,7 +67,8 @@
     "script": "stations/paper_grader/run.py",
     "category": "api_deep",
     "requires": ["ckg", "atoms", "axiom_nodes", "coherence_score", "fruits", "lean4", "master_equation"],
-    "outputs": ["paper_grader"]
+    "outputs": ["paper_grader"],
+    "prompt": {"station": "paper_grader", "prompt_id": "extract"}
   },
   {
     "id": "stories",
@@ -70,6 +76,7 @@
     "script": "stations/stories/run.py",
     "category": "api_deep",
     "requires": [],
-    "outputs": ["stories"]
+    "outputs": ["stories"],
+    "prompt": {"station": "stories", "prompt_id": "extract"}
   }
 ]

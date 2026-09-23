@@ -49,7 +49,7 @@ def test_batch_run_atoms_on_ingested_paper(monkeypatch, tmp_path):
         ]
     }
 
-    with patch("stations.atoms.run.complete", new=AsyncMock(return_value=(fake_atoms, {"status": "ok", "model": "deepseek-chat"}))):
+    with patch("stations._base.complete", new=AsyncMock(return_value=(fake_atoms, {"status": "ok", "model": "deepseek-chat"}))):
         asyncio.run(batch_runner.run_station_on_paper(paper_uuid, "atoms", provider="deepseek"))
 
     record = paper_module.load_paper(paper_uuid)
@@ -80,7 +80,7 @@ def test_batch_run_processes_multiple_papers_concurrently(monkeypatch, tmp_path)
         "atoms": [{"identity": {"object_type": "CLAIM"}, "provenance": {"raw_statement": "Claim."}}]
     }
 
-    with patch("stations.atoms.run.complete", new=AsyncMock(return_value=(fake_atoms, {"status": "ok", "model": "deepseek-chat"}))):
+    with patch("stations._base.complete", new=AsyncMock(return_value=(fake_atoms, {"status": "ok", "model": "deepseek-chat"}))):
         success, failed = asyncio.run(batch_runner.batch_run_async(
             inbox, outbox, ["atoms"], provider="deepseek", max_workers=2
         ))

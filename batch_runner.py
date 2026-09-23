@@ -9,7 +9,7 @@ from pathlib import Path
 
 import canon_store.paper as paper_module
 from canon_store.paper import load_paper, save_paper, create_paper
-from stations.atoms.run import run_atoms
+from stations._base import run_station
 
 
 def sha256_file(path: Path) -> str:
@@ -63,8 +63,9 @@ def update_paper_with_run(paper_uuid: str, station_id: str, run_uuid: str):
         import json
         data = json.loads(output_path.read_text())
         if station_id == "atoms":
-            record["extracted"]["atoms"] = data.get("atoms", [])
-        # Extend for other stations later
+            record["extracted"]["atoms"] = data.get("results", {}).get("atoms", [])
+        else:
+            record["extracted"][station_id] = data.get("results", {})
     if run_uuid not in record["runs"]:
         record["runs"].append(run_uuid)
     record["latest_run"] = run_uuid
@@ -73,10 +74,7 @@ def update_paper_with_run(paper_uuid: str, station_id: str, run_uuid: str):
 
 async def run_station_on_paper(paper_uuid: str, station_id: str, provider: str = "deepseek") -> str:
     run_uuid = f"run_{uuid.uuid4()}"
-    if station_id == "atoms":
-        await run_atoms(paper_uuid, run_uuid, provider)
-    else:
-        raise NotImplementedError(f"station {station_id} not yet implemented")
+    await run_station(station_id, paper_uuid, run_uuid, provider)
     update_paper_with_run(paper_uuid, station_id, run_uuid)
     return run_uuid
 
