@@ -1,0 +1,75 @@
+[
+  {
+    "id": "ckg",
+    "name": "CKG",
+    "script": "CKG/run.py",
+    "category": "ckg",
+    "requires": [],
+    "outputs": ["ckg"]
+  },
+  {
+    "id": "atoms",
+    "name": "ATOMS",
+    "script": "stations/atoms/run.py",
+    "category": "api_deep",
+    "requires": [],
+    "outputs": ["atoms"],
+    "prompt": {"station": "atoms", "prompt_id": "extract-claims"}
+  },
+  {
+    "id": "axiom_nodes",
+    "name": "AXIOM_NODES",
+    "script": "stations/axiom_nodes/run.py",
+    "category": "api_deep",
+    "requires": ["atoms"],
+    "outputs": ["axiom_nodes"]
+  },
+  {
+    "id": "coherence_score",
+    "name": "COHERENCE_SCORE",
+    "script": "stations/coherence_score/run.py",
+    "category": "api_deep",
+    "requires": ["atoms"],
+    "outputs": ["coherence_score"]
+  },
+  {
+    "id": "fruits",
+    "name": "FRUITS",
+    "script": "stations/fruits/run.py",
+    "category": "api_deep",
+    "requires": [],
+    "outputs": ["fruits"]
+  },
+  {
+    "id": "lean4",
+    "name": "LEAN4",
+    "script": "stations/lean4/run.py",
+    "category": "api_deep",
+    "requires": ["atoms"],
+    "outputs": ["lean4"]
+  },
+  {
+    "id": "master_equation",
+    "name": "MASTER_EQUATION",
+    "script": "stations/master_equation/run.py",
+    "category": "api_deep",
+    "requires": ["atoms"],
+    "outputs": ["master_equation"]
+  },
+  {
+    "id": "paper_grader",
+    "name": "PAPER_GRADER",
+    "script": "stations/paper_grader/run.py",
+    "category": "api_deep",
+    "requires": ["ckg", "atoms", "axiom_nodes", "coherence_score", "fruits", "lean4", "master_equation"],
+    "outputs": ["paper_grader"]
+  },
+  {
+    "id": "stories",
+    "name": "STORIES",
+    "script": "stations/stories/run.py",
+    "category": "api_deep",
+    "requires": [],
+    "outputs": ["stories"]
+  }
+]
