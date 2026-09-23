@@ -20,8 +20,8 @@ def test_canon_store_directories_exist():
         assert (base / sub).is_dir(), f"missing {sub}"
 
 
-def test_load_and_save_paper_record(tmp_path):
-    paper_module.CANON_STORE_ROOT = tmp_path
+def test_load_and_save_paper_record(tmp_path, monkeypatch):
+    monkeypatch.setattr(paper_module, "CANON_STORE_ROOT", tmp_path)
 
     record = {
         "address": {"uuid": "22222222-2222-2222-2222-222222222222", "handle": "paper/temp", "type": "paper"},

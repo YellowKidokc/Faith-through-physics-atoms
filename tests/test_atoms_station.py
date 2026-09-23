@@ -6,9 +6,9 @@ import canon_store.paper as paper_module
 import canon_store.prompts as prompts_module
 
 
-def test_run_atoms_writes_output(tmp_path):
-    paper_module.CANON_STORE_ROOT = tmp_path
-    prompts_module.CANON_STORE_ROOT = tmp_path
+def test_run_atoms_writes_output(tmp_path, monkeypatch):
+    monkeypatch.setattr(paper_module, "CANON_STORE_ROOT", tmp_path)
+    monkeypatch.setattr(prompts_module, "CANON_STORE_ROOT", tmp_path)
 
     record = paper_module.create_paper("sources/sample.md", "sha256:abc", title="Sample")
     paper_uuid = record["address"]["uuid"]
