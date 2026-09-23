@@ -105,35 +105,68 @@ def move_to_outbox(source_path: Path, outbox_dir: Path, renamed: bool = True) ->
     return dest
 
 
+async def process_paper(
+    file_path: Path,
+    outbox_dir: Path,
+    stations: list[str],
+    provider: str,
+    keep_originals: bool,
+):
+    print(f"\nIngesting: {file_path}")
+    paper_uuid = ingest_source(file_path)
+    print(f"  -> paper uuid: {paper_uuid}")
+
+    for station_id in stations:
+        print(f"  -> running station: {station_id}")
+        try:
+            await run_station_on_paper(paper_uuid, station_id, provider)
+            print(f"  -> station {station_id} completed")
+        except Exception as e:
+            print(f"  -> station {station_id} failed: {e}")
+
+    if keep_originals:
+        untouched_dir = outbox_dir / "00_ORIGINAL_UNTOUCHED"
+        move_to_outbox(file_path, untouched_dir, renamed=False)
+        print(f"  -> moved original to {untouched_dir}")
+
+    return paper_uuid
+
+
+async def batch_run_async(
+    inbox_dir: Path,
+    outbox_dir: Path,
+    stations: list[str],
+    provider: str = "deepseek",
+    keep_originals: bool = True,
+    max_workers: int = 5,
+):
+    files = discover_inbox_files(inbox_dir)
+    print(f"Discovered {len(files)} paper(s) in {inbox_dir} (workers={max_workers})")
+
+    semaphore = asyncio.Semaphore(max_workers)
+
+    async def run_one(file_path: Path):
+        async with semaphore:
+            return await process_paper(file_path, outbox_dir, stations, provider, keep_originals)
+
+    tasks = [run_one(f) for f in files]
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+
+    success = [r for r in results if isinstance(r, str)]
+    failed = [r for r in results if isinstance(r, Exception)]
+    print(f"\nBatch complete: {len(success)} succeeded, {len(failed)} failed")
+    return success, failed
+
+
 def batch_run(
     inbox_dir: Path,
     outbox_dir: Path,
     stations: list[str],
     provider: str = "deepseek",
     keep_originals: bool = True,
+    max_workers: int = 5,
 ):
-    files = discover_inbox_files(inbox_dir)
-    print(f"Discovered {len(files)} paper(s) in {inbox_dir}")
-
-    for file_path in files:
-        print(f"\nIngesting: {file_path}")
-        paper_uuid = ingest_source(file_path)
-        print(f"  -> paper uuid: {paper_uuid}")
-
-        for station_id in stations:
-            print(f"  -> running station: {station_id}")
-            try:
-                asyncio.run(run_station_on_paper(paper_uuid, station_id, provider))
-                print(f"  -> station {station_id} completed")
-            except Exception as e:
-                print(f"  -> station {station_id} failed: {e}")
-
-        if keep_originals:
-            untouched_dir = outbox_dir / "00_ORIGINAL_UNTOUCHED"
-            move_to_outbox(file_path, untouched_dir, renamed=False)
-            print(f"  -> moved original to {untouched_dir}")
-
-    print("\nBatch complete.")
+    asyncio.run(batch_run_async(inbox_dir, outbox_dir, stations, provider, keep_originals, max_workers))
 
 
 def main():
@@ -142,9 +175,10 @@ def main():
     parser.add_argument("--outbox", required=True, type=Path, help="Outbox directory")
     parser.add_argument("--stations", nargs="+", default=["atoms"], help="Stations to run")
     parser.add_argument("--provider", default="deepseek", help="API provider")
+    parser.add_argument("--workers", type=int, default=5, help="Concurrent papers")
     args = parser.parse_args()
 
-    batch_run(args.inbox, args.outbox, args.stations, args.provider)
+    batch_run(args.inbox, args.outbox, args.stations, args.provider, max_workers=args.workers)
 
 
 if __name__ == "__main__":

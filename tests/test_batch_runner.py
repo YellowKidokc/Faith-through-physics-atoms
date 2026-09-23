@@ -55,3 +55,37 @@ def test_batch_run_atoms_on_ingested_paper(monkeypatch, tmp_path):
     record = paper_module.load_paper(paper_uuid)
     assert len(record["extracted"]["atoms"]) == 1
     assert record["runs"]
+
+
+def test_batch_run_processes_multiple_papers_concurrently(monkeypatch, tmp_path):
+    import batch_runner
+
+    monkeypatch.setattr(paper_module, "CANON_STORE_ROOT", tmp_path)
+    monkeypatch.setattr(prompts_module, "CANON_STORE_ROOT", tmp_path)
+
+    inbox = tmp_path / "inbox"
+    inbox.mkdir()
+    outbox = tmp_path / "outbox"
+
+    prompt_dir = tmp_path / "prompts" / "atoms" / "extract-claims"
+    prompt_dir.mkdir(parents=True)
+    prompt_dir.joinpath("v1.0.0.md").write_text("# ATOMS prompt", encoding="utf-8")
+
+    for i in range(3):
+        (inbox / f"Paper {i}.md").write_text(f"# Paper {i}\n\nContent.", encoding="utf-8")
+
+    fake_atoms = {
+        "station": "atoms",
+        "paper_uuid": "",
+        "atoms": [{"identity": {"object_type": "CLAIM"}, "provenance": {"raw_statement": "Claim."}}]
+    }
+
+    with patch("stations.atoms.run.complete", new=AsyncMock(return_value=(fake_atoms, {"status": "ok", "model": "deepseek-chat"}))):
+        success, failed = asyncio.run(batch_runner.batch_run_async(
+            inbox, outbox, ["atoms"], provider="deepseek", max_workers=2
+        ))
+
+    assert len(success) == 3
+    assert len(failed) == 0
+    assert not list(inbox.glob("*.md"))
+    assert (outbox / "00_ORIGINAL_UNTOUCHED").exists()
