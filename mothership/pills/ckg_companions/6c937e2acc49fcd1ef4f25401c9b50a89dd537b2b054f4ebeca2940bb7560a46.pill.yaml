@@ -1,0 +1,2960 @@
+face:
+  uuid: 6c937e2acc49fcd1ef4f25401c9b50a89dd537b2b054f4ebeca2940bb7560a46
+  name: CKG Companion — 6c937e2acc49fcd1ef4f25401c9b50a89dd537b2b054f4ebeca2940bb7560a46
+  target_type: paper_companion
+  status: unscored
+  source_path_raw: \\192.168.2.50\h_hp\Desktop\APIs\APIs\CKG\INBOX\03_GENERAL\THE_CLAIM_ATOM_EXPANSION_CANON_v0_1_d6748d90.md
+  source:
+    doc_uuid: 6c937e2acc49fcd1ef4f25401c9b50a89dd537b2b054f4ebeca2940bb7560a46
+    doc_sha256: 4bf58a47a16cfa3707032fc525d0856a6d13a0cc5ae2f93e31c33b5f10013e11
+veins:
+  ckg_frontmatter:
+    paper_uuid: 6c937e2acc49fcd1ef4f25401c9b50a89dd537b2b054f4ebeca2940bb7560a46
+    source_path: \\192.168.2.50\h_hp\Desktop\APIs\APIs\CKG\INBOX\03_GENERAL\THE_CLAIM_ATOM_EXPANSION_CANON_v0_1_d6748d90.md
+    source_hash: 4bf58a47a16cfa3707032fc525d0856a6d13a0cc5ae2f93e31c33b5f10013e11
+    model: deepseek-chat
+    provider: deepseek
+    grade: UNSCORED
+  source_yaml: {}
+  sections:
+    Source: '# THE CLAIM ATOM EXPANSION CANON v0.1'
+    'Drafted 2026-08-25 | Sits under THE UNIFIED GRAMMAR METHODOLOGY v1.0 | Matches repo structure: Faith-through-physics-atoms': '---'
+    1. THE ATOM: "The atom is the unit of the corpus: one claim record, carrying the\
+      \ minimal unified record of the methodology (§6). One atom = one assertion,\
+      \ one hash, one state, one grade.\n\n**Address scheme** (as deployed in the\
+      \ repo):\n\n```text\nclaims / A042 / L9 / C1\n        atom   layer  component\n\
+      ```\n\n- **Atom (A###):** the claim's immutable identity. Never reused, never\
+      \ deleted.\n- **Layer (L#):** the DG layer the claim operates at — what it depends\
+      \ on, what it adds.\n- **Component (C#):** the decomposed sub-claims of a bundled\
+      \ statement (Blind Reconstruction §4.1). A bundle of three claims is C1, C2,\
+      \ C3 — graded separately, because components may fail independently.\n\n**Dual\
+      \ format, one source:** every component exists as `.jsonld` (machine-readable,\
+      \ linked data) and `.html` (human-readable), generated deterministically from\
+      \ the same canonical object. The projection is never a second truth store.\n\
+      \n**Every atom carries:** the claim/evidence/proof spine (object type), plus\
+      \ the five axes — lifecycle state, proof class, register, IC grade, WHY-closure\
+      \ outcome.\n\n---"
+    2. THE EXPANSION RULE: A claim "opens" along its register. Each register has a
+      native expansion template — the anatomy of what must be true for that kind of
+      claim to hold. Opening an atom means producing its register-native sub-atoms,
+      each of which is itself an atom with its own address.
+    History claim → the transmission chain (Blind Reconstruction §4.7): '```text
+
+      EVENT → POSSIBLE OBSERVERS → WITNESS → TESTIMONY → TRANSMISSION
+
+      → DOCUMENT → PRESERVATION → CORROBORATION → INTERPRETATION → PRESENT CLAIM
+
+      ```
+
+
+      Each link is a sub-atom. At every link, record where information could be preserved,
+      lost, changed, added, selectively reported, or independently confirmed. A historical
+      claim is exactly as strong as its weakest preserved link — and the chain shows
+      *which* link.'
+    Physics claim → the measurement anatomy: '```text
+
+      QUANTITY → UNITS → DYNAMICS → PROTOCOL → INSTRUMENT → DATA → CONTROLS → FIT
+      → CLAIM
+
+      ```
+
+
+      Sub-atoms carry units, error bars, the protocol, and the negative controls.
+      A physics claim without units and protocol does not open — it returns `DISCOVERY_INCOMPLETE`.'
+    Math claim → the formal anatomy: '```text
+
+      DEFINITION → AXIOM USE → LEMMA → DERIVATION → THEOREM STATEMENT → RECEIPT
+
+      ```
+
+
+      The receipt sub-atom carries the class: NOT_ATTEMPTED / SPECIFICATION_ONLY /
+      … / BUILT_ZERO_SORRY. The theorem proves exactly what its statement says — the
+      Books lesson is enforced by the address structure: the *specification* and the
+      *proof* are different sub-atoms.'
+    Theological claim → the proclamation anatomy: '```text
+
+      SOURCE → WITNESS TRADITION → PROCLAMATION → REGISTER → CONFESSION CLASS → SCOPE
+
+      ```
+
+
+      Theological atoms are declared as theological (class S or C). They are never
+      laundered into class T or E by expansion. Expansion clarifies what the claim
+      *is*; it never upgrades what the claim *proves*.'
+    Bridge claim → the mapping anatomy: '```text
+
+      SOURCE REGISTER → TARGET REGISTER → MAPPING → PRESERVED → LOST → GRADE → COUNTERMODELS
+      → NEXT TEST
+
+      ```
+
+
+      A bridge atom that cannot name its lost structure does not open. The loss field
+      is mandatory.
+
+
+      ---'
+    3. THE ISOMORPHISM RULE: 'When two atoms — from any two registers — are both fully
+      opened, their **invariant signatures** can be compared without names (BFP-DG
+      §8):
+
+
+      ```text
+
+      IDENTITIES · DISTINCTIONS · RELATIONS · OPERATIONS · DEPENDENCIES
+
+      · CONSTRAINTS · INVARIANTS · COLLAPSE CONDITIONS · CONSEQUENCES
+
+      ```
+
+
+      If the signatures match, an isomorphism **candidate** is born:
+
+
+      1. **Discovery, not assertion.** The match is found by comparing opened structures,
+      never declared from vocabulary resemblance.
+
+      2. **Grading.** The candidate receives IC-0 through IC-5. Only IC-4 (shared
+      dependency graph and capability classes) or IC-5 (plus collapse and translation
+      behavior) supports a serious structural-convergence claim.
+
+      3. **The pressure test.** Remove the labels. Permute the pairings. Construct
+      the strongest rival mapping. Measure whether the preferred mapping has a real
+      advantage.
+
+      4. **The Why-Gate.** The isomorphism must face: why does this correspondence
+      exist? WHY_CLOSED (with level), WHY_FAILED, or WHY_OPEN — and WHY_OPEN is preserved,
+      not resolved.
+
+      5. **The bridge record.** A surviving isomorphism is stored as a bridge atom
+      (class BR) naming preserved structure, lost structure, grade, countermodels,
+      and the next discriminating test. It propagates as a bridge — never as a proof.
+
+
+      ---'
+    4. THE UNIVERSAL GRAMMAR: "The universal grammar is not a document someone writes.\
+      \ It is the **emergent structure** of the admitted graph:\n\n```text\nUNIVERSAL\
+      \ GRAMMAR = the set of all admitted atoms\n                  + all confirmed\
+      \ isomorphisms (IC-4/5, WHY-gated)\n                  + the typed dependency\
+      \ edges between them\n                  viewed whole.\n```\n\nIt is built bottom-up\
+      \ from verified expansions, never top-down from imposed categories. That is\
+      \ why it will work if anything does: every node in it earned its place through\
+      \ the pipeline, every isomorphism survived the pressure test, and every gap\
+      \ is marked OPEN rather than filled with preference. The grammar is what remains\
+      \ when everything that could not survive scrutiny has been honestly removed\
+      \ — and everything that survived is still wearing its grade.\n\n---"
+    5. THE RECURSION AND THE FLOOR: 'Atoms contain atoms. Expansion continues downward
+      until it reaches one of three termini:
+
+
+      - **PRIMITIVE** — the Mark: distinction itself. The floor of the grammar. No
+      further opening is possible.
+
+      - **EMPIRICAL INPUT** — a measurement the framework does not derive. Recorded
+      as INDEPENDENT_EMPIRICAL_INPUT.
+
+      - **OPEN** — an honest unresolved terminus. Preserved with its rivals and its
+      next test.
+
+
+      No expansion may terminate in a label borrowed from the answer. That is the
+      whole discipline in one sentence.
+
+
+      ---'
+    6. THE GUARDS (non-negotiable, inherited): '- Analogy is never promoted to identity.
+
+      - A bridge never propagates as proof.
+
+      - A specification is never reported as a theorem.
+
+      - A selection criterion is never written after the pattern is seen.
+
+      - No automated run canonizes; the human rules admission.
+
+      - Corrections print where claims printed; nothing is silently edited or deleted.
+
+      - The resolver resolves references; it never creates authority.
+
+      - The guard tool enforces format; it never grades truth.
+
+
+      ---'
+    7. THE ONE-SENTENCE VERSION: '**Every claim is an atom; every atom opens along
+      its register into sub-atoms; when two opened structures match without names,
+      an isomorphism is born, graded, and gated — and the universal grammar is simply
+      everything that survives.**'
+    map: "{\n  \"title\": \"THE CLAIM ATOM EXPANSION CANON v0.1\",\n  \"domain\":\
+      \ \"Methodology / Epistemology\",\n  \"project\": \"Faith-through-physics-atoms\"\
+      ,\n  \"purpose\": \"draft\",\n  \"summary\": \"This document defines the Claim\
+      \ Atom Expansion Canon, a methodology for structuring claims as atoms that expand\
+      \ along register-specific templates into sub-atoms. It specifies the address\
+      \ scheme, expansion rules for history, physics, math, theological, and bridge\
+      \ claims, the isomorphism rule for comparing invariant signatures, the emergent\
+      \ universal grammar, recursion termini, and non-negotiable guards. The canon\
+      \ aims to ensure that claims are rigorously decomposed, graded, and gated, with\
+      \ the universal grammar emerging bottom-up from admitted atoms and confirmed\
+      \ isomorphisms.\",\n  \"keywords\": [\n    \"claim atom\",\n    \"expansion\"\
+      ,\n    \"isomorphism\",\n    \"universal grammar\",\n    \"register\",\n   \
+      \ \"sub-atoms\",\n    \"address scheme\",\n    \"guards\",\n    \"recursion\"\
+      ,\n    \"termini\"\n  ],\n  \"objects\": [\n    {\n      \"key\": \"C1\",\n\
+      \      \"type\": \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\",\n\
+      \      \"quote\": \"The atom is the unit of the corpus: one claim record, carrying\
+      \ the minimal unified record of the methodology (§6). One atom = one assertion,\
+      \ one hash, one state, one grade.\",\n      \"statement\": \"An atom is defined\
+      \ as the unit of the corpus, consisting of one claim record with a minimal unified\
+      \ record, one assertion, one hash, one state, and one grade.\",\n      \"reason\"\
+      : \"This is a definition of the fundamental unit of the methodology.\"\n   \
+      \ },\n    {\n      \"key\": \"C2\",\n      \"type\": \"DEFINITION\",\n     \
+      \ \"register\": \"METHODOLOGICAL\",\n      \"quote\": \"**Address scheme** (as\
+      \ deployed in the repo):\\n\\n```text\\nclaims / A042 / L9 / C1\\n        atom\
+      \   layer  component\\n```\",\n      \"statement\": \"The address scheme for\
+      \ atoms is claims/atom/layer/component, where atom is A###, layer is L#, and\
+      \ component is C#.\",\n      \"reason\": \"This defines the addressing system\
+      \ for atoms.\"\n    },\n    {\n      \"key\": \"C3\",\n      \"type\": \"DEFINITION\"\
+      ,\n      \"register\": \"METHODOLOGICAL\",\n      \"quote\": \"**Atom (A###):**\
+      \ the claim's immutable identity. Never reused, never deleted.\",\n      \"\
+      statement\": \"The atom identifier (A###) is the claim's immutable identity,\
+      \ never reused or deleted.\",\n      \"reason\": \"Defines the atom identifier.\"\
+      \n    },\n    {\n      \"key\": \"C4\",\n      \"type\": \"DEFINITION\",\n \
+      \     \"register\": \"METHODOLOGICAL\",\n      \"quote\": \"**Layer (L#):**\
+      \ the DG layer the claim operates at — what it depends on, what it adds.\",\n\
+      \      \"statement\": \"The layer (L#) indicates the DG layer at which the claim\
+      \ operates, specifying dependencies and additions.\",\n      \"reason\": \"\
+      Defines the layer component.\"\n    },\n    {\n      \"key\": \"C5\",\n    \
+      \  \"type\": \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\",\n    \
+      \  \"quote\": \"**Component (C#):** the decomposed sub-claims of a bundled statement\
+      \ (Blind Reconstruction §4.1). A bundle of three claims is C1, C2, C3 — graded\
+      \ separately, because components may fail independently.\",\n      \"statement\"\
+      : \"The component (C#) represents decomposed sub-claims of a bundled statement,\
+      \ graded separately as they may fail independently.\",\n      \"reason\": \"\
+      Defines the component identifier.\"\n    },\n    {\n      \"key\": \"C6\",\n\
+      \      \"type\": \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\",\n\
+      \      \"quote\": \"**Dual format, one source:** every component exists as `.jsonld`\
+      \ (machine-readable, linked data) and `.html` (human-readable), generated deterministically\
+      \ from the same canonical object. The projection is never a second truth store.\"\
+      ,\n      \"statement\": \"Each component exists in dual formats (.jsonld and\
+      \ .html) generated from the same canonical object, ensuring a single source\
+      \ of truth.\",\n      \"reason\": \"Defines the dual format requirement.\"\n\
+      \    },\n    {\n      \"key\": \"C7\",\n      \"type\": \"DEFINITION\",\n  \
+      \    \"register\": \"METHODOLOGICAL\",\n      \"quote\": \"**Every atom carries:**\
+      \ the claim/evidence/proof spine (object type), plus the five axes — lifecycle\
+      \ state, proof class, register, IC grade, WHY-closure outcome.\",\n      \"\
+      statement\": \"Every atom includes the claim/evidence/proof spine and five axes:\
+      \ lifecycle state, proof class, register, IC grade, and WHY-closure outcome.\"\
+      ,\n      \"reason\": \"Defines the required metadata for atoms.\"\n    },\n\
+      \    {\n      \"key\": \"C8\",\n      \"type\": \"DEFINITION\",\n      \"register\"\
+      : \"METHODOLOGICAL\",\n      \"quote\": \"A claim \\\"opens\\\" along its register.\
+      \ Each register has a native expansion template — the anatomy of what must be\
+      \ true for that kind of claim to hold. Opening an atom means producing its register-native\
+      \ sub-atoms, each of which is itself an atom with its own address.\",\n    \
+      \  \"statement\": \"A claim opens along its register using a native expansion\
+      \ template, producing sub-atoms that are themselves atoms with addresses.\"\
+      ,\n      \"reason\": \"Defines the expansion rule.\"\n    },\n    {\n      \"\
+      key\": \"C9\",\n      \"type\": \"DEFINITION\",\n      \"register\": \"HISTORICAL\"\
+      ,\n      \"quote\": \"```text\\nEVENT → POSSIBLE OBSERVERS → WITNESS → TESTIMONY\
+      \ → TRANSMISSION\\n→ DOCUMENT → PRESERVATION → CORROBORATION → INTERPRETATION\
+      \ → PRESENT CLAIM\\n```\",\n      \"statement\": \"History claims expand into\
+      \ a transmission chain: EVENT → POSSIBLE OBSERVERS → WITNESS → TESTIMONY → TRANSMISSION\
+      \ → DOCUMENT → PRESERVATION → CORROBORATION → INTERPRETATION → PRESENT CLAIM.\"\
+      ,\n      \"reason\": \"Defines the expansion template for history claims.\"\n\
+      \    },\n    {\n      \"key\": \"C10\",\n      \"type\": \"DEFINITION\",\n \
+      \     \"register\": \"PHYSICS\",\n      \"quote\": \"```text\\nQUANTITY → UNITS\
+      \ → DYNAMICS → PROTOCOL → INSTRUMENT → DATA → CONTROLS → FIT → CLAIM\\n```\"\
+      ,\n      \"statement\": \"Physics claims expand into: QUANTITY → UNITS → DYNAMICS\
+      \ → PROTOCOL → INSTRUMENT → DATA → CONTROLS → FIT → CLAIM.\",\n      \"reason\"\
+      : \"Defines the expansion template for physics claims.\"\n    },\n    {\n  \
+      \    \"key\": \"C11\",\n      \"type\": \"DEFINITION\",\n      \"register\"\
+      : \"MATHEMATICAL\",\n      \"quote\": \"```text\\nDEFINITION → AXIOM USE → LEMMA\
+      \ → DERIVATION → THEOREM STATEMENT → RECEIPT\\n```\",\n      \"statement\":\
+      \ \"Math claims expand into: DEFINITION → AXIOM USE → LEMMA → DERIVATION → THEOREM\
+      \ STATEMENT → RECEIPT.\",\n      \"reason\": \"Defines the expansion template\
+      \ for math claims.\"\n    },\n    {\n      \"key\": \"C12\",\n      \"type\"\
+      : \"DEFINITION\",\n      \"register\": \"THEOLOGICAL\",\n      \"quote\": \"\
+      ```text\\nSOURCE → WITNESS TRADITION → PROCLAMATION → REGISTER → CONFESSION\
+      \ CLASS → SCOPE\\n```\",\n      \"statement\": \"Theological claims expand into:\
+      \ SOURCE → WITNESS TRADITION → PROCLAMATION → REGISTER → CONFESSION CLASS →\
+      \ SCOPE.\",\n      \"reason\": \"Defines the expansion template for theological\
+      \ claims.\"\n    },\n    {\n      \"key\": \"C13\",\n      \"type\": \"DEFINITION\"\
+      ,\n      \"register\": \"METHODOLOGICAL\",\n      \"quote\": \"```text\\nSOURCE\
+      \ REGISTER → TARGET REGISTER → MAPPING → PRESERVED → LOST → GRADE → COUNTERMODELS\
+      \ → NEXT TEST\\n```\",\n      \"statement\": \"Bridge claims expand into: SOURCE\
+      \ REGISTER → TARGET REGISTER → MAPPING → PRESERVED → LOST → GRADE → COUNTERMODELS\
+      \ → NEXT TEST.\",\n      \"reason\": \"Defines the expansion template for bridge\
+      \ claims.\"\n    },\n    {\n      \"key\": \"C14\",\n      \"type\": \"DEFINITION\"\
+      ,\n      \"register\": \"METHODOLOGICAL\",\n      \"quote\": \"When two atoms\
+      \ — from any two registers — are both fully opened, their **invariant signatures**\
+      \ can be compared without names (BFP-DG §8):\\n\\n```text\\nIDENTITIES · DISTINCTIONS\
+      \ · RELATIONS · OPERATIONS · DEPENDENCIES\\n· CONSTRAINTS · INVARIANTS · COLLAPSE\
+      \ CONDITIONS · CONSEQUENCES\\n```\",\n      \"statement\": \"Invariant signatures\
+      \ of fully opened atoms from any registers can be compared without names, consisting\
+      \ of: IDENTITIES, DISTINCTIONS, RELATIONS, OPERATIONS, DEPENDENCIES, CONSTRAINTS,\
+      \ INVARIANTS, COLLAPSE CONDITIONS, CONSEQUENCES.\",\n      \"reason\": \"Defines\
+      \ the isomorphism rule and invariant signature components.\"\n    },\n    {\n\
+      \      \"key\": \"C15\",\n      \"type\": \"DEFINITION\",\n      \"register\"\
+      : \"METHODOLOGICAL\",\n      \"quote\": \"If the signatures match, an isomorphism\
+      \ **candidate** is born:\",\n      \"statement\": \"A matching of invariant\
+      \ signatures yields an isomorphism candidate.\",\n      \"reason\": \"Defines\
+      \ the birth of an isomorphism candidate.\"\n    },\n    {\n      \"key\": \"\
+      C16\",\n      \"type\": \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\"\
+      ,\n      \"quote\": \"1. **Discovery, not assertion.** The match is found by\
+      \ comparing opened structures, never declared from vocabulary resemblance.\"\
+      ,\n      \"statement\": \"Isomorphism candidates are discovered by comparing\
+      \ opened structures, not asserted from vocabulary resemblance.\",\n      \"\
+      reason\": \"Defines the discovery principle.\"\n    },\n    {\n      \"key\"\
+      : \"C17\",\n      \"type\": \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\"\
+      ,\n      \"quote\": \"2. **Grading.** The candidate receives IC-0 through IC-5.\
+      \ Only IC-4 (shared dependency graph and capability classes) or IC-5 (plus collapse\
+      \ and translation behavior) supports a serious structural-convergence claim.\"\
+      ,\n      \"statement\": \"Isomorphism candidates are graded IC-0 to IC-5; only\
+      \ IC-4 or IC-5 supports serious structural-convergence claims.\",\n      \"\
+      reason\": \"Defines the grading system for isomorphism candidates.\"\n    },\n\
+      \    {\n      \"key\": \"C18\",\n      \"type\": \"DEFINITION\",\n      \"register\"\
+      : \"METHODOLOGICAL\",\n      \"quote\": \"3. **The pressure test.** Remove the\
+      \ labels. Permute the pairings. Construct the strongest rival mapping. Measure\
+      \ whether the preferred mapping has a real advantage.\",\n      \"statement\"\
+      : \"The pressure test involves removing labels, permuting pairings, constructing\
+      \ rival mappings, and measuring the preferred mapping's advantage.\",\n    \
+      \  \"reason\": \"Defines the pressure test.\"\n    },\n    {\n      \"key\"\
+      : \"C19\",\n      \"type\": \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\"\
+      ,\n      \"quote\": \"4. **The Why-Gate.** The isomorphism must face: why does\
+      \ this correspondence exist? WHY_CLOSED (with level), WHY_FAILED, or WHY_OPEN\
+      \ — and WHY_OPEN is preserved, not resolved.\",\n      \"statement\": \"The\
+      \ Why-Gate requires answering why the correspondence exists, with outcomes WHY_CLOSED,\
+      \ WHY_FAILED, or WHY_OPEN (preserved, not resolved).\",\n      \"reason\": \"\
+      Defines the Why-Gate.\"\n    },\n    {\n      \"key\": \"C20\",\n      \"type\"\
+      : \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\",\n      \"quote\"\
+      : \"5. **The bridge record.** A surviving isomorphism is stored as a bridge\
+      \ atom (class BR) naming preserved structure, lost structure, grade, countermodels,\
+      \ and the next discriminating test. It propagates as a bridge — never as a proof.\"\
+      ,\n      \"statement\": \"A surviving isomorphism is stored as a bridge atom\
+      \ (class BR) with preserved structure, lost structure, grade, countermodels,\
+      \ and next test; it propagates as a bridge, not a proof.\",\n      \"reason\"\
+      : \"Defines the bridge record.\"\n    },\n    {\n      \"key\": \"C21\",\n \
+      \     \"type\": \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\",\n \
+      \     \"quote\": \"The universal grammar is not a document someone writes. It\
+      \ is the **emergent structure** of the admitted graph:\\n\\n```text\\nUNIVERSAL\
+      \ GRAMMAR = the set of all admitted atoms\\n                  + all confirmed\
+      \ isomorphisms (IC-4/5, WHY-gated)\\n                  + the typed dependency\
+      \ edges between them\\n                  viewed whole.\\n```\",\n      \"statement\"\
+      : \"The universal grammar is the emergent structure of the admitted graph, comprising\
+      \ all admitted atoms, confirmed isomorphisms (IC-4/5, WHY-gated), and typed\
+      \ dependency edges, viewed whole.\",\n      \"reason\": \"Defines the universal\
+      \ grammar.\"\n    },\n    {\n      \"key\": \"C22\",\n      \"type\": \"DEFINITION\"\
+      ,\n      \"register\": \"METHODOLOGICAL\",\n      \"quote\": \"Atoms contain\
+      \ atoms. Expansion continues downward until it reaches one of three termini:\\\
+      n\\n- **PRIMITIVE** — the Mark: distinction itself. The floor of the grammar.\
+      \ No further opening is possible.\\n- **EMPIRICAL INPUT** — a measurement the\
+      \ framework does not derive. Recorded as INDEPENDENT_EMPIRICAL_INPUT.\\n- **OPEN**\
+      \ — an honest unresolved terminus. Preserved with its rivals and its next test.\"\
+      ,\n      \"statement\": \"Expansion terminates at one of three termini: PRIMITIVE\
+      \ (the Mark, distinction itself), EMPIRICAL INPUT (recorded as INDEPENDENT_EMPIRICAL_INPUT),\
+      \ or OPEN (unresolved, preserved with rivals and next test).\",\n      \"reason\"\
+      : \"Defines the recursion termini.\"\n    },\n    {\n      \"key\": \"C23\"\
+      ,\n      \"type\": \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\",\n\
+      \      \"quote\": \"No expansion may terminate in a label borrowed from the\
+      \ answer. That is the whole discipline in one sentence.\",\n      \"statement\"\
+      : \"Expansion must not terminate in a label borrowed from the answer.\",\n \
+      \     \"reason\": \"Defines a key discipline.\"\n    },\n    {\n      \"key\"\
+      : \"C24\",\n      \"type\": \"DEFINITION\",\n      \"register\": \"METHODOLOGICAL\"\
+      ,\n      \"quote\": \"- Analogy is never promoted to identity.\\n- A bridge\
+      \ never propagates as proof.\\n- A specification is never reported as a theorem.\\\
+      n- A selection criterion is never written after the pattern is seen.\\n- No\
+      \ automated run canonizes; the human rules admission.\\n- Corrections print\
+      \ where claims printed; nothing is silently edited or deleted.\\n- The resolver\
+      \ resolves references; it never creates authority.\\n- The guard tool enforces\
+      \ format; it never grades truth.\",\n      \"statement\": \"The guards are:\
+      \ analogy never promoted to identity; bridge never propagates as proof; specification\
+      \ never reported as theorem; selection criterion never written after pattern\
+      \ seen; no automated run canonizes; corrections print where claims printed;\
+      \ resolver resolves references but never creates authority; guard tool enforces\
+      \ format but never grades truth.\",\n      \"reason\": \"Defines the non-negotiable\
+      \ guards.\"\n    },\n    {\n      \"key\": \"C25\",\n      \"type\": \"DEFINITION\"\
+      ,\n      \"register\": \"METHODOLOGICAL\",\n      \"quote\": \"**Every claim\
+      \ is an atom; every atom opens along its register into sub-atoms; when two opened\
+      \ structures match without names, an isomorphism is born, graded, and gated\
+      \ — and the universal grammar is simply everything that survives.**\",\n   \
+      \   \"statement\": \"Every claim is an atom; every atom opens along its register\
+      \ into sub-atoms; when two opened structures match without names, an isomorphism\
+      \ is born, graded, and gated; the universal grammar is everything that survives.\"\
+      ,\n      \"reason\": \"One-sentence summary of the canon.\"\n    }\n  ],\n \
+      \ \"unmapped\": [\n    \"The specific meaning of 'DG layer' and 'BFP-DG §8'\
+      \ is not elaborated.\",\n    \"The exact criteria for IC grades (IC-0 through\
+      \ IC-5) are not fully specified.\",\n    \"The 'Blind Reconstruction §4.1' and\
+      \ '§4.7' references are not explained.\",\n    \"The 'Books lesson' is mentioned\
+      \ but not detailed.\",\n    \"The 'class S or C' and 'class T or E' for theological\
+      \ atoms are not defined.\",\n    \"The 'Mark' as a primitive is not further\
+      \ explained.\",\n    \"The 'WHY_CLOSED (with level)' levels are not enumerated.\"\
+      \n  ]\n}"
+    Core Finding: The Claim Atom Expansion Canon v0.1 establishes a rigorous methodology
+      for decomposing claims into atomic units and expanding them along register-specific
+      templates. The central finding is that a claim's strength and meaning can be
+      systematically analyzed by opening it into sub-atoms that trace its dependencies,
+      evidence, and transmission chain. When two fully opened structures from different
+      registers share an invariant signature, an isomorphism candidate is born, which
+      must then be graded (IC-0 to IC-5) and gated (WHY_CLOSED, WHY_FAILED, WHY_OPEN).
+      The universal grammar is not imposed but emerges bottom-up from all admitted
+      atoms, confirmed isomorphisms, and their typed dependency edges.
+    One-Sentence Claim: '> **Every claim is an atom; every atom opens along its register
+      into sub-atoms; when two opened structures match without names, an isomorphism
+      is born, graded, and gated — and the universal grammar is simply everything
+      that survives.**
+
+
+      This one-sentence version encapsulates the entire canon: the atomic unit, the
+      expansion rule, the isomorphism discovery process, the grading and gating mechanisms,
+      and the emergent nature of the universal grammar.'
+    S02 — Axiom/Definition Spine: The Claim Atom Expansion Canon rests on a spine
+      of foundational definitions and axioms. These are the primitive commitments
+      from which the rest of the methodology is derived. They are stated here in the
+      order in which they build upon one another.
+    A. The Atomic Unit: '- **C1 — Atom.** The atom is the unit of the corpus: one
+      claim record carrying the minimal unified record. One atom = one assertion,
+      one hash, one state, one grade.
+
+      - **C3 — Atom identity (A###).** The claim''s immutable identity. Never reused,
+      never deleted.
+
+      - **C4 — Layer (L#).** The DG layer the claim operates at — what it depends
+      on, what it adds.
+
+      - **C5 — Component (C#).** The decomposed sub-claims of a bundled statement,
+      graded separately because components may fail independently.
+
+      - **C2 — Address scheme.** `claims / A042 / L9 / C1` — atom / layer / component.'
+    B. Representation and Metadata: '- **C6 — Dual format, one source.** Every component
+      exists as `.jsonld` and `.html`, generated deterministically from the same canonical
+      object. The projection is never a second truth store.
+
+      - **C7 — Required metadata.** Every atom carries the claim/evidence/proof spine
+      plus five axes: lifecycle state, proof class, register, IC grade, WHY-closure
+      outcome.'
+    C. The Expansion Rule: '- **C8 — Opening.** A claim opens along its register.
+      Each register has a native expansion template. Opening an atom produces register-native
+      sub-atoms, each itself an atom with its own address.'
+    D. Register-Native Templates: '- **C9 — History.** EVENT → POSSIBLE OBSERVERS
+      → WITNESS → TESTIMONY → TRANSMISSION → DOCUMENT → PRESERVATION → CORROBORATION
+      → INTERPRETATION → PRESENT CLAIM.
+
+      - **C10 — Physics.** QUANTITY → UNITS → DYNAMICS → PROTOCOL → INSTRUMENT → DATA
+      → CONTROLS → FIT → CLAIM.
+
+      - **C11 — Math.** DEFINITION → AXIOM USE → LEMMA → DERIVATION → THEOREM STATEMENT
+      → RECEIPT.
+
+      - **C12 — Theology.** SOURCE → WITNESS TRADITION → PROCLAMATION → REGISTER →
+      CONFESSION CLASS → SCOPE.
+
+      - **C13 — Bridge.** SOURCE REGISTER → TARGET REGISTER → MAPPING → PRESERVED
+      → LOST → GRADE → COUNTERMODELS → NEXT TEST.'
+    E. The Isomorphism Rule: '- **C14 — Invariant signature.** IDENTITIES · DISTINCTIONS
+      · RELATIONS · OPERATIONS · DEPENDENCIES · CONSTRAINTS · INVARIANTS · COLLAPSE
+      CONDITIONS · CONSEQUENCES.
+
+      - **C15 — Candidate birth.** If signatures match, an isomorphism candidate is
+      born.
+
+      - **C16 — Discovery, not assertion.** The match is found by comparing opened
+      structures, never declared from vocabulary resemblance.
+
+      - **C17 — Grading.** IC-0 through IC-5; only IC-4 or IC-5 supports a serious
+      structural-convergence claim.
+
+      - **C18 — Pressure test.** Remove labels, permute pairings, construct the strongest
+      rival mapping, measure the preferred mapping''s advantage.
+
+      - **C19 — Why-Gate.** WHY_CLOSED (with level), WHY_FAILED, or WHY_OPEN — and
+      WHY_OPEN is preserved, not resolved.
+
+      - **C20 — Bridge record.** A surviving isomorphism is stored as a bridge atom
+      (class BR) naming preserved structure, lost structure, grade, countermodels,
+      and the next discriminating test. It propagates as a bridge — never as a proof.'
+    F. The Universal Grammar: '- **C21 — Emergent structure.** UNIVERSAL GRAMMAR =
+      all admitted atoms + all confirmed isomorphisms (IC-4/5, WHY-gated) + typed
+      dependency edges between them, viewed whole.'
+    G. Recursion Termini: '- **C22 — Three termini.** PRIMITIVE (the Mark: distinction
+      itself), EMPIRICAL INPUT (INDEPENDENT_EMPIRICAL_INPUT), OPEN (unresolved, preserved
+      with rivals and next test).
+
+      - **C23 — Discipline.** No expansion may terminate in a label borrowed from
+      the answer.'
+    H. Non-Negotiable Guards: '- **C24 — Guards.** Analogy is never promoted to identity;
+      a bridge never propagates as proof; a specification is never reported as a theorem;
+      a selection criterion is never written after the pattern is seen; no automated
+      run canonizes; corrections print where claims printed; the resolver resolves
+      references but never creates authority; the guard tool enforces format but never
+      grades truth.'
+    I. The One-Sentence Summary: '- **C25 — Canon in one sentence.** Every claim is
+      an atom; every atom opens along its register into sub-atoms; when two opened
+      structures match without names, an isomorphism is born, graded, and gated —
+      and the universal grammar is simply everything that survives.'
+    Axiomatic Status: 'These definitions function as axioms for the methodology: they
+      are stipulated, not derived. They are the floor from which the argument chain
+      (S03) proceeds. Any challenge to the canon must either accept these stipulations
+      or propose a rival spine.'
+    S03 — Argument Chain: 'The Claim Atom Expansion Canon is not a deductive proof
+      but a methodological argument: it proposes a set of definitions and rules and
+      argues that, if followed, they yield a rigorous, bottom-up universal grammar.
+      The chain below reconstructs that argument step by step, showing how each move
+      depends on the previous ones.'
+    Step 1 — The atomic unit is defined (C1–C7): 'The canon begins by stipulating
+      that the fundamental unit of the corpus is the **atom**: one claim record with
+      one assertion, one hash, one state, one grade (C1). This unit is given an immutable
+      identity (A###, C3), a layer (L#, C4), and a component (C#) for decomposed sub-claims
+      (C5). The address scheme `claims / A042 / L9 / C1` (C2) makes every atom uniquely
+      locatable. Each atom is represented in dual format from a single canonical source
+      (C6) and carries a fixed metadata spine: claim/evidence/proof plus five axes
+      (C7).
+
+
+      **Move:** Establish a stable, addressable, metadata-rich unit so that all subsequent
+      operations (expansion, comparison, grading) have a well-defined subject.'
+    Step 2 — Expansion is register-native (C8–C13): 'A claim is not opened arbitrarily;
+      it opens along its **register** (C8). Each register has a native expansion template
+      that specifies the anatomy of what must be true for that kind of claim to hold:
+
+
+      - History claims open into a transmission chain from EVENT to PRESENT CLAIM
+      (C9).
+
+      - Physics claims open into a measurement anatomy from QUANTITY to CLAIM (C10).
+
+      - Math claims open into a formal anatomy from DEFINITION to RECEIPT (C11).
+
+      - Theological claims open into a proclamation anatomy from SOURCE to SCOPE (C12).
+
+      - Bridge claims open into a mapping anatomy from SOURCE REGISTER to NEXT TEST
+      (C13).
+
+
+      **Move:** Ensure that expansion is not ad hoc but follows the internal logic
+      of the claim''s domain. This is what makes the resulting sub-atoms meaningful
+      and comparable.'
+    Step 3 — Fully opened atoms yield invariant signatures (C14): 'When two atoms
+      from any two registers are both fully opened, their **invariant signatures**
+      can be compared without names (C14). The signature consists of nine structural
+      features: IDENTITIES, DISTINCTIONS, RELATIONS, OPERATIONS, DEPENDENCIES, CONSTRAINTS,
+      INVARIANTS, COLLAPSE CONDITIONS, CONSEQUENCES.
+
+
+      **Move:** Provide a name-free, register-neutral basis for structural comparison.
+      This is the key move that allows cross-domain isomorphism to be discovered rather
+      than asserted.'
+    Step 4 — Matching signatures produce an isomorphism candidate (C15–C16): 'If the
+      signatures match, an isomorphism **candidate** is born (C15). Crucially, this
+      is **discovery, not assertion** (C16): the match is found by comparing opened
+      structures, never declared from vocabulary resemblance.
+
+
+      **Move:** Separate the discovery of a candidate from its validation. A match
+      is a hypothesis, not a conclusion.'
+    Step 5 — Candidates are graded and pressure-tested (C17–C18): 'The candidate receives
+      an IC grade from IC-0 to IC-5 (C17). Only IC-4 (shared dependency graph and
+      capability classes) or IC-5 (plus collapse and translation behavior) supports
+      a serious structural-convergence claim. The candidate must then face the **pressure
+      test** (C18): remove labels, permute pairings, construct the strongest rival
+      mapping, and measure whether the preferred mapping has a real advantage.
+
+
+      **Move:** Introduce a graded, adversarial filter that distinguishes genuine
+      structural convergence from superficial resemblance.'
+    Step 6 — Surviving candidates face the Why-Gate (C19): 'Even a high-grade candidate
+      must answer: why does this correspondence exist? The outcome is one of WHY_CLOSED
+      (with level), WHY_FAILED, or WHY_OPEN — and WHY_OPEN is preserved, not resolved
+      (C19).
+
+
+      **Move:** Force the methodology to confront the explanatory question without
+      allowing premature closure. Preserving WHY_OPEN prevents the canon from smuggling
+      in unearned explanations.'
+    Step 7 — Surviving isomorphisms become bridge atoms (C20): 'A surviving isomorphism
+      is stored as a **bridge atom** (class BR) naming preserved structure, lost structure,
+      grade, countermodels, and the next discriminating test (C20). It propagates
+      as a bridge — never as a proof.
+
+
+      **Move:** Institutionalize the result in a form that carries its own limitations
+      and next steps, preventing the bridge from being mistaken for a proof.'
+    Step 8 — The universal grammar emerges (C21): 'The universal grammar is not written
+      top-down. It is the **emergent structure** of the admitted graph: all admitted
+      atoms + all confirmed isomorphisms (IC-4/5, WHY-gated) + the typed dependency
+      edges between them, viewed whole (C21).
+
+
+      **Move:** Derive the grammar from the bottom up, so that every node and edge
+      has earned its place through the pipeline. This is the canon''s central claim:
+      the grammar is what survives scrutiny.'
+    Step 9 — Expansion terminates at three floors (C22–C23): 'Expansion continues
+      downward until it reaches one of three termini: PRIMITIVE (the Mark: distinction
+      itself), EMPIRICAL INPUT (INDEPENDENT_EMPIRICAL_INPUT), or OPEN (unresolved,
+      preserved with rivals and next test) (C22). No expansion may terminate in a
+      label borrowed from the answer (C23).
+
+
+      **Move:** Prevent infinite regress and circularity. The three termini mark the
+      honest limits of the method.'
+    Step 10 — Guards enforce the discipline (C24): 'Eight non-negotiable guards (C24)
+      protect the chain from the most common failure modes: promoting analogy to identity,
+      propagating a bridge as proof, reporting a specification as a theorem, writing
+      a selection criterion after seeing the pattern, automated canonization, silent
+      editing, resolver-created authority, and guard-tool truth-grading.
+
+
+      **Move:** Provide a final layer of procedural safeguards that keep the methodology
+      honest at every step.'
+    Step 11 — The one-sentence summary (C25): 'The entire chain is compressed into
+      one sentence: *Every claim is an atom; every atom opens along its register into
+      sub-atoms; when two opened structures match without names, an isomorphism is
+      born, graded, and gated — and the universal grammar is simply everything that
+      survives.* (C25)
+
+
+      **Move:** State the canon''s thesis in a form that can be tested against each
+      step of the chain.'
+    Chain Summary: "The argument chain is a pipeline:\n\n```text\nATOM (C1–C7)\n \
+      \ → REGISTER-NATIVE EXPANSION (C8–C13)\n    → INVARIANT SIGNATURE (C14)\n  \
+      \    → ISOMORPHISM CANDIDATE (C15–C16)\n        → GRADING & PRESSURE TEST (C17–C18)\n\
+      \          → WHY-GATE (C19)\n            → BRIDGE ATOM (C20)\n             \
+      \ → EMERGENT UNIVERSAL GRAMMAR (C21)\n                → RECURSION TERMINI (C22–C23)\n\
+      \                  → GUARDS (C24)\n                    → ONE-SENTENCE SUMMARY\
+      \ (C25)\n```\n\nEach step depends on the previous ones. The chain is not a proof\
+      \ of the canon's truth but a demonstration of its internal coherence: if you\
+      \ accept the atomic unit and the expansion rule, the rest follows as a disciplined\
+      \ procedure for building a universal grammar from the bottom up."
+    S04 — Evidence and Sources: 'The Claim Atom Expansion Canon is a methodological
+      document. Its evidence is primarily internal and structural: it cites its own
+      definitions, cross-references companion documents, and presents the register-native
+      templates as the operational evidence that the method can be applied. This section
+      catalogs the sources and evidence cited in the source text.'
+    A. Internal Cross-References: 'The canon explicitly cites the following sections
+      and companion documents:
+
+
+      | Reference | Location in source | What it supplies |
+
+      |---|---|---|
+
+      | **§6** | "the minimal unified record of the methodology (§6)" | The minimal
+      unified record that every atom carries. |
+
+      | **Blind Reconstruction §4.1** | "the decomposed sub-claims of a bundled statement
+      (Blind Reconstruction §4.1)" | The rule for decomposing a bundled statement
+      into components C1, C2, C3. |
+
+      | **Blind Reconstruction §4.7** | "History claim → the transmission chain (Blind
+      Reconstruction §4.7)" | The transmission chain template for history claims.
+      |
+
+      | **BFP-DG §8** | "their **invariant signatures** can be compared without names
+      (BFP-DG §8)" | The invariant-signature comparison rule. |
+
+      | **THE UNIFIED GRAMMAR METHODOLOGY v1.0** | Subtitle: "Sits under THE UNIFIED
+      GRAMMAR METHODOLOGY v1.0" | The parent methodology under which the canon sits.
+      |
+
+      | **Faith-through-physics-atoms** | Subtitle: "Matches repo structure: Faith-through-physics-atoms"
+      | The repository whose structure the address scheme matches. |
+
+
+      These references are the canon''s explicit evidentiary anchors. They are not
+      reproduced in the source; the canon assumes the reader has access to them.'
+    'B. Structural Evidence: The Register-Native Templates': 'The canon''s central
+      operational evidence is the set of five register-native expansion templates.
+      Each template is presented as the anatomy of what must be true for a claim of
+      that register to hold:
+
+
+      - **History (C9):** `EVENT → POSSIBLE OBSERVERS → WITNESS → TESTIMONY → TRANSMISSION
+      → DOCUMENT → PRESERVATION → CORROBORATION → INTERPRETATION → PRESENT CLAIM`
+
+      - **Physics (C10):** `QUANTITY → UNITS → DYNAMICS → PROTOCOL → INSTRUMENT →
+      DATA → CONTROLS → FIT → CLAIM`
+
+      - **Math (C11):** `DEFINITION → AXIOM USE → LEMMA → DERIVATION → THEOREM STATEMENT
+      → RECEIPT`
+
+      - **Theology (C12):** `SOURCE → WITNESS TRADITION → PROCLAMATION → REGISTER
+      → CONFESSION CLASS → SCOPE`
+
+      - **Bridge (C13):** `SOURCE REGISTER → TARGET REGISTER → MAPPING → PRESERVED
+      → LOST → GRADE → COUNTERMODELS → NEXT TEST`
+
+
+      These templates function as evidence in the following sense: they demonstrate
+      that the expansion rule (C8) is not empty. For each register, the canon can
+      point to a concrete sequence of sub-atoms that a claim of that register must
+      produce. The templates are the canon''s proof-of-concept that register-native
+      expansion is possible.'
+    'C. Structural Evidence: The Invariant Signature': 'The isomorphism rule (C14–C20)
+      is supported by the invariant signature, a nine-element structural fingerprint:
+
+
+      ```text
+
+      IDENTITIES · DISTINCTIONS · RELATIONS · OPERATIONS · DEPENDENCIES
+
+      · CONSTRAINTS · INVARIANTS · COLLAPSE CONDITIONS · CONSEQUENCES
+
+      ```
+
+
+      The signature is the canon''s evidence that cross-register comparison can be
+      performed without names. It is presented as a complete, register-neutral basis
+      for structural comparison. The canon does not provide worked examples of signature
+      comparison in the source; the signature is offered as the schema within which
+      such comparisons are to be conducted.'
+    'D. Structural Evidence: The Universal Grammar Formula': "The universal grammar\
+      \ is defined by a formula (C21):\n\n```text\nUNIVERSAL GRAMMAR = the set of\
+      \ all admitted atoms\n                  + all confirmed isomorphisms (IC-4/5,\
+      \ WHY-gated)\n                  + the typed dependency edges between them\n\
+      \                  viewed whole.\n```\n\nThis formula is the canon's evidence\
+      \ that the grammar is well-defined and bottom-up. It specifies exactly which\
+      \ components contribute to the grammar and under what conditions (admission,\
+      \ IC-4/5, WHY-gated)."
+    'E. Structural Evidence: The Recursion Termini': 'The recursion and floor section
+      (C22) provides three termini:
+
+
+      - **PRIMITIVE** — the Mark: distinction itself.
+
+      - **EMPIRICAL INPUT** — recorded as INDEPENDENT_EMPIRICAL_INPUT.
+
+      - **OPEN** — preserved with rivals and next test.
+
+
+      These termini are the canon''s evidence that expansion is finite and non-circular.
+      They mark the honest limits of the method.'
+    'F. Structural Evidence: The Guards': 'The eight non-negotiable guards (C24) are
+      the canon''s evidence that the methodology is protected against known failure
+      modes:
+
+
+      1. Analogy is never promoted to identity.
+
+      2. A bridge never propagates as proof.
+
+      3. A specification is never reported as a theorem.
+
+      4. A selection criterion is never written after the pattern is seen.
+
+      5. No automated run canonizes; the human rules admission.
+
+      6. Corrections print where claims printed; nothing is silently edited or deleted.
+
+      7. The resolver resolves references; it never creates authority.
+
+      8. The guard tool enforces format; it never grades truth.'
+    G. What the Canon Does Not Cite: 'The source text does not cite:
+
+
+      - Any external empirical study, experiment, or dataset.
+
+      - Any historical document or witness.
+
+      - Any mathematical proof or theorem.
+
+      - Any theological source text or tradition.
+
+      - Any prior art in epistemology, logic, or formal ontology.
+
+
+      The canon is self-contained at the level of its definitions and rules. Its evidence
+      is the coherence and operational completeness of the methodology it proposes,
+      not external data.'
+    H. Evidence Summary: '| Evidence type | What it supports | Status |
+
+      |---|---|---|
+
+      | Internal cross-references (§6, Blind Reconstruction §4.1/§4.7, BFP-DG §8)
+      | The definitions and rules that depend on companion documents. | Cited, not
+      reproduced. |
+
+      | Register-native templates (C9–C13) | The expansion rule (C8). | Presented
+      as operational anatomy. |
+
+      | Invariant signature (C14) | The isomorphism rule (C14–C20). | Presented as
+      a name-free comparison schema. |
+
+      | Universal grammar formula (C21) | The emergent nature of the grammar. | Presented
+      as a bottom-up definition. |
+
+      | Recursion termini (C22) | The finiteness and non-circularity of expansion.
+      | Presented as the floor of the method. |
+
+      | Guards (C24) | The integrity of the methodology. | Presented as non-negotiable
+      procedural safeguards. |'
+    I. Evidentiary Gaps: 'The canon''s evidence is structural and internal. It does
+      not provide:
+
+
+      - A worked example of a full atom expansion from any register.
+
+      - A worked example of an isomorphism candidate being graded and pressure-tested.
+
+      - A worked example of a bridge atom being stored and propagated.
+
+      - A demonstration that the universal grammar formula yields a non-trivial grammar
+      when applied to a real corpus.
+
+
+      These gaps are not failures of the canon; they are the natural next steps for
+      the methodology. They are flagged here as the evidentiary boundary of the current
+      draft.'
+    S05 — Objections and Counterarguments: 'The Claim Atom Expansion Canon is a methodological
+      proposal. As such, it is open to objections at every level: its foundational
+      definitions, its expansion rule, its isomorphism rule, its claim to an emergent
+      universal grammar, and its practical feasibility. This section catalogs the
+      strongest objections and, where the canon provides resources for a response,
+      states them. Where it does not, the objection is left standing as an open challenge.'
+    Objection 1 — The atomic unit is not atomic: '**Objection:** The canon defines
+      an atom as "one claim record, carrying the minimal unified record" (C1), but
+      then immediately decomposes it into layers (L#) and components (C#). If an atom
+      can be decomposed into sub-claims, it is not atomic in any meaningful sense.
+      The term "atom" is a misnomer; the unit is a bundle, not an indivisible entity.
+
+
+      **Response:** The canon''s atom is atomic at the level of *identity*, not at
+      the level of *content*. An atom has one immutable identity (A###), one hash,
+      one state, one grade (C1, C3). Its components (C#) are separately graded because
+      they may fail independently (C5). The atomicity is operational: the atom is
+      the smallest unit that can be admitted, graded, and referenced as a whole. The
+      decomposition into components is a refinement, not a violation of atomicity.
+      This is analogous to how a chemical atom has internal structure but is still
+      the unit of chemical identity.
+
+
+      **Status:** Responded.'
+    Objection 2 — The expansion templates are stipulated, not derived: '**Objection:**
+      The register-native templates (C9–C13) are presented as "the anatomy of what
+      must be true for that kind of claim to hold" (C8). But where do these templates
+      come from? They are asserted, not derived from any more basic principle. A rival
+      methodology could propose different templates with equal justification. The
+      canon provides no argument that its templates are the *correct* ones.
+
+
+      **Response:** The canon does not claim that its templates are uniquely correct.
+      It claims that they are *native* to their registers — that they reflect the
+      internal logic of historical, physical, mathematical, theological, and bridge
+      claims. The templates are open to revision: if a register''s template is found
+      to be incomplete or incorrect, it can be amended. The canon''s guards (C24)
+      explicitly forbid treating a specification as a theorem, and the templates are
+      specifications. Their justification is pragmatic: they make expansion possible
+      and comparable. The canon''s bet is that these templates will survive use and
+      refinement, not that they are a priori necessary.
+
+
+      **Status:** Responded, but the objection retains force: the canon does not provide
+      a derivation of the templates, only a pragmatic defense.'
+    Objection 3 — The invariant signature is not demonstrably register-neutral: '**Objection:**
+      The invariant signature (C14) is claimed to allow comparison "without names."
+      But the nine elements — IDENTITIES, DISTINCTIONS, RELATIONS, OPERATIONS, DEPENDENCIES,
+      CONSTRAINTS, INVARIANTS, COLLAPSE CONDITIONS, CONSEQUENCES — are themselves
+      a vocabulary. They may be biased toward certain kinds of structures (e.g., formal/mathematical
+      ones) and may fail to capture what is essential in other registers (e.g., narrative
+      or experiential claims). The signature may be a Procrustean bed.
+
+
+      **Response:** The canon does not claim that the signature is exhaustive or that
+      it captures everything. It claims that it provides a *basis* for comparison.
+      If a register''s claims cannot be adequately represented in the signature, that
+      is a finding: it would show that the signature needs expansion or that the register
+      is not comparable to others at the same level. The canon''s Why-Gate (C19) and
+      pressure test (C18) are designed to catch false matches. The signature is a
+      tool, not a metaphysical claim about the structure of reality.
+
+
+      **Status:** Responded, but the objection highlights a real risk: the signature
+      may impose a formalist bias.'
+    Objection 4 — The isomorphism rule cannot distinguish discovery from construction: '**Objection:**
+      The canon insists that isomorphism is "discovery, not assertion" (C16), found
+      by comparing opened structures. But the act of opening a structure along a register-native
+      template is itself a constructive act. The template determines what counts as
+      a sub-atom, and thus what will appear in the invariant signature. By choosing
+      the template, the analyst may inadvertently construct the match. The pressure
+      test (C18) is supposed to guard against this, but it is conducted by the same
+      analyst using the same templates.
+
+
+      **Response:** This is the strongest objection. The canon''s response is procedural:
+      the pressure test requires removing labels, permuting pairings, and constructing
+      the strongest rival mapping (C18). If the preferred mapping has no real advantage
+      over rivals, the candidate fails. The Why-Gate (C19) further requires an explanation
+      of why the correspondence exists. These are adversarial checks, but they are
+      not independent of the analyst. The canon acknowledges this by preserving WHY_OPEN
+      rather than resolving it (C19). The ultimate guard is the community of practitioners
+      and the requirement that all expansions and comparisons be public and reproducible.
+
+
+      **Status:** Partially responded. The objection identifies a genuine limitation:
+      the method cannot fully eliminate the analyst''s constructive role. The canon''s
+      guards mitigate but do not eliminate this.'
+    Objection 5 — The universal grammar is either trivial or unattainable: '**Objection:**
+      The universal grammar is defined as the set of all admitted atoms plus all confirmed
+      isomorphisms plus their dependency edges (C21). If admission is strict, the
+      grammar may be nearly empty — trivial. If admission is lax, the grammar may
+      include spurious isomorphisms — unrigorous. The canon provides no criteria for
+      admission beyond the IC grade and Why-Gate, which are themselves applied by
+      fallible analysts. The grammar may be either too small to be interesting or
+      too large to be trustworthy.
+
+
+      **Response:** The canon embraces this tension. The grammar is *emergent*: it
+      is whatever survives the pipeline. If that is small, it is small. The canon
+      does not promise a rich grammar; it promises an honest one. The guards (C24)
+      ensure that nothing is admitted without earning its place. The grammar''s value
+      is not in its size but in its reliability: every node and edge has survived
+      scrutiny. If the grammar is trivial, that is a finding about the limits of cross-register
+      structural convergence.
+
+
+      **Status:** Responded. The objection is reframed as a feature, not a bug.'
+    Objection 6 — The recursion termini are not exhaustive: '**Objection:** Expansion
+      terminates at PRIMITIVE, EMPIRICAL INPUT, or OPEN (C22). But there may be other
+      legitimate termini: e.g., a claim that is simply *undefined* in the current
+      framework, or a claim that is *inconsistent* with the framework, or a claim
+      that is *irrelevant* to the framework. The canon''s three termini may force
+      premature closure or misclassification.
+
+
+      **Response:** The canon''s termini are methodological, not metaphysical. A claim
+      that is undefined or inconsistent would be marked OPEN with its rivals and next
+      test. Irrelevance is a judgment about the framework''s scope, not a terminus
+      of expansion. The canon''s discipline is that no expansion may terminate in
+      a label borrowed from the answer (C23). If a claim cannot be opened further
+      without circularity, it is OPEN. The three termini are the honest floors: the
+      primitive, the empirical, and the unresolved.
+
+
+      **Status:** Responded, but the objection suggests that the termini may need
+      refinement in practice.'
+    Objection 7 — The guards are necessary but insufficient: '**Objection:** The eight
+      guards (C24) are procedural safeguards, but they do not guarantee correctness.
+      They forbid certain errors (promoting analogy to identity, propagating bridges
+      as proofs, etc.), but they do not ensure that the remaining claims are true.
+      A claim can pass all guards and still be false. The canon provides no truth
+      criterion.
+
+
+      **Response:** The canon does not claim to provide a truth criterion. It provides
+      a *rigor* criterion: claims are admitted only if they survive expansion, grading,
+      pressure-testing, and gating. Truth is not the same as rigor. The canon''s guards
+      are designed to prevent the most common forms of self-deception, not to guarantee
+      truth. The canon is a methodology for structuring claims, not a theory of truth.
+      It is compatible with a range of truth theories (correspondence, coherence,
+      pragmatic).
+
+
+      **Status:** Responded. The objection is correct but does not undermine the canon''s
+      purpose.'
+    Objection 8 — The canon is unfalsifiable: '**Objection:** The canon claims that
+      the universal grammar is "what remains when everything that could not survive
+      scrutiny has been honestly removed" (C21). But if the grammar turns out to be
+      trivial or incoherent, the canon can always say that the scrutiny was not honest
+      enough or that the corpus was not rich enough. The canon appears to be immune
+      to empirical disconfirmation.
+
+
+      **Response:** The canon is falsifiable in principle. If a claim that passes
+      all guards and survives all tests is later shown to be false, that would falsify
+      the canon''s claim that its pipeline produces reliable results. If two fully
+      opened structures with matching invariant signatures are later shown to have
+      no structural correspondence, that would falsify the isomorphism rule. The canon''s
+      predictions are conditional: *if* you follow the pipeline, *then* you will get
+      a grammar that survives scrutiny. If the grammar does not survive scrutiny,
+      the canon is falsified. The canon is not a metaphysical system; it is a methodology
+      with testable consequences.
+
+
+      **Status:** Responded, but the objection highlights the need for concrete case
+      studies to test the canon.'
+    Objection 9 — The canon is too complex to be practical: '**Objection:** The canon
+      requires atoms to be addressed, layered, componentized, dual-formatted, and
+      metadata-tagged (C1–C7). Expansion requires register-native templates (C8–C13).
+      Isomorphism requires invariant signatures, grading, pressure tests, Why-Gates,
+      and bridge records (C14–C20). The universal grammar requires all of this to
+      be done for every claim (C21). This is an enormous overhead. In practice, no
+      one will follow it.
+
+
+      **Response:** The canon is designed for a specific kind of corpus: one where
+      rigor and traceability are paramount. It is not intended for casual note-taking.
+      The overhead is the point: it forces the analyst to make every assumption explicit
+      and every inference traceable. The canon can be applied incrementally: start
+      with a small set of claims, expand them, and see if the method yields insight.
+      If it does, scale up. If it does not, the canon has failed a practical test.
+      The canon''s guards (C24) include "no automated run canonizes; the human rules
+      admission," which acknowledges that the method is labor-intensive and requires
+      human judgment.
+
+
+      **Status:** Responded. The objection is a practical warning, not a refutation.'
+    Objection 10 — The canon conflates structure with meaning: '**Objection:** The
+      canon treats claims as structures that can be compared via invariant signatures
+      (C14). But claims also have *meaning* — semantic content that may not be captured
+      by structural features. Two claims may have identical invariant signatures but
+      mean different things. The canon''s focus on structure may lead to a neglect
+      of meaning, and thus to false isomorphisms.
+
+
+      **Response:** The canon does not deny that claims have meaning. It claims that
+      structural comparison is a *necessary* condition for isomorphism, not a sufficient
+      one. The Why-Gate (C19) is precisely the point at which meaning enters: the
+      analyst must explain *why* the correspondence exists. If the explanation appeals
+      to meaning, that is legitimate. The canon''s guards (C24) forbid promoting analogy
+      to identity, which is a guard against mistaking structural similarity for semantic
+      identity. The canon is a tool for disciplined structural comparison, not a replacement
+      for semantic analysis.
+
+
+      **Status:** Responded. The objection is addressed by the Why-Gate and the guards.'
+    Summary of Objections: '| # | Objection | Status |
+
+      |---|---|---|
+
+      | 1 | The atomic unit is not atomic. | Responded. |
+
+      | 2 | The expansion templates are stipulated, not derived. | Responded, but
+      force remains. |
+
+      | 3 | The invariant signature is not demonstrably register-neutral. | Responded,
+      but risk remains. |
+
+      | 4 | The isomorphism rule cannot distinguish discovery from construction. |
+      Partially responded. |
+
+      | 5 | The universal grammar is either trivial or unattainable. | Responded.
+      |
+
+      | 6 | The recursion termini are not exhaustive. | Responded. |
+
+      | 7 | The guards are necessary but insufficient. | Responded. |
+
+      | 8 | The canon is unfalsifiable. | Responded. |
+
+      | 9 | The canon is too complex to be practical. | Responded. |
+
+      | 10 | The canon conflates structure with meaning. | Responded. |'
+    Open Challenges: 'The following objections are not fully resolved by the canon''s
+      internal resources and remain open challenges:
+
+
+      - **Objection 2:** The canon does not derive its templates from first principles.
+      A derivation or a comparative justification would strengthen the canon.
+
+      - **Objection 3:** The invariant signature may impose a formalist bias. Empirical
+      work is needed to test its adequacy across registers.
+
+      - **Objection 4:** The analyst''s constructive role cannot be fully eliminated.
+      The canon''s procedural guards mitigate but do not solve this. Independent replication
+      and adversarial collaboration are needed.
+
+      - **Objection 8:** The canon needs concrete case studies to demonstrate its
+      falsifiability and practical value.
+
+
+      These open challenges are consistent with the canon''s own spirit: they are
+      marked OPEN, preserved with their rivals and next tests, rather than resolved
+      by fiat.'
+    S06 — Theological/Philosophical Translation: 'The Claim Atom Expansion Canon is
+      a methodological document, but its structure is not theologically or philosophically
+      neutral. It carries a metaphysics in its bones: a commitment to the primacy
+      of distinction, the reality of structure, the discipline of analogy, and the
+      humility of the open question. This section translates the canon''s apparatus
+      into theological and philosophical terms, showing where it resonates with classical
+      traditions and where it makes claims that those traditions would recognize,
+      challenge, or refine.'
+    A. The Atom and the Doctrine of Divine Simplicity: 'The canon''s atom is "one
+      claim record, carrying the minimal unified record" (C1), with an immutable identity
+      (A###, C3), a layer (L#, C4), and components (C#, C5). This structure is a methodological
+      echo of the classical doctrine of **divine simplicity**: God is not composed
+      of parts, yet God''s attributes are not identical to one another in our understanding.
+      The atom is simple in identity but complex in content. Its components are graded
+      separately because they may fail independently (C5) — just as theological claims
+      about God''s justice and God''s mercy may be distinguished without dividing
+      the divine essence.
+
+
+      The analogy is not identity. The canon''s atom is a created, fallible record;
+      God is not. But the structural pattern — unity of identity, multiplicity of
+      expression — is one that classical theology has long explored. The canon''s
+      insistence that the atom is the unit of admission, not the bundle, mirrors the
+      theological insistence that the object of faith is one God, not a collection
+      of attributes.'
+    B. The Expansion Rule and the Analogy of Being: 'The canon''s expansion rule (C8)
+      holds that a claim opens along its register into register-native sub-atoms.
+      This is structurally analogous to the classical **analogy of being** (*analogia
+      entis*): created things resemble God without being identical to God, and the
+      resemblance is governed by the mode of being proper to each. The canon''s registers
+      — history, physics, math, theology, bridge — are modes of claim-being, each
+      with its own native anatomy.
+
+
+      The theological template (C12) is especially telling: `SOURCE → WITNESS TRADITION
+      → PROCLAMATION → REGISTER → CONFESSION CLASS → SCOPE`. This is not a proof chain;
+      it is a **proclamation chain**. It traces how a theological claim arises from
+      a source, is carried by a witnessing tradition, is proclaimed, is registered
+      in a confessional context, and is scoped. The canon''s guard that theological
+      atoms "are never laundered into class T or E by expansion" (C12) is a formalization
+      of the theological principle that the mode of theological discourse is not reducible
+      to the mode of empirical or mathematical discourse. Expansion clarifies what
+      the claim *is*; it never upgrades what the claim *proves*.'
+    C. The Invariant Signature and the Via Negativa: 'The invariant signature (C14)
+      is a nine-element structural fingerprint: IDENTITIES, DISTINCTIONS, RELATIONS,
+      OPERATIONS, DEPENDENCIES, CONSTRAINTS, INVARIANTS, COLLAPSE CONDITIONS, CONSEQUENCES.
+      It is designed to allow comparison "without names." This is a methodological
+      version of the **via negativa**: by stripping away names and labels, the canon
+      seeks to compare structures at a level where vocabulary cannot bias the result.
+
+
+      The via negativa in classical theology (e.g., Pseudo-Dionysius, John of the
+      Cross) holds that God is known most truly by negation — by saying what God is
+      not. The canon''s signature is not a negation of names but a *suspension* of
+      them. It asks: if we remove the labels, do the structures still match? This
+      is a disciplined form of apophatic comparison. It does not claim that the structures
+      are God; it claims that they are comparable in a way that names alone cannot
+      guarantee.
+
+
+      The risk, noted in S05 (Objection 3), is that the signature may impose a formalist
+      bias. Theologically, this is the risk of **onto-theology**: allowing a formal
+      schema to dictate what can be said about God. The canon''s Why-Gate (C19) and
+      pressure test (C18) are designed to catch false matches, but they do not eliminate
+      the risk. The canon''s response — that the signature is a tool, not a metaphysical
+      claim — is theologically sound: it refuses to identify its method with the divine
+      nature.'
+    D. The Isomorphism Rule and the Discovery/Construction Distinction: 'The canon
+      insists that isomorphism is "discovery, not assertion" (C16). This is a philosophical
+      distinction with deep roots. In Plato, discovery (*anamnesis*) is the recollection
+      of what the soul already knows; in Aristotle, discovery is the actualization
+      of potential; in modern philosophy, the distinction between discovery and construction
+      is central to debates about realism and anti-realism.
+
+
+      The canon''s position is **critical realism**: structures are real, but our
+      access to them is mediated by templates, signatures, and pressure tests. The
+      isomorphism candidate is not constructed by fiat; it is found by comparing opened
+      structures. But the act of opening is itself constructive (Objection 4). The
+      canon acknowledges this by preserving WHY_OPEN rather than resolving it (C19).
+      Theologically, this is the posture of **faith seeking understanding** (*fides
+      quaerens intellectum*): the believer does not construct God, but neither does
+      the believer have unmediated access to God. The Why-Gate is the methodological
+      equivalent of the theological question: *why does this correspondence exist?*
+      — a question that may be answered, failed, or left open.'
+    E. The Universal Grammar and the Logos: 'The canon''s universal grammar (C21)
+      is "the emergent structure of the admitted graph": all admitted atoms + all
+      confirmed isomorphisms (IC-4/5, WHY-gated) + typed dependency edges, viewed
+      whole. It is built bottom-up, never top-down.
+
+
+      Theologically, this is a striking inversion of the classical **Logos** doctrine.
+      In John 1:1, the Logos is *in the beginning*, prior to all things, the principle
+      through which all things were made. The canon''s grammar is not prior; it is
+      emergent. It is not the source of the atoms; it is what the atoms become when
+      they survive scrutiny. The grammar is not the Logos; it is a **created participation
+      in the Logos** — a human, fallible, bottom-up reconstruction of the order that
+      the Logos establishes.
+
+
+      This is not a rejection of the Logos doctrine; it is a methodological translation
+      of it. The canon does not claim to write the Logos. It claims to build a grammar
+      that, if it works, will be a finite image of the Logos. The guard that "no automated
+      run canonizes; the human rules admission" (C24) is a theological safeguard:
+      the grammar is not a machine output; it is a human act of discernment, subject
+      to correction and open to the possibility that the Logos exceeds it.'
+    F. The Recursion Termini and the Theological Floor: 'The canon''s three termini
+      (C22) are PRIMITIVE (the Mark: distinction itself), EMPIRICAL INPUT (INDEPENDENT_EMPIRICAL_INPUT),
+      and OPEN (unresolved, preserved with rivals and next test).
+
+
+      The PRIMITIVE terminus — "the Mark: distinction itself" — is theologically resonant
+      with the doctrine of **creation ex nihilo** and the primordial act of distinction.
+      In Genesis 1, God separates light from darkness, waters from waters, day from
+      night. Distinction is the first act of creation. The canon''s Mark is not God;
+      it is the methodological floor at which distinction itself is posited. But the
+      structural parallel is unmistakable: the grammar begins with distinction, not
+      with identity.
+
+
+      The EMPIRICAL INPUT terminus is theologically analogous to **revelation**: a
+      datum that the framework does not derive but receives. The canon records it
+      as INDEPENDENT_EMPIRICAL_INPUT. Theologically, this is the posture of **receptivity**:
+      the framework is not self-contained; it depends on what it does not generate.
+
+
+      The OPEN terminus is theologically analogous to **eschatological reserve**:
+      the unresolved question is preserved, not resolved. The canon''s discipline
+      — "No expansion may terminate in a label borrowed from the answer" (C23) — is
+      a formalization of the theological prohibition against **idolatry**: the refusal
+      to identify the answer with the framework''s own categories. The OPEN terminus
+      is the methodological equivalent of the theological *apophatic* reserve: the
+      question remains open because the answer exceeds the method.'
+    G. The Guards and the Theological Virtues: 'The eight guards (C24) can be read
+      as a translation of classical theological virtues and disciplines:
+
+
+      | Guard | Theological resonance |
+
+      |---|---|
+
+      | Analogy is never promoted to identity. | The *analogia entis*: created resemblance
+      is not divine identity. |
+
+      | A bridge never propagates as proof. | The distinction between *fides* and
+      *scientia*: faith is not proof. |
+
+      | A specification is never reported as a theorem. | The distinction between
+      *promise* and *fulfillment*: the specification is not the receipt. |
+
+      | A selection criterion is never written after the pattern is seen. | The prohibition
+      against *post hoc* rationalization: the criterion must precede the pattern.
+      |
+
+      | No automated run canonizes; the human rules admission. | The doctrine of *conscience*:
+      judgment is a human act, not a machine output. |
+
+      | Corrections print where claims printed; nothing is silently edited or deleted.
+      | The practice of *confession*: error is acknowledged, not hidden. |
+
+      | The resolver resolves references; it never creates authority. | The distinction
+      between *tradition* and *magisterium*: tradition transmits, it does not create.
+      |
+
+      | The guard tool enforces format; it never grades truth. | The distinction between
+      *discipline* and *discernment*: format is not truth. |
+
+
+      These resonances are not accidental. The canon''s guards are procedural translations
+      of theological disciplines that have been refined over centuries. They are not
+      theological claims; they are methodological safeguards that happen to align
+      with theological wisdom.'
+    H. The One-Sentence Version and the Theological Summary: 'The canon''s one-sentence
+      version (C25) reads: *Every claim is an atom; every atom opens along its register
+      into sub-atoms; when two opened structures match without names, an isomorphism
+      is born, graded, and gated — and the universal grammar is simply everything
+      that survives.*
+
+
+      Theologically, this can be translated as: *Every creature is a word; every word
+      opens along its mode of being into sub-words; when two opened structures match
+      without names, a participation is discovered, graded, and gated — and the universal
+      grammar is simply everything that survives the scrutiny of the Logos.*
+
+
+      This translation is not the canon. It is a theological reading of the canon.
+      The canon does not claim to be theology; it claims to be a methodology that
+      can be used by theologians and non-theologians alike. But the structural parallels
+      are deep enough that the canon can be read as a **formalized theological epistemology**:
+      a way of structuring claims that respects the distinction between registers,
+      the discipline of analogy, the humility of the open question, and the eschatological
+      reserve of the unresolved.'
+    I. What the Translation Does Not Claim: 'The translation does not claim that:
+
+
+      - The canon is a theological document.
+
+      - The universal grammar is the Logos.
+
+      - The Mark is God.
+
+      - The isomorphism rule is a proof of divine action.
+
+      - The guards are theological virtues.
+
+      - The canon''s method is a substitute for revelation, faith, or tradition.
+
+
+      The translation claims only that the canon''s structure is **theologically legible**:
+      it can be read in theological terms without being reduced to them. This is consistent
+      with the canon''s own guards: analogy is never promoted to identity (C24). The
+      translation is an analogy, not an identity. It is offered as a bridge — with
+      its preserved structure, its lost structure, its grade, its countermodels, and
+      its next test.'
+    S07 — Formal and Mathematical Layer: 'The Claim Atom Expansion Canon is a methodological
+      document, but its structure is formalizable. This section extracts the formal
+      and mathematical layer implicit in the canon: the typed objects, the address
+      algebra, the expansion function, the invariant signature as a feature vector,
+      the isomorphism grading as a partial order, the universal grammar as a set-theoretic
+      construction, and the recursion termini as a well-foundedness condition. The
+      formalization is offered as a reconstruction, not as a claim that the canon
+      is a mathematical theory. It is a tool for making the canon''s commitments explicit
+      and for identifying where the canon is underdetermined.'
+    A. Typed Objects: 'The canon''s universe of discourse consists of the following
+      typed objects:
+
+
+      | Type | Symbol | Description | Source |
+
+      |---|---|---|---|
+
+      | Atom | `A` | A claim record with identity, layer, component, metadata. | C1–C7
+      |
+
+      | Address | `Addr` | A triple `(a, l, c)` where `a ∈ A###`, `l ∈ L#`, `c ∈ C#`.
+      | C2 |
+
+      | Register | `R` | One of `{HISTORY, PHYSICS, MATH, THEOLOGY, BRIDGE}`. | C8–C13
+      |
+
+      | Template | `T_r` | A finite sequence of sub-atom types native to register
+      `r`. | C9–C13 |
+
+      | Signature | `Σ` | A 9-tuple of structural features. | C14 |
+
+      | IC Grade | `g` | An element of `{IC-0, IC-1, IC-2, IC-3, IC-4, IC-5}`. | C17
+      |
+
+      | Why-Outcome | `w` | An element of `{WHY_CLOSED(level), WHY_FAILED, WHY_OPEN}`.
+      | C19 |
+
+      | Bridge | `B` | A record `(preserved, lost, grade, countermodels, next_test)`.
+      | C20 |
+
+      | Terminus | `τ` | An element of `{PRIMITIVE, EMPIRICAL_INPUT, OPEN}`. | C22
+      |
+
+      | Grammar | `G` | A set of atoms, isomorphisms, and typed edges. | C21 |'
+    B. The Address Algebra: 'An address is a triple:
+
+
+      ```text
+
+      Addr = (a, l, c)  where  a ∈ A###,  l ∈ L#,  c ∈ C#
+
+      ```
+
+
+      The address scheme is a **free monoid** over the alphabet `{A, L, C}` with the
+      concatenation operation `/`. The canonical form is:
+
+
+      ```text
+
+      claims / A042 / L9 / C1
+
+      ```
+
+
+      **Properties:**
+
+
+      - **Injectivity:** Each address maps to exactly one atom. No two atoms share
+      an address.
+
+      - **Immutability:** The atom identifier `a` is never reused or deleted (C3).
+
+      - **Compositionality:** The address of a sub-atom is the address of its parent
+      extended by a new component index.'
+    C. The Expansion Function: 'Let `A` be the set of atoms and `R` the set of registers.
+      Define the expansion function:
+
+
+      ```text
+
+      open : A × R → P(A)
+
+      ```
+
+
+      where `open(a, r)` returns the set of register-native sub-atoms of `a` under
+      register `r`. The function is defined by the templates:
+
+
+      ```text
+
+      open(a, HISTORY)   = {a_1, ..., a_10}  following T_HISTORY
+
+      open(a, PHYSICS)   = {a_1, ..., a_9}   following T_PHYSICS
+
+      open(a, MATH)      = {a_1, ..., a_6}   following T_MATH
+
+      open(a, THEOLOGY)  = {a_1, ..., a_6}   following T_THEOLOGY
+
+      open(a, BRIDGE)    = {a_1, ..., a_8}   following T_BRIDGE
+
+      ```
+
+
+      **Constraints:**
+
+
+      - **Register-native:** `open(a, r)` is defined only if `r` is the register of
+      `a`. A claim cannot be opened along a foreign register.
+
+      - **Recursive:** Each `a_i ∈ open(a, r)` is itself an atom and may be opened
+      further.
+
+      - **Terminating:** Expansion must reach a terminus `τ ∈ {PRIMITIVE, EMPIRICAL_INPUT,
+      OPEN}` (C22).
+
+      - **Non-circular:** No expansion may terminate in a label borrowed from the
+      answer (C23).'
+    D. The Invariant Signature as a Feature Vector: 'The invariant signature is a
+      9-tuple:
+
+
+      ```text
+
+      Σ(a) = (I, D, R, O, Dep, C, Inv, Col, Con)
+
+      ```
+
+
+      where:
+
+
+      | Component | Symbol | Meaning |
+
+      |---|---|---|
+
+      | Identities | `I` | The set of identity conditions of the atom. |
+
+      | Distinctions | `D` | The set of distinctions the atom draws. |
+
+      | Relations | `R` | The set of relations the atom participates in. |
+
+      | Operations | `O` | The set of operations the atom supports. |
+
+      | Dependencies | `Dep` | The set of dependencies the atom has. |
+
+      | Constraints | `C` | The set of constraints the atom imposes. |
+
+      | Invariants | `Inv` | The set of invariants the atom preserves. |
+
+      | Collapse Conditions | `Col` | The conditions under which the atom collapses.
+      |
+
+      | Consequences | `Con` | The set of consequences the atom entails. |
+
+
+      **Comparison:** Two atoms `a` and `b` are **signature-comparable** if `Σ(a)`
+      and `Σ(b)` are defined and can be compared component-wise. The comparison is
+      performed **without names** (C14): the labels of `a` and `b` are not used in
+      the comparison.
+
+
+      **Matching:** A match is a bijection `φ : Σ(a) → Σ(b)` that preserves the structural
+      relations among the components. The existence of such a `φ` is the birth of
+      an isomorphism candidate (C15).'
+    E. Isomorphism Grading as a Partial Order: 'The IC grades form a total order:
+
+
+      ```text
+
+      IC-0 < IC-1 < IC-2 < IC-3 < IC-4 < IC-5
+
+      ```
+
+
+      **Interpretation:**
+
+
+      | Grade | Meaning |
+
+      |---|---|
+
+      | IC-0 | No structural correspondence. |
+
+      | IC-1 | Superficial resemblance. |
+
+      | IC-2 | Partial structural correspondence. |
+
+      | IC-3 | Substantial structural correspondence. |
+
+      | IC-4 | Shared dependency graph and capability classes. |
+
+      | IC-5 | IC-4 plus collapse and translation behavior. |
+
+
+      **Threshold:** Only `IC-4` or `IC-5` supports a serious structural-convergence
+      claim (C17).'
+    F. The Pressure Test as an Adversarial Procedure: 'The pressure test (C18) is
+      a procedure that takes a candidate isomorphism `(a, b, φ)` and returns a verdict:
+
+
+      ```text
+
+      pressure_test : (A × A × Φ) → {PASS, FAIL}
+
+      ```
+
+
+      The procedure:
+
+
+      1. **Remove labels:** Replace all names in `a` and `b` with placeholders.
+
+      2. **Permute pairings:** Generate the set of rival bijections `Φ'' = {φ'' :
+      Σ(a) → Σ(b)}`.
+
+      3. **Construct rival mapping:** For each `φ'' ∈ Φ''`, construct the strongest
+      rival mapping.
+
+      4. **Measure advantage:** Compute the advantage of `φ` over each `φ''`.
+
+      5. **Verdict:** `PASS` if `φ` has a real advantage over all rivals; `FAIL` otherwise.'
+    G. The Why-Gate as a Three-Valued Function: 'The Why-Gate (C19) is a function:
+
+
+      ```text
+
+      why_gate : (A × A × Φ) → {WHY_CLOSED(level), WHY_FAILED, WHY_OPEN}
+
+      ```
+
+
+      **Properties:**
+
+
+      - `WHY_CLOSED(level)` is a positive outcome with a level of explanation.
+
+      - `WHY_FAILED` is a negative outcome: the correspondence does not exist.
+
+      - `WHY_OPEN` is a preserved outcome: the question remains open, with rivals
+      and next test.
+
+
+      **Constraint:** `WHY_OPEN` is preserved, not resolved (C19).'
+    H. The Universal Grammar as a Set-Theoretic Construction: 'The universal grammar
+      is defined as:
+
+
+      ```text
+
+      G = A_admitted ∪ I_confirmed ∪ E_typed
+
+      ```
+
+
+      where:
+
+
+      - `A_admitted` is the set of all admitted atoms.
+
+      - `I_confirmed` is the set of all confirmed isomorphisms (IC-4/5, WHY-gated).
+
+      - `E_typed` is the set of typed dependency edges between them.
+
+
+      **Properties:**
+
+
+      - **Bottom-up:** `G` is constructed from `A_admitted`, `I_confirmed`, and `E_typed`;
+      it is never imposed top-down (C21).
+
+      - **Emergent:** `G` is the structure that remains after all non-surviving candidates
+      are removed.
+
+      - **Graded:** Every node and edge in `G` carries its grade.'
+    I. Recursion Termini as a Well-Foundedness Condition: 'Expansion is a relation
+      `→` on atoms:
+
+
+      ```text
+
+      a → b  iff  b ∈ open(a, r) for some register r
+
+      ```
+
+
+      **Well-foundedness:** The relation `→` is well-founded: every chain `a_0 → a_1
+      → a_2 → ...` terminates at a terminus `τ ∈ {PRIMITIVE, EMPIRICAL_INPUT, OPEN}`
+      (C22).
+
+
+      **Non-circularity:** No chain may terminate in a label borrowed from the answer
+      (C23). Formally, if `τ` is a terminus, then `τ` is not a label that appears
+      in the statement of the original claim.'
+    J. The Guards as Formal Constraints: 'The eight guards (C24) can be formalized
+      as constraints on the pipeline:
+
+
+      | Guard | Formal Constraint |
+
+      |---|---|
+
+      | Analogy is never promoted to identity. | `analogy(a, b) ⇒ ¬identity(a, b)`
+      |
+
+      | A bridge never propagates as proof. | `bridge(a, b) ⇒ ¬proof(a, b)` |
+
+      | A specification is never reported as a theorem. | `specification(a) ⇒ ¬theorem(a)`
+      |
+
+      | A selection criterion is never written after the pattern is seen. | `criterion(t)
+      ⇒ t < t_pattern` |
+
+      | No automated run canonizes; the human rules admission. | `admission(a) ⇒ human_judgment(a)`
+      |
+
+      | Corrections print where claims printed; nothing is silently edited or deleted.
+      | `correction(a) ⇒ printed(a)` |
+
+      | The resolver resolves references; it never creates authority. | `resolver(a)
+      ⇒ ¬authority(a)` |
+
+      | The guard tool enforces format; it never grades truth. | `guard(a) ⇒ format(a)
+      ∧ ¬truth(a)` |'
+    K. Formal Summary: 'The canon''s formal layer can be summarized as a typed formal
+      system:
+
+
+      ```text
+
+      SYSTEM = (A, R, T, Σ, G, W, τ, Guards)
+
+      ```
+
+
+      where:
+
+
+      - `A` is the set of atoms.
+
+      - `R` is the set of registers.
+
+      - `T` is the set of register-native templates.
+
+      - `Σ` is the invariant signature function.
+
+      - `G` is the universal grammar.
+
+      - `W` is the Why-Gate function.
+
+      - `τ` is the set of recursion termini.
+
+      - `Guards` is the set of formal constraints.
+
+
+      The system is **well-formed** if:
+
+
+      1. Every atom has a unique address (C2, C3).
+
+      2. Every expansion is register-native (C8).
+
+      3. Every isomorphism candidate is graded and pressure-tested (C17, C18).
+
+      4. Every surviving isomorphism is WHY-gated (C19).
+
+      5. Every expansion terminates at a terminus (C22).
+
+      6. No expansion terminates in a label borrowed from the answer (C23).
+
+      7. All guards are satisfied (C24).'
+    L. Formal Gaps: 'The formalization above is a reconstruction. The canon does not
+      provide:
+
+
+      - A formal definition of the structural relations among signature components.
+
+      - A formal definition of the advantage measure in the pressure test.
+
+      - A formal definition of the levels of `WHY_CLOSED`.
+
+      - A formal proof that the expansion relation is well-founded.
+
+      - A formal proof that the universal grammar is non-trivial for any non-empty
+      corpus.
+
+
+      These gaps are flagged as open formal problems. They are consistent with the
+      canon''s own spirit: they are marked OPEN, preserved with their rivals and next
+      tests, rather than resolved by fiat.'
+    S08 — Bridge Integrity and Cross-Domain Checks: 'The Claim Atom Expansion Canon
+      is a cross-domain methodology. Its central move is to open claims along register-native
+      templates and then compare the resulting structures across registers via invariant
+      signatures. This section audits the integrity of those bridges: the internal
+      coherence of each register template, the soundness of the cross-register comparison,
+      the well-formedness of the universal grammar formula, and the consistency of
+      the guards across domains. Where a bridge is weak, it is flagged.'
+    A. Register Template Integrity: 'Each register-native template (C9–C13) is a finite
+      sequence of sub-atom types. For a template to be a valid bridge component, it
+      must satisfy three conditions:
+
+
+      1. **Completeness:** The sequence covers the anatomy of what must be true for
+      a claim of that register to hold.
+
+      2. **Non-redundancy:** No step is a mere restatement of another.
+
+      3. **Termination:** The sequence ends in a claim or receipt, not in an open-ended
+      process.
+
+
+      | Register | Template | Completeness | Non-redundancy | Termination | Verdict
+      |
+
+      |---|---|---|---|---|---|
+
+      | History (C9) | EVENT → … → PRESENT CLAIM | Covers transmission from event
+      to present claim. | Each link (witness, testimony, transmission, document, preservation,
+      corroboration, interpretation) is distinct. | Ends in PRESENT CLAIM. | **Sound.**
+      |
+
+      | Physics (C10) | QUANTITY → … → CLAIM | Covers measurement from quantity to
+      claim. | Units, dynamics, protocol, instrument, data, controls, fit are distinct.
+      | Ends in CLAIM. | **Sound.** |
+
+      | Math (C11) | DEFINITION → … → RECEIPT | Covers formal derivation from definition
+      to receipt. | Definition, axiom use, lemma, derivation, theorem statement, receipt
+      are distinct. | Ends in RECEIPT. | **Sound.** |
+
+      | Theology (C12) | SOURCE → … → SCOPE | Covers proclamation from source to scope.
+      | Source, witness tradition, proclamation, register, confession class, scope
+      are distinct. | Ends in SCOPE. | **Sound.** |
+
+      | Bridge (C13) | SOURCE REGISTER → … → NEXT TEST | Covers mapping from source
+      to next test. | Source, target, mapping, preserved, lost, grade, countermodels,
+      next test are distinct. | Ends in NEXT TEST. | **Sound.** |
+
+
+      **Finding:** All five templates are internally coherent. No template contains
+      a redundant step, and each terminates in a well-defined endpoint. The templates
+      are the canon''s strongest operational evidence (S04).'
+    B. Cross-Register Comparison Integrity: 'The isomorphism rule (C14–C20) compares
+      invariant signatures across registers. For this comparison to be a valid bridge,
+      three conditions must hold:
+
+
+      1. **Register-neutrality:** The signature components must not presuppose any
+      one register''s vocabulary.
+
+      2. **Comparability:** The signature components must be defined for atoms from
+      any register.
+
+      3. **Non-triviality:** The comparison must be able to distinguish genuine structural
+      matches from superficial ones.
+
+
+      **Check 1 — Register-neutrality.** The nine signature components (IDENTITIES,
+      DISTINCTIONS, RELATIONS, OPERATIONS, DEPENDENCIES, CONSTRAINTS, INVARIANTS,
+      COLLAPSE CONDITIONS, CONSEQUENCES) are drawn from formal/structural vocabulary.
+      They are not specific to history, physics, math, or theology. However, they
+      are biased toward formal/mathematical structures (S05, Objection 3). **Verdict:
+      Partially sound.** The signature is register-neutral in vocabulary but may be
+      register-biased in application.
+
+
+      **Check 2 — Comparability.** The signature is defined for any fully opened atom.
+      Since every atom opens along its register into sub-atoms (C8), and every sub-atom
+      is itself an atom, the signature can be computed for any atom at any depth.
+      **Verdict: Sound.**
+
+
+      **Check 3 — Non-triviality.** The pressure test (C18) and Why-Gate (C19) are
+      designed to filter superficial matches. The pressure test removes labels, permutes
+      pairings, and constructs rival mappings. The Why-Gate requires an explanation
+      of why the correspondence exists. **Verdict: Sound in principle, but dependent
+      on analyst discipline.** The canon acknowledges this (S05, Objection 4).'
+    C. Bridge Atom Integrity: 'A bridge atom (C20) is a record `(preserved, lost,
+      grade, countermodels, next_test)`. For a bridge atom to be valid, it must satisfy:
+
+
+      1. **Loss field mandatory:** A bridge atom that cannot name its lost structure
+      does not open (C13).
+
+      2. **Grade assigned:** The bridge must carry an IC grade (C17).
+
+      3. **Countermodels named:** The bridge must name the countermodels it has survived.
+
+      4. **Next test specified:** The bridge must specify the next discriminating
+      test.
+
+
+      **Check:** The canon states that the loss field is mandatory (C13) and that
+      the bridge record names preserved structure, lost structure, grade, countermodels,
+      and next test (C20). **Verdict: Sound.** The bridge atom is well-specified.
+
+
+      **Gap:** The canon does not specify how the loss field is populated. What counts
+      as "lost structure"? Is it a set, a list, a narrative? This is an open formal
+      problem (S07, Formal Gaps).'
+    D. Universal Grammar Formula Integrity: 'The universal grammar is defined as (C21):
+
+
+      ```text
+
+      G = A_admitted ∪ I_confirmed ∪ E_typed
+
+      ```
+
+
+      For this formula to be well-formed, three conditions must hold:
+
+
+      1. **A_admitted is well-defined:** The set of admitted atoms must be determined
+      by a clear admission procedure.
+
+      2. **I_confirmed is well-defined:** The set of confirmed isomorphisms must be
+      determined by the IC grade and Why-Gate.
+
+      3. **E_typed is well-defined:** The typed dependency edges must be determined
+      by the expansion relation.
+
+
+      **Check 1 — A_admitted.** Admission is ruled by the human (C24: "No automated
+      run canonizes; the human rules admission"). The canon does not specify the criteria
+      for admission beyond the guards. **Verdict: Underdetermined.** The formula is
+      well-formed only if admission is well-defined.
+
+
+      **Check 2 — I_confirmed.** Confirmed isomorphisms are those with IC-4 or IC-5
+      and a WHY_CLOSED outcome (C17, C19). **Verdict: Sound.** The criteria are explicit.
+
+
+      **Check 3 — E_typed.** Typed dependency edges are the edges between atoms in
+      the expansion relation. Since expansion is register-native and recursive (C8),
+      the edges are well-defined. **Verdict: Sound.**
+
+
+      **Finding:** The universal grammar formula is well-formed modulo the admission
+      procedure. The canon''s reliance on human judgment for admission is a deliberate
+      design choice (C24), but it leaves the formula''s extension underdetermined.'
+    E. Cross-Domain Guard Consistency: 'The eight guards (C24) are stated as non-negotiable.
+      For the bridges to be sound, the guards must be consistently applicable across
+      all registers.
+
+
+      | Guard | History | Physics | Math | Theology | Bridge |
+
+      |---|---|---|---|---|---|
+
+      | Analogy is never promoted to identity. | Applies. | Applies. | Applies. |
+      Applies. | Applies. |
+
+      | A bridge never propagates as proof. | Applies. | Applies. | Applies. | Applies.
+      | Applies. |
+
+      | A specification is never reported as a theorem. | Applies. | Applies. | Applies.
+      | Applies. | Applies. |
+
+      | A selection criterion is never written after the pattern is seen. | Applies.
+      | Applies. | Applies. | Applies. | Applies. |
+
+      | No automated run canonizes; the human rules admission. | Applies. | Applies.
+      | Applies. | Applies. | Applies. |
+
+      | Corrections print where claims printed; nothing is silently edited or deleted.
+      | Applies. | Applies. | Applies. | Applies. | Applies. |
+
+      | The resolver resolves references; it never creates authority. | Applies. |
+      Applies. | Applies. | Applies. | Applies. |
+
+      | The guard tool enforces format; it never grades truth. | Applies. | Applies.
+      | Applies. | Applies. | Applies. |
+
+
+      **Finding:** All guards are register-neutral and apply uniformly across domains.
+      **Verdict: Sound.**'
+    F. Cross-Domain Bridge Checks: 'The canon''s bridges are between registers. The
+      following cross-domain checks verify that the bridges are structurally sound:
+
+
+      **Check 1 — History ↔ Physics.** Both templates trace a chain from a source
+      (EVENT / QUANTITY) to a claim (PRESENT CLAIM / CLAIM). The history chain emphasizes
+      transmission and preservation; the physics chain emphasizes protocol and controls.
+      The invariant signature can compare them: both have identities (event/quantity),
+      distinctions (witness/instrument), relations (transmission/protocol), operations
+      (interpretation/fit), dependencies (document/data), constraints (preservation/controls),
+      invariants (corroboration/error bars), collapse conditions (lost link/failed
+      control), and consequences (present claim/claim). **Verdict: Bridge is structurally
+      sound.**
+
+
+      **Check 2 — Math ↔ Theology.** The math template traces a chain from DEFINITION
+      to RECEIPT; the theology template traces a chain from SOURCE to SCOPE. The math
+      chain emphasizes derivation and proof; the theology chain emphasizes proclamation
+      and confession. The invariant signature can compare them: both have identities
+      (definition/source), distinctions (axiom use/witness tradition), relations (lemma/proclamation),
+      operations (derivation/register), dependencies (theorem statement/confession
+      class), constraints (receipt/scope), invariants (proof/receipt), collapse conditions
+      (failed derivation/failed proclamation), and consequences (theorem/scope). **Verdict:
+      Bridge is structurally sound, but the analogy is weaker than History ↔ Physics.**
+      The math chain is formal; the theology chain is proclamatory. The signature
+      match may be superficial.
+
+
+      **Check 3 — Physics ↔ Math.** Both templates are formal. The physics chain emphasizes
+      measurement; the math chain emphasizes derivation. The invariant signature can
+      compare them: both have identities (quantity/definition), distinctions (units/axiom
+      use), relations (dynamics/lemma), operations (protocol/derivation), dependencies
+      (instrument/theorem statement), constraints (data/receipt), invariants (controls/proof),
+      collapse conditions (failed fit/failed derivation), and consequences (claim/theorem).
+      **Verdict: Bridge is structurally sound.**
+
+
+      **Check 4 — Bridge ↔ All.** The bridge template (C13) is meta: it maps any two
+      registers. Its integrity depends on the integrity of the source and target templates.
+      Since all templates are sound (Section A), the bridge template is sound. **Verdict:
+      Sound.**'
+    G. Bridge Integrity Summary: '| Bridge | Integrity | Notes |
+
+      |---|---|---|
+
+      | History template (C9) | Sound | Internally coherent. |
+
+      | Physics template (C10) | Sound | Internally coherent. |
+
+      | Math template (C11) | Sound | Internally coherent. |
+
+      | Theology template (C12) | Sound | Internally coherent. |
+
+      | Bridge template (C13) | Sound | Internally coherent. |
+
+      | Invariant signature (C14) | Partially sound | Register-neutral in vocabulary,
+      possibly biased in application. |
+
+      | Isomorphism rule (C15–C20) | Sound in principle | Dependent on analyst discipline.
+      |
+
+      | Universal grammar formula (C21) | Well-formed modulo admission | Admission
+      procedure underdetermined. |
+
+      | Guards (C24) | Sound | Register-neutral and uniformly applicable. |'
+    H. Cross-Domain Gaps and Open Problems: 'The following cross-domain gaps are flagged
+      as OPEN:
+
+
+      1. **Admission criteria:** The canon does not specify the criteria for admitting
+      an atom into the universal grammar. This is a gap in the bridge between the
+      pipeline and the grammar.
+
+      2. **Loss field specification:** The bridge atom''s loss field is mandatory
+      but not formally specified. This is a gap in the bridge between source and target
+      registers.
+
+      3. **Signature bias:** The invariant signature may impose a formalist bias.
+      This is a gap in the bridge between formal and non-formal registers.
+
+      4. **Analyst independence:** The pressure test and Why-Gate are conducted by
+      the analyst. This is a gap in the bridge between discovery and validation.
+
+      5. **Worked examples:** The canon provides no worked examples of a full bridge
+      from source register to target register. This is a gap in the bridge between
+      theory and practice.
+
+
+      These gaps are consistent with the canon''s own spirit: they are marked OPEN,
+      preserved with their rivals and next tests, rather than resolved by fiat.'
+    I. Bridge Integrity Verdict: 'The canon''s bridges are structurally sound at the
+      level of template design and guard application. The invariant signature provides
+      a register-neutral basis for comparison, and the pressure test and Why-Gate
+      provide adversarial filters. However, the bridges are weakened by three factors:
+
+
+      1. **Underdetermined admission:** The universal grammar formula depends on an
+      admission procedure that is not fully specified.
+
+      2. **Analyst dependence:** The pressure test and Why-Gate are not independent
+      of the analyst.
+
+      3. **Formalist bias:** The invariant signature may favor formal registers over
+      narrative or experiential ones.
+
+
+      These weaknesses do not invalidate the bridges; they mark the boundaries within
+      which the bridges are reliable. The canon''s guards (C24) and recursion termini
+      (C22) are designed to keep these weaknesses visible rather than hidden. The
+      bridges are sound enough to support the canon''s central claim: that a universal
+      grammar can emerge bottom-up from admitted atoms and confirmed isomorphisms,
+      provided the pipeline is followed with discipline.'
+    S09 — Open Questions and Falsification Boundaries: 'The Claim Atom Expansion Canon
+      is a methodology that explicitly preserves its unresolved questions rather than
+      resolving them by fiat. Its third recursion terminus is OPEN — "an honest unresolved
+      terminus. Preserved with its rivals and its next test" (C22). This section applies
+      that discipline to the canon itself: it enumerates the open questions the canon
+      leaves standing, states what would count as falsification for each of its major
+      claims, and marks each boundary with its rivals and next test.'
+    A. Open Questions: 'The following questions are not resolved by the canon. They
+      are marked OPEN, preserved with their rivals and next tests.
+
+
+      #### Q1 — What are the admission criteria for the universal grammar?
+
+
+      The universal grammar is defined as the set of all admitted atoms plus confirmed
+      isomorphisms plus typed edges (C21). But the canon does not specify the criteria
+      for admitting an atom. It states only that "No automated run canonizes; the
+      human rules admission" (C24). This is a procedural guard, not a criterion.
+
+
+      - **Rivals:** (a) Admission is a primitive human judgment, not further specifiable.
+      (b) Admission is determined by the guards alone: an atom is admitted iff it
+      satisfies all eight guards. (c) Admission is determined by the IC grade and
+      Why-Gate: an atom is admitted iff it has survived expansion, grading, pressure-testing,
+      and gating.
+
+      - **Next test:** Attempt to specify admission criteria and test them against
+      a corpus of claims. If two analysts applying the same criteria admit different
+      atoms, the criteria are underdetermined.
+
+
+      #### Q2 — How is the loss field of a bridge atom populated?
+
+
+      The bridge atom''s loss field is mandatory (C13, C20), but the canon does not
+      specify what counts as "lost structure." Is it a set, a list, a narrative, a
+      formal object?
+
+
+      - **Rivals:** (a) Loss is a set of structural features present in the source
+      but absent in the target. (b) Loss is a narrative description of what the mapping
+      fails to preserve. (c) Loss is a formal object defined by the difference between
+      the source and target invariant signatures.
+
+      - **Next test:** Apply the bridge template to a concrete cross-register mapping
+      and attempt to populate the loss field under each rival. The rival that yields
+      a determinate, comparable loss field is preferred.
+
+
+      #### Q3 — Is the invariant signature register-neutral or formalist-biased?
+
+
+      The signature''s nine components (C14) are drawn from formal/structural vocabulary.
+      They may favor formal registers (math, physics) over narrative or experiential
+      ones (history, theology).
+
+
+      - **Rivals:** (a) The signature is register-neutral; any bias is an artifact
+      of application. (b) The signature is formalist-biased and needs additional components
+      for narrative/experiential registers. (c) The signature is a Procrustean bed
+      and should be replaced by a register-specific comparison method.
+
+      - **Next test:** Apply the signature to a set of claims from each register and
+      check whether the signature captures what practitioners of that register consider
+      essential. If it systematically misses essential features in some registers,
+      the bias is real.
+
+
+      #### Q4 — Can the analyst''s constructive role be eliminated?
+
+
+      The pressure test (C18) and Why-Gate (C19) are conducted by the analyst using
+      the same templates that produced the candidate. The canon acknowledges this
+      (S05, Objection 4) but does not resolve it.
+
+
+      - **Rivals:** (a) The analyst''s role cannot be eliminated; the best we can
+      do is procedural discipline and public reproducibility. (b) Independent replication
+      by adversarial collaborators can approximate elimination. (c) The constructive
+      role is not a bug but a feature: the analyst''s judgment is the method''s engine.
+
+      - **Next test:** Conduct a blind replication study: two analysts independently
+      open the same atoms and compare signatures. Measure inter-analyst agreement.
+      If agreement is low, the method is analyst-dependent.
+
+
+      #### Q5 — What are the levels of WHY_CLOSED?
+
+
+      The Why-Gate returns WHY_CLOSED (with level), WHY_FAILED, or WHY_OPEN (C19).
+      The canon does not enumerate the levels of WHY_CLOSED.
+
+
+      - **Rivals:** (a) Levels correspond to explanatory depth: surface, mechanism,
+      principle, ground. (b) Levels correspond to the register of the explanation:
+      historical, physical, mathematical, theological. (c) Levels are not enumerable
+      in advance; they are determined case by case.
+
+      - **Next test:** Collect a set of WHY_CLOSED outcomes and attempt to classify
+      them by level. If a stable taxonomy emerges, the levels are enumerable.
+
+
+      #### Q6 — Is the expansion relation well-founded?
+
+
+      The canon asserts that expansion terminates at one of three termini (C22). But
+      it does not prove that every chain terminates. Could there be an infinite chain
+      of sub-atoms?
+
+
+      - **Rivals:** (a) Expansion is well-founded by construction: the templates are
+      finite and the termini are exhaustive. (b) Expansion is well-founded only if
+      the corpus is finite. (c) Expansion may be non-well-founded for certain self-referential
+      claims.
+
+      - **Next test:** Attempt to construct a self-referential claim that opens indefinitely
+      without reaching a terminus. If such a claim exists, the well-foundedness claim
+      is falsified.
+
+
+      #### Q7 — Is the universal grammar non-trivial for any non-empty corpus?
+
+
+      The canon does not prove that the grammar formula (C21) yields a non-trivial
+      grammar. If admission is strict, the grammar may be nearly empty.
+
+
+      - **Rivals:** (a) The grammar is non-trivial for any sufficiently rich corpus.
+      (b) The grammar may be trivial; that is a finding about the limits of cross-register
+      convergence. (c) The grammar''s non-triviality is an empirical question, not
+      a formal one.
+
+      - **Next test:** Apply the pipeline to a real corpus and measure the size and
+      structure of the resulting grammar. If the grammar is trivial for a rich corpus,
+      the canon''s central claim is weakened.
+
+
+      #### Q8 — What is the formal definition of the pressure test''s advantage measure?
+
+
+      The pressure test requires measuring whether the preferred mapping has a "real
+      advantage" over rivals (C18). The canon does not define "advantage."
+
+
+      - **Rivals:** (a) Advantage is the number of structural features preserved by
+      the preferred mapping minus those preserved by the rival. (b) Advantage is a
+      qualitative judgment by the analyst. (c) Advantage is defined by the IC grade:
+      the preferred mapping has advantage iff it achieves a higher grade than any
+      rival.
+
+      - **Next test:** Formalize each rival and apply it to a concrete candidate.
+      The rival that yields a determinate, reproducible verdict is preferred.
+
+
+      #### Q9 — Are the three recursion termini exhaustive?
+
+
+      The canon''s termini are PRIMITIVE, EMPIRICAL INPUT, and OPEN (C22). Are there
+      other legitimate termini?
+
+
+      - **Rivals:** (a) The three termini are exhaustive. (b) There are additional
+      termini: UNDEFINED, INCONSISTENT, IRRELEVANT. (c) The termini are methodological,
+      not metaphysical; they can be refined in practice.
+
+      - **Next test:** Attempt to construct a claim that cannot be classified under
+      any of the three termini without distortion. If such a claim exists, the termini
+      are not exhaustive.
+
+
+      #### Q10 — Does the canon conflate structure with meaning?
+
+
+      The canon compares claims via invariant signatures (C14), which are structural.
+      Two claims may have identical signatures but different meanings.
+
+
+      - **Rivals:** (a) Structural comparison is a necessary condition for isomorphism;
+      meaning enters via the Why-Gate. (b) Structural comparison is insufficient;
+      semantic analysis is required. (c) Structure and meaning are not separable;
+      the distinction is artificial.
+
+      - **Next test:** Construct two claims with identical invariant signatures but
+      different meanings. If the canon cannot distinguish them, the conflation is
+      real.'
+    B. Falsification Boundaries: 'The canon makes several claims that are, in principle,
+      falsifiable. The following table states each claim, what would falsify it, and
+      the current status of the test.
+
+
+      | # | Claim | Falsification condition | Status |
+
+      |---|---|---|---|
+
+      | F1 | The atom is the unit of the corpus (C1). | A corpus in which the atom
+      cannot serve as the unit of admission, grading, and reference. | Untested. |
+
+      | F2 | Expansion is register-native (C8). | A claim that cannot be opened along
+      its register without distortion, or that opens equally well along any register.
+      | Untested. |
+
+      | F3 | The register-native templates are complete (C9–C13). | A claim of a given
+      register that requires a sub-atom not present in the template. | Untested. |
+
+      | F4 | The invariant signature is register-neutral (C14). | A register whose
+      essential features cannot be represented in the signature. | Partially tested
+      (S05, Objection 3; S08, Check 1). |
+
+      | F5 | Isomorphism is discovered, not asserted (C16). | A case where the match
+      is demonstrably constructed by the analyst''s choice of template. | Partially
+      tested (S05, Objection 4). |
+
+      | F6 | IC-4/IC-5 is a reliable threshold for serious structural convergence
+      (C17). | A case where an IC-4/IC-5 isomorphism is later shown to have no structural
+      correspondence. | Untested. |
+
+      | F7 | The pressure test filters superficial matches (C18). | A case where a
+      superficial match passes the pressure test. | Untested. |
+
+      | F8 | The Why-Gate preserves genuine open questions (C19). | A case where WHY_OPEN
+      is used to avoid a genuine WHY_FAILED. | Untested. |
+
+      | F9 | The universal grammar is emergent and bottom-up (C21). | A case where
+      the grammar requires a top-down category not derivable from admitted atoms.
+      | Untested. |
+
+      | F10 | Expansion is well-founded (C22). | An infinite chain of sub-atoms without
+      a terminus. | Untested (Q6). |
+
+      | F11 | The guards prevent the most common failure modes (C24). | A case where
+      a claim passes all guards and is later shown to be false. | Untested. |
+
+      | F12 | The canon is falsifiable (S05, Objection 8). | A case where the canon''s
+      predictions cannot be tested. | Partially tested (this section). |'
+    C. The Falsification Boundary of the Canon Itself: 'The canon''s central claim
+      is conditional: *if* you follow the pipeline, *then* you will get a grammar
+      that survives scrutiny (C21, C25). This claim is falsifiable in the following
+      sense:
+
+
+      - **Falsification condition:** A corpus processed through the pipeline yields
+      a grammar that does not survive scrutiny — i.e., a node or edge in the grammar
+      is later shown to be spurious, or the grammar is trivial for a corpus that should
+      be rich.
+
+      - **Rival:** The canon is unfalsifiable because any failure can be attributed
+      to insufficiently honest scrutiny or an insufficiently rich corpus.
+
+      - **Next test:** Apply the pipeline to a concrete corpus, publish the resulting
+      grammar, and invite adversarial scrutiny. If the grammar survives, the canon
+      is corroborated. If it does not, the canon is falsified or refined.'
+    D. What the Canon Does Not Claim: 'The canon does not claim:
+
+
+      - That its templates are uniquely correct (S05, Objection 2).
+
+      - That its invariant signature is exhaustive (S05, Objection 3).
+
+      - That its pressure test eliminates the analyst''s constructive role (S05, Objection
+      4).
+
+      - That its grammar will be rich (S05, Objection 5).
+
+      - That its termini are exhaustive (S05, Objection 6).
+
+      - That its guards guarantee truth (S05, Objection 7).
+
+      - That it is immune to disconfirmation (S05, Objection 8).
+
+      - That it is practical for all corpora (S05, Objection 9).
+
+      - That it replaces semantic analysis (S05, Objection 10).
+
+
+      These disclaimers are not weaknesses; they are the canon''s honest boundaries.
+      They are marked OPEN, preserved with their rivals and next tests, consistent
+      with the canon''s own discipline (C22, C23).'
+    E. Open Questions Summary: '| # | Question | Rivals | Next test | Status |
+
+      |---|---|---|---|---|
+
+      | Q1 | Admission criteria for the grammar. | Human judgment / guards / IC+Why-Gate.
+      | Specify criteria and test inter-analyst agreement. | OPEN |
+
+      | Q2 | Population of the loss field. | Set / narrative / formal difference.
+      | Apply bridge template and compare rivals. | OPEN |
+
+      | Q3 | Register-neutrality of the signature. | Neutral / biased / replaceable.
+      | Apply signature across registers and check coverage. | OPEN |
+
+      | Q4 | Elimination of the analyst''s role. | Impossible / approximate / feature.
+      | Blind replication study. | OPEN |
+
+      | Q5 | Levels of WHY_CLOSED. | Depth / register / case-by-case. | Collect and
+      classify WHY_CLOSED outcomes. | OPEN |
+
+      | Q6 | Well-foundedness of expansion. | By construction / finite corpus / non-well-founded.
+      | Construct a self-referential claim. | OPEN |
+
+      | Q7 | Non-triviality of the grammar. | Rich corpus / trivial finding / empirical.
+      | Apply pipeline to a real corpus. | OPEN |
+
+      | Q8 | Advantage measure in the pressure test. | Feature count / qualitative
+      / IC grade. | Formalize and apply each rival. | OPEN |
+
+      | Q9 | Exhaustiveness of the termini. | Exhaustive / additional termini / refinable.
+      | Construct an unclassifiable claim. | OPEN |
+
+      | Q10 | Structure vs. meaning. | Necessary / insufficient / inseparable. | Construct
+      signature-identical, meaning-different claims. | OPEN |'
+    F. The Discipline of the Open: 'The canon''s discipline is stated in one sentence:
+      "No expansion may terminate in a label borrowed from the answer" (C23). Applied
+      to the canon itself, this means: no open question may be resolved by appealing
+      to the canon''s own vocabulary. The questions above are marked OPEN because
+      they cannot be resolved by the canon''s internal resources alone. They require
+      empirical work, formal development, or adversarial collaboration.
+
+
+      This is not a failure of the canon. It is the canon working as designed: the
+      OPEN terminus is preserved, not resolved (C22). The canon''s value is not that
+      it answers all questions, but that it marks them honestly and specifies what
+      would count as an answer. The open questions and falsification boundaries above
+      are the canon''s own next tests — the work that remains to be done if the canon
+      is to earn its place in the admitted graph.'
+    S10 — Consilience Summary and Next Steps: The Claim Atom Expansion Canon v0.1
+      is a methodology for structuring claims as atoms that open along register-native
+      templates into sub-atoms, for discovering isomorphisms by comparing invariant
+      signatures without names, and for building a universal grammar bottom-up from
+      what survives scrutiny. This final section draws the prior nine sections together
+      into a consilience summary and specifies the next steps that follow from the
+      canon's own open questions and falsification boundaries.
+    A. Consilience Summary: 'The ten sections of this analysis converge on a single
+      coherent picture. The canon''s parts are not independent; they form a pipeline
+      in which each stage depends on the previous ones and each stage is protected
+      by the same discipline.
+
+
+      | Section | Contribution | What it establishes |
+
+      |---|---|---|
+
+      | **S01** | Core finding and one-sentence claim. | The canon''s thesis: every
+      claim is an atom; every atom opens along its register; matching structures yield
+      graded, gated isomorphisms; the universal grammar is what survives. |
+
+      | **S02** | Axiom/definition spine. | The foundational definitions (atom, address,
+      layer, component, dual format, metadata axes, expansion rule, register templates,
+      isomorphism rule, universal grammar, recursion termini, guards) function as
+      the canon''s stipulated axioms. |
+
+      | **S03** | Argument chain. | The canon''s internal coherence: from the atomic
+      unit, through register-native expansion, to isomorphism discovery, grading,
+      gating, and the emergent grammar. |
+
+      | **S04** | Evidence and sources. | The canon''s evidence is structural and
+      internal: cross-references, register templates, invariant signature, grammar
+      formula, recursion termini, and guards. Evidentiary gaps are flagged. |
+
+      | **S05** | Objections and counterarguments. | Ten objections are cataloged;
+      most are responded to, but four remain open challenges (template derivation,
+      signature bias, analyst dependence, falsifiability). |
+
+      | **S06** | Theological/philosophical translation. | The canon''s structure
+      is theologically legible: atom/divine simplicity, expansion/analogy of being,
+      signature/via negativa, discovery/faith seeking understanding, grammar/Logos,
+      termini/creation-revelation-eschatological reserve, guards/theological virtues.
+      |
+
+      | **S07** | Formal and mathematical layer. | The canon is formalizable as a
+      typed system: address algebra, expansion function, signature feature vector,
+      IC partial order, pressure test, Why-Gate, grammar as set-theoretic construction,
+      well-foundedness condition, guards as formal constraints. |
+
+      | **S08** | Bridge integrity and cross-domain checks. | The register templates
+      are internally sound; the invariant signature is register-neutral in vocabulary
+      but possibly formalist-biased in application; the grammar formula is well-formed
+      modulo admission; the guards are uniformly applicable. |
+
+      | **S09** | Open questions and falsification boundaries. | Ten open questions
+      and twelve falsification conditions are enumerated, each marked OPEN with rivals
+      and next tests, consistent with the canon''s own discipline. |
+
+      | **S10** | Consilience summary and next steps. | The canon''s parts converge
+      on a single methodology; the next steps are specified. |'
+    B. The Consilient Claim: 'The canon''s central claim, restated in the light of
+      all ten sections, is:
+
+
+      > **A claim''s strength and meaning can be systematically analyzed by opening
+      it into register-native sub-atoms; when two fully opened structures from different
+      registers share an invariant signature, an isomorphism candidate is born, which
+      must be graded (IC-0 to IC-5), pressure-tested, and gated (WHY_CLOSED, WHY_FAILED,
+      WHY_OPEN); and the universal grammar is the emergent structure of all admitted
+      atoms, confirmed isomorphisms, and their typed dependency edges, viewed whole.**
+
+
+      This claim is consilient in the sense that it draws together:
+
+
+      - **A unit of analysis** (the atom, C1–C7).
+
+      - **A rule of expansion** (register-native opening, C8–C13).
+
+      - **A rule of comparison** (invariant signature, C14).
+
+      - **A rule of discovery** (isomorphism candidate, C15–C16).
+
+      - **A rule of validation** (grading, pressure test, Why-Gate, C17–C19).
+
+      - **A rule of storage** (bridge atom, C20).
+
+      - **A rule of emergence** (universal grammar, C21).
+
+      - **A rule of termination** (recursion termini, C22–C23).
+
+      - **A rule of discipline** (guards, C24).
+
+      - **A one-sentence summary** (C25).
+
+
+      Each rule is independently motivated, and together they form a single pipeline.
+      The canon''s consilience is not that it unifies disparate domains by fiat, but
+      that it provides a single procedure — expansion, comparison, grading, gating
+      — that can be applied across domains without erasing their differences.'
+    C. The Emergent Universal Grammar as the Canon's Consilient Object: "The universal\
+      \ grammar (C21) is the canon's consilient object par excellence. It is not a\
+      \ document, a theory, or a set of imposed categories. It is the structure that\
+      \ remains when everything that could not survive scrutiny has been honestly\
+      \ removed. It is:\n\n```text\nUNIVERSAL GRAMMAR = the set of all admitted atoms\n\
+      \                  + all confirmed isomorphisms (IC-4/5, WHY-gated)\n      \
+      \            + the typed dependency edges between them\n                  viewed\
+      \ whole.\n```\n\nThe grammar's consilience is procedural: every node earned\
+      \ its place through the pipeline; every edge is typed by the expansion relation;\
+      \ every isomorphism survived the pressure test and the Why-Gate; every gap is\
+      \ marked OPEN rather than filled with preference. The grammar is what the canon's\
+      \ discipline produces when it is followed honestly."
+    D. What the Canon Has Established: 'On the basis of the prior nine sections, the
+      canon has established:
+
+
+      1. **A well-defined unit of analysis.** The atom is addressable, immutable in
+      identity, dual-formatted, and metadata-tagged (C1–C7).
+
+      2. **A register-native expansion rule.** Claims open along their register into
+      sub-atoms that follow the anatomy of that register (C8–C13).
+
+      3. **A name-free comparison rule.** Fully opened atoms yield invariant signatures
+      that can be compared without labels (C14).
+
+      4. **A graded, adversarial validation procedure.** Isomorphism candidates are
+      graded IC-0 to IC-5, pressure-tested, and gated (C15–C19).
+
+      5. **A storage format for surviving isomorphisms.** Bridge atoms carry preserved
+      structure, lost structure, grade, countermodels, and next test (C20).
+
+      6. **A bottom-up definition of the universal grammar.** The grammar is the emergent
+      structure of the admitted graph (C21).
+
+      7. **A finite, non-circular recursion.** Expansion terminates at PRIMITIVE,
+      EMPIRICAL INPUT, or OPEN (C22–C23).
+
+      8. **A set of non-negotiable guards.** Eight procedural safeguards protect the
+      pipeline from known failure modes (C24).
+
+      9. **A one-sentence summary.** The canon''s thesis is compressible into a single
+      testable sentence (C25).'
+    E. What the Canon Has Not Established: 'The canon has not established:
+
+
+      1. **Admission criteria.** The universal grammar formula depends on an admission
+      procedure that is not fully specified (S08, S09 Q1).
+
+      2. **Loss field specification.** The bridge atom''s loss field is mandatory
+      but not formally defined (S08, S09 Q2).
+
+      3. **Signature neutrality.** The invariant signature may impose a formalist
+      bias (S05 Objection 3, S08 Check 1, S09 Q3).
+
+      4. **Analyst independence.** The pressure test and Why-Gate are conducted by
+      the analyst (S05 Objection 4, S09 Q4).
+
+      5. **WHY_CLOSED levels.** The levels of WHY_CLOSED are not enumerated (S09 Q5).
+
+      6. **Well-foundedness proof.** The expansion relation''s well-foundedness is
+      asserted, not proved (S07, S09 Q6).
+
+      7. **Non-triviality.** The grammar''s non-triviality for a rich corpus is not
+      demonstrated (S05 Objection 5, S09 Q7).
+
+      8. **Advantage measure.** The pressure test''s advantage measure is not formally
+      defined (S07, S09 Q8).
+
+      9. **Termini exhaustiveness.** The three recursion termini may not be exhaustive
+      (S05 Objection 6, S09 Q9).
+
+      10. **Structure vs. meaning.** The canon''s structural comparison may not capture
+      semantic content (S05 Objection 10, S09 Q10).
+
+
+      These are the canon''s honest boundaries. They are marked OPEN, preserved with
+      their rivals and next tests, consistent with the canon''s own discipline (C22,
+      C23).'
+    F. Next Steps: 'The canon''s next steps follow directly from its open questions
+      and falsification boundaries. They are ordered by priority: the first steps
+      are prerequisites for the later ones.
+
+
+      #### Step 1 — Produce a worked example of a full atom expansion
+
+
+      The canon provides no worked example of a full atom expansion from any register
+      (S04, Evidentiary Gaps). The first next step is to select a concrete claim from
+      each register and open it fully along its native template, producing sub-atoms
+      with addresses, metadata, and termini.
+
+
+      - **Deliverable:** Five worked expansions (one per register: history, physics,
+      math, theology, bridge), each with a full address tree and a terminus.
+
+      - **Test:** Does the expansion reach a terminus without circularity (C23)? Does
+      the template cover the claim''s anatomy (C9–C13)?
+
+      - **Falsification:** A claim that cannot be opened along its register without
+      distortion falsifies F2 or F3 (S09).
+
+
+      #### Step 2 — Produce a worked example of an isomorphism candidate
+
+
+      Select two fully opened atoms from different registers and compare their invariant
+      signatures. Grade the candidate, run the pressure test, and face the Why-Gate.
+
+
+      - **Deliverable:** One worked isomorphism candidate with its IC grade, pressure-test
+      verdict, Why-Gate outcome, and bridge atom record.
+
+      - **Test:** Does the candidate survive the pressure test (C18)? Does the Why-Gate
+      yield WHY_CLOSED, WHY_FAILED, or WHY_OPEN (C19)?
+
+      - **Falsification:** A candidate that passes the pressure test but is later
+      shown to have no structural correspondence falsifies F6 or F7 (S09).
+
+
+      #### Step 3 — Specify the admission criteria
+
+
+      The universal grammar formula depends on an admission procedure that is not
+      fully specified (S08, S09 Q1). Specify the criteria and test them for inter-analyst
+      agreement.
+
+
+      - **Deliverable:** A written admission procedure with explicit criteria, tested
+      against a corpus of claims by at least two analysts.
+
+      - **Test:** Do two analysts applying the same criteria admit the same atoms?
+      If not, the criteria are underdetermined.
+
+      - **Falsification:** Persistent inter-analyst disagreement falsifies the claim
+      that admission can be specified (S09 Q1).
+
+
+      #### Step 4 — Formalize the pressure test''s advantage measure
+
+
+      The pressure test requires measuring whether the preferred mapping has a "real
+      advantage" over rivals (C18), but the canon does not define "advantage" (S07,
+      S09 Q8). Formalize the measure and apply it to a concrete candidate.
+
+
+      - **Deliverable:** A formal definition of advantage (e.g., feature-count difference,
+      IC-grade comparison, or a qualitative rubric) with a worked application.
+
+      - **Test:** Does the formalized measure yield a determinate, reproducible verdict?
+
+      - **Falsification:** A measure that yields different verdicts for the same candidate
+      under different analysts falsifies the pressure test''s reliability (F7).
+
+
+      #### Step 5 — Test the invariant signature across registers
+
+
+      Apply the invariant signature to a set of claims from each register and check
+      whether it captures what practitioners of that register consider essential (S05
+      Objection 3, S08 Check 1, S09 Q3).
+
+
+      - **Deliverable:** A cross-register signature audit with findings on coverage
+      and bias.
+
+      - **Test:** Does the signature systematically miss essential features in any
+      register?
+
+      - **Falsification:** A register whose essential features cannot be represented
+      in the signature falsifies F4 (S09).
+
+
+      #### Step 6 — Conduct a blind replication study
+
+
+      Two analysts independently open the same atoms and compare signatures. Measure
+      inter-analyst agreement (S05 Objection 4, S09 Q4).
+
+
+      - **Deliverable:** A blind replication report with agreement metrics.
+
+      - **Test:** Is inter-analyst agreement high enough to support the claim that
+      the method is not merely analyst-dependent?
+
+      - **Falsification:** Low agreement falsifies the claim that the pressure test
+      and Why-Gate can approximate analyst independence (S09 Q4).
+
+
+      #### Step 7 — Apply the pipeline to a real corpus
+
+
+      Apply the full pipeline to a concrete corpus and publish the resulting grammar
+      (S05 Objection 5, S09 Q7, S09 F12).
+
+
+      - **Deliverable:** A published grammar with its nodes, edges, grades, and open
+      questions.
+
+      - **Test:** Is the grammar non-trivial for a corpus that should be rich? Does
+      it survive adversarial scrutiny?
+
+      - **Falsification:** A trivial grammar for a rich corpus weakens the canon''s
+      central claim (F9, F12).
+
+
+      #### Step 8 — Formalize the well-foundedness of expansion
+
+
+      Attempt to prove that the expansion relation is well-founded, or construct a
+      counterexample (S07, S09 Q6).
+
+
+      - **Deliverable:** A formal proof or a counterexample (a self-referential claim
+      that opens indefinitely).
+
+      - **Test:** Does every chain of sub-atoms terminate at a terminus (C22)?
+
+      - **Falsification:** An infinite chain without a terminus falsifies F10 (S09).
+
+
+      #### Step 9 — Enumerate the levels of WHY_CLOSED
+
+
+      Collect a set of WHY_CLOSED outcomes and attempt to classify them by level (S09
+      Q5).
+
+
+      - **Deliverable:** A taxonomy of WHY_CLOSED levels (e.g., surface, mechanism,
+      principle, ground).
+
+      - **Test:** Does a stable taxonomy emerge?
+
+      - **Falsification:** Persistent inability to classify WHY_CLOSED outcomes by
+      level suggests the levels are not enumerable in advance.
+
+
+      #### Step 10 — Test the structure/meaning distinction
+
+
+      Construct two claims with identical invariant signatures but different meanings
+      and check whether the canon can distinguish them (S05 Objection 10, S09 Q10).
+
+
+      - **Deliverable:** A pair of signature-identical, meaning-different claims with
+      an analysis of whether the Why-Gate distinguishes them.
+
+      - **Test:** Does the Why-Gate capture the semantic difference?
+
+      - **Falsification:** A pair that the canon cannot distinguish falsifies the
+      claim that structural comparison plus the Why-Gate is sufficient for isomorphism
+      (F5).'
+    G. The Consilience of the Next Steps: 'The next steps are not a miscellaneous
+      list. They are the canon''s own pipeline applied to itself:
+
+
+      - **Steps 1–2** are expansions: they open the canon''s claims into sub-claims
+      with termini.
+
+      - **Steps 3–4** are specifications: they fill in the canon''s underdetermined
+      parameters.
+
+      - **Steps 5–6** are pressure tests: they subject the canon''s signature and
+      procedure to adversarial scrutiny.
+
+      - **Step 7** is the grammar: it applies the pipeline to a real corpus and publishes
+      the result.
+
+      - **Steps 8–10** are open questions: they mark the canon''s honest boundaries
+      and specify what would count as an answer.
+
+
+      This is the canon''s consilience in action: the same discipline that structures
+      claims also structures the work of testing the canon. The canon is not exempt
+      from its own guards. It is subject to them.'
+    H. The Canon's Place in the Admitted Graph: 'The canon is itself a claim — or,
+      more precisely, a bundle of claims (C1–C25) that can be addressed, expanded,
+      graded, and gated. Its place in the admitted graph is not yet determined. It
+      has been proposed (AI_PROPOSED), analyzed across ten sections, and found to
+      be internally coherent, structurally sound in its bridges, and honest about
+      its boundaries. But it has not been admitted. Admission is ruled by the human
+      (C24), and the canon''s own guards forbid automated canonization.
+
+
+      The canon''s next step, therefore, is not to declare itself admitted. It is
+      to submit itself to the pipeline: to be expanded, compared, graded, pressure-tested,
+      and gated. If it survives, it earns its place. If it does not, it is marked
+      OPEN with its rivals and next test. Either way, the discipline holds.'
+    I. The One-Sentence Version, Restated: 'The canon''s one-sentence version (C25)
+      reads:
+
+
+      > **Every claim is an atom; every atom opens along its register into sub-atoms;
+      when two opened structures match without names, an isomorphism is born, graded,
+      and gated — and the universal grammar is simply everything that survives.**
+
+
+      This is the canon''s consilience in one sentence. It is also the canon''s next
+      test: if the sentence is true, the pipeline will produce a grammar that survives
+      scrutiny. If it is false, the pipeline will produce a grammar that does not.
+      The canon''s value is not that it guarantees the former; it is that it makes
+      the difference visible.'
+    J. Summary Table: '| Aspect | Status | Next step |
+
+      |---|---|---|
+
+      | Atomic unit (C1–C7) | Defined, internally coherent. | Worked expansion (Step
+      1). |
+
+      | Expansion rule (C8–C13) | Defined, templates sound. | Worked expansion (Step
+      1). |
+
+      | Invariant signature (C14) | Defined, possibly formalist-biased. | Cross-register
+      audit (Step 5). |
+
+      | Isomorphism rule (C15–C20) | Defined, analyst-dependent. | Worked candidate
+      (Step 2), blind replication (Step 6). |
+
+      | Universal grammar (C21) | Defined, admission underdetermined. | Specify admission
+      (Step 3), apply to corpus (Step 7). |
+
+      | Recursion termini (C22–C23) | Defined, well-foundedness unproved. | Formalize
+      well-foundedness (Step 8). |
+
+      | Guards (C24) | Defined, register-neutral. | Apply to canon itself (Section
+      H). |
+
+      | One-sentence summary (C25) | Stated, testable. | Test via Steps 1–10. |'
+    K. Closing: 'The Claim Atom Expansion Canon v0.1 is a methodology for building
+      a universal grammar from the bottom up. Its consilience is procedural: the same
+      discipline — expansion, comparison, grading, gating — applies to claims, to
+      bridges, and to the canon itself. Its honesty is structural: every gap is marked
+      OPEN, every terminus is named, every guard is non-negotiable. Its next steps
+      are its own pipeline applied to itself.
+
+
+      The canon does not claim to have written the universal grammar. It claims to
+      have specified the procedure by which the grammar can emerge. Whether it succeeds
+      is not a matter of assertion but of survival: the grammar is what remains when
+      everything that could not survive scrutiny has been honestly removed. The canon''s
+      place in that grammar is not yet determined. It is, like every other claim,
+      waiting to be opened.'
+    1. Quotation Verification: 'Every non-empty `quote` in the `map` stage was checked
+      against the source text. All quotations are verbatim substrings of the source.
+      No invented quotations were found.
+
+
+      | Object | Quote (abbreviated) | Verbatim? |
+
+      |---|---|---|
+
+      | C1 | "The atom is the unit of the corpus..." | ✅ Yes |
+
+      | C2 | "**Address scheme** (as deployed in the repo):..." | ✅ Yes |
+
+      | C3 | "**Atom (A###):** the claim''s immutable identity..." | ✅ Yes |
+
+      | C4 | "**Layer (L#):** the DG layer the claim operates at..." | ✅ Yes |
+
+      | C5 | "**Component (C#):** the decomposed sub-claims..." | ✅ Yes |
+
+      | C6 | "**Dual format, one source:**..." | ✅ Yes |
+
+      | C7 | "**Every atom carries:**..." | ✅ Yes |
+
+      | C8 | "A claim \"opens\" along its register..." | ✅ Yes |
+
+      | C9 | "```text\nEVENT → POSSIBLE OBSERVERS → WITNESS..." | ✅ Yes |
+
+      | C10 | "```text\nQUANTITY → UNITS → DYNAMICS..." | ✅ Yes |
+
+      | C11 | "```text\nDEFINITION → AXIOM USE → LEMMA..." | ✅ Yes |
+
+      | C12 | "```text\nSOURCE → WITNESS TRADITION → PROCLAMATION..." | ✅ Yes |
+
+      | C13 | "```text\nSOURCE REGISTER → TARGET REGISTER → MAPPING..." | ✅ Yes |
+
+      | C14 | "When two atoms — from any two registers..." | ✅ Yes |
+
+      | C15 | "If the signatures match, an isomorphism **candidate** is born:" | ✅
+      Yes |
+
+      | C16 | "1. **Discovery, not assertion.**..." | ✅ Yes |
+
+      | C17 | "2. **Grading.**..." | ✅ Yes |
+
+      | C18 | "3. **The pressure test.**..." | ✅ Yes |
+
+      | C19 | "4. **The Why-Gate.**..." | ✅ Yes |
+
+      | C20 | "5. **The bridge record.**..." | ✅ Yes |
+
+      | C21 | "The universal grammar is not a document someone writes..." | ✅ Yes
+      |
+
+      | C22 | "Atoms contain atoms. Expansion continues downward..." | ✅ Yes |
+
+      | C23 | "No expansion may terminate in a label borrowed from the answer..."
+      | ✅ Yes |
+
+      | C24 | "- Analogy is never promoted to identity..." | ✅ Yes |
+
+      | C25 | "**Every claim is an atom; every atom opens along its register...**"
+      | ✅ Yes |
+
+
+      **Result:** All 25 quotations are verbatim. No violations of the quotation rule.'
+    2. Status Label Consistency: 'All stages (S01–S10) are labeled `AI_PROPOSED`.
+      This is consistent with the canon''s own guard: "No automated run canonizes;
+      the human rules admission" (C24). The analysis is candidate AI analysis, never
+      admission or proof verification. No stage claims to have admitted the canon
+      or verified its truth.
+
+
+      **Result:** Status labels are consistent with the content and with the canon''s
+      guards.'
+    3. Unsupported Claims: 'The following claims in the analysis are flagged as unsupported
+      by the source text or by external evidence:
+
+
+      | Claim | Location | Issue |
+
+      |---|---|---|
+
+      | "The canon''s evidence is structural and internal" | S04 | The canon does
+      not explicitly state this; it is an inference from the absence of external citations.
+      |
+
+      | "The canon''s structure is theologically legible" | S06 | The theological
+      translation is an analogy, not a claim made by the source. The source does not
+      mention theology as a register for translation, only as a register for claims.
+      |
+
+      | "The canon is formalizable as a typed system" | S07 | The formalization is
+      a reconstruction, not a claim made by the source. The source does not present
+      itself as a formal system. |
+
+      | "The register templates are internally sound" | S08 | This is an evaluative
+      judgment, not a claim made by the source. The source presents the templates
+      as operational anatomy, not as proven sound. |
+
+      | "The canon''s central claim is conditional" | S09 | The source does not state
+      the claim conditionally; this is an interpretation. |
+
+      | "The canon''s next steps are its own pipeline applied to itself" | S10 | This
+      is a synthesis, not a claim made by the source. |
+
+
+      These claims are flagged as AI-proposed interpretations, not as statements supported
+      by the source. They are consistent with the canon''s spirit (they are marked
+      as proposals, not admissions), but they should not be mistaken for the canon''s
+      own assertions.
+
+
+      **Result:** Unsupported claims are flagged explicitly. No unsupported claim
+      is presented as if it were the canon''s own.'
+    4. Placeholder Text: 'No placeholder text (e.g., "TBD", "TODO", "lorem ipsum",
+      "[insert]") was found in any stage. All sections are fully written.
+
+
+      **Result:** No placeholder text remains.'
+    5. Internal Consistency: 'The ten sections are internally consistent:
+
+
+      - S01''s one-sentence claim matches C25.
+
+      - S02''s axiom spine matches the definitions in the map stage.
+
+      - S03''s argument chain follows the order of the canon''s sections.
+
+      - S04''s evidence catalog matches the cross-references in the source.
+
+      - S05''s objections are drawn from the canon''s own guards and gaps.
+
+      - S06''s theological translation is marked as an analogy, not an identity.
+
+      - S07''s formalization is marked as a reconstruction, not a claim.
+
+      - S08''s bridge integrity checks are consistent with S05''s objections.
+
+      - S09''s open questions and falsification boundaries are consistent with S05
+      and S08.
+
+      - S10''s consilience summary draws on all prior sections.
+
+
+      **Result:** The sections are internally consistent.'
+    6. The Canon's Own Guards: 'The analysis respects the canon''s guards:
+
+
+      | Guard | Respected? |
+
+      |---|---|
+
+      | Analogy is never promoted to identity. | ✅ S06 explicitly states the translation
+      is an analogy, not an identity. |
+
+      | A bridge never propagates as proof. | ✅ S08 treats bridges as structural comparisons,
+      not proofs. |
+
+      | A specification is never reported as a theorem. | ✅ S07 treats the formalization
+      as a reconstruction, not a theorem. |
+
+      | A selection criterion is never written after the pattern is seen. | ✅ The
+      analysis does not propose selection criteria post hoc. |
+
+      | No automated run canonizes; the human rules admission. | ✅ All stages are
+      AI_PROPOSED; no admission is claimed. |
+
+      | Corrections print where claims printed; nothing is silently edited or deleted.
+      | ✅ The audit flags issues rather than silently correcting them. |
+
+      | The resolver resolves references; it never creates authority. | ✅ The analysis
+      resolves references but does not create authority. |
+
+      | The guard tool enforces format; it never grades truth. | ✅ The audit checks
+      format and consistency, not truth. |
+
+
+      **Result:** The analysis respects all eight guards.'
+    7. Audit Findings: '| Finding | Severity | Status |
+
+      |---|---|---|
+
+      | All quotations are verbatim. | None | ✅ Pass |
+
+      | Status labels are consistent. | None | ✅ Pass |
+
+      | Unsupported claims are flagged. | Low | ✅ Pass |
+
+      | No placeholder text. | None | ✅ Pass |
+
+      | Internal consistency. | None | ✅ Pass |
+
+      | Guards respected. | None | ✅ Pass |
+
+      | The canon''s admission criteria are underdetermined. | Medium | ⚠️ Flagged
+      (S08, S09 Q1) |
+
+      | The invariant signature may be formalist-biased. | Medium | ⚠️ Flagged (S05
+      Objection 3, S08 Check 1, S09 Q3) |
+
+      | The analyst''s constructive role cannot be eliminated. | Medium | ⚠️ Flagged
+      (S05 Objection 4, S09 Q4) |
+
+      | The canon''s falsifiability is untested. | Medium | ⚠️ Flagged (S05 Objection
+      8, S09 F12) |'
+    8. Audit Conclusion: 'The Claim Atom Expansion Canon v0.1 has been audited across
+      ten analytical sections. The audit confirms:
+
+
+      1. **Quotation integrity:** All quoted text appears verbatim in the source.
+
+      2. **Status consistency:** All stages are correctly labeled `AI_PROPOSED`.
+
+      3. **Unsupported claims:** Flagged explicitly; none are presented as the canon''s
+      own assertions.
+
+      4. **Placeholder text:** None remains.
+
+      5. **Internal consistency:** The sections are mutually consistent.
+
+      6. **Guard compliance:** The analysis respects all eight non-negotiable guards.
+
+
+      The canon''s honest boundaries — underdetermined admission, possible signature
+      bias, analyst dependence, and untested falsifiability — are flagged as OPEN,
+      consistent with the canon''s own discipline (C22, C23). The canon is not admitted;
+      it is proposed. Its place in the admitted graph is not yet determined. It is,
+      like every other claim, waiting to be opened.'
+  model: deepseek-chat
+  provider: deepseek
+_metadata:
+  source_path: 6c937e2acc49fcd1ef4f25401c9b50a89dd537b2b054f4ebeca2940bb7560a46.md
+  generated_at: '2026-09-23T02:16:28.554611+00:00'
+  sha256: eb1ac507e6b77d68f7f0efa9b32cb42a0c732c75238cff9e60f49e883b78d217

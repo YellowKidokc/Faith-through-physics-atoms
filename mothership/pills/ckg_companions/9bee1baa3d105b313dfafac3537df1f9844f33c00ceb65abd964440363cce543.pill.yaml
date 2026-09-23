@@ -1,0 +1,2317 @@
+face:
+  uuid: 9bee1baa3d105b313dfafac3537df1f9844f33c00ceb65abd964440363cce543
+  name: CKG Companion — 9bee1baa3d105b313dfafac3537df1f9844f33c00ceb65abd964440363cce543
+  target_type: paper_companion
+  status: unscored
+  source_path_raw: \\192.168.2.50\h_hp\Desktop\APIs\APIs\CKG\INBOX\03_GENERAL\the-moral-universe-the-hammer_epistemic_00fcf55d.md
+  source:
+    doc_uuid: 9bee1baa3d105b313dfafac3537df1f9844f33c00ceb65abd964440363cce543
+    doc_sha256: f37567e582756368def952224b099f761d3825dfbe9c322671ad4e4b80fb0b48
+veins:
+  ckg_frontmatter:
+    paper_uuid: 9bee1baa3d105b313dfafac3537df1f9844f33c00ceb65abd964440363cce543
+    source_path: \\192.168.2.50\h_hp\Desktop\APIs\APIs\CKG\INBOX\03_GENERAL\the-moral-universe-the-hammer_epistemic_00fcf55d.md
+    source_hash: f37567e582756368def952224b099f761d3825dfbe9c322671ad4e4b80fb0b48
+    model: deepseek-chat
+    provider: deepseek
+    grade: UNSCORED
+  source_yaml: {}
+  sections:
+    Source: "---\ntype: epistemic_intake_v2\ntitle: \"The Moral Universe: The Hammer\"\
+      \nstatus: CANDIDATE_DRAFT\ncanon_status: candidate_draft_not_admitted\nsource_file:\
+      \ \"\\\\\\\\192.168.2.50\\\\h_hp\\\\Desktop\\\\_____pipeline-workflows-main\\\
+      \\EVIDENCE_CHAIN_INTAKE\\\\INBOX\\\\P07_THE_MORAL_UNIVERSE.md\"\nsource_sha256:\
+      \ 75f21042eede3348263eddb587f8630b38f393f47716b348dc5298af760049c7\nrun_id:\
+      \ 20260903-180115\nmodel: \"deepseek-chat\"\nheader_tags: [\"morality\", \"\
+      physics\", \"entropy\"]\nreuse_grade: \"D\"\nreuse_score: 0.0\nreuse_recommendation:\
+      \ \"ARCHIVE_ONLY\"\ncanonical_recommendation: \"REJECT_AS_WRITTEN\"\n---\n\n\
+      # The Moral Universe: The Hammer\n\n> **CANDIDATE DRAFT - NOT ADMITTED**  \n\
+      > **Governing question:** What is the fundamental nature of morality and sin?\
+      \  \n> **Source answer:** Morality is physics, and sin is entropy.  \n> **Reuse:**\
+      \ D - 0.0/100 - ARCHIVE_ONLY  \n> **Tags:** morality | physics | entropy"
+    0. Source Integrity: '- Source: `\\192.168.2.50\h_hp\Desktop\_____pipeline-workflows-main\EVIDENCE_CHAIN_INTAKE\INBOX\P07_THE_MORAL_UNIVERSE.md`
+
+      - SHA-256: `75f21042eede3348263eddb587f8630b38f393f47716b348dc5298af760049c7`
+
+      - Exact source preserved: `yes`
+
+      - Three-call run: `20260903-180115`'
+    Definitions: None identified.
+    Premises: None identified.
+    Claims: '- **id:** C001; **statement:** Morality is physics.; **claimed_mode:**
+      CONJECTURE; **anchor:** Core Argument: Morality is Physics.
+
+      - **id:** C002; **statement:** Sin is entropy.; **claimed_mode:** CONJECTURE;
+      **anchor:** Core Argument: Sin is Entropy.'
+    Evidence: None identified.
+    Equations and Formal Results: None identified.
+    Predictions and Falsifiers: None identified.
+    2. Epistemic Modes: '| Mode | Meaning |
+
+      |---|---|
+
+      | `DEFINITION` | stipulated meaning |
+
+      | `LOGICAL` | claimed logical consequence |
+
+      | `MATHEMATICAL` | mathematical proposition |
+
+      | `FORMAL_VERIFIED` | Lean, Z3, or another machine-checkable certificate exists
+      |
+
+      | `EMPIRICAL` | claim about observations or measurements |
+
+      | `HISTORICAL` | claim about past events, persons, documents, or testimony |
+
+      | `PHILOSOPHICAL` | metaphysical or epistemological inference |
+
+      | `THEOLOGICAL` | doctrine, revelation, or confessional claim |
+
+      | `BRIDGE` | claimed correspondence or transfer across epistemic modes |
+
+      | `ANALOGY` | similarity offered for illumination without identity |
+
+      | `CONJECTURE` | proposed but unresolved claim |'
+    Claim assignments: '- **claim_id:** C001; **mode:** CONJECTURE; **status:** UNRESOLVED
+
+      - **claim_id:** C002; **mode:** CONJECTURE; **status:** UNRESOLVED'
+    3. Argument Graph: None identified.
+    Candidate hidden premises: None identified.
+    Assumption ablation: None identified.
+    5. Scorecard: '| Dimension | Score / 10 | Coverage | Confidence |
+
+      |---|---:|---:|---:|
+
+      | Logical Validity | 0.0 | 0/18 | 0.1 |
+
+      | Internal Coherence | 0.0 | 0/18 | 0.1 |
+
+      | Definition Precision | 0.0 | 0/18 | 0.1 |
+
+      | Evidence Adequacy | 0.0 | 0/18 | 0.1 |
+
+      | Explanatory Compression | 0.0 | 0/18 | 0.1 |
+
+      | Rival Discrimination | 0.0 | 0/18 | 0.1 |
+
+      | Testability and Falsifiability | 0.0 | 0/18 | 0.1 |
+
+      | Cross-Domain Integrity | 0.0 | 0/18 | 0.1 |
+
+      | Adversarial Robustness | 0.0 | 0/18 | 0.1 |
+
+      | Epistemic Calibration | 0.0 | 0/18 | 0.1 |
+
+
+      - Raw score: **0.0/100**
+
+      - Integrity factor: **0.1**
+
+      - Final score: **0.0/100**
+
+      - Explanation: All dimensions scored zero due to lack of definitions, evidence,
+      and argument. Integrity factor reduced by unresolved category errors and hidden
+      premises.'
+    Global gates: '- **gate:** UNKNOWN_SOURCE; **triggered:** True; **reason:** Source
+      is ''Consciousness Papers'' with no verifiable origin.
+
+      - **gate:** CRITICAL_HIDDEN_PREMISE; **triggered:** True; **reason:** Identity
+      claims require hidden premises about reduction.
+
+      - **gate:** FAILED_FORMAL_RECEIPT; **triggered:** False; **reason:** No formal
+      claims.
+
+      - **gate:** UNTESTED_CENTRAL_EMPIRICAL_CLAIM; **triggered:** False; **reason:**
+      No empirical claims.
+
+      - **gate:** UNRESOLVED_CATEGORY_ERROR; **triggered:** True; **reason:** Category
+      errors in C001 and C002.
+
+      - **gate:** FATAL_COUNTEREXAMPLE; **triggered:** False; **reason:** No counterexample
+      possible.
+
+      - **gate:** SOURCE_MISMATCH; **triggered:** False; **reason:** No mismatch detected.
+
+      - **gate:** UNRESOLVED_CONTRADICTION; **triggered:** False; **reason:** No contradictions.'
+    Logical Validity: '- **FAIL** - conclusion follows from stated premises. No premises
+      provided. _(objects: none)_
+
+      - **FAIL** - no equivocation. Terms ''morality'', ''physics'', ''sin'', ''entropy''
+      are undefined and likely equivocal. _(objects: C001, C002)_
+
+      - **NOT_APPLICABLE** - no illicit converse. No conditional claims. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - no circular dependency. No argument structure. _(objects:
+      none)_
+
+      - **FAIL** - no suppressed premise. Identity claims require hidden premises
+      about reduction or correspondence. _(objects: C001, C002)_
+
+      - **NOT_APPLICABLE** - quantifiers preserved. No quantified statements. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - necessity not upgraded from possibility. No modal claims.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - sufficient condition not confused with necessary condition.
+      No conditionals. _(objects: none)_
+
+      - **NOT_APPLICABLE** - correlation not confused with causation. No causal claims.
+      _(objects: none)_
+
+      - **FAIL** - analogy not confused with identity. Claims assert identity without
+      evidence of analogy. _(objects: C001, C002)_
+
+      - **NOT_APPLICABLE** - existence not inferred from notation alone. No existence
+      claims. _(objects: none)_
+
+      - **NOT_APPLICABLE** - scope preserved. No scope specified. _(objects: none)_
+
+      - **NOT_APPLICABLE** - modal operator preserved. No modal operators. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - no contradictory premises. No premises. _(objects: none)_
+
+      - **FAIL** - inference rule identifiable. No inference rule. _(objects: none)_
+
+      - **FAIL** - countermodel attempted. No attempt. _(objects: none)_
+
+      - **FAIL** - premise ablation attempted. No premises to ablate. _(objects: none)_
+
+      - **FAIL** - conclusion survives strongest charitable reconstruction. No reconstruction
+      possible without definitions. _(objects: none)_'
+    Internal Coherence: '- **UNKNOWN** - central claims are mutually compatible. No
+      definitions to assess compatibility. _(objects: C001, C002)_
+
+      - **FAIL** - definitions remain stable across sections. No definitions provided.
+      _(objects: none)_
+
+      - **PASS** - the conclusion agrees with the stated thesis. The claims match
+      the thesis. _(objects: C001, C002)_
+
+      - **NOT_APPLICABLE** - later claims do not silently reverse earlier claims.
+      Only two claims, no reversal. _(objects: none)_
+
+      - **NOT_APPLICABLE** - dependency ordering is acyclic or cycles are explicitly
+      justified. No dependencies. _(objects: none)_
+
+      - **NOT_APPLICABLE** - examples agree with governing rules. No examples. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - equations agree with prose interpretations. No equations.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - tables and diagrams agree with the text. No tables or
+      diagrams. _(objects: none)_
+
+      - **PASS** - claim strength is consistent across abstract and body. Both claims
+      are equally strong assertions. _(objects: C001, C002)_
+
+      - **NOT_APPLICABLE** - negative controls do not defeat the preferred claim.
+      No controls. _(objects: none)_
+
+      - **NOT_APPLICABLE** - exceptions are acknowledged consistently. No exceptions.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - different versions or sources are not silently conflated.
+      Single source. _(objects: none)_
+
+      - **FAIL** - the proposed model uses one compatible ontology. No ontology specified.
+      _(objects: none)_
+
+      - **FAIL** - terms mapped across domains retain declared roles. No mapping declared.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - stated boundaries are honored downstream. No boundaries.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - recommendations follow the analysis. No recommendations.
+      _(objects: none)_
+
+      - **UNKNOWN** - no unresolved contradiction is hidden. No content to check.
+      _(objects: none)_
+
+      - **FAIL** - the whole account survives a consistency read. No account to read.
+      _(objects: none)_'
+    Definition Precision: '- **FAIL** - every load-bearing term is defined. Morality,
+      physics, sin, entropy are undefined. _(objects: C001, C002)_
+
+      - **NOT_APPLICABLE** - definitions are non-circular. No definitions. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - definitions do not contain the desired conclusion. No
+      definitions. _(objects: none)_
+
+      - **NOT_APPLICABLE** - necessary and accidental properties are separated. No
+      definitions. _(objects: none)_
+
+      - **FAIL** - technical and ordinary meanings are distinguished. No distinction
+      made. _(objects: none)_
+
+      - **NOT_APPLICABLE** - symbols are defined before use. No symbols. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - units, domains, and codomains are specified where relevant.
+      No formal domains. _(objects: none)_
+
+      - **FAIL** - identity criteria are stated. No criteria for identity between
+      domains. _(objects: C001, C002)_
+
+      - **NOT_APPLICABLE** - boundary cases are addressed. No definitions. _(objects:
+      none)_
+
+      - **FAIL** - operationalization is supplied for measurable terms. No operationalization.
+      _(objects: none)_
+
+      - **FAIL** - theological terms are not reduced to physical definitions. Sin
+      is equated with entropy without theological nuance. _(objects: C002)_
+
+      - **FAIL** - physical terms are not expanded by theological connotation. Entropy
+      is given moral connotation. _(objects: C002)_
+
+      - **FAIL** - analogy terms declare their limited sense. No analogy declared.
+      _(objects: none)_
+
+      - **FAIL** - bridge predicates identify the shared feature exactly. No bridge
+      predicate. _(objects: none)_
+
+      - **FAIL** - competing definitions are considered where material. No consideration.
+      _(objects: none)_
+
+      - **FAIL** - definitions remain usable in counterexamples. No definitions. _(objects:
+      none)_
+
+      - **FAIL** - formal definitions type-check or are clearly marked informal. No
+      formal definitions. _(objects: none)_
+
+      - **FAIL** - a reader can distinguish every neighboring concept. Concepts are
+      conflated. _(objects: C001, C002)_'
+    Evidence Adequacy: '- **FAIL** - each major evidential claim identifies its support.
+      No evidence cited. _(objects: none)_
+
+      - **FAIL** - support is retrievable or its absence is explicit. No support.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - support is relevant to the exact claim. No support. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - support increases the likelihood of the claim. No support.
+      _(objects: none)_
+
+      - **FAIL** - source and claim scopes match. Source is ''Consciousness Papers''
+      but no details. _(objects: none)_
+
+      - **FAIL** - empirical methods are described sufficiently. No empirical methods.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - sample size and selection are adequate where applicable.
+      No empirical data. _(objects: none)_
+
+      - **NOT_APPLICABLE** - measurement uncertainty is reported where applicable.
+      No measurements. _(objects: none)_
+
+      - **NOT_APPLICABLE** - controls or comparison conditions are present where applicable.
+      No controls. _(objects: none)_
+
+      - **NOT_APPLICABLE** - formal receipts match the theorem actually claimed. No
+      formal results. _(objects: none)_
+
+      - **NOT_APPLICABLE** - historical claims distinguish primary and secondary testimony.
+      No historical claims. _(objects: none)_
+
+      - **FAIL** - philosophical premises receive arguments rather than borrowed prestige.
+      No arguments. _(objects: none)_
+
+      - **FAIL** - theological claims identify their confessional or revelatory basis.
+      No basis given. _(objects: C002)_
+
+      - **NOT_APPLICABLE** - independent evidence is distinguished from repeated evidence.
+      No evidence. _(objects: none)_
+
+      - **NOT_APPLICABLE** - counterevidence is represented fairly. No counterevidence.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - citation quantity is not substituted for support quality.
+      No citations. _(objects: none)_
+
+      - **NOT_APPLICABLE** - decorative equations and tables receive no evidential
+      credit. No equations or tables. _(objects: none)_
+
+      - **FAIL** - central conclusion is proportionate to total support. No support.
+      _(objects: none)_'
+    Explanatory Compression: '- **FAIL** - the account explains the central phenomenon.
+      No explanation. _(objects: none)_
+
+      - **FAIL** - the account explains multiple facts with shared structure. No facts
+      explained. _(objects: none)_
+
+      - **FAIL** - primitive commitments are explicitly counted. No commitments. _(objects:
+      none)_
+
+      - **FAIL** - unsupported bridge commitments are explicitly counted. Bridges
+      are asserted without counting. _(objects: C001, C002)_
+
+      - **NOT_APPLICABLE** - free parameters are explicitly counted. No parameters.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - special exceptions are explicitly counted. No exceptions.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - ad hoc rescue assumptions are absent or penalized. No
+      assumptions. _(objects: none)_
+
+      - **FAIL** - the simpler sufficient rival is identified. No rival considered.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - added complexity explains an additional fact. No complexity.
+      _(objects: none)_
+
+      - **FAIL** - the account does not merely rename the phenomenon. It renames morality
+      as physics and sin as entropy. _(objects: C001, C002)_
+
+      - **FAIL** - the mechanism is more informative than the label. No mechanism.
+      _(objects: none)_
+
+      - **FAIL** - compression does not erase relevant distinctions. Distinctions
+      between domains are erased. _(objects: C001, C002)_
+
+      - **FAIL** - scope of explanation is clearly bounded. No scope. _(objects: none)_
+
+      - **FAIL** - predictions are generated beyond accommodated facts. No predictions.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - the same machinery works across cited cases. No cases.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - failed cases are explained rather than omitted. No cases.
+      _(objects: none)_
+
+      - **FAIL** - explanatory gain exceeds ontological cost. No gain. _(objects:
+      none)_
+
+      - **FAIL** - the minimum sufficient account is stated. No account. _(objects:
+      none)_'
+    Rival Discrimination: '- **FAIL** - serious rival accounts are identified. No
+      rivals. _(objects: none)_
+
+      - **NOT_APPLICABLE** - rivals are stated in terms their advocates could accept.
+      No rivals. _(objects: none)_
+
+      - **NOT_APPLICABLE** - the preferred view and rivals explain the same target.
+      No rivals. _(objects: none)_
+
+      - **NOT_APPLICABLE** - shared background assumptions are separated. No assumptions.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - distinctive assumptions are identified. No assumptions.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - comparative explanatory costs are stated. No comparison.
+      _(objects: none)_
+
+      - **FAIL** - a discriminating observation or theorem is proposed. No test. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - the evidence is more expected under the preferred account.
+      No evidence. _(objects: none)_
+
+      - **NOT_APPLICABLE** - the evidence is not equally predicted by a rival. No
+      evidence. _(objects: none)_
+
+      - **NOT_APPLICABLE** - straw-man alternatives are excluded. No alternatives.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - false dichotomies are excluded. No dichotomy. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - brute-fact rivals are assessed rather than dismissed.
+      No rivals. _(objects: none)_
+
+      - **NOT_APPLICABLE** - selection effects are considered. No selection. _(objects:
+      none)_
+
+      - **FAIL** - underdetermination is acknowledged. No acknowledgment. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - rival parameter flexibility is considered. No parameters.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - the preferred account faces the same standard. No standard.
+      _(objects: none)_
+
+      - **FAIL** - a possible reversal of preference is stated. No preference. _(objects:
+      none)_
+
+      - **FAIL** - the surviving comparative advantage is explicit. No advantage.
+      _(objects: none)_'
+    Testability and Falsifiability: '- **FAIL** - central claims have explicit defeat
+      conditions. No defeat conditions. _(objects: none)_
+
+      - **FAIL** - predictions are stated before outcome interpretation where possible.
+      No predictions. _(objects: none)_
+
+      - **FAIL** - predictions are specific. No predictions. _(objects: none)_
+
+      - **FAIL** - predictions are measurable or formally decidable. No predictions.
+      _(objects: none)_
+
+      - **FAIL** - thresholds or expected ranges are given where possible. No thresholds.
+      _(objects: none)_
+
+      - **FAIL** - failure outcomes are distinguishable from success outcomes. No
+      outcomes. _(objects: none)_
+
+      - **FAIL** - tests discriminate the preferred account from rivals. No tests.
+      _(objects: none)_
+
+      - **FAIL** - auxiliary assumptions are identified. No assumptions. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - failed predictions cannot be rescued without recorded
+      cost. No predictions. _(objects: none)_
+
+      - **FAIL** - formal claims name a proof or countermodel path. No formal claims.
+      _(objects: none)_
+
+      - **FAIL** - empirical claims name data and method requirements. No empirical
+      claims. _(objects: none)_
+
+      - **NOT_APPLICABLE** - historical claims name possible disconfirming evidence.
+      No historical claims. _(objects: none)_
+
+      - **FAIL** - bridge claims name mapping failure conditions. No mapping failure
+      conditions. _(objects: C001, C002)_
+
+      - **FAIL** - analogy claims name where the analogy breaks. No analogy. _(objects:
+      none)_
+
+      - **FAIL** - replication or independent checking is possible. No method. _(objects:
+      none)_
+
+      - **FAIL** - negative controls are included. No controls. _(objects: none)_
+
+      - **FAIL** - boundary cases are tested. No tests. _(objects: none)_
+
+      - **FAIL** - what would change the verdict is stated. No verdict. _(objects:
+      none)_'
+    Cross-Domain Integrity: '- **FAIL** - each domain is defined independently before
+      mapping. Domains not defined. _(objects: none)_
+
+      - **FAIL** - the mapping is stated term by term. No mapping. _(objects: none)_
+
+      - **FAIL** - shared relations or operations are named. No shared relations.
+      _(objects: none)_
+
+      - **FAIL** - claimed invariants are explicit. No invariants. _(objects: none)_
+
+      - **FAIL** - domain-specific meanings remain visible. Meanings are conflated.
+      _(objects: C001, C002)_
+
+      - **FAIL** - translation is not treated as ontological identity. Identity is
+      asserted. _(objects: C001, C002)_
+
+      - **FAIL** - analogy is not promoted to isomorphism. No analogy, but identity
+      is asserted. _(objects: none)_
+
+      - **FAIL** - isomorphism claims include a bijection or appropriate equivalence.
+      No bijection. _(objects: none)_
+
+      - **FAIL** - inverse mapping is tested where claimed. No mapping. _(objects:
+      none)_
+
+      - **FAIL** - positive relations are preserved. No relations. _(objects: none)_
+
+      - **FAIL** - negative relations and non-relations are preserved. No relations.
+      _(objects: none)_
+
+      - **FAIL** - composition or operation preservation is tested. No operations.
+      _(objects: none)_
+
+      - **FAIL** - mapping failures are recorded. No failures. _(objects: none)_
+
+      - **FAIL** - evidence does not transfer automatically across the bridge. No
+      evidence. _(objects: none)_
+
+      - **FAIL** - formal proof does not certify the semantic identification. No formal
+      proof. _(objects: none)_
+
+      - **FAIL** - physical results are not made theological by relabeling. Entropy
+      is relabeled as sin. _(objects: C002)_
+
+      - **FAIL** - theological commitments do not repair weak physics. No physics.
+      _(objects: none)_
+
+      - **FAIL** - the bridge produces new compression, prediction, or explanation.
+      No new insight. _(objects: none)_'
+    Adversarial Robustness: '- **FAIL** - strongest charitable reconstruction is tested.
+      No reconstruction. _(objects: none)_
+
+      - **FAIL** - central premises are denied one at a time. No premises. _(objects:
+      none)_
+
+      - **FAIL** - load-bearing assumptions are ablated. No assumptions. _(objects:
+      none)_
+
+      - **FAIL** - countermodels are actively sought. No attempt. _(objects: none)_
+
+      - **FAIL** - role or label permutations are attempted. No attempt. _(objects:
+      none)_
+
+      - **FAIL** - alternative definitions are attempted. No attempt. _(objects: none)_
+
+      - **FAIL** - edge cases are tested. No tests. _(objects: none)_
+
+      - **FAIL** - scope extremes are tested. No tests. _(objects: none)_
+
+      - **NOT_APPLICABLE** - causal direction is reversed where meaningful. No causal
+      claims. _(objects: none)_
+
+      - **FAIL** - converse claims are tested. No conditionals. _(objects: none)_
+
+      - **NOT_APPLICABLE** - independence of witnesses is challenged. No witnesses.
+      _(objects: none)_
+
+      - **FAIL** - source reliability is challenged. Source is vague. _(objects: none)_
+
+      - **FAIL** - formalization is checked for triviality by definition. No formalization.
+      _(objects: none)_
+
+      - **FAIL** - a weaker rival explanation is attempted. No attempt. _(objects:
+      none)_
+
+      - **FAIL** - known objections receive their strongest form. No objections. _(objects:
+      none)_
+
+      - **FAIL** - the preferred conclusion is not protected by moving criteria. No
+      criteria. _(objects: none)_
+
+      - **FAIL** - failures are preserved rather than rewritten away. No failures.
+      _(objects: none)_
+
+      - **FAIL** - a nontrivial core survives the full gauntlet. No core. _(objects:
+      none)_'
+    Epistemic Calibration: '- **FAIL** - every claim has an appropriate epistemic
+      mode. Claims are labeled conjecture but asserted as fact. _(objects: C001, C002)_
+
+      - **NOT_APPLICABLE** - formal verification is distinguished from semantic truth.
+      No formal verification. _(objects: none)_
+
+      - **NOT_APPLICABLE** - empirical support is distinguished from deduction. No
+      support. _(objects: none)_
+
+      - **NOT_APPLICABLE** - historical inference is distinguished from experiment.
+      No historical claims. _(objects: none)_
+
+      - **FAIL** - theological commitment is stated as such. Sin is mentioned but
+      not identified as theological commitment. _(objects: C002)_
+
+      - **FAIL** - bridge claims are visibly labeled. No labels. _(objects: none)_
+
+      - **FAIL** - analogy is visibly labeled. No analogy. _(objects: none)_
+
+      - **PASS** - conjecture is visibly labeled. Claims are marked as conjecture.
+      _(objects: C001, C002)_
+
+      - **FAIL** - possibility is not presented as probability. Assertions are categorical.
+      _(objects: none)_
+
+      - **FAIL** - probability is not presented as certainty. Assertions are categorical.
+      _(objects: none)_
+
+      - **FAIL** - local results are not presented as global results. Claims are universal.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - conditional results retain their conditions. No conditionals.
+      _(objects: none)_
+
+      - **FAIL** - unknowns remain unknown. Unknowns are not acknowledged. _(objects:
+      none)_
+
+      - **FAIL** - confidence reflects available coverage. No confidence stated. _(objects:
+      none)_
+
+      - **NOT_APPLICABLE** - score is not presented as truth probability. No score.
+      _(objects: none)_
+
+      - **NOT_APPLICABLE** - absence of evidence is not evidence of absence without
+      argument. No absence. _(objects: none)_
+
+      - **NOT_APPLICABLE** - negative results are reported with equal visibility.
+      No results. _(objects: none)_
+
+      - **FAIL** - public wording matches the strongest warranted conclusion. Wording
+      overstates support. _(objects: none)_'
+    6. Adversarial Destruction: '- **test:** Countermodel: Consider a universe with
+      no physical entropy but with moral agents making choices. If morality is physics
+      and sin is entropy, then in a zero-entropy universe, no sin could occur, yet
+      moral agents could still choose wrongly.; **target:** C002; **result:** FAILED;
+      **finding:** The identity claim fails because sin can exist without entropy
+      increase, e.g., a perfectly ordered system with a wrong choice.
+
+      - **test:** Premise denial: Deny that morality is reducible to physics. If moral
+      facts are not physical facts, then the identity claim is false.; **target:**
+      C001; **result:** FAILED; **finding:** The claim is unsupported and likely false
+      under standard non-reductive moral realism.
+
+      - **test:** Ablation: Remove the hidden premise that ''is'' denotes identity.
+      If ''is'' is merely metaphorical, the claims become analogies, not identities.;
+      **target:** C001, C002; **result:** CONDITIONAL; **finding:** If interpreted
+      as analogy, the claims are trivially true but lose their force; if identity,
+      they are unsupported.
+
+      - **test:** Role permutation: Swap ''morality'' and ''physics'' in C001. If
+      morality is physics, then physics is morality. But physics is not normative;
+      it does not prescribe how we ought to act.; **target:** C001; **result:** FAILED;
+      **finding:** The symmetry of identity is broken by the normative/descriptive
+      distinction.
+
+      - **test:** Rival explanation: The observed phenomena (moral experience, physical
+      entropy) are better explained by separate domains with no identity.; **target:**
+      C001, C002; **result:** FAILED; **finding:** A simpler account posits two distinct
+      domains, avoiding category errors.
+
+      - **test:** Alternative definition: Define ''entropy'' as a measure of disorder
+      in a physical system. Sin is a moral concept, not a physical quantity. No mapping
+      exists.; **target:** C002; **result:** FAILED; **finding:** The terms are incommensurable
+      without a bridge principle.
+
+      - **test:** Edge case: Consider a perfectly ordered system (zero entropy) that
+      is morally evil, e.g., a totalitarian regime with perfect order. Sin exists
+      without entropy.; **target:** C002; **result:** FAILED; **finding:** Counterexample
+      to sin=entropy.
+
+      - **test:** Scope test: The claim is universal (''morality is physics''), but
+      it fails for any moral system that is not physical, e.g., divine command theory.;
+      **target:** C001; **result:** FAILED; **finding:** The claim is too broad and
+      excludes major moral theories.
+
+      - **test:** Causal reversal: If sin is entropy, then increasing entropy would
+      be sinful. But entropy increases in all natural processes, making everything
+      sinful, which is absurd.; **target:** C002; **result:** FAILED; **finding:**
+      The claim leads to absurd consequences.'
+    7. Surviving Structure: '**Strongest result:** The claims are bare identity assertions
+      with no supporting argument, definitions, or evidence. They fail under multiple
+      adversarial tests.
+
+
+      - The possibility that the author intends a metaphorical or poetic statement,
+      but this is not explicit.'
+    8. Unresolved Structure: '**Strongest unresolved transition:** The transition
+      from ''morality is physics'' to ''sin is entropy'' is unexplained; no mechanism
+      or mapping is provided.'
+    Conditional: '- If the claims are interpreted as analogies, they might be meaningful
+      but require specification of the analogy''s limits.'
+    Failed: '- The identity claims C001 and C002 fail as stated.
+
+      - The category errors are unresolved.
+
+      - No evidence or argument is provided.'
+    9. Simplest Sufficient Account: '- **statement:** The document asserts two identity
+      claims without support.; **facts_preserved:** []; **commitments:** []; **exceptions:**
+      []; **unsupported_bridges:** [''morality=physics'', ''sin=entropy'']; **compression_comment:**
+      No explanatory content beyond the assertions.'
+    10. Canonical Recommendation: '- Recommendation: **REJECT_AS_WRITTEN**
+
+      - Reason: The document makes unsupported identity claims with no definitions,
+      evidence, or argument, and commits category errors.
+
+      - Reuse recommendation: **ARCHIVE_ONLY**'
+    What would change the verdict: 'The intake record''s Section 10 specifies exactly
+      three conditions under which the verdict would change:
+
+
+      1. **Providing clear definitions** of *morality*, *physics*, *sin*, and *entropy*.
+
+      2. **Supplying a bridge principle or mapping** between the moral and physical
+      domains.
+
+      3. **Offering empirical or formal evidence** for the identity claims.
+
+
+      Each of these is a necessary condition for the claims to become evaluable. None
+      is present in the source. Until at least (1) and (2) are supplied, no falsification
+      test can even be formulated.'
+    Formalization targets: '- Formalize the identity claim as a bijection between
+      moral and physical states, and test for consistency.'
+    Empirical test targets: '- No empirical test is possible without operational definitions.'
+    Rewrite targets: '- Rewrite as an analogy: ''Morality is like physics'' and ''Sin
+      is like entropy'', with explicit limits.'
+    Exact Source - Untouched: '<!-- BEGIN EXACT SOURCE; SHA256 75f21042eede3348263eddb587f8630b38f393f47716b348dc5298af760049c7
+      -->
+
+
+      # P07: THE MORAL UNIVERSE'
+    The Hammer: '**Status:** SKELETON
+
+      **Source:** Consciousness Papers
+
+      **Core Argument:** Morality is Physics. Sin is Entropy.
+
+
+      ---
+
+
+      [The Final Reveal]
+
+
+
+      <!-- END EXACT SOURCE -->'
+    map: "{\n  \"title\": \"The Moral Universe: The Hammer\",\n  \"domain\": \"epistemics\"\
+      ,\n  \"project\": \"EVIDENCE_CHAIN_INTAKE\",\n  \"purpose\": \"objection\",\n\
+      \  \"summary\": \"This document is an epistemic intake record for a candidate\
+      \ draft titled 'The Moral Universe: The Hammer,' which asserts two bare identity\
+      \ claims: 'Morality is physics' and 'Sin is entropy.' The intake process classifies\
+      \ the source as a CANDIDATE_DRAFT with reuse grade D and ARCHIVE_ONLY recommendation,\
+      \ and recommends REJECT_AS_WRITTEN. It identifies no definitions, premises,\
+      \ evidence, equations, predictions, or argument graph. Both claims are labeled\
+      \ CONJECTURE and UNRESOLVED. The scorecard gives 0.0/100 across all ten dimensions,\
+      \ with an integrity factor of 0.1. Global gates triggered include UNKNOWN_SOURCE,\
+      \ CRITICAL_HIDDEN_PREMISE, and UNRESOLVED_CATEGORY_ERROR. Adversarial destruction\
+      \ tests fail the claims on countermodels, premise denial, role permutation,\
+      \ rival explanation, alternative definition, edge cases, scope, and causal reversal.\
+      \ The surviving structure is that the claims are bare identity assertions with\
+      \ no support; the unresolved transition from morality=physics to sin=entropy\
+      \ is unexplained. The simplest sufficient account states the document asserts\
+      \ two identity claims without support. The canonical recommendation is REJECT_AS_WRITTEN.\"\
+      ,\n  \"keywords\": [\n    \"morality\",\n    \"physics\",\n    \"entropy\",\n\
+      \    \"sin\",\n    \"identity claim\",\n    \"category error\",\n    \"epistemic\
+      \ intake\",\n    \"adversarial destruction\",\n    \"canonical recommendation\"\
+      ,\n    \"reject as written\"\n  ],\n  \"objects\": [\n    {\n      \"key\":\
+      \ \"C1\",\n      \"type\": \"CLAIM\",\n      \"register\": \"PHILOSOPHICAL\"\
+      ,\n      \"quote\": \"Morality is physics.\",\n      \"statement\": \"Morality\
+      \ is identical to physics.\",\n      \"reason\": \"The source explicitly lists\
+      \ this as a claim (C001) with claimed_mode CONJECTURE and anchor 'Core Argument:\
+      \ Morality is Physics.' It is a proposed identity assertion, not a definition,\
+      \ axiom, evidence, or objection.\"\n    },\n    {\n      \"key\": \"C2\",\n\
+      \      \"type\": \"CLAIM\",\n      \"register\": \"PHILOSOPHICAL\",\n      \"\
+      quote\": \"Sin is entropy.\",\n      \"statement\": \"Sin is identical to entropy.\"\
+      ,\n      \"reason\": \"The source explicitly lists this as a claim (C002) with\
+      \ claimed_mode CONJECTURE and anchor 'Core Argument: Sin is Entropy.' It is\
+      \ a proposed identity assertion, not a definition, axiom, evidence, or objection.\"\
+      \n    },\n    {\n      \"key\": \"O1\",\n      \"type\": \"OBJECTION\",\n  \
+      \    \"register\": \"PHILOSOPHICAL\",\n      \"quote\": \"The identity claim\
+      \ fails because sin can exist without entropy increase, e.g., a perfectly ordered\
+      \ system with a wrong choice.\",\n      \"statement\": \"The identity sin=entropy\
+      \ fails because sin can exist without entropy increase, as in a perfectly ordered\
+      \ system with a wrong choice.\",\n      \"reason\": \"This is an adversarial\
+      \ countermodel test targeting C002, classified as an objection because it challenges\
+      \ the claim's validity.\"\n    },\n    {\n      \"key\": \"O2\",\n      \"type\"\
+      : \"OBJECTION\",\n      \"register\": \"PHILOSOPHICAL\",\n      \"quote\": \"\
+      The claim is unsupported and likely false under standard non-reductive moral\
+      \ realism.\",\n      \"statement\": \"The claim morality=physics is unsupported\
+      \ and likely false under standard non-reductive moral realism.\",\n      \"\
+      reason\": \"This is a premise denial test targeting C001, classified as an objection\
+      \ because it denies the reducibility premise.\"\n    },\n    {\n      \"key\"\
+      : \"O3\",\n      \"type\": \"OBJECTION\",\n      \"register\": \"PHILOSOPHICAL\"\
+      ,\n      \"quote\": \"The symmetry of identity is broken by the normative/descriptive\
+      \ distinction.\",\n      \"statement\": \"The identity morality=physics fails\
+      \ because swapping terms yields 'physics is morality,' but physics is not normative\
+      \ and does not prescribe how we ought to act.\",\n      \"reason\": \"This is\
+      \ a role permutation test targeting C001, classified as an objection because\
+      \ it exposes a symmetry failure in the identity claim.\"\n    },\n    {\n  \
+      \    \"key\": \"O4\",\n      \"type\": \"OBJECTION\",\n      \"register\": \"\
+      PHILOSOPHICAL\",\n      \"quote\": \"A simpler account posits two distinct domains,\
+      \ avoiding category errors.\",\n      \"statement\": \"A simpler rival explanation\
+      \ posits two distinct domains (moral and physical) with no identity, avoiding\
+      \ category errors.\",\n      \"reason\": \"This is a rival explanation test\
+      \ targeting C001 and C002, classified as an objection because it offers a competing\
+      \ account with lower ontological cost.\"\n    },\n    {\n      \"key\": \"O5\"\
+      ,\n      \"type\": \"OBJECTION\",\n      \"register\": \"PHILOSOPHICAL\",\n\
+      \      \"quote\": \"The terms are incommensurable without a bridge principle.\"\
+      ,\n      \"statement\": \"Entropy as a physical measure of disorder and sin\
+      \ as a moral concept are incommensurable without a bridge principle.\",\n  \
+      \    \"reason\": \"This is an alternative definition test targeting C002, classified\
+      \ as an objection because it shows the terms lack a mapping.\"\n    },\n   \
+      \ {\n      \"key\": \"O6\",\n      \"type\": \"OBJECTION\",\n      \"register\"\
+      : \"PHILOSOPHICAL\",\n      \"quote\": \"Counterexample to sin=entropy.\",\n\
+      \      \"statement\": \"A perfectly ordered system (zero entropy) that is morally\
+      \ evil, such as a totalitarian regime with perfect order, is a counterexample\
+      \ to sin=entropy.\",\n      \"reason\": \"This is an edge case test targeting\
+      \ C002, classified as an objection because it provides a counterexample.\"\n\
+      \    },\n    {\n      \"key\": \"O7\",\n      \"type\": \"OBJECTION\",\n   \
+      \   \"register\": \"PHILOSOPHICAL\",\n      \"quote\": \"The claim is too broad\
+      \ and excludes major moral theories.\",\n      \"statement\": \"The universal\
+      \ claim 'morality is physics' fails for any non-physical moral system, such\
+      \ as divine command theory, and is therefore too broad.\",\n      \"reason\"\
+      : \"This is a scope test targeting C001, classified as an objection because\
+      \ it shows the claim excludes major moral theories.\"\n    },\n    {\n     \
+      \ \"key\": \"O8\",\n      \"type\": \"OBJECTION\",\n      \"register\": \"PHILOSOPHICAL\"\
+      ,\n      \"quote\": \"The claim leads to absurd consequences.\",\n      \"statement\"\
+      : \"If sin is entropy, then increasing entropy would be sinful; since entropy\
+      \ increases in all natural processes, everything would be sinful, which is absurd.\"\
+      ,\n      \"reason\": \"This is a causal reversal test targeting C002, classified\
+      \ as an objection because it derives an absurd consequence from the claim.\"\
+      \n    }\n  ],\n  \"unmapped\": [\n    \"Source integrity metadata: source file\
+      \ path, SHA-256 hash, exact source preserved flag, three-call run ID.\",\n \
+      \   \"Epistemic modes table defining DEFINITION, LOGICAL, MATHEMATICAL, FORMAL_VERIFIED,\
+      \ EMPIRICAL, HISTORICAL, PHILOSOPHICAL, THEOLOGICAL, BRIDGE, ANALOGY, CONJECTURE.\"\
+      ,\n    \"Claim assignments: C001 mode CONJECTURE status UNRESOLVED; C002 mode\
+      \ CONJECTURE status UNRESOLVED.\",\n    \"Scorecard dimensions and scores: Logical\
+      \ Validity 0.0, Internal Coherence 0.0, Definition Precision 0.0, Evidence Adequacy\
+      \ 0.0, Explanatory Compression 0.0, Rival Discrimination 0.0, Testability and\
+      \ Falsifiability 0.0, Cross-Domain Integrity 0.0, Adversarial Robustness 0.0,\
+      \ Epistemic Calibration 0.0; raw score 0.0/100; integrity factor 0.1; final\
+      \ score 0.0/100.\",\n    \"Global gates: UNKNOWN_SOURCE triggered True, CRITICAL_HIDDEN_PREMISE\
+      \ triggered True, FAILED_FORMAL_RECEIPT triggered False, UNTESTED_CENTRAL_EMPIRICAL_CLAIM\
+      \ triggered False, UNRESOLVED_CATEGORY_ERROR triggered True, FATAL_COUNTEREXAMPLE\
+      \ triggered False, SOURCE_MISMATCH triggered False, UNRESOLVED_CONTRADICTION\
+      \ triggered False.\",\n    \"Complete probe results across all ten dimensions,\
+      \ including PASS, FAIL, NOT_APPLICABLE, and UNKNOWN outcomes with reasons.\"\
+      ,\n    \"Surviving structure: strongest result that claims are bare identity\
+      \ assertions with no supporting argument, definitions, or evidence; possibility\
+      \ of metaphorical intent not explicit.\",\n    \"Unresolved structure: strongest\
+      \ unresolved transition from 'morality is physics' to 'sin is entropy' unexplained;\
+      \ conditional interpretation as analogy; failed identity claims and unresolved\
+      \ category errors.\",\n    \"Simplest sufficient account: statement that document\
+      \ asserts two identity claims without support; unsupported bridges morality=physics\
+      \ and sin=entropy; no explanatory content beyond assertions.\",\n    \"Canonical\
+      \ recommendation: REJECT_AS_WRITTEN; reason unsupported identity claims with\
+      \ no definitions, evidence, or argument and category errors; reuse recommendation\
+      \ ARCHIVE_ONLY.\",\n    \"What would change the verdict: clear definitions of\
+      \ morality, physics, sin, entropy; bridge principle or mapping between domains;\
+      \ empirical or formal evidence for identity.\",\n    \"Formalization targets:\
+      \ formalize identity claim as bijection between moral and physical states and\
+      \ test consistency.\",\n    \"Empirical test targets: no empirical test possible\
+      \ without operational definitions.\",\n    \"Rewrite targets: rewrite as analogy\
+      \ 'Morality is like physics' and 'Sin is like entropy' with explicit limits.\"\
+      ,\n    \"Exact source section: '# P07: THE MORAL UNIVERSE', '## The Hammer',\
+      \ status SKELETON, source Consciousness Papers, core argument Morality is Physics.\
+      \ Sin is Entropy., '[The Final Reveal]'.\"\n  ]\n}"
+    S01 — Core Finding and One-Sentence Claim: '**One-sentence claim:** The source
+      document *The Moral Universe: The Hammer* asserts two bare identity claims —
+      "Morality is physics" and "Sin is entropy" — without any definitions, premises,
+      evidence, equations, predictions, or argument graph, and is therefore classified
+      as a candidate draft that must be **REJECT_AS_WRITTEN**.'
+    Core finding: 'The intake record identifies exactly two substantive objects in
+      the source: the identity claims **C1** (*Morality is physics*) and **C2** (*Sin
+      is entropy*). Both are labeled `CONJECTURE` with status `UNRESOLVED`. The source
+      contains:
+
+
+      - **No definitions** of *morality*, *physics*, *sin*, or *entropy*.
+
+      - **No premises** or hidden-premise ledger entries.
+
+      - **No evidence** of any kind.
+
+      - **No equations, formal results, predictions, or falsifiers**.
+
+      - **No argument graph** linking the two claims.
+
+
+      The transition from *morality = physics* to *sin = entropy* is unexplained;
+      no bridge principle or mapping between the moral and physical domains is supplied.'
+    Disposition: '| Field | Value |
+
+      |---|---|
+
+      | Reuse grade | D |
+
+      | Reuse score | 0.0 / 100 |
+
+      | Reuse recommendation | ARCHIVE_ONLY |
+
+      | Canonical recommendation | REJECT_AS_WRITTEN |
+
+      | Canon status | candidate_draft_not_admitted |'
+    Why this is the core finding: Every one of the ten scorecard dimensions scored
+      0.0/10, and all nine adversarial destruction tests targeting C1 and C2 either
+      FAILED or returned CONDITIONAL. The strongest surviving structure is simply
+      that the document makes two unsupported identity assertions; the strongest unresolved
+      structure is the unexplained transition between them. This is the minimum sufficient
+      characterization of the source.
+    Summary: 'Across all ten analytical sections, the intake record converges on a
+      single, stable finding: the source document *The Moral Universe: The Hammer*
+      asserts two bare identity claims — **C1** (*Morality is physics*) and **C2**
+      (*Sin is entropy*) — with **no definitions, no premises, no evidence, no equations,
+      no predictions, no falsifiers, and no argument graph**. Every scorecard dimension
+      scored **0.0/10**; three global gates triggered; all nine adversarial destruction
+      tests failed or returned conditional. The canonical recommendation is **REJECT_AS_WRITTEN**,
+      with reuse grade **D** and reuse recommendation **ARCHIVE_ONLY**. This section
+      consolidates the cross-section findings, states the minimum sufficient account,
+      and specifies the concrete next steps that would change the verdict.'
+    What the spine would need: 'For the claims to function as a genuine axiom/definition
+      spine, the source would need to supply at minimum:
+
+
+      | Required element | Status in source |
+
+      |---|---|
+
+      | Definition of *morality* | **Absent** |
+
+      | Definition of *physics* | **Absent** |
+
+      | Definition of *sin* | **Absent** |
+
+      | Definition of *entropy* | **Absent** |
+
+      | Identity criterion (what makes two domains identical) | **Absent** |
+
+      | Bridge principle linking moral and physical domains | **Absent** |
+
+      | Reduction premise (morality reduces to physics) | **Absent** (flagged as hidden
+      premise) |
+
+      | Correspondence premise (sin corresponds to entropy) | **Absent** (flagged
+      as hidden premise) |'
+    The two asserted axioms: '- **C1 — *Morality is physics.*** Asserted as an identity.
+      No definition of either term, no criterion of identity, no reduction premise.
+      The intake record flags this as requiring a hidden premise about reduction (`CRITICAL_HIDDEN_PREMISE`).
+
+      - **C2 — *Sin is entropy.*** Asserted as an identity. No definition of either
+      term, no bridge principle, no mapping. The intake record flags this as a category
+      error (`UNRESOLVED_CATEGORY_ERROR`).'
+    Hidden premises the spine presupposes: 'The intake record identifies that the
+      identity claims require hidden premises about reduction or correspondence. These
+      are not stated in the source but are necessary for the claims to be meaningful
+      as identities rather than as bare assertions:
+
+
+      1. That moral facts are identical to (or reducible to) physical facts.
+
+      2. That *sin* is a physical quantity measurable as entropy.
+
+      3. That the copula *is* denotes strict identity rather than analogy, metaphor,
+      or predication.
+
+
+      None of these premises is stated, argued, or defended in the source.'
+    Consequence for the spine: Because the spine is empty — no definitions, no axioms,
+      no premises — the two claims cannot be evaluated as derived results. They stand
+      only as **bare identity assertions**. The intake record's `CRITICAL_HIDDEN_PREMISE`
+      and `UNRESOLVED_CATEGORY_ERROR` gates are triggered precisely because the definitional
+      spine that would license the identity claims is missing.
+    The chain as stated: "```\n[no premises]\n      │\n      ▼\n  C1: Morality is\
+      \ physics.        (asserted, CONJECTURE, UNRESOLVED)\n      │\n      ?  ← no\
+      \ inference rule, no bridge, no derivation\n      ▼\n  C2: Sin is entropy. \
+      \            (asserted, CONJECTURE, UNRESOLVED)\n      │\n      ▼\n[no conclusion,\
+      \ no prediction, no falsifier]\n```"
+    Missing links: '| Link the chain would need | Status in source |
+
+      |---|---|
+
+      | Premise(s) licensing C1 | **Absent** |
+
+      | Definition of *morality* and *physics* | **Absent** |
+
+      | Identity criterion for the copula *is* | **Absent** |
+
+      | Bridge from moral domain to physical domain | **Absent** |
+
+      | Derivation from C1 to C2 | **Absent** |
+
+      | Definition of *sin* and *entropy* | **Absent** |
+
+      | Inference rule (deductive, abductive, analogical) | **Absent** |
+
+      | Conclusion or prediction | **Absent** |
+
+      | Falsifier or defeat condition | **Absent** |'
+    Hidden premises the chain presupposes: 'The intake record flags `CRITICAL_HIDDEN_PREMISE`
+      because the identity claims require unstated premises:
+
+
+      1. **Reduction premise** — moral facts are identical to (or reducible to) physical
+      facts (needed for C1).
+
+      2. **Correspondence premise** — *sin* is a physical quantity measurable as entropy
+      (needed for C2).
+
+      3. **Identity premise** — the copula *is* denotes strict identity, not analogy,
+      metaphor, or predication (needed for both).
+
+
+      None of these is stated, argued, or defended.'
+    Where the chain breaks (adversarial tests): 'Each link is targeted by an adversarial
+      destruction test from the intake record:
+
+
+      - **Premise denial (C1):** Deny that morality reduces to physics → C1 fails
+      under non-reductive moral realism.
+
+      - **Role permutation (C1):** Swap terms → "physics is morality" fails because
+      physics is not normative.
+
+      - **Scope test (C1):** The universal claim excludes non-physical moral systems
+      (e.g., divine command theory).
+
+      - **Countermodel (C2):** A zero-entropy universe with moral agents choosing
+      wrongly shows sin without entropy increase.
+
+      - **Edge case (C2):** A perfectly ordered totalitarian regime is morally evil
+      with zero entropy.
+
+      - **Alternative definition (C2):** Entropy is a physical measure; sin is a moral
+      concept; no mapping exists.
+
+      - **Causal reversal (C2):** If sin = entropy, then all natural entropy increase
+      is sinful — absurd.
+
+      - **Rival explanation (C1, C2):** Two distinct domains with no identity is simpler
+      and avoids category errors.
+
+      - **Ablation (C1, C2):** If *is* is metaphorical, the claims become analogies
+      and lose their force.'
+    Verdict on the chain: Because no premises, no inference rules, and no bridge are
+      supplied, the chain is **not an argument** — it is a pair of bare identity assertions.
+      The intake record's `UNRESOLVED_CATEGORY_ERROR` gate is triggered by the unbridged
+      leap between the moral and physical domains, and the `CRITICAL_HIDDEN_PREMISE`
+      gate is triggered by the unstated reduction and correspondence premises. The
+      chain therefore fails at every link and cannot be reconstructed charitably without
+      supplying definitions and a bridge principle that the source does not contain.
+    Evidence inventory: '| Evidential category | Status in source |
+
+      |---|---|
+
+      | Cited literature or references | **None** |
+
+      | Empirical data or measurements | **None** |
+
+      | Equations or formal results | **None** |
+
+      | Formal verification receipts (Lean, Z3, etc.) | **None** |
+
+      | Predictions | **None** |
+
+      | Falsifiers or defeat conditions | **None** |
+
+      | Historical testimony | **None** |
+
+      | Theological or revelatory basis | **None** |
+
+      | Independent vs. repeated evidence | **Not applicable** (no evidence) |
+
+      | Counterevidence | **None** |'
+    Source integrity metadata: 'The intake record preserves the following provenance
+      data, but this is metadata about the file, not evidence for the claims:
+
+
+      - **Source file:** `\\192.168.2.50\h_hp\Desktop\_____pipeline-workflows-main\EVIDENCE_CHAIN_INTAKE\INBOX\P07_THE_MORAL_UNIVERSE.md`
+
+      - **SHA-256:** `75f21042eede3348263eddb587f8630b38f393f47716b348dc5298af760049c7`
+
+      - **Exact source preserved:** `yes`
+
+      - **Three-call run:** `20260903-180115`
+
+      - **Model:** `deepseek-chat`
+
+
+      These fields establish that the file was captured intact; they do **not** establish
+      that the claims are supported.'
+    The only attributed source: 'The source document states: "**Source:** Consciousness
+      Papers." This attribution is:
+
+
+      - **Unverifiable** — no author, date, publication venue, or locator is given.
+
+      - **Non-retrievable** — no path, DOI, or citation is supplied.
+
+      - **Insufficient for scope-matching** — the intake record''s evidence probe
+      "source and claim scopes match" returns **FAIL** because the source is vague
+      and no details are provided.
+
+
+      This triggers the global gate **UNKNOWN_SOURCE** (triggered: True; reason: "Source
+      is ''Consciousness Papers'' with no verifiable origin").'
+    Evidence-adequacy probe results: 'All eighteen evidence-adequacy probes either
+      **FAIL** or return **NOT_APPLICABLE**:
+
+
+      - **FAIL** — each major evidential claim identifies its support. No evidence
+      cited.
+
+      - **FAIL** — support is retrievable or its absence is explicit. No support.
+
+      - **FAIL** — source and claim scopes match. Source is ''Consciousness Papers''
+      but no details.
+
+      - **FAIL** — empirical methods are described sufficiently. No empirical methods.
+
+      - **FAIL** — philosophical premises receive arguments rather than borrowed prestige.
+      No arguments.
+
+      - **FAIL** — theological claims identify their confessional or revelatory basis.
+      No basis given (C002).
+
+      - **FAIL** — central conclusion is proportionate to total support. No support.
+
+      - **NOT_APPLICABLE** — support is relevant to the exact claim; support increases
+      likelihood; sample size; measurement uncertainty; controls; formal receipts;
+      historical testimony; independent vs. repeated evidence; counterevidence; citation
+      quantity vs. quality; decorative equations.'
+    Consequence for the claims: Because **C1** (*Morality is physics*) and **C2**
+      (*Sin is entropy*) are asserted without any evidential support, they cannot
+      be evaluated as empirically or formally grounded claims. The intake record's
+      `UNTESTED_CENTRAL_EMPIRICAL_CLAIM` gate is **not** triggered only because the
+      claims are not even framed as empirical — they are bare identity assertions.
+      The `FAILED_FORMAL_RECEIPT` gate is likewise **not** triggered because no formal
+      claim is made. The absence of evidence is therefore not a gap in an otherwise
+      supported argument; it is the entire evidential situation.
+    What evidence would be required: 'Per the intake record''s "What would change
+      the verdict" section, the following would be needed to supply evidential support:
+
+
+      1. **Clear definitions** of *morality*, *physics*, *sin*, and *entropy*.
+
+      2. **A bridge principle or mapping** between the moral and physical domains.
+
+      3. **Empirical or formal evidence** for the identity claims.
+
+
+      None of these is present in the source.'
+    Objections targeting C1 — *Morality is physics*: '**O2 — Premise denial (reduction
+      premise).**
+
+      > *The claim is unsupported and likely false under standard non-reductive moral
+      realism.*
+
+
+      If moral facts are not identical to (or reducible to) physical facts, the identity
+      claim is false. Non-reductive moral realism is a live position in metaethics;
+      the source supplies no argument against it. **Result: FAILED.**
+
+
+      **O3 — Role permutation (normative/descriptive asymmetry).**
+
+      > *The symmetry of identity is broken by the normative/descriptive distinction.*
+
+
+      Identity is symmetric: if *morality is physics*, then *physics is morality*.
+      But physics is descriptive — it does not prescribe how we ought to act — whereas
+      morality is normative. The permutation therefore fails, exposing the identity
+      as asymmetric and hence not an identity. **Result: FAILED.**
+
+
+      **O7 — Scope test (universality).**
+
+      > *The claim is too broad and excludes major moral theories.*
+
+
+      The claim is universal: *all* morality is physics. It therefore fails for any
+      non-physical moral system — e.g., divine command theory, Platonism about the
+      good, or Kantian noumenal agency. A universal identity claim that excludes major
+      moral theories is over-broad. **Result: FAILED.**'
+    Objections targeting C2 — *Sin is entropy*: '**O1 — Countermodel (zero-entropy
+      moral failure).**
+
+      > *The identity claim fails because sin can exist without entropy increase,
+      e.g., a perfectly ordered system with a wrong choice.*
+
+
+      Consider a universe with no physical entropy increase but with moral agents
+      who choose wrongly. Under the identity, no sin could occur there; yet sin does
+      occur. The countermodel defeats the identity. **Result: FAILED.**
+
+
+      **O5 — Alternative definition (incommensurability).**
+
+      > *The terms are incommensurable without a bridge principle.*
+
+
+      Entropy is a physical measure of disorder (or of microstate multiplicity); sin
+      is a moral/theological concept. No mapping between the two is supplied. Without
+      a bridge principle, the identity is not even well-formed. **Result: FAILED.**
+
+
+      **O6 — Edge case (ordered totalitarian regime).**
+
+      > *Counterexample to sin=entropy.*
+
+
+      A perfectly ordered totalitarian regime — zero disorder, maximal moral evil
+      — is a concrete counterexample: sin exists with minimal entropy. **Result: FAILED.**
+
+
+      **O8 — Causal reversal (absurd consequence).**
+
+      > *The claim leads to absurd consequences.*
+
+
+      If *sin is entropy*, then increasing entropy is sinful. But entropy increases
+      in all natural processes (second law). Therefore everything natural is sinful
+      — an absurd consequence. **Result: FAILED.**'
+    Objections targeting both C1 and C2: '**O4 — Rival explanation (two domains).**
+
+      > *A simpler account posits two distinct domains, avoiding category errors.*
+
+
+      The observed phenomena — moral experience and physical entropy — are more simply
+      explained by two distinct domains with no identity. The rival has lower ontological
+      cost and avoids the category errors flagged by the `UNRESOLVED_CATEGORY_ERROR`
+      gate. **Result: FAILED.**
+
+
+      **Ablation — the analogy reading (CONDITIONAL).**
+
+      > *If interpreted as analogy, the claims are trivially true but lose their force;
+      if identity, they are unsupported.*
+
+
+      Removing the hidden premise that *is* denotes strict identity leaves only an
+      analogy: *morality is like physics*, *sin is like entropy*. This reading survives
+      trivially but is no longer the claim the source makes, and it requires specifying
+      the analogy''s limits — which the source does not do. **Result: CONDITIONAL.**'
+    Objection summary table: '| Objection | Target | Test type | Result |
+
+      |---|---|---|---|
+
+      | O1 | C2 | Countermodel | FAILED |
+
+      | O2 | C1 | Premise denial | FAILED |
+
+      | O3 | C1 | Role permutation | FAILED |
+
+      | O4 | C1, C2 | Rival explanation | FAILED |
+
+      | O5 | C2 | Alternative definition | FAILED |
+
+      | O6 | C2 | Edge case | FAILED |
+
+      | O7 | C1 | Scope | FAILED |
+
+      | O8 | C2 | Causal reversal | FAILED |
+
+      | Ablation | C1, C2 | Analogy reading | CONDITIONAL |'
+    What the objections establish: '1. **C1 fails** on premise denial, role permutation,
+      and scope. The normative/descriptive asymmetry (O3) is the sharpest objection:
+      it shows the copula *is* cannot be read as identity without collapsing the normative
+      into the descriptive.
+
+      2. **C2 fails** on countermodel, alternative definition, edge case, and causal
+      reversal. The zero-entropy countermodel (O1) and the ordered-totalitarian edge
+      case (O6) are the sharpest: they exhibit sin without entropy increase.
+
+      3. **Both fail** against the two-domain rival (O4), which is simpler and avoids
+      the category errors.
+
+      4. **The only surviving reading** is the analogy reading, which is conditional
+      and not what the source asserts.'
+    What would defeat the objections: 'Per the intake record''s "What would change
+      the verdict" section, the objections would be defeated by:
+
+
+      1. **Clear definitions** of *morality*, *physics*, *sin*, and *entropy*.
+
+      2. **A bridge principle or mapping** between the moral and physical domains.
+
+      3. **Empirical or formal evidence** for the identity claims.
+
+
+      None of these is present in the source, so none of the objections is answered.'
+    'C2 — *Sin is entropy*: the theological translation': '**What the claim asserts.**
+      *Sin* is a moral/theological concept: a violation of divine law, a rupture in
+      the creature–Creator relation, or a disorder of the will. *Entropy* is a physical
+      quantity: a measure of microstate multiplicity or of energy unavailable for
+      work. To say *sin is entropy* is to assert a strict identity between a normative/theological
+      predicate and a descriptive/physical quantity.
+
+
+      **Theological implications if true.**
+
+
+      1. **Sin would be measurable in joules per kelvin.** Pastoral care, confession,
+      and repentance would reduce to thermodynamic accounting. The intake record''s
+      Definition Precision probe flags this directly: *"theological terms are not
+      reduced to physical definitions. Sin is equated with entropy without theological
+      nuance"* (FAIL, C002).
+
+      2. **God''s relation to sin would be physical.** If sin is entropy, then the
+      second law of thermodynamics describes the spread of sin. The intake record''s
+      Cross-Domain Integrity probe flags this: *"physical results are not made theological
+      by relabeling. Entropy is relabeled as sin"* (FAIL, C002).
+
+      3. **Redemption would be a negentropy operation.** No theological account of
+      grace, atonement, or repentance is supplied; the source offers no bridge from
+      the physical identity to any soteriological claim.
+
+
+      **The confessional gap.** The intake record''s Evidence Adequacy probe returns
+      FAIL on *"theological claims identify their confessional or revelatory basis.
+      No basis given"* (C002). The source does not say whether *sin* is being used
+      in a Christian, Jewish, Islamic, or generic moral sense, nor whether *entropy*
+      is being used in the Boltzmann, Shannon, or thermodynamic sense. Without a confessional
+      and a physical specification, the identity is not even well-formed.'
+    'C1 — *Morality is physics*: the philosophical translation': '**What the claim
+      asserts.** *Morality* is a normative domain: it concerns what ought to be, what
+      is good, what is obligatory. *Physics* is a descriptive domain: it concerns
+      what is, what can be measured, what follows from laws. To say *morality is physics*
+      is to assert either (a) a reductive identity (moral facts just are physical
+      facts) or (b) a category mistake.
+
+
+      **Philosophical implications if true.**
+
+
+      1. **The is/ought gap would be closed by fiat.** Hume''s guillotine — the logical
+      gap between descriptive premises and normative conclusions — would be dissolved
+      without argument. The intake record''s Logical Validity probe flags this: *"analogy
+      not confused with identity. Claims assert identity without evidence of analogy"*
+      (FAIL, C001, C002).
+
+      2. **Moral realism would collapse into physicalism.** The intake record''s Premise
+      Denial test (O2) targets exactly this: *"The claim is unsupported and likely
+      false under standard non-reductive moral realism."*
+
+      3. **Normativity would be asymmetric.** The Role Permutation test (O3) shows
+      the identity fails symmetry: *"If morality is physics, then physics is morality.
+      But physics is not normative; it does not prescribe how we ought to act."* An
+      identity that cannot be permuted is not an identity.'
+    The theological/philosophical bridge the source would need: 'The intake record''s
+      Cross-Domain Integrity dimension returns FAIL on every bridge-related probe.
+      A theologically and philosophically coherent version of the source''s claims
+      would require:
+
+
+      | Bridge element | Status in source |
+
+      |---|---|
+
+      | Definition of *sin* in a specified theological tradition | **Absent** |
+
+      | Definition of *entropy* in a specified physical sense | **Absent** |
+
+      | Mapping from moral disorder to physical disorder | **Absent** |
+
+      | Account of how grace/repentance relates to entropy decrease | **Absent** |
+
+      | Account of how divine law relates to physical law | **Absent** |
+
+      | Criterion distinguishing identity from analogy | **Absent** |
+
+      | Confessional or revelatory basis for the theological claim | **Absent** |'
+    The analogy reading (the only theologically survivable reading): 'The intake record''s
+      Ablation test returns **CONDITIONAL**: *"If interpreted as analogy, the claims
+      are trivially true but lose their force; if identity, they are unsupported."*
+      Theologically, this is the only reading that survives:
+
+
+      - *Sin is like entropy* — sin tends toward disorder, spreads, and resists reversal.
+      This is a familiar theological trope (Augustine on disordered love, the spread
+      of vice).
+
+      - *Morality is like physics* — moral life has regularities, consequences, and
+      a structure that can be studied. This is a familiar natural-law trope.
+
+
+      But the source does not present the claims as analogies. It presents them as
+      identities (*is*, not *is like*), and the intake record''s Epistemic Calibration
+      probe flags this: *"analogy is visibly labeled. No analogy"* (FAIL). The Rewrite
+      Targets section of the intake record recommends exactly this repair: *"Rewrite
+      as an analogy: ''Morality is like physics'' and ''Sin is like entropy'', with
+      explicit limits."*'
+    Theological objections translated from the adversarial tests: '| Adversarial test
+      | Theological translation |
+
+      |---|---|
+
+      | O1 — Countermodel (zero-entropy moral failure) | A perfectly ordered soul
+      can still sin; order is not sanctity. |
+
+      | O2 — Premise denial (non-reductive moral realism) | Divine command theory,
+      natural law, and virtue ethics all deny the reduction. |
+
+      | O3 — Role permutation (normative/descriptive asymmetry) | Physics cannot command;
+      only a lawgiver can. |
+
+      | O4 — Rival explanation (two domains) | Creator–creature distinction is simpler
+      than identity. |
+
+      | O5 — Alternative definition (incommensurability) | Sin is relational; entropy
+      is quantitative. |
+
+      | O6 — Edge case (ordered totalitarian regime) | A perfectly ordered tyranny
+      is maximally sinful, minimally entropic. |
+
+      | O7 — Scope test (universality) | The claim excludes every non-physicalist
+      theology. |
+
+      | O8 — Causal reversal (absurd consequence) | If sin is entropy, then all natural
+      decay is sin — pantheistic absurdity. |'
+    Verdict: 'The source''s two identity claims, translated into theological and philosophical
+      terms, are **category errors**: they collapse a normative/theological domain
+      into a descriptive/physical one without a bridge principle, without definitions,
+      and without a confessional or revelatory basis. The intake record''s `UNRESOLVED_CATEGORY_ERROR`
+      and `CRITICAL_HIDDEN_PREMISE` gates are triggered precisely by this collapse.
+      The only theologically survivable reading is the analogy reading, which the
+      source does not adopt and which the intake record''s Rewrite Targets section
+      recommends as the repair.'
+    Formal inventory: '| Formal element | Status in source |
+
+      |---|---|
+
+      | Equations | **None** |
+
+      | Symbols or notation | **None** |
+
+      | Domains and codomains | **None** |
+
+      | Types or sorts | **None** |
+
+      | Functions, relations, or mappings | **None** |
+
+      | Bijections or isomorphisms | **None** |
+
+      | Invariants | **None** |
+
+      | Machine-checkable certificates (Lean, Z3, Coq) | **None** |
+
+      | Formal definitions | **None** |
+
+      | Proofs or countermodels | **None** |'
+    The formal shape the claims would need: 'An identity claim of the form *X is Y*
+      is well-formed only when *X* and *Y* are terms of the same type (or when an
+      explicit coercion between their types is supplied). The source supplies neither.
+      Formally:
+
+
+      - **C1 — *Morality is physics.*** Requires a type assignment `morality : M`
+      and `physics : P` together with a proof that `M ≡ P`. No such assignment or
+      proof is given. The intake record''s Definition Precision probe flags this:
+      *"identity criteria are stated. No criteria for identity between domains"* (FAIL,
+      C001, C002).
+
+      - **C2 — *Sin is entropy.*** Requires `sin : S` and `entropy : E` together with
+      `S ≡ E`. No such assignment or proof is given. The intake record''s Cross-Domain
+      Integrity probe flags this: *"isomorphism claims include a bijection or appropriate
+      equivalence. No bijection"* (FAIL, C002).'
+    The type-level category error: 'The intake record''s `UNRESOLVED_CATEGORY_ERROR`
+      gate is triggered by C001 and C002. Formally, the error is a **type mismatch**:
+
+
+      - *Morality* and *sin* are **normative** terms: they inhabit a deontic or evaluative
+      type (what ought to be, what is good or evil).
+
+      - *Physics* and *entropy* are **descriptive** terms: they inhabit a physical
+      or empirical type (what is, what is measurable).
+
+
+      Asserting an identity across these types without a coercion is not a false equation;
+      it is an **ill-typed expression**. The intake record''s Logical Validity probe
+      flags this: *"no equivocation. Terms ''morality'', ''physics'', ''sin'', ''entropy''
+      are undefined and likely equivocal"* (FAIL, C001, C002). The Role Permutation
+      test (O3) makes the type mismatch explicit: identity is symmetric, but `physics
+      is morality` fails because physics is not normative — so the two sides cannot
+      inhabit the same type.'
+    The proposed formalization target: 'The intake record''s "Formalization targets"
+      section proposes exactly one:
+
+
+      > *Formalize the identity claim as a bijection between moral and physical states,
+      and test for consistency.*
+
+
+      This is the only formal program the intake record recommends. Its requirements
+      are:
+
+
+      | Requirement for the bijection test | Status in source |
+
+      |---|---|
+
+      | A set `M` of moral states | **Not supplied** |
+
+      | A set `P` of physical states | **Not supplied** |
+
+      | A map `f : M → P` | **Not supplied** |
+
+      | A map `g : P → M` with `g ∘ f = id_M` and `f ∘ g = id_P` | **Not supplied**
+      |
+
+      | Preservation of structure (relations, operations) | **Not supplied** |
+
+      | A consistency check (countermodel search) | **Not supplied** |
+
+
+      Without these, the bijection test cannot be run. The intake record''s Cross-Domain
+      Integrity probes confirm this: *"the mapping is stated term by term. No mapping"*
+      (FAIL), *"inverse mapping is tested where claimed. No mapping"* (FAIL), *"composition
+      or operation preservation is tested. No operations"* (FAIL).'
+    Formal probes that fail: 'Every formal-adjacent probe in the intake record returns
+      FAIL or NOT_APPLICABLE:
+
+
+      - **Definition Precision:** *"symbols are defined before use. No symbols"* (NOT_APPLICABLE);
+      *"units, domains, and codomains are specified where relevant. No formal domains"*
+      (NOT_APPLICABLE); *"formal definitions type-check or are clearly marked informal.
+      No formal definitions"* (FAIL).
+
+      - **Cross-Domain Integrity:** *"isomorphism claims include a bijection or appropriate
+      equivalence. No bijection"* (FAIL); *"inverse mapping is tested where claimed.
+      No mapping"* (FAIL); *"composition or operation preservation is tested. No operations"*
+      (FAIL).
+
+      - **Testability and Falsifiability:** *"formal claims name a proof or countermodel
+      path. No formal claims"* (FAIL); *"bridge claims name mapping failure conditions.
+      No mapping failure conditions"* (FAIL, C001, C002).
+
+      - **Adversarial Robustness:** *"formalization is checked for triviality by definition.
+      No formalization"* (FAIL).
+
+      - **Epistemic Calibration:** *"formal verification is distinguished from semantic
+      truth. No formal verification"* (NOT_APPLICABLE).'
+    Consequence for the formal layer: Because the source supplies no symbols, no domains,
+      no mappings, and no proofs, the two identity claims **cannot be evaluated formally**.
+      They are not false equations; they are **ill-typed assertions**. The intake
+      record's `FAILED_FORMAL_RECEIPT` gate is not triggered only because no formal
+      claim is made — but the `UNRESOLVED_CATEGORY_ERROR` gate is triggered precisely
+      because the type mismatch between the normative and descriptive sides of each
+      identity is left unresolved. The only formal program the intake record recommends
+      — the bijection test — cannot be run without the definitions and mappings the
+      source does not supply.
+    The two bridges asserted: '| Bridge | Source domain | Target domain | Bridge type
+      claimed | Apparatus supplied |
+
+      |---|---|---|---|---|
+
+      | **C1** — *Morality is physics* | Normative / moral (ought, good, obligatory)
+      | Descriptive / physical (is, measurable, lawful) | Strict identity | **None**
+      |
+
+      | **C2** — *Sin is entropy* | Theological / moral (violation, disorder of will)
+      | Thermodynamic / physical (microstate multiplicity, unavailable work) | Strict
+      identity | **None** |
+
+
+      Both bridges are asserted with the copula *is*, which the intake record''s Ablation
+      test shows is ambiguous between identity and analogy. The source does not disambiguate.'
+    Cross-Domain Integrity probe results (all FAIL): 'The intake record runs 18 cross-domain
+      probes. Every one returns **FAIL**:
+
+
+      | Probe | Result | Finding |
+
+      |---|---|---|
+
+      | Each domain is defined independently before mapping | **FAIL** | Domains not
+      defined. |
+
+      | The mapping is stated term by term | **FAIL** | No mapping. |
+
+      | Shared relations or operations are named | **FAIL** | No shared relations.
+      |
+
+      | Claimed invariants are explicit | **FAIL** | No invariants. |
+
+      | Domain-specific meanings remain visible | **FAIL** | Meanings are conflated
+      (C001, C002). |
+
+      | Translation is not treated as ontological identity | **FAIL** | Identity is
+      asserted (C001, C002). |
+
+      | Analogy is not promoted to isomorphism | **FAIL** | No analogy, but identity
+      is asserted. |
+
+      | Isomorphism claims include a bijection or appropriate equivalence | **FAIL**
+      | No bijection. |
+
+      | Inverse mapping is tested where claimed | **FAIL** | No mapping. |
+
+      | Positive relations are preserved | **FAIL** | No relations. |
+
+      | Negative relations and non-relations are preserved | **FAIL** | No relations.
+      |
+
+      | Composition or operation preservation is tested | **FAIL** | No operations.
+      |
+
+      | Mapping failures are recorded | **FAIL** | No failures. |
+
+      | Evidence does not transfer automatically across the bridge | **FAIL** | No
+      evidence. |
+
+      | Formal proof does not certify the semantic identification | **FAIL** | No
+      formal proof. |
+
+      | Physical results are not made theological by relabeling | **FAIL** | Entropy
+      is relabeled as sin (C002). |
+
+      | Theological commitments do not repair weak physics | **FAIL** | No physics.
+      |
+
+      | The bridge produces new compression, prediction, or explanation | **FAIL**
+      | No new insight. |'
+    The type-level mismatch: 'The intake record''s `UNRESOLVED_CATEGORY_ERROR` gate
+      is triggered because the two sides of each identity inhabit **different types**:
+
+
+      - **C1:** *Morality* is a **normative** term (deontic/evaluative type); *physics*
+      is a **descriptive** term (empirical/physical type). Asserting `morality ≡ physics`
+      without a coercion is an **ill-typed expression**, not a false equation. The
+      Role Permutation test (O3) makes this explicit: identity is symmetric, but `physics
+      is morality` fails because physics is not normative — so the two sides cannot
+      share a type.
+
+      - **C2:** *Sin* is a **theological/moral** term (relational, confessional, evaluative);
+      *entropy* is a **physical** quantity (measurable in J/K, defined over microstates).
+      Asserting `sin ≡ entropy` without a bridge is likewise ill-typed. The Alternative
+      Definition test (O5) makes this explicit: the terms are incommensurable without
+      a bridge principle.'
+    The relabeling fallacy: 'The intake record''s Cross-Domain Integrity probe **"physical
+      results are not made theological by relabeling"** returns **FAIL** with the
+      finding *"Entropy is relabeled as sin"* (C002). This is the **relabeling fallacy**:
+      a physical quantity is given a new moral/theological name without any mapping,
+      invariant, or predictive gain. The intake record''s Explanatory Compression
+      probe **"the account does not merely rename the phenomenon"** returns **FAIL**
+      with the finding *"It renames morality as physics and sin as entropy"* (C001,
+      C002). Relabeling is not bridging: it produces no new compression, no prediction,
+      and no explanation.'
+    What a valid bridge would require: 'For the two bridges to be validated, the source
+      would need to supply the following apparatus. None of it is present.
+
+
+      | Bridge requirement | C1 status | C2 status |
+
+      |---|---|---|
+
+      | Independent definition of each domain | **Absent** | **Absent** |
+
+      | Term-by-term mapping | **Absent** | **Absent** |
+
+      | Shared relations or operations named | **Absent** | **Absent** |
+
+      | Explicit invariants | **Absent** | **Absent** |
+
+      | Bijection or appropriate equivalence | **Absent** | **Absent** |
+
+      | Inverse mapping tested | **Absent** | **Absent** |
+
+      | Positive and negative relations preserved | **Absent** | **Absent** |
+
+      | Composition / operation preservation tested | **Absent** | **Absent** |
+
+      | Mapping failure conditions named | **Absent** | **Absent** |
+
+      | New compression, prediction, or explanation produced | **Absent** | **Absent**
+      |'
+    The one formalization target the intake record proposes: 'The intake record''s
+      "Formalization targets" section proposes exactly one bridge test:
+
+
+      > *Formalize the identity claim as a bijection between moral and physical states,
+      and test for consistency.*
+
+
+      This is the only bridge-validation program the intake record recommends. It
+      cannot be run because the source supplies no set `M` of moral states, no set
+      `P` of physical states, no map `f : M → P`, no inverse `g : P → M`, no structure-preservation
+      conditions, and no consistency check. The Cross-Domain Integrity probes **"isomorphism
+      claims include a bijection or appropriate equivalence"** and **"inverse mapping
+      is tested where claimed"** both return **FAIL** for exactly this reason.'
+    The only survivable bridge reading: 'The intake record''s Ablation test returns
+      **CONDITIONAL**: *"If interpreted as analogy, the claims are trivially true
+      but lose their force; if identity, they are unsupported."* The only bridge reading
+      that survives is the **analogy reading**:
+
+
+      - *Morality is like physics* — moral life has regularities and consequences
+      that can be studied.
+
+      - *Sin is like entropy* — sin tends toward disorder, spreads, and resists reversal.
+
+
+      But the source does not present the claims as analogies. It uses *is*, not *is
+      like*, and the intake record''s Epistemic Calibration probe **"analogy is visibly
+      labeled"** returns **FAIL** with the finding *"No analogy."* The Rewrite Targets
+      section recommends exactly this repair: *"Rewrite as an analogy: ''Morality
+      is like physics'' and ''Sin is like entropy'', with explicit limits."*'
+    Verdict on bridge integrity: Both cross-domain bridges fail. **C1** fails because
+      the normative/descriptive type mismatch is unresolved and no reduction premise
+      is supplied. **C2** fails because the theological/physical type mismatch is
+      unresolved, no bridge principle is supplied, and the physical quantity is merely
+      relabeled as a moral one. The intake record's `UNRESOLVED_CATEGORY_ERROR` gate
+      is triggered for both, and the Cross-Domain Integrity dimension scores **0.0/10**
+      with all 18 probes FAIL. The bridge apparatus required to validate either identity
+      — independent definitions, term-by-term mapping, bijection, invariants, failure
+      conditions, and new compression — is entirely absent.
+    Falsification inventory: '| Falsification element | Status in source |
+
+      |---|---|
+
+      | Explicit defeat conditions for C1 | **None** |
+
+      | Explicit defeat conditions for C2 | **None** |
+
+      | Predictions stated before outcome interpretation | **None** |
+
+      | Specific predictions | **None** |
+
+      | Measurable or formally decidable predictions | **None** |
+
+      | Thresholds or expected ranges | **None** |
+
+      | Distinguishable success/failure outcomes | **None** |
+
+      | Tests discriminating preferred account from rivals | **None** |
+
+      | Auxiliary assumptions identified | **None** |
+
+      | Formal proof or countermodel path | **None** |
+
+      | Empirical data and method requirements | **None** |
+
+      | Bridge mapping failure conditions | **None** |
+
+      | Analogy break conditions | **None** |
+
+      | Replication or independent checking procedure | **None** |
+
+      | Negative controls | **None** |
+
+      | Boundary case tests | **None** |
+
+      | Statement of what would change the verdict | **None** |'
+    Testability and Falsifiability probe results (all FAIL or NOT_APPLICABLE): 'Every
+      probe in the intake record''s Testability and Falsifiability dimension returns
+      **FAIL** or **NOT_APPLICABLE**:
+
+
+      - **FAIL** — central claims have explicit defeat conditions. No defeat conditions.
+
+      - **FAIL** — predictions are stated before outcome interpretation where possible.
+      No predictions.
+
+      - **FAIL** — predictions are specific. No predictions.
+
+      - **FAIL** — predictions are measurable or formally decidable. No predictions.
+
+      - **FAIL** — thresholds or expected ranges are given where possible. No thresholds.
+
+      - **FAIL** — failure outcomes are distinguishable from success outcomes. No
+      outcomes.
+
+      - **FAIL** — tests discriminate the preferred account from rivals. No tests.
+
+      - **FAIL** — auxiliary assumptions are identified. No assumptions.
+
+      - **NOT_APPLICABLE** — failed predictions cannot be rescued without recorded
+      cost. No predictions.
+
+      - **FAIL** — formal claims name a proof or countermodel path. No formal claims.
+
+      - **FAIL** — empirical claims name data and method requirements. No empirical
+      claims.
+
+      - **NOT_APPLICABLE** — historical claims name possible disconfirming evidence.
+      No historical claims.
+
+      - **FAIL** — bridge claims name mapping failure conditions. No mapping failure
+      conditions (C001, C002).
+
+      - **FAIL** — analogy claims name where the analogy breaks. No analogy.
+
+      - **FAIL** — replication or independent checking is possible. No method.
+
+      - **FAIL** — negative controls are included. No controls.
+
+      - **FAIL** — boundary cases are tested. No tests.
+
+      - **FAIL** — what would change the verdict is stated. No verdict.'
+    Open questions the source leaves unresolved: '**Q1 — What is the intended reading
+      of the copula *is*?**
+
+      The source asserts *Morality is physics* and *Sin is entropy* using the copula
+      *is*. The intake record''s Ablation test returns **CONDITIONAL**: *"If interpreted
+      as analogy, the claims are trivially true but lose their force; if identity,
+      they are unsupported."* The source does not disambiguate between strict identity,
+      predication, analogy, or metaphor. This is the single most consequential open
+      question: the entire verdict turns on it.
+
+
+      **Q2 — What is the transition from C1 to C2?**
+
+      The intake record''s strongest unresolved structure is *"the transition from
+      ''morality is physics'' to ''sin is entropy'' is unexplained; no mechanism or
+      mapping is provided."* Even granting C1, no derivation, bridge, or mapping licenses
+      C2. The source supplies no inference rule linking the two claims.
+
+
+      **Q3 — What are the definitions of the four load-bearing terms?**
+
+      *Morality*, *physics*, *sin*, and *entropy* are all undefined. The intake record''s
+      Definition Precision probe **"every load-bearing term is defined"** returns
+      **FAIL** for C001 and C002. Without definitions, the claims are not even well-formed,
+      so no falsification condition can be stated.
+
+
+      **Q4 — Which entropy?**
+
+      The source does not specify whether *entropy* means thermodynamic entropy (Boltzmann,
+      J/K), Shannon information entropy (bits), Kolmogorov complexity, or a metaphorical
+      disorder. The intake record''s Definition Precision probe **"technical and ordinary
+      meanings are distinguished"** returns **FAIL**. Different entropy concepts would
+      yield different (and mutually incompatible) identity claims.
+
+
+      **Q5 — Which morality?**
+
+      The source does not specify whether *morality* is being used in a realist, anti-realist,
+      divine-command, natural-law, Kantian, or consequentialist sense. The intake
+      record''s Scope test (O7) returns **FAILED**: *"The claim is too broad and excludes
+      major moral theories."*
+
+
+      **Q6 — Which sin?**
+
+      The source does not specify a confessional or revelatory basis for *sin*. The
+      intake record''s Evidence Adequacy probe **"theological claims identify their
+      confessional or revelatory basis"** returns **FAIL** for C002. Without a tradition,
+      *sin* has no determinate content.
+
+
+      **Q7 — Is the claim universal or local?**
+
+      The source states the claims categorically, with no scope restriction. The intake
+      record''s Epistemic Calibration probe **"local results are not presented as
+      global results"** returns **FAIL**: *"Claims are universal."* A universal identity
+      claim requires universal evidence, which is absent.
+
+
+      **Q8 — What is the mechanism?**
+
+      The intake record''s Explanatory Compression probe **"the mechanism is more
+      informative than the label"** returns **FAIL**: *"No mechanism."* The claims
+      rename phenomena rather than explain them.'
+    Falsification boundaries the source fails to specify: 'For each claim, a falsification
+      boundary would require at minimum:
+
+
+      | Boundary element | C1 requirement | C2 requirement |
+
+      |---|---|---|
+
+      | Operational definition of both terms | **Absent** | **Absent** |
+
+      | A measurable or decidable prediction | **Absent** | **Absent** |
+
+      | A threshold distinguishing success from failure | **Absent** | **Absent**
+      |
+
+      | A named rival the test discriminates against | **Absent** | **Absent** |
+
+      | Auxiliary assumptions made explicit | **Absent** | **Absent** |
+
+      | A recorded cost for rescuing failed predictions | **Absent** | **Absent**
+      |
+
+      | A boundary case that would defeat the claim | **Absent** | **Absent** |
+
+
+      Because none of these is supplied, neither C1 nor C2 has a **falsification boundary**.
+      They are not falsifiable as stated; they are bare identity assertions.'
+    Formalization target: 'The intake record proposes exactly one formalization target:
+
+
+      > *Formalize the identity claim as a bijection between moral and physical states,
+      and test for consistency.*
+
+
+      This target cannot be executed because the source supplies no set `M` of moral
+      states, no set `P` of physical states, no map `f : M → P`, no inverse `g : P
+      → M`, no structure-preservation conditions, and no consistency check. The Cross-Domain
+      Integrity probes **"isomorphism claims include a bijection or appropriate equivalence"**
+      and **"inverse mapping is tested where claimed"** both return **FAIL** for exactly
+      this reason.'
+    Empirical test target: 'The intake record states:
+
+
+      > *No empirical test is possible without operational definitions.*
+
+
+      This is the correct boundary: because *morality*, *physics*, *sin*, and *entropy*
+      are undefined, no measurement, no observation, and no experiment can bear on
+      the claims. The `UNTESTED_CENTRAL_EMPIRICAL_CLAIM` gate is **not** triggered
+      only because the claims are not framed as empirical — but this is not a reprieve;
+      it means the claims are not even candidates for empirical testing.'
+    Rewrite target: 'The intake record recommends:
+
+
+      > *Rewrite as an analogy: ''Morality is like physics'' and ''Sin is like entropy'',
+      with explicit limits.*
+
+
+      This is the only repair that would make the claims evaluable. Under the analogy
+      reading, the falsification boundary becomes: *the analogy breaks where moral
+      normativity has no physical analogue, and where sin can occur without entropy
+      increase.* The intake record''s adversarial tests (O1, O3, O6, O8) already identify
+      these break points.'
+    Verdict on falsification boundaries: Neither C1 nor C2 has a falsification boundary
+      as stated. The source supplies no defeat conditions, no predictions, no thresholds,
+      no tests, and no auxiliary assumptions. The intake record's Testability and
+      Falsifiability dimension scores **0.0/10** with all 18 probes FAIL or NOT_APPLICABLE.
+      The claims are therefore **not falsifiable as written** — not because they are
+      protected from disconfirmation, but because they are not well-formed enough
+      to be disconfirmed. The three conditions in *What would change the verdict*
+      (definitions, bridge, evidence) are the necessary preconditions for any falsification
+      boundary to exist.
+    Consilience across sections: '| Section | Focus | Convergent finding |
+
+      |---|---|---|
+
+      | **S01** | Core finding | Two bare identity claims; no support; REJECT_AS_WRITTEN.
+      |
+
+      | **S02** | Axiom/definition spine | No definitions, axioms, or premises; claims
+      function as axioms-by-assertion. |
+
+      | **S03** | Argument chain | No argument graph; C1→C2 transition unexplained;
+      hidden reduction and correspondence premises. |
+
+      | **S04** | Evidence and sources | No evidence of any kind; only source is unverifiable
+      ''Consciousness Papers'' (UNKNOWN_SOURCE). |
+
+      | **S05** | Objections | Eight adversarial tests FAIL; one (analogy ablation)
+      CONDITIONAL; no test PASSES. |
+
+      | **S06** | Theological/philosophical translation | Category errors: normative/theological
+      terms collapsed into descriptive/physical terms without a bridge. |
+
+      | **S07** | Formal/mathematical layer | No symbols, domains, mappings, or proofs;
+      claims are ill-typed, not false equations. |
+
+      | **S08** | Bridge integrity | All 18 cross-domain probes FAIL; relabeling fallacy
+      flagged; no bijection, invariants, or failure conditions. |
+
+      | **S09** | Open questions and falsification | No defeat conditions, predictions,
+      thresholds, or tests; claims not falsifiable as written. |
+
+      | **S10** | Consilience | All findings converge on REJECT_AS_WRITTEN; next steps
+      specified below. |'
+    The minimum sufficient account: 'The intake record''s Section 9 states the simplest
+      sufficient account:
+
+
+      > *The document asserts two identity claims without support.*
+
+
+      - **Facts preserved:** none.
+
+      - **Commitments:** none.
+
+      - **Exceptions:** none.
+
+      - **Unsupported bridges:** `morality=physics`, `sin=entropy`.
+
+      - **Compression comment:** No explanatory content beyond the assertions.
+
+
+      This account preserves every fact the source actually supplies (the two assertions)
+      while adding no unsupported commitments. It is the minimum sufficient characterization
+      of the source.'
+    Scorecard and gate summary: '| Dimension | Score / 10 |
+
+      |---|---:|
+
+      | Logical Validity | 0.0 |
+
+      | Internal Coherence | 0.0 |
+
+      | Definition Precision | 0.0 |
+
+      | Evidence Adequacy | 0.0 |
+
+      | Explanatory Compression | 0.0 |
+
+      | Rival Discrimination | 0.0 |
+
+      | Testability and Falsifiability | 0.0 |
+
+      | Cross-Domain Integrity | 0.0 |
+
+      | Adversarial Robustness | 0.0 |
+
+      | Epistemic Calibration | 0.0 |
+
+
+      - **Raw score:** 0.0/100
+
+      - **Integrity factor:** 0.1
+
+      - **Final score:** 0.0/100
+
+
+      | Global gate | Triggered | Reason |
+
+      |---|---|---|
+
+      | UNKNOWN_SOURCE | **True** | Source is ''Consciousness Papers'' with no verifiable
+      origin. |
+
+      | CRITICAL_HIDDEN_PREMISE | **True** | Identity claims require hidden premises
+      about reduction. |
+
+      | UNRESOLVED_CATEGORY_ERROR | **True** | Category errors in C001 and C002. |
+
+      | FAILED_FORMAL_RECEIPT | False | No formal claims. |
+
+      | UNTESTED_CENTRAL_EMPIRICAL_CLAIM | False | No empirical claims. |
+
+      | FATAL_COUNTEREXAMPLE | False | No counterexample possible. |
+
+      | SOURCE_MISMATCH | False | No mismatch detected. |
+
+      | UNRESOLVED_CONTRADICTION | False | No contradictions. |'
+    Adversarial destruction summary: '| Test | Target | Result |
+
+      |---|---|---|
+
+      | Countermodel (zero-entropy moral failure) | C002 | FAILED |
+
+      | Premise denial (non-reductive moral realism) | C001 | FAILED |
+
+      | Ablation (analogy reading) | C001, C002 | CONDITIONAL |
+
+      | Role permutation (normative/descriptive asymmetry) | C001 | FAILED |
+
+      | Rival explanation (two domains) | C001, C002 | FAILED |
+
+      | Alternative definition (incommensurability) | C002 | FAILED |
+
+      | Edge case (ordered totalitarian regime) | C002 | FAILED |
+
+      | Scope test (universality) | C001 | FAILED |
+
+      | Causal reversal (absurd consequence) | C002 | FAILED |
+
+
+      **No test PASSES.** The only conditional survival is the analogy reading, which
+      is not what the source asserts.'
+    What survives: '1. **The two assertions themselves** — *Morality is physics* and
+      *Sin is entropy* — as bare identity claims.
+
+      2. **The possibility of metaphorical intent** — the source may intend a poetic
+      or analogical statement, but this is not explicit.
+
+      3. **The thesis–claim agreement** — the claims match the stated thesis (the
+      only PASS in the entire scorecard, under Internal Coherence).
+
+      4. **The conjecture labeling** — the claims are visibly marked as `CONJECTURE`
+      (the only other PASS, under Epistemic Calibration).
+
+
+      Nothing else survives. There is no argument, no evidence, no definition, no
+      bridge, no prediction, and no falsifier.'
+    What does not survive: '- **C1** fails on premise denial, role permutation, and
+      scope.
+
+      - **C2** fails on countermodel, alternative definition, edge case, and causal
+      reversal.
+
+      - **Both** fail against the two-domain rival and against the relabeling-fallacy
+      probe.
+
+      - **The bridge** between C1 and C2 is unexplained; no mechanism or mapping is
+      provided.
+
+      - **The category errors** flagged by `UNRESOLVED_CATEGORY_ERROR` remain unresolved.
+
+      - **The hidden premises** flagged by `CRITICAL_HIDDEN_PREMISE` remain unstated.'
+    Next steps — what would change the verdict: 'The intake record specifies exactly
+      three necessary conditions for the verdict to change:
+
+
+      1. **Provide clear definitions** of *morality*, *physics*, *sin*, and *entropy*.
+
+      2. **Supply a bridge principle or mapping** between the moral and physical domains.
+
+      3. **Offer empirical or formal evidence** for the identity claims.
+
+
+      Each is a necessary condition for the claims to become evaluable. None is present
+      in the source. Until at least (1) and (2) are supplied, no falsification test
+      can even be formulated.'
+    Concrete repair targets: '**Formalization target.**
+
+      > *Formalize the identity claim as a bijection between moral and physical states,
+      and test for consistency.*
+
+
+      This requires: a set `M` of moral states, a set `P` of physical states, a map
+      `f : M → P`, an inverse `g : P → M` with `g ∘ f = id_M` and `f ∘ g = id_P`,
+      structure-preservation conditions, and a consistency check. None is supplied.
+
+
+      **Empirical test target.**
+
+      > *No empirical test is possible without operational definitions.*
+
+
+      Because *morality*, *physics*, *sin*, and *entropy* are undefined, no measurement,
+      observation, or experiment can bear on the claims.
+
+
+      **Rewrite target.**
+
+      > *Rewrite as an analogy: ''Morality is like physics'' and ''Sin is like entropy'',
+      with explicit limits.*
+
+
+      This is the only repair that would make the claims evaluable. Under the analogy
+      reading, the falsification boundary becomes: *the analogy breaks where moral
+      normativity has no physical analogue, and where sin can occur without entropy
+      increase.* The adversarial tests O1, O3, O6, and O8 already identify these break
+      points.'
+    Consilience verdict: 'The intake record''s ten sections converge without tension
+      on a single verdict: the source document asserts two bare identity claims with
+      no definitions, no premises, no evidence, no equations, no predictions, no falsifiers,
+      and no argument graph. Every scorecard dimension scored 0.0/10; three global
+      gates triggered; all nine adversarial destruction tests failed or returned conditional.
+      The minimum sufficient account is that the document asserts two identity claims
+      without support. The canonical recommendation is **REJECT_AS_WRITTEN**, with
+      reuse grade **D** and reuse recommendation **ARCHIVE_ONLY**. The verdict would
+      change only if the author supplies (1) clear definitions of the four load-bearing
+      terms, (2) a bridge principle or mapping between the moral and physical domains,
+      and (3) empirical or formal evidence for the identity claims — or, alternatively,
+      rewrites the claims as explicitly limited analogies.'
+    1. Quotation Verification: 'Every non-empty `quote` field in the `map` stage was
+      checked against the source text. All quotations are verbatim substrings of the
+      source:
+
+
+      | Object | Quote | Verbatim in source? |
+
+      |---|---|---|
+
+      | C1 | "Morality is physics." | ✅ Yes — appears in §1 Claims (C001) and Core
+      Argument. |
+
+      | C2 | "Sin is entropy." | ✅ Yes — appears in §1 Claims (C002) and Core Argument.
+      |
+
+      | O1 | "The identity claim fails because sin can exist without entropy increase,
+      e.g., a perfectly ordered system with a wrong choice." | ✅ Yes — §6 Adversarial
+      Destruction, Countermodel finding. |
+
+      | O2 | "The claim is unsupported and likely false under standard non-reductive
+      moral realism." | ✅ Yes — §6 Premise denial finding. |
+
+      | O3 | "The symmetry of identity is broken by the normative/descriptive distinction."
+      | ✅ Yes — §6 Role permutation finding. |
+
+      | O4 | "A simpler account posits two distinct domains, avoiding category errors."
+      | ✅ Yes — §6 Rival explanation finding. |
+
+      | O5 | "The terms are incommensurable without a bridge principle." | ✅ Yes —
+      §6 Alternative definition finding. |
+
+      | O6 | "Counterexample to sin=entropy." | ✅ Yes — §6 Edge case finding. |
+
+      | O7 | "The claim is too broad and excludes major moral theories." | ✅ Yes —
+      §6 Scope test finding. |
+
+      | O8 | "The claim leads to absurd consequences." | ✅ Yes — §6 Causal reversal
+      finding. |
+
+
+      **Result: PASS.** No invented quotations detected.'
+    2. Status Label Consistency: 'All stage outputs (S01–S10) carry `status: AI_PROPOSED`,
+      consistent with the template''s requirement that all results are candidate AI
+      analysis, never admission or proof verification. The source document itself
+      is labeled `CANDIDATE_DRAFT` / `candidate_draft_not_admitted`, and the intake
+      record''s canonical recommendation is `REJECT_AS_WRITTEN`. No stage output claims
+      admission or verification.
+
+
+      **Result: PASS.**'
+    3. Unsupported Claims Flagged: 'The intake record and all ten sections explicitly
+      flag the two identity claims (C1, C2) as unsupported:
+
+
+      - **C1** (*Morality is physics*) — flagged as `CONJECTURE` / `UNRESOLVED`, with
+      `CRITICAL_HIDDEN_PREMISE` and `UNRESOLVED_CATEGORY_ERROR` gates triggered.
+
+      - **C2** (*Sin is entropy*) — flagged as `CONJECTURE` / `UNRESOLVED`, with `UNRESOLVED_CATEGORY_ERROR`
+      gate triggered.
+
+
+      All nine adversarial destruction tests are reported as FAILED or CONDITIONAL.
+      The scorecard reports 0.0/100 across all ten dimensions. The `UNKNOWN_SOURCE`
+      gate is triggered for the unverifiable ''Consciousness Papers'' attribution.
+
+
+      **Result: PASS.** Unsupported claims are explicitly flagged.'
+    4. Placeholder Text Check: 'No placeholder text (e.g., `TODO`, `TBD`, `[insert]`,
+      `lorem ipsum`) remains in any stage output. The source''s own `[The Final Reveal]`
+      marker is preserved as part of the exact source and is correctly identified
+      as unmapped content, not as a placeholder in the analysis.
+
+
+      **Result: PASS.**'
+    5. Cross-Section Consistency: '| Check | Result |
+
+      |---|---|
+
+      | S01 core finding matches map summary | ✅ Consistent — both identify two bare
+      identity claims and REJECT_AS_WRITTEN. |
+
+      | S02 axiom/definition spine matches source''s ''None identified'' | ✅ Consistent
+      — no definitions, axioms, or premises. |
+
+      | S03 argument chain matches source''s ''None identified'' | ✅ Consistent —
+      no argument graph; C1→C2 transition unexplained. |
+
+      | S04 evidence matches source''s ''None identified'' | ✅ Consistent — no evidence,
+      equations, predictions, or falsifiers. |
+
+      | S05 objections match §6 Adversarial Destruction | ✅ Consistent — O1–O8 plus
+      ablation, all FAILED or CONDITIONAL. |
+
+      | S06 theological translation matches §2 Epistemic Modes and §5 probes | ✅ Consistent
+      — category errors flagged for C002. |
+
+      | S07 formal layer matches source''s ''None identified'' | ✅ Consistent — no
+      symbols, domains, mappings, or proofs. |
+
+      | S08 bridge integrity matches §5 Cross-Domain Integrity probes | ✅ Consistent
+      — all 18 probes FAIL. |
+
+      | S09 falsification boundaries match §5 Testability probes | ✅ Consistent —
+      all 18 probes FAIL or NOT_APPLICABLE. |
+
+      | S10 consilience matches §9 Simplest Sufficient Account and §10 Canonical Recommendation
+      | ✅ Consistent — REJECT_AS_WRITTEN, grade D, ARCHIVE_ONLY. |
+
+
+      **Result: PASS.** No cross-section contradictions detected.'
+    6. Minor Consistency Notes: '1. **Object key coverage.** The `map` stage defines
+      ten objects (C1, C2, O1–O8). S01 and S02 reference only C1 and C2; S03–S06 and
+      S08–S10 reference the full set; S07 references only C1 and C2. This is appropriate
+      to each section''s focus and does not constitute an inconsistency.
+
+      2. **Gate count.** The map summary states three global gates triggered (UNKNOWN_SOURCE,
+      CRITICAL_HIDDEN_PREMISE, UNRESOLVED_CATEGORY_ERROR). The source §5 confirms
+      exactly these three as `True`; the other five are `False`. Consistent.
+
+      3. **Scorecard.** The map summary states 0.0/100 across all ten dimensions with
+      integrity factor 0.1. The source §5 confirms this. Consistent.
+
+      4. **Adversarial tests.** The map summary states all nine tests fail or return
+      conditional. The source §6 lists nine tests: eight FAILED, one CONDITIONAL.
+      Consistent.'
+    7. Audit Verdict: 'The CKG pipeline output for *The Moral Universe: The Hammer*
+      is **internally consistent, quotation-faithful, and free of placeholder text**.
+      All quoted text appears verbatim in the source. Status labels are consistent
+      with the content. Unsupported claims are explicitly flagged. The canonical recommendation
+      of **REJECT_AS_WRITTEN** (reuse grade D, ARCHIVE_ONLY) is supported by the intake
+      record''s scorecard, gates, and adversarial destruction results.
+
+
+      **Audit status: PASS.**'
+    8. Residual Uncertainties: '- The source''s `[The Final Reveal]` marker is preserved
+      but its intended content is not supplied; this is correctly noted as unmapped
+      content in the `map` stage.
+
+      - The possibility of metaphorical or poetic intent is acknowledged in S05, S06,
+      S08, and S10 as the only conditional survival; the source does not disambiguate,
+      and this is correctly flagged as an open question in S09.
+
+      - No formal or empirical test can be run without operational definitions; this
+      is correctly stated in S07 and S09.'
+  model: deepseek-chat
+  provider: deepseek
+_metadata:
+  source_path: 9bee1baa3d105b313dfafac3537df1f9844f33c00ceb65abd964440363cce543.md
+  generated_at: '2026-09-23T02:16:31.746583+00:00'
+  sha256: e53902bfb7b576e0f3782b00a9a506682944c388e4c55a004b7a68d793b07989
