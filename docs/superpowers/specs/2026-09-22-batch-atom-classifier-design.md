@@ -4,6 +4,8 @@
 **Project:** Faith-through-physics-atoms  
 **Topic:** A batch-runnable Python pipeline that classifies atoms one at a time and produces canonization-ready receipts.
 
+> **SUPERSEDED:** This spec targets the wrong repository. The authoritative version lives at `D:\GitHub\nerve\docs\specs\2026-09-22-batch-atom-classifier-design.md`. Keep this file only as a record of the corrected scope decision.
+
 ---
 
 ## 1. Purpose
