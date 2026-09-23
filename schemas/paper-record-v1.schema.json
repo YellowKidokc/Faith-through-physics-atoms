@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.local/schemas/paper-record-v1.json",
+  "title": "Paper Record v1",
+  "type": "object",
+  "required": ["address", "source", "metadata", "runs", "extracted", "canon_status"],
+  "properties": {
+    "address": {
+      "type": "object",
+      "required": ["uuid", "handle", "type"],
+      "properties": {
+        "uuid": { "type": "string", "format": "uuid" },
+        "handle": { "type": "string" },
+        "type": { "const": "paper" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string" },
+        "sha256": { "type": "string" }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "author": { "type": "string" },
+        "domain": { "type": "string" },
+        "series": { "type": "string" }
+      }
+    },
+    "runs": { "type": "array", "items": { "type": "string" } },
+    "latest_run": { "type": ["string", "null"] },
+    "extracted": {
+      "type": "object",
+      "properties": {
+        "ckg": { "type": "object" },
+        "atoms": { "type": "array" },
+        "axiom_nodes": { "type": "array" },
+        "coherence_score": { "type": "object" },
+        "fruits": { "type": "object" },
+        "lean4": { "type": "object" },
+        "master_equation": { "type": "object" },
+        "paper_grader": { "type": "object" },
+        "stories": { "type": "object" }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "array", "items": { "type": "string" } },
+        "domain": { "type": "array", "items": { "type": "string" } },
+        "register": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "canon_status": {
+      "type": "string",
+      "enum": ["candidate", "in_review", "canonized", "predicate", "rejected"]
+    },
+    "truth_predicates": { "type": "array", "items": { "type": "string" } },
+    "atoms_produced": { "type": "array", "items": { "type": "string" } }
+  }
+}
