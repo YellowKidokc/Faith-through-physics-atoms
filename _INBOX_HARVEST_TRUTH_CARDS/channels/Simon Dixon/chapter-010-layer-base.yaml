@@ -1,0 +1,146 @@
+_header:
+  source_id: SRC-SIMDIX-010
+  channel: Simon Dixon
+  chapter: 10
+  title: 10 takeaways everybody needs to be aware of after the Facebook CryptoCurrency
+    Hearing yesterday
+  layer: base
+  channel_type: finance_commentary
+  extracted_at: '2026-09-23'
+entities:
+- name: Simon Dixon
+  type: person
+  role: speaker
+  mention_count_estimate: 1
+- name: Facebook
+  type: organization
+  role: company developing Libra/Calibra, subject of hearings
+  mention_count_estimate: 12
+- name: IRS
+  type: organization
+  role: US tax authority, Facebook agreed to report directly
+  mention_count_estimate: 4
+- name: Libra
+  type: product
+  role: Facebook's cryptocurrency project
+  mention_count_estimate: 3
+- name: Calibra
+  type: product
+  role: Facebook's wallet for Libra
+  mention_count_estimate: 2
+- name: WhatsApp
+  type: product
+  role: platform for deploying Libra technology
+  mention_count_estimate: 1
+- name: Instagram
+  type: product
+  role: platform for deploying Libra technology
+  mention_count_estimate: 1
+- name: Facebook Messenger
+  type: product
+  role: platform for deploying Libra technology
+  mention_count_estimate: 1
+- name: Bitcoin
+  type: product
+  role: decentralized cryptocurrency, compared to Libra
+  mention_count_estimate: 4
+- name: Switzerland
+  type: place
+  role: location of Libra project entity
+  mention_count_estimate: 3
+- name: US
+  type: place
+  role: jurisdiction for US wallet and regulation
+  mention_count_estimate: 8
+- name: Spotify
+  type: organization
+  role: potential node operator for Libra
+  mention_count_estimate: 1
+- name: Visa
+  type: organization
+  role: potential node operator for Libra
+  mention_count_estimate: 1
+- name: MasterCard
+  type: organization
+  role: potential node operator for Libra
+  mention_count_estimate: 1
+- name: Uber
+  type: organization
+  role: potential node operator for Libra
+  mention_count_estimate: 1
+- name: Coinbase
+  type: organization
+  role: potential node operator for Libra
+  mention_count_estimate: 1
+- name: Tether
+  type: product
+  role: USD-backed cryptocurrency, compared to US wallet
+  mention_count_estimate: 3
+- name: Bitfinex
+  type: organization
+  role: company that invented Tether
+  mention_count_estimate: 1
+- name: Binance
+  type: organization
+  role: crypto exchange that used Tether as bank
+  mention_count_estimate: 1
+- name: World Trade Organization
+  type: organization
+  role: example of organization in Switzerland
+  mention_count_estimate: 1
+- name: Bank of International Settlements
+  type: organization
+  role: example of organization in Switzerland
+  mention_count_estimate: 1
+- name: Google
+  type: organization
+  role: example of company moving to Ireland due to US regulation
+  mention_count_estimate: 1
+- name: Ireland
+  type: place
+  role: destination for companies due to US regulation
+  mention_count_estimate: 1
+- name: Senate hearing
+  type: event
+  role: hearing on Facebook's Libra
+  mention_count_estimate: 1
+- name: House hearing
+  type: event
+  role: hearing on Facebook's Libra
+  mention_count_estimate: 2
+dates:
+- text: yesterday
+  normalized: '2019'
+  what: Senate hearing on Facebook's Libra
+  confidence: medium
+- text: today
+  normalized: '2019'
+  what: House hearing on Facebook's Libra
+  confidence: medium
+- text: seven years ago
+  normalized: '2012'
+  what: Simon Dixon's early talk on future of finance and Facebook entering financial
+    services
+  confidence: medium
+themes:
+- theme: Facebook's Libra cryptocurrency and regulatory hearings
+  confidence: 0.95
+- theme: Cryptocurrency regulation and government control
+  confidence: 0.9
+- theme: Bitcoin vs. corporate cryptocurrency
+  confidence: 0.85
+- theme: Tax collection and KYC via cryptocurrency
+  confidence: 0.8
+- theme: US dollar hegemony and stablecoins
+  confidence: 0.75
+- theme: Switzerland as a neutral jurisdiction for crypto
+  confidence: 0.7
+money_or_assets:
+- asset: US dollar
+  context: US wallet will be backed by US dollar
+- asset: Tether
+  context: USD-backed cryptocurrency used by crypto exchanges
+- asset: Libra
+  context: Facebook's cryptocurrency, potentially backed by basket of currencies
+- asset: 10 million
+  context: cost to become a node operator for Libra

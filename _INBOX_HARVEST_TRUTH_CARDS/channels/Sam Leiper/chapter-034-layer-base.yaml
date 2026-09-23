@@ -1,0 +1,107 @@
+_header:
+  source_id: SRC-SAMLEI-034
+  channel: Sam Leiper
+  chapter: 34
+  title: Christianity's biggest discovery in 34 minutes 57 seconds
+  layer: base
+  channel_type: christian_apologetics
+  extracted_at: '2026-09-23'
+entities:
+- name: P52
+  type: product
+  role: Ancient papyrus manuscript fragment, earliest surviving copy of New Testament
+    writing
+  mention_count_estimate: 15
+- name: Dead Sea Scrolls
+  type: product
+  role: Collection of ancient Jewish manuscripts
+  mention_count_estimate: 1
+- name: Nag Hammadi library
+  type: product
+  role: Collection of early Christian and Gnostic texts
+  mention_count_estimate: 1
+- name: John's Gospel
+  type: product
+  role: New Testament text preserved in P52
+  mention_count_estimate: 4
+- name: New Testament
+  type: product
+  role: Collection of Christian texts
+  mention_count_estimate: 8
+- name: Gospel of Mark
+  type: product
+  role: New Testament text
+  mention_count_estimate: 1
+- name: letters of Paul
+  type: product
+  role: New Testament texts
+  mention_count_estimate: 1
+- name: Bernard Grenfell
+  type: person
+  role: Oxford archaeologist who discovered P52
+  mention_count_estimate: 3
+- name: Arthur Hunt
+  type: person
+  role: Oxford archaeologist who discovered P52
+  mention_count_estimate: 3
+- name: Oxford
+  type: organization
+  role: University affiliation of Grenfell and Hunt
+  mention_count_estimate: 1
+- name: Egypt
+  type: place
+  role: Country where Oxyrhynchus is located
+  mention_count_estimate: 3
+- name: Oxyrhynchus
+  type: place
+  role: Ancient city where papyri were discovered
+  mention_count_estimate: 4
+- name: Cairo
+  type: place
+  role: Reference point for location of Oxyrhynchus
+  mention_count_estimate: 1
+- name: Luxor
+  type: place
+  role: Location of temples, not the expedition's destination
+  mention_count_estimate: 1
+- name: Britain
+  type: place
+  role: Destination of transported papyri
+  mention_count_estimate: 1
+- name: Roman Empire
+  type: place
+  role: Historical context for Oxyrhynchus
+  mention_count_estimate: 1
+dates:
+- text: '1896'
+  normalized: '1896'
+  what: Year Grenfell and Hunt arrived in Egypt
+  confidence: high
+- text: early second century
+  normalized: 0100-0150
+  what: Proposed date for P52
+  confidence: medium
+- text: second and third centuries
+  normalized: 0200-0300
+  what: Period when some New Testament manuscripts were copied
+  confidence: high
+- text: medieval period
+  normalized: 0500-1500
+  what: Period when most New Testament manuscripts were copied
+  confidence: medium
+- text: nearly 2,000 years
+  normalized: 0000-0200
+  what: Duration papyri remained untouched
+  confidence: medium
+themes:
+- theme: Historical significance of P52
+  confidence: 0.95
+- theme: Archaeological discovery
+  confidence: 0.9
+- theme: New Testament manuscript tradition
+  confidence: 0.85
+- theme: Historical uncertainty and evidence
+  confidence: 0.8
+- theme: Oxyrhynchus excavations
+  confidence: 0.85
+money_or_assets: []

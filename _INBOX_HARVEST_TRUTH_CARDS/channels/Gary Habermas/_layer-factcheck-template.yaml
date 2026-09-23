@@ -1,0 +1,36 @@
+> Template for the fact-check refinement layer, used for political, cultural, or news-commentary channels.
+> Example: Candace Owens, news analysis, documentary claims.
+
+---
+# Layer: fact-check refinement
+# Engine: LLM (API preferred for live fact-checking)
+# Triggered when base layer classification is news_commentary / political_commentary / debate
+source_id: SRC-EXAMPLE-001
+channel: Example Channel
+chapter: 1
+layer: factcheck
+extracted_at: 2026-09-23
+
+verifiable_claims:
+  - claim: "A specific statistic or historical event is described."
+    claim_type: statistical | historical | legal | scientific
+    source_given_in_video: "where the speaker says it came from"
+    needs_verification: true
+    suggested_verification:
+      - "Primary source or official dataset"
+      - "Reputable news archive"
+      - "Academic paper"
+    status: unverified
+
+named_sources:
+  - name: "A cited person or document"
+    role: source
+    verifiability: high | medium | low
+
+fact_check_notes:
+  - "This layer is intentionally cautious. It records what was claimed and what would be needed to verify it, without asserting truth or falsehood."
+
+bias_indicators:
+  - framing_device: "how the claim is presented"
+  - omitted_context: "what the video leaves out"
+  - emotional_language: "loaded terms used"

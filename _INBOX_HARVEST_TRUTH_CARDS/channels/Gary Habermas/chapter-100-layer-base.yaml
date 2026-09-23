@@ -1,0 +1,115 @@
+---
+# Layer: base NLP extraction
+# Engine: NAS NLP / spaCy / GLiNER (local, fast)
+# Output: people, places, organizations, dates, coreference-resolved entities
+source_id: SRC-HAB-100
+channel: Gary Habermas
+chapter: 100
+layer: base
+extracted_at: 2026-09-23
+
+entities:
+  - id: ENT-HAB-100-001
+    type: person
+    canonical_name: Gary Habermas
+    aliases: [Habermas, Dr. Habermas, Gary]
+    mention_count: 89
+    role: primary speaker
+
+  - id: ENT-HAB-100-002
+    type: person
+    canonical_name: Mike Licona
+    aliases: [Licona, Mike]
+    mention_count: 42
+    role: host
+
+  - id: ENT-HAB-100-003
+    type: person
+    canonical_name: E.P. Sanders
+    aliases: [Ed Sanders, Sanders]
+    mention_count: 4
+    role: scholar cited
+
+  - id: ENT-HAB-100-004
+    type: person
+    canonical_name: Dale Allison
+    aliases: [Allison]
+    mention_count: 3
+    role: scholar cited
+
+  - id: ENT-HAB-100-005
+    type: person
+    canonical_name: Gerd Lüdemann
+    aliases: [Lüdemann, ludman]
+    mention_count: 2
+    role: scholar cited
+
+  - id: ENT-HAB-100-006
+    type: person
+    canonical_name: John Dominic Crossan
+    aliases: [Crossan, Dominic, Dom Crossan]
+    mention_count: 5
+    role: scholar cited
+
+  - id: ENT-HAB-100-007
+    type: person
+    canonical_name: Bart Ehrman
+    aliases: [Ehrman, Bart]
+    mention_count: 4
+    role: scholar mentioned
+
+  - id: ENT-HAB-100-008
+    type: person
+    canonical_name: N.T. Wright
+    aliases: [Wright, Tom Wright]
+    mention_count: 2
+    role: scholar cited
+
+  - id: ENT-HAB-100-009
+    type: organization
+    canonical_name: Liberty University
+    aliases: []
+    mention_count: 1
+
+  - id: ENT-HAB-100-010
+    type: organization
+    canonical_name: Houston Christian University
+    aliases: [HCU]
+    mention_count: 2
+
+  - id: ENT-HAB-100-011
+    type: place
+    canonical_name: Jerusalem
+    aliases: []
+    mention_count: 3
+
+  - id: ENT-HAB-100-012
+    type: place
+    canonical_name: Corinth
+    aliases: []
+    mention_count: 1
+
+dates:
+  - text: "c. AD 30-33"
+    normalized: "0030-0033"
+    what: "crucifixion of Jesus"
+    confidence: high
+
+  - text: "35 to 36"
+    normalized: "0035-0036"
+    what: "Paul's visit to Jerusalem after conversion"
+    confidence: high
+
+  - text: "55"
+    normalized: "0055"
+    what: "Paul writes 1 Corinthians"
+    confidence: medium
+
+mentions_by_span:
+  - span: "~00:03:00"
+    entity_ids: [ENT-HAB-100-001]
+    text: "a minimal fact by definition is..."
+
+  - span: "~00:05:00"
+    entity_ids: [ENT-HAB-100-001, ENT-HAB-100-003]
+    text: "Ed Sanders says the apostles had group experiences..."

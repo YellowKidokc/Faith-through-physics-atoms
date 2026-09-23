@@ -1,0 +1,114 @@
+---
+# Layer: christian refinement
+# Engine: LLM (Ollama → API fallback)
+# Triggered when base layer classification is christian_apologetics / christian_theology
+source_id: SRC-HAB-100
+channel: Gary Habermas
+chapter: 100
+layer: christian
+extracted_at: 2026-09-23
+
+scripture_refs:
+  - reference: "1 Corinthians 15:3-7"
+    book: "1 Corinthians"
+    chapter_verse: "15:3-7"
+    usage: "early creed / list of resurrection appearances"
+    how_used: proof_text
+    claims_supported: [CLM-HAB-100-003]
+
+  - reference: "Galatians 1:18-2:10"
+    book: "Galatians"
+    chapter_verse: "1:18-2:10"
+    usage: "Paul's eyewitness contact in Jerusalem"
+    how_used: evidence
+    claims_supported: [CLM-HAB-100-004]
+
+  - reference: "Mark 14:61-64"
+    book: "Mark"
+    chapter_verse: "14:61-64"
+    usage: "Jesus before the Sanhedrin"
+    how_used: evidence
+    claims_supported: [CLM-HAB-100-006]
+
+  - reference: "Philippians 3:21"
+    book: "Philippians"
+    chapter_verse: "3:21"
+    usage: "glorious body like Christ's"
+    how_used: evidence
+    claims_supported: [CLM-HAB-100-005]
+
+  - reference: "Romans 8:11"
+    book: "Romans"
+    chapter_verse: "8:11"
+    usage: "God gives life to mortal bodies"
+    how_used: evidence
+    claims_supported: [CLM-HAB-100-005]
+
+  - reference: "1 Thessalonians 4:13-17"
+    book: "1 Thessalonians"
+    chapter_verse: "4:13-17"
+    usage: "resurrection of the dead in Christ"
+    how_used: evidence
+    claims_supported: [CLM-HAB-100-005]
+
+doctrines_touched:
+  - doctrine: resurrection of Jesus
+    centrality: primary
+  - doctrine: bodily resurrection
+    centrality: primary
+  - doctrine: deity of Christ
+    centrality: secondary
+  - doctrine: apostolic testimony
+    centrality: secondary
+  - doctrine: biblical inerrancy
+    centrality: mentioned (disputed between speakers)
+
+apologetic_arguments:
+  - type: historical
+    name: minimal facts
+    summary: "Use a small set of facts granted by critical scholars as the evidential foundation."
+  - type: historical
+    name: early creed
+    summary: "1 Corinthians 15 preserves an oral tradition within years of the events."
+  - type: historical
+    name: eyewitness testimony
+    summary: "Paul had direct contact with Peter and James shortly after his conversion."
+
+scholar_positions:
+  - scholar_id: ENT-HAB-100-003
+    scholar_name: E.P. Sanders
+    grants_group_appearances: true
+    believes_resurrection_occurred: unclear
+    notes: "Liberal; says apostles had group experiences they interpreted as seeing Jesus."
+
+  - scholar_id: ENT-HAB-100-004
+    scholar_name: Dale Allison
+    grants_group_appearances: true
+    believes_bodily_resurrection: true
+    notes: "Believer / critical scholar."
+
+  - scholar_id: ENT-HAB-100-005
+    scholar_name: Gerd Lüdemann
+    grants_group_appearances: true
+    believes_resurrection_occurred: false
+    explanation: hallucination
+    notes: "Atheist; disciples thought they saw Jesus immediately."
+
+  - scholar_id: ENT-HAB-100-006
+    scholar_name: John Dominic Crossan
+    grants_group_appearances: true
+    believes_resurrection_occurred: false
+    explanation: altered states of consciousness / post-death visions
+    notes: "Agnostic; rejects hallucination label but rejects bodily resurrection."
+
+objection_response_pairs:
+  - objection: "Group appearances are not a minimal fact and skeptical scholars do not grant them."
+    response: "They are in the earliest Creed (1 Cor 15) and skeptical scholars including Sanders, Allison, Lüdemann, and Crossan grant the underlying group experience."
+    linked_scripture: "1 Corinthians 15:3-7"
+    linked_scholars: [ENT-HAB-100-003, ENT-HAB-100-004, ENT-HAB-100-005, ENT-HAB-100-006]
+
+faith_alignment: nicene_compatible
+weak_points:
+  - "'Vast majority' is intentionally not quantified."
+  - "Group experiences do not by themselves prove a physical resurrection."
+  - "1 Cor 15 Creed is ambiguous on the exact nature of the appearances."
