@@ -1,0 +1,74 @@
+face:
+  uuid: b79bf981-94fd-5963-9f36-2fac92a6825b
+  node_id: tp:master-equation/01/ME-EQ-005
+  claim_id: tp:ME/ME-EQ-005
+  name: Lowe Coherence Lagrangian
+  term: Lowe Coherence Lagrangian
+  plain: The Lagrangian treats coherence as weighting kinetic structure while entropy
+    supplies the penalty term.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: mathematical
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  mathematicalForm: L = χ(q,t)(1/2·qdot^T·K·qdot) - S·χ(q,t)
+  mathFormNormal: L = chi(q,t)*(0.5*qdot^T*K*qdot) - S*chi(q,t)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-040
+    propagates: true
+    note: Equation atom dependency.
+  - type: dependsOn
+    target: tp:axioms/01/AX-136
+    propagates: true
+    note: Equation atom dependency.
+  tags:
+  - equation
+  - coherence
+  - entropy
+  keywords:
+  - equation
+  - L
+  - χ
+  - q
+  - qdot
+  - K
+  - S
+  verificationStatus: equation-registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the equation is ill-typed, contradicts its dependency
+    atoms, or fails the verification/empirical burden declared by its source layer.
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_Lowe_Coherence_Lagrangian_Formal_Test.md
+  equationRegistry:
+    equationID: ME-EQ-005
+    variables:
+    - L
+    - χ
+    - q
+    - qdot
+    - K
+    - S
+    normalForm: L = chi(q,t)*(0.5*qdot^T*K*qdot) - S*chi(q,t)
+    source: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_Lowe_Coherence_Lagrangian_Formal_Test.md
+_metadata:
+  source_path: master-equation/01_canonical/ME-EQ-005-lowe-coherence-lagrangian.jsonld
+  generated_at: '2026-09-23T01:17:14.649004+00:00'
+  sha256: 35929d08c852265b0ea80427a116311139b0fca94053bfc616404d43ffc8a4cb

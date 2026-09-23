@@ -1,0 +1,86 @@
+{
+  "receipt_version": "final-api-call/1.0.0",
+  "status": "CANDIDATE_DRAFT — NOT ADMITTED",
+  "created_at": "2026-09-01T22:24:31.122685+00:00",
+  "call": "01_NONDISCRIMINATORY_DISCOVERY",
+  "provider": "mock",
+  "model": "deepseek-chat",
+  "blind_input": {
+    "content_hash": "sha256:81a760e8c77f4b3a2092d156d5d7114b904c8d1b6dac3a77711965dc407f5be4",
+    "withholding": {
+      "named_headings_replaced": 9,
+      "frontmatter_withheld": true,
+      "filename_withheld": true,
+      "folder_withheld": true,
+      "html_comments_withheld": true
+    },
+    "chunk_count": 1
+  },
+  "frozen_discovery": {
+    "schema_version": "paper-discovery/1.0.0",
+    "stage": "NONDISCRIMINATORY_DISCOVERY",
+    "status": "DISCOVERY_COMPLETE",
+    "discovered_objects": [
+      {
+        "discovery_id": "DISC-001",
+        "exact_quotation": "What the public story gets right, gets wrong, overstates, and how to state the defensible version.",
+        "neutral_paraphrase": "What the public story gets right, gets wrong, overstates, and how to state the defensible version.",
+        "referent": "The referent remains to be discriminated.",
+        "identity_conditions": [],
+        "distinctions": [
+          "The assertion remains distinct from its negation."
+        ],
+        "relations": [],
+        "operations": [],
+        "dependencies": [],
+        "constraints": [],
+        "invariants": [],
+        "consequences": [],
+        "countermodels": [
+          "The exact negation remains a live comparison."
+        ],
+        "collapse_conditions": [],
+        "open_questions": [
+          "Live semantic discovery was not called in mock mode."
+        ],
+        "source_section": "SECTION_002",
+        "line_start": 5,
+        "line_end": 5
+      }
+    ],
+    "global_open_questions": [],
+    "prohibited_outputs": [
+      "All classification and canon fields withheld."
+    ]
+  },
+  "emergent_organization": {
+    "schema_version": "emergent-organization/1.0.0",
+    "stage": "BLIND_EMERGENT_ORGANIZATION",
+    "organization_name": "Mock organization",
+    "organizing_principle": "All mock discoveries remain together because semantic organization was not called.",
+    "groupings": [
+      {
+        "label": "Unclassified mock material",
+        "definition": "A temporary group used only to test machinery.",
+        "object_ids": [
+          "DISC-001"
+        ],
+        "rationale": "Mock mode does not make semantic judgments.",
+        "alternative_labels": []
+      }
+    ],
+    "ungrouped_object_ids": [],
+    "cross_group_tensions": [],
+    "rival_organizations": [],
+    "cautions": [
+      "This organization is a test fixture, not a semantic result."
+    ]
+  },
+  "post_discovery_source_binding": {
+    "path": "C:\\Users\\David\\Documents\\faiththruphysics.com\\01_WORKING\\___AXIOM\\___AXIOM\\01_THE_ONE_STORY\\01_THE_ONE_STORY\\01_SUPPORT_GOD_AS_ROOT\\02_CLAIM_AUDIT\\01C-13_AUDIT_GOD_AS_ROOT_PUBLIC_STORY.md",
+    "source_hash": "sha256:943fe58056dea672ae3b9269a8bbe7a7fc1b984330e10455540eeb28e2a0b588"
+  },
+  "source_modified": false,
+  "canonical_admission_performed": false,
+  "human_ruling_required": true
+}

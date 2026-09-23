@@ -1,0 +1,80 @@
+face:
+  uuid: 36c20c8c-a65f-5403-8d36-2b20959fcab1
+  node_id: tp:axioms/01/AX-158
+  claim_id: tp:AXIOMS/F7
+  name: Faithfulness
+  term: Faithfulness
+  plain: Faithfulness = temporal consistency of commitments across time.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical_anchor
+  mathematicalForm: F_Faithfulness = consistency(commitments, t)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-151
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - cross
+  - faith
+  keywords:
+  - F7
+  - Q10
+  - Relational
+  - ObservableDomain
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show faithfulness without temporal coherence. Demonstrate
+    temporal consistency without faithfulness.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 160
+  axiomRegistry:
+    axiomID: AX-158
+    oldID: F7
+    treeLevel: Q10
+    treeBranch: Q10-AH (Fruit 7)
+    questionType: Type 2 (What IS X?)
+    domain: Relational
+    tier: '2'
+    newType: ObservableDomain
+    logicalForce: empirical hypothesis
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M20
+    moduleTitle: Universal Coherence / Fruits
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: M1, M2
+    worldviewsEliminated: —
+    propagationTest: 'YES'
+    intendedStatus: classified
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-158-faithfulness.jsonld
+  generated_at: '2026-09-23T01:17:14.126252+00:00'
+  sha256: a9f15d22c09efd748dabb2b734eb394c408324847f300640b8e58b359b43a295

@@ -1,0 +1,82 @@
+face:
+  uuid: 7994d8bc-7642-5cf4-b180-a1d4eb707687
+  node_id: tp:axioms/01/AX-140
+  claim_id: tp:AXIOMS/D19.5
+  name: 'Law V: Conservation Symmetry'
+  term: 'Law V: Conservation Symmetry'
+  plain: 'Law V: Every continuous symmetry of χ generates a conserved quantity.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: Symmetry(χ) → Conservation(Q); Noether applied to χ
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-135
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - definition
+  - symmetry
+  - conservation
+  keywords:
+  - D19.5
+  - Q5
+  - Laws
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show Noether's theorem fails for χ-field. Demonstrate χ
+    symmetries don't generate conservation laws.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 142
+  axiomRegistry:
+    axiomID: AX-140
+    oldID: D19.5
+    treeLevel: Q5
+    treeBranch: Q5-P (Fifth law)
+    questionType: Type 2 (What IS X?)
+    domain: Laws
+    tier: '2'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M19
+    moduleTitle: Ten-Law Master Equation
+    spineRole: supporting_definition
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — Conservation law propagates through all physics and soul
+      conservation.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-140-law-v-conservation-symmetry.jsonld
+  generated_at: '2026-09-23T01:17:13.980417+00:00'
+  sha256: 3e6b29cebd08f44344ef87a96bc319fdbd4a2e83cb3316899c49bdc15e3d3139

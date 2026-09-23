@@ -1,0 +1,68 @@
+face:
+  uuid: e5ef5455-cb4a-5d52-a032-a20df62f073c
+  node_id: tp:master-equation/01/ME-01-027
+  claim_id: tp:ME/ME-01-027
+  name: Q - Superposition Measure
+  term: Q - Superposition Measure
+  plain: Open possibility remains unresolved until actualization.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: definition
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  kernelChecked: false
+  challengeStatus: unchallenged
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  mathematicalForm: Q in [0, 1]
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-010
+    propagates: true
+    note: Factor slot belongs to the Master Equation integration atom.
+  - type: dependsOn
+    target: tp:axioms/01/AX-045
+    propagates: true
+    note: Factor is grounded by AX-045 in the axiom spine.
+  tags:
+  - observer
+  - faith
+  keywords:
+  - master-equation-factor
+  - Q
+  - '[0, 1]'
+  verificationStatus: formal-layer-import
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_FORMAL_LAYER_Definition10.md
+  masterEquationFactor:
+    id: ME-01-027
+    symbol: Q
+    name: Superposition Measure
+    domain: '[0, 1]'
+    definition: Measure of unresolved state space before selection or collapse.
+    plain: Open possibility remains unresolved until actualization.
+    axiom: AX-045
+    tags:
+    - observer
+    - faith
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-027-q-superposition-measure.jsonld
+  generated_at: '2026-09-23T01:17:14.504857+00:00'
+  sha256: 8584a9caf22d91e997cc28656f2a1564b1475e2eaa774d374dcc6d75878cdd20

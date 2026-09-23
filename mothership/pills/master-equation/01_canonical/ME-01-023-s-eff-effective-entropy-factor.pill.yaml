@@ -1,0 +1,71 @@
+face:
+  uuid: 5e4e9c01-bd37-51a8-9d79-7f1f46c80355
+  node_id: tp:master-equation/01/ME-01-023
+  claim_id: tp:ME/ME-01-023
+  name: S_eff - Effective Entropy Factor
+  term: S_eff - Effective Entropy Factor
+  plain: Entropy does not feed coherence directly; it enters as the thing that lowers
+    the contribution.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: definition
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  kernelChecked: false
+  challengeStatus: unchallenged
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  mathematicalForm: S_eff in (0, 1]
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-010
+    propagates: true
+    note: Factor slot belongs to the Master Equation integration atom.
+  - type: dependsOn
+    target: tp:axioms/01/AX-092
+    propagates: true
+    note: Factor is grounded by AX-092 in the axiom spine.
+  tags:
+  - entropy
+  - decoherence
+  keywords:
+  - master-equation-factor
+  - S_eff
+  - (0, 1]
+  verificationStatus: formal-layer-import
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_FORMAL_LAYER_Definition10.md
+  masterEquationFactor:
+    id: ME-01-023
+    symbol: S_eff
+    name: Effective Entropy Factor
+    domain: (0, 1]
+    definition: S_eff = exp(-eta * S_prod), or rationally 1/(1 + S_prod), so raw entropy
+      production reduces coherence contribution.
+    plain: Entropy does not feed coherence directly; it enters as the thing that lowers
+      the contribution.
+    axiom: AX-092
+    tags:
+    - entropy
+    - decoherence
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-023-s-eff-effective-entropy-factor.jsonld
+  generated_at: '2026-09-23T01:17:14.479332+00:00'
+  sha256: de3715771602d448db2ea2603d80c558b629aa0a1f75887ab95611a3c709394c

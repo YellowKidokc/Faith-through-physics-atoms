@@ -1,0 +1,81 @@
+face:
+  uuid: c5db168b-4760-551a-a659-ead5a4db4603
+  node_id: tp:axioms/01/AX-047
+  claim_id: tp:AXIOMS/A6.3
+  name: Irreversibility
+  term: Irreversibility
+  plain: Collapse is thermodynamically irreversible.
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: ΔS_collapse ≥ 0; irreversible
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-046
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - observer
+  keywords:
+  - A6.3
+  - Q6
+  - Ontological
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show a quantum measurement that is fully reversible. Demonstrate
+    collapse can be undone (violating 2nd Law). Show entropy doesn't increase during
+    measurement.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 48
+  axiomRegistry:
+    axiomID: AX-047
+    oldID: A6.3
+    treeLevel: Q6
+    treeBranch: Q6-M (Collapse thermodynamics)
+    questionType: Type 4 (What must X be?)
+    domain: Ontological
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M06
+    moduleTitle: Collapse / Measurement
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: M2 (Entropic — irreversibility IS entropy generation)
+    worldviewsEliminated: —
+    propagationTest: YES — Irreversibility propagates to heat generation, entropy
+      production, and the arrow of time.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-047-irreversibility.jsonld
+  generated_at: '2026-09-23T01:17:13.143115+00:00'
+  sha256: e4ea6acb35aa5fecd166963da5ef8f246277c2dfa55284f9060443106bc7015e

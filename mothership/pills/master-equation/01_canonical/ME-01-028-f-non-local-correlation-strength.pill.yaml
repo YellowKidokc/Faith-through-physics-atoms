@@ -1,0 +1,71 @@
+face:
+  uuid: cdbfd05a-eb1f-52aa-9359-c6b6f63443fb
+  node_id: tp:master-equation/01/ME-01-028
+  claim_id: tp:ME/ME-01-028
+  name: F - Non-Local Correlation Strength
+  term: F - Non-Local Correlation Strength
+  plain: Related systems are no longer fully independent.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: definition
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  kernelChecked: false
+  challengeStatus: unchallenged
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  mathematicalForm: F in [0, 1]
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-010
+    propagates: true
+    note: Factor slot belongs to the Master Equation integration atom.
+  - type: dependsOn
+    target: tp:axioms/01/AX-080
+    propagates: true
+    note: Factor is grounded by AX-080 in the axiom spine.
+  tags:
+  - faith
+  - covenant
+  - coherence
+  keywords:
+  - master-equation-factor
+  - F
+  - '[0, 1]'
+  verificationStatus: formal-layer-import
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_FORMAL_LAYER_Definition10.md
+  masterEquationFactor:
+    id: ME-01-028
+    symbol: F
+    name: Non-Local Correlation Strength
+    domain: '[0, 1]'
+    definition: Non-local correlation strength, including entanglement or relational
+      bond.
+    plain: Related systems are no longer fully independent.
+    axiom: AX-080
+    tags:
+    - faith
+    - covenant
+    - coherence
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-028-f-non-local-correlation-strength.jsonld
+  generated_at: '2026-09-23T01:17:14.512883+00:00'
+  sha256: 5a1278d74458c6a8515826fa7cf25e7f2d86fccd2dd215a7a9521c000a0e3b9d

@@ -1,0 +1,87 @@
+face:
+  uuid: 79091d5e-1efd-57c7-88a5-3adae564bbd7
+  node_id: tp:axioms/01/AX-089
+  claim_id: tp:AXIOMS/A11.2
+  name: Coherence-Morality Identity
+  term: Coherence-Morality Identity
+  plain: Goodness = coherence maximization; evil = coherence destruction.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: Good ≡ ΔC > 0; Evil ≡ ΔC < 0
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-088
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-017
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  - moral-conservation
+  keywords:
+  - A11.2
+  - Q10
+  - Relational
+  - FrameworkCommitment
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show high-coherence systems that are morally evil. Demonstrate
+    moral goodness without coherence increase. Find a case where coherence maximization
+    leads to evil outcomes.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 91
+  axiomRegistry:
+    axiomID: AX-089
+    oldID: A11.2
+    treeLevel: Q10
+    treeBranch: Q10-Q (Moral content — coherence identity)
+    questionType: Type 2 (What IS X?)
+    domain: Relational
+    tier: '1'
+    newType: FrameworkCommitment
+    logicalForce: framework assumption
+    formalizableInLean: partly
+    leanKind: parameter / assumption, not theorem
+    riskLevel: high
+    kernelRole: guardedPremise
+    moduleID: M11
+    moduleTitle: Moral Coherence
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: M1 (Agentic — good choices increase coherence; evil choices
+      decrease it)
+    worldviewsEliminated: Nihilism, Eliminativism
+    propagationTest: YES — Coherence-morality identity propagates to virtue (AX-091),
+      vice (AX-092), sin-as-decoherence, and the entire relational domain.
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-089-coherence-morality-identity.jsonld
+  generated_at: '2026-09-23T01:17:13.537971+00:00'
+  sha256: d4559ceaee41d0e8e347e930331e10a00a0abb11b29904e8fe660f7e94065ab2

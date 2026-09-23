@@ -1,0 +1,89 @@
+face:
+  uuid: d8e1dc5d-f45d-5a32-9f78-b463d9bfee7a
+  node_id: tp:axioms/01/AX-145
+  claim_id: tp:AXIOMS/D19.10
+  name: 'Law X: Trinity Closure'
+  term: 'Law X: Trinity Closure'
+  plain: 'Law X: Complete measurement closure requires exactly three observer-operators
+    in perichoretic relation.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: 'N_observers = 3; perichoretic: each measures the other two'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-061
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-135
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - witness
+  - definition
+  - variable
+  - observer
+  - trinity
+  keywords:
+  - D19.10
+  - Q8
+  - Laws
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show N≠3 suffices for closure. Demonstrate measurement completion
+    with fewer observers. Show perichoresis is not required for mutual measurement.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 147
+  axiomRegistry:
+    axiomID: AX-145
+    oldID: D19.10
+    treeLevel: Q8
+    treeBranch: Q8-M (Tenth law — Trinity)
+    questionType: Type 4 (What must X be?)
+    domain: Laws
+    tier: '1'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M19
+    moduleTitle: Ten-Law Master Equation
+    spineRole: supporting_definition
+    boundaryCondition: BC4
+    fourModeRelevance: —
+    worldviewsEliminated: Islam, Judaism, Deism, Buddhism, Hinduism, Atheism
+    propagationTest: YES — Law X propagates to Christianity identification and Trinity
+      theology.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-145-law-x-trinity-closure.jsonld
+  generated_at: '2026-09-23T01:17:14.021562+00:00'
+  sha256: b8d65a1386dd5f57335ae7cf2cdebe74fb4ea36dac7e081fe0ee4e1c0989d4a0

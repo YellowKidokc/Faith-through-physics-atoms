@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "Claim",
+  "@id": "https://faiththruphysics.com/claims/A042/L9/C3",
+  "claimID": "tp:A042/L9/C3",
+  "name": "Law 9 Moral Conservation — Claim 3",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dateCreated": "2026-02-14",
+  "dateModified": "2026-07-22",
+  "version": "1.2.0",
+  "axiomRoot": "https://faiththruphysics.com/claims/A042",
+  "claimClass": "theorem",
+  "domainType": "theology",
+  "statementTechnical": "Atonement enters as external source term W_grace satisfying dS_m/dt = σ − W_grace/T; without it, suppression maximizes ν_loss (conserved displacement).",
+  "statementPlain": "Suppressing wrongdoing without grace doesn't remove the cost — it relocates it. Only an outside source term can actually close the ledger.",
+  "dependsOn": [
+    "https://faiththruphysics.com/claims/A042/L9/C1",
+    "https://faiththruphysics.com/claims/A042/L9/C2"
+  ],
+  "evidenceType": "formal-derivation + empirical-correlation",
+  "verificationStatus": "informal",
+  "kernelChecked": false,
+  "challengeStatus": "unchallenged",
+  "falsificationCondition": "Demonstrate sustained behavioral suppression with ν_loss → 0 and no external source term, measured across the named displacement channels.",
+  "isPartOf": "https://faiththruphysics.com/papers/POF2828-2026-0001"
+}

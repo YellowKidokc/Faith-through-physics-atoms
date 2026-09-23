@@ -1,0 +1,85 @@
+face:
+  uuid: 51807a0c-0ed3-5337-ba27-e52d20cf09df
+  node_id: tp:axioms/01/AX-100
+  claim_id: tp:AXIOMS/A13.1
+  name: Chi Mediates Unification
+  term: Chi Mediates Unification
+  plain: Fundamental theory must unify gravity and quantum mechanics.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: G_μν + Λg_μν = (8πG/c⁴)T_μν + κχ_μν
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-010
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-013
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - logos
+  keywords:
+  - A13.1
+  - Q5
+  - Material
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Achieve GR-QM unification without χ-field. Show χ cannot
+    couple to both gravity and quantum fields simultaneously. Demonstrate another
+    substrate unifies them.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 102
+  axiomRegistry:
+    axiomID: AX-100
+    oldID: A13.1
+    treeLevel: Q5
+    treeBranch: Q5-G (Unification requirement)
+    questionType: Type 4 (What must X be?)
+    domain: Material
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M13
+    moduleTitle: GR-QM Chi Field Physics
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — Unification propagates to bridge equation, dark energy
+      identification, and cosmological predictions.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-100-chi-mediates-unification.jsonld
+  generated_at: '2026-09-23T01:17:13.633479+00:00'
+  sha256: f2ccf0c84188b498f53cf55bba60e9f0d80c5f78ba6aeaea07aaa6d5af01e0ef

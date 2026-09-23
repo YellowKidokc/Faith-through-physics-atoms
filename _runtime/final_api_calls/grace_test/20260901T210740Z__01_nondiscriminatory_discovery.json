@@ -1,0 +1,1996 @@
+{
+  "receipt_version": "final-api-call/1.0.0",
+  "status": "CANDIDATE_DRAFT — NOT ADMITTED",
+  "created_at": "2026-09-01T21:07:40.037094+00:00",
+  "call": "01_NONDISCRIMINATORY_DISCOVERY",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "blind_input": {
+    "content_hash": "sha256:bb9e59ad0db452d9a6c79f83430664dff3247da60bd27766d20884f36c1377eb",
+    "withholding": {
+      "named_headings_replaced": 42,
+      "frontmatter_withheld": true,
+      "filename_withheld": true,
+      "folder_withheld": true,
+      "html_comments_withheld": true
+    },
+    "chunk_count": 4
+  },
+  "frozen_discovery": {
+    "schema_version": "paper-discovery/1.0.0",
+    "stage": "NONDISCRIMINATORY_DISCOVERY",
+    "status": "DISCOVERY_COMPLETE",
+    "discovered_objects": [
+      {
+        "discovery_id": "DISC-0001",
+        "exact_quotation": "Can five independently established boundary results constrain the properties of any complete repair of a damaged, self-interpreting, physically instantiated system?",
+        "neutral_paraphrase": "The text poses a question about whether five separate boundary results can limit the properties of any complete repair of a system that is damaged, self-interpreting, and physically instantiated.",
+        "referent": "The question of whether five boundary results constrain the properties of a complete repair of a damaged, self-interpreting, physically instantiated system.",
+        "identity_conditions": [
+          "The object is the question as posed in the text.",
+          "It refers to five boundary results and a complete repair of a specific type of system."
+        ],
+        "distinctions": [
+          "Distinguishes between the question and the proposed answer.",
+          "Distinguishes between boundary results and the properties they constrain."
+        ],
+        "relations": [
+          "The question relates to the proposed answer in the following lines.",
+          "The question relates to the five boundary results listed later."
+        ],
+        "operations": [
+          "Asking the question.",
+          "Considering the five boundary results."
+        ],
+        "dependencies": [
+          "Depends on the existence of five boundary results.",
+          "Depends on the concept of a complete repair of a damaged, self-interpreting, physically instantiated system."
+        ],
+        "constraints": [
+          "The system is damaged, self-interpreting, and physically instantiated.",
+          "The repair is complete."
+        ],
+        "invariants": [
+          "The five boundary results are independently established."
+        ],
+        "consequences": [
+          "If the answer is affirmative, the properties P1-P5 follow."
+        ],
+        "countermodels": [
+          "A system that is not self-interpreting or not physically instantiated."
+        ],
+        "collapse_conditions": [
+          "If the five boundary results are not independent or not established."
+        ],
+        "open_questions": [
+          "What exactly constitutes a complete repair?",
+          "What are the five boundary results?"
+        ],
+        "source_section": "SECTION_002",
+        "line_start": 9,
+        "line_end": 9
+      },
+      {
+        "discovery_id": "DISC-0002",
+        "exact_quotation": "The proposed answer is:\n\n\\[\n\\text{Boundary results} \\Longrightarrow\n\\begin{cases}\nP_1: \\text{external relative to the damaged subsystem},\\\\\nP_2: \\text{meta-level relative to its object language},\\\\\nP_3: \\text{not reducible to one universal internal decision procedure},\\\\\nP_4: \\text{supplied through an open boundary with usable free energy},\\\\\nP_5: \\text{record-accountable rather than costlessly erasive}.\n\\end{cases}\n\\]",
+        "neutral_paraphrase": "The text proposes that boundary results imply five properties: P1 external relative to the damaged subsystem, P2 meta-level relative to its object language, P3 not reducible to one universal internal decision procedure, P4 supplied through an open boundary with usable free energy, and P5 record-accountable rather than costlessly erasive.",
+        "referent": "The proposed answer to the question, consisting of five properties P1-P5 implied by boundary results.",
+        "identity_conditions": [
+          "The object is the set of five properties P1-P5 as stated.",
+          "The properties are implied by boundary results."
+        ],
+        "distinctions": [
+          "Distinguishes between the boundary results and the properties they imply.",
+          "Distinguishes among the five properties."
+        ],
+        "relations": [
+          "P1-P5 are consequences of boundary results.",
+          "P1-P5 are later used in a theological identification."
+        ],
+        "operations": [
+          "Inferring P1-P5 from boundary results."
+        ],
+        "dependencies": [
+          "Depends on the boundary results being valid.",
+          "Depends on the implication being sound."
+        ],
+        "constraints": [
+          "P1 is external relative to the damaged subsystem.",
+          "P2 is meta-level relative to its object language.",
+          "P3 is not reducible to one universal internal decision procedure.",
+          "P4 is supplied through an open boundary with usable free energy.",
+          "P5 is record-accountable rather than costlessly erasive."
+        ],
+        "invariants": [
+          "The properties are stated as consequences of boundary results."
+        ],
+        "consequences": [
+          "If P1-P5 hold, they may be compared with Christian doctrine."
+        ],
+        "countermodels": [
+          "A system where P1 is not external.",
+          "A system where P2 is not meta-level."
+        ],
+        "collapse_conditions": [
+          "If the boundary results do not imply these properties."
+        ],
+        "open_questions": [
+          "What exactly does each property mean in detail?"
+        ],
+        "source_section": "SECTION_002",
+        "line_start": 11,
+        "line_end": 22
+      },
+      {
+        "discovery_id": "DISC-0003",
+        "exact_quotation": "The theological identification is a later step:\n\n\\[\n(P_1\\land P_2\\land P_3\\land P_4\\land P_5)\n\\xRightarrow[\\text{bridge, not theorem}]{\\text{comparison with Christian doctrine}}\n\\text{Grace-class candidate}.\n\\]",
+        "neutral_paraphrase": "The text states that the theological identification is a later step, where the conjunction of P1-P5, through a bridge (not a theorem) involving comparison with Christian doctrine, leads to a Grace-class candidate.",
+        "referent": "The theological identification step that connects P1-P5 to a Grace-class candidate via a bridge.",
+        "identity_conditions": [
+          "The object is the step of theological identification.",
+          "It involves a bridge, not a theorem.",
+          "It compares P1-P5 with Christian doctrine."
+        ],
+        "distinctions": [
+          "Distinguishes between a bridge and a theorem.",
+          "Distinguishes between the conjunction of P1-P5 and the Grace-class candidate."
+        ],
+        "relations": [
+          "The bridge relates P1-P5 to the Grace-class candidate.",
+          "The step is later than the derivation of P1-P5."
+        ],
+        "operations": [
+          "Comparing P1-P5 with Christian doctrine.",
+          "Identifying a Grace-class candidate."
+        ],
+        "dependencies": [
+          "Depends on P1-P5 being established.",
+          "Depends on the bridge being valid."
+        ],
+        "constraints": [
+          "The identification is a bridge, not a theorem.",
+          "The comparison is with Christian doctrine."
+        ],
+        "invariants": [
+          "The bridge is not a logical implication."
+        ],
+        "consequences": [
+          "If the bridge holds, a Grace-class candidate is identified."
+        ],
+        "countermodels": [
+          "If the bridge is invalid, no identification."
+        ],
+        "collapse_conditions": [
+          "If the bridge is replaced by a theorem without missing premises."
+        ],
+        "open_questions": [
+          "What are the missing premises for the bridge?"
+        ],
+        "source_section": "SECTION_002",
+        "line_start": 24,
+        "line_end": 30
+      },
+      {
+        "discovery_id": "DISC-0004",
+        "exact_quotation": "1. Gödel incompleteness / consistency limitation.\n2. Tarski undefinability of truth.\n3. Turing–Church undecidability.\n4. Clausius / the Second Law.\n5. Landauer’s principle.",
+        "neutral_paraphrase": "The text lists five boundary results: Gödel incompleteness/consistency limitation, Tarski undefinability of truth, Turing–Church undecidability, Clausius/Second Law, and Landauer's principle.",
+        "referent": "The list of five boundary results.",
+        "identity_conditions": [
+          "The object is the list of five items.",
+          "Each item is a named boundary result."
+        ],
+        "distinctions": [
+          "Distinguishes among the five results."
+        ],
+        "relations": [
+          "These are the five boundary results referenced in the question."
+        ],
+        "operations": [
+          "Listing the results."
+        ],
+        "dependencies": [
+          "None."
+        ],
+        "constraints": [
+          "There are exactly five results."
+        ],
+        "invariants": [
+          "The results are independently established."
+        ],
+        "consequences": [
+          "They are used to derive P1-P5."
+        ],
+        "countermodels": [
+          "If one of the results is not valid."
+        ],
+        "collapse_conditions": [
+          "If the list is incomplete or incorrect."
+        ],
+        "open_questions": [
+          "How exactly does each result contribute to P1-P5?"
+        ],
+        "source_section": "SECTION_004",
+        "line_start": 38,
+        "line_end": 42
+      },
+      {
+        "discovery_id": "DISC-0005",
+        "exact_quotation": "1. External.\n2. Meta-level.\n3. Not universally computable from within.\n4. Order-producing through an open-system source.\n5. Record-preserving or record-accountable.",
+        "neutral_paraphrase": "The text lists five properties: external, meta-level, not universally computable from within, order-producing through an open-system source, and record-preserving or record-accountable.",
+        "referent": "The list of five properties.",
+        "identity_conditions": [
+          "The object is the list of five properties.",
+          "Each property is a characteristic."
+        ],
+        "distinctions": [
+          "Distinguishes among the five properties."
+        ],
+        "relations": [
+          "These properties correspond to P1-P5 in the proposed answer."
+        ],
+        "operations": [
+          "Listing the properties."
+        ],
+        "dependencies": [
+          "None."
+        ],
+        "constraints": [
+          "There are exactly five properties."
+        ],
+        "invariants": [
+          "The properties are as stated."
+        ],
+        "consequences": [
+          "They are used in the theological identification."
+        ],
+        "countermodels": [
+          "If a property is not satisfied."
+        ],
+        "collapse_conditions": [
+          "If the list is incomplete or incorrect."
+        ],
+        "open_questions": [
+          "How do these properties relate to P1-P5 exactly?"
+        ],
+        "source_section": "SECTION_005",
+        "line_start": 46,
+        "line_end": 50
+      },
+      {
+        "discovery_id": "DISC-0006",
+        "exact_quotation": "The separate Gospel paper proposes ten theological axioms: external origin, non-transactionality, sufficiency, superabundance, posture-conditioned reception, non-depletion, transformation, truth-coupling, need-responsive scaling, and moral direction/non-license.",
+        "neutral_paraphrase": "The text states that a separate Gospel paper proposes ten theological axioms: external origin, non-transactionality, sufficiency, superabundance, posture-conditioned reception, non-depletion, transformation, truth-coupling, need-responsive scaling, and moral direction/non-license.",
+        "referent": "The ten theological axioms proposed in a separate Gospel paper.",
+        "identity_conditions": [
+          "The object is the set of ten axioms.",
+          "Each axiom is a theological proposition."
+        ],
+        "distinctions": [
+          "Distinguishes among the ten axioms."
+        ],
+        "relations": [
+          "These axioms are compared with the five boundary requirements."
+        ],
+        "operations": [
+          "Proposing the axioms."
+        ],
+        "dependencies": [
+          "Depends on the separate Gospel paper."
+        ],
+        "constraints": [
+          "There are exactly ten axioms."
+        ],
+        "invariants": [
+          "The axioms are as listed."
+        ],
+        "consequences": [
+          "They are used in a typed comparison with the five boundary requirements."
+        ],
+        "countermodels": [
+          "If an axiom is not valid."
+        ],
+        "collapse_conditions": [
+          "If the list is incomplete or incorrect."
+        ],
+        "open_questions": [
+          "What is the content of each axiom in detail?"
+        ],
+        "source_section": "SECTION_006",
+        "line_start": 54,
+        "line_end": 54
+      },
+      {
+        "discovery_id": "DISC-0007",
+        "exact_quotation": "The five boundary requirements are not identical to these ten Gospel axioms. The five constrain a proposed repair class. The ten describe Grace from Scripture. A real identification requires a typed comparison between the two structures.",
+        "neutral_paraphrase": "The text states that the five boundary requirements are not identical to the ten Gospel axioms; the five constrain a proposed repair class, the ten describe Grace from Scripture, and a real identification requires a typed comparison between the two structures.",
+        "referent": "The distinction between the five boundary requirements and the ten Gospel axioms.",
+        "identity_conditions": [
+          "The object is the distinction between the two sets.",
+          "The five boundary requirements constrain a repair class.",
+          "The ten Gospel axioms describe Grace from Scripture."
+        ],
+        "distinctions": [
+          "Distinguishes between the five boundary requirements and the ten Gospel axioms.",
+          "Distinguishes between constraining a repair class and describing Grace."
+        ],
+        "relations": [
+          "The two sets are related by a typed comparison."
+        ],
+        "operations": [
+          "Comparing the two structures."
+        ],
+        "dependencies": [
+          "Depends on the existence of both sets."
+        ],
+        "constraints": [
+          "The five boundary requirements are not identical to the ten Gospel axioms."
+        ],
+        "invariants": [
+          "The five constrain a repair class.",
+          "The ten describe Grace from Scripture."
+        ],
+        "consequences": [
+          "A real identification requires a typed comparison."
+        ],
+        "countermodels": [
+          "If the two sets were identical."
+        ],
+        "collapse_conditions": [
+          "If the typed comparison is not performed."
+        ],
+        "open_questions": [
+          "What is the typed comparison?"
+        ],
+        "source_section": "SECTION_006",
+        "line_start": 56,
+        "line_end": 56
+      },
+      {
+        "discovery_id": "DISC-0008",
+        "exact_quotation": "The strongest vulnerability is not any home-domain theorem. It is whether one object legitimately falls under all five theorem families.",
+        "neutral_paraphrase": "The text states that the strongest vulnerability is not any home-domain theorem but whether one object legitimately falls under all five theorem families.",
+        "referent": "The vulnerability concerning whether one object falls under all five theorem families.",
+        "identity_conditions": [
+          "The object is the vulnerability.",
+          "It concerns the legitimacy of an object falling under all five theorem families."
+        ],
+        "distinctions": [
+          "Distinguishes between home-domain theorems and the vulnerability."
+        ],
+        "relations": [
+          "The vulnerability relates to the five theorem families."
+        ],
+        "operations": [
+          "Assessing whether an object falls under all five theorem families."
+        ],
+        "dependencies": [
+          "Depends on the five theorem families."
+        ],
+        "constraints": [
+          "The vulnerability is the strongest."
+        ],
+        "invariants": [
+          "The vulnerability is not any home-domain theorem."
+        ],
+        "consequences": [
+          "If the vulnerability is not addressed, the argument may fail."
+        ],
+        "countermodels": [
+          "If an object does not fall under all five theorem families."
+        ],
+        "collapse_conditions": [
+          "If the object is not legitimate."
+        ],
+        "open_questions": [
+          "What object could fall under all five theorem families?"
+        ],
+        "source_section": "SECTION_007",
+        "line_start": 60,
+        "line_end": 60
+      },
+      {
+        "discovery_id": "DISC-0009",
+        "exact_quotation": "Define a candidate carrier:\n\n\\[\n\\mathcal M=(L,T,\\vdash,\\mathsf{Comp},X,\\Sigma,E,R),\n\\]\n\nwhere:\n\n- \\(L\\) is an object language;\n- \\(T\\) is an effectively presented theory;\n- \\(\\vdash\\) is its proof relation;\n- \\(\\mathsf{Comp}\\) is its modeled computational dynamics;\n- \\(X\\) is its physical state space;\n- \\(\\Sigma\\) is its entropy or thermodynamic state description;\n- \\(E\\) is its available energy/free-energy account;\n- \\(R\\) is its physically instantiated record structure.",
+        "neutral_paraphrase": "The text defines a candidate carrier M as a tuple (L, T, ⊢, Comp, X, Σ, E, R) where L is an object language, T is an effectively presented theory, ⊢ is its proof relation, Comp is its modeled computational dynamics, X is its physical state space, Σ is its entropy or thermodynamic state description, E is its available energy/free-energy account, and R is its physically instantiated record structure.",
+        "referent": "The candidate carrier M defined as a tuple of eight components.",
+        "identity_conditions": [
+          "The object is the tuple M.",
+          "It has eight components as specified."
+        ],
+        "distinctions": [
+          "Distinguishes among the eight components."
+        ],
+        "relations": [
+          "The components are part of the carrier."
+        ],
+        "operations": [
+          "Defining the carrier."
+        ],
+        "dependencies": [
+          "Depends on the definitions of each component."
+        ],
+        "constraints": [
+          "L is an object language.",
+          "T is an effectively presented theory.",
+          "⊢ is its proof relation.",
+          "Comp is its modeled computational dynamics.",
+          "X is its physical state space.",
+          "Σ is its entropy or thermodynamic state description.",
+          "E is its available energy/free-energy account.",
+          "R is its physically instantiated record structure."
+        ],
+        "invariants": [
+          "The carrier is a tuple."
+        ],
+        "consequences": [
+          "The argument becomes eligible for conjunction if the same carrier satisfies the hypotheses of each result."
+        ],
+        "countermodels": [
+          "A carrier missing one component."
+        ],
+        "collapse_conditions": [
+          "If the components are not well-defined."
+        ],
+        "open_questions": [
+          "How does each component relate to the five theorem families?"
+        ],
+        "source_section": "SECTION_007",
+        "line_start": 62,
+        "line_end": 77
+      },
+      {
+        "discovery_id": "DISC-0010",
+        "exact_quotation": "The argument becomes eligible for conjunction only if the same carrier, or explicitly related typed projections of it, satisfies the hypotheses of each result. Calling a moral community, a person, or reality “a system” does not establish this.",
+        "neutral_paraphrase": "The text states that the argument becomes eligible for conjunction only if the same carrier, or explicitly related typed projections of it, satisfies the hypotheses of each result, and that calling a moral community, a person, or reality 'a system' does not establish this.",
+        "referent": "The condition for the argument to be eligible for conjunction.",
+        "identity_conditions": [
+          "The object is the condition for conjunction eligibility.",
+          "It requires the same carrier or typed projections to satisfy the hypotheses of each result."
+        ],
+        "distinctions": [
+          "Distinguishes between the same carrier and typed projections.",
+          "Distinguishes between calling something a system and establishing the condition."
+        ],
+        "relations": [
+          "The condition relates to the five theorem families."
+        ],
+        "operations": [
+          "Checking whether the carrier satisfies the hypotheses."
+        ],
+        "dependencies": [
+          "Depends on the carrier and the hypotheses."
+        ],
+        "constraints": [
+          "The same carrier or typed projections must satisfy the hypotheses.",
+          "Calling something a system is insufficient."
+        ],
+        "invariants": [
+          "The condition is necessary for conjunction."
+        ],
+        "consequences": [
+          "If the condition is not met, the argument is not eligible for conjunction."
+        ],
+        "countermodels": [
+          "A carrier that does not satisfy the hypotheses."
+        ],
+        "collapse_conditions": [
+          "If the condition is not met."
+        ],
+        "open_questions": [
+          "What are the typed projections?"
+        ],
+        "source_section": "SECTION_007",
+        "line_start": 79,
+        "line_end": 79
+      },
+      {
+        "discovery_id": "DISC-0011",
+        "exact_quotation": "For an isolated system, total thermodynamic entropy does not decrease. Local entropy can decrease when energy, free energy, matter, or entropy crosses a boundary; living organisms routinely maintain local order as open systems.",
+        "neutral_paraphrase": "In an isolated system, total entropy is non-decreasing, but local entropy can decrease if there is exchange across a boundary, as in open systems like living organisms.",
+        "referent": "Thermodynamic entropy behavior in isolated versus open systems",
+        "identity_conditions": [
+          "System is isolated with no exchange of energy, matter, or entropy across its boundary.",
+          "Total entropy of the isolated system is non-decreasing over time.",
+          "Local entropy decrease is possible only when there is a boundary crossing of energy, free energy, matter, or entropy."
+        ],
+        "distinctions": [
+          "Isolated system total entropy versus local entropy in open systems.",
+          "Boundary-relative 'external' versus transcendent 'external'."
+        ],
+        "relations": [
+          "Local order in open systems depends on boundary crossings.",
+          "Total entropy accounting constrains local entropy decrease."
+        ],
+        "operations": [
+          "Measure total entropy of an isolated system over time.",
+          "Identify boundary crossings of energy, free energy, matter, or entropy."
+        ],
+        "dependencies": [
+          "Definition of system boundary.",
+          "Thermodynamic laws governing entropy."
+        ],
+        "constraints": [
+          "Total entropy of isolated system cannot decrease.",
+          "Local entropy decrease requires open boundary."
+        ],
+        "invariants": [
+          "Total entropy of isolated system is non-decreasing."
+        ],
+        "consequences": [
+          "Persistent local organization requires an open-system account.",
+          "No free reversal of total entropy in an isolated system."
+        ],
+        "countermodels": [
+          "A system with a boundary that is not isolated may show local entropy decrease without violating total entropy accounting."
+        ],
+        "collapse_conditions": [
+          "If the system is not isolated, the non-decrease of total entropy does not apply."
+        ],
+        "open_questions": [
+          "How to define 'external' in a boundary-relative sense without implying transcendence?"
+        ],
+        "source_section": "SECTION_012",
+        "line_start": 121,
+        "line_end": 121
+      },
+      {
+        "discovery_id": "DISC-0012",
+        "exact_quotation": "It does not identify thermodynamic entropy with sin, incoherence, guilt, falsehood, or moral disorder. It does not say a system cannot internally reorganize while exporting entropy.",
+        "neutral_paraphrase": "Thermodynamic entropy is not equated with moral or epistemic concepts, and internal reorganization with entropy export is not prohibited.",
+        "referent": "Limits of thermodynamic entropy interpretation",
+        "identity_conditions": [
+          "Thermodynamic entropy is a physical quantity distinct from moral or epistemic states.",
+          "Internal reorganization with entropy export is possible in open systems."
+        ],
+        "distinctions": [
+          "Thermodynamic entropy versus moral disorder.",
+          "Internal reorganization versus total entropy decrease."
+        ],
+        "relations": [
+          "Thermodynamic entropy does not directly correspond to moral or epistemic concepts."
+        ],
+        "operations": [
+          "Distinguish physical entropy from moral or epistemic variables."
+        ],
+        "dependencies": [
+          "Clear definition of thermodynamic entropy."
+        ],
+        "constraints": [
+          "No direct identification of entropy with sin or falsehood."
+        ],
+        "invariants": [
+          "Thermodynamic entropy remains a physical quantity."
+        ],
+        "consequences": [
+          "Moral or coherence variables require separate bridge premises."
+        ],
+        "countermodels": [
+          "A system can internally reorganize while exporting entropy, so local order does not imply moral disorder."
+        ],
+        "collapse_conditions": [
+          "If entropy were equated with moral disorder, the distinction would collapse."
+        ],
+        "open_questions": [
+          "What bridge could connect entropy to moral variables without equivocation?"
+        ],
+        "source_section": "SECTION_012",
+        "line_start": 125,
+        "line_end": 125
+      },
+      {
+        "discovery_id": "DISC-0013",
+        "exact_quotation": "A physically measurable correspondence must connect the proposed moral/coherence variable to thermodynamic state variables without equivocating between Shannon, von Neumann, algorithmic, and thermodynamic entropy.",
+        "neutral_paraphrase": "A bridge is needed that links moral or coherence variables to thermodynamic state variables in a physically measurable way, avoiding confusion among different entropy types.",
+        "referent": "Required bridge premise C-BRIDGE",
+        "identity_conditions": [
+          "There exists a physically measurable correspondence between a moral/coherence variable and thermodynamic state variables.",
+          "The correspondence does not equivocate among Shannon, von Neumann, algorithmic, and thermodynamic entropy."
+        ],
+        "distinctions": [
+          "Different entropy types: Shannon, von Neumann, algorithmic, thermodynamic."
+        ],
+        "relations": [
+          "Moral/coherence variable must be related to thermodynamic state variables via a bridge."
+        ],
+        "operations": [
+          "Define a mapping from moral/coherence variable to thermodynamic variables.",
+          "Verify physical measurability of the correspondence."
+        ],
+        "dependencies": [
+          "Precise definitions of each entropy type.",
+          "Physical interpretation of moral/coherence variable."
+        ],
+        "constraints": [
+          "No equivocation among entropy types."
+        ],
+        "invariants": [
+          "Thermodynamic state variables remain physically defined."
+        ],
+        "consequences": [
+          "If bridge holds, complete physical restoration requires an open-boundary source and entropy/free-energy budget."
+        ],
+        "countermodels": [
+          "If the correspondence equivocates entropy types, the bridge fails."
+        ],
+        "collapse_conditions": [
+          "If no measurable correspondence exists, the bridge cannot be established."
+        ],
+        "open_questions": [
+          "How to construct a physically measurable correspondence without equivocation?"
+        ],
+        "source_section": "SECTION_012",
+        "line_start": 127,
+        "line_end": 127
+      },
+      {
+        "discovery_id": "DISC-0014",
+        "exact_quotation": "Logically irreversible information erasure has a minimum thermodynamic cost under the relevant physical assumptions, conventionally \\(k_B T\\ln 2\\) per bit in the ideal limit. Reversible computation changes the accounting.",
+        "neutral_paraphrase": "Erasure of logically irreversible information has a minimum thermodynamic cost, typically k_B T ln 2 per bit, but reversible computation alters the cost accounting.",
+        "referent": "Landauer's principle and its scope",
+        "identity_conditions": [
+          "Information erasure is logically irreversible.",
+          "Physical assumptions for Landauer's principle hold.",
+          "Ideal limit gives cost k_B T ln 2 per bit."
+        ],
+        "distinctions": [
+          "Logically irreversible erasure versus reversible computation.",
+          "Ideal limit versus realistic conditions."
+        ],
+        "relations": [
+          "Thermodynamic cost depends on logical irreversibility.",
+          "Reversible computation avoids the cost."
+        ],
+        "operations": [
+          "Measure thermodynamic cost of erasure.",
+          "Compare reversible and irreversible computation."
+        ],
+        "dependencies": [
+          "Physical implementation of information storage.",
+          "Temperature and Boltzmann constant."
+        ],
+        "constraints": [
+          "Minimum cost applies to logically irreversible erasure.",
+          "Reversible computation changes accounting."
+        ],
+        "invariants": [
+          "Information processing is physically embodied."
+        ],
+        "consequences": [
+          "Logically irreversible erasure is not thermodynamically free."
+        ],
+        "countermodels": [
+          "Reversible computation can erase without the Landauer cost."
+        ],
+        "collapse_conditions": [
+          "If erasure is logically reversible, the cost bound does not apply."
+        ],
+        "open_questions": [
+          "How to define logical irreversibility precisely in physical terms?"
+        ],
+        "source_section": "SECTION_013",
+        "line_start": 133,
+        "line_end": 133
+      },
+      {
+        "discovery_id": "DISC-0015",
+        "exact_quotation": "It does not prove moral conservation, that forgiveness requires punishment, that memories cannot be transformed, or that “waiving debt” is literal bit deletion. It does not show that an impersonal process cannot preserve records.",
+        "neutral_paraphrase": "Landauer's principle does not imply moral conservation, punishment necessity, memory immutability, or that debt waiver is bit deletion, nor does it rule out impersonal record preservation.",
+        "referent": "Limits of Landauer's principle for moral and theological claims",
+        "identity_conditions": [
+          "Landauer's principle applies to physical information erasure.",
+          "Moral or theological claims are not directly entailed."
+        ],
+        "distinctions": [
+          "Physical erasure versus moral forgiveness.",
+          "Memory transformation versus deletion."
+        ],
+        "relations": [
+          "Landauer's principle does not directly connect to moral ledger entries."
+        ],
+        "operations": [
+          "Separate physical erasure from moral concepts."
+        ],
+        "dependencies": [
+          "Clear physical encoding of information."
+        ],
+        "constraints": [
+          "No direct inference from Landauer to moral conservation."
+        ],
+        "invariants": [
+          "Physical erasure has thermodynamic cost."
+        ],
+        "consequences": [
+          "Moral ledger entries require a defined physical encoding and erasure operation."
+        ],
+        "countermodels": [
+          "An impersonal process could preserve records without violating Landauer."
+        ],
+        "collapse_conditions": [
+          "If moral resolution were identical to physical erasure, the distinction would collapse."
+        ],
+        "open_questions": [
+          "What physical encoding could represent moral ledger entries?"
+        ],
+        "source_section": "SECTION_013",
+        "line_start": 137,
+        "line_end": 137
+      },
+      {
+        "discovery_id": "DISC-0016",
+        "exact_quotation": "Moral ledger entries must have a defined physical encoding, a specified erasure operation, and a demonstrated connection between moral resolution and logically irreversible deletion.",
+        "neutral_paraphrase": "To apply Landauer's principle to moral ledgers, one must define a physical encoding, an erasure operation, and a connection between moral resolution and irreversible deletion.",
+        "referent": "Required bridge premise L-BRIDGE",
+        "identity_conditions": [
+          "Moral ledger entries have a defined physical encoding.",
+          "There is a specified erasure operation.",
+          "Moral resolution is connected to logically irreversible deletion."
+        ],
+        "distinctions": [
+          "Moral ledger entries versus physical bits.",
+          "Moral resolution versus information deletion."
+        ],
+        "relations": [
+          "Moral resolution must be linked to physical erasure via a bridge."
+        ],
+        "operations": [
+          "Define physical encoding for moral entries.",
+          "Specify erasure operation.",
+          "Demonstrate connection to moral resolution."
+        ],
+        "dependencies": [
+          "Physical theory of information.",
+          "Moral philosophy definitions."
+        ],
+        "constraints": [
+          "No equivocation between moral and physical terms."
+        ],
+        "invariants": [
+          "Physical erasure has thermodynamic cost."
+        ],
+        "consequences": [
+          "Repair cannot rely on costless physical erasure."
+        ],
+        "countermodels": [
+          "If no physical encoding exists, the bridge fails."
+        ],
+        "collapse_conditions": [
+          "If moral resolution does not involve irreversible deletion, the bridge is irrelevant."
+        ],
+        "open_questions": [
+          "How to define a physical encoding for moral ledger entries?"
+        ],
+        "source_section": "SECTION_013",
+        "line_start": 139,
+        "line_end": 139
+      },
+      {
+        "discovery_id": "DISC-0017",
+        "exact_quotation": "Without the bridges, the five results establish five domain-native limitations. With individually justified bridges, they may converge on the following abstract repair profile:",
+        "neutral_paraphrase": "The five results provide domain-specific limitations unless bridges are justified; with bridges, they may converge on an abstract repair profile.",
+        "referent": "Convergence of five results into a repair profile",
+        "identity_conditions": [
+          "There are five distinct domain-native limitations.",
+          "Bridges are individually justified.",
+          "The limitations converge on an abstract repair profile."
+        ],
+        "distinctions": [
+          "Domain-native limitations versus cross-domain implications.",
+          "Without bridges versus with bridges."
+        ],
+        "relations": [
+          "Bridges enable convergence of limitations.",
+          "Repair profile is abstract and not yet a theorem."
+        ],
+        "operations": [
+          "Identify domain-native limitations.",
+          "Justify bridges individually.",
+          "Derive abstract repair profile."
+        ],
+        "dependencies": [
+          "Validity of each bridge premise."
+        ],
+        "constraints": [
+          "Bridges must be explicit and independently tested."
+        ],
+        "invariants": [
+          "The five results remain domain-native without bridges."
+        ],
+        "consequences": [
+          "The repair profile is more than decorative if bridges are explicit.",
+          "It is not yet a theorem that Christian Grace uniquely exists."
+        ],
+        "countermodels": [
+          "If bridges fail, the convergence does not occur."
+        ],
+        "collapse_conditions": [
+          "If bridges are not justified, the repair profile is unsupported."
+        ],
+        "open_questions": [
+          "How to make bridges explicit and independently testable?"
+        ],
+        "source_section": "SECTION_014",
+        "line_start": 145,
+        "line_end": 145
+      },
+      {
+        "discovery_id": "DISC-0018",
+        "exact_quotation": "The source paper tested nine candidate classes. That was useful discovery work, but the verdicts must be regraded because several exclusions were stronger than the cited theorems warrant.",
+        "neutral_paraphrase": "The paper tested nine candidate classes, but the exclusion verdicts need re-evaluation because some were too strong relative to the theorems.",
+        "referent": "Re-evaluation of nine candidate class exclusions",
+        "identity_conditions": [
+          "There are nine candidate classes.",
+          "Original exclusions were based on cited theorems.",
+          "Some exclusions are stronger than theorems warrant."
+        ],
+        "distinctions": [
+          "Original pressure versus rigorous current ruling.",
+          "Elimination versus partial repair."
+        ],
+        "relations": [
+          "Theorems do not fully eliminate some candidate classes.",
+          "Candidate classes may serve as partial repairs."
+        ],
+        "operations": [
+          "Re-examine each candidate class against theorems.",
+          "Determine rigorous current ruling."
+        ],
+        "dependencies": [
+          "Correct interpretation of theorems."
+        ],
+        "constraints": [
+          "Exclusions must not exceed theorem implications."
+        ],
+        "invariants": [
+          "Theorems remain valid."
+        ],
+        "consequences": [
+          "Some candidate classes are not eliminated as partial repairs.",
+          "Christian Grace survives as a candidate but not unique."
+        ],
+        "countermodels": [
+          "A candidate class may be partially effective despite not being complete."
+        ],
+        "collapse_conditions": [
+          "If theorems actually eliminate a class, the re-evaluation would be invalid."
+        ],
+        "open_questions": [
+          "Which candidate classes are partially viable?"
+        ],
+        "source_section": "SECTION_015",
+        "line_start": 159,
+        "line_end": 159
+      },
+      {
+        "discovery_id": "DISC-0019",
+        "exact_quotation": "The five boundary results motivate a constrained repair profile. Christian Grace is a strong declared theological candidate for that profile. The original nine-class elimination does not yet prove uniqueness.",
+        "neutral_paraphrase": "The five boundary results suggest a constrained repair profile, for which Christian Grace is a strong candidate, but uniqueness is not proven.",
+        "referent": "Corrected conclusion regarding repair profile and Christian Grace",
+        "identity_conditions": [
+          "There are five boundary results.",
+          "They motivate a constrained repair profile.",
+          "Christian Grace is a declared candidate.",
+          "Uniqueness is not proven."
+        ],
+        "distinctions": [
+          "Candidate versus unique solution.",
+          "Motivated profile versus proven theorem."
+        ],
+        "relations": [
+          "Boundary results motivate the profile.",
+          "Christian Grace fits the profile as a candidate."
+        ],
+        "operations": [
+          "Derive repair profile from boundary results.",
+          "Assess candidate fit."
+        ],
+        "dependencies": [
+          "Validity of boundary results.",
+          "Explicit bridges."
+        ],
+        "constraints": [
+          "Uniqueness is not established."
+        ],
+        "invariants": [
+          "Boundary results remain valid."
+        ],
+        "consequences": [
+          "Christian Grace is a candidate, not a proven unique solution."
+        ],
+        "countermodels": [
+          "Another candidate could also fit the profile."
+        ],
+        "collapse_conditions": [
+          "If uniqueness were proven, the conclusion would change."
+        ],
+        "open_questions": [
+          "What would prove uniqueness?"
+        ],
+        "source_section": "SECTION_015",
+        "line_start": 176,
+        "line_end": 176
+      },
+      {
+        "discovery_id": "DISC-0020",
+        "exact_quotation": "SECTION_012\n\n**Home-domain result.** For an isolated system, total thermodynamic entropy does not decrease. Local entropy can decrease when energy, free energy, matter, or entropy crosses a boundary; living organisms routinely maintain local order as open systems.\n\n**What it does establish.** Persistent local organization requires an appropriate open-system account. There is no free reversal of total entropy in an isolated system.",
+        "neutral_paraphrase": "For constant parameters, the steady state c* is less than 1 if decay is positive, so the equation does not force c to 1 unless decay vanishes, source diverges, or model changes.",
+        "referent": "Steady-state analysis of formation dynamics",
+        "identity_conditions": [
+          "Parameters are constant and nonnegative.",
+          "a = beta O Gamma_ext.",
+          "Steady state c* = a/(sigma+a).",
+          "If sigma > 0, c* < 1."
+        ],
+        "distinctions": [
+          "Steady state versus complete glorification.",
+          "Model assumptions versus derived conclusions."
+        ],
+        "relations": [
+          "c* depends on a and sigma.",
+          "c approaches 1 only under specific conditions."
+        ],
+        "operations": [
+          "Solve differential equation for steady state.",
+          "Analyze limit as t goes to infinity."
+        ],
+        "dependencies": [
+          "Constant parameter assumption.",
+          "Validity of the differential equation."
+        ],
+        "constraints": [
+          "sigma > 0 implies c* < 1.",
+          "c to 1 requires special conditions."
+        ],
+        "invariants": [
+          "The differential equation form."
+        ],
+        "consequences": [
+          "The claim that (1-c) uniquely forces complete glorification is not established."
+        ],
+        "countermodels": [
+          "If sigma = 0, c* = 1, but that is a special case."
+        ],
+        "collapse_conditions": [
+          "If the model changes, the conclusion may change."
+        ],
+        "open_questions": [
+          "What conditions would allow c to approach 1?"
+        ],
+        "source_section": "SECTION_011",
+        "line_start": 119,
+        "line_end": 123,
+        "model_quotation_candidate": "For constant nonnegative parameters, write \\(a=\\beta O\\Gamma_{\\mathrm{ext}}\\). Then: \\(\\dot c=a-(\\sigma+a)c\\), \\(c_* = \\frac{a}{\\sigma+a}\\). If \\(\\sigma>0\\), then \\(c_*<1\\). Therefore the equation does **not** yield \\(c\\to1\\) unless decay vanishes asymptotically, the source diverges relative to decay, or the model changes. The claim that \\((1-c)\\) uniquely forces complete glorification is not presently established.",
+        "quotation_rebound_from_reported_lines": true
+      },
+      {
+        "discovery_id": "DISC-0021",
+        "exact_quotation": "A nonzero two-sector operator cannot generally be both the proposed strict anticommuting jump and an idempotent projection. Separating \\(\\mathcal G\\) from \\(L\\) is necessary.",
+        "neutral_paraphrase": "A single nonzero operator on a two-sector space cannot typically satisfy both the properties of a strict anticommuting jump and an idempotent projection, so the two operators must be distinguished.",
+        "referent": "The mathematical relationship between two proposed operators, one idempotent and one nilpotent, in a two-sector space.",
+        "identity_conditions": [
+          "The operator is nonzero and acts on a two-sector space.",
+          "It satisfies the strict anticommuting jump property.",
+          "It satisfies the idempotent projection property.",
+          "It is a single operator, not a composite.",
+          "The two properties are mutually exclusive for such an operator."
+        ],
+        "distinctions": [
+          "Idempotent projection vs. nilpotent jump.",
+          "One-way transition vs. absorbing map.",
+          "Trace-preserving vs. non-trace-preserving.",
+          "Two-sector operator vs. single-sector operator."
+        ],
+        "relations": [
+          "The two operators are proposed to be distinct.",
+          "The jump operator is nilpotent, the grace channel is idempotent.",
+          "Both are defined on the same two-sector space.",
+          "The separation is necessary for consistency."
+        ],
+        "operations": [
+          "Verify the exact axioms of each operator.",
+          "Check whether a single operator can satisfy both property sets.",
+          "Construct counterexamples if possible."
+        ],
+        "dependencies": [
+          "The definitions of the grace channel and the conversion jump.",
+          "The algebraic structure of the two-sector space."
+        ],
+        "constraints": [
+          "The operator must be nonzero.",
+          "The space is two-sector.",
+          "The properties are strict."
+        ],
+        "invariants": [
+          "The distinction between the two operators is maintained.",
+          "The algebraic properties are not conflated."
+        ],
+        "consequences": [
+          "If not separated, the formal system is inconsistent.",
+          "Lean verification must target each operator's axioms separately."
+        ],
+        "countermodels": [
+          "A single operator that is both idempotent and nilpotent (if exists) would refute the claim.",
+          "A two-sector space where the properties are compatible."
+        ],
+        "collapse_conditions": [
+          "If the two operators are identified, the distinction collapses.",
+          "If the properties are not mutually exclusive, the separation is unnecessary."
+        ],
+        "open_questions": [
+          "Are there any two-sector operators that are both idempotent and nilpotent?",
+          "What are the exact axioms for each operator?"
+        ],
+        "source_section": "SECTION_019",
+        "line_start": 225,
+        "line_end": 225
+      },
+      {
+        "discovery_id": "DISC-0022",
+        "exact_quotation": "The source identifies forgiveness, healing, redemption, sanctification, justification, adoption, and regeneration. At present these are a typed theological taxonomy mapped onto seven damage descriptions. Their exhaustiveness is OPEN.",
+        "neutral_paraphrase": "The source lists seven theological terms as repair types, but whether this list is exhaustive is an open question.",
+        "referent": "The seven theological repair types and their mapping to damage descriptions.",
+        "identity_conditions": [
+          "There are exactly seven named repair types.",
+          "Each is mapped to a damage description.",
+          "The taxonomy is typed.",
+          "The exhaustiveness is not yet established."
+        ],
+        "distinctions": [
+          "Theological taxonomy vs. formal repair classes.",
+          "Named types vs. blind recovery classes.",
+          "Exhaustive vs. open list."
+        ],
+        "relations": [
+          "Each repair type corresponds to a damage description.",
+          "The taxonomy is a candidate mapping.",
+          "The exhaustiveness is to be tested."
+        ],
+        "operations": [
+          "Define damage state space without theological names.",
+          "Recover minimal equivalence classes of repair operations blindly.",
+          "Test whether exactly seven classes emerge.",
+          "Shuffle theological labels and require independent bidirectional recovery."
+        ],
+        "dependencies": [
+          "A formal definition of damage state space.",
+          "A method for blind recovery of repair classes."
+        ],
+        "constraints": [
+          "The damage state space must be defined without theological names.",
+          "The recovery must be blind.",
+          "The test must record mergers, splits, unmatched classes, and countermodels."
+        ],
+        "invariants": [
+          "The number of classes is invariant under label shuffling if the taxonomy is correct.",
+          "The mapping is bidirectional."
+        ],
+        "consequences": [
+          "If exactly seven classes emerge, the taxonomy is supported.",
+          "If not, the taxonomy is incomplete or incorrect."
+        ],
+        "countermodels": [
+          "A damage state space yielding more or fewer than seven classes.",
+          "A label shuffle that breaks bidirectional recovery."
+        ],
+        "collapse_conditions": [
+          "If the seven classes collapse into fewer, the taxonomy is not minimal.",
+          "If additional classes emerge, the taxonomy is not exhaustive."
+        ],
+        "open_questions": [
+          "Is the seven-fold taxonomy exhaustive?",
+          "What are the minimal equivalence classes of repair operations?"
+        ],
+        "source_section": "SECTION_020",
+        "line_start": 229,
+        "line_end": 229
+      },
+      {
+        "discovery_id": "DISC-0023",
+        "exact_quotation": "The inherited anti-terms are self-righteousness, codependency, legalism, enabling, denial, grudge, and condemnation. These are best treated as candidate failure modes produced by negating proposed properties.",
+        "neutral_paraphrase": "The listed anti-terms are candidate failure modes, defined as negations of proposed properties.",
+        "referent": "The set of anti-terms and their formal characterization as negations of properties.",
+        "identity_conditions": [
+          "There are seven anti-terms.",
+          "Each is a candidate failure mode.",
+          "Each is produced by negating a proposed property.",
+          "They are not yet proven to correspond to actual human behaviors."
+        ],
+        "distinctions": [
+          "Failure mode vs. actual behavior.",
+          "Formal negation vs. empirical instantiation.",
+          "Candidate vs. confirmed."
+        ],
+        "relations": [
+          "Each anti-term is the negation of a property.",
+          "The set is inherited from prior work.",
+          "The formal claim is FailedRepair = {F: exists i, not P_i(F)}."
+        ],
+        "operations": [
+          "Define the formal failure set.",
+          "Test whether named behaviors instantiate these failures."
+        ],
+        "dependencies": [
+          "The proposed properties P_i.",
+          "The formal definition of FailedRepair."
+        ],
+        "constraints": [
+          "The failure set is defined by negation.",
+          "The instantiation is an empirical or philosophical question."
+        ],
+        "invariants": [
+          "The formal definition of FailedRepair is invariant.",
+          "The anti-terms are not directly proven by home-domain theorems."
+        ],
+        "consequences": [
+          "If a behavior satisfies the negation, it is a failure mode.",
+          "If not, it is not."
+        ],
+        "countermodels": [
+          "A behavior that is a failure mode but not named by an anti-term.",
+          "An anti-term that does not correspond to any actual behavior."
+        ],
+        "collapse_conditions": [
+          "If the negations are not independent, the failure modes may collapse.",
+          "If the properties are not well-defined, the failure set is ill-defined."
+        ],
+        "open_questions": [
+          "Do the named behaviors instantiate the formal failures?",
+          "Are the anti-terms exhaustive?"
+        ],
+        "source_section": "SECTION_021",
+        "line_start": 242,
+        "line_end": 242
+      },
+      {
+        "discovery_id": "DISC-0024",
+        "exact_quotation": "SECTION_019\n\nThe corpus already repaired one contradiction:\n\n- Grace channel \\(\\mathcal G\\): proposed idempotent, absorbing/one-way, trace-preserving map.\n- Conversion jump \\(L=|+\\rangle\\langle-|\\): nilpotent directional transition.\n\nA nonzero two-sector operator cannot generally be both the proposed strict anticommuting jump and an idempotent projection. Separating \\(\\mathcal G\\) from \\(L\\) is necessary. Lean should verify the exact axioms of each operator rather than a prose paraphrase.\n\nSECTION_020\n\nThe source identifies forgiveness, healing, redemption, sanctification, justification, adoption, and regeneration. At present these are a typed theological taxonomy mapped onto seven damage descriptions. Their exhaustiveness is OPEN.",
+        "neutral_paraphrase": "The paper proposes ten axioms for the Gospel-derived repair concept.",
+        "referent": "The ten proposed axioms of the Gospel-derived repair concept.",
+        "identity_conditions": [
+          "There are exactly ten axioms.",
+          "Each is a distinct proposition.",
+          "They are proposed as properties of the repair."
+        ],
+        "distinctions": [
+          "Axiom vs. derived proposition.",
+          "Independence vs. mere distinct prose.",
+          "Exegetical support vs. formal derivation."
+        ],
+        "relations": [
+          "A4 may imply A3.",
+          "The axioms are used to derive four additional propositions.",
+          "The axioms require exegetical audit."
+        ],
+        "operations": [
+          "Reproduce occurrence counts from a defined Greek corpus.",
+          "Test 'zero exceptions' against every occurrence.",
+          "Test independence with formal models/countermodels.",
+          "Check whether universal availability is derivable."
+        ],
+        "dependencies": [
+          "A defined Greek corpus.",
+          "Exegetical methods.",
+          "Formal logic for independence testing."
+        ],
+        "constraints": [
+          "Occurrence counts must be reproducible.",
+          "Independence cannot be declared without formal testing.",
+          "Universal availability requires a distribution premise."
+        ],
+        "invariants": [
+          "The ten axioms are the proposed set.",
+          "The derived propositions are distinct."
+        ],
+        "consequences": [
+          "If the axioms are not independent, the derivation may be redundant.",
+          "If exegetically inaccurate, the axioms are unsupported."
+        ],
+        "countermodels": [
+          "A model satisfying A1-A10 but not a derived proposition.",
+          "A model satisfying A1-A9 but not A10."
+        ],
+        "collapse_conditions": [
+          "If A4 implies A3, they are not independent.",
+          "If universal availability is derivable from infinitude alone, the distribution premise is unnecessary."
+        ],
+        "open_questions": [
+          "Are the ten axioms independent?",
+          "Are they exegetically accurate?",
+          "Is universal availability derivable?"
+        ],
+        "source_section": "SECTION_018",
+        "line_start": 218,
+        "line_end": 229,
+        "model_quotation_candidate": "The Gospel-derived paper proposes: 1. External origin. 2. Non-transactionality. 3. Sufficiency. 4. Superabundance. 5. Posture-conditioned reception. 6. Non-depletion. 7. Transformative operation. 8. Coupling with truth. 9. Responsiveness to need. 10. Moral direction/non-license.",
+        "quotation_rebound_from_reported_lines": true
+      },
+      {
+        "discovery_id": "DISC-0025",
+        "exact_quotation": "Gödel, Tarski, Turing–Church, Clausius, and Landauer provide real, powerful limitations under their respective hypotheses.",
+        "neutral_paraphrase": "The listed theorems provide genuine limitations under their specific assumptions.",
+        "referent": "The five theorem families and their limitations.",
+        "identity_conditions": [
+          "There are five named theorem families.",
+          "Each provides a limitation.",
+          "The limitations hold under their respective hypotheses."
+        ],
+        "distinctions": [
+          "Theorem vs. hypothesis.",
+          "Limitation vs. impossibility.",
+          "Formal vs. physical."
+        ],
+        "relations": [
+          "Each theorem is independent.",
+          "They are used as bridge premises in the convergence argument."
+        ],
+        "operations": [
+          "Record exact hypotheses and conclusions for each.",
+          "Identify formal objects and proof sources.",
+          "Note generalizations and counterexamples."
+        ],
+        "dependencies": [
+          "The hypotheses of each theorem.",
+          "The formal framework."
+        ],
+        "constraints": [
+          "The limitations are conditional on hypotheses.",
+          "They do not directly prove theological claims."
+        ],
+        "invariants": [
+          "The theorems remain valid under their hypotheses.",
+          "The limitations are not overextended."
+        ],
+        "consequences": [
+          "They support the claim that complete self-repair is impossible under certain conditions.",
+          "They do not prove the existence of external repair."
+        ],
+        "countermodels": [
+          "A system that violates a hypothesis and escapes the limitation.",
+          "A context where the theorem does not apply."
+        ],
+        "collapse_conditions": [
+          "If hypotheses are not met, the limitation does not apply.",
+          "If the theorems are misinterpreted, the argument collapses."
+        ],
+        "open_questions": [
+          "How exactly do these theorems apply to the repair problem?",
+          "Are there other relevant limitations?"
+        ],
+        "source_section": "SECTION_024",
+        "line_start": 282,
+        "line_end": 282
+      },
+      {
+        "discovery_id": "DISC-0026",
+        "exact_quotation": "No single closed, self-describing, universally algorithmic, thermodynamically isolated, costlessly erasive account should be presumed capable of complete self-repair.",
+        "neutral_paraphrase": "A system with all the listed properties should not be assumed capable of complete self-repair.",
+        "referent": "The class of systems with the listed properties and their self-repair capability.",
+        "identity_conditions": [
+          "The system is closed.",
+          "It is self-describing.",
+          "It is universally algorithmic.",
+          "It is thermodynamically isolated.",
+          "It is costlessly erasive.",
+          "It is a single account."
+        ],
+        "distinctions": [
+          "Self-repair vs. external repair.",
+          "Complete vs. partial repair.",
+          "Presumed vs. proven."
+        ],
+        "relations": [
+          "The properties are jointly sufficient to preclude complete self-repair.",
+          "This is a consequence of the five theorem families."
+        ],
+        "operations": [
+          "Test whether any such system can achieve complete self-repair.",
+          "Construct counterexamples if possible."
+        ],
+        "dependencies": [
+          "The five theorem families.",
+          "The definitions of the properties."
+        ],
+        "constraints": [
+          "The system must satisfy all listed properties.",
+          "The repair must be complete."
+        ],
+        "invariants": [
+          "The impossibility of complete self-repair for such systems.",
+          "The need for external resources."
+        ],
+        "consequences": [
+          "If a system has these properties, it cannot repair itself completely.",
+          "External resources are necessary."
+        ],
+        "countermodels": [
+          "A system with all properties that does achieve complete self-repair.",
+          "A system lacking one property that can self-repair."
+        ],
+        "collapse_conditions": [
+          "If one property is relaxed, the impossibility may fail.",
+          "If 'complete' is redefined, the claim may change."
+        ],
+        "open_questions": [
+          "Are there systems with all these properties?",
+          "What constitutes 'complete' repair?"
+        ],
+        "source_section": "SECTION_025",
+        "line_start": 286,
+        "line_end": 286
+      },
+      {
+        "discovery_id": "DISC-0027",
+        "exact_quotation": "A complete repair may require resources outside the damaged subsystem, semantic authority above its object language, more than a universal internal procedure, an open energy/information budget, and accountable treatment of history.",
+        "neutral_paraphrase": "Complete repair may require external resources, higher-level semantics, non-universal procedures, open budgets, and historical accountability.",
+        "referent": "The necessary conditions for complete repair.",
+        "identity_conditions": [
+          "There are five listed requirements.",
+          "Each is a potential necessary condition.",
+          "They are not yet proven sufficient."
+        ],
+        "distinctions": [
+          "Necessary vs. sufficient.",
+          "Internal vs. external resources.",
+          "Object language vs. meta-language."
+        ],
+        "relations": [
+          "Each requirement addresses a limitation from the theorem families.",
+          "They are candidate bridge premises."
+        ],
+        "operations": [
+          "Test whether each requirement is necessary.",
+          "Construct models satisfying some but not all."
+        ],
+        "dependencies": [
+          "The theorem families.",
+          "The definition of complete repair."
+        ],
+        "constraints": [
+          "The requirements are candidate conditions.",
+          "They must be formally defined."
+        ],
+        "invariants": [
+          "The need for external resources.",
+          "The need for semantic authority."
+        ],
+        "consequences": [
+          "If any requirement is missing, complete repair may be impossible.",
+          "They motivate the need for external intervention."
+        ],
+        "countermodels": [
+          "A complete repair without one of the requirements.",
+          "A system with all requirements but still no complete repair."
+        ],
+        "collapse_conditions": [
+          "If a requirement is not actually necessary, the argument weakens.",
+          "If they are jointly sufficient, the repair exists."
+        ],
+        "open_questions": [
+          "Are these requirements necessary?",
+          "Are they sufficient?",
+          "How are they formally defined?"
+        ],
+        "source_section": "SECTION_026",
+        "line_start": 290,
+        "line_end": 290
+      },
+      {
+        "discovery_id": "DISC-0028",
+        "exact_quotation": "Christian theology identifies God’s Grace in Christ as external in source, truthful in judgment, non-transactional in gift, transformative in operation, and record-resolving without pretending evil never occurred.",
+        "neutral_paraphrase": "Christian theology describes God's grace in Christ with five specific attributes.",
+        "referent": "The theological description of God's grace in Christ.",
+        "identity_conditions": [
+          "There are five attributes.",
+          "Each is a property of God's grace.",
+          "The description is from Christian theology."
+        ],
+        "distinctions": [
+          "Theological claim vs. formal result.",
+          "Source externality vs. physical externality.",
+          "Record resolution vs. erasure."
+        ],
+        "relations": [
+          "The attributes align with the five requirements for complete repair.",
+          "This is a candidate bridge between formal and theological domains."
+        ],
+        "operations": [
+          "Compare the theological attributes with the formal requirements.",
+          "Test whether the formal results imply the theological claims."
+        ],
+        "dependencies": [
+          "The formal requirements from OBJ-007.",
+          "The theological source."
+        ],
+        "constraints": [
+          "The theological claims are not proven by the formal results.",
+          "The attributes must be exegetically grounded."
+        ],
+        "invariants": [
+          "The five attributes are distinct.",
+          "The theological description is not reduced to formalism."
+        ],
+        "consequences": [
+          "If the formal requirements are necessary, the theological description matches them.",
+          "But the formal results do not prove the theological claims."
+        ],
+        "countermodels": [
+          "A formal repair that satisfies the requirements but is not God's grace.",
+          "A theological attribute not matched by a formal requirement."
+        ],
+        "collapse_conditions": [
+          "If the formal requirements are not necessary, the alignment weakens.",
+          "If the theological attributes are not distinct, the mapping collapses."
+        ],
+        "open_questions": [
+          "Does the formal repair exist?",
+          "Is it unique?",
+          "Is it divine?"
+        ],
+        "source_section": "SECTION_027",
+        "line_start": 294,
+        "line_end": 294
+      },
+      {
+        "discovery_id": "DISC-0029",
+        "exact_quotation": "The five results do not yet jointly prove that the repair exists, that it is unique, that it is personal, that it is divine, or that it is Christian Grace.",
+        "neutral_paraphrase": "The five formal results are insufficient to prove the existence, uniqueness, personality, divinity, or Christian identity of the repair.",
+        "referent": "The gap between the five formal results and the theological conclusion.",
+        "identity_conditions": [
+          "There are five results.",
+          "They are jointly insufficient for the listed conclusions.",
+          "The conclusions are existence, uniqueness, personality, divinity, and Christian identity."
+        ],
+        "distinctions": [
+          "Formal result vs. theological conclusion.",
+          "Existence vs. uniqueness.",
+          "Divine vs. Christian."
+        ],
+        "relations": [
+          "The five results are necessary but not sufficient.",
+          "Additional premises are required."
+        ],
+        "operations": [
+          "Identify what additional premises are needed.",
+          "Test whether the results can be strengthened."
+        ],
+        "dependencies": [
+          "The five results.",
+          "The bridge premises."
+        ],
+        "constraints": [
+          "The conclusions are not proven.",
+          "The results are conditional."
+        ],
+        "invariants": [
+          "The gap between formal and theological domains.",
+          "The need for further argument."
+        ],
+        "consequences": [
+          "If no additional premises are found, the theological conclusion is unsupported.",
+          "If additional premises are found, the argument may be completed."
+        ],
+        "countermodels": [
+          "A model satisfying the five results but no repair exists.",
+          "A model with multiple repairs, defeating uniqueness."
+        ],
+        "collapse_conditions": [
+          "If the results are strengthened, the gap may close.",
+          "If the conclusions are weakened, the gap may be acceptable."
+        ],
+        "open_questions": [
+          "What additional premises are needed?",
+          "Can the results be strengthened?"
+        ],
+        "source_section": "SECTION_028",
+        "line_start": 298,
+        "line_end": 298
+      },
+      {
+        "discovery_id": "DISC-0030",
+        "exact_quotation": "SECTION_019\n\nThe corpus already repaired one contradiction:\n\n- Grace channel \\(\\mathcal G\\): proposed idempotent, absorbing/one-way, trace-preserving map.\n- Conversion jump \\(L=|+\\rangle\\langle-|\\): nilpotent directional transition.\n\nA nonzero two-sector operator cannot generally be both the proposed strict anticommuting jump and an idempotent projection. Separating \\(\\mathcal G\\) from \\(L\\) is necessary. Lean should verify the exact axioms of each operator rather than a prose paraphrase.\n\nSECTION_020",
+        "neutral_paraphrase": "The convergence argument is vulnerable to eight specific failure conditions.",
+        "referent": "The eight defeat conditions for the convergence argument.",
+        "identity_conditions": [
+          "There are eight listed conditions.",
+          "Each is sufficient to fail or weaken the argument.",
+          "They are distinct."
+        ],
+        "distinctions": [
+          "Failure vs. weakening.",
+          "Bridge premise vs. theorem.",
+          "Decidability vs. undecidability."
+        ],
+        "relations": [
+          "Each condition targets a specific component of the argument.",
+          "They are independent."
+        ],
+        "operations": [
+          "Test each condition against the argument.",
+          "Construct models satisfying each condition."
+        ],
+        "dependencies": [
+          "The five theorem families.",
+          "The bridge premises.",
+          "The Gospel axiom set."
+        ],
+        "constraints": [
+          "The conditions are sufficient to defeat the argument.",
+          "They are not exhaustive."
+        ],
+        "invariants": [
+          "The argument's dependence on the bridge premises.",
+          "The need for a common carrier."
+        ],
+        "consequences": [
+          "If any condition holds, the argument fails or weakens.",
+          "The theological conclusion is not established."
+        ],
+        "countermodels": [
+          "A model satisfying condition 1.",
+          "A model satisfying condition 4."
+        ],
+        "collapse_conditions": [
+          "If all conditions are avoided, the argument may succeed.",
+          "If the conditions are not independent, the failure may be more severe."
+        ],
+        "open_questions": [
+          "Which conditions are most likely to occur?",
+          "Are there additional defeat conditions?"
+        ],
+        "source_section": "SECTION_018",
+        "line_start": 218,
+        "line_end": 227,
+        "model_quotation_candidate": "The convergence argument fails or weakens if any of the following occurs: 1. No common carrier satisfying the five theorem families can be defined. 2. One or more bridge premises prove false or equivocal. 3. A claimed moral quantity cannot be operationally related to its physical counterpart. 4. The target repair problem is decidable for the stated class, defeating U-BRIDGE. 5. “Record resolution” does not require logically irreversible erasure, defeating L-BRIDGE. 6. A bounded internal/open-system process supplies everything the target definition calls complete repair. 7. Multiple structurally distinct operator classes satisfy the corrected P1–P5 profile. 8. The Gospel axiom set fails coverage, independence, or exegetical accuracy.",
+        "quotation_rebound_from_reported_lines": true
+      },
+      {
+        "discovery_id": "DISC-0031",
+        "exact_quotation": "HOME-DOMAIN THEOREMS: ESTABLISHED UNDER THEIR HYPOTHESES",
+        "neutral_paraphrase": "A set of theorems is asserted to hold within a specified domain, conditional on their stated assumptions.",
+        "referent": "A collection of theorems and their associated hypotheses.",
+        "identity_conditions": [
+          "The theorems are identified by their domain and hypotheses."
+        ],
+        "distinctions": [
+          "Distinguished from theorems outside the home domain."
+        ],
+        "relations": [
+          "Theorems depend on their hypotheses."
+        ],
+        "operations": [
+          "Verification of theorem proofs under hypotheses."
+        ],
+        "dependencies": [
+          "Hypotheses are required for theorem validity."
+        ],
+        "constraints": [
+          "Theorems are only valid within the home domain."
+        ],
+        "invariants": [
+          "The theorem statements remain unchanged."
+        ],
+        "consequences": [
+          "If hypotheses hold, theorems are established."
+        ],
+        "countermodels": [
+          "A model satisfying hypotheses but violating a theorem would refute it."
+        ],
+        "collapse_conditions": [
+          "If hypotheses are inconsistent, the theorems collapse."
+        ],
+        "open_questions": [
+          "What are the exact theorems and hypotheses?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 358,
+        "line_end": 358
+      },
+      {
+        "discovery_id": "DISC-0032",
+        "exact_quotation": "COMMON CARRIER: OPEN",
+        "neutral_paraphrase": "The existence or identity of a common carrier is currently undetermined.",
+        "referent": "A concept labeled 'common carrier'.",
+        "identity_conditions": [
+          "Identified by the label 'common carrier'."
+        ],
+        "distinctions": [
+          "Distinguished from other carriers or structures."
+        ],
+        "relations": [
+          "May relate to other objects in the text."
+        ],
+        "operations": [
+          "Investigation to determine existence or identity."
+        ],
+        "dependencies": [],
+        "constraints": [
+          "Currently open, no established properties."
+        ],
+        "invariants": [],
+        "consequences": [
+          "Open status implies unresolved question."
+        ],
+        "countermodels": [
+          "Any proposed carrier must be tested against the text."
+        ],
+        "collapse_conditions": [
+          "If a carrier is identified, open status collapses."
+        ],
+        "open_questions": [
+          "What is the common carrier?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 359,
+        "line_end": 359
+      },
+      {
+        "discovery_id": "DISC-0033",
+        "exact_quotation": "FIVE BRIDGES: OPEN / REQUIRE INDIVIDUAL PROOF",
+        "neutral_paraphrase": "Five bridges are not yet established; each requires separate proof.",
+        "referent": "A set of five bridges.",
+        "identity_conditions": [
+          "There are exactly five bridges."
+        ],
+        "distinctions": [
+          "Each bridge is distinct and requires individual proof."
+        ],
+        "relations": [
+          "Bridges may connect different domains."
+        ],
+        "operations": [
+          "Prove each bridge individually."
+        ],
+        "dependencies": [
+          "Proof required for each bridge."
+        ],
+        "constraints": [
+          "No bridge is established without proof."
+        ],
+        "invariants": [
+          "The number five is invariant."
+        ],
+        "consequences": [
+          "If all bridges proved, they become established."
+        ],
+        "countermodels": [
+          "A bridge could be disproved by counterexample."
+        ],
+        "collapse_conditions": [
+          "If a bridge is disproved, it collapses."
+        ],
+        "open_questions": [
+          "What are the five bridges and their proofs?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 360,
+        "line_end": 360
+      },
+      {
+        "discovery_id": "DISC-0034",
+        "exact_quotation": "FIVE-PROPERTY CONVERGENCE: STRUCTURAL CANDIDATE",
+        "neutral_paraphrase": "A convergence of five properties is proposed as a structural candidate.",
+        "referent": "A convergence of five properties.",
+        "identity_conditions": [
+          "Involves exactly five properties."
+        ],
+        "distinctions": [
+          "Candidate status distinguishes it from established structures."
+        ],
+        "relations": [
+          "Properties converge to form a structure."
+        ],
+        "operations": [
+          "Test whether the convergence yields a valid structure."
+        ],
+        "dependencies": [
+          "Depends on the five properties."
+        ],
+        "constraints": [
+          "Candidate requires validation."
+        ],
+        "invariants": [
+          "The five properties are fixed."
+        ],
+        "consequences": [
+          "If validated, becomes a structural result."
+        ],
+        "countermodels": [
+          "A counterexample showing properties do not converge."
+        ],
+        "collapse_conditions": [
+          "If one property fails, convergence collapses."
+        ],
+        "open_questions": [
+          "What are the five properties and the proposed structure?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 361,
+        "line_end": 361
+      },
+      {
+        "discovery_id": "DISC-0035",
+        "exact_quotation": "NINE-CLASS ELIMINATION: NOT EXHAUSTIVE; SEVERAL EXCLUSIONS OVERSHOOT",
+        "neutral_paraphrase": "An elimination process involving nine classes is incomplete and some exclusions are too broad.",
+        "referent": "A nine-class elimination process.",
+        "identity_conditions": [
+          "Involves nine classes."
+        ],
+        "distinctions": [
+          "Distinguished from exhaustive elimination."
+        ],
+        "relations": [
+          "Exclusions relate to classes."
+        ],
+        "operations": [
+          "Review and refine exclusions."
+        ],
+        "dependencies": [
+          "Depends on the classification of nine classes."
+        ],
+        "constraints": [
+          "Elimination is not exhaustive."
+        ],
+        "invariants": [
+          "The number nine is invariant."
+        ],
+        "consequences": [
+          "Overshooting exclusions may remove valid items."
+        ],
+        "countermodels": [
+          "A class that is wrongly excluded."
+        ],
+        "collapse_conditions": [
+          "If exclusions are corrected, the elimination changes."
+        ],
+        "open_questions": [
+          "Which exclusions overshoot and what is the correct elimination?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 362,
+        "line_end": 362
+      },
+      {
+        "discovery_id": "DISC-0036",
+        "exact_quotation": "UNIQUE GRACE OPERATOR: NOT PROVED",
+        "neutral_paraphrase": "The uniqueness of a grace operator has not been proven.",
+        "referent": "A grace operator.",
+        "identity_conditions": [
+          "Referred to as 'grace operator'."
+        ],
+        "distinctions": [
+          "Uniqueness is distinct from existence."
+        ],
+        "relations": [
+          "Uniqueness depends on existence and properties."
+        ],
+        "operations": [
+          "Attempt to prove uniqueness."
+        ],
+        "dependencies": [
+          "Requires definition of grace operator."
+        ],
+        "constraints": [
+          "Uniqueness is unproved."
+        ],
+        "invariants": [],
+        "consequences": [
+          "If unproved, multiple operators may exist."
+        ],
+        "countermodels": [
+          "Two distinct grace operators would refute uniqueness."
+        ],
+        "collapse_conditions": [
+          "If uniqueness is proved, open status collapses."
+        ],
+        "open_questions": [
+          "What is the grace operator and is it unique?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 363,
+        "line_end": 363
+      },
+      {
+        "discovery_id": "DISC-0037",
+        "exact_quotation": "OPERATOR SCAFFOLD: MATHEMATICALLY TESTABLE",
+        "neutral_paraphrase": "An operator scaffold is amenable to mathematical testing.",
+        "referent": "An operator scaffold.",
+        "identity_conditions": [
+          "Referred to as 'operator scaffold'."
+        ],
+        "distinctions": [
+          "Testable status distinguishes it from untestable constructs."
+        ],
+        "relations": [
+          "Scaffold relates to operators."
+        ],
+        "operations": [
+          "Mathematical testing of the scaffold."
+        ],
+        "dependencies": [
+          "Requires mathematical framework."
+        ],
+        "constraints": [
+          "Must be testable."
+        ],
+        "invariants": [
+          "Scaffold structure remains."
+        ],
+        "consequences": [
+          "Testing may confirm or refute."
+        ],
+        "countermodels": [
+          "A test that fails would refute."
+        ],
+        "collapse_conditions": [
+          "If tests fail, scaffold collapses."
+        ],
+        "open_questions": [
+          "What is the operator scaffold and how is it tested?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 364,
+        "line_end": 364
+      },
+      {
+        "discovery_id": "DISC-0038",
+        "exact_quotation": "GOSPEL AXIOM SET: THEOLOGICAL CANDIDATE REQUIRING EXEGETICAL AUDIT",
+        "neutral_paraphrase": "A set of axioms labeled 'gospel' is a theological candidate that requires an exegetical audit.",
+        "referent": "A gospel axiom set.",
+        "identity_conditions": [
+          "Referred to as 'gospel axiom set'."
+        ],
+        "distinctions": [
+          "Candidate status distinguishes from established axioms."
+        ],
+        "relations": [
+          "Requires exegetical audit."
+        ],
+        "operations": [
+          "Perform exegetical audit."
+        ],
+        "dependencies": [
+          "Depends on theological interpretation."
+        ],
+        "constraints": [
+          "Not yet audited."
+        ],
+        "invariants": [
+          "Axiom set remains."
+        ],
+        "consequences": [
+          "Audit may validate or invalidate."
+        ],
+        "countermodels": [
+          "Exegetical counterexample to an axiom."
+        ],
+        "collapse_conditions": [
+          "If audit fails, candidate collapses."
+        ],
+        "open_questions": [
+          "What are the axioms and what does the audit entail?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 365,
+        "line_end": 365
+      },
+      {
+        "discovery_id": "DISC-0039",
+        "exact_quotation": "CHRISTIAN IDENTIFICATION: DECLARATION PLUS PHILOSOPHICAL BRIDGE",
+        "neutral_paraphrase": "Christian identification is presented as a declaration combined with a philosophical bridge.",
+        "referent": "A concept of Christian identification.",
+        "identity_conditions": [
+          "Involves a declaration and a philosophical bridge."
+        ],
+        "distinctions": [
+          "Distinguished from mere declaration or mere bridge."
+        ],
+        "relations": [
+          "Declaration and bridge are combined."
+        ],
+        "operations": [
+          "Analyze the philosophical bridge."
+        ],
+        "dependencies": [
+          "Depends on the declaration and bridge."
+        ],
+        "constraints": [
+          "Requires both components."
+        ],
+        "invariants": [
+          "The combination is invariant."
+        ],
+        "consequences": [
+          "If bridge fails, identification may be unsupported."
+        ],
+        "countermodels": [
+          "A philosophical counterexample to the bridge."
+        ],
+        "collapse_conditions": [
+          "If bridge is invalid, identification collapses."
+        ],
+        "open_questions": [
+          "What is the declaration and what is the philosophical bridge?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 366,
+        "line_end": 366
+      },
+      {
+        "discovery_id": "DISC-0040",
+        "exact_quotation": "CANONICAL ADMISSION: NONE",
+        "neutral_paraphrase": "There is no canonical admission.",
+        "referent": "The status of canonical admission.",
+        "identity_conditions": [
+          "The status is 'none'."
+        ],
+        "distinctions": [
+          "Distinguished from any admission."
+        ],
+        "relations": [],
+        "operations": [
+          "Verify absence of admission."
+        ],
+        "dependencies": [],
+        "constraints": [
+          "No canonical admission exists."
+        ],
+        "invariants": [
+          "The status 'none' is invariant."
+        ],
+        "consequences": [
+          "No canonical status is conferred."
+        ],
+        "countermodels": [
+          "Any admission would contradict."
+        ],
+        "collapse_conditions": [
+          "If admission occurs, status changes."
+        ],
+        "open_questions": [
+          "Why is there no canonical admission?"
+        ],
+        "source_section": "SECTION_041",
+        "line_start": 367,
+        "line_end": 367
+      }
+    ],
+    "global_open_questions": [
+      "What exactly constitutes a complete repair?",
+      "How does each boundary result contribute to P1-P5?",
+      "What are the missing premises for the bridge to Grace-class candidate?",
+      "What object could legitimately fall under all five theorem families?",
+      "How does the candidate carrier M relate to the five theorem families?",
+      "How can bridges between physical and moral/coherence variables be made explicit and independently testable?",
+      "What physical encoding could represent moral ledger entries?",
+      "Under what conditions could the formation dynamics yield complete glorification?",
+      "Which candidate classes are partially viable as repair mechanisms?",
+      "What are the exact axioms for the grace channel and conversion jump?",
+      "Is the seven-fold theological taxonomy exhaustive?",
+      "Are the ten Gospel axioms independent and exegetically accurate?",
+      "How do the five theorem families apply to the repair problem?",
+      "What additional premises are needed to bridge formal results to theological conclusions?",
+      "Which defeat conditions are most likely to occur?",
+      "Can a common carrier satisfying all five theorem families be defined?",
+      "What is the overall context and purpose of these statements?",
+      "How do the objects relate to each other?",
+      "What are the source files and their contents?"
+    ],
+    "prohibited_outputs": [
+      "No classification of the paper's discipline, domain, object type, claim class, proof class, warrant, evidence grade, bridge grade, theological identification, canonical status, or publication status.",
+      "No inference that the boundary results prove God or Christian Grace.",
+      "No treatment of adjacency as dependency.",
+      "No splitting of assertions that do not have independently reviewable truth conditions.",
+      "No classification of objects into disciplines, domains, or object types.",
+      "No assignment of claim classes, proof classes, warrants, evidence grades, or bridge grades.",
+      "No theological identification or canonical status.",
+      "No publication status or metadata inference.",
+      "No publication status."
+    ]
+  },
+  "post_discovery_source_binding": {
+    "path": "\\\\dlowenas\\zobsidian\\__New\\Theophysics.new\\notes\\THE_GROUND_TRIAL\\02_TANGENT_PAPERS\\GRACE_CLOSED_SYSTEM_BREAK_RIGOROUS_TEST_PACKET.md",
+    "source_hash": "sha256:6b3146febfda77a5fc383d21a96f58db513ad2790aa01f7ef81f70241f4eb9dd"
+  },
+  "source_modified": false,
+  "canonical_admission_performed": false,
+  "human_ruling_required": true
+}

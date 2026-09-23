@@ -1,0 +1,188 @@
+face:
+  uuid: 0e0207b7-60b5-580e-a191-1187b317416e
+  node_id: tp:master-equation/01/001
+  claim_id: tp:ME/L5/C1
+  name: The Trilemma Impossibility — J + M + W = 3 requires an external cost-bearer
+  term: The Trilemma Impossibility — J + M + W = 3 requires an external cost-bearer
+  plain: 'When someone gets hurt, somebody has to pay. If the offender pays fully,
+    that is justice but not mercy. If the offender pays nothing, that is mercy but
+    not justice. You cannot have both in a closed system — the math literally forbids
+    it. The only way to get full justice AND full mercy is if someone from outside
+    the system voluntarily steps in and pays the cost themselves. That is not theology.
+    That is algebra. Identifying that solution class with a specific historical event
+    is a separate claim: the algebra defines the solution class, but it does not establish
+    the historical instantiation by itself. That component remains open in the Atlas
+    (open item OI-0001).'
+  status: verified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-01-01'
+  dateModified: '2026-08-12'
+  version: 1.0.0
+  claimClass: theorem
+  stage: 01_canonical
+  mathematicalForm: 'J = T_A/D, M = 1 - T_B/D, T_A = T_B (closed system) => J = 1
+    - M. QED: J=1 AND M=1 is impossible. Solution: T_ext = D, W_ext = 1 (voluntary
+    external cost-bearer).'
+  claimComponents:
+  - componentID: tp:ME/L5/C1.algebraic-trilemma
+    predicate: closed-system justice, mercy, and free-will impossibility
+    status: supported
+  - componentID: tp:ME/L5/C1.external-cost-bearer
+    predicate: external voluntary cost-bearer solution class
+    status: supported
+  - componentID: tp:ME/L5/C1.historical-instantiation
+    predicate: the Cross is the historical instantiation of the solution class
+    status: open
+  axiomRoot: https://faiththruphysics.com/claims/master-equation/01/000
+  edges:
+  - type: dependsOn
+    target: tp:ten-laws/01/law-05-thermodynamics
+    note: 'Law 5: Justice/Mercy thermodynamic framework'
+    status: accepted
+    validationReceipt:
+      validator: canonical atom graph prior to Claim Beacon Protocol v0.1
+      method: human/station accepted edge carried forward
+      bridgeGrade: ungraded
+      propagatesFalsification: false
+  - type: dependsOn
+    target: tp:ten-laws/01/law-09-weak-force
+    note: 'Law 9: Moral conservation — cost cannot disappear'
+    status: accepted
+    validationReceipt:
+      validator: canonical atom graph prior to Claim Beacon Protocol v0.1
+      method: human/station accepted edge carried forward
+      bridgeGrade: ungraded
+      propagatesFalsification: false
+  - type: bridgesTo
+    target: tp:bridges/master-equation/economics/trilemma-cost-bearing
+    grade: structural_identity
+    propagates: true
+    note: Bridge atom contains the Master Equation to economics cost-bearing mapping.
+    status: accepted
+    validationReceipt:
+      validator: canonical atom graph prior to Claim Beacon Protocol v0.1
+      method: human/station accepted edge carried forward
+      bridgeGrade: structural_identity
+      propagatesFalsification: true
+  - type: bridgesTo
+    target: tp:theology/01/001
+    grade: structural_identity
+    propagates: false
+    note: The Cross is the unique instantiation of T_ext = D, W_ext = 1
+    status: proposed
+    validationReceipt:
+      validator: canonical atom graph prior to Claim Beacon Protocol v0.1
+      method: requires separate theology bridge atom and proof receipt
+      bridgeGrade: ungraded
+      propagatesFalsification: false
+  evidenceType: formal_derivation
+  audienceLevel: informed_adult
+  paradigmRelation: breaks
+  glyphs:
+  - ◆
+  - ⟐
+  - Μ
+  - ≡
+  - ⚖
+  tags:
+  - justice
+  - mercy
+  - free-will
+  - atonement
+  - cross
+  - moral-conservation
+  keywords:
+  - trilemma
+  - budget balance
+  - Myerson-Satterthwaite
+  - cost-bearer
+  - closed system
+  - external transfer
+  mathFormNormal: a = x/d ; b = 1 - y/d ; x = y => a = 1 - b ; solve(a=1,b=1) requires
+    z_ext = d, w_ext = 1
+  verificationStatus: formal_derivation
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Exhibit a closed-system mechanism that achieves J=1, M=1,
+    W=1 simultaneously without an external transfer. Alternatively, show that Myerson-Satterthwaite
+    does not apply to moral transfers.
+  sourceReference: C:\theophysics\CANONICAL\_docs\GMF3_Trilemma_Scoring_Engine.xlsx
+    (Impossibility Proof sheet)
+  masterEquationVariables:
+  - J
+  - M
+  - W
+  - D
+  - T_A
+  - T_B
+  - T_ext
+  - W_ext
+  bridgeGrade: structural_identity
+  claimBeacon:
+    protocol: ClaimBeacon
+    protocolVersion: 0.1.0
+    permanentID: tp:ME/L5/C1
+    canonicalURL: https://faiththruphysics.com/claims/master-equation/01/001
+    version: 1.0.0
+    provenance:
+      sourceReference: C:\theophysics\CANONICAL\_docs\GMF3_Trilemma_Scoring_Engine.xlsx
+        (Impossibility Proof sheet)
+      dateCreated: '2026-01-01'
+      dateModified: '2026-08-12'
+    priorVersions: []
+    claimType: theorem
+    domain: mathematics
+    masterEquationVariables:
+    - J
+    - M
+    - W
+    - D
+    - T_A
+    - T_B
+    - T_ext
+    - W_ext
+    tags:
+    - justice
+    - mercy
+    - free-will
+    - atonement
+    - cross
+    - moral-conservation
+    bridgeGrade: structural_identity
+    have:
+    - formal_derivation
+    - mathematical_model
+    - closed-system impossibility proof
+    need:
+    - definition of damage D > 0
+    - validity boundary for applying Myerson-Satterthwaite to moral transfers
+    - supporting ten-laws thermodynamic framework
+    breakIf:
+    - closed-system J=1 M=1 W=1 mechanism without external transfer
+    - Myerson-Satterthwaite shown inapplicable to moral transfers
+    - damage/cost conservation premise fails
+    proposalFeed: https://faiththruphysics.com/_proposals/claim-relationships.jsonl
+    bridgeRefs:
+    - tp:bridges/master-equation/economics/trilemma-cost-bearing
+    ontologyRefs:
+    - https://faiththruphysics.com/protocol/claim-beacon/v0.1/pivot-ontology
+    policyRefs:
+    - https://faiththruphysics.com/protocol/claim-beacon/v0.1/conflict-matrix
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-001-trilemma-impossibility.jsonld
+  generated_at: '2026-09-23T01:17:14.430214+00:00'
+  sha256: fbda96d257f4db2b2bf8902936f2d8dc34b5f0364e701ce0bc5f96e2c454d859

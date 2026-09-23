@@ -1,0 +1,84 @@
+face:
+  uuid: 518f391a-a252-569a-8d1c-4622a06a5e3e
+  node_id: tp:axioms/01/AX-112
+  claim_id: tp:AXIOMS/EV15.3
+  name: PEAR Lab Results
+  term: PEAR Lab Results
+  plain: 'PEAR laboratory: 28 years of human-machine interaction evidence.'
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical_anchor
+  mathematicalForm: Effect size ~10⁻⁴; consistent over 28 years
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-036
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-041
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - logos
+  keywords:
+  - EV15.3
+  - Q6
+  - Material
+  - EvidenceNode
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Replicate PEAR with null result in pre-registered protocol.
+    Show effect is equipment artifact. Demonstrate selection or reporting bias.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 114
+  axiomRegistry:
+    axiomID: AX-112
+    oldID: EV15.3
+    treeLevel: Q6
+    treeBranch: Q6-AA (Experimental evidence — individual consciousness)
+    questionType: Type 1 (Does X hold?)
+    domain: Material
+    tier: '3'
+    newType: EvidenceNode
+    logicalForce: evidence node
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M15
+    moduleTitle: Evidence Chain
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: M1 (Agentic — individual intention affects physical systems)
+    worldviewsEliminated: Materialism, Naturalism
+    propagationTest: Evidence — supports observer effect but disputed. Not relied
+      upon for core arguments.
+    intendedStatus: classified
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-112-pear-lab-results.jsonld
+  generated_at: '2026-09-23T01:17:13.738042+00:00'
+  sha256: 1d2fc1dad39d9e08c9651142d8a6a92f5d6dc58f49910e6c511e4fda95426519

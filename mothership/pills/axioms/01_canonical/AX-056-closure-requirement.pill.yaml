@@ -1,0 +1,85 @@
+face:
+  uuid: b53dcaff-b7b0-58cb-b44f-6f05acc6bc43
+  node_id: tp:axioms/01/AX-056
+  claim_id: tp:AXIOMS/A7.1
+  name: Closure Requirement
+  term: Closure Requirement
+  plain: Complete theory must satisfy boundary conditions.
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: 'Complete(Theory) → ∃BCs: Satisfies(Theory, BCs)'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-025
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-055
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - boundary
+  keywords:
+  - A7.1
+  - Q7
+  - Ontological
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show a complete theory without boundary conditions. Demonstrate
+    Hawking's no-boundary proposal eliminates the need for BCs. Show the 8 BC system
+    is overconstrained or underconstrained.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 57
+  axiomRegistry:
+    axiomID: AX-056
+    oldID: A7.1
+    treeLevel: Q7
+    treeBranch: Q7-C (Theory closure)
+    questionType: Type 4 (What must X be?)
+    domain: Ontological
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M07
+    moduleTitle: Boundary Conditions
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — Closure requirement propagates to all 8 BCs, uniqueness
+      theorem, and religious identification.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-056-closure-requirement.jsonld
+  generated_at: '2026-09-23T01:17:13.218109+00:00'
+  sha256: b634564e2c0d643fd69b91f0de113370decdea385a74b221ac4fecba18dc7c43

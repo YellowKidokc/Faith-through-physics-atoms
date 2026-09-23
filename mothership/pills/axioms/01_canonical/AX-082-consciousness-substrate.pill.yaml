@@ -1,0 +1,89 @@
+face:
+  uuid: 132d42b3-f979-53bc-bf5c-96123f1c4e34
+  node_id: tp:axioms/01/AX-082
+  claim_id: tp:AXIOMS/A10.1
+  name: Consciousness Substrate
+  term: Consciousness Substrate
+  plain: Individual consciousness requires localized field structure.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: '∃Ψ_S(x,t): localized; supports consciousness'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-038
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-040
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-066
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - field
+  keywords:
+  - A10.1
+  - Q6
+  - Human
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show consciousness without localized structure. Demonstrate
+    non-local consciousness that has no field substrate. Show distributed consciousness
+    contradicts localization.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 84
+  axiomRegistry:
+    axiomID: AX-082
+    oldID: A10.1
+    treeLevel: Q6
+    treeBranch: Q6-T (Consciousness localization)
+    questionType: Type 4 (What must X be?)
+    domain: Human
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M10
+    moduleTitle: Soul / Consciousness Field
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: M2 (Entropic — localized field is finite and fragile)
+    worldviewsEliminated: Materialism, Eliminativism
+    propagationTest: YES — Consciousness substrate propagates to soul field (AX-084),
+      soul conservation, and personal identity.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-082-consciousness-substrate.jsonld
+  generated_at: '2026-09-23T01:17:13.476667+00:00'
+  sha256: bb0f1cf6f31569c1eb9e7b9665ebcec4f570bf0ee1203bfeac5182609e112a0a

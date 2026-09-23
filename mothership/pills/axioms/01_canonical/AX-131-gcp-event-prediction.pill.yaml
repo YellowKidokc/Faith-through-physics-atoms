@@ -1,0 +1,78 @@
+face:
+  uuid: c8ba94fd-8d46-54de-8306-97318477fbce
+  node_id: tp:axioms/01/AX-131
+  claim_id: tp:AXIOMS/PRED18.2
+  name: GCP Event Prediction
+  term: GCP Event Prediction
+  plain: GCP data will show significant deviations during collective spiritual focus
+    events.
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: prediction
+  mathematicalForm: GCP deviations during spiritual events
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-111
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  keywords:
+  - PRED18.2
+  - Q12
+  - Material
+  - Hypothesis
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Pre-registered events show no deviation. Null result with
+    sufficient statistical power.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 133
+  axiomRegistry:
+    axiomID: AX-131
+    oldID: PRED18.2
+    treeLevel: Q12
+    treeBranch: Q12-H (Consciousness prediction)
+    questionType: Type 1 (Does X hold?)
+    domain: Material
+    tier: '3'
+    newType: Hypothesis
+    logicalForce: empirical hypothesis
+    formalizableInLean: 'yes'
+    leanKind: metadata / proposition, not premise
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M18
+    moduleTitle: Protocol / Test Suite
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: M4
+    worldviewsEliminated: —
+    propagationTest: Time-bound prediction — testable with pre-registration.
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-131-gcp-event-prediction.jsonld
+  generated_at: '2026-09-23T01:17:13.900977+00:00'
+  sha256: b09a3b0022ae6f4b4ce667a3611089b44488990c29e9caeef8385c579e25aa7e

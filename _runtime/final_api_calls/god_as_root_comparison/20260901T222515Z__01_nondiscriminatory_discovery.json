@@ -1,0 +1,492 @@
+{
+  "receipt_version": "final-api-call/1.0.0",
+  "status": "CANDIDATE_DRAFT — NOT ADMITTED",
+  "created_at": "2026-09-01T22:25:15.179941+00:00",
+  "call": "01_NONDISCRIMINATORY_DISCOVERY",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "blind_input": {
+    "content_hash": "sha256:81a760e8c77f4b3a2092d156d5d7114b904c8d1b6dac3a77711965dc407f5be4",
+    "withholding": {
+      "named_headings_replaced": 9,
+      "frontmatter_withheld": true,
+      "filename_withheld": true,
+      "folder_withheld": true,
+      "html_comments_withheld": true
+    },
+    "chunk_count": 1
+  },
+  "frozen_discovery": {
+    "schema_version": "paper-discovery/1.0.0",
+    "stage": "NONDISCRIMINATORY_DISCOVERY",
+    "status": "DISCOVERY_COMPLETE",
+    "discovered_objects": [
+      {
+        "discovery_id": "DISC-0001",
+        "exact_quotation": "What the public story gets right, gets wrong, overstates, and how to state the defensible version.",
+        "neutral_paraphrase": "A framework for evaluating a public narrative by separating accurate claims, errors, exaggerations, and a more defensible formulation.",
+        "referent": "The public story as an object of evaluation",
+        "identity_conditions": [
+          "The public story is the same if it is the narrative being assessed",
+          "The public story is the same if it has claims that can be right, wrong, or overstated"
+        ],
+        "distinctions": [
+          "Right versus wrong versus overstated versus defensible",
+          "Public story versus defensible version"
+        ],
+        "relations": [
+          "The defensible version is derived from the public story",
+          "Overstatement is a type of inaccuracy distinct from being wrong"
+        ],
+        "operations": [
+          "Identify what the public story gets right",
+          "Identify what the public story gets wrong",
+          "Identify what the public story overstates",
+          "State the defensible version"
+        ],
+        "dependencies": [
+          "Requires a public story to exist",
+          "Requires criteria for rightness, wrongness, and overstatement"
+        ],
+        "constraints": [
+          "The defensible version must be stated without overstating",
+          "The evaluation must be supported by evidence"
+        ],
+        "invariants": [
+          "The public story remains the object of evaluation",
+          "The categories of right, wrong, overstated, and defensible remain distinct"
+        ],
+        "consequences": [
+          "A defensible version can be produced",
+          "The public story may be revised or replaced"
+        ],
+        "countermodels": [
+          "A public story with no claims that can be right or wrong",
+          "A public story that is entirely accurate and not overstated"
+        ],
+        "collapse_conditions": [
+          "If the public story is identical to the defensible version, the distinction collapses",
+          "If all claims are both right and wrong, the categories collapse"
+        ],
+        "open_questions": [
+          "What is the content of the public story?",
+          "What criteria determine rightness and wrongness?"
+        ],
+        "source_section": "SECTION_002",
+        "line_start": 5,
+        "line_end": 5
+      },
+      {
+        "discovery_id": "DISC-0002",
+        "exact_quotation": "The public story may say this strongly without stopping to prove it inline. This tangent is where the support, objections, and receipts accumulate.",
+        "neutral_paraphrase": "A location for accumulating evidence, counterarguments, and documentation related to a strong claim made in the public story.",
+        "referent": "The tangent section for support, objections, and receipts",
+        "identity_conditions": [
+          "The tangent is the same if it is the section where support, objections, and receipts accumulate",
+          "The tangent is the same if it is distinct from the inline proof"
+        ],
+        "distinctions": [
+          "Inline proof versus tangent accumulation",
+          "Support versus objections versus receipts"
+        ],
+        "relations": [
+          "The tangent supports the public story's strong claim",
+          "Objections and receipts are collected in the tangent"
+        ],
+        "operations": [
+          "Accumulate support",
+          "Accumulate objections",
+          "Accumulate receipts",
+          "Refer to the tangent from the public story"
+        ],
+        "dependencies": [
+          "Requires a strong claim in the public story",
+          "Requires a tangent section to exist"
+        ],
+        "constraints": [
+          "The tangent does not prove the claim inline",
+          "The tangent is separate from the main narrative"
+        ],
+        "invariants": [
+          "The tangent remains the place for support, objections, and receipts",
+          "The strong claim remains unproven inline"
+        ],
+        "consequences": [
+          "The public story can make strong claims without immediate proof",
+          "Readers can find supporting material in the tangent"
+        ],
+        "countermodels": [
+          "A public story that proves all claims inline",
+          "A tangent that contains no support, objections, or receipts"
+        ],
+        "collapse_conditions": [
+          "If the tangent becomes the main narrative, the distinction collapses",
+          "If the strong claim is proven inline, the tangent becomes redundant"
+        ],
+        "open_questions": [
+          "What is the strong claim?",
+          "What counts as a receipt?"
+        ],
+        "source_section": "SECTION_003",
+        "line_start": 9,
+        "line_end": 9
+      },
+      {
+        "discovery_id": "DISC-0003",
+        "exact_quotation": "[[../01_GOD_AS_ROOT_PUBLIC_STORY.md]]; [[../../18_LEDGER_OBJECTIONS_PROOFS.md]]",
+        "neutral_paraphrase": "References to two other documents: one about a public story and one about a ledger of objections and proofs.",
+        "referent": "Two linked documents: a public story and a ledger of objections and proofs",
+        "identity_conditions": [
+          "The references are the same if they point to the same two documents",
+          "The references are the same if the documents have the same content"
+        ],
+        "distinctions": [
+          "Public story document versus ledger document",
+          "Objections versus proofs"
+        ],
+        "relations": [
+          "The ledger document is related to objections and proofs",
+          "The public story document is related to the public story"
+        ],
+        "operations": [
+          "Navigate to the public story document",
+          "Navigate to the ledger document",
+          "Use the ledger to support or refute claims"
+        ],
+        "dependencies": [
+          "Requires the referenced documents to exist",
+          "Requires a linking mechanism"
+        ],
+        "constraints": [
+          "The references are not inline content",
+          "The documents are external to this section"
+        ],
+        "invariants": [
+          "The references point to the same documents",
+          "The ledger contains objections and proofs"
+        ],
+        "consequences": [
+          "Readers can access supporting material",
+          "The public story can be checked against the ledger"
+        ],
+        "countermodels": [
+          "The referenced documents do not exist",
+          "The ledger contains no objections or proofs"
+        ],
+        "collapse_conditions": [
+          "If the two documents are merged, the distinction collapses",
+          "If the references are broken, the link collapses"
+        ],
+        "open_questions": [
+          "What is the content of the public story document?",
+          "What objections and proofs are in the ledger?"
+        ],
+        "source_section": "SECTION_004",
+        "line_start": 13,
+        "line_end": 13
+      },
+      {
+        "discovery_id": "DISC-0004",
+        "exact_quotation": "Pending expansion.",
+        "neutral_paraphrase": "A placeholder indicating that content is to be added later.",
+        "referent": "A placeholder for future content",
+        "identity_conditions": [
+          "The placeholder is the same if it indicates pending expansion",
+          "The placeholder is the same if it is in the same section"
+        ],
+        "distinctions": [
+          "Pending expansion versus completed content",
+          "Placeholder versus actual content"
+        ],
+        "relations": [
+          "The placeholder relates to future content",
+          "The placeholder is a marker for missing information"
+        ],
+        "operations": [
+          "Expand the placeholder with content",
+          "Replace the placeholder with actual text"
+        ],
+        "dependencies": [
+          "Requires future content to be written",
+          "Requires a decision to expand"
+        ],
+        "constraints": [
+          "The placeholder does not provide information",
+          "The placeholder is temporary"
+        ],
+        "invariants": [
+          "The placeholder remains pending until expanded",
+          "The section is incomplete"
+        ],
+        "consequences": [
+          "The section is incomplete",
+          "Readers cannot rely on the placeholder for content"
+        ],
+        "countermodels": [
+          "A section with no placeholder and full content",
+          "A placeholder that is never expanded"
+        ],
+        "collapse_conditions": [
+          "If the placeholder is expanded, it ceases to be a placeholder",
+          "If the section is removed, the placeholder disappears"
+        ],
+        "open_questions": [
+          "What content will be added?",
+          "When will the expansion occur?"
+        ],
+        "source_section": "SECTION_005",
+        "line_start": 17,
+        "line_end": 17
+      },
+      {
+        "discovery_id": "DISC-0005",
+        "exact_quotation": "Pending mapping.",
+        "neutral_paraphrase": "A placeholder indicating that a mapping is to be provided later.",
+        "referent": "A placeholder for future mapping",
+        "identity_conditions": [
+          "The placeholder is the same if it indicates pending mapping",
+          "The placeholder is the same if it is in the same section"
+        ],
+        "distinctions": [
+          "Pending mapping versus completed mapping",
+          "Mapping versus content expansion"
+        ],
+        "relations": [
+          "The placeholder relates to a future mapping",
+          "The mapping is distinct from expansion"
+        ],
+        "operations": [
+          "Provide the mapping",
+          "Replace the placeholder with the mapping"
+        ],
+        "dependencies": [
+          "Requires a mapping to be defined",
+          "Requires a decision to map"
+        ],
+        "constraints": [
+          "The placeholder does not provide mapping",
+          "The placeholder is temporary"
+        ],
+        "invariants": [
+          "The placeholder remains pending until mapped",
+          "The section is incomplete"
+        ],
+        "consequences": [
+          "The section is incomplete",
+          "Readers cannot rely on the placeholder for mapping"
+        ],
+        "countermodels": [
+          "A section with a complete mapping",
+          "A placeholder that is never mapped"
+        ],
+        "collapse_conditions": [
+          "If the mapping is provided, the placeholder ceases to exist",
+          "If the section is removed, the placeholder disappears"
+        ],
+        "open_questions": [
+          "What mapping is intended?",
+          "When will the mapping be provided?"
+        ],
+        "source_section": "SECTION_008",
+        "line_start": 29,
+        "line_end": 29
+      },
+      {
+        "discovery_id": "DISC-0006",
+        "exact_quotation": "| Question | Answer |\n|---|---|\n| What we got right | Pending |\n| What we got wrong | Pending |\n| What we overstated | Pending |\n| Defensible version | Pending |",
+        "neutral_paraphrase": "A table with four rows, each pairing a question with a pending answer: what was right, what was wrong, what was overstated, and the defensible version.",
+        "referent": "A table of questions and pending answers",
+        "identity_conditions": [
+          "The table is the same if it has the same four questions",
+          "The table is the same if the answers are pending"
+        ],
+        "distinctions": [
+          "Right versus wrong versus overstated versus defensible",
+          "Question versus answer"
+        ],
+        "relations": [
+          "Each question has a corresponding answer",
+          "The defensible version is related to the other three questions"
+        ],
+        "operations": [
+          "Fill in the answers",
+          "Evaluate what was right, wrong, and overstated",
+          "Formulate the defensible version"
+        ],
+        "dependencies": [
+          "Requires the public story to be evaluated",
+          "Requires criteria for rightness, wrongness, and overstatement"
+        ],
+        "constraints": [
+          "The answers are currently pending",
+          "The table structure is fixed"
+        ],
+        "invariants": [
+          "The four questions remain the same",
+          "The answers are pending until filled"
+        ],
+        "consequences": [
+          "The table can be completed with evaluations",
+          "The defensible version can be stated"
+        ],
+        "countermodels": [
+          "A table with different questions",
+          "A table with completed answers"
+        ],
+        "collapse_conditions": [
+          "If the answers are filled, the pending status collapses",
+          "If the table is removed, the structure collapses"
+        ],
+        "open_questions": [
+          "What are the actual answers?",
+          "What criteria are used for evaluation?"
+        ],
+        "source_section": "SECTION_009",
+        "line_start": 33,
+        "line_end": 38
+      }
+    ],
+    "global_open_questions": [
+      "What is the content of the public story?",
+      "What criteria determine rightness, wrongness, and overstatement?",
+      "What is the strong claim that requires support?",
+      "What are the contents of the referenced documents?",
+      "What will be expanded and mapped in the pending sections?"
+    ],
+    "prohibited_outputs": [
+      "No discipline, domain, object type, claim class, proof class, warrant, evidence grade, bridge grade, theological identification, canonical status, or publication status assigned.",
+      "No classification fields included.",
+      "No inference of adjacency as dependency.",
+      "No treatment of placeholders as substantive content."
+    ]
+  },
+  "emergent_organization": {
+    "schema_version": "emergent-organization/1.0.0",
+    "stage": "BLIND_EMERGENT_ORGANIZATION",
+    "organization_name": "Emergent Organization of Evaluative and Referential Fragments",
+    "organizing_principle": "Grouping by the primary function each discovery serves in relation to a central public story: evaluation, support, reference, or placeholder status.",
+    "groupings": [
+      {
+        "label": "Evaluation Frameworks",
+        "definition": "Discoveries that provide a structure for assessing the accuracy and defensibility of a public narrative.",
+        "object_ids": [
+          "DISC-0001",
+          "DISC-0006"
+        ],
+        "rationale": "DISC-0001 outlines the categories of right, wrong, overstated, and defensible, while DISC-0006 operationalizes these categories in a table format with pending answers. Both are directly concerned with evaluating a public story.",
+        "alternative_labels": [
+          "Assessment Tools",
+          "Public Story Evaluation"
+        ]
+      },
+      {
+        "label": "Support and Evidence Accumulation",
+        "definition": "Discoveries that describe or point to locations where supporting material, objections, and proofs are gathered.",
+        "object_ids": [
+          "DISC-0002",
+          "DISC-0003"
+        ],
+        "rationale": "DISC-0002 explicitly describes a tangent for accumulating support, objections, and receipts. DISC-0003 references a ledger of objections and proofs, which serves a similar evidence-gathering function. Both relate to backing up claims made in the public story.",
+        "alternative_labels": [
+          "Evidence Repositories",
+          "Backup Material"
+        ]
+      },
+      {
+        "label": "Placeholders for Future Content",
+        "definition": "Discoveries that indicate incomplete sections awaiting expansion or mapping.",
+        "object_ids": [
+          "DISC-0004",
+          "DISC-0005"
+        ],
+        "rationale": "Both DISC-0004 and DISC-0005 are explicit placeholders: one for expansion, one for mapping. They share the characteristic of signaling that content is pending and the section is incomplete.",
+        "alternative_labels": [
+          "Pending Items",
+          "Incomplete Sections"
+        ]
+      }
+    ],
+    "ungrouped_object_ids": [],
+    "cross_group_tensions": [
+      {
+        "tension": "The evaluation frameworks (DISC-0001, DISC-0006) are closely tied to the support and evidence accumulation group (DISC-0002, DISC-0003) because the defensible version in the evaluation likely relies on the support and objections collected in the tangent and ledger.",
+        "object_ids": [
+          "DISC-0001",
+          "DISC-0006",
+          "DISC-0002",
+          "DISC-0003"
+        ]
+      },
+      {
+        "tension": "The placeholders (DISC-0004, DISC-0005) may eventually become part of the evaluation or support groups once expanded, creating a temporal tension between current placeholder status and future content.",
+        "object_ids": [
+          "DISC-0004",
+          "DISC-0005"
+        ]
+      }
+    ],
+    "rival_organizations": [
+      {
+        "organization_name": "Organization by Document Reference",
+        "organizing_principle": "Grouping based on whether discoveries reference external documents or are self-contained.",
+        "groupings": [
+          {
+            "label": "Referential",
+            "definition": "Discoveries that explicitly link to other documents or sections.",
+            "object_ids": [
+              "DISC-0003"
+            ]
+          },
+          {
+            "label": "Non-referential",
+            "definition": "Discoveries that do not reference external documents.",
+            "object_ids": [
+              "DISC-0001",
+              "DISC-0002",
+              "DISC-0004",
+              "DISC-0005",
+              "DISC-0006"
+            ]
+          }
+        ]
+      },
+      {
+        "organization_name": "Organization by Completeness",
+        "organizing_principle": "Grouping based on whether the discovery contains complete content or is pending.",
+        "groupings": [
+          {
+            "label": "Complete",
+            "definition": "Discoveries that provide full information without pending markers.",
+            "object_ids": [
+              "DISC-0001",
+              "DISC-0002",
+              "DISC-0003"
+            ]
+          },
+          {
+            "label": "Pending",
+            "definition": "Discoveries that explicitly indicate missing or future content.",
+            "object_ids": [
+              "DISC-0004",
+              "DISC-0005",
+              "DISC-0006"
+            ]
+          }
+        ]
+      }
+    ],
+    "cautions": [
+      "The groupings are based solely on the provided text and may not reflect the original author's intended categories.",
+      "Some discoveries, like DISC-0006, contain pending answers and may later shift in function once completed.",
+      "The references in DISC-0003 are not expanded, so the exact nature of the linked documents is unknown.",
+      "The placeholders (DISC-0004, DISC-0005) are temporary and may be removed or transformed, affecting the stability of the placeholder group."
+    ]
+  },
+  "post_discovery_source_binding": {
+    "path": "C:\\Users\\David\\Documents\\faiththruphysics.com\\01_WORKING\\___AXIOM\\___AXIOM\\01_THE_ONE_STORY\\01_THE_ONE_STORY\\01_SUPPORT_GOD_AS_ROOT\\02_CLAIM_AUDIT\\01C-13_AUDIT_GOD_AS_ROOT_PUBLIC_STORY.md",
+    "source_hash": "sha256:943fe58056dea672ae3b9269a8bbe7a7fc1b984330e10455540eeb28e2a0b588"
+  },
+  "source_modified": false,
+  "canonical_admission_performed": false,
+  "human_ruling_required": true
+}

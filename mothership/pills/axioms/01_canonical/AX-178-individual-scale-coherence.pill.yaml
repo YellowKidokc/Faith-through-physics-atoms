@@ -1,0 +1,85 @@
+face:
+  uuid: 1190f735-7024-58fb-bc8c-b2919123f90c
+  node_id: tp:axioms/01/AX-178
+  claim_id: tp:AXIOMS/SC-INDIVIDUAL
+  name: Individual Scale Coherence
+  term: Individual Scale Coherence
+  plain: At individual scale, coherence = personal identity, psychological integration,
+    the self.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: χ(individual) = Ψ_S = soul = personal identity
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-177
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-084
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  - definition
+  keywords:
+  - SC-INDIVIDUAL
+  - Q6
+  - Human
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show personal identity without coherent pattern. Demonstrate
+    the self as illusion (Buddhist position).
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 180
+  axiomRegistry:
+    axiomID: AX-178
+    oldID: SC-INDIVIDUAL
+    treeLevel: Q6
+    treeBranch: Q6-AL (Scale — individual)
+    questionType: Type 2 (What IS X?)
+    domain: Human
+    tier: '2'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M23
+    moduleTitle: Scale Coherence
+    spineRole: supporting_definition
+    boundaryCondition: —
+    fourModeRelevance: M1, M2
+    worldviewsEliminated: Buddhism (anātman)
+    propagationTest: YES — Individual scale propagates to social scale and moral agency.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-178-individual-scale-coherence.jsonld
+  generated_at: '2026-09-23T01:17:14.294041+00:00'
+  sha256: 436dc2061981cda75905ddbcbc2f9973cd297242c3c4d82187d9488eff72453e

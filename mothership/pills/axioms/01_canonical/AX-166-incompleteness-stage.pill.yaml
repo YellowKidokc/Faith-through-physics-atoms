@@ -1,0 +1,83 @@
+face:
+  uuid: 01a84823-b8c6-51c1-bd0c-692f819688f4
+  node_id: tp:axioms/01/AX-166
+  claim_id: tp:AXIOMS/P5
+  name: Incompleteness Stage
+  term: Incompleteness Stage
+  plain: System with agents and information is Gödel-incomplete — generates entropy
+    it can't resolve.
+  status: active
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: Gödel(System(P0-P4)) → Incomplete → Generates(entropy)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-165
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - entropy
+  - information
+  keywords:
+  - P5
+  - Q5
+  - Primordial
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show a self-complete system with agents. Demonstrate a formal
+    system that proves its own consistency (violating Gödel). Show entropy has non-informational
+    source.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 168
+  axiomRegistry:
+    axiomID: AX-166
+    oldID: P5
+    treeLevel: Q5
+    treeBranch: Q5-S (Primitive — incompleteness)
+    questionType: Type 1 (Does X hold?)
+    domain: Primordial
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M21
+    moduleTitle: Primordial / Ontological Spine
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: M2 (Entropic — incompleteness IS the source of entropy)
+    worldviewsEliminated: —
+    propagationTest: YES — Incompleteness propagates to external grounding necessity,
+      grace, and Terminal Observer.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-166-incompleteness-stage.jsonld
+  generated_at: '2026-09-23T01:17:14.189120+00:00'
+  sha256: 63d562dd8e0870cbc7d21538e18af9891f44d3f5992086505e9a9786e757697d

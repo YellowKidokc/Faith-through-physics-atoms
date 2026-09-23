@@ -1,0 +1,78 @@
+face:
+  uuid: 279aaebc-1762-5a9e-aef9-466ad3be4265
+  node_id: tp:axioms/01/AX-185
+  claim_id: tp:AXIOMS/FINAL-2
+  name: FINAL-2 - Coherence Optimality
+  term: FINAL-2 - Coherence Optimality
+  plain: 'Coherence Optimality: The structure described by Theophysics is the optimal
+    coherence structure for reality. Given the constraints, the Theophysics configuration
+    maximizes global coherence.'
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: —
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges: []
+  tags:
+  - coherence
+  - proof
+  keywords:
+  - FINAL-2
+  - —
+  - optimization; coherence; foundations
+  - Theorem
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: '### DC-1: Superior Alternative. ### DC-2: Suboptimal Feature.
+    ### DC-3: Constraint Violation. ### DC-4: Local Optima Trap.'
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 187
+  axiomRegistry:
+    axiomID: AX-185
+    oldID: FINAL-2
+    treeLevel: —
+    treeBranch: —
+    questionType: —
+    domain: optimization; coherence; foundations
+    tier: —
+    newType: Theorem
+    logicalForce: derivable theorem
+    formalizableInLean: 'yes'
+    leanKind: theorem target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M24
+    moduleTitle: Meta / Closure
+    spineRole: closure_capstone
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: TBD
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-185-final-2-coherence-optimality.jsonld
+  generated_at: '2026-09-23T01:17:14.348595+00:00'
+  sha256: e702d86a2b09e77ec3125d1fcee10a27a36539e0ccd96aa464cfe145ae6a7f56

@@ -1,0 +1,83 @@
+face:
+  uuid: dab89d07-b113-5402-a003-b9f68baeed10
+  node_id: tp:axioms/01/AX-146
+  claim_id: tp:AXIOMS/E19.1
+  name: Full Master Equation
+  term: Full Master Equation
+  plain: The Theophysics Master Equation — all ten laws in one expression.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: mathematical
+  mathematicalForm: LLC = χ(t)(d/dt(Σ primitives))² - S·χ(t)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-135
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-145
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - equation
+  keywords:
+  - E19.1
+  - Q5
+  - Laws
+  - Equation
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the master equation is internally inconsistent. Demonstrate
+    terms that contradict each other. Show dimensional analysis fails.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 148
+  axiomRegistry:
+    axiomID: AX-146
+    oldID: E19.1
+    treeLevel: Q5
+    treeBranch: Q5-Q (Master equation — complete form)
+    questionType: Type 2 (What IS X?)
+    domain: Laws
+    tier: '2'
+    newType: Equation
+    logicalForce: formal proposal
+    formalizableInLean: 'yes'
+    leanKind: def / proposition with typed variables
+    riskLevel: medium
+    kernelRole: definitionRole
+    moduleID: M19
+    moduleTitle: Ten-Law Master Equation
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — Master equation IS the framework in compact form.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-146-full-master-equation.jsonld
+  generated_at: '2026-09-23T01:17:14.028560+00:00'
+  sha256: a6212934c3b772a9741da15a0962991409ef93c81da2ea62532f2c2c4ba19a60

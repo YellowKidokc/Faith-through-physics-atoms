@@ -1,0 +1,91 @@
+face:
+  uuid: e261473b-8147-5f0e-abc9-86f619ed8c4b
+  node_id: tp:axioms/01/AX-013
+  claim_id: tp:AXIOMS/P2.1
+  name: Chi Ontological Priority
+  term: Chi Ontological Priority
+  plain: χ is ontologically prior to spacetime — spacetime emerges from χ, not vice
+    versa.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: χ ≻ spacetime (ontological priority); spacetime = f(χ)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-010
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-011
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-012
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - logos
+  - curvature
+  keywords:
+  - P2.1
+  - Q5
+  - Ontological
+  - Property
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show spacetime existing without any informational substrate.
+    Demonstrate χ depending on pre-existing spacetime (circular). Find a spacetime
+    property that cannot be derived from χ.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 14
+  axiomRegistry:
+    axiomID: AX-013
+    oldID: P2.1
+    treeLevel: Q5
+    treeBranch: Q5-D (Properties of the ground — priority claim)
+    questionType: Type 3 (What grounds X?)
+    domain: Ontological
+    tier: '1'
+    newType: Property
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: proposition / lemma target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M02
+    moduleTitle: Chi Field Substrate
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: Materialism, Naturalism
+    propagationTest: YES — Spacetime emergence from χ propagates to GR-QM bridge (AX-100-103),
+      cosmology (AX-105-108), and eschatology.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-013-chi-ontological-priority.jsonld
+  generated_at: '2026-09-23T01:17:12.860829+00:00'
+  sha256: 83a6c62acf07dd6a45ebbbabb4369b93e5f4bcec93c307cc67a43bd40a836be3

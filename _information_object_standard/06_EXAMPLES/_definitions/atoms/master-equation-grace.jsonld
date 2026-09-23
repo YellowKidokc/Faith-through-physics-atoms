@@ -1,0 +1,12 @@
+{
+  "@context": ["https://schema.org", "https://faiththruphysics.com/vocab/context.jsonld"], "@id": "https://faiththruphysics.com/definitions/master-equation/grace",
+  "nodeID": "tp:def:master-equation/grace", "claimID": "tp:def:master-equation/grace", "nodeType": "claim", "claimKind": "definition", "permanentDefinitionID": "tp:def:master-equation/grace",
+  "preferredTerm": "Grace (Master Equation)", "aliases": ["grace term", "grace factor"], "associatedSymbols": [{"symbol": "G", "namespace": "master-equation", "equationPosition": "named grace factor", "documentDomain": "theophysics"}],
+  "plainDefinition": "The Master Equation's named grace factor; it must be cited by name or namespace rather than inferred from the letter G alone.",
+  "technicalDefinition": "A framework-local semantic assignment to G only where the master-equation namespace and grace-factor role are established.",
+  "scopeAndExclusions": {"scope": ["Theophysics Master Equation documents"], "exclusions": ["Newton's gravitational constant", "Any unnamespaced variable G"]},
+  "source": {"sourceName": "Theophysics Master Equation canonical atom", "exactShortQuotation": "The Master Equation measures χ — the ratio of coherence to decoherence.", "authoritativeSourceURL": "https://github.com/YellowKidokc/Faith-through-physics-atoms/blob/main/README.md", "sourceStatus": "framework-internal", "sourceStatement": "The repository describes the Master Equation and its coherence coordinate.", "frameworkInference": "David Lowe/Theophysics assigns the framework-local grace-factor classification; the quoted repository text does not itself define G.", "evidenceRef": "tp:evidence:def:master-equation-grace/repository"},
+  "frameworkClassification": {"classification": "candidate framework-local definition", "classificationAuthor": "David Lowe/Theophysics", "classificationMethodOrTestReceipt": "Fixture namespace test; requires explicit human approval before canonical promotion."},
+  "canonicalStatus": "candidate", "version": "0.1.0", "priorVersions": [], "citationPolicy": {"required": true, "mode": "quote_or_link", "inheritToDependents": true},
+  "edges": [{"type": "feedsInto", "target": "tp:ME/L5/C1", "status": "proposed"}, {"type": "dependsOn", "target": "tp:evidence:def:master-equation-grace/repository", "status": "proposed"}]
+}

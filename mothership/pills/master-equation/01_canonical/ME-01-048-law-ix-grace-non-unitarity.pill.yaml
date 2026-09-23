@@ -1,0 +1,64 @@
+face:
+  uuid: 000f9faf-1457-5449-8850-f35a03aec75d
+  node_id: tp:master-equation/01/ME-01-048
+  claim_id: tp:ME/ME-01-048
+  name: 'Law IX: Grace Non-Unitarity'
+  term: 'Law IX: Grace Non-Unitarity'
+  plain: 'Law IX: Grace Non-Unitarity names one law rail inside the Master Equation.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: definition
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  kernelChecked: false
+  challengeStatus: unchallenged
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-010
+    propagates: true
+    note: Law belongs to the Master Equation integration atom.
+  - type: dependsOn
+    target: tp:axioms/01/AX-144
+    propagates: true
+    note: Source registry row imported from Master Axiom.
+  keywords:
+  - AX-144
+  - D19.9
+  - Definition
+  tags:
+  - logos
+  - coherence
+  - equation
+  verificationStatus: registry-import
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\02_PHYSICAL_THEOLOGICAL_LAYER_TenFactorTable.md;
+    D:\GitHub\Faith-through-physics-atoms\_vocab\axiom_registry.json
+  masterEquationRole:
+    sourceAxiomID: AX-144
+    sourceOldID: D19.9
+    sourceRow: 146
+    sourceType: Definition
+    role: law
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-048-law-ix-grace-non-unitarity.jsonld
+  generated_at: '2026-09-23T01:17:14.573477+00:00'
+  sha256: bc78fff2d1178eed56d04db70971b796c3d76a6478e29905d28bdb212e253416

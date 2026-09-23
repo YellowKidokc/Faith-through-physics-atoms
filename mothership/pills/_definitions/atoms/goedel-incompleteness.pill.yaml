@@ -1,0 +1,60 @@
+face:
+  uuid: a646ea07-ede5-5c5b-8bbe-90ee9cff3059
+  node_id: tp:def:goedel-incompleteness
+  claim_id: tp:def:goedel-incompleteness
+  term: Gödel incompleteness theorems
+  plain: Results showing limits on what sufficiently expressive, consistent formal
+    systems can prove about themselves.
+  status: candidate
+  target_type: definition
+  source:
+    doc_uuid: null
+    doc_sha256: null
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  permanentDefinitionID: tp:def:goedel-incompleteness
+  aliases:
+  - Goedel incompleteness
+  - incompleteness theorems
+  associatedSymbols: []
+  technicalDefinition: For suitable effectively axiomatized formal systems containing
+    elementary arithmetic, consistency entails incompleteness; the relevant consistency
+    statement is not provable within the system under the theorem's hypotheses.
+  scopeAndExclusions:
+    scope:
+    - formal systems meeting the theorem hypotheses
+    exclusions:
+    - A claim that every truth is unprovable
+    - A direct theorem about physical reality or theology
+  source:
+    sourceName: Stanford Encyclopedia of Philosophy, Gödel's Incompleteness Theorems
+    exactShortQuotation: any consistent formal system within which a certain amount
+      of arithmetic can be carried out is incomplete
+    authoritativeSourceURL: https://plato.stanford.edu/entries/goedel-incompleteness/
+    sourceStatus: authoritative-secondary
+    sourceStatement: The source states a scoped metamathematical result for qualifying
+      formal systems.
+    frameworkInference: Theophysics registers the result as a definition and does
+      not infer a theological conclusion from it.
+    evidenceRef: tp:evidence:def:goedel/sep
+  frameworkClassification:
+    classification: candidate mathematical definition
+    classificationAuthor: David Lowe/Theophysics
+    classificationMethodOrTestReceipt: Fixture classification; requires explicit human
+      approval before canonical promotion.
+  version: 0.1.0
+  priorVersions: []
+  citationPolicy:
+    required: true
+    mode: quote_or_link
+    inheritToDependents: true
+  edges:
+  - type: dependsOn
+    target: tp:evidence:def:goedel/sep
+    status: proposed
+_metadata:
+  source_path: _definitions/atoms/goedel-incompleteness.jsonld
+  generated_at: '2026-09-23T01:17:12.586832+00:00'
+  sha256: f826622a8d331e88eaaf0045aa2a47afccf4e0ece0f0019fb82215d0b51eb28f

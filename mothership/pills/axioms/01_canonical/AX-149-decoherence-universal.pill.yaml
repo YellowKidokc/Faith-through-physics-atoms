@@ -1,0 +1,86 @@
+face:
+  uuid: afba8644-71b6-5a04-8581-66b81c4ec865
+  node_id: tp:axioms/01/AX-149
+  claim_id: tp:AXIOMS/U2
+  name: Decoherence Universal
+  term: Decoherence Universal
+  plain: Decoherence is the universal process of coherence loss — physical basis of
+    the Fall.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: Decoherence = universal entropy process = physical Fall
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-025
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-148
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  - decoherence
+  keywords:
+  - U2
+  - Q3
+  - Ontological
+  - UniversalPrinciple
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show decoherence doesn't correspond to theological Fall.
+    Demonstrate disorder without moral dimension.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 151
+  axiomRegistry:
+    axiomID: AX-149
+    oldID: U2
+    treeLevel: Q3
+    treeBranch: Q3-V (Universal — decoherence)
+    questionType: Type 2 (What IS X?)
+    domain: Ontological
+    tier: '1'
+    newType: UniversalPrinciple
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: axiom schema or theorem target
+    riskLevel: medium
+    kernelRole: constraintRole
+    moduleID: M20
+    moduleTitle: Universal Coherence / Fruits
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: M2 (Entropic — decoherence IS mode 2)
+    worldviewsEliminated: Nihilism, Materialism
+    propagationTest: YES — Decoherence universal propagates to grace necessity and
+      eschatological fragmentation.
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-149-decoherence-universal.jsonld
+  generated_at: '2026-09-23T01:17:14.054097+00:00'
+  sha256: ec7194de47752a87f2fdcec5eda95e154e40f4285cd57ba6425a7e8b42776ac5

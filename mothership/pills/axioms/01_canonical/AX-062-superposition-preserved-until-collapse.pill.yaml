@@ -1,0 +1,87 @@
+face:
+  uuid: a6adfd4d-2cb9-568c-8485-79a8b1e77875
+  node_id: tp:axioms/01/AX-062
+  claim_id: tp:AXIOMS/BC5
+  name: Superposition Preserved Until Collapse
+  term: Superposition Preserved Until Collapse
+  plain: Superposition preserved pre-collapse — vulnerability window exists.
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: boundary
+  mathematicalForm: U(t) unitary for t < t_collapse; |ψ⟩ not predetermined
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-045
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-061
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - boundary
+  - observer
+  keywords:
+  - BC5
+  - Q8
+  - Divine
+  - BoundaryCondition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show free will doesn't require a vulnerability window. Demonstrate
+    pre-determination is compatible with BC5. Show the window doesn't map to free
+    will.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 63
+  axiomRegistry:
+    axiomID: AX-062
+    oldID: BC5
+    treeLevel: Q8
+    treeBranch: Q8-E (Fifth boundary condition — free will space)
+    questionType: Type 4 (What must X be?)
+    domain: Divine
+    tier: '1'
+    newType: BoundaryCondition
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: constraint predicate
+    riskLevel: medium
+    kernelRole: constraintRole
+    moduleID: M07
+    moduleTitle: Boundary Conditions
+    spineRole: bridge_guard
+    boundaryCondition: BC5
+    fourModeRelevance: M1 (Agentic — the vulnerability window is where free will operates),
+      M2 (Entropic — finitude makes the window fragile)
+    worldviewsEliminated: Hard Determinism
+    propagationTest: YES — BC5 propagates to free will (BC8), moral responsibility,
+      and the possibility of sin (choosing σ = -1).
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-062-superposition-preserved-until-collapse.jsonld
+  generated_at: '2026-09-23T01:17:13.271232+00:00'
+  sha256: 2a3de94dbeb599c93bda062f3d94ca9c2fdbf6dbba938816dfd2d9febb1049f6

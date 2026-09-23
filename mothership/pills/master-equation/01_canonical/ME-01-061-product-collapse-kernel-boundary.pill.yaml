@@ -1,0 +1,61 @@
+face:
+  uuid: 8eda70ca-12ab-57c0-900d-12f640291ae3
+  node_id: tp:master-equation/01/ME-01-061
+  claim_id: tp:ME/ME-01-061
+  name: Product-Collapse Kernel Boundary
+  term: Product-Collapse Kernel Boundary
+  plain: 'The machine proof verifies the skeleton: in this architecture, one dead
+    required channel kills the product, and a live product requires all required channels
+    to stay nonzero.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: theorem
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  kernelChecked: true
+  challengeStatus: unchallenged
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  mathematicalForm: listProd xs = zero iff zero in xs; chi_zero_if_any_factor_zero
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-060
+    propagates: true
+    note: Kernel verifies the product-collapse architecture used by the full equation.
+  - type: dependsOn
+    target: tp:axioms/01/AX-132
+    propagates: true
+    note: Falsification criterion for chi-field architecture.
+  tags:
+  - proof
+  - kill-condition
+  - coherence
+  keywords:
+  - Lean
+  - zero-collapse
+  - product architecture
+  - no-zero-divisors
+  verificationStatus: lean4-section-report
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\VERIFIED_SECTION_BY_SECTION_REPORT.md
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-061-product-collapse-kernel-boundary.jsonld
+  generated_at: '2026-09-23T01:17:14.605999+00:00'
+  sha256: 18b436c3bc4cc0c8a81e7f01371f965ce89ade0862a817a2c4f967f597224c72

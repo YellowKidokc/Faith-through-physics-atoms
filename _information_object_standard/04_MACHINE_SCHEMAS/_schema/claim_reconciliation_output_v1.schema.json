@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/claim-reconciliation-output/v1",
+  "title": "Claim reconciliation translation and graph-fit output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "stage", "status", "discovery_receipt_hash", "classification_receipt_hash", "recommended_operation", "graph_fit", "native_statement", "bridge_statement", "identification_statement", "safe_public_wording", "preserved", "lost", "downstream_effects", "publication_eligibility", "human_ruling_required"],
+  "properties": {
+    "schema_version": {"const": "claim-reconciliation/1.0.0"},
+    "stage": {"const": "RECONCILIATION_TRANSLATION_AND_FIT"},
+    "status": {"enum": ["RECONCILIATION_COMPLETE", "RECONCILIATION_INCOMPLETE", "RETURN_TO_CLASSIFICATION", "BLOCKED"]},
+    "discovery_receipt_hash": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "classification_receipt_hash": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "recommended_operation": {"enum": ["new_claim", "amend", "new_version", "supersede", "add_evidence", "hold_open"]},
+    "graph_fit": {"type": "string"},
+    "native_statement": {"type": "string"},
+    "bridge_statement": {"type": ["string", "null"]},
+    "identification_statement": {"type": ["string", "null"]},
+    "safe_public_wording": {"type": "string"},
+    "preserved": {"type": "array", "items": {"type": "string"}},
+    "lost": {"type": "array", "items": {"type": "string"}},
+    "downstream_effects": {"type": "array", "items": {"type": "string"}},
+    "publication_eligibility": {"enum": ["ELIGIBLE_FOR_HUMAN_REVIEW", "NOT_ELIGIBLE", "EXCEPTION_HUMAN_REVIEW"]},
+    "human_ruling_required": {"const": true}
+  }
+}

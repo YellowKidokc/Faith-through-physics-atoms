@@ -1,0 +1,39 @@
+face:
+  uuid: 660f7672-902e-55d2-a338-d92b7c17d8d8
+  node_id: https://faiththruphysics.com/claims/A042/L9/C3
+  claim_id: tp:A042/L9/C3
+  name: Law 9 Moral Conservation — Claim 3
+  term: Law 9 Moral Conservation — Claim 3
+  plain: Suppressing wrongdoing without grace doesn't remove the cost — it relocates
+    it. Only an outside source term can actually close the ledger.
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-02-14'
+  dateModified: '2026-07-22'
+  version: 1.2.0
+  axiomRoot: https://faiththruphysics.com/claims/A042
+  claimClass: theorem
+  dependsOn:
+  - https://faiththruphysics.com/claims/A042/L9/C1
+  - https://faiththruphysics.com/claims/A042/L9/C2
+  evidenceType: formal-derivation + empirical-correlation
+  verificationStatus: informal
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Demonstrate sustained behavioral suppression with ν_loss
+    → 0 and no external source term, measured across the named displacement channels.
+  isPartOf: https://faiththruphysics.com/papers/POF2828-2026-0001
+_metadata:
+  source_path: claim-atom-standard-1.0/tp-standard/claims/A042/L9/C3.jsonld
+  generated_at: '2026-09-23T01:17:14.405187+00:00'
+  sha256: f6c5fe5c3e6c9fb15887d99746770dfeb78a7184e0a249abc51b12717254b670

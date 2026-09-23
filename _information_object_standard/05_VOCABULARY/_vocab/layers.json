@@ -1,0 +1,95 @@
+{
+  "_comment": "THE VERTICAL STACK. compressions.json handles horizontal identity (which terms name one structure). This file handles vertical strata (which layer a claim lives on). The critical distinction: constraint layers describe how things behave; generative layers select what exists. Confusing the two is the most common structural error in the framework.",
+  "vocabularyVersion": "1.2.0",
+  "updated": "2026-07-23",
+
+  "_provenance": "Layer stack converged independently by GPT (generative postulates vs constraint meta-laws), Claude Opus (selection requires a will, not a law), and Gemini (critical regime requires external coupling). Recorded as convergence, not as derivation.",
+
+  "layers": [
+    {
+      "id": "tpl:god", "order": 0, "glyph": "☉", "name": "God",
+      "role": "ground of being and value",
+      "layerType": "generative",
+      "grade": "axiom",
+      "note": "Declared floor. Feb 14 2026 boundary proof. Not derived and not pushed past."
+    },
+    {
+      "id": "tpl:trinity", "order": 1, "glyph": "⟁", "name": "Trinity",
+      "role": "distinction-in-unity; relation is primordial",
+      "layerType": "generative",
+      "grade": "structural_isomorphism",
+      "basis": "Meta-laws open with distinction and relation. A relational ultimate places both inside ultimate reality rather than deriving them later. Observer-regress termination requires triadic internal unity (Lean 4, Bool model).",
+      "openProblem": "Bool model compiles; extension to physical Hilbert space not demonstrated."
+    },
+    {
+      "id": "tpl:logos", "order": 2, "glyph": "λ", "name": "Logos / generative kernel",
+      "role": "intelligibility, selection, actualization",
+      "layerType": "generative",
+      "grade": "structural_isomorphism",
+      "basis": "SELECTION LAYER. Laws constrain; they do not act. Turning possible into actual requires a will. Same operation at three scales - creation, measurement (Law 7), moral choice (W in Laws 1-8). Framework already carried W as a variable without lifting it to this layer.",
+      "killCondition": "Exhibit selection of actual-from-possible with no agent and no irreversible cost. Spontaneous symmetry breaking and tunneling-origin models are the standing candidates."
+    },
+    {
+      "id": "tpl:decree", "order": 3, "glyph": "⇥", "name": "Creative decree / boundary conditions",
+      "role": "this world rather than another permitted world",
+      "layerType": "generative",
+      "grade": "ungraded",
+      "basis": "Low initial entropy, the constants, the observed symmetry group, three spatial dimensions. Physics supplies these as inputs, not results.",
+      "note": "Everything on GPT's unexplained list lives here. This is the research program, not a solved layer."
+    },
+    {
+      "id": "tpl:meta-laws", "order": 4, "glyph": "⟲", "name": "Constraint meta-laws",
+      "role": "what any permitted world must obey",
+      "layerType": "constraint",
+      "grade": "active",
+      "members": ["distinction", "consistency", "relation", "transformation",
+                  "invariant retention", "corrigibility"],
+      "note": "THE BINARY LIVES HERE. Coherence/decoherence is a constraint law - it describes behavior once a world exists. It does not select which world exists. Placing it above this layer is a category error."
+    },
+    {
+      "id": "tpl:master-equation", "order": 5, "glyph": "Μ", "name": "Master Equation / Ten Laws",
+      "role": "proposed formal dynamics; chi measures the ratio",
+      "layerType": "constraint",
+      "grade": "active"
+    },
+    {
+      "id": "tpl:domains", "order": 6, "glyph": "#", "name": "Domains",
+      "role": "particular expressions in domain vocabulary",
+      "layerType": "expression", "grade": "active"
+    },
+    {
+      "id": "tpl:atoms", "order": 7, "glyph": "◆", "name": "Claim atoms",
+      "role": "testable statements",
+      "layerType": "expression", "grade": "active"
+    }
+  ],
+
+  "theologicalIdentification": {
+    "grade": "structural_analogy",
+    "propagates": false,
+    "_comment": "IDENTIFICATION, NOT DERIVATION. No theological doctrine here is physically derived. The claim is narrower and defensible: the constraint system underdetermines existence, consciousness, agency, value, and restoration, and Christianity supplies one integrated generative ontology addressing all five rather than five unrelated patches. That must now be compared against competing accounts for coherence, explanatory economy, independent support, and risky consequences.",
+    "mapping": {
+      "why anything is instantiated": "creation",
+      "why reality is intelligible": "logos",
+      "why distinction and relation coexist": "trinity",
+      "why these laws and conditions": "divine wisdom / free creative determination",
+      "why reality persists": "sustenance and providence",
+      "why reason tracks truth": "reason participates in an intelligible order",
+      "why persons have intrinsic value": "imago dei",
+      "why obligation exceeds preference": "the Good grounded in God's character",
+      "why agency misaligns": "creaturely freedom and sin",
+      "why internal rearrangement cannot correct": "grace and redemption",
+      "why justice and mercy converge": "the Cross",
+      "why history has direction": "resurrection and new creation"
+    },
+    "killCondition": "Exhibit a competing generative ontology that addresses all five underdetermined categories with equal or better economy and independent support.",
+    "warning": "A gap establishes underdetermination, not God by elimination. Six explanations compete for every gap: incomplete meta-laws, undiscovered derivation, unknown emergent mechanism, additional natural boundary conditions, deeper ontology, transcendent source. Do not treat unexplained items as evidence."
+  },
+
+  "eschatologyAsResultLayer": {
+    "grade": "structural_analogy",
+    "basis": "The 14-stage arc terminates in 13_fulfilled - what happened, the receipt. At cosmic scale that stage is eschatology: the predicted terminal condition of the model. Not a theological appendix but the result layer of the whole system.",
+    "predictedTerminalState": "permanent source-coupling; opposing regimes terminated; ledger closed; decoherence removed",
+    "note": "Registers a prediction the framework is committed to. Files as prediction, not as evidence."
+  }
+}

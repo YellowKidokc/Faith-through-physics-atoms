@@ -1,0 +1,86 @@
+{
+  "receipt_version": "final-api-call/1.0.0",
+  "status": "CANDIDATE_DRAFT — NOT ADMITTED",
+  "created_at": "2026-09-01T23:57:13.802289+00:00",
+  "call": "01_NONDISCRIMINATORY_DISCOVERY",
+  "provider": "mock",
+  "model": "deepseek-chat",
+  "blind_input": {
+    "content_hash": "sha256:2cc23de460db0328b6fc0466746c0b3471a06bbdee41dfe2b1d8f0e862d7236f",
+    "withholding": {
+      "named_headings_replaced": 6,
+      "frontmatter_withheld": true,
+      "filename_withheld": true,
+      "folder_withheld": true,
+      "html_comments_withheld": true
+    },
+    "chunk_count": 1
+  },
+  "frozen_discovery": {
+    "schema_version": "paper-discovery/1.0.0",
+    "stage": "NONDISCRIMINATORY_DISCOVERY",
+    "status": "DISCOVERY_COMPLETE",
+    "discovered_objects": [
+      {
+        "discovery_id": "DISC-001",
+        "exact_quotation": "This folder is the ordered reconstruction package for the claim-to-candidate",
+        "neutral_paraphrase": "This folder is the ordered reconstruction package for the claim-to-candidate",
+        "referent": "The referent remains to be discriminated.",
+        "identity_conditions": [],
+        "distinctions": [
+          "The assertion remains distinct from its negation."
+        ],
+        "relations": [],
+        "operations": [],
+        "dependencies": [],
+        "constraints": [],
+        "invariants": [],
+        "consequences": [],
+        "countermodels": [
+          "The exact negation remains a live comparison."
+        ],
+        "collapse_conditions": [],
+        "open_questions": [
+          "Live semantic discovery was not called in mock mode."
+        ],
+        "source_section": "SECTION_001",
+        "line_start": 3,
+        "line_end": 3
+      }
+    ],
+    "global_open_questions": [],
+    "prohibited_outputs": [
+      "All classification and canon fields withheld."
+    ]
+  },
+  "emergent_organization": {
+    "schema_version": "emergent-organization/1.0.0",
+    "stage": "BLIND_EMERGENT_ORGANIZATION",
+    "organization_name": "Mock organization",
+    "organizing_principle": "All mock discoveries remain together because semantic organization was not called.",
+    "groupings": [
+      {
+        "label": "Unclassified mock material",
+        "definition": "A temporary group used only to test machinery.",
+        "object_ids": [
+          "DISC-001"
+        ],
+        "rationale": "Mock mode does not make semantic judgments.",
+        "alternative_labels": []
+      }
+    ],
+    "ungrouped_object_ids": [],
+    "cross_group_tensions": [],
+    "rival_organizations": [],
+    "cautions": [
+      "This organization is a test fixture, not a semantic result."
+    ]
+  },
+  "post_discovery_source_binding": {
+    "path": "D:\\GitHub\\Faith-through-physics-atoms\\_final_api_calls\\README.md",
+    "source_hash": "sha256:6c833d414564c77a1b9494cb33ef6124f559ff05265d250c8c51e2da57a7945c"
+  },
+  "source_modified": false,
+  "canonical_admission_performed": false,
+  "human_ruling_required": true
+}

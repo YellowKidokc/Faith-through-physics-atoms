@@ -1,0 +1,79 @@
+face:
+  uuid: 33f32767-15f6-5bdf-b761-b4cc16f3e11a
+  node_id: tp:axioms/01/AX-160
+  claim_id: tp:AXIOMS/F9
+  name: Self-Control
+  term: Self-Control
+  plain: Self-control = capacity to resist impulse gradients for higher-order coherence.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical_anchor
+  mathematicalForm: F_SelfControl = resistance(impulse_gradient) for C_higher
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-151
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  keywords:
+  - F9
+  - Q10
+  - Relational
+  - ObservableDomain
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show self-control without coherence benefit. Demonstrate
+    high coherence without self-control.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 162
+  axiomRegistry:
+    axiomID: AX-160
+    oldID: F9
+    treeLevel: Q10
+    treeBranch: Q10-AJ (Fruit 9)
+    questionType: Type 2 (What IS X?)
+    domain: Relational
+    tier: '2'
+    newType: ObservableDomain
+    logicalForce: empirical hypothesis
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M20
+    moduleTitle: Universal Coherence / Fruits
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: M1, M2
+    worldviewsEliminated: —
+    propagationTest: 'YES'
+    intendedStatus: classified
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-160-self-control.jsonld
+  generated_at: '2026-09-23T01:17:14.141263+00:00'
+  sha256: d6a3d61815c5345b651764958c663abc50b26c992a5cc29588693ba1408e3e96

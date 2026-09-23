@@ -1,0 +1,84 @@
+face:
+  uuid: 8b708703-3e81-552a-a39d-1721477f8ef3
+  node_id: tp:axioms/01/AX-111
+  claim_id: tp:AXIOMS/EV15.2
+  name: GCP Correlation
+  term: GCP Correlation
+  plain: 'Global Consciousness Project: Z > 7, p < 10⁻¹² correlations with global
+    events.'
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical_anchor
+  mathematicalForm: Z > 7; p < 10⁻¹² for event-correlated deviations
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-036
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-041
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  keywords:
+  - EV15.2
+  - Q6
+  - Material
+  - EvidenceNode
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show GCP correlations are statistical artifacts (look-elsewhere
+    effect). Demonstrate selection bias in event choice. Replicate with null result.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 113
+  axiomRegistry:
+    axiomID: AX-111
+    oldID: EV15.2
+    treeLevel: Q6
+    treeBranch: Q6-Z (Experimental evidence — collective consciousness)
+    questionType: Type 1 (Does X hold?)
+    domain: Material
+    tier: '3'
+    newType: EvidenceNode
+    logicalForce: evidence node
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M15
+    moduleTitle: Evidence Chain
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: M4 (Grace Attenuation — collective attention measurably affects
+      physical systems)
+    worldviewsEliminated: Materialism, Naturalism
+    propagationTest: Evidence — supports collective consciousness effects but disputed
+      in mainstream.
+    intendedStatus: classified
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-111-gcp-correlation.jsonld
+  generated_at: '2026-09-23T01:17:13.730021+00:00'
+  sha256: 12f4acee0666135cdacc2a31e456cd1c4a85a789a86ad63e72e6b866d931867d

@@ -1,0 +1,68 @@
+face:
+  uuid: c1193d8f-26f1-5f83-b4b7-7543aec2e2ed
+  node_id: tp:master-equation/01/ME-01-029
+  claim_id: tp:ME/ME-01-029
+  name: C - Total Integration Measure
+  term: C - Total Integration Measure
+  plain: C is the local integrator inside the product; chi is the output after integration.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: definition
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  kernelChecked: false
+  challengeStatus: unchallenged
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  mathematicalForm: C in [0, 1]
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-010
+    propagates: true
+    note: Factor slot belongs to the Master Equation integration atom.
+  - type: dependsOn
+    target: tp:axioms/01/AX-017
+    propagates: true
+    note: Factor is grounded by AX-017 in the axiom spine.
+  tags:
+  - coherence
+  - logos
+  keywords:
+  - master-equation-factor
+  - C
+  - '[0, 1]'
+  verificationStatus: formal-layer-import
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_FORMAL_LAYER_Definition10.md
+  masterEquationFactor:
+    id: ME-01-029
+    symbol: C
+    name: Total Integration Measure
+    domain: '[0, 1]'
+    definition: Total integration or local global-coherence measure inside the product.
+    plain: C is the local integrator inside the product; chi is the output after integration.
+    axiom: AX-017
+    tags:
+    - coherence
+    - logos
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-029-c-total-integration-measure.jsonld
+  generated_at: '2026-09-23T01:17:14.519894+00:00'
+  sha256: 5a0884bf0831dec9554d0f48fff353ecfcb9cb471d785ac97cd7c3553402a388

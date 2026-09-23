@@ -1,0 +1,85 @@
+face:
+  uuid: 18abdbfb-48d2-53b7-ac62-bad8f99c5f20
+  node_id: tp:axioms/01/AX-117
+  claim_id: tp:AXIOMS/T16.4
+  name: Buddhism Fails BC1
+  term: Buddhism Fails BC1
+  plain: Buddhism fails BC1 (Terminal Observer) — anātman/śūnyatā precludes Φ=∞.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: Buddhism fails BC1 (Φ_terminal undefined under anātman)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-114
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-058
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - witness
+  - proof
+  - observer
+  keywords:
+  - T16.4
+  - Q9
+  - Divine
+  - Theorem
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show Buddhist metaphysics is compatible with Terminal Observer.
+    Demonstrate anātman allows for functional observer without permanent self.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 119
+  axiomRegistry:
+    axiomID: AX-117
+    oldID: T16.4
+    treeLevel: Q9
+    treeBranch: Q9-E (Buddhism elimination)
+    questionType: Type 1 (Does X hold?)
+    domain: Divine
+    tier: '2'
+    newType: Theorem
+    logicalForce: derivable theorem
+    formalizableInLean: 'yes'
+    leanKind: theorem target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M16
+    moduleTitle: Worldview Boundary-Fit
+    spineRole: interpretive_identification
+    boundaryCondition: BC1
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: Elimination theorem — removes Buddhism from solution space.
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-117-buddhism-fails-bc1.jsonld
+  generated_at: '2026-09-23T01:17:13.785082+00:00'
+  sha256: efa55ebeb2866cedd007945246ef6032466622503174460cb461f4998dcd9c78

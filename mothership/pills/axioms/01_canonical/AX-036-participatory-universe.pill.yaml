@@ -1,0 +1,81 @@
+face:
+  uuid: 45c8c09a-792e-5788-ad9c-337e44444ba1
+  node_id: tp:axioms/01/AX-036
+  claim_id: tp:AXIOMS/A5.2
+  name: Participatory Universe
+  term: Participatory Universe
+  plain: Observers participate in actualizing reality, not merely measuring it.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: Reality = f(Observer, Potential); not Reality = f(Potential) alone
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-035
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - witness
+  - observer
+  keywords:
+  - A5.2
+  - Q6
+  - Ontological
+  - FrameworkCommitment
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show observers have zero causal effect on quantum outcomes.
+    Replicate PEAR with null results. Show GCP correlations are statistical artifacts.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 37
+  axiomRegistry:
+    axiomID: AX-036
+    oldID: A5.2
+    treeLevel: Q6
+    treeBranch: Q6-B (Observer role — participatory, not passive)
+    questionType: Type 1 (Does X hold?)
+    domain: Ontological
+    tier: '1'
+    newType: FrameworkCommitment
+    logicalForce: framework assumption
+    formalizableInLean: partly
+    leanKind: parameter / assumption, not theorem
+    riskLevel: high
+    kernelRole: guardedPremise
+    moduleID: M05
+    moduleTitle: Observer / Actualization
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: M1 (Agentic — participation implies agency)
+    worldviewsEliminated: Materialism, Naturalism, Hard Determinism, Eliminativism
+    propagationTest: YES — Participatory universe propagates to all agency claims,
+      moral responsibility, and the necessity of free will (BC8).
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-036-participatory-universe.jsonld
+  generated_at: '2026-09-23T01:17:13.053589+00:00'
+  sha256: b4fc0512d35cf6df012edf54715af3d078b02b383e40b387239220a35fda0fba

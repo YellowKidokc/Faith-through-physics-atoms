@@ -1,0 +1,90 @@
+face:
+  uuid: c8ff0997-8cdb-56a7-8d81-f5bc7e063e34
+  node_id: tp:axioms/01/AX-021
+  claim_id: tp:AXIOMS/E3.1
+  name: Master Coherence Equation
+  term: Master Coherence Equation
+  plain: C[χ] = ∫√(-g)[kinetic - V(χ) + L_int]d⁴x.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: mathematical
+  mathematicalForm: C[χ] = ∫√(-g)[½∂μχ∂μχ - V(χ) + L_int]d⁴x
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-018
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-019
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-020
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  - equation
+  keywords:
+  - E3.1
+  - Q3
+  - Ontological
+  - Equation
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the action principle fails for coherence. Demonstrate
+    C[χ] functional is not stationary under variation. Show kinetic-potential decomposition
+    doesn't apply to information.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 22
+  axiomRegistry:
+    axiomID: AX-021
+    oldID: E3.1
+    treeLevel: Q3
+    treeBranch: Q3-G (Coherence dynamics — action integral)
+    questionType: Type 2 (What IS X?)
+    domain: Ontological
+    tier: '2'
+    newType: Equation
+    logicalForce: formal proposal
+    formalizableInLean: 'yes'
+    leanKind: def / proposition with typed variables
+    riskLevel: medium
+    kernelRole: definitionRole
+    moduleID: M03
+    moduleTitle: Coherence Engine
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: —
+    propagationTest: YES — Master equation generates all subsequent dynamics via variational
+      principle.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-021-master-coherence-equation.jsonld
+  generated_at: '2026-09-23T01:17:12.932266+00:00'
+  sha256: 424da8b6a2b70bf8e6ef509418a4e6419b3bf686fe87940c65a708a0985a79a4

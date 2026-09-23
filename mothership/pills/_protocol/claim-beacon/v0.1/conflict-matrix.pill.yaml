@@ -1,0 +1,28 @@
+face:
+  uuid: 954f7845-9a6e-5acb-9206-2c7f2c1a2b49
+  node_id: https://faiththruphysics.com/protocol/claim-beacon/v0.1/conflict-matrix
+  name: Claim Beacon Conflict Matrix v0.1
+  term: Claim Beacon Conflict Matrix v0.1
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  protocol: ClaimBeacon
+  protocolVersion: 0.1.0
+  rules:
+  - conflict: formal proof vs analogy
+    priority: formal proof
+    result: analogy must be weakened or rejected
+  - conflict: primary evidence vs interpretation
+    priority: primary evidence
+    result: interpretation remains provisional
+  - conflict: domain boundary exceeded
+    priority: boundary condition
+    result: bridge is flagged for review
+  - conflict: unresolved equal-grade evidence
+    priority: none
+    result: status remains proposed or weakened
+_metadata:
+  source_path: _protocol/claim-beacon/v0.1/conflict-matrix.jsonld
+  generated_at: '2026-09-23T01:17:12.725102+00:00'
+  sha256: f0939f40b7a17f8765918b113200d6922d2e0667594c207d0e6b61aa6fe75471

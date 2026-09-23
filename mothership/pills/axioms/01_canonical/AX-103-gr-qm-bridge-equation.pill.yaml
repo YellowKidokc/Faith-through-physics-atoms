@@ -1,0 +1,89 @@
+face:
+  uuid: a4b5fd20-1f35-59b2-b4ad-ccfabd4e7861
+  node_id: tp:axioms/01/AX-103
+  claim_id: tp:AXIOMS/E13.1
+  name: GR-QM Bridge Equation
+  term: GR-QM Bridge Equation
+  plain: G_μν + Λg_μν = (8πG/c⁴)T_μν + κχ_μν — the bridge equation.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: mathematical
+  mathematicalForm: G_μν + Λg_μν = (8πG/c⁴)T_μν + κχ_μν
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-100
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-101
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-102
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - equation
+  keywords:
+  - E13.1
+  - Q5
+  - Material
+  - Equation
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the χ_μν term violates energy-momentum conservation.
+    Demonstrate the modified equation gives wrong predictions for known gravitational
+    phenomena.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 105
+  axiomRegistry:
+    axiomID: AX-103
+    oldID: E13.1
+    treeLevel: Q5
+    treeBranch: Q5-J (Unification equation)
+    questionType: Type 2 (What IS X?)
+    domain: Material
+    tier: '2'
+    newType: Equation
+    logicalForce: formal proposal
+    formalizableInLean: 'yes'
+    leanKind: def / proposition with typed variables
+    riskLevel: medium
+    kernelRole: definitionRole
+    moduleID: M13
+    moduleTitle: GR-QM Chi Field Physics
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — Bridge equation propagates to dark energy, Friedmann modification,
+      and cosmological predictions.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-103-gr-qm-bridge-equation.jsonld
+  generated_at: '2026-09-23T01:17:13.661602+00:00'
+  sha256: 98dbabaf4b2763090ed48e267ff3ed75b49933ac7ab9e729248c852821ad4bd8

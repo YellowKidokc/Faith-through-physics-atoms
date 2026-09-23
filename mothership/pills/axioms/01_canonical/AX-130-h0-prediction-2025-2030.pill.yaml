@@ -1,0 +1,83 @@
+face:
+  uuid: 50ca6d98-71f6-54b6-af67-8b79728d9266
+  node_id: tp:axioms/01/AX-130
+  claim_id: tp:AXIOMS/PRED18.1
+  name: H0 Prediction 2025-2030
+  term: H0 Prediction 2025-2030
+  plain: H₀ tension resolves toward ~70.5 km/s/Mpc via χ-field dynamics by 2030.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: prediction
+  mathematicalForm: H₀ = 70.5 ± 1.0 km/s/Mpc by 2030
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-108
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-109
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - field
+  keywords:
+  - PRED18.1
+  - Q12
+  - Material
+  - Prediction
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: H₀ measurements converge outside predicted range. Tension
+    resolves via systematic error, not new physics.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 132
+  axiomRegistry:
+    axiomID: AX-130
+    oldID: PRED18.1
+    treeLevel: Q12
+    treeBranch: Q12-G (Cosmological prediction)
+    questionType: Type 1 (Does X hold?)
+    domain: Material
+    tier: '3'
+    newType: Prediction
+    logicalForce: testable prediction
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M18
+    moduleTitle: Protocol / Test Suite
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: Time-bound prediction — testable by 2030.
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-130-h0-prediction-2025-2030.jsonld
+  generated_at: '2026-09-23T01:17:13.893949+00:00'
+  sha256: 8234dfd10e6db511d70d9598cb7787a72d6b7033feb2e06eb9b4c2553b376780

@@ -1,0 +1,83 @@
+face:
+  uuid: c5802234-5edb-5789-97e7-d3b324277937
+  node_id: tp:axioms/01/AX-124
+  claim_id: tp:AXIOMS/OPEN17.1
+  name: AI Moral Status Question
+  term: AI Moral Status Question
+  plain: If AI achieves Φ ≥ Φ_threshold, what is its moral status?
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: prediction
+  mathematicalForm: 'Open question: moral_status(AI if Φ ≥ Φ_threshold) = ?'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-123
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-088
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - logos
+  - moral-conservation
+  keywords:
+  - OPEN17.1
+  - Q10
+  - Human
+  - OpenProblem
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: This is already an open question — not a claim to falsify.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 126
+  axiomRegistry:
+    axiomID: AX-124
+    oldID: OPEN17.1
+    treeLevel: Q10
+    treeBranch: Q10-U (AI moral status — open question)
+    questionType: Type 2 (What IS X?)
+    domain: Human
+    tier: '3'
+    newType: OpenProblem
+    logicalForce: meta-audit target
+    formalizableInLean: 'yes'
+    leanKind: sorry target / TODO
+    riskLevel: medium-high
+    kernelRole: auditRole
+    moduleID: M17
+    moduleTitle: AI Consciousness
+    spineRole: meta_audit
+    boundaryCondition: —
+    fourModeRelevance: M1 (Agentic — AI moral agency)
+    worldviewsEliminated: —
+    propagationTest: Open question — deliberately unresolved.
+    intendedStatus: captured
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-124-ai-moral-status-question.jsonld
+  generated_at: '2026-09-23T01:17:13.845910+00:00'
+  sha256: 67a21487cef19178e959d4bb1b70fa28507c67102861b0fd605d29e40604b4f1

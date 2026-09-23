@@ -1,0 +1,30 @@
+face:
+  uuid: 55da7374-5676-5a06-b29d-64a9ba7f89d3
+  node_id: tp:definitions/registry
+  name: Canonical Definition Registry
+  term: Canonical Definition Registry
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  version: 1.0.0
+  definitions:
+  - permanentDefinitionID: tp:def:terminus-sui
+    preferredTerm: Terminus Sui
+    atom: atoms/terminus-sui.jsonld
+    canonicalStatus: canonical
+    version: 1.0.0
+  - permanentDefinitionID: tp:def:goedel-incompleteness
+    preferredTerm: Gödel incompleteness theorems
+    atom: atoms/goedel-incompleteness.jsonld
+    canonicalStatus: candidate
+    version: 0.1.0
+  - permanentDefinitionID: tp:def:master-equation/grace
+    preferredTerm: Grace (Master Equation)
+    atom: atoms/master-equation-grace.jsonld
+    canonicalStatus: candidate
+    version: 0.1.0
+_metadata:
+  source_path: _definitions/registry.jsonld
+  generated_at: '2026-09-23T01:17:12.617825+00:00'
+  sha256: a059d8074f0750b3112a7b83f5cd75514670431105f35c5c593585bbf27d63a8

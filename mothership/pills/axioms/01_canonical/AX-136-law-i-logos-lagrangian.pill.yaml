@@ -1,0 +1,81 @@
+face:
+  uuid: 0044d183-6cc1-588d-a717-421b5078fc48
+  node_id: tp:axioms/01/AX-136
+  claim_id: tp:AXIOMS/D19.1
+  name: 'Law I: Logos-Lagrangian'
+  term: 'Law I: Logos-Lagrangian'
+  plain: 'Law I: The Logos-Lagrangian Correspondence.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: L = L(χ, ∂χ, g_μν)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-135
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - logos
+  - definition
+  - equation
+  keywords:
+  - D19.1
+  - Q5
+  - Laws
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show reality requires non-Lagrangian description. Demonstrate
+    χ can't serve as Lagrangian variable.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 138
+  axiomRegistry:
+    axiomID: AX-136
+    oldID: D19.1
+    treeLevel: Q5
+    treeBranch: Q5-N (First law)
+    questionType: Type 2 (What IS X?)
+    domain: Laws
+    tier: '2'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M19
+    moduleTitle: Ten-Law Master Equation
+    spineRole: supporting_definition
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — First law propagates through all subsequent laws.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-136-law-i-logos-lagrangian.jsonld
+  generated_at: '2026-09-23T01:17:13.947648+00:00'
+  sha256: dc859bad87017f580285baa84792f413307799140119c8e837d1473ab18737cd

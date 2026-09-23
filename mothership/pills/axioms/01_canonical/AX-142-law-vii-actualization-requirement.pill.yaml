@@ -1,0 +1,85 @@
+face:
+  uuid: 6b1df2a7-078a-53d5-a845-e82624e71c22
+  node_id: tp:axioms/01/AX-142
+  claim_id: tp:AXIOMS/D19.7
+  name: 'Law VII: Actualization Requirement'
+  term: 'Law VII: Actualization Requirement'
+  plain: 'Law VII: Potentiality cannot self-actualize; every actualization requires
+    prior actualizer.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: '∀x: Actual(x) → ∃y: Actualizes(y,x) ∧ y ≠ x'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-035
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-135
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - definition
+  keywords:
+  - D19.7
+  - Q6
+  - Laws
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show potentiality self-actualizes. Demonstrate spontaneous
+    symmetry breaking without prior actualizer. Show vacuum fluctuations are self-actualizing.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 144
+  axiomRegistry:
+    axiomID: AX-142
+    oldID: D19.7
+    treeLevel: Q6
+    treeBranch: Q6-AG (Seventh law)
+    questionType: Type 3 (What grounds X?)
+    domain: Laws
+    tier: '2'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M19
+    moduleTitle: Ten-Law Master Equation
+    spineRole: supporting_definition
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: Naturalism (quantum vacuum fluctuations)
+    propagationTest: YES — Actualization requirement propagates to Terminal Observer
+      necessity.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-142-law-vii-actualization-requirement.jsonld
+  generated_at: '2026-09-23T01:17:13.995961+00:00'
+  sha256: f30ba86be0efcf9b2dc1e888993b60c10251ec49b0670ffee02aba258c4cc0cf

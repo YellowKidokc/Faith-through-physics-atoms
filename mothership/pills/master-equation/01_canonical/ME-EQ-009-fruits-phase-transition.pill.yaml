@@ -1,0 +1,66 @@
+face:
+  uuid: c432a832-8551-518d-a252-b0ef6dc47e9d
+  node_id: tp:master-equation/01/ME-EQ-009
+  claim_id: tp:ME/ME-EQ-009
+  name: Fruits Phase Transition
+  term: Fruits Phase Transition
+  plain: Fruit and anti-fruit outputs appear as bounded phase behavior around a coherence
+    threshold.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: mathematical
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  mathematicalForm: Φ_i(χ) = tanh(β_i(χ - χ_c))
+  mathFormNormal: Phi_i = tanh(beta_i*(chi-chi_c))
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-151
+    propagates: true
+    note: Equation atom dependency.
+  tags:
+  - equation
+  - coherence
+  - phase-transition
+  keywords:
+  - equation
+  - Φ_i
+  - χ
+  - β_i
+  - χ_c
+  verificationStatus: equation-registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the equation is ill-typed, contradicts its dependency
+    atoms, or fails the verification/empirical burden declared by its source layer.
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\fruits_of_the_spirit_equations.md
+  equationRegistry:
+    equationID: ME-EQ-009
+    variables:
+    - Φ_i
+    - χ
+    - β_i
+    - χ_c
+    normalForm: Phi_i = tanh(beta_i*(chi-chi_c))
+    source: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\fruits_of_the_spirit_equations.md
+_metadata:
+  source_path: master-equation/01_canonical/ME-EQ-009-fruits-phase-transition.jsonld
+  generated_at: '2026-09-23T01:17:14.674808+00:00'
+  sha256: 2a7ef41b78289c265b65172f09c3e681f08a5d55d8d44f5cba5f8f9f32258155

@@ -1,0 +1,81 @@
+face:
+  uuid: a6a9baeb-cae9-58c1-ad92-4fabd156d54d
+  node_id: tp:axioms/01/AX-045
+  claim_id: tp:AXIOMS/A6.1
+  name: Superposition
+  term: Superposition
+  plain: Pre-observation, systems exist in superposition of all possible states.
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: '|ψ⟩ = Σcᵢ|aᵢ⟩; Σ|cᵢ|² = 1'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-044
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - witness
+  - observer
+  keywords:
+  - A6.1
+  - Q6
+  - Ontological
+  - FrameworkCommitment
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show superposition doesn't exist (hidden variables with
+    no Bell violation). Demonstrate macroscopic superposition is impossible in principle.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 46
+  axiomRegistry:
+    axiomID: AX-045
+    oldID: A6.1
+    treeLevel: Q6
+    treeBranch: Q6-K (Superposition as pre-observation state)
+    questionType: Type 1 (Does X hold?)
+    domain: Ontological
+    tier: '1'
+    newType: FrameworkCommitment
+    logicalForce: framework assumption
+    formalizableInLean: partly
+    leanKind: parameter / assumption, not theorem
+    riskLevel: high
+    kernelRole: guardedPremise
+    moduleID: M06
+    moduleTitle: Collapse / Measurement
+    spineRole: core_spine
+    boundaryCondition: BC5 (Superposition preserved until collapse)
+    fourModeRelevance: M2 (Entropic — superposition fragile under decoherence)
+    worldviewsEliminated: Hard Determinism
+    propagationTest: YES — Superposition propagates to collapse (AX-046), measurement
+      problem, and vulnerability window (BC5).
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-045-superposition.jsonld
+  generated_at: '2026-09-23T01:17:13.128998+00:00'
+  sha256: 5d3c528e4b640366dc2194638b1ce74faead63857fc3289357a9e9aaa86f07b0

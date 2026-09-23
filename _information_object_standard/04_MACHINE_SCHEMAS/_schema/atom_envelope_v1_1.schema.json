@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theophysics.example/schema/atom_envelope_v1_1.schema.json",
+  "title": "Atom Universal Envelope — Claim Atom Expansion Canon v1.1",
+  "description": "The universal envelope of CANON v1.1 Section 7. Every conforming atom validates against this and against exactly one type extension. Absent values are declared, never guessed: use null, UNKNOWN, NOT_APPLICABLE, or OPEN.",
+  "type": "object",
+  "required": ["identity", "provenance", "axes", "admission", "dependencies"],
+  "properties": {
+
+    "identity": {
+      "type": "object",
+      "required": ["id", "object_type", "version", "content_hash"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "object_type": { "enum": ["CLAIM", "EVIDENCE", "PROOF", "PROCESS"] },
+        "parent_id": { "type": ["string", "null"] },
+        "atom_family": { "type": ["string", "null"] },
+        "layer": { "type": ["string", "null"] },
+        "component": { "type": ["string", "null"] },
+        "version": { "type": ["string", "integer"] },
+        "content_hash": { "type": "string", "pattern": "^(sha256:)?[a-f0-9]{64}$" },
+        "ordinal": {
+          "type": ["integer", "null"],
+          "description": "Section 3.4. Required where child order carries meaning; null where it does not."
+        },
+        "child_role": { "type": ["string", "null"] }
+      }
+    },
+
+    "provenance": {
+      "type": "object",
+      "required": ["raw_statement", "source_uri", "source_span", "ai_contribution_declared"],
+      "properties": {
+        "raw_statement": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Section 8.1. The exact source text. No later clarification may erase what the source actually said."
+        },
+        "source_uri": { "type": ["string", "null"] },
+        "source_span": { "type": ["string", "object", "null"] },
+        "source_hash": { "type": ["string", "null"] },
+        "author_or_witness": { "type": ["string", "null"] },
+        "date_received": { "type": ["string", "null"], "format": "date-time" },
+        "ai_contribution_declared": {
+          "type": "boolean",
+          "description": "Declared, never inferred. False is an assertion, not a default."
+        }
+      }
+    },
+
+    "axes": {
+      "type": "object",
+      "description": "Section 6. Five independent axes. No single field carries all meanings.",
+      "required": ["lifecycle_state", "proof_class", "register", "ic_grade", "why_outcome"],
+      "properties": {
+        "lifecycle_state": {
+          "enum": ["RAW", "PRESERVED", "DECOMPOSED", "OPENED", "TESTED", "CANDIDATE",
+                   "HUMAN_REVIEW", "ADMITTED", "RETURNED", "WITHDRAWN", "FALSIFIED",
+                   "SUPERSEDED", "DEPRECATED", "QUARANTINED", "REJECTED"]
+        },
+        "proof_class": {
+          "enum": ["NOT_ATTEMPTED", "SPECIFICATION_ONLY", "INFORMAL_ARGUMENT",
+                   "FORMALIZED_NOT_BUILT", "BUILT_WITH_ASSUMPTIONS", "BUILT_WITH_SORRY",
+                   "BUILT_ZERO_SORRY", "COUNTERMODEL_FOUND", "FALSIFIED"]
+        },
+        "register": {
+          "enum": ["FORMAL_MATHEMATICAL", "EMPIRICAL_PHYSICAL", "HISTORICAL", "INFORMATIONAL",
+                   "CONSCIOUSNESS_FIRST_PERSON", "MORAL_NORMATIVE", "THEOLOGICAL_CONFESSIONAL",
+                   "BRIDGE_CROSS_REGISTER", "INTERPRETIVE", "PREDICTIVE", "PROTOCOL"]
+        },
+        "ic_grade": { "enum": ["IC-0", "IC-1", "IC-2", "IC-3", "IC-4", "IC-5", "NOT_APPLICABLE"] },
+        "why_outcome": { "enum": ["WHY_CLOSED", "WHY_FAILED", "WHY_OPEN", "NOT_APPLICABLE"] },
+        "proof_label_legacy": {
+          "type": ["string", "null"],
+          "description": "Section 5.5. Legacy vocabulary, preserved untouched. Mapped to proof_class only through the explicit registry, never by resemblance."
+        }
+      }
+    },
+
+    "admission": {
+      "type": "object",
+      "description": "Section 34. No automated run canonizes. Admission requires a named human ruling.",
+      "required": ["graph", "human_ruling"],
+      "properties": {
+        "graph": { "enum": ["candidate", "admitted"] },
+        "human_ruling": { "enum": ["pending", "admitted", "returned", "withdrawn", "rejected"] },
+        "ruling_actor": { "type": ["string", "null"] },
+        "ruling_date": { "type": ["string", "null"], "format": "date-time" },
+        "rationale": { "type": ["string", "null"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "graph": { "const": "admitted" } }, "required": ["graph"] },
+          "then": {
+            "required": ["ruling_actor", "ruling_date", "rationale"],
+            "properties": {
+              "human_ruling": { "not": { "const": "pending" } },
+              "ruling_actor": { "type": "string", "minLength": 1 },
+              "ruling_date": { "type": "string" },
+              "rationale": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      ]
+    },
+
+    "dependencies": {
+      "type": "object",
+      "required": ["depends_on"],
+      "properties": {
+        "depends_on": { "type": "array", "items": { "type": "string" } },
+        "supports": { "type": "array", "items": { "type": "string" } },
+        "challenges": { "type": "array", "items": { "type": "string" } },
+        "expands": { "type": "array", "items": { "type": "string" } },
+        "bridges_to": { "type": "array", "items": { "type": "string" } },
+        "supersedes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "classification": {
+      "type": "object",
+      "description": "Stage 5. Emergent labels are discovered; inherited labels are carried. Reconciliation records the difference and never silently overwrites either side.",
+      "properties": {
+        "emergent_labels": { "type": "array", "items": { "type": "string" } },
+        "inherited_labels": { "type": "array", "items": { "type": "string" } },
+        "reconciliation_status": {
+          "enum": ["NOT_RUN", "NO_CONFLICT", "CONFLICTS_PRESENT", "RULED", "OPEN"]
+        }
+      }
+    },
+
+    "why_closure": {
+      "type": "object",
+      "properties": {
+        "ladder_levels": { "type": "array", "items": { "type": "string" } },
+        "explanation_types": { "type": "array", "items": { "type": "string" } },
+        "non_restatement_pass": { "type": ["boolean", "null"] },
+        "outcome": { "enum": ["WHY_CLOSED", "WHY_FAILED", "WHY_OPEN", "NOT_APPLICABLE"] },
+        "closure_level": { "type": ["string", "null"] },
+        "next_discriminating_test": { "type": ["string", "null"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "outcome": { "const": "WHY_CLOSED" } }, "required": ["outcome"] },
+          "then": {
+            "required": ["closure_level", "explanation_types", "non_restatement_pass"],
+            "properties": {
+              "non_restatement_pass": { "const": true },
+              "closure_level": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "outcome": { "const": "WHY_OPEN" } }, "required": ["outcome"] },
+          "then": {
+            "required": ["next_discriminating_test"],
+            "description": "Section 6.5. WHY_OPEN is a positive record of unresolved structure, so it retains the next test."
+          }
+        }
+      ]
+    },
+
+    "truth_space": {
+      "type": "object",
+      "properties": {
+        "if_true": { "type": "array", "items": { "type": "string" } },
+        "if_false": { "type": "array", "items": { "type": "string" } },
+        "false_worlds": { "type": "array", "items": { "type": "string" } },
+        "countermodels": { "type": "array", "items": {} }
+      }
+    },
+
+    "gauntlet": {
+      "type": "object",
+      "properties": {
+        "countermodels": { "type": "array", "items": {} },
+        "kill_conditions": { "type": "array", "items": { "type": "string" } },
+        "preregistration_receipt": { "type": ["string", "null"] },
+        "execution_receipts": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "root_pass": {
+      "type": "object",
+      "properties": {
+        "root_id": { "type": ["string", "null"] },
+        "grounding_verdict": { "type": ["string", "null"] },
+        "added_premises": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "convergence": {
+      "type": "object",
+      "properties": {
+        "compared_atom_ids": { "type": "array", "items": { "type": "string" } },
+        "anonymized_signatures": { "type": "array", "items": {} },
+        "candidate_mapping": { "type": "array", "items": {} },
+        "rivals": { "type": "array", "items": {} },
+        "verdict": { "type": ["string", "null"] }
+      }
+    },
+
+    "corrections": { "type": "array", "items": {} },
+    "projections": { "type": "array", "items": {} }
+  },
+
+  "allOf": [
+    {
+      "description": "Section 6.2. A build state is a receipt claim. BUILT_* without a receipt is a specification calling itself a theorem.",
+      "if": {
+        "properties": {
+          "axes": {
+            "properties": {
+              "proof_class": { "enum": ["BUILT_WITH_ASSUMPTIONS", "BUILT_WITH_SORRY", "BUILT_ZERO_SORRY"] }
+            },
+            "required": ["proof_class"]
+          }
+        },
+        "required": ["axes"]
+      },
+      "then": {
+        "required": ["proof_extension"],
+        "properties": {
+          "proof_extension": {
+            "required": ["receipt"],
+            "properties": { "receipt": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    }
+  ]
+}

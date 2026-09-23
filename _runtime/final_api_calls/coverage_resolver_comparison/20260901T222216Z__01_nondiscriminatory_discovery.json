@@ -1,0 +1,246 @@
+{
+  "receipt_version": "final-api-call/1.0.0",
+  "status": "CANDIDATE_DRAFT — NOT ADMITTED",
+  "created_at": "2026-09-01T22:22:16.382837+00:00",
+  "call": "01_NONDISCRIMINATORY_DISCOVERY",
+  "provider": "deepseek",
+  "model": "deepseek-chat",
+  "blind_input": {
+    "content_hash": "sha256:d43e7798eedf438f36c9c79fc8f9191ba7f1d6648f2cdace8afe790049f537da",
+    "withholding": {
+      "named_headings_replaced": 4,
+      "frontmatter_withheld": true,
+      "filename_withheld": true,
+      "folder_withheld": true,
+      "html_comments_withheld": true
+    },
+    "chunk_count": 1
+  },
+  "frozen_discovery": {
+    "schema_version": "paper-discovery/1.0.0",
+    "stage": "NONDISCRIMINATORY_DISCOVERY",
+    "status": "DISCOVERY_COMPLETE",
+    "discovered_objects": [
+      {
+        "discovery_id": "DISC-0001",
+        "exact_quotation": "This fixture is intentionally incomplete and remains a candidate only.",
+        "neutral_paraphrase": "The presented material is deliberately unfinished and is being considered as a possible candidate.",
+        "referent": "The fixture itself as described in the text.",
+        "identity_conditions": [
+          "The object is the fixture that is intentionally incomplete.",
+          "The object is the fixture that remains a candidate only."
+        ],
+        "distinctions": [
+          "Distinguished from a complete fixture.",
+          "Distinguished from a non-candidate fixture."
+        ],
+        "relations": [
+          "The fixture is described as intentionally incomplete.",
+          "The fixture is described as remaining a candidate only."
+        ],
+        "operations": [
+          "None explicitly stated."
+        ],
+        "dependencies": [
+          "None explicitly stated."
+        ],
+        "constraints": [
+          "The fixture is intentionally incomplete.",
+          "The fixture remains a candidate only."
+        ],
+        "invariants": [
+          "The intentional incompleteness is asserted.",
+          "The candidate status is asserted."
+        ],
+        "consequences": [
+          "The fixture may not be ready for final use.",
+          "The fixture may be subject to further development."
+        ],
+        "countermodels": [
+          "A complete fixture would contradict the intentional incompleteness.",
+          "A non-candidate fixture would contradict the candidate status."
+        ],
+        "collapse_conditions": [
+          "If the fixture is completed, the intentional incompleteness would no longer hold.",
+          "If the fixture is rejected as a candidate, the candidate status would no longer hold."
+        ],
+        "open_questions": [
+          "What is the purpose of the fixture?",
+          "What would complete the fixture?"
+        ],
+        "source_section": "SECTION_001",
+        "line_start": 3,
+        "line_end": 3
+      },
+      {
+        "discovery_id": "DISC-0002",
+        "exact_quotation": "Human-authored definition that must remain YOURS and unchanged.",
+        "neutral_paraphrase": "A definition written by a human is required to remain the property of that human and to stay unmodified.",
+        "referent": "A human-authored definition.",
+        "identity_conditions": [
+          "The definition is authored by a human.",
+          "The definition must remain unchanged."
+        ],
+        "distinctions": [
+          "Distinguished from machine-authored definitions.",
+          "Distinguished from definitions that may be altered."
+        ],
+        "relations": [
+          "The definition is attributed to a human author.",
+          "The definition is subject to a requirement of unchangedness."
+        ],
+        "operations": [
+          "None explicitly stated."
+        ],
+        "dependencies": [
+          "The definition depends on a human author."
+        ],
+        "constraints": [
+          "The definition must remain unchanged.",
+          "The definition must remain the property of the human author."
+        ],
+        "invariants": [
+          "The authorship by a human is invariant.",
+          "The unchangedness is invariant."
+        ],
+        "consequences": [
+          "The definition cannot be modified without violating the requirement.",
+          "The definition cannot be claimed by others."
+        ],
+        "countermodels": [
+          "A machine-authored definition would contradict the human authorship.",
+          "A modified definition would contradict the unchangedness."
+        ],
+        "collapse_conditions": [
+          "If the definition is modified, the unchangedness requirement collapses.",
+          "If the authorship is reassigned, the ownership requirement collapses."
+        ],
+        "open_questions": [
+          "What is the content of the definition?",
+          "Who is the human author?"
+        ],
+        "source_section": "SECTION_002",
+        "line_start": 7,
+        "line_end": 7
+      },
+      {
+        "discovery_id": "DISC-0003",
+        "exact_quotation": "Which preserved account of the physics interpretation should receive a human ruling?",
+        "neutral_paraphrase": "The question asks which preserved account of a physics interpretation should be decided by a human.",
+        "referent": "A preserved account of a physics interpretation.",
+        "identity_conditions": [
+          "The account is preserved.",
+          "The account is of a physics interpretation."
+        ],
+        "distinctions": [
+          "Distinguished from non-preserved accounts.",
+          "Distinguished from accounts of non-physics interpretations."
+        ],
+        "relations": [
+          "The account is subject to a human ruling.",
+          "The account is a preserved account."
+        ],
+        "operations": [
+          "Selecting which account should receive a human ruling."
+        ],
+        "dependencies": [
+          "The account depends on being preserved.",
+          "The account depends on being a physics interpretation."
+        ],
+        "constraints": [
+          "The account must be preserved.",
+          "The account must be a physics interpretation."
+        ],
+        "invariants": [
+          "The preservation of the account is invariant.",
+          "The physics interpretation aspect is invariant."
+        ],
+        "consequences": [
+          "A human ruling would determine the fate of the account.",
+          "The account may be accepted or rejected based on the ruling."
+        ],
+        "countermodels": [
+          "An unpreserved account would contradict the preservation.",
+          "A non-physics interpretation would contradict the physics aspect."
+        ],
+        "collapse_conditions": [
+          "If the account is lost, the preservation collapses.",
+          "If the interpretation is changed, the physics aspect collapses."
+        ],
+        "open_questions": [
+          "What is the content of the physics interpretation?",
+          "Who is the human who will rule?"
+        ],
+        "source_section": "SECTION_003",
+        "line_start": 11,
+        "line_end": 11
+      },
+      {
+        "discovery_id": "DISC-0004",
+        "exact_quotation": "See [[DECLARED_DEPENDENCY]] for an explicitly linked source.",
+        "neutral_paraphrase": "The text directs the reader to a source explicitly linked under the name DECLARED_DEPENDENCY.",
+        "referent": "A source explicitly linked as DECLARED_DEPENDENCY.",
+        "identity_conditions": [
+          "The source is explicitly linked.",
+          "The source is referred to as DECLARED_DEPENDENCY."
+        ],
+        "distinctions": [
+          "Distinguished from implicitly linked sources.",
+          "Distinguished from sources with different names."
+        ],
+        "relations": [
+          "The source is linked to the current text.",
+          "The source is referenced for further information."
+        ],
+        "operations": [
+          "Looking up the source at the link."
+        ],
+        "dependencies": [
+          "The source depends on being explicitly linked.",
+          "The source depends on being named DECLARED_DEPENDENCY."
+        ],
+        "constraints": [
+          "The source must be explicitly linked.",
+          "The source must be named DECLARED_DEPENDENCY."
+        ],
+        "invariants": [
+          "The explicit linkage is invariant.",
+          "The name DECLARED_DEPENDENCY is invariant."
+        ],
+        "consequences": [
+          "The reader can access the source via the link.",
+          "The source may contain relevant information."
+        ],
+        "countermodels": [
+          "An implicitly linked source would contradict the explicit linkage.",
+          "A source with a different name would contradict the name."
+        ],
+        "collapse_conditions": [
+          "If the link is broken, the explicit linkage collapses.",
+          "If the name is changed, the identity collapses."
+        ],
+        "open_questions": [
+          "What is the content of the source?",
+          "Where is the link located?"
+        ],
+        "source_section": "SECTION_004",
+        "line_start": 15,
+        "line_end": 15
+      }
+    ],
+    "global_open_questions": [
+      "What is the purpose of this fixture?",
+      "What is the content of the human-authored definition?",
+      "What is the physics interpretation being considered?",
+      "What is the content of the DECLARED_DEPENDENCY source?"
+    ],
+    "prohibited_outputs": []
+  },
+  "post_discovery_source_binding": {
+    "path": "C:\\Users\\David\\Documents\\Obsidian\\Theophysics.new\\Coverage Resolver Test\\TEST_CANDIDATE.md",
+    "source_hash": "sha256:1bf33b6b726fde4b3f277077895a93ff759a541004f2452a1557eb30591d3713"
+  },
+  "source_modified": false,
+  "canonical_admission_performed": false,
+  "human_ruling_required": true
+}

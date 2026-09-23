@@ -1,0 +1,85 @@
+face:
+  uuid: 2e97cf14-60f7-578a-b77a-babf94315db6
+  node_id: tp:axioms/01/AX-080
+  claim_id: tp:AXIOMS/P9.5
+  name: Grace Available To All
+  term: Grace Available To All
+  plain: Grace available to all — Ĝ is defined on the full Hilbert space, not a subset.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: dom(Ĝ) = H (full Hilbert space); Ĝ defined ∀|ψ⟩
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-075
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-079
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - grace
+  keywords:
+  - P9.5
+  - Q10
+  - Divine
+  - Property
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show grace is restricted to a subset (election). Demonstrate
+    Ĝ is not defined for some states. Show universal grace contradicts predestination.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 82
+  axiomRegistry:
+    axiomID: AX-080
+    oldID: P9.5
+    treeLevel: Q10
+    treeBranch: Q10-N (Grace property — universality)
+    questionType: Type 4 (What must X be?)
+    domain: Divine
+    tier: '2'
+    newType: Property
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: proposition / lemma target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M09
+    moduleTitle: Grace Operator
+    spineRole: formal_engine
+    boundaryCondition: BC8
+    fourModeRelevance: M4 (Grace Attenuation — ambient rejection weakens effective
+      grace)
+    worldviewsEliminated: Calvinism (limited atonement — qualified)
+    propagationTest: YES — Universal availability propagates to the claim that rejection
+      of grace is genuine choice, not divine withholding.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-080-grace-available-to-all.jsonld
+  generated_at: '2026-09-23T01:17:13.458130+00:00'
+  sha256: 9bc1fe3f743804d7f1e3fb6d626c1abb6e39b9a907f3fe4850354ea3eb8c9dc8

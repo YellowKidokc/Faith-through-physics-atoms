@@ -1,0 +1,87 @@
+face:
+  uuid: e2cf6dc1-8d7b-5e07-8cbd-7c60e4d4974d
+  node_id: tp:axioms/01/AX-079
+  claim_id: tp:AXIOMS/P9.4
+  name: Superposition Preserved Until Faith
+  term: Superposition Preserved Until Faith
+  plain: Moral superposition preserved until voluntary collapse (faith decision).
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: σ_undecided → σ_decided via voluntary measurement (faith)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-078
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-062
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - faith
+  - free-will
+  - moral-conservation
+  - observer
+  keywords:
+  - P9.4
+  - Q10
+  - Divine
+  - Property
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show moral decision doesn't resemble quantum collapse. Demonstrate
+    faith is not voluntary. Show moral state is already determined (no superposition).
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 81
+  axiomRegistry:
+    axiomID: AX-079
+    oldID: P9.4
+    treeLevel: Q10
+    treeBranch: Q10-M (Grace property — faith as collapse event)
+    questionType: Type 4 (What must X be?)
+    domain: Divine
+    tier: '2'
+    newType: Property
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: proposition / lemma target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M09
+    moduleTitle: Grace Operator
+    spineRole: formal_engine
+    boundaryCondition: BC5, BC8
+    fourModeRelevance: M1 (Agentic — faith IS the agentic act of accepting grace)
+    worldviewsEliminated: Hard Determinism, Calvinism (irresistible grace)
+    propagationTest: YES — Faith-as-collapse propagates to soteriology, the moment
+      of conversion, and free will preservation.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-079-superposition-preserved-until-faith.jsonld
+  generated_at: '2026-09-23T01:17:13.447582+00:00'
+  sha256: f666d3000ffd1cf5a88f9902657f538beda3b362e297e06d87a68bebb7e2556b

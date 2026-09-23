@@ -1,0 +1,92 @@
+face:
+  uuid: b1c234db-dc01-5fb1-bf24-7351eb58e32e
+  node_id: tp:axioms/01/AX-035
+  claim_id: tp:AXIOMS/A5.1
+  name: Observation Requirement
+  term: Observation Requirement
+  plain: Information requires observer to be actual (vs potential).
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: 'Actual(I) ↔ ∃Observer: Observes(Observer, I)'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-003
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-015
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-034
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - witness
+  - observer
+  - information
+  keywords:
+  - A5.1
+  - Q6
+  - Ontological
+  - FrameworkCommitment
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show a quantum system actualizing without any observer.
+    Demonstrate information becomes definite without measurement. Show observation
+    is eliminable from QM (many-worlds may claim this).
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 36
+  axiomRegistry:
+    axiomID: AX-035
+    oldID: A5.1
+    treeLevel: Q6
+    treeBranch: Q6-A (Observer requirement — information actualization)
+    questionType: Type 1 (Does X hold?)
+    domain: Ontological
+    tier: '1'
+    newType: FrameworkCommitment
+    logicalForce: framework assumption
+    formalizableInLean: partly
+    leanKind: parameter / assumption, not theorem
+    riskLevel: high
+    kernelRole: guardedPremise
+    moduleID: M05
+    moduleTitle: Observer / Actualization
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: '— (Q6: observer level begins here)'
+    worldviewsEliminated: Materialism, Emergentism, Naturalism, Hard Determinism,
+      Eliminativism, Nihilism
+    propagationTest: YES — Observer requirement propagates to Terminal Observer (Q7),
+      consciousness (Q6 properties), and moral agency (Q10).
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-035-observation-requirement.jsonld
+  generated_at: '2026-09-23T01:17:13.044063+00:00'
+  sha256: 151916a25915563448c8e675e677e1f09b35d63e8228e1f689d5ff1b32e744ae

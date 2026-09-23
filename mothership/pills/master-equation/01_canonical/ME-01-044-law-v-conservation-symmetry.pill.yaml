@@ -1,0 +1,64 @@
+face:
+  uuid: d10a2914-d7b3-530e-82ae-4ff907c9a26c
+  node_id: tp:master-equation/01/ME-01-044
+  claim_id: tp:ME/ME-01-044
+  name: 'Law V: Conservation Symmetry'
+  term: 'Law V: Conservation Symmetry'
+  plain: 'Law V: Conservation Symmetry names one law rail inside the Master Equation.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: definition
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  kernelChecked: false
+  challengeStatus: unchallenged
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-010
+    propagates: true
+    note: Law belongs to the Master Equation integration atom.
+  - type: dependsOn
+    target: tp:axioms/01/AX-140
+    propagates: true
+    note: Source registry row imported from Master Axiom.
+  keywords:
+  - AX-140
+  - D19.5
+  - Definition
+  tags:
+  - logos
+  - coherence
+  - equation
+  verificationStatus: registry-import
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\02_PHYSICAL_THEOLOGICAL_LAYER_TenFactorTable.md;
+    D:\GitHub\Faith-through-physics-atoms\_vocab\axiom_registry.json
+  masterEquationRole:
+    sourceAxiomID: AX-140
+    sourceOldID: D19.5
+    sourceRow: 142
+    sourceType: Definition
+    role: law
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-044-law-v-conservation-symmetry.jsonld
+  generated_at: '2026-09-23T01:17:14.549427+00:00'
+  sha256: dbf277e0ec060088d360923c376315e4058a47f16748aa34a4c255b98caa8056

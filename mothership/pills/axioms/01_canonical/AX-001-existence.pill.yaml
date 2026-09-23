@@ -1,0 +1,75 @@
+face:
+  uuid: fabe6192-d3e1-503e-9c00-f286a16deeed
+  node_id: tp:axioms/01/AX-001
+  claim_id: tp:AXIOMS/A1.1
+  name: Existence
+  term: Existence
+  plain: Something exists rather than nothing.
+  status: active
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: ∃x (existential quantifier — irreducible)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges: []
+  keywords:
+  - A1.1
+  - Q0
+  - Primordial
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: 'Show absolute nothingness is coherent and stable. Show
+    that ''nothing'' can be consistently conceived without implicit ''something.''
+    Note: every attempt to describe nothing presupposes a describer.'
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 2
+  axiomRegistry:
+    axiomID: AX-001
+    oldID: A1.1
+    treeLevel: Q0
+    treeBranch: Q0-A (Existence affirmed)
+    questionType: Type 1 (Does X hold?)
+    domain: Primordial
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M01
+    moduleTitle: Information Ground
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: Nihilism (qualified — accepts existence but denies meaning)
+    propagationTest: YES — Existence propagates as the ground condition for every
+      subsequent level. Without Q0, no tree.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-001-existence.jsonld
+  generated_at: '2026-09-23T01:17:12.754641+00:00'
+  sha256: ea56286767d503163df10174ec7550c178d22f6be24f72d9865112eae1d8fe8a

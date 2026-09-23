@@ -1,0 +1,66 @@
+face:
+  uuid: fcf56112-99b8-555c-9bb0-c8617b24f1bb
+  node_id: tp:master-equation/01/ME-EQ-007
+  claim_id: tp:ME/ME-EQ-007
+  name: Grace Non-Unitarity
+  term: Grace Non-Unitarity
+  plain: Grace is modeled as information-adding transformation, not merely rearrangement
+    of a closed state.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: mathematical
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  mathematicalForm: Ĝ†Ĝ ≠ I
+  mathFormNormal: G_hat_dagger*G_hat != I
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-048
+    propagates: true
+    note: Equation atom dependency.
+  - type: dependsOn
+    target: tp:axioms/01/AX-074
+    propagates: true
+    note: Equation atom dependency.
+  tags:
+  - equation
+  - grace
+  - information
+  keywords:
+  - equation
+  - Ĝ
+  - I
+  verificationStatus: equation-registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the equation is ill-typed, contradicts its dependency
+    atoms, or fails the verification/empirical burden declared by its source layer.
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_FORMAL_LAYER_Definition10.md
+  equationRegistry:
+    equationID: ME-EQ-007
+    variables:
+    - Ĝ
+    - I
+    normalForm: G_hat_dagger*G_hat != I
+    source: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_FORMAL_LAYER_Definition10.md
+_metadata:
+  source_path: master-equation/01_canonical/ME-EQ-007-grace-non-unitarity.jsonld
+  generated_at: '2026-09-23T01:17:14.663297+00:00'
+  sha256: ec21e1ef48aa01aba251d3cc64573cae2aabfa23659cf87949e6578317393e02

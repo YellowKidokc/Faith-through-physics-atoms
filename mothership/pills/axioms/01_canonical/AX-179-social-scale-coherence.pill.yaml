@@ -1,0 +1,82 @@
+face:
+  uuid: 3bccd671-c6fe-5400-802f-26ecc2c10b58
+  node_id: tp:axioms/01/AX-179
+  claim_id: tp:AXIOMS/SC-SOCIAL
+  name: Social Scale Coherence
+  term: Social Scale Coherence
+  plain: At social scale, coherence = cultural unity, shared values, social capital.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: χ(social) = social_capital = collective_coherence
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-178
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  - definition
+  keywords:
+  - SC-SOCIAL
+  - Q8
+  - Human
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show social coherence without informational substrate. Demonstrate
+    social capital independent of shared information.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 181
+  axiomRegistry:
+    axiomID: AX-179
+    oldID: SC-SOCIAL
+    treeLevel: Q8
+    treeBranch: Q8-N (Scale — social)
+    questionType: Type 2 (What IS X?)
+    domain: Human
+    tier: '2'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M23
+    moduleTitle: Scale Coherence
+    spineRole: supporting_definition
+    boundaryCondition: —
+    fourModeRelevance: M4 (Grace Attenuation — social decoherence weakens collective
+      grace coupling)
+    worldviewsEliminated: —
+    propagationTest: YES — Social scale propagates to cosmic scale and cosmological
+      grace.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-179-social-scale-coherence.jsonld
+  generated_at: '2026-09-23T01:17:14.302047+00:00'
+  sha256: 89c7c491aa787b2960a0bf270d264bc16f7bbda82904205545a34dd7df13e95f

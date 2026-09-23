@@ -1,0 +1,80 @@
+face:
+  uuid: 2a761ec4-1d4a-5549-92ac-a9608c365069
+  node_id: tp:axioms/01/AX-076
+  claim_id: tp:AXIOMS/P9.1
+  name: Grace Idempotence
+  term: Grace Idempotence
+  plain: Ĝ² = Ĝ — grace once applied is complete (no need for repeated application).
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: Ĝ² = Ĝ (idempotent projector)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-075
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - grace
+  keywords:
+  - P9.1
+  - Q10
+  - Divine
+  - Property
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show Ĝ² ≠ Ĝ. Demonstrate grace needs repeated application.
+    Show the operator form is wrong.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 78
+  axiomRegistry:
+    axiomID: AX-076
+    oldID: P9.1
+    treeLevel: Q10
+    treeBranch: Q10-J (Grace property — idempotence)
+    questionType: Type 4 (What must X be?)
+    domain: Divine
+    tier: '2'
+    newType: Property
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: proposition / lemma target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M09
+    moduleTitle: Grace Operator
+    spineRole: formal_engine
+    boundaryCondition: BC2
+    fourModeRelevance: —
+    worldviewsEliminated: Catholicism (repeated sacramental grace — qualified)
+    propagationTest: YES — Idempotence propagates to soteriology (once-for-all redemption)
+      and eschatological permanence.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-076-grace-idempotence.jsonld
+  generated_at: '2026-09-23T01:17:13.412857+00:00'
+  sha256: 2ca2ca9676e9350b9f615ad56c6a38b1e7a0fd28b559000dbce5c02233b19cf0

@@ -1,0 +1,83 @@
+face:
+  uuid: 96b5f4fe-b7a9-5dba-a7ed-697334a23894
+  node_id: tp:axioms/01/AX-042
+  claim_id: tp:AXIOMS/EXP5.1
+  name: Wheeler Delayed Choice
+  term: Wheeler Delayed Choice
+  plain: Wheeler Delayed Choice experiment — observer choice retroactively affects
+    photon path.
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical_anchor
+  mathematicalForm: Experimentally confirmed (Jacques et al. 2007)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-041
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - witness
+  - observer
+  keywords:
+  - EXP5.1
+  - Q6
+  - Ontological
+  - EvidenceNode
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show delayed choice results have a non-observer-dependent
+    explanation. Demonstrate retrocausality is not the correct interpretation. MWI
+    explains it without observers.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 43
+  axiomRegistry:
+    axiomID: AX-042
+    oldID: EXP5.1
+    treeLevel: Q6
+    treeBranch: Q6-H (Experimental support — retrocausality)
+    questionType: Type 1 (Does X hold?)
+    domain: Ontological
+    tier: '3'
+    newType: EvidenceNode
+    logicalForce: evidence node
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M05
+    moduleTitle: Observer / Actualization
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: Hard Determinism
+    propagationTest: YES — Experimental confirmation propagates as evidence for participatory
+      universe and observer-dependent reality.
+    intendedStatus: classified
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-042-wheeler-delayed-choice.jsonld
+  generated_at: '2026-09-23T01:17:13.101687+00:00'
+  sha256: a2280d53211ff463c6145eae9832c8c607b19e263754a00f33b4a34418528761

@@ -1,0 +1,71 @@
+face:
+  uuid: 08065284-9410-50f1-bab3-d34f043db158
+  node_id: tp:master-equation/01/ME-01-010
+  claim_id: tp:ME/ME-01-010
+  name: Master Equation Integration
+  term: Master Equation Integration
+  plain: 'The Master Equation is the framework''s integration center: the place where
+    the ten factor rails become one computable coherence structure.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: theorem
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  kernelChecked: false
+  challengeStatus: unchallenged
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  mathematicalForm: chi_total = integral(G * M * E * S_eff * T * K * R * Q * F * C)
+    d^3x dt
+  mathFormNormal: chi = product([G,M,E,S_eff,T,K,R,Q,F,C]) integrated over region
+    and time
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-135
+    propagates: true
+    note: 'Axiom registry source: Master Equation Integration.'
+  - type: dependsOn
+    target: tp:axioms/01/AX-012
+    propagates: true
+    note: Earlier Master Equation first form.
+  - type: dependsOn
+    target: tp:axioms/01/AX-021
+    propagates: true
+    note: Master coherence equation.
+  tags:
+  - logos
+  - coherence
+  - equation
+  keywords:
+  - master-equation
+  - chi
+  - ten-factors
+  - integration
+  verificationStatus: registry-import
+  falsificationCondition: Show the ten laws are inconsistent with each other, or that
+    the master equation is overconstrained or internally contradictory.
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_FORMAL_LAYER_Definition10.md;
+    D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\02_PHYSICAL_THEOLOGICAL_LAYER_TenFactorTable.md;
+    D:\GitHub\Faith-through-physics-atoms\_vocab\axiom_registry.json
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-010-master-equation-integration.jsonld
+  generated_at: '2026-09-23T01:17:14.453801+00:00'
+  sha256: 45423f8f8170a53787f97b567bba33727f00a19417d7bc31c706250467c24b98

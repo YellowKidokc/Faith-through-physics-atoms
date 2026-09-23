@@ -1,0 +1,80 @@
+face:
+  uuid: 63f8cfba-bedb-50d8-a98b-934380a2e87a
+  node_id: tp:axioms/01/AX-164
+  claim_id: tp:AXIOMS/P3
+  name: Coherence Stage
+  term: Coherence Stage
+  plain: Information must exhibit coherence to be distinguishable from noise.
+  status: active
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: Information(meaningful) → Coherent(Information)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-163
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  - information
+  keywords:
+  - P3
+  - Q3
+  - Primordial
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show random information that is meaningful. Demonstrate
+    noise that carries content without pattern.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 166
+  axiomRegistry:
+    axiomID: AX-164
+    oldID: P3
+    treeLevel: Q3
+    treeBranch: Q3-W (Primitive — coherence)
+    questionType: Type 1 (Does X hold?)
+    domain: Primordial
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M21
+    moduleTitle: Primordial / Ontological Spine
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: Nihilism
+    propagationTest: YES — Coherence necessity propagates to order and all structure.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-164-coherence-stage.jsonld
+  generated_at: '2026-09-23T01:17:14.174104+00:00'
+  sha256: 2e52acbed0e84b342c91b8f73721a26db4f1d971de0b8e2f4cf84a2602a9b987

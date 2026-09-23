@@ -1,0 +1,94 @@
+face:
+  uuid: d06967c4-7251-53b8-83ce-cfbd874cc936
+  node_id: tp:axioms/01/AX-044
+  claim_id: tp:AXIOMS/LN5.1
+  name: Chi Requires Observer For Actualization
+  term: Chi Requires Observer For Actualization
+  plain: Without observers, χ remains pure potential, never actualized.
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: χ_actual = Ŵ(Φ)·χ_potential; Ŵ=0 → χ_actual=0
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-035
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-039
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-043
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - logos
+  - witness
+  - proof
+  - observer
+  keywords:
+  - LN5.1
+  - Q6
+  - Ontological
+  - Theorem
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show χ-field actualizes in regions with zero observers.
+    Demonstrate reality exists fully without observation (realism). Show χ is already
+    actual, not potential.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 45
+  axiomRegistry:
+    axiomID: AX-044
+    oldID: LN5.1
+    treeLevel: Q6
+    treeBranch: Q6-J (Observer necessity for χ actualization)
+    questionType: Type 3 (What grounds X?)
+    domain: Ontological
+    tier: '2'
+    newType: Theorem
+    logicalForce: derivable theorem
+    formalizableInLean: 'yes'
+    leanKind: theorem target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M05
+    moduleTitle: Observer / Actualization
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: M2 (Entropic — finite observers under entropy cannot fully
+      actualize χ)
+    worldviewsEliminated: Materialism, Naturalism, Hard Determinism
+    propagationTest: YES — Observer-dependent actualization propagates to the Terminal
+      Observer requirement (if χ needs observers, and χ is infinite, the observer
+      must be infinite).
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-044-chi-requires-observer-for-actualization.jsonld
+  generated_at: '2026-09-23T01:17:13.120894+00:00'
+  sha256: 5c228e834e478b6e7d9d5edd535d8b986c3befd7a3bd138a98e943328e0b4867

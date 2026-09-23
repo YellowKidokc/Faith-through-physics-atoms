@@ -1,0 +1,40 @@
+face:
+  uuid: 974163e0-78be-53ec-9288-e1be4849ffdf
+  node_id: https://faiththruphysics.com/claims/A042/L9/C1
+  claim_id: tp:A042/L9/C1
+  name: Law 9 Moral Conservation — Claim 1
+  term: Law 9 Moral Conservation — Claim 1
+  plain: If the moral laws don't change over time, then something moral is conserved
+    — it cannot be created or destroyed. This follows from the same theorem physicists
+    use to prove energy conservation, reached by a second, independent route.
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-02-14'
+  dateModified: '2026-07-22'
+  version: 1.2.0
+  axiomRoot: https://faiththruphysics.com/claims/A042
+  claimClass: theorem
+  dependsOn: []
+  evidenceType: formal-derivation
+  verificationStatus: machine-verified
+  kernelChecked: true
+  challengeStatus: challenged-survived
+  falsificationCondition: Exhibit a moral-domain transformation that preserves the
+    Lagrangian but yields no conserved current, or show the two derivation paths diverge
+    under the same axiom set.
+  isPartOf: https://faiththruphysics.com/papers/POF2828-2026-0001
+  verificationSystem: Lean 4
+_metadata:
+  source_path: _information_object_standard/06_EXAMPLES/claim-atom-standard-1.0/tp-standard/claims/A042/L9/C1.jsonld
+  generated_at: '2026-09-23T01:17:12.691763+00:00'
+  sha256: 5f56ed7caa975a48af791e78aa0cf0b6d0711f76a9c1c6084dec8bb2a59f7411

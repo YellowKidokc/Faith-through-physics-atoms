@@ -1,0 +1,86 @@
+face:
+  uuid: d6d03bc5-7aa7-52b2-a960-4d18bd5db957
+  node_id: tp:axioms/01/AX-078
+  claim_id: tp:AXIOMS/P9.3
+  name: Information Preserved Under Grace
+  term: Information Preserved Under Grace
+  plain: Grace preserves information content of soul while transforming moral orientation.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: 'Ĝ: (σ, I_personal) → (-σ→+1, I_personal preserved)'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-077
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-064
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - grace
+  - moral-conservation
+  - information
+  keywords:
+  - P9.3
+  - Q10
+  - Divine
+  - Property
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show grace destroys personal information. Demonstrate identity
+    discontinuity across grace event. Find information loss during moral transformation.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 80
+  axiomRegistry:
+    axiomID: AX-078
+    oldID: P9.3
+    treeLevel: Q10
+    treeBranch: Q10-L (Grace property — information conservation)
+    questionType: Type 4 (What must X be?)
+    domain: Divine
+    tier: '2'
+    newType: Property
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: proposition / lemma target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M09
+    moduleTitle: Grace Operator
+    spineRole: formal_engine
+    boundaryCondition: BC7
+    fourModeRelevance: M1 (Agentic — identity preserved through transformation)
+    worldviewsEliminated: —
+    propagationTest: YES — Information preservation under grace propagates to personal
+      identity continuity, soul conservation, and resurrection identity.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-078-information-preserved-under-grace.jsonld
+  generated_at: '2026-09-23T01:17:13.434975+00:00'
+  sha256: a588b314226788403ebcea0df468140591d6fe0b7dba6e3a1b0ab999f973b99c

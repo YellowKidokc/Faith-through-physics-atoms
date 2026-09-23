@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Sense Math Translation Layer — Interactive Example</title>
+  <!-- KaTeX for rendering mathematical notation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+          onload="renderMathInElement(document.body);"></script>
+  <style>
+    body {
+      background-color: #0f1117;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #ffffff;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #2d3748;
+      padding-bottom: 0.5rem;
+    }
+    .intro-note {
+      color: #a0aec0;
+      margin-bottom: 2rem;
+    }
+    /* The Unified Single-Box Math Card */
+    .math-card {
+      background: #181b23;
+      border: 1px solid #2d3748;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    .math-card-header {
+      background: #1f2430;
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      user-select: none;
+      border-bottom: 1px solid #2d3748;
+    }
+    .math-card-header h2 {
+      margin: 0;
+      font-size: 1.15rem;
+      color: #f7fafc;
+    }
+    .badge {
+      background: #3182ce;
+      color: #ffffff;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .math-card-body {
+      padding: 1.5rem;
+    }
+    .math-row {
+      margin-bottom: 1.5rem;
+    }
+    .math-row .label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #718096;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .equation-display {
+      background: #13151b;
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 1.25rem;
+      border: 1px solid #232734;
+      overflow-x: auto;
+    }
+    .word-substituted {
+      border-left: 3px solid #3182ce;
+      background: #151c28;
+    }
+    /* Common Sense Box */
+    .common-sense-box {
+      background: #1a2721;
+      border-left: 4px solid #38a169;
+      padding: 1rem 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+    .common-sense-box strong {
+      color: #48bb78;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .common-sense-box p {
+      margin: 0;
+      color: #e2e8f0;
+      font-size: 1.05rem;
+      font-weight: 400;
+    }
+    /* Explanatory Drawer */
+    .breakdown-drawer {
+      margin-top: 1.25rem;
+      border-top: 1px solid #2d3748;
+      padding-top: 1rem;
+    }
+    .breakdown-drawer summary {
+      color: #90cdf4;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 0.25rem 0;
+    }
+    .breakdown-list {
+      padding-left: 1.25rem;
+      color: #cbd5e0;
+      margin-top: 0.75rem;
+    }
+    .breakdown-list li {
+      margin-bottom: 0.75rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    th, td {
+      border: 1px solid #2d3748;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+    th {
+      background: #1a202c;
+      color: #a0aec0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Common Sense Math Translation Layer</h1>
+  <p class="intro-note">
+    Example component demonstrating the 4-tier unified presentation architecture. All details live inside one single collapsible card.
+  </p>
+
+  <!-- CARD 1: LAW 01 GRACE CHANNEL -->
+  <article class="math-card">
+    <details open>
+      <summary class="math-card-header">
+        <span class="badge">Law 01</span>
+        <h2>Grace Channel Normalized Coordinate</h2>
+      </summary>
+      <div class="math-card-body">
+        
+        <!-- LAYER 1: MATHEMATICAL FORM -->
+        <div class="math-row">
+          <span class="label">Mathematical Notation</span>
+          <div class="equation-display">
+            $$\Lambda_G = A_G \log_2\!\left(1 + \frac{T_G}{D_G}\right), \qquad X_G = \operatorname{clamp}\!\left(\frac{\Lambda_G}{\Lambda_{G,\text{ref}}}, \, 0, \, 1\right)$$
+          </div>
+        </div>
+
+        <!-- LAYER 2: WORD-SUBSTITUTED FORM -->
+        <div class="math-row">
+          <span class="label">Word-Substituted Structural Form</span>
+          <div class="equation-display word-substituted">
+            $$\text{Grace Channel} = \text{Openness} \times \log_2\!\left(1 + \frac{\text{Grace Signal}}{\text{Heart Resistance}}\right)$$
+          </div>
+        </div>
+
+        <!-- LAYER 3: COMMON SENSE (1-2 SENTENCES) -->
+        <div class="common-sense-box">
+          <strong>The Common Sense</strong>
+          <p>
+            God is always broadcasting His grace at full strength, but how much of it reaches you depends on how much noise and pride you let get in the way. Even if the signal is clear, God never forces the door open—you have to choose to let it in.
+          </p>
+        </div>
+
+        <!-- LAYER 4: STRUCTURAL BREAKDOWN DRAWER -->
+        <details class="breakdown-drawer">
+          <summary>Why the equation is built this way (The Structural Secrets)</summary>
+          <ul class="breakdown-list">
+            <li>
+              <strong>The Division ($\frac{\text{Signal}}{\text{Resistance}}$):</strong>
+              Noise drowns out the call. The more stubbornness and distraction in your denominator, the closer the received signal drops toward zero.
+            </li>
+            <li>
+              <strong>The $\log_2$ Curve:</strong>
+              Models diminishing returns and rock-bottom breakthroughs. When you are trapped in pitch-black despair, lowering resistance just a tiny bit produces a massive, life-saving surge of light.
+            </li>
+            <li>
+              <strong>The $+1$ Inside:</strong>
+              The mathematical safety lock. It guarantees that if you have zero signal, $\log_2(1) = 0$—so zero input cleanly yields a zero score instead of a math error.
+            </li>
+            <li>
+              <strong>Openness Out Front ($A_G \times \dots$):</strong>
+              Your sovereign free will. If you shut the door ($\text{Openness} = 0$), it zeros out the whole product ($0 \times \text{anything} = 0$). God does not coerce.
+            </li>
+          </ul>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Word Name</th>
+                <th>Physical Role</th>
+                <th>Spiritual Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$\Lambda_G$</td>
+                <td>Grace Channel</td>
+                <td>Shannon Capacity</td>
+                <td>Total received divine grace</td>
+              </tr>
+              <tr>
+                <td>$A_G$</td>
+                <td>Openness</td>
+                <td>Availability factor</td>
+                <td>Free-will consent gate</td>
+              </tr>
+              <tr>
+                <td>$T_G$</td>
+                <td>Grace Signal</td>
+                <td>Transmitted power</td>
+                <td>Sovereign love and pull</td>
+              </tr>
+              <tr>
+                <td>$D_G$</td>
+                <td>Heart Resistance</td>
+                <td>Noise floor</td>
+                <td>Pride, sin, and distraction</td>
+              </tr>
+              <tr>
+                <td>$X_G$ ($X_1$)</td>
+                <td>Grace Sector Score</td>
+                <td>Clamped coordinate</td>
+                <td>Normalized input to Master Equation ($\in [0, 1]$)</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+      </div>
+    </details>
+  </article>
+
+</body>
+</html>

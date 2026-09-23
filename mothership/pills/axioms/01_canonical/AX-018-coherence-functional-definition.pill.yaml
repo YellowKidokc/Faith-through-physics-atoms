@@ -1,0 +1,83 @@
+face:
+  uuid: 68d2e6c1-af02-517f-9c36-3168b9dd6130
+  node_id: tp:axioms/01/AX-018
+  claim_id: tp:AXIOMS/D3.1
+  name: Coherence Functional Definition
+  term: Coherence Functional Definition
+  plain: Coherence C[χ] = S_max - S[χ] (organized information density).
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: C[χ] = S_max - S[χ]
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-017
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  - definition
+  - information
+  keywords:
+  - D3.1
+  - Q3
+  - Ontological
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show coherence cannot be defined as entropy deficit. Find
+    a system where C[χ]=0 but meaningful organization exists. Demonstrate S_max is
+    ill-defined for the universe.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 19
+  axiomRegistry:
+    axiomID: AX-018
+    oldID: D3.1
+    treeLevel: Q3
+    treeBranch: Q3-D (Coherence formalized as functional)
+    questionType: Type 2 (What IS X?)
+    domain: Ontological
+    tier: '2'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M03
+    moduleTitle: Coherence Engine
+    spineRole: supporting_definition
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: —
+    propagationTest: YES — Coherence functional propagates as THE metric through moral
+      (good=high C), consciousness (Φ∝C), eschatology (attractors by C).
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-018-coherence-functional-definition.jsonld
+  generated_at: '2026-09-23T01:17:12.909433+00:00'
+  sha256: 576f5a71c19069192e5eb58d18f276024ec0ac4de22aa0d9ed75967b1feda25d

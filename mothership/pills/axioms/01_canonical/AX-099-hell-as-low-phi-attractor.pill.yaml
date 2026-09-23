@@ -1,0 +1,86 @@
+face:
+  uuid: 1fab7f38-496c-5f0e-a35d-33e23b49a6db
+  node_id: tp:axioms/01/AX-099
+  claim_id: tp:AXIOMS/T12.2
+  name: Hell As Low-Phi Attractor
+  term: Hell As Low-Phi Attractor
+  plain: -1 states asymptote to minimal coherence (hell).
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: σ=-1 → lim(t→∞) Φ(t) = 0
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-097
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-096
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  - proof
+  keywords:
+  - T12.2
+  - Q11
+  - Eschatology
+  - Theorem
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show σ=-1 trajectory stabilizes at non-zero Φ. Demonstrate
+    decoherence has a floor (can't reach zero). Show annihilationism is correct (soul
+    ceases to exist rather than persisting in decoherence).
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 101
+  axiomRegistry:
+    axiomID: AX-099
+    oldID: T12.2
+    treeLevel: Q11
+    treeBranch: Q11-G (Hell theorem)
+    questionType: Type 1 (Does X hold?)
+    domain: Eschatology
+    tier: '2'
+    newType: Theorem
+    logicalForce: derivable theorem
+    formalizableInLean: 'yes'
+    leanKind: theorem target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M12
+    moduleTitle: Destiny / Attractor
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: M1, M2, M3
+    worldviewsEliminated: Universalism, Annihilationism
+    propagationTest: YES — Hell theorem propagates to permanence of rejection and
+      eschatological bimodality.
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-099-hell-as-low-phi-attractor.jsonld
+  generated_at: '2026-09-23T01:17:13.624961+00:00'
+  sha256: 8155910ce9c5af9f3a72f35539464fb461b46724020441c7d3b8d319e2c177b7

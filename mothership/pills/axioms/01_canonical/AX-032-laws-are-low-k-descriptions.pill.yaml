@@ -1,0 +1,84 @@
+face:
+  uuid: 442dd4dc-51dc-5e7f-b8c4-315a544dc808
+  node_id: tp:axioms/01/AX-032
+  claim_id: tp:AXIOMS/T4.1
+  name: Laws Are Low-K Descriptions
+  term: Laws Are Low-K Descriptions
+  plain: Physical laws are low-K descriptions generating high complexity.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: '∀(Law L): K(L) << K(outputs(L))'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-029
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-031
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - proof
+  keywords:
+  - T4.1
+  - Q3
+  - Ontological
+  - Theorem
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Find a fundamental law with high Kolmogorov complexity.
+    Show that physical laws cannot be described as compression algorithms.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 33
+  axiomRegistry:
+    axiomID: AX-032
+    oldID: T4.1
+    treeLevel: Q3
+    treeBranch: Q3-R (Laws as compression output)
+    questionType: Type 2 (What IS X?)
+    domain: Ontological
+    tier: '2'
+    newType: Theorem
+    logicalForce: derivable theorem
+    formalizableInLean: 'yes'
+    leanKind: theorem target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M04
+    moduleTitle: Compression / Minimal Description
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: —
+    propagationTest: YES — Low-K law theorem propagates through action principle (AX-033)
+      and universe-as-algorithm (AX-034).
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-032-laws-are-low-k-descriptions.jsonld
+  generated_at: '2026-09-23T01:17:13.020040+00:00'
+  sha256: a56d4dbf80c47b63d4280b7c279a46c4de09d6ccf894a4d94c74be8611099519

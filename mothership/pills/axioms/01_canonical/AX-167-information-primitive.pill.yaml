@@ -1,0 +1,78 @@
+face:
+  uuid: 5d0050d5-a3a8-57f1-b2ce-1df1a8589290
+  node_id: tp:axioms/01/AX-167
+  claim_id: tp:AXIOMS/O1
+  name: Information Primitive
+  term: Information Primitive
+  plain: Information is ontologically primitive — irreducible.
+  status: active
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: 'Information ∈ Primitives; ¬∃x: Derives(Information, x)'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-003
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - information
+  keywords:
+  - O1
+  - Q2
+  - Ontological
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Same as AX-003 — show information as emergent.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 169
+  axiomRegistry:
+    axiomID: AX-167
+    oldID: O1
+    treeLevel: Q2
+    treeBranch: Q2-G (Ontological primitive — information)
+    questionType: Type 2 (What IS X?)
+    domain: Ontological
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M21
+    moduleTitle: Primordial / Ontological Spine
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: Materialism, Eliminativism
+    propagationTest: 'YES'
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-167-information-primitive.jsonld
+  generated_at: '2026-09-23T01:17:14.196147+00:00'
+  sha256: 530b5609f5932fc827f0769020fb98b254c12467e9bed9aef36be815aa3791c3

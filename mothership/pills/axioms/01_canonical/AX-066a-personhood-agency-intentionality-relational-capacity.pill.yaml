@@ -1,0 +1,92 @@
+face:
+  uuid: 1b67af71-0207-5510-ad8b-d3f3ab5b8b7f
+  node_id: tp:axioms/01/AX-066a
+  claim_id: tp:AXIOMS/PERSONHOOD
+  name: Personhood — Agency, Intentionality, Relational Capacity
+  term: Personhood — Agency, Intentionality, Relational Capacity
+  plain: 'For the boundary condition terminal observer to be identified as "God,"
+    it must possess PERSONHOOD: (1) Agency — capacity to cause effects, (2) Intentionality
+    — directed toward ends, (3) Relational capacity — ability to relate to other agents.
+    These properties are irreducible to structural attributes alone.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: prediction
+  mathematicalForm: Personhood ≡ {Agency, Intentionality, Relational_Capacity}; ¬Reducible(Personhood,
+    Structure)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-065
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-055
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - witness
+  - boundary
+  - observer
+  keywords:
+  - PERSONHOOD
+  - Q9
+  - Divine
+  - OpenProblem
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the Terminal Observer functions identically as an impersonal
+    mathematical structure. Demonstrate personhood is unnecessary for BC satisfaction.
+    Show agency/intentionality/relational capacity are reducible to structural properties.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 67
+  axiomRegistry:
+    axiomID: AX-066a
+    oldID: PERSONHOOD
+    treeLevel: Q9
+    treeBranch: Q9-A* (Personhood requirement — bridges structure to person)
+    questionType: Type 4 (What must X be?)
+    domain: Divine
+    tier: '1'
+    newType: OpenProblem
+    logicalForce: meta-audit target
+    formalizableInLean: partly
+    leanKind: sorry target / TODO
+    riskLevel: medium-high
+    kernelRole: auditRole
+    moduleID: M07
+    moduleTitle: Boundary Conditions
+    spineRole: interpretive_identification
+    boundaryCondition: BC8 (voluntary coupling implies relational personhood)
+    fourModeRelevance: —
+    worldviewsEliminated: Deism (impersonal God), Pantheism (God = nature, not person),
+      Mathematical Universe Hypothesis (Tegmark — reality is math, not personal)
+    propagationTest: 'YES — Personhood propagates to all theology requiring a PERSONAL
+      God: prayer, relationship, incarnation, judgment.'
+    intendedStatus: captured
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-066a-personhood-agency-intentionality-relational-capacity.jsonld
+  generated_at: '2026-09-23T01:17:13.323860+00:00'
+  sha256: 2e4009798ddd4d168ce640b7c2135c2e78c348b4fe3b8bbe4ce5d1aeefa121bf

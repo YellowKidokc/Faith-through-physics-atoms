@@ -1,0 +1,30 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://faiththruphysics.com/vocab/context.jsonld"
+  ],
+  "@type": "ScholarlyArticle",
+  "@id": "https://faiththruphysics.com/papers/POF2828-2026-0001",
+  "name": "Moral Conservation via Time-Translation Symmetry: A Noether Derivation",
+  "version": "1.2.0",
+  "dateCreated": "2026-02-14",
+  "dateModified": "2026-07-22",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "David Lowe"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Claude (Anthropic)",
+      "tp:role": "ai-collaborator"
+    }
+  ],
+  "aiContributionDeclared": true,
+  "dataLineage": "instrument -> __DATA exports (SHA-256 chained) -> figures",
+  "schema:hasPart": [
+    "https://faiththruphysics.com/claims/A042/L9/C1",
+    "https://faiththruphysics.com/claims/A042/L9/C2",
+    "https://faiththruphysics.com/claims/A042/L9/C3"
+  ]
+}

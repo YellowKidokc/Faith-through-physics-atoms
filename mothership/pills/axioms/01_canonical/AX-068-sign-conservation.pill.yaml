@@ -1,0 +1,84 @@
+face:
+  uuid: ec708b7c-a167-5f78-b34d-3e06efdf15d5
+  node_id: tp:axioms/01/AX-068
+  claim_id: tp:AXIOMS/A8.2
+  name: Sign Conservation
+  term: Sign Conservation
+  plain: 'Self-generated operations cannot change sign: [σ̂, Û] = 0.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: '[σ̂, Û] = 0 for all self-generated unitary Û'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-067
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - moral-conservation
+  - conservation
+  keywords:
+  - A8.2
+  - Q10
+  - Relational
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: 'Show a self-generated operation that flips sign. Demonstrate
+    σ: -1 → +1 through internal process alone. This would be the mathematical equivalent
+    of works-based salvation.'
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 70
+  axiomRegistry:
+    axiomID: AX-068
+    oldID: A8.2
+    treeLevel: Q10
+    treeBranch: Q10-B (Sign invariance under self-transformation)
+    questionType: Type 1 (Does X hold?)
+    domain: Relational
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M08
+    moduleTitle: Sign Algebra
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: M1 (Agentic — sign conservation means bad choices are permanent
+      without external help)
+    worldviewsEliminated: Materialism, Emergentism, Naturalism, Existentialism (self-creation),
+      Buddhism (self-liberation)
+    propagationTest: YES — Sign conservation is the ENGINE of the grace argument.
+      Without it, grace is optional. With it, grace is mathematically necessary.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-068-sign-conservation.jsonld
+  generated_at: '2026-09-23T01:17:13.341032+00:00'
+  sha256: ff29f69478002d4559c3a6b18f2ad456f8b1656c7fb08ca0e27fadda0156f969

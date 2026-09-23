@@ -1,0 +1,90 @@
+face:
+  uuid: f0d77626-d3ed-5609-86bd-14a57ec26cac
+  node_id: tp:axioms/01/AX-016
+  claim_id: tp:AXIOMS/A3.1
+  name: Order Requirement
+  term: Order Requirement
+  plain: Information must be organized to be meaningful.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: Meaningful(I) → Ordered(I); ¬Ordered(I) → Noise(I)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-003
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-010
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-015
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - information
+  keywords:
+  - A3.1
+  - Q3
+  - Ontological
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: 'Show meaningful information that has zero organization.
+    Demonstrate a random string that carries meaning without pattern. Find a case
+    where disorder IS the message (note: this is different from ''noise carries information'').'
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 17
+  axiomRegistry:
+    axiomID: AX-016
+    oldID: A3.1
+    treeLevel: Q3
+    treeBranch: Q3-B (Order as prerequisite for meaning)
+    questionType: Type 1 (Does X hold?)
+    domain: Ontological
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M03
+    moduleTitle: Coherence Engine
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: Nihilism (denies meaning exists), Eliminativism (denies
+      meaning is real)
+    propagationTest: YES — Order requirement propagates to coherence measure (AX-017),
+      all Laws, and the moral framework (coherence = good, decoherence = evil).
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-016-order-requirement.jsonld
+  generated_at: '2026-09-23T01:17:12.886863+00:00'
+  sha256: 7cb5eb8ec5d292a49d9feb934a0abd2aa4d6270e25d3c9bdb2bb9d46ee7a3584

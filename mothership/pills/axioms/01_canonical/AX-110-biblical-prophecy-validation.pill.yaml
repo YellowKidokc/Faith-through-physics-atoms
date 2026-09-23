@@ -1,0 +1,80 @@
+face:
+  uuid: 13034cfc-cda8-503e-94a6-dc8da7b53e6e
+  node_id: tp:axioms/01/AX-110
+  claim_id: tp:AXIOMS/EV15.1
+  name: Biblical Prophecy Validation
+  term: Biblical Prophecy Validation
+  plain: Biblical 'stretched heavens' passages describe cosmic expansion ~2,700 years
+    before Hubble.
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical_anchor
+  mathematicalForm: Cross-domain validation evidence
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-105
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - glory
+  keywords:
+  - EV15.1
+  - Q12
+  - Material
+  - EvidenceNode
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show 'stretched heavens' language refers to tent-making,
+    not cosmic expansion. Demonstrate the passages have no cosmological content.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 112
+  axiomRegistry:
+    axiomID: AX-110
+    oldID: EV15.1
+    treeLevel: Q12
+    treeBranch: Q12-A (Cross-validation evidence)
+    questionType: Type 1 (Does X hold?)
+    domain: Material
+    tier: '3'
+    newType: EvidenceNode
+    logicalForce: evidence node
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M15
+    moduleTitle: Evidence Chain
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: Naturalism, Nihilism, Atheism
+    propagationTest: Evidence node — supports framework but doesn't prove it.
+    intendedStatus: classified
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-110-biblical-prophecy-validation.jsonld
+  generated_at: '2026-09-23T01:17:13.720999+00:00'
+  sha256: 60957e386a78855f755dec1bed8dc374f40e73e99b916c826595700f79bf2921

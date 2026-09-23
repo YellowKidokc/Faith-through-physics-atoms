@@ -1,0 +1,79 @@
+face:
+  uuid: deeeb0b3-27bb-53e8-bab6-cffb069bcd0c
+  node_id: tp:axioms/01/AX-153
+  claim_id: tp:AXIOMS/F2
+  name: Joy Measurement Domain
+  term: Joy Measurement Domain
+  plain: Joy = positive gradient of coherence or stable high coherence.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical_anchor
+  mathematicalForm: F_Joy = dC/dt > 0 or C = C_stable_high
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-151
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  keywords:
+  - F2
+  - Q10
+  - Relational
+  - ObservableDomain
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show joy without coherence increase. Demonstrate coherence
+    increase without subjective joy.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 155
+  axiomRegistry:
+    axiomID: AX-153
+    oldID: F2
+    treeLevel: Q10
+    treeBranch: Q10-AC (Fruit 2)
+    questionType: Type 2 (What IS X?)
+    domain: Relational
+    tier: '2'
+    newType: ObservableDomain
+    logicalForce: empirical hypothesis
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M20
+    moduleTitle: Universal Coherence / Fruits
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — Joy definition propagates to measurable predictions.
+    intendedStatus: classified
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-153-joy-measurement-domain.jsonld
+  generated_at: '2026-09-23T01:17:14.085120+00:00'
+  sha256: 4545e8b58d97a685b9a0cbed660307557b83103c4c1cc8f01a6eff9ad309d23e

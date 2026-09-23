@@ -1,0 +1,357 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/atlas_record_v1.schema.json",
+  "title": "AtlasRecord v1",
+  "description": "Shared record contract for Nabla routing, argument compilation, deterministic audit, Atlas local/cross-domain placement, and AXIOM-REACT rendering. Subsystems fill only the fields they own.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "source",
+    "nabla",
+    "periodic15",
+    "atom_stack",
+    "evidence_receipts",
+    "edges",
+    "bridges",
+    "anchors",
+    "reality_mirror",
+    "meta_argument",
+    "computed",
+    "audit",
+    "unresolved"
+  ],
+  "properties": {
+    "schema_version": { "const": "atlas-record/v1" },
+    "id": { "$ref": "#/$defs/id_block" },
+    "source": { "$ref": "#/$defs/source_block" },
+    "nabla": { "$ref": "#/$defs/nabla_block" },
+    "periodic15": { "$ref": "#/$defs/periodic15_block" },
+    "atom_stack": { "$ref": "#/$defs/atom_stack_block" },
+    "evidence_receipts": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+    "edges": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+    "bridges": { "type": "array", "items": { "$ref": "#/$defs/bridge" } },
+    "anchors": { "type": "array", "items": { "$ref": "#/$defs/anchor" } },
+    "reality_mirror": { "$ref": "#/$defs/reality_mirror_block" },
+    "meta_argument": { "$ref": "#/$defs/meta_argument_block" },
+    "computed": { "$ref": "#/$defs/computed_block" },
+    "audit": { "$ref": "#/$defs/audit_block" },
+    "unresolved": { "type": "array", "items": { "$ref": "#/$defs/unmapped" } }
+  },
+  "$defs": {
+    "id_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_id", "atom_id", "source_claim_id", "stable_uid"],
+      "properties": {
+        "record_id": { "type": "string", "minLength": 1 },
+        "atom_id": { "type": "string", "minLength": 1 },
+        "source_claim_id": { "type": "string" },
+        "stable_uid": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "source_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "title", "content_hash", "paths", "source_spans", "provenance"],
+      "properties": {
+        "kind": { "type": "string" },
+        "title": { "type": "string" },
+        "content_hash": { "type": "string" },
+        "paths": { "type": "array", "items": { "type": "string" } },
+        "source_spans": { "type": "array", "items": { "$ref": "#/$defs/source_span" } },
+        "provenance": { "type": "array", "items": { "$ref": "#/$defs/provenance_event" } }
+      }
+    },
+    "nabla_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["classification", "semantic_address", "routing_hints", "deterministic_status"],
+      "properties": {
+        "classification": { "type": "string" },
+        "semantic_address": { "type": "string" },
+        "routing_hints": { "type": "array", "items": { "type": "string" } },
+        "deterministic_status": { "enum": ["validated", "candidate", "not_run", "blocked"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "periodic15_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "marker_1_scope",
+        "marker_2_home_domain",
+        "marker_3_native_domains",
+        "marker_4_bridged_domains",
+        "marker_5_object_type",
+        "marker_6_claim_family",
+        "marker_7_function_kind",
+        "marker_8_source_kind",
+        "marker_9_standing",
+        "marker_10_native_grade",
+        "marker_11_modality",
+        "marker_12_evidence_grade",
+        "marker_13_dispute",
+        "marker_14_publication_state",
+        "marker_15_component_state"
+      ],
+      "properties": {
+        "marker_1_scope": { "type": "string" },
+        "marker_2_home_domain": { "type": "string" },
+        "marker_3_native_domains": { "type": "array", "items": { "type": "string" } },
+        "marker_4_bridged_domains": { "type": "array", "items": { "type": "string" } },
+        "marker_5_object_type": { "type": "string" },
+        "marker_6_claim_family": { "type": "string" },
+        "marker_7_function_kind": { "type": "string" },
+        "marker_8_source_kind": { "type": "string" },
+        "marker_9_standing": { "type": "string" },
+        "marker_10_native_grade": { "type": "string" },
+        "marker_11_modality": { "type": "string" },
+        "marker_12_evidence_grade": { "type": "string" },
+        "marker_13_dispute": { "type": "string" },
+        "marker_14_publication_state": { "type": "string" },
+        "marker_15_component_state": { "type": "string" }
+      }
+    },
+    "atom_stack_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["atom", "components", "claims", "upstream", "downstream", "dependencies", "arguments", "warrant", "tests", "dynamics"],
+      "properties": {
+        "atom": { "$ref": "#/$defs/atom_identity" },
+        "components": { "type": "array", "items": { "$ref": "#/$defs/component" } },
+        "claims": { "type": "array", "items": { "$ref": "#/$defs/claim" } },
+        "upstream": { "type": "array", "items": { "type": "string" } },
+        "downstream": { "type": "array", "items": { "type": "string" } },
+        "dependencies": { "type": "array", "items": { "type": "string" } },
+        "arguments": { "type": "array", "items": {} },
+        "warrant": { "$ref": "#/$defs/warrant_block" },
+        "tests": { "type": "array", "items": { "$ref": "#/$defs/test" } },
+        "dynamics": { "$ref": "#/$defs/dynamics_block" }
+      }
+    },
+    "atom_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["atom_id", "title", "object_type", "standing", "native_grade"],
+      "properties": {
+        "atom_id": { "type": "string" },
+        "title": { "type": "string" },
+        "object_type": { "type": "string" },
+        "standing": { "type": "string" },
+        "native_grade": { "type": "string" }
+      }
+    },
+    "warrant_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_receipt_ids", "proof_test_ids", "counterevidence_ids", "kill_condition_ids"],
+      "properties": {
+        "evidence_receipt_ids": { "type": "array", "items": { "type": "string" } },
+        "proof_test_ids": { "type": "array", "items": { "type": "string" } },
+        "counterevidence_ids": { "type": "array", "items": { "type": "string" } },
+        "kill_condition_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "reality_mirror_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["class", "status", "rule", "anchor_ids"],
+      "properties": {
+        "class": { "enum": ["N", "F", "H", "T", "None"] },
+        "status": { "enum": ["Endogenous", "Candidate", "Anchored", "Contradicted", "Unresolved"] },
+        "rule": { "type": "string" },
+        "anchor_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "meta_argument_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "engine", "input_profile", "variables", "refusal_states", "veto", "confidence", "dependencies"],
+      "properties": {
+        "status": { "enum": ["scored", "refused", "not_run", "blocked"] },
+        "engine": { "type": "string" },
+        "input_profile": { "type": "string" },
+        "variables": {},
+        "refusal_states": { "type": "array", "items": { "type": "string" } },
+        "veto": {},
+        "confidence": {},
+        "dependencies": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "text", "mode", "mode_native", "standing", "native_grade", "source_span_ids"],
+      "properties": {
+        "claim_id": { "type": "string" },
+        "text": { "type": "string" },
+        "formal_restatement": { "type": "string" },
+        "mode": { "type": "string" },
+        "mode_native": { "type": "string" },
+        "standing": { "type": "string" },
+        "native_grade": { "type": "string" },
+        "source_span_ids": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["component_id", "type", "label", "content", "meta_criteria_ids", "standing"],
+      "properties": {
+        "component_id": { "type": "string" },
+        "type": { "type": "string" },
+        "label": { "type": "string" },
+        "content": {},
+        "meta_criteria_ids": { "type": "array", "items": { "type": "string" } },
+        "standing": { "type": "string" },
+        "source_span_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_id", "claim_id", "component_id", "relation", "strength", "coverage", "statement", "source"],
+      "properties": {
+        "evidence_id": { "type": "string" },
+        "claim_id": { "type": "string" },
+        "component_id": { "type": "string" },
+        "relation": { "type": "string" },
+        "strength": { "type": "string" },
+        "coverage": { "type": "number", "minimum": 0, "maximum": 1 },
+        "statement": { "type": "string" },
+        "source": { "type": "string" },
+        "does_not_show": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "test": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["test_id", "claim_id", "type", "condition", "status"],
+      "properties": {
+        "test_id": { "type": "string" },
+        "claim_id": { "type": "string" },
+        "type": { "type": "string" },
+        "condition": { "type": "string" },
+        "status": { "type": "string" },
+        "blast_radius": { "type": "string" }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["edge_id", "from", "relation", "to", "status"],
+      "properties": {
+        "edge_id": { "type": "string" },
+        "from": { "type": "string" },
+        "relation": { "type": "string" },
+        "to": { "type": "string" },
+        "status": { "type": "string" },
+        "source": { "type": "string" }
+      }
+    },
+    "dynamics_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ascent", "translation", "descent", "meeting_state"],
+      "properties": {
+        "ascent": {},
+        "translation": {},
+        "descent": {},
+        "meeting_state": { "type": "string" }
+      }
+    },
+    "bridge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bridge_id", "target", "mapping_type", "standing", "forbidden"],
+      "properties": {
+        "bridge_id": { "type": "string" },
+        "target": { "type": "string" },
+        "mapping_type": { "type": "string" },
+        "standing": { "type": "string" },
+        "forbidden": { "type": "string" }
+      }
+    },
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["anchor_id", "class", "status", "target_id", "limitations"],
+      "properties": {
+        "anchor_id": { "type": "string" },
+        "class": { "type": "string" },
+        "status": { "type": "string" },
+        "target_id": { "type": "string" },
+        "limitations": { "type": "string" }
+      }
+    },
+    "computed_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["graph_signature", "grade_projection", "load_bearing", "blast_radius"],
+      "properties": {
+        "graph_signature": {},
+        "grade_projection": {},
+        "load_bearing": {},
+        "blast_radius": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "audit_block": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_or_admitted", "subsystem_receipts", "warnings"],
+      "properties": {
+        "candidate_or_admitted": { "enum": ["Candidate", "Admitted", "Blocked", "Unknown"] },
+        "subsystem_receipts": { "type": "array", "items": { "$ref": "#/$defs/subsystem_receipt" } },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "source_span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["span_id", "path", "selector"],
+      "properties": {
+        "span_id": { "type": "string" },
+        "path": { "type": "string" },
+        "selector": { "type": "string" },
+        "quote": { "type": "string" }
+      }
+    },
+    "provenance_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["timestamp", "event_type", "result", "limits"],
+      "properties": {
+        "timestamp": { "type": "string" },
+        "event_type": { "type": "string" },
+        "result": { "type": "string" },
+        "limits": { "type": "string" },
+        "reviewer": { "type": "string" }
+      }
+    },
+    "subsystem_receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["system", "status", "owned_fields", "notes"],
+      "properties": {
+        "system": { "type": "string" },
+        "status": { "enum": ["filled", "partially_filled", "not_run", "blocked", "external_missing"] },
+        "owned_fields": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "unmapped": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field_or_requirement", "reason", "next_step"],
+      "properties": {
+        "field_or_requirement": { "type": "string" },
+        "reason": { "type": "string" },
+        "next_step": { "type": "string" }
+      }
+    }
+  }
+}

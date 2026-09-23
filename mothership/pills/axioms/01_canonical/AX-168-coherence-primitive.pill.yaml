@@ -1,0 +1,82 @@
+face:
+  uuid: 8151b115-9f0a-54e3-b18e-0040dca6f7ae
+  node_id: tp:axioms/01/AX-168
+  claim_id: tp:AXIOMS/O2
+  name: Coherence Primitive
+  term: Coherence Primitive
+  plain: Coherence is ontologically primitive — irreducible organizing principle.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: Coherence ∈ Primitives
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-167
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-017
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  keywords:
+  - O2
+  - Q3
+  - Ontological
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show coherence derived from more fundamental principle.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 170
+  axiomRegistry:
+    axiomID: AX-168
+    oldID: O2
+    treeLevel: Q3
+    treeBranch: Q3-X (Ontological primitive — coherence)
+    questionType: Type 2 (What IS X?)
+    domain: Ontological
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M21
+    moduleTitle: Primordial / Ontological Spine
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: 'YES'
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-168-coherence-primitive.jsonld
+  generated_at: '2026-09-23T01:17:14.203151+00:00'
+  sha256: 3d6cac5069beddc80375ca07cd416d74c910202e06fd854ebb2d71e4f9f6da3b

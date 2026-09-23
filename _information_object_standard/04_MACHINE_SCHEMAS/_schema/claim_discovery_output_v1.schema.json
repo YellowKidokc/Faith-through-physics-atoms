@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/claim-discovery-output/v1",
+  "title": "Non-discriminatory claim discovery output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "stage", "status", "raw_expression", "referent", "identities", "distinctions", "relations", "operations", "dependencies", "constraints", "invariants", "collapse_conditions", "consequences", "countermodels", "open_questions", "prohibited_outputs"],
+  "properties": {
+    "schema_version": {"const": "claim-discovery/1.0.0"},
+    "stage": {"const": "NON_DISCRIMINATORY_DISCOVERY"},
+    "status": {"enum": ["DISCOVERY_COMPLETE", "DISCOVERY_INCOMPLETE", "BLOCKED"]},
+    "raw_expression": {"type": "string", "minLength": 1},
+    "referent": {"type": "string"},
+    "identities": {"type": "array", "items": {"type": "string"}},
+    "distinctions": {"type": "array", "items": {"type": "string"}},
+    "relations": {"type": "array", "items": {"type": "string"}},
+    "operations": {"type": "array", "items": {"type": "string"}},
+    "dependencies": {"type": "array", "items": {"type": "string"}},
+    "constraints": {"type": "array", "items": {"type": "string"}},
+    "invariants": {"type": "array", "items": {"type": "string"}},
+    "collapse_conditions": {"type": "array", "items": {"type": "string"}},
+    "consequences": {"type": "array", "items": {"type": "string"}},
+    "countermodels": {"type": "array", "items": {"type": "string"}},
+    "open_questions": {"type": "array", "items": {"type": "string"}},
+    "prohibited_outputs": {"type": "array", "items": {"type": "string"}}
+  }
+}

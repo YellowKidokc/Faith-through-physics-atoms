@@ -1,0 +1,22 @@
+face:
+  uuid: 432e8cbe-aa7d-5113-825b-3ae51dd39da4
+  node_id: tp:evidence:def:terminus-sui/aristotle
+  name: Aristotle source for final ends
+  term: Aristotle source for final ends
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  sourceType: primary text
+  sourceRef: https://classics.mit.edu/Aristotle/nicomachaen.1.i.html
+  exactShortQuotation: we call final without qualification that which is always desirable
+    in itself
+  citationStatus: verified
+  edges:
+  - type: feedsInto
+    target: tp:def:terminus-sui
+    status: accepted
+_metadata:
+  source_path: _definitions/evidence/terminus-sui-aristotle.jsonld
+  generated_at: '2026-09-23T01:17:12.613483+00:00'
+  sha256: 9f3d62613a7e3e8f18c75cd744cce890becf5e28e394fc01e5b0b0aade917029

@@ -1,0 +1,77 @@
+face:
+  uuid: 047d5317-a70b-5398-b14b-f30b0f4d4505
+  node_id: tp:axioms/01/AX-129
+  claim_id: tp:AXIOMS/PROT18.5
+  name: Phi-Virtue Correlation Study
+  term: Phi-Virtue Correlation Study
+  plain: 'Protocol: Correlate measured Phi with virtue indicators.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical
+  mathematicalForm: 'Protocol: Φ ↔ virtue correlation measurement'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-091
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  keywords:
+  - PROT18.5
+  - Q12
+  - Material
+  - Protocol
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Run study and show no Φ-virtue correlation. Show virtuous
+    people don't have higher neural integration.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 131
+  axiomRegistry:
+    axiomID: AX-129
+    oldID: PROT18.5
+    treeLevel: Q12
+    treeBranch: Q12-F (Experimental protocol)
+    questionType: Type 1 (Does X hold?)
+    domain: Material
+    tier: '3'
+    newType: Protocol
+    logicalForce: experimental protocol
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M18
+    moduleTitle: Protocol / Test Suite
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: Experimental protocol — pending execution.
+    intendedStatus: captured
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-129-phi-virtue-correlation-study.jsonld
+  generated_at: '2026-09-23T01:17:13.886454+00:00'
+  sha256: 2ab4952172fb38360321eb7b85e4f10cca7852141caf8cfa8847dbe15d6209fb

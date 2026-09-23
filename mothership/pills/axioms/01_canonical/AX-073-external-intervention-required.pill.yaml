@@ -1,0 +1,89 @@
+face:
+  uuid: 5a5879b1-57b1-5cbc-b592-c8336eeb5f9e
+  node_id: tp:axioms/01/AX-073
+  claim_id: tp:AXIOMS/A9.1
+  name: External Intervention Required
+  term: External Intervention Required
+  plain: Sign-flip requires operator external to the system.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: '∃Ĝ(external): Ĝ|-1⟩ = |+1⟩; Ĝ ∉ System'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-071
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-072
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-059
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - variable
+  keywords:
+  - A9.1
+  - Q10
+  - Divine
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show internal sign-flip. Demonstrate self-generated non-unitary
+    operation. Prove a system can transcend its own limitations without external input.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 75
+  axiomRegistry:
+    axiomID: AX-073
+    oldID: A9.1
+    treeLevel: Q10
+    treeBranch: Q10-G (Grace as external operator — necessity)
+    questionType: Type 3 (What grounds X?)
+    domain: Divine
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M09
+    moduleTitle: Grace Operator
+    spineRole: core_spine
+    boundaryCondition: BC2
+    fourModeRelevance: M1 (Agentic — the system chose wrong but can't unchoose), M4
+      (Grace Attenuation — if external source is rejected)
+    worldviewsEliminated: Buddhism, Existentialism, Pelagianism, Hard Determinism
+    propagationTest: YES — External intervention necessity propagates to grace operator
+      definition, grace properties, and all of soteriology.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-073-external-intervention-required.jsonld
+  generated_at: '2026-09-23T01:17:13.387119+00:00'
+  sha256: d3c169e22ff1ce193c55a8c58ab6399a5936226c611db585bdf910b89593bee7

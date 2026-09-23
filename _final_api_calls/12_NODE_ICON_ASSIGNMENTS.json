@@ -1,0 +1,27 @@
+{
+  "schema": "ftp-semantic-node-icons/v0.1",
+  "status": "proposed",
+  "rule": "Semantic node icon identifies what the item is. Existing stage/status icons identify where it is and whether it is empty, working, done, or failed. Render semantic icon with a small stage/status badge.",
+  "assignments": {
+    "claim":       {"prefix": "CLM", "glyph": "◆", "concept": "beacon-diamond", "file": "node-types/claim.ico"},
+    "mathematics": {"prefix": "MTH", "glyph": "∫", "concept": "integral-equation", "file": "node-types/mathematics.ico"},
+    "definition":  {"prefix": "DEF", "glyph": "≝", "concept": "definition-lock", "file": "node-types/definition.ico"},
+    "story":       {"prefix": "STY", "glyph": "✍", "concept": "open-story-scroll", "file": "node-types/story.ico"},
+    "evidence":    {"prefix": "EVD", "glyph": "E", "concept": "evidence-receipt", "file": "node-types/evidence.ico"},
+    "bridge":      {"prefix": "BRG", "glyph": "≅", "concept": "graded-bridge", "file": "node-types/bridge.ico"},
+    "kill":        {"prefix": "KIL", "glyph": "⛔", "concept": "countermodel-break", "file": "node-types/kill.ico"},
+    "proof":       {"prefix": "PRF", "glyph": "⊢", "concept": "proof-check", "file": "node-types/proof.ico"},
+    "paper":       {"prefix": "PAP", "glyph": "▤", "concept": "paper-stack", "file": "node-types/paper.ico"},
+    "translation": {"prefix": "TRN", "glyph": "☖", "concept": "meaning-descent", "file": "node-types/translation.ico"},
+    "application": {"prefix": "APP", "glyph": "↦", "concept": "bounded-application", "file": "node-types/application.ico"},
+    "objection":   {"prefix": "OBJ", "glyph": "⚔", "concept": "steelman-objection", "file": "node-types/objection.ico"},
+    "prediction":  {"prefix": "PRD", "glyph": "⧖", "concept": "prediction-target", "file": "node-types/prediction.ico"},
+    "result":      {"prefix": "RES", "glyph": "⟡", "concept": "result-receipt", "file": "node-types/result.ico"},
+    "source":      {"prefix": "SRC", "glyph": "⊡", "concept": "source-anchor", "file": "node-types/source.ico"}
+  },
+  "notes": [
+    "File paths reserve the future ICO assets; this manifest does not claim those files already exist.",
+    "Do not encode epistemic truth status solely by color or icon.",
+    "Use text labels and accessible alt text in every UI."
+  ]
+}

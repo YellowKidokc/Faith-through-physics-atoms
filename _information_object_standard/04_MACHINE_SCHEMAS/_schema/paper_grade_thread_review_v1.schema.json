@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/paper-grade-thread-review/v1",
+  "title": "Paper writing grade and continuous-thread review",
+  "type": "object",
+  "required": ["schema_version", "paper_id", "writing_grade", "epistemic_readiness", "central_thread", "opening_debt", "ending_payment", "paragraph_trace", "strongest_objection", "rewrite_priorities", "verdict", "canonical_promotion_performed"],
+  "properties": {
+    "schema_version": {"const": "paper-grade-thread-review/1.0.0"},
+    "paper_id": {"type": "string"},
+    "writing_grade": {"type": "object"},
+    "epistemic_readiness": {"type": "object"},
+    "central_thread": {"type": "string"},
+    "opening_debt": {"type": "string"},
+    "ending_payment": {"type": "string"},
+    "paragraph_trace": {"type": "array"},
+    "strongest_objection": {"type": "string"},
+    "rewrite_priorities": {"type": "array"},
+    "verdict": {"type": "string"},
+    "canonical_promotion_performed": {"const": false}
+  }
+}

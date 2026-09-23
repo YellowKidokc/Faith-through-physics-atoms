@@ -1,0 +1,79 @@
+face:
+  uuid: 6f7ca8f5-8d65-51d5-a0cd-322ac59a2d3d
+  node_id: tp:axioms/01/AX-155
+  claim_id: tp:AXIOMS/F4
+  name: Patience
+  term: Patience
+  plain: Patience = temporal horizon of coherent planning; delayed gratification capacity.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical_anchor
+  mathematicalForm: F_Patience = temporal_horizon(coherent_planning)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-151
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  keywords:
+  - F4
+  - Q10
+  - Relational
+  - ObservableDomain
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show patience without coherence. Demonstrate impulsive behavior
+    with high coherence.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 157
+  axiomRegistry:
+    axiomID: AX-155
+    oldID: F4
+    treeLevel: Q10
+    treeBranch: Q10-AE (Fruit 4)
+    questionType: Type 2 (What IS X?)
+    domain: Relational
+    tier: '2'
+    newType: ObservableDomain
+    logicalForce: empirical hypothesis
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M20
+    moduleTitle: Universal Coherence / Fruits
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: 'YES'
+    intendedStatus: classified
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-155-patience.jsonld
+  generated_at: '2026-09-23T01:17:14.100147+00:00'
+  sha256: fd3542c6efa18f1ee5f9a51722bbe55f96b8b84d45aadd7bce2dde57cd23d076

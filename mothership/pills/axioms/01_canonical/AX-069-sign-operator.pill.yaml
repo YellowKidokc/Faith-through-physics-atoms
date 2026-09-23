@@ -1,0 +1,85 @@
+face:
+  uuid: 5309d714-df2c-5e40-bc46-d2b34cd3001d
+  node_id: tp:axioms/01/AX-069
+  claim_id: tp:AXIOMS/D8.1
+  name: Sign Operator
+  term: Sign Operator
+  plain: 'Sign operator σ̂: Hermitian, eigenvalues ±1, σ̂² = I.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: σ̂ = diag(1,-1); σ̂² = I; σ̂† = σ̂
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-067
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-068
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - definition
+  - variable
+  keywords:
+  - D8.1
+  - Q10
+  - Relational
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Standard mathematics — defeat only if the mapping from physical
+    to moral operator fails, not the math itself.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 71
+  axiomRegistry:
+    axiomID: AX-069
+    oldID: D8.1
+    treeLevel: Q10
+    treeBranch: Q10-C (Sign operator formalized)
+    questionType: Type 2 (What IS X?)
+    domain: Relational
+    tier: '2'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M08
+    moduleTitle: Sign Algebra
+    spineRole: supporting_definition
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — Operator formalism propagates through all sign algebra
+      theorems.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-069-sign-operator.jsonld
+  generated_at: '2026-09-23T01:17:13.351161+00:00'
+  sha256: 4d92a5f0c8f9271e4f00759132d44182e052b9dbaa09ab9b7ca80922d4612b3a

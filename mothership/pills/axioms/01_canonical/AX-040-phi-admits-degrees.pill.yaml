@@ -1,0 +1,83 @@
+face:
+  uuid: 4f371a8b-5837-516f-b2b5-69a782985313
+  node_id: tp:axioms/01/AX-040
+  claim_id: tp:AXIOMS/P5.1
+  name: Phi Admits Degrees
+  term: Phi Admits Degrees
+  plain: 'Φ admits degrees: electron≈0, bacterium≈0.1, mouse≈1, human≈10, God→∞.'
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: Φ ∈ [0, ∞); Φ_human ≈ 10; Φ_terminal = ∞
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-038
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-039
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  keywords:
+  - P5.1
+  - Q6
+  - Ontological
+  - Property
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show Φ is binary (conscious or not) rather than continuous.
+    Demonstrate the numerical assignments are arbitrary. Show consciousness doesn't
+    admit degrees.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 41
+  axiomRegistry:
+    axiomID: AX-040
+    oldID: P5.1
+    treeLevel: Q6
+    treeBranch: Q6-F (Consciousness spectrum)
+    questionType: Type 4 (What must X be?)
+    domain: Ontological
+    tier: '2'
+    newType: Property
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: proposition / lemma target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M05
+    moduleTitle: Observer / Actualization
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: M2 (Entropic — finite Φ under entropy is the fragility condition)
+    worldviewsEliminated: Materialism, Eliminativism
+    propagationTest: YES — Φ spectrum propagates to soul field coupling (∝Φ), collapse
+      rate (∝Φ), and Terminal Observer (Φ=∞).
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-040-phi-admits-degrees.jsonld
+  generated_at: '2026-09-23T01:17:13.083133+00:00'
+  sha256: bded6f0e814666dc0c76df43c443cb3fa8e5d89b4ae911081fee679dc6fbc78b

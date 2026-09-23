@@ -1,0 +1,86 @@
+face:
+  uuid: 2c40378a-7513-5561-a541-60223c7dab86
+  node_id: tp:axioms/01/AX-151
+  claim_id: tp:AXIOMS/U4
+  name: Fruits Universal
+  term: Fruits Universal
+  plain: Fruits of the Spirit are emergent coherence markers — measurable signatures
+    of σ=+1.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: 'Fruits = {F_i}: measurable coherence markers for σ=+1'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-089
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-150
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  keywords:
+  - U4
+  - Q10
+  - Relational
+  - UniversalPrinciple
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show fruits don't correlate with coherence. Demonstrate
+    virtuous behavior without coherence increase. Show the nine fruits are culturally
+    arbitrary.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 153
+  axiomRegistry:
+    axiomID: AX-151
+    oldID: U4
+    treeLevel: Q10
+    treeBranch: Q10-AA (Universal — fruits)
+    questionType: Type 2 (What IS X?)
+    domain: Relational
+    tier: '2'
+    newType: UniversalPrinciple
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: axiom schema or theorem target
+    riskLevel: medium
+    kernelRole: constraintRole
+    moduleID: M20
+    moduleTitle: Universal Coherence / Fruits
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: M1
+    worldviewsEliminated: Nihilism, Eliminativism
+    propagationTest: YES — Fruits universal propagates to all nine fruit definitions
+      and the Phi-Virtue study.
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-151-fruits-universal.jsonld
+  generated_at: '2026-09-23T01:17:14.069110+00:00'
+  sha256: 44e17d28a69b83c0fd2dd4ad3de66f1f705493405741bdaa6972d463a92c936e

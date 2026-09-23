@@ -1,0 +1,84 @@
+face:
+  uuid: 072def01-bca6-5162-b801-0c8efc27d12a
+  node_id: tp:axioms/01/AX-141
+  claim_id: tp:AXIOMS/D19.6
+  name: 'Law VI: Coherence Non-Increase'
+  term: 'Law VI: Coherence Non-Increase'
+  plain: 'Law VI: Closed systems cannot increase own coherence.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: dC/dt ≤ 0 (closed system)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-025
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-135
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - coherence
+  - definition
+  keywords:
+  - D19.6
+  - Q3
+  - Laws
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show closed system coherence increase. Identical to defeating
+    AX-025.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 143
+  axiomRegistry:
+    axiomID: AX-141
+    oldID: D19.6
+    treeLevel: Q3
+    treeBranch: Q3-T (Sixth law — 2nd Law analog)
+    questionType: Type 1 (Does X hold?)
+    domain: Laws
+    tier: '2'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M19
+    moduleTitle: Ten-Law Master Equation
+    spineRole: supporting_definition
+    boundaryCondition: —
+    fourModeRelevance: M2
+    worldviewsEliminated: —
+    propagationTest: YES — Law VI IS AX-025 formalized as a law.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-141-law-vi-coherence-non-increase.jsonld
+  generated_at: '2026-09-23T01:17:13.988937+00:00'
+  sha256: b621f012cd5185cab1731eeff738c4dc72fde6dc7319904f9947478511e4b880

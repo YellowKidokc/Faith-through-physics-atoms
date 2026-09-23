@@ -1,0 +1,60 @@
+face:
+  uuid: 184d4cb6-7326-5108-971d-8c9d56552b42
+  node_id: tp:def:terminus-sui
+  claim_id: tp:def:terminus-sui
+  term: Terminus Sui
+  plain: An end pursued for its own sake rather than merely as a means to something
+    else.
+  status: canonical
+  target_type: definition
+  source:
+    doc_uuid: null
+    doc_sha256: null
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  permanentDefinitionID: tp:def:terminus-sui
+  aliases:
+  - end in itself
+  - its own end
+  associatedSymbols: []
+  technicalDefinition: A final end whose reason for choice is intrinsic to that end,
+    not exhausted by an instrumental relation to a further end.
+  scopeAndExclusions:
+    scope:
+    - teleology
+    - philosophy of action
+    exclusions:
+    - A merely intermediate goal
+    - A claim that an entity caused itself
+  source:
+    sourceName: Aristotle, Nicomachean Ethics, Book I
+    exactShortQuotation: we call final without qualification that which is always
+      desirable in itself
+    authoritativeSourceURL: https://classics.mit.edu/Aristotle/nicomachaen.1.i.html
+    sourceStatus: primary
+    sourceStatement: Aristotle distinguishes ends desirable in themselves from ends
+      chosen for the sake of something else.
+    frameworkInference: David Lowe/Theophysics uses Terminus Sui as the registry label
+      for this final-end distinction.
+    evidenceRef: tp:evidence:def:terminus-sui/aristotle
+  frameworkClassification:
+    classification: canonical framework definition
+    classificationAuthor: David Lowe/Theophysics
+    classificationMethodOrTestReceipt: 'Human acceptance carried forward from PR #8;
+      generalized registry migration reviewed without changing meaning.'
+  version: 1.0.0
+  priorVersions: []
+  citationPolicy:
+    required: true
+    mode: quote_or_link
+    inheritToDependents: true
+  edges:
+  - type: dependsOn
+    target: tp:evidence:def:terminus-sui/aristotle
+    status: accepted
+_metadata:
+  source_path: _information_object_standard/06_EXAMPLES/_definitions/atoms/terminus-sui.jsonld
+  generated_at: '2026-09-23T01:17:12.673228+00:00'
+  sha256: 5993908736b2b318c5e7fe4575c5bf13261920b543fc6fc91c6c1e1614bc9386

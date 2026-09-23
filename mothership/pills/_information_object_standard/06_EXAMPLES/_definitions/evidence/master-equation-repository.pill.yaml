@@ -1,0 +1,22 @@
+face:
+  uuid: fe86b89a-a202-5a5c-88c4-e9270ceb99da
+  node_id: tp:evidence:def:master-equation-grace/repository
+  name: Repository source for Master Equation terminology
+  term: Repository source for Master Equation terminology
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  sourceType: framework repository
+  sourceRef: https://github.com/YellowKidokc/Faith-through-physics-atoms/blob/main/README.md
+  exactShortQuotation: The Master Equation measures χ — the ratio of coherence to
+    decoherence.
+  citationStatus: verified
+  edges:
+  - type: feedsInto
+    target: tp:def:master-equation/grace
+    status: proposed
+_metadata:
+  source_path: _information_object_standard/06_EXAMPLES/_definitions/evidence/master-equation-repository.jsonld
+  generated_at: '2026-09-23T01:17:12.683236+00:00'
+  sha256: f5ad9797a3677f30391b0c51a63afa9cdaddfde43e750f43bc8588f0c3a5fb8a

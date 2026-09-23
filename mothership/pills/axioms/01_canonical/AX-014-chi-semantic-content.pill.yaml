@@ -1,0 +1,85 @@
+face:
+  uuid: 1eaba69b-d5b4-5408-aee1-dcdb050e1cd5
+  node_id: tp:axioms/01/AX-014
+  claim_id: tp:AXIOMS/P2.2
+  name: Chi Semantic Content
+  term: Chi Semantic Content
+  plain: χ carries semantic content (meaning), not merely syntax.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: χ ⊃ {syntax, semantics}; Semantic(χ) ≠ ∅
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-010
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-003
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - logos
+  keywords:
+  - P2.2
+  - Q5
+  - Ontological
+  - Property
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show meaning can be fully reduced to syntax. Show a semantic-free
+    universe that functions identically. Demonstrate Chinese Room argument defeats
+    semantic grounding entirely.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 15
+  axiomRegistry:
+    axiomID: AX-014
+    oldID: P2.2
+    treeLevel: Q5
+    treeBranch: Q5-E (Properties of the ground — semantic claim)
+    questionType: Type 4 (What must X be?)
+    domain: Ontological
+    tier: '1'
+    newType: Property
+    logicalForce: model constraint
+    formalizableInLean: 'yes'
+    leanKind: proposition / lemma target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M02
+    moduleTitle: Chi Field Substrate
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: Materialism, Eliminativism, Functionalism (partial)
+    propagationTest: YES — Semantic content in χ propagates to moral realism (Q10),
+      consciousness (Q6), and meaning of laws (Q8).
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-014-chi-semantic-content.jsonld
+  generated_at: '2026-09-23T01:17:12.868832+00:00'
+  sha256: e43aafa3f809215acc956539a7e512f187190b1447204491cae4893f960b430d

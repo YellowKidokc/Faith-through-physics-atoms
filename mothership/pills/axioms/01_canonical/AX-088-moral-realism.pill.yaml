@@ -1,0 +1,90 @@
+face:
+  uuid: 1e3fd9b9-27ac-52c7-a8a9-00b8123d11f7
+  node_id: tp:axioms/01/AX-088
+  claim_id: tp:AXIOMS/A11.1
+  name: Moral Realism
+  term: Moral Realism
+  plain: Moral facts exist objectively — not mere preference or convention.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: ∃(moral facts) independent of opinion
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-014
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-066
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-067
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - moral-conservation
+  keywords:
+  - A11.1
+  - Q10
+  - Relational
+  - FrameworkCommitment
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show all moral claims are reducible to preference (error
+    theory). Demonstrate moral anti-realism is coherent and complete. Show coherence-morality
+    identity (AX-089) fails.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 90
+  axiomRegistry:
+    axiomID: AX-088
+    oldID: A11.1
+    treeLevel: Q10
+    treeBranch: Q10-P (Moral realism — moral facts are real)
+    questionType: Type 1 (Does X hold?)
+    domain: Relational
+    tier: '1'
+    newType: FrameworkCommitment
+    logicalForce: framework assumption
+    formalizableInLean: partly
+    leanKind: parameter / assumption, not theorem
+    riskLevel: high
+    kernelRole: guardedPremise
+    moduleID: M11
+    moduleTitle: Moral Coherence
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: M1 (Agentic — moral facts constrain agency)
+    worldviewsEliminated: Nihilism (no moral facts), Eliminativism, Hard Determinism
+      (no moral responsibility)
+    propagationTest: YES — Moral realism propagates to coherence-morality identity,
+      virtue-Φ correlation, and the entire moral framework.
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-088-moral-realism.jsonld
+  generated_at: '2026-09-23T01:17:13.529947+00:00'
+  sha256: 2a199ad95db0e2dd32543f450d6223c3709ff0fe543a33d8343baa2777f019a7

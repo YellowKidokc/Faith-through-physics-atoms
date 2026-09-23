@@ -1,0 +1,22 @@
+face:
+  uuid: 8c750e78-5317-5182-8899-c0e2b4f9153c
+  node_id: tp:evidence:def:goedel/sep
+  name: SEP source for Gödel incompleteness
+  term: SEP source for Gödel incompleteness
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  sourceType: authoritative secondary
+  sourceRef: https://plato.stanford.edu/entries/goedel-incompleteness/
+  exactShortQuotation: any consistent formal system within which a certain amount
+    of arithmetic can be carried out is incomplete
+  citationStatus: verified
+  edges:
+  - type: feedsInto
+    target: tp:def:goedel-incompleteness
+    status: proposed
+_metadata:
+  source_path: _information_object_standard/06_EXAMPLES/_definitions/evidence/goedel-sep.jsonld
+  generated_at: '2026-09-23T01:17:12.679228+00:00'
+  sha256: 41d30bf146be109c9fe673b3ebad70a22b5f5777f75a295da9d6c57a1b22e82d

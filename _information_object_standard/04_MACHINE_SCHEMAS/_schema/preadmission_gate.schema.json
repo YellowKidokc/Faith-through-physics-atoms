@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/preadmission_gate.schema.json",
+  "title": "Load Bearing Pre Admission Gate",
+  "type": "object",
+  "required": ["atom_id", "computed_load_bearing", "origin", "admission_status"],
+  "additionalProperties": true,
+  "properties": {
+    "atom_id": {"type": "string"},
+    "computed_load_bearing": {"type": "boolean"},
+    "origin": {"type": "string", "enum": ["human_authored", "formal_receipt", "ai_inference_unverified", "runtime_receipt", "imported_source"]},
+    "admission_status": {"type": "string", "enum": ["blocked", "candidate_graph", "admitted"]},
+    "required_receipt": {"type": "string"},
+    "human_audit": {"type": "object"}
+  }
+}

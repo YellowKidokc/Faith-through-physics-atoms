@@ -1,0 +1,48 @@
+face:
+  uuid: 592b3e49-7242-5e84-92ab-1a8416056e79
+  node_id: tp:demo-v12/01/001
+  claim_id: tp:DEMO/L0/C1
+  name: Demo claim - structure illustration only
+  term: Demo claim - structure illustration only
+  plain: This is a demo file showing how the folders work. It does not claim anything
+    is true.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  aiContributionDeclared: true
+  dateCreated: '2026-07-23'
+  dateModified: '2026-07-23'
+  version: 1.0.0
+  claimClass: definition
+  stage: 02_claim_atoms
+  audienceLevel: everyday
+  evidenceType: formal_derivation
+  glyphs:
+  - ❖
+  - ◆
+  - ⟐
+  - ⟐
+  - ≔
+  tags:
+  - definition
+  keywords:
+  - demo
+  - structure illustration
+  mathFormNormal: n/a - demo node
+  axiomRoot: https://faiththruphysics.com/claims/demo-v12/01/000
+  edges: []
+  verificationStatus: informal
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Not applicable - this node makes no world-claim. Delete
+    when the demo domain is retired.
+_metadata:
+  source_path: demo-v12/02_claim_atoms/demo-claim.jsonld
+  generated_at: '2026-09-23T01:17:14.425208+00:00'
+  sha256: c1d8c8df2fa23ce36e47b06d2687fa7cca30295de9d1d1939c043efffad70b9f

@@ -1,0 +1,89 @@
+face:
+  uuid: e5ffad03-0c0e-5d8c-98a1-ed65193d0a86
+  node_id: tp:axioms/01/AX-012
+  claim_id: tp:AXIOMS/E2.1
+  name: Master Equation First Form
+  term: Master Equation First Form
+  plain: χ = ∫(G·K)dΩ — the field integrates geometry G and complexity K over configuration
+    space Ω.
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: mathematical
+  mathematicalForm: χ = ∫(G·K)dΩ
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-010
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-011
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - equation
+  - curvature
+  - field
+  keywords:
+  - E2.1
+  - Q5
+  - Ontological
+  - Equation
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the master equation is dimensionally inconsistent.
+    Show G·K integration yields divergences with no renormalization. Demonstrate that
+    geometry and complexity cannot be multiplied in a meaningful way.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 13
+  axiomRegistry:
+    axiomID: AX-012
+    oldID: E2.1
+    treeLevel: Q5
+    treeBranch: Q5-C (Properties of the ground — formal equation)
+    questionType: Type 2 (What IS X?)
+    domain: Ontological
+    tier: '2'
+    newType: Equation
+    logicalForce: formal proposal
+    formalizableInLean: 'yes'
+    leanKind: def / proposition with typed variables
+    riskLevel: medium
+    kernelRole: definitionRole
+    moduleID: M02
+    moduleTitle: Chi Field Substrate
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: —
+    propagationTest: YES — Master equation propagates as the generating function for
+      coherence (Q3 formalized), spacetime (Q5 material), and boundary conditions
+      (Q8).
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-012-master-equation-first-form.jsonld
+  generated_at: '2026-09-23T01:17:12.851828+00:00'
+  sha256: 8f59dfec01eb63753e14d043f362d5b20ef9ae818cbc510c21e8901903016c9a

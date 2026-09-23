@@ -1,0 +1,70 @@
+face:
+  uuid: 28abe7ba-53c2-5440-af8a-f99a3222158a
+  node_id: tp:master-equation/01/ME-EQ-006
+  claim_id: tp:ME/ME-EQ-006
+  name: Zero-Collapse Theorem
+  term: Zero-Collapse Theorem
+  plain: A required zero channel collapses the product, and product collapse implies
+    a zero channel under the kernel assumptions.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: mathematical
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  mathematicalForm: χ = 0 ⇔ ∃ required factor f_i = 0
+  mathFormNormal: listProd(xs)=zero iff zero in xs
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-061
+    propagates: true
+    note: Equation atom dependency.
+  - type: dependsOn
+    target: tp:axioms/01/AX-132
+    propagates: true
+    note: Equation atom dependency.
+  tags:
+  - equation
+  - proof
+  - kill-condition
+  keywords:
+  - equation
+  - χ
+  - f_i
+  - zero
+  - listProd
+  verificationStatus: equation-registry-import
+  kernelChecked: true
+  challengeStatus: unchallenged
+  falsificationCondition: Show the equation is ill-typed, contradicts its dependency
+    atoms, or fails the verification/empirical burden declared by its source layer.
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\VERIFIED_SECTION_BY_SECTION_REPORT.md
+  equationRegistry:
+    equationID: ME-EQ-006
+    variables:
+    - χ
+    - f_i
+    - zero
+    - listProd
+    normalForm: listProd(xs)=zero iff zero in xs
+    source: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\VERIFIED_SECTION_BY_SECTION_REPORT.md
+_metadata:
+  source_path: master-equation/01_canonical/ME-EQ-006-zero-collapse-theorem.jsonld
+  generated_at: '2026-09-23T01:17:14.656782+00:00'
+  sha256: d120c0956d60226adc4e2c880eb90b1f8820683ccc29961a9e98793dc9d71a84

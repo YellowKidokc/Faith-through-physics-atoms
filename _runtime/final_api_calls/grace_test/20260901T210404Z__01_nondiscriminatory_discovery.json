@@ -1,0 +1,63 @@
+{
+  "receipt_version": "final-api-call/1.0.0",
+  "status": "CANDIDATE_DRAFT — NOT ADMITTED",
+  "created_at": "2026-09-01T21:04:04.380535+00:00",
+  "call": "01_NONDISCRIMINATORY_DISCOVERY",
+  "provider": "mock",
+  "model": "deepseek-chat",
+  "blind_input": {
+    "content_hash": "sha256:bb9e59ad0db452d9a6c79f83430664dff3247da60bd27766d20884f36c1377eb",
+    "withholding": {
+      "named_headings_replaced": 42,
+      "frontmatter_withheld": true,
+      "filename_withheld": true,
+      "folder_withheld": true,
+      "html_comments_withheld": true
+    },
+    "chunk_count": 4
+  },
+  "frozen_discovery": {
+    "schema_version": "paper-discovery/1.0.0",
+    "stage": "NONDISCRIMINATORY_DISCOVERY",
+    "status": "DISCOVERY_COMPLETE",
+    "discovered_objects": [
+      {
+        "discovery_id": "DISC-001",
+        "exact_quotation": "> **CANDIDATE_DRAFT — NOT VALIDATED — NOT ADMITTED**",
+        "neutral_paraphrase": "> **CANDIDATE_DRAFT — NOT VALIDATED — NOT ADMITTED**",
+        "referent": "The referent remains to be discriminated.",
+        "identity_conditions": [],
+        "distinctions": [
+          "The assertion remains distinct from its negation."
+        ],
+        "relations": [],
+        "operations": [],
+        "dependencies": [],
+        "constraints": [],
+        "invariants": [],
+        "consequences": [],
+        "countermodels": [
+          "The exact negation remains a live comparison."
+        ],
+        "collapse_conditions": [],
+        "open_questions": [
+          "Live semantic discovery was not called in mock mode."
+        ],
+        "source_section": "SECTION_001",
+        "line_start": 3,
+        "line_end": 3
+      }
+    ],
+    "global_open_questions": [],
+    "prohibited_outputs": [
+      "All classification and canon fields withheld."
+    ]
+  },
+  "post_discovery_source_binding": {
+    "path": "\\\\dlowenas\\zobsidian\\__New\\Theophysics.new\\notes\\THE_GROUND_TRIAL\\02_TANGENT_PAPERS\\GRACE_CLOSED_SYSTEM_BREAK_RIGOROUS_TEST_PACKET.md",
+    "source_hash": "sha256:6b3146febfda77a5fc383d21a96f58db513ad2790aa01f7ef81f70241f4eb9dd"
+  },
+  "source_modified": false,
+  "canonical_admission_performed": false,
+  "human_ruling_required": true
+}

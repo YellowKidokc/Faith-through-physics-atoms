@@ -1,0 +1,84 @@
+face:
+  uuid: 7636b8e6-5c57-561c-a218-bb5137cbb236
+  node_id: tp:axioms/01/AX-125
+  claim_id: tp:AXIOMS/PROT18.1
+  name: Trinity Observer Effect
+  term: Trinity Observer Effect
+  plain: 'Protocol: Measure gamma variance with observer Phi level.'
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical
+  mathematicalForm: 'Protocol: γ(Φ) measurement'
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-051
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-052
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - witness
+  - observer
+  - trinity
+  keywords:
+  - PROT18.1
+  - Q12
+  - Material
+  - Protocol
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Run the experiment and get null result.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 127
+  axiomRegistry:
+    axiomID: AX-125
+    oldID: PROT18.1
+    treeLevel: Q12
+    treeBranch: Q12-B (Experimental protocol)
+    questionType: Type 1 (Does X hold?)
+    domain: Material
+    tier: '3'
+    newType: Protocol
+    logicalForce: experimental protocol
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M18
+    moduleTitle: Protocol / Test Suite
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: Experimental protocol — pending execution.
+    intendedStatus: captured
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-125-trinity-observer-effect.jsonld
+  generated_at: '2026-09-23T01:17:13.853434+00:00'
+  sha256: 1e4bb31ddb6df45ec862a3932882383912ded1e28420d496755c7e35e6ab7909

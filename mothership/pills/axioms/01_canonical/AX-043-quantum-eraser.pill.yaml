@@ -1,0 +1,80 @@
+face:
+  uuid: 9015091b-2ce9-5e48-a187-80f435cab468
+  node_id: tp:axioms/01/AX-043
+  claim_id: tp:AXIOMS/EXP5.2
+  name: Quantum Eraser
+  term: Quantum Eraser
+  plain: Quantum eraser (Kim 2000, Walborn 2002) — information determines outcome.
+  status: classified
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: empirical_anchor
+  mathematicalForm: Experimentally confirmed (Kim 2000, Walborn 2002)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-042
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - information
+  keywords:
+  - EXP5.2
+  - Q6
+  - Ontological
+  - EvidenceNode
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show quantum eraser results are explainable without information
+    primacy. Demonstrate physical mechanism (not information) as the cause.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 44
+  axiomRegistry:
+    axiomID: AX-043
+    oldID: EXP5.2
+    treeLevel: Q6
+    treeBranch: Q6-I (Experimental support — information primacy in QM)
+    questionType: Type 1 (Does X hold?)
+    domain: Ontological
+    tier: '3'
+    newType: EvidenceNode
+    logicalForce: evidence node
+    formalizableInLean: metadata only
+    leanKind: metadata / outside proof kernel
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M05
+    moduleTitle: Observer / Actualization
+    spineRole: empirical_test
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — Quantum eraser propagates as strongest experimental evidence
+      that information, not matter, is fundamental to QM outcomes.
+    intendedStatus: classified
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-043-quantum-eraser.jsonld
+  generated_at: '2026-09-23T01:17:13.112235+00:00'
+  sha256: 390bef083aae731fd6f2cf2a3f4af833701db0f7f7ab92e2810b53424dbfe1d8

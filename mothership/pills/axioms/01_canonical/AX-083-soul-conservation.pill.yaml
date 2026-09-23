@@ -1,0 +1,84 @@
+face:
+  uuid: b4c1b247-6356-5caf-9f16-aef3ad14f7e2
+  node_id: tp:axioms/01/AX-083
+  claim_id: tp:AXIOMS/A10.2
+  name: Soul Conservation
+  term: Soul Conservation
+  plain: Soul-stuff is conserved — no soul is created or destroyed.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: dN_soul/dt = 0 (soul information conserved)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-064
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-082
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - conservation
+  keywords:
+  - A10.2
+  - Q6
+  - Human
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show soul information is destroyed at death. Demonstrate
+    information loss in brain death. Show no conservation law applies to consciousness.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 85
+  axiomRegistry:
+    axiomID: AX-083
+    oldID: A10.2
+    treeLevel: Q6
+    treeBranch: Q6-U (Soul conservation law)
+    questionType: Type 4 (What must X be?)
+    domain: Human
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M10
+    moduleTitle: Soul / Consciousness Field
+    spineRole: core_spine
+    boundaryCondition: BC7
+    fourModeRelevance: M2 (Entropic — soul persists but can decohere)
+    worldviewsEliminated: Materialism, Naturalism, Nihilism, Eliminativism
+    propagationTest: YES — Soul conservation propagates to afterlife, resurrection,
+      and eschatological permanence.
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-083-soul-conservation.jsonld
+  generated_at: '2026-09-23T01:17:13.485675+00:00'
+  sha256: 7f76c6a14b313ce751d834c2598a965a055f97c4ee05639f609c4b4bd3225aa3

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://faiththruphysics.com/schema/information-object-envelope/v0.1-candidate",
+  "title": "Faith Through Physics Universal Information Object Envelope",
+  "description": "Candidate minimum shared envelope. Type-specific schemas extend this record.",
+  "type": "object",
+  "required": [
+    "@id",
+    "nodeID",
+    "nodeType",
+    "name",
+    "status",
+    "version",
+    "provenance",
+    "edges"
+  ],
+  "properties": {
+    "@context": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "nodeID": {
+      "type": "string"
+    },
+    "nodeType": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "statementTechnical": {
+      "type": "string"
+    },
+    "statementPlain": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "sourcePath",
+        "sha256"
+      ],
+      "properties": {
+        "sourcePath": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[A-Fa-f0-9]{64}$"
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "target"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "grade": {
+            "type": "string"
+          },
+          "propagates": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "verification": {
+      "type": "object"
+    },
+    "falsification": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "x-governance-status": "CANDIDATE_DRAFT_NOT_ADMITTED"
+}

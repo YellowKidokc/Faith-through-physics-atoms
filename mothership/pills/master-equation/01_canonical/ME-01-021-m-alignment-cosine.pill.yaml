@@ -1,0 +1,68 @@
+face:
+  uuid: 1769272c-7b44-5508-aceb-3a5303ab2fac
+  node_id: tp:master-equation/01/ME-01-021
+  claim_id: tp:ME/ME-01-021
+  name: M - Alignment Cosine
+  term: M - Alignment Cosine
+  plain: A system couples most strongly when it is aligned with its reference.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  claimClass: definition
+  stage: 01_canonical
+  audienceLevel: informed_adult
+  paradigmRelation: reframes
+  evidenceType: formal_derivation
+  kernelChecked: false
+  challengeStatus: unchallenged
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-135
+  mathematicalForm: M in [-1, 1]
+  edges:
+  - type: dependsOn
+    target: tp:master-equation/01/ME-01-010
+    propagates: true
+    note: Factor slot belongs to the Master Equation integration atom.
+  - type: dependsOn
+    target: tp:axioms/01/AX-067
+    propagates: true
+    note: Factor is grounded by AX-067 in the axiom spine.
+  tags:
+  - symmetry
+  - coherence
+  keywords:
+  - master-equation-factor
+  - M
+  - '[-1, 1]'
+  verificationStatus: formal-layer-import
+  sourceReference: D:\GitHub\Faith-through-physics-atoms\_INBOX_HARVEST_TRUTH_CARDS\01_FORMAL_LAYER_Definition10.md
+  masterEquationFactor:
+    id: ME-01-021
+    symbol: M
+    name: Alignment Cosine
+    domain: '[-1, 1]'
+    definition: Alignment cosine between system state vector and reference vector.
+    plain: A system couples most strongly when it is aligned with its reference.
+    axiom: AX-067
+    tags:
+    - symmetry
+    - coherence
+_metadata:
+  source_path: master-equation/01_canonical/ME-01-021-m-alignment-cosine.jsonld
+  generated_at: '2026-09-23T01:17:14.466314+00:00'
+  sha256: 68b9a65e43f42891c19cd93a650c73f12bebe31790500bf410d060c5d81de700

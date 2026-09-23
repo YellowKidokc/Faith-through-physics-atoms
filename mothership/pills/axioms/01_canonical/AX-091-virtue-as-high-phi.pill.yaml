@@ -1,0 +1,92 @@
+face:
+  uuid: fdbb8ad5-9d98-5af8-989b-9ec81a0d7558
+  node_id: tp:axioms/01/AX-091
+  claim_id: tp:AXIOMS/T11.1
+  name: Virtue As High Phi
+  term: Virtue As High Phi
+  plain: Virtue correlates with high integrated information Φ — sin → coherence decrease.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: theorem
+  mathematicalForm: Virtue ∝ Φ; ∂Φ/∂(virtue) > 0
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-089
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-090
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-038
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - sin
+  - coherence
+  - proof
+  - information
+  keywords:
+  - T11.1
+  - Q10
+  - Relational
+  - Theorem
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Measure Φ in virtuous vs non-virtuous individuals and show
+    no correlation. Show sin doesn't decrease coherence. Demonstrate moral behavior
+    independent of integration level.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 93
+  axiomRegistry:
+    axiomID: AX-091
+    oldID: T11.1
+    treeLevel: Q10
+    treeBranch: Q10-S (Virtue-Phi correlation)
+    questionType: Type 1 (Does X hold?)
+    domain: Relational
+    tier: '2'
+    newType: Theorem
+    logicalForce: derivable theorem
+    formalizableInLean: 'yes'
+    leanKind: theorem target
+    riskLevel: medium
+    kernelRole: proofTarget
+    moduleID: M11
+    moduleTitle: Moral Coherence
+    spineRole: formal_engine
+    boundaryCondition: —
+    fourModeRelevance: M1 (Agentic — virtuous choices increase Φ)
+    worldviewsEliminated: Nihilism, Eliminativism
+    propagationTest: YES — Virtue-Phi correlation is directly testable. Propagates
+      to Phi-Virtue Correlation Study (PROT18.5).
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-091-virtue-as-high-phi.jsonld
+  generated_at: '2026-09-23T01:17:13.553553+00:00'
+  sha256: f5a6ed0b9a23c2a31971e2f1e54cd045f7fdad042650a9a1e55fe369649a87c0

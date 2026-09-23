@@ -1,0 +1,36 @@
+face:
+  uuid: 41d7e32e-5aae-5ce5-8aaa-a5b0a537f2bd
+  node_id: https://faiththruphysics.com/protocol/claim-beacon/v0.1/pivot-ontology
+  name: Claim Beacon Pivot Ontology v0.1
+  term: Claim Beacon Pivot Ontology v0.1
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  protocol: ClaimBeacon
+  protocolVersion: 0.1.0
+  role: shared hub ontology
+  terms:
+  - term: claim
+    definition: one precise assertion with its own test contract
+  - term: bridge
+    definition: a tested mapping between domains or claims
+  - term: have
+    definition: support, derivation, data, or mapping the atom offers
+  - term: need
+    definition: evidence, definitions, dependencies, or mappings required
+  - term: breakIf
+    definition: explicit condition that weakens or falsifies the claim or bridge
+  - term: propagation
+    definition: falsification transfer across accepted structural identity or isomorphism
+      edges only
+  bridgeGrades:
+  - structural_identity
+  - structural_isomorphism
+  - structural_analogy
+  - metaphorical
+  - ungraded
+_metadata:
+  source_path: _protocol/claim-beacon/v0.1/pivot-ontology.jsonld
+  generated_at: '2026-09-23T01:17:12.731105+00:00'
+  sha256: d635f7997956c37e6faa2cd94805d354c322cb029572e53e9aea5268f142c7ac

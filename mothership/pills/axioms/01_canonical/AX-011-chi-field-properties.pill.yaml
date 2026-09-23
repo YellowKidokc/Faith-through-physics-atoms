@@ -1,0 +1,87 @@
+face:
+  uuid: 8de90b29-cf4f-5f13-89d5-d23708b5c03c
+  node_id: tp:axioms/01/AX-011
+  claim_id: tp:AXIOMS/D2.2
+  name: Chi Field Properties
+  term: Chi Field Properties
+  plain: 'Chi is a real scalar field with informational content, carrying semantic
+    potential and instantiating reality through its configuration space. (Note: Uses
+    pre-geometric configuration space, not spacetime coordinates.)'
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: definition
+  mathematicalForm: χ ∈ ℝ; (□ + m²)χ = J(sources); χ(x,t) ≠ 0 ∀(x,t)
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-010
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - logos
+  - definition
+  - information
+  - curvature
+  - field
+  keywords:
+  - D2.2
+  - Q5
+  - Ontological
+  - Definition
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show χ must be non-scalar (vector, tensor, spinor). Show
+    that a real field cannot carry semantic content. Detect a region of spacetime
+    with zero χ-field value.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 12
+  axiomRegistry:
+    axiomID: AX-011
+    oldID: D2.2
+    treeLevel: Q5
+    treeBranch: Q5-B (Properties of the ground — physical character)
+    questionType: Type 4 (What must X be?)
+    domain: Ontological
+    tier: '2'
+    newType: Definition
+    logicalForce: stipulative definition
+    formalizableInLean: 'yes'
+    leanKind: def / structure / predicate
+    riskLevel: low
+    kernelRole: definitionRole
+    moduleID: M02
+    moduleTitle: Chi Field Substrate
+    spineRole: supporting_definition
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: —
+    propagationTest: YES — Scalar field properties propagate through all equations
+      (Master Equation, Coherence Functional, GR-QM Bridge).
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-011-chi-field-properties.jsonld
+  generated_at: '2026-09-23T01:17:12.843306+00:00'
+  sha256: eede001723720dd016d8e071e391e4f38ad2b87910f3fcfc27fa43f13b03b49b

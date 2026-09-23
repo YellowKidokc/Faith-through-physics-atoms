@@ -1,0 +1,93 @@
+face:
+  uuid: 837e2053-93d0-54e6-be7a-147414e07505
+  node_id: tp:axioms/01/AX-135
+  claim_id: tp:AXIOMS/A19.1
+  name: Master Equation Integration
+  term: Master Equation Integration
+  plain: All fundamental dynamics integrate into a single unified framework.
+  status: captured
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: prediction
+  mathematicalForm: L_total = Σ(Law_i); all laws derive from χ
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-021
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-050
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-081
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  - type: dependsOn
+    target: tp:axioms/01/AX-103
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  tags:
+  - sin
+  - equation
+  keywords:
+  - A19.1
+  - Q5
+  - Laws
+  - Hypothesis
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the ten laws are inconsistent with each other. Demonstrate
+    the master equation is overconstrained or internally contradictory.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 137
+  axiomRegistry:
+    axiomID: AX-135
+    oldID: A19.1
+    treeLevel: Q5
+    treeBranch: Q5-M (Master equation integration)
+    questionType: Type 2 (What IS X?)
+    domain: Laws
+    tier: '1'
+    newType: Hypothesis
+    logicalForce: empirical hypothesis
+    formalizableInLean: 'yes'
+    leanKind: metadata / proposition, not premise
+    riskLevel: medium-high
+    kernelRole: metadataRole
+    moduleID: M19
+    moduleTitle: Ten-Law Master Equation
+    spineRole: bridge_guard
+    boundaryCondition: —
+    fourModeRelevance: —
+    worldviewsEliminated: —
+    propagationTest: YES — Master integration propagates to all derived predictions
+      and the closure axiom.
+    intendedStatus: proposed
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-135-master-equation-integration.jsonld
+  generated_at: '2026-09-23T01:17:13.937630+00:00'
+  sha256: bd6c48730bd1ce318227e929c6b04bb84816063a0e346098b4a083cdfe515dd5

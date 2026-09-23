@@ -1,0 +1,78 @@
+face:
+  uuid: 82a14224-7bac-5498-b158-35382a4c3e3a
+  node_id: tp:axioms/01/AX-028
+  claim_id: tp:AXIOMS/A4.2
+  name: Algorithmic Depth
+  term: Algorithmic Depth
+  plain: Output complexity relative to input measures structure (depth).
+  status: proposed
+  target_type: claim
+veins:
+  '@context':
+  - https://schema.org
+  - https://faiththruphysics.com/vocab/context.jsonld
+  author:
+  - '@type': Person
+    name: David Lowe
+  - '@type': SoftwareApplication
+    name: GPT (OpenAI)
+    tp:role: ai-collaborator
+  - '@type': SoftwareApplication
+    name: Claude (Anthropic)
+    tp:role: ai-collaborator
+  aiContributionDeclared: true
+  dateCreated: '2026-07-28'
+  dateModified: '2026-07-28'
+  version: 0.1.0
+  stage: 01_canonical
+  claimClass: floor_axiom
+  mathematicalForm: Depth(x) = Time(shortest_program(x))
+  axiomRoot: https://faiththruphysics.com/claims/axioms/01/AX-001
+  edges:
+  - type: dependsOn
+    target: tp:axioms/01/AX-027
+    propagates: true
+    note: Imported from Master Axiom depends_on column.
+  keywords:
+  - A4.2
+  - Q3
+  - Ontological
+  - Primitive
+  verificationStatus: registry-import
+  kernelChecked: false
+  challengeStatus: unchallenged
+  falsificationCondition: Show the universe is shallow (simple input → simple output).
+    Demonstrate depth is not well-defined for physical systems.
+  sourceReference: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+  sourceWorkbook:
+    path: C:\theophysics\_CANONICAL_STRIPPED_OUT_REVIEW_2026-07-26\CANONICAL\03_AXIOMS\01_canonical\Master_Axiom.xlsx
+    sheet: Master Axiom
+    row: 29
+  axiomRegistry:
+    axiomID: AX-028
+    oldID: A4.2
+    treeLevel: Q3
+    treeBranch: Q3-N (Depth as structure metric)
+    questionType: Type 2 (What IS X?)
+    domain: Ontological
+    tier: '1'
+    newType: Primitive
+    logicalForce: self-evident primitive
+    formalizableInLean: 'yes'
+    leanKind: axiom / base proposition
+    riskLevel: low
+    kernelRole: candidateAxiom
+    moduleID: M04
+    moduleTitle: Compression / Minimal Description
+    spineRole: core_spine
+    boundaryCondition: —
+    fourModeRelevance: — (pre-observer level)
+    worldviewsEliminated: —
+    propagationTest: YES — Depth explains why simple laws (low K) produce complex
+      universes (high output complexity).
+    intendedStatus: active
+    importStatusReason: Status lowered when needed to satisfy dependency monotonicity.
+_metadata:
+  source_path: axioms/01_canonical/AX-028-algorithmic-depth.jsonld
+  generated_at: '2026-09-23T01:17:12.987438+00:00'
+  sha256: 31ec33cff291c9468d30e0ce38c31fe61ad7b5a66c7dd52b51c2e0d1c22a48ff
