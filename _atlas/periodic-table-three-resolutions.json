@@ -1,0 +1,63 @@
+{
+  "registry_id": "PERIODIC_TABLE_THREE_RESOLUTIONS_V1",
+  "title": "Periodic Table at Three Resolutions",
+  "version": "1.0.0",
+  "principle": "same_core_markers_richer_aggregation",
+  "storage_resolutions": ["local", "series", "global"],
+  "comparison_operation": "phi_cross_series",
+  "identity": {
+    "required": ["uuid", "semantic_code", "human_label"],
+    "rule": "UUID is opaque and permanent; semantic_code is registry-backed; human_label may change without changing identity."
+  },
+  "markers": [
+    {"n": 1, "key": "identity", "label": "Identity", "local": "atom/object id", "series": "series id", "global": "global object id", "ownership": "registered"},
+    {"n": 2, "key": "home_domain", "label": "Home Domain", "local": "primary jurisdiction", "series": "primary series jurisdiction", "global": "primary aggregate jurisdiction", "ownership": "semantic_registered"},
+    {"n": 3, "key": "native_domains", "label": "Native Domains", "local": "native object domains", "series": "union/distribution of native domains", "global": "global native-domain distribution", "ownership": "semantic_plus_aggregate"},
+    {"n": 4, "key": "bridged_domains", "label": "Bridged Domains", "local": "admitted bridge targets only", "series": "admitted bridge-family targets", "global": "admitted cross-series/domain targets", "ownership": "admitted_bridge_registry"},
+    {"n": 5, "key": "object_type", "label": "Object Type", "local": "registered object type", "series": "SERIES", "global": "PROJECT|DOMAIN_CLUSTER|INVARIANT_FAMILY|BRIDGE_FAMILY|GLOBAL_CONCLUSION", "ownership": "registry"},
+    {"n": 6, "key": "claim_family", "label": "Claim Family", "local": "registered claim family", "series": "dominant/distribution", "global": "dominant/distribution", "ownership": "semantic_plus_aggregate"},
+    {"n": 7, "key": "function_kind", "label": "Function Kind", "local": "Definition|Claim|Derivation|Evidence|Verdict", "series": "dominant/distribution", "global": "dominant/distribution", "ownership": "semantic_plus_aggregate"},
+    {"n": 8, "key": "source", "label": "Source", "local": "source object + provenance", "series": "aggregate provenance roots", "global": "global provenance roots", "ownership": "provenance"},
+    {"n": 9, "key": "commitment", "label": "Commitment", "local": "declared project commitment", "series": "aggregate publication/commitment posture", "global": "aggregate commitment posture", "ownership": "registered"},
+    {"n": 10, "key": "standing", "label": "Standing", "local": "current warrant standing", "series": "aggregate standing by declared rule", "global": "aggregate standing by declared rule", "ownership": "adjudicated"},
+    {"n": 11, "key": "dispute", "label": "Dispute", "local": "none|active|serious|defeating", "series": "aggregate dispute pressure", "global": "systemic dispute pressure", "ownership": "adjudicated_plus_aggregate"},
+    {"n": 12, "key": "evidence_grade", "label": "Evidence Grade", "local": "computed from native warrant via grade registry", "series": "computed aggregate", "global": "computed aggregate", "ownership": "computed_not_fabricated"},
+    {"n": 13, "key": "usage_runs", "label": "Usage / Runs", "local": "run count", "series": "aggregate method/run coverage", "global": "global method/run coverage", "ownership": "computed"},
+    {"n": 14, "key": "graph_degree", "label": "Graph Degree", "local": "object connectivity", "series": "cross-paper/claim/bridge connectivity", "global": "cross-series/domain connectivity", "ownership": "computed"},
+    {"n": 15, "key": "alert_state", "label": "Alert State", "local": "open item|anomaly|failure|supersession", "series": "series-level unresolved/systemic alert", "global": "contradiction|closed_loop|missing_anchor|unresolved_invariant|other systemic alert", "ownership": "computed_or_registered"}
+  ],
+  "local_stack": [
+    "identity",
+    "nabla",
+    "periodic15",
+    "dependency",
+    "warrant",
+    "dynamics",
+    "ascent_translation_descent",
+    "bridges",
+    "reality_mirror",
+    "receipts_runs"
+  ],
+  "series_extensions": [
+    "paper_inventory",
+    "series_dependency_dag",
+    "longitudinal_resolution",
+    "invariants",
+    "bridge_families",
+    "anchor_coverage",
+    "bottlenecks",
+    "unresolved_debt"
+  ],
+  "global_extensions": [
+    "phi_registry",
+    "reality_mirror_coverage",
+    "anomaly_register",
+    "emergent_topology",
+    "global_blast_radius",
+    "series_convergence_divergence",
+    "global_provenance_validation"
+  ],
+  "projection_rule": "Classify primitive semantic facts once. Derived map membership, aggregation, graph statistics and views are computed from canonical objects and typed edges; do not reclassify for each map.",
+  "candidate_admitted_rule": "Candidate and Admitted graphs remain distinct at every resolution.",
+  "publication_rule": "Publication snapshot is immutable; current Atlas projection is living."
+}

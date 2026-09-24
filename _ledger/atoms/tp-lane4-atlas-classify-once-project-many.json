@@ -1,0 +1,53 @@
+{
+  "atom_id": "tp:lane4/atlas/classify-once-project-many",
+  "atom_uid": "sha256:25341a7fedce6422f7a8b581043758ca4091f9e50502553d214dc7ac87cffb8e",
+  "title": "Classify Once, Project Many",
+  "claim": "A semantic primitive should be classified once into canonical objects and typed edges; proof, dependency, blast-radius, dispute, evolution, topology, Reality-Mirror, and related maps should be derived as deterministic projections whenever their membership can be computed from those canonical primitives.",
+  "domain": "atlas",
+  "lane": "Architecture",
+  "claim_class": "projection_principle",
+  "mode_classification": "candidate",
+  "assumptions": [
+    "Canonical objects retain stable IDs.",
+    "Typed edges preserve their native semantics.",
+    "A view definition can select/filter canonical objects and edges without changing their identity."
+  ],
+  "definitions": [
+    "Semantic primitive: a meaning-bearing classification that cannot be deterministically inferred from already admitted structure.",
+    "Projection: a deterministic selection, aggregation, layout, statistic, or derived membership over canonical objects and typed edges."
+  ],
+  "equations": [],
+  "bridges": [],
+  "dependencies": [
+    "tp:lane4/atlas/periodic-table-three-resolutions"
+  ],
+  "negative_guards": [
+    "Do not call the API again to decide map membership when existing canonical edges already determine it.",
+    "Do not create duplicate edges merely to satisfy multiple visualizations.",
+    "Do not let a projection silently mutate the canonical source object."
+  ],
+  "kill_conditions": [
+    "A target map repeatedly requires semantic information not represented by any canonical object/edge and not derivable by deterministic rules."
+  ],
+  "proof_label": "ARCHITECTURE_RULE",
+  "current_status": "active_candidate",
+  "rerun_status": "required_after_vertical_slice",
+  "source_artifacts": [
+    "_atlas/periodic-table-three-resolutions.json",
+    "_docs/PERIODIC_TABLE_THREE_RESOLUTIONS_API_RAILS.md"
+  ],
+  "ledger": [
+    {
+      "timestamp": "2026-08-11T00:00:00+00:00",
+      "event_type": "projection_principle_registered",
+      "result": "recorded",
+      "artifact_path": "_atlas/periodic-table-three-resolutions.json",
+      "meaning": "Registered classify-once/store-once/project-many as the anti-duplication rule for Atlas views.",
+      "limits": "If a future view genuinely requires a new semantic primitive, the grammar must record that explicitly rather than pretending it is deterministic.",
+      "reviewer": "GPT",
+      "lane": "Architecture",
+      "event_id": "sha256:25341a7fedce6422f7a8b581043758ca4091f9e50502553d214dc7ac87cffb8e"
+    }
+  ],
+  "source_claim_id": "CLASSIFY_ONCE_PROJECT_MANY_V1"
+}

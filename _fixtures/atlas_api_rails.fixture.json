@@ -1,0 +1,117 @@
+{
+  "protocol_version": "ATLAS_API_RAILS_1.0",
+  "source": {
+    "document_id": "DOC-FIXTURE-001",
+    "sha256": "22b593ee845c1eb4f6d6510fc2681b2fea11a52e1f2d7b699b61a84db7e9ed27",
+    "title": "Atlas API Rails Fixture",
+    "path_or_url": "fixture://atlas-api-rails-001",
+    "spans": [
+      {
+        "span_id": "SPAN-001",
+        "text": "Atlas API Rails fixture source"
+      }
+    ]
+  },
+  "identity": {
+    "uuid": "2bc942f3-c576-5b59-9bce-3bd0a3bdfb7e",
+    "semantic_code": "ATOM.FIXTURE.001",
+    "human_label": "Atlas API Rails Fixture",
+    "resolution": "local"
+  },
+  "nabla": {
+    "filing": "TECH/ATLAS_RAILS/W/AI_RESEARCH/T/R1",
+    "vector": {
+      "G": 3,
+      "M": 3,
+      "E": 0,
+      "S": 0,
+      "T": 3,
+      "K": 3,
+      "R": 3,
+      "Q": 0,
+      "F": 3,
+      "C": 3
+    },
+    "hash": "[C·Q][G·S][K·E][M·F][T·R]",
+    "confidence": {
+      "G": 0.9,
+      "M": 0.9,
+      "E": 0.9,
+      "S": 0.8,
+      "T": 0.8,
+      "K": 0.95,
+      "R": 0.9,
+      "Q": 0.8,
+      "F": 0.8,
+      "C": 0.95
+    },
+    "review_flags": []
+  },
+  "periodic15": {
+    "01": "ATOM.FIXTURE.001",
+    "02": "DOM.ATLAS",
+    "03": ["DOM.ATLAS", "DOM.RUNTIME"],
+    "04": [],
+    "05": "OBJ.CLAIM",
+    "06": "CLM.METHODOLOGICAL_EPISTEMIC",
+    "07": "FN.CLAIM",
+    "08": "SRC.FIXTURE",
+    "09": "COM.CANDIDATE",
+    "10": "STD.CANDIDATE",
+    "11": "DSP.NONE",
+    "12": "UNKNOWN",
+    "13": 1,
+    "14": 2,
+    "15": "ALT.NONE"
+  },
+  "atom_stack": {
+    "atoms": [
+      {"id": "ATOM.FIXTURE.001", "label": "Atlas API Rails Fixture"}
+    ],
+    "components": [
+      {"id": "CMP.FIXTURE.001", "type": "claim_component", "source_span_ids": ["SPAN-001"]}
+    ],
+    "claims": [
+      {"id": "CLM.FIXTURE.001", "statement": "The rail can emit and recombine one valid packet.", "source_span_ids": ["SPAN-001"]}
+    ],
+    "evidence": [],
+    "tests": [
+      {"id": "TST.FIXTURE.001", "type": "round_trip", "status": "declared_not_run"}
+    ],
+    "edges": [
+      {"source": "CMP.FIXTURE.001", "target": "CLM.FIXTURE.001", "type": "supports"},
+      {"source": "CLM.FIXTURE.001", "target": "ATOM.FIXTURE.001", "type": "defines"}
+    ],
+    "arguments": [],
+    "dynamics": {
+      "coherence": {"status": "DEFINED"},
+      "degradation": {"status": "DEFINED"},
+      "measurement": {"status": "PROPOSED"},
+      "threshold": {"status": "UNRESOLVED"},
+      "asymmetry": {"status": "UNRESOLVED"},
+      "restoration": {
+        "self": {"status": "UNRESOLVED"},
+        "external": {"status": "UNRESOLVED"}
+      },
+      "counterexample": {"status": "DEFINED"}
+    },
+    "orientation": {
+      "meeting_state": "UNRESOLVED"
+    },
+    "bridges": [],
+    "reality_mirror": {
+      "class": "F",
+      "status": "candidate"
+    },
+    "open_items": []
+  },
+  "audit": {
+    "origin": "fixture",
+    "admission_state": "candidate",
+    "model": null,
+    "prompt_version": null,
+    "run_id": "RUN-FIXTURE-001",
+    "confidence": 1.0,
+    "review_flags": []
+  }
+}
