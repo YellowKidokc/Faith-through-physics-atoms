@@ -1,0 +1,278 @@
+# Unified Node API Chain v0.1
+# Date: 2026-08-18
+# Status: draft proposal; candidate-only
+# Boundary: this file defines call order and payload contracts. It does not run live APIs,
+# does not prove claims, and does not promote any node to canon.
+
+api_chain_version: atlas-unified-api-chain/v0.1
+storage_contract: atlas-unified-node/v0.1
+question_schema: dg_questions
+classification_schema: unified_classification_schema_2026-08-17
+
+execution_order:
+  - step: 1
+    api: generalized_question_pass
+    required: true
+    writes: question_pass
+    may_classify: false
+    may_score_facets: false
+    may_promote: false
+  - step: 2
+    api: unified_classification_pass
+    required: true
+    reads:
+      - native
+      - question_pass
+    writes: classification
+    may_score_facets: false
+    may_promote: false
+  - step: 3
+    api: facet_scorers
+    required: false
+    reads:
+      - native
+      - question_pass
+      - classification
+    writes: facets
+    parallel_allowed: true
+    may_promote: false
+
+api_1_generalized_question_pass:
+  purpose: >-
+    Produce candidate plain-language answers to the four domain-neutral questions before
+    classification. This is the non-claim/generalized-question pre-pass.
+  input:
+    node_id: string
+    source_text: string
+    source_record: object
+    existing_node_kind: string|null
+  prompt_questions:
+    q1_before:
+      question: "What must exist before this?"
+      output_field: requires
+    q2_capability:
+      question: "What can this do that nothing before it could?"
+      output_field: introduces
+    q3_collapse:
+      question: "What breaks if this is removed?"
+      output_field: if_removed
+    q4_translation:
+      question: "What does this look like in another domain?"
+      output_field: translates_to
+  output_contract:
+    status: complete|partial|error
+    prompt_version: string
+    model: string|null
+    generalized_questions:
+      - question_id: q1_before|q2_capability|q3_collapse|q4_translation
+        question: string
+        answer: string|null
+        source_spans: string[]
+        confidence: number|null
+  hard_rules:
+    - "Do not infer a claim_type in API 1."
+    - "Do not assign proof_label in API 1."
+    - "Do not mark an answer as evidence."
+    - "Do not set truth_bearing from question output."
+    - "If source text is insufficient, answer null rather than inventing."
+
+api_2_unified_classification_pass:
+  purpose: >-
+    Classify the object after API 1 using the unified one-axiom vocabulary.
+  input:
+    node_core: object
+    native: object
+    question_pass: object
+  output_contract:
+    claim_type: AXIOM|DEFINITION|BOUNDARY|LEMMA|THEOREM|COROLLARY|MODEL|HYPOTHESIS|PREDICTION|PROTOCOL|EVIDENCE|BRIDGE|IDENTIFICATION|OPEN|CLOSURE|null
+    claim_type_status: adapter_candidate|model_candidate|human_confirmed|not_applicable
+    proof_label: NOT_ESTABLISHED|ISOMORPHIC_EVENT_CANDIDATE|BRIDGE_DECLARED|LEAN_GUARDRAIL_SUPPORTED|LEAN_FULL_VERIFIED|PYTHON_RUNTIME_SUPPORTED|ABDUCTIVELY_FAVORED|NARRATIVE_ANCHOR|QUARANTINE|RERUN_OWED|RETIRED
+    proof_class: D|S|L|M|H|E|BR|T|C|PM|PH|null
+    display_grade: A|B|C|D|E|F|null
+    domains: string[]
+    primary_domain: string|null
+    epistemic_layer: L1|L2|L3|L4|null
+    blast_radius: INERT|LOCAL|STRUCTURAL|null
+    primary_law: L01|L02|L03|L04|L05|L06|L07|L08|L09|L10|null
+    bridge_grade: C0|C1|C2|C3|C4|C5|C6|null
+    letter_grade: A|B|C|D|"—"|null
+    rationale: string|null
+  hard_rules:
+    - "Only A0/God may classify as AXIOM."
+    - "Bridge claims are labeled, not promoted."
+    - "Evidence classification does not propagate evidence."
+    - "L4 theological identification cannot be inferred from L1-L3 structure alone."
+    - "Use NOT_ESTABLISHED when no verification actually ran."
+    - "Preserve native status vocabulary; do not silently translate law grades into proof labels."
+
+facet_scorers:
+  axiom_rosetta_connector:
+    applies_when:
+      any:
+        - "node_core.node_kind in [claim, evidence, equation, bridge]"
+        - "native.domainType == 'axioms'"
+        - "native.axiomRegistry exists"
+    reads:
+      - native
+      - classification
+    writes: facets.axiom_rosetta
+    deterministic_first: true
+    model_backed_second: optional
+    output_notes:
+      - "Carry exact-ID hints before lexical hints."
+      - "Carry mirror_search.status=not_run unless a mirror pass actually ran."
+
+  master_equation_scorer:
+    applies_when:
+      any:
+        - "native.masterEquationVariables exists"
+        - "native.mathematicalForm mentions chi/χ or Master Equation variables"
+        - "classification.primary_law is not null"
+    writes: facets.master_equation
+    output_contract:
+      facet_mode: source_projection|document_score|runtime_result
+      chi_variables: G|M|E|S_eff|T|K|R|Q|F|C_W[]
+      primary_law: L01-L10|null
+      equations: equation_ref[]
+      chi_score: object|null
+    hard_rules:
+      - "Preserve the C_W wrapper distinction."
+      - "Do not calculate chi_total from facet presence alone."
+      - "Do not use the retired C-as-factor shape as canonical output."
+
+  ten_laws_scorer:
+    applies_when:
+      any:
+        - "native.lawNumber exists"
+        - "classification.primary_law is not null"
+        - "source text engages a law family"
+    writes: facets.ten_laws
+    output_contract:
+      facet_mode: source_projection|document_score|runtime_result
+      engaged_laws: L01-L10[]
+      spiritual_families: spiritual_family[]
+      derivation_chains: derivation_chain[]
+    hard_rules:
+      - "Keep native law grades DERIVED/LOCKED/MAPPED/PARTIAL/SPLIT/OPEN/DEFINITIONAL unchanged."
+      - "Do not mark Laws 1-3 or 6-8 or 10 derivation chains complete unless source receipts say so."
+      - "Do not force the two numbering namespaces to agree; log disagreement."
+
+  fruits_scorer:
+    applies_when:
+      any:
+        - "classification.primary_law == L04"
+        - "native text mentions Fruits of the Spirit or fruit names"
+        - "native.equationRegistry.variables contains Φ or Φ_i"
+    writes: facets.fruits
+    fruit_terms:
+      - { english: Love, greek: agapē, equation: "V(r) at minimum" }
+      - { english: Joy, greek: chara, equation: "ω = ω₀ (resonance)" }
+      - { english: Peace, greek: eirēnē, equation: "ΣF = 0" }
+      - { english: Patience, greek: hypomonē, equation: "C = dQ/dT (high)" }
+      - { english: Kindness, greek: chrēstotēs, equation: "E_activation → min" }
+      - { english: Goodness, greek: agathōsynē, equation: "W_out > W_in" }
+      - { english: Faithfulness, greek: pistis, equation: "∂L/∂t = 0 (Noether)" }
+      - { english: Gentleness, greek: prautēs, equation: "F = k·F_needed, k≤1" }
+      - { english: Self-Control, greek: enkrateia, equation: "u(t) = -K·e(t) PID" }
+    depth_scale:
+      - mentioned
+      - explained
+      - equation_present
+      - derived
+      - evidence_linked
+    hard_rules:
+      - "count is the number of distinct fruit terms actually found, maximum 9."
+      - "Preserve the Law 4 Tier 1/Tier 2 boundary."
+      - "A fruit vector equation in the source is not evidence that a target document displays all nine fruits."
+
+  evidence_scorer:
+    applies_when:
+      any:
+        - "node_core.node_kind == evidence"
+        - "classification.claim_type == EVIDENCE"
+        - "native text names a dataset, experiment, sigma level, p-value, or historical dataset"
+    writes: facets.evidence
+    output_contract:
+      facet_mode: source_projection|document_score|runtime_result
+      items: evidence_item[]
+    hard_rules:
+      - "Only fill sigma_level or p_value when the source states it."
+      - "Replication status may be disputed."
+      - "Evidence metadata does not make downstream claims true."
+
+  trinity_watcher_scorer:
+    applies_when:
+      any:
+        - "classification.primary_domain == consciousness"
+        - "consciousness appears in classification.domains"
+        - "source text mentions measurement problem, von Neumann chain, personhood, Phi, mirror, Watcher, observer, or Trinity"
+    writes: facets.trinity_watcher
+    components:
+      - measurement_problem
+      - von_neumann_chain
+      - personhood_bridge
+      - phi_measure
+      - mirror_search
+      - watcher_role
+      - trinity_structure
+    hard_rules:
+      - "Cross-cutting consciousness structure is not automatically L4."
+      - "Trinity structure remains a labeled bridge/identification unless separately canonized."
+      - "Keep personhood bridge and Trinity mapping as distinct components."
+
+  applied_domain_scorer:
+    applies_when:
+      any:
+        - "source text engages psychology, economics, education, history, semantic entropy, or somatic patterns"
+        - "classification.domains contains an applied domain"
+    writes: facets.applied_domains
+    domains:
+      - psychology
+      - economics
+      - education
+      - history
+      - semantic_entropy
+      - somatic
+      - other
+    hard_rules:
+      - "Each applied pattern names its law and chi variable where known."
+      - "Applied evidence is candidate support, not proof of the Master Equation."
+
+  non_claim_object_linker:
+    applies_when:
+      any:
+        - "node_core.truth_bearing == false"
+        - "source produces papers, protocols, objections, translations, results, or audience renderings"
+    writes: facets.non_claim_objects
+    hard_rules:
+      - "Non-claim satellites remain truth_bearing=false."
+      - "A paper can contain claims, but each claim needs its own node or component record."
+
+receipt_contract:
+  required_per_run:
+    - run_id
+    - generated_at
+    - input_node_count
+    - api_1_status_counts
+    - api_2_status_counts
+    - facet_status_counts
+    - validation_errors
+    - candidate_gate_statement
+    - live_api_used: boolean
+    - model_names: string[]
+  required_statement: >-
+    All outputs are Candidate. No output is canon. kernelChecked remains false unless a named
+    kernel receipt exists. Evidence and falsification propagation remain false by default.
+
+sandbox_boundary:
+  live_api_available_here: false
+  local_runner_expected: David
+  allowed_here:
+    - schema validation
+    - deterministic source projection
+    - dry-run prompt/payload generation
+    - receipt drafting
+  forbidden_here:
+    - claiming a live DeepSeek run happened
+    - claiming NLP classification happened without returned JSON
+    - promoting any generated node
